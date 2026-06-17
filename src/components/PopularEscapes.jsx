@@ -75,7 +75,7 @@ const PopularEscapes = () => {
               
               <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a8a]/95 via-black/40 to-transparent flex flex-col justify-end p-8 transition-colors duration-500 group-hover:from-[#ea580c]/90">
                 <div className="translate-y-12 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                  <span className="text-white text-3xl font-extrabold leading-tight block mb-3 drop-shadow-lg">
+                  <span className="text-white text-2xl md:text-3xl font-extrabold leading-tight block mb-3 drop-shadow-lg">
                     {dest.name}
                   </span>
                   <span className="text-white/90 text-sm leading-relaxed line-clamp-3 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">

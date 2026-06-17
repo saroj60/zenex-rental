@@ -175,6 +175,52 @@ const About = () => {
         </div>
       </div>
 
+      {/* Meet the Team */}
+      <div className="bg-white py-24 border-y border-gray-200/60 mb-24">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-SM font-bold text-[#EA580C] uppercase tracking-widest mb-2">Our People</h2>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Meet The Experts</h3>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto">Our drivers and travel planners are the heart of Zenex Travel. They are trained professionals dedicated to your safety and comfort.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-[#F4F6F8] rounded-3xl overflow-hidden group">
+              <div className="h-64 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" alt="Sanjok Rai" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div className="p-6 text-center">
+                <h4 className="text-xl font-bold text-[#1e3a8a]">Sanjok Rai</h4>
+                <p className="text-[#EA580C] font-bold text-sm mb-3">Head of Operations</p>
+                <p className="text-gray-600 text-sm">With 15+ years in Nepal tourism, Sanjok ensures every fleet vehicle and tour operates flawlessly.</p>
+              </div>
+            </div>
+
+            <div className="bg-[#F4F6F8] rounded-3xl overflow-hidden group">
+              <div className="h-64 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" alt="Anjali Sharma" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div className="p-6 text-center">
+                <h4 className="text-xl font-bold text-[#1e3a8a]">Anjali Sharma</h4>
+                <p className="text-[#EA580C] font-bold text-sm mb-3">Travel Consultant</p>
+                <p className="text-gray-600 text-sm">Anjali specializes in crafting bespoke itineraries for our international clients seeking unique experiences.</p>
+              </div>
+            </div>
+
+            <div className="bg-[#F4F6F8] rounded-3xl overflow-hidden group">
+              <div className="h-64 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400" alt="Pemba Sherpa" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div className="p-6 text-center">
+                <h4 className="text-xl font-bold text-[#1e3a8a]">Pemba Sherpa</h4>
+                <p className="text-[#EA580C] font-bold text-sm mb-3">Lead Expedition Driver</p>
+                <p className="text-gray-600 text-sm">Pemba is our chief 4x4 off-road specialist, safely navigating the treacherous Mustang and Manang routes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* CTA */}
       <div className="max-w-5xl mx-auto px-4 md:px-8">
         <div className="bg-gradient-to-r from-[#0a2f4c] to-[#1e3a8a] rounded-3xl p-12 md:p-16 text-center shadow-2xl relative overflow-hidden">

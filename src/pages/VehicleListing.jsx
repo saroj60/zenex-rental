@@ -18,7 +18,15 @@ const VehicleListing = () => {
 
   const [filterType, setFilterType] = useState(searchType);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const { formatPrice } = useCurrency();
+
+  useEffect(() => {
+    // Simulate network fetch for professional feel
+    setIsLoading(true);
+    const timer = setTimeout(() => setIsLoading(false), 800);
+    return () => clearTimeout(timer);
+  }, [filterType, query, start, end, pickup, dropoff]);
 
   useEffect(() => {
     if (searchType && searchType !== 'All') {
@@ -100,8 +108,31 @@ const VehicleListing = () => {
 
           {/* Grid */}
           <div className="md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-            {filteredVehicles.map(v => (
-              <div key={v.id} className="bg-white rounded-2xl p-4 shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col">
+            {isLoading ? (
+              // Skeleton Loaders
+              [...Array(6)].map((_, i) => (
+                <div key={i} className="bg-white rounded-2xl p-4 shadow-sm border border-sky-tint flex flex-col animate-pulse">
+                  <div className="bg-gray-200 w-full h-48 rounded-lg mb-4"></div>
+                  <div className="bg-gray-200 h-6 w-3/4 rounded mb-2 mt-1"></div>
+                  <div className="bg-gray-200 h-8 w-1/2 rounded mb-4"></div>
+                  <div className="grid grid-cols-2 gap-2 mb-6 mt-auto">
+                    {[...Array(4)].map((_, j) => (
+                      <div key={j} className="bg-surface-container-low rounded-lg h-16"></div>
+                    ))}
+                  </div>
+                  <div className="flex flex-col gap-2 mt-2">
+                    <div className="bg-gray-200 h-11 w-full rounded-xl"></div>
+                    <div className="bg-gray-300 h-11 w-full rounded-xl"></div>
+                  </div>
+                </div>
+              ))
+            ) : filteredVehicles.length === 0 ? (
+              <div className="col-span-full py-12 text-center text-gray-500">
+                No vehicles match your current search criteria.
+              </div>
+            ) : (
+              filteredVehicles.map(v => (
+                <div key={v.id} className="bg-white rounded-2xl p-4 shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col">
                 <div className="relative overflow-hidden rounded-lg mb-4">
                   <img alt={v.name} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src={v.img} />
                   <span className="absolute top-2 left-2 bg-white/90 backdrop-blur text-himalayan-blue px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">{v.type}</span>
@@ -150,7 +181,7 @@ const VehicleListing = () => {
                   <Link to={`/checkout?car=${v.id}`} className="w-full flex justify-center items-center py-3 bg-himalayan-blue text-white rounded-xl font-bold text-sm hover:bg-primary transition-colors shadow-md">Book Now</Link>
                 </div>
               </div>
-            ))}
+            )))}
           </div>
         </div>
       </div>

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Phone, Menu, X, Search } from 'lucide-react';
+import { Phone, Menu, X, Search, Globe } from 'lucide-react';
+import { useCurrency } from '../context/CurrencyContext';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const { currency, setCurrency, availableCurrencies } = useCurrency();
 
   return (
     <header className="fixed top-4 left-0 right-0 z-50 px-4 md:px-8 w-full max-w-7xl mx-auto">
@@ -26,7 +28,19 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-4">
-
+          {/* Currency Switcher */}
+          <div className="hidden md:flex items-center gap-1 bg-gray-50 rounded-lg px-2 py-1.5 border border-gray-200 hover:border-[#1e3a8a] transition-colors">
+            <Globe size={16} className="text-gray-500" />
+            <select 
+              value={currency} 
+              onChange={(e) => setCurrency(e.target.value)}
+              className="bg-transparent border-none text-xs font-bold text-gray-700 outline-none cursor-pointer focus:ring-0"
+            >
+              {availableCurrencies.map(c => (
+                <option key={c} value={c}>{c}</option>
+              ))}
+            </select>
+          </div>
 
           <a href="tel:+9779767476521" className="hidden sm:flex w-10 h-10 rounded-full bg-gray-100 items-center justify-center text-gray-700 hover:bg-gray-200 transition-colors">
             <Phone size={18} />

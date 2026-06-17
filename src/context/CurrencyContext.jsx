@@ -5,13 +5,28 @@ const CurrencyContext = createContext();
 export const CurrencyProvider = ({ children }) => {
   const [currency, setCurrency] = useState('NPR');
   
-  // Only NPR available for now as requested
-  const availableCurrencies = ['NPR'];
+  const availableCurrencies = ['NPR', 'USD', 'EUR', 'INR'];
 
-  const formatPrice = (price) => {
-    // Base prices are now stored in NPR natively
-    const nprPrice = Number(price);
-    return `Rs. ${nprPrice.toLocaleString()}`;
+  // Approximate exchange rates from NPR
+  const exchangeRates = {
+    NPR: 1,
+    USD: 1 / 133,
+    EUR: 1 / 144,
+    INR: 1 / 1.6
+  };
+
+  const currencySymbols = {
+    NPR: 'Rs.',
+    USD: '$',
+    EUR: '€',
+    INR: '₹'
+  };
+
+  const formatPrice = (priceInNpr) => {
+    const nprAmount = Number(priceInNpr);
+    const converted = nprAmount * exchangeRates[currency];
+    
+    return `${currencySymbols[currency]} ${converted.toLocaleString(undefined, { maximumFractionDigits: currency === 'NPR' || currency === 'INR' ? 0 : 2 })}`;
   };
 
   return (

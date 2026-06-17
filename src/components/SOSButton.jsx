@@ -9,7 +9,7 @@ const SOSButton = () => {
       {/* Floating SOS Button */}
       <button 
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-[10.5rem] sm:bottom-24 right-6 bg-[#DC2626] text-white p-4 rounded-full shadow-[0_10px_25px_rgba(220,38,38,0.4)] z-50 hover:scale-110 transition-transform flex items-center justify-center border-2 border-white animate-pulse"
+        className="fixed bottom-24 right-6 bg-[#DC2626] text-white p-4 rounded-full shadow-[0_10px_25px_rgba(220,38,38,0.4)] z-50 hover:scale-110 transition-transform hidden sm:flex items-center justify-center border-2 border-white animate-pulse"
       >
         <ShieldAlert size={28} />
       </button>

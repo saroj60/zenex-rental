@@ -39,7 +39,7 @@ const AIChatbot = () => {
       {/* Floating Button */}
       <button 
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-24 sm:bottom-6 right-6 w-14 h-14 bg-himalayan-blue text-white rounded-full shadow-2xl flex items-center justify-center hover:bg-primary transition-transform hover:scale-105 z-50 ${isOpen ? 'hidden' : 'flex'}`}
+        className={`fixed bottom-6 right-20 w-14 h-14 bg-himalayan-blue text-white rounded-full shadow-2xl items-center justify-center hover:bg-primary transition-transform hover:scale-105 z-50 ${isOpen ? 'hidden' : 'hidden sm:flex'}`}
       >
         <MessageSquare size={24} />
       </button>

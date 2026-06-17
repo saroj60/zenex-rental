@@ -12,6 +12,9 @@ import TripPlanner from './pages/TripPlanner';
 import AirportRental from './pages/AirportRental';
 import Destinations from './pages/Destinations';
 import DestinationDetail from './pages/DestinationDetail';
+import TermsConditions from './pages/TermsConditions';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import CancellationPolicy from './pages/CancellationPolicy';
 import Packages from './pages/Packages';
 import PackageDetail from './pages/PackageDetail';
 import Tours from './pages/Tours';
@@ -50,6 +53,9 @@ const router = createBrowserRouter([
       { path: 'blog', element: <Blogs /> },
       { path: 'destinations', element: <Destinations /> },
       { path: 'destinations/:id', element: <DestinationDetail /> },
+      { path: 'terms-and-conditions', element: <TermsConditions /> },
+      { path: 'privacy-policy', element: <PrivacyPolicy /> },
+      { path: 'cancellation-policy', element: <CancellationPolicy /> },
       { path: 'packages', element: <Packages /> },
       { path: 'packages/:id', element: <PackageDetail /> },
       { path: 'tours', element: <Tours /> },

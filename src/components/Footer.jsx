@@ -28,6 +28,16 @@ const Footer = () => {
                 <MessageCircle size={20} className="hover:text-white cursor-pointer transition-colors" />
               </a>
             </div>
+
+            {/* Trust Badges */}
+            <div className="mt-8">
+              <p className="text-white text-xs font-bold uppercase tracking-wider mb-3">Trusted By & Associated With</p>
+              <div className="flex flex-wrap gap-3 items-center">
+                <div className="bg-white px-2 py-1 rounded shadow-sm text-[10px] font-bold text-blue-900 flex items-center">NTB Approved</div>
+                <div className="bg-white px-2 py-1 rounded shadow-sm text-[10px] font-bold text-blue-900 flex items-center">TAAN Member</div>
+                <div className="bg-white/10 px-2 py-1 rounded text-blue-100 text-[10px] font-bold border border-white/20">Visa / MC / eSewa</div>
+              </div>
+            </div>
           </div>
           
           <div className="flex flex-col gap-3">
@@ -40,10 +50,10 @@ const Footer = () => {
           
           <div className="flex flex-col gap-3">
             <h4 className="text-white font-bold text-[15px] mb-2">Support</h4>
-            <a className="text-blue-200 text-sm hover:text-white transition-colors w-fit" href="#">FAQ</a>
-            <a className="text-blue-200 text-sm hover:text-white transition-colors w-fit" href="#">Travel Guides</a>
-            <a className="text-blue-200 text-sm hover:text-white transition-colors w-fit" href="#">Terms & Conditions</a>
-            <a className="text-blue-200 text-sm hover:text-white transition-colors w-fit" href="#">Privacy Policy</a>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/contact">FAQ</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/cancellation-policy">Cancellation Policy</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/terms-and-conditions">Terms & Conditions</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/privacy-policy">Privacy Policy</Link>
           </div>
           
           <div className="flex flex-col gap-3">
