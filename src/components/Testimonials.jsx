@@ -7,7 +7,7 @@ const Testimonials = () => {
       name: 'Sarah Jenkins',
       trip: 'Mustang Road Trip',
       img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150',
-      text: "The 4x4 we rented for the Mustang trip was immaculate. It handled the rough terrain effortlessly, and the support from NepalDrive gave us total peace of mind.",
+      text: "The 4x4 we rented for the Mustang trip was immaculate. It handled the rough terrain effortlessly, and the support from Zenex Travel gave us total peace of mind.",
     },
     {
       name: 'David Chen',
@@ -19,7 +19,7 @@ const Testimonials = () => {
       name: 'Elena Rodriguez',
       trip: 'Annapurna Circuit',
       img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150',
-      text: "The vehicle was perfectly maintained. Having a reliable SUV made our family trip to Pokhara and beyond incredibly comfortable. Will definitely use NepalDrive again.",
+      text: "The vehicle was perfectly maintained. Having a reliable SUV made our family trip to Pokhara and beyond incredibly comfortable. Will definitely use Zenex Travel again.",
     }
   ];
 

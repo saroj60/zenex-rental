@@ -10,10 +10,16 @@ const Destinations = () => {
 
   const { destinations } = useAppData();
   const [activeFilter, setActiveFilter] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
   
   const filters = ['All', 'Himalayas', 'Valley', 'Terai'];
 
-  const filteredDestinations = activeFilter === 'All' ? destinations : destinations.filter(d => d.region === activeFilter);
+  const filteredDestinations = destinations.filter(d => {
+    const matchesFilter = activeFilter === 'All' || d.region === activeFilter;
+    const matchesSearch = d.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                          d.desc.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesFilter && matchesSearch;
+  });
 
   return (
     <div className="bg-[#F4F6F8] min-h-screen pb-20">
@@ -39,11 +45,13 @@ const Destinations = () => {
             From the towering peaks of the Himalayas to the lush jungles of the Terai, find the perfect vehicle for your destination.
           </p>
           
-          <div className="bg-white p-2 rounded-2xl shadow-xl flex items-center max-w-2xl mx-auto border border-white/50">
+          <div className="bg-white p-2 rounded-2xl shadow-xl flex items-center max-w-2xl mx-auto border border-white/50 mb-12">
             <div className="flex-1 flex items-center px-4">
               <Search className="text-gray-400 mr-3" size={24} />
               <input 
                 type="text" 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search for a destination (e.g. Pokhara)..." 
                 className="w-full bg-transparent outline-none text-gray-800 font-medium placeholder:text-gray-400"
               />

@@ -1,11 +1,10 @@
 import React from 'react';
-import { ArrowRight, Clock } from 'lucide-react';
+import { ArrowRight, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useAppData } from '../context/AppDataContext';
+import { featuredPackages } from '../pages/Packages';
 
 const AdventurePackages = () => {
-  const { packages } = useAppData();
-  const displayPackages = packages.slice(0, 5);
+  const displayPackages = featuredPackages.slice(0, 5);
 
   return (
     <section className="px-4 md:px-8 max-w-7xl mx-auto py-16">
@@ -26,7 +25,7 @@ const AdventurePackages = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6">
               <span className="text-white text-xl md:text-2xl font-bold leading-tight drop-shadow-md mb-2">{pkg.title}</span>
               <div className="flex items-center gap-1.5 text-orange-400 font-medium text-sm drop-shadow-md">
-                <Clock size={16} /> {pkg.duration}
+                <MapPin size={16} /> {pkg.location}
               </div>
             </div>
           </Link>

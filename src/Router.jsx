@@ -14,6 +14,7 @@ import Destinations from './pages/Destinations';
 import DestinationDetail from './pages/DestinationDetail';
 import Packages from './pages/Packages';
 import PackageDetail from './pages/PackageDetail';
+import Tours from './pages/Tours';
 import DashboardLayout from './layouts/DashboardLayout';
 import FleetManagement from './pages/dashboards/FleetManagement';
 import AdminLogin from './pages/admin/AdminLogin';
@@ -21,7 +22,16 @@ import AdminOverview from './pages/dashboards/AdminOverview';
 import DestinationsAdmin from './pages/dashboards/DestinationsAdmin';
 import PackagesAdmin from './pages/dashboards/PackagesAdmin';
 import BookingsAdmin from './pages/dashboards/BookingsAdmin';
+import DriversAdmin from './pages/dashboards/DriversAdmin';
 import ProtectedRoute from './components/ProtectedRoute';
+import Blogs from './pages/Blogs';
+import BlogDetail from './pages/BlogDetail';
+import AdminLayout from './pages/admin/AdminLayout';
+import ManageBlogs from './pages/admin/ManageBlogs';
+import AddBlog from './pages/admin/AddBlog';
+import ManageVehicles from './pages/admin/ManageVehicles';
+import AddVehicle from './pages/admin/AddVehicle';
+import ManageGallery from './pages/admin/ManageGallery';
 
 const router = createBrowserRouter([
   {
@@ -36,12 +46,23 @@ const router = createBrowserRouter([
       { path: 'airport/:code', element: <AirportRental /> },
       { path: 'about', element: <About /> },
       { path: 'contact', element: <Contact /> },
-      { path: 'blog', element: <Blog /> },
+      { path: 'blog', element: <Blogs /> },
       { path: 'destinations', element: <Destinations /> },
       { path: 'destinations/:id', element: <DestinationDetail /> },
       { path: 'packages', element: <Packages /> },
       { path: 'packages/:id', element: <PackageDetail /> },
+      { path: 'tours', element: <Tours /> },
+      { path: 'blogs', element: <Blogs /> },
+      { path: 'blogs/:id', element: <BlogDetail /> },
     ],
+  },
+  {
+    path: '/admin',
+    element: <ProtectedRoute><AdminLayout /></ProtectedRoute>,
+    children: [
+      { path: 'vehicles', element: <ManageVehicles /> },
+      { path: 'add-vehicle', element: <AddVehicle /> },
+    ]
   },
   {
     path: '/admin/login',
@@ -53,9 +74,13 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <AdminOverview /> },
       { path: 'fleet', element: <FleetManagement /> },
+      { path: 'drivers', element: <DriversAdmin /> },
       { path: 'destinations', element: <DestinationsAdmin /> },
       { path: 'packages', element: <PackagesAdmin /> },
       { path: 'bookings', element: <BookingsAdmin /> },
+      { path: 'blogs', element: <ManageBlogs /> },
+      { path: 'add-blog', element: <AddBlog /> },
+      { path: 'gallery', element: <ManageGallery /> },
     ]
   }
 ]);

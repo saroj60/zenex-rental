@@ -76,7 +76,7 @@ const AdminLogin = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="admin@nepaldrive.com" 
+                  placeholder="admin@zenextravel.com" 
                   className="w-full bg-blue-900/40 border border-white/10 rounded-xl pl-11 pr-4 py-3.5 text-white placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-[#EA580C]/50 focus:border-[#EA580C] transition-all"
                 />
               </div>
@@ -116,7 +116,7 @@ const AdminLogin = () => {
           
           <div className="mt-8 text-center text-xs text-blue-300">
             <p>Demo Credentials:</p>
-            <p className="font-mono mt-1 opacity-70">admin@nepaldrive.com / password123</p>
+            <p className="font-mono mt-1 opacity-70">admin@zenextravel.com / password123</p>
           </div>
         </div>
       </div>

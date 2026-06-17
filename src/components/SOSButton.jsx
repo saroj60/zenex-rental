@@ -54,13 +54,13 @@ const SOSButton = () => {
                 <PhoneCall size={20} className="text-sunset-orange" />
               </a>
 
-              <a href="tel:+9779800000000" className="flex items-center gap-4 bg-surface-container-low p-4 rounded-2xl hover:bg-surface-container transition-colors border border-outline-variant/30 group">
+              <a href="tel:+9779767476521" className="flex items-center gap-4 bg-surface-container-low p-4 rounded-2xl hover:bg-surface-container transition-colors border border-outline-variant/30 group">
                 <div className="w-12 h-12 bg-forest-green/10 text-forest-green rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Wrench size={24} />
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-on-surface">24/7 Roadside Assist</h4>
-                  <p className="text-xs text-on-surface-variant font-mono mt-1">NepalDrive Support</p>
+                  <p className="text-xs text-on-surface-variant font-mono mt-1">Zenex Support</p>
                 </div>
                 <PhoneCall size={20} className="text-forest-green" />
               </a>

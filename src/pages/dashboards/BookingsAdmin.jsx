@@ -5,21 +5,21 @@ import { useAppData } from '../../context/AppDataContext';
 
 const BookingsAdmin = () => {
   const { formatPrice } = useCurrency();
-  const { bookings, deleteBooking, addBooking, updateBooking } = useAppData();
+  const { bookings, deleteBooking, addBooking, updateBooking, vehicles, packages } = useAppData();
   const [searchTerm, setSearchTerm] = useState('');
 
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEditMode, setIsEditMode] = useState(false);
   const [currentBooking, setCurrentBooking] = useState({
-    id: '', customer: '', vehicle: '', dates: '', amount: '', status: 'Pending', date: ''
+    id: '', customer: '', type: 'Vehicle', vehicle: '', dates: '', amount: '', status: 'Pending', date: ''
   });
 
   const filteredBookings = bookings.filter(b => b.customer.toLowerCase().includes(searchTerm.toLowerCase()));
 
   const handleOpenAddModal = () => {
     setIsEditMode(false);
-    setCurrentBooking({ id: '', customer: '', vehicle: '', dates: '', amount: '', status: 'Pending', date: new Date().toISOString().split('T')[0] });
+    setCurrentBooking({ id: '', customer: '', type: 'Vehicle', vehicle: '', dates: '', amount: '', status: 'Pending', date: new Date().toISOString().split('T')[0] });
     setIsModalOpen(true);
   };
 
@@ -69,7 +69,8 @@ const BookingsAdmin = () => {
               <tr>
                 <th className="px-6 py-4">Booking ID</th>
                 <th className="px-6 py-4">Customer</th>
-                <th className="px-6 py-4">Vehicle</th>
+                <th className="px-6 py-4">Type</th>
+                <th className="px-6 py-4">Booked Item</th>
                 <th className="px-6 py-4">Dates</th>
                 <th className="px-6 py-4">Amount</th>
                 <th className="px-6 py-4">Status</th>
@@ -81,7 +82,12 @@ const BookingsAdmin = () => {
                 <tr key={b.id} className="hover:bg-surface/50 transition-colors">
                   <td className="px-6 py-4 font-mono font-bold text-himalayan-blue">{b.id}</td>
                   <td className="px-6 py-4 font-bold">{b.customer}</td>
-                  <td className="px-6 py-4 text-on-surface-variant">{b.vehicle}</td>
+                  <td className="px-6 py-4">
+                    <span className={`px-2 py-1 rounded text-xs font-bold ${b.type === 'Tour' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-blue-700'}`}>
+                      {b.type === 'Tour' ? 'Tour Package' : 'Car Rental'}
+                    </span>
+                  </td>
+                  <td className="px-6 py-4 text-on-surface-variant font-medium">{b.vehicle}</td>
                   <td className="px-6 py-4 text-on-surface-variant">{b.dates}</td>
                   <td className="px-6 py-4 font-bold text-on-surface">{b.amount}</td>
                   <td className="px-6 py-4">
@@ -132,8 +138,22 @@ const BookingsAdmin = () => {
                   </div>
                   
                   <div className="col-span-2 space-y-1">
-                    <label className="text-xs font-bold text-on-surface-variant">Vehicle / Package</label>
-                    <input type="text" required value={currentBooking.vehicle} onChange={e => setCurrentBooking({...currentBooking, vehicle: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. Toyota Fortuner" />
+                    <label className="text-xs font-bold text-on-surface-variant">Booking Type</label>
+                    <select value={currentBooking.type || 'Vehicle'} onChange={e => setCurrentBooking({...currentBooking, type: e.target.value, vehicle: ''})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue">
+                      <option value="Vehicle">Car Rental</option>
+                      <option value="Tour">Tour Package</option>
+                    </select>
+                  </div>
+                  
+                  <div className="col-span-2 space-y-1">
+                    <label className="text-xs font-bold text-on-surface-variant">Booked Item Name</label>
+                    <input type="text" list="item-options" required value={currentBooking.vehicle} onChange={e => setCurrentBooking({...currentBooking, vehicle: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder={currentBooking.type === 'Tour' ? "e.g. Annapurna Circuit Jeep Rental" : "e.g. Toyota Fortuner"} />
+                    <datalist id="item-options">
+                      {currentBooking.type === 'Tour' 
+                        ? packages?.map(p => <option key={p.id} value={p.title} />)
+                        : vehicles?.map(v => <option key={v.id} value={v.name} />)
+                      }
+                    </datalist>
                   </div>
 
                   <div className="space-y-1">

@@ -15,7 +15,7 @@ const MobileAppPromo = () => {
             Mobile Experience
           </div>
           <h3 className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight leading-tight">
-            Book Faster with the <span className="text-[#EA580C]">NepalDrive</span> App
+            Book Faster with the <span className="text-[#EA580C]">Zenex Travel</span> App
           </h3>
           
           <ul className="mb-10 space-y-4">
@@ -71,7 +71,7 @@ const MobileAppPromo = () => {
             {/* Screen Content */}
             <img 
               src="https://images.unsplash.com/photo-1618587370335-7c0b021d7b6d?auto=format&fit=crop&q=80&w=400" 
-              alt="NepalDrive App" 
+              alt="Zenex App" 
               className="w-full h-full object-cover relative z-10" 
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 flex flex-col justify-end p-6">

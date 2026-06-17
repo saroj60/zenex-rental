@@ -3,32 +3,68 @@ import { Link, useParams } from 'react-router-dom';
 import { Users, Gauge, Fuel, CheckCircle2, Navigation, Shield, Wind, Calendar, Star, Languages, MessageCircle } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { useAppData } from '../context/AppDataContext';
+import { useBooking } from '../context/BookingContext';
 
 const VehicleDetail = () => {
   const { id } = useParams();
   const { formatPrice } = useCurrency();
-  const { vehicles } = useAppData();
+  const { vehicles, drivers } = useAppData();
   
   const vehicle = vehicles.find(v => v.id.toString() === id) || vehicles[0];
   
   const [activeImg, setActiveImg] = useState(vehicle.img);
   const [driverMode, setDriverMode] = useState('self'); // 'self', 'driver', 'luxury'
+  
+  const { isVehicleAvailable } = useBooking();
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [days, setDays] = useState(3);
+  const [isAvailable, setIsAvailable] = useState(true);
+
+  useEffect(() => {
+    if (startDate && endDate) {
+      const s = new Date(startDate);
+      const e = new Date(endDate);
+      const diffTime = Math.abs(e - s);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
+      setDays(diffDays);
+      setIsAvailable(isVehicleAvailable(vehicle.id, startDate, endDate));
+    } else {
+      setDays(3);
+      setIsAvailable(true);
+    }
+  }, [startDate, endDate, vehicle.id, isVehicleAvailable]);
 
   useEffect(() => {
     setActiveImg(vehicle.img);
   }, [vehicle]);
 
   const driverOptions = {
-    self: { label: 'Self Drive', price: 0 },
-    driver: { label: 'Car with Driver', price: 25 },
-    luxury: { label: 'Luxury Chauffeur', price: 50 }
+    self: { label: 'Self Drive', price: 0 }
   };
 
-  const images = [
-    vehicle.img,
-    '/images/luxury_car.png',
-    '/images/economy_car.png'
-  ];
+  if (drivers && drivers.length > 0) {
+    drivers.forEach(d => {
+      if (!d.assignedVehicleId || d.assignedVehicleId.toString() === vehicle.id.toString()) {
+        driverOptions[d.id] = { ...d };
+      }
+    });
+  } else {
+    driverOptions['driver'] = { 
+      label: 'With Driver', 
+      price: (vehicle.priceWithDriver && Number(vehicle.priceWithDriver) > Number(vehicle.price)) 
+        ? (Number(vehicle.priceWithDriver) - Number(vehicle.price)) 
+        : 1500 
+    };
+  }
+
+  const selectedDriver = driverOptions[driverMode] || driverOptions['self'];
+
+  const taxes = vehicle.tax !== undefined && vehicle.tax !== null ? Number(vehicle.tax) : 25;
+  const currentVehiclePrice = driverMode === 'self' ? Number(vehicle.price) : (Number(vehicle.priceWithDriver) || Number(vehicle.price));
+  const currentDriverFee = (driverMode === 'driver' && Number(vehicle.priceWithDriver) > 0) ? 0 : Number(driverOptions[driverMode]?.price || 0);
+
+  const images = vehicle.images && vehicle.images.length > 0 ? vehicle.images : [vehicle.img];
 
   return (
     <div className="px-margin-mobile md:px-margin-desktop py-8 bg-background min-h-screen">
@@ -47,13 +83,15 @@ const VehicleDetail = () => {
             <div className="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-sm">
               <img src={activeImg} alt={vehicle.name} className="w-full h-full object-cover" />
             </div>
-            <div className="flex gap-4 overflow-x-auto hide-scrollbar">
-              {images.map((img, idx) => (
-                <button key={idx} onClick={() => setActiveImg(img)} className={`w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 border-2 transition-colors ${activeImg === img ? 'border-sunset-orange' : 'border-transparent'}`}>
-                  <img src={img} alt="Thumbnail" className="w-full h-full object-cover" />
-                </button>
-              ))}
-            </div>
+            {images.length > 1 && (
+              <div className="flex gap-4 overflow-x-auto hide-scrollbar">
+                {images.map((img, idx) => (
+                  <button key={idx} onClick={() => setActiveImg(img)} className={`w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 border-2 transition-colors ${activeImg === img ? 'border-sunset-orange' : 'border-transparent'}`}>
+                    <img src={img} alt="Thumbnail" className="w-full h-full object-cover" />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Title & Basics */}
@@ -73,10 +111,10 @@ const VehicleDetail = () => {
               
               <div className="p-6 bg-white animate-fade-in">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                  <div className="flex flex-col gap-1"><span className="text-himalayan-blue"><Users size={20}/></span><span className="text-xs text-on-surface-variant uppercase tracking-wider">Capacity</span><span className="font-bold">7 Passengers</span></div>
-                  <div className="flex flex-col gap-1"><span className="text-himalayan-blue"><Gauge size={20}/></span><span className="text-xs text-on-surface-variant uppercase tracking-wider">Transmission</span><span className="font-bold">Automatic</span></div>
-                  <div className="flex flex-col gap-1"><span className="text-himalayan-blue"><Fuel size={20}/></span><span className="text-xs text-on-surface-variant uppercase tracking-wider">Fuel Type</span><span className="font-bold">Diesel</span></div>
-                  <div className="flex flex-col gap-1"><span className="text-himalayan-blue"><Wind size={20}/></span><span className="text-xs text-on-surface-variant uppercase tracking-wider">Climate</span><span className="font-bold">Dual AC</span></div>
+                  <div className="flex flex-col gap-1"><span className="text-himalayan-blue"><Users size={20}/></span><span className="text-xs text-on-surface-variant uppercase tracking-wider">Capacity</span><span className="font-bold">{vehicle.pax} Passengers</span></div>
+                  <div className="flex flex-col gap-1"><span className="text-himalayan-blue"><Gauge size={20}/></span><span className="text-xs text-on-surface-variant uppercase tracking-wider">Transmission</span><span className="font-bold">{vehicle.trans}</span></div>
+                  <div className="flex flex-col gap-1"><span className="text-himalayan-blue"><Fuel size={20}/></span><span className="text-xs text-on-surface-variant uppercase tracking-wider">Fuel Type</span><span className="font-bold">{vehicle.fuel}</span></div>
+                  <div className="flex flex-col gap-1"><span className="text-himalayan-blue"><Wind size={20}/></span><span className="text-xs text-on-surface-variant uppercase tracking-wider">Climate</span><span className="font-bold">AC Installed</span></div>
                 </div>
                 
                 <div className="mt-6 pt-6 border-t border-outline-variant/30 flex gap-4 items-center bg-surface-container-low p-4 rounded-xl">
@@ -85,7 +123,7 @@ const VehicleDetail = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm">Luggage Capacity Visualizer</h4>
-                    <p className="text-xs text-on-surface-variant mt-1">Fits 3 Large Suitcases + 2 Carry-on Bags comfortably in the trunk.</p>
+                    <p className="text-xs text-on-surface-variant mt-1">Fits up to {vehicle.luggage || 2} bags comfortably in the trunk.</p>
                   </div>
                 </div>
               </div>
@@ -96,11 +134,13 @@ const VehicleDetail = () => {
           <div className="mb-8">
             <h3 className="font-headline-md text-xl mb-4">Included Features</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6">
-              <div className="flex items-center gap-2 text-on-surface"><CheckCircle2 size={18} className="text-forest-green"/> Comprehensive Insurance</div>
-              <div className="flex items-center gap-2 text-on-surface"><CheckCircle2 size={18} className="text-forest-green"/> Unlimited Mileage</div>
-              <div className="flex items-center gap-2 text-on-surface"><CheckCircle2 size={18} className="text-forest-green"/> 24/7 Roadside Assistance</div>
-              <div className="flex items-center gap-2 text-on-surface"><Navigation size={18} className="text-forest-green"/> GPS Navigation Included</div>
-              <div className="flex items-center gap-2 text-on-surface"><Shield size={18} className="text-forest-green"/> First Aid Kit & Spare Tire</div>
+              {vehicle.features && vehicle.features.length > 0 ? (
+                vehicle.features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-2 text-on-surface"><CheckCircle2 size={18} className="text-forest-green"/> {feature}</div>
+                ))
+              ) : (
+                <div className="text-on-surface-variant text-sm">No specific features listed.</div>
+              )}
             </div>
           </div>
           
@@ -108,45 +148,32 @@ const VehicleDetail = () => {
           <div className="mb-8">
             <h3 className="font-headline-md text-xl mb-3">Vehicle Overview</h3>
             <p className="text-on-surface-variant leading-relaxed text-sm md:text-base">
-              The Toyota Fortuner is a rugged yet refined SUV perfect for the challenging terrains of Nepal. Whether you're heading to the bumpy trails of Mustang or cruising through the Kathmandu Valley, its powerful diesel engine and high ground clearance guarantee a smooth and safe journey. The spacious interior ensures comfort for up to 7 passengers with ample luggage space.
+              {vehicle.description || 'A premium vehicle ready for your next adventure.'}
             </p>
           </div>
 
-          {/* Driver Options */}
+          {/* Driver Profile (If selected) */}
           <div>
-            <h3 className="font-headline-md text-xl mb-4">Choose Your Experience</h3>
-            <div className="flex bg-surface-container-low p-1 rounded-xl mb-6">
-              {Object.keys(driverOptions).map(key => (
-                <button 
-                  key={key} 
-                  onClick={() => setDriverMode(key)}
-                  className={`flex-1 py-2.5 rounded-lg text-sm font-bold transition-colors ${driverMode === key ? 'bg-white shadow-sm text-himalayan-blue' : 'text-on-surface-variant hover:text-on-surface'}`}
-                >
-                  {driverOptions[key].label}
-                </button>
-              ))}
-            </div>
-
-            {driverMode !== 'self' && (
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-sky-tint flex flex-col md:flex-row gap-6 items-center md:items-start animate-fade-in">
+            {driverMode !== 'self' && selectedDriver && (
+              <div className="bg-white p-6 rounded-2xl shadow-sm border border-sky-tint flex flex-col md:flex-row gap-6 items-center md:items-start animate-fade-in mt-6">
                 <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-outline-variant shadow-sm shrink-0">
-                  <img src={driverMode === 'driver' ? 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Dinesh_Subba_%28Limbu%29.jpg/800px-Dinesh_Subba_%28Limbu%29.jpg' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bipin_Karki.jpg/800px-Bipin_Karki.jpg'} alt="Driver" className="w-full h-full object-cover" />
+                  {selectedDriver.img ? <img src={selectedDriver.img} alt="Driver" className="w-full h-full object-cover" /> : <Users className="w-full h-full p-2 text-gray-400" />}
                 </div>
                 <div className="flex-1 text-center md:text-left">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                     <div>
-                      <h4 className="font-headline-md text-lg">{driverMode === 'driver' ? 'Ramesh Thapa' : 'Captain Rajesh'}</h4>
-                      <p className="text-sm text-himalayan-blue font-bold">{driverMode === 'driver' ? 'Verified Local Driver' : 'Elite Luxury Chauffeur'}</p>
+                      <h4 className="font-headline-md text-lg">{selectedDriver.name}</h4>
+                      <p className="text-sm text-himalayan-blue font-bold">{selectedDriver.type}</p>
                     </div>
                     <div className="flex items-center gap-1 text-sunset-orange bg-surface-container px-2 py-1 rounded-full mt-2 md:mt-0 justify-center md:justify-start">
-                      <Star size={14} className="fill-current" /> <span className="text-xs font-bold font-mono">4.9/5</span>
+                      <Star size={14} className="fill-current" /> <span className="text-xs font-bold font-mono">{selectedDriver.rating}/5</span>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-3 mt-4 text-sm text-on-surface-variant">
-                    <div className="flex items-center gap-2"><Languages size={16} className="text-outline"/> English, Nepali, Hindi</div>
-                    <div className="flex items-center gap-2"><Shield size={16} className="text-outline"/> {driverMode === 'driver' ? '8 Years Exp.' : '15 Years Exp.'}</div>
+                    <div className="flex items-center gap-2"><Languages size={16} className="text-outline"/> {selectedDriver.languages}</div>
+                    <div className="flex items-center gap-2"><Shield size={16} className="text-outline"/> {selectedDriver.experience}</div>
                   </div>
-                  <p className="text-sm text-on-surface-variant mt-4 italic">"I know every curve of the mountain roads. Your safety is my priority."</p>
+                  <p className="text-sm text-on-surface-variant mt-4 italic">"{selectedDriver.quote}"</p>
                 </div>
               </div>
             )}
@@ -164,8 +191,24 @@ const VehicleDetail = () => {
             )}
 
             <div className="flex items-end gap-1 mb-6">
-              <span className="text-4xl font-bold text-sunset-orange">{formatPrice(vehicle.price + driverOptions[driverMode].price)}</span>
+              <span className="text-4xl font-bold text-sunset-orange">{formatPrice(currentVehiclePrice + currentDriverFee)}</span>
               <span className="text-on-surface-variant mb-1">/ day</span>
+            </div>
+
+            {/* Driver Options Toggle */}
+            <div className="space-y-1 mb-6">
+              <label className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Experience</label>
+              <div className="flex bg-surface-container-low p-1 rounded-xl">
+                {Object.keys(driverOptions).map(key => (
+                  <button 
+                    key={key} 
+                    onClick={() => setDriverMode(key)}
+                    className={`flex-1 py-2 rounded-lg text-sm font-bold transition-colors ${driverMode === key ? 'bg-white shadow-sm text-himalayan-blue' : 'text-on-surface-variant hover:text-on-surface'}`}
+                  >
+                    {driverOptions[key].label}
+                  </button>
+                ))}
+              </div>
             </div>
             
             <div className="space-y-4 mb-6">
@@ -173,14 +216,14 @@ const VehicleDetail = () => {
                 <label className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Pickup Date</label>
                 <div className="flex items-center bg-surface-container-low border-none rounded-lg p-3">
                   <Calendar size={18} className="text-himalayan-blue mr-2"/>
-                  <input type="date" className="bg-transparent outline-none w-full text-on-surface" />
+                  <input type="date" value={startDate} onChange={e => setStartDate(e.target.value)} className="bg-transparent outline-none w-full text-on-surface" />
                 </div>
               </div>
               <div className="space-y-1">
                 <label className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Dropoff Date</label>
                 <div className="flex items-center bg-surface-container-low border-none rounded-lg p-3">
                   <Calendar size={18} className="text-himalayan-blue mr-2"/>
-                  <input type="date" className="bg-transparent outline-none w-full text-on-surface" />
+                  <input type="date" value={endDate} onChange={e => setEndDate(e.target.value)} className="bg-transparent outline-none w-full text-on-surface" />
                 </div>
               </div>
               <div className="space-y-1">
@@ -194,19 +237,36 @@ const VehicleDetail = () => {
             </div>
 
             <div className="bg-surface p-4 rounded-lg mb-6">
-              <div className="flex justify-between text-sm mb-2 text-on-surface-variant"><span>Vehicle (3 Days)</span> <span>{formatPrice(vehicle.price * 3)}</span></div>
-              {driverMode !== 'self' && (
-                <div className="flex justify-between text-sm mb-2 text-on-surface-variant"><span>{driverOptions[driverMode].label}</span> <span>{formatPrice(driverOptions[driverMode].price * 3)}</span></div>
+              <div className="flex justify-between text-sm mb-2 text-on-surface-variant"><span>Vehicle ({days} Days)</span> <span>{formatPrice(currentVehiclePrice * days)}</span></div>
+              {driverMode !== 'self' && currentDriverFee > 0 && (
+                <div className="flex justify-between text-sm mb-2 text-on-surface-variant"><span>{driverOptions[driverMode].label}</span> <span>{formatPrice(currentDriverFee * days)}</span></div>
               )}
-              <div className="flex justify-between text-sm mb-2 text-on-surface-variant"><span>Taxes & Fees</span> <span>{formatPrice(25)}</span></div>
-              <div className="border-t border-outline-variant/30 mt-2 pt-2 flex justify-between font-bold text-lg"><span>Total</span> <span>{formatPrice((vehicle.price * 3) + 25 + (driverOptions[driverMode].price * 3))}</span></div>
+              {driverMode !== 'self' && currentDriverFee === 0 && (
+                <div className="flex justify-between text-sm mb-2 text-on-surface-variant"><span>{driverOptions[driverMode].label}</span> <span className="text-green-600 font-bold">Included</span></div>
+              )}
+              <div className="flex justify-between text-sm mb-2 text-on-surface-variant"><span>Taxes & Fees</span> <span>{formatPrice(taxes)}</span></div>
+              <div className="border-t border-outline-variant/30 mt-2 pt-2 flex justify-between font-bold text-lg"><span>Total</span> <span>{formatPrice((currentVehiclePrice * days) + taxes + (currentDriverFee * days))}</span></div>
             </div>
 
-            <Link to={`/checkout?car=${vehicle.id}&driver=${driverMode}`} className="block w-full bg-himalayan-blue text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-primary transition-colors shadow-lg active:scale-95 duration-200">
+            {!isAvailable && (
+              <div className="bg-red-100 text-red-800 text-sm p-3 rounded-lg mb-4 text-center font-semibold">
+                Vehicle is not available for these dates.
+              </div>
+            )}
+
+            <Link 
+              to={isAvailable ? `/checkout?car=${vehicle.id}&driver=${driverMode}&start=${startDate}&end=${endDate}` : '#'} 
+              className={`block w-full text-center py-4 rounded-xl font-bold text-lg transition-colors shadow-lg ${
+                isAvailable 
+                  ? 'bg-himalayan-blue text-white hover:bg-primary active:scale-95 duration-200' 
+                  : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+              }`}
+              onClick={(e) => !isAvailable && e.preventDefault()}
+            >
               Continue to Book
             </Link>
             
-            <a href="https://wa.me/9779800000000?text=Hi!%20I%20want%20to%20book%20the%20Toyota%20Fortuner." target="_blank" rel="noreferrer" className="mt-3 block w-full bg-[#25D366] text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-[#1DA851] transition-colors shadow-lg flex items-center justify-center gap-2 active:scale-95 duration-200">
+            <a href="https://wa.me/9779767476521?text=Hi!%20I%20want%20to%20book%20the%20Toyota%20Fortuner." target="_blank" rel="noreferrer" className="mt-3 block w-full bg-[#25D366] text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-[#1DA851] transition-colors shadow-lg flex items-center justify-center gap-2 active:scale-95 duration-200">
               <MessageCircle size={20} /> Book via WhatsApp
             </a>
             

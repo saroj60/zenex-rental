@@ -101,15 +101,15 @@ const AdminOverview = () => {
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
           <h2 className="text-xl font-extrabold text-[#1e3a8a] mb-6">Quick Actions</h2>
           <div className="space-y-3">
-            <button onClick={() => navigate('/admin/fleet')} className="w-full flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-[#EA580C] hover:bg-orange-50 transition-colors group">
+            <button onClick={() => navigate('/dashboard/fleet')} className="w-full flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-[#EA580C] hover:bg-orange-50 transition-colors group">
               <span className="font-bold text-gray-700 group-hover:text-[#EA580C]">Add New Vehicle</span>
               <Car size={18} className="text-gray-400 group-hover:text-[#EA580C]" />
             </button>
-            <button onClick={() => navigate('/admin/destinations')} className="w-full flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-blue-600 hover:bg-blue-50 transition-colors group">
+            <button onClick={() => navigate('/dashboard/destinations')} className="w-full flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-blue-600 hover:bg-blue-50 transition-colors group">
               <span className="font-bold text-gray-700 group-hover:text-blue-600">Manage Destinations</span>
               <MapPin size={18} className="text-gray-400 group-hover:text-blue-600" />
             </button>
-            <button onClick={() => navigate('/admin/packages')} className="w-full flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-blue-600 hover:bg-blue-50 transition-colors group">
+            <button onClick={() => navigate('/dashboard/packages')} className="w-full flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-blue-600 hover:bg-blue-50 transition-colors group">
               <span className="font-bold text-gray-700 group-hover:text-blue-600">Create Package</span>
               <Package size={18} className="text-gray-400 group-hover:text-blue-600" />
             </button>

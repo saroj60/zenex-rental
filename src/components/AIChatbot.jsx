@@ -52,7 +52,7 @@ const AIChatbot = () => {
             <div className="flex items-center gap-2">
               <Bot size={20} />
               <div>
-                <h3 className="font-bold text-sm">NepalDrive Assistant</h3>
+                <h3 className="font-bold text-sm">Zenex Assistant</h3>
                 <p className="text-[10px] text-sky-tint flex items-center gap-1"><Sparkles size={10}/> AI Powered</p>
               </div>
             </div>

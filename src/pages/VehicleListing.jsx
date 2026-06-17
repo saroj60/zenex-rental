@@ -3,15 +3,18 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { Users, Gauge, Fuel, Filter, X, MapPin, Calendar, Briefcase, Star } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { useAppData } from '../context/AppDataContext';
+import { useBooking } from '../context/BookingContext';
 
 const VehicleListing = () => {
   const { vehicles } = useAppData();
-  const [searchParams] = useSearchParams();
+  const { isVehicleAvailable } = useBooking();
+  const searchParams = new URLSearchParams(window.location.search);
   const searchType = searchParams.get('type') || 'All';
   const pickup = searchParams.get('pickup');
   const dropoff = searchParams.get('dropoff');
   const start = searchParams.get('start');
   const end = searchParams.get('end');
+  const query = searchParams.get('q');
 
   const [filterType, setFilterType] = useState(searchType);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
@@ -23,7 +26,13 @@ const VehicleListing = () => {
     }
   }, [searchType]);
 
-  const filteredVehicles = filterType === 'All' ? vehicles : vehicles.filter(v => v.type === filterType);
+  const typeFiltered = filterType === 'All' ? vehicles : vehicles.filter(v => v.type === filterType);
+  
+  const textFiltered = query 
+    ? typeFiltered.filter(v => v.name.toLowerCase().includes(query.toLowerCase()) || v.type.toLowerCase().includes(query.toLowerCase()))
+    : typeFiltered;
+
+  const filteredVehicles = textFiltered.filter(v => isVehicleAvailable(v.id, start, end));
 
   return (
     <div className="bg-background min-h-screen">
@@ -64,7 +73,7 @@ const VehicleListing = () => {
           {/* Sidebar */}
           <div className={`fixed inset-0 z-50 bg-black/50 md:hidden transition-opacity ${showMobileFilters ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={() => setShowMobileFilters(false)}></div>
           
-          <div className={`fixed md:static inset-y-0 left-0 w-3/4 max-w-sm bg-white md:bg-transparent z-50 p-6 md:p-0 md:w-1/4 transition-transform duration-300 ${showMobileFilters ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
+          <div className={`fixed md:static inset-y-0 left-0 w-3/4 max-w-sm bg-white md:bg-transparent z-50 md:z-10 p-6 md:p-0 md:w-1/4 transition-transform duration-300 ${showMobileFilters ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
             <div className="flex justify-between items-center mb-6 md:hidden">
               <h2 className="font-headline-md text-xl font-bold">Filters</h2>
               <button onClick={() => setShowMobileFilters(false)}><X size={24} className="text-on-surface-variant" /></button>
@@ -73,7 +82,7 @@ const VehicleListing = () => {
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-sky-tint sticky top-24">
               <h3 className="font-headline-md text-lg font-bold mb-4 border-b border-outline-variant/30 pb-2">Vehicle Type</h3>
               <div className="space-y-2">
-                {['All', 'Economy', 'SUV / 4x4', 'Luxury', 'Van / Micro', 'EV'].map(type => (
+                {['All', 'Economy', 'Sedan', 'SUV / 4x4', 'Luxury', 'EV', 'Van / Micro', 'Minibus', 'Pickup Truck'].map(type => (
                   <label key={type} className="flex items-center gap-3 cursor-pointer group p-2 hover:bg-surface-container-low rounded-lg transition-colors">
                     <input 
                       type="radio" 
@@ -136,9 +145,9 @@ const VehicleListing = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-2">
-                  <Link to={`/vehicles/${v.id}`} className="flex-1 text-center py-3 border border-himalayan-blue text-himalayan-blue rounded-xl font-bold text-sm hover:bg-surface-container-low transition-colors">Details</Link>
-                  <Link to={`/checkout?car=${v.id}`} className="flex-1 text-center py-3 bg-himalayan-blue text-white rounded-xl font-bold text-sm hover:bg-primary transition-colors shadow-md">Book Now</Link>
+                <div className="flex flex-col gap-2 mt-2">
+                  <Link to={`/vehicles/${v.id}`} className="w-full flex justify-center items-center py-3 border border-himalayan-blue text-himalayan-blue rounded-xl font-bold text-sm hover:bg-surface-container-low transition-colors">Details</Link>
+                  <Link to={`/checkout?car=${v.id}`} className="w-full flex justify-center items-center py-3 bg-himalayan-blue text-white rounded-xl font-bold text-sm hover:bg-primary transition-colors shadow-md">Book Now</Link>
                 </div>
               </div>
             ))}

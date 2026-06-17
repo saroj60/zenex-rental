@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, NavLink, useNavigate, Link } from 'react-router-dom';
-import { LayoutDashboard, Car, MapPin, Package, CalendarCheck, Settings, LogOut, Menu, UserCircle, X } from 'lucide-react';
+import { LayoutDashboard, Car, MapPin, Package, CalendarCheck, Settings, LogOut, Menu, UserCircle, X, Users, FileText, Image as ImageIcon } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const DashboardLayout = () => {
@@ -16,9 +16,12 @@ const DashboardLayout = () => {
   const navLinks = [
     { name: 'Overview', path: '/dashboard', icon: LayoutDashboard, exact: true },
     { name: 'Fleet Management', path: '/dashboard/fleet', icon: Car },
+    { name: 'Drivers', path: '/dashboard/drivers', icon: Users },
     { name: 'Destinations', path: '/dashboard/destinations', icon: MapPin },
     { name: 'Packages', path: '/dashboard/packages', icon: Package },
     { name: 'Bookings', path: '/dashboard/bookings', icon: CalendarCheck },
+    { name: 'Blogs', path: '/dashboard/blogs', icon: FileText },
+    { name: 'Gallery', path: '/dashboard/gallery', icon: ImageIcon },
   ];
 
   return (
@@ -37,11 +40,8 @@ const DashboardLayout = () => {
         <div className="p-6">
           <div className="flex justify-between items-center mb-8">
             <Link to="/" className="flex items-center gap-2" onClick={() => setIsSidebarOpen(false)}>
-              <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 20 L20 80 L80 80 Z" fill="#ffffff"/>
-                <path d="M50 20 L65 50 L35 50 Z" fill="#0a2f4c"/>
-              </svg>
-              <h1 className="text-xl font-extrabold text-white tracking-tight leading-none">Nepal<span className="text-[#EA580C]">Drive</span></h1>
+              <img src="/logo.png" alt="Zenex Travel Logo" className="h-8 w-auto brightness-0 invert" />
+              <h1 className="text-xl font-extrabold text-white tracking-tight leading-none">Zenex<span className="text-[#EA580C]">Travel</span></h1>
             </Link>
             <button className="lg:hidden text-white" onClick={() => setIsSidebarOpen(false)}>
               <X size={24} />
@@ -96,7 +96,7 @@ const DashboardLayout = () => {
           <div className="flex items-center gap-4">
             <div className="text-right hidden sm:block">
               <p className="text-sm font-bold text-gray-900">{user?.name || 'Admin'}</p>
-              <p className="text-xs text-gray-500 font-medium">{user?.email || 'admin@nepaldrive.com'}</p>
+              <p className="text-xs text-gray-500 font-medium">{user?.email || 'admin@zenextravel.com'}</p>
             </div>
             <div className="w-10 h-10 rounded-full bg-[#1e3a8a] text-white flex items-center justify-center shadow-md">
               <UserCircle size={24} />

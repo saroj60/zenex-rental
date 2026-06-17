@@ -2,16 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AppDataContext = createContext();
 
-const initialVehicles = [
-  { id: 1, type: 'Economy', name: 'Suzuki Swift', price: '4500', img: '/images/economy_car.png', pax: 4, trans: 'Manual', fuel: 'Petrol', luggage: 2, rating: 4.8, urgency: 'Available Now' },
-  { id: 2, type: 'SUV / 4x4', name: 'Toyota Fortuner', price: '19500', img: '/images/suv_car.png', pax: 7, trans: 'Auto', fuel: 'Diesel', luggage: 4, rating: 4.9, urgency: 'High Demand' },
-  { id: 3, type: 'Luxury', name: 'Range Rover Vogue', price: '32500', img: '/images/luxury_car.png', pax: 5, trans: 'Auto', fuel: 'Petrol', luggage: 4, rating: 5.0, urgency: 'Limited Availability' },
-  { id: 4, type: 'EV', name: 'Tata Nexon EV', price: '7150', img: '/images/economy_car.png', pax: 5, trans: 'Auto', fuel: 'Electric', luggage: 3, rating: 4.7, urgency: 'Available Now' },
-  { id: 5, type: 'SUV / 4x4', name: 'Mahindra Scorpio', price: '10400', img: '/images/suv_car.png', pax: 7, trans: 'Manual', fuel: 'Diesel', luggage: 4, rating: 4.6, urgency: 'High Demand' },
-  { id: 6, type: 'Van / Micro', name: 'Toyota Hiace', price: '11000', img: '/images/suv_car.png', pax: 14, trans: 'Manual', fuel: 'Diesel', luggage: 6, rating: 4.5, urgency: 'Available Now' },
-  { id: 7, type: 'SUV / 4x4', name: 'Hyundai Creta', price: '8400', img: '/images/suv_car.png', pax: 5, trans: 'Auto', fuel: 'Petrol', luggage: 3, rating: 4.8, urgency: 'Available Now' },
-  { id: 8, type: 'SUV / 4x4', name: 'Ford Everest', price: '14500', img: '/images/suv_car.png', pax: 7, trans: 'Auto', fuel: 'Diesel', luggage: 5, rating: 4.9, urgency: 'Limited Availability' }
-];
+const initialVehicles = [];
 
 const initialDestinations = [
   { id: 'kathmandu', name: 'Kathmandu Valley', region: 'Valley', desc: 'History, Culture & Temples', img: '/images/destinations/kathmandu.png', span: 'md:col-span-2 md:row-span-2', bestTime: 'Sep - Nov, Feb - Apr', terrain: 'Paved / City Roads', vehicles: ['Economy', 'Compact SUV', 'Luxury Sedan'] },
@@ -99,9 +90,25 @@ const initialBookings = [
   { id: 'B-1003', customer: 'Emma Watson', vehicle: 'Suzuki Swift', dates: 'Oct 20 - Oct 25', amount: 'NPR 22,750', status: 'Completed', date: '2023-09-28' },
 ];
 
+const initialDrivers = [
+  { id: 'D-101', name: 'Rajesh Kumar', phone: '+977-9800000001', experience: '5 Years', licenseNo: 'DL-12345', status: 'Available' },
+  { id: 'D-102', name: 'Suman Shrestha', phone: '+977-9800000002', experience: '8 Years', licenseNo: 'DL-67890', status: 'On Trip' },
+  { id: 'D-103', name: 'Bikash Thapa', phone: '+977-9800000003', experience: '3 Years', licenseNo: 'DL-11223', status: 'Available' }
+];
+
+const initialGallery = [
+  { id: 'G-1', url: 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=1170&auto=format&fit=crop', title: 'Himalayan Ranges' },
+  { id: 'G-2', url: 'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?q=80&w=1171&auto=format&fit=crop', title: 'Mountain Drive' },
+  { id: 'G-3', url: 'https://images.unsplash.com/photo-1520695287271-15ebad2e77b4?q=80&w=1170&auto=format&fit=crop', title: 'Kathmandu Valley' },
+  { id: 'G-4', url: 'https://images.unsplash.com/photo-1504448252408-b32799ff32f3?q=80&w=1074&auto=format&fit=crop', title: 'Serene Lakes' },
+  { id: 'G-5', url: 'https://images.unsplash.com/photo-1611516491426-03025e6043c8?q=80&w=1333&auto=format&fit=crop', title: 'Cultural Heritage' },
+  { id: 'G-6', url: 'https://images.unsplash.com/photo-1553886334-43d24f24d3bd?q=80&w=1177&auto=format&fit=crop', title: 'Wildlife Encounters' }
+];
+
+
 export const AppDataProvider = ({ children }) => {
   const [vehicles, setVehicles] = useState(() => {
-    const saved = localStorage.getItem('app_vehicles');
+    const saved = localStorage.getItem('app_vehicles_v2');
     return saved ? JSON.parse(saved) : initialVehicles;
   });
 
@@ -120,9 +127,19 @@ export const AppDataProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : initialBookings;
   });
 
+  const [drivers, setDrivers] = useState(() => {
+    const saved = localStorage.getItem('app_drivers');
+    return saved ? JSON.parse(saved) : initialDrivers;
+  });
+
+  const [galleryImages, setGalleryImages] = useState(() => {
+    const saved = localStorage.getItem('app_gallery');
+    return saved ? JSON.parse(saved) : initialGallery;
+  });
+
   // Persist state changes
   useEffect(() => {
-    localStorage.setItem('app_vehicles', JSON.stringify(vehicles));
+    localStorage.setItem('app_vehicles_v2', JSON.stringify(vehicles));
   }, [vehicles]);
 
   useEffect(() => {
@@ -136,6 +153,14 @@ export const AppDataProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('app_bookings', JSON.stringify(bookings));
   }, [bookings]);
+
+  useEffect(() => {
+    localStorage.setItem('app_drivers', JSON.stringify(drivers));
+  }, [drivers]);
+
+  useEffect(() => {
+    localStorage.setItem('app_gallery', JSON.stringify(galleryImages));
+  }, [galleryImages]);
 
   // CRUD for Vehicles
   const addVehicle = (vehicle) => setVehicles([...vehicles, { ...vehicle, id: Date.now() }]);
@@ -157,12 +182,23 @@ export const AppDataProvider = ({ children }) => {
   const updateBooking = (id, updated) => setBookings(bookings.map(b => b.id === id ? { ...b, ...updated } : b));
   const deleteBooking = (id) => setBookings(bookings.filter(b => b.id !== id));
 
+  // CRUD for Drivers
+  const addDriver = (driver) => setDrivers([...drivers, { ...driver, id: 'D-' + Date.now() }]);
+  const updateDriver = (id, updated) => setDrivers(drivers.map(d => d.id === id ? { ...d, ...updated } : d));
+  const deleteDriver = (id) => setDrivers(drivers.filter(d => d.id !== id));
+
+  // CRUD for Gallery
+  const addGalleryImage = (image) => setGalleryImages([{ ...image, id: 'G-' + Date.now() }, ...galleryImages]);
+  const deleteGalleryImage = (id) => setGalleryImages(galleryImages.filter(g => g.id !== id));
+
   return (
     <AppDataContext.Provider value={{
       vehicles, addVehicle, updateVehicle, deleteVehicle,
       destinations, addDestination, updateDestination, deleteDestination,
       packages, addPackage, updatePackage, deletePackage,
-      bookings, addBooking, updateBooking, deleteBooking
+      bookings, addBooking, updateBooking, deleteBooking,
+      drivers, addDriver, updateDriver, deleteDriver,
+      galleryImages, addGalleryImage, deleteGalleryImage
     }}>
       {children}
     </AppDataContext.Provider>

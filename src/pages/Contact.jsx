@@ -47,7 +47,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Office Address</h4>
                     <p className="text-gray-600 leading-relaxed">
-                      Thamel, Kathmandu<br />
+                      Q88J+R4G, Kathmandu 44600<br />
                       Bagmati Province, Nepal
                     </p>
                   </div>
@@ -60,10 +60,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Phone Numbers</h4>
                     <p className="text-gray-600 leading-relaxed mb-1">
-                      <span className="font-medium">Sales:</span> +977 1-4212345
+                      <span className="font-medium">Sales:</span> +977 976-7476521
                     </p>
                     <p className="text-[#EA580C] font-bold">
-                      24/7 Emergency: +977 980-0000000
+                      24/7 Emergency: +977 976-7476521
                     </p>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Email Address</h4>
                     <p className="text-blue-600 font-medium hover:underline cursor-pointer">
-                      info@nepaldrive.com
+                      info@zenextravel.com
                     </p>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-10 pt-8 border-t border-gray-100">
-                <a href="https://wa.me/9779800000000" target="_blank" rel="noreferrer" className="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-[#1DA851] transition-colors shadow-md flex items-center justify-center gap-2">
+                <a href="https://wa.me/9779767476521" target="_blank" rel="noreferrer" className="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-[#1DA851] transition-colors shadow-md flex items-center justify-center gap-2">
                   <MessageCircle size={20} /> Chat on WhatsApp
                 </a>
               </div>
@@ -167,6 +167,22 @@ const Contact = () => {
             </div>
           </div>
 
+        </div>
+      </div>
+
+      {/* Map Section */}
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mt-12 mb-12 relative z-20">
+        <div className="bg-white p-4 rounded-3xl shadow-xl border border-gray-100 overflow-hidden h-[400px]">
+          <iframe 
+            src="https://maps.google.com/maps?q=Q88J%2BR4G%2C%20Kathmandu%2044600%2C%20Nepal&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0, borderRadius: '1rem' }} 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Zenex Travel Office Location"
+          ></iframe>
         </div>
       </div>
 

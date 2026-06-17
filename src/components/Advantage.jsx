@@ -14,7 +14,7 @@ const Advantage = () => {
   return (
     <section className="bg-[#0a2f4c] py-20 mt-16 text-white w-full">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <h3 className="text-center text-lg md:text-xl text-white mb-16 font-medium">The NepalDrive Advantage</h3>
+        <h3 className="text-center text-lg md:text-xl text-white mb-16 font-medium">The Zenex Advantage</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8 max-w-5xl mx-auto">
           {advantages.map((adv, idx) => (
             <div key={idx} className="flex flex-col items-center text-center group cursor-default">
