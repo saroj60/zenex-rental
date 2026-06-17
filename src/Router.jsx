@@ -15,6 +15,7 @@ import DestinationDetail from './pages/DestinationDetail';
 import Packages from './pages/Packages';
 import PackageDetail from './pages/PackageDetail';
 import Tours from './pages/Tours';
+import RouteLanding from './pages/RouteLanding';
 import DashboardLayout from './layouts/DashboardLayout';
 import FleetManagement from './pages/dashboards/FleetManagement';
 import AdminLogin from './pages/admin/AdminLogin';
@@ -54,6 +55,7 @@ const router = createBrowserRouter([
       { path: 'tours', element: <Tours /> },
       { path: 'blogs', element: <Blogs /> },
       { path: 'blogs/:id', element: <BlogDetail /> },
+      { path: 'route/:slug', element: <RouteLanding /> },
     ],
   },
   {

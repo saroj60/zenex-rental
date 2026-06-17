@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Fleet from '../components/Fleet';
 import PopularEscapes from '../components/PopularEscapes';
 import Advantage from '../components/Advantage';
+import InteractiveRouteMap from '../components/InteractiveRouteMap';
 import TrustSafety from '../components/TrustSafety';
 import AdventurePackages from '../components/AdventurePackages';
 import FeaturedPackages from '../components/FeaturedPackages';
@@ -15,6 +16,7 @@ const Home = () => {
       <Hero />
       <Fleet />
       <PopularEscapes />
+      <InteractiveRouteMap />
       <Advantage />
       <TrustSafety />
       <FeaturedPackages />

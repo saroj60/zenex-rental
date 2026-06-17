@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0a2f4c] w-full mt-auto py-16 border-t border-blue-900 pb-28 md:pb-16">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 md:gap-8 mb-16">
           <div className="col-span-1">
             <h2 className="text-2xl font-bold text-white mb-4">Zenex Travel</h2>
             <p className="text-blue-200 text-sm leading-relaxed mb-6">
@@ -44,6 +44,14 @@ const Footer = () => {
             <a className="text-blue-200 text-sm hover:text-white transition-colors w-fit" href="#">Travel Guides</a>
             <a className="text-blue-200 text-sm hover:text-white transition-colors w-fit" href="#">Terms & Conditions</a>
             <a className="text-blue-200 text-sm hover:text-white transition-colors w-fit" href="#">Privacy Policy</a>
+          </div>
+          
+          <div className="flex flex-col gap-3">
+            <h4 className="text-white font-bold text-[15px] mb-2">Popular Routes</h4>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/route/kathmandu-to-pokhara">KTM to Pokhara</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/route/jeep-hire-mustang">Mustang Jeep Hire</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/route/kathmandu-to-chitwan">KTM to Chitwan</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/route/pokhara-to-lumbini">Pokhara to Lumbini</Link>
           </div>
           
           <div className="flex flex-col gap-3">

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowRight, MapPin, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useAppData } from '../context/AppDataContext';
+import InteractiveRouteMap from '../components/InteractiveRouteMap';
 
 const Destinations = () => {
   useEffect(() => {
@@ -63,8 +64,13 @@ const Destinations = () => {
         </div>
       </div>
 
+      {/* Interactive Map */}
+      <div className="-mt-6 relative z-30">
+        <InteractiveRouteMap />
+      </div>
+
       {/* Destinations Section */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 mt-12 md:-mt-16 relative z-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mt-12 relative z-20">
         
         {/* Filters */}
         <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-2 flex flex-wrap justify-center gap-2 mb-12">
