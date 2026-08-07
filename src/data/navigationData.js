@@ -13,7 +13,7 @@ export const megaMenuData = {
             { name: 'Upper Mustang Expeditions', url: '/treks/region/mustang', image: '/images/upper mustang.jpg' },
             { name: 'Kanchenjunga Discoveries', url: '/treks/region/kanchenjunga', image: '/images/kanchenjunga.jpg' },
             { name: 'Hidden Dolpo Journeys', url: '/treks/region/dolpo', image: '/images/dorpatan dolpo.jpg' },
-            { name: 'Dhaulagiri Pathways', url: '/treks/region/dhaulagiri', image: '/images/trek.png' },
+            { name: 'Dhaulagiri Pathways', url: '/treks/region/dhaulagiri', image: '/trek images/Dhaulagiri-Circuit-Trek.jpeg' },
             { name: 'Rolwaling Wilderness', url: '/treks/region/rolwaling', image: '/images/trek.png' },
             { name: 'Makalu Base Camp Treks', url: '/treks/region/makalu', image: '/images/trek.png' },
             { name: 'Far-Western Nepal Escapes', url: '/treks/region/far-west', image: '/images/Khaptad Trek 11 Days.jpg' },
