@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { useBlogContext } from '../context/BlogContext';
 import { Calendar, User } from 'lucide-react';
@@ -11,7 +12,12 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="bg-[#fcf9ee] min-h-screen pb-20 pt-32">
+    <div className="bg-[#ebf3fa] min-h-screen pb-20 pt-32">
+      <SEO 
+        title="Nepal Travel Blog | Car Rental Tips & Trekking Guides"
+        description="Read our latest travel blogs for tips on renting cars in Nepal, trekking guides, packing lists, and the best time to visit Nepal."
+        canonicalUrl="https://zenextravel.com.np/blog"
+      />
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Our Travel Blog</h1>
@@ -45,11 +51,11 @@ const Blogs = () => {
                   </p>
                   <div className="mt-auto pt-4 flex items-center justify-between border-t border-gray-100 text-sm text-gray-500">
                     <div className="flex items-center gap-1.5">
-                      <User size={14} className="text-[#ea580c]" />
+                      <User size={14} className="text-[#e53a24]" />
                       <span>{blog.author}</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <Calendar size={14} className="text-[#ea580c]" />
+                      <Calendar size={14} className="text-[#e53a24]" />
                       <span>{new Date(blog.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                     </div>
                   </div>

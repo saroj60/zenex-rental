@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { Shield } from 'lucide-react';
 
 const TermsConditions = () => {
-  useEffect(() => window.scrollTo(0, 0), []);
+  useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
-    <div className="bg-[#fcf9ee] min-h-screen py-24">
+    <div className="bg-[#ebf3fa] min-h-screen py-24">
       <div className="max-w-4xl mx-auto px-4 md:px-8">
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
           <div className="flex items-center gap-4 mb-8 border-b border-gray-100 pb-8">
@@ -13,7 +13,7 @@ const TermsConditions = () => {
               <Shield size={32} />
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl font-extrabold text-[#331a47]">Terms & Conditions</h1>
+              <h1 className="text-3xl md:text-4xl font-extrabold text-[#0f3493]">Terms & Conditions</h1>
               <p className="text-gray-500 font-medium mt-1">Last updated: June 2026</p>
             </div>
           </div>

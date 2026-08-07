@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useBlogContext } from '../../context/BlogContext';
 import { Trash2, Edit3, Eye } from 'lucide-react';
 
 const ManageBlogs = () => {
   const { blogs, deleteBlog } = useBlogContext();
+  const navigate = useNavigate();
+
+  const handleEdit = (blog) => {
+    navigate('/admin/add-blog', { state: { blog } });
+  };
 
   const handleDelete = (id) => {
     if (window.confirm('Are you sure you want to delete this blog?')) {
@@ -19,7 +24,7 @@ const ManageBlogs = () => {
           <h1 className="text-2xl font-bold text-gray-900">Manage Blogs</h1>
           <p className="text-gray-500 mt-1">View, edit, or remove published blog posts.</p>
         </div>
-        <Link to="/dashboard/add-blog" className="px-5 py-2.5 bg-[#ea580c] text-white rounded-xl font-medium hover:bg-[#ea580c]/90 transition-colors">
+        <Link to="/admin/add-blog" className="px-5 py-2.5 bg-[#e53a24] text-white rounded-xl font-medium hover:bg-[#e53a24]/90 transition-colors">
           + Add New Blog
         </Link>
       </div>
@@ -59,7 +64,7 @@ const ManageBlogs = () => {
                       <Link to={`/blogs/${blog.id}`} target="_blank" className="p-2 text-gray-400 hover:text-blue-500 transition-colors" title="View">
                         <Eye size={18} />
                       </Link>
-                      <button className="p-2 text-gray-400 hover:text-green-500 transition-colors" title="Edit">
+                      <button onClick={() => handleEdit(blog)} className="p-2 text-gray-400 hover:text-green-500 transition-colors" title="Edit">
                         <Edit3 size={18} />
                       </button>
                       <button onClick={() => handleDelete(blog.id)} className="p-2 text-gray-400 hover:text-red-500 transition-colors" title="Delete">

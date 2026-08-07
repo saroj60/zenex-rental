@@ -1,69 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://zenextravel.com/</loc>
+    <loc>https://zenextravel.com.np/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/vehicles</loc>
+    <loc>https://zenextravel.com.np/vehicles</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/destinations</loc>
+    <loc>https://zenextravel.com.np/destinations</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/packages</loc>
+    <loc>https://zenextravel.com.np/packages</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/tours</loc>
+    <loc>https://zenextravel.com.np/tours</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/blog</loc>
+    <loc>https://zenextravel.com.np/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/about</loc>
+    <loc>https://zenextravel.com.np/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/contact</loc>
+    <loc>https://zenextravel.com.np/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/planner</loc>
+    <loc>https://zenextravel.com.np/planner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- SEO Landing Pages -->
+  <!-- New Service Pages -->
   <url>
-    <loc>https://zenextravel.com/route/kathmandu-to-pokhara</loc>
+    <loc>https://zenextravel.com.np/self-drive-car-rental-nepal</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zenextravel.com.np/wedding-car-rental-kathmandu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zenextravel.com.np/airport-transfer-kathmandu</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zenextravel.com.np/flight-ticketing-nepal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SEO Route Landing Pages -->
+  <url>
+    <loc>https://zenextravel.com.np/route/kathmandu-to-pokhara</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/route/jeep-hire-mustang</loc>
+    <loc>https://zenextravel.com.np/route/jeep-hire-mustang</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/route/kathmandu-to-chitwan</loc>
+    <loc>https://zenextravel.com.np/route/kathmandu-to-chitwan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zenextravel.com/route/pokhara-to-lumbini</loc>
+    <loc>https://zenextravel.com.np/route/pokhara-to-lumbini</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zenextravel.com.np/route/kathmandu-to-everest-base-camp-trek-start</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zenextravel.com.np/route/kathmandu-to-nagarkot</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zenextravel.com.np/route/pokhara-to-chitwan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zenextravel.com.np/route/kathmandu-to-syabrubesi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

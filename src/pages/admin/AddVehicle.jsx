@@ -7,6 +7,7 @@ const AddVehicle = () => {
   const { addVehicle } = useAppData();
   const navigate = useNavigate();
 
+  const [file, setFile] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
     type: 'Economy',
@@ -39,18 +40,27 @@ const AddVehicle = () => {
     // Process features into an array
     const processedFeatures = formData.features.split(',').map(f => f.trim()).filter(f => f);
     
-    const newVehicle = {
-      ...formData,
-      price: formData.price.toString(),
-      pax: parseInt(formData.pax),
-      luggage: parseInt(formData.luggage),
-      rating: parseFloat(formData.rating),
-      features: processedFeatures,
-      priceWithDriver: formData.priceWithDriver ? formData.priceWithDriver.toString() : '0',
-      tax: formData.tax ? parseFloat(formData.tax) : 0
-    };
+    const data = new FormData();
+    data.append('name', formData.name);
+    data.append('type', formData.type);
+    data.append('price', parseFloat(formData.price) || 0);
+    data.append('pax', parseInt(formData.pax) || 0);
+    data.append('trans', formData.trans);
+    data.append('fuel', formData.fuel);
+    data.append('luggage', parseInt(formData.luggage) || 0);
+    data.append('rating', parseFloat(formData.rating) || 5);
+    data.append('urgency', formData.urgency);
+    data.append('description', formData.description);
+    data.append('features', JSON.stringify(processedFeatures));
+    data.append('driverIncluded', formData.driverIncluded);
+    data.append('priceWithDriver', formData.priceWithDriver ? parseFloat(formData.priceWithDriver) : 0);
+    data.append('tax', formData.tax ? parseFloat(formData.tax) : 0);
+    
+    if (file) {
+      data.append('images', file);
+    }
 
-    addVehicle(newVehicle);
+    addVehicle(data);
     navigate('/admin/vehicles');
   };
 
@@ -58,7 +68,7 @@ const AddVehicle = () => {
     <div className="max-w-4xl mx-auto">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-3">
-          <Car className="text-[#ea580c]" size={32} />
+          <Car className="text-[#e53a24]" size={32} />
           Add New Vehicle
         </h1>
         <p className="text-gray-500 mt-2">Enter the details of the new vehicle to add it to your fleet.</p>
@@ -81,7 +91,7 @@ const AddVehicle = () => {
                 onChange={handleChange}
                 required
                 placeholder="e.g. Toyota Fortuner" 
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
             <div>
@@ -90,7 +100,7 @@ const AddVehicle = () => {
                 name="type"
                 value={formData.type}
                 onChange={handleChange}
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               >
                 <option value="Economy">Economy</option>
                 <option value="SUV / 4x4">SUV / 4x4</option>
@@ -108,7 +118,7 @@ const AddVehicle = () => {
                 onChange={handleChange}
                 required
                 placeholder="e.g. 15000" 
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
             <div>
@@ -119,7 +129,7 @@ const AddVehicle = () => {
                 value={formData.priceWithDriver}
                 onChange={handleChange}
                 placeholder="e.g. 18000" 
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
             <div>
@@ -128,7 +138,7 @@ const AddVehicle = () => {
                 name="urgency"
                 value={formData.urgency}
                 onChange={handleChange}
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               >
                 <option value="Available Now">Available Now</option>
                 <option value="High Demand">High Demand</option>
@@ -143,7 +153,7 @@ const AddVehicle = () => {
                 value={formData.tax}
                 onChange={handleChange}
                 placeholder="e.g. 25" 
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
           </div>
@@ -163,7 +173,7 @@ const AddVehicle = () => {
                 value={formData.pax}
                 onChange={handleChange}
                 min="1" max="50"
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
             <div>
@@ -174,7 +184,7 @@ const AddVehicle = () => {
                 value={formData.luggage}
                 onChange={handleChange}
                 min="0" max="20"
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
             <div>
@@ -183,7 +193,7 @@ const AddVehicle = () => {
                 name="trans"
                 value={formData.trans}
                 onChange={handleChange}
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               >
                 <option value="Manual">Manual</option>
                 <option value="Auto">Auto</option>
@@ -195,7 +205,7 @@ const AddVehicle = () => {
                 name="fuel"
                 value={formData.fuel}
                 onChange={handleChange}
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               >
                 <option value="Petrol">Petrol</option>
                 <option value="Diesel">Diesel</option>
@@ -213,14 +223,13 @@ const AddVehicle = () => {
           </h2>
           <div className="space-y-6">
             <div>
-              <label className="block text-sm font-bold text-gray-700 mb-2">Image URL</label>
+              <label className="block text-sm font-bold text-gray-700 mb-2">Vehicle Image</label>
               <input 
-                type="text" 
-                name="img"
-                value={formData.img}
-                onChange={handleChange}
-                placeholder="e.g. /images/suv_car.png or https://example.com/car.jpg" 
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                type="file" 
+                name="image"
+                accept="image/*"
+                onChange={(e) => setFile(e.target.files[0])}
+                className="w-full border border-gray-200 rounded-xl px-4 py-2 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
             
@@ -231,7 +240,7 @@ const AddVehicle = () => {
                   name="driverIncluded"
                   checked={formData.driverIncluded}
                   onChange={handleChange}
-                  className="w-5 h-5 text-[#ea580c] rounded focus:ring-[#ea580c]"
+                  className="w-5 h-5 text-[#e53a24] rounded focus:ring-[#e53a24]"
                 />
                 <span className="font-bold text-gray-700">Driver Included</span>
               </label>
@@ -247,7 +256,7 @@ const AddVehicle = () => {
                 value={formData.rating}
                 onChange={handleChange}
                 step="0.1" min="1" max="5"
-                className="w-full md:w-1/3 border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full md:w-1/3 border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
 
@@ -259,7 +268,7 @@ const AddVehicle = () => {
                 onChange={handleChange}
                 rows="3"
                 placeholder="Brief description of the vehicle..."
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none resize-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none resize-none"
               ></textarea>
             </div>
 
@@ -271,7 +280,7 @@ const AddVehicle = () => {
                 value={formData.features}
                 onChange={handleChange}
                 placeholder="e.g. 4WD, Sunroof, Leather Seats" 
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#ea580c]/50 outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
           </div>

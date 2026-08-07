@@ -8,10 +8,10 @@ const Gallery = () => {
   if (!galleryImages || galleryImages.length === 0) return null;
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-white overflow-hidden">
+    <section className="reveal reveal-up py-20 px-4 md:px-8 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#331a47] mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#0f3493] mb-4">
             A Glimpse of the Journey
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg">
@@ -20,7 +20,7 @@ const Gallery = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[200px] md:auto-rows-[250px]">
-          {galleryImages.slice(0, 8).map((img, idx) => {
+          {galleryImages.slice(0, 12).map((img, idx) => {
             // Determine span based on index for a masonry-like grid
             const isLarge = idx === 0 || idx === 3;
             const spanClass = isLarge ? 'col-span-2 row-span-2' : 'col-span-1 row-span-1';
@@ -56,3 +56,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+

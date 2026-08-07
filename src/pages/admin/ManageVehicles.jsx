@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAppData } from '../../context/AppDataContext';
 import { Link } from 'react-router-dom';
-import { PlusCircle, Trash2, Edit } from 'lucide-react';
+import { PlusCircle, Trash2, Edit, Car } from 'lucide-react';
 
 const ManageVehicles = () => {
   const { vehicles, deleteVehicle } = useAppData();
@@ -16,7 +16,7 @@ const ManageVehicles = () => {
     <div>
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold text-gray-900">Manage Vehicles</h1>
-        <Link to="/admin/add-vehicle" className="bg-[#ea580c] text-white px-4 py-2 rounded-lg font-bold flex items-center gap-2 hover:bg-[#d04b08] transition-colors">
+        <Link to="/admin/add-vehicle" className="bg-[#e53a24] text-white px-4 py-2 rounded-lg font-bold flex items-center gap-2 hover:bg-[#d04b08] transition-colors">
           <PlusCircle size={20} /> Add Vehicle
         </Link>
       </div>
@@ -38,13 +38,13 @@ const ManageVehicles = () => {
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-4">
                       <div className="w-16 h-12 bg-gray-100 rounded overflow-hidden flex items-center justify-center shrink-0">
-                        <img src={v.img || '/images/economy_car.png'} alt={v.name} className="w-full h-full object-cover" />
+                        <img src={v.img || '/images/economy_car.png'} alt={v.name} className="w-full h-full object-cover" onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} />
                       </div>
                       <span className="font-bold text-gray-900">{v.name}</span>
                     </div>
                   </td>
                   <td className="px-6 py-4 text-gray-600 font-medium">{v.type}</td>
-                  <td className="px-6 py-4 text-[#ea580c] font-bold">NPR {v.price}</td>
+                  <td className="px-6 py-4 text-[#e53a24] font-bold">NPR {v.price}</td>
                   <td className="px-6 py-4 text-right">
                     <button 
                       onClick={() => handleDelete(v.id)}

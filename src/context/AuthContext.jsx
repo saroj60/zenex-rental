@@ -10,21 +10,23 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Check if there is a saved session in localStorage on initial load
-    const storedAuth = localStorage.getItem('nepaldrive_admin_auth');
+    // Clear persistent storage to force a re-login if they had an old session
+    localStorage.removeItem('nepaldrive_admin_auth');
+    
+    const storedAuth = sessionStorage.getItem('nepaldrive_admin_auth');
     if (storedAuth === 'true') {
       setIsAuthenticated(true);
-      setUser({ email: 'admin@zenextravel.com', name: 'Super Admin', role: 'admin' });
+      setUser({ email: 'info@zenextravel.com.np', name: 'Super Admin', role: 'admin' });
     }
     setLoading(false);
   }, []);
 
   const login = (email, password) => {
     // Simulated authentication logic
-    if (email === 'admin@zenextravel.com' && password === 'password123') {
+    if (email === 'info@zenextravel.com.np' && password === 'zenextravel@2026') {
       setIsAuthenticated(true);
-      setUser({ email: 'admin@zenextravel.com', name: 'Super Admin', role: 'admin' });
-      localStorage.setItem('nepaldrive_admin_auth', 'true');
+      setUser({ email: 'info@zenextravel.com.np', name: 'Super Admin', role: 'admin' });
+      sessionStorage.setItem('nepaldrive_admin_auth', 'true');
       return { success: true };
     }
     return { success: false, error: 'Invalid email or password.' };
@@ -33,7 +35,7 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     setIsAuthenticated(false);
     setUser(null);
-    localStorage.removeItem('nepaldrive_admin_auth');
+    sessionStorage.removeItem('nepaldrive_admin_auth');
   };
 
   const value = {

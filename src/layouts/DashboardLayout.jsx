@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, NavLink, useNavigate, Link } from 'react-router-dom';
-import { LayoutDashboard, Car, MapPin, Package, CalendarCheck, Settings, LogOut, Menu, UserCircle, X, Users, FileText, Image as ImageIcon } from 'lucide-react';
+import { LayoutDashboard, Car, MapPin, Package, Mountain, CalendarCheck, Settings, LogOut, Menu, UserCircle, X, Users, FileText, Image as ImageIcon } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const DashboardLayout = () => {
@@ -19,6 +19,7 @@ const DashboardLayout = () => {
     { name: 'Drivers', path: '/dashboard/drivers', icon: Users },
     { name: 'Destinations', path: '/dashboard/destinations', icon: MapPin },
     { name: 'Packages', path: '/dashboard/packages', icon: Package },
+    { name: 'Treks', path: '/dashboard/treks', icon: Mountain },
     { name: 'Bookings', path: '/dashboard/bookings', icon: CalendarCheck },
     { name: 'Blogs', path: '/dashboard/blogs', icon: FileText },
     { name: 'Gallery', path: '/dashboard/gallery', icon: ImageIcon },
@@ -36,12 +37,12 @@ const DashboardLayout = () => {
       )}
 
       {/* Sidebar */}
-      <aside className={`w-64 bg-[#0a2f4c] shadow-2xl flex flex-col fixed inset-y-0 left-0 z-30 transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
+      <aside className={`w-64 bg-[#0a2f4c] shadow-2xl flex flex-col fixed inset-y-0 left-0 z-30 transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'max-lg:-translate-x-full'}`}>
         <div className="p-6">
           <div className="flex justify-between items-center mb-8">
             <Link to="/" className="flex items-center gap-2" onClick={() => setIsSidebarOpen(false)}>
-              <img src="/logo.png" alt="Zenex Travel Logo" className="h-8 w-auto brightness-0 invert" />
-              <h1 className="text-xl font-extrabold text-white tracking-tight leading-none">Zenex<span className="text-[#EA580C]">Travel</span></h1>
+              <img src="/logo.jpg" alt="Zenex Travel Logo" className="h-10 w-10 rounded-full object-cover" />
+              <h1 className="text-xl font-extrabold text-white tracking-tight leading-none">Zenex<span className="text-[#e53a24]">Travel</span></h1>
             </Link>
             <button className="lg:hidden text-white" onClick={() => setIsSidebarOpen(false)}>
               <X size={24} />

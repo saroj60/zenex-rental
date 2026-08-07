@@ -9,6 +9,7 @@ import { AppDataProvider } from './context/AppDataContext.jsx'
 import { BookingProvider } from './context/BookingContext.jsx'
 
 import { BlogProvider } from './context/BlogContext.jsx'
+import { HelmetProvider } from 'react-helmet-async'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,7 +18,9 @@ createRoot(document.getElementById('root')).render(
         <BookingProvider>
           <CurrencyProvider>
             <BlogProvider>
-              <RouterProvider router={router} />
+              <HelmetProvider>
+                <RouterProvider router={router} />
+              </HelmetProvider>
             </BlogProvider>
           </CurrencyProvider>
         </BookingProvider>

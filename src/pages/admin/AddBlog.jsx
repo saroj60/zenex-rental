@@ -1,43 +1,134 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useBlogContext } from '../../context/BlogContext';
 import ReactQuill from 'react-quill-new';
 import 'quill/dist/quill.snow.css';
+import { Upload, X, CheckCircle2 } from 'lucide-react';
 
 const AddBlog = () => {
-  const { addBlog } = useBlogContext();
+  const { addBlog, updateBlog } = useBlogContext();
   const navigate = useNavigate();
+  const location = useLocation();
+  const editingBlog = location.state?.blog;
 
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState(editingBlog || {
     title: '',
-    coverImage: '',
     category: '',
     content: ''
   });
+
+  const [imageFile, setImageFile] = useState(null);
+  const [imagePreview, setImagePreview] = useState(editingBlog?.coverImage || '');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setImageFile(file);
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImagePreview(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const removeImage = () => {
+    setImageFile(null);
+    setImagePreview('');
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.title || !formData.content) {
       alert('Title and Content are required!');
       return;
     }
 
-    addBlog(formData);
-    alert('Blog published successfully!');
-    navigate('/dashboard/blogs');
+    setIsSubmitting(true);
+
+    try {
+      const data = new FormData();
+      data.append('title', formData.title);
+      data.append('category', formData.category);
+      data.append('content', formData.content);
+      data.append('author', 'Admin');
+
+      if (imageFile) {
+        data.append('coverImage', imageFile);
+      }
+
+      if (editingBlog) {
+        await updateBlog(editingBlog.id, data);
+      } else {
+        await addBlog(data);
+      }
+      
+      setSuccess(true);
+      setTimeout(() => {
+        navigate('/admin/blogs');
+      }, 1500);
+    } catch (error) {
+      console.error('Error saving blog:', error);
+      alert('Failed to save blog. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-6 md:p-8">
-      <h1 className="text-2xl font-bold text-gray-900 mb-2">Create New Blog</h1>
-      <p className="text-gray-500 mb-8">Fill in the details below to publish a new blog post.</p>
+      <h1 className="text-2xl font-bold text-gray-900 mb-2">{editingBlog ? 'Edit Blog' : 'Create New Blog'}</h1>
+      <p className="text-gray-500 mb-8">{editingBlog ? 'Update the details below to save changes.' : 'Fill in the details below to publish a new blog post.'}</p>
+
+      {success && (
+        <div className="mb-6 bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-xl flex items-center gap-3">
+          <CheckCircle2 size={20} className="text-green-500" />
+          <span className="font-medium">Blog saved successfully! Redirecting...</span>
+        </div>
+      )}
 
       <form onSubmit={handleSubmit} className="space-y-6">
+        
+        {/* Photo Upload */}
+        <div className="mb-8 flex flex-col items-start">
+          <label className="block text-sm font-semibold text-gray-700 mb-4">Cover Image</label>
+          
+          {imagePreview ? (
+            <div className="relative group inline-block">
+              <img 
+                src={imagePreview} 
+                alt="Preview" 
+                className="h-48 rounded-xl object-cover border border-gray-200"
+              />
+              <button
+                type="button"
+                onClick={removeImage}
+                className="absolute -top-3 -right-3 bg-red-500 text-white p-1.5 rounded-full shadow-md hover:bg-red-600 transition-colors"
+              >
+                <X size={16} />
+              </button>
+            </div>
+          ) : (
+            <div className="w-full md:w-1/2 h-48 rounded-xl bg-gray-50 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center cursor-pointer hover:bg-gray-100 hover:border-gray-400 transition-colors relative overflow-hidden">
+              <Upload size={32} className="text-gray-400 mb-3" />
+              <span className="text-sm font-medium text-gray-500">Upload Cover Image</span>
+              <input 
+                type="file" 
+                accept="image/*" 
+                onChange={handleImageChange}
+                className="absolute inset-0 opacity-0 cursor-pointer"
+              />
+            </div>
+          )}
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2 md:col-span-2">
             <label className="text-sm font-semibold text-gray-700">Blog Title *</label>
@@ -47,20 +138,8 @@ const AddBlog = () => {
               value={formData.title}
               onChange={handleChange}
               placeholder="e.g. 10 Best Places to Visit in Nepal"
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#ea580c] focus:border-transparent transition-shadow"
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#e53a24] focus:border-transparent transition-shadow"
               required
-            />
-          </div>
-
-          <div className="space-y-2">
-            <label className="text-sm font-semibold text-gray-700">Cover Image URL</label>
-            <input
-              type="url"
-              name="coverImage"
-              value={formData.coverImage}
-              onChange={handleChange}
-              placeholder="https://images.unsplash.com/photo-..."
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#ea580c] focus:border-transparent transition-shadow"
             />
           </div>
 
@@ -70,7 +149,7 @@ const AddBlog = () => {
               name="category"
               value={formData.category}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#ea580c] focus:border-transparent transition-shadow bg-white"
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#e53a24] focus:border-transparent transition-shadow bg-white"
             >
               <option value="">Select a Category</option>
               <option value="Trekking">Trekking</option>
@@ -87,31 +166,30 @@ const AddBlog = () => {
             <span>Content *</span>
             <span className="text-xs text-gray-400 font-normal">Use the editor to add text, headings, and images</span>
           </label>
-          <div className="bg-white rounded-xl overflow-hidden border border-gray-300 focus-within:ring-2 focus-within:ring-[#ea580c] focus-within:border-transparent transition-shadow">
+          <div className="bg-white rounded-xl overflow-hidden border border-gray-300 focus-within:ring-2 focus-within:ring-[#e53a24] focus-within:border-transparent transition-shadow">
             <ReactQuill 
               theme="snow" 
               value={formData.content} 
               onChange={(content) => setFormData((prev) => ({ ...prev, content }))}
               className="h-64 mb-12"
-              modules={{
-                toolbar: [
-                  [{ 'header': [1, 2, 3, false] }],
-                  ['bold', 'italic', 'underline', 'strike', 'blockquote'],
-                  [{'list': 'ordered'}, {'list': 'bullet'}],
-                  ['link', 'image'],
-                  ['clean']
-                ]
-              }}
             />
           </div>
         </div>
 
-        <div className="pt-4 border-t border-gray-100 flex justify-end gap-3">
-          <button type="button" onClick={() => navigate('/admin/blogs')} className="px-6 py-3 rounded-xl border border-gray-300 text-gray-700 font-medium hover:bg-gray-50 transition-colors">
+        <div className="flex justify-end gap-3 pt-6">
+          <button
+            type="button"
+            onClick={() => navigate('/admin/blogs')}
+            className="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-xl hover:bg-gray-50 transition-colors"
+          >
             Cancel
           </button>
-          <button type="submit" className="px-8 py-3 rounded-xl bg-[#ea580c] text-white font-medium hover:bg-[#ea580c]/90 transition-colors shadow-md shadow-[#ea580c]/20">
-            Publish Blog
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="px-6 py-3 bg-[#e53a24] text-white font-medium rounded-xl hover:bg-[#e53a24]/90 transition-colors disabled:opacity-70"
+          >
+            {isSubmitting ? 'Saving...' : (editingBlog ? 'Update Blog' : 'Publish Blog')}
           </button>
         </div>
       </form>

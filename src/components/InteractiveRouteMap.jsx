@@ -56,8 +56,8 @@ const ROUTES = [
     from: 'Chitwan',
     to: 'Lumbini',
     d: 'M 350 320 Q 280 340 220 340',
-    distance: '150 km',
-    time: '4 hours',
+    distance: '135 km',
+    time: '3-4 hours',
     terrain: 'Flat Highway',
     vehicle: 'Any Vehicle',
     desc: 'Smooth highway drive connecting the jungle to the birthplace of Buddha.',
@@ -68,8 +68,8 @@ const ROUTES = [
     from: 'Kathmandu',
     to: 'Everest Region',
     d: 'M 450 250 Q 520 220 600 220',
-    distance: '140 km',
-    time: '8 hours',
+    distance: '275 km',
+    time: '12-14 hours',
     terrain: 'Mountain Roads',
     vehicle: '4x4 SUV',
     desc: 'Challenging drive to the gateways of the Everest region.',
@@ -91,7 +91,7 @@ const InteractiveRouteMap = () => {
   const [activeDest, setActiveDest] = useState(null);
 
   return (
-    <section className="bg-[#fcf9ee] py-16 px-4 md:px-8 relative overflow-hidden">
+    <section className="bg-[#ebf3fa] py-16 px-4 md:px-8 relative overflow-hidden">
       {/* SEO Hidden Text */}
       <div className="sr-only">
         <h2>Our Popular Travel Routes in Nepal</h2>
@@ -110,13 +110,13 @@ const InteractiveRouteMap = () => {
           
           {/* Info Panel */}
           <div className="w-full lg:w-1/3 z-10">
-            <h2 className="text-4xl font-extrabold text-[#331a47] mb-4">Interactive<br/>Route Map</h2>
+            <h2 className="text-4xl font-extrabold text-[#0f3493] mb-4">Interactive<br/>Route Map</h2>
             <p className="text-gray-600 mb-8 font-medium">Hover over the routes or cities to see distance, time, and vehicle recommendations for your Himalayan journey.</p>
             
             <div className="bg-white rounded-3xl p-6 shadow-xl border border-gray-100 min-h-[300px] flex flex-col transition-all">
               {activeRoute ? (
                 <div className="animate-fade-in flex flex-col h-full">
-                  <div className="flex items-center gap-2 text-[#EA580C] font-bold mb-2">
+                  <div className="flex items-center gap-2 text-[#e53a24] font-bold mb-2">
                     <span>{activeRoute.from}</span>
                     <ArrowRightIcon />
                     <span>{activeRoute.to}</span>
@@ -144,7 +144,7 @@ const InteractiveRouteMap = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-[#EA580C]">
+                      <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-[#e53a24]">
                         <Navigation size={16} />
                       </div>
                       <div>
@@ -165,7 +165,7 @@ const InteractiveRouteMap = () => {
                   </div>
                   <h3 className="text-2xl font-extrabold text-gray-900 mb-2">{activeDest.name}</h3>
                   <p className="text-gray-600 mb-6 font-medium">Select a connected route to view travel details and vehicle recommendations.</p>
-                  <Link to={`/destinations`} className="text-[#EA580C] font-bold hover:underline flex items-center justify-center gap-1">
+                  <Link to={`/destinations`} className="text-[#e53a24] font-bold hover:underline flex items-center justify-center gap-1">
                     Explore {activeDest.name} <ChevronRight size={16} />
                   </Link>
                 </div>
@@ -188,7 +188,7 @@ const InteractiveRouteMap = () => {
               <defs>
                 <linearGradient id="route-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="#1e3a8a" />
-                  <stop offset="100%" stopColor="#EA580C" />
+                  <stop offset="100%" stopColor="#e53a24" />
                 </linearGradient>
                 <filter id="glow">
                   <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
@@ -209,7 +209,7 @@ const InteractiveRouteMap = () => {
                      className="cursor-pointer transition-all duration-300"
                   >
                     {/* Invisible thicker path for easier hovering */}
-                    <path d={route.d} fill="none" stroke="transparent" strokeWidth="20" />
+                    <path d={route.d} fill="none" stroke="transparent" strokeWidth="40" />
                     
                     {/* Base Path */}
                     <path 
@@ -249,15 +249,18 @@ const InteractiveRouteMap = () => {
                      onMouseLeave={() => setActiveDest(null)}
                      className="cursor-pointer"
                   >
+                    {/* Invisible stable hit area to prevent hover flicker */}
+                    <circle r="40" fill="transparent" />
+                    
                     {/* Pulse ring if active */}
                     {active && (
-                      <circle r="20" fill="#EA580C" opacity="0.2" className="animate-ping origin-center" />
+                      <circle r="20" fill="#e53a24" opacity="0.2" className="animate-ping origin-center" />
                     )}
                     
                     {/* Node Background */}
                     <circle 
                       r={active ? "12" : "8"} 
-                      fill={active ? "#EA580C" : "#1e3a8a"} 
+                      fill={active ? "#e53a24" : "#1e3a8a"} 
                       stroke="white" 
                       strokeWidth="3" 
                       className="transition-all duration-300 shadow-xl"
@@ -266,8 +269,8 @@ const InteractiveRouteMap = () => {
                     
                     {/* Label Box */}
                     <g transform="translate(15, -15)" className={`transition-opacity duration-300 ${active ? 'opacity-100' : 'opacity-70'}`}>
-                      <rect x="0" y="0" width={dest.name.length * 8 + 20} height="28" rx="14" fill="white" stroke={active ? "#EA580C" : "#f1f5f9"} strokeWidth="2" filter="url(#glow)" />
-                      <text x="10" y="19" fontSize="12" fontWeight="bold" fill={active ? "#EA580C" : "#334155"}>
+                      <rect x="0" y="0" width={dest.name.length * 8 + 20} height="28" rx="14" fill="white" stroke={active ? "#e53a24" : "#f1f5f9"} strokeWidth="2" filter="url(#glow)" />
+                      <text x="10" y="19" fontSize="12" fontWeight="bold" fill={active ? "#e53a24" : "#334155"}>
                         {dest.name}
                       </text>
                     </g>
@@ -280,9 +283,46 @@ const InteractiveRouteMap = () => {
             <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-gray-100 text-xs font-bold text-gray-500 flex flex-col md:flex-row items-center gap-4">
               <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-[#1e3a8a]"></div> Hub</div>
               <div className="flex items-center gap-2"><div className="w-8 h-1 bg-[#cbd5e1] border-dashed border-t-2 border-white"></div> Route</div>
-              <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-[#EA580C] animate-pulse"></div> Active</div>
+              <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-[#e53a24] animate-pulse"></div> Active</div>
             </div>
           </div>
+      </div>
+
+        {/* Route Cards */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {ROUTES.map((route) => (
+            <div 
+              key={route.id} 
+              className="bg-white rounded-3xl shadow-sm hover:shadow-xl border border-gray-100 p-6 transition-all duration-300 group cursor-pointer hover:-translate-y-1 relative overflow-hidden"
+              onMouseEnter={() => setActiveRoute(route)} 
+              onMouseLeave={() => setActiveRoute(null)}
+            >
+              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-50 to-transparent rounded-bl-[100px] -z-10 group-hover:from-blue-100 transition-colors duration-500"></div>
+              
+              <div className="flex items-center justify-between mb-5 relative z-10">
+                <div className="flex items-center gap-3 text-[#1e3a8a] font-extrabold text-[19px]">
+                  <span>{route.from}</span>
+                  <div className="w-8 border-t-2 border-dashed border-[#e53a24] relative">
+                    <div className="absolute -right-1 -top-1.5 text-[#e53a24]"><ChevronRight size={14} /></div>
+                  </div>
+                  <span>{route.to}</span>
+                </div>
+              </div>
+              
+              <p className="text-gray-500 font-medium text-[15px] mb-6 leading-relaxed relative z-10 line-clamp-2">{route.desc}</p>
+              
+              <div className="grid grid-cols-2 gap-3 relative z-10">
+                <div className="bg-gray-50/80 rounded-2xl p-3 border border-gray-100">
+                  <p className="text-[11px] text-gray-500 font-extrabold uppercase tracking-wider mb-1 flex items-center gap-1"><MapPin size={12} className="text-[#1e3a8a]"/> Distance</p>
+                  <p className="font-bold text-gray-900 text-sm">{route.distance}</p>
+                </div>
+                <div className="bg-gray-50/80 rounded-2xl p-3 border border-gray-100">
+                  <p className="text-[11px] text-gray-500 font-extrabold uppercase tracking-wider mb-1 flex items-center gap-1"><Clock size={12} className="text-[#e53a24]"/> Duration</p>
+                  <p className="font-bold text-gray-900 text-sm">{route.time}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

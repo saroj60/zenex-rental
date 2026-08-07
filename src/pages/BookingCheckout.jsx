@@ -15,6 +15,7 @@ const BookingCheckout = () => {
   const pkgId = searchParams.get('pkg');
   const startDate = searchParams.get('start') || 'Any Date';
   const endDate = searchParams.get('end') || 'Any Date';
+  const includeVat = searchParams.get('vat') === 'true';
   
   const { formatPrice } = useCurrency();
   const { vehicles, packages, drivers } = useAppData();
@@ -26,7 +27,9 @@ const BookingCheckout = () => {
     lastName: '',
     email: '',
     phone: '',
-    license: ''
+    license: '',
+    pickupLocation: '',
+    dropLocation: ''
   });
 
   const handleInputChange = (e) => {
@@ -34,36 +37,37 @@ const BookingCheckout = () => {
   };
 
   const pkg = pkgId ? packages.find(p => p.id === pkgId) : null;
-  const vehicle = carId ? vehicles.find(v => v.id.toString() === carId) : (pkg ? null : vehicles[1]);
+  const vehicle = carId ? vehicles.find(v => v.id.toString() === carId) : (pkg ? null : (vehicles && vehicles.length > 0 ? vehicles[0] : null));
 
-  const itemTitle = pkg ? pkg.title : vehicle.name;
-  const itemImg = pkg ? pkg.img : vehicle.img;
+  const itemTitle = pkg ? pkg.title : (vehicle ? vehicle.name : 'Vehicle Booking');
+  const itemImg = pkg ? pkg.img : (vehicle ? vehicle.img : '');
   
   // Extract number from package price string like "NPR 109,200"
   const pkgPriceRaw = pkg ? parseInt(pkg.price.replace(/\D/g, '')) : 0;
   const vehiclePrice = vehicle ? vehicle.price * 3 : 0; // 3 days
   const basePrice = pkg ? pkgPriceRaw : vehiclePrice;
-  const taxes = pkg ? 0 : 3250;
   
   const driverOptions = {
     self: { label: 'Self Drive', price: 0 }
   };
+
+  let specificDriver = null;
   if (drivers && drivers.length > 0) {
-    drivers.forEach(d => {
-      driverOptions[d.id] = { ...d };
-    });
-  } else {
-    driverOptions['driver'] = { 
-      label: 'With Driver', 
-      price: (vehicle && vehicle.priceWithDriver && Number(vehicle.priceWithDriver) > Number(vehicle.price)) 
-        ? (Number(vehicle.priceWithDriver) - Number(vehicle.price)) 
-        : 1500 
-    };
+    specificDriver = drivers.find(d => d.assignedVehicleId?.toString() === (vehicle ? vehicle.id.toString() : null)) 
+      || drivers.find(d => !d.assignedVehicleId);
   }
 
+  driverOptions['driver'] = { 
+    label: 'With Driver', 
+    price: (vehicle && vehicle.priceWithDriver && Number(vehicle.priceWithDriver) > Number(vehicle.price)) 
+      ? (Number(vehicle.priceWithDriver) - Number(vehicle.price)) 
+      : 1500,
+    ...(specificDriver || {})
+  };
+
   const driverPriceTotal = (!pkg && driverMode !== 'self') ? (driverOptions[driverMode] || driverOptions['self']).price * 3 : 0;
-  
-  const total = basePrice + taxes + driverPriceTotal;
+  const vatAmount = includeVat && !pkg ? (basePrice + driverPriceTotal) * 0.13 : 0;
+  const total = basePrice + vatAmount + driverPriceTotal;
 
   return (
     <div className="px-margin-mobile md:px-margin-desktop py-8 bg-background min-h-screen">
@@ -110,6 +114,14 @@ const BookingCheckout = () => {
                     <label className="text-xs font-bold text-on-surface-variant uppercase">License Number</label>
                     <input type="text" name="license" value={formData.license} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="XYZ123456" />
                   </div>
+                  <div className="space-y-1 md:col-span-2">
+                    <label className="text-xs font-bold text-on-surface-variant uppercase">Pickup Location</label>
+                    <input type="text" name="pickupLocation" value={formData.pickupLocation} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="Enter pickup address or location" />
+                  </div>
+                  <div className="space-y-1 md:col-span-2">
+                    <label className="text-xs font-bold text-on-surface-variant uppercase">Drop Location</label>
+                    <input type="text" name="dropLocation" value={formData.dropLocation} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="Enter drop-off address or location" />
+                  </div>
                 </div>
                 <div className="flex gap-4 mt-8">
                   <button onClick={() => setStep(2)} className="w-full bg-himalayan-blue text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary transition-colors">
@@ -141,9 +153,21 @@ const BookingCheckout = () => {
                       amount: formatPrice(total),
                       status: 'pending'
                     });
+                    
+                    const message = `Hi Zenex Travel! I would like to confirm my booking.
+
+*Booking Details:*
+Name: ${formData.firstName} ${formData.lastName}
+Vehicle/Package: ${itemTitle}
+Dates: ${startDate} to ${endDate}
+Pickup Location: ${formData.pickupLocation || 'Not provided'}
+Drop Location: ${formData.dropLocation || 'Not provided'}
+Total Price: ${formatPrice(total)}`;
+
+                    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
                     setStep(3);
-                  }} className="flex-[2] bg-forest-green text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-green-700 transition-colors shadow-lg active:scale-95 duration-200">
-                    <CheckCircle2 size={18} /> Confirm Booking
+                  }} className="flex-[2] bg-[#25D366] text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-green-600 transition-colors shadow-lg active:scale-95 duration-200">
+                    <CheckCircle2 size={18} /> Confirm via WhatsApp
                   </button>
                 </div>
               </div>
@@ -182,7 +206,7 @@ const BookingCheckout = () => {
                   <div className="flex justify-between text-sm"><span className="text-on-surface-variant">{(driverOptions[driverMode] || driverOptions['self']).label}</span> <span className="font-bold">{formatPrice(driverPriceTotal)}</span></div>
                 )}
 
-                <div className="flex justify-between text-sm"><span className="text-on-surface-variant">Taxes & Fees</span> <span className="font-bold">{formatPrice(taxes)}</span></div>
+                {!pkg && <div className="flex justify-between text-sm"><span className="text-on-surface-variant">{includeVat ? 'VAT (13%)' : 'VAT (0%)'}</span> <span className="font-bold">{formatPrice(vatAmount)}</span></div>}
                 <div className="border-t border-outline-variant/30 pt-3 flex justify-between items-center mt-2">
                   <span className="font-bold text-lg">Total</span> 
                   <span className="font-bold text-2xl text-sunset-orange">{formatPrice(total)}</span>

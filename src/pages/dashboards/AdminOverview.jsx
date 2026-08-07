@@ -16,7 +16,8 @@ const AdminOverview = () => {
   }, 0);
 
   const activeBookings = bookings.length;
-  const availableVehicles = vehicles.filter(v => v.urgency !== 'Maintenance').length;
+  const availableVehicles = vehicles.filter(v => v.status !== 'Maintenance').length;
+  const totalUsers = new Set(bookings.map(b => b.customer)).size;
 
   return (
     <div className="space-y-8">
@@ -33,13 +34,13 @@ const AdminOverview = () => {
           </div>
           <div>
             <p className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Total Revenue</p>
-            <h3 className="text-2xl font-extrabold text-gray-900">{formatPrice(totalRevenue || 24500)}</h3>
+            <h3 className="text-2xl font-extrabold text-gray-900">{formatPrice(totalRevenue)}</h3>
             <p className="text-xs text-green-600 font-medium mt-1 flex items-center"><TrendingUp size={12} className="mr-1" /> +12% this month</p>
           </div>
         </div>
 
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
-          <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#EA580C] flex items-center justify-center shrink-0">
+          <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#e53a24] flex items-center justify-center shrink-0">
             <CalendarIcon size={24} />
           </div>
           <div>
@@ -61,12 +62,12 @@ const AdminOverview = () => {
         </div>
 
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
-          <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#EA580C] flex items-center justify-center shrink-0">
+          <div className="w-12 h-12 rounded-xl bg-orange-50 text-[#e53a24] flex items-center justify-center shrink-0">
             <Users size={24} />
           </div>
           <div>
             <p className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Total Users</p>
-            <h3 className="text-2xl font-extrabold text-gray-900">1,204</h3>
+            <h3 className="text-2xl font-extrabold text-gray-900">{totalUsers}</h3>
             <p className="text-xs text-green-600 font-medium mt-1 flex items-center"><TrendingUp size={12} className="mr-1" /> +48 this week</p>
           </div>
         </div>
@@ -101,9 +102,9 @@ const AdminOverview = () => {
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
           <h2 className="text-xl font-extrabold text-[#1e3a8a] mb-6">Quick Actions</h2>
           <div className="space-y-3">
-            <button onClick={() => navigate('/dashboard/fleet')} className="w-full flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-[#EA580C] hover:bg-orange-50 transition-colors group">
-              <span className="font-bold text-gray-700 group-hover:text-[#EA580C]">Add New Vehicle</span>
-              <Car size={18} className="text-gray-400 group-hover:text-[#EA580C]" />
+            <button onClick={() => navigate('/dashboard/fleet')} className="w-full flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-[#e53a24] hover:bg-orange-50 transition-colors group">
+              <span className="font-bold text-gray-700 group-hover:text-[#e53a24]">Add New Vehicle</span>
+              <Car size={18} className="text-gray-400 group-hover:text-[#e53a24]" />
             </button>
             <button onClick={() => navigate('/dashboard/destinations')} className="w-full flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:border-blue-600 hover:bg-blue-50 transition-colors group">
               <span className="font-bold text-gray-700 group-hover:text-blue-600">Manage Destinations</span>

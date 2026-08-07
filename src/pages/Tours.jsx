@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { ChevronDown, ArrowRight, MapPin } from 'lucide-react';
-import { featuredPackages } from './Packages';
+import { useAppData } from '../context/AppDataContext';
 
 const Tours = () => {
+  const { packages } = useAppData();
   const [selectedDestination, setSelectedDestination] = useState('');
   const [selectedPackage, setSelectedPackage] = useState('');
   const [filteredPackages, setFilteredPackages] = useState([]);
@@ -13,14 +15,14 @@ const Tours = () => {
   // Initial load: show all Tours sorted by days
   useEffect(() => {
     window.scrollTo(0, 0);
-    const initialTours = featuredPackages.filter(p => p.category === 'Tours');
+    const initialTours = packages.filter(p => p.category === 'Tours');
     initialTours.sort((a, b) => {
       const daysA = parseInt(a.title.match(/\d+/) || [0], 10);
       const daysB = parseInt(b.title.match(/\d+/) || [0], 10);
       return daysA - daysB;
     });
     setFilteredPackages(initialTours);
-  }, []);
+  }, [packages]);
 
   // Helper to check if a package belongs to a destination
   const isPackageInDestination = (pkg, destName) => {
@@ -66,7 +68,7 @@ const Tours = () => {
 
   // Update filtered packages whenever selectedDestination or selectedPackage changes
   useEffect(() => {
-    let results = featuredPackages.filter(p => p.category === 'Tours');
+    let results = packages.filter(p => p.category === 'Tours');
     if (selectedDestination) {
       results = results.filter(p => isPackageInDestination(p, selectedDestination));
     }
@@ -82,13 +84,13 @@ const Tours = () => {
     });
 
     setFilteredPackages(results);
-  }, [selectedDestination, selectedPackage]);
+  }, [selectedDestination, selectedPackage, packages]);
 
   const destinations = ['Nepal', 'Bhutan', 'Tibet', 'India', 'Multi Country'];
   
   // Extract unique packages names for the dropdown, filtered by selectedDestination if any
   const packageNames = [...new Set(
-    featuredPackages
+    packages
       .filter(p => p.category === 'Tours')
       .filter(p => !selectedDestination || isPackageInDestination(p, selectedDestination))
       .map(p => p.title)
@@ -101,8 +103,13 @@ const Tours = () => {
 
   return (
     <div className="bg-white min-h-screen pb-20">
+      <SEO 
+        title="Adventure Tours Nepal | Luxury & Budget Tours in Nepal"
+        description="Experience the thrill of adventure tours in Nepal. We offer a wide range of luxury tours, budget tours, and custom holiday packages across Nepal."
+        canonicalUrl="https://zenextravel.com.np/tours"
+      />
       {/* Hero / Header Section */}
-      <div className="bg-[#fcf9ee] pt-32 pb-24 px-4 md:px-8 relative overflow-hidden">
+      <div className="bg-[#ebf3fa] pt-32 pb-24 px-4 md:px-8 relative overflow-hidden">
         <div className="max-w-7xl mx-auto flex justify-between items-center relative z-10">
           <h1 className="text-4xl md:text-5xl text-[#222] mb-0 tracking-tight">
             Tours
@@ -216,7 +223,7 @@ const Tours = () => {
               {sortedDays.map(days => (
                 <div key={days} className="mb-12">
                   <div className="flex justify-between items-center mb-6">
-                    <h2 className="text-2xl font-medium text-[#331a47]">{days} Days Tours in {destName}</h2>
+                    <h2 className="text-2xl font-medium text-[#0f3493]">{days} Days Tours in {destName}</h2>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {groupedByDays[days].map((pkg) => (
@@ -255,3 +262,4 @@ const Tours = () => {
 };
 
 export default Tours;
+

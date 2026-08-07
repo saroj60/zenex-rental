@@ -3,16 +3,16 @@ import { Headset, PlaneTakeoff, ShieldCheck, CalendarCheck, CreditCard, Navigati
 
 const Advantage = () => {
   const advantages = [
-    { title: '24/7 Customer Support', desc: 'Local assistance anywhere in Nepal, anytime.', icon: <Headset className="text-[#EA580C]" size={20} /> },
-    { title: 'Airport Pickup Service', desc: 'Direct transfers from TIA to your hotel.', icon: <PlaneTakeoff className="text-[#EA580C]" size={20} /> },
-    { title: 'Verified Drivers', desc: 'Experienced local experts for tough terrains.', icon: <ShieldCheck className="text-[#EA580C]" size={20} /> },
-    { title: 'Flexible Booking', desc: 'Easy cancellations and date modifications.', icon: <CalendarCheck className="text-[#EA580C]" size={20} /> },
-    { title: 'Secure Payments', desc: 'Encrypted international gateway.', icon: <CreditCard className="text-[#EA580C]" size={20} /> },
-    { title: 'GPS-enabled Vehicles', desc: 'Real-time tracking for ultimate safety.', icon: <Navigation className="text-[#EA580C]" size={20} /> },
+    { title: '50-Point Safety Inspections', desc: 'The only company in Nepal with rigorous pre-trip vehicle checks.', icon: <ShieldCheck className="text-[#e53a24]" size={20} /> },
+    { title: '5+ Years Experience', desc: 'Over 10,000+ satisfied customers since 2019.', icon: <CalendarCheck className="text-[#e53a24]" size={20} /> },
+    { title: 'Expert Mountain Drivers', desc: 'Local professionals with 5+ years of high-altitude experience.', icon: <Navigation className="text-[#e53a24]" size={20} /> },
+    { title: 'Luxury Hotel Partnerships', desc: 'Exclusive rates and perks at Nepal\'s finest accommodations.', icon: <CreditCard className="text-[#e53a24]" size={20} /> },
+    { title: 'Customizable Itineraries', desc: '100% tailor-made trips—no rigid, fixed group packages.', icon: <PlaneTakeoff className="text-[#e53a24]" size={20} /> },
+    { title: '24/7 Local Support', desc: 'Our Kathmandu-based team monitors your trip around the clock.', icon: <Headset className="text-[#e53a24]" size={20} /> },
   ];
 
   return (
-    <section className="bg-[#0a2f4c] py-20 mt-16 text-white w-full">
+    <section className="reveal reveal-up bg-[#0a2f4c] py-20 mt-16 text-white w-full">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h3 className="text-center text-lg md:text-xl text-white mb-16 font-medium">The Zenex Advantage</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8 max-w-5xl mx-auto">
@@ -32,3 +32,4 @@ const Advantage = () => {
 };
 
 export default Advantage;
+

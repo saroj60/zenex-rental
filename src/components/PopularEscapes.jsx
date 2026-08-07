@@ -20,12 +20,13 @@ const PopularEscapes = () => {
   };
 
   return (
-    <section className="w-full py-16 bg-white overflow-hidden">
+    <section className="reveal reveal-up w-full py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 mb-8">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#3b134d] tracking-tight">Destinations</h2>
-          
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 flex-1 lg:ml-12">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+          <div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-[#3b134d] tracking-tight mb-2">
+              Destinations
+            </h2>
             <div className="max-w-2xl">
               <p className="text-gray-600 font-medium text-lg leading-relaxed">
                 Personalized tours and unforgettable adventures with a trusted local tour operator.
@@ -34,8 +35,9 @@ const PopularEscapes = () => {
                 #TravelNepal #HimalayanAdventures #ExploreTheWild #CulturalTours
               </p>
             </div>
-            
-            <div className="flex gap-3 self-start lg:self-end">
+          </div>
+          
+          <div className="flex gap-3">
               <button 
                 onClick={() => scroll('left')}
                 className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:text-[#3b134d] hover:border-[#3b134d] hover:bg-gray-50 transition-colors"
@@ -51,7 +53,6 @@ const PopularEscapes = () => {
                 <ChevronRight size={24} />
               </button>
             </div>
-          </div>
         </div>
       </div>
       
@@ -73,7 +74,7 @@ const PopularEscapes = () => {
                 src={dest.img} 
               />
               
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a8a]/95 via-black/40 to-transparent flex flex-col justify-end p-8 transition-colors duration-500 group-hover:from-[#ea580c]/90">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a8a]/95 via-black/40 to-transparent flex flex-col justify-end p-8 transition-colors duration-500 group-hover:from-[#e53a24]/90">
                 <div className="translate-y-12 group-hover:translate-y-0 transition-transform duration-500 ease-out">
                   <span className="text-white text-2xl md:text-3xl font-extrabold leading-tight block mb-3 drop-shadow-lg">
                     {dest.name}
@@ -82,7 +83,7 @@ const PopularEscapes = () => {
                     {dest.fullDesc || dest.desc}
                   </span>
                   
-                  <div className="inline-flex items-center gap-2 bg-white text-[#ea580c] px-6 py-2.5 rounded-full font-bold text-sm shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                  <div className="inline-flex items-center gap-2 bg-white text-[#e53a24] px-6 py-2.5 rounded-full font-bold text-sm shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
                     Explore {dest.name} <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                   </div>
                 </div>
@@ -106,3 +107,4 @@ const PopularEscapes = () => {
 };
 
 export default PopularEscapes;
+

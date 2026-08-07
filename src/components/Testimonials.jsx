@@ -6,31 +6,55 @@ const Testimonials = () => {
     {
       name: 'Sarah Jenkins',
       trip: 'Mustang Off-Road Expedition',
-      vehicle: 'Toyota Hilux 4x4',
+      vehicle: 'Jeep Tour Package',
       date: 'March 2026',
       img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150',
-      text: "The 4x4 we rented for the Mustang trip was immaculate. It handled the rough terrain effortlessly, and the support from Zenex Travel gave us total peace of mind. Our driver, Ram, was a true professional who knew every turn of the mountain.",
+      text: "Our Mustang jeep tour with Zenex Travel was incredible. The 4x4 they provided was immaculate for the rough terrain, and our guide was deeply knowledgeable. The entire tour package gave us total peace of mind.",
     },
     {
       name: 'David Chen',
-      trip: 'Kathmandu to Pokhara Transfer',
-      vehicle: 'Hyundai Creta SUV',
+      trip: 'Annapurna Base Camp Trek',
+      vehicle: 'Complete Trek Package',
       date: 'April 2026',
       img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150',
-      text: "Booking was seamless. The driver was waiting for us at the airport, and the highway transfer was an absolute breeze. The car was air-conditioned, clean, and extremely comfortable for the 6-hour journey. Highly recommend!",
+      text: "Booking our Annapurna trek was seamless. The team handled everything from the airport pickup to the permits and providing a highly experienced guide. Our entire trip was flawlessly organized. Highly recommend Zenex for any Nepal tour!",
     },
     {
       name: 'Elena Rodriguez',
       trip: 'Chitwan Jungle Safari Tour',
-      vehicle: 'Toyota Hiace Minibus',
+      vehicle: 'Minibus & Resort Package',
       date: 'February 2026',
       img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150',
-      text: "We traveled with a family of 8, and the minibus was perfect. Plenty of legroom and luggage space. Having a reliable vehicle made our family trip to Chitwan incredibly comfortable. Will definitely use Zenex Travel again.",
+      text: "We booked the Chitwan Jungle Safari Tour for our family of 8, and it was unforgettable. Zenex arranged the perfect minibus, a stunning eco-resort, and all the safari activities. Having a dedicated tour operator made everything comfortable.",
     }
   ];
 
+  const reviewSchema = {
+    "@context": "https://schema.org/",
+    "@type": "LocalBusiness",
+    "name": "Zenex Travel",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "150"
+    },
+    "review": testimonials.map(t => ({
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": t.name
+      },
+      "reviewBody": t.text
+    }))
+  };
+
   return (
-    <section className="px-4 md:px-8 max-w-7xl mx-auto py-16">
+    <section className="reveal reveal-up px-4 md:px-8 max-w-7xl mx-auto py-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
         <div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a] mb-2 tracking-tight">Traveler Stories</h2>
@@ -53,7 +77,7 @@ const Testimonials = () => {
                 <Star key={i} className="text-[#FBBC05] fill-[#FBBC05]" size={16} />
               ))}
             </div>
-            <p className="font-bold text-gray-900 text-sm">4.9/5 Rating</p>
+            <p className="font-bold text-gray-900 text-sm">5/5 Rating</p>
             <p className="text-xs text-gray-500 font-medium">Based on 150+ reviews</p>
           </div>
         </div>
@@ -81,14 +105,17 @@ const Testimonials = () => {
                   {t.name} <CheckCircle2 size={14} className="text-blue-500 fill-blue-50" />
                 </p>
                 <p className="text-xs text-gray-500 font-medium">{t.date} • {t.vehicle}</p>
-                <p className="text-[13px] font-bold text-[#EA580C] mt-0.5">{t.trip}</p>
+                <p className="text-[13px] font-bold text-[#e53a24] mt-0.5">{t.trip}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
+      
+
     </section>
   );
 };
 
 export default Testimonials;
+

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { CheckCircle, Clock, MapPin, Shield, Star, Car, Compass, ChevronRight } from 'lucide-react';
 import { seoRoutes } from '../data/seoRoutes';
@@ -14,13 +15,6 @@ const RouteLanding = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (routeData) {
-      document.title = `${routeData.title} | Zenex Car Rental Nepal`;
-      const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) {
-        metaDesc.setAttribute('content', routeData.metaDescription);
-      }
-    }
   }, [slug, routeData]);
 
   if (!routeData) {
@@ -32,8 +26,26 @@ const RouteLanding = () => {
     .filter(v => routeData.recommendedVehicleTypes.includes(v.type))
     .slice(0, 3);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": routeData.title,
+    "description": routeData.metaDescription,
+    "image": routeData.heroImage,
+    "brand": {
+      "@type": "Brand",
+      "name": "Zenex Travel"
+    }
+  };
+
   return (
-    <div className="bg-[#fcf9ee] min-h-screen pb-20">
+    <div className="bg-[#ebf3fa] min-h-screen pb-20">
+      <SEO 
+        title={routeData.title}
+        description={routeData.metaDescription}
+        canonicalUrl={`https://zenextravel.com/route/${slug}`}
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <div className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -69,7 +81,7 @@ const RouteLanding = () => {
           {/* Left Column: Content */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-8">
-              <h2 className="text-3xl font-extrabold text-[#331a47] mb-6">Route Overview</h2>
+              <h2 className="text-3xl font-extrabold text-[#0f3493] mb-6">Route Overview</h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-8">
                 {routeData.overview}
               </p>
@@ -81,7 +93,7 @@ const RouteLanding = () => {
                   <span className="text-xl font-bold text-gray-900">{routeData.distance}</span>
                 </div>
                 <div className="bg-orange-50 p-6 rounded-2xl flex flex-col items-center text-center">
-                  <Clock size={32} className="text-[#EA580C] mb-3" />
+                  <Clock size={32} className="text-[#e53a24] mb-3" />
                   <span className="text-sm text-gray-500 font-bold uppercase mb-1">Est. Time</span>
                   <span className="text-xl font-bold text-gray-900">{routeData.time}</span>
                 </div>
@@ -92,7 +104,7 @@ const RouteLanding = () => {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-[#331a47] mb-6">Why book with us for this route?</h3>
+              <h3 className="text-2xl font-bold text-[#0f3493] mb-6">Why book with us for this route?</h3>
               <ul className="space-y-4 mb-10">
                 {routeData.highlights.map((highlight, index) => (
                   <li key={index} className="flex items-start gap-3">
@@ -106,7 +118,7 @@ const RouteLanding = () => {
             {/* FAQs */}
             {routeData.faqs && routeData.faqs.length > 0 && (
               <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                <h2 className="text-3xl font-extrabold text-[#331a47] mb-8">Frequently Asked Questions</h2>
+                <h2 className="text-3xl font-extrabold text-[#0f3493] mb-8">Frequently Asked Questions</h2>
                 <div className="space-y-6">
                   {routeData.faqs.map((faq, index) => (
                     <div key={index} className="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
@@ -137,7 +149,7 @@ const RouteLanding = () => {
                         <h4 className="font-bold text-gray-900 mb-1">{v.name}</h4>
                         <p className="text-xs text-gray-500 bg-gray-100 inline-block px-2 py-0.5 rounded-full font-medium mb-2">{v.type}</p>
                         <div className="flex items-center justify-between">
-                          <span className="text-[#EA580C] font-bold">{formatPrice(v.price)}<span className="text-xs text-gray-500 font-medium">/day</span></span>
+                          <span className="text-[#e53a24] font-bold">{formatPrice(v.price)}<span className="text-xs text-gray-500 font-medium">/day</span></span>
                           <Link to={`/vehicles/${v.id}`} className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-[#1e3a8a] group-hover:bg-[#1e3a8a] group-hover:text-white transition-colors">
                             <ChevronRight size={16} />
                           </Link>
@@ -154,10 +166,10 @@ const RouteLanding = () => {
 
               {/* Trust Box */}
               <div className="bg-gradient-to-b from-[#1e3a8a] to-[#0a2f4c] rounded-3xl p-6 shadow-xl text-center text-white">
-                <Shield className="mx-auto mb-4 text-[#EA580C]" size={40} />
+                <Shield className="mx-auto mb-4 text-[#e53a24]" size={40} />
                 <h4 className="text-xl font-bold mb-3">Safe & Reliable</h4>
                 <p className="text-blue-200 text-sm mb-6">Every rental includes 24/7 roadside assistance, comprehensive insurance, and a professional driver option.</p>
-                <div className="flex justify-center gap-1 text-[#EA580C]">
+                <div className="flex justify-center gap-1 text-[#e53a24]">
                   <Star fill="currentColor" size={20} />
                   <Star fill="currentColor" size={20} />
                   <Star fill="currentColor" size={20} />

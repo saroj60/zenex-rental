@@ -72,12 +72,12 @@ const AdminLogin = () => {
                   <Mail size={18} className="text-blue-300" />
                 </div>
                 <input 
-                  type="email" 
+                  type="text" 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="admin@zenextravel.com" 
-                  className="w-full bg-blue-900/40 border border-white/10 rounded-xl pl-11 pr-4 py-3.5 text-white placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-[#EA580C]/50 focus:border-[#EA580C] transition-all"
+                  placeholder="zenextravel.com.np" 
+                  className="w-full bg-blue-900/40 border border-white/10 rounded-xl pl-11 pr-4 py-3.5 text-white placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-[#e53a24]/50 focus:border-[#e53a24] transition-all"
                 />
               </div>
             </div>
@@ -94,7 +94,7 @@ const AdminLogin = () => {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   placeholder="••••••••" 
-                  className="w-full bg-blue-900/40 border border-white/10 rounded-xl pl-11 pr-4 py-3.5 text-white placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-[#EA580C]/50 focus:border-[#EA580C] transition-all"
+                  className="w-full bg-blue-900/40 border border-white/10 rounded-xl pl-11 pr-4 py-3.5 text-white placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-[#e53a24]/50 focus:border-[#e53a24] transition-all"
                 />
               </div>
             </div>
@@ -103,7 +103,7 @@ const AdminLogin = () => {
               <button 
                 type="submit" 
                 disabled={isLoading}
-                className="w-full bg-[#EA580C] text-white py-4 rounded-xl font-bold hover:bg-[#d04b08] transition-all shadow-lg flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full bg-[#e53a24] text-white py-4 rounded-xl font-bold hover:bg-[#d04b08] transition-all shadow-lg flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {isLoading ? (
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
@@ -113,11 +113,6 @@ const AdminLogin = () => {
               </button>
             </div>
           </form>
-          
-          <div className="mt-8 text-center text-xs text-blue-300">
-            <p>Demo Credentials:</p>
-            <p className="font-mono mt-1 opacity-70">admin@zenextravel.com / password123</p>
-          </div>
         </div>
       </div>
     </div>

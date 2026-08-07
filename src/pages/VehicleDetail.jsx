@@ -4,15 +4,16 @@ import { Users, Gauge, Fuel, CheckCircle2, Navigation, Shield, Wind, Calendar, S
 import { useCurrency } from '../context/CurrencyContext';
 import { useAppData } from '../context/AppDataContext';
 import { useBooking } from '../context/BookingContext';
+import SEO from '../components/SEO';
 
 const VehicleDetail = () => {
   const { id } = useParams();
   const { formatPrice } = useCurrency();
   const { vehicles, drivers } = useAppData();
   
-  const vehicle = vehicles.find(v => v.id.toString() === id) || vehicles[0];
+  const vehicle = vehicles.find(v => v.id.toString() === id) || (vehicles.length > 0 ? vehicles[0] : null);
   
-  const [activeImg, setActiveImg] = useState(vehicle.img);
+  const [activeImg, setActiveImg] = useState(vehicle ? vehicle.img : '');
   const [driverMode, setDriverMode] = useState('self'); // 'self', 'driver', 'luxury'
   
   const { isVehicleAvailable } = useBooking();
@@ -20,6 +21,10 @@ const VehicleDetail = () => {
   const [endDate, setEndDate] = useState('');
   const [days, setDays] = useState(3);
   const [isAvailable, setIsAvailable] = useState(true);
+  const [pickupLocation, setPickupLocation] = useState('Kathmandu Airport (TIA)');
+  const [isCustomPickup, setIsCustomPickup] = useState(false);
+  const [customLocation, setCustomLocation] = useState('');
+  const [includeVat, setIncludeVat] = useState(false);
 
   useEffect(() => {
     if (startDate && endDate) {
@@ -28,46 +33,83 @@ const VehicleDetail = () => {
       const diffTime = Math.abs(e - s);
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) || 1;
       setDays(diffDays);
-      setIsAvailable(isVehicleAvailable(vehicle.id, startDate, endDate));
-    } else {
-      setDays(3);
-      setIsAvailable(true);
     }
-  }, [startDate, endDate, vehicle.id, isVehicleAvailable]);
+  }, [startDate, endDate]);
 
   useEffect(() => {
-    setActiveImg(vehicle.img);
+    if (vehicle && startDate && endDate) {
+      setIsAvailable(isVehicleAvailable(vehicle.id, startDate, endDate));
+    } else {
+      setIsAvailable(true);
+    }
+  }, [startDate, endDate, vehicle, isVehicleAvailable]);
+
+  useEffect(() => {
+    if (vehicle) {
+      setActiveImg(vehicle.img);
+    }
   }, [vehicle]);
+
+  if (!vehicle) {
+    return (
+      <div className="pt-32 pb-20 text-center min-h-[50vh]">
+        <h1 className="text-3xl font-bold text-gray-800">Vehicle Not Found</h1>
+        <Link to="/vehicles" className="text-blue-600 hover:underline mt-4 inline-block">Return to fleet</Link>
+      </div>
+    );
+  }
 
   const driverOptions = {
     self: { label: 'Self Drive', price: 0 }
   };
 
+  let specificDriver = null;
   if (drivers && drivers.length > 0) {
-    drivers.forEach(d => {
-      if (!d.assignedVehicleId || d.assignedVehicleId.toString() === vehicle.id.toString()) {
-        driverOptions[d.id] = { ...d };
-      }
-    });
-  } else {
-    driverOptions['driver'] = { 
-      label: 'With Driver', 
-      price: (vehicle.priceWithDriver && Number(vehicle.priceWithDriver) > Number(vehicle.price)) 
-        ? (Number(vehicle.priceWithDriver) - Number(vehicle.price)) 
-        : 1500 
-    };
+    specificDriver = drivers.find(d => d.assignedVehicleId?.toString() === vehicle.id.toString()) 
+      || drivers.find(d => !d.assignedVehicleId);
   }
+  
+  driverOptions['driver'] = { 
+    label: 'With Driver', 
+    price: (vehicle.priceWithDriver && Number(vehicle.priceWithDriver) > Number(vehicle.price)) 
+      ? (Number(vehicle.priceWithDriver) - Number(vehicle.price)) 
+      : 1500,
+    ...(specificDriver || {})
+  };
 
   const selectedDriver = driverOptions[driverMode] || driverOptions['self'];
 
-  const taxes = vehicle.tax !== undefined && vehicle.tax !== null ? Number(vehicle.tax) : 25;
   const currentVehiclePrice = driverMode === 'self' ? Number(vehicle.price) : (Number(vehicle.priceWithDriver) || Number(vehicle.price));
   const currentDriverFee = (driverMode === 'driver' && Number(vehicle.priceWithDriver) > 0) ? 0 : Number(driverOptions[driverMode]?.price || 0);
+  const vatAmount = includeVat ? ((currentVehiclePrice * days) + (currentDriverFee * days)) * 0.13 : 0;
 
   const images = vehicle.images && vehicle.images.length > 0 ? vehicle.images : [vehicle.img];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Car",
+    "name": vehicle.name,
+    "description": vehicle.seoDescription || `Rent ${vehicle.name} in Nepal.`,
+    "vehicleModelDate": "2024",
+    "brand": {
+      "@type": "Brand",
+      "name": vehicle.name.split(' ')[0]
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "NPR",
+      "price": vehicle.price
+    }
+  };
+
   return (
     <div className="px-margin-mobile md:px-margin-desktop py-8 bg-background min-h-screen">
+      <SEO 
+        title={vehicle.seoTitle || `Rent ${vehicle.name} in Nepal | Zenex Travel`}
+        description={vehicle.seoDescription || `Looking to rent a ${vehicle.name} in Nepal? Book now with Zenex Travel for the best rates and service.`}
+        canonicalUrl={`https://zenextravel.com.np/vehicles/${vehicle.id}`}
+        structuredData={structuredData}
+      />
       {/* Breadcrumb */}
       <div className="text-sm text-on-surface-variant mb-6 flex gap-2">
         <Link to="/" className="hover:text-himalayan-blue">Home</Link> / 
@@ -81,7 +123,7 @@ const VehicleDetail = () => {
           {/* Gallery */}
           <div className="space-y-4 mb-8">
             <div className="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-sm">
-              <img src={activeImg} alt={vehicle.name} className="w-full h-full object-cover" />
+              <img src={activeImg || '/images/economy_car.png'} alt={vehicle.name} className="w-full h-full object-cover" onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} />
             </div>
             {images.length > 1 && (
               <div className="flex gap-4 overflow-x-auto hide-scrollbar">
@@ -228,11 +270,37 @@ const VehicleDetail = () => {
               </div>
               <div className="space-y-1">
                 <label className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Pickup Location</label>
-                <select className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface appearance-none outline-none">
-                  <option>Kathmandu Airport (TIA)</option>
-                  <option>Thamel City Center</option>
-                  <option>Pokhara Airport</option>
+                <select 
+                  value={isCustomPickup ? 'Other' : pickupLocation}
+                  onChange={(e) => {
+                    if (e.target.value === 'Other') {
+                      setIsCustomPickup(true);
+                      setPickupLocation(customLocation);
+                    } else {
+                      setIsCustomPickup(false);
+                      setPickupLocation(e.target.value);
+                    }
+                  }}
+                  className={`w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface appearance-none outline-none ${isCustomPickup ? 'mb-2' : ''}`}
+                >
+                  <option value="Kathmandu Airport (TIA)">Kathmandu Airport (TIA)</option>
+                  <option value="Thamel City Center">Thamel City Center</option>
+                  <option value="Pokhara Airport">Pokhara Airport</option>
+                  <option value="Other">Other (Specify Address...)</option>
                 </select>
+                {isCustomPickup && (
+                  <input 
+                    type="text" 
+                    placeholder="Enter full address or hotel name" 
+                    value={customLocation}
+                    onChange={(e) => {
+                      setCustomLocation(e.target.value);
+                      setPickupLocation(e.target.value);
+                    }}
+                    className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none"
+                    autoFocus
+                  />
+                )}
               </div>
             </div>
 
@@ -244,8 +312,22 @@ const VehicleDetail = () => {
               {driverMode !== 'self' && currentDriverFee === 0 && (
                 <div className="flex justify-between text-sm mb-2 text-on-surface-variant"><span>{driverOptions[driverMode].label}</span> <span className="text-green-600 font-bold">Included</span></div>
               )}
-              <div className="flex justify-between text-sm mb-2 text-on-surface-variant"><span>Taxes & Fees</span> <span>{formatPrice(taxes)}</span></div>
-              <div className="border-t border-outline-variant/30 mt-2 pt-2 flex justify-between font-bold text-lg"><span>Total</span> <span>{formatPrice((currentVehiclePrice * days) + taxes + (currentDriverFee * days))}</span></div>
+              <div className="flex items-center justify-between text-sm mb-2 text-on-surface-variant">
+                <label className="flex items-center cursor-pointer select-none">
+                  <input 
+                    type="checkbox"
+                    checked={includeVat}
+                    onChange={(e) => setIncludeVat(e.target.checked)}
+                    className="mr-2 cursor-pointer w-4 h-4 accent-primary"
+                  />
+                  Include 13% VAT
+                </label>
+                <span>{formatPrice(vatAmount)}</span>
+              </div>
+              <div className="border-t border-outline-variant/30 mt-2 pt-2 flex justify-between font-bold text-lg">
+                <span>Total</span> 
+                <span>{formatPrice((currentVehiclePrice * days) + vatAmount + (currentDriverFee * days))}</span>
+              </div>
             </div>
 
             {!isAvailable && (
@@ -255,7 +337,7 @@ const VehicleDetail = () => {
             )}
 
             <Link 
-              to={isAvailable ? `/checkout?car=${vehicle.id}&driver=${driverMode}&start=${startDate}&end=${endDate}` : '#'} 
+              to={isAvailable ? `/checkout?car=${vehicle.id}&driver=${driverMode}&start=${startDate}&end=${endDate}&pickup=${encodeURIComponent(pickupLocation)}&vat=${includeVat}` : '#'} 
               className={`block w-full text-center py-4 rounded-xl font-bold text-lg transition-colors shadow-lg ${
                 isAvailable 
                   ? 'bg-himalayan-blue text-white hover:bg-primary active:scale-95 duration-200' 

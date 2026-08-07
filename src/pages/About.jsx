@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { ShieldCheck, Map, Star, Users, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
+import { ShieldCheck, Map, Star, Users, ArrowRight, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About = () => {
@@ -9,6 +10,11 @@ const About = () => {
 
   return (
     <div className="bg-[#F4F6F8] min-h-screen pb-20">
+      <SEO 
+        title="About Zenex Travel | Best Tour & Travel Company in Nepal"
+        description="Learn about Zenex Travel, the best tour operator and car rental company in Nepal. We offer premium travel services, certified guides, and reliable vehicles."
+        canonicalUrl="https://zenextravel.com.np/about"
+      />
       {/* Hero Section */}
       <div className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -23,7 +29,7 @@ const About = () => {
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight leading-tight drop-shadow-lg">
-            Elevating <span className="text-[#EA580C]">Himalayan</span> Journeys
+            Elevating <span className="text-[#e53a24]">Himalayan</span> Journeys
           </h1>
           <p className="text-lg md:text-2xl text-blue-100 font-medium max-w-3xl mx-auto drop-shadow-md leading-relaxed">
             We are Nepal's premier travel and vehicle rental partner, providing seamless flight ticketing, unforgettable tours, and premium transportation across the Himalayas.
@@ -36,11 +42,11 @@ const About = () => {
         <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
             <div>
-              <h3 className="text-4xl md:text-5xl font-extrabold text-[#1e3a8a] mb-2">15+</h3>
+              <h3 className="text-4xl md:text-5xl font-extrabold text-[#1e3a8a] mb-2">2+</h3>
               <p className="text-gray-500 font-bold uppercase tracking-wider text-xs md:text-sm">Years Experience</p>
             </div>
             <div>
-              <h3 className="text-4xl md:text-5xl font-extrabold text-[#1e3a8a] mb-2">50+</h3>
+              <h3 className="text-4xl md:text-5xl font-extrabold text-[#1e3a8a] mb-2">500+</h3>
               <p className="text-gray-500 font-bold uppercase tracking-wider text-xs md:text-sm">Premium Vehicles</p>
             </div>
             <div>
@@ -55,75 +61,10 @@ const About = () => {
         </div>
       </div>
 
-      {/* Our Story / Who We Are */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 mb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="order-2 lg:order-1 relative">
-            <div className="absolute inset-0 bg-[#EA580C] rounded-3xl transform -translate-x-4 translate-y-4 z-0 opacity-20"></div>
-            <img 
-              src="/images/destinations/annapurna.png" 
-              alt="Jeep in Nepal" 
-              className="relative z-10 rounded-3xl shadow-2xl w-full h-[500px] object-cover"
-            />
-          </div>
-          <div className="order-1 lg:order-2 space-y-6">
-            <h2 className="text-SM font-bold text-[#EA580C] uppercase tracking-widest">Our Story</h2>
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a] leading-tight">
-              Driven by a Passion for Nepal
-            </h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Zenex Travel was founded with a simple vision: to make navigating Nepal's beautiful but challenging landscapes safe, comfortable, and accessible. 
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              We recognized that a standard rental service wouldn't cut it in the Himalayas. That's why we built a fleet of highly-maintained, specialized vehicles paired with expert local drivers who know every curve of the mountain roads.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed font-medium text-[#1e3a8a]">
-              Whether you're traversing the rugged trails of Mustang or cruising the highways to Pokhara, we ensure your journey is as spectacular as the destination.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Core Values */}
-      <div className="bg-white py-24 border-y border-gray-200/60 mb-24">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-SM font-bold text-[#EA580C] uppercase tracking-widest mb-2">Why Choose Us</h2>
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Our Core Values</h3>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#F4F6F8] p-10 rounded-3xl text-center group hover:bg-[#0a2f4c] transition-colors duration-300">
-              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                <ShieldCheck className="text-[#EA580C]" size={40} />
-              </div>
-              <h4 className="text-xl font-extrabold text-[#1e3a8a] mb-4 group-hover:text-white transition-colors">Uncompromising Safety</h4>
-              <p className="text-gray-600 group-hover:text-blue-100 transition-colors">Every vehicle undergoes a rigorous 50-point inspection before every single trip. We never compromise on your safety.</p>
-            </div>
-            
-            <div className="bg-[#F4F6F8] p-10 rounded-3xl text-center group hover:bg-[#0a2f4c] transition-colors duration-300">
-              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                <Map className="text-[#EA580C]" size={40} />
-              </div>
-              <h4 className="text-xl font-extrabold text-[#1e3a8a] mb-4 group-hover:text-white transition-colors">Local Expertise</h4>
-              <p className="text-gray-600 group-hover:text-blue-100 transition-colors">Our drivers aren't just chauffeurs; they are local guides who know the weather, the roads, and the hidden gems.</p>
-            </div>
-            
-            <div className="bg-[#F4F6F8] p-10 rounded-3xl text-center group hover:bg-[#0a2f4c] transition-colors duration-300">
-              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                <Star className="text-[#EA580C]" size={40} />
-              </div>
-              <h4 className="text-xl font-extrabold text-[#1e3a8a] mb-4 group-hover:text-white transition-colors">Premium Comfort</h4>
-              <p className="text-gray-600 group-hover:text-blue-100 transition-colors">From luxury SUVs to rugged 4x4s, our fleet is the newest and most comfortable in Nepal.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Our Comprehensive Services */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 mb-24">
         <div className="text-center mb-16">
-          <h2 className="text-SM font-bold text-[#EA580C] uppercase tracking-widest mb-2">What We Offer</h2>
+          <h2 className="text-SM font-bold text-[#e53a24] uppercase tracking-widest mb-2">What We Offer</h2>
           <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Our Comprehensive Services</h3>
           <p className="text-gray-500 mt-4 max-w-2xl mx-auto">Beyond car rentals, we provide a complete suite of travel solutions to ensure your journey is absolutely flawless.</p>
         </div>
@@ -175,46 +116,92 @@ const About = () => {
         </div>
       </div>
 
+      {/* Our Story / Who We Are */}
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="order-2 lg:order-1 relative">
+            <div className="absolute inset-0 bg-[#e53a24] rounded-3xl transform -translate-x-4 translate-y-4 z-0 opacity-20"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=2070&auto=format&fit=crop" 
+              alt="Trekking in Nepal" 
+              className="relative z-10 rounded-3xl shadow-2xl w-full h-[500px] object-cover"
+            />
+          </div>
+          <div className="order-1 lg:order-2 space-y-6">
+            <h2 className="text-SM font-bold text-[#e53a24] uppercase tracking-widest">Our Story</h2>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a] leading-tight">
+              Driven by a Passion for Nepal
+            </h3>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Zenex Travel was founded with a simple vision: to showcase the breathtaking beauty of Nepal through authentic, immersive, and well-organized tours and treks.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              We recognized that a standard travel agency wouldn't cut it in the Himalayas. That's why we built a team of expert local guides, tailored unique itineraries, and focused on delivering unforgettable cultural and adventure experiences.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed font-medium text-[#1e3a8a]">
+              Whether you're traversing the rugged trails of Everest or exploring the rich heritage of Kathmandu, we ensure your journey is as spectacular as the destination itself.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Core Values */}
+      <div className="bg-white py-24 border-y border-gray-200/60 mb-24">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-SM font-bold text-[#e53a24] uppercase tracking-widest mb-2">Why Choose Us</h2>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Our Core Values</h3>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-[#F4F6F8] p-10 rounded-3xl text-center group hover:bg-[#0a2f4c] transition-colors duration-300">
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <ShieldCheck className="text-[#e53a24]" size={40} />
+              </div>
+              <h4 className="text-xl font-extrabold text-[#1e3a8a] mb-4 group-hover:text-white transition-colors">Uncompromising Safety</h4>
+              <p className="text-gray-600 group-hover:text-blue-100 transition-colors">Every vehicle undergoes a rigorous 50-point inspection before every single trip. We never compromise on your safety.</p>
+            </div>
+            
+            <div className="bg-[#F4F6F8] p-10 rounded-3xl text-center group hover:bg-[#0a2f4c] transition-colors duration-300">
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <Map className="text-[#e53a24]" size={40} />
+              </div>
+              <h4 className="text-xl font-extrabold text-[#1e3a8a] mb-4 group-hover:text-white transition-colors">Local Expertise</h4>
+              <p className="text-gray-600 group-hover:text-blue-100 transition-colors">Our drivers aren't just chauffeurs; they are local guides who know the weather, the roads, and the hidden gems.</p>
+            </div>
+            
+            <div className="bg-[#F4F6F8] p-10 rounded-3xl text-center group hover:bg-[#0a2f4c] transition-colors duration-300">
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <Star className="text-[#e53a24]" size={40} />
+              </div>
+              <h4 className="text-xl font-extrabold text-[#1e3a8a] mb-4 group-hover:text-white transition-colors">Premium Comfort</h4>
+              <p className="text-gray-600 group-hover:text-blue-100 transition-colors">From luxury SUVs to rugged 4x4s, our fleet is the newest and most comfortable in Nepal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Meet the Team */}
       <div className="bg-white py-24 border-y border-gray-200/60 mb-24">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-SM font-bold text-[#EA580C] uppercase tracking-widest mb-2">Our People</h2>
+            <h2 className="text-SM font-bold text-[#e53a24] uppercase tracking-widest mb-2">Our People</h2>
             <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Meet The Experts</h3>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">Our drivers and travel planners are the heart of Zenex Travel. They are trained professionals dedicated to your safety and comfort.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#F4F6F8] rounded-3xl overflow-hidden group">
-              <div className="h-64 overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" alt="Sanjok Rai" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+          <div className="flex justify-center">
+            <div className="bg-[#F4F6F8] rounded-3xl overflow-hidden group max-w-sm w-full">
+              <div className="h-80 overflow-hidden relative">
+                <img src="/images/zenexexpert.png" alt="Janardhan Gautam" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
               </div>
               <div className="p-6 text-center">
-                <h4 className="text-xl font-bold text-[#1e3a8a]">Sanjok Rai</h4>
-                <p className="text-[#EA580C] font-bold text-sm mb-3">Head of Operations</p>
-                <p className="text-gray-600 text-sm">With 15+ years in Nepal tourism, Sanjok ensures every fleet vehicle and tour operates flawlessly.</p>
-              </div>
-            </div>
-
-            <div className="bg-[#F4F6F8] rounded-3xl overflow-hidden group">
-              <div className="h-64 overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" alt="Anjali Sharma" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-              </div>
-              <div className="p-6 text-center">
-                <h4 className="text-xl font-bold text-[#1e3a8a]">Anjali Sharma</h4>
-                <p className="text-[#EA580C] font-bold text-sm mb-3">Travel Consultant</p>
-                <p className="text-gray-600 text-sm">Anjali specializes in crafting bespoke itineraries for our international clients seeking unique experiences.</p>
-              </div>
-            </div>
-
-            <div className="bg-[#F4F6F8] rounded-3xl overflow-hidden group">
-              <div className="h-64 overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400" alt="Pemba Sherpa" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-              </div>
-              <div className="p-6 text-center">
-                <h4 className="text-xl font-bold text-[#1e3a8a]">Pemba Sherpa</h4>
-                <p className="text-[#EA580C] font-bold text-sm mb-3">Lead Expedition Driver</p>
-                <p className="text-gray-600 text-sm">Pemba is our chief 4x4 off-road specialist, safely navigating the treacherous Mustang and Manang routes.</p>
+                <h4 className="text-xl font-bold text-[#1e3a8a]">Janardhan Gautam</h4>
+                <p className="text-[#e53a24] font-bold text-sm mb-3">CEO & Travel Expert</p>
+                <p className="text-gray-600 text-sm mb-4">With 5+ years of experience, dedicated to ensuring your travel experience is safe, comfortable, and memorable.</p>
+                <a href="https://wa.me/9779767476521" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 w-full bg-[#25D366] text-white py-2.5 rounded-xl font-bold hover:bg-[#1ebd59] transition-colors shadow-sm">
+                  <MessageCircle size={18} /> Contact via WhatsApp
+                </a>
               </div>
             </div>
           </div>
@@ -224,15 +211,15 @@ const About = () => {
       {/* CTA */}
       <div className="max-w-5xl mx-auto px-4 md:px-8">
         <div className="bg-gradient-to-r from-[#0a2f4c] to-[#1e3a8a] rounded-3xl p-12 md:p-16 text-center shadow-2xl relative overflow-hidden">
-          <div className="absolute inset-0 bg-[#EA580C]/10 mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-[#e53a24]/10 mix-blend-overlay"></div>
           <div className="relative z-10">
             <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6">Ready to Start Your Journey?</h2>
             <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-              Book your premium vehicle today and experience Nepal like never before.
+              Book your next adventure today and experience Nepal like never before.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/vehicles" className="bg-[#EA580C] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d04b08] transition-colors shadow-lg flex items-center justify-center gap-2">
-                Browse Our Fleet <ArrowRight size={20} />
+              <Link to="/packages" className="bg-[#e53a24] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d04b08] transition-colors shadow-lg flex items-center justify-center gap-2">
+                Browse Our Packages <ArrowRight size={20} />
               </Link>
               <Link to="/contact" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition-colors flex items-center justify-center gap-2">
                 Contact Our Team

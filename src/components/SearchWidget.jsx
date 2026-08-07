@@ -235,21 +235,21 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
         <div className="flex items-start gap-3">
           <ShieldCheck className="text-[#1e3a8a] mt-1" size={24} />
           <div>
-            <h4 className="font-bold text-gray-900 text-sm">Verified Drivers</h4>
+            <h4 className="font-bold text-gray-900 text-sm">Expert Guides & Drivers</h4>
             <p className="text-xs text-gray-600 mt-0.5">Experienced & trusted</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
-          <Zap className="text-[#1e3a8a] mt-1" size={24} />
+          <Navigation className="text-[#1e3a8a] mt-1" size={24} />
           <div>
-            <h4 className="font-bold text-gray-900 text-sm">Instant Booking</h4>
-            <p className="text-xs text-gray-600 mt-0.5">Book in just a few clicks</p>
+            <h4 className="font-bold text-gray-900 text-sm">Custom Tour Packages</h4>
+            <p className="text-xs text-gray-600 mt-0.5">Tailored to your needs</p>
           </div>
         </div>
         <div className="flex items-start gap-3">
           <Shield className="text-[#1e3a8a] mt-1" size={24} />
           <div>
-            <h4 className="font-bold text-gray-900 text-sm">Fully Insured Vehicles</h4>
+            <h4 className="font-bold text-gray-900 text-sm">Safe & Insured Travel</h4>
             <p className="text-xs text-gray-600 mt-0.5">Your safety, our priority</p>
           </div>
         </div>
@@ -262,7 +262,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
             <Car size={24} />
           </div>
           <div>
-            <h3 className="font-bold text-xl text-gray-900">500+</h3>
+            <h3 className="font-bold text-xl text-gray-900">1500+</h3>
             <h4 className="font-bold text-sm text-gray-700">Vehicles</h4>
             <p className="text-xs text-gray-500">Wide range of cars</p>
           </div>
@@ -280,11 +280,11 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="w-14 h-14 bg-[#EA580C] rounded-2xl flex items-center justify-center text-white shadow-lg">
+          <div className="w-14 h-14 bg-[#e53a24] rounded-2xl flex items-center justify-center text-white shadow-lg">
             <Map size={24} />
           </div>
           <div>
-            <h3 className="font-bold text-xl text-gray-900">25+</h3>
+            <h3 className="font-bold text-xl text-gray-900">100+</h3>
             <h4 className="font-bold text-sm text-gray-700">Destinations</h4>
             <p className="text-xs text-gray-500">Across beautiful Nepal</p>
           </div>

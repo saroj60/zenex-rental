@@ -1,26 +1,44 @@
 import React, { useState } from 'react';
-import { MapPin, Search, Filter, MoreVertical, Plus, Trash2, X } from 'lucide-react';
+import { MapPin, Search, Filter, MoreVertical, Plus, Trash2, X, Edit2 } from 'lucide-react';
 import { useAppData } from '../../context/AppDataContext';
 
 const DestinationsAdmin = () => {
-  const { destinations, deleteDestination, addDestination } = useAppData();
+  const { destinations, deleteDestination, addDestination, updateDestination } = useAppData();
   const [searchTerm, setSearchTerm] = useState('');
   
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingId, setEditingId] = useState(null);
   const [newDest, setNewDest] = useState({
     id: '', name: '', region: 'Valley', desc: '', img: '', span: 'md:col-span-1 md:row-span-1', bestTime: '', terrain: '', vehicles: ''
   });
 
   const filteredDestinations = destinations.filter(d => d.name.toLowerCase().includes(searchTerm.toLowerCase()));
 
+  const handleEditClick = (dest) => {
+    setEditingId(dest.id);
+    const vehiclesStr = dest.vehicles ? dest.vehicles.join(', ') : '';
+    setNewDest({
+      ...dest,
+      vehicles: vehiclesStr,
+      region: dest.region || 'Valley',
+      span: dest.span || 'md:col-span-1 md:row-span-1'
+    });
+    setIsModalOpen(true);
+  };
+
   const handleAddDestination = (e) => {
     e.preventDefault();
     const formattedDest = {
       ...newDest,
       id: newDest.id || newDest.name.toLowerCase().replace(/\s+/g, '-'),
-      vehicles: newDest.vehicles.split(',').map(v => v.trim()).filter(Boolean)
+      vehicles: newDest.vehicles ? newDest.vehicles.split(',').map(v => v.trim()).filter(Boolean) : []
     };
-    addDestination(formattedDest);
+    if (editingId) {
+      updateDestination(editingId, formattedDest);
+    } else {
+      addDestination(formattedDest);
+    }
+    setEditingId(null);
     setIsModalOpen(false);
     setNewDest({ id: '', name: '', region: 'Valley', desc: '', img: '', span: 'md:col-span-1 md:row-span-1', bestTime: '', terrain: '', vehicles: '' });
   };
@@ -29,7 +47,7 @@ const DestinationsAdmin = () => {
     <div className="space-y-6 relative">
       <div className="flex justify-between items-center mb-6">
         <h1 className="font-headline-lg text-2xl md:text-3xl font-bold text-himalayan-blue">Destinations Management</h1>
-        <button onClick={() => setIsModalOpen(true)} className="bg-himalayan-blue text-white px-4 py-2 rounded-lg text-sm font-bold shadow hover:bg-primary transition flex items-center gap-2">
+        <button onClick={() => { setEditingId(null); setNewDest({ id: '', name: '', region: 'Valley', desc: '', img: '', span: 'md:col-span-1 md:row-span-1', bestTime: '', terrain: '', vehicles: '' }); setIsModalOpen(true); }} className="bg-himalayan-blue text-white px-4 py-2 rounded-lg text-sm font-bold shadow hover:bg-primary transition flex items-center gap-2">
           <Plus size={16} /> Add Destination
         </button>
       </div>
@@ -65,7 +83,10 @@ const DestinationsAdmin = () => {
                   <td className="px-6 py-4 font-mono text-on-surface-variant">{d.id}</td>
                   <td className="px-6 py-4 font-bold flex items-center gap-2"><MapPin size={16} className="text-himalayan-blue"/> {d.name}</td>
                   <td className="px-6 py-4 text-on-surface-variant">{d.region}</td>
-                  <td className="px-6 py-4 text-right">
+                  <td className="px-6 py-4 text-right flex justify-end gap-2">
+                    <button onClick={() => handleEditClick(d)} className="text-himalayan-blue hover:text-blue-700 transition-colors p-2">
+                      <Edit2 size={18} />
+                    </button>
                     <button onClick={() => deleteDestination(d.id)} className="text-sunset-orange hover:text-red-700 transition-colors p-2">
                       <Trash2 size={18} />
                     </button>
@@ -86,7 +107,7 @@ const DestinationsAdmin = () => {
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
             <div className="flex justify-between items-center p-6 border-b border-gray-100 bg-surface-container-low shrink-0">
-              <h2 className="text-xl font-bold text-himalayan-blue">Add New Destination</h2>
+              <h2 className="text-xl font-bold text-himalayan-blue">{editingId ? 'Edit Destination' : 'Add New Destination'}</h2>
               <button onClick={() => setIsModalOpen(false)} className="text-gray-400 hover:text-gray-700">
                 <X size={24} />
               </button>
@@ -149,7 +170,7 @@ const DestinationsAdmin = () => {
             
             <div className="p-6 border-t border-gray-100 shrink-0 flex gap-3">
               <button type="button" onClick={() => setIsModalOpen(false)} className="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-sm font-bold text-gray-600 hover:bg-gray-50 transition">Cancel</button>
-              <button type="submit" form="destForm" className="flex-1 px-4 py-3 bg-himalayan-blue text-white rounded-xl text-sm font-bold shadow-lg hover:bg-primary transition">Save Destination</button>
+              <button type="submit" form="destForm" className="flex-1 px-4 py-3 bg-himalayan-blue text-white rounded-xl text-sm font-bold shadow-lg hover:bg-primary transition">{editingId ? 'Update Destination' : 'Save Destination'}</button>
             </div>
           </div>
         </div>

@@ -1,32 +1,56 @@
 import React, { useState } from 'react';
-import { Package, Search, Filter, MoreVertical, Plus, Trash2, X } from 'lucide-react';
+import { Package, Search, Filter, MoreVertical, Plus, Trash2, X, Edit2, Check } from 'lucide-react';
 import { useCurrency } from '../../context/CurrencyContext';
 import { useAppData } from '../../context/AppDataContext';
 
 const PackagesAdmin = () => {
   const { formatPrice } = useCurrency();
-  const { packages, deletePackage, addPackage } = useAppData();
+  const { packages, deletePackage, addPackage, updatePackage } = useAppData();
   const [searchTerm, setSearchTerm] = useState('');
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingId, setEditingId] = useState(null);
+  const [inlineEditingId, setInlineEditingId] = useState(null);
+  const [inlinePrice, setInlinePrice] = useState('');
   const [newPkg, setNewPkg] = useState({
-    id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: ''
+    id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '', category: 'Packages', location: '', tripCode: '', persons: ''
   });
 
   const filteredPackages = packages.filter(p => p.title.toLowerCase().includes(searchTerm.toLowerCase()));
+
+  const handleSaveInlinePrice = (pkg) => {
+    updatePackage(pkg.id, { ...pkg, price: inlinePrice });
+    setInlineEditingId(null);
+  };
+
+  const handleEditClick = (pkg) => {
+    setEditingId(pkg.id);
+    const highlightsStr = pkg.highlights ? pkg.highlights.join(', ') : '';
+    const itineraryStr = pkg.itinerary ? pkg.itinerary.map(i => `${i.day}: ${i.desc}`).join('\n') : '';
+    setNewPkg({
+      ...pkg,
+      highlights: highlightsStr,
+      itinerary: itineraryStr,
+      category: pkg.category || 'Packages',
+      location: pkg.location || '',
+      tripCode: pkg.tripCode || '',
+      persons: pkg.persons || ''
+    });
+    setIsModalOpen(true);
+  };
 
   const handleAddPackage = (e) => {
     e.preventDefault();
     
     // Parse highlights and itinerary from simple text input for initial version
-    const highlightsArray = newPkg.highlights.split(',').map(h => h.trim()).filter(Boolean);
-    const itineraryArray = newPkg.itinerary.split('\n').map((line, idx) => {
+    const highlightsArray = newPkg.highlights ? newPkg.highlights.split(',').map(h => h.trim()).filter(Boolean) : [];
+    const itineraryArray = newPkg.itinerary ? newPkg.itinerary.split('\n').map((line, idx) => {
       const parts = line.split(':');
       if (parts.length > 1) {
         return { day: parts[0].trim(), desc: parts.slice(1).join(':').trim() };
       }
       return { day: `Day ${idx + 1}`, desc: line.trim() };
-    }).filter(i => i.desc);
+    }).filter(i => i.desc) : [];
 
     const formattedPkg = {
       ...newPkg,
@@ -35,16 +59,21 @@ const PackagesAdmin = () => {
       itinerary: itineraryArray
     };
 
-    addPackage(formattedPkg);
+    if (editingId) {
+      updatePackage(editingId, formattedPkg);
+    } else {
+      addPackage(formattedPkg);
+    }
+    setEditingId(null);
     setIsModalOpen(false);
-    setNewPkg({ id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '' });
+    setNewPkg({ id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '', category: 'Packages', location: '', tripCode: '', persons: '' });
   };
 
   return (
     <div className="space-y-6 relative">
       <div className="flex justify-between items-center mb-6">
         <h1 className="font-headline-lg text-2xl md:text-3xl font-bold text-himalayan-blue">Packages Management</h1>
-        <button onClick={() => setIsModalOpen(true)} className="bg-himalayan-blue text-white px-4 py-2 rounded-lg text-sm font-bold shadow hover:bg-primary transition flex items-center gap-2">
+        <button onClick={() => { setEditingId(null); setNewPkg({ id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '', category: 'Packages', location: '', tripCode: '', persons: '' }); setIsModalOpen(true); }} className="bg-himalayan-blue text-white px-4 py-2 rounded-lg text-sm font-bold shadow hover:bg-primary transition flex items-center gap-2">
           <Plus size={16} /> Create Package
         </button>
       </div>
@@ -81,8 +110,36 @@ const PackagesAdmin = () => {
                   <td className="px-6 py-4 font-mono text-on-surface-variant">{p.id}</td>
                   <td className="px-6 py-4 font-bold flex items-center gap-2"><Package size={16} className="text-sunset-orange"/> {p.title}</td>
                   <td className="px-6 py-4 text-on-surface-variant">{p.duration}</td>
-                  <td className="px-6 py-4 font-bold text-on-surface">{p.price}</td>
-                  <td className="px-6 py-4 text-right">
+                  <td className="px-6 py-4 font-bold text-on-surface">
+                    {inlineEditingId === p.id ? (
+                      <div className="flex items-center gap-2">
+                        <input
+                          type="text"
+                          value={inlinePrice}
+                          onChange={(e) => setInlinePrice(e.target.value)}
+                          className="border border-himalayan-blue rounded px-2 py-1 text-sm w-24 outline-none font-normal"
+                          autoFocus
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter') handleSaveInlinePrice(p);
+                            if (e.key === 'Escape') setInlineEditingId(null);
+                          }}
+                        />
+                        <button onClick={() => handleSaveInlinePrice(p)} className="text-green-600 hover:text-green-800"><Check size={16}/></button>
+                        <button onClick={() => setInlineEditingId(null)} className="text-gray-400 hover:text-gray-600"><X size={16}/></button>
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-2 group">
+                        <span>{p.price}</span>
+                        <button onClick={() => { setInlineEditingId(p.id); setInlinePrice(p.price); }} className="text-gray-300 hover:text-himalayan-blue opacity-0 group-hover:opacity-100 transition-opacity" title="Quick Edit Price">
+                          <Edit2 size={14} />
+                        </button>
+                      </div>
+                    )}
+                  </td>
+                  <td className="px-6 py-4 text-right flex justify-end gap-2">
+                    <button onClick={() => handleEditClick(p)} className="text-himalayan-blue hover:text-blue-700 transition-colors p-2">
+                      <Edit2 size={18} />
+                    </button>
                     <button onClick={() => deletePackage(p.id)} className="text-sunset-orange hover:text-red-700 transition-colors p-2">
                       <Trash2 size={18} />
                     </button>
@@ -103,7 +160,7 @@ const PackagesAdmin = () => {
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
             <div className="flex justify-between items-center p-6 border-b border-gray-100 bg-surface-container-low shrink-0">
-              <h2 className="text-xl font-bold text-himalayan-blue">Create New Package</h2>
+              <h2 className="text-xl font-bold text-himalayan-blue">{editingId ? 'Edit Package' : 'Create New Package'}</h2>
               <button onClick={() => setIsModalOpen(false)} className="text-gray-400 hover:text-gray-700">
                 <X size={24} />
               </button>
@@ -118,23 +175,36 @@ const PackagesAdmin = () => {
                   </div>
                   
                   <div className="space-y-1">
+                    <label className="text-xs font-bold text-on-surface-variant">Category</label>
+                    <select required value={newPkg.category} onChange={e => setNewPkg({...newPkg, category: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue">
+                      <option value="Packages">Packages</option>
+                      <option value="Tours">Tours</option>
+                    </select>
+                  </div>
+
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold text-on-surface-variant">Location</label>
+                    <input type="text" value={newPkg.location} onChange={e => setNewPkg({...newPkg, location: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. Kathmandu & Chitwan" />
+                  </div>
+
+                  <div className="space-y-1">
                     <label className="text-xs font-bold text-on-surface-variant">Duration</label>
-                    <input type="text" required value={newPkg.duration} onChange={e => setNewPkg({...newPkg, duration: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. 7-14 Days" />
+                    <input type="text" value={newPkg.duration} onChange={e => setNewPkg({...newPkg, duration: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. 7-14 Days" />
                   </div>
 
                   <div className="space-y-1">
                     <label className="text-xs font-bold text-on-surface-variant">Price string</label>
-                    <input type="text" required value={newPkg.price} onChange={e => setNewPkg({...newPkg, price: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. NPR 15000/day" />
+                    <input type="text" required value={newPkg.price} onChange={e => setNewPkg({...newPkg, price: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. US$1500" />
                   </div>
 
                   <div className="col-span-2 space-y-1">
                     <label className="text-xs font-bold text-on-surface-variant">Description</label>
-                    <textarea required value={newPkg.desc} onChange={e => setNewPkg({...newPkg, desc: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="A brief description of the package..." rows="2"></textarea>
+                    <textarea value={newPkg.desc} onChange={e => setNewPkg({...newPkg, desc: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="A brief description of the package..." rows="2"></textarea>
                   </div>
 
                   <div className="col-span-2 space-y-1">
                     <label className="text-xs font-bold text-on-surface-variant">Image URL</label>
-                    <input type="text" required value={newPkg.img} onChange={e => setNewPkg({...newPkg, img: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. /images/destinations/annapurna.png or https://..." />
+                    <input type="text" value={newPkg.img} onChange={e => setNewPkg({...newPkg, img: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. /images/destinations/annapurna.png or https://..." />
                   </div>
 
                   <div className="col-span-2 space-y-1">
@@ -152,7 +222,7 @@ const PackagesAdmin = () => {
             
             <div className="p-6 border-t border-gray-100 shrink-0 flex gap-3">
               <button type="button" onClick={() => setIsModalOpen(false)} className="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-sm font-bold text-gray-600 hover:bg-gray-50 transition">Cancel</button>
-              <button type="submit" form="pkgForm" className="flex-1 px-4 py-3 bg-himalayan-blue text-white rounded-xl text-sm font-bold shadow-lg hover:bg-primary transition">Create Package</button>
+              <button type="submit" form="pkgForm" className="flex-1 px-4 py-3 bg-himalayan-blue text-white rounded-xl text-sm font-bold shadow-lg hover:bg-primary transition">{editingId ? 'Save Changes' : 'Create Package'}</button>
             </div>
           </div>
         </div>

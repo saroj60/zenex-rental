@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import SEO from '../components/SEO';
 import { ArrowRight, MapPin, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useAppData } from '../context/AppDataContext';
-import InteractiveRouteMap from '../components/InteractiveRouteMap';
 
 const Destinations = () => {
   useEffect(() => {
@@ -24,6 +24,11 @@ const Destinations = () => {
 
   return (
     <div className="bg-[#F4F6F8] min-h-screen pb-20">
+      <SEO 
+        title="Top Destinations in Nepal | Explore Kathmandu, Pokhara, Chitwan"
+        description="Discover the best tourist destinations in Nepal. Plan your next adventure to Kathmandu, Pokhara, Lumbini, and the Himalayas with our expert travel guides."
+        canonicalUrl="https://zenextravel.com.np/destinations"
+      />
       {/* Hero Section */}
       <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -40,7 +45,7 @@ const Destinations = () => {
             <MapPin size={16} className="mr-2" /> Explore Nepal
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight leading-tight drop-shadow-lg">
-            Discover Your Next <span className="text-[#EA580C]">Adventure</span>
+            Discover Your Next <span className="text-[#e53a24]">Adventure</span>
           </h1>
           <p className="text-lg md:text-xl text-blue-100 font-medium mb-10 max-w-2xl mx-auto drop-shadow-md">
             From the towering peaks of the Himalayas to the lush jungles of the Terai, find the perfect vehicle for your destination.
@@ -57,16 +62,11 @@ const Destinations = () => {
                 className="w-full bg-transparent outline-none text-gray-800 font-medium placeholder:text-gray-400"
               />
             </div>
-            <button className="bg-[#EA580C] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-[#d04b08] transition-colors shadow-md">
+            <button className="bg-[#e53a24] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-[#d04b08] transition-colors shadow-md">
               Search
             </button>
           </div>
         </div>
-      </div>
-
-      {/* Interactive Map */}
-      <div className="-mt-6 relative z-30">
-        <InteractiveRouteMap />
       </div>
 
       {/* Destinations Section */}

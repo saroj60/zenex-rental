@@ -2,9 +2,167 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
-import { featuredPackages } from './Packages';
+
+import SEO from '../components/SEO';
 
 const packageExtraData = {
+  'nepal-tour-poon-hill-trek-12d': {
+    quickInfo: [
+      { label: 'Duration', value: '12 Days 11 Nights', icon: 'Calendar' },
+      { label: 'Country', value: 'Nepal', icon: 'Flag' },
+      { label: 'Max. Altitude', value: '3210m (Poon Hill)', icon: 'Mountain' },
+      { label: 'Best Season', value: 'Sep-Nov & Mar-May', icon: 'Sun' },
+      { label: 'Group/Private', value: 'Private & Group', icon: 'Users' },
+      { label: 'Grade', value: 'Moderate', icon: 'BarChart' },
+      { label: 'Transportation', value: 'Private Car & Tourist Bus', icon: 'Car' },
+      { label: 'Start/End', value: 'Kathmandu', icon: 'MapPin' }
+    ],
+    overview: `Embark on a magnificent 12 Days Nepal Tour combined with the legendary Poon Hill Trek. This journey offers a perfect blend of rich cultural exploration in Kathmandu and Pokhara, alongside an exhilarating trek into the heart of the Annapurna region.
+
+Begin with sightseeing at UNESCO World Heritage sites in the Kathmandu Valley, discovering ancient temples, stupas, and vibrant bazaars. Journey to the beautiful lakeside city of Pokhara, the gateway to the Himalayas.
+
+The trekking portion takes you through lush rhododendron forests, terraced fields, and traditional Gurung villages. The absolute highlight is the early morning hike to Poon Hill (3,210m), where you will witness a breathtaking panoramic sunrise over the Annapurna and Dhaulagiri mountain ranges.
+
+### Why This Tour?
+This itinerary perfectly balances cultural immersion, stunning landscapes, and an accessible trekking experience suitable for beginners and seasoned hikers alike.`,
+    highlights: [
+      'Guided sightseeing of Kathmandu’s UNESCO World Heritage Sites',
+      'Scenic drive to the picturesque lakeside city of Pokhara',
+      'Trek through beautiful rhododendron forests and Gurung villages',
+      'Spectacular sunrise views over the Himalayas from Poon Hill (3,210m)',
+      'Experience the warm hospitality of local mountain communities'
+    ],
+    itinerary: [
+      { day: 'Day 1', title: 'Arrival in Kathmandu (1,400m)', desc: 'Welcome to Nepal! Transfer to your hotel and enjoy a welcome dinner.' },
+      { day: 'Day 2', title: 'Kathmandu Valley Sightseeing', desc: 'Full day guided tour of Pashupatinath, Boudhanath, Swayambhunath, and Kathmandu Durbar Square.' },
+      { day: 'Day 3', title: 'Drive to Pokhara (820m)', desc: 'Scenic drive to Pokhara. Enjoy the evening strolling around Phewa Lake.' },
+      { day: 'Day 4', title: 'Drive to Nayapul & Trek to Tikhedhunga (1,540m)', desc: 'Short drive to Nayapul to begin the trek. Hike along the Modi Khola to Tikhedhunga.' },
+      { day: 'Day 5', title: 'Trek to Ghorepani (2,860m)', desc: 'Ascend the stone steps of Ulleri and trek through rhododendron forests to Ghorepani.' },
+      { day: 'Day 6', title: 'Hike to Poon Hill (3,210m) & Trek to Tadapani (2,630m)', desc: 'Early morning hike to Poon Hill for a spectacular sunrise. Later, trek to Tadapani.' },
+      { day: 'Day 7', title: 'Trek to Ghandruk (1,940m)', desc: 'Descend to the beautiful Gurung village of Ghandruk. Enjoy cultural immersion and mountain views.' },
+      { day: 'Day 8', title: 'Trek to Nayapul & Drive to Pokhara', desc: 'Trek down to Nayapul and take a short drive back to Pokhara to relax.' },
+      { day: 'Day 9', title: 'Pokhara Sightseeing', desc: 'Visit Davis Falls, Gupteshwor Cave, and the World Peace Pagoda.' },
+      { day: 'Day 10', title: 'Drive back to Kathmandu', desc: 'Scenic drive back to the capital. Transfer to your hotel.' },
+      { day: 'Day 11', title: 'Free Day in Kathmandu', desc: 'Relax, go souvenir shopping in Thamel, or explore more of the city.' },
+      { day: 'Day 12', title: 'Departure', desc: 'Transfer to the international airport for your flight home.' }
+    ],
+    inclusions: [
+      'Airport pick-up and drop-off',
+      'All ground transportation by private vehicle/tourist bus',
+      'Professional English-speaking tour and trekking guides',
+      'Trekking permits (TIMS and Annapurna Conservation Area Project fee)',
+      'Accommodation in Kathmandu and Pokhara (hotels) and during the trek (teahouses)',
+      'Daily breakfast in cities; all meals (breakfast, lunch, dinner) during the trek'
+    ],
+    exclusions: [
+      'Nepal Visa fees and International airfare',
+      'Lunch and dinner in Kathmandu and Pokhara',
+      'Personal expenses, travel insurance, and tipping',
+      'Hot showers and battery charging during the trek'
+    ],
+    gallery: [
+      '/images/poon2.jpg',
+      '/images/poon1.jpeg'
+    ]
+  },
+  'nepal-classic-8-days': {
+    quickInfo: [
+      { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
+      { label: 'Country', value: 'Nepal', icon: 'Flag' },
+      { label: 'Max. Altitude', value: '1400m (Kathmandu)', icon: 'Mountain' },
+      { label: 'Best Season', value: 'All Year Round', icon: 'Sun' },
+      { label: 'Group/Private', value: 'Private & Group', icon: 'Users' },
+      { label: 'Grade', value: 'Easy', icon: 'BarChart' },
+      { label: 'Transportation', value: 'Premium SUV', icon: 'Car' },
+      { label: 'Start/End', value: 'Kathmandu', icon: 'MapPin' }
+    ],
+    overview: `Experience the ultimate "Golden Triangle" of Nepal with this 8-Day Classic Tour covering Kathmandu, Pokhara, and Chitwan National Park.
+
+Your journey begins in the vibrant capital, **Kathmandu**, where you will explore ancient temples, massive stupas, and the bustling durbar squares that showcase Nepal's rich architectural heritage. 
+
+Next, travel to the lush jungles of **Chitwan National Park**. Enjoy a thrilling jeep safari, canoe rides along the Rapti River, and keep your eyes peeled for the rare one-horned rhinoceros and majestic Bengal tigers. 
+
+Finally, unwind in the picturesque lakeside city of **Pokhara**. Marvel at the reflection of the Annapurna mountain range in the pristine waters of Phewa Lake, and wake up early for a spectacular Himalayan sunrise from Sarangkot.
+
+<div class="my-8 w-full h-64 md:h-80 overflow-hidden rounded-2xl shadow-md">
+  <img src="https://images.unsplash.com/photo-1620803511210-90baeb9d4db8?q=80&w=1170&auto=format&fit=crop" alt="Nepal Classic Tour" class="w-full h-full object-cover" />
+</div>
+
+### Why This Tour?
+This itinerary perfectly balances cultural immersion, wildlife adventure, and relaxing mountain views, making it the most popular choice for first-time visitors to Nepal.`,
+    highlights: [
+      'Discover 4 UNESCO World Heritage Sites in Kathmandu',
+      'Thrilling Jungle Safari in Chitwan National Park',
+      'Canoeing and Tharu cultural village tour',
+      'Relaxing boat ride on Phewa Lake in Pokhara',
+      'Breathtaking sunrise over the Himalayas from Sarangkot'
+    ],
+    itinerary: [
+      { day: 'Day 1', title: 'Arrival in Kathmandu', desc: 'Welcome to Nepal! Transfer to your hotel and enjoy a welcome dinner.' },
+      { day: 'Day 2', title: 'Kathmandu Valley Sightseeing', desc: 'Full day guided tour of Pashupatinath, Boudhanath, Swayambhunath, and Kathmandu Durbar Square.' },
+      { day: 'Day 3', title: 'Drive to Chitwan', desc: 'Scenic drive to Chitwan. Check into your jungle lodge and enjoy an evening Tharu cultural stick dance.' },
+      { day: 'Day 4', title: 'Chitwan Jungle Safari', desc: 'Full day of jungle activities including a jeep safari, canoeing, and a guided jungle walk.' },
+      { day: 'Day 5', title: 'Drive to Pokhara', desc: 'Travel to the beautiful lakeside city of Pokhara. Evening free to stroll around Phewa Lake.' },
+      { day: 'Day 6', title: 'Pokhara Sightseeing', desc: 'Early morning Sarangkot sunrise tour. Later, visit Davis Falls, Gupteshwor Cave, and the World Peace Pagoda.' },
+      { day: 'Day 7', title: 'Return to Kathmandu', desc: 'Scenic drive back to the capital. Enjoy some last-minute souvenir shopping in Thamel.' },
+      { day: 'Day 8', title: 'Departure', desc: 'Transfer to the international airport for your flight home.' }
+    ],
+    inclusions: [
+      'Airport pick-up and drop-off',
+      'Premium SUV transportation between cities',
+      'Professional English-speaking guides',
+      'All monument and national park entrance fees',
+      'Jungle safari activities in Chitwan',
+      '7 Nights accommodation in premium hotels',
+      'Daily breakfast, plus all meals during the Chitwan stay'
+    ],
+    exclusions: [
+      'Nepal Visa fees and International airfare',
+      'Lunch and dinner in Kathmandu and Pokhara',
+      'Personal expenses, travel insurance, and tipping'
+    ],
+    gallery: [
+      'https://images.unsplash.com/photo-1620803511210-90baeb9d4db8?q=80&w=1170&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=1170&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1513614835783-51537729c8ba?q=80&w=1170&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?q=80&w=1171&auto=format&fit=crop'
+    ]
+  },
+  'kathmandu-4-days': {
+    quickInfo: [
+      { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
+      { label: 'Location', value: 'Kathmandu Valley', icon: 'MapPin' },
+      { label: 'Transportation', value: 'Private Car & Cable Car', icon: 'Car' }
+    ],
+    overview: `Experience the best of Kathmandu's culture and viewpoints in just 4 days. Includes all major temples and a scenic ride to Chandragiri Hills!`,
+    highlights: ['Pashupatinath Temple', 'Swayambhunath Stupa', 'Chandragiri Cable Car', 'Bhaktapur Durbar Square'],
+    itinerary: [
+      { day: 'Day 1', title: 'Arrival and Swayambhunath Sunset', desc: 'Arrive in Kathmandu, transfer to hotel, and watch the sunset from the Monkey Temple.' },
+      { day: 'Day 2', title: 'Pashupatinath & Boudhanath', desc: 'Explore the spiritual heart of the city.' },
+      { day: 'Day 3', title: 'Chandragiri Hills & Patan', desc: 'Ride the cable car for mountain views, then visit Patan Durbar Square.' },
+      { day: 'Day 4', title: 'Bhaktapur Tour & Departure', desc: 'Visit the ancient city of Bhaktapur before flying home.' }
+    ],
+    gallery: [
+      'https://images.unsplash.com/photo-1544442069-97dded965a9f?q=80&w=1331&auto=format&fit=crop'
+    ]
+  },
+  'annapurna-11-days': {
+    quickInfo: [
+      { label: 'Duration', value: '11 Days', icon: 'Calendar' },
+      { label: 'Max Altitude', value: '5416m (Thorong La)', icon: 'Mountain' }
+    ],
+    overview: `Conquer the legendary Annapurna Circuit! This 11-day trek takes you from lush subtropical valleys to the arid, high-altitude Tibetan plateau.`,
+    highlights: ['Thorong La Pass (5416m)', 'Muktinath Temple', 'Expert Mountain Guides', 'Teahouse Accommodations'],
+    itinerary: [
+      { day: 'Day 1', title: 'Drive to Chame', desc: 'Off-road drive into the mountains.' },
+      { day: 'Day 2-4', title: 'Trek to Manang', desc: 'Acclimatization and stunning views.' },
+      { day: 'Day 5-8', title: 'Thorong La Pass', desc: 'Cross the highest pass in the world.' },
+      { day: 'Day 9-11', title: 'Jomsom to Pokhara & Return', desc: 'Fly to Pokhara and return to Kathmandu.' }
+    ],
+    gallery: [
+      'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?q=80&w=1171&auto=format&fit=crop'
+    ]
+  },
   'kathmandu-chandragiri-4d': {
         quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
@@ -85,7 +243,7 @@ While not mandatory, tipping is highly appreciated. A standard restaurant tip is
 **Booking & Cancellation**
 A 40% deposit is required to confirm your booking, with the remaining 60% payable upon arrival in Kathmandu. Cancellations up to 30 days before the trip incur a 20% fee.`,
     whyBookWithUs: [
-      'Local tour operator with 16+ years of experience',
+      'Local tour operator with 5+ years of experience',
       '99% satisfied customers & prompt responses',
       '100% instant booking confirmation',
       'Secure online payment gateway with no hidden charges',
@@ -193,7 +351,7 @@ Tips are appreciated by your support team after the trip. Tips are not mandatory
 Your booking will be confirmed via email after a 40% deposit of the total trip cost is made through our payment gateway via credit/debit card. The remaining 60% is payable upon arrival in Kathmandu. Cancellations up to 30 days before the trip incur a 20% fee, scaling up closer to the departure date. There is no charge for postponing the trip.`,
     whyBookWithUs: [
       'TripAdvisor Recommended',
-      'Local tour operator with 16 years of experience',
+      'Local tour operator with 5+ years of experience',
       '99% satisfied customers & prompt responses',
       '100% instant booking confirmation',
       'Secure online payment gateway without extra charges',
@@ -295,7 +453,7 @@ Many pilgrims prefer to schedule their journey during the full moon days for an 
 
 **Currency:** The unit of Chinese currency is Yuan. USD 1 = 7.50 Yuan. 1 Yuan = NPR 20.00 approx, which must be exchanged in Nepal.`,
     whyBookWithUs: [
-      'We are local tour operator with 16 years of experience',
+      'We are local tour operator with 5+ years of experience',
       '99% satisfied customers & prompt response',
       '100% instant booking confirmation',
       'Secure online payment gateway without extra charges',
@@ -401,7 +559,7 @@ In case of a serious sickness or a casualty, you shall be rescued by a helicopte
 All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Visas are available at Nepalese embassies/consulates or entry points. Fees: 15 Days ($30), 30 Days ($50), 90 Days ($125).`,
     whyBookWithUs: [
       'TripAdvisor Recommended',
-      'We are local tour operator with 16 years of experienced in tour & trekking operation',
+      'We are local tour operator with 5+ years of experienced in tour & trekking operation',
       '99% satisfied customers & prompt response',
       '100% instant booking confirmation',
       'Secure online payment gateway without extra charges',
@@ -500,7 +658,7 @@ In case of a serious sickness or a casualty, you shall be rescued by a helicopte
 All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Visas are available at Nepalese embassies/consulates or entry points. Fees: 15 Days ($30), 30 Days ($50), 90 Days ($125).`,
     whyBookWithUs: [
       'TripAdvisor Recommended',
-      'We are local tour operator with 16 years of experienced in tour & trekking operation',
+      'We are local tour operator with 5+ years of experienced in tour & trekking operation',
       '99% satisfied customers & prompt response',
       '100% instant booking confirmation',
       'Secure online payment gateway without extra charges',
@@ -598,7 +756,7 @@ All visitors except Indian nationals must hold a passport and valid visa. Visa c
 Tips are appreciated by your support team. We suggest US$ 5 per day per tourist to the driver and US$ 10 per day to the guide.`,
     whyBookWithUs: [
       'TripAdvisor Recommended',
-      'We are local tour operator with 16 years of experienced in tour & trekking operation',
+      'We are local tour operator with 5+ years of experienced in tour & trekking operation',
       '99% satisfied customers & prompt response',
       '100% instant booking confirmation',
       'Secure online payment gateway without extra charges',
@@ -703,7 +861,7 @@ All visitors (except Indian nationals) must have a valid passport and visa to en
 **Booking & Cancellation**
 Your booking will be confirmed via email after a 40% deposit of the total trip cost is made. The remaining 60% is payable upon arrival in Kathmandu. Cancellation fees apply starting from 30 days before the trip.`,
     whyBookWithUs: [
-      'We are local tour operator with 16 years of experienced in tour & trekking operation',
+      'We are local tour operator with 5+ years of experienced in tour & trekking operation',
       '99% satisfied customers & prompt response',
       '100% instant booking confirmation',
       'Secure online payment gateway without extra charges',
@@ -804,7 +962,7 @@ All visitors (except Indian nationals) must have a valid passport and visa to en
 **Tipping**
 Tips are appreciated by your support team. Our suggestion is US$ 5 per day per tourist to driver and US$ 10 per day to guide.`,
     whyBookWithUs: [
-      'We are local tour operator with 16 years of experienced in tour & trekking operation',
+      'We are local tour operator with 5+ years of experienced in tour & trekking operation',
       '99% satisfied customers & prompt response',
       '100% instant booking confirmation',
       'Secure online payment gateway without extra charges',
@@ -918,7 +1076,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -1046,7 +1204,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -1177,7 +1335,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -1317,7 +1475,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -1457,7 +1615,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -1649,7 +1807,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -1830,7 +1988,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -2017,7 +2175,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -2209,7 +2367,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -2397,7 +2555,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -2580,7 +2738,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -2763,7 +2921,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -2944,7 +3102,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -3124,7 +3282,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -3314,7 +3472,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -3498,7 +3656,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -3687,7 +3845,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -3876,7 +4034,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -4064,7 +4222,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -4261,7 +4419,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -4448,7 +4606,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -4637,7 +4795,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -4822,7 +4980,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -5011,7 +5169,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -5200,7 +5358,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -5399,7 +5557,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -5590,7 +5748,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -5780,7 +5938,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -5972,7 +6130,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -6120,7 +6278,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -6263,7 +6421,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -6408,7 +6566,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -6549,7 +6707,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -6690,7 +6848,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -6836,7 +6994,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -6983,7 +7141,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -7131,7 +7289,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -7281,7 +7439,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -7431,7 +7589,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -7580,7 +7738,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -7727,7 +7885,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -7879,7 +8037,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -8029,7 +8187,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -8182,7 +8340,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -8323,7 +8481,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -8463,7 +8621,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -8609,7 +8767,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -8756,7 +8914,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -8904,7 +9062,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -9045,7 +9203,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -9183,7 +9341,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Secure online payment gateway without extra charges',
       'Personal care',
       '24 hrs & 7 weeks available in email & Viber/WhatsApp',
-      '16 years of experienced in tour & trekking operation',
+      '5+ years of experienced in tour & trekking operation',
       'All insured vehicle we use in our tour',
       'All insured trekking guide & porter',
       'Government certified guide',
@@ -9274,6 +9432,9 @@ With personalized care, natural therapies, and the soothing rhythm of nature, th
       'Sound healing therapy sessions',
       'Forest bathing experiences'
     ]
+  },
+  'nepal-poon-hill-12d': {
+    gallery: ['/images/poon2.jpg', '/images/poon1.jpeg']
   }
 };
 
@@ -9282,14 +9443,16 @@ const PackageDetail = () => {
   const { packages: contextPackages } = useAppData();
   
   // Find package in context or in featuredPackages
-  const basePkg = contextPackages.find(p => p.id === id) || featuredPackages.find(p => p.id === id) || contextPackages[0];
+  const basePkg = contextPackages.find(p => p.id === id) || contextPackages[0];
   
   // Merge extra details if they exist
-  const extraData = packageExtraData[id] || {};
+  const lookupId = id === 'nepal-poon-hill-12d' ? 'nepal-tour-poon-hill-trek-12d' : id;
+  const extraData = packageExtraData[lookupId] || {};
   const pkg = { ...basePkg, ...extraData };
 
   const [persons, setPersons] = useState(2);
   const [packageType, setPackageType] = useState('Budget');
+  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
   
   // Calculate dynamic price
   const calculatePrice = () => {
@@ -9313,12 +9476,44 @@ const PackageDetail = () => {
 
   const currentPrice = calculatePrice();
 
+  const handleBookPackage = () => {
+    const message = `Hi! I would like to book the following package:
+Package: ${pkg.title}
+Type: ${packageType}
+Date: ${date}
+Persons: ${persons}
+Total Price: ${currentPrice}`;
+    
+    window.open(`mailto:info@zenextravel.com.np?subject=Booking Request: ${pkg.title}&body=${encodeURIComponent(message)}`, '_blank');
+  };
+
+  const handleQuickInquiry = () => {
+    const message = `Hi! I have some questions about the ${pkg.title} package. Can you please help me?`;
+    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
 
   return (
     <div className="bg-[#F4F6F8] min-h-screen">
+      <SEO 
+        title={`${pkg.title} | Nepal Tour Packages`}
+        description={`Book the ${pkg.title} tour package with Zenex Travel. ${pkg.category || 'Adventure'} tour in Nepal starting at ${pkg.price || 'best price'}.`}
+        canonicalUrl={`https://zenextravel.com/packages/${id}`}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          "name": pkg.title,
+          "description": pkg.title + " Tour Package",
+          "image": pkg.img,
+          "provider": {
+            "@type": "TravelAgency",
+            "name": "Zenex Travel"
+          }
+        }}
+      />
       {/* Hero */}
       <div className="relative h-[60vh] min-h-[400px]">
         <div className="absolute inset-0 z-0">
@@ -9331,7 +9526,7 @@ const PackageDetail = () => {
               &larr; Back to Packages
             </Link>
             <div className="flex flex-wrap items-center gap-4 mb-4">
-              <span className="bg-[#EA580C] text-white px-3 py-1 rounded-full text-sm font-bold flex items-center">
+              <span className="bg-[#e53a24] text-white px-3 py-1 rounded-full text-sm font-bold flex items-center">
                 <Clock size={16} className="mr-1.5" /> {pkg.duration || 'N/A'}
               </span>
               <span className="bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-sm font-medium border border-white/20">
@@ -9368,13 +9563,29 @@ const PackageDetail = () => {
                         <div className="w-12 h-12 rounded border border-gray-200 flex items-center justify-center shrink-0 mr-4">
                           <IconComponent className="text-gray-700" size={24} />
                         </div>
-                        <div>
-                          <p className="text-sm text-gray-500 font-medium">{info.label}</p>
-                          <p className="text-[#331a47] font-semibold text-sm leading-tight mt-0.5">{info.value}</p>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm text-gray-500 font-medium truncate">{info.label}</p>
+                          <p className="text-[#0f3493] font-semibold text-sm leading-tight mt-0.5 break-words hyphens-auto">
+                            {info.value.replace(/\//g, '/\u200B')}
+                          </p>
                         </div>
                       </div>
                     );
                   })}
+                </div>
+              </div>
+            )}
+
+            {/* Photo Gallery */}
+            {pkg.gallery && pkg.gallery.length > 0 && (
+              <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 mb-10">
+                <h2 className="text-2xl font-extrabold text-[#1e3a8a] mb-6 flex items-center">Photo Gallery</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {pkg.gallery.map((imgUrl, idx) => (
+                    <div key={idx} className="relative h-48 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                      <img src={imgUrl} alt={`${pkg.title} Gallery ${idx + 1}`} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                    </div>
+                  ))}
                 </div>
               </div>
             )}
@@ -9399,7 +9610,7 @@ const PackageDetail = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                       {pkg.highlights.map((highlight, idx) => (
                         <div key={idx} className="flex items-start">
-                          <CheckCircle2 className="text-[#EA580C] mr-3 shrink-0 mt-0.5" size={20} />
+                          <CheckCircle2 className="text-[#e53a24] mr-3 shrink-0 mt-0.5" size={20} />
                           <span className="text-gray-700 font-medium">{highlight}</span>
                         </div>
                       ))}
@@ -9443,7 +9654,7 @@ const PackageDetail = () => {
                 <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-200 before:to-transparent">
                   {pkg.itinerary.map((step, idx) => (
                     <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                      <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-[#EA580C] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                      <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-[#e53a24] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                         <MapPin size={16} />
                       </div>
                       <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-5 rounded-2xl border border-gray-100">
@@ -9558,82 +9769,121 @@ const PackageDetail = () => {
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="sticky top-24 space-y-4">
-              <div className="bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-gray-100">
+            <div className="sticky top-24 space-y-6">
+              
+              {/* Main Booking Card */}
+              <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl shadow-blue-900/5 border border-white relative overflow-hidden">
+                {/* Decorative background element */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-purple-50 rounded-bl-[100px] -z-10"></div>
+                
+                {/* Price Display */}
                 <div className="mb-4">
-                  <h3 className="text-2xl font-extrabold text-[#331a47]">{currentPrice ? currentPrice : 'Price not available'}</h3>
+                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Starting from</p>
+                  <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-800">
+                    {currentPrice ? currentPrice : 'TBA'}
+                  </h3>
+                  <p className="text-xs text-gray-400 mt-1">per person / all inclusive</p>
                 </div>
                 
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="mb-4">
-                  <h4 className="font-bold text-sm text-[#111] mb-3">Package Type</h4>
-                  <div className="grid grid-cols-2 gap-3">
-                    {['Budget', 'Comfort', 'Standard', 'Luxury'].map((type) => (
-                      <label key={type} className="flex items-center cursor-pointer text-sm text-gray-600 hover:text-gray-900">
-                        <input 
-                          type="radio" 
-                          name="package_type" 
-                          className="mr-2 w-4 h-4 accent-purple-700" 
-                          checked={packageType === type}
-                          onChange={() => setPackageType(type)}
-                        /> {type}
-                      </label>
-                    ))}
-                  </div>
-                </div>
-
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="mb-4">
-                  <div className="flex items-center text-gray-600 border border-transparent hover:border-gray-300 rounded p-1 transition-colors">
-                    <CalendarCheck size={18} className="mr-2 text-gray-400" />
-                    <input 
-                      type="date" 
-                      className="w-full text-sm font-medium outline-none cursor-pointer bg-transparent text-gray-700" 
-                      defaultValue={new Date().toISOString().split('T')[0]} 
-                    />
-                  </div>
-                </div>
-
-                <hr className="border-gray-200 mb-4" />
-                
-                <div className="mb-6">
-                  <h4 className="font-bold text-sm text-[#111] mb-2">Adults (Over 12)</h4>
-                  <div className="flex items-center justify-between border border-gray-300 rounded p-2 transition-colors cursor-pointer relative bg-white focus-within:ring-2 focus-within:ring-purple-500">
-                    <div className="flex items-center text-gray-900 text-sm font-medium">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                      {persons === 5 ? '5+ Persons' : `${persons} Person${persons > 1 ? 's' : ''}`}
+                <div className="space-y-4">
+                  {/* Package Type */}
+                  <div>
+                    <h4 className="font-bold text-sm text-gray-800 mb-2 flex items-center">
+                      <ShieldCheck size={16} className="text-blue-600 mr-2" /> Select Package Level
+                    </h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {['Budget', 'Comfort', 'Standard', 'Luxury'].map((type) => (
+                        <label 
+                          key={type} 
+                          className={`flex items-center justify-center py-1.5 px-3 rounded-xl cursor-pointer text-sm font-medium transition-all duration-200 border-2 ${
+                            packageType === type 
+                              ? 'border-blue-600 bg-blue-50 text-blue-700 shadow-sm' 
+                              : 'border-gray-100 bg-gray-50 text-gray-600 hover:border-blue-200 hover:bg-white'
+                          }`}
+                        >
+                          <input 
+                            type="radio" 
+                            name="package_type" 
+                            className="hidden" 
+                            checked={packageType === type}
+                            onChange={() => setPackageType(type)}
+                          /> 
+                          {type}
+                        </label>
+                      ))}
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                    <select 
-                      className="absolute inset-0 w-full h-full opacity-0 cursor-pointer text-sm"
-                      value={persons}
-                      onChange={(e) => setPersons(Number(e.target.value))}
-                    >
-                      <option value={1}>1 Person</option>
-                      <option value={2}>2 Persons</option>
-                      <option value={3}>3 Persons</option>
-                      <option value={4}>4 Persons</option>
-                      <option value={5}>5+ Persons</option>
-                    </select>
+                  </div>
+
+                  {/* Date Selection */}
+                  <div>
+                    <h4 className="font-bold text-sm text-gray-800 mb-2 flex items-center">
+                      <CalendarCheck size={16} className="text-blue-600 mr-2" /> Travel Date
+                    </h4>
+                    <div className="relative group">
+                      <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <Calendar size={18} className="text-gray-400 group-focus-within:text-blue-500 transition-colors" />
+                      </div>
+                      <input 
+                        type="date" 
+                        className="w-full pl-10 pr-4 py-2 bg-gray-50 border-2 border-gray-100 text-sm font-semibold rounded-xl text-gray-700 outline-none focus:bg-white focus:border-blue-500 transition-all cursor-pointer shadow-sm" 
+                        value={date}
+                        onChange={(e) => setDate(e.target.value)}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Travelers */}
+                  <div>
+                    <h4 className="font-bold text-sm text-gray-800 mb-2 flex items-center">
+                      <Users size={16} className="text-blue-600 mr-2" /> Travelers
+                    </h4>
+                    <div className="relative group cursor-pointer">
+                      <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <Users size={18} className="text-gray-400 group-focus-within:text-blue-500 transition-colors" />
+                      </div>
+                      <div className="w-full pl-10 pr-10 py-2 bg-gray-50 border-2 border-gray-100 text-sm font-semibold rounded-xl text-gray-700 flex items-center group-focus-within:bg-white group-focus-within:border-blue-500 transition-all shadow-sm">
+                        {persons === 5 ? '5+ Persons' : `${persons} Person${persons > 1 ? 's' : ''}`}
+                      </div>
+                      <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </div>
+                      <select 
+                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                        value={persons}
+                        onChange={(e) => setPersons(Number(e.target.value))}
+                      >
+                        <option value={1}>1 Person</option>
+                        <option value={2}>2 Persons</option>
+                        <option value={3}>3 Persons</option>
+                        <option value={4}>4 Persons</option>
+                        <option value={5}>5+ Persons</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Book Button */}
+                  <div className="pt-2">
+                    <button onClick={handleBookPackage} className="w-full bg-gradient-to-r from-[#22c55e] to-[#16a34a] hover:from-[#16a34a] hover:to-[#15803d] text-white py-3 px-4 font-bold text-base rounded-xl transition-all shadow-lg shadow-green-500/30 transform hover:-translate-y-1">
+                      Book This Package
+                    </button>
                   </div>
                 </div>
-
-                <button className="w-full bg-[#5cb85c] hover:bg-[#4cae4c] text-white py-3 px-4 font-bold text-lg rounded-sm transition-colors shadow-sm">
-                  Book Package
-                </button>
               </div>
 
-              <div className="bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-gray-100">
-                <button className="w-full bg-[#331a47] hover:bg-[#4a235a] text-white py-3 px-4 font-bold text-lg rounded-sm transition-colors shadow-sm">
-                  Quick Inquiry
+              {/* Inquiry Card */}
+              <div className="bg-gradient-to-br from-[#0f3493] to-blue-900 rounded-3xl p-6 shadow-xl shadow-blue-900/20 text-center relative overflow-hidden">
+                <div className="absolute -top-10 -right-10 w-32 h-32 bg-white opacity-5 rounded-full blur-2xl"></div>
+                <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-400 opacity-10 rounded-full blur-2xl"></div>
+                
+                <h4 className="text-white font-bold text-lg mb-2 relative z-10">Have Questions?</h4>
+                <p className="text-blue-200 text-sm mb-4 relative z-10">Talk to our travel experts to customize this trip.</p>
+                <button onClick={handleQuickInquiry} className="w-full bg-white text-[#0f3493] hover:bg-gray-50 py-3 px-4 font-extrabold text-[15px] rounded-xl transition-colors shadow-md relative z-10">
+                  Send Quick Inquiry
                 </button>
               </div>
+              
             </div>
           </div>
 
@@ -9644,3 +9894,4 @@ const PackageDetail = () => {
 };
 
 export default PackageDetail;
+

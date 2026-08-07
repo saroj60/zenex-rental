@@ -8,12 +8,15 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 md:gap-8 mb-16">
           <div className="col-span-1">
-            <h2 className="text-2xl font-bold text-white mb-4">Zenex Travel</h2>
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/logo.jpg" alt="Zenex Rental" className="h-12 w-12 rounded-full object-cover drop-shadow-sm bg-white border-2 border-white" />
+              <h2 className="text-2xl font-bold text-white">Zenex Travels and Tours</h2>
+            </div>
             <p className="text-blue-200 text-sm leading-relaxed mb-6">
-              Elevating Himalayan Journeys with premium, reliable car rentals across Nepal.
+              Elevating Himalayan Journeys with premium, reliable car rentals, tours, and treks across Nepal.
             </p>
             <div className="flex flex-wrap gap-4 text-blue-300">
-              <a href="https://www.facebook.com/p/Zenex-Car-Rental-61559152168312/" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <a href="https://m.facebook.com/p/Zenex-Travels-Tours-61573825025073/?hr=1&wtsid=rdr_0HPxhfQZfT48LWKKY#" target="_blank" rel="noreferrer" aria-label="Facebook">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hover:text-white cursor-pointer transition-colors"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
               </a>
               <a href="https://www.instagram.com/p/DLCofUdzZ7g/" target="_blank" rel="noreferrer" aria-label="Instagram">
@@ -29,28 +32,24 @@ const Footer = () => {
               </a>
             </div>
 
-            {/* Trust Badges */}
-            <div className="mt-8">
-              <p className="text-white text-xs font-bold uppercase tracking-wider mb-3">Trusted By & Associated With</p>
-              <div className="flex flex-wrap gap-3 items-center">
-                <div className="bg-white px-2 py-1 rounded shadow-sm text-[10px] font-bold text-blue-900 flex items-center">NTB Approved</div>
-                <div className="bg-white px-2 py-1 rounded shadow-sm text-[10px] font-bold text-blue-900 flex items-center">TAAN Member</div>
-                <div className="bg-white/10 px-2 py-1 rounded text-blue-100 text-[10px] font-bold border border-white/20">Visa / MC / eSewa</div>
-              </div>
-            </div>
+
           </div>
           
           <div className="flex flex-col gap-3">
-            <h4 className="text-white font-bold text-[15px] mb-2">Company</h4>
+            <h4 className="text-white font-bold text-[15px] mb-2">Company & Services</h4>
             <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/about">About Us</Link>
             <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/vehicles">Our Fleet</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/self-drive-car-rental-nepal">Self-Drive</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/wedding-car-rental-kathmandu">Wedding Cars</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/airport-transfer-kathmandu">Airport Transfers</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/flight-ticketing-nepal">Flight Ticketing</Link>
             <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/blogs">Blog</Link>
             <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/contact">Contact</Link>
           </div>
           
           <div className="flex flex-col gap-3">
             <h4 className="text-white font-bold text-[15px] mb-2">Support</h4>
-            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/contact">FAQ</Link>
+            <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/faq">FAQ</Link>
             <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/cancellation-policy">Cancellation Policy</Link>
             <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/terms-and-conditions">Terms & Conditions</Link>
             <Link className="text-blue-200 text-sm hover:text-white transition-colors w-fit" to="/privacy-policy">Privacy Policy</Link>
@@ -66,9 +65,9 @@ const Footer = () => {
           
           <div className="flex flex-col gap-3">
             <h4 className="text-white font-bold text-[15px] mb-2">Contact Details</h4>
-            <p className="text-blue-200 text-sm">Q88J+R4G, Kathmandu 44600, Nepal</p>
-            <p className="text-blue-200 text-sm">+977 976-7476521</p>
-            <p className="text-blue-200 text-sm hover:text-white cursor-pointer transition-colors w-fit">info@zenextravel.com</p>
+            <p className="text-blue-200 text-sm">Samakhushi, Kathmandu 44600, Nepal</p>
+            <p className="text-blue-200 text-sm">+977 976-7476521 / 015928752</p>
+            <p className="text-blue-200 text-sm hover:text-white cursor-pointer transition-colors w-fit">info@zenextravel.com.np</p>
             <a href="https://wa.me/9779767476521?text=Hi!%20I%20need%20help%20booking%20a%20car." target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-lg text-[13px] font-bold hover:bg-[#1DA851] transition-colors w-max shadow-md hover:shadow-lg">
               <MessageCircle size={18} /> WhatsApp Us
             </a>
@@ -76,9 +75,9 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-center">
-          <p className="text-blue-300 text-sm font-medium">
-            © {new Date().getFullYear()} Zenex Travel and Car Rental.
-          </p>
+          <div className="text-blue-300 text-sm">
+            &copy; {new Date().getFullYear()} Zenex Travels and Tours.
+          </div>
         </div>
       </div>
     </footer>

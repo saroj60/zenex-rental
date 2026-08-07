@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapPin, Calendar, Clock, ChevronRight, Settings, CreditCard, Shield, CarFront, FileText, Heart, Navigation, Download, X, Map as MapIcon, PhoneCall } from 'lucide-react';
 import StationMap from '../../components/StationMap';
 

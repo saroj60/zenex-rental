@@ -1,13 +1,23 @@
 import React, { useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BottomNav from './components/BottomNav';
-import AIChatbot from './components/AIChatbot';
+import useScrollReveal from './hooks/useScrollReveal';
+
 import SOSButton from './components/SOSButton';
 import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
+  const { pathname } = useLocation();
+  
+  // Initialize scroll animations globally
+  useScrollReveal();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname]);
+
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('header');
@@ -34,7 +44,7 @@ function App() {
       </main>
       <Footer />
       <BottomNav />
-      <AIChatbot />
+
       <SOSButton />
       <WhatsAppButton />
     </div>

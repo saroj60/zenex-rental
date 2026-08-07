@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, FileText, PlusCircle, Settings, Car } from 'lucide-react';
+import { LayoutDashboard, FileText, PlusCircle, Settings, Car, Users } from 'lucide-react';
 
 const AdminLayout = () => {
   const location = useLocation();
@@ -9,6 +9,8 @@ const AdminLayout = () => {
     { name: 'Dashboard', path: '/admin', icon: <LayoutDashboard size={20} /> },
     { name: 'Manage Vehicles', path: '/admin/vehicles', icon: <Car size={20} /> },
     { name: 'Add Vehicle', path: '/admin/add-vehicle', icon: <PlusCircle size={20} /> },
+    { name: 'Manage Drivers', path: '/admin/drivers', icon: <Users size={20} /> },
+    { name: 'Add Driver', path: '/admin/add-driver', icon: <PlusCircle size={20} /> },
     { name: 'Manage Blogs', path: '/admin/blogs', icon: <FileText size={20} /> },
     { name: 'Add New Blog', path: '/admin/add-blog', icon: <PlusCircle size={20} /> },
     { name: 'Settings', path: '/admin/settings', icon: <Settings size={20} /> },
@@ -26,7 +28,7 @@ const AdminLayout = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${isActive ? 'bg-[#ea580c] text-white font-medium' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'}`}
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${isActive ? 'bg-[#e53a24] text-white font-medium' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'}`}
               >
                 {link.icon}
                 {link.name}

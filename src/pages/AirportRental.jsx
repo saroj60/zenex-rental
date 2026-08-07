@@ -1,12 +1,14 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import { Plane, MapPin, Clock, ShieldCheck, ChevronRight } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
+import InlineEnquiryForm from '../components/InlineEnquiryForm';
 
 const airportData = {
   ktm: {
     name: 'Tribhuvan International Airport (KTM)',
     city: 'Kathmandu',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tribhuvan_International_Airport_Kathmandu_%282012%29.jpg/800px-Tribhuvan_International_Airport_Kathmandu_%282012%29.jpg',
+    img: 'https://media.tacdn.com/media/attractions-splice-spp-360x240/0f/dd/75/70.jpg',
     desc: 'Begin your Himalayan journey the moment you land. Skip the taxi lines and step directly into your premium rental vehicle at Nepal\'s primary international gateway.'
   },
   pkr: {
@@ -23,6 +25,11 @@ const AirportRental = () => {
 
   return (
     <div className="bg-background min-h-screen">
+      <SEO 
+        title="Kathmandu Airport Pickup | Airport Transfer Nepal"
+        description="Reliable Kathmandu airport pickup and airport transfer services in Nepal. Hire cars, SUVs, or tourist buses for seamless transportation from Tribhuvan International Airport."
+        canonicalUrl="https://zenextravel.com.np/airport-transfer"
+      />
       {/* Hero Section */}
       <div className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center">
         <img src={airport.img} alt={airport.name} className="absolute inset-0 w-full h-full object-cover" />
@@ -37,9 +44,15 @@ const AirportRental = () => {
             {airport.desc}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Link to={`/vehicles?pickup=${code}`} className="bg-sunset-orange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#EA580C] transition-colors shadow-lg active:scale-95 duration-200 text-center">
+            <Link to={`/vehicles?pickup=${code}`} className="bg-sunset-orange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#e53a24] transition-colors shadow-lg active:scale-95 duration-200 text-center">
               View Available Cars
             </Link>
+          </div>
+          <div className="mt-12 flex justify-center md:justify-start">
+            <InlineEnquiryForm 
+              routeName={`${airport.name} Pickup`} 
+              recommendedVehicles={['Sedan', 'SUV', 'Hiace (Group)', 'Coaster (Large Group)']} 
+            />
           </div>
         </div>
       </div>
@@ -76,9 +89,9 @@ const AirportRental = () => {
             <h2 className="font-headline-md text-3xl mb-4">Ready to bypass the taxi line?</h2>
             <p className="text-sky-tint text-lg mb-0">Secure your vehicle today and start your journey seamlessly.</p>
           </div>
-          <Link to="/vehicles" className="bg-white text-himalayan-blue px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-surface-container-low transition-colors shadow-lg whitespace-nowrap">
+          <a href={`https://wa.me/9779767476521?text=${encodeURIComponent('Hi, I am looking to book an airport pickup from ' + airport.name + '.')}`} target="_blank" rel="noreferrer" className="bg-white text-himalayan-blue px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-surface-container-low transition-colors shadow-lg whitespace-nowrap">
             Book Now <ChevronRight size={20} />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

@@ -16,11 +16,11 @@ const BlogDetail = () => {
 
   if (!blog) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#fcf9ee]">
+      <div className="min-h-screen flex items-center justify-center bg-[#ebf3fa]">
         <div className="text-center bg-white p-12 rounded-3xl shadow-sm border border-gray-100">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Blog not found</h2>
           <p className="text-gray-500 mb-8">The blog post you are looking for does not exist or has been removed.</p>
-          <Link to="/blogs" className="px-6 py-3 bg-[#ea580c] text-white rounded-xl font-medium hover:bg-[#ea580c]/90 transition-colors">
+          <Link to="/blogs" className="px-6 py-3 bg-[#e53a24] text-white rounded-xl font-medium hover:bg-[#e53a24]/90 transition-colors">
             Back to Blogs
           </Link>
         </div>
@@ -29,9 +29,9 @@ const BlogDetail = () => {
   }
 
   return (
-    <div className="bg-[#fcf9ee] min-h-screen pb-20 pt-24 md:pt-32">
+    <div className="bg-[#ebf3fa] min-h-screen pb-20 pt-24 md:pt-32">
       <div className="max-w-4xl mx-auto px-4 md:px-8">
-        <button onClick={() => navigate('/blogs')} className="flex items-center gap-2 text-gray-600 hover:text-[#ea580c] transition-colors mb-8 font-medium">
+        <button onClick={() => navigate('/blogs')} className="flex items-center gap-2 text-gray-600 hover:text-[#e53a24] transition-colors mb-8 font-medium">
           <ArrowLeft size={20} /> Back to all blogs
         </button>
 
@@ -55,7 +55,7 @@ const BlogDetail = () => {
 
             <div className="flex flex-wrap items-center gap-6 text-gray-500 mb-10 pb-8 border-b border-gray-100">
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-[#ea580c]">
+                <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-[#e53a24]">
                   <User size={20} />
                 </div>
                 <div>

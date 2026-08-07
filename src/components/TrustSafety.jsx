@@ -3,11 +3,34 @@ import { ShieldCheck, Wrench, Headphones, Award } from 'lucide-react';
 
 const TrustSafety = () => {
   return (
-    <section className="bg-[#F4F6F8] py-20 px-4 md:px-8 border-y border-gray-200/60">
+    <section className="reveal reveal-up bg-[#F4F6F8] py-20 px-4 md:px-8 border-y border-gray-200/60">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-[32px] font-extrabold text-[#1e3a8a] mb-4">Travel with Absolute Confidence</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto font-medium">We exceed industry standards to ensure every mile of your journey through Nepal is safe, secure, and stress-free.</p>
+          <p className="text-gray-600 max-w-2xl mx-auto font-medium mb-10">We exceed industry standards to ensure every mile of your journey through Nepal is safe, secure, and stress-free.</p>
+          
+          {/* Trust Badges */}
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 mt-8 py-6 bg-white rounded-2xl shadow-sm border border-gray-100 px-4">
+            <div className="flex flex-col items-center opacity-80 hover:opacity-100 transition-opacity">
+              <span className="font-extrabold text-xl text-gray-800">TripAdvisor</span>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Travelers' Choice 2026</span>
+            </div>
+            <div className="hidden md:block w-px h-10 bg-gray-200"></div>
+            <div className="flex flex-col items-center opacity-80 hover:opacity-100 transition-opacity">
+              <span className="font-extrabold text-xl text-gray-800">Google Rating</span>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">5/5 Verified</span>
+            </div>
+            <div className="hidden md:block w-px h-10 bg-gray-200"></div>
+            <div className="flex flex-col items-center opacity-80 hover:opacity-100 transition-opacity">
+              <span className="font-extrabold text-xl text-gray-800">Est. 2025</span>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">2+ years of experience</span>
+            </div>
+            <div className="hidden lg:block w-px h-10 bg-gray-200"></div>
+            <div className="flex flex-col items-center opacity-80 hover:opacity-100 transition-opacity">
+              <span className="font-extrabold text-xl text-[#e53a24]">Winner</span>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Best Car Rental Nepal</span>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -51,3 +74,4 @@ const TrustSafety = () => {
 };
 
 export default TrustSafety;
+

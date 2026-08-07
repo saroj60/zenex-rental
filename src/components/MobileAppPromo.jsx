@@ -8,38 +8,38 @@ const MobileAppPromo = () => {
         
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#EA580C]/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#e53a24]/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4"></div>
 
         <div className="relative z-10 flex-1">
           <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 text-blue-100 px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider mb-6">
             Mobile Experience
           </div>
           <h3 className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight leading-tight">
-            Book Faster with the <span className="text-[#EA580C]">Zenex Travel</span> App
+            Book Faster with the <span className="text-[#e53a24]">Zenex Travel</span> App
           </h3>
           
           <ul className="mb-10 space-y-4">
             <li className="flex items-center gap-4 text-lg text-blue-50">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                <Clock size={20} className="text-[#EA580C]"/>
+                <Clock size={20} className="text-[#e53a24]"/>
               </div>
               <span className="font-medium">Instant real-time booking</span>
             </li>
             <li className="flex items-center gap-4 text-lg text-blue-50">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                <MapPin size={20} className="text-[#EA580C]"/>
+                <MapPin size={20} className="text-[#e53a24]"/>
               </div>
               <span className="font-medium">Live driver GPS tracking</span>
             </li>
             <li className="flex items-center gap-4 text-lg text-blue-50">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                <Smartphone size={20} className="text-[#EA580C]"/>
+                <Smartphone size={20} className="text-[#e53a24]"/>
               </div>
               <span className="font-medium">Comprehensive trip management</span>
             </li>
             <li className="flex items-center gap-4 text-lg text-blue-50">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                <CreditCard size={20} className="text-[#EA580C]"/>
+                <CreditCard size={20} className="text-[#e53a24]"/>
               </div>
               <span className="font-medium">Secure digital payments</span>
             </li>
@@ -86,7 +86,7 @@ const MobileAppPromo = () => {
                   </div>
                 </div>
                 <div className="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden">
-                  <div className="w-3/4 bg-[#EA580C] h-full rounded-full"></div>
+                  <div className="w-3/4 bg-[#e53a24] h-full rounded-full"></div>
                 </div>
               </div>
             </div>

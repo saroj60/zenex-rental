@@ -1,19 +1,20 @@
 import React from 'react';
 import { ArrowRight, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { featuredPackages } from '../pages/Packages';
+import { useAppData } from '../context/AppDataContext';
 
 const AdventurePackages = () => {
-  const displayPackages = featuredPackages.slice(0, 5);
+  const { packages } = useAppData();
+  const displayPackages = packages.slice(0, 5);
 
   return (
-    <section className="px-4 md:px-8 max-w-7xl mx-auto py-16">
+    <section className="reveal reveal-up px-4 md:px-8 max-w-7xl mx-auto py-16">
       <div className="flex justify-between items-end mb-8">
         <div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a] mb-2 tracking-tight">Adventure Packages</h2>
           <p className="text-gray-500 font-medium">Curated trips for the ultimate Himalayan experience.</p>
         </div>
-        <Link to="/packages" className="hidden md:flex items-center gap-2 text-[#EA580C] font-bold hover:text-[#d04b08] transition-colors">
+        <Link to="/packages" className="hidden md:flex items-center gap-2 text-[#e53a24] font-bold hover:text-[#d04b08] transition-colors">
           View All Packages <ArrowRight size={18} />
         </Link>
       </div>
@@ -36,3 +37,4 @@ const AdventurePackages = () => {
 };
 
 export default AdventurePackages;
+
