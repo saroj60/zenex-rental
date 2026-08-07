@@ -6,17 +6,17 @@ export const megaMenuData = {
         {
           title: 'Treks in Nepal',
           links: [
-            { name: 'Mount Everest Base Camp Trails', url: '/treks/region/everest' },
-            { name: 'Annapurna Circuit & Sanctuary', url: '/treks/region/annapurna' },
-            { name: 'Manaslu Circuit Adventures', url: '/treks/region/manaslu' },
-            { name: 'Langtang Valley Hikes', url: '/treks/region/langtang' },
-            { name: 'Upper Mustang Expeditions', url: '/treks/region/mustang' },
-            { name: 'Kanchenjunga Discoveries', url: '/treks/region/kanchenjunga' },
-            { name: 'Hidden Dolpo Journeys', url: '/treks/region/dolpo' },
-            { name: 'Dhaulagiri Pathways', url: '/treks/region/dhaulagiri' },
-            { name: 'Rolwaling Wilderness', url: '/treks/region/rolwaling' },
-            { name: 'Makalu Base Camp Treks', url: '/treks/region/makalu' },
-            { name: 'Far-Western Nepal Escapes', url: '/treks/region/far-west' },
+            { name: 'Mount Everest Base Camp Trails', url: '/treks/region/everest', image: '/images/everest base.jpg' },
+            { name: 'Annapurna Circuit & Sanctuary', url: '/treks/region/annapurna', image: '/images/annapurna.jpg' },
+            { name: 'Manaslu Circuit Adventures', url: '/treks/region/manaslu', image: '/images/manaslu.jpg' },
+            { name: 'Langtang Valley Hikes', url: '/treks/region/langtang', image: '/images/langtang1.jpg' },
+            { name: 'Upper Mustang Expeditions', url: '/treks/region/mustang', image: '/images/upper mustang.jpg' },
+            { name: 'Kanchenjunga Discoveries', url: '/treks/region/kanchenjunga', image: '/images/kanchenjunga.jpg' },
+            { name: 'Hidden Dolpo Journeys', url: '/treks/region/dolpo', image: '/images/dorpatan dolpo.jpg' },
+            { name: 'Dhaulagiri Pathways', url: '/treks/region/dhaulagiri', image: '/images/trek.png' },
+            { name: 'Rolwaling Wilderness', url: '/treks/region/rolwaling', image: '/images/trek.png' },
+            { name: 'Makalu Base Camp Treks', url: '/treks/region/makalu', image: '/images/trek.png' },
+            { name: 'Far-Western Nepal Escapes', url: '/treks/region/far-west', image: '/images/Khaptad Trek 11 Days.jpg' },
           ]
         },
         {

@@ -67,22 +67,34 @@ const CountryWiseTrekCategories = () => {
                 <Link
                   key={link.name}
                   to={link.url}
-                  className="group relative bg-white hover:bg-gradient-to-br hover:from-white hover:to-orange-50/40 p-5 rounded-2xl border border-slate-200/70 hover:border-orange-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                  className="group relative bg-white hover:bg-gradient-to-br hover:from-white hover:to-orange-50/40 rounded-2xl border border-slate-200/70 hover:border-orange-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden"
                 >
-                  <div className="flex justify-between items-start mb-3">
-                    <span className="w-8 h-8 rounded-xl bg-orange-100/80 text-orange-600 flex items-center justify-center font-bold text-xs group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
-                      <Mountain size={16} />
-                    </span>
-                    <ArrowUpRight size={18} className="text-slate-300 group-hover:text-orange-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
-                  </div>
-                  
-                  <div>
-                    <h4 className="text-base font-bold text-slate-800 group-hover:text-orange-600 transition-colors leading-snug">
-                      {link.name}
-                    </h4>
-                    <p className="text-xs font-medium text-slate-400 mt-1 flex items-center gap-1 group-hover:text-slate-500">
-                      View Packages <ChevronRight size={12} />
-                    </p>
+                  {link.image && (
+                    <div className="w-full h-36 overflow-hidden relative">
+                      <img src={link.image} alt={link.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
+                        <ArrowUpRight size={14} className="text-slate-700 group-hover:text-orange-500 transition-colors" />
+                      </div>
+                    </div>
+                  )}
+                  <div className="p-5 flex flex-col justify-between flex-1">
+                    {!link.image && (
+                      <div className="flex justify-between items-start mb-3">
+                        <span className="w-8 h-8 rounded-xl bg-orange-100/80 text-orange-600 flex items-center justify-center font-bold text-xs group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
+                          <Mountain size={16} />
+                        </span>
+                        <ArrowUpRight size={18} className="text-slate-300 group-hover:text-orange-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
+                      </div>
+                    )}
+                    
+                    <div className={link.image ? "mt-1" : ""}>
+                      <h4 className="text-base font-bold text-slate-800 group-hover:text-orange-600 transition-colors leading-snug">
+                        {link.name}
+                      </h4>
+                      <p className="text-xs font-medium text-slate-400 mt-2 flex items-center gap-1 group-hover:text-slate-500">
+                        View Packages <ChevronRight size={12} />
+                      </p>
+                    </div>
                   </div>
                 </Link>
               ))}
