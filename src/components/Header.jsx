@@ -81,7 +81,39 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-4">
+          
+          {/* Wishlist and Talk to Smarika WhatsApp Widget */}
+          <div className="hidden xl:flex items-center gap-3 mr-2 shrink-0">
+            {/* Green Heart button */}
+            <Link to="/contact" className="w-10 h-10 rounded-full bg-[#00a859] hover:bg-[#008a49] text-white flex items-center justify-center transition-colors shadow-sm shrink-0">
+              <svg className="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </Link>
 
+            {/* WhatsApp Contact Details and Avatar */}
+            <a 
+              href="https://wa.me/9779860156046?text=Hi%20Smarika,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 hover:opacity-95 transition-opacity"
+            >
+              <div className="flex flex-col text-left leading-tight">
+                <div className="flex items-center gap-1.5">
+                  <svg className="w-3.5 h-3.5 text-green-500 fill-current shrink-0" viewBox="0 0 24 24">
+                    <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.37 5.054L2 22l5.077-1.332a9.936 9.936 0 004.93 1.302c5.506 0 9.99-4.478 9.99-9.985S17.519 2 12.012 2zm0 18.29a8.275 8.275 0 01-4.218-1.155l-.302-.18-3.13.82.836-3.05-.198-.316a8.278 8.278 0 01-1.268-4.426c.001-4.57 3.72-8.29 8.29-8.29s8.29 3.72 8.29 8.29-3.719 8.29-8.288 8.29zm4.55-6.2c-.25-.124-1.477-.727-1.705-.81-.228-.083-.393-.124-.559.124-.166.248-.641.81-.786.973-.145.163-.29.182-.539.058a6.8 6.8 0 01-1.996-1.232 7.487 7.487 0 01-1.383-1.722c-.145-.248-.015-.382.11-.506.113-.112.25-.29.374-.435.124-.145.166-.248.25-.414.083-.166.04-.31-.02-.435-.06-.124-.559-1.347-.766-1.844-.2-.486-.403-.42-.559-.427h-.477a.92.92 0 00-.663.31c-.228.248-.87.85-.87 2.07s.89 2.4 1.014 2.565c.124.166 1.752 2.675 4.244 3.75.592.256 1.055.409 1.414.523.596.19 1.138.163 1.567.099.478-.072 1.477-.604 1.684-1.159.207-.555.207-1.03.145-1.13-.062-.099-.228-.155-.477-.28z"/>
+                  </svg>
+                  <span className="text-xs font-bold text-gray-500 hover:text-[#e53a24] transition-colors">Talk to Smarika</span>
+                </div>
+                <span className="text-sm font-black text-gray-700 tracking-tight hover:text-[#e53a24] transition-colors">+977 9860156046</span>
+              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1594744803329-e58b31de215f?q=80&w=200&auto=format&fit=crop" 
+                alt="Smarika" 
+                className="w-10 h-10 rounded-full object-cover border border-gray-200 shadow-sm shrink-0"
+              />
+            </a>
+          </div>
 
           <button 
             onClick={() => setIsSearchOpen(true)}
@@ -135,6 +167,34 @@ const Header = () => {
             <Link to="/blogs" className={getMobileLinkClass('/blogs')} onClick={() => setIsMobileMenuOpen(false)}>Blogs</Link>
             <Link to="/about" className={getMobileLinkClass('/about')} onClick={() => setIsMobileMenuOpen(false)}>About</Link>
             <Link to="/contact" className={getMobileLinkClass('/contact')} onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+            <div className="h-px bg-gray-100 my-2"></div>
+            
+            {/* Mobile Smarika Chat Card */}
+            <a 
+              href="https://wa.me/9779860156046?text=Hi%20Smarika,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between p-3.5 bg-green-50/40 hover:bg-green-50 rounded-2xl border border-green-100/60 transition-colors"
+            >
+              <div className="flex items-center gap-3">
+                <img 
+                  src="https://images.unsplash.com/photo-1594744803329-e58b31de215f?q=80&w=120&auto=format&fit=crop" 
+                  alt="Smarika" 
+                  className="w-11 h-11 rounded-full object-cover border border-white shadow-sm"
+                />
+                <div className="flex flex-col text-left leading-tight">
+                  <span className="text-xs font-semibold text-gray-500 flex items-center gap-1">
+                    <svg className="w-3 h-3 text-green-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.37 5.054L2 22l5.077-1.332a9.936 9.936 0 004.93 1.302c5.506 0 9.99-4.478 9.99-9.985S17.519 2 12.012 2zm0 18.29a8.275 8.275 0 01-4.218-1.155l-.302-.18-3.13.82.836-3.05-.198-.316a8.278 8.278 0 01-1.268-4.426c.001-4.57 3.72-8.29 8.29-8.29s8.29 3.72 8.29 8.29-3.719 8.29-8.288 8.29zm4.55-6.2c-.25-.124-1.477-.727-1.705-.81-.228-.083-.393-.124-.559.124-.166.248-.641.81-.786.973-.145.163-.29.182-.539.058a6.8 6.8 0 01-1.996-1.232 7.487 7.487 0 01-1.383-1.722c-.145-.248-.015-.382.11-.506.113-.112.25-.29.374-.435.124-.145.166-.248.25-.414.083-.166.04-.31-.02-.435-.06-.124-.559-1.347-.766-1.844-.2-.486-.403-.42-.559-.427h-.477a.92.92 0 00-.663.31c-.228.248-.87.85-.87 2.07s.89 2.4 1.014 2.565c.124.166 1.752 2.675 4.244 3.75.592.256 1.055.409 1.414.523.596.19 1.138.163 1.567.099.478-.072 1.477-.604 1.684-1.159.207-.555.207-1.03.145-1.13-.062-.099-.228-.155-.477-.28z"/>
+                    </svg>
+                    Talk to Smarika
+                  </span>
+                  <span className="text-sm font-bold text-gray-800 mt-0.5">+977 9860156046</span>
+                </div>
+              </div>
+              <span className="bg-[#00a859] text-white text-xs font-bold px-3 py-1.5 rounded-xl">Chat</span>
+            </a>
+
             <div className="h-px bg-gray-100 my-2"></div>
             <a href="tel:+9779767476521" className="text-base font-bold text-gray-800 flex items-center gap-2">
               <Phone size={18} /> Call Us
