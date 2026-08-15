@@ -7,7 +7,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
   const [query, setQuery] = useState('');
   const inputRef = useRef(null);
   const navigate = useNavigate();
-  const { vehicles, destinations, packages, treks } = useAppData();
+  const { vehicles, destinations, packages, treks, tourTrips } = useAppData();
 
   useEffect(() => {
     if (isOpen) {
@@ -53,25 +53,47 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
     (d.desc?.toLowerCase() || '').includes(lowerQuery)
   ).slice(0, 4) : [];
 
-  const filteredTreks = lowerQuery ? treks.filter(t => {
-    const title = (t.title?.toLowerCase() || '');
-    const desc = (t.description?.toLowerCase() || '') + ' ' + (t.overview?.toLowerCase() || '');
-    
-    if (title.includes(lowerQuery) || desc.includes(lowerQuery)) return true;
-    if (isTrekQuery && (title.includes('trek') || title.includes('camp') || title.includes('circuit') || title.includes('pass'))) return true;
-    
-    return false;
-  }).slice(0, 4) : [];
+  const filteredTreks = lowerQuery ? [
+    ...treks.filter(t => {
+      const title = (t.title?.toLowerCase() || '');
+      const desc = (t.description?.toLowerCase() || '') + ' ' + (t.overview?.toLowerCase() || '');
+      
+      if (title.includes(lowerQuery) || desc.includes(lowerQuery)) return true;
+      if (isTrekQuery && (title.includes('trek') || title.includes('camp') || title.includes('circuit') || title.includes('pass'))) return true;
+      return false;
+    }),
+    ...(tourTrips || []).filter(t => {
+      const title = (t.title?.toLowerCase() || '');
+      const desc = (t.shortDescription?.toLowerCase() || '');
+      const isTrekType = t.type?.toLowerCase() === 'treks' || t.type?.toLowerCase() === 'trek';
+      
+      if (!isTrekType) return false;
+      if (title.includes(lowerQuery) || desc.includes(lowerQuery)) return true;
+      if (isTrekQuery && (title.includes('trek') || title.includes('camp') || title.includes('circuit') || title.includes('pass'))) return true;
+      return false;
+    })
+  ].slice(0, 4) : [];
 
-  const filteredPackages = lowerQuery ? packages.filter(p => {
-    const title = (p.title?.toLowerCase() || '');
-    const loc = (p.location?.toLowerCase() || '');
-    
-    if (title.includes(lowerQuery) || loc.includes(lowerQuery)) return true;
-    if (isTourQuery && (title.includes('tour') || title.includes('package') || title.includes('hills') || title.includes('valley'))) return true;
-    
-    return false;
-  }).slice(0, 4) : [];
+  const filteredPackages = lowerQuery ? [
+    ...packages.filter(p => {
+      const title = (p.title?.toLowerCase() || '');
+      const loc = (p.location?.toLowerCase() || '');
+      
+      if (title.includes(lowerQuery) || loc.includes(lowerQuery)) return true;
+      if (isTourQuery && (title.includes('tour') || title.includes('package') || title.includes('hills') || title.includes('valley'))) return true;
+      return false;
+    }),
+    ...(tourTrips || []).filter(t => {
+      const title = (t.title?.toLowerCase() || '');
+      const desc = (t.shortDescription?.toLowerCase() || '');
+      const isTourType = t.type?.toLowerCase() === 'tours' || t.type?.toLowerCase() === 'tour';
+      
+      if (!isTourType) return false;
+      if (title.includes(lowerQuery) || desc.includes(lowerQuery)) return true;
+      if (isTourQuery && (title.includes('tour') || title.includes('package') || title.includes('hills') || title.includes('valley'))) return true;
+      return false;
+    })
+  ].slice(0, 4) : [];
 
   const handleResultClick = (path) => {
     onClose();
@@ -176,11 +198,11 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
                       className="w-full text-left p-3 hover:bg-gray-50 rounded-xl transition-colors flex items-center group"
                     >
                       <div className="w-12 h-12 bg-gray-200 rounded-lg overflow-hidden shrink-0 mr-4">
-                        <img src={pkg.img} alt={pkg.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+                        <img src={pkg.img || pkg.image} alt={pkg.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform" />
                       </div>
                       <div>
                         <p className="font-bold text-gray-900 group-hover:text-[#e53a24] transition-colors line-clamp-1">{pkg.title}</p>
-                        <p className="text-xs text-gray-500">{pkg.location}</p>
+                        <p className="text-xs text-gray-500">{pkg.location || `${pkg.duration || ''} • ${pkg.difficulty || ''}`}</p>
                       </div>
                     </button>
                   ))}
