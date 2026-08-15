@@ -29,27 +29,49 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
   // Filter Logic
   const lowerQuery = query.toLowerCase().trim();
   
-  const filteredVehicles = lowerQuery ? vehicles.filter(v => 
-    (v.name?.toLowerCase() || '').includes(lowerQuery) || 
-    (v.type?.toLowerCase() || '').includes(lowerQuery)
-  ).slice(0, 4) : [];
+  const isCarQuery = lowerQuery === 'car' || lowerQuery === 'cars' || lowerQuery === 'vehicle' || lowerQuery === 'vehicles' || lowerQuery === 'rental' || lowerQuery === 'rent';
+  const isJeepQuery = lowerQuery === 'jeep' || lowerQuery === 'jeeps' || lowerQuery === 'suv' || lowerQuery === '4x4' || lowerQuery === '4wd';
+  const isBusQuery = lowerQuery === 'bus' || lowerQuery === 'coaster' || lowerQuery === 'micro' || lowerQuery === 'van';
+  const isTrekQuery = lowerQuery === 'trek' || lowerQuery === 'treks' || lowerQuery === 'hike' || lowerQuery === 'hikes' || lowerQuery === 'hiking' || lowerQuery === 'climb' || lowerQuery === 'climbing' || lowerQuery === 'walking';
+  const isTourQuery = lowerQuery === 'tour' || lowerQuery === 'tours' || lowerQuery === 'trip' || lowerQuery === 'trips' || lowerQuery === 'package' || lowerQuery === 'packages';
+
+  const filteredVehicles = lowerQuery ? vehicles.filter(v => {
+    const name = (v.name?.toLowerCase() || '');
+    const type = (v.type?.toLowerCase() || '');
+    
+    if (name.includes(lowerQuery) || type.includes(lowerQuery)) return true;
+    
+    if (isCarQuery && (type.includes('sedan') || type.includes('ev') || type.includes('suv') || type.includes('van') || type.includes('micro'))) return true;
+    if (isJeepQuery && (type.includes('suv') || type.includes('4x4'))) return true;
+    if (isBusQuery && (type.includes('van') || type.includes('micro') || type.includes('bus') || type.includes('coaster'))) return true;
+    
+    return false;
+  }).slice(0, 4) : [];
 
   const filteredDestinations = lowerQuery ? destinations.filter(d => 
     (d.name?.toLowerCase() || '').includes(lowerQuery) || 
     (d.desc?.toLowerCase() || '').includes(lowerQuery)
   ).slice(0, 4) : [];
 
-  const filteredTreks = lowerQuery ? treks.filter(t => 
-    (t.title?.toLowerCase() || '').includes(lowerQuery) || 
-    (t.description?.toLowerCase() || '').includes(lowerQuery) ||
-    (t.overview?.toLowerCase() || '').includes(lowerQuery)
-  ).slice(0, 4) : [];
+  const filteredTreks = lowerQuery ? treks.filter(t => {
+    const title = (t.title?.toLowerCase() || '');
+    const desc = (t.description?.toLowerCase() || '') + ' ' + (t.overview?.toLowerCase() || '');
+    
+    if (title.includes(lowerQuery) || desc.includes(lowerQuery)) return true;
+    if (isTrekQuery && (title.includes('trek') || title.includes('camp') || title.includes('circuit') || title.includes('pass'))) return true;
+    
+    return false;
+  }).slice(0, 4) : [];
 
-  // Assuming packages has title, id, category
-  const filteredPackages = lowerQuery ? packages.filter(p => 
-    (p.title?.toLowerCase() || '').includes(lowerQuery) || 
-    (p.location?.toLowerCase() || '').includes(lowerQuery)
-  ).slice(0, 4) : [];
+  const filteredPackages = lowerQuery ? packages.filter(p => {
+    const title = (p.title?.toLowerCase() || '');
+    const loc = (p.location?.toLowerCase() || '');
+    
+    if (title.includes(lowerQuery) || loc.includes(lowerQuery)) return true;
+    if (isTourQuery && (title.includes('tour') || title.includes('package') || title.includes('hills') || title.includes('valley'))) return true;
+    
+    return false;
+  }).slice(0, 4) : [];
 
   const handleResultClick = (path) => {
     onClose();
