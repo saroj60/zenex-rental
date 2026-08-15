@@ -14,6 +14,7 @@ import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
 import HowItWorks from '../components/HowItWorks';
 import FAQ from '../components/FAQ';
+import Partners from '../components/Partners';
 
 const Home = () => {
   const structuredData = {
@@ -64,6 +65,7 @@ const Home = () => {
       <Testimonials />
       <FAQ />
       <Gallery />
+      <Partners />
     </>
   );
 };
