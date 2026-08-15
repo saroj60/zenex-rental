@@ -2,12 +2,32 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Search, X, MapPin, Car, Mountain, Package } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
+import { featuredPackages } from '../data/packagesData';
+import { treksData } from '../data/treksData';
+
+const STATIC_VEHICLES = [
+  { id: 1, name: 'Toyota Corolla', type: 'Sedan', img: '/images/economy_car.png' },
+  { id: 2, name: 'Hyundai Creta', type: 'SUV / 4x4', img: '/images/suv_car.png' },
+  { id: 3, name: 'Kia EV6', type: 'EV', img: '/images/luxury_car.png' },
+  { id: 4, name: 'Toyota Hiace', type: 'Van / Micro', img: 'https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg' },
+  { id: 5, name: 'Mahindra Scorpio', type: 'SUV / 4x4', img: 'https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg' },
+  { id: 6, name: 'Standard Car', type: 'Sedan', img: 'https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg' },
+  { id: 7, name: 'Tourist Bus', type: 'Minibus', img: 'https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg' },
+  { id: 8, name: 'Toyota Coaster', type: 'Minibus', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTmOTRvXlpRu1DFUtFy-oRCbC0EZtbBoNC490O4k9-g&s=10' },
+  { id: 9, name: 'Wedding Cars', type: 'Luxury', img: '/vehicles/wedding car.avif' },
+  { id: 10, name: 'Self Drive Cars', type: 'Economy', img: '/vehicles/self drive.jpg' },
+];
 
 const GlobalSearchModal = ({ isOpen, onClose }) => {
   const [query, setQuery] = useState('');
   const inputRef = useRef(null);
   const navigate = useNavigate();
-  const { vehicles, destinations, packages, treks, tourTrips } = useAppData();
+  const { vehicles: ctxVehicles, destinations, packages: ctxPackages, treks: ctxTreks, tourTrips } = useAppData();
+
+  // Always fall back to static data so search works immediately on page load
+  const vehicles = (ctxVehicles && ctxVehicles.length > 0) ? ctxVehicles : STATIC_VEHICLES;
+  const packages = (ctxPackages && ctxPackages.length > 0) ? ctxPackages : (featuredPackages || []);
+  const treks = (ctxTreks && ctxTreks.length > 0) ? ctxTreks : (treksData || []);
 
   useEffect(() => {
     if (isOpen) {
@@ -150,17 +170,58 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
         <div className="w-full max-w-2xl mx-auto px-4 pb-20">
           
           {!lowerQuery && (
-            <div className="text-center mt-20 text-gray-500">
-              <Search size={48} className="mx-auto text-gray-300 mb-4" />
-              <p className="text-xl font-medium">What are you looking for?</p>
-              <p className="text-sm mt-2">Try searching for "Everest", "Jeep", or "Pokhara"</p>
+            <div className="mt-8">
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Popular Searches</p>
+              <div className="flex flex-wrap gap-2 mb-8">
+                {['Everest Trek', 'Kathmandu Tour', 'Hiace', 'Scorpio', 'Pokhara', 'Annapurna', 'Chitwan Safari', 'Self Drive'].map(term => (
+                  <button
+                    key={term}
+                    onClick={() => setQuery(term)}
+                    className="px-4 py-2 bg-gray-100 hover:bg-[#1e3a8a] hover:text-white text-gray-700 text-sm font-semibold rounded-full transition-all duration-200"
+                  >
+                    {term}
+                  </button>
+                ))}
+              </div>
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Browse Categories</p>
+              <div className="grid grid-cols-2 gap-3">
+                <button onClick={() => { onClose(); navigate('/vehicles'); }} className="flex items-center gap-3 p-4 bg-blue-50 hover:bg-blue-100 rounded-2xl transition-colors text-left">
+                  <span className="text-2xl">🚗</span>
+                  <div><p className="font-bold text-gray-800 text-sm">Vehicle Rentals</p><p className="text-xs text-gray-500">Cars, Vans & Buses</p></div>
+                </button>
+                <button onClick={() => { onClose(); navigate('/treks'); }} className="flex items-center gap-3 p-4 bg-green-50 hover:bg-green-100 rounded-2xl transition-colors text-left">
+                  <span className="text-2xl">🏔️</span>
+                  <div><p className="font-bold text-gray-800 text-sm">Treks</p><p className="text-xs text-gray-500">Everest, Annapurna & more</p></div>
+                </button>
+                <button onClick={() => { onClose(); navigate('/packages'); }} className="flex items-center gap-3 p-4 bg-orange-50 hover:bg-orange-100 rounded-2xl transition-colors text-left">
+                  <span className="text-2xl">🗺️</span>
+                  <div><p className="font-bold text-gray-800 text-sm">Tour Packages</p><p className="text-xs text-gray-500">Nepal, Tibet & Bhutan</p></div>
+                </button>
+                <button onClick={() => { onClose(); navigate('/destinations'); }} className="flex items-center gap-3 p-4 bg-purple-50 hover:bg-purple-100 rounded-2xl transition-colors text-left">
+                  <span className="text-2xl">📍</span>
+                  <div><p className="font-bold text-gray-800 text-sm">Destinations</p><p className="text-xs text-gray-500">Kathmandu, Pokhara & more</p></div>
+                </button>
+              </div>
             </div>
           )}
 
           {lowerQuery && !hasResults && (
-            <div className="text-center mt-20 text-gray-500">
-              <p className="text-xl font-medium">No results found for "{query}"</p>
-              <p className="text-sm mt-2">Try adjusting your keywords.</p>
+            <div className="mt-8">
+              <div className="text-center py-8 text-gray-500">
+                <p className="text-xl font-medium">No results for "{query}"</p>
+                <p className="text-sm mt-2">Try one of these instead:</p>
+              </div>
+              <div className="flex flex-wrap gap-2 justify-center mt-2">
+                {['Everest', 'Kathmandu', 'Hiace', 'Scorpio', 'Pokhara', 'Annapurna'].map(term => (
+                  <button
+                    key={term}
+                    onClick={() => setQuery(term)}
+                    className="px-4 py-2 bg-gray-100 hover:bg-[#e53a24] hover:text-white text-gray-700 text-sm font-semibold rounded-full transition-all"
+                  >
+                    {term}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
