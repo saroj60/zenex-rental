@@ -21,13 +21,13 @@ const Fleet = () => {
         </Link>
       </div>
       
-      <div className="flex flex-wrap justify-center gap-x-6 gap-y-0 pb-8">
-        <HiacePricingCard />
-        <ScorpioPricingCard />
-        <CarPricingCard />
-        <BusPricingCard />
-        <CoasterPricingCard />
-        <CarModelsCard />
+      <div className="flex flex-wrap justify-center gap-x-6 gap-y-6 pb-8">
+        <HiacePricingCard isSmall={true} />
+        <ScorpioPricingCard isSmall={true} />
+        <CarPricingCard isSmall={true} />
+        <BusPricingCard isSmall={true} />
+        <CoasterPricingCard isSmall={true} />
+        <CarModelsCard isSmall={true} />
       </div>
     </section>
   );

@@ -1,37 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { megaMenuData } from '../data/navigationData';
-import { ChevronRight, Compass, Mountain, ArrowUpRight } from 'lucide-react';
+import { Compass, Globe, ArrowUpRight, ChevronRight } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 
-const CountryWiseTrekCategories = () => {
+const CountryWiseTourCategories = () => {
   const { regions } = useAppData();
   const [activeCountry, setActiveCountry] = useState('Nepal');
 
-  // Filter data and merge with database regions dynamically
-  const trekDestinations = megaMenuData.Destinations.map(destination => {
+  // Build country category data dynamically from database regions
+  const tourData = ['Nepal', 'Tibet', 'Bhutan', 'India'].map(countryName => {
     // Fetch matching dynamic regions from database
     const dynamicRegions = (regions || [])
-      .filter(r => (r.country || 'Nepal').toLowerCase() === destination.country.toLowerCase() && (r.type === 'Treks' || r.type === 'Both'));
+      .filter(r => (r.country || 'Nepal').toLowerCase() === countryName.toLowerCase() && (r.type === 'Tours' || r.type === 'Both'));
 
     const dynamicLinks = dynamicRegions.map(r => ({
       name: r.name,
-      url: `/treks/region/${r.slug}`,
-      image: r.image || 'https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2070'
+      url: `/tours/category/${r.slug}`,
+      image: r.image || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=2070'
     }));
 
     return {
-      country: destination.country,
+      country: countryName,
       categories: [
         {
-          title: `Trekking in ${destination.country}`,
+          title: `Tours in ${countryName}`,
           links: dynamicLinks
         }
       ]
     };
   }).filter(destination => destination.categories[0].links.length > 0);
 
-  const activeTab = trekDestinations.find(t => t.country === activeCountry) || trekDestinations[0];
+  const activeTab = tourData.find(t => t.country === activeCountry) || tourData[0];
 
   if (!activeTab) return null;
 
@@ -48,13 +47,13 @@ const CountryWiseTrekCategories = () => {
               Explore By Region
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-headline" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Trekking Regions & Trails
+              Sightseeing & Tour Regions
             </h2>
           </div>
 
           {/* Country Switcher Tabs */}
           <div className="flex items-center gap-2 bg-slate-800/80 p-1.5 rounded-2xl border border-slate-700/60 backdrop-blur-md">
-            {trekDestinations.map((destination) => (
+            {tourData.map((destination) => (
               <button
                 key={destination.country}
                 onClick={() => setActiveCountry(destination.country)}
@@ -64,7 +63,7 @@ const CountryWiseTrekCategories = () => {
                     : 'text-slate-300 hover:text-white hover:bg-slate-700/50'
                 }`}
               >
-                <Mountain size={15} />
+                <Globe size={15} />
                 {destination.country}
               </button>
             ))}
@@ -85,23 +84,14 @@ const CountryWiseTrekCategories = () => {
                 >
                   {link.image && (
                     <div className="w-full h-36 overflow-hidden relative">
-                      <img src={link.image} alt={link.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <img src={link.image} alt={link.name} data-pin-nopin="true" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                       <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm p-1.5 rounded-full shadow-sm">
                         <ArrowUpRight size={14} className="text-slate-700 group-hover:text-orange-500 transition-colors" />
                       </div>
                     </div>
                   )}
                   <div className="p-5 flex flex-col justify-between flex-1">
-                    {!link.image && (
-                      <div className="flex justify-between items-start mb-3">
-                        <span className="w-8 h-8 rounded-xl bg-orange-100/80 text-orange-600 flex items-center justify-center font-bold text-xs group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
-                          <Mountain size={16} />
-                        </span>
-                        <ArrowUpRight size={18} className="text-slate-300 group-hover:text-orange-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
-                      </div>
-                    )}
-                    
-                    <div className={link.image ? "mt-1" : ""}>
+                    <div className="mt-1">
                       <h4 className="text-base font-bold text-slate-800 group-hover:text-orange-600 transition-colors leading-snug">
                         {link.name}
                       </h4>
@@ -120,4 +110,4 @@ const CountryWiseTrekCategories = () => {
   );
 };
 
-export default CountryWiseTrekCategories;
+export default CountryWiseTourCategories;

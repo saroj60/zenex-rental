@@ -47,8 +47,8 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`fixed top-4 left-0 right-0 z-50 px-4 md:px-8 w-full max-w-7xl mx-auto transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-[150%]'}`}>
-      <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-lg flex justify-between items-center px-6 py-3 border border-white/20">
+    <header className={`fixed top-0 left-0 right-0 z-50 w-full transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+      <div className="bg-white/95 backdrop-blur-md border-b border-gray-200/85 shadow-sm flex justify-between items-center px-4 md:px-12 py-3">
         <div className="flex items-center gap-2">
           <Link to="/" className="flex items-center gap-3" onClick={() => {
             setIsMobileMenuOpen(false);
@@ -73,7 +73,7 @@ const Header = () => {
           
           <Link to="/destinations" className={getLinkClass('/destinations')}>Destinations</Link>
           <Link to="/treks" className={getLinkClass('/treks')}>Treks</Link>
-          <Link to="/packages" className={getLinkClass('/packages')}>Tours</Link>
+          <Link to="/tours" className={getLinkClass('/tours')}>Tours</Link>
           <Link to="/vehicles" className={getLinkClass('/vehicles')}>Vehicles</Link>
           <Link to="/blogs" className={getLinkClass('/blogs')}>Blogs</Link>
           <Link to="/about" className={getLinkClass('/about')}>About</Link>
@@ -102,7 +102,7 @@ const Header = () => {
             <div className="absolute top-full right-0 mt-4 w-48 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right group-hover:translate-y-0 translate-y-2">
               <div className="absolute -top-4 right-0 w-full h-4 bg-transparent"></div>
               <div className="flex flex-col py-2">
-                <Link to="/packages" className="px-4 py-2 text-sm font-bold text-gray-700 hover:bg-gray-50 hover:text-[#e53a24]">Tours</Link>
+                <Link to="/tours" className="px-4 py-2 text-sm font-bold text-gray-700 hover:bg-gray-50 hover:text-[#e53a24]">Tours</Link>
                 <Link to="/treks" className="px-4 py-2 text-sm font-bold text-gray-700 hover:bg-gray-50 hover:text-[#e53a24]">Treks</Link>
                 <Link to="/vehicles" className="px-4 py-2 text-sm font-bold text-gray-700 hover:bg-gray-50 hover:text-[#e53a24]">Vehicles</Link>
               </div>
@@ -120,7 +120,7 @@ const Header = () => {
 
       {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-4 right-4 mt-2 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden flex flex-col">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl border-t border-b border-gray-100 overflow-hidden flex flex-col">
           <div className="flex flex-col py-4 px-6 gap-4">
 
             <Link to="/" className={getMobileLinkClass('/')} onClick={() => {
@@ -130,7 +130,7 @@ const Header = () => {
             
             <Link to="/destinations" className={getMobileLinkClass('/destinations')} onClick={() => setIsMobileMenuOpen(false)}>Destinations</Link>
             <Link to="/treks" className={getMobileLinkClass('/treks')} onClick={() => setIsMobileMenuOpen(false)}>Treks</Link>
-            <Link to="/packages" className={getMobileLinkClass('/packages')} onClick={() => setIsMobileMenuOpen(false)}>Tours</Link>
+            <Link to="/tours" className={getMobileLinkClass('/tours')} onClick={() => setIsMobileMenuOpen(false)}>Tours</Link>
             <Link to="/vehicles" className={getMobileLinkClass('/vehicles')} onClick={() => setIsMobileMenuOpen(false)}>Vehicles</Link>
             <Link to="/blogs" className={getMobileLinkClass('/blogs')} onClick={() => setIsMobileMenuOpen(false)}>Blogs</Link>
             <Link to="/about" className={getMobileLinkClass('/about')} onClick={() => setIsMobileMenuOpen(false)}>About</Link>
@@ -149,7 +149,7 @@ const Header = () => {
               </button>
               <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isMobileBookOpen ? 'max-h-48 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
                 <div className="flex flex-col gap-2">
-                  <Link to="/packages" className="bg-gray-50 text-gray-800 py-3 rounded-xl text-base font-bold text-center border border-gray-100" onClick={() => setIsMobileMenuOpen(false)}>Book Tours</Link>
+                  <Link to="/tours" className="bg-gray-50 text-gray-800 py-3 rounded-xl text-base font-bold text-center border border-gray-100" onClick={() => setIsMobileMenuOpen(false)}>Book Tours</Link>
                   <Link to="/treks" className="bg-gray-50 text-gray-800 py-3 rounded-xl text-base font-bold text-center border border-gray-100" onClick={() => setIsMobileMenuOpen(false)}>Book Treks</Link>
                   <Link to="/vehicles" className="bg-gray-50 text-gray-800 py-3 rounded-xl text-base font-bold text-center border border-gray-100" onClick={() => setIsMobileMenuOpen(false)}>Book Vehicles</Link>
                 </div>

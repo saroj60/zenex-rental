@@ -30,24 +30,25 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
   const lowerQuery = query.toLowerCase().trim();
   
   const filteredVehicles = lowerQuery ? vehicles.filter(v => 
-    v.name.toLowerCase().includes(lowerQuery) || 
-    v.type.toLowerCase().includes(lowerQuery)
+    (v.name?.toLowerCase() || '').includes(lowerQuery) || 
+    (v.type?.toLowerCase() || '').includes(lowerQuery)
   ).slice(0, 4) : [];
 
   const filteredDestinations = lowerQuery ? destinations.filter(d => 
-    d.name.toLowerCase().includes(lowerQuery) || 
-    d.desc.toLowerCase().includes(lowerQuery)
+    (d.name?.toLowerCase() || '').includes(lowerQuery) || 
+    (d.desc?.toLowerCase() || '').includes(lowerQuery)
   ).slice(0, 4) : [];
 
   const filteredTreks = lowerQuery ? treks.filter(t => 
-    t.title.toLowerCase().includes(lowerQuery) || 
-    t.description.toLowerCase().includes(lowerQuery)
+    (t.title?.toLowerCase() || '').includes(lowerQuery) || 
+    (t.description?.toLowerCase() || '').includes(lowerQuery) ||
+    (t.overview?.toLowerCase() || '').includes(lowerQuery)
   ).slice(0, 4) : [];
 
   // Assuming packages has title, id, category
   const filteredPackages = lowerQuery ? packages.filter(p => 
-    p.title.toLowerCase().includes(lowerQuery) || 
-    (p.location && p.location.toLowerCase().includes(lowerQuery))
+    (p.title?.toLowerCase() || '').includes(lowerQuery) || 
+    (p.location?.toLowerCase() || '').includes(lowerQuery)
   ).slice(0, 4) : [];
 
   const handleResultClick = (path) => {

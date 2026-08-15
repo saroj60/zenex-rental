@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, NavLink, useNavigate, Link } from 'react-router-dom';
-import { LayoutDashboard, Car, MapPin, Package, Mountain, CalendarCheck, Settings, LogOut, Menu, UserCircle, X, Users, FileText, Image as ImageIcon } from 'lucide-react';
+import { LayoutDashboard, Car, MapPin, Package, Mountain, CalendarCheck, Settings, LogOut, Menu, UserCircle, X, Users, FileText, Image as ImageIcon, Layers } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const DashboardLayout = () => {
@@ -18,8 +18,8 @@ const DashboardLayout = () => {
     { name: 'Fleet Management', path: '/dashboard/fleet', icon: Car },
     { name: 'Drivers', path: '/dashboard/drivers', icon: Users },
     { name: 'Destinations', path: '/dashboard/destinations', icon: MapPin },
-    { name: 'Packages', path: '/dashboard/packages', icon: Package },
-    { name: 'Treks', path: '/dashboard/treks', icon: Mountain },
+    { name: 'Tours & Treks', path: '/dashboard/tour-trips', icon: Mountain },
+    { name: 'Trip Regions', path: '/dashboard/regions', icon: Layers },
     { name: 'Bookings', path: '/dashboard/bookings', icon: CalendarCheck },
     { name: 'Blogs', path: '/dashboard/blogs', icon: FileText },
     { name: 'Gallery', path: '/dashboard/gallery', icon: ImageIcon },

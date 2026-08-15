@@ -25,6 +25,7 @@ import FAQPage from './pages/FAQPage';
 import Packages from './pages/Packages';
 import PackageDetail from './pages/PackageDetail';
 import Tours from './pages/Tours';
+import TourCategoryDetail from './pages/TourCategoryDetail';
 import RouteLanding from './pages/RouteLanding';
 import SEOLanding from './pages/SEOLanding';
 import SelfDrive from './pages/SelfDrive';
@@ -50,9 +51,20 @@ import AddVehicle from './pages/admin/AddVehicle';
 import ManageGallery from './pages/admin/ManageGallery';
 import ManageDrivers from './pages/admin/ManageDrivers';
 import AddDriver from './pages/admin/AddDriver';
+import ManageTreks from './pages/admin/ManageTreks';
+import AddTrek from './pages/admin/AddTrek';
+import ManagePackages from './pages/admin/ManagePackages';
+import AddPackage from './pages/admin/AddPackage';
+import ManageTourTrips from './pages/admin/ManageTourTrips';
+import AddTourTrip from './pages/admin/AddTourTrip';
+import EditTourTrip from './pages/admin/EditTourTrip';
+import PreviewTourTrip from './pages/admin/PreviewTourTrip';
+import ManageRegions from './pages/admin/ManageRegions';
 import Treks from './pages/Treks';
 import TrekDetail from './pages/TrekDetail';
 import TrekRegion from './pages/TrekRegion';
+import RegionDetail from './pages/RegionDetail';
+import TourTripDetail from './pages/TourTripDetail';
 
 const router = createBrowserRouter([
   {
@@ -68,22 +80,24 @@ const router = createBrowserRouter([
       { path: 'vehicles/coaster-routes', element: <CoasterRoutes /> },
       { path: 'vehicles/car-models', element: <CarModels /> },
       { path: 'vehicles/self-drive', element: <SelfDriveRates /> },
-      { path: 'vehicles/:id', element: <VehicleDetail /> },
       { path: 'checkout', element: <BookingCheckout /> },
       { path: 'planner', element: <TripPlanner /> },
       { path: 'airport/:code', element: <AirportRental /> },
       { path: 'about', element: <About /> },
       { path: 'contact', element: <Contact /> },
-      { path: 'blog', element: <Blogs /> },
+      { path: 'vehicle/:id', element: <VehicleDetail /> },
       { path: 'destinations', element: <Destinations /> },
+      { path: 'region/:slug', element: <RegionDetail /> },
+      { path: 'destination/:id', element: <DestinationDetail /> },
       { path: 'destinations/:id', element: <DestinationDetail /> },
       { path: 'terms-and-conditions', element: <TermsConditions /> },
       { path: 'privacy-policy', element: <PrivacyPolicy /> },
       { path: 'cancellation-policy', element: <CancellationPolicy /> },
       { path: 'faq', element: <FAQPage /> },
       { path: 'packages', element: <Packages /> },
-      { path: 'packages/:id', element: <PackageDetail /> },
+      { path: 'packages/:id', element: <TourTripDetail /> },
       { path: 'tours', element: <Tours /> },
+      { path: 'tours/category/:categoryName', element: <TourCategoryDetail /> },
       { path: 'blogs', element: <Blogs /> },
       { path: 'blogs/:id', element: <BlogDetail /> },
       { path: 'route/:slug', element: <RouteLanding /> },
@@ -95,8 +109,10 @@ const router = createBrowserRouter([
       { path: 'flight-ticketing-nepal', element: <FlightTicketing /> },
       { path: 'airport-transfer-kathmandu', element: <AirportRental /> },
       { path: 'treks', element: <Treks /> },
-      { path: 'treks/region/:regionId', element: <TrekRegion /> },
       { path: 'treks/:id', element: <TrekDetail /> },
+      { path: 'treks/region/:region', element: <TrekRegion /> },
+      { path: 'tour-trip/:slug', element: <TourTripDetail /> },
+      { path: 'tour/:slug', element: <TourTripDetail /> },
     ],
   },
   {
@@ -110,6 +126,14 @@ const router = createBrowserRouter([
       { path: 'blogs', element: <ManageBlogs /> },
       { path: 'add-blog', element: <AddBlog /> },
       { path: 'gallery', element: <ManageGallery /> },
+      { path: 'treks', element: <ManageTreks /> },
+      { path: 'add-trek', element: <AddTrek /> },
+      { path: 'packages', element: <ManagePackages /> },
+      { path: 'add-package', element: <AddPackage /> },
+      { path: 'tour-trips', element: <ManageTourTrips /> },
+      { path: 'add-tour-trip', element: <AddTourTrip /> },
+      { path: 'edit-tour-trip/:id', element: <EditTourTrip /> },
+      { path: 'preview-tour-trip/:id', element: <PreviewTourTrip /> },
     ]
   },
   {
@@ -124,7 +148,13 @@ const router = createBrowserRouter([
       { path: 'fleet', element: <FleetManagement /> },
       { path: 'drivers', element: <DriversAdmin /> },
       { path: 'destinations', element: <DestinationsAdmin /> },
+      { path: 'regions', element: <ManageRegions /> },
+      { path: 'bookings', element: <BookingsAdmin /> },
       { path: 'packages', element: <PackagesAdmin /> },
+      { path: 'tour-trips', element: <ManageTourTrips /> },
+      { path: 'add-tour-trip', element: <AddTourTrip /> },
+      { path: 'edit-tour-trip/:id', element: <EditTourTrip /> },
+      { path: 'preview-tour-trip/:id', element: <PreviewTourTrip /> },
       { path: 'treks', element: <TreksAdmin /> },
       { path: 'bookings', element: <BookingsAdmin /> },
       {

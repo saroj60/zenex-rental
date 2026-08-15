@@ -12,7 +12,22 @@ export const BookingProvider = ({ children }) => {
     localStorage.setItem('zenex_bookings', JSON.stringify(bookings));
   }, [bookings]);
 
-  const addBooking = (bookingData) => {
+  const addBooking = async (bookingData) => {
+    try {
+      const res = await fetch('/api/bookings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(bookingData)
+      });
+      const data = await res.json();
+      if (data.success) {
+        setBookings(prev => [...prev, data.booking]);
+        return data.booking;
+      }
+    } catch (err) {
+      console.error("Error saving booking on backend", err);
+    }
+
     const newBooking = {
       ...bookingData,
       id: `BK-${Math.random().toString(36).substr(2, 9).toUpperCase()}`,

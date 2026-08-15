@@ -5,7 +5,7 @@ import { useAppData } from '../context/AppDataContext';
 
 import SEO from '../components/SEO';
 
-const packageExtraData = {
+export const packageExtraData = {
   'nepal-tour-poon-hill-trek-12d': {
     quickInfo: [
       { label: 'Duration', value: '12 Days 11 Nights', icon: 'Calendar' },

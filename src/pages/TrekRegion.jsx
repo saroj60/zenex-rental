@@ -7,22 +7,44 @@ import SEO from '../components/SEO';
 import Pagination from '../components/Pagination';
 
 const TrekRegion = () => {
-  const { regionId } = useParams();
-  const { treks } = useAppData();
+  const { region: regionId = '' } = useParams();
+  const { treks, tourTrips, regions } = useAppData();
   
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
 
-  // Find region data
-  const region = regionData[regionId] || {
-    id: regionId,
-    title: `${regionId.charAt(0).toUpperCase() + regionId.slice(1)} Region Treks`,
-    description: `<p>Explore the breathtaking trails of the ${regionId} region.</p>`
-  };
+  // Find dynamic database region first, fall back to regionData
+  const matchedRegion = (regions || []).find(r => r.slug === regionId);
+  const region = matchedRegion 
+    ? {
+        id: matchedRegion.slug,
+        title: matchedRegion.name,
+        description: matchedRegion.description ? `<p>${matchedRegion.description}</p>` : `<p>Explore the breathtaking trails of ${matchedRegion.name}.</p>`
+      }
+    : (regionData[regionId] || {
+        id: regionId,
+        title: `${regionId.charAt(0).toUpperCase() + regionId.slice(1)} Region Treks`,
+        description: `<p>Explore the breathtaking trails of the ${regionId} region.</p>`
+      });
+
+  const combinedList = [
+    ...treks.map(t => ({ ...t, source: 'trek' })),
+    ...tourTrips.map(t => ({
+      ...t,
+      source: 'tourTrip',
+      rating: t.rating || 5,
+      reviewsCount: t.reviewsCount || 1,
+      price: t.price || (t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : ''),
+      difficulty: t.grade || 'Moderate',
+      activity: t.activities?.join(', ') || 'Trekking'
+    }))
+  ];
 
   // Filter treks for this region
-  const filteredTreks = treks.filter(trek => {
-    const actLower = (trek.activity || '').toLowerCase();
+  const filteredTreks = combinedList.filter(trek => {
+    const actLower = trek.source === 'tourTrip'
+      ? (trek.activities || []).map(a => a.toLowerCase()).join(' ')
+      : (trek.activity || '').toLowerCase();
     const catLower = (trek.category || '').toLowerCase();
     const titleLower = (trek.title || '').toLowerCase();
 
@@ -36,6 +58,14 @@ const TrekRegion = () => {
 
     const regProp = (trek.region || '').toLowerCase();
     const qRegProp = (trek.quickFacts?.region || '').toLowerCase();
+
+    // Match database region strictly
+    if (matchedRegion) {
+      const matchRegionName = matchedRegion.name.toLowerCase();
+      if (regProp === matchRegionName || qRegProp === matchRegionName) {
+        return true;
+      }
+    }
 
     const normalizedRegionId = regionId.toLowerCase().replace(/[^a-z0-9]/g, '');
 
@@ -102,99 +132,102 @@ const TrekRegion = () => {
           {filteredTreks.length > 0 ? (
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="treks-grid">
-                {currentTreks.map((trek) => (
-                  <Link to={`/treks/${trek.id}`} key={trek.id} className="block group">
-                    <div className="bg-[#E4E2DC] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full">
-                      
-                      {/* Image Header */}
-                      <div className="relative h-72 overflow-hidden">
-                        <img 
-                          src={trek.image} 
-                          alt={trek.title} 
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </div>
-                      
-                      {/* Content Body */}
-                      <div className="px-5 pt-5 pb-5 flex-1 flex flex-col">
-                        <h3 className="text-xl font-bold text-gray-900 mb-3 leading-snug line-clamp-2">
-                          {trek.title}
-                        </h3>
+                {currentTreks.map((trek) => {
+                  const detailUrl = trek.source === 'tourTrip' ? `/tour-trip/${trek.slug || trek.id}` : `/treks/${trek.id}`;
+                  return (
+                    <Link to={detailUrl} key={trek.id} className="block group">
+                      <div className="bg-[#E4E2DC] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full">
                         
-                        {/* Reviews & Price */}
-                        <div className="flex justify-between items-center mb-3 min-h-[20px]">
-                          {trek.price ? (
-                            <>
+                        {/* Image Header */}
+                        <div className="relative h-72 overflow-hidden">
+                          <img 
+                            src={trek.image} 
+                            alt={trek.title} 
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                        
+                        {/* Content Body */}
+                        <div className="px-5 pt-5 pb-5 flex-1 flex flex-col">
+                          <h3 className="text-xl font-bold text-gray-900 mb-3 leading-snug line-clamp-2">
+                            {trek.title}
+                          </h3>
+                          
+                          {/* Reviews & Price */}
+                          <div className="flex justify-between items-center mb-3 min-h-[20px]">
+                            {trek.price ? (
+                              <>
+                                <div className="flex items-center gap-1.5">
+                                  <span className="text-sm font-bold text-gray-900">{trek.price}</span>
+                                  {trek.originalPrice && (
+                                    <span className="text-xs text-gray-600 line-through">{trek.originalPrice}</span>
+                                  )}
+                                  <span className="text-xs text-gray-700 font-medium">/person</span>
+                                </div>
+                                <div className="flex items-center gap-1">
+                                  <div className="flex text-[#F59E0B]">
+                                    {[...Array(5)].map((_, i) => (
+                                      <Star key={i} size={12} fill={i < Math.floor(trek.rating) ? "currentColor" : "none"} strokeWidth={1.5} />
+                                    ))}
+                                  </div>
+                                  <span className="text-[10px] font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
+                                </div>
+                              </>
+                            ) : (
                               <div className="flex items-center gap-1.5">
-                                <span className="text-sm font-bold text-gray-900">{trek.price}</span>
-                                {trek.originalPrice && (
-                                  <span className="text-xs text-gray-600 line-through">{trek.originalPrice}</span>
-                                )}
-                                <span className="text-xs text-gray-700 font-medium">/person</span>
-                              </div>
-                              <div className="flex items-center gap-1">
                                 <div className="flex text-[#F59E0B]">
                                   {[...Array(5)].map((_, i) => (
                                     <Star key={i} size={12} fill={i < Math.floor(trek.rating) ? "currentColor" : "none"} strokeWidth={1.5} />
                                   ))}
                                 </div>
-                                <span className="text-[10px] font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
+                                <span className="text-xs font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
                               </div>
-                            </>
-                          ) : (
-                            <div className="flex items-center gap-1.5">
-                              <div className="flex text-[#F59E0B]">
-                                {[...Array(5)].map((_, i) => (
-                                  <Star key={i} size={12} fill={i < Math.floor(trek.rating) ? "currentColor" : "none"} strokeWidth={1.5} />
-                                ))}
-                              </div>
-                              <span className="text-xs font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
-                            </div>
-                          )}
-                        </div>
+                            )}
+                          </div>
 
-                        <div className="w-full h-px bg-gray-300/80 my-3"></div>
-                        
-                        {/* Footer Features */}
-                        <div className="flex justify-between items-start mt-auto pt-1 gap-2">
-                          {trek.difficulty && (
-                            <div className="flex items-center gap-2 flex-1">
-                              <Clock size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
-                              <div className="flex flex-col justify-center">
-                                <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Grade</span>
-                                <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
-                                  {trek.difficulty}
-                                </span>
+                          <div className="w-full h-px bg-gray-300/80 my-3"></div>
+                          
+                          {/* Footer Features */}
+                          <div className="flex justify-between items-start mt-auto pt-1 gap-2">
+                            {trek.difficulty && (
+                              <div className="flex items-center gap-2 flex-1">
+                                <Clock size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
+                                <div className="flex flex-col justify-center">
+                                  <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Grade</span>
+                                  <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
+                                    {trek.difficulty}
+                                  </span>
+                                </div>
                               </div>
-                            </div>
-                          )}
-                          {trek.duration && (
-                            <div className="flex items-center gap-2 flex-1">
-                              <Calendar size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
-                              <div className="flex flex-col justify-center">
-                                <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Duration</span>
-                                <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
-                                  {trek.duration}
-                                </span>
+                            )}
+                            {trek.duration && (
+                              <div className="flex items-center gap-2 flex-1">
+                                <Calendar size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
+                                <div className="flex flex-col justify-center">
+                                  <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Duration</span>
+                                  <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
+                                    {trek.duration} {trek.durationUnit || 'Days'}
+                                  </span>
+                                </div>
                               </div>
-                            </div>
-                          )}
-                          {trek.activity && (
-                            <div className="flex items-center gap-2 flex-1">
-                              <Activity size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
-                              <div className="flex flex-col justify-center">
-                                <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Activity</span>
-                                <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1 break-words">
-                                  {trek.activity}
-                                </span>
+                            )}
+                            {trek.activity && (
+                              <div className="flex items-center gap-2 flex-1">
+                                <Activity size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
+                                <div className="flex flex-col justify-center">
+                                  <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Activity</span>
+                                  <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1 break-words">
+                                    {trek.activity}
+                                  </span>
+                                </div>
                               </div>
-                            </div>
-                          )}
+                            )}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Link>
-                ))}
+                    </Link>
+                  );
+                })}
               </div>
               <Pagination 
                 currentPage={currentPage}
@@ -212,7 +245,7 @@ const TrekRegion = () => {
           ) : (
             <div className="text-center py-20 bg-slate-50 rounded-2xl border border-slate-100">
               <h3 className="text-xl font-medium text-slate-700">No trekking packages found for this region yet.</h3>
-              <p className="text-slate-500 mt-2 mb-6">All tour packages have been removed from the treks section. You can add new trekking packages via the Admin Dashboard or explore all treks.</p>
+              <p className="text-slate-500 mt-2 mb-6">We are currently updating our catalog. You can add new trekking packages via the Admin Dashboard or explore our other available treks.</p>
               <div className="flex justify-center gap-4">
                 <Link to="/treks" className="px-6 py-2.5 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition">
                   Browse All Treks

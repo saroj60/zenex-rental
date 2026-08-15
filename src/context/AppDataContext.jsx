@@ -440,25 +440,38 @@ export const AppDataProvider = ({ children }) => {
   const [bookings, setBookings] = useState([]);
   const [drivers, setDrivers] = useState([]);
   const [galleryImages, setGalleryImages] = useState(initialGallery);
+  const [tourTrips, setTourTrips] = useState([]);
+  const [regions, setRegions] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [vehRes, packRes, trekRes, drvRes] = await Promise.all([
-          fetch('/api/vehicles').catch(() => ({ json: () => initialVehicles })),
-          fetch('/api/packages').catch(() => ({ json: () => initialPackages })),
-          fetch('/api/v2/treks').catch(() => ({ json: () => treksData })),
-          fetch('/api/drivers').catch(() => ({ json: () => initialDrivers }))
+        setLoading(true);
+        const [vehRes, packRes, trekRes, drvRes, tourRes, regRes, bookRes] = await Promise.all([
+          fetch('/api/vehicles').catch(() => ({ json: () => [] })),
+          fetch('/api/packages').catch(() => ({ json: () => [] })),
+          fetch('/api/v2/treks').catch(() => ({ json: () => [] })),
+          fetch('/api/drivers').catch(() => ({ json: () => [] })),
+          fetch('/api/tour-trips').catch(() => ({ json: () => [] })),
+          fetch('/api/regions').catch(() => ({ json: () => [] })),
+          fetch('/api/bookings').catch(() => ({ json: () => [] }))
         ]);
         
         const fetchedTreks = await trekRes.json().catch(() => []);
-        setVehicles(await vehRes.json().catch(() => initialVehicles));
-        setPackages(await packRes.json().catch(() => initialPackages));
+        setVehicles(await vehRes.json().catch(() => []));
+        setPackages(await packRes.json().catch(() => []));
         setTreks(fetchedTreks && fetchedTreks.length > 0 ? fetchedTreks : treksData);
-        setDrivers(await drvRes.json().catch(() => initialDrivers));
+        setDrivers(await drvRes.json().catch(() => []));
+        setTourTrips(await tourRes.json().catch(() => []));
+        setRegions(await regRes.json().catch(() => []));
+        setBookings(await bookRes.json().catch(() => []));
       } catch (err) {
         console.error("Error fetching data", err);
         setTreks(treksData);
+      } finally {
+        setLoading(false);
       }
     };
     fetchData();
@@ -533,10 +546,62 @@ export const AppDataProvider = ({ children }) => {
     setTreks(treks.filter(t => t.id !== id));
   };
 
+  // CRUD for Tour Trips
+  const addTourTrip = async (trip) => {
+    const res = await fetch('/api/tour-trips', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(trip) });
+    const newTrip = await res.json();
+    setTourTrips([...tourTrips, newTrip]);
+  };
+  const updateTourTrip = async (id, updated) => {
+    const res = await fetch(`/api/tour-trips/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updated) });
+    const updatedTrip = await res.json();
+    setTourTrips(tourTrips.map(t => t.id === id ? updatedTrip : t));
+  };
+  const deleteTourTrip = async (id) => {
+    await fetch(`/api/tour-trips/${id}`, { method: 'DELETE' });
+    setTourTrips(tourTrips.filter(t => t.id !== id));
+  };
+
   // CRUD for Bookings
-  const addBooking = (booking) => setBookings([...bookings, { ...booking, id: 'B-' + Math.floor(1000 + Math.random() * 9000), date: new Date().toISOString().split('T')[0] }]);
-  const updateBooking = (id, updated) => setBookings(bookings.map(b => b.id === id ? { ...b, ...updated } : b));
-  const deleteBooking = (id) => setBookings(bookings.filter(b => b.id !== id));
+  const addBooking = async (booking) => {
+    const res = await fetch('/api/bookings', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        customer: booking.customer,
+        type: booking.type,
+        vehicle: booking.vehicle,
+        dates: booking.dates,
+        amount: booking.amount,
+        status: booking.status,
+        date: booking.date || new Date().toISOString().split('T')[0]
+      })
+    });
+    const data = await res.json();
+    if (data.success) {
+      setBookings(prev => [...prev, data.booking]);
+    }
+  };
+  const updateBooking = async (id, updated) => {
+    const res = await fetch(`/api/bookings/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(updated)
+    });
+    const data = await res.json();
+    if (data.success) {
+      setBookings(prev => prev.map(b => b.id === id ? data.booking : b));
+    }
+  };
+  const deleteBooking = async (id) => {
+    const res = await fetch(`/api/bookings/${id}`, {
+      method: 'DELETE'
+    });
+    const data = await res.json();
+    if (data.success) {
+      setBookings(prev => prev.filter(b => b.id !== id));
+    }
+  };
 
   // CRUD for Gallery
   const addGalleryImage = (image) => setGalleryImages([{ ...image, id: 'G-' + Date.now() }, ...galleryImages]);
@@ -574,6 +639,58 @@ export const AppDataProvider = ({ children }) => {
     setDrivers(drivers.filter(d => d.id !== id));
   };
 
+  // Upload Image
+  const uploadImage = async (file) => {
+    try {
+      const formData = new FormData();
+      formData.append('image', file);
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        body: formData
+      });
+      const data = await res.json();
+      return data.url;
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      throw error;
+    }
+  };
+
+  // --- REGIONS ---
+  const addRegion = async (region) => {
+    try {
+      const res = await fetch('/api/regions', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(region) });
+      const data = await res.json();
+      setRegions([...regions, data]);
+      return data;
+    } catch (error) {
+      console.error('Error adding region:', error);
+      throw error;
+    }
+  };
+
+  const updateRegion = async (id, updatedRegion) => {
+    try {
+      const res = await fetch(`/api/regions/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updatedRegion) });
+      const data = await res.json();
+      setRegions(regions.map(r => r.id === id ? data : r));
+      return data;
+    } catch (error) {
+      console.error('Error updating region:', error);
+      throw error;
+    }
+  };
+
+  const deleteRegion = async (id) => {
+    try {
+      await fetch(`/api/regions/${id}`, { method: 'DELETE' });
+      setRegions(regions.filter(r => r.id !== id));
+    } catch (error) {
+      console.error('Error deleting region:', error);
+      throw error;
+    }
+  };
+
   return (
     <AppDataContext.Provider value={{
       vehicles, addVehicle, updateVehicle, deleteVehicle,
@@ -582,7 +699,11 @@ export const AppDataProvider = ({ children }) => {
       treks, addTrek, updateTrek, deleteTrek,
       bookings, addBooking, updateBooking, deleteBooking,
       drivers, addDriver, updateDriver, deleteDriver,
-      galleryImages, addGalleryImage, deleteGalleryImage
+      galleryImages, addGalleryImage, deleteGalleryImage,
+      tourTrips, addTourTrip, updateTourTrip, deleteTourTrip,
+      regions, addRegion, updateRegion, deleteRegion,
+      uploadImage,
+      loading, error
     }}>
       {children}
     </AppDataContext.Provider>

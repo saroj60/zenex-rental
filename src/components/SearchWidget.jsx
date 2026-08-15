@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MapPin, Calendar, Car, Search, HeadphonesIcon, ShieldCheck, Zap, Shield, Users, Map, Navigation } from 'lucide-react';
+import { MapPin, Calendar, Car, Search, HeadphonesIcon, ShieldCheck, Zap, Shield, Users, Map as MapIcon, Navigation } from 'lucide-react';
 
 const SearchWidget = ({ activeTab = 'cars' }) => {
   // Car State
@@ -45,7 +45,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
   };
 
   return (
-    <div className="bg-white/40 backdrop-blur-xl border border-white/40 rounded-3xl p-6 md:p-8 shadow-2xl shadow-black/10">
+    <div className="bg-white border border-gray-200 rounded-3xl p-6 md:p-8 shadow-lg">
       
       {/* Top Search Bar */}
       <div className="grid grid-cols-1 md:grid-cols-6 gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-300/50 bg-[#F4F6F8]/80 backdrop-blur-md rounded-2xl p-2 mb-6">
@@ -256,7 +256,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
       </div>
 
       {/* Bottom Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white/60 backdrop-blur-md rounded-2xl p-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-gray-50 border border-gray-100 rounded-2xl p-4">
         <div className="flex items-center gap-4">
           <div className="w-14 h-14 bg-[#1e3a8a] rounded-2xl flex items-center justify-center text-white shadow-lg">
             <Car size={24} />
@@ -281,7 +281,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
 
         <div className="flex items-center gap-4">
           <div className="w-14 h-14 bg-[#e53a24] rounded-2xl flex items-center justify-center text-white shadow-lg">
-            <Map size={24} />
+            <MapIcon size={24} />
           </div>
           <div>
             <h3 className="font-bold text-xl text-gray-900">100+</h3>

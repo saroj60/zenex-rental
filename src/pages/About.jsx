@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import SEO from '../components/SEO';
-import { ShieldCheck, Map, Star, Users, ArrowRight, MessageCircle } from 'lucide-react';
+import { ShieldCheck, Map as MapIcon, Star, Users, ArrowRight, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About = () => {
@@ -164,7 +164,7 @@ const About = () => {
             
             <div className="bg-[#F4F6F8] p-10 rounded-3xl text-center group hover:bg-[#0a2f4c] transition-colors duration-300">
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                <Map className="text-[#e53a24]" size={40} />
+                <MapIcon className="text-[#e53a24]" size={40} />
               </div>
               <h4 className="text-xl font-extrabold text-[#1e3a8a] mb-4 group-hover:text-white transition-colors">Local Expertise</h4>
               <p className="text-gray-600 group-hover:text-blue-100 transition-colors">Our drivers aren't just chauffeurs; they are local guides who know the weather, the roads, and the hidden gems.</p>

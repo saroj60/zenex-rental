@@ -1,228 +1,585 @@
-import React, { useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import { CheckCircle2, ChevronRight, Lock, CreditCard } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { useSearchParams, useNavigate, Link } from 'react-router-dom';
+import { CheckCircle2, ChevronRight, Lock, Calendar, Plus, Minus, CreditCard, Mail } from 'lucide-react';
 import TrustSafety from '../components/TrustSafety';
-import { useCurrency } from '../context/CurrencyContext';
 import { useAppData } from '../context/AppDataContext';
 import { useBooking } from '../context/BookingContext';
-import { useNavigate } from 'react-router-dom';
+import SEO from '../components/SEO';
+
+const countries = [
+  'United States', 'United Kingdom', 'Canada', 'Australia', 'Germany', 
+  'France', 'Nepal', 'India', 'China', 'Japan', 'Singapore', 
+  'Netherlands', 'New Zealand', 'Switzerland', 'Spain', 'Italy', 'Other'
+];
 
 const BookingCheckout = () => {
-  const [step, setStep] = useState(1);
   const [searchParams] = useSearchParams();
-  const driverMode = searchParams.get('driver') || 'self';
-  const carId = searchParams.get('car');
-  const pkgId = searchParams.get('pkg');
-  const startDate = searchParams.get('start') || 'Any Date';
-  const endDate = searchParams.get('end') || 'Any Date';
-  const includeVat = searchParams.get('vat') === 'true';
+  const pkgId = searchParams.get('pkg') || '';
+  const carId = searchParams.get('car') || '';
   
-  const { formatPrice } = useCurrency();
-  const { vehicles, packages, drivers } = useAppData();
+  const { vehicles, packages, treks } = useAppData();
   const { addBooking } = useBooking();
   const navigate = useNavigate();
 
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    license: '',
-    pickupLocation: '',
-    dropLocation: ''
-  });
+  // Find the selected item (Trek, Tour Package, or Vehicle)
+  let selectedItem = null;
+  let defaultPrice = 1200;
+  let durationText = 'N/A';
 
-  const handleInputChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value});
-  };
+  const matchedTrek = treks ? treks.find(t => t.id === pkgId) : null;
+  const matchedTour = packages ? packages.find(p => p.id === pkgId) : null;
+  const matchedVehicle = carId ? vehicles.find(v => v.id.toString() === carId) : null;
 
-  const pkg = pkgId ? packages.find(p => p.id === pkgId) : null;
-  const vehicle = carId ? vehicles.find(v => v.id.toString() === carId) : (pkg ? null : (vehicles && vehicles.length > 0 ? vehicles[0] : null));
-
-  const itemTitle = pkg ? pkg.title : (vehicle ? vehicle.name : 'Vehicle Booking');
-  const itemImg = pkg ? pkg.img : (vehicle ? vehicle.img : '');
-  
-  // Extract number from package price string like "NPR 109,200"
-  const pkgPriceRaw = pkg ? parseInt(pkg.price.replace(/\D/g, '')) : 0;
-  const vehiclePrice = vehicle ? vehicle.price * 3 : 0; // 3 days
-  const basePrice = pkg ? pkgPriceRaw : vehiclePrice;
-  
-  const driverOptions = {
-    self: { label: 'Self Drive', price: 0 }
-  };
-
-  let specificDriver = null;
-  if (drivers && drivers.length > 0) {
-    specificDriver = drivers.find(d => d.assignedVehicleId?.toString() === (vehicle ? vehicle.id.toString() : null)) 
-      || drivers.find(d => !d.assignedVehicleId);
+  if (matchedTrek) {
+    selectedItem = {
+      title: matchedTrek.title,
+      img: matchedTrek.image,
+      duration: matchedTrek.quickFacts?.duration || '15 Days',
+      price: matchedTrek.price ? parseInt(matchedTrek.price.replace(/\D/g, ''), 10) : 1500
+    };
+    durationText = selectedItem.duration;
+    defaultPrice = selectedItem.price;
+  } else if (matchedTour) {
+    selectedItem = {
+      title: matchedTour.title,
+      img: matchedTour.img,
+      duration: matchedTour.title.match(/\d+/) ? `${matchedTour.title.match(/\d+/)[0]} Days` : '7 Days',
+      price: matchedTour.price ? parseInt(matchedTour.price.replace(/\D/g, ''), 10) : 1000
+    };
+    durationText = selectedItem.duration;
+    defaultPrice = selectedItem.price;
+  } else if (matchedVehicle) {
+    selectedItem = {
+      title: matchedVehicle.name,
+      img: matchedVehicle.img,
+      duration: 'Per Day Rental',
+      price: matchedVehicle.price ? parseInt(matchedVehicle.price.toString().replace(/\D/g, ''), 10) : 150
+    };
+    durationText = 'Daily Rental';
+    defaultPrice = selectedItem.price;
+  } else {
+    // Fallback if none matches
+    selectedItem = {
+      title: 'Mera Peak Climbing and Amphu Lapcha Pass - 19 Days',
+      img: 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=2070',
+      duration: '19 Days',
+      price: 2680
+    };
+    durationText = '19 Days';
+    defaultPrice = 2680;
   }
 
-  driverOptions['driver'] = { 
-    label: 'With Driver', 
-    price: (vehicle && vehicle.priceWithDriver && Number(vehicle.priceWithDriver) > Number(vehicle.price)) 
-      ? (Number(vehicle.priceWithDriver) - Number(vehicle.price)) 
-      : 1500,
-    ...(specificDriver || {})
+  // Form State
+  const [tripDate, setTripDate] = useState(() => {
+    const today = new Date();
+    today.setDate(today.getDate() + 14); // default to 2 weeks from now
+    return today.toISOString().split('T')[0];
+  });
+  const [travelersCount, setTravelersCount] = useState(2);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [country, setCountry] = useState('Choose Your Country');
+  const [phone, setPhone] = useState('');
+  const [whatsapp, setWhatsapp] = useState('');
+  const [extraRequirements, setExtraRequirements] = useState('');
+
+  // Step indicator
+  const [step, setStep] = useState(1); // 1 = input, 2 = success
+  const [loading, setLoading] = useState(false);
+  const [confirmedBooking, setConfirmedBooking] = useState(null);
+
+  // Accordion state
+  const [discountOpen, setDiscountOpen] = useState(false);
+  const [paymentOption, setPaymentOption] = useState('pay-later'); // 'pay-later' or 'deposit'
+
+  // Pricing calculations
+  const perPersonPrice = defaultPrice;
+  const packagePrice = perPersonPrice * travelersCount;
+  
+  // Dynamic Group Discount
+  let groupDiscountPercent = 0;
+  if (travelersCount >= 3 && travelersCount < 5) groupDiscountPercent = 5;
+  else if (travelersCount >= 5 && travelersCount < 10) groupDiscountPercent = 10;
+  else if (travelersCount >= 10) groupDiscountPercent = 15;
+
+  const discountAmount = Math.round(packagePrice * (groupDiscountPercent / 100));
+  const totalPrice = packagePrice - discountAmount;
+
+  // Pay Deposit / Pay Later rates
+  const depositPercent = 20;
+  const depositPayable = Math.round(totalPrice * (depositPercent / 100));
+  
+  const initialPaymentNow = paymentOption === 'deposit' ? depositPayable : 0;
+  const duePayLater = paymentOption === 'deposit' ? (totalPrice - depositPayable) : totalPrice;
+
+  const handleBookingSubmit = async (e) => {
+    e.preventDefault();
+    if (!firstName || !lastName || !email || !phone || country === 'Choose Your Country') {
+      alert('Please fill out all required fields marked with *');
+      return;
+    }
+
+    setLoading(true);
+    const bookingDetails = {
+      itemName: selectedItem.title,
+      dates: { start: tripDate, end: tripDate },
+      travelersCount,
+      paymentOption,
+      amount: `US$${totalPrice}`,
+      customer: `${firstName} ${lastName}`,
+      customerDetails: {
+        firstName,
+        lastName,
+        email,
+        country,
+        phone,
+        whatsapp,
+        extraRequirements
+      }
+    };
+
+    try {
+      const result = await addBooking(bookingDetails);
+      setConfirmedBooking(result);
+      setStep(2);
+    } catch (err) {
+      console.error(err);
+      alert('Something went wrong during submission. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
-  const driverPriceTotal = (!pkg && driverMode !== 'self') ? (driverOptions[driverMode] || driverOptions['self']).price * 3 : 0;
-  const vatAmount = includeVat && !pkg ? (basePrice + driverPriceTotal) * 0.13 : 0;
-  const total = basePrice + vatAmount + driverPriceTotal;
+  // Generate Email Prefill Mailto Link
+  const getMailtoLink = () => {
+    if (!confirmedBooking) return '#';
+    const subject = encodeURIComponent(`Booking Order - ${confirmedBooking.id} (${selectedItem.title})`);
+    const body = encodeURIComponent(`Dear Zenex Travel,
+
+Please find my booking order details below:
+
+Booking ID: ${confirmedBooking.id}
+Trip / Package: ${selectedItem.title}
+Trip Date: ${tripDate}
+Number of Travelers: ${travelersCount}
+Duration: ${durationText}
+
+Lead Traveler Details:
+- Name: ${firstName} ${lastName}
+- Email: ${email}
+- Country: ${country}
+- Phone: ${phone}
+- WhatsApp: ${whatsapp}
+${extraRequirements ? `- Special Requirements: ${extraRequirements}\n` : ''}
+Payment Preference: ${paymentOption === 'deposit' ? 'Pay 20% Deposit Now' : 'Book Now, Pay Later (100% on Arrival)'}
+Total Price: US$${totalPrice}
+Initial Payment Due Now: US$${initialPaymentNow}
+Remaining Due Later: US$${duePayLater}
+
+Please confirm my reservation as soon as possible.
+
+Warm regards,
+${firstName} ${lastName}`);
+    return `mailto:info@zenextravel.com.np?subject=${subject}&body=${body}`;
+  };
 
   return (
-    <div className="px-margin-mobile md:px-margin-desktop py-8 bg-background min-h-screen">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="font-headline-lg text-3xl font-bold text-himalayan-blue mb-8">Secure Checkout</h1>
+    <div className="bg-[#f3f7fa] min-h-screen pb-20 pt-28 md:pt-32">
+      <SEO 
+        title="Secure Trip Booking | Zenex Travel"
+        description="Book your adventure holiday or car rental in Nepal securely with Zenex Travel. Pay online or book now and pay on arrival."
+      />
+      
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        
+        {step === 1 ? (
+          <div>
+            <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 mb-8 font-headline uppercase" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Booking
+            </h1>
 
-        {/* Wizard Steps */}
-        <div className="flex items-center mb-8 bg-white p-4 rounded-xl shadow-sm border border-sky-tint overflow-x-auto">
-          <div className={`flex items-center gap-2 ${step >= 1 ? 'text-sunset-orange' : 'text-on-surface-variant'}`}>
-            <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${step >= 1 ? 'bg-sunset-orange text-white' : 'bg-surface-container'}`}>1</div>
-            <span className="font-bold text-sm whitespace-nowrap">Driver Details</span>
-          </div>
-          <div className="h-px w-8 sm:w-16 bg-outline-variant/50 mx-2"></div>
-          <div className={`flex items-center gap-2 ${step >= 2 ? 'text-sunset-orange' : 'text-on-surface-variant'}`}>
-            <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${step >= 2 ? 'bg-sunset-orange text-white' : 'bg-surface-container'}`}>2</div>
-            <span className="font-bold text-sm whitespace-nowrap">Payment</span>
-          </div>
-        </div>
-
-        <div className="flex flex-col lg:flex-row gap-8">
-          {/* Main Form Area */}
-          <div className="lg:w-2/3">
-            {step === 1 && (
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-sky-tint">
-                <h2 className="font-headline-md text-xl mb-6">Primary Driver Information</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-on-surface-variant uppercase">First Name</label>
-                    <input type="text" name="firstName" value={formData.firstName} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="John" />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-on-surface-variant uppercase">Last Name</label>
-                    <input type="text" name="lastName" value={formData.lastName} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="Doe" />
-                  </div>
-                  <div className="space-y-1 md:col-span-2">
-                    <label className="text-xs font-bold text-on-surface-variant uppercase">Email Address</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="john@example.com" />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-on-surface-variant uppercase">Phone Number</label>
-                    <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="+1 234 567 890" />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-on-surface-variant uppercase">License Number</label>
-                    <input type="text" name="license" value={formData.license} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="XYZ123456" />
-                  </div>
-                  <div className="space-y-1 md:col-span-2">
-                    <label className="text-xs font-bold text-on-surface-variant uppercase">Pickup Location</label>
-                    <input type="text" name="pickupLocation" value={formData.pickupLocation} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="Enter pickup address or location" />
-                  </div>
-                  <div className="space-y-1 md:col-span-2">
-                    <label className="text-xs font-bold text-on-surface-variant uppercase">Drop Location</label>
-                    <input type="text" name="dropLocation" value={formData.dropLocation} onChange={handleInputChange} className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue" placeholder="Enter drop-off address or location" />
-                  </div>
-                </div>
-                <div className="flex gap-4 mt-8">
-                  <button onClick={() => setStep(2)} className="w-full bg-himalayan-blue text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary transition-colors">
-                    Continue to Payment <ChevronRight size={20} />
-                  </button>
-                </div>
-              </div>
-            )}
-
-            {step === 2 && (
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-sky-tint">
-                <h2 className="font-headline-md text-xl mb-6 flex items-center gap-2"><Lock className="text-forest-green" /> Confirm Booking</h2>
+            <form onSubmit={handleBookingSubmit} className="flex flex-col lg:flex-row gap-8 items-start">
+              {/* Left Column Fields */}
+              <div className="w-full lg:w-8/12 space-y-6">
                 
-                <div className="bg-surface-container-low p-4 rounded-xl mb-6">
-                  <h3 className="font-bold text-lg mb-2">Pay Later / Cash on Delivery</h3>
-                  <p className="text-on-surface-variant text-sm">You do not need to make any payment right now. You can pay securely when you arrive or pick up the vehicle.</p>
+                {/* Date and Travelers Section */}
+                <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-sm">
+                  <h2 className="text-lg font-bold text-slate-800 mb-6 flex items-center gap-2">
+                    <span className="w-1.5 h-6 bg-[#1b8c00] rounded-full inline-block"></span>
+                    Date and Travelers
+                  </h2>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* Trip Date Selector */}
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">Trip Date *</label>
+                      <div className="relative rounded-xl border border-slate-300 overflow-hidden flex items-center bg-slate-50">
+                        <input 
+                          type="date" 
+                          required
+                          value={tripDate}
+                          onChange={(e) => setTripDate(e.target.value)}
+                          className="w-full bg-transparent border-none py-3.5 px-4 text-slate-800 focus:outline-none font-medium"
+                        />
+                        <div className="bg-blue-500 text-white p-3.5 flex items-center justify-center">
+                          <Calendar size={18} />
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Number of Travelers */}
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">Number of Travelers</label>
+                      <div className="flex items-center justify-between rounded-xl border border-slate-300 py-2.5 px-4 bg-slate-50">
+                        <span className="text-slate-600 font-medium">Number of Travelers</span>
+                        <div className="flex items-center gap-4">
+                          <button 
+                            type="button"
+                            onClick={() => setTravelersCount(Math.max(1, travelersCount - 1))}
+                            className="w-8 h-8 rounded-lg bg-slate-200 text-slate-700 flex items-center justify-center hover:bg-slate-300 transition-colors"
+                          >
+                            <Minus size={16} />
+                          </button>
+                          <span className="text-lg font-bold text-slate-800 w-6 text-center">{travelersCount}</span>
+                          <button 
+                            type="button"
+                            onClick={() => setTravelersCount(travelersCount + 1)}
+                            className="w-8 h-8 rounded-lg bg-slate-200 text-slate-700 flex items-center justify-center hover:bg-slate-300 transition-colors"
+                          >
+                            <Plus size={16} />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="flex gap-4 mt-8">
-                  <button onClick={() => setStep(1)} className="flex-1 bg-surface-container text-himalayan-blue py-4 rounded-xl font-bold hover:bg-surface-container-high transition-colors">Back</button>
-                  <button onClick={() => {
-                    addBooking({
-                      customer: `${formData.firstName} ${formData.lastName}`,
-                      customerDetails: formData,
-                      vehicleId: vehicle ? vehicle.id : null,
-                      packageId: pkg ? pkg.id : null,
-                      itemName: itemTitle,
-                      dates: { start: startDate, end: endDate },
-                      amount: formatPrice(total),
-                      status: 'pending'
-                    });
-                    
-                    const message = `Hi Zenex Travel! I would like to confirm my booking.
+                {/* Lead Traveler Details Section */}
+                <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-sm">
+                  <h2 className="text-lg font-bold text-slate-800 mb-6 flex items-center gap-2">
+                    <span className="w-1.5 h-6 bg-[#1b8c00] rounded-full inline-block"></span>
+                    Lead Traveler Details
+                  </h2>
 
-*Booking Details:*
-Name: ${formData.firstName} ${formData.lastName}
-Vehicle/Package: ${itemTitle}
-Dates: ${startDate} to ${endDate}
-Pickup Location: ${formData.pickupLocation || 'Not provided'}
-Drop Location: ${formData.dropLocation || 'Not provided'}
-Total Price: ${formatPrice(total)}`;
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* First Name */}
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">First Name *</label>
+                      <input 
+                        type="text" 
+                        required
+                        placeholder="First Name"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                      />
+                    </div>
 
-                    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
-                    setStep(3);
-                  }} className="flex-[2] bg-[#25D366] text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-green-600 transition-colors shadow-lg active:scale-95 duration-200">
-                    <CheckCircle2 size={18} /> Confirm via WhatsApp
-                  </button>
+                    {/* Last Name */}
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">Last Name *</label>
+                      <input 
+                        type="text" 
+                        required
+                        placeholder="Last Name"
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                      />
+                    </div>
+
+                    {/* Email */}
+                    <div className="md:col-span-2">
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">Email Address *</label>
+                      <input 
+                        type="email" 
+                        required
+                        placeholder="Email Address"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                      />
+                    </div>
+
+                    {/* Choose Country */}
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">Choose Your Country *</label>
+                      <select 
+                        required
+                        value={country}
+                        onChange={(e) => setCountry(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3.5 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium cursor-pointer"
+                      >
+                        <option disabled value="Choose Your Country">Choose Your Country</option>
+                        {countries.map(c => (
+                          <option key={c} value={c}>{c}</option>
+                        ))}
+                      </select>
+                    </div>
+
+                    {/* Phone Number */}
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">Country Code + Phone Number *</label>
+                      <input 
+                        type="tel" 
+                        required
+                        placeholder="Country Code + Phone Number"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                      />
+                    </div>
+
+                    {/* WhatsApp */}
+                    <div className="md:col-span-2">
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">WhatsApp Number</label>
+                      <input 
+                        type="tel" 
+                        placeholder="WhatsApp Number"
+                        value={whatsapp}
+                        onChange={(e) => setWhatsapp(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                      />
+                    </div>
+
+                    {/* Requirements */}
+                    <div className="md:col-span-2">
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">Extra Requirements</label>
+                      <textarea 
+                        rows={5}
+                        placeholder="Extra Requirements"
+                        value={extraRequirements}
+                        onChange={(e) => setExtraRequirements(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Secure Payment Options */}
+                <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-sm">
+                  <h2 className="text-lg font-bold text-slate-800 mb-6 flex items-center gap-2">
+                    <span className="w-1.5 h-6 bg-[#1b8c00] rounded-full inline-block"></span>
+                    Payment Settings
+                  </h2>
+
+                  <div className="space-y-4">
+                    <label className="flex items-start gap-4 p-4 border border-slate-200 rounded-2xl cursor-pointer hover:bg-slate-50 transition-colors">
+                      <input 
+                        type="radio" 
+                        name="payment_option" 
+                        checked={paymentOption === 'pay-later'}
+                        onChange={() => setPaymentOption('pay-later')}
+                        className="mt-1 h-5 w-5 text-orange-500 focus:ring-orange-500 border-slate-300"
+                      />
+                      <div>
+                        <span className="block font-bold text-slate-800 text-base">Book Now, Pay Later (100% on Arrival)</span>
+                        <span className="block text-sm text-slate-500 mt-1">Reserve your spot instantly. Pay nothing today. Complete payment in Kathmandu before the trip starts.</span>
+                      </div>
+                    </label>
+
+                    <label className="flex items-start gap-4 p-4 border border-slate-200 rounded-2xl cursor-pointer hover:bg-slate-50 transition-colors">
+                      <input 
+                        type="radio" 
+                        name="payment_option" 
+                        checked={paymentOption === 'deposit'}
+                        onChange={() => setPaymentOption('deposit')}
+                        className="mt-1 h-5 w-5 text-orange-500 focus:ring-orange-500 border-slate-300"
+                      />
+                      <div>
+                        <span className="block font-bold text-slate-800 text-base">Pay 20% Deposit Securely Online</span>
+                        <span className="block text-sm text-slate-500 mt-1">Pay only US${depositPayable} today via credit card or digital wallets. Pay the balance when you arrive.</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Right Column Summary */}
+              <div className="w-full lg:w-4/12 sticky top-32">
+                <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-xl">
+                  {/* Summary Title */}
+                  <div className="bg-[#00a8e8] text-white p-5">
+                    <h3 className="font-bold text-lg font-headline">Your Trip Details</h3>
+                  </div>
+
+                  <div className="p-6">
+                    {/* Selected Trip Details Card */}
+                    <div className="flex gap-4 pb-6 border-b border-slate-100">
+                      <img 
+                        src={selectedItem.img} 
+                        alt={selectedItem.title} 
+                        className="w-24 h-18 object-cover rounded-xl bg-slate-100 flex-shrink-0"
+                      />
+                      <div>
+                        <h4 className="font-extrabold text-sm text-slate-800 leading-snug line-clamp-2">{selectedItem.title}</h4>
+                        <p className="text-xs font-semibold text-slate-500 mt-2.5">Duration: {durationText}</p>
+                      </div>
+                    </div>
+
+                    {/* Group Discount Price Accordion */}
+                    <div className="border border-emerald-100 bg-emerald-50/50 rounded-2xl p-4 mt-6">
+                      <button 
+                        type="button"
+                        onClick={() => setDiscountOpen(!discountOpen)}
+                        className="w-full flex items-center justify-between font-bold text-emerald-800 text-sm focus:outline-none"
+                      >
+                        <span>Group Discount Price</span>
+                        <span className="text-lg">{discountOpen ? '−' : '+'}</span>
+                      </button>
+                      
+                      {discountOpen && (
+                        <div className="mt-3 text-xs text-emerald-700 leading-relaxed border-t border-emerald-100/50 pt-3">
+                          <p className="mb-1 font-semibold">Group Savings Table:</p>
+                          <ul className="list-disc pl-4 space-y-1">
+                            <li>3–4 Travelers: 5% Discount</li>
+                            <li>5–9 Travelers: 10% Discount</li>
+                            <li>10+ Travelers: 15% Discount</li>
+                          </ul>
+                          {groupDiscountPercent > 0 && (
+                            <p className="mt-2 font-bold text-[#1b8c00]">Applied: {groupDiscountPercent}% Off Group Discount!</p>
+                          )}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Dates & Travelers Stats */}
+                    <div className="space-y-3.5 py-6 border-b border-slate-100 text-sm font-semibold text-slate-600">
+                      <div className="flex justify-between">
+                        <span>Trip Date:</span>
+                        <span className="text-slate-800">{tripDate || 'Not selected'}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Number of Traveler:</span>
+                        <span className="text-slate-800">{travelersCount} traveler(s)</span>
+                      </div>
+                    </div>
+
+                    {/* Price Breakdown */}
+                    <div className="space-y-4 py-6 border-b border-slate-100 text-sm font-bold text-slate-800">
+                      <div className="flex justify-between font-medium text-slate-600">
+                        <div>
+                          <span className="block">Package Price</span>
+                          <span className="block text-xs text-slate-400 mt-0.5">US${perPersonPrice} x {travelersCount} traveler(s)</span>
+                        </div>
+                        <span>US${packagePrice}</span>
+                      </div>
+
+                      {discountAmount > 0 && (
+                        <div className="flex justify-between font-medium text-[#1b8c00]">
+                          <span>Group Discount ({groupDiscountPercent}%)</span>
+                          <span>-US${discountAmount}</span>
+                        </div>
+                      )}
+
+                      <div className="flex justify-between text-base border-t border-slate-100 pt-4">
+                        <span>Total Price</span>
+                        <span>US${totalPrice}</span>
+                      </div>
+
+                      <div className="flex justify-between font-medium text-slate-600">
+                        <span>Initial Payment</span>
+                        <span>US${initialPaymentNow}</span>
+                      </div>
+
+                      <div className="flex justify-between text-base text-[#e53a24]">
+                        <span>Deposit Payable Now</span>
+                        <span>US${initialPaymentNow}</span>
+                      </div>
+
+                      <div className="text-[11px] font-semibold text-slate-400 -mt-2">
+                        ({paymentOption === 'deposit' ? '20% of total amount' : '0% of total amount'})
+                      </div>
+
+                      <div className="flex justify-between text-base border-t border-slate-100 pt-4">
+                        <span>Due Amount (Pay Later)</span>
+                        <span>US${duePayLater}</span>
+                      </div>
+                    </div>
+
+                    {/* Notice Box */}
+                    <div className="bg-emerald-50 border border-emerald-100 text-emerald-800 text-xs font-semibold p-4 rounded-2xl mt-6 leading-relaxed">
+                      You pay the balance amount after arriving in Kathmandu before the trip starts.
+                    </div>
+
+                    {/* Security Notice */}
+                    <p className="text-[11px] text-slate-400 text-center mt-6 leading-normal">
+                      This is a 3D secure and SSL encrypted payment. Your card details are safe!
+                    </p>
+
+                    {/* Payment Provider Badges */}
+                    <div className="flex items-center justify-center gap-3 mt-4">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" className="h-4 object-contain" alt="Visa" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" className="h-5 object-contain" alt="Amex" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" className="h-5 object-contain" alt="Mastercard" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/UnionPay_logo.svg" className="h-5 object-contain" alt="UnionPay" />
+                    </div>
+
+                    {/* Submit Button */}
+                    <button 
+                      type="submit"
+                      disabled={loading}
+                      className="w-full mt-8 bg-gradient-to-r from-orange-500 to-[#e53a24] text-white py-4 px-6 rounded-2xl font-extrabold text-center hover:shadow-lg hover:shadow-orange-500/20 hover:-translate-y-0.5 transition-all duration-300 uppercase tracking-wide disabled:opacity-50"
+                    >
+                      {loading ? 'Processing...' : 'Complete Booking'}
+                    </button>
+
+                  </div>
                 </div>
               </div>
-            )}
-
-            {step === 3 && (
-              <div className="bg-white p-10 rounded-2xl shadow-sm border border-sky-tint text-center">
-                <div className="w-20 h-20 bg-green-100 text-forest-green rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle2 size={40} />
-                </div>
-                <h2 className="font-headline-lg text-3xl font-bold mb-4">Booking Confirmed!</h2>
-                <p className="text-on-surface-variant mb-8 text-lg">Thank you, {formData.firstName}. Your reservation is complete. You can pay upon arrival.</p>
-                <button onClick={() => navigate('/')} className="bg-himalayan-blue text-white py-3 px-8 rounded-xl font-bold hover:bg-primary transition-colors">
-                  Return to Home
-                </button>
-              </div>
-            )}
+            </form>
           </div>
+        ) : (
+          /* Confirmation Success Page */
+          <div className="max-w-3xl mx-auto bg-white rounded-[2rem] border border-slate-100 shadow-2xl p-8 md:p-12 text-center mt-8">
+            <div className="w-20 h-20 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm">
+              <CheckCircle2 size={44} />
+            </div>
 
-          {/* Order Summary Sidebar */}
-          <div className="lg:w-1/3">
-            <div className="bg-white rounded-2xl shadow-sm border border-sky-tint p-6 sticky top-24">
-              <h3 className="font-headline-md text-lg mb-4">Booking Summary</h3>
-              <div className="flex gap-4 mb-6 border-b border-outline-variant/30 pb-4">
-                <img src={itemImg} alt="Thumbnail" className="w-20 h-16 object-cover rounded-lg bg-surface-container" />
-                <div>
-                  <h4 className="font-bold text-on-surface">{itemTitle}</h4>
-                  <p className="text-xs text-on-surface-variant">{startDate} - {endDate}</p>
-                  <p className="text-xs text-on-surface-variant">Kathmandu Airport</p>
-                </div>
-              </div>
-              
-              <div className="space-y-3 mb-6">
-                <div className="flex justify-between text-sm"><span className="text-on-surface-variant">{pkg ? 'Package Price' : 'Vehicle Rental (3 days)'}</span> <span className="font-bold">{formatPrice(basePrice)}</span></div>
-                {(!pkg && driverMode !== 'self') && (
-                  <div className="flex justify-between text-sm"><span className="text-on-surface-variant">{(driverOptions[driverMode] || driverOptions['self']).label}</span> <span className="font-bold">{formatPrice(driverPriceTotal)}</span></div>
-                )}
+            <h2 className="text-3xl font-extrabold text-slate-800 mb-3 tracking-tight font-headline" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Booking Confirmed!
+            </h2>
+            <p className="text-slate-500 font-bold text-lg mb-2">Order ID: {confirmedBooking?.id}</p>
+            <p className="text-slate-500 font-medium max-w-lg mx-auto mb-8 leading-relaxed">
+              Thank you, {firstName}. Your reservation is complete. A booking confirmation mail has been simulated and saved to the backend database.
+            </p>
 
-                {!pkg && <div className="flex justify-between text-sm"><span className="text-on-surface-variant">{includeVat ? 'VAT (13%)' : 'VAT (0%)'}</span> <span className="font-bold">{formatPrice(vatAmount)}</span></div>}
-                <div className="border-t border-outline-variant/30 pt-3 flex justify-between items-center mt-2">
-                  <span className="font-bold text-lg">Total</span> 
-                  <span className="font-bold text-2xl text-sunset-orange">{formatPrice(total)}</span>
-                </div>
-              </div>
+            <div className="bg-[#f0f9ff] border border-blue-100 rounded-2xl p-6 mb-8 text-left space-y-4 max-w-xl mx-auto">
+              <h4 className="font-bold text-blue-900 text-base">Booking Summary</h4>
+              <ul className="text-sm font-semibold text-blue-800 space-y-2">
+                <li>• Package: {selectedItem.title}</li>
+                <li>• Date: {tripDate}</li>
+                <li>• Travelers: {travelersCount} persons</li>
+                <li>• Price Total: US${totalPrice}</li>
+                <li>• Paid Now: US${initialPaymentNow}</li>
+                <li>• Remaining balance: US${duePayLater} (payable on arrival)</li>
+              </ul>
+            </div>
 
-              <div className="bg-surface-container-low p-3 rounded-lg flex items-start gap-2">
-                <CheckCircle2 size={16} className="text-forest-green flex-shrink-0 mt-0.5" />
-                <p className="text-xs text-on-surface-variant leading-tight">Free cancellation up to 48 hours before pickup. No hidden charges.</p>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+              {/* Mail Prefill Button */}
+              <a 
+                href={getMailtoLink()}
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-blue-600 text-white font-extrabold text-sm hover:bg-blue-700 transition-colors shadow-md w-full sm:w-auto justify-center"
+              >
+                <Mail size={16} /> Send Order on Mail
+              </a>
+
+              <Link 
+                to="/"
+                className="px-6 py-3.5 rounded-2xl bg-slate-100 text-slate-700 font-extrabold text-sm hover:bg-slate-200 transition-colors w-full sm:w-auto inline-block text-center"
+              >
+                Return to Homepage
+              </Link>
             </div>
           </div>
-        </div>
+        )}
+
       </div>
       
-      {/* Trust & Safety Banner to boost conversion confidence */}
+      {/* Trust Safety Info */}
       <div className="mt-16">
         <TrustSafety />
       </div>

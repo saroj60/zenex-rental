@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Map, MapPin, Fuel, Zap, Navigation, Clock, Search } from 'lucide-react';
+import { Map as MapIcon, MapPin, Fuel, Zap, Navigation, Clock, Search } from 'lucide-react';
 
 const StationMap = () => {
   const [filter, setFilter] = useState('all'); // 'all', 'fuel', 'ev'
@@ -18,7 +18,7 @@ const StationMap = () => {
       <div className="p-6 border-b border-outline-variant/30 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h2 className="font-headline-md text-xl font-bold flex items-center gap-2">
-            <Map className="text-himalayan-blue" /> Interactive Station Map
+            <MapIcon className="text-himalayan-blue" /> Interactive Station Map
           </h2>
           <p className="text-sm text-on-surface-variant mt-1">Find fuel and EV charging stations along your route.</p>
         </div>

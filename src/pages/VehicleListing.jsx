@@ -16,21 +16,25 @@ import SelfDriveCard from '../components/SelfDriveCard';
 const VehicleListing = () => {
   const { vehicles } = useAppData();
   const { isVehicleAvailable } = useBooking();
-  const searchParams = new URLSearchParams(window.location.search);
+  const [searchParams] = useSearchParams();
   const searchType = searchParams.get('type') || 'All';
+  const urlPickup = searchParams.get('pickup');
+  const urlDropoff = searchParams.get('dropoff');
+  const urlStart = searchParams.get('start');
+  const urlEnd = searchParams.get('end');
 
   // Booking Widget State
   const [driverMode, setDriverMode] = useState('self');
-  const [pickupLoc, setPickupLoc] = useState('Kathmandu Airport (TIA)');
+  const [pickupLoc, setPickupLoc] = useState(urlPickup || 'Kathmandu Airport (TIA)');
   const [customPickup, setCustomPickup] = useState('');
-  const [dropoffLoc, setDropoffLoc] = useState('Kathmandu Airport (TIA)');
+  const [dropoffLoc, setDropoffLoc] = useState(urlDropoff || 'Kathmandu Airport (TIA)');
   const [customDropoff, setCustomDropoff] = useState('');
   
   // Date State
   const today = new Date().toISOString().split('T')[0];
   const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0];
-  const [startDate, setStartDate] = useState(today);
-  const [endDate, setEndDate] = useState(tomorrow);
+  const [startDate, setStartDate] = useState(urlStart || today);
+  const [endDate, setEndDate] = useState(urlEnd || tomorrow);
   const [days, setDays] = useState(1);
 
   // Filter State

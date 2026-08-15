@@ -22,7 +22,9 @@ const getIcon = (iconName) => {
 const DestinationDetail = () => {
   const { id } = useParams();
   const { destinations, packages } = useAppData();
-  const dest = destinations.find(d => d.id === id) || destinations[0];
+  const dest = destinations && destinations.length > 0
+    ? (destinations.find(d => d.id === id || d.slug === id) || destinations[0])
+    : null;
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   useEffect(() => {
@@ -38,6 +40,29 @@ const DestinationDetail = () => {
       window.scrollTo(0, 0);
     }
   }, [id]);
+
+  if (!dest) {
+    return (
+      <div className="min-h-screen bg-[#F4F6F8] flex flex-col items-center justify-center px-4 pt-32">
+        <div className="text-center max-w-md">
+          <div className="text-7xl mb-6">🏔️</div>
+          <h1 className="text-3xl font-bold text-slate-800 mb-3">Destination Not Found</h1>
+          <p className="text-slate-500 mb-8">
+            The destination <span className="font-bold text-[#e53a24]">"{id}"</span> hasn't been added to the system yet.
+            You can add it via the Admin Panel under <strong>Destinations</strong>.
+          </p>
+          <div className="flex gap-3 justify-center">
+            <Link to="/destinations" className="bg-[#e53a24] text-white px-6 py-3 rounded-xl font-bold hover:bg-red-700 transition-colors">
+              Browse Destinations
+            </Link>
+            <Link to="/treks" className="bg-white border border-gray-200 text-slate-700 px-6 py-3 rounded-xl font-bold hover:bg-gray-50 transition-colors">
+              View Treks
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   const destinationPackages = packages.filter(p => {
     if (p.category !== 'Tours' && p.category !== 'Treks') return false;

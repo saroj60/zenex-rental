@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, FileText, PlusCircle, Settings, Car, Users } from 'lucide-react';
+import { LayoutDashboard, FileText, PlusCircle, Settings, Car, Users, Mountain, Package, Map as MapIcon, Image as ImageIcon } from 'lucide-react';
 
 const AdminLayout = () => {
   const location = useLocation();
@@ -11,8 +11,15 @@ const AdminLayout = () => {
     { name: 'Add Vehicle', path: '/admin/add-vehicle', icon: <PlusCircle size={20} /> },
     { name: 'Manage Drivers', path: '/admin/drivers', icon: <Users size={20} /> },
     { name: 'Add Driver', path: '/admin/add-driver', icon: <PlusCircle size={20} /> },
+    { name: 'Manage Pro Trips', path: '/admin/tour-trips', icon: <MapIcon size={20} /> },
+    { name: 'Add Pro Trip', path: '/admin/add-tour-trip', icon: <PlusCircle size={20} /> },
+    { name: 'Manage Gallery', path: '/admin/gallery', icon: <ImageIcon size={20} /> },
     { name: 'Manage Blogs', path: '/admin/blogs', icon: <FileText size={20} /> },
     { name: 'Add New Blog', path: '/admin/add-blog', icon: <PlusCircle size={20} /> },
+    { name: 'Manage Treks/Tours', path: '/admin/tour-trips', icon: <Mountain size={20} /> },
+    { name: 'Add Trek/Tour', path: '/admin/add-tour-trip', icon: <PlusCircle size={20} /> },
+    { name: 'Manage Packages', path: '/admin/packages', icon: <Package size={20} /> },
+    { name: 'Add Package', path: '/admin/add-package', icon: <PlusCircle size={20} /> },
     { name: 'Settings', path: '/admin/settings', icon: <Settings size={20} /> },
   ];
 

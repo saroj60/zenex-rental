@@ -3,7 +3,7 @@ import { Users, Gauge, Fuel, MessageCircle, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useCurrency } from '../context/CurrencyContext';
 
-const CoasterPricingCard = () => {
+const CoasterPricingCard = ({ isSmall = false }) => {
   const { formatPrice } = useCurrency();
 
   const handleBook = () => {
@@ -12,11 +12,13 @@ const CoasterPricingCard = () => {
   };
 
   return (
-    <div className="bg-white rounded-2xl p-4 shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col w-full max-w-sm mb-12">
-      <Link to="/vehicles/coaster-routes" className="relative overflow-hidden rounded-lg mb-4 block cursor-pointer">
+    <div className={`bg-white shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col w-full ${
+      isSmall ? 'max-w-[275px] md:max-w-[285px] p-3 rounded-xl mb-4' : 'max-w-sm p-4 rounded-2xl mb-12'
+    }`}>
+      <Link to="/vehicles/coaster-routes" className={`relative overflow-hidden rounded-lg block cursor-pointer ${isSmall ? 'mb-2.5' : 'mb-4'}`}>
         <img 
           alt="Toyota Coaster" 
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" 
+          className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
           src="/vehicles/Coaster.png" 
           onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
@@ -29,44 +31,48 @@ const CoasterPricingCard = () => {
         </div>
       </Link>
       
-      <h3 className="font-headline-md text-2xl font-bold text-gray-900 mb-1">Toyota Coaster</h3>
-      <div className="flex items-center gap-1.5 mb-4">
-        <span className="text-gray-500 text-sm font-medium">Starting from</span>
-        <span className="text-xl font-bold text-[#e53a24]">{formatPrice(12000)}</span>
-        <span className="text-gray-500 text-sm font-medium">/ Day</span>
+      <h3 className={`font-headline-md font-bold text-gray-900 mb-1 ${isSmall ? 'text-lg' : 'text-2xl'}`}>Toyota Coaster</h3>
+      <div className={`flex items-center gap-1.5 ${isSmall ? 'mb-3' : 'mb-4'}`}>
+        <span className="text-gray-500 text-xs md:text-sm font-medium">Starting from</span>
+        <span className={`font-bold text-[#e53a24] ${isSmall ? 'text-lg' : 'text-xl'}`}>{formatPrice(12000)}</span>
+        <span className="text-gray-500 text-xs md:text-sm font-medium">/ Day</span>
       </div>
-
-      <div className="grid grid-cols-2 gap-2 mb-6 mt-auto">
-        <div className="bg-[#f0f4f8] rounded-xl p-3 text-center flex flex-col items-center justify-center">
+      
+      <div className={`grid grid-cols-2 gap-2 mt-auto ${isSmall ? 'mb-4' : 'mb-6'}`}>
+        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
           <Users size={18} className="text-[#1e3a8a] mb-1.5" />
-          <span className="text-sm font-semibold text-[#1e3a8a]">20-22 Seats</span>
+          <span className="text-xs font-semibold text-[#1e3a8a]">20-22 Seats</span>
         </div>
-        <div className="bg-[#f0f4f8] rounded-xl p-3 text-center flex flex-col items-center justify-center">
+        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
           <Gauge size={18} className="text-[#1e3a8a] mb-1.5" />
-          <span className="text-sm font-semibold text-[#1e3a8a]">Manual</span>
+          <span className="text-xs font-semibold text-[#1e3a8a]">Manual</span>
         </div>
-        <div className="bg-[#f0f4f8] rounded-xl p-3 text-center flex flex-col items-center justify-center">
+        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
           <Fuel size={18} className="text-[#1e3a8a] mb-1.5" />
-          <span className="text-sm font-semibold text-[#1e3a8a]">Diesel</span>
+          <span className="text-xs font-semibold text-[#1e3a8a]">Diesel</span>
         </div>
-        <div className="bg-[#f0f4f8] rounded-xl p-3 text-center flex flex-col items-center justify-center relative overflow-hidden">
+        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden ${isSmall ? 'p-2' : 'p-3'}`}>
           <span className="material-symbols-outlined text-[#1e3a8a] mb-1.5 text-[18px]">luggage</span>
-          <span className="text-sm font-semibold text-[#1e3a8a]">15+ Bags</span>
+          <span className="text-xs font-semibold text-[#1e3a8a]">15+ Bags</span>
         </div>
       </div>
 
-      <div className="flex flex-col gap-3 mt-auto">
+      <div className="flex flex-col gap-2.5 mt-auto">
         <Link 
           to={`/vehicles/coaster-routes`} 
-          className="w-full py-3 rounded-xl border-2 border-[#1e3a8a] text-[#1e3a8a] font-bold text-sm hover:bg-[#1e3a8a] hover:text-white transition-colors text-center"
+          className={`w-full font-bold text-xs hover:bg-[#1e3a8a] hover:text-white transition-colors text-center ${
+            isSmall ? 'py-2 rounded-lg border' : 'py-3 rounded-xl border-2 border-[#1e3a8a]'
+          } text-[#1e3a8a]`}
         >
           View Details
         </Link>
         <button 
           onClick={handleBook}
-          className="w-full py-3 rounded-xl bg-[#25D366] text-white font-bold text-sm hover:bg-[#1ebd5a] transition-colors shadow-sm flex justify-center items-center gap-2"
+          className={`w-full text-white font-bold text-xs hover:bg-[#1ebd5a] transition-colors shadow-sm flex justify-center items-center gap-2 ${
+            isSmall ? 'py-2 rounded-lg' : 'py-3 rounded-xl'
+          } bg-[#25D366]`}
         >
-          <MessageCircle size={18} /> Book via WhatsApp
+          <MessageCircle size={16} /> Book via WhatsApp
         </button>
       </div>
     </div>

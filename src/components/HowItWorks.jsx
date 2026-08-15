@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, CalendarCheck, Map, ShieldCheck } from 'lucide-react';
+import { Search, CalendarCheck, Map as MapIcon, ShieldCheck } from 'lucide-react';
 
 const HowItWorks = () => {
   const steps = [
@@ -28,7 +28,7 @@ const HowItWorks = () => {
       id: 4,
       title: 'Explore the Himalayas',
       description: 'Enjoy a seamless, fully supported journey through Nepal with our 24/7 on-ground assistance.',
-      icon: <Map size={28} className="text-purple-600" />,
+      icon: <MapIcon size={28} className="text-purple-600" />,
       color: 'bg-purple-50 text-purple-700 border-purple-100',
     }
   ];

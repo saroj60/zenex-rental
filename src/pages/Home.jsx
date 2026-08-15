@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchWidget from '../components/SearchWidget';
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
@@ -47,6 +48,11 @@ const Home = () => {
         structuredData={structuredData}
       />
       <Hero />
+      <div className="bg-gray-100 py-12 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <SearchWidget activeTab="tours" />
+        </div>
+      </div>
       <FeaturedPackages />
       <AdventurePackages />
       <Intro />

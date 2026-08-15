@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { 
   Clock, DollarSign, MapPin, CheckCircle2, ArrowLeft, Calendar,
-  Mountain, Bed, Utensils, Users, Sun, Check, X, Map, Car, Star,
+  Mountain, Bed, Utensils, Users, Sun, Check, X, Map as MapIcon, Car, Star,
   ShieldCheck, CalendarCheck, FileText, Info, HelpCircle, Heart, Phone, Plus, Minus, Image as ImageIcon,
   AlertTriangle, Backpack, PlaneTakeoff
 } from 'lucide-react';
@@ -218,7 +218,7 @@ const TrekDetail = () => {
             {[
               { id: 'overview', label: 'Overview', icon: FileText },
               { id: 'gallery', label: 'Gallery', icon: ImageIcon },
-              { id: 'itinerary', label: 'Itinerary', icon: Map },
+              { id: 'itinerary', label: 'Itinerary', icon: MapIcon },
               { id: 'cost', label: 'Cost Details', icon: DollarSign },
               { id: 'info', label: 'Essential Info', icon: Info },
               { id: 'faqs', label: 'FAQs', icon: HelpCircle }
@@ -260,7 +260,7 @@ const TrekDetail = () => {
                       "Duration": Calendar,
                       "Trip Grade": Mountain,
                       "Max. Altitude": Mountain,
-                      "Starts": Map,
+                      "Starts": MapIcon,
                       "Ends": CheckCircle2,
                       "Activities": Users,
                       "Accomodation": Bed,
@@ -300,7 +300,7 @@ const TrekDetail = () => {
                     )}
                     {trek.quickFacts?.region && (
                       <div className="flex gap-3">
-                        <Map className="w-6 h-6 text-gray-500 shrink-0" />
+                        <MapIcon className="w-6 h-6 text-gray-500 shrink-0" />
                         <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Starts</p><p className="text-sm font-bold text-gray-900">Kathmandu</p></div>
                       </div>
                     )}
