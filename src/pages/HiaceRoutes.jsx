@@ -52,7 +52,7 @@ const HiaceRoutes = () => {
           <img
             alt="Toyota Hiace"
             className="w-full h-full object-cover object-center"
-            src="/vehicles/Toyota Hiace.jpg"
+            src="https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
         </div>

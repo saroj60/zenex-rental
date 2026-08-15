@@ -51,7 +51,7 @@
       "type": "Van / Micro",
       "price": 9000,
       "priceWithDriver": 12000,
-      "img": "/images/suv_car.png",
+      "img": "https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg",
       "seats": 14,
       "trans": "Manual",
       "fuel": "Diesel",

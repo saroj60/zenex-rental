@@ -50,7 +50,7 @@ const VehicleListing = () => {
 
   // Hero Slider State
   const heroSlides = [
-    { title: 'Toyota Hiace', price: 8000, img: '/vehicles/Toyota Hiace.jpg' },
+    { title: 'Toyota Hiace', price: 8000, img: 'https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg' },
     { title: 'Mahindra Scorpio', price: 8000, img: 'https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg' },
     { title: 'Standard Car', price: 5500, img: 'https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg' },
     { title: 'Tourist Bus', price: 15000, img: 'https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg' },

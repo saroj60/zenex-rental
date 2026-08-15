@@ -20,7 +20,7 @@ const HiacePricingCard = ({ isSmall = false }) => {
           alt="Toyota Hiace" 
           className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
-          src="/vehicles/Toyota Hiace.jpg" 
+          src="https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg" 
           onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
         />
         <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
