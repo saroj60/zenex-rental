@@ -66,23 +66,23 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 z-[100] flex flex-col bg-white/95 backdrop-blur-lg transition-all duration-300">
       {/* Search Header */}
-      <div className="w-full max-w-4xl mx-auto px-4 pt-8 pb-4">
-        <div className="flex justify-end mb-4">
+      <div className="w-full max-w-2xl mx-auto px-4 pt-12 pb-4">
+        <div className="flex justify-end mb-2">
           <button 
             onClick={onClose}
-            className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 text-gray-700 transition-colors"
+            className="p-1.5 bg-gray-100 rounded-full hover:bg-gray-200 text-gray-700 transition-colors"
           >
-            <X size={24} />
+            <X size={20} />
           </button>
         </div>
         <div className="relative">
           <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-            <Search className="text-gray-400" size={28} />
+            <Search className="text-gray-400" size={22} />
           </div>
           <input
             ref={inputRef}
             type="text"
-            className="w-full bg-white border-2 border-[#1e3a8a]/20 rounded-2xl py-4 pl-14 pr-4 text-xl md:text-2xl text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#e53a24] focus:ring-4 focus:ring-[#e53a24]/10 transition-all shadow-sm"
+            className="w-full bg-white border-2 border-[#1e3a8a]/20 rounded-2xl py-3 pl-12 pr-4 text-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#e53a24] focus:ring-4 focus:ring-[#e53a24]/10 transition-all shadow-sm"
             placeholder="Search for treks, vehicles, tours..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -92,7 +92,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
 
       {/* Results Area */}
       <div className="flex-1 overflow-y-auto">
-        <div className="w-full max-w-4xl mx-auto px-4 pb-20">
+        <div className="w-full max-w-2xl mx-auto px-4 pb-20">
           
           {!lowerQuery && (
             <div className="text-center mt-20 text-gray-500">
