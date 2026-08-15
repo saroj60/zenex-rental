@@ -449,24 +449,70 @@ export const AppDataProvider = ({ children }) => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const [vehRes, packRes, trekRes, drvRes, tourRes, regRes, bookRes] = await Promise.all([
-          fetch('/api/vehicles').catch(() => ({ json: () => [] })),
-          fetch('/api/packages').catch(() => ({ json: () => [] })),
-          fetch('/api/v2/treks').catch(() => ({ json: () => [] })),
-          fetch('/api/drivers').catch(() => ({ json: () => [] })),
-          fetch('/api/tour-trips').catch(() => ({ json: () => [] })),
-          fetch('/api/regions').catch(() => ({ json: () => [] })),
-          fetch('/api/bookings').catch(() => ({ json: () => [] }))
-        ]);
         
-        const fetchedTreks = await trekRes.json().catch(() => []);
-        setVehicles(await vehRes.json().catch(() => []));
-        setPackages(await packRes.json().catch(() => []));
-        setTreks(fetchedTreks && fetchedTreks.length > 0 ? fetchedTreks : treksData);
-        setDrivers(await drvRes.json().catch(() => []));
-        setTourTrips(await tourRes.json().catch(() => []));
-        setRegions(await regRes.json().catch(() => []));
-        setBookings(await bookRes.json().catch(() => []));
+        let loadedFromApi = false;
+        let finalVehicles = [];
+        let finalPackages = [];
+        let finalTreks = [];
+        let finalDrivers = [];
+        let finalTourTrips = [];
+        let finalRegions = [];
+        let finalBookings = [];
+
+        try {
+          const [vehRes, packRes, trekRes, drvRes, tourRes, regRes, bookRes] = await Promise.all([
+            fetch('/api/vehicles'),
+            fetch('/api/packages'),
+            fetch('/api/v2/treks'),
+            fetch('/api/drivers'),
+            fetch('/api/tour-trips'),
+            fetch('/api/regions'),
+            fetch('/api/bookings')
+          ]);
+
+          const isJson = (res) => {
+            const contentType = res.headers.get('content-type');
+            return contentType && contentType.includes('application/json');
+          };
+
+          if (isJson(vehRes) && isJson(packRes) && isJson(trekRes)) {
+            finalVehicles = await vehRes.json();
+            finalPackages = await packRes.json();
+            finalTreks = await trekRes.json();
+            finalDrivers = await drvRes.json().catch(() => []);
+            finalTourTrips = await tourRes.json().catch(() => []);
+            finalRegions = await regRes.json().catch(() => []);
+            finalBookings = await bookRes.json().catch(() => []);
+            loadedFromApi = true;
+          }
+        } catch (apiErr) {
+          console.warn("API fetches failed, falling back to static database file", apiErr);
+        }
+
+        if (!loadedFromApi || finalVehicles.length === 0 || finalTreks.length === 0) {
+          console.log("Loading data from static database.json fallback...");
+          const staticRes = await fetch('/database.json');
+          if (staticRes.ok) {
+            const db = await staticRes.json();
+            finalVehicles = db.vehicles || [];
+            finalPackages = db.packages || [];
+            finalTreks = db.treks || [];
+            finalDrivers = db.drivers || [];
+            finalTourTrips = db.tourTrips || [];
+            finalRegions = db.regions || [];
+            finalBookings = db.bookings || [];
+          } else {
+            console.error("Static database.json failed to load");
+          }
+        }
+
+        setVehicles(finalVehicles);
+        setPackages(finalPackages);
+        setTreks(finalTreks && finalTreks.length > 0 ? finalTreks : treksData);
+        setDrivers(finalDrivers);
+        setTourTrips(finalTourTrips);
+        setRegions(finalRegions);
+        setBookings(finalBookings);
       } catch (err) {
         console.error("Error fetching data", err);
         setTreks(treksData);
