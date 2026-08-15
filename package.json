@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "postinstall": "npm run build",
+    "start": "node backend/server.js",
     "dev": "vite --host",
     "dev:all": "concurrently \"npm run dev\" \"cd server && npm run dev\"",
     "build": "vite build",

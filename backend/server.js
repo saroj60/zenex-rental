@@ -520,7 +520,7 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
 });
 
 // Serve static frontend files for Production
-const frontendDist = path.join(__dirname, 'frontend', 'dist');
+const frontendDist = path.join(__dirname, '../dist');
 app.use(express.static(frontendDist));
 
 // Catch-all route to serve React app for non-API requests
