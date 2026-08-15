@@ -16,6 +16,17 @@ import SelfDriveCard from '../components/SelfDriveCard';
 const VehicleListing = () => {
   const { vehicles } = useAppData();
   const { isVehicleAvailable } = useBooking();
+
+  const getVehicleDetailsPath = (vehicle) => {
+    const name = vehicle.name.toLowerCase();
+    if (name.includes('hiace')) return '/vehicles/hiace-routes';
+    if (name.includes('scorpio')) return '/vehicles/scorpio-routes';
+    if (name.includes('bus')) return '/vehicles/bus-routes';
+    if (name.includes('coaster')) return '/vehicles/coaster-routes';
+    if (name.includes('wedding') || name.includes('model') || vehicle.type === 'Luxury') return '/vehicles/car-models';
+    if (name.includes('self drive') || name.includes('self-drive')) return '/vehicles/self-drive';
+    return '/vehicles/car-routes';
+  };
   const [searchParams] = useSearchParams();
   const searchType = searchParams.get('type') || 'All';
   const urlPickup = searchParams.get('pickup');
@@ -313,14 +324,93 @@ Is this available?`;
         </div>
 
         {/* Special Vehicle Pricing Cards */}
-        <div className="flex flex-wrap justify-center gap-6 mb-12">
-          <HiacePricingCard />
-          <ScorpioPricingCard />
-          <CarPricingCard />
-          <BusPricingCard />
-          <CoasterPricingCard />
-          <CarModelsCard />
-          <SelfDriveCard />
+        <div className="flex flex-wrap justify-center gap-6 mb-12 w-full">
+          {filteredVehicles.length > 0 ? (
+            filteredVehicles.map((vehicle) => {
+              const detailsPath = getVehicleDetailsPath(vehicle);
+              const pricePerDay = driverMode === 'self' ? vehicle.price : (vehicle.priceWithDriver || vehicle.price + 1500);
+              
+              return (
+                <div 
+                  key={vehicle.id}
+                  className="bg-white shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col w-full max-w-sm p-4 rounded-2xl mb-6 text-left"
+                >
+                  <Link to={detailsPath} className="relative overflow-hidden rounded-lg block cursor-pointer mb-4">
+                    <img 
+                      alt={vehicle.name} 
+                      className="w-full object-cover group-hover:scale-105 transition-transform duration-500 h-48"
+                      loading="lazy" 
+                      src={vehicle.img} 
+                      onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
+                    />
+                    <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
+                      {vehicle.type}
+                    </span>
+                    <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1 text-[#1e3a8a]">
+                      <Star size={12} className="text-[#e53a24] fill-current" /> {vehicle.rating || '4.8'}
+                    </div>
+                  </Link>
+                  
+                  <h3 className="font-headline-md font-bold text-gray-900 mb-1 text-2xl">{vehicle.name}</h3>
+                  <div className="flex items-center gap-1.5 mb-4">
+                    <span className="text-gray-500 text-sm font-medium">Starting from</span>
+                    <span className="font-bold text-[#e53a24] text-xl">{formatPrice(pricePerDay)}</span>
+                    <span className="text-gray-500 text-sm font-medium">/ Day</span>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-2 mt-auto mb-6">
+                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-3">
+                      <Users size={18} className="text-[#1e3a8a] mb-1.5" />
+                      <span className="text-xs font-semibold text-[#1e3a8a]">{vehicle.seats} Seats</span>
+                    </div>
+                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-3">
+                      <Gauge size={18} className="text-[#1e3a8a] mb-1.5" />
+                      <span className="text-xs font-semibold text-[#1e3a8a]">{vehicle.trans}</span>
+                    </div>
+                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-3">
+                      <Fuel size={18} className="text-[#1e3a8a] mb-1.5" />
+                      <span className="text-xs font-semibold text-[#1e3a8a]">{vehicle.fuel}</span>
+                    </div>
+                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-3">
+                      <span className="w-5 h-5 inline-flex items-center justify-center text-[#1e3a8a] mb-1.5 font-bold text-xs">💼</span>
+                      <span className="text-xs font-semibold text-[#1e3a8a]">{vehicle.luggage} Bags</span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-2.5 mt-auto">
+                    <Link 
+                      to={detailsPath} 
+                      className="w-full font-bold text-xs hover:bg-[#1e3a8a] hover:text-white transition-colors text-center py-3 rounded-xl border-2 border-[#1e3a8a] text-[#1e3a8a]"
+                    >
+                      View Details
+                    </Link>
+                    <button 
+                      onClick={() => handleWhatsAppBooking(vehicle)}
+                      className="w-full text-white font-bold text-xs hover:bg-[#1ebd5a] transition-colors shadow-sm flex justify-center items-center gap-2 py-3 rounded-xl bg-[#25D366]"
+                    >
+                      <MessageCircle size={16} /> Book via WhatsApp
+                    </button>
+                  </div>
+                </div>
+              );
+            })
+          ) : (
+            <div className="text-center py-12 w-full">
+              <p className="text-gray-500 font-medium text-lg">No vehicles found matching your filters.</p>
+              <button 
+                onClick={() => {
+                  setFilterType('All');
+                  setFuelFilter('All');
+                  setTransFilter('All');
+                  setSeatFilter('All');
+                  setSearchQuery('');
+                }}
+                className="mt-4 text-[#e53a24] font-bold hover:underline"
+              >
+                Clear Filters
+              </button>
+            </div>
+          )}
         </div>
 
       </div>
