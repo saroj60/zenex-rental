@@ -365,6 +365,160 @@ app.delete('/api/treks/:id', (req, res) => {
     res.json({ success: true });
 });
 
+// --- REGIONS ---
+app.get('/api/regions', (req, res) => {
+    const data = readDB();
+    res.json(data.regions || []);
+});
+
+app.post('/api/regions', (req, res) => {
+    const data = readDB();
+    const newRegion = { id: `REG-${Date.now()}`, ...req.body };
+    if (!data.regions) data.regions = [];
+    data.regions.push(newRegion);
+    writeDB(data);
+    res.json(newRegion);
+});
+
+app.put('/api/regions/:id', (req, res) => {
+    const data = readDB();
+    const index = (data.regions || []).findIndex(r => r.id === req.params.id);
+    if (index !== -1) {
+        data.regions[index] = { ...data.regions[index], ...req.body, id: req.params.id };
+        writeDB(data);
+        res.json(data.regions[index]);
+    } else {
+        res.status(404).json({ error: 'Not found' });
+    }
+});
+
+app.delete('/api/regions/:id', (req, res) => {
+    const data = readDB();
+    if (data.regions) {
+        data.regions = data.regions.filter(r => r.id !== req.params.id);
+        writeDB(data);
+    }
+    res.json({ success: true });
+});
+
+// --- TOUR TRIPS (Professional Management) ---
+app.get('/api/tour-trips', (req, res) => {
+    const data = readDB();
+    res.json(data.tourTrips || []);
+});
+
+app.get('/api/tour-trips/:id', (req, res) => {
+    const data = readDB();
+    const trip = (data.tourTrips || []).find(t => t.id === req.params.id);
+    if (trip) {
+        res.json(trip);
+    } else {
+        res.status(404).json({ error: 'Not found' });
+    }
+});
+
+app.post('/api/tour-trips', (req, res) => {
+    const data = readDB();
+    const newTrip = { id: req.body.id || `TRIP-${Date.now()}`, ...req.body };
+    if (!data.tourTrips) data.tourTrips = [];
+    data.tourTrips.push(newTrip);
+    writeDB(data);
+    res.json(newTrip);
+});
+
+app.put('/api/tour-trips/:id', (req, res) => {
+    const data = readDB();
+    const index = (data.tourTrips || []).findIndex(t => t.id === req.params.id);
+    if (index !== -1) {
+        data.tourTrips[index] = { ...data.tourTrips[index], ...req.body, id: req.params.id };
+        writeDB(data);
+        res.json(data.tourTrips[index]);
+    } else {
+        res.status(404).json({ error: 'Not found' });
+    }
+});
+
+app.delete('/api/tour-trips/:id', (req, res) => {
+    const data = readDB();
+    if (data.tourTrips) {
+        data.tourTrips = data.tourTrips.filter(t => t.id !== req.params.id);
+        writeDB(data);
+    }
+    res.json({ success: true });
+});
+
+// --- BOOKINGS ---
+app.get('/api/bookings', (req, res) => {
+    const data = readDB();
+    res.json(data.bookings || []);
+});
+
+app.post('/api/bookings', (req, res) => {
+    const data = readDB();
+    const booking = {
+        id: `BK-${Math.random().toString(36).substr(2, 9).toUpperCase()}`,
+        status: 'pending',
+        createdAt: new Date().toISOString(),
+        ...req.body
+    };
+    if (!data.bookings) data.bookings = [];
+    data.bookings.push(booking);
+    writeDB(data);
+
+    console.log(`
+======================= CONFIRMATION EMAIL =====================
+To: \${booking.customerDetails?.email}
+Subject: Booking Confirmation - Reference ID: \${booking.id}
+
+Dear \${booking.customerDetails?.firstName} \${booking.customerDetails?.lastName},
+
+Thank you for choosing Zenex Travel! Your booking has been received.
+
+Booking Reference ID: \${booking.id}
+Status: Pending Confirmation
+Item: \${booking.itemName}
+Trip Date: \${booking.dates?.start}
+Number of Travelers: \${booking.travelersCount || 1}
+Payment Method: \${booking.paymentOption === 'deposit' ? '20% Deposit Online' : 'Book Now Pay Later'}
+Total Price: \${booking.amount}
+
+We look forward to welcoming you to Kathmandu!
+============================================================
+    `);
+
+    res.json({ success: true, booking });
+});
+
+app.put('/api/bookings/:id', (req, res) => {
+    const data = readDB();
+    if (data.bookings) {
+        data.bookings = data.bookings.map(b => b.id === req.params.id ? { ...b, ...req.body } : b);
+        writeDB(data);
+        const updated = data.bookings.find(b => b.id === req.params.id);
+        res.json({ success: true, booking: updated });
+    } else {
+        res.status(404).json({ success: false, message: 'Booking not found' });
+    }
+});
+
+app.delete('/api/bookings/:id', (req, res) => {
+    const data = readDB();
+    if (data.bookings) {
+        data.bookings = data.bookings.filter(b => b.id !== req.params.id);
+        writeDB(data);
+    }
+    res.json({ success: true });
+});
+
+// Generic Upload Endpoint
+app.post('/api/upload', upload.single('image'), (req, res) => {
+    if (!req.file) {
+        return res.status(400).json({ error: 'No file uploaded' });
+    }
+    const fileUrl = `/api/uploads/\${req.file.filename}`;
+    res.json({ url: fileUrl });
+});
+
 // Serve static frontend files for Production
 const frontendDist = path.join(__dirname, 'frontend', 'dist');
 app.use(express.static(frontendDist));
