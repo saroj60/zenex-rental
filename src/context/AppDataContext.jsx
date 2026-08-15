@@ -439,10 +439,10 @@ const initialGallery = [
 
 export const AppDataProvider = ({ children }) => {
 
-  const [vehicles, setVehicles] = useState([]);
+  const [vehicles, setVehicles] = useState(initialVehicles);
   const [destinations, setDestinations] = useState(initialDestinations);
-  const [packages, setPackages] = useState([]);
-  const [treks, setTreks] = useState([]);
+  const [packages, setPackages] = useState(featuredPackages || []);
+  const [treks, setTreks] = useState(treksData || []);
   const [bookings, setBookings] = useState([]);
   const [drivers, setDrivers] = useState([]);
   const [galleryImages, setGalleryImages] = useState(initialGallery);

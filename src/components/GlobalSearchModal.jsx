@@ -95,6 +95,17 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
     })
   ].slice(0, 4) : [];
 
+  const getVehicleDetailPath = (v) => {
+    const name = (v.name || '').toLowerCase();
+    if (name.includes('hiace')) return '/vehicles/hiace-routes';
+    if (name.includes('scorpio')) return '/vehicles/scorpio-routes';
+    if (name.includes('bus')) return '/vehicles/bus-routes';
+    if (name.includes('coaster')) return '/vehicles/coaster-routes';
+    if (name.includes('wedding') || v.type === 'Luxury') return '/vehicles/car-models';
+    if (name.includes('self drive') || name.includes('self-drive')) return '/vehicles/self-drive';
+    return '/vehicles/car-routes';
+  };
+
   const handleResultClick = (path) => {
     onClose();
     navigate(path);
@@ -221,7 +232,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
                   {filteredVehicles.map(v => (
                     <button 
                       key={v.id} 
-                      onClick={() => handleResultClick(`/vehicles/${v.id}`)}
+                      onClick={() => handleResultClick(getVehicleDetailPath(v))}
                       className="w-full text-left p-3 hover:bg-gray-50 rounded-xl transition-colors flex items-center group"
                     >
                       <div className="w-12 h-12 bg-white border border-gray-100 rounded-lg p-1 overflow-hidden shrink-0 mr-4">
