@@ -51,7 +51,7 @@ const ScorpioRoutes = () => {
       />
       
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full flex items-end pb-12 justify-center">
+      <section className="relative h-[450px] md:h-[520px] w-full flex items-end pb-16 justify-center">
         <div className="absolute inset-0 z-0">
           <img
             alt="Mahindra Scorpio"
