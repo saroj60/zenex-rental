@@ -35,10 +35,7 @@ const Hero = () => {
         
         <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col justify-center flex-1 mb-8 md:mb-0">
           <div className="max-w-xl">
-            <span className="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-[10px] font-bold mb-3 border border-white/20 shadow-sm">
-              <Star className="fill-current text-[#1e3a8a]" size={10}/> 
-              Premium Guided Tours & Car Rentals in Nepal
-            </span>
+
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight mb-2.5 md:mb-3.5 drop-shadow-lg">
               Premium Travels, Tours &<br className="hidden sm:block"/> Car Rental in Nepal
