@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, Menu, X, Search, ChevronDown, ChevronRight } from 'lucide-react';
+import { Phone, Menu, X, Search, ChevronDown, ChevronRight, Mail } from 'lucide-react';
 import GlobalSearchModal from './GlobalSearchModal';
 import MegaMenu from './MegaMenu';
 import { megaMenuData } from '../data/navigationData';
@@ -82,45 +82,70 @@ const Header = () => {
 
         <div className="flex items-center gap-2 sm:gap-4">
           
-          {/* Wishlist and Talk to Smarika WhatsApp Widget */}
+          {/* Talk to Janardhan WhatsApp & Call Widget Dropdown */}
           <div className="hidden xl:flex items-center gap-3 mr-2 shrink-0">
-            {/* Green Heart button */}
-            <Link to="/contact" className="w-10 h-10 rounded-full bg-[#00a859] hover:bg-[#008a49] text-white flex items-center justify-center transition-colors shadow-sm shrink-0">
-              <svg className="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
-                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-              </svg>
-            </Link>
-
-            {/* WhatsApp Contact Details and Avatar */}
-            <a 
-              href="https://wa.me/9779767476521?text=Hi%20Janardhan,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 hover:opacity-95 transition-opacity"
-            >
-              <div className="flex flex-col text-left leading-tight">
-                <div className="flex items-center gap-1.5">
-                  <svg className="w-3.5 h-3.5 text-green-500 fill-current shrink-0" viewBox="0 0 24 24">
-                    <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.37 5.054L2 22l5.077-1.332a9.936 9.936 0 004.93 1.302c5.506 0 9.99-4.478 9.99-9.985S17.519 2 12.012 2zm0 18.29a8.275 8.275 0 01-4.218-1.155l-.302-.18-3.13.82.836-3.05-.198-.316a8.278 8.278 0 01-1.268-4.426c.001-4.57 3.72-8.29 8.29-8.29s8.29 3.72 8.29 8.29-3.719 8.29-8.288 8.29zm4.55-6.2c-.25-.124-1.477-.727-1.705-.81-.228-.083-.393-.124-.559.124-.166.248-.641.81-.786.973-.145.163-.29.182-.539.058a6.8 6.8 0 01-1.996-1.232 7.487 7.487 0 01-1.383-1.722c-.145-.248-.015-.382.11-.506.113-.112.25-.29.374-.435.124-.145.166-.248.25-.414.083-.166.04-.31-.02-.435-.06-.124-.559-1.347-.766-1.844-.2-.486-.403-.42-.559-.427h-.477a.92.92 0 00-.663.31c-.228.248-.87.85-.87 2.07s.89 2.4 1.014 2.565c.124.166 1.752 2.675 4.244 3.75.592.256 1.055.409 1.414.523.596.19 1.138.163 1.567.099.478-.072 1.477-.604 1.684-1.159.207-.555.207-1.03.145-1.13-.062-.099-.228-.155-.477-.28z"/>
-                  </svg>
-                  <span className="text-xs font-bold text-gray-500 hover:text-[#e53a24] transition-colors">Talk to Janardhan</span>
+            <div className="relative group">
+              <div className="flex items-center gap-3 hover:opacity-95 transition-opacity select-none cursor-pointer py-1.5 px-2.5 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-100">
+                <div className="flex flex-col text-left leading-tight">
+                  <div className="flex items-center gap-1">
+                    <svg className="w-3 h-3 text-green-500 fill-current shrink-0" viewBox="0 0 24 24">
+                      <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.37 5.054L2 22l5.077-1.332a9.936 9.936 0 004.93 1.302c5.506 0 9.99-4.478 9.99-9.985S17.519 2 12.012 2zm0 18.29a8.275 8.275 0 01-4.218-1.155l-.302-.18-3.13.82.836-3.05-.198-.316a8.278 8.278 0 01-1.268-4.426c.001-4.57 3.72-8.29 8.29-8.29s8.29 3.72 8.29 8.29-3.719 8.29-8.288 8.29zm4.55-6.2c-.25-.124-1.477-.727-1.705-.81-.228-.083-.393-.124-.559.124-.166.248-.641.81-.786.973-.145.163-.29.182-.539.058a6.8 6.8 0 01-1.996-1.232 7.487 7.487 0 01-1.383-1.722c-.145-.248-.015-.382.11-.506.113-.112.25-.29.374-.435.124-.145.166-.248.25-.414.083-.166.04-.31-.02-.435-.06-.124-.559-1.347-.766-1.844-.2-.486-.403-.42-.559-.427h-.477a.92.92 0 00-.663.31c-.228.248-.87.85-.87 2.07s.89 2.4 1.014 2.565c.124.166 1.752 2.675 4.244 3.75.592.256 1.055.409 1.414.523.596.19 1.138.163 1.567.099.478-.072 1.477-.604 1.684-1.159.207-.555.207-1.03.145-1.13-.062-.099-.228-.155-.477-.28z"/>
+                    </svg>
+                    <span className="text-[10px] font-bold text-gray-500">Talk to Janardhan</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 mt-0.5">
+                    <span className="text-[13px] font-black text-gray-700 tracking-tight">+977 976-7476521</span>
+                    <ChevronDown size={11} className="text-gray-400 group-hover:rotate-180 transition-transform duration-300" />
+                  </div>
                 </div>
-                <span className="text-sm font-black text-gray-700 tracking-tight hover:text-[#e53a24] transition-colors">+977 976-7476521</span>
+                <img 
+                  src="/images/zenexexpert.png" 
+                  alt="Janardhan Gautam" 
+                  className="w-9 h-9 rounded-full object-cover border border-gray-200 shadow-sm shrink-0"
+                />
               </div>
-              <img 
-                src="/images/zenexexpert.png" 
-                alt="Janardhan Gautam" 
-                className="w-10 h-10 rounded-full object-cover border border-gray-200 shadow-sm shrink-0"
-              />
-            </a>
-          </div>
 
-          <button 
-            onClick={() => setIsSearchOpen(true)}
-            className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-gray-200 transition-colors"
-          >
-            <Search size={18} />
-          </button>
+              {/* Contact Dropdown Options */}
+              <div className="absolute top-full right-0 mt-3 w-56 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right group-hover:translate-y-0 translate-y-2 z-50">
+                <div className="absolute -top-3 right-0 w-full h-3 bg-transparent"></div>
+                <div className="flex flex-col py-2.5 divide-y divide-gray-50">
+                  <div className="px-4 py-1.5 pb-2">
+                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Travel Expert</p>
+                    <p className="text-xs font-bold text-gray-800 mt-0.5">Janardhan Gautam</p>
+                  </div>
+                  <div className="py-1">
+                    <a 
+                      href="https://wa.me/9779767476521?text=Hi%20Janardhan,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2.5 px-4 py-2 text-xs font-bold text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
+                    >
+                      <svg className="w-4 h-4 text-green-500 fill-current shrink-0" viewBox="0 0 24 24">
+                        <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.37 5.054L2 22l5.077-1.332a9.936 9.936 0 004.93 1.302c5.506 0 9.99-4.478 9.99-9.985S17.519 2 12.012 2zm0 18.29a8.275 8.275 0 01-4.218-1.155l-.302-.18-3.13.82.836-3.05-.198-.316a8.278 8.278 0 01-1.268-4.426c.001-4.57 3.72-8.29 8.29-8.29s8.29 3.72 8.29 8.29-3.719 8.29-8.288 8.29zm4.55-6.2c-.25-.124-1.477-.727-1.705-.81-.228-.083-.393-.124-.559.124-.166.248-.641.81-.786.973-.145.163-.29.182-.539.058a6.8 6.8 0 01-1.996-1.232 7.487 7.487 0 01-1.383-1.722c-.145-.248-.015-.382.11-.506.113-.112.25-.29.374-.435.124-.145.166-.248.25-.414.083-.166.04-.31-.02-.435-.06-.124-.559-1.347-.766-1.844-.2-.486-.403-.42-.559-.427h-.477a.92.92 0 00-.663.31c-.228.248-.87.85-.87 2.07s.89 2.4 1.014 2.565c.124.166 1.752 2.675 4.244 3.75.592.256 1.055.409 1.414.523.596.19 1.138.163 1.567.099.478-.072 1.477-.604 1.684-1.159.207-.555.207-1.03.145-1.13-.062-.099-.228-.155-.477-.28z"/>
+                      </svg>
+                      Chat on WhatsApp
+                    </a>
+                    <a 
+                      href="tel:+9779767476521"
+                      className="flex items-center gap-2.5 px-4 py-2 text-xs font-bold text-gray-700 hover:bg-gray-50 hover:text-[#e53a24] transition-colors"
+                    >
+                      <Phone size={14} className="text-blue-600 shrink-0" />
+                      Call Directly
+                    </a>
+                  </div>
+                  <div className="py-1">
+                    <Link 
+                      to="/contact"
+                      className="flex items-center gap-2.5 px-4 py-2 text-xs font-bold text-gray-700 hover:bg-gray-50 hover:text-[#e53a24] transition-colors"
+                    >
+                      <Mail size={14} className="text-slate-500 shrink-0" />
+                      Email & Enquiry Form
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <a href="tel:+9779767476521" className="hidden sm:flex w-10 h-10 rounded-full bg-gray-100 items-center justify-center text-gray-700 hover:bg-gray-200 transition-colors">
             <Phone size={18} />
