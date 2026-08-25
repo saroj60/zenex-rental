@@ -59,12 +59,7 @@ const Hero = () => {
                 <Phone size={14} fill="currentColor" /> Call Now
               </a>
             </div>
- 
-            <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-2.5 md:gap-6 text-xs font-bold text-white/85 drop-shadow-md">
-              <span className="flex items-center gap-1.5"><div className="bg-green-500 rounded-full p-0.5"><Check size={12} className="text-white"/></div> 24/7 Support</span>
-              <span className="flex items-center gap-1.5"><div className="bg-green-500 rounded-full p-0.5"><Check size={12} className="text-white"/></div> Fully Insured</span>
-              <span className="flex items-center gap-1.5"><div className="bg-green-500 rounded-full p-0.5"><Check size={12} className="text-white"/></div> Transparent Pricing</span>
-            </div>
+
           </div>
         </div>
  
