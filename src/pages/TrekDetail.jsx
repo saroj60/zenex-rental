@@ -296,56 +296,51 @@ const TrekDetail = () => {
         description={trek.description}
       />
 
-      {/* Hero Section */}
-      <div className="relative h-[60vh] min-h-[400px] w-full overflow-hidden bg-gray-900">
+      {/* Hero Section (Clean Image Banner) */}
+      <div className="relative h-[42vh] min-h-[320px] w-full overflow-hidden bg-gray-900">
         {(() => {
           const images = trek.gallery?.length ? trek.gallery : [trek.image || '/images/trek.png'];
           return images.map((img, idx) => (
             <div 
               key={idx}
-              className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${idx === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+              className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${idx === currentImageIndex ? 'opacity-85' : 'opacity-0'}`}
               style={{ backgroundImage: `url("${img}")` }}
             />
           ));
         })()}
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="absolute inset-0 flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full animate-fade-scale">
-            <Link to="/treks" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors uppercase tracking-widest text-sm font-semibold">
-              <ArrowLeft size={18} /> Back to Treks
-            </Link>
-            
-            <div className="flex flex-col gap-4">
-              <h1 
-                className="text-4xl md:text-6xl font-bold leading-tight text-white mb-4 drop-shadow-lg max-w-5xl"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
-                {trek.title}
-              </h1>
-              
-              <div className="flex flex-wrap items-center gap-6 text-white/90">
-                {trek.rating && (
-                  <div className="flex items-center gap-2">
-                    <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                    <span className="text-lg font-bold">
-                      {trek.rating} <span className="text-sm font-normal text-white/80">({trek.reviewsCount || 0} reviews)</span>
-                    </span>
-                  </div>
-                )}
-                {trek.duration && (
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-white/80" />
-                    <span className="text-lg font-medium">{trek.duration}</span>
-                  </div>
-                )}
-                {trek.difficulty && (
-                  <div className="flex items-center gap-2">
-                    <Mountain className="w-5 h-5 text-white/80" />
-                    <span className="text-lg font-medium">{trek.difficulty}</span>
-                  </div>
-                )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+      </div>
+
+      {/* Trek Header details below Hero */}
+      <div className="bg-white border-b border-gray-150 pt-8 pb-6">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <Link to="/treks" className="inline-flex items-center gap-1.5 text-slate-500 hover:text-[#e53a24] mb-4 text-xs font-bold uppercase tracking-wider transition-colors">
+            <ArrowLeft size={14} /> Back to Treks
+          </Link>
+          
+          <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 leading-tight tracking-tight">{trek.title}</h1>
+          
+          <div className="flex flex-wrap items-center gap-6 text-slate-600">
+            {trek.rating && (
+              <div className="flex items-center gap-1.5">
+                <Star className="w-4 h-4 text-yellow-500 fill-current" />
+                <span className="text-sm font-bold text-slate-800">
+                  {trek.rating} <span className="text-xs font-normal text-slate-500">({trek.reviewsCount || 0} reviews)</span>
+                </span>
               </div>
-            </div>
+            )}
+            {trek.duration && (
+              <div className="flex items-center gap-1.5">
+                <Clock className="w-4 h-4 text-slate-400" />
+                <span className="text-sm font-semibold text-slate-700">{trek.duration}</span>
+              </div>
+            )}
+            {trek.difficulty && (
+              <div className="flex items-center gap-1.5">
+                <Mountain className="w-4 h-4 text-slate-400" />
+                <span className="text-sm font-semibold text-slate-700">{trek.difficulty}</span>
+              </div>
+            )}
           </div>
         </div>
       </div>

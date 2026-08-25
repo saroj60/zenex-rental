@@ -276,19 +276,24 @@ const TourTripDetail = () => {
   return (
     <div className="bg-gray-50 font-sans pb-20">
       
-      {/* Hero Section */}
-      <div className="relative h-[65vh] min-h-[500px] w-full bg-gray-900 flex items-center justify-center pt-24 text-center">
-        {trip.image && <img src={trip.image} alt={trip.title} className="absolute inset-0 w-full h-full object-cover opacity-60" />}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/75"></div>
-        
-        <div className="relative z-10 container mx-auto px-4 max-w-5xl flex flex-col items-center justify-center">
-          <div className="flex flex-wrap items-center justify-center gap-2.5 mb-4">
+      {/* Hero Section (Clean Image Banner) */}
+      <div className="relative h-[42vh] min-h-[320px] w-full bg-gray-900 flex items-center justify-center">
+        {trip.image && <img src={trip.image} alt={trip.title} className="absolute inset-0 w-full h-full object-cover opacity-85" />}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      </div>
+
+      {/* Trip Header details below Hero */}
+      <div className="bg-white border-b border-gray-150 pt-8 pb-6">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="flex flex-wrap items-center gap-2 mb-3.5">
             <span className="bg-[#e53a24] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{trip.category}</span>
             {trip.featured && <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Featured</span>}
-            <span className="bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 border border-white/10"><MapPin size={14}/> {trip.destination}</span>
+            <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 border border-slate-200"><MapPin size={14}/> {trip.destination}</span>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 leading-tight tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)] max-w-4xl mx-auto">{trip.title}</h1>
-          <p className="text-sm md:text-base lg:text-lg text-white/90 max-w-4xl mx-auto leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.75)] font-medium">{trip.shortDescription}</p>
+          <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3.5 leading-tight tracking-tight">{trip.title}</h1>
+          {trip.shortDescription && (
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium">{trip.shortDescription}</p>
+          )}
         </div>
       </div>
 
