@@ -3,7 +3,7 @@ import { Star, Quote, CheckCircle2 } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 
 const Testimonials = () => {
-  const { testimonials } = useAppData();
+  const { testimonials = [] } = useAppData() || {};
 
   const reviewSchema = {
     "@context": "https://schema.org/",
@@ -14,7 +14,7 @@ const Testimonials = () => {
       "ratingValue": "4.9",
       "reviewCount": "150"
     },
-    "review": testimonials.map(t => ({
+    "review": (testimonials || []).map(t => ({
       "@type": "Review",
       "reviewRating": {
         "@type": "Rating",
@@ -60,7 +60,7 @@ const Testimonials = () => {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {testimonials.map((t, idx) => (
+        {(testimonials || []).map((t, idx) => (
           <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative group hover:shadow-lg transition-shadow duration-300">
             <Quote className="absolute top-6 right-6 text-gray-100 group-hover:text-blue-50 transition-colors duration-300" size={48} />
             
