@@ -24,7 +24,48 @@ const AddTourTrip = () => {
 
   const [newActivity, setNewActivity] = useState('');
   const [expandedDay, setExpandedDay] = useState(-1);
+  const [hasDraft, setHasDraft] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
   const mealOptions = ['Breakfast', 'Lunch', 'Dinner'];
+
+  // Check if draft exists on mount
+  React.useEffect(() => {
+    const saved = localStorage.getItem('zenex_draft_tour_trip');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.title || parsed.description || parsed.itinerary?.length > 0) {
+          setHasDraft(true);
+        }
+      } catch (e) {
+        console.error('Failed to parse draft:', e);
+      }
+    }
+  }, []);
+
+  // Autosave to localStorage as form data changes
+  React.useEffect(() => {
+    if (formData.title || formData.description || formData.itinerary?.length > 0) {
+      localStorage.setItem('zenex_draft_tour_trip', JSON.stringify(formData));
+    }
+  }, [formData]);
+
+  const restoreDraft = () => {
+    const saved = localStorage.getItem('zenex_draft_tour_trip');
+    if (saved) {
+      try {
+        setFormData(JSON.parse(saved));
+        setHasDraft(false);
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  };
+
+  const clearDraft = () => {
+    localStorage.removeItem('zenex_draft_tour_trip');
+    setHasDraft(false);
+  };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -89,9 +130,19 @@ const AddTourTrip = () => {
   });
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    await addTourTrip({ ...formData, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
-    navigate('/dashboard/tour-trips');
+    if (e) e.preventDefault();
+    if (isSaving) return;
+    setIsSaving(true);
+    try {
+      await addTourTrip({ ...formData, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
+      localStorage.removeItem('zenex_draft_tour_trip');
+      navigate('/dashboard/tour-trips');
+    } catch (err) {
+      console.error(err);
+      alert("Failed to save trip: " + (err.message || err));
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   const SectionHeader = ({ title, icon: Icon, count = null }) => (
@@ -104,8 +155,26 @@ const AddTourTrip = () => {
     <div className="max-w-6xl mx-auto pb-20">
       <div className="mb-8 flex justify-between items-end">
         <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-3"><MapIcon className="text-[#e53a24]" size={36} /> Add New Tour & Trek</h1>
-        <button type="button" onClick={handleSubmit} className="bg-[#1e3a8a] text-white px-6 py-2.5 rounded-xl font-bold flex items-center gap-2 hover:bg-blue-900 shadow-md"><Save size={18} /> Save Trip</button>
+        <button type="button" onClick={handleSubmit} disabled={isSaving} className="bg-[#1e3a8a] text-white px-6 py-2.5 rounded-xl font-bold flex items-center gap-2 hover:bg-blue-900 shadow-md disabled:opacity-50">
+          <Save size={18} /> {isSaving ? 'Saving...' : 'Save Trip'}
+        </button>
       </div>
+
+      {hasDraft && (
+        <div className="bg-orange-50 border border-orange-200 rounded-2xl p-5 mb-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 shadow-sm">
+          <div className="flex items-start gap-3">
+            <Info className="text-orange-500 shrink-0 mt-0.5" size={20} />
+            <div>
+              <p className="font-bold text-orange-900 text-sm">Unsaved Draft Found</p>
+              <p className="text-xs text-orange-700 mt-0.5">You have unsaved changes from a previous session on this form.</p>
+            </div>
+          </div>
+          <div className="flex gap-2 w-full sm:w-auto">
+            <button type="button" onClick={restoreDraft} className="bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-colors flex-1 sm:flex-initial">Restore Draft</button>
+            <button type="button" onClick={clearDraft} className="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 text-xs font-bold px-4 py-2.5 rounded-xl transition-colors flex-1 sm:flex-initial">Clear Draft</button>
+          </div>
+        </div>
+      )}
 
       <form onSubmit={handleSubmit} className="space-y-6">
         
@@ -444,7 +513,9 @@ const AddTourTrip = () => {
             <input type="text" name="badge" placeholder="Badge (e.g. Bestseller)" value={formData.badge || ''} onChange={handleChange} className="border border-gray-200 rounded-xl px-4 py-3 text-sm max-w-[200px] font-semibold" />
             <input type="number" name="displayOrder" placeholder="Display Order (e.g. 1)" value={formData.displayOrder || ''} onChange={handleChange} className="border border-gray-200 rounded-xl px-4 py-3 text-sm max-w-[150px] font-semibold" />
           </div>
-          <button type="submit" className="bg-[#e53a24] text-white px-10 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:bg-red-700 shadow-xl hover:-translate-y-1 transition-all"><Save size={24} /> Save Complete Trip</button>
+          <button type="submit" disabled={isSaving} className="bg-[#e53a24] text-white px-10 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:bg-red-700 shadow-xl hover:-translate-y-1 transition-all disabled:opacity-50">
+            <Save size={24} /> {isSaving ? 'Saving Trip...' : 'Save Complete Trip'}
+          </button>
         </div>
 
       </form>
