@@ -1,229 +1,330 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MapPin, Calendar, Car, Search, HeadphonesIcon, ShieldCheck, Zap, Shield, Users, Map as MapIcon, Navigation } from 'lucide-react';
+import { MapPin, Calendar, Car, Search, X } from 'lucide-react';
+import { useAppData } from '../context/AppDataContext';
+import { featuredPackages } from '../data/packagesData';
+
+/* ─── Highlight matching text ────────────────────────────────────── */
+const Highlight = ({ text = '', query = '' }) => {
+  if (!query.trim()) return <span>{text}</span>;
+  const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+  const parts = text.split(regex);
+  return (
+    <span>
+      {parts.map((part, i) =>
+        regex.test(part) ? (
+          <mark key={i} className="bg-[#1e3a8a]/10 text-[#1e3a8a] font-bold rounded px-0.5 not-italic">{part}</mark>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </span>
+  );
+};
+
+/* ─── Category badge colour helper ───────────────────────────────── */
+const categoryColor = (cat = '') => {
+  const c = cat.toLowerCase();
+  if (c.includes('trek'))     return 'bg-green-100 text-green-700';
+  if (c.includes('safari') || c.includes('wildlife')) return 'bg-amber-100 text-amber-700';
+  if (c.includes('heli'))     return 'bg-purple-100 text-purple-700';
+  if (c.includes('cultural')) return 'bg-rose-100 text-rose-700';
+  return 'bg-blue-100 text-blue-700';
+};
+
+/* ════════════════════════════════════════════════════════════════════ */
 
 const SearchWidget = ({ activeTab = 'cars' }) => {
-  // Car State
-  const [pickupLocation, setPickupLocation] = useState('Kathmandu, Nepal');
+  /* ── Cars state ─────────────────────────────────────────────────── */
+  const [pickupLocation,  setPickupLocation]  = useState('Kathmandu, Nepal');
   const [dropoffLocation, setDropoffLocation] = useState('Kathmandu, Nepal');
-  const [pickupDate, setPickupDate] = useState('');
-  const [returnDate, setReturnDate] = useState('');
+  const [pickupDate,  setPickupDate]  = useState('');
+  const [returnDate,  setReturnDate]  = useState('');
   const [vehicleType, setVehicleType] = useState('SUV / 4x4');
   const [isSearching, setIsSearching] = useState(false);
-  
-  // Tour State
-  const [tourDestination, setTourDestination] = useState('Everest Region');
-  const [tourType, setTourType] = useState('Trekking');
-  const [travelMonth, setTravelMonth] = useState('October');
-  const [guests, setGuests] = useState('2');
+
+  /* ── Tour live-search state ─────────────────────────────────────── */
+  const [tourQuery,    setTourQuery]    = useState('');
+  const [showDropdown, setShowDropdown] = useState(false);
+  const searchRef = useRef(null);
+  const inputRef  = useRef(null);
 
   const navigate = useNavigate();
+  const { packages: ctxPackages, tourTrips } = useAppData();
 
-  const handleSearch = () => {
+  /* Merge context + static packages, de-dupe by id */
+  const allPackages = (() => {
+    const base  = (ctxPackages && ctxPackages.length > 0) ? ctxPackages : (featuredPackages || []);
+    const trips = (tourTrips || []).map(t => ({
+      id:       t.id,
+      title:    t.title,
+      location: t.destinations?.join(', ') || t.location || '',
+      category: t.type || 'Tour',
+      img:      t.heroImage || t.images?.[0] || t.img || '',
+      price:    t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : (t.price || ''),
+    }));
+    const ids = new Set(base.map(p => p.id));
+    return [...base, ...trips.filter(t => !ids.has(t.id))];
+  })();
+
+  /* Live filter */
+  const q = tourQuery.trim().toLowerCase();
+  const filteredPackages = q.length < 1 ? [] : allPackages.filter(p =>
+    (p.title    || '').toLowerCase().includes(q) ||
+    (p.location || '').toLowerCase().includes(q) ||
+    (p.category || '').toLowerCase().includes(q) ||
+    (p.tripCode || '').toLowerCase().includes(q)
+  ).slice(0, 8);
+
+  /* Close on outside click */
+  useEffect(() => {
+    const handler = (e) => {
+      if (searchRef.current && !searchRef.current.contains(e.target)) {
+        setShowDropdown(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  /* Cars search */
+  const handleCarSearch = () => {
     setIsSearching(true);
     setTimeout(() => {
       setIsSearching(false);
-      if (activeTab === 'cars') {
-        const params = new URLSearchParams({
-          pickup: pickupLocation,
-          dropoff: dropoffLocation,
-          start: pickupDate,
-          end: returnDate,
-          type: vehicleType
-        });
-        navigate(`/vehicles?${params.toString()}`);
-      } else {
-        const params = new URLSearchParams({
-          destination: tourDestination,
-          type: tourType,
-          month: travelMonth,
-          guests: guests
-        });
-        navigate(`/packages?${params.toString()}`);
-      }
+      const params = new URLSearchParams({
+        pickup:  pickupLocation,
+        dropoff: dropoffLocation,
+        start:   pickupDate,
+        end:     returnDate,
+        type:    vehicleType,
+      });
+      navigate(`/vehicles?${params.toString()}`);
     }, 400);
   };
 
+  /* Package click */
+  const handlePackageClick = (pkg) => {
+    setShowDropdown(false);
+    setTourQuery('');
+    navigate(`/packages/${pkg.id}`);
+  };
+
+  /* ── JSX ─────────────────────────────────────────────────────────── */
   return (
     <div className="bg-white border border-gray-200 rounded-3xl p-6 md:p-8 shadow-lg">
-      
-      {/* Top Search Bar */}
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-300/50 bg-[#F4F6F8]/80 backdrop-blur-md rounded-2xl p-2 mb-6">
-        {activeTab === 'cars' ? (
-          <>
-            <div className="p-3">
-              <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
-                <MapPin size={14} className="text-gray-400" /> Pickup Location
-              </label>
-              <input 
-                type="text"
-                list="location-options"
-                value={pickupLocation}
-                onChange={(e) => setPickupLocation(e.target.value)}
-                placeholder="City or Airport"
-                className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 outline-none placeholder:text-gray-400 text-sm p-0"
-              />
-            </div>
-            
-            <div className="p-3">
-              <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
-                <MapPin size={14} className="text-gray-400" /> Drop-off Location
-              </label>
-              <input 
-                type="text"
-                list="location-options"
-                value={dropoffLocation}
-                onChange={(e) => setDropoffLocation(e.target.value)}
-                placeholder="City or Airport"
-                className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 outline-none placeholder:text-gray-400 text-sm p-0"
-              />
-            </div>
-            
-            <datalist id="location-options">
-              <option value="Kathmandu, Nepal" />
-              <option value="Pokhara, Nepal" />
-              <option value="Chitwan, Nepal" />
-              <option value="Lumbini, Nepal" />
-              <option value="Mustang, Nepal" />
-              <option value="Tribhuvan International Airport (KTM)" />
-            </datalist>
-            
-            <div className="p-3">
-              <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
-                <Calendar size={14} className="text-gray-400" /> Pickup Date
-              </label>
-              <input 
-                type="date"
-                value={pickupDate}
-                onChange={(e) => setPickupDate(e.target.value)}
-                className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 outline-none cursor-pointer text-sm"
-              />
-            </div>
-            
-            <div className="p-3">
-              <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
-                <Calendar size={14} className="text-gray-400" /> Return Date
-              </label>
-              <input 
-                type="date"
-                value={returnDate}
-                onChange={(e) => setReturnDate(e.target.value)}
-                className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 outline-none cursor-pointer text-sm"
-              />
-            </div>
-            
-            <div className="p-3">
-              <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
-                <Car size={14} className="text-gray-400" /> Vehicle Type
-              </label>
-              <select 
-                value={vehicleType}
-                onChange={(e) => setVehicleType(e.target.value)}
-                className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 appearance-none outline-none cursor-pointer text-sm"
-              >
-                <option value="SUV / 4x4">SUV / 4x4</option>
-                <option value="Economy">Economy</option>
-                <option value="Sedan">Sedan</option>
-                <option value="Luxury">Luxury</option>
-                <option value="EV">EV</option>
-                <option value="Van / Micro">Van / Micro</option>
-                <option value="Minibus">Minibus</option>
-                <option value="Pickup Truck">Pickup Truck</option>
-              </select>
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="p-3 md:col-span-2">
-              <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
-                <MapPin size={14} className="text-gray-400" /> Destination
-              </label>
-              <select 
-                value={tourDestination}
-                onChange={(e) => setTourDestination(e.target.value)}
-                className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 appearance-none outline-none cursor-pointer text-sm p-0"
-              >
-                <option value="Everest Region">Everest Region</option>
-                <option value="Annapurna Region">Annapurna Region</option>
-                <option value="Kathmandu Valley">Kathmandu Valley</option>
-                <option value="Chitwan National Park">Chitwan National Park</option>
-                <option value="Lumbini">Lumbini (Birthplace of Buddha)</option>
-                <option value="Mustang">Mustang</option>
-                <option value="Bhutan">Bhutan</option>
-                <option value="Tibet">Tibet</option>
-              </select>
-            </div>
 
-            <div className="p-3">
-              <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
-                <Navigation size={14} className="text-gray-400" /> Tour Type
-              </label>
-              <select 
-                value={tourType}
-                onChange={(e) => setTourType(e.target.value)}
-                className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 appearance-none outline-none cursor-pointer text-sm p-0"
-              >
-                <option value="Trekking">Trekking</option>
-                <option value="Cultural Tour">Cultural Tour</option>
-                <option value="Wildlife Safari">Wildlife Safari</option>
-                <option value="Wellness & Yoga">Wellness & Yoga</option>
-                <option value="Heli Tour">Heli Tour</option>
-              </select>
-            </div>
+      {/* ══ Cars Tab ══════════════════════════════════════════════════ */}
+      {activeTab === 'cars' && (
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-300/50 bg-[#F4F6F8]/80 backdrop-blur-md rounded-2xl p-2">
 
-            <div className="p-3">
-              <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
-                <Calendar size={14} className="text-gray-400" /> Travel Month
-              </label>
-              <select 
-                value={travelMonth}
-                onChange={(e) => setTravelMonth(e.target.value)}
-                className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 appearance-none outline-none cursor-pointer text-sm p-0"
-              >
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="November">November</option>
-                <option value="December">December</option>
-              </select>
-            </div>
+          <div className="p-3">
+            <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
+              <MapPin size={14} className="text-gray-400" /> Pickup Location
+            </label>
+            <input
+              type="text" list="location-options"
+              value={pickupLocation}
+              onChange={(e) => setPickupLocation(e.target.value)}
+              placeholder="City or Airport"
+              className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 outline-none placeholder:text-gray-400 text-sm p-0"
+            />
+          </div>
 
-            <div className="p-3">
-              <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
-                <Users size={14} className="text-gray-400" /> Guests
-              </label>
-              <select 
-                value={guests}
-                onChange={(e) => setGuests(e.target.value)}
-                className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 appearance-none outline-none cursor-pointer text-sm p-0"
-              >
-                <option value="1">1 Person</option>
-                <option value="2">2 People</option>
-                <option value="3">3 People</option>
-                <option value="4">4 People</option>
-                <option value="5+">5+ People</option>
-              </select>
-            </div>
-          </>
-        )}
-        
-        <div className="p-2 flex">
-          <button
-            onClick={handleSearch}
-            className={`w-full bg-[#1e3a8a] text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all ${
-              isSearching ? 'scale-95 opacity-90' : 'hover:bg-[#152c6e] shadow-md hover:shadow-lg'
-            }`}
-          >
-            <Search size={18} /> {activeTab === 'cars' ? 'Search Vehicles' : 'Explore Packages'}
-          </button>
+          <div className="p-3">
+            <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
+              <MapPin size={14} className="text-gray-400" /> Drop-off Location
+            </label>
+            <input
+              type="text" list="location-options"
+              value={dropoffLocation}
+              onChange={(e) => setDropoffLocation(e.target.value)}
+              placeholder="City or Airport"
+              className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 outline-none placeholder:text-gray-400 text-sm p-0"
+            />
+          </div>
+
+          <datalist id="location-options">
+            <option value="Kathmandu, Nepal" />
+            <option value="Pokhara, Nepal" />
+            <option value="Chitwan, Nepal" />
+            <option value="Lumbini, Nepal" />
+            <option value="Mustang, Nepal" />
+            <option value="Tribhuvan International Airport (KTM)" />
+          </datalist>
+
+          <div className="p-3">
+            <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
+              <Calendar size={14} className="text-gray-400" /> Pickup Date
+            </label>
+            <input type="date" value={pickupDate} onChange={(e) => setPickupDate(e.target.value)}
+              className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 outline-none cursor-pointer text-sm" />
+          </div>
+
+          <div className="p-3">
+            <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
+              <Calendar size={14} className="text-gray-400" /> Return Date
+            </label>
+            <input type="date" value={returnDate} onChange={(e) => setReturnDate(e.target.value)}
+              className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 outline-none cursor-pointer text-sm" />
+          </div>
+
+          <div className="p-3">
+            <label className="text-xs font-bold text-gray-500 uppercase tracking-wider flex items-center gap-1 mb-1">
+              <Car size={14} className="text-gray-400" /> Vehicle Type
+            </label>
+            <select value={vehicleType} onChange={(e) => setVehicleType(e.target.value)}
+              className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 appearance-none outline-none cursor-pointer text-sm">
+              <option value="SUV / 4x4">SUV / 4x4</option>
+              <option value="Economy">Economy</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Luxury">Luxury</option>
+              <option value="EV">EV</option>
+              <option value="Van / Micro">Van / Micro</option>
+              <option value="Minibus">Minibus</option>
+              <option value="Pickup Truck">Pickup Truck</option>
+            </select>
+          </div>
+
+          <div className="p-2 flex">
+            <button
+              onClick={handleCarSearch}
+              className={`w-full bg-[#1e3a8a] text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all ${
+                isSearching ? 'scale-95 opacity-90' : 'hover:bg-[#152c6e] shadow-md hover:shadow-lg'
+              }`}
+            >
+              <Search size={18} /> Search Vehicles
+            </button>
+          </div>
         </div>
-      </div>
+      )}
 
-    
+      {/* ══ Tours Tab — Live Search ════════════════════════════════════ */}
+      {activeTab === 'tours' && (
+        <div ref={searchRef} className="relative">
+
+          {/* Search input */}
+          <div className={`flex items-center gap-3 bg-[#F4F6F8] rounded-2xl px-5 py-4 transition-all duration-200 ${
+            showDropdown && tourQuery ? 'ring-2 ring-[#1e3a8a]/25 shadow-md bg-white' : 'hover:bg-gray-100/80'
+          }`}>
+            <Search size={22} className="text-[#1e3a8a] shrink-0" />
+            <input
+              ref={inputRef}
+              type="text"
+              value={tourQuery}
+              onChange={(e) => { setTourQuery(e.target.value); setShowDropdown(true); }}
+              onFocus={() => setShowDropdown(true)}
+              placeholder="Search destinations, tours, packages…"
+              className="flex-1 bg-transparent border-none outline-none text-gray-900 font-semibold text-base placeholder:text-gray-400 placeholder:font-normal"
+            />
+            {tourQuery && (
+              <button
+                onClick={() => { setTourQuery(''); setShowDropdown(false); inputRef.current?.focus(); }}
+                className="p-1.5 rounded-full hover:bg-gray-200 text-gray-400 hover:text-gray-600 transition-colors shrink-0"
+                aria-label="Clear"
+              >
+                <X size={16} />
+              </button>
+            )}
+          </div>
+
+          {/* Quick-tag chips (shown when bar is empty) */}
+          {!tourQuery && (
+            <div className="flex flex-wrap gap-2 mt-3">
+              {['Everest Trek', 'Kathmandu Tour', 'Chitwan Safari', 'Annapurna', 'Tibet', 'Bhutan', 'Pokhara'].map(tag => (
+                <button
+                  key={tag}
+                  onClick={() => { setTourQuery(tag); setShowDropdown(true); inputRef.current?.focus(); }}
+                  className="text-xs font-semibold px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 hover:bg-[#1e3a8a] hover:text-white transition-all duration-200"
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* Results dropdown */}
+          {showDropdown && tourQuery && (
+            <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden z-50 max-h-[440px] overflow-y-auto">
+
+              {filteredPackages.length > 0 ? (
+                <>
+                  {/* Header row */}
+                  <div className="sticky top-0 bg-white/90 backdrop-blur px-4 py-2.5 border-b border-gray-100 flex items-center justify-between">
+                    <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
+                      {filteredPackages.length} result{filteredPackages.length !== 1 ? 's' : ''}
+                    </span>
+                    <button
+                      onClick={() => { setShowDropdown(false); navigate('/packages'); }}
+                      className="text-xs font-bold text-[#1e3a8a] hover:underline"
+                    >
+                      Browse all →
+                    </button>
+                  </div>
+
+                  {/* Result rows */}
+                  {filteredPackages.map((pkg) => (
+                    <button
+                      key={pkg.id}
+                      onClick={() => handlePackageClick(pkg)}
+                      className="w-full flex items-center gap-4 px-4 py-3 hover:bg-gray-50 active:bg-gray-100 transition-colors text-left group border-b border-gray-50 last:border-0"
+                    >
+                      {/* Thumbnail */}
+                      <div className="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-gray-100">
+                        <img
+                          src={pkg.img || pkg.image || '/images/trek.png'}
+                          alt={pkg.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          onError={(e) => { e.target.src = '/images/trek.png'; }}
+                        />
+                      </div>
+
+                      {/* Name + location */}
+                      <div className="flex-1 min-w-0">
+                        <p className="font-bold text-gray-900 text-sm leading-snug truncate group-hover:text-[#1e3a8a] transition-colors">
+                          <Highlight text={pkg.title || ''} query={tourQuery} />
+                        </p>
+                        {pkg.location && (
+                          <p className="text-xs text-gray-500 mt-0.5 flex items-center gap-1 truncate">
+                            <MapPin size={10} className="shrink-0 text-gray-400" />
+                            <Highlight text={pkg.location} query={tourQuery} />
+                          </p>
+                        )}
+                      </div>
+
+                      {/* Badge + price */}
+                      <div className="flex flex-col items-end gap-1 shrink-0">
+                        <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide whitespace-nowrap ${categoryColor(pkg.category)}`}>
+                          {pkg.category || 'Tour'}
+                        </span>
+                        {pkg.price && (
+                          <span className="text-xs font-bold text-[#e53a24] whitespace-nowrap">{pkg.price}</span>
+                        )}
+                      </div>
+                    </button>
+                  ))}
+                </>
+              ) : (
+                /* No results */
+                <div className="flex flex-col items-center justify-center py-10 px-6 text-center">
+                  <div className="w-12 h-12 rounded-2xl bg-gray-100 flex items-center justify-center mb-3">
+                    <Search size={22} className="text-gray-300" />
+                  </div>
+                  <p className="font-bold text-gray-700 text-sm">No packages found for "{tourQuery}"</p>
+                  <p className="text-xs text-gray-400 mt-1 mb-4">Try "Everest", "Kathmandu" or "Safari"</p>
+                  <button
+                    onClick={() => { setShowDropdown(false); navigate('/packages'); }}
+                    className="text-xs font-bold text-[#1e3a8a] bg-blue-50 hover:bg-blue-100 px-4 py-2 rounded-xl transition-colors"
+                  >
+                    Browse all packages →
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+
     </div>
   );
 };
