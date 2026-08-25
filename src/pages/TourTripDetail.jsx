@@ -293,21 +293,35 @@ const TourTripDetail = () => {
       </div>
 
       {/* Navigation Tabs (Sticky) */}
-      <div className="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-sm overflow-x-auto">
-        <div className="container mx-auto px-4">
-          <div className="flex whitespace-nowrap">
-            <button onClick={() => scrollToSection('overview')} className={`px-4 py-3 font-bold text-xs uppercase tracking-wide border-b-4 transition-colors ${activeTab === 'overview' ? 'border-[#e53a24] text-[#e53a24]' : 'border-transparent text-gray-500 hover:text-gray-900'}`}>Overview</button>
-            <button onClick={() => scrollToSection('gallery')} className={`px-4 py-3 font-bold text-xs uppercase tracking-wide border-b-4 transition-colors ${activeTab === 'gallery' ? 'border-[#e53a24] text-[#e53a24]' : 'border-transparent text-gray-500 hover:text-gray-900'}`}>Gallery</button>
-            <button onClick={() => scrollToSection('outline-itinerary')} className={`px-4 py-3 font-bold text-xs uppercase tracking-wide border-b-4 transition-colors ${activeTab === 'outline-itinerary' ? 'border-[#e53a24] text-[#e53a24]' : 'border-transparent text-gray-500 hover:text-gray-900'}`}>Outline Itinerary</button>
-            <button onClick={() => scrollToSection('itinerary')} className={`px-4 py-3 font-bold text-xs uppercase tracking-wide border-b-4 transition-colors ${activeTab === 'itinerary' ? 'border-[#e53a24] text-[#e53a24]' : 'border-transparent text-gray-500 hover:text-gray-900'}`}>Itinerary</button>
-            {trip.routeMap && (
-              <button onClick={() => scrollToSection('route-map')} className={`px-4 py-3 font-bold text-xs uppercase tracking-wide border-b-4 transition-colors ${activeTab === 'route-map' ? 'border-[#e53a24] text-[#e53a24]' : 'border-transparent text-gray-500 hover:text-gray-900'}`}>Route Map</button>
-            )}
-            {(trip.inclusions?.length > 0 || trip.exclusions?.length > 0) && (
-              <button onClick={() => scrollToSection('cost')} className={`px-4 py-3 font-bold text-xs uppercase tracking-wide border-b-4 transition-colors ${activeTab === 'cost' ? 'border-[#e53a24] text-[#e53a24]' : 'border-transparent text-gray-500 hover:text-gray-900'}`}>Cost Details</button>
-            )}
-            <button onClick={() => scrollToSection('info')} className={`px-4 py-3 font-bold text-xs uppercase tracking-wide border-b-4 transition-colors ${activeTab === 'info' ? 'border-[#e53a24] text-[#e53a24]' : 'border-transparent text-gray-500 hover:text-gray-900'}`}>Essential Info</button>
-            <button onClick={() => scrollToSection('equipment')} className={`px-4 py-3 font-bold text-xs uppercase tracking-wide border-b-4 transition-colors ${activeTab === 'equipment' ? 'border-[#e53a24] text-[#e53a24]' : 'border-transparent text-gray-500 hover:text-gray-900'}`}>Equipment</button>
+      <div className="bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-40 shadow-sm overflow-x-auto no-scrollbar">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="flex whitespace-nowrap gap-2">
+            {[
+              { id: 'overview', label: 'Overview', icon: FileText },
+              { id: 'gallery', label: 'Gallery', icon: ImageIcon },
+              { id: 'outline-itinerary', label: 'Outline Itinerary', icon: List },
+              { id: 'itinerary', label: 'Itinerary', icon: MapIcon },
+              ...(trip.routeMap ? [{ id: 'route-map', label: 'Route Map', icon: Globe }] : []),
+              ...((trip.inclusions?.length > 0 || trip.exclusions?.length > 0) ? [{ id: 'cost', label: 'Cost Details', icon: DollarSign }] : []),
+              { id: 'info', label: 'Essential Info', icon: Info },
+              { id: 'equipment', label: 'Equipment', icon: Briefcase }
+            ].map((tab) => {
+              const Icon = tab.icon;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => scrollToSection(tab.id)}
+                  className={`flex items-center gap-2 py-4 px-4 font-bold text-xs uppercase tracking-wider border-b-4 transition-all duration-300 ${
+                    activeTab === tab.id
+                      ? 'border-[#e53a24] text-[#e53a24]'
+                      : 'border-transparent text-slate-500 hover:text-slate-900 hover:bg-slate-50/50'
+                  }`}
+                >
+                  <Icon size={14} className="shrink-0" />
+                  <span>{tab.label}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
