@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Star, ShieldCheck, MapPin, Calendar, Users, Phone, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SearchWidget from './SearchWidget';
+
 const heroImages = [
   'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=100&w=2000&auto=format&fit=crop', // High res mountain peak
   'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?q=100&w=2000&auto=format&fit=crop', // High res mountain road with vehicle
@@ -19,7 +21,7 @@ const Hero = () => {
   }, []);
   return (
     <>
-      <section className="relative min-h-[90vh] md:min-h-[600px] lg:min-h-[680px] w-full flex flex-col pt-24 md:pt-32 pb-16 md:pb-24 px-4 md:px-8">
+      <section className="relative min-h-[92vh] md:min-h-[640px] lg:min-h-[720px] w-full flex flex-col pt-24 md:pt-32 pb-24 md:pb-36 px-4 md:px-8 border-b border-gray-150">
         <div className="absolute inset-0 z-0 bg-black">
           {heroImages.map((img, idx) => (
             <img
@@ -33,7 +35,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 md:via-transparent to-transparent"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col justify-center flex-1 mb-8 md:mb-0">
+        <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col justify-center flex-1 mb-12 md:mb-16">
           <div className="max-w-xl">
 
             
@@ -58,6 +60,11 @@ const Hero = () => {
             </div>
 
           </div>
+        </div>
+
+        {/* Overlapping Floating Search Widget */}
+        <div className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-20 w-full max-w-5xl mx-auto px-4 md:px-8">
+          <SearchWidget activeTab="tours" />
         </div>
  
       </section>
