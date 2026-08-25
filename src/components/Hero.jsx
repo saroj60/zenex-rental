@@ -42,14 +42,8 @@ const Hero = () => {
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight mb-2.5 md:mb-3.5 drop-shadow-lg">
               Premium Travels, Tours &<br className="hidden sm:block"/> Car Rental in Nepal
-              <span className="block text-lg sm:text-xl md:text-2xl font-bold text-white/95 mt-1 sm:mt-1.5 drop-shadow-md">
-                - Kathmandu to Himalayas -
-              </span>
             </h1>
-            
-            <p className="text-xs sm:text-sm md:text-base text-white/75 mb-3.5 md:mb-4.5 max-w-md leading-relaxed drop-shadow-md font-medium">
-              Explore the majestic Himalayas with our expertly crafted tour packages, and enjoy reliable, affordable car rentals in Kathmandu and beyond.
-            </p>
+
             
             <div className="flex flex-col sm:flex-row items-center gap-2.5 md:gap-3 mb-3.5 md:mb-4.5">
               <Link to="/packages" className="w-full sm:w-auto text-white px-4 md:px-5 py-2 md:py-2.5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 bg-[#1e3a8a] hover:bg-[#152c6e] text-xs">
