@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import BottomNav from './components/BottomNav';
 import useScrollReveal from './hooks/useScrollReveal';
 
-import SOSButton from './components/SOSButton';
+
 import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
@@ -45,7 +45,6 @@ function App() {
       <Footer />
       <BottomNav />
 
-      <SOSButton />
       <WhatsAppButton />
     </div>
   );
