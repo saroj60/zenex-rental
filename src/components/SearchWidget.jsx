@@ -223,73 +223,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
         </div>
       </div>
 
-      {/* Middle Features */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-4 mb-6 border-b border-gray-400/20">
-        <div className="flex items-start gap-3">
-          <HeadphonesIcon className="text-[#1e3a8a] mt-1" size={24} />
-          <div>
-            <h4 className="font-bold text-gray-900 text-sm">24/7 Support</h4>
-            <p className="text-xs text-gray-600 mt-0.5">We're here anytime</p>
-          </div>
-        </div>
-        <div className="flex items-start gap-3">
-          <ShieldCheck className="text-[#1e3a8a] mt-1" size={24} />
-          <div>
-            <h4 className="font-bold text-gray-900 text-sm">Expert Guides & Drivers</h4>
-            <p className="text-xs text-gray-600 mt-0.5">Experienced & trusted</p>
-          </div>
-        </div>
-        <div className="flex items-start gap-3">
-          <Navigation className="text-[#1e3a8a] mt-1" size={24} />
-          <div>
-            <h4 className="font-bold text-gray-900 text-sm">Custom Tour Packages</h4>
-            <p className="text-xs text-gray-600 mt-0.5">Tailored to your needs</p>
-          </div>
-        </div>
-        <div className="flex items-start gap-3">
-          <Shield className="text-[#1e3a8a] mt-1" size={24} />
-          <div>
-            <h4 className="font-bold text-gray-900 text-sm">Safe & Insured Travel</h4>
-            <p className="text-xs text-gray-600 mt-0.5">Your safety, our priority</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-gray-50 border border-gray-100 rounded-2xl p-4">
-        <div className="flex items-center gap-4">
-          <div className="w-14 h-14 bg-[#1e3a8a] rounded-2xl flex items-center justify-center text-white shadow-lg">
-            <Car size={24} />
-          </div>
-          <div>
-            <h3 className="font-bold text-xl text-gray-900">1500+</h3>
-            <h4 className="font-bold text-sm text-gray-700">Vehicles</h4>
-            <p className="text-xs text-gray-500">Wide range of cars</p>
-          </div>
-        </div>
-        
-        <div className="flex items-center gap-4">
-          <div className="w-14 h-14 bg-[#2D6A4F] rounded-2xl flex items-center justify-center text-white shadow-lg">
-            <Users size={24} />
-          </div>
-          <div>
-            <h3 className="font-bold text-xl text-gray-900">10,000+</h3>
-            <h4 className="font-bold text-sm text-gray-700">Happy Travelers</h4>
-            <p className="text-xs text-gray-500">Trusted by thousands</p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <div className="w-14 h-14 bg-[#e53a24] rounded-2xl flex items-center justify-center text-white shadow-lg">
-            <MapIcon size={24} />
-          </div>
-          <div>
-            <h3 className="font-bold text-xl text-gray-900">100+</h3>
-            <h4 className="font-bold text-sm text-gray-700">Destinations</h4>
-            <p className="text-xs text-gray-500">Across beautiful Nepal</p>
-          </div>
-        </div>
-      </div>
+    
     </div>
   );
 };
