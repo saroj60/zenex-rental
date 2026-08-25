@@ -10,8 +10,7 @@ const Intro = () => {
         <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium">
           Whether you're seeking cultural treasures in Kathmandu, mountain treks in the Himalayas, 
           or wildlife safaris in Chitwan, Zenex Travel offers premium car rentals, expert local 
-          drivers, and curated tour packages. <br className="hidden md:block" />
-          <span className="text-[#e53a24] font-bold mt-4 inline-block">5+ years of experience. 150+ 5-star reviews.</span>
+          drivers, and curated tour packages.
         </p>
       </div>
     </section>

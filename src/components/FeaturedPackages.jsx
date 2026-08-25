@@ -116,7 +116,7 @@ const FeaturedPackages = () => {
 
   return (
     <section className="reveal reveal-up bg-[#ebf3fa] py-20 px-4 md:px-8 border-t border-slate-100">
-      <div className="max-w-7xl mx-auto space-y-24">
+      <div className="max-w-7xl mx-auto space-y-12">
         
         {/* SECTION 1: FEATURED TOURS */}
         <div>
