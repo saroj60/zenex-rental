@@ -15,6 +15,18 @@ const BookingsAdmin = () => {
     id: '', customer: '', type: 'Vehicle', vehicle: '', dates: '', amount: '', status: 'Pending', date: ''
   });
 
+  const formatBookingDates = (dates) => {
+    if (!dates) return '';
+    if (typeof dates === 'object') {
+      if (dates.start && dates.end) {
+        if (dates.start === dates.end) return dates.start;
+        return `${dates.start} - ${dates.end}`;
+      }
+      return '';
+    }
+    return dates;
+  };
+
   const filteredBookings = bookings.filter(b => b.customer.toLowerCase().includes(searchTerm.toLowerCase()));
 
   const handleOpenAddModal = () => {
@@ -25,16 +37,36 @@ const BookingsAdmin = () => {
 
   const handleOpenEditModal = (booking) => {
     setIsEditMode(true);
-    setCurrentBooking(booking);
+    // Normalize dates to string for input edit compatibility
+    setCurrentBooking({
+      ...booking,
+      dates: formatBookingDates(booking.dates)
+    });
     setIsModalOpen(true);
   };
 
   const handleSaveBooking = (e) => {
     e.preventDefault();
+    
+    // Convert dates back to object structure { start, end } for DB schema consistency
+    let finalDates = { start: '', end: '' };
+    if (typeof currentBooking.dates === 'string') {
+      const parts = currentBooking.dates.split(' - ');
+      finalDates.start = parts[0] ? parts[0].trim() : '';
+      finalDates.end = parts[1] ? parts[1].trim() : finalDates.start;
+    } else if (currentBooking.dates) {
+      finalDates = currentBooking.dates;
+    }
+
+    const bookingToSave = {
+      ...currentBooking,
+      dates: finalDates
+    };
+
     if (isEditMode) {
-      updateBooking(currentBooking.id, currentBooking);
+      updateBooking(currentBooking.id, bookingToSave);
     } else {
-      addBooking(currentBooking);
+      addBooking(bookingToSave);
     }
     setIsModalOpen(false);
   };
@@ -88,7 +120,7 @@ const BookingsAdmin = () => {
                     </span>
                   </td>
                   <td className="px-6 py-4 text-on-surface-variant font-medium">{b.vehicle}</td>
-                  <td className="px-6 py-4 text-on-surface-variant">{b.dates}</td>
+                  <td className="px-6 py-4 text-on-surface-variant">{formatBookingDates(b.dates)}</td>
                   <td className="px-6 py-4 font-bold text-on-surface">{b.amount}</td>
                   <td className="px-6 py-4">
                     <span className={`px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${
