@@ -14,6 +14,7 @@ import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
 import HowItWorks from '../components/HowItWorks';
 import FAQ from '../components/FAQ';
+import LatestBlogs from '../components/LatestBlogs';
 
 
 const Home = () => {
@@ -63,6 +64,7 @@ const Home = () => {
       <HowItWorks />
       <Testimonials />
       <FAQ />
+      <LatestBlogs />
       <Gallery />
     </>
   );
