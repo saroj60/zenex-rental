@@ -277,7 +277,7 @@ const TourTripDetail = () => {
     <div className="bg-gray-50 font-sans pb-20">
       
       {/* Hero Section (Clean Image Banner) */}
-      <div className="relative h-[52vh] min-h-[400px] w-full bg-gray-900 flex items-center justify-center">
+      <div className="relative h-[75vh] min-h-[550px] w-full bg-gray-900 flex items-center justify-center">
         {trip.image && <img src={trip.image} alt={trip.title} className="absolute inset-0 w-full h-full object-cover opacity-85" />}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
       </div>

@@ -297,7 +297,7 @@ const TrekDetail = () => {
       />
 
       {/* Hero Section (Clean Image Banner) */}
-      <div className="relative h-[52vh] min-h-[400px] w-full overflow-hidden bg-gray-900">
+      <div className="relative h-[75vh] min-h-[550px] w-full overflow-hidden bg-gray-900">
         {(() => {
           const images = trek.gallery?.length ? trek.gallery : [trek.image || '/images/trek.png'];
           return images.map((img, idx) => (
