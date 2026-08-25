@@ -1,33 +1,9 @@
 import React from 'react';
 import { Star, Quote, CheckCircle2 } from 'lucide-react';
+import { useAppData } from '../context/AppDataContext';
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: 'Sarah Jenkins',
-      trip: 'Mustang Off-Road Expedition',
-      vehicle: 'Jeep Tour Package',
-      date: 'March 2026',
-      img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150',
-      text: "Our Mustang jeep tour with Zenex Travel was incredible. The 4x4 they provided was immaculate for the rough terrain, and our guide was deeply knowledgeable. The entire tour package gave us total peace of mind.",
-    },
-    {
-      name: 'David Chen',
-      trip: 'Annapurna Base Camp Trek',
-      vehicle: 'Complete Trek Package',
-      date: 'April 2026',
-      img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150',
-      text: "Booking our Annapurna trek was seamless. The team handled everything from the airport pickup to the permits and providing a highly experienced guide. Our entire trip was flawlessly organized. Highly recommend Zenex for any Nepal tour!",
-    },
-    {
-      name: 'Elena Rodriguez',
-      trip: 'Chitwan Jungle Safari Tour',
-      vehicle: 'Minibus & Resort Package',
-      date: 'February 2026',
-      img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150',
-      text: "We booked the Chitwan Jungle Safari Tour for our family of 8, and it was unforgettable. Zenex arranged the perfect minibus, a stunning eco-resort, and all the safari activities. Having a dedicated tour operator made everything comfortable.",
-    }
-  ];
+  const { testimonials } = useAppData();
 
   const reviewSchema = {
     "@context": "https://schema.org/",

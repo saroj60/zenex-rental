@@ -46,6 +46,8 @@ import BlogDetail from './pages/BlogDetail';
 import AdminLayout from './pages/admin/AdminLayout';
 import ManageBlogs from './pages/admin/ManageBlogs';
 import AddBlog from './pages/admin/AddBlog';
+import ManageTestimonials from './pages/admin/ManageTestimonials';
+import AddTestimonial from './pages/admin/AddTestimonial';
 import ManageVehicles from './pages/admin/ManageVehicles';
 import AddVehicle from './pages/admin/AddVehicle';
 import ManageGallery from './pages/admin/ManageGallery';
@@ -125,6 +127,8 @@ const router = createBrowserRouter([
       { path: 'add-driver', element: <AddDriver /> },
       { path: 'blogs', element: <ManageBlogs /> },
       { path: 'add-blog', element: <AddBlog /> },
+      { path: 'testimonials', element: <ManageTestimonials /> },
+      { path: 'add-testimonial', element: <AddTestimonial /> },
       { path: 'gallery', element: <ManageGallery /> },
       { path: 'treks', element: <ManageTreks /> },
       { path: 'add-trek', element: <AddTrek /> },

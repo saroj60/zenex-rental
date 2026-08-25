@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, FileText, PlusCircle, Settings, Car, Users, Mountain, Package, Map as MapIcon, Image as ImageIcon } from 'lucide-react';
+import { LayoutDashboard, FileText, PlusCircle, Settings, Car, Users, Mountain, Package, Map as MapIcon, Image as ImageIcon, MessageSquare } from 'lucide-react';
 
 const AdminLayout = () => {
   const location = useLocation();
@@ -20,6 +20,8 @@ const AdminLayout = () => {
     { name: 'Add Trek/Tour', path: '/admin/add-tour-trip', icon: <PlusCircle size={20} /> },
     { name: 'Manage Packages', path: '/admin/packages', icon: <Package size={20} /> },
     { name: 'Add Package', path: '/admin/add-package', icon: <PlusCircle size={20} /> },
+    { name: 'Manage Testimonials', path: '/admin/testimonials', icon: <MessageSquare size={20} /> },
+    { name: 'Add Testimonial', path: '/admin/add-testimonial', icon: <PlusCircle size={20} /> },
     { name: 'Settings', path: '/admin/settings', icon: <Settings size={20} /> },
   ];
 

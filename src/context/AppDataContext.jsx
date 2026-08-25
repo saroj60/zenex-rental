@@ -436,6 +436,35 @@ const initialGallery = [
   { id: 'G-9', url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiAqV4I_xhUpiNUuIa_VM6y1pj7pC-AIgNQ_laaHfKQg&s=10', title: 'Helicopter Return 3' }
 ];
 
+const initialTestimonials = [
+  {
+    id: '1',
+    name: 'Sarah Jenkins',
+    trip: 'Mustang Off-Road Expedition',
+    vehicle: 'Jeep Tour Package',
+    date: 'March 2026',
+    img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150',
+    text: "Our Mustang jeep tour with Zenex Travel was incredible. The 4x4 they provided was immaculate for the rough terrain, and our guide was deeply knowledgeable. The entire tour package gave us total peace of mind.",
+  },
+  {
+    id: '2',
+    name: 'David Chen',
+    trip: 'Annapurna Base Camp Trek',
+    vehicle: 'Complete Trek Package',
+    date: 'April 2026',
+    img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150',
+    text: "Booking our Annapurna trek was seamless. The team handled everything from the airport pickup to the permits and providing a highly experienced guide. Our entire trip was flawlessly organized. Highly recommend Zenex for any Nepal tour!",
+  },
+  {
+    id: '3',
+    name: 'Elena Rodriguez',
+    trip: 'Chitwan Jungle Safari Tour',
+    vehicle: 'Minibus & Resort Package',
+    date: 'February 2026',
+    img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150',
+    text: "We booked the Chitwan Jungle Safari Tour for our family of 8, and it was unforgettable. Zenex arranged the perfect minibus, a stunning eco-resort, and all the safari activities. Having a dedicated tour operator made everything comfortable.",
+  }
+];
 
 export const AppDataProvider = ({ children }) => {
 
@@ -448,6 +477,7 @@ export const AppDataProvider = ({ children }) => {
   const [galleryImages, setGalleryImages] = useState(initialGallery);
   const [tourTrips, setTourTrips] = useState([]);
   const [regions, setRegions] = useState([]);
+  const [testimonials, setTestimonials] = useState(initialTestimonials);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -464,16 +494,18 @@ export const AppDataProvider = ({ children }) => {
         let finalTourTrips = [];
         let finalRegions = [];
         let finalBookings = [];
+        let finalTestimonials = [];
 
         try {
-          const [vehRes, packRes, trekRes, drvRes, tourRes, regRes, bookRes] = await Promise.all([
+          const [vehRes, packRes, trekRes, drvRes, tourRes, regRes, bookRes, testRes] = await Promise.all([
             fetch('/api/vehicles'),
             fetch('/api/packages'),
             fetch('/api/v2/treks'),
             fetch('/api/drivers'),
             fetch('/api/tour-trips'),
             fetch('/api/regions'),
-            fetch('/api/bookings')
+            fetch('/api/bookings'),
+            fetch('/api/testimonials')
           ]);
 
           const isJson = (res) => {
@@ -489,6 +521,7 @@ export const AppDataProvider = ({ children }) => {
             finalTourTrips = await tourRes.json().catch(() => []);
             finalRegions = await regRes.json().catch(() => []);
             finalBookings = await bookRes.json().catch(() => []);
+            finalTestimonials = await testRes.json().catch(() => []);
             loadedFromApi = true;
           }
         } catch (apiErr) {
@@ -507,6 +540,7 @@ export const AppDataProvider = ({ children }) => {
             finalTourTrips = db.tourTrips || [];
             finalRegions = db.regions || [];
             finalBookings = db.bookings || [];
+            finalTestimonials = db.testimonials || [];
           } else {
             console.error("Static database.json failed to load");
           }
@@ -519,6 +553,7 @@ export const AppDataProvider = ({ children }) => {
         setTourTrips(finalTourTrips);
         setRegions(finalRegions);
         setBookings(finalBookings);
+        setTestimonials(finalTestimonials && finalTestimonials.length > 0 ? finalTestimonials : initialTestimonials);
       } catch (err) {
         console.error("Error fetching data", err);
         setTreks(treksData);

@@ -519,6 +519,66 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
     res.json({ url: fileUrl });
 });
 
+// ==============================================
+// TESTIMONIALS
+// ==============================================
+app.get('/api/testimonials', (req, res) => {
+    const data = readDB();
+    res.json(data.testimonials || []);
+});
+
+app.post('/api/testimonials', upload.single('image'), (req, res) => {
+    const data = readDB();
+    if (!data.testimonials) {
+        data.testimonials = [];
+    }
+    const newTestimonial = {
+        id: Date.now().toString(),
+        name: req.body.name || 'Anonymous',
+        trip: req.body.trip || 'Tour Package',
+        vehicle: req.body.vehicle || '',
+        date: req.body.date || new Date().toLocaleDateString(undefined, { month: 'long', year: 'numeric' }),
+        text: req.body.text || '',
+        rating: req.body.rating ? parseInt(req.body.rating, 10) : 5,
+        img: req.file ? `/api/uploads/${req.file.filename}` : (req.body.img || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150')
+    };
+    data.testimonials.push(newTestimonial);
+    writeDB(data);
+    res.json(newTestimonial);
+});
+
+app.put('/api/testimonials/:id', upload.single('image'), (req, res) => {
+    const data = readDB();
+    if (data.testimonials) {
+        const idx = data.testimonials.findIndex(t => t.id === req.params.id);
+        if (idx !== -1) {
+            const updated = {
+                ...data.testimonials[idx],
+                ...req.body
+            };
+            if (req.file) {
+                updated.img = `/api/uploads/${req.file.filename}`;
+            }
+            data.testimonials[idx] = updated;
+            writeDB(data);
+            res.json(updated);
+        } else {
+            res.status(404).json({ error: 'Testimonial not found' });
+        }
+    } else {
+        res.status(404).json({ error: 'Testimonial not found' });
+    }
+});
+
+app.delete('/api/testimonials/:id', (req, res) => {
+    const data = readDB();
+    if (data.testimonials) {
+        data.testimonials = data.testimonials.filter(t => t.id !== req.params.id);
+        writeDB(data);
+    }
+    res.json({ success: true });
+});
+
 // Serve static frontend files for Production
 const frontendDist = path.join(__dirname, '../dist');
 app.use(express.static(frontendDist));
