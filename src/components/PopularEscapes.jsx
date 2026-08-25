@@ -25,7 +25,7 @@ const PopularEscapes = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
           <div>
             <h2 className="text-4xl md:text-5xl font-extrabold text-[#3b134d] tracking-tight mb-2">
-              Destinations
+              Destinations in Nepal
             </h2>
             <div className="max-w-2xl">
               <p className="text-gray-600 font-medium text-lg leading-relaxed">
