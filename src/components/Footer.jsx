@@ -221,6 +221,18 @@ const Footer = () => {
           </div>
         </div>
         
+        {/* Associations / Accreditation Banner */}
+        <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-4">
+          <p className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">Associations & Partners</p>
+          <div className="bg-white/95 rounded-xl p-2 md:p-2.5 inline-flex justify-center items-center border border-slate-700/50 shadow-sm max-w-[280px] sm:max-w-xs md:max-w-sm">
+            <img 
+              src="https://www.nepalparatrek.com/wp-content/themes/inspiry-tourpress/img/associated-logo.png" 
+              alt="Associations and Partners - TAAN, NTB, KEEP, NMA" 
+              className="max-h-7 sm:max-h-8 object-contain"
+            />
+          </div>
+        </div>
+
         {/* Footer Bottom Bar */}
         <div className="border-t border-slate-800/80 pt-8 mt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-400 text-xs">
