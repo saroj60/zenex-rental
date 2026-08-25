@@ -79,6 +79,25 @@ const Footer = () => {
                 <MessageCircle size={18} strokeWidth={2.2} />
               </a>
             </div>
+
+            {/* Sisterly Ventures */}
+            <div className="pt-5 border-t border-slate-800/80 max-w-[240px]">
+              <p className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-3">Sisterly Ventures</p>
+              <Link 
+                to="/vehicles"
+                className="flex items-center gap-3 group bg-slate-900/60 p-2.5 rounded-xl border border-slate-850 hover:border-slate-700 hover:bg-slate-800/30 transition-all duration-300 shadow-inner"
+              >
+                <img 
+                  src="/images/zenex-rental-logo.png" 
+                  alt="Zenex Car Rental" 
+                  className="h-10 w-10 rounded-lg object-contain bg-white p-0.5"
+                />
+                <div className="min-w-0">
+                  <p className="text-xs font-bold text-white group-hover:text-[#e53a24] transition-colors leading-tight truncate">Zenex Car Rental</p>
+                  <p className="text-[10px] text-slate-400 mt-0.5 truncate">Self-Drive & Fleet Hire</p>
+                </div>
+              </Link>
+            </div>
           </div>
           
           {/* Quick Links Sections */}
