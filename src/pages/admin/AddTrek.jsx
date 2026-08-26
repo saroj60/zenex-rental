@@ -86,14 +86,20 @@ const AddTrek = () => {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-bold text-gray-700 mb-2">Location</label>
+              <label className="block text-sm font-bold text-gray-700 mb-2 flex items-center justify-between">
+                Location / Country
+                <span className="text-xs text-blue-600 font-normal">(Nepal, Tibet, Bhutan, or India)</span>
+              </label>
               <input type="text" name="location" value={formData.location} onChange={handleChange} required
-                placeholder="e.g. Everest Region" 
+                placeholder="e.g. Nepal - Everest Region" 
                 className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-bold text-gray-700 mb-2">Duration</label>
+              <label className="block text-sm font-bold text-gray-700 mb-2 flex items-center justify-between">
+                Duration
+                <span className="text-xs text-blue-600 font-normal">(e.g. 5 Days, 14 Days)</span>
+              </label>
               <input type="text" name="duration" value={formData.duration} onChange={handleChange} required
                 placeholder="e.g. 14 Days" 
                 className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart } from 'lucide-react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
+import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 
 import SEO from '../components/SEO';
@@ -9440,6 +9440,7 @@ With personalized care, natural therapies, and the soothing rhythm of nature, th
 
 const PackageDetail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const { packages: contextPackages } = useAppData();
   
   // Find package in context or in featuredPackages
@@ -9477,14 +9478,7 @@ const PackageDetail = () => {
   const currentPrice = calculatePrice();
 
   const handleBookPackage = () => {
-    const message = `Hi! I would like to book the following package:
-Package: ${pkg.title}
-Type: ${packageType}
-Date: ${date}
-Persons: ${persons}
-Total Price: ${currentPrice}`;
-    
-    window.open(`mailto:info@zenextravel.com.np?subject=Booking Request: ${pkg.title}&body=${encodeURIComponent(message)}`, '_blank');
+    navigate(`/checkout?pkg=${id}&travelers=${persons}&date=${date}`);
   };
 
   const handleQuickInquiry = () => {
@@ -9771,34 +9765,44 @@ Total Price: ${currentPrice}`;
           <div className="lg:col-span-1">
             <div className="sticky top-24 space-y-6">
               
-              {/* Main Booking Card */}
-              <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl shadow-blue-900/5 border border-white relative overflow-hidden">
-                {/* Decorative background element */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-purple-50 rounded-bl-[100px] -z-10"></div>
+              {/* Main Booking Card (Redesigned) */}
+              <div className="bg-white border border-gray-100 p-7 rounded-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] space-y-6">
                 
-                {/* Price Display */}
-                <div className="mb-4">
-                  <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Starting from</p>
-                  <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-800">
-                    {currentPrice ? currentPrice : 'TBA'}
-                  </h3>
-                  <p className="text-xs text-gray-400 mt-1">per person / all inclusive</p>
+                {/* Header Area */}
+                <div className="flex justify-between items-start border-b border-gray-100 pb-5">
+                  <div>
+                    <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Starting From</span>
+                    <div className="flex items-baseline gap-2.5">
+                      <span className="text-3xl font-black text-[#142B5F] tracking-tight">
+                        {currentPrice ? currentPrice : 'TBA'}
+                      </span>
+                    </div>
+                    <p className="text-[10px] text-[#64748B] mt-1 font-bold uppercase tracking-wider">Per Person / All Inclusive</p>
+                  </div>
+                  
+                  {/* Favorite Icon */}
+                  <button className="group flex flex-col items-center focus:outline-none">
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center shadow-sm border border-gray-200 bg-gray-50 text-gray-400 group-hover:text-[#E59A2F] group-hover:border-[#E59A2F] transition-all duration-300">
+                      <Heart size={18} fill="none" strokeWidth={2} className="group-hover:fill-current transition-colors" />
+                    </div>
+                    <span className="text-[9px] text-gray-500 font-bold mt-1.5 uppercase tracking-wider">Save</span>
+                  </button>
                 </div>
                 
                 <div className="space-y-4">
                   {/* Package Type */}
-                  <div>
-                    <h4 className="font-bold text-sm text-gray-800 mb-2 flex items-center">
-                      <ShieldCheck size={16} className="text-blue-600 mr-2" /> Select Package Level
+                  <div className="bg-[#F8FAFC] p-4 rounded-xl border border-gray-100">
+                    <h4 className="font-bold text-xs text-[#142B5F] uppercase tracking-wider mb-3">
+                      Select Package Level
                     </h4>
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-2 gap-2">
                       {['Budget', 'Comfort', 'Standard', 'Luxury'].map((type) => (
                         <label 
                           key={type} 
-                          className={`flex items-center justify-center py-1.5 px-3 rounded-xl cursor-pointer text-sm font-medium transition-all duration-200 border-2 ${
+                          className={`flex items-center justify-center py-2 px-3 rounded-lg cursor-pointer text-xs font-bold transition-all duration-200 border ${
                             packageType === type 
-                              ? 'border-blue-600 bg-blue-50 text-blue-700 shadow-sm' 
-                              : 'border-gray-100 bg-gray-50 text-gray-600 hover:border-blue-200 hover:bg-white'
+                              ? 'border-[#0F766E] bg-[#0F766E] text-white shadow-sm' 
+                              : 'border-gray-200 bg-white text-[#64748B] hover:border-[#0F766E] hover:text-[#0F766E]'
                           }`}
                         >
                           <input 
@@ -9814,45 +9818,25 @@ Total Price: ${currentPrice}`;
                     </div>
                   </div>
 
-                  {/* Date Selection */}
-                  <div>
-                    <h4 className="font-bold text-sm text-gray-800 mb-2 flex items-center">
-                      <CalendarCheck size={16} className="text-blue-600 mr-2" /> Travel Date
-                    </h4>
-                    <div className="relative group">
-                      <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <Calendar size={18} className="text-gray-400 group-focus-within:text-blue-500 transition-colors" />
+                  {/* Inputs */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
+                      <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Date</span>
+                      <div className="flex items-center justify-between">
+                        <input 
+                          type="date" 
+                          value={date}
+                          onChange={(e) => setDate(e.target.value)}
+                          className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer" 
+                        />
                       </div>
-                      <input 
-                        type="date" 
-                        className="w-full pl-10 pr-4 py-2 bg-gray-50 border-2 border-gray-100 text-sm font-semibold rounded-xl text-gray-700 outline-none focus:bg-white focus:border-blue-500 transition-all cursor-pointer shadow-sm" 
-                        value={date}
-                        onChange={(e) => setDate(e.target.value)}
-                      />
                     </div>
-                  </div>
-
-                  {/* Travelers */}
-                  <div>
-                    <h4 className="font-bold text-sm text-gray-800 mb-2 flex items-center">
-                      <Users size={16} className="text-blue-600 mr-2" /> Travelers
-                    </h4>
-                    <div className="relative group cursor-pointer">
-                      <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <Users size={18} className="text-gray-400 group-focus-within:text-blue-500 transition-colors" />
-                      </div>
-                      <div className="w-full pl-10 pr-10 py-2 bg-gray-50 border-2 border-gray-100 text-sm font-semibold rounded-xl text-gray-700 flex items-center group-focus-within:bg-white group-focus-within:border-blue-500 transition-all shadow-sm">
-                        {persons === 5 ? '5+ Persons' : `${persons} Person${persons > 1 ? 's' : ''}`}
-                      </div>
-                      <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </div>
+                    <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
+                      <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Travelers</span>
                       <select 
-                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                         value={persons}
                         onChange={(e) => setPersons(Number(e.target.value))}
+                        className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer appearance-none"
                       >
                         <option value={1}>1 Person</option>
                         <option value={2}>2 Persons</option>
@@ -9863,25 +9847,16 @@ Total Price: ${currentPrice}`;
                     </div>
                   </div>
 
-                  {/* Book Button */}
-                  <div className="pt-2">
-                    <button onClick={handleBookPackage} className="w-full bg-gradient-to-r from-[#22c55e] to-[#16a34a] hover:from-[#16a34a] hover:to-[#15803d] text-white py-3 px-4 font-bold text-base rounded-xl transition-all shadow-lg shadow-green-500/30 transform hover:-translate-y-1">
-                      Book This Package
+                  {/* Buttons */}
+                  <div className="space-y-3 pt-2">
+                    <button onClick={handleBookPackage} className="w-full flex justify-center bg-[#142B5F] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
+                      BOOK THIS PACKAGE
+                    </button>
+                    <button onClick={handleQuickInquiry} className="w-full flex justify-center bg-white text-[#142B5F] border-2 border-[#142B5F] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm">
+                      MAKE AN INQUIRY
                     </button>
                   </div>
                 </div>
-              </div>
-
-              {/* Inquiry Card */}
-              <div className="bg-gradient-to-br from-[#0f3493] to-blue-900 rounded-3xl p-6 shadow-xl shadow-blue-900/20 text-center relative overflow-hidden">
-                <div className="absolute -top-10 -right-10 w-32 h-32 bg-white opacity-5 rounded-full blur-2xl"></div>
-                <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-400 opacity-10 rounded-full blur-2xl"></div>
-                
-                <h4 className="text-white font-bold text-lg mb-2 relative z-10">Have Questions?</h4>
-                <p className="text-blue-200 text-sm mb-4 relative z-10">Talk to our travel experts to customize this trip.</p>
-                <button onClick={handleQuickInquiry} className="w-full bg-white text-[#0f3493] hover:bg-gray-50 py-3 px-4 font-extrabold text-[15px] rounded-xl transition-colors shadow-md relative z-10">
-                  Send Quick Inquiry
-                </button>
               </div>
               
             </div>

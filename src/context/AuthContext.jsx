@@ -16,16 +16,16 @@ export const AuthProvider = ({ children }) => {
     const storedAuth = sessionStorage.getItem('nepaldrive_admin_auth');
     if (storedAuth === 'true') {
       setIsAuthenticated(true);
-      setUser({ email: 'info@zenextravel.com.np', name: 'Super Admin', role: 'admin' });
+      setUser({ email: 'info@zenextravels.com', name: 'Super Admin', role: 'admin' });
     }
     setLoading(false);
   }, []);
 
   const login = (email, password) => {
     // Simulated authentication logic
-    if (email === 'info@zenextravel.com.np' && password === 'zenextravel@2026') {
+    if (email === 'info@zenextravels.com' && password === 'zenextravels@@2026') {
       setIsAuthenticated(true);
-      setUser({ email: 'info@zenextravel.com.np', name: 'Super Admin', role: 'admin' });
+      setUser({ email: 'info@zenextravels.com', name: 'Super Admin', role: 'admin' });
       sessionStorage.setItem('nepaldrive_admin_auth', 'true');
       return { success: true };
     }

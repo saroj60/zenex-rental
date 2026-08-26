@@ -183,13 +183,19 @@ const PackagesAdmin = () => {
                   </div>
 
                   <div className="space-y-1">
-                    <label className="text-xs font-bold text-on-surface-variant">Location</label>
-                    <input type="text" value={newPkg.location} onChange={e => setNewPkg({...newPkg, location: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. Kathmandu & Chitwan" />
+                    <label className="text-xs font-bold text-on-surface-variant flex items-center justify-between">
+                      Location / Country
+                      <span className="text-[10px] text-himalayan-blue font-normal">(Nepal, Tibet, Bhutan, India)</span>
+                    </label>
+                    <input type="text" value={newPkg.location} onChange={e => setNewPkg({...newPkg, location: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. Nepal - Chitwan" />
                   </div>
 
                   <div className="space-y-1">
-                    <label className="text-xs font-bold text-on-surface-variant">Duration</label>
-                    <input type="text" value={newPkg.duration} onChange={e => setNewPkg({...newPkg, duration: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. 7-14 Days" />
+                    <label className="text-xs font-bold text-on-surface-variant flex items-center justify-between">
+                      Duration
+                      <span className="text-[10px] text-himalayan-blue font-normal">(e.g. 5 Days, 14 Days)</span>
+                    </label>
+                    <input type="text" value={newPkg.duration} onChange={e => setNewPkg({...newPkg, duration: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue" placeholder="e.g. 14 Days" />
                   </div>
 
                   <div className="space-y-1">

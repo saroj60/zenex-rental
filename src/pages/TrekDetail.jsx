@@ -4,7 +4,7 @@ import {
   Clock, DollarSign, MapPin, CheckCircle2, ArrowLeft, Calendar,
   Mountain, Bed, Utensils, Users, Sun, Check, X, Map as MapIcon, Car, Star,
   ShieldCheck, CalendarCheck, FileText, Info, HelpCircle, Heart, Phone, Plus, Minus, Image as ImageIcon,
-  AlertTriangle, Backpack, PlaneTakeoff
+  AlertTriangle, Backpack, PlaneTakeoff, Activity, ChevronDown
 } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 import SEO from '../components/SEO';
@@ -69,8 +69,7 @@ const TrekDetail = () => {
   const perPersonPrice = getDiscountedPerPersonPrice(persons);
 
   const handleBookPackage = () => {
-    const message = `Hi! I would like to book the following trek:\nTrek: ${trek.title}\nType: ${packageType}\nDate: ${date}\nPersons: ${persons}\nTotal Price: ${currentPrice}`;
-    window.open(`mailto:info@zenextravel.com.np?subject=Booking Request: ${trek.title}&body=${encodeURIComponent(message)}`, '_blank');
+    navigate(`/checkout?pkg=${id}&travelers=${persons}&date=${date}`);
   };
 
   const handleQuickInquiry = () => {
@@ -894,117 +893,128 @@ const TrekDetail = () => {
             <div className="sticky top-44 space-y-6">
               
               {/* Main Booking Card (Redesigned) */}
-              <div className="bg-[#e9f4f7] rounded-[20px] p-6 shadow-sm border border-blue-50 relative">
+              <div className="bg-white border border-gray-100 p-7 rounded-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] space-y-6">
                 
-                {/* Price Display */}
-                <div className="flex justify-between items-start mb-6">
+                {/* Header Area */}
+                <div className="flex justify-between items-start border-b border-gray-100 pb-5">
                   <div>
-                    <p className="text-sm font-semibold text-gray-600 mb-1">Price Per Person</p>
-                    <div className="flex items-end gap-2">
-                      <h3 className="text-3xl font-bold text-gray-900">
+                    <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Price Per Person</span>
+                    <div className="flex items-baseline gap-2.5">
+                      <span className="text-3xl font-black text-[#142B5F] tracking-tight">
                         {perPersonPrice ? `US$${perPersonPrice}` : 'TBA'}
-                      </h3>
+                      </span>
                       {trek.originalPrice && (
-                        <span className="text-lg text-gray-400 line-through mb-1">{trek.originalPrice}</span>
+                        <span className="text-sm text-gray-400 line-through font-semibold">
+                          {trek.originalPrice}
+                        </span>
                       )}
                     </div>
                   </div>
-                  <button className="text-green-600 hover:text-green-700 flex flex-col items-center group">
-                    <Heart size={28} className="fill-current group-hover:scale-110 transition-transform" />
-                    <span className="text-[10px] font-medium mt-1 text-gray-600">Favorite</span>
+                  
+                  {/* Favorite Icon */}
+                  <button className="group flex flex-col items-center focus:outline-none">
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center shadow-sm border border-gray-200 bg-gray-50 text-gray-400 group-hover:text-[#E59A2F] group-hover:border-[#E59A2F] transition-all duration-300">
+                      <Heart size={18} fill="none" strokeWidth={2} className="group-hover:fill-current transition-colors" />
+                    </div>
+                    <span className="text-[9px] text-gray-500 font-bold mt-1.5 uppercase tracking-wider">Save</span>
                   </button>
                 </div>
 
-                {/* Group Discount Toggle */}
-                <div 
-                  onClick={() => setIsDiscountOpen(!isDiscountOpen)}
-                  className="bg-white rounded-xl p-4 flex justify-between items-center mb-6 cursor-pointer border border-gray-100 hover:border-gray-200 transition-colors shadow-sm select-none"
-                >
-                  <span className="font-bold text-gray-800 text-sm">Group Discount Price</span>
-                  <div className="text-gray-600 transition-transform duration-300">
-                    {isDiscountOpen ? <Minus size={18} /> : <Plus size={18} />}
-                  </div>
-                </div>
-
-                {/* Discount Table */}
-                {isDiscountOpen && (
-                  <div className="bg-white rounded-xl p-4 mb-6 border border-gray-100 shadow-sm text-sm animate-fade-in-up">
-                    <div className="flex justify-between text-gray-800 font-bold border-b border-gray-100 pb-2 mb-2">
-                      <span>No. of traveler</span>
-                      <span>Price per person</span>
-                    </div>
-                    <div className="space-y-3 pt-1 text-gray-600 font-medium">
-                      <div className="flex justify-between">
-                        <span>2 - 3 pax</span>
-                        <span>US${getDiscountedPerPersonPrice(2)}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>4 - 7 pax</span>
-                        <span>US${getDiscountedPerPersonPrice(4)}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>8 - 11 pax</span>
-                        <span>US${getDiscountedPerPersonPrice(8)}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>12 - 15 pax</span>
-                        <span>US${getDiscountedPerPersonPrice(12)}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>16 - 20 pax</span>
-                        <span>US${getDiscountedPerPersonPrice(16)}</span>
-                      </div>
-                    </div>
-                  </div>
-                )}
-                
-                <div className="space-y-4">
-                  {/* Date & Travelers Inputs */}
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="bg-white rounded-xl border border-gray-100 p-3">
-                      <p className="text-[10px] text-gray-500 font-bold uppercase mb-1">Date</p>
-                      <input 
-                        type="date" 
-                        className="w-full bg-transparent text-sm font-semibold text-gray-800 outline-none cursor-pointer" 
-                        value={date}
-                        onChange={(e) => setDate(e.target.value)}
-                      />
-                    </div>
-                    <div className="bg-white rounded-xl border border-gray-100 p-3 relative cursor-pointer">
-                      <p className="text-[10px] text-gray-500 font-bold uppercase mb-1">Travelers</p>
-                      <select 
-                        className="w-full bg-transparent text-sm font-semibold text-gray-800 outline-none cursor-pointer appearance-none"
-                        value={persons}
-                        onChange={(e) => setPersons(Number(e.target.value))}
-                      >
-                        <option value={1}>1 Person</option>
-                        <option value={2}>2 Persons</option>
-                        <option value={3}>3 Persons</option>
-                        <option value={4}>4 Persons</option>
-                        <option value={5}>5+ Persons</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="space-y-3 pt-2">
-                    <button onClick={handleBookPackage} className="w-full bg-[#00a2d3] hover:bg-[#0096c4] text-white py-3.5 px-4 font-bold text-[15px] rounded-xl transition-all shadow-md">
-                      BOOK THIS TRIP
-                    </button>
-                    <button onClick={handleQuickInquiry} className="w-full bg-[#0ba14b] hover:bg-[#098b41] text-white py-3.5 px-4 font-bold text-[15px] rounded-xl transition-all shadow-md">
-                      MAKE AN INQUIRY
-                    </button>
-                    <button onClick={handleDownloadPDF} className="w-full bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3 px-4 font-bold text-[15px] rounded-xl transition-all shadow-sm flex justify-center items-center gap-2">
-                      <FileText size={18} className="text-gray-600" />
-                      DOWNLOAD AS PDF
-                    </button>
+                {/* Group Discount Price Card */}
+                <div className="bg-[#F8FAFC] rounded-2xl p-4 border border-gray-100">
+                  <div 
+                    onClick={() => setIsDiscountOpen(!isDiscountOpen)}
+                    className="flex justify-between items-center cursor-pointer select-none group"
+                  >
+                    <span className="font-bold text-[#142B5F] text-sm flex items-center gap-2">
+                      <Activity size={16} className="text-[#0F766E]" />
+                      Group Discounts
+                    </span>
+                    <ChevronDown size={18} className={`text-gray-400 group-hover:text-[#142B5F] transition-transform duration-300 ${isDiscountOpen ? 'rotate-180' : ''}`} />
                   </div>
                   
-                  {/* Extension Note */}
-                  <p className="text-xs text-center text-gray-500 mt-4 italic">
-                    It is possible to extend this trek with Everest Base Camp or Everest Gokyo Ri Trekking
-                  </p>
+                  {isDiscountOpen && (
+                    <div className="mt-4 pt-4 border-t border-gray-200/60 overflow-hidden">
+                      <table className="w-full text-left text-sm">
+                        <thead>
+                          <tr className="text-[#64748B] font-medium border-b border-gray-200 pb-2">
+                            <th className="pb-2 font-semibold text-xs uppercase tracking-wider">Group Size</th>
+                            <th className="pb-2 text-right font-semibold text-xs uppercase tracking-wider">Price / Pax</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100">
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">2 - 3 pax</td>
+                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(2)}</td>
+                          </tr>
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">4 - 7 pax</td>
+                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(4)}</td>
+                          </tr>
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">8 - 11 pax</td>
+                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(8)}</td>
+                          </tr>
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">12 - 15 pax</td>
+                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(12)}</td>
+                          </tr>
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">16 - 20 pax</td>
+                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(16)}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
                 </div>
+                
+                {/* Inputs */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
+                    <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Date</span>
+                    <div className="flex items-center justify-between">
+                      <input 
+                        type="date" 
+                        value={date}
+                        onChange={(e) => setDate(e.target.value)}
+                        className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer" 
+                      />
+                    </div>
+                  </div>
+                  <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
+                    <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Travelers</span>
+                    <select 
+                      value={persons}
+                      onChange={(e) => setPersons(Number(e.target.value))}
+                      className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer appearance-none"
+                    >
+                      <option value={1}>1 Person</option>
+                      <option value={2}>2 Persons</option>
+                      <option value={3}>3 Persons</option>
+                      <option value={4}>4 Persons</option>
+                      <option value={5}>5+ Persons</option>
+                    </select>
+                  </div>
+                </div>
+
+                {/* Buttons */}
+                <div className="space-y-3 pt-2">
+                  <button onClick={handleBookPackage} className="w-full flex justify-center bg-[#142B5F] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
+                    BOOK THIS TRIP
+                  </button>
+                  <button onClick={handleQuickInquiry} className="w-full flex justify-center bg-white text-[#142B5F] border-2 border-[#142B5F] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm">
+                    MAKE AN INQUIRY
+                  </button>
+                  <button onClick={handleDownloadPDF} className="w-full bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center flex justify-center items-center gap-2">
+                    <FileText size={16} className="text-[#e53a24]" /> DOWNLOAD AS PDF
+                  </button>
+                </div>
+                  
+                {/* Extension Note */}
+                <p className="text-xs text-center text-gray-500 mt-4 italic">
+                  It is possible to extend this trek with Everest Base Camp or Everest Gokyo Ri Trekking
+                </p>
               </div>
               
 

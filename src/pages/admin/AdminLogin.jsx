@@ -76,7 +76,7 @@ const AdminLogin = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="zenextravel.com.np" 
+                  placeholder="info@zenextravels.com" 
                   className="w-full bg-blue-900/40 border border-white/10 rounded-xl pl-11 pr-4 py-3.5 text-white placeholder-blue-300/50 focus:outline-none focus:ring-2 focus:ring-[#e53a24]/50 focus:border-[#e53a24] transition-all"
                 />
               </div>

@@ -71,11 +71,18 @@ const BookingCheckout = () => {
 
   // Form State
   const [tripDate, setTripDate] = useState(() => {
+    const urlDate = searchParams.get('date');
+    if (urlDate) return urlDate;
+    
     const today = new Date();
     today.setDate(today.getDate() + 14); // default to 2 weeks from now
     return today.toISOString().split('T')[0];
   });
-  const [travelersCount, setTravelersCount] = useState(2);
+  
+  const [travelersCount, setTravelersCount] = useState(() => {
+    const urlTravelers = searchParams.get('travelers');
+    return urlTravelers ? parseInt(urlTravelers, 10) : 2;
+  });
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -509,13 +516,6 @@ ${firstName} ${lastName}`);
                       This is a 3D secure and SSL encrypted payment. Your card details are safe!
                     </p>
 
-                    {/* Payment Provider Badges */}
-                    <div className="flex items-center justify-center gap-3 mt-4">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" className="h-4 object-contain" alt="Visa" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" className="h-5 object-contain" alt="Amex" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" className="h-5 object-contain" alt="Mastercard" />
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/UnionPay_logo.svg" className="h-5 object-contain" alt="UnionPay" />
-                    </div>
 
                     {/* Submit Button */}
                     <button 

@@ -31,8 +31,8 @@ const Hero = () => {
               src={img}
             />
           ))}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 md:from-black/70 via-black/50 md:via-black/40 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 md:via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 md:from-black/40 via-black/30 md:via-black/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 md:via-transparent to-transparent"></div>
         </div>
         
         <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col justify-center flex-1 mb-12 md:mb-16">

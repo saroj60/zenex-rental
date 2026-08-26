@@ -16,6 +16,8 @@ const TourTripDetail = () => {
   const [activeTab, setActiveTab] = useState('overview');
   const [isFavorite, setIsFavorite] = useState(false);
   const [isDiscountOpen, setIsDiscountOpen] = useState(true);
+  const [travelers, setTravelers] = useState("2");
+  const [date, setDate] = useState("");
   const formatAltitude = (alt, unit) => {
     if (!alt) return '-';
     const num = parseInt(String(alt).replace(/[^0-9]/g, ''));
@@ -716,13 +718,13 @@ const TourTripDetail = () => {
               const currencySign = trip.pricingInfo?.currency === 'USD' ? 'US$' : (trip.pricingInfo?.currency || 'US$');
               const validGroupPricing = (trip.groupPricing || []).filter(tier => tier.pricePerPerson && (tier.minTravelers || tier.maxTravelers));
               return (
-                <div className="bg-[#eef8fd] border border-blue-100 p-6 rounded-3xl shadow-sm space-y-5">
-                  {/* Price Per Person Header */}
-                  <div className="flex justify-between items-start">
+                <div className="bg-white border border-gray-100 p-7 rounded-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] space-y-6">
+                  {/* Header Area */}
+                  <div className="flex justify-between items-start border-b border-gray-100 pb-5">
                     <div>
-                      <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mb-1">Price Per Person</p>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-3xl font-extrabold text-gray-900">
+                      <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Price Per Person</span>
+                      <div className="flex items-baseline gap-2.5">
+                        <span className="text-3xl font-black text-[#142B5F] tracking-tight">
                           {currencySign}{trip.pricingInfo?.sellingPrice || trip.price}
                         </span>
                         {trip.pricingInfo?.originalPrice && (
@@ -736,49 +738,52 @@ const TourTripDetail = () => {
                     {/* Favorite Icon */}
                     <button 
                       onClick={() => setIsFavorite(!isFavorite)}
-                      className="flex flex-col items-center group focus:outline-none"
+                      className="group flex flex-col items-center focus:outline-none"
                     >
-                      <div className={`w-9 h-9 rounded-full flex items-center justify-center shadow-sm border transition-colors ${
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center shadow-sm border transition-all duration-300 ${
                         isFavorite 
-                          ? 'bg-[#10b981] border-[#10b981] text-white' 
-                          : 'bg-white border-gray-200 text-gray-400 group-hover:text-[#10b981]'
+                          ? 'bg-[#E59A2F] border-[#E59A2F] text-white' 
+                          : 'bg-gray-50 border-gray-200 text-gray-400 group-hover:text-[#E59A2F] group-hover:border-[#E59A2F]'
                       }`}>
-                        <Heart size={16} fill={isFavorite ? 'currentColor' : 'none'} strokeWidth={2} />
+                        <Heart size={18} fill={isFavorite ? 'currentColor' : 'none'} strokeWidth={2} />
                       </div>
-                      <span className="text-[10px] text-gray-500 font-bold mt-1 uppercase tracking-wider">Favorite</span>
+                      <span className="text-[9px] text-gray-500 font-bold mt-1.5 uppercase tracking-wider">Save</span>
                     </button>
                   </div>
 
                   {/* Group Discount Price Card */}
                   {validGroupPricing.length > 0 && (
-                    <div className="bg-white rounded-2xl p-4 border border-blue-50/50 shadow-sm">
+                    <div className="bg-[#F8FAFC] rounded-2xl p-4 border border-gray-100">
                       <div 
                         onClick={() => setIsDiscountOpen(!isDiscountOpen)}
-                        className="flex justify-between items-center cursor-pointer font-bold text-gray-800 text-sm select-none"
+                        className="flex justify-between items-center cursor-pointer select-none group"
                       >
-                        <span>Group Discount Price</span>
-                        <span className="text-lg font-normal text-gray-500">{isDiscountOpen ? '-' : '+'}</span>
+                        <span className="font-bold text-[#142B5F] text-sm flex items-center gap-2">
+                          <Activity size={16} className="text-[#0F766E]" />
+                          Group Discounts
+                        </span>
+                        <ChevronDown size={18} className={`text-gray-400 group-hover:text-[#142B5F] transition-transform duration-300 ${isDiscountOpen ? 'rotate-180' : ''}`} />
                       </div>
                       
                       {isDiscountOpen && (
-                        <div className="mt-4 overflow-hidden transition-all duration-300">
-                          <table className="w-full text-left text-xs">
+                        <div className="mt-4 pt-4 border-t border-gray-200/60 overflow-hidden">
+                          <table className="w-full text-left text-sm">
                             <thead>
-                              <tr className="text-gray-400 font-bold border-b border-gray-100 pb-2">
-                                <th className="pb-2 font-bold uppercase tracking-wider">No. of traveler</th>
-                                <th className="pb-2 text-right font-bold uppercase tracking-wider">Price per person</th>
+                              <tr className="text-[#64748B] font-medium border-b border-gray-200 pb-2">
+                                <th className="pb-2 font-semibold text-xs uppercase tracking-wider">Group Size</th>
+                                <th className="pb-2 text-right font-semibold text-xs uppercase tracking-wider">Price / Pax</th>
                               </tr>
                             </thead>
-                            <tbody className="divide-y divide-gray-50">
+                            <tbody className="divide-y divide-gray-100">
                               {validGroupPricing.map((tier, idx) => {
                                 const travelers = tier.maxTravelers 
                                   ? `${tier.minTravelers} - ${tier.maxTravelers} pax`
                                   : `${tier.minTravelers}+ pax`;
                                 const tierCurrency = tier.currency === 'USD' ? 'US$' : (tier.currency || 'US$');
                                 return (
-                                  <tr key={idx} className="hover:bg-gray-50/50">
-                                    <td className="py-2.5 text-gray-600 font-medium">{travelers}</td>
-                                    <td className="py-2.5 text-right font-bold text-gray-950">{tierCurrency}{tier.pricePerPerson}</td>
+                                  <tr key={idx} className="hover:bg-white transition-colors">
+                                    <td className="py-3 text-[#172033] font-medium text-xs">{travelers}</td>
+                                    <td className="py-3 text-right font-bold text-[#142B5F]">{tierCurrency}{tier.pricePerPerson}</td>
                                   </tr>
                                 );
                               })}
@@ -789,16 +794,48 @@ const TourTripDetail = () => {
                     </div>
                   )}
 
-                  {/* Action Buttons */}
+                  {/* Inputs */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
+                      <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Date</span>
+                      <div className="flex items-center justify-between">
+                        <input 
+                          type="date" 
+                          value={date}
+                          onChange={(e) => setDate(e.target.value)}
+                          className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer" 
+                        />
+                      </div>
+                    </div>
+                    <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
+                      <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Travelers</span>
+                      <select 
+                        value={travelers} 
+                        onChange={(e) => setTravelers(e.target.value)}
+                        className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer appearance-none"
+                      >
+                        <option value="1">1 Person</option>
+                        <option value="2">2 Persons</option>
+                        <option value="3">3 Persons</option>
+                        <option value="4">4 Persons</option>
+                        <option value="5">5+ Persons</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Buttons */}
                   <div className="space-y-3 pt-2">
+                    <Link to={`/checkout?pkg=${trip.id}&travelers=${travelers}&date=${date}`} className="w-full flex justify-center bg-[#142B5F] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
+                      BOOK THIS TRIP
+                    </Link>
                     <button 
-                      onClick={() => navigate(`/checkout?pkg=${trip.id}`)}
-                      className="w-full bg-[#00a8e8] text-white py-3.5 rounded-xl font-extrabold hover:bg-sky-500 transition-colors shadow-sm text-sm uppercase tracking-wider text-center flex justify-center items-center gap-2"
+                      onClick={() => {
+                        const message = `Hi! I have some questions about the ${trip.title} package. Can you please help me?`;
+                        window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
+                      }}
+                      className="w-full flex justify-center bg-white text-[#142B5F] border-2 border-[#142B5F] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm"
                     >
-                      Book This Trip
-                    </button>
-                    <button className="w-full bg-[#00a651] text-white py-3.5 rounded-xl font-extrabold hover:bg-green-600 transition-colors shadow-sm text-sm uppercase tracking-wider text-center flex justify-center items-center gap-2">
-                      Make An Inquiry
+                      MAKE AN INQUIRY
                     </button>
                     <button 
                       onClick={handleDownloadPDF}

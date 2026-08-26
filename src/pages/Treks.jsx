@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import CountryWiseTrekCategories from '../components/CountryWiseTrekCategories';
+import RegionWiseTrekCategories from '../components/RegionWiseTrekCategories';
 
 const Treks = () => {
   return (
@@ -11,39 +11,43 @@ const Treks = () => {
         description="Explore the majestic Himalayas with our guided trekking packages in Nepal."
       />
       
-      {/* Hero / Header Section */}
-      <div className="relative pt-32 pb-24 px-4 md:px-8 overflow-hidden min-h-[350px] flex items-center justify-center">
+      {/* Premium Hero Section */}
+      <div className="relative h-[65vh] min-h-[500px] flex flex-col justify-center overflow-hidden bg-[#142B5F]">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2070&auto=format&fit=crop"
             alt="Trekking in Nepal"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover scale-105"
           />
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#142B5F]/95 via-[#142B5F]/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-100 h-20 bottom-0 top-auto"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-center relative z-10 w-full">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight drop-shadow-md">
+        {/* Content */}
+        <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full pt-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#E59A2F] animate-pulse"></span>
+            <span className="text-xs font-bold text-white uppercase tracking-widest">Himalayan Adventures</span>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight max-w-3xl">
             Trekking Packages
           </h1>
-          <div className="text-sm font-semibold text-white/80 flex items-center justify-center gap-1.5">
-            <Link to="/" className="hover:text-[#e53a24] text-white/95 transition-colors">Home</Link>
-            <span className="text-white/40">&gt;</span>
-            <span className="text-[#e53a24]">Treks</span>
-          </div>
-        </div>
+          
+          <p className="text-lg md:text-xl text-blue-100 max-w-2xl font-medium mb-10 leading-relaxed">
+            Embark on a journey of a lifetime. Experience the raw beauty, diverse cultures, and breathtaking landscapes of the Himalayan trails.
+          </p>
 
-        {/* Wave svg at the bottom */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
-          <svg className="relative block w-full h-[50px] md:h-[70px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0c4.14,1.83,8.37,3.58,12.75,5.18C83.84,25.43,158.74,48.51,234.34,58.82,263.63,62.8,292.82,61.76,321.39,56.44Z" fill="#ffffff"></path>
-          </svg>
+          <div className="flex items-center gap-3 text-sm font-bold text-white/70 uppercase tracking-wider">
+            <Link to="/" className="hover:text-[#E59A2F] text-white transition-colors">Home</Link>
+            <span className="text-[#0F766E]">&bull;</span>
+            <span className="text-[#E59A2F]">Treks</span>
+          </div>
         </div>
       </div>
 
-      {/* Interactive Country-Wise Categories Section */}
-      <CountryWiseTrekCategories />
+      <RegionWiseTrekCategories />
     </div>
   );
 };
