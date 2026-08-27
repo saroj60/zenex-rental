@@ -218,7 +218,7 @@ const WhatOurGuestsSay = () => {
   const currentVideo = travelVideos[videoIndex];
 
   return (
-    <section className="py-16 md:py-24 px-4 md:px-8 bg-[#F7FAFC] border-y border-slate-100 overflow-x-hidden font-sans relative">
+    <section className="py-16 md:py-24 px-4 md:px-8 bg-[#F7FAFC] border-y border-[#e53a24]/15 overflow-x-hidden font-sans relative">
       
       {/* Decorative Himalayan Outline detail */}
       <div className="absolute top-10 right-10 w-24 h-24 opacity-[0.015] pointer-events-none">
@@ -230,13 +230,13 @@ const WhatOurGuestsSay = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Unified Testimonial + Video Block Container */}
-        <div className="bg-white rounded-[24px] shadow-[0_12px_36px_rgba(20,43,95,0.04)] border border-slate-100 p-5 sm:p-8 md:p-10 lg:p-12">
+        <div className="bg-white rounded-[24px] shadow-[0_12px_36px_rgba(20,43,95,0.03)] border border-[#e53a24]/10 p-5 sm:p-8 md:p-10 lg:p-12">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-stretch">
             
             {/* LEFT COLUMN: Testimonial Carousel */}
             <div 
-              className="lg:col-span-6 flex flex-col justify-between p-2 lg:pr-10 border-b lg:border-b-0 lg:border-r border-slate-100/80 pb-8 lg:pb-0"
+              className="lg:col-span-6 flex flex-col justify-between p-2 lg:pr-10 border-b lg:border-b-0 lg:border-r border-[#e53a24]/10 pb-8 lg:pb-0"
               onTouchStart={handleTouchStartTesti}
               onTouchMove={handleTouchMoveTesti}
               onTouchEnd={handleTouchEndTesti}
@@ -291,7 +291,7 @@ const WhatOurGuestsSay = () => {
               </div>
 
               {/* Bottom Row: Trust Platforms & Navigation */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-slate-100 pt-6 md:pt-8 mt-6 md:mt-10">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-[#e53a24]/10 pt-6 md:pt-8 mt-6 md:mt-10">
                 
                 {/* Review Platforms Summary */}
                 <div className="flex items-center justify-between sm:justify-start w-full sm:w-auto gap-6">
@@ -417,7 +417,7 @@ const WhatOurGuestsSay = () => {
               </div>
 
               {/* Video Info and Selector Underneath */}
-              <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-slate-100 pt-6 md:pt-8">
+              <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-[#e53a24]/10 pt-6 md:pt-8">
                 <div>
                   <h4 className="text-[13px] md:text-[13.5px] font-black text-[#142B5F] uppercase tracking-wider">{currentVideo.title}</h4>
                   <p className="text-[10px] md:text-[11px] text-[#172033]/65 font-medium mt-0.5">{currentVideo.description}</p>
@@ -452,7 +452,7 @@ const WhatOurGuestsSay = () => {
           </div>
 
           {/* Mobile/Tablet view all link at the very bottom (stacked order) */}
-          <div className="block lg:hidden text-center mt-8 pt-4 border-t border-slate-100">
+          <div className="block lg:hidden text-center mt-8 pt-4 border-t border-[#e53a24]/10">
             <Link 
               to="/guest-reviews" 
               className="inline-flex items-center justify-center gap-1 text-[#0F9F9A] hover:text-[#0b7e7a] font-extrabold text-sm py-2 px-4 transition-colors duration-300 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none rounded"
