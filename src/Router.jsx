@@ -22,6 +22,7 @@ import TermsConditions from './pages/TermsConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import CancellationPolicy from './pages/CancellationPolicy';
 import FAQPage from './pages/FAQPage';
+import GuestReviews from './pages/GuestReviews';
 import Packages from './pages/Packages';
 import PackageDetail from './pages/PackageDetail';
 import Tours from './pages/Tours';
@@ -97,6 +98,7 @@ const router = createBrowserRouter([
       { path: 'privacy-policy', element: <PrivacyPolicy /> },
       { path: 'cancellation-policy', element: <CancellationPolicy /> },
       { path: 'faq', element: <FAQPage /> },
+      { path: 'guest-reviews', element: <GuestReviews /> },
       { path: 'packages', element: <Packages /> },
       { path: 'packages/:id', element: <TourTripDetail /> },
       { path: 'tours', element: <Tours /> },

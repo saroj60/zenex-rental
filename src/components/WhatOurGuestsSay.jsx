@@ -200,9 +200,14 @@ const WhatOurGuestsSay = () => {
 
                   <div className="h-8 w-px bg-slate-200"></div>
 
-                  <div className="flex items-center gap-4 text-xs font-extrabold text-[#0f3493]">
-                    <span className="hover:text-teal-600 transition-colors cursor-default">Tripadvisor</span>
-                    <span className="hover:text-teal-600 transition-colors cursor-default">Google Reviews</span>
+                  <div className="flex flex-col items-start gap-1">
+                    <div className="flex items-center gap-4 text-xs font-extrabold text-[#0f3493]">
+                      <span className="hover:text-teal-600 transition-colors cursor-default">Tripadvisor</span>
+                      <span className="hover:text-teal-600 transition-colors cursor-default">Google Reviews</span>
+                    </div>
+                    <Link to="/guest-reviews" className="text-[#0F766E] hover:text-[#0a5c56] text-[11px] font-black tracking-wide flex items-center gap-0.5 mt-1 transition-colors">
+                      View All Guest Reviews &rarr;
+                    </Link>
                   </div>
                 </div>
 
