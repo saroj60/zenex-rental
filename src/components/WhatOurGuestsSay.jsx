@@ -124,12 +124,12 @@ const WhatOurGuestsSay = () => {
       <div className="absolute top-10 left-10 w-48 h-48 opacity-[0.03] pointer-events-none z-0">
         {/* Subtle Route Map Dot Matrix Detail */}
         <svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="1.5" fill="#0F766E" />
-          <line x1="10" y1="10" x2="30" y2="40" stroke="#0F766E" strokeWidth="1" strokeDasharray="3 3" />
-          <circle cx="30" cy="40" r="1.5" fill="#0F766E" />
-          <line x1="30" y1="40" x2="60" y2="20" stroke="#0F766E" strokeWidth="1" strokeDasharray="3 3" />
-          <circle cx="60" cy="20" r="1.5" fill="#0F766E" />
-          <line x1="60" y1="20" x2="80" y2="70" stroke="#0F766E" strokeWidth="1" strokeDasharray="3 3" />
+          <circle cx="10" cy="10" r="1.5" fill="#e53a24" />
+          <line x1="10" y1="10" x2="30" y2="40" stroke="#e53a24" strokeWidth="1" strokeDasharray="3 3" />
+          <circle cx="30" cy="40" r="1.5" fill="#e53a24" />
+          <line x1="30" y1="40" x2="60" y2="20" stroke="#e53a24" strokeWidth="1" strokeDasharray="3 3" />
+          <circle cx="60" cy="20" r="1.5" fill="#e53a24" />
+          <line x1="60" y1="20" x2="80" y2="70" stroke="#e53a24" strokeWidth="1" strokeDasharray="3 3" />
           <circle cx="80" cy="70" r="2.5" fill="#E59A2F" />
         </svg>
       </div>
@@ -138,7 +138,7 @@ const WhatOurGuestsSay = () => {
         
         {/* Header Block */}
         <div className="text-center mb-12">
-          <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#0F766E] uppercase block mb-3">
+          <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#e53a24] uppercase block mb-3">
             REAL STORIES FROM NEPAL
           </span>
           <h2 className="text-3xl md:text-5xl font-black text-[#0f3493] mb-4 tracking-tight">
@@ -195,7 +195,7 @@ const WhatOurGuestsSay = () => {
                     <div>
                       <h4 className="font-bold text-white text-[15px] flex items-center gap-1.5">
                         {currentReview.name}
-                        <span className="inline-flex items-center text-[#0F766E] fill-[#0F766E]/10" title="Verified Customer">
+                        <span className="inline-flex items-center text-blue-400 fill-blue-400/10" title="Verified Customer">
                           <CheckCircle2 size={15} />
                         </span>
                       </h4>
@@ -278,7 +278,7 @@ const WhatOurGuestsSay = () => {
                 <div className="flex flex-col gap-1 text-left">
                   <span className="text-[10px] font-black text-slate-400 tracking-[0.15em] uppercase">GUEST EXPERIENCE</span>
                   <div className="flex items-center gap-1.5 text-white font-extrabold text-xs sm:text-sm tracking-wide">
-                    <MapPin size={13} className="text-[#0F766E]" />
+                    <MapPin size={13} className="text-[#e53a24]" />
                     {currentReview.locationLabel}
                   </div>
                 </div>
