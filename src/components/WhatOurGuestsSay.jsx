@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Star, ArrowLeft, ArrowRight, Play, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { travelVideos } from '../data/travelVideosData';
@@ -178,6 +178,24 @@ const WhatOurGuestsSay = () => {
     setTouchStartVideo(0);
     setTouchEndVideo(0);
   };
+
+  // Auto-slide Testimonials
+  useEffect(() => {
+    if (isPlayMode) return;
+    const timer = setInterval(() => {
+      handleNextTesti();
+    }, 7000);
+    return () => clearInterval(timer);
+  }, [testiIndex, isPlayMode]);
+
+  // Auto-slide Videos
+  useEffect(() => {
+    if (isPlayMode) return;
+    const timer = setInterval(() => {
+      handleNextVideo();
+    }, 9500);
+    return () => clearInterval(timer);
+  }, [videoIndex, isPlayMode]);
 
   const currentReview = guestReviews[testiIndex];
   const currentVideo = travelVideos[videoIndex];
