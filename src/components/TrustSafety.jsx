@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Wrench, Headphones, Award, Compass, Sparkles, BadgeDollarSign, HeartHandshake } from 'lucide-react';
+import { ShieldCheck, Wrench, Headphones, Award, Compass, Sparkles, BadgeDollarSign, HeartHandshake, Search, CalendarCheck, Map } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const TrustSafety = () => {
@@ -10,6 +10,37 @@ const TrustSafety = () => {
     { title: 'Best Value', desc: 'Competitive direct pricing without hidden agency markups.', icon: BadgeDollarSign, color: 'bg-rose-50 text-rose-600 border-rose-100' },
     { title: '24/7 Support', desc: 'Round-the-clock emergency support line during your entire trip.', icon: Headphones, color: 'bg-purple-50 text-purple-600 border-purple-100' },
     { title: 'Local Experience', desc: 'Genuine Sherpa culture immersion and authentic homestays.', icon: HeartHandshake, color: 'bg-teal-50 text-teal-600 border-teal-100' }
+  ];
+
+  const steps = [
+    {
+      id: 1,
+      title: 'Find Your Adventure',
+      desc: 'Browse our curated tour packages or premium car fleet. Filter by destination, duration, or travel style.',
+      icon: Search,
+      color: 'bg-red-50 text-red-600 border-red-100',
+    },
+    {
+      id: 2,
+      title: 'Customize & Book',
+      desc: 'Tailor the itinerary to your needs. Secure your booking instantly with our encrypted payment gateway.',
+      icon: CalendarCheck,
+      color: 'bg-blue-50 text-blue-800 border-blue-100',
+    },
+    {
+      id: 3,
+      title: 'Meet Your Local Expert',
+      desc: 'Your verified driver or guide will meet you at the airport or hotel, fully briefed on your trip.',
+      icon: ShieldCheck,
+      color: 'bg-green-50 text-green-700 border-green-100',
+    },
+    {
+      id: 4,
+      title: 'Explore the Himalayas',
+      desc: 'Enjoy a seamless, fully supported journey through Nepal with our 24/7 on-ground assistance.',
+      icon: Map,
+      color: 'bg-purple-50 text-purple-700 border-purple-100',
+    }
   ];
 
   const containerVariants = {
@@ -86,6 +117,35 @@ const TrustSafety = () => {
           })}
         </motion.div>
 
+        {/* Divider */}
+        <hr className="my-16 border-gray-200" />
+
+        {/* Simple Process Section */}
+        <div className="text-center mb-12">
+          <h3 className="text-2xl font-bold text-[#0f3493] mb-2">How It Works</h3>
+          <p className="text-gray-500 max-w-xl mx-auto font-medium text-sm">Your Himalayan adventure is just four simple steps away.</p>
+        </div>
+
+        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+          {/* Connecting Line for Desktop */}
+          <div className="hidden lg:block absolute top-10 left-[12%] right-[12%] h-[2px] bg-gray-200 z-0"></div>
+          
+          {steps.map((step) => {
+            const StepIcon = step.icon;
+            return (
+              <motion.div variants={itemVariants} key={step.id} className="relative z-10 flex flex-col items-center text-center group">
+                <div className={`w-20 h-20 rounded-full flex items-center justify-center border-4 ${step.color} mb-6 bg-white shadow-sm group-hover:scale-110 transition-transform duration-300`}>
+                  <StepIcon size={24} />
+                </div>
+                <div className="bg-[#1e3a8a] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs absolute top-0 right-1/2 translate-x-10 -translate-y-2 shadow-md">
+                  {step.id}
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+                <p className="text-gray-500 text-xs font-medium leading-relaxed max-w-[240px]">{step.desc}</p>
+              </motion.div>
+            );
+          })}
+        </motion.div>
 
       </div>
     </motion.section>
