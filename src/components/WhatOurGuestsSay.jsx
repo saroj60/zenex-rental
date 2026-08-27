@@ -13,12 +13,6 @@ const guestReviews = [
     date: "February 2026",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
     destination: "CHITWAN NATIONAL PARK",
-    video: {
-      title: "Chitwan Jungle Safari",
-      duration: "1:48 mins",
-      thumbnail: "https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=800",
-      location: "CHITWAN · NEPAL"
-    }
   },
   {
     id: 2,
@@ -30,12 +24,6 @@ const guestReviews = [
     date: "August 2026",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
     destination: "ANNAPURNA CIRCUIT",
-    video: {
-      title: "Trekking Annapurna Circuit",
-      duration: "1:24 mins",
-      thumbnail: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?q=80&w=800",
-      location: "ANNAPURNA · NEPAL"
-    }
   },
   {
     id: 3,
@@ -47,12 +35,6 @@ const guestReviews = [
     date: "March 2026",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150",
     destination: "MUSTANG REGION",
-    video: {
-      title: "Off-Road Jeep Adventure",
-      duration: "2:05 mins",
-      thumbnail: "https://images.unsplash.com/photo-1542856391-010fb87dcfed?q=80&w=800",
-      location: "MUSTANG · NEPAL"
-    }
   },
   {
     id: 4,
@@ -64,12 +46,6 @@ const guestReviews = [
     date: "April 2026",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
     destination: "ANNAPURNA BASE CAMP",
-    video: {
-      title: "Annapurna Base Camp Trek",
-      duration: "1:15 mins",
-      thumbnail: "https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800",
-      location: "ABC · NEPAL"
-    }
   },
   {
     id: 5,
@@ -81,12 +57,6 @@ const guestReviews = [
     date: "October 2025",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
     destination: "EVEREST BASE CAMP",
-    video: {
-      title: "Himalayan Helicopter Tour",
-      duration: "2:10 mins",
-      thumbnail: "https://images.unsplash.com/photo-1486916856992-e4db22c8df33?q=80&w=800",
-      location: "EVEREST · NEPAL"
-    }
   },
   {
     id: 6,
@@ -98,33 +68,88 @@ const guestReviews = [
     date: "May 2026",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
     destination: "POKHARA VALLEY",
-    video: {
-      title: "Pokhara & Phewa Lake Tour",
-      duration: "1:30 mins",
-      thumbnail: "https://images.unsplash.com/photo-1552083375-1447ce886485?q=80&w=800",
-      location: "POKHARA · NEPAL"
-    }
+  }
+];
+
+const travelVideos = [
+  {
+    id: 1,
+    location: "CHITWAN · NEPAL",
+    title: "Chitwan Jungle Safari Experience",
+    description: "Witness endangered one-horned rhinos, royal Bengal tigers, and exotic bird species in their natural wildlife habitats.",
+    duration: "1:48 mins",
+    thumbnail: "https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=800",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-safari-jeep-on-a-dirt-road-in-nature-41582-large.mp4"
+  },
+  {
+    id: 2,
+    location: "EVEREST · NEPAL",
+    title: "Everest Base Camp Helicopter Flyover",
+    description: "Experience a breathtaking aerial perspective of Mount Everest, Khumbu Glacier, and the surrounding giant Himalayan peaks.",
+    duration: "2:05 mins",
+    thumbnail: "https://images.unsplash.com/photo-1486916856992-e4db22c8df33?q=80&w=800",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-helicopter-flying-over-snow-covered-mountains-42289-large.mp4"
+  },
+  {
+    id: 3,
+    location: "MUSTANG · NEPAL",
+    title: "Upper Mustang Off-Road Expedition",
+    description: "Journey through the ancient forbidden kingdom of Mustang, traversing barren landscapes, caves, and red cliffs.",
+    duration: "1:52 mins",
+    thumbnail: "https://images.unsplash.com/photo-1542856391-010fb87dcfed?q=80&w=800",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-car-driving-on-a-road-in-mountainous-landscape-41584-large.mp4"
+  },
+  {
+    id: 4,
+    location: "ANNAPURNA · NEPAL",
+    title: "Annapurna Base Camp Sanctuary Trek",
+    description: "Walk inside the sanctuary of mountains, surrounded by a 360-degree wall of snow-capped Annapurna summits.",
+    duration: "1:24 mins",
+    thumbnail: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?q=80&w=800",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-hiking-on-a-snowy-mountain-trail-at-sunset-41587-large.mp4"
+  },
+  {
+    id: 5,
+    location: "POKHARA · NEPAL",
+    title: "Pokhara Lakes & Sarangkot Sunrise",
+    description: "Soar high above Pokhara valley with panoramic mountain views and smooth landings next to Phewa Lake.",
+    duration: "1:30 mins",
+    thumbnail: "https://images.unsplash.com/photo-1552083375-1447ce886485?q=80&w=800",
+    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-paraglider-flying-in-a-blue-sky-over-mountains-41590-large.mp4"
   }
 ];
 
 const WhatOurGuestsSay = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [testiIndex, setTestiIndex] = useState(0);
+  const [videoIndex, setVideoIndex] = useState(0);
+  const [isPlayMode, setIsPlayMode] = useState(false);
 
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % guestReviews.length);
+  const handleNextTesti = () => {
+    setTestiIndex((prev) => (prev + 1) % guestReviews.length);
   };
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + guestReviews.length) % guestReviews.length);
+  const handlePrevTesti = () => {
+    setTestiIndex((prev) => (prev - 1 + guestReviews.length) % guestReviews.length);
   };
 
-  const currentReview = guestReviews[currentIndex];
+  const handleNextVideo = () => {
+    setIsPlayMode(false);
+    setVideoIndex((prev) => (prev + 1) % travelVideos.length);
+  };
+
+  const handlePrevVideo = () => {
+    setIsPlayMode(false);
+    setVideoIndex((prev) => (prev - 1 + travelVideos.length) % travelVideos.length);
+  };
+
+  const currentReview = guestReviews[testiIndex];
+  const currentVideo = travelVideos[videoIndex];
 
   return (
     <section className="py-20 px-4 md:px-8 bg-[#EBF3FA] border-y border-slate-200/60 overflow-hidden font-sans relative">
       
       {/* Decorative Himalayan Outline detail */}
-      <div className="absolute top-10 right-10 w-24 h-24 opacity-[0.03] pointer-events-none">
+      <div className="absolute top-10 right-10 w-24 h-24 opacity-[0.02] pointer-events-none">
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10 80 L35 45 L50 60 L75 30 L90 80 Z" fill="#0f3493" />
         </svg>
@@ -132,56 +157,54 @@ const WhatOurGuestsSay = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#0F766E] uppercase block mb-3">
-            REAL STORIES FROM NEPAL
-          </span>
-          <h2 className="text-3xl md:text-5xl font-black text-[#0f3493] mb-4 tracking-tight">
-            What Our Guests Say
-          </h2>
-          <p className="text-gray-500 max-w-xl mx-auto font-medium text-sm md:text-base">
-            Discover what travelers from around the world experienced with Zenex Travels.
-          </p>
-        </div>
-
         {/* Unified Testimonial + Video Block Container */}
         <div className="bg-white rounded-[24px] shadow-[0_15px_40px_rgba(7,22,36,0.06)] border border-slate-100 p-6 md:p-10 lg:p-12">
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
             
             {/* LEFT COLUMN: Testimonial Carousel */}
             <div className="lg:col-span-6 flex flex-col justify-between p-2 lg:pr-8 border-b lg:border-b-0 lg:border-r border-slate-100 pb-10 lg:pb-0">
-              <div className="flex-1 flex flex-col justify-center">
+              
+              {/* Column Header */}
+              <div className="text-left mb-8 shrink-0">
+                <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#0F766E] uppercase block mb-2">
+                  REAL STORIES FROM NEPAL
+                </span>
+                <h2 className="text-2xl md:text-3.5xl font-black text-[#0f3493] tracking-tight">
+                  What Our Guests Say
+                </h2>
+              </div>
+
+              <div className="flex-1 flex flex-col justify-center my-4">
                 
                 {/* Saffron Stars */}
-                <div className="flex gap-1 mb-5">
+                <div className="flex gap-1 mb-4">
                   {[...Array(currentReview.rating)].map((_, i) => (
                     <Star key={i} size={18} className="fill-[#E59A2F] text-[#E59A2F]" />
                   ))}
                 </div>
 
                 {/* Title and Testimonial Quote */}
-                <h3 className="text-xl md:text-2xl font-bold text-[#0f3493] mb-4 leading-tight">
+                <h3 className="text-lg md:text-xl font-bold text-[#0f3493] mb-3 leading-snug">
                   “{currentReview.title}”
                 </h3>
-                <p className="text-gray-600 font-medium leading-relaxed text-sm md:text-base mb-8">
+                <p className="text-gray-650 font-medium leading-relaxed text-xs md:text-sm mb-6">
                   "{currentReview.text}"
                 </p>
 
                 {/* Guest Details */}
-                <div className="flex items-center gap-4 mt-auto">
-                  <div className="w-12 h-12 rounded-full overflow-hidden border border-slate-100 shadow-sm shrink-0 bg-slate-50">
+                <div className="flex items-center gap-4 mt-auto pt-2">
+                  <div className="w-11 h-11 rounded-full overflow-hidden border border-slate-105 shadow-sm shrink-0 bg-slate-55">
                     <img src={currentReview.avatar} alt={currentReview.name} className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-[#0f3493] text-[15px] flex items-center gap-1">
+                    <h4 className="font-extrabold text-[#0f3493] text-sm flex items-center gap-1">
                       {currentReview.name}
                       <span className="text-[#0F766E] fill-[#0F766E]/10" title="Verified Traveler">
-                        <CheckCircle2 size={15} />
+                        <CheckCircle2 size={13} />
                       </span>
                     </h4>
-                    <p className="text-xs text-gray-400 font-medium">
+                    <p className="text-[11px] text-gray-400 font-semibold">
                       {currentReview.country} &bull; {currentReview.date}
                     </p>
                   </div>
@@ -194,18 +217,18 @@ const WhatOurGuestsSay = () => {
                 {/* Review Platforms Summary */}
                 <div className="flex items-center gap-6">
                   <div className="text-left shrink-0">
-                    <p className="text-[15px] font-black text-[#0f3493] leading-none">4.9 / 5</p>
-                    <p className="text-[11px] text-gray-500 font-bold tracking-tight mt-1">150+ Guest Reviews</p>
+                    <p className="text-[14px] font-black text-[#0f3493] leading-none">4.9 / 5</p>
+                    <p className="text-[10px] text-gray-500 font-bold tracking-tight mt-1">150+ Guest Reviews</p>
                   </div>
 
                   <div className="h-8 w-px bg-slate-200"></div>
 
-                  <div className="flex flex-col items-start gap-1">
-                    <div className="flex items-center gap-4 text-xs font-extrabold text-[#0f3493]">
+                  <div className="flex flex-col items-start gap-0.5">
+                    <div className="flex items-center gap-3 text-xs font-extrabold text-[#0f3493]">
                       <span className="hover:text-teal-600 transition-colors cursor-default">Tripadvisor</span>
                       <span className="hover:text-teal-600 transition-colors cursor-default">Google Reviews</span>
                     </div>
-                    <Link to="/guest-reviews" className="text-[#0F766E] hover:text-[#0a5c56] text-[11px] font-black tracking-wide flex items-center gap-0.5 mt-1 transition-colors">
+                    <Link to="/guest-reviews" className="text-[#0F766E] hover:text-[#0a5c56] text-[10px] font-black tracking-wide flex items-center gap-0.5 mt-0.5 transition-colors">
                       View All Guest Reviews &rarr;
                     </Link>
                   </div>
@@ -214,23 +237,23 @@ const WhatOurGuestsSay = () => {
                 {/* Slider Navigation controls */}
                 <div className="flex items-center gap-4 shrink-0">
                   <button 
-                    onClick={handlePrev}
-                    className="w-10 h-10 rounded-full border border-slate-250 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
+                    onClick={handlePrevTesti}
+                    className="w-9 h-9 rounded-full border border-slate-200 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
                     aria-label="Previous Review"
                   >
-                    <ArrowLeft size={16} />
+                    <ArrowLeft size={15} />
                   </button>
 
-                  <span className="text-xs font-bold text-[#0f3493] min-w-[50px] text-center tracking-widest">
+                  <span className="text-[11px] font-bold text-[#0f3493] min-w-[45px] text-center tracking-widest">
                     {String(currentReview.id).padStart(2, '0')} / {String(guestReviews.length).padStart(2, '0')}
                   </span>
 
                   <button 
-                    onClick={handleNext}
-                    className="w-10 h-10 rounded-full border border-slate-250 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
+                    onClick={handleNextTesti}
+                    className="w-9 h-9 rounded-full border border-slate-200 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
                     aria-label="Next Review"
                   >
-                    <ArrowRight size={16} />
+                    <ArrowRight size={15} />
                   </button>
                 </div>
               </div>
@@ -239,41 +262,91 @@ const WhatOurGuestsSay = () => {
             {/* RIGHT COLUMN: Travel Video Showcase */}
             <div className="lg:col-span-6 flex flex-col justify-between p-2 lg:pl-4">
               
-              {/* Premium Video Card */}
-              <div className="relative rounded-2xl overflow-hidden aspect-video bg-slate-900 group shadow-md border border-slate-200/40">
-                <img 
-                  src={currentReview.video.thumbnail} 
-                  alt={currentReview.video.title} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                />
-                
-                {/* Bottom subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-
-                {/* Premium Pulse Play Button */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="w-16 h-16 rounded-full bg-[#0F766E] text-white flex items-center justify-center shadow-lg hover:bg-[#0c5c56] transition-all hover:scale-110 active:scale-95 group/play z-10 relative">
-                    <span className="absolute inset-0 rounded-full bg-[#0F766E]/30 animate-ping pointer-events-none scale-105"></span>
-                    <Play size={24} className="fill-white translate-x-0.5" />
-                  </button>
-                </div>
-
-                {/* Location Overlay details */}
-                <div className="absolute bottom-4 left-5 z-10 text-left">
-                  <span className="text-[9px] font-black text-slate-300 tracking-wider uppercase block mb-1">
-                    GUEST MEMORY &bull; {currentReview.video.duration}
-                  </span>
-                  <h4 className="font-extrabold text-white text-base tracking-wide flex items-center gap-1.5">
-                    {currentReview.video.location}
-                  </h4>
-                </div>
+              {/* Column Header */}
+              <div className="text-left mb-8 shrink-0">
+                <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#0f3493]/60 uppercase block mb-2">
+                  SEE NEPAL
+                </span>
+                <h2 className="text-2xl md:text-3.5xl font-black text-[#0f3493] tracking-tight mb-2">
+                  Watch the Journey
+                </h2>
+                <p className="text-xs text-gray-500 font-medium leading-relaxed">
+                  Experience Nepal through our tours, destinations, and adventures.
+                </p>
               </div>
 
-              {/* Video Info Selector Underneath */}
-              <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              {/* Premium Video Card */}
+              <div className="relative rounded-2xl overflow-hidden aspect-video bg-slate-900 group shadow-md border border-slate-200/40 my-auto">
+                {isPlayMode ? (
+                  <video 
+                    src={currentVideo.videoUrl} 
+                    controls 
+                    autoPlay 
+                    className="w-full h-full object-cover rounded-2xl" 
+                  />
+                ) : (
+                  <>
+                    <img 
+                      src={currentVideo.thumbnail} 
+                      alt={currentVideo.title} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                    />
+                    
+                    {/* Bottom subtle gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+
+                    {/* Premium Pulse Play Button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <button 
+                        onClick={() => setIsPlayMode(true)}
+                        className="w-14 h-14 rounded-full bg-[#0F766E] text-white flex items-center justify-center shadow-lg hover:bg-[#0c5c56] transition-all hover:scale-110 active:scale-95 group/play z-10 relative"
+                      >
+                        <span className="absolute inset-0 rounded-full bg-[#0F766E]/30 animate-ping pointer-events-none scale-105"></span>
+                        <Play size={20} className="fill-white translate-x-0.5" />
+                      </button>
+                    </div>
+
+                    {/* Location Overlay details */}
+                    <div className="absolute bottom-4 left-5 z-10 text-left">
+                      <span className="text-[9px] font-black text-slate-300 tracking-wider uppercase block mb-1">
+                        GUEST MEMORY &bull; {currentVideo.duration}
+                      </span>
+                      <h4 className="font-extrabold text-white text-base tracking-wide flex items-center gap-1.5">
+                        {currentVideo.location}
+                      </h4>
+                    </div>
+                  </>
+                )}
+              </div>
+
+              {/* Video Info and Selector Underneath */}
+              <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-t border-slate-100 pt-6">
                 <div>
-                  <h4 className="text-[15px] font-black text-[#0f3493] uppercase tracking-wider">{currentReview.video.title}</h4>
-                  <p className="text-xs text-gray-400 font-medium mt-0.5">Explore authentic, unedited travel video clip captured in Nepal.</p>
+                  <h4 className="text-[14px] font-black text-[#0f3493] uppercase tracking-wider">{currentVideo.title}</h4>
+                  <p className="text-[11px] text-gray-400 font-medium mt-0.5">{currentVideo.description}</p>
+                </div>
+
+                {/* Video controls */}
+                <div className="flex items-center gap-4 shrink-0 self-end sm:self-center ml-auto sm:ml-0">
+                  <button 
+                    onClick={handlePrevVideo}
+                    className="w-9 h-9 rounded-full border border-slate-200 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
+                    aria-label="Previous Video"
+                  >
+                    <ArrowLeft size={15} />
+                  </button>
+                  
+                  <span className="text-[11px] font-bold text-[#0f3493] min-w-[40px] text-center tracking-widest">
+                    {String(currentVideo.id).padStart(2, '0')} / {String(travelVideos.length).padStart(2, '0')}
+                  </span>
+
+                  <button 
+                    onClick={handleNextVideo}
+                    className="w-9 h-9 rounded-full border border-slate-200 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
+                    aria-label="Next Video"
+                  >
+                    <ArrowRight size={15} />
+                  </button>
                 </div>
               </div>
 
