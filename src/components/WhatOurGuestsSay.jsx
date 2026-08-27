@@ -115,24 +115,32 @@ const WhatOurGuestsSay = () => {
     });
   };
 
-  const changeTestimonial = (newIndex) => {
+  const changeTestimonial = (newIndex, isManual = false) => {
     setTestiIndex(newIndex);
     const nextTesti = guestReviews[newIndex];
     const matchedIndex = findRelatedVideoIndex(nextTesti);
-    if (matchedIndex !== -1) {
-      setVideoIndex(matchedIndex);
+    
+    if (isManual) {
       setIsPlayMode(false);
+      if (matchedIndex !== -1) {
+        setVideoIndex(matchedIndex);
+      }
+    } else {
+      // Auto-slide: only update video if not currently playing
+      if (!isPlayMode && matchedIndex !== -1) {
+        setVideoIndex(matchedIndex);
+      }
     }
   };
 
   const handleNextTesti = () => {
     const nextIndex = (testiIndex + 1) % guestReviews.length;
-    changeTestimonial(nextIndex);
+    changeTestimonial(nextIndex, true);
   };
 
   const handlePrevTesti = () => {
     const prevIndex = (testiIndex - 1 + guestReviews.length) % guestReviews.length;
-    changeTestimonial(prevIndex);
+    changeTestimonial(prevIndex, true);
   };
 
   const handleNextVideo = () => {
@@ -179,23 +187,32 @@ const WhatOurGuestsSay = () => {
     setTouchEndVideo(0);
   };
 
-  // Auto-slide Testimonials
+  // Auto-slide Testimonials (always active, does not pause for isPlayMode)
   useEffect(() => {
-    if (isPlayMode) return;
     const timer = setInterval(() => {
-      handleNextTesti();
-    }, 7000);
+      setTestiIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % guestReviews.length;
+        const nextTesti = guestReviews[nextIndex];
+        const matchedIndex = findRelatedVideoIndex(nextTesti);
+        
+        // Auto-slide update rule: only change video if not playing
+        if (!isPlayMode && matchedIndex !== -1) {
+          setVideoIndex(matchedIndex);
+        }
+        return nextIndex;
+      });
+    }, 5500); // 5.5s interval
     return () => clearInterval(timer);
-  }, [testiIndex, isPlayMode]);
+  }, [isPlayMode]);
 
-  // Auto-slide Videos
+  // Auto-slide Videos (pauses when video is playing)
   useEffect(() => {
     if (isPlayMode) return;
     const timer = setInterval(() => {
-      handleNextVideo();
-    }, 9500);
+      setVideoIndex((prevIndex) => (prevIndex + 1) % travelVideos.length);
+    }, 7500); // 7.5s interval
     return () => clearInterval(timer);
-  }, [videoIndex, isPlayMode]);
+  }, [isPlayMode]);
 
   const currentReview = guestReviews[testiIndex];
   const currentVideo = travelVideos[videoIndex];
