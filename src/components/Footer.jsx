@@ -79,25 +79,6 @@ const Footer = () => {
                 <MessageCircle size={18} strokeWidth={2.2} />
               </a>
             </div>
-
-            {/* Sisterly Ventures */}
-            <div className="pt-5 border-t border-slate-800/80 max-w-[240px]">
-              <p className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-3">Sisterly Ventures</p>
-              <Link 
-                to="/vehicles"
-                className="flex items-center gap-3 group bg-slate-900/60 p-2.5 rounded-xl border border-slate-850 hover:border-slate-700 hover:bg-slate-800/30 transition-all duration-300 shadow-inner"
-              >
-                <img 
-                  src="/images/zenex-rental-logo.png" 
-                  alt="Zenex Car Rental" 
-                  className="h-10 w-10 rounded-lg object-contain bg-white p-0.5"
-                />
-                <div className="min-w-0">
-                  <p className="text-xs font-bold text-white group-hover:text-[#e53a24] transition-colors leading-tight truncate">Zenex Car Rental</p>
-                  <p className="text-[10px] text-slate-400 mt-0.5 truncate">Self-Drive & Fleet Hire</p>
-                </div>
-              </Link>
-            </div>
           </div>
           
           {/* Quick Links Sections */}
@@ -240,15 +221,76 @@ const Footer = () => {
           </div>
         </div>
         
-        {/* Associations / Accreditation Banner */}
-        <div className="flex flex-col items-center justify-center gap-2 mb-4 mt-0">
-          <p className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">Associations & Partners</p>
-          <div className="bg-white/95 rounded-xl p-2 md:p-2.5 inline-flex justify-center items-center border border-slate-700/50 shadow-sm max-w-[280px] sm:max-w-xs md:max-w-sm">
-            <img 
-              src="https://www.nepalparatrek.com/wp-content/themes/inspiry-tourpress/img/associated-logo.png" 
-              alt="Associations and Partners - TAAN, NTB, KEEP, NMA" 
-              className="max-h-7 sm:max-h-8 object-contain"
-            />
+        {/* New Row for Sisterly Ventures, Associations, and We Accept */}
+        <div className="border-t border-slate-800/40 pt-8 pb-4 grid grid-cols-1 md:grid-cols-3 items-center gap-8 mt-8">
+          {/* Left Column - Empty to keep alignment */}
+          <div className="hidden md:block"></div>
+          
+          {/* Middle Column - Sisterly Ventures */}
+          <div className="flex flex-col items-center">
+            <p className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-3">Sisterly Ventures</p>
+            <Link 
+              to="/vehicles"
+              className="flex items-center gap-3 group bg-slate-900/60 p-2.5 rounded-xl border border-slate-850 hover:border-slate-700 hover:bg-slate-800/30 transition-all duration-300 shadow-inner w-full max-w-[240px]"
+            >
+              <img 
+                src="/images/zenex-rental-logo.png" 
+                alt="Zenex Car Rental" 
+                className="h-10 w-10 rounded-lg object-contain bg-white p-0.5"
+              />
+              <div className="min-w-0 text-left">
+                <p className="text-xs font-bold text-white group-hover:text-[#e53a24] transition-colors leading-tight truncate">Zenex Car Rental</p>
+                <p className="text-[10px] text-slate-400 mt-0.5 truncate">Self-Drive & Fleet Hire</p>
+              </div>
+            </Link>
+          </div>
+
+          {/* Right Column - Associations & We Accept stacked */}
+          <div className="flex flex-col items-center md:items-end gap-5">
+            {/* Associations & Partners */}
+            <div className="flex flex-col items-center md:items-end gap-2">
+              <p className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">Associations & Partners</p>
+              <div className="bg-white/95 rounded-xl p-2 md:p-2.5 inline-flex justify-center items-center border border-slate-700/50 shadow-sm max-w-[280px] sm:max-w-xs">
+                <img 
+                  src="https://www.nepalparatrek.com/wp-content/themes/inspiry-tourpress/img/associated-logo.png" 
+                  alt="Associations and Partners - TAAN, NTB, KEEP, NMA" 
+                  className="max-h-7 sm:max-h-8 object-contain"
+                />
+              </div>
+            </div>
+
+            {/* We Accept */}
+            <div className="flex flex-col items-center md:items-end gap-2">
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">We Accept</span>
+              <div className="flex items-center gap-3.5 bg-slate-900/40 px-4 py-1.5 rounded-xl border border-slate-800/80">
+                {/* Fonepay */}
+                <div className="h-3.5 flex items-center justify-center grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" title="Fonepay">
+                  <span className="text-[9.5px] font-black text-rose-500 tracking-tighter">fone<span className="text-emerald-500">pay</span></span>
+                </div>
+                {/* Visa */}
+                <svg className="h-3.5 w-auto grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.766 7.9H5.702L7.008.1h2.063L7.766 7.9zM15.485.253a4.708 4.708 0 00-1.7-.306c-1.87 0-3.187.96-3.198 2.336-.01 1.012.937 1.576 1.652 1.914.733.346.98.568.977.877-.006.474-.588.692-1.13.692-.754 0-1.157-.107-1.776-.369l-.25-.115-.266 1.59c.444.198 1.264.37 2.115.378 2.012 0 3.32-.962 3.337-2.453.012-.818-.506-1.442-1.616-1.957-.674-.329-.766-.549-.763-.783.006-.255.297-.523.94-.523a3.178 3.178 0 011.233.24l.147.065.279-1.691zm4.72 4.417c.182-.477.88-2.316.88-2.316l.156-.413L21.397 7.9h-1.616L18.423.1h1.662l1.393 5.419L22.25.1H24l-2.072 7.8h-1.723zM4.321.1H1.144L1 1.05C1.614 1.196 2.3 1.455 2.805 1.74l-.44 2.518C1.517 2.112.597 1.341 0 1.018L1.921 7.9h1.713l2.607-7.8H4.321z" fill="#1A1F71"/>
+                </svg>
+                {/* Mastercard */}
+                <svg className="h-3.5 w-auto grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#EB001B"/>
+                  <circle cx="16.5" cy="7.5" r="7.5" fill="#F79E1B"/>
+                  <path d="M12 11.235a7.481 7.481 0 012.835-3.735A7.481 7.481 0 0112 3.765 7.481 7.481 0 019.165 7.5a7.481 7.481 0 012.835 3.735z" fill="#FF5F00"/>
+                </svg>
+                {/* JCB */}
+                <div className="h-3.5 flex items-center justify-center grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" title="JCB">
+                  <span className="text-[8.5px] font-black tracking-tighter bg-gradient-to-r from-blue-600 via-[#1f73b7] to-[#e53a24] text-white px-1 py-0.2 rounded">JCB</span>
+                </div>
+                {/* Rupay */}
+                <div className="h-3.5 flex items-center justify-center grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" title="RuPay">
+                  <span className="text-[9.5px] font-black italic text-blue-500">RuPay</span>
+                </div>
+                {/* UPI */}
+                <div className="h-3.5 flex items-center justify-center grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" title="UPI">
+                  <span className="text-[8.5px] font-black text-emerald-400 border border-emerald-500/25 px-1 py-0.1 rounded bg-emerald-500/5 tracking-wider">UPI</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -257,39 +299,6 @@ const Footer = () => {
           <p className="text-slate-400 text-xs text-center lg:text-left">
             &copy; {new Date().getFullYear()} <span className="text-white font-semibold">Zenex Travels and Tours</span>. All rights reserved.
           </p>
-          
-          {/* Payment Methods Accepted */}
-          <div className="flex flex-col items-center gap-2">
-            <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">We Accept</span>
-            <div className="flex items-center gap-4 bg-slate-900/40 px-5 py-2 rounded-2xl border border-slate-800/80">
-              {/* Fonepay */}
-              <div className="h-4 flex items-center justify-center grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" title="Fonepay">
-                <span className="text-[10.5px] font-black text-rose-500 tracking-tighter">fone<span className="text-emerald-500">pay</span></span>
-              </div>
-              {/* Visa */}
-              <svg className="h-4 w-auto grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.766 7.9H5.702L7.008.1h2.063L7.766 7.9zM15.485.253a4.708 4.708 0 00-1.7-.306c-1.87 0-3.187.96-3.198 2.336-.01 1.012.937 1.576 1.652 1.914.733.346.98.568.977.877-.006.474-.588.692-1.13.692-.754 0-1.157-.107-1.776-.369l-.25-.115-.266 1.59c.444.198 1.264.37 2.115.378 2.012 0 3.32-.962 3.337-2.453.012-.818-.506-1.442-1.616-1.957-.674-.329-.766-.549-.763-.783.006-.255.297-.523.94-.523a3.178 3.178 0 011.233.24l.147.065.279-1.691zm4.72 4.417c.182-.477.88-2.316.88-2.316l.156-.413L21.397 7.9h-1.616L18.423.1h1.662l1.393 5.419L22.25.1H24l-2.072 7.8h-1.723zM4.321.1H1.144L1 1.05C1.614 1.196 2.3 1.455 2.805 1.74l-.44 2.518C1.517 2.112.597 1.341 0 1.018L1.921 7.9h1.713l2.607-7.8H4.321z" fill="#1A1F71"/>
-              </svg>
-              {/* Mastercard */}
-              <svg className="h-4 w-auto grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="7.5" cy="7.5" r="7.5" fill="#EB001B"/>
-                <circle cx="16.5" cy="7.5" r="7.5" fill="#F79E1B"/>
-                <path d="M12 11.235a7.481 7.481 0 012.835-3.735A7.481 7.481 0 0112 3.765 7.481 7.481 0 019.165 7.5a7.481 7.481 0 012.835 3.735z" fill="#FF5F00"/>
-              </svg>
-              {/* JCB */}
-              <div className="h-4 flex items-center justify-center grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" title="JCB">
-                <span className="text-[9px] font-black tracking-tighter bg-gradient-to-r from-blue-600 via-[#1f73b7] to-[#e53a24] text-white px-1.5 py-0.5 rounded-md">JCB</span>
-              </div>
-              {/* Rupay */}
-              <div className="h-4 flex items-center justify-center grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" title="RuPay">
-                <span className="text-[10px] font-black italic text-blue-500">RuPay</span>
-              </div>
-              {/* UPI */}
-              <div className="h-4 flex items-center justify-center grayscale opacity-85 hover:grayscale-0 hover:opacity-100 transition-all cursor-default" title="UPI">
-                <span className="text-[9px] font-black text-emerald-400 border border-emerald-500/25 px-1 py-0.2 rounded bg-emerald-500/5 tracking-wider">UPI</span>
-              </div>
-            </div>
-          </div>
 
           <div className="flex gap-6 text-xs text-slate-500 items-center">
             <Link to="/privacy-policy" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>
