@@ -100,6 +100,12 @@ const WhatOurGuestsSay = () => {
   const [videoIndex, setVideoIndex] = useState(0);
   const [isPlayMode, setIsPlayMode] = useState(false);
 
+  // Touch Swipe States
+  const [touchStartTesti, setTouchStartTesti] = useState(0);
+  const [touchEndTesti, setTouchEndTesti] = useState(0);
+  const [touchStartVideo, setTouchStartVideo] = useState(0);
+  const [touchEndVideo, setTouchEndVideo] = useState(0);
+
   const findRelatedVideoIndex = (testimonial) => {
     if (!testimonial || !testimonial.destination) return -1;
     const destLower = testimonial.destination.toLowerCase();
@@ -139,11 +145,45 @@ const WhatOurGuestsSay = () => {
     setVideoIndex((prev) => (prev - 1 + travelVideos.length) % travelVideos.length);
   };
 
+  // Testimonial Swipe Handlers
+  const handleTouchStartTesti = (e) => {
+    setTouchStartTesti(e.targetTouches[0].clientX);
+  };
+  const handleTouchMoveTesti = (e) => {
+    setTouchEndTesti(e.targetTouches[0].clientX);
+  };
+  const handleTouchEndTesti = () => {
+    if (touchStartTesti - touchEndTesti > 50) {
+      handleNextTesti();
+    } else if (touchStartTesti - touchEndTesti < -50) {
+      handlePrevTesti();
+    }
+    setTouchStartTesti(0);
+    setTouchEndTesti(0);
+  };
+
+  // Video Swipe Handlers
+  const handleTouchStartVideo = (e) => {
+    setTouchStartVideo(e.targetTouches[0].clientX);
+  };
+  const handleTouchMoveVideo = (e) => {
+    setTouchEndVideo(e.targetTouches[0].clientX);
+  };
+  const handleTouchEndVideo = () => {
+    if (touchStartVideo - touchEndVideo > 50) {
+      handleNextVideo();
+    } else if (touchStartVideo - touchEndVideo < -50) {
+      handlePrevVideo();
+    }
+    setTouchStartVideo(0);
+    setTouchEndVideo(0);
+  };
+
   const currentReview = guestReviews[testiIndex];
   const currentVideo = travelVideos[videoIndex];
 
   return (
-    <section className="py-24 px-4 md:px-8 bg-[#F7FAFC] border-y border-slate-100 overflow-hidden font-sans relative">
+    <section className="py-16 md:py-24 px-4 md:px-8 bg-[#F7FAFC] border-y border-slate-100 overflow-x-hidden font-sans relative">
       
       {/* Decorative Himalayan Outline detail */}
       <div className="absolute top-10 right-10 w-24 h-24 opacity-[0.015] pointer-events-none">
@@ -155,19 +195,24 @@ const WhatOurGuestsSay = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Unified Testimonial + Video Block Container */}
-        <div className="bg-white rounded-[24px] shadow-[0_12px_36px_rgba(20,43,95,0.04)] border border-slate-100 p-6 md:p-10 lg:p-12">
+        <div className="bg-white rounded-[24px] shadow-[0_12px_36px_rgba(20,43,95,0.04)] border border-slate-100 p-5 sm:p-8 md:p-10 lg:p-12">
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-stretch">
             
             {/* LEFT COLUMN: Testimonial Carousel */}
-            <div className="lg:col-span-6 flex flex-col justify-between p-2 lg:pr-10 border-b lg:border-b-0 lg:border-r border-slate-100/80 pb-10 lg:pb-0">
+            <div 
+              className="lg:col-span-6 flex flex-col justify-between p-2 lg:pr-10 border-b lg:border-b-0 lg:border-r border-slate-100/80 pb-8 lg:pb-0"
+              onTouchStart={handleTouchStartTesti}
+              onTouchMove={handleTouchMoveTesti}
+              onTouchEnd={handleTouchEndTesti}
+            >
               
               {/* Column Header */}
-              <div className="text-left mb-10 shrink-0">
+              <div className="text-left mb-6 md:mb-10 shrink-0">
                 <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#0F9F9A] uppercase block mb-2">
                   REAL STORIES FROM NEPAL
                 </span>
-                <h2 className="text-3xl md:text-4xl font-black text-[#142B5F] tracking-tight">
+                <h2 className="text-2xl md:text-4xl font-black text-[#142B5F] tracking-tight">
                   What Our Guests Say
                 </h2>
               </div>
@@ -176,33 +221,33 @@ const WhatOurGuestsSay = () => {
               <div className="flex-1 flex flex-col justify-center my-4">
                 
                 {/* Subtle Star Treatment */}
-                <div className="flex gap-1 mb-5">
+                <div className="flex gap-1 mb-4">
                   {[...Array(currentReview.rating)].map((_, i) => (
                     <Star key={i} size={16} className="fill-[#E6A23C] text-[#E6A23C]" />
                   ))}
                 </div>
 
                 {/* Title and Testimonial Quote */}
-                <h3 className="text-xl md:text-2xl font-bold text-[#142B5F] mb-4 leading-snug">
+                <h3 className="text-lg md:text-2xl font-bold text-[#142B5F] mb-3 leading-snug">
                   “{currentReview.title}”
                 </h3>
-                <p className="text-[#172033]/85 font-medium leading-relaxed text-sm md:text-[15px] mb-8">
+                <p className="text-[#172033]/85 font-medium leading-relaxed text-xs md:text-[15px] mb-6">
                   "{currentReview.text}"
                 </p>
 
                 {/* Elegant Guest Profile */}
-                <div className="flex items-center gap-4 mt-auto pt-2">
-                  <div className="w-12 h-12 rounded-full overflow-hidden border border-slate-100 shadow-sm shrink-0 bg-slate-50">
+                <div className="flex items-center gap-3 md:gap-4 mt-auto pt-2">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border border-slate-100 shadow-sm shrink-0 bg-slate-50">
                     <img src={currentReview.avatar} alt={currentReview.name} className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-[#142B5F] text-[15px] flex items-center gap-1.5">
+                    <h4 className="font-extrabold text-[#142B5F] text-sm md:text-[15px] flex items-center gap-1.5">
                       {currentReview.name}
                       <span className="text-[#0F9F9A] fill-[#0F9F9A]/10" title="Verified Traveler">
-                        <CheckCircle2 size={14} />
+                        <CheckCircle2 size={13} />
                       </span>
                     </h4>
-                    <p className="text-[11px] text-slate-400 font-bold tracking-wide uppercase mt-0.5">
+                    <p className="text-[10px] md:text-[11px] text-slate-400 font-bold tracking-wide uppercase mt-0.5">
                       {currentReview.country} &bull; {currentReview.date}
                     </p>
                   </div>
@@ -211,48 +256,49 @@ const WhatOurGuestsSay = () => {
               </div>
 
               {/* Bottom Row: Trust Platforms & Navigation */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-slate-100 pt-8 mt-10">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-slate-100 pt-6 md:pt-8 mt-6 md:mt-10">
                 
                 {/* Review Platforms Summary */}
-                <div className="flex items-center gap-6">
+                <div className="flex items-center justify-between sm:justify-start w-full sm:w-auto gap-6">
                   <div className="text-left shrink-0">
-                    <p className="text-base font-black text-[#142B5F] leading-none">4.9 / 5</p>
-                    <p className="text-[10px] text-slate-400 font-bold tracking-wide uppercase mt-1">150+ Reviews</p>
+                    <p className="text-sm md:text-base font-black text-[#142B5F] leading-none">4.9 / 5</p>
+                    <p className="text-[9px] md:text-[10px] text-slate-400 font-bold tracking-wide uppercase mt-1">150+ Reviews</p>
                   </div>
 
                   <div className="h-8 w-px bg-slate-100"></div>
 
                   <div className="flex flex-col items-start gap-1">
-                    <div className="flex items-center gap-3 text-[11px] font-extrabold text-[#142B5F]">
+                    <div className="flex items-center gap-3 text-[10px] md:text-[11px] font-extrabold text-[#142B5F]">
                       <span className="cursor-default">Tripadvisor</span>
                       <span className="cursor-default">Google Reviews</span>
                     </div>
-                    <Link to="/guest-reviews" className="text-[#0F9F9A] hover:text-[#0b7e7a] text-[10px] font-bold tracking-wide flex items-center gap-0.5 mt-0.5 transition-colors duration-300">
+                    {/* Desktop View All link (hidden on mobile) */}
+                    <Link to="/guest-reviews" className="hidden lg:inline-flex text-[#0F9F9A] hover:text-[#0b7e7a] text-[10px] font-bold tracking-wide items-center gap-0.5 mt-0.5 transition-colors duration-300">
                       View All Guest Reviews &rarr;
                     </Link>
                   </div>
                 </div>
 
                 {/* Minimal Slider Navigation controls */}
-                <div className="flex items-center gap-3 shrink-0">
+                <div className="flex items-center justify-center gap-4 shrink-0 w-full sm:w-auto mt-2 sm:mt-0">
                   <button 
                     onClick={handlePrevTesti}
-                    className="w-9 h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
                     aria-label="Previous Review"
                   >
-                    <ArrowLeft size={14} />
+                    <ArrowLeft size={16} />
                   </button>
 
-                  <span className="text-[11px] font-bold text-[#142B5F] min-w-[40px] text-center tracking-widest">
+                  <span className="text-[10px] md:text-[11px] font-bold text-[#142B5F] min-w-[40px] text-center tracking-widest">
                     {String(currentReview.id).padStart(2, '0')} / {String(guestReviews.length).padStart(2, '0')}
                   </span>
 
                   <button 
                     onClick={handleNextTesti}
-                    className="w-9 h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
                     aria-label="Next Review"
                   >
-                    <ArrowRight size={14} />
+                    <ArrowRight size={16} />
                   </button>
                 </div>
 
@@ -260,14 +306,19 @@ const WhatOurGuestsSay = () => {
             </div>
 
             {/* RIGHT COLUMN: Travel Video Showcase */}
-            <div className="lg:col-span-6 flex flex-col justify-between p-2 lg:pl-6">
+            <div 
+              className="lg:col-span-6 flex flex-col justify-between p-2 lg:pl-6 pt-6 lg:pt-0"
+              onTouchStart={handleTouchStartVideo}
+              onTouchMove={handleTouchMoveVideo}
+              onTouchEnd={handleTouchEndVideo}
+            >
               
               {/* Column Header */}
-              <div className="text-left mb-10 shrink-0">
+              <div className="text-left mb-6 md:mb-10 shrink-0">
                 <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#142B5F]/50 uppercase block mb-2">
                   SEE NEPAL
                 </span>
-                <h2 className="text-3xl md:text-4xl font-black text-[#142B5F] tracking-tight mb-2">
+                <h2 className="text-2xl md:text-4xl font-black text-[#142B5F] tracking-tight mb-2">
                   Watch the Journey
                 </h2>
                 <p className="text-xs text-[#172033]/70 font-medium leading-relaxed">
@@ -276,7 +327,7 @@ const WhatOurGuestsSay = () => {
               </div>
 
               {/* Cinematic Video Card */}
-              <div className="relative rounded-[20px] overflow-hidden aspect-video bg-[#142B5F] group shadow-[0_8px_30px_rgba(20,43,95,0.06)] border border-slate-100/50 my-auto transition-transform duration-500 ease-out">
+              <div className="relative rounded-[20px] overflow-hidden aspect-video bg-[#142B5F] group shadow-[0_8px_30px_rgba(20,43,95,0.06)] border border-slate-100/50 my-auto transition-transform duration-500 ease-out w-full">
                 {isPlayMode ? (
                   currentVideo.platform.toLowerCase() === 'direct' ? (
                     <video 
@@ -330,38 +381,48 @@ const WhatOurGuestsSay = () => {
               </div>
 
               {/* Video Info and Selector Underneath */}
-              <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-slate-100 pt-8 mt-10">
+              <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-slate-100 pt-6 md:pt-8">
                 <div>
-                  <h4 className="text-[13.5px] font-black text-[#142B5F] uppercase tracking-wider">{currentVideo.title}</h4>
-                  <p className="text-[11px] text-[#172033]/65 font-medium mt-0.5">{currentVideo.description}</p>
+                  <h4 className="text-[13px] md:text-[13.5px] font-black text-[#142B5F] uppercase tracking-wider">{currentVideo.title}</h4>
+                  <p className="text-[10px] md:text-[11px] text-[#172033]/65 font-medium mt-0.5">{currentVideo.description}</p>
                 </div>
 
                 {/* Video controls */}
-                <div className="flex items-center gap-3 shrink-0 self-end sm:self-center ml-auto sm:ml-0">
+                <div className="flex items-center gap-4 shrink-0 w-full sm:w-auto mt-2 sm:mt-0 justify-center">
                   <button 
                     onClick={handlePrevVideo}
-                    className="w-9 h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
                     aria-label="Previous Video"
                   >
-                    <ArrowLeft size={14} />
+                    <ArrowLeft size={16} />
                   </button>
                   
-                  <span className="text-[11px] font-bold text-[#142B5F] min-w-[35px] text-center tracking-widest">
+                  <span className="text-[10px] md:text-[11px] font-bold text-[#142B5F] min-w-[35px] text-center tracking-widest">
                     {String(currentVideo.id).padStart(2, '0')} / {String(travelVideos.length).padStart(2, '0')}
                   </span>
 
                   <button 
                     onClick={handleNextVideo}
-                    className="w-9 h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
                     aria-label="Next Video"
                   >
-                    <ArrowRight size={14} />
+                    <ArrowRight size={16} />
                   </button>
                 </div>
               </div>
 
             </div>
 
+          </div>
+
+          {/* Mobile/Tablet view all link at the very bottom (stacked order) */}
+          <div className="block lg:hidden text-center mt-8 pt-4 border-t border-slate-100">
+            <Link 
+              to="/guest-reviews" 
+              className="inline-flex items-center justify-center gap-1 text-[#0F9F9A] hover:text-[#0b7e7a] font-extrabold text-sm py-2 px-4 transition-colors duration-300"
+            >
+              View All Guest Reviews &rarr;
+            </Link>
           </div>
 
         </div>
