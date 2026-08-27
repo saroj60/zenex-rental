@@ -463,21 +463,7 @@ const WhatOurGuestsSay = () => {
 
         </div>
 
-        {/* BOTTOM CTA: Unified inside the same section wrapper */}
-        <div className="mt-12 text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-5 bg-white border border-slate-100 rounded-[16px] px-6 py-4 max-w-xl mx-auto shadow-[0_8px_30px_rgba(20,43,95,0.02)]">
-            <span className="text-[#142B5F] text-sm md:text-base font-bold text-center sm:text-left">
-              Ready to create your own Nepal story?
-            </span>
-            <Link 
-              to="/packages"
-              className="inline-flex items-center gap-1.5 bg-[#142B5F] hover:bg-[#0e1e42] text-white font-bold text-xs px-5 py-3.5 rounded-[12px] shadow-sm hover:shadow transition-all duration-300 shrink-0 focus:ring-2 focus:ring-[#142B5F] focus:ring-offset-2 focus:outline-none"
-            >
-              Explore Packages
-              <ArrowRight size={14} />
-            </Link>
-          </div>
-        </div>
+
 
       </div>
     </section>
