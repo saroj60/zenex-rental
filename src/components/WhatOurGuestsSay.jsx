@@ -1,10 +1,27 @@
 import React, { useState } from 'react';
-import { Star, ArrowLeft, ArrowRight, Play, CheckCircle2, Volume2, ShieldCheck } from 'lucide-react';
+import { Star, ArrowLeft, ArrowRight, Play, CheckCircle2, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const guestTestimonials = [
+const guestReviews = [
   {
     id: 1,
+    rating: 5,
+    title: "Stunning family Chitwan Jungle Safari",
+    text: "We booked the Chitwan Jungle Safari Tour for our family of 8, and it was unforgettable. Zenex arranged the perfect minibus, a stunning eco-resort, and all the safari activities. Having a dedicated tour operator made everything comfortable.",
+    name: "Elena Rodriguez",
+    country: "Spain",
+    date: "February 2026",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+    destination: "CHITWAN NATIONAL PARK",
+    video: {
+      title: "Chitwan Jungle Safari",
+      duration: "1:48 mins",
+      thumbnail: "https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=800",
+      location: "CHITWAN · NEPAL"
+    }
+  },
+  {
+    id: 2,
     rating: 5,
     title: "An unforgettable journey through Nepal.",
     text: "From the moment we arrived, everything was perfectly organized. Our guide was knowledgeable, friendly, and made the entire journey feel effortless. Nepal exceeded all our expectations.",
@@ -12,9 +29,16 @@ const guestTestimonials = [
     country: "Russia",
     date: "August 2026",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+    destination: "ANNAPURNA CIRCUIT",
+    video: {
+      title: "Trekking Annapurna Circuit",
+      duration: "1:24 mins",
+      thumbnail: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?q=80&w=800",
+      location: "ANNAPURNA · NEPAL"
+    }
   },
   {
-    id: 2,
+    id: 3,
     rating: 5,
     title: "Incredible Mustang off-road experience!",
     text: "Our Mustang jeep tour with Zenex Travel was incredible. The 4x4 they provided was immaculate for the rough terrain, and our guide was deeply knowledgeable. The entire tour package gave us total peace of mind.",
@@ -22,9 +46,16 @@ const guestTestimonials = [
     country: "USA",
     date: "March 2026",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150",
+    destination: "MUSTANG REGION",
+    video: {
+      title: "Off-Road Jeep Adventure",
+      duration: "2:05 mins",
+      thumbnail: "https://images.unsplash.com/photo-1542856391-010fb87dcfed?q=80&w=800",
+      location: "MUSTANG · NEPAL"
+    }
   },
   {
-    id: 3,
+    id: 4,
     rating: 5,
     title: "Seamless Annapurna Base Camp Trek",
     text: "Booking our Annapurna trek was seamless. The team handled everything from the airport pickup to the permits and providing a highly experienced guide. Our entire trip was flawlessly organized. Highly recommend Zenex for any Nepal tour!",
@@ -32,55 +63,62 @@ const guestTestimonials = [
     country: "Taiwan",
     date: "April 2026",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
-  }
-];
-
-const travelVideos = [
-  {
-    id: 1,
-    location: "ANNAPURNA · NEPAL",
-    title: "Trekking Annapurna Circuit",
-    duration: "1:24 mins",
-    thumbnail: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?q=80&w=800",
+    destination: "ANNAPURNA BASE CAMP",
+    video: {
+      title: "Annapurna Base Camp Trek",
+      duration: "1:15 mins",
+      thumbnail: "https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800",
+      location: "ABC · NEPAL"
+    }
   },
   {
-    id: 2,
-    location: "EVEREST BASE CAMP",
-    title: "Himalayan Helicopter Tour",
-    duration: "2:05 mins",
-    thumbnail: "https://images.unsplash.com/photo-1486916856992-e4db22c8df33?q=80&w=800",
+    id: 5,
+    rating: 5,
+    title: "Everest Flight & Cultural Valley Tour",
+    text: "An absolute dream come true. The Everest flight was breathtaking, and the guided historical tours around Kathmandu, Patan, and Bhaktapur durbar squares were rich in details. Exceptional hospitality from the local drivers.",
+    name: "John Miller",
+    country: "UK",
+    date: "October 2025",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+    destination: "EVEREST BASE CAMP",
+    video: {
+      title: "Himalayan Helicopter Tour",
+      duration: "2:10 mins",
+      thumbnail: "https://images.unsplash.com/photo-1486916856992-e4db22c8df33?q=80&w=800",
+      location: "EVEREST · NEPAL"
+    }
   },
   {
-    id: 3,
-    location: "MUSTANG · NEPAL",
-    title: "Off-Road Jeep Adventure",
-    duration: "1:48 mins",
-    thumbnail: "https://images.unsplash.com/photo-1542856391-010fb87dcfed?q=80&w=800",
+    id: 6,
+    rating: 5,
+    title: "Beautiful Pokhara Lakes & Sarangkot Sunrise",
+    text: "Seeing the sunrise over the Himalayas from Sarangkot and boating on Fewa Lake was ethereal. The vehicle rentals were top-tier, exceptionally clean, and the booking coordinators responded to all our queries within minutes.",
+    name: "Yuki Tanaka",
+    country: "Japan",
+    date: "May 2026",
+    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+    destination: "POKHARA VALLEY",
+    video: {
+      title: "Pokhara & Phewa Lake Tour",
+      duration: "1:30 mins",
+      thumbnail: "https://images.unsplash.com/photo-1552083375-1447ce886485?q=80&w=800",
+      location: "POKHARA · NEPAL"
+    }
   }
 ];
 
 const WhatOurGuestsSay = () => {
-  const [testiIndex, setTestiIndex] = useState(0);
-  const [videoIndex, setVideoIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNextTesti = () => {
-    setTestiIndex((prev) => (prev + 1) % guestTestimonials.length);
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % guestReviews.length);
   };
 
-  const handlePrevTesti = () => {
-    setTestiIndex((prev) => (prev - 1 + guestTestimonials.length) % guestTestimonials.length);
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + guestReviews.length) % guestReviews.length);
   };
 
-  const handleNextVideo = () => {
-    setVideoIndex((prev) => (prev + 1) % travelVideos.length);
-  };
-
-  const handlePrevVideo = () => {
-    setVideoIndex((prev) => (prev - 1 + travelVideos.length) % travelVideos.length);
-  };
-
-  const currentTesti = guestTestimonials[testiIndex];
-  const currentVideo = travelVideos[videoIndex];
+  const currentReview = guestReviews[currentIndex];
 
   return (
     <section className="py-20 px-4 md:px-8 bg-[#EBF3FA] border-y border-slate-200/60 overflow-hidden font-sans relative">
@@ -118,66 +156,76 @@ const WhatOurGuestsSay = () => {
                 
                 {/* Saffron Stars */}
                 <div className="flex gap-1 mb-5">
-                  {[...Array(currentTesti.rating)].map((_, i) => (
+                  {[...Array(currentReview.rating)].map((_, i) => (
                     <Star key={i} size={18} className="fill-[#E59A2F] text-[#E59A2F]" />
                   ))}
                 </div>
 
                 {/* Title and Testimonial Quote */}
                 <h3 className="text-xl md:text-2xl font-bold text-[#0f3493] mb-4 leading-tight">
-                  “{currentTesti.title}”
+                  “{currentReview.title}”
                 </h3>
                 <p className="text-gray-600 font-medium leading-relaxed text-sm md:text-base mb-8">
-                  "{currentTesti.text}"
+                  "{currentReview.text}"
                 </p>
 
                 {/* Guest Details */}
                 <div className="flex items-center gap-4 mt-auto">
                   <div className="w-12 h-12 rounded-full overflow-hidden border border-slate-100 shadow-sm shrink-0 bg-slate-50">
-                    <img src={currentTesti.avatar} alt={currentTesti.name} className="w-full h-full object-cover" />
+                    <img src={currentReview.avatar} alt={currentReview.name} className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h4 className="font-extrabold text-[#0f3493] text-[15px] flex items-center gap-1">
-                      {currentTesti.name}
+                      {currentReview.name}
                       <span className="text-[#0F766E] fill-[#0F766E]/10" title="Verified Traveler">
                         <CheckCircle2 size={15} />
                       </span>
                     </h4>
                     <p className="text-xs text-gray-400 font-medium">
-                      {currentTesti.country} &bull; {currentTesti.date}
+                      {currentReview.country} &bull; {currentReview.date}
                     </p>
                   </div>
                 </div>
 
               </div>
 
-              {/* Left Carousel Controls */}
-              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-slate-50">
-                <div className="flex gap-1.5">
-                  {guestTestimonials.map((_, idx) => (
-                    <button 
-                      key={idx}
-                      onClick={() => setTestiIndex(idx)}
-                      className={`h-2 rounded-full transition-all duration-300 ${idx === testiIndex ? 'w-6 bg-[#0f3493]' : 'w-2 bg-slate-200 hover:bg-slate-300'}`}
-                      aria-label={`Go to slide ${idx + 1}`}
-                    />
-                  ))}
+              {/* Bottom Row: Trust Platforms & Navigation */}
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-slate-100 pt-6 mt-8">
+                {/* Review Platforms Summary */}
+                <div className="flex items-center gap-6">
+                  <div className="text-left shrink-0">
+                    <p className="text-[15px] font-black text-[#0f3493] leading-none">4.9 / 5</p>
+                    <p className="text-[11px] text-gray-500 font-bold tracking-tight mt-1">150+ Guest Reviews</p>
+                  </div>
+
+                  <div className="h-8 w-px bg-slate-200"></div>
+
+                  <div className="flex items-center gap-4 text-xs font-extrabold text-[#0f3493]">
+                    <span className="hover:text-teal-600 transition-colors cursor-default">Tripadvisor</span>
+                    <span className="hover:text-teal-600 transition-colors cursor-default">Google Reviews</span>
+                  </div>
                 </div>
-                
-                <div className="flex items-center gap-2 ml-auto">
+
+                {/* Slider Navigation controls */}
+                <div className="flex items-center gap-4 shrink-0">
                   <button 
-                    onClick={handlePrevTesti}
-                    className="w-9 h-9 rounded-full border border-slate-250 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
-                    aria-label="Previous Testimonial"
+                    onClick={handlePrev}
+                    className="w-10 h-10 rounded-full border border-slate-250 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
+                    aria-label="Previous Review"
                   >
-                    <ArrowLeft size={15} />
+                    <ArrowLeft size={16} />
                   </button>
+
+                  <span className="text-xs font-bold text-[#0f3493] min-w-[50px] text-center tracking-widest">
+                    {String(currentReview.id).padStart(2, '0')} / {String(guestReviews.length).padStart(2, '0')}
+                  </span>
+
                   <button 
-                    onClick={handleNextTesti}
-                    className="w-9 h-9 rounded-full border border-slate-250 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
-                    aria-label="Next Testimonial"
+                    onClick={handleNext}
+                    className="w-10 h-10 rounded-full border border-slate-250 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
+                    aria-label="Next Review"
                   >
-                    <ArrowRight size={15} />
+                    <ArrowRight size={16} />
                   </button>
                 </div>
               </div>
@@ -189,8 +237,8 @@ const WhatOurGuestsSay = () => {
               {/* Premium Video Card */}
               <div className="relative rounded-2xl overflow-hidden aspect-video bg-slate-900 group shadow-md border border-slate-200/40">
                 <img 
-                  src={currentVideo.thumbnail} 
-                  alt={currentVideo.title} 
+                  src={currentReview.video.thumbnail} 
+                  alt={currentReview.video.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 
@@ -208,42 +256,19 @@ const WhatOurGuestsSay = () => {
                 {/* Location Overlay details */}
                 <div className="absolute bottom-4 left-5 z-10 text-left">
                   <span className="text-[9px] font-black text-slate-300 tracking-wider uppercase block mb-1">
-                    GUEST MEMORY &bull; {currentVideo.duration}
+                    GUEST MEMORY &bull; {currentReview.video.duration}
                   </span>
                   <h4 className="font-extrabold text-white text-base tracking-wide flex items-center gap-1.5">
-                    {currentVideo.location}
+                    {currentReview.video.location}
                   </h4>
                 </div>
               </div>
 
-              {/* Video Info and Selector Underneath */}
+              {/* Video Info Selector Underneath */}
               <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
-                  <h4 className="text-[15px] font-black text-[#0f3493] uppercase tracking-wider">{currentVideo.title}</h4>
+                  <h4 className="text-[15px] font-black text-[#0f3493] uppercase tracking-wider">{currentReview.video.title}</h4>
                   <p className="text-xs text-gray-400 font-medium mt-0.5">Explore authentic, unedited travel video clip captured in Nepal.</p>
-                </div>
-
-                {/* Video controls */}
-                <div className="flex items-center gap-2 shrink-0 self-end sm:self-center ml-auto sm:ml-0">
-                  <button 
-                    onClick={handlePrevVideo}
-                    className="w-9 h-9 rounded-full border border-slate-250 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
-                    aria-label="Previous Video"
-                  >
-                    <ArrowLeft size={15} />
-                  </button>
-                  
-                  <span className="text-xs font-extrabold text-slate-400 min-w-[40px] text-center">
-                    {currentVideo.id} / {travelVideos.length}
-                  </span>
-
-                  <button 
-                    onClick={handleNextVideo}
-                    className="w-9 h-9 rounded-full border border-slate-250 hover:border-slate-400 text-slate-500 hover:text-[#0f3493] flex items-center justify-center transition-colors hover:bg-slate-50 active:scale-95"
-                    aria-label="Next Video"
-                  >
-                    <ArrowRight size={15} />
-                  </button>
                 </div>
               </div>
 
