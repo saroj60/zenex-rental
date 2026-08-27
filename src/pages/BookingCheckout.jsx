@@ -188,7 +188,7 @@ Please confirm my reservation as soon as possible.
 
 Warm regards,
 ${firstName} ${lastName}`);
-    return `mailto:info@zenextravel.com.np?subject=${subject}&body=${body}`;
+    return `mailto:info@zenextravels.com?subject=${subject}&body=${body}`;
   };
 
   return (

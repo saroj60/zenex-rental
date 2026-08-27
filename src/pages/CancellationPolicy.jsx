@@ -36,7 +36,7 @@ const CancellationPolicy = () => {
 
             <section>
               <h2 className="text-xl font-bold text-gray-900 mb-3">3. How to Cancel</h2>
-              <p>To cancel your booking, please contact us immediately via email at <strong>info@zenextravel.com.np</strong> or call us directly. Cancellations are only valid once you receive a confirmation email from our team.</p>
+              <p>To cancel your booking, please contact us immediately via email at <strong>info@zenextravels.com</strong> or call us directly. Cancellations are only valid once you receive a confirmation email from our team.</p>
             </section>
           </div>
         </div>

@@ -24,7 +24,7 @@ const Contact = () => {
       `Phone: ${formData.phone}\n\n` +
       `Message:\n${formData.message}`
     );
-    window.location.href = `mailto:info@zenextravel.com.np?subject=${mailtoSubject}&body=${mailtoBody}`;
+    window.location.href = `mailto:info@zenextravels.com?subject=${mailtoSubject}&body=${mailtoBody}`;
   };
 
   const structuredData = {
@@ -113,9 +113,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Email Address</h4>
-                    <p className="text-blue-600 font-medium hover:underline cursor-pointer">
-                      info@zenextravel.com.np
-                    </p>
+                    <a href="mailto:info@zenextravels.com" className="text-blue-600 font-medium hover:underline block">
+                      info@zenextravels.com
+                    </a>
                   </div>
                 </div>
 
@@ -167,7 +167,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      placeholder="info@zenextravel.com.np" 
+                      placeholder="info@zenextravels.com" 
                       className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#e53a24]/50 focus:border-[#e53a24] transition-all"
                     />
                   </div>

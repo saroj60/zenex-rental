@@ -288,8 +288,8 @@ app.post('/api/bookings', (req, res) => {
 [EMAIL SENDING SIMULATION]
 New Booking Order Notification!
 ------------------------------------------------------------
-From: Zenex Booking System <info@zenextravel.com.np>
-To: Customer <${booking.customerDetails?.email}>, Admin <info@zenextravel.com.np>
+From: Zenex Booking System <info@zenextravels.com>
+To: Customer <${booking.customerDetails?.email}>, Admin <info@zenextravels.com>
 Subject: Booking Order Confirmation - ${booking.id}
 
 Hello ${booking.customerDetails?.firstName} ${booking.customerDetails?.lastName},

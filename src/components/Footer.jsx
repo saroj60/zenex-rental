@@ -201,8 +201,8 @@ const Footer = () => {
                 </li>
                 <li className="flex gap-2 items-center">
                   <Mail size={15} className="text-[#e53a24] shrink-0" />
-                  <a href="mailto:info@zenextravel.com.np" className="text-slate-300 hover:text-white text-xs transition-colors">
-                    info@zenextravel.com.np
+                  <a href="mailto:info@zenextravels.com" className="text-slate-300 hover:text-white text-xs transition-colors">
+                    info@zenextravels.com
                   </a>
                 </li>
                 <li className="pt-2">
