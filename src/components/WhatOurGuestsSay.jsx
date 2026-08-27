@@ -71,53 +71,30 @@ const guestReviews = [
   }
 ];
 
-const travelVideos = [
-  {
-    id: 1,
-    location: "CHITWAN · NEPAL",
-    title: "Chitwan Jungle Safari Experience",
-    description: "Witness endangered one-horned rhinos, royal Bengal tigers, and exotic bird species in their natural wildlife habitats.",
-    duration: "1:48 mins",
-    thumbnail: "https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=800",
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-safari-jeep-on-a-dirt-road-in-nature-41582-large.mp4"
-  },
-  {
-    id: 2,
-    location: "EVEREST · NEPAL",
-    title: "Everest Base Camp Helicopter Flyover",
-    description: "Experience a breathtaking aerial perspective of Mount Everest, Khumbu Glacier, and the surrounding giant Himalayan peaks.",
-    duration: "2:05 mins",
-    thumbnail: "https://images.unsplash.com/photo-1486916856992-e4db22c8df33?q=80&w=800",
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-helicopter-flying-over-snow-covered-mountains-42289-large.mp4"
-  },
-  {
-    id: 3,
-    location: "MUSTANG · NEPAL",
-    title: "Upper Mustang Off-Road Expedition",
-    description: "Journey through the ancient forbidden kingdom of Mustang, traversing barren landscapes, caves, and red cliffs.",
-    duration: "1:52 mins",
-    thumbnail: "https://images.unsplash.com/photo-1542856391-010fb87dcfed?q=80&w=800",
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-car-driving-on-a-road-in-mountainous-landscape-41584-large.mp4"
-  },
-  {
-    id: 4,
-    location: "ANNAPURNA · NEPAL",
-    title: "Annapurna Base Camp Sanctuary Trek",
-    description: "Walk inside the sanctuary of mountains, surrounded by a 360-degree wall of snow-capped Annapurna summits.",
-    duration: "1:24 mins",
-    thumbnail: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?q=80&w=800",
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-hiking-on-a-snowy-mountain-trail-at-sunset-41587-large.mp4"
-  },
-  {
-    id: 5,
-    location: "POKHARA · NEPAL",
-    title: "Pokhara Lakes & Sarangkot Sunrise",
-    description: "Soar high above Pokhara valley with panoramic mountain views and smooth landings next to Phewa Lake.",
-    duration: "1:30 mins",
-    thumbnail: "https://images.unsplash.com/photo-1552083375-1447ce886485?q=80&w=800",
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-paraglider-flying-in-a-blue-sky-over-mountains-41590-large.mp4"
+import { travelVideos } from '../data/travelVideosData';
+
+const getEmbedUrl = (url, platform) => {
+  if (!url) return '';
+  if (platform.toLowerCase() === 'youtube') {
+    let videoId = '';
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    if (match && match[2].length === 11) {
+      videoId = match[2];
+    }
+    return `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
   }
-];
+  if (platform.toLowerCase() === 'vimeo') {
+    let videoId = '';
+    const regExp = /vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/([^\/]*)\/videos\/|album\/(\d+)\/video\/|video\/|)(\d+)(?:$|\/|\?)/;
+    const match = url.match(regExp);
+    if (match && match[3]) {
+      videoId = match[3];
+    }
+    return `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+  }
+  return url;
+};
 
 const WhatOurGuestsSay = () => {
   const [testiIndex, setTestiIndex] = useState(0);
@@ -278,12 +255,22 @@ const WhatOurGuestsSay = () => {
               {/* Premium Video Card */}
               <div className="relative rounded-2xl overflow-hidden aspect-video bg-slate-900 group shadow-md border border-slate-200/40 my-auto">
                 {isPlayMode ? (
-                  <video 
-                    src={currentVideo.videoUrl} 
-                    controls 
-                    autoPlay 
-                    className="w-full h-full object-cover rounded-2xl" 
-                  />
+                  currentVideo.platform.toLowerCase() === 'direct' ? (
+                    <video 
+                      src={currentVideo.videoUrl} 
+                      controls 
+                      autoPlay 
+                      className="w-full h-full object-cover rounded-2xl" 
+                    />
+                  ) : (
+                    <iframe 
+                      src={getEmbedUrl(currentVideo.videoUrl, currentVideo.platform)} 
+                      className="w-full h-full rounded-2xl" 
+                      allow="autoplay; encrypted-media; fullscreen" 
+                      allowFullScreen 
+                      title={currentVideo.title}
+                    />
+                  )
                 ) : (
                   <>
                     <img 
@@ -309,10 +296,10 @@ const WhatOurGuestsSay = () => {
                     {/* Location Overlay details */}
                     <div className="absolute bottom-4 left-5 z-10 text-left">
                       <span className="text-[9px] font-black text-slate-300 tracking-wider uppercase block mb-1">
-                        GUEST MEMORY &bull; {currentVideo.duration}
+                        GUEST VIDEO &bull; {currentVideo.platform}
                       </span>
                       <h4 className="font-extrabold text-white text-base tracking-wide flex items-center gap-1.5">
-                        {currentVideo.location}
+                        {currentVideo.destination}
                       </h4>
                     </div>
                   </>
