@@ -12,8 +12,11 @@ const SelfDrive = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Filter out heavy duty vehicles that aren't good for self drive
-  const selfDriveVehicles = vehicles.filter(v => ['Sedan', 'SUV / 4x4', 'EV'].includes(v.type)).slice(0, 4);
+  // Filter out heavy duty vehicles that aren't good for self drive and get the 4 most recently added
+  const selfDriveVehicles = [...vehicles]
+    .reverse()
+    .filter(v => ['Sedan', 'SUV / 4x4', 'EV'].includes(v.type))
+    .slice(0, 4);
 
   const structuredData = {
     "@context": "https://schema.org",

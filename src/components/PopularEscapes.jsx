@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { useAppData } from '../context/AppDataContext';
 
 const PopularEscapes = () => {
@@ -19,8 +20,19 @@ const PopularEscapes = () => {
     }
   };
 
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  };
+
   return (
-    <section className="reveal reveal-up w-full py-16 bg-white overflow-hidden">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={sectionVariants}
+      className="w-full py-16 bg-white overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 md:px-8 mb-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
           <div>
@@ -102,7 +114,7 @@ const PopularEscapes = () => {
           scrollbar-width: none;
         }
       `}} />
-    </section>
+    </motion.section>
   );
 };
 

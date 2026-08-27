@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, CalendarCheck, Map as MapIcon, ShieldCheck } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const HowItWorks = () => {
   const steps = [
@@ -33,20 +34,38 @@ const HowItWorks = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { staggerChildren: 0.2 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.8, y: 20 },
+    visible: { opacity: 1, scale: 1, y: 0, transition: { type: 'spring', stiffness: 100 } }
+  };
+
   return (
-    <section className="reveal reveal-up py-20 bg-white">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      className="py-20 bg-white"
+    >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="text-center mb-16">
+        <motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a] mb-4">How It Works</h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-medium text-lg">Your Himalayan adventure is just four simple steps away.</p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           {/* Connecting Line for Desktop */}
           <div className="hidden lg:block absolute top-12 left-[12%] right-[12%] h-[2px] bg-gray-100 z-0"></div>
           
           {steps.map((step) => (
-            <div key={step.id} className="relative z-10 flex flex-col items-center text-center group">
+            <motion.div variants={itemVariants} key={step.id} className="relative z-10 flex flex-col items-center text-center group">
               <div className={`w-24 h-24 rounded-full flex items-center justify-center border-4 ${step.color} mb-6 bg-white shadow-sm group-hover:scale-110 transition-transform duration-300`}>
                 {step.icon}
               </div>
@@ -55,13 +74,12 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
               <p className="text-gray-500 font-medium leading-relaxed">{step.description}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
 export default HowItWorks;
-

@@ -112,7 +112,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
 
   /* ── JSX ─────────────────────────────────────────────────────────── */
   return (
-    <div className="bg-white border border-gray-200 rounded-3xl p-6 md:p-8 shadow-lg">
+    <div className={activeTab === 'cars' ? "bg-white border border-gray-200 rounded-3xl p-6 md:p-8 shadow-lg" : "w-full"}>
 
       {/* ══ Cars Tab ══════════════════════════════════════════════════ */}
       {activeTab === 'cars' && (
@@ -204,10 +204,10 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
         <div ref={searchRef} className="relative">
 
           {/* Search input */}
-          <div className={`flex items-center gap-3 bg-[#F4F6F8] rounded-2xl px-5 py-4 transition-all duration-200 ${
-            showDropdown && tourQuery ? 'ring-2 ring-[#1e3a8a]/25 shadow-md bg-white' : 'hover:bg-gray-100/80'
+          <div className={`flex items-center gap-3 rounded-2xl px-4 py-3 transition-all duration-200 border ${
+            showDropdown && tourQuery ? 'bg-white border-[#1e3a8a]/25 ring-2 ring-[#1e3a8a]/25 shadow-xl' : 'bg-transparent backdrop-blur-sm border-white/50 hover:bg-white/10'
           }`}>
-            <Search size={22} className="text-[#1e3a8a] shrink-0" />
+            <Search size={18} className={`shrink-0 transition-colors ${showDropdown && tourQuery ? 'text-[#1e3a8a]' : 'text-white/90'}`} />
             <input
               ref={inputRef}
               type="text"
@@ -215,33 +215,22 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
               onChange={(e) => { setTourQuery(e.target.value); setShowDropdown(true); }}
               onFocus={() => setShowDropdown(true)}
               placeholder="Search destinations, tours, packages…"
-              className="flex-1 bg-transparent border-none outline-none text-gray-900 font-semibold text-base placeholder:text-gray-400 placeholder:font-normal"
+              className={`flex-1 bg-transparent border-none outline-none font-semibold text-sm md:text-base placeholder:font-medium transition-colors ${
+                showDropdown && tourQuery ? 'text-gray-900 placeholder:text-gray-400' : 'text-white placeholder:text-white/80'
+              }`}
             />
             {tourQuery && (
               <button
                 onClick={() => { setTourQuery(''); setShowDropdown(false); inputRef.current?.focus(); }}
-                className="p-1.5 rounded-full hover:bg-gray-200 text-gray-400 hover:text-gray-600 transition-colors shrink-0"
+                className={`p-1.5 rounded-full transition-colors shrink-0 ${
+                  showDropdown && tourQuery ? 'hover:bg-gray-200 text-gray-400 hover:text-gray-600' : 'hover:bg-white/20 text-white/80 hover:text-white'
+                }`}
                 aria-label="Clear"
               >
                 <X size={16} />
               </button>
             )}
           </div>
-
-          {/* Quick-tag chips (shown when bar is empty) */}
-          {!tourQuery && (
-            <div className="flex flex-wrap gap-2 mt-3">
-              {['Everest Trek', 'Kathmandu Tour', 'Chitwan Safari', 'Annapurna', 'Tibet', 'Bhutan', 'Pokhara'].map(tag => (
-                <button
-                  key={tag}
-                  onClick={() => { setTourQuery(tag); setShowDropdown(true); inputRef.current?.focus(); }}
-                  className="text-xs font-semibold px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 hover:bg-[#1e3a8a] hover:text-white transition-all duration-200"
-                >
-                  {tag}
-                </button>
-              ))}
-            </div>
-          )}
 
           {/* Results dropdown */}
           {showDropdown && tourQuery && (

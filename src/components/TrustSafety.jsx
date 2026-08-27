@@ -1,12 +1,40 @@
 import React from 'react';
-import { ShieldCheck, Wrench, Headphones, Award } from 'lucide-react';
+import { ShieldCheck, Wrench, Headphones, Award, Compass, Sparkles, BadgeDollarSign, HeartHandshake } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const TrustSafety = () => {
+  const featureCards = [
+    { title: 'Expert Guides', desc: 'Certificated mountain guides with decades of terrain experience.', icon: Compass, color: 'bg-emerald-50 text-emerald-600 border-emerald-100' },
+    { title: 'Safe & Reliable', desc: '100% safety track record with robust backup support systems.', icon: ShieldCheck, color: 'bg-blue-50 text-blue-600 border-blue-100' },
+    { title: 'Customized Packages', desc: 'Tailor-made private itineraries fitting your speed and preference.', icon: Sparkles, color: 'bg-amber-50 text-amber-600 border-amber-100' },
+    { title: 'Best Value', desc: 'Competitive direct pricing without hidden agency markups.', icon: BadgeDollarSign, color: 'bg-rose-50 text-rose-600 border-rose-100' },
+    { title: '24/7 Support', desc: 'Round-the-clock emergency support line during your entire trip.', icon: Headphones, color: 'bg-purple-50 text-purple-600 border-purple-100' },
+    { title: 'Local Experience', desc: 'Genuine Sherpa culture immersion and authentic homestays.', icon: HeartHandshake, color: 'bg-teal-50 text-teal-600 border-teal-100' }
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { staggerChildren: 0.15 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 100 } }
+  };
+
   return (
-    <section className="reveal reveal-up bg-[#F4F6F8] py-20 px-4 md:px-8 border-y border-gray-200/60">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      className="bg-[#F4F6F8] py-20 px-4 md:px-8 border-y border-gray-200/60"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-[32px] font-extrabold text-[#1e3a8a] mb-4">Travel with Absolute Confidence</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#0f3493] mb-4">Why Choosing Zenex Travels</h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-medium mb-10">We exceed industry standards to ensure every mile of your journey through Nepal is safe, secure, and stress-free.</p>
           
           {/* Trust Badges */}
@@ -33,45 +61,35 @@ const TrustSafety = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          
-          <div className="bg-white px-6 py-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-            <div className="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center text-green-700 mb-6">
-              <ShieldCheck size={26} strokeWidth={2.5} />
-            </div>
-            <h3 className="font-bold text-[17px] text-gray-900 mb-3">Comprehensive Insurance</h3>
-            <p className="text-[13px] text-gray-500 font-medium leading-relaxed">Every rental includes premium collision damage waiver and third-party liability protection as standard.</p>
-          </div>
+        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {featureCards.map((feat) => {
+            const Icon = feat.icon;
+            return (
+              <motion.div 
+                variants={itemVariants}
+                key={feat.title} 
+                className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex gap-4 hover:shadow-xl hover:border-slate-200 transition-all duration-300 group"
+              >
+                <div className={`w-12 h-12 rounded-2xl border flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300 ${feat.color}`}>
+                  <Icon size={22} strokeWidth={2} />
+                </div>
+                <div className="space-y-1">
+                  <h4 className="font-bold text-slate-800 text-base">
+                    {feat.title}
+                  </h4>
+                  <p className="text-slate-500 text-xs leading-relaxed">
+                    {feat.desc}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
 
-          <div className="bg-white px-6 py-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-700 mb-6">
-              <Wrench size={26} strokeWidth={2.5} />
-            </div>
-            <h3 className="font-bold text-[17px] text-gray-900 mb-3">50-Point Inspections</h3>
-            <p className="text-[13px] text-gray-500 font-medium leading-relaxed">Our certified mechanics perform rigorous safety checks on tires, brakes, and fluids before every single dispatch.</p>
-          </div>
 
-          <div className="bg-white px-6 py-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-            <div className="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-500 mb-6">
-              <Award size={26} strokeWidth={2.5} />
-            </div>
-            <h3 className="font-bold text-[17px] text-gray-900 mb-3">Verified Expert Drivers</h3>
-            <p className="text-[13px] text-gray-500 font-medium leading-relaxed">Our chauffeurs possess extensive mountain driving experience, background checks, and valid tourist-grade licenses.</p>
-          </div>
-
-          <div className="bg-white px-6 py-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-            <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-500 mb-6">
-              <Headphones size={26} strokeWidth={2.5} />
-            </div>
-            <h3 className="font-bold text-[17px] text-gray-900 mb-3">24/7 Roadside Assist</h3>
-            <p className="text-[13px] text-gray-500 font-medium leading-relaxed">Flat tire in Mustang? Engine trouble in Chitwan? Our rapid response network covers you anywhere in Nepal.</p>
-          </div>
-
-        </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
 export default TrustSafety;
-

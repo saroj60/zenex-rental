@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { ArrowRight, Star, Clock, MapPin, Check, ChevronLeft, ChevronRight, Compass, ShieldCheck, HeartHandshake, BadgeDollarSign, Headphones, Map as MapIcon, Search, Sparkles, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { useAppData } from '../context/AppDataContext';
 
 const FeaturedPackages = () => {
@@ -105,17 +106,21 @@ const FeaturedPackages = () => {
     };
   }, []);
 
-  const featureCards = [
-    { title: 'Expert Guides', desc: 'Certificated mountain guides with decades of terrain experience.', icon: Compass, color: 'bg-emerald-50 text-emerald-600 border-emerald-100' },
-    { title: 'Safe & Reliable', desc: '100% safety track record with robust backup support systems.', icon: ShieldCheck, color: 'bg-blue-50 text-blue-600 border-blue-100' },
-    { title: 'Customized Packages', desc: 'Tailor-made private itineraries fitting your speed and preference.', icon: Sparkles, color: 'bg-amber-50 text-amber-600 border-amber-100' },
-    { title: 'Best Value', desc: 'Competitive direct pricing without hidden agency markups.', icon: BadgeDollarSign, color: 'bg-rose-50 text-rose-600 border-rose-100' },
-    { title: '24/7 Support', desc: 'Round-the-clock emergency support line during your entire trip.', icon: Headphones, color: 'bg-purple-50 text-purple-600 border-purple-100' },
-    { title: 'Local Experience', desc: 'Genuine Sherpa culture immersion and authentic homestays.', icon: HeartHandshake, color: 'bg-teal-50 text-teal-600 border-teal-100' }
-  ];
+
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  };
 
   return (
-    <section className="reveal reveal-up bg-[#ebf3fa] py-20 px-4 md:px-8 border-t border-slate-100">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={sectionVariants}
+      className="bg-[#ebf3fa] py-20 px-4 md:px-8 border-t border-slate-100"
+    >
       <div className="max-w-7xl mx-auto space-y-12">
         
         {/* SECTION 1: FEATURED TOURS */}
@@ -308,47 +313,9 @@ const FeaturedPackages = () => {
           )}
         </div>
 
-        {/* SECTION 3: PACKAGE FEATURES */}
-        <div className="space-y-8">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-600 px-3.5 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider">
-              <CheckCircle2 size={14} /> Quality Assurance
-            </div>
-            <h3 className="text-3xl md:text-4xl font-black text-[#0f3493] leading-none tracking-tight">
-              Package Features
-            </h3>
-            <p className="text-slate-500 font-medium">
-              Why thousands of global travelers choose Zenex for their Nepalese vacations.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featureCards.map((feat) => {
-              const Icon = feat.icon;
-              return (
-                <div 
-                  key={feat.title} 
-                  className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex gap-4 hover:shadow-xl hover:border-slate-200 transition-all duration-300 group"
-                >
-                  <div className={`w-12 h-12 rounded-2xl border flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300 ${feat.color}`}>
-                    <Icon size={22} strokeWidth={2} />
-                  </div>
-                  <div className="space-y-1">
-                    <h4 className="font-bold text-slate-800 text-base">
-                      {feat.title}
-                    </h4>
-                    <p className="text-slate-500 text-xs leading-relaxed">
-                      {feat.desc}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

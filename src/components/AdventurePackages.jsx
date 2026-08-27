@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Plane, Compass } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { useAppData } from '../context/AppDataContext';
 
 /* ─── Destination matching helper ────────────────────────────────── */
@@ -83,8 +84,26 @@ const AdventurePackages = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { staggerChildren: 0.15 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 60, damping: 15 } }
+  };
+
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-b from-white via-[#F4F9F6] to-white border-t border-slate-100">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      className="relative py-20 overflow-hidden bg-gradient-to-b from-white via-[#F4F9F6] to-white border-t border-slate-100"
+    >
       {/* Soft background glow */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-[#1e3a8a]/5 rounded-full blur-3xl pointer-events-none" />
@@ -111,92 +130,93 @@ const AdventurePackages = () => {
         </div>
 
         {/* Destination Editorial Grid — Fully Aligned Card Sizes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-stretch pt-2 pb-12">
+        <motion.div variants={containerVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-stretch pt-2 pb-12">
           {destinationsList.map((dest) => (
-            <Link
-              to={`/packages?destination=${dest.id}`}
-              key={dest.id}
-              className="group flex flex-col h-[380px] md:h-[420px] bg-white border border-slate-200/60 hover:border-emerald-300 rounded-2xl p-4 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 select-none cursor-pointer"
-            >
-              
-              {/* Layout Mode A: Title ABOVE Image */}
-              {dest.titleAbove ? (
-                <div className="flex flex-col h-full">
-                  <div className="pt-1 pb-3">
-                    <h3 className="text-xl md:text-2xl font-black tracking-wider text-slate-400 group-hover:text-[#0f3493] transition-colors uppercase">
-                      {dest.name}
-                    </h3>
-                    <div className="h-[1px] bg-slate-100 w-full mt-3" />
-                  </div>
-                  
-                  {/* Image Container */}
-                  <div className="relative flex-1 overflow-hidden rounded-xl bg-slate-50">
-                    <img
-                      src={dest.img}
-                      alt={dest.name}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                      loading="lazy"
-                    />
-
-                    {/* Overlap Badge */}
-                    <div className="absolute top-4 left-4 z-20">
-                      <span className="bg-[#2D6A4F] text-white text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-md">
-                        {dest.count} Packages
-                      </span>
+            <motion.div key={dest.id} variants={itemVariants}>
+              <Link
+                to={`/country/${dest.id}`}
+                className="group flex flex-col h-[380px] md:h-[420px] bg-white border border-slate-200/60 hover:border-emerald-300 rounded-2xl p-4 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 select-none cursor-pointer"
+              >
+                
+                {/* Layout Mode A: Title ABOVE Image */}
+                {dest.titleAbove ? (
+                  <div className="flex flex-col h-full">
+                    <div className="pt-1 pb-3">
+                      <h3 className="text-xl md:text-2xl font-black tracking-wider text-slate-400 group-hover:text-[#0f3493] transition-colors uppercase">
+                        {dest.name}
+                      </h3>
+                      <div className="h-[1px] bg-slate-100 w-full mt-3" />
                     </div>
+                    
+                    {/* Image Container */}
+                    <div className="relative flex-1 overflow-hidden rounded-xl bg-slate-50">
+                      <img
+                        src={dest.img}
+                        alt={dest.name}
+                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        loading="lazy"
+                      />
 
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
-                      <div className="bg-white/90 backdrop-blur-sm text-slate-800 text-[10px] md:text-xs font-extrabold tracking-widest uppercase px-4 py-2 rounded-xl shadow-lg border border-white/20 opacity-0 transform translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center gap-1.5">
-                        View Packages
-                        <ArrowRight size={12} className="text-[#1e3a8a]" />
+                      {/* Overlap Badge */}
+                      <div className="absolute top-4 left-4 z-20">
+                        <span className="bg-[#2D6A4F] text-white text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-md">
+                          {dest.count} Packages
+                        </span>
+                      </div>
+
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+                        <div className="bg-white/90 backdrop-blur-sm text-slate-800 text-[10px] md:text-xs font-extrabold tracking-widest uppercase px-4 py-2 rounded-xl shadow-lg border border-white/20 opacity-0 transform translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center gap-1.5">
+                          View Packages
+                          <ArrowRight size={12} className="text-[#1e3a8a]" />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ) : (
-                /* Layout Mode B: Title BELOW Image */
-                <div className="flex flex-col h-full">
-                  {/* Image Container */}
-                  <div className="relative flex-1 overflow-hidden rounded-xl bg-slate-50">
-                    <img
-                      src={dest.img}
-                      alt={dest.name}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                      loading="lazy"
-                    />
+                ) : (
+                  /* Layout Mode B: Title BELOW Image */
+                  <div className="flex flex-col h-full">
+                    {/* Image Container */}
+                    <div className="relative flex-1 overflow-hidden rounded-xl bg-slate-50">
+                      <img
+                        src={dest.img}
+                        alt={dest.name}
+                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        loading="lazy"
+                      />
 
-                    {/* Overlap Badge */}
-                    <div className="absolute bottom-4 left-4 z-20">
-                      <span className="bg-[#2D6A4F] text-white text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-md">
-                        {dest.count} Packages
-                      </span>
-                    </div>
+                      {/* Overlap Badge */}
+                      <div className="absolute bottom-4 left-4 z-20">
+                        <span className="bg-[#2D6A4F] text-white text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-md">
+                          {dest.count} Packages
+                        </span>
+                      </div>
 
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
-                      <div className="bg-white/90 backdrop-blur-sm text-slate-800 text-[10px] md:text-xs font-extrabold tracking-widest uppercase px-4 py-2 rounded-xl shadow-lg border border-white/20 opacity-0 transform translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center gap-1.5">
-                        View Packages
-                        <ArrowRight size={12} className="text-[#1e3a8a]" />
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+                        <div className="bg-white/90 backdrop-blur-sm text-slate-800 text-[10px] md:text-xs font-extrabold tracking-widest uppercase px-4 py-2 rounded-xl shadow-lg border border-white/20 opacity-0 transform translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 flex items-center gap-1.5">
+                          View Packages
+                          <ArrowRight size={12} className="text-[#1e3a8a]" />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="pt-4 pb-1">
-                    <div className="h-[1px] bg-slate-100 w-full mb-3" />
-                    <h3 className="text-xl md:text-2xl font-black tracking-wider text-slate-400 group-hover:text-[#0f3493] transition-colors uppercase">
-                      {dest.name}
-                    </h3>
+                    <div className="pt-4 pb-1">
+                      <div className="h-[1px] bg-slate-100 w-full mb-3" />
+                      <h3 className="text-xl md:text-2xl font-black tracking-wider text-slate-400 group-hover:text-[#0f3493] transition-colors uppercase">
+                        {dest.name}
+                      </h3>
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
-            </Link>
+              </Link>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

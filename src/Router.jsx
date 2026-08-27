@@ -67,6 +67,7 @@ import TrekDetail from './pages/TrekDetail';
 import TrekRegion from './pages/TrekRegion';
 import RegionDetail from './pages/RegionDetail';
 import TourTripDetail from './pages/TourTripDetail';
+import CountryPackages from './pages/CountryPackages';
 
 const router = createBrowserRouter([
   {
@@ -115,6 +116,7 @@ const router = createBrowserRouter([
       { path: 'treks/region/:region', element: <TrekRegion /> },
       { path: 'tour-trip/:slug', element: <TourTripDetail /> },
       { path: 'tour/:slug', element: <TourTripDetail /> },
+      { path: 'country/:countryId', element: <CountryPackages /> },
     ],
   },
   {

@@ -789,6 +789,7 @@ export const AppDataProvider = ({ children }) => {
       galleryImages, addGalleryImage, deleteGalleryImage,
       tourTrips, addTourTrip, updateTourTrip, deleteTourTrip,
       regions, addRegion, updateRegion, deleteRegion,
+      testimonials,
       uploadImage,
       loading, error
     }}>

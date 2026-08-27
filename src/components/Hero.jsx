@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Star, ShieldCheck, MapPin, Calendar, Users, Phone, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import SearchWidget from './SearchWidget';
 
 const heroImages = [
@@ -11,7 +12,6 @@ const heroImages = [
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [activeTab, setActiveTab] = useState('tours'); // Default to tours
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -19,56 +19,72 @@ const Hero = () => {
     }, 2000);
     return () => clearInterval(timer);
   }, []);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { staggerChildren: 0.2, delayChildren: 0.1 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 100, damping: 20 } }
+  };
+
   return (
-    <>
-      <section className="relative min-h-[92vh] md:min-h-[640px] lg:min-h-[720px] w-full flex flex-col pt-24 md:pt-32 pb-24 md:pb-36 px-4 md:px-8 border-b border-gray-150">
-        <div className="absolute inset-0 z-0 bg-black">
-          {heroImages.map((img, idx) => (
-            <img
-              key={idx}
-              alt="Zenex Fleet in the Himalayas"
-              className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out ${idx === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
-              src={img}
-            />
-          ))}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 md:from-black/40 via-black/30 md:via-black/20 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 md:via-transparent to-transparent"></div>
-        </div>
-        
-        <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col justify-center flex-1 mb-12 md:mb-16">
-          <div className="max-w-xl">
+    <section className="relative min-h-[85vh] md:min-h-[600px] lg:min-h-[680px] w-full flex flex-col pt-24 md:pt-32 pb-4 md:pb-6 px-4 md:px-8 border-b border-gray-150 overflow-hidden">
+      <div className="absolute inset-0 z-0 bg-black">
+        {heroImages.map((img, idx) => (
+          <motion.img
+            key={idx}
+            initial={{ scale: 1.1 }}
+            animate={{ scale: idx === currentImageIndex ? 1 : 1.1, opacity: idx === currentImageIndex ? 1 : 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            alt="Zenex Fleet in the Himalayas"
+            className={`absolute inset-0 w-full h-full object-cover object-center`}
+            src={img}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 md:from-black/40 via-black/30 md:via-black/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 md:via-transparent to-transparent"></div>
+      </div>
+      
+      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col justify-end flex-1 pb-4 md:pb-6">
+        <motion.div 
+          className="w-full flex flex-col items-start text-left"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
 
-            
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight mb-2.5 md:mb-3.5 drop-shadow-lg">
-              Premium Travels, Tours &<br className="hidden sm:block"/> Car Rental in Nepal
-            </h1>
+          <motion.h1 variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold text-white leading-tight mb-4 drop-shadow-lg max-w-2xl">
+            Premium Travels, Tours &<br className="hidden sm:block"/> Car Rental in Nepal
+          </motion.h1>
+          
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-start gap-2.5 mb-5 md:mb-6 w-full">
+            <Link to="/packages" className="w-full sm:w-auto text-white px-4 py-2 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 bg-[#1e3a8a] hover:bg-[#152c6e] text-[11px] md:text-xs">
+              Explore Packages
+              <div className="bg-white rounded-full p-0.5 text-[#1e3a8a]">
+                <ArrowRight size={10} strokeWidth={3} />
+              </div>
+            </Link>
+            <Link to="/vehicles" className="w-full sm:w-auto text-white border border-white/60 px-4 py-1.5 rounded-lg font-bold flex items-center justify-center gap-1.5 hover:bg-white/10 transition-colors text-[11px] md:text-xs backdrop-blur-sm">
+              Rent a Car
+            </Link>
+            <a href="tel:+9779767476521" className="w-full sm:w-auto text-white px-4 py-2 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-colors shadow-md bg-[#e53a24] hover:bg-[#d04b08] text-[11px] md:text-xs">
+              <Phone size={12} fill="currentColor" /> Call Now
+            </a>
+          </motion.div>
 
-            
-            <div className="flex flex-col sm:flex-row items-center gap-2.5 md:gap-3 mb-3.5 md:mb-4.5">
-              <Link to="/packages" className="w-full sm:w-auto text-white px-4 md:px-5 py-2 md:py-2.5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 bg-[#1e3a8a] hover:bg-[#152c6e] text-xs">
-                Explore Packages
-                <div className="bg-white rounded-full p-0.5 text-[#1e3a8a]">
-                  <ArrowRight size={12} strokeWidth={3} />
-                </div>
-              </Link>
-              <Link to="/vehicles" className="w-full sm:w-auto text-white border-2 border-white/60 px-4 md:px-5 py-1.5 md:py-2 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white/10 transition-colors text-xs">
-                Rent a Car
-              </Link>
-              <a href="tel:+9779767476521" className="w-full sm:w-auto text-white px-4 md:px-5 py-2 md:py-2.5 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors shadow-md bg-[#e53a24] hover:bg-[#d04b08] text-xs">
-                <Phone size={14} fill="currentColor" /> Call Now
-              </a>
-            </div>
+          <motion.div variants={itemVariants} className="w-full md:w-[70%] max-w-[480px]">
+            <SearchWidget activeTab="tours" />
+          </motion.div>
 
-          </div>
-        </div>
-
-        {/* Overlapping Floating Search Widget */}
-        <div className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-20 w-full max-w-5xl mx-auto px-4 md:px-8">
-          <SearchWidget activeTab="tours" />
-        </div>
- 
-      </section>
-    </>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 

@@ -2,12 +2,21 @@ import React, { useEffect } from 'react';
 import SEO from '../components/SEO';
 import { Heart, Sparkles, Clock, Camera } from 'lucide-react';
 import InlineEnquiryForm from '../components/InlineEnquiryForm';
+import { Link } from 'react-router-dom';
+import { useAppData } from '../context/AppDataContext';
 
 const WeddingCar = () => {
+  const { vehicles } = useAppData();
   
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Filter premium vehicles suitable for weddings and get the most recent ones
+  const weddingVehicles = [...vehicles]
+    .reverse()
+    .filter(v => ['Sedan', 'SUV / 4x4', 'Luxury'].includes(v.type))
+    .slice(0, 4);
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -111,22 +120,21 @@ const WeddingCar = () => {
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
               <h2 className="text-3xl font-bold text-[#0f3493] mb-6">Popular Wedding Vehicles</h2>
               <div className="space-y-6">
-                <div className="flex flex-col md:flex-row gap-6 items-center bg-gray-50 p-4 rounded-2xl">
-                  <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?q=80&w=1169&auto=format&fit=crop" alt="Luxury Sedan" className="w-full md:w-48 h-32 object-cover rounded-xl" />
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Luxury Sedans (Toyota Corolla / Hyundai Elantra)</h3>
-                    <p className="text-gray-600 mb-2">The classic choice for the bride and groom. Elegant, comfortable, and sophisticated.</p>
-                    <p className="text-[#e53a24] font-bold">From NPR 15,000 / day (including decoration)</p>
+                {weddingVehicles.map(v => (
+                  <div key={v.id} className="flex flex-col md:flex-row gap-6 items-center bg-gray-50 p-4 rounded-2xl group">
+                    <img src={v.img} alt={v.name} className="w-full md:w-48 h-32 object-cover rounded-xl" />
+                    <div className="flex-1 w-full">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{v.name} ({v.type})</h3>
+                      <p className="text-gray-600 mb-2">{v.seats} Seater • AC • Excellent Condition</p>
+                      <div className="flex justify-between items-center mt-4">
+                        <p className="text-[#e53a24] font-bold">NPR {v.price} / day (base price)</p>
+                        <Link to={`/vehicles/${v.id}?driver=included`} className="text-sm font-bold text-[#e53a24] hover:underline flex items-center gap-1">
+                          Book Now <span className="text-[10px]">→</span>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-col md:flex-row gap-6 items-center bg-gray-50 p-4 rounded-2xl">
-                  <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1170&auto=format&fit=crop" alt="Premium SUV" className="w-full md:w-48 h-32 object-cover rounded-xl" />
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Premium SUVs (Hyundai Creta / Kia Sportage)</h3>
-                    <p className="text-gray-600 mb-2">A bold and modern statement, providing extra space and an elevated view.</p>
-                    <p className="text-[#e53a24] font-bold">From NPR 18,000 / day (including decoration)</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

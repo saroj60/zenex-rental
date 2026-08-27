@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Quote, CheckCircle2 } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { useAppData } from '../context/AppDataContext';
 
 const Testimonials = () => {
@@ -28,8 +29,26 @@ const Testimonials = () => {
     }))
   };
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { staggerChildren: 0.15 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 80, damping: 20 } }
+  };
+
   return (
-    <section className="reveal reveal-up px-4 md:px-8 max-w-7xl mx-auto py-16">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      className="px-4 md:px-8 max-w-7xl mx-auto py-16"
+    >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
         <div>
@@ -59,9 +78,9 @@ const Testimonials = () => {
         </div>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {(testimonials || []).map((t, idx) => (
-          <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative group hover:shadow-lg transition-shadow duration-300">
+          <motion.div variants={itemVariants} key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative group hover:shadow-lg transition-shadow duration-300">
             <Quote className="absolute top-6 right-6 text-gray-100 group-hover:text-blue-50 transition-colors duration-300" size={48} />
             
             <div className="flex gap-1 mb-6 relative z-10">
@@ -84,12 +103,12 @@ const Testimonials = () => {
                 <p className="text-[13px] font-bold text-[#e53a24] mt-0.5">{t.trip}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
       
 
-    </section>
+    </motion.section>
   );
 };
 

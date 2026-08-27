@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-b from-[#071624] via-[#091f33] to-[#040e17] w-full mt-auto pt-20 pb-28 md:pb-12 border-t border-slate-800/80 overflow-hidden">
+    <footer className="relative bg-gradient-to-b from-[#071624] via-[#091f33] to-[#040e17] w-full mt-auto pt-10 pb-20 md:pb-4 border-t border-slate-800/80 overflow-hidden">
       {/* Background Decorative Glows */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#e53a24]/5 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#1e3a8a]/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#e53a24]/40 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-0">
           
           {/* Logo & Intro Section */}
           <div className="col-span-1 md:col-span-4 space-y-6">
@@ -241,7 +241,7 @@ const Footer = () => {
         </div>
         
         {/* Associations / Accreditation Banner */}
-        <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-4">
+        <div className="flex flex-col items-center justify-center gap-2 mb-4 mt-0">
           <p className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest">Associations & Partners</p>
           <div className="bg-white/95 rounded-xl p-2 md:p-2.5 inline-flex justify-center items-center border border-slate-700/50 shadow-sm max-w-[280px] sm:max-w-xs md:max-w-sm">
             <img 
@@ -253,7 +253,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom Bar */}
-        <div className="border-t border-slate-800/80 pt-8 mt-4 flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div className="border-t border-slate-800/80 pt-4 mt-0 flex flex-col lg:flex-row items-center justify-between gap-6">
           <p className="text-slate-400 text-xs text-center lg:text-left">
             &copy; {new Date().getFullYear()} <span className="text-white font-semibold">Zenex Travels and Tours</span>. All rights reserved.
           </p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight, Sparkles } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { useBlogContext } from '../context/BlogContext';
 
 const STATIC_FALLBACK_BLOGS = [
@@ -39,8 +40,26 @@ const LatestBlogs = () => {
   // Use loaded blogs, fallback if empty
   const displayBlogs = (blogs && blogs.length > 0) ? blogs.slice(0, 3) : STATIC_FALLBACK_BLOGS;
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { staggerChildren: 0.15 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 80, damping: 20 } }
+  };
+
   return (
-    <section className="reveal reveal-up py-20 px-4 md:px-8 bg-white border-t border-slate-100">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      className="py-20 px-4 md:px-8 bg-white border-t border-slate-100"
+    >
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
@@ -68,61 +87,62 @@ const LatestBlogs = () => {
         </div>
 
         {/* Blog Post Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayBlogs.map((blog) => (
-            <Link 
-              to={`/blogs/${blog.id}`} 
-              key={blog.id} 
-              className="bg-white rounded-3xl border border-slate-100 flex flex-col group hover:shadow-2xl hover:shadow-slate-200/60 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
-            >
-              {/* Cover Image */}
-              <div className="relative h-56 md:h-60 overflow-hidden bg-slate-50 shrink-0">
-                <img 
-                  src={blog.coverImage || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800'} 
-                  alt={blog.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800'; }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                {blog.category && (
-                  <span className="absolute top-4 right-4 bg-[#0f3493] text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-md z-10">
-                    {blog.category}
-                  </span>
-                )}
-              </div>
-
-              {/* Text Info */}
-              <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-lg md:text-xl font-bold text-slate-800 group-hover:text-[#e53a24] transition-colors leading-snug mb-3 line-clamp-2">
-                  {blog.title}
-                </h3>
-                
-                <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow font-medium font-body-md">
-                  {blog.content}
-                </p>
-
-                {/* Footer Metadata */}
-                <div className="mt-auto pt-4 flex items-center justify-between border-t border-slate-50 text-xs text-slate-400 font-semibold uppercase tracking-wider">
-                  <div className="flex items-center gap-1.5">
-                    <User size={13} className="text-[#e53a24]" />
-                    <span className="truncate max-w-[120px]">{blog.author || "Zenex Team"}</span>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <Calendar size={13} className="text-[#e53a24]" />
-                    <span>
-                      {blog.date 
-                        ? new Date(blog.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) 
-                        : "Aug 2026"}
+            <motion.div variants={itemVariants} key={blog.id} className="flex">
+              <Link 
+                to={`/blogs/${blog.id}`} 
+                className="w-full bg-white rounded-3xl border border-slate-100 flex flex-col group hover:shadow-2xl hover:shadow-slate-200/60 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
+              >
+                {/* Cover Image */}
+                <div className="relative h-56 md:h-60 overflow-hidden bg-slate-50 shrink-0">
+                  <img 
+                    src={blog.coverImage || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800'} 
+                    alt={blog.title} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800'; }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  {blog.category && (
+                    <span className="absolute top-4 right-4 bg-[#0f3493] text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-md z-10">
+                      {blog.category}
                     </span>
+                  )}
+                </div>
+
+                {/* Text Info */}
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-lg md:text-xl font-bold text-slate-800 group-hover:text-[#e53a24] transition-colors leading-snug mb-3 line-clamp-2">
+                    {blog.title}
+                  </h3>
+                  
+                  <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow font-medium font-body-md">
+                    {blog.content}
+                  </p>
+
+                  {/* Footer Metadata */}
+                  <div className="mt-auto pt-4 flex items-center justify-between border-t border-slate-50 text-xs text-slate-400 font-semibold uppercase tracking-wider">
+                    <div className="flex items-center gap-1.5">
+                      <User size={13} className="text-[#e53a24]" />
+                      <span className="truncate max-w-[120px]">{blog.author || "Zenex Team"}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <Calendar size={13} className="text-[#e53a24]" />
+                      <span>
+                        {blog.date 
+                          ? new Date(blog.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) 
+                          : "Aug 2026"}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

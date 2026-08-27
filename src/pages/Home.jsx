@@ -1,7 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
-import Intro from '../components/Intro';
 import Fleet from '../components/Fleet';
 import PopularEscapes from '../components/PopularEscapes';
 
@@ -51,14 +50,13 @@ const Home = () => {
       <Hero />
       <FeaturedPackages />
       <AdventurePackages />
-      <Intro />
       <Fleet />
       <PopularEscapes />
-      <TrustSafety />
       <HowItWorks />
       <Testimonials />
       <FAQ />
       <LatestBlogs />
+      <TrustSafety />
       <Gallery />
     </>
   );
