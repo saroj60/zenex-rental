@@ -1,6 +1,5 @@
 import React from 'react';
 import { useAppData } from '../context/AppDataContext';
-import { Image } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Gallery = () => {
@@ -56,16 +55,6 @@ const Gallery = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
-                
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-                  <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                    <span className="text-white font-bold text-lg md:text-xl drop-shadow-md flex items-center gap-2">
-                      <Image size={18} className="text-white/80" />
-                      {img.title || 'Beautiful Destination'}
-                    </span>
-                  </div>
-                </div>
               </motion.div>
             );
           })}
