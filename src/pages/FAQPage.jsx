@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import SEO from '../components/SEO';
-import FAQ from '../components/FAQ';
+import FAQAccordion from '../components/FAQAccordion';
 
 const FAQPage = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -40,7 +40,7 @@ const FAQPage = () => {
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#0a2f4c] mb-6 tracking-tight">Support & FAQ</h1>
         <p className="text-lg text-gray-600 font-medium">Have questions? We're here to help you plan the perfect trip to Nepal.</p>
       </div>
-      <FAQ />
+      <FAQAccordion />
     </div>
   );
 };
