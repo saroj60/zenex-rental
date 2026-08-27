@@ -101,12 +101,33 @@ const WhatOurGuestsSay = () => {
   const [videoIndex, setVideoIndex] = useState(0);
   const [isPlayMode, setIsPlayMode] = useState(false);
 
+  const findRelatedVideoIndex = (testimonial) => {
+    if (!testimonial || !testimonial.destination) return -1;
+    const destLower = testimonial.destination.toLowerCase();
+    return travelVideos.findIndex(video => {
+      const cleanVideoDest = video.destination.split('·')[0].trim().toLowerCase();
+      return destLower.includes(cleanVideoDest) || cleanVideoDest.includes(destLower);
+    });
+  };
+
+  const changeTestimonial = (newIndex) => {
+    setTestiIndex(newIndex);
+    const nextTesti = guestReviews[newIndex];
+    const matchedIndex = findRelatedVideoIndex(nextTesti);
+    if (matchedIndex !== -1) {
+      setVideoIndex(matchedIndex);
+      setIsPlayMode(false);
+    }
+  };
+
   const handleNextTesti = () => {
-    setTestiIndex((prev) => (prev + 1) % guestReviews.length);
+    const nextIndex = (testiIndex + 1) % guestReviews.length;
+    changeTestimonial(nextIndex);
   };
 
   const handlePrevTesti = () => {
-    setTestiIndex((prev) => (prev - 1 + guestReviews.length) % guestReviews.length);
+    const prevIndex = (testiIndex - 1 + guestReviews.length) % guestReviews.length;
+    changeTestimonial(prevIndex);
   };
 
   const handleNextVideo = () => {
