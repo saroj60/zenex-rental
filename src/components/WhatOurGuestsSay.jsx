@@ -187,7 +187,7 @@ const WhatOurGuestsSay = () => {
       
       {/* Decorative Himalayan Outline detail */}
       <div className="absolute top-10 right-10 w-24 h-24 opacity-[0.015] pointer-events-none">
-        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 100 100" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
           <path d="M10 80 L35 45 L50 60 L75 30 L90 80 Z" fill="#142B5F" />
         </svg>
       </div>
@@ -221,7 +221,7 @@ const WhatOurGuestsSay = () => {
               <div className="flex-1 flex flex-col justify-center my-4">
                 
                 {/* Subtle Star Treatment */}
-                <div className="flex gap-1 mb-4">
+                <div className="flex gap-1 mb-4" aria-label={`Rating: ${currentReview.rating} out of 5 stars`}>
                   {[...Array(currentReview.rating)].map((_, i) => (
                     <Star key={i} size={16} className="fill-[#E6A23C] text-[#E6A23C]" />
                   ))}
@@ -238,7 +238,7 @@ const WhatOurGuestsSay = () => {
                 {/* Elegant Guest Profile */}
                 <div className="flex items-center gap-3 md:gap-4 mt-auto pt-2">
                   <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border border-slate-100 shadow-sm shrink-0 bg-slate-50">
-                    <img src={currentReview.avatar} alt={currentReview.name} className="w-full h-full object-cover" />
+                    <img src={currentReview.avatar} alt={`${currentReview.name} avatar`} className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h4 className="font-extrabold text-[#142B5F] text-sm md:text-[15px] flex items-center gap-1.5">
@@ -273,7 +273,7 @@ const WhatOurGuestsSay = () => {
                       <span className="cursor-default">Google Reviews</span>
                     </div>
                     {/* Desktop View All link (hidden on mobile) */}
-                    <Link to="/guest-reviews" className="hidden lg:inline-flex text-[#0F9F9A] hover:text-[#0b7e7a] text-[10px] font-bold tracking-wide items-center gap-0.5 mt-0.5 transition-colors duration-300">
+                    <Link to="/guest-reviews" className="hidden lg:inline-flex text-[#0F9F9A] hover:text-[#0b7e7a] text-[10px] font-bold tracking-wide items-center gap-0.5 mt-0.5 transition-colors duration-300 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none rounded">
                       View All Guest Reviews &rarr;
                     </Link>
                   </div>
@@ -283,19 +283,19 @@ const WhatOurGuestsSay = () => {
                 <div className="flex items-center justify-center gap-4 shrink-0 w-full sm:w-auto mt-2 sm:mt-0">
                   <button 
                     onClick={handlePrevTesti}
-                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
                     aria-label="Previous Review"
                   >
                     <ArrowLeft size={16} />
                   </button>
 
-                  <span className="text-[10px] md:text-[11px] font-bold text-[#142B5F] min-w-[40px] text-center tracking-widest">
+                  <span className="text-[10px] md:text-[11px] font-bold text-[#142B5F] min-w-[40px] text-center tracking-widest" aria-live="polite">
                     {String(currentReview.id).padStart(2, '0')} / {String(guestReviews.length).padStart(2, '0')}
                   </span>
 
                   <button 
                     onClick={handleNextTesti}
-                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
                     aria-label="Next Review"
                   >
                     <ArrowRight size={16} />
@@ -360,7 +360,8 @@ const WhatOurGuestsSay = () => {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <button 
                         onClick={() => setIsPlayMode(true)}
-                        className="w-14 h-14 rounded-full bg-[#0F9F9A] text-white flex items-center justify-center shadow-lg hover:bg-[#0b7e7a] transition-all duration-300 hover:scale-105 active:scale-95 group/play z-10 relative"
+                        className="w-14 h-14 rounded-full bg-[#0F9F9A] text-white flex items-center justify-center shadow-lg hover:bg-[#0b7e7a] transition-all duration-300 hover:scale-105 active:scale-95 group/play z-10 relative focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
+                        aria-label={`Play video: ${currentVideo.title}`}
                       >
                         <span className="absolute inset-0 rounded-full bg-[#0F9F9A]/30 animate-ping pointer-events-none scale-105"></span>
                         <Play size={18} className="fill-white translate-x-0.5" />
@@ -391,19 +392,19 @@ const WhatOurGuestsSay = () => {
                 <div className="flex items-center gap-4 shrink-0 w-full sm:w-auto mt-2 sm:mt-0 justify-center">
                   <button 
                     onClick={handlePrevVideo}
-                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
                     aria-label="Previous Video"
                   >
                     <ArrowLeft size={16} />
                   </button>
                   
-                  <span className="text-[10px] md:text-[11px] font-bold text-[#142B5F] min-w-[35px] text-center tracking-widest">
+                  <span className="text-[10px] md:text-[11px] font-bold text-[#142B5F] min-w-[35px] text-center tracking-widest" aria-live="polite">
                     {String(currentVideo.id).padStart(2, '0')} / {String(travelVideos.length).padStart(2, '0')}
                   </span>
 
                   <button 
                     onClick={handleNextVideo}
-                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
                     aria-label="Next Video"
                   >
                     <ArrowRight size={16} />
@@ -419,7 +420,7 @@ const WhatOurGuestsSay = () => {
           <div className="block lg:hidden text-center mt-8 pt-4 border-t border-slate-100">
             <Link 
               to="/guest-reviews" 
-              className="inline-flex items-center justify-center gap-1 text-[#0F9F9A] hover:text-[#0b7e7a] font-extrabold text-sm py-2 px-4 transition-colors duration-300"
+              className="inline-flex items-center justify-center gap-1 text-[#0F9F9A] hover:text-[#0b7e7a] font-extrabold text-sm py-2 px-4 transition-colors duration-300 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none rounded"
             >
               View All Guest Reviews &rarr;
             </Link>
@@ -435,7 +436,7 @@ const WhatOurGuestsSay = () => {
             </span>
             <Link 
               to="/packages"
-              className="inline-flex items-center gap-1.5 bg-[#142B5F] hover:bg-[#0e1e42] text-white font-bold text-xs px-5 py-3.5 rounded-[12px] shadow-sm hover:shadow transition-all duration-300 shrink-0"
+              className="inline-flex items-center gap-1.5 bg-[#142B5F] hover:bg-[#0e1e42] text-white font-bold text-xs px-5 py-3.5 rounded-[12px] shadow-sm hover:shadow transition-all duration-300 shrink-0 focus:ring-2 focus:ring-[#142B5F] focus:ring-offset-2 focus:outline-none"
             >
               Explore Packages
               <ArrowRight size={14} />
