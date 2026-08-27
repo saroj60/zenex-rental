@@ -71,10 +71,10 @@ const Header = () => {
             if (window.location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' });
           }}>Home</Link>
           
-          <Link to="/destinations" className={getLinkClass('/destinations')}>Destinations</Link>
           <Link to="/treks" className={getLinkClass('/treks')}>Treks</Link>
           <Link to="/tours" className={getLinkClass('/tours')}>Tours</Link>
           <Link to="/vehicles" className={getLinkClass('/vehicles')}>Vehicles</Link>
+          <Link to="/destinations" className={getLinkClass('/destinations')}>Destinations</Link>
           <Link to="/blogs" className={getLinkClass('/blogs')}>Blogs</Link>
           <Link to="/about" className={getLinkClass('/about')}>About</Link>
           <Link to="/contact" className={getLinkClass('/contact')}>Contact</Link>
@@ -185,10 +185,10 @@ const Header = () => {
               if (window.location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' });
             }}>Home</Link>
             
-            <Link to="/destinations" className={getMobileLinkClass('/destinations')} onClick={() => setIsMobileMenuOpen(false)}>Destinations</Link>
             <Link to="/treks" className={getMobileLinkClass('/treks')} onClick={() => setIsMobileMenuOpen(false)}>Treks</Link>
             <Link to="/tours" className={getMobileLinkClass('/tours')} onClick={() => setIsMobileMenuOpen(false)}>Tours</Link>
             <Link to="/vehicles" className={getMobileLinkClass('/vehicles')} onClick={() => setIsMobileMenuOpen(false)}>Vehicles</Link>
+            <Link to="/destinations" className={getMobileLinkClass('/destinations')} onClick={() => setIsMobileMenuOpen(false)}>Destinations</Link>
             <Link to="/blogs" className={getMobileLinkClass('/blogs')} onClick={() => setIsMobileMenuOpen(false)}>Blogs</Link>
             <Link to="/about" className={getMobileLinkClass('/about')} onClick={() => setIsMobileMenuOpen(false)}>About</Link>
             <Link to="/contact" className={getMobileLinkClass('/contact')} onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
