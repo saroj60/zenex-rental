@@ -9,6 +9,7 @@ import {
 import { useAppData } from '../context/AppDataContext';
 import SEO from '../components/SEO';
 import html2pdf from 'html2pdf.js';
+import TrustReviewBadges from '../components/TrustReviewBadges';
 
 const TrekDetail = () => {
   const { id } = useParams();
@@ -295,19 +296,46 @@ const TrekDetail = () => {
         description={trek.description}
       />
 
-      {/* Hero Section (Clean Image Banner) */}
-      <div className="relative h-[75vh] min-h-[550px] w-full overflow-hidden bg-gray-900">
+      {/* Hero Section (Clean Image Banner / Flex Accordion Gallery) */}
+      <div className="relative h-[75vh] min-h-[550px] w-full overflow-hidden bg-gray-900 p-2 md:p-3">
         {(() => {
-          const images = trek.gallery?.length ? trek.gallery : [trek.image || '/images/trek.png'];
-          return images.map((img, idx) => (
-            <div 
-              key={idx}
-              className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out ${idx === currentImageIndex ? 'opacity-85' : 'opacity-0'}`}
-              style={{ backgroundImage: `url("${img}")` }}
-            />
-          ));
+          const images = [];
+          if (trek.image) images.push(trek.image);
+          if (trek.gallery && trek.gallery.length > 0) {
+            trek.gallery.forEach(img => {
+              if (!images.includes(img)) images.push(img);
+            });
+          }
+          const displayImages = images.length > 0 ? images : ['/images/trek.png'];
+
+          if (displayImages.length === 1) {
+            return (
+              <div 
+                className="absolute inset-0 w-full h-full bg-cover bg-center opacity-85"
+                style={{ backgroundImage: `url("${displayImages[0]}")` }}
+              />
+            );
+          }
+
+          // Multiple images: render side-by-side flex accordion panels
+          return (
+            <div className="flex h-full w-full gap-2 md:gap-3 relative z-0">
+              {displayImages.slice(0, 4).map((img, idx) => (
+                <div 
+                  key={idx}
+                  className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-1 hover:flex-[3] group"
+                >
+                  <div 
+                    className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
+                    style={{ backgroundImage: `url("${img}")` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
+                </div>
+              ))}
+            </div>
+          );
         })()}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none z-10" />
       </div>
 
       {/* Trek Header details below Hero */}
@@ -317,7 +345,8 @@ const TrekDetail = () => {
             <ArrowLeft size={14} /> Back to Treks
           </Link>
           
-          <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 leading-tight tracking-tight">{trek.title}</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 leading-tight tracking-tight">{trek.title}</h1>
+          <TrustReviewBadges title={trek.title} />
           
           <div className="flex flex-wrap items-center gap-6 text-slate-600">
             {trek.rating && (

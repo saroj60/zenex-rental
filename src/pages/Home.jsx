@@ -10,6 +10,7 @@ import AdventurePackages from '../components/AdventurePackages';
 import FeaturedPackages from '../components/FeaturedPackages';
 import Gallery from '../components/Gallery';
 import WhatOurGuestsSay from '../components/WhatOurGuestsSay';
+import FAQSection from '../components/FAQSection';
 import LatestBlogs from '../components/LatestBlogs';
 
 
@@ -51,6 +52,7 @@ const Home = () => {
       <Fleet />
       <PopularEscapes />
       <WhatOurGuestsSay />
+      <FAQSection />
       <LatestBlogs />
       <TrustSafety />
       <Gallery />

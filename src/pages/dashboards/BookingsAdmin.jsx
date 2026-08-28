@@ -235,6 +235,47 @@ const BookingsAdmin = () => {
                       <option value="Cancelled">Cancelled</option>
                     </select>
                   </div>
+
+                  {/* Customer Contact Details & Add-ons (Read-only reference for admin) */}
+                  {(currentBooking.customerDetails || (currentBooking.selectedAddons && currentBooking.selectedAddons.length > 0)) && (
+                    <div className="col-span-2 border-t border-gray-100 pt-4 mt-2 space-y-3">
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-himalayan-blue">Customer & Trip Details</h4>
+                      
+                      {currentBooking.customerDetails && (
+                        <div className="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-lg border border-slate-100">
+                          <div><span className="font-semibold text-slate-500">Email:</span> <span className="text-slate-800 font-medium">{currentBooking.customerDetails.email || '-'}</span></div>
+                          <div><span className="font-semibold text-slate-500">Phone:</span> <span className="text-slate-800 font-medium">{currentBooking.customerDetails.phone || '-'}</span></div>
+                          <div><span className="font-semibold text-slate-500">WhatsApp:</span> <span className="text-slate-800 font-medium">{currentBooking.customerDetails.whatsapp || '-'}</span></div>
+                          <div><span className="font-semibold text-slate-500">Country:</span> <span className="text-slate-800 font-medium">{currentBooking.customerDetails.country || '-'}</span></div>
+                          {currentBooking.customerDetails.extraRequirements && (
+                            <div className="col-span-2 mt-1">
+                              <span className="font-semibold text-slate-500 block">Extra Requirements:</span> 
+                              <p className="text-slate-700 italic bg-white p-2 rounded border mt-0.5 whitespace-pre-wrap">{currentBooking.customerDetails.extraRequirements}</p>
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {currentBooking.selectedAddons && currentBooking.selectedAddons.length > 0 && (
+                        <div className="text-xs space-y-1">
+                          <span className="font-bold text-slate-700 block">Selected Add-Ons & Extras:</span>
+                          <div className="divide-y divide-slate-100 border rounded-lg overflow-hidden bg-white shadow-sm">
+                            {currentBooking.selectedAddons.map((addon, idx) => (
+                              <div key={idx} className="flex justify-between items-center p-2.5 hover:bg-slate-50">
+                                <div>
+                                  <span className="font-bold text-slate-800">{addon.name}</span>
+                                  <span className="text-[10px] text-slate-400 block">US${addon.price} per unit</span>
+                                </div>
+                                <span className="bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full font-extrabold text-[10px]">
+                                  Qty: {addon.quantity}
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </form>
             </div>

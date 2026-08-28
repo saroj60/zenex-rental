@@ -4,6 +4,8 @@ import { useAppData } from '../context/AppDataContext';
 import { packageExtraData } from './PackageDetail';
 import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, Play, ImageIcon, Calendar, List, DollarSign, ChevronDown, ChevronUp, CheckCircle2, XCircle, BookOpen, Puzzle, Briefcase, HelpCircle, ChevronRight, Globe, CalendarDays, Activity, Mountain, Bed, Utensils, CloudSun, Car, Heart, FileText, Info } from 'lucide-react';
 import html2pdf from 'html2pdf.js';
+import TrustReviewBadges from '../components/TrustReviewBadges';
+import { formatDuration } from '../utils/duration';
 
 const TourTripDetail = () => {
   const { slug, id } = useParams();
@@ -292,7 +294,8 @@ const TourTripDetail = () => {
             {trip.featured && <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Featured</span>}
             <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1.5 border border-slate-200"><MapPin size={14}/> {trip.destination}</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3.5 leading-tight tracking-tight">{trip.title}</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-1 leading-tight tracking-tight">{trip.title}</h1>
+          <TrustReviewBadges title={trip.title} />
           {trip.shortDescription && (
             <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium">{trip.shortDescription}</p>
           )}
@@ -355,7 +358,7 @@ const TourTripDetail = () => {
                   {trip.duration && (
                     <div className="flex items-center gap-3">
                       <CalendarDays className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Duration</p><p className="text-sm font-bold text-gray-800">{trip.duration} {trip.durationUnit}</p></div>
+                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Duration</p><p className="text-sm font-bold text-gray-800">{formatDuration(trip.duration, trip.durationUnit)}</p></div>
                     </div>
                   )}
                   {trip.grade && (
@@ -597,7 +600,7 @@ const TourTripDetail = () => {
             {/* Cost Details Section */}
             {(trip.inclusions?.length > 0 || trip.exclusions?.length > 0) && (
               <section id="cost" className="space-y-8 scroll-mt-24">
-                <h2 className="text-2xl font-black text-gray-900 mb-6 uppercase tracking-tight">{trip.title} - {trip.duration} {trip.durationUnit}: COST DETAILS</h2>
+                <h2 className="text-2xl font-black text-gray-900 mb-6 uppercase tracking-tight">{trip.title} - {formatDuration(trip.duration, trip.durationUnit)}: COST DETAILS</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   {/* INCLUDES */}
                   {trip.inclusions && trip.inclusions.length > 0 && (

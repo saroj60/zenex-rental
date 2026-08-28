@@ -257,7 +257,11 @@ const EditTourTrip = () => {
               <select name="tripType" value={formData.tripType} onChange={handleChange} required className="border border-gray-200 rounded-xl px-4 py-3"><option>Private</option><option>Group</option></select>
               <div className="flex gap-2 col-span-2">
                 <input type="number" name="duration" value={formData.duration} onChange={handleChange} required placeholder="Duration" className="w-2/3 border border-gray-200 rounded-xl px-4 py-3" />
-                <select name="durationUnit" value={formData.durationUnit} onChange={handleChange} className="w-1/3 border border-gray-200 rounded-xl px-2 py-3"><option>Days</option><option>Hours</option></select>
+                <select name="durationUnit" value={formData.durationUnit} onChange={handleChange} className="w-1/3 border border-gray-200 rounded-xl px-2 py-3">
+                  <option value="Days">Days</option>
+                  <option value="Hours">Hours</option>
+                  <option value="Days & Nights">Days & Nights</option>
+                </select>
               </div>
               <select name="region" value={formData.region} onChange={handleChange} required className="col-span-2 border border-gray-200 rounded-xl px-4 py-3">
                 <option value="" disabled>Select Region / Category</option>

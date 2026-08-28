@@ -4,6 +4,7 @@ import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info
 import { useAppData } from '../context/AppDataContext';
 
 import SEO from '../components/SEO';
+import TrustReviewBadges from '../components/TrustReviewBadges';
 
 export const packageExtraData = {
   'nepal-tour-poon-hill-trek-12d': {
@@ -9509,10 +9510,45 @@ const PackageDetail = () => {
         }}
       />
       {/* Hero */}
-      <div className="relative h-[60vh] min-h-[400px]">
+      <div className="relative h-[60vh] min-h-[400px] w-full bg-gray-900 overflow-hidden p-2 md:p-3">
         <div className="absolute inset-0 z-0">
-          <img src={pkg.img} alt={pkg.title} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a2f4c] via-[#0a2f4c]/60 to-transparent"></div>
+          {(() => {
+            const images = [];
+            if (pkg.img) images.push(pkg.img);
+            if (pkg.gallery && pkg.gallery.length > 0) {
+              pkg.gallery.forEach(img => {
+                if (!images.includes(img)) images.push(img);
+              });
+            }
+            const displayImages = images.length > 0 ? images : ['/images/trek.png'];
+
+            if (displayImages.length === 1) {
+              return (
+                <div 
+                  className="w-full h-full bg-cover bg-center opacity-85"
+                  style={{ backgroundImage: `url("${displayImages[0]}")` }}
+                />
+              );
+            }
+
+            return (
+              <div className="flex h-full w-full gap-2 md:gap-3 relative z-0">
+                {displayImages.slice(0, 4).map((img, idx) => (
+                  <div 
+                    key={idx}
+                    className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-1 hover:flex-[3] group"
+                  >
+                    <div 
+                      className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
+                      style={{ backgroundImage: `url("${img}")` }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a2f4c]/60 via-[#0a2f4c]/10 to-transparent pointer-events-none" />
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a2f4c] via-[#0a2f4c]/40 to-transparent pointer-events-none z-10"></div>
         </div>
         <div className="relative z-10 flex flex-col justify-end h-full pb-16 px-4 md:px-8">
           <div className="max-w-7xl mx-auto w-full">
@@ -9527,9 +9563,10 @@ const PackageDetail = () => {
                 {pkg.category || 'All-Inclusive Package'}
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg tracking-tight leading-tight">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-2 drop-shadow-lg tracking-tight leading-tight">
               {pkg.title}
             </h1>
+            <TrustReviewBadges title={pkg.title} lightMode={true} />
             {pkg.desc && (
               <p className="text-xl text-blue-100 max-w-2xl font-medium drop-shadow-md">
                 {pkg.desc}

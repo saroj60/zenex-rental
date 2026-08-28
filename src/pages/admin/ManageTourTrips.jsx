@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAppData } from '../../context/AppDataContext';
 import { Link, useNavigate } from 'react-router-dom';
 import { PlusCircle, Trash2, Edit, Copy, Eye, Map as MapIcon, CheckCircle, XCircle, Search, Star } from 'lucide-react';
+import { formatDuration } from '../../utils/duration';
 
 const ManageTourTrips = () => {
   const { tourTrips, deleteTourTrip, updateTourTrip, addTourTrip, regions, packages, deletePackage, updatePackage } = useAppData();
@@ -163,7 +164,7 @@ const ManageTourTrips = () => {
                       <div className="text-xs text-gray-500">{t.region ? t.region : t.category}</div>
                     </td>
                     <td className="px-6 py-4">
-                      <div className="font-medium text-gray-800">{t.duration} {t.durationUnit}</div>
+                      <div className="font-medium text-gray-800">{formatDuration(t.duration, t.durationUnit)}</div>
                       <div className="text-[#e53a24] font-bold mt-0.5">{t.price}</div>
                     </td>
                     <td className="px-6 py-4">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAppData } from '../../context/AppDataContext';
 import { useParams, Link } from 'react-router-dom';
 import { Map as MapIcon, ArrowLeft, Clock, MapPin, Tag, CheckCircle, Edit, Compass, List, DollarSign, Calendar, ChevronDown, ChevronUp, CheckCircle2, XCircle, Puzzle, BookOpen, Briefcase, HelpCircle } from 'lucide-react';
+import { formatDuration } from '../../utils/duration';
 
 const PreviewTourTrip = () => {
   const { id } = useParams();
@@ -55,7 +56,7 @@ const PreviewTourTrip = () => {
             </div>
             <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
               <div className="text-gray-500 flex items-center gap-2 mb-1 text-sm font-bold"><Clock size={16} /> Duration</div>
-              <div className="text-lg font-bold text-gray-900">{trip.duration} {trip.durationUnit}</div>
+              <div className="text-lg font-bold text-gray-900">{formatDuration(trip.duration, trip.durationUnit)}</div>
             </div>
             <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
               <div className="text-gray-500 flex items-center gap-2 mb-1 text-sm font-bold"><Tag size={16} /> Category</div>

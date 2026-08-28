@@ -5,6 +5,7 @@ import { useAppData } from '../context/AppDataContext';
 import { regionData } from '../data/regionData';
 import SEO from '../components/SEO';
 import Pagination from '../components/Pagination';
+import { formatDuration } from '../utils/duration';
 
 const TrekRegion = () => {
   const { region: regionId = '' } = useParams();
@@ -206,7 +207,7 @@ const TrekRegion = () => {
                                 <div className="flex flex-col justify-center">
                                   <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Duration</span>
                                   <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
-                                    {trek.duration} {trek.durationUnit || 'Days'}
+                                    {formatDuration(trek.duration, trek.durationUnit || 'Days')}
                                   </span>
                                 </div>
                               </div>

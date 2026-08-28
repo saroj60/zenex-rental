@@ -17,16 +17,17 @@ const BookingCheckout = () => {
   const pkgId = searchParams.get('pkg') || '';
   const carId = searchParams.get('car') || '';
   
-  const { vehicles, packages, treks } = useAppData();
+  const { vehicles, packages, treks, tourTrips } = useAppData();
   const { addBooking } = useBooking();
   const navigate = useNavigate();
 
-  // Find the selected item (Trek, Tour Package, or Vehicle)
+  // Find the selected item (Trek, Tour Package, TourTrip, or Vehicle)
   let selectedItem = null;
   let defaultPrice = 1200;
   let durationText = 'N/A';
 
   const matchedTrek = treks ? treks.find(t => t.id === pkgId) : null;
+  const matchedTourTrip = tourTrips ? tourTrips.find(t => t.id === pkgId || t.slug === pkgId) : null;
   const matchedTour = packages ? packages.find(p => p.id === pkgId) : null;
   const matchedVehicle = carId ? vehicles.find(v => v.id.toString() === carId) : null;
 
@@ -35,7 +36,18 @@ const BookingCheckout = () => {
       title: matchedTrek.title,
       img: matchedTrek.image,
       duration: matchedTrek.quickFacts?.duration || '15 Days',
-      price: matchedTrek.price ? parseInt(matchedTrek.price.replace(/\D/g, ''), 10) : 1500
+      price: matchedTrek.price ? parseInt(matchedTrek.price.replace(/\D/g, ''), 10) : 1500,
+      addOns: matchedTrek.addOns || null
+    };
+    durationText = selectedItem.duration;
+    defaultPrice = selectedItem.price;
+  } else if (matchedTourTrip) {
+    selectedItem = {
+      title: matchedTourTrip.title,
+      img: matchedTourTrip.image,
+      duration: matchedTourTrip.quickFacts?.duration || '7 Days',
+      price: matchedTourTrip.price ? parseInt(matchedTourTrip.price.toString().replace(/\D/g, ''), 10) : 1200,
+      addOns: matchedTourTrip.addOns || null
     };
     durationText = selectedItem.duration;
     defaultPrice = selectedItem.price;
@@ -44,7 +56,8 @@ const BookingCheckout = () => {
       title: matchedTour.title,
       img: matchedTour.img,
       duration: matchedTour.title.match(/\d+/) ? `${matchedTour.title.match(/\d+/)[0]} Days` : '7 Days',
-      price: matchedTour.price ? parseInt(matchedTour.price.replace(/\D/g, ''), 10) : 1000
+      price: matchedTour.price ? parseInt(matchedTour.price.replace(/\D/g, ''), 10) : 1000,
+      addOns: matchedTour.addOns || null
     };
     durationText = selectedItem.duration;
     defaultPrice = selectedItem.price;
@@ -53,7 +66,8 @@ const BookingCheckout = () => {
       title: matchedVehicle.name,
       img: matchedVehicle.img,
       duration: 'Per Day Rental',
-      price: matchedVehicle.price ? parseInt(matchedVehicle.price.toString().replace(/\D/g, ''), 10) : 150
+      price: matchedVehicle.price ? parseInt(matchedVehicle.price.toString().replace(/\D/g, ''), 10) : 150,
+      addOns: null
     };
     durationText = 'Daily Rental';
     defaultPrice = selectedItem.price;
@@ -63,7 +77,8 @@ const BookingCheckout = () => {
       title: 'Mera Peak Climbing and Amphu Lapcha Pass - 19 Days',
       img: 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=2070',
       duration: '19 Days',
-      price: 2680
+      price: 2680,
+      addOns: null
     };
     durationText = '19 Days';
     defaultPrice = 2680;
@@ -100,6 +115,56 @@ const BookingCheckout = () => {
   const [discountOpen, setDiscountOpen] = useState(false);
   const [paymentOption, setPaymentOption] = useState('pay-later'); // 'pay-later' or 'deposit'
 
+  const [addonQuantities, setAddonQuantities] = useState({});
+
+  const parsePriceFromTitle = (title) => {
+    if (!title) return 0;
+    const match = title.match(/USD\s*(\d+)/i) || title.match(/US\$\s*(\d+)/i) || title.match(/\$\s*(\d+)/i);
+    return match ? parseInt(match[1], 10) : 0;
+  };
+
+  const getUnifiedAddons = () => {
+    if (!selectedItem?.addOns) return [];
+    if (typeof selectedItem.addOns === 'object' && !Array.isArray(selectedItem.addOns) && selectedItem.addOns.options) {
+      return selectedItem.addOns.options.map((option) => {
+        const price = parsePriceFromTitle(option.title);
+        return {
+          name: option.title,
+          description: option.description || '',
+          price: price,
+          pricingType: 'Fixed',
+          active: true
+        };
+      });
+    }
+    if (Array.isArray(selectedItem.addOns)) {
+      return selectedItem.addOns;
+    }
+    return [];
+  };
+
+  const activeAddons = getUnifiedAddons().filter(addon => addon.active !== false);
+
+  const getAddonPrice = (addon) => {
+    if (addon.price !== undefined && addon.price !== null && addon.price !== '') {
+      return parseFloat(addon.price) || 0;
+    }
+    return parsePriceFromTitle(addon.name || '');
+  };
+
+  // Reset addons when package changes
+  useEffect(() => {
+    setAddonQuantities({});
+  }, [pkgId]);
+
+  const handleAddonQuantityChange = (idx, delta) => {
+    setAddonQuantities(prev => {
+      const current = prev[idx] || 0;
+      const next = Math.max(0, current + delta);
+      return { ...prev, [idx]: next };
+    });
+  };
+
   // Pricing calculations
   const perPersonPrice = defaultPrice;
   const packagePrice = perPersonPrice * travelersCount;
@@ -111,7 +176,14 @@ const BookingCheckout = () => {
   else if (travelersCount >= 10) groupDiscountPercent = 15;
 
   const discountAmount = Math.round(packagePrice * (groupDiscountPercent / 100));
-  const totalPrice = packagePrice - discountAmount;
+
+  const addonsPrice = activeAddons.reduce((sum, addon, idx) => {
+    const qty = addonQuantities[idx] || 0;
+    const price = getAddonPrice(addon);
+    return sum + (price * qty);
+  }, 0);
+
+  const totalPrice = (packagePrice - discountAmount) + addonsPrice;
 
   // Pay Deposit / Pay Later rates
   const depositPercent = 20;
@@ -128,6 +200,15 @@ const BookingCheckout = () => {
     }
 
     setLoading(true);
+
+    const selectedAddonsList = activeAddons
+      .map((addon, idx) => ({
+        name: addon.name || addon.title,
+        price: getAddonPrice(addon),
+        quantity: addonQuantities[idx] || 0
+      }))
+      .filter(item => item.quantity > 0);
+
     const bookingDetails = {
       itemName: selectedItem.title,
       dates: { start: tripDate, end: tripDate },
@@ -135,6 +216,7 @@ const BookingCheckout = () => {
       paymentOption,
       amount: `US$${totalPrice}`,
       customer: `${firstName} ${lastName}`,
+      selectedAddons: selectedAddonsList,
       customerDetails: {
         firstName,
         lastName,
@@ -262,6 +344,68 @@ ${firstName} ${lastName}`);
                   </div>
                 </div>
 
+                {/* Add-Ons and Extra Options Section */}
+                {activeAddons && activeAddons.length > 0 && (
+                  <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-sm">
+                    <h2 className="text-lg font-bold text-[#1b8c00] mb-6 flex items-center gap-2">
+                      <span className="w-1.5 h-6 bg-[#1b8c00] rounded-full inline-block"></span>
+                      Add-Ons and Extra Options
+                    </h2>
+
+                    <div className="divide-y divide-slate-100">
+                      {activeAddons.map((addon, idx) => {
+                        const addonPrice = getAddonPrice(addon);
+                        const qty = addonQuantities[idx] || 0;
+                        
+                        return (
+                          <div key={idx} className="py-5 flex flex-col md:flex-row md:items-center justify-between gap-4 first:pt-0 last:pb-0">
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-start gap-2">
+                                <p className="text-sm font-semibold text-slate-800 leading-snug">
+                                  {addon.name || addon.title}
+                                </p>
+                                {addon.description && (
+                                  <button 
+                                    type="button"
+                                    title={addon.description}
+                                    className="text-slate-400 hover:text-slate-600 shrink-0 mt-0.5"
+                                  >
+                                    <Info size={16} />
+                                  </button>
+                                )}
+                              </div>
+                            </div>
+
+                            <div className="flex items-center justify-between md:justify-end gap-6 shrink-0">
+                              <span className="text-sm font-bold text-slate-600">
+                                + US${addonPrice} <span className="text-xs font-normal text-slate-400">per {addon.pricingType === 'Per Person' ? 'person' : '2'}</span>
+                              </span>
+
+                              <div className="flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-lg p-1">
+                                <button 
+                                  type="button"
+                                  onClick={() => handleAddonQuantityChange(idx, -1)}
+                                  className="w-7 h-7 rounded bg-white text-slate-600 flex items-center justify-center border border-slate-200 shadow-sm hover:bg-slate-50 transition-colors"
+                                >
+                                  <Minus size={14} />
+                                </button>
+                                <span className="text-sm font-bold text-slate-800 w-5 text-center">{qty}</span>
+                                <button 
+                                  type="button"
+                                  onClick={() => handleAddonQuantityChange(idx, 1)}
+                                  className="w-7 h-7 rounded bg-white text-slate-600 flex items-center justify-center border border-slate-200 shadow-sm hover:bg-slate-50 transition-colors"
+                                >
+                                  <Plus size={14} />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
                 {/* Lead Traveler Details Section */}
                 <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-sm">
                   <h2 className="text-lg font-bold text-slate-800 mb-6 flex items-center gap-2">
@@ -366,39 +510,18 @@ ${firstName} ${lastName}`);
 
                 {/* Secure Payment Options */}
                 <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-sm">
-                  <h2 className="text-lg font-bold text-slate-800 mb-6 flex items-center gap-2">
+                  <h2 className="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
                     <span className="w-1.5 h-6 bg-[#1b8c00] rounded-full inline-block"></span>
-                    Payment Settings
+                    Payment Information
                   </h2>
-
-                  <div className="space-y-4">
-                    <label className="flex items-start gap-4 p-4 border border-slate-200 rounded-2xl cursor-pointer hover:bg-slate-50 transition-colors">
-                      <input 
-                        type="radio" 
-                        name="payment_option" 
-                        checked={paymentOption === 'pay-later'}
-                        onChange={() => setPaymentOption('pay-later')}
-                        className="mt-1 h-5 w-5 text-orange-500 focus:ring-orange-500 border-slate-300"
-                      />
-                      <div>
-                        <span className="block font-bold text-slate-800 text-base">Book Now, Pay Later (100% on Arrival)</span>
-                        <span className="block text-sm text-slate-500 mt-1">Reserve your spot instantly. Pay nothing today. Complete payment in Kathmandu before the trip starts.</span>
-                      </div>
-                    </label>
-
-                    <label className="flex items-start gap-4 p-4 border border-slate-200 rounded-2xl cursor-pointer hover:bg-slate-50 transition-colors">
-                      <input 
-                        type="radio" 
-                        name="payment_option" 
-                        checked={paymentOption === 'deposit'}
-                        onChange={() => setPaymentOption('deposit')}
-                        className="mt-1 h-5 w-5 text-orange-500 focus:ring-orange-500 border-slate-300"
-                      />
-                      <div>
-                        <span className="block font-bold text-slate-800 text-base">Pay 20% Deposit Securely Online</span>
-                        <span className="block text-sm text-slate-500 mt-1">Pay only US${depositPayable} today via credit card or digital wallets. Pay the balance when you arrive.</span>
-                      </div>
-                    </label>
+                  <div className="p-4 border border-emerald-100 bg-emerald-50/40 rounded-2xl flex items-start gap-4">
+                    <CheckCircle2 className="text-[#1b8c00] shrink-0 mt-0.5" size={20} />
+                    <div>
+                      <span className="block font-bold text-slate-800 text-base">Book Now, Pay Later (100% on Arrival)</span>
+                      <span className="block text-sm text-slate-600 mt-1">
+                        Your spot is reserved instantly without any advance payment today. You will make the full payment when you arrive in Kathmandu before your trip starts.
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -481,39 +604,44 @@ ${firstName} ${lastName}`);
                         </div>
                       )}
 
-                      <div className="flex justify-between text-base border-t border-slate-100 pt-4">
+                      {addonsPrice > 0 && (
+                        <div className="flex justify-between font-medium text-slate-600 border-t border-slate-100/50 pt-3">
+                          <div>
+                            <span className="block">Add-ons & Options</span>
+                            <span className="block text-xs text-slate-400 font-medium mt-0.5 leading-relaxed">
+                              {activeAddons
+                                .map((addon, idx) => {
+                                  const qty = addonQuantities[idx] || 0;
+                                  if (qty === 0) return null;
+                                  return `${addon.name || addon.title} (x${qty})`;
+                                })
+                                .filter(Boolean)
+                                .join(', ')}
+                            </span>
+                          </div>
+                          <span className="shrink-0 font-bold">+US${addonsPrice}</span>
+                        </div>
+                      )}
+
+                      <div className="flex justify-between text-base border-t border-slate-100 pt-4 font-bold">
                         <span>Total Price</span>
                         <span>US${totalPrice}</span>
                       </div>
 
-                      <div className="flex justify-between font-medium text-slate-600">
-                        <span>Initial Payment</span>
-                        <span>US${initialPaymentNow}</span>
-                      </div>
-
-                      <div className="flex justify-between text-base text-[#e53a24]">
-                        <span>Deposit Payable Now</span>
-                        <span>US${initialPaymentNow}</span>
-                      </div>
-
-                      <div className="text-[11px] font-semibold text-slate-400 -mt-2">
-                        ({paymentOption === 'deposit' ? '20% of total amount' : '0% of total amount'})
-                      </div>
-
-                      <div className="flex justify-between text-base border-t border-slate-100 pt-4">
-                        <span>Due Amount (Pay Later)</span>
-                        <span>US${duePayLater}</span>
+                      <div className="flex justify-between text-base border-t border-slate-100 pt-4 text-[#e53a24]">
+                        <span>Payable on Arrival</span>
+                        <span>US${totalPrice}</span>
                       </div>
                     </div>
 
                     {/* Notice Box */}
                     <div className="bg-emerald-50 border border-emerald-100 text-emerald-800 text-xs font-semibold p-4 rounded-2xl mt-6 leading-relaxed">
-                      You pay the balance amount after arriving in Kathmandu before the trip starts.
+                      You will make the full payment after arriving in Kathmandu before the trip starts.
                     </div>
 
                     {/* Security Notice */}
                     <p className="text-[11px] text-slate-400 text-center mt-6 leading-normal">
-                      This is a 3D secure and SSL encrypted payment. Your card details are safe!
+                      Your booking is securely processed. No payment card details are required today!
                     </p>
 
 

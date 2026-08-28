@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { MapPin, Clock, Star, ArrowLeft } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 import SEO from '../components/SEO';
+import { formatDuration } from '../utils/duration';
 
 const countryData = {
   'nepal': {
@@ -163,7 +164,7 @@ const CountryPackages = () => {
                 
                 <div className="flex items-center gap-4 text-gray-500 text-sm mb-6 pb-6 border-b border-gray-100 mt-auto">
                   <div className="flex items-center gap-1.5 font-medium">
-                    <Clock size={16} className="text-blue-500"/> {pkg.duration} {pkg.durationUnit}
+                    <Clock size={16} className="text-blue-500"/> {formatDuration(pkg.duration, pkg.durationUnit)}
                   </div>
                   <div className="flex items-center gap-1.5 font-medium">
                     <Star size={16} className="text-yellow-500 fill-current"/> {pkg.rating}

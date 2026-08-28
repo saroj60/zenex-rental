@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useAppData } from '../context/AppDataContext';
 import { MapPin, Clock, Star, ArrowLeft } from 'lucide-react';
+import { formatDuration } from '../utils/duration';
 
 const RegionDetail = () => {
   const { slug } = useParams();
@@ -71,7 +72,7 @@ const RegionDetail = () => {
                 <h3 className="text-xl font-bold text-gray-900 leading-tight mb-4 group-hover:text-blue-600 transition-colors line-clamp-2">{trip.title}</h3>
                 
                 <div className="flex items-center gap-4 text-gray-500 text-sm mb-6 pb-6 border-b border-gray-100 mt-auto">
-                  <div className="flex items-center gap-1.5 font-medium"><Clock size={16} className="text-blue-500"/> {trip.duration} {trip.durationUnit}</div>
+                  <div className="flex items-center gap-1.5 font-medium"><Clock size={16} className="text-blue-500"/> {formatDuration(trip.duration, trip.durationUnit)}</div>
                   {trip.reviews?.rating && (
                     <div className="flex items-center gap-1.5 font-medium"><Star size={16} className="text-yellow-500 fill-current"/> {trip.reviews.rating}</div>
                   )}
