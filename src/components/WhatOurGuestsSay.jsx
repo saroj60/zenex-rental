@@ -81,7 +81,7 @@ const getEmbedUrl = (url, platform) => {
     if (match && match[2].length === 11) {
       videoId = match[2];
     }
-    return `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    return `https://www.youtube.com/embed/${videoId}?rel=0`;
   }
   if (platform.toLowerCase() === 'vimeo') {
     let videoId = '';
@@ -90,7 +90,7 @@ const getEmbedUrl = (url, platform) => {
     if (match && match[3]) {
       videoId = match[3];
     }
-    return `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+    return `https://player.vimeo.com/video/${videoId}`;
   }
   return url;
 };
@@ -98,7 +98,6 @@ const getEmbedUrl = (url, platform) => {
 const WhatOurGuestsSay = () => {
   const [testiIndex, setTestiIndex] = useState(0);
   const [videoIndex, setVideoIndex] = useState(0);
-  const [isPlayMode, setIsPlayMode] = useState(false);
 
   // Touch Swipe States
   const [touchStartTesti, setTouchStartTesti] = useState(0);
@@ -120,16 +119,8 @@ const WhatOurGuestsSay = () => {
     const nextTesti = guestReviews[newIndex];
     const matchedIndex = findRelatedVideoIndex(nextTesti);
     
-    if (isManual) {
-      setIsPlayMode(false);
-      if (matchedIndex !== -1) {
-        setVideoIndex(matchedIndex);
-      }
-    } else {
-      // Auto-slide: only update video if not currently playing
-      if (!isPlayMode && matchedIndex !== -1) {
-        setVideoIndex(matchedIndex);
-      }
+    if (isManual && matchedIndex !== -1) {
+      setVideoIndex(matchedIndex);
     }
   };
 
@@ -144,12 +135,10 @@ const WhatOurGuestsSay = () => {
   };
 
   const handleNextVideo = () => {
-    setIsPlayMode(false);
     setVideoIndex((prev) => (prev + 1) % travelVideos.length);
   };
 
   const handlePrevVideo = () => {
-    setIsPlayMode(false);
     setVideoIndex((prev) => (prev - 1 + travelVideos.length) % travelVideos.length);
   };
 
@@ -187,32 +176,29 @@ const WhatOurGuestsSay = () => {
     setTouchEndVideo(0);
   };
 
-  // Auto-slide Testimonials (always active, does not pause for isPlayMode)
+  // Auto-slide Testimonials (updates video index if a matching video is found)
   useEffect(() => {
     const timer = setInterval(() => {
       setTestiIndex((prevIndex) => {
         const nextIndex = (prevIndex + 1) % guestReviews.length;
         const nextTesti = guestReviews[nextIndex];
         const matchedIndex = findRelatedVideoIndex(nextTesti);
-        
-        // Auto-slide update rule: only change video if not playing
-        if (!isPlayMode && matchedIndex !== -1) {
+        if (matchedIndex !== -1) {
           setVideoIndex(matchedIndex);
         }
         return nextIndex;
       });
     }, 5500); // 5.5s interval
     return () => clearInterval(timer);
-  }, [isPlayMode]);
+  }, []);
 
-  // Auto-slide Videos (pauses when video is playing)
+  // Auto-slide Videos independently
   useEffect(() => {
-    if (isPlayMode) return;
     const timer = setInterval(() => {
       setVideoIndex((prevIndex) => (prevIndex + 1) % travelVideos.length);
     }, 7500); // 7.5s interval
     return () => clearInterval(timer);
-  }, [isPlayMode]);
+  }, []);
 
   const currentReview = guestReviews[testiIndex];
   const currentVideo = travelVideos[videoIndex];
@@ -363,64 +349,28 @@ const WhatOurGuestsSay = () => {
 
               {/* Cinematic Video Card */}
               <div className="relative rounded-[20px] overflow-hidden aspect-video bg-[#142B5F] group shadow-[0_8px_30px_rgba(20,43,95,0.06)] border border-slate-100/50 my-auto transition-transform duration-500 ease-out w-full">
-                {isPlayMode ? (
-                  currentVideo.platform.toLowerCase() === 'direct' ? (
-                    <video 
-                      src={currentVideo.videoUrl} 
-                      controls 
-                      autoPlay 
-                      className="w-full h-full object-cover rounded-[20px]" 
-                    />
-                  ) : (
-                    <iframe 
-                      src={getEmbedUrl(currentVideo.videoUrl, currentVideo.platform)} 
-                      className="w-full h-full rounded-[20px]" 
-                      allow="autoplay; encrypted-media; fullscreen" 
-                      allowFullScreen 
-                      title={currentVideo.title}
-                    />
-                  )
+                {currentVideo.platform.toLowerCase() === 'direct' ? (
+                  <video 
+                    src={currentVideo.videoUrl} 
+                    controls 
+                    className="w-full h-full object-cover rounded-[20px]" 
+                  />
                 ) : (
-                  <>
-                    <img 
-                      src={currentVideo.thumbnail} 
-                      alt={currentVideo.title} 
-                      className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
-                    />
-                    
-                    {/* Dark gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-
-                    {/* Clear Play Button */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <button 
-                        onClick={() => setIsPlayMode(true)}
-                        className="w-14 h-14 rounded-full bg-[#0F9F9A] text-white flex items-center justify-center shadow-lg hover:bg-[#0b7e7a] transition-all duration-300 hover:scale-105 active:scale-95 group/play z-10 relative focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
-                        aria-label={`Play video: ${currentVideo.title}`}
-                      >
-                        <span className="absolute inset-0 rounded-full bg-[#0F9F9A]/30 animate-ping pointer-events-none scale-105"></span>
-                        <Play size={18} className="fill-white translate-x-0.5" />
-                      </button>
-                    </div>
-
-                    {/* Location Overlay details */}
-                    <div className="absolute bottom-5 left-5 z-10 text-left">
-                      <span className="text-[9px] font-black text-slate-300 tracking-wider uppercase block mb-1">
-                        GUEST VIDEO &bull; {currentVideo.platform}
-                      </span>
-                      <h4 className="font-extrabold text-white text-base tracking-wide flex items-center gap-1.5">
-                        {currentVideo.destination}
-                      </h4>
-                    </div>
-                  </>
+                  <iframe 
+                    src={getEmbedUrl(currentVideo.videoUrl, currentVideo.platform)} 
+                    className="w-full h-full rounded-[20px] border-0" 
+                    allow="encrypted-media; fullscreen" 
+                    allowFullScreen 
+                    title={currentVideo.title}
+                  />
                 )}
               </div>
 
               {/* Video Info and Selector Underneath */}
               <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-[#e53a24]/10 pt-6 md:pt-8">
-                <div>
-                  <h4 className="text-[13px] md:text-[13.5px] font-black text-[#142B5F] uppercase tracking-wider">{currentVideo.title}</h4>
-                  <p className="text-[10px] md:text-[11px] text-[#172033]/65 font-medium mt-0.5">{currentVideo.description}</p>
+                <div className="flex-1">
+                  <h4 className="text-lg md:text-2xl font-bold text-[#142B5F] leading-snug">{currentVideo.title}</h4>
+                  <p className="text-[#172033]/85 font-medium leading-relaxed text-xs md:text-[15px] mt-2">{currentVideo.description}</p>
                 </div>
 
                 {/* Video controls */}
