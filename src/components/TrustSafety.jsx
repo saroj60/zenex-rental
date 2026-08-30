@@ -58,11 +58,11 @@ const TrustSafety = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
-      className="bg-[#F4F6F8] py-12 px-4 md:px-8 border-y border-gray-200/60"
+      className="bg-[#1e3a8a]/5 py-12 px-4 md:px-8 border-y border-[#1e3a8a]/10"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-black text-[#0f3493] mb-3">Why Choosing Zenex Travels</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-[#1e3a8a] mb-3">Why Choosing Zenex Travels</h2>
           <p className="text-gray-600 max-w-xl mx-auto font-medium text-sm">We exceed industry standards to ensure every mile of your journey through Nepal is safe, secure, and stress-free.</p>
         </div>
 

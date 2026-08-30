@@ -39,22 +39,22 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="relative py-16 md:py-24 bg-[#F8FAFC] overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-[#1e3a8a]/5 overflow-hidden">
       {/* Background soft grid pattern */}
-      <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#0F4C81 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#1e3a8a 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Left Column: Info & Action Buttons */}
           <div className="lg:col-span-5 flex flex-col items-start text-left">
-            <div className="flex items-center gap-2 text-[13px] md:text-sm font-black tracking-widest text-[#0F4C81]/80 uppercase mb-3">
+            <div className="flex items-center gap-2 text-[13px] md:text-sm font-black tracking-widest text-[#1e3a8a]/80 uppercase mb-3">
               Explore FAQs
-              <span className="w-10 h-[1.5px] bg-[#0F4C81]/30"></span>
-              <Plane size={14} className="rotate-90 text-[#0F4C81] translate-y-[-1px]" />
+              <span className="w-10 h-[1.5px] bg-[#1e3a8a]/30"></span>
+              <Plane size={14} className="rotate-90 text-[#1e3a8a] translate-y-[-1px]" />
             </div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#00355f] leading-tight tracking-tight uppercase mb-6 font-display">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#1e3a8a] leading-tight tracking-tight uppercase mb-6 font-display">
               TOP TRAVEL QUERIES
             </h2>
 
@@ -71,7 +71,7 @@ const FAQSection = () => {
 
             {/* WhatsApp Integration */}
             <div className="w-full pt-8 border-t border-slate-100 flex flex-col items-start gap-4">
-              <h4 className="font-extrabold text-[#00355f] text-base md:text-lg italic">
+              <h4 className="font-extrabold text-[#1e3a8a] text-base md:text-lg italic">
                 Can't seem to find your queries?
               </h4>
               <a 
@@ -115,14 +115,14 @@ const FAQSection = () => {
                       <span className="text-base md:text-lg font-extrabold text-[#2D6A4F] select-none">
                         {faq.number}
                       </span>
-                      <h4 className="text-sm md:text-base font-bold text-[#00355f] leading-snug">
+                      <h4 className="text-sm md:text-base font-bold text-[#1e3a8a] leading-snug">
                         {faq.question}
                       </h4>
                     </div>
                     
                     <span 
                       className={`ml-4 flex items-center justify-center w-8 h-8 rounded-full bg-white/60 transition-transform duration-300 ${
-                        isOpen ? 'rotate-45 text-[#2D6A4F]' : 'text-[#00355f]'
+                        isOpen ? 'rotate-45 text-[#2D6A4F]' : 'text-[#1e3a8a]'
                       }`}
                     >
                       <Plus size={18} strokeWidth={2.5} />

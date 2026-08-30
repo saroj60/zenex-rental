@@ -225,12 +225,12 @@ const WhatOurGuestsSay = () => {
   const currentVideo = travelVideos[videoIndex];
 
   return (
-    <section className="py-16 md:py-24 px-4 md:px-8 bg-[#F7FAFC] border-y border-[#e53a24]/15 overflow-x-hidden font-sans relative">
+    <section className="py-16 md:py-24 px-4 md:px-8 bg-[#e53a24]/4 border-y border-[#e53a24]/10 overflow-x-hidden font-sans relative">
       
       {/* Decorative Himalayan Outline detail */}
       <div className="absolute top-10 right-10 w-24 h-24 opacity-[0.015] pointer-events-none">
         <svg viewBox="0 0 100 100" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 80 L35 45 L50 60 L75 30 L90 80 Z" fill="#142B5F" />
+          <path d="M10 80 L35 45 L50 60 L75 30 L90 80 Z" fill="#1e3a8a" />
         </svg>
       </div>
 
@@ -254,7 +254,7 @@ const WhatOurGuestsSay = () => {
                 <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#0F9F9A] uppercase block mb-2">
                   REAL STORIES FROM NEPAL
                 </span>
-                <h2 className="text-2xl md:text-4xl font-black text-[#142B5F] tracking-tight">
+                <h2 className="text-2xl md:text-4xl font-black text-[#1e3a8a] tracking-tight">
                   What Our Guests Say
                 </h2>
               </div>
@@ -270,7 +270,7 @@ const WhatOurGuestsSay = () => {
                 </div>
 
                 {/* Title and Testimonial Quote */}
-                <h3 className="text-lg md:text-2xl font-bold text-[#142B5F] mb-3 leading-snug">
+                <h3 className="text-lg md:text-2xl font-bold text-[#1e3a8a] mb-3 leading-snug">
                   “{currentReview.title}”
                 </h3>
                 <p className="text-[#172033]/85 font-medium leading-relaxed text-xs md:text-[15px] mb-6">
@@ -357,10 +357,10 @@ const WhatOurGuestsSay = () => {
               
               {/* Column Header */}
               <div className="text-left mb-6 md:mb-10 shrink-0">
-                <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#142B5F]/50 uppercase block mb-2">
+                <span className="text-[10px] md:text-xs font-black tracking-[0.2em] text-[#1e3a8a]/50 uppercase block mb-2">
                   SEE NEPAL
                 </span>
-                <h2 className="text-2xl md:text-4xl font-black text-[#142B5F] tracking-tight mb-2">
+                <h2 className="text-2xl md:text-4xl font-black text-[#1e3a8a] tracking-tight mb-2">
                   Watch the Journey
                 </h2>
                 <p className="text-xs text-[#172033]/70 font-medium leading-relaxed">
@@ -440,7 +440,7 @@ const WhatOurGuestsSay = () => {
               {/* Video Info and Selector Underneath */}
               <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-[#e53a24]/10 pt-6 md:pt-8">
                 <div className="flex-1">
-                  <h4 className="text-lg md:text-2xl font-bold text-[#142B5F] leading-snug">{currentVideo.title}</h4>
+                  <h4 className="text-lg md:text-2xl font-bold text-[#1e3a8a] leading-snug">{currentVideo.title}</h4>
                   <p className="text-[#172033]/85 font-medium leading-relaxed text-xs md:text-[15px] mt-2">{currentVideo.description}</p>
                 </div>
 
