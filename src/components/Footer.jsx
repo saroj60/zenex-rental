@@ -190,9 +190,6 @@ const Footer = () => {
                 Travel Help Desk
                 <span className="absolute bottom-0 left-0 w-8 h-0.5 bg-[#e53a24] rounded-full"></span>
               </h3>
-              <p className="text-slate-300 text-xs leading-relaxed font-medium">
-                Need assistance? Our Help Desk is here to support you before, during, and after your journey. For any issues before/after travel just call, message, or email away.
-              </p>
               <div className="pt-2">
                 <a 
                   href="https://wa.me/9779860156046?text=Hi!%20I%20need%20assistance." 
