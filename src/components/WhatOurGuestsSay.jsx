@@ -72,7 +72,7 @@ const guestReviews = [
   }
 ];
 
-const getEmbedUrl = (url, platform) => {
+const getEmbedUrl = (url, platform, autoplay = false) => {
   if (!url) return '';
   if (platform.toLowerCase() === 'youtube') {
     let videoId = '';
@@ -81,7 +81,7 @@ const getEmbedUrl = (url, platform) => {
     if (match && match[2].length === 11) {
       videoId = match[2];
     }
-    return `https://www.youtube.com/embed/${videoId}?rel=0`;
+    return `https://www.youtube.com/embed/${videoId}?rel=0${autoplay ? '&autoplay=1' : ''}`;
   }
   if (platform.toLowerCase() === 'vimeo') {
     let videoId = '';
@@ -90,7 +90,7 @@ const getEmbedUrl = (url, platform) => {
     if (match && match[3]) {
       videoId = match[3];
     }
-    return `https://player.vimeo.com/video/${videoId}`;
+    return `https://player.vimeo.com/video/${videoId}${autoplay ? '?autoplay=1' : ''}`;
   }
   return url;
 };
@@ -98,6 +98,19 @@ const getEmbedUrl = (url, platform) => {
 const WhatOurGuestsSay = () => {
   const [testiIndex, setTestiIndex] = useState(0);
   const [videoIndex, setVideoIndex] = useState(0);
+  const [playingVideoId, setPlayingVideoId] = useState(null);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    if (window.matchMedia('(pointer: coarse)').matches) {
+      setIsTouchDevice(true);
+    }
+  }, []);
+
+  // Reset playing video when index changes
+  useEffect(() => {
+    setPlayingVideoId(null);
+  }, [videoIndex]);
 
   // Touch Swipe States
   const [touchStartTesti, setTouchStartTesti] = useState(0);
@@ -142,6 +155,12 @@ const WhatOurGuestsSay = () => {
     setVideoIndex((prev) => (prev - 1 + travelVideos.length) % travelVideos.length);
   };
 
+  const handleMouseEnterVideo = () => {
+    if (!isTouchDevice && playingVideoId === null) {
+      handleNextVideo();
+    }
+  };
+
   // Testimonial Swipe Handlers
   const handleTouchStartTesti = (e) => {
     setTouchStartTesti(e.targetTouches[0].clientX);
@@ -178,6 +197,7 @@ const WhatOurGuestsSay = () => {
 
   // Auto-slide Testimonials (updates video index if a matching video is found)
   useEffect(() => {
+    if (playingVideoId !== null) return;
     const timer = setInterval(() => {
       setTestiIndex((prevIndex) => {
         const nextIndex = (prevIndex + 1) % guestReviews.length;
@@ -190,15 +210,16 @@ const WhatOurGuestsSay = () => {
       });
     }, 5500); // 5.5s interval
     return () => clearInterval(timer);
-  }, []);
+  }, [playingVideoId]);
 
   // Auto-slide Videos independently
   useEffect(() => {
+    if (playingVideoId !== null) return;
     const timer = setInterval(() => {
       setVideoIndex((prevIndex) => (prevIndex + 1) % travelVideos.length);
     }, 7500); // 7.5s interval
     return () => clearInterval(timer);
-  }, []);
+  }, [playingVideoId]);
 
   const currentReview = guestReviews[testiIndex];
   const currentVideo = travelVideos[videoIndex];
@@ -348,22 +369,72 @@ const WhatOurGuestsSay = () => {
               </div>
 
               {/* Cinematic Video Card */}
-              <div className="relative rounded-[20px] overflow-hidden aspect-video bg-[#142B5F] group shadow-[0_8px_30px_rgba(20,43,95,0.06)] border border-slate-100/50 my-auto transition-transform duration-500 ease-out w-full">
-                {currentVideo.platform.toLowerCase() === 'direct' ? (
-                  <video 
-                    src={currentVideo.videoUrl} 
-                    controls 
-                    className="w-full h-full object-cover rounded-[20px]" 
-                  />
-                ) : (
-                  <iframe 
-                    src={getEmbedUrl(currentVideo.videoUrl, currentVideo.platform)} 
-                    className="w-full h-full rounded-[20px] border-0" 
-                    allow="encrypted-media; fullscreen" 
-                    allowFullScreen 
-                    title={currentVideo.title}
-                  />
-                )}
+              <div 
+                onMouseEnter={handleMouseEnterVideo}
+                className="relative rounded-[20px] overflow-hidden aspect-video bg-[#142B5F] group shadow-[0_8px_30px_rgba(20,43,95,0.06)] hover:shadow-[0_20px_40px_rgba(20,43,95,0.2)] border border-slate-100/50 my-auto w-full transition-shadow duration-500 cursor-pointer"
+              >
+                <div 
+                  className="flex h-full transition-transform"
+                  style={{ 
+                    transform: `translateX(-${videoIndex * 100}%)`,
+                    transitionDuration: '600ms',
+                    transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
+                  }}
+                >
+                  {travelVideos.map((video) => {
+                    const isPlaying = playingVideoId === video.id;
+                    return (
+                      <div key={video.id} className="w-full h-full flex-shrink-0 relative overflow-hidden">
+                        {/* Video / Iframe Wrapper with Hover Zoom */}
+                        <div className="w-full h-full transition-transform duration-700 ease-in-out group-hover:scale-105">
+                          {video.platform.toLowerCase() === 'direct' ? (
+                            <video 
+                              src={video.videoUrl} 
+                              controls={isPlaying}
+                              autoPlay={isPlaying}
+                              className="w-full h-full object-cover" 
+                            />
+                          ) : (
+                            <iframe 
+                              src={getEmbedUrl(video.videoUrl, video.platform, isPlaying)} 
+                              className="w-full h-full border-0" 
+                              allow="autoplay; encrypted-media; fullscreen" 
+                              allowFullScreen 
+                              title={video.title}
+                            />
+                          )}
+                        </div>
+
+                        {/* Transparent Event/Play Overlay when not playing */}
+                        {!isPlaying && (
+                          <div 
+                            className="absolute inset-0 z-10 bg-black/10 flex flex-col justify-between p-4 cursor-pointer"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setPlayingVideoId(video.id);
+                            }}
+                          >
+                            {/* Destination Label Overlay (top-left) */}
+                            <div className="self-start bg-black/60 backdrop-blur-sm text-white px-3 py-1.5 rounded-lg text-[10px] font-bold tracking-wider uppercase">
+                              {video.destination}
+                            </div>
+                            
+                            {/* Centered Play Button */}
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="relative group/play">
+                                <div className="absolute -inset-4 rounded-full bg-[#e53a24]/30 opacity-0 group-hover:opacity-100 group-hover:animate-ping duration-1000 pointer-events-none"></div>
+                                <div className="absolute -inset-2 rounded-full bg-[#e53a24]/50 opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 pointer-events-none"></div>
+                                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#e53a24] text-white flex items-center justify-center shadow-[0_8px_25px_rgba(229,58,36,0.4)] transition-all duration-500 transform group-hover:scale-110 group-hover:bg-[#d04b08]">
+                                  <Play size={24} className="fill-current translate-x-0.5" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
 
               {/* Video Info and Selector Underneath */}

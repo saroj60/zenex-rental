@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate, Link } from 'react-router-dom';
-import { CheckCircle2, ChevronRight, Lock, Calendar, Plus, Minus, CreditCard, Mail } from 'lucide-react';
+import { CheckCircle2, ChevronRight, Lock, Calendar, Plus, Minus, CreditCard, Mail, Info } from 'lucide-react';
 import TrustSafety from '../components/TrustSafety';
 import { useAppData } from '../context/AppDataContext';
 import { useBooking } from '../context/BookingContext';
@@ -124,23 +124,43 @@ const BookingCheckout = () => {
   };
 
   const getUnifiedAddons = () => {
-    if (!selectedItem?.addOns) return [];
-    if (typeof selectedItem.addOns === 'object' && !Array.isArray(selectedItem.addOns) && selectedItem.addOns.options) {
-      return selectedItem.addOns.options.map((option) => {
-        const price = parsePriceFromTitle(option.title);
-        return {
-          name: option.title,
-          description: option.description || '',
-          price: price,
-          pricingType: 'Fixed',
-          active: true
-        };
+    let list = [];
+    if (selectedItem?.addOns) {
+      if (typeof selectedItem.addOns === 'object' && !Array.isArray(selectedItem.addOns) && selectedItem.addOns.options) {
+        list = selectedItem.addOns.options.map((option) => {
+          const price = parsePriceFromTitle(option.title);
+          return {
+            name: option.title,
+            description: option.description || '',
+            price: price,
+            pricingType: 'Fixed',
+            active: true
+          };
+        });
+      } else if (Array.isArray(selectedItem.addOns)) {
+        list = [...selectedItem.addOns];
+      }
+    }
+
+    // Add default hotel upgrades if not booking a vehicle
+    if (!carId && selectedItem) {
+      list.push({
+        name: "Upgrade to 4-star accommodation in Kathmandu USD 45 per 2 person for 3 nights twin sharing basis",
+        description: "Upgrade your standard accommodation to a premium 4-star hotel in Kathmandu (twin sharing, 3 nights).",
+        price: 45,
+        pricingType: "Per 2 Persons",
+        active: true
+      });
+      list.push({
+        name: "Upgrade to 5-star standard accommodation in Kathmandu USD 210 per 2 person for 3 nights twin sharing basis",
+        description: "Upgrade your standard accommodation to a luxury 5-star hotel in Kathmandu (twin sharing, 3 nights).",
+        price: 210,
+        pricingType: "Per 2 Persons",
+        active: true
       });
     }
-    if (Array.isArray(selectedItem.addOns)) {
-      return selectedItem.addOns;
-    }
-    return [];
+
+    return list;
   };
 
   const activeAddons = getUnifiedAddons().filter(addon => addon.active !== false);

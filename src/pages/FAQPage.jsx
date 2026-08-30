@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import SEO from '../components/SEO';
 import FAQAccordion from '../components/FAQAccordion';
+import { faqs } from '../data/faqData';
 
 const FAQPage = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -8,24 +9,14 @@ const FAQPage = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What types of tour packages do you offer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We offer a wide range of packages including Himalayan trekking (like Everest Base Camp, Annapurna), jungle safaris in Chitwan, cultural tours in Kathmandu Valley, and custom luxury tours tailored to your preferences."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are your tour guides certified?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, all our trekking and tour guides are fully certified by the Government of Nepal, hold valid licenses, and have years of experience navigating the Himalayas safely."
-        }
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
       }
-    ]
+    }))
   };
 
   return (
