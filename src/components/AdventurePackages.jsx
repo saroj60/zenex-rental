@@ -118,7 +118,7 @@ const AdventurePackages = () => {
               <span>Nepal & Beyond</span>
               <Plane size={12} className="rotate-[30deg] ml-1" />
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-[#0f3493] leading-none tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-[#1e3a8a] leading-none tracking-tight">
               Top Destinations
             </h2>
           </div>
@@ -142,7 +142,7 @@ const AdventurePackages = () => {
                 {dest.titleAbove ? (
                   <div className="flex flex-col h-full">
                     <div className="pt-1 pb-3">
-                      <h3 className="text-xl md:text-2xl font-black tracking-wider text-slate-400 group-hover:text-[#0f3493] transition-colors uppercase">
+                      <h3 className="text-xl md:text-2xl font-black tracking-wider text-slate-400 group-hover:text-[#1e3a8a] transition-colors uppercase">
                         {dest.name}
                       </h3>
                       <div className="h-[1px] bg-slate-100 w-full mt-3" />
@@ -203,7 +203,7 @@ const AdventurePackages = () => {
 
                     <div className="pt-4 pb-1">
                       <div className="h-[1px] bg-slate-100 w-full mb-3" />
-                      <h3 className="text-xl md:text-2xl font-black tracking-wider text-slate-400 group-hover:text-[#0f3493] transition-colors uppercase">
+                      <h3 className="text-xl md:text-2xl font-black tracking-wider text-slate-400 group-hover:text-[#1e3a8a] transition-colors uppercase">
                         {dest.name}
                       </h3>
                     </div>

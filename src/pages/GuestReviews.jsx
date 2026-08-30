@@ -138,7 +138,7 @@ const GuestReviews = () => {
           <span className="text-xs font-black tracking-[0.2em] text-[#0F766E] uppercase block mb-3">
             GUEST DIARIES
           </span>
-          <h1 className="text-4xl md:text-5xl font-black text-[#0f3493] mb-4 tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-black text-[#1e3a8a] mb-4 tracking-tight">
             Stories From Our Guests
           </h1>
           <p className="text-gray-500 max-w-xl mx-auto font-medium text-sm md:text-base">
@@ -150,8 +150,8 @@ const GuestReviews = () => {
         <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-sm flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
           
           <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-            <div className="bg-[#0f3493]/5 rounded-2xl p-6 flex flex-col items-center justify-center shrink-0">
-              <span className="text-3xl font-black text-[#0f3493]">4.9</span>
+            <div className="bg-[#1e3a8a]/5 rounded-2xl p-6 flex flex-col items-center justify-center shrink-0">
+              <span className="text-3xl font-black text-[#1e3a8a]">4.9</span>
               <span className="text-xs text-gray-500 font-bold mt-1">out of 5</span>
             </div>
             
@@ -161,19 +161,19 @@ const GuestReviews = () => {
                   <Star key={i} size={18} className="fill-[#E59A2F] text-[#E59A2F]" />
                 ))}
               </div>
-              <h3 className="text-lg font-extrabold text-[#0f3493]">Based on guest reviews</h3>
+              <h3 className="text-lg font-extrabold text-[#1e3a8a]">Based on guest reviews</h3>
               <p className="text-xs text-gray-400 font-semibold mt-1">Verified aggregations from TripAdvisor & Google reviews.</p>
             </div>
           </div>
 
           <div className="flex items-center gap-8 border-t md:border-t-0 md:border-l border-slate-150 pt-6 md:pt-0 md:pl-8 w-full md:w-auto justify-center">
             <div className="flex flex-col items-center gap-1">
-              <span className="text-base font-black text-[#0f3493]">Tripadvisor</span>
+              <span className="text-base font-black text-[#1e3a8a]">Tripadvisor</span>
               <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">5.0 Star Rating</span>
             </div>
             <div className="h-8 w-px bg-slate-200"></div>
             <div className="flex flex-col items-center gap-1">
-              <span className="text-base font-black text-[#0f3493]">Google Reviews</span>
+              <span className="text-base font-black text-[#1e3a8a]">Google Reviews</span>
               <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">4.9 Star Rating</span>
             </div>
           </div>
@@ -200,7 +200,7 @@ const GuestReviews = () => {
                 </div>
 
                 {/* Review Content */}
-                <h4 className="text-[16px] font-bold text-[#0f3493] mb-3 leading-snug">
+                <h4 className="text-[16px] font-bold text-[#1e3a8a] mb-3 leading-snug">
                   “{review.title}”
                 </h4>
                 <p className="text-gray-500 text-xs font-medium leading-relaxed mb-6">
@@ -216,7 +216,7 @@ const GuestReviews = () => {
                     <img src={review.avatar} alt={review.name} className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h5 className="font-extrabold text-[#0f3493] text-xs flex items-center gap-1">
+                    <h5 className="font-extrabold text-[#1e3a8a] text-xs flex items-center gap-1">
                       {review.name}
                       <span className="text-[#0F766E]" title="Verified Guest">
                         <CheckCircle2 size={12} />
@@ -249,7 +249,7 @@ const GuestReviews = () => {
           <div className="text-center">
             <button 
               onClick={loadMore}
-              className="inline-flex items-center justify-center gap-2 bg-[#0f3493] hover:bg-[#0a2366] text-white font-extrabold text-sm px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-95"
+              className="inline-flex items-center justify-center gap-2 bg-[#1e3a8a] hover:bg-[#0a2366] text-white font-extrabold text-sm px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-95"
             >
               Load More Reviews
               <ChevronRight size={16} />

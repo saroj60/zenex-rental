@@ -33,7 +33,7 @@ const FlightTicketing = () => {
             alt="Airplane flying over the Himalayas in Nepal" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#0f3493]/70"></div>
+          <div className="absolute inset-0 bg-[#1e3a8a]/70"></div>
         </div>
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
@@ -55,7 +55,7 @@ const FlightTicketing = () => {
           
           <div className="lg:col-span-2 space-y-12">
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-              <h2 className="text-3xl font-bold text-[#0f3493] mb-6">Our Ticketing Services</h2>
+              <h2 className="text-3xl font-bold text-[#1e3a8a] mb-6">Our Ticketing Services</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 Beyond ground transportation, Zenex Travel is your one-stop solution for all air travel needs in Nepal. Whether you need a quick domestic hop to Pokhara, a thrilling flight to Lukla for your Everest trek, or international tickets, our agency provides competitive rates and instant confirmations.
               </p>
@@ -101,7 +101,7 @@ const FlightTicketing = () => {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-              <h2 className="text-3xl font-bold text-[#0f3493] mb-6">Everest Mountain Flight</h2>
+              <h2 className="text-3xl font-bold text-[#1e3a8a] mb-6">Everest Mountain Flight</h2>
               <div className="flex flex-col md:flex-row gap-6 items-center bg-gray-50 p-4 rounded-2xl">
                 <img src="https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=1170&auto=format&fit=crop" alt="Everest Mountain Flight" className="w-full md:w-64 h-40 object-cover rounded-xl" />
                 <div>
@@ -117,7 +117,7 @@ const FlightTicketing = () => {
 
           <div className="lg:col-span-1">
             <div className="sticky top-24">
-              <div className="bg-gradient-to-br from-[#0f3493] to-[#1e3a8a] rounded-3xl p-8 shadow-xl text-white">
+              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#1e3a8a] rounded-3xl p-8 shadow-xl text-white">
                 <h3 className="text-2xl font-bold mb-4">Instant Booking</h3>
                 <p className="text-blue-100 mb-8">
                   Send us your travel dates and destinations on WhatsApp for immediate flight options and pricing.

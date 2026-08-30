@@ -29,7 +29,7 @@ const Gallery = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#0f3493] mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e3a8a] mb-4">
             A Glimpse of the Journey
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg">

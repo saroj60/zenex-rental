@@ -81,7 +81,7 @@ const RouteLanding = () => {
           {/* Left Column: Content */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-8">
-              <h2 className="text-3xl font-extrabold text-[#0f3493] mb-6">Route Overview</h2>
+              <h2 className="text-3xl font-extrabold text-[#1e3a8a] mb-6">Route Overview</h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-8">
                 {routeData.overview}
               </p>
@@ -104,7 +104,7 @@ const RouteLanding = () => {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-[#0f3493] mb-6">Why book with us for this route?</h3>
+              <h3 className="text-2xl font-bold text-[#1e3a8a] mb-6">Why book with us for this route?</h3>
               <ul className="space-y-4 mb-10">
                 {routeData.highlights.map((highlight, index) => (
                   <li key={index} className="flex items-start gap-3">
@@ -118,7 +118,7 @@ const RouteLanding = () => {
             {/* FAQs */}
             {routeData.faqs && routeData.faqs.length > 0 && (
               <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                <h2 className="text-3xl font-extrabold text-[#0f3493] mb-8">Frequently Asked Questions</h2>
+                <h2 className="text-3xl font-extrabold text-[#1e3a8a] mb-8">Frequently Asked Questions</h2>
                 <div className="space-y-6">
                   {routeData.faqs.map((faq, index) => (
                     <div key={index} className="border-b border-gray-100 pb-6 last:border-0 last:pb-0">

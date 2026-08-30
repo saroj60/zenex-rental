@@ -13,7 +13,7 @@ const CancellationPolicy = () => {
               <AlertCircle size={32} />
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl font-extrabold text-[#0f3493]">Cancellation Policy</h1>
+              <h1 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Cancellation Policy</h1>
               <p className="text-gray-500 font-medium mt-1">Clear and transparent refund rules</p>
             </div>
           </div>

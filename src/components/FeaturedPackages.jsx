@@ -130,7 +130,7 @@ const FeaturedPackages = () => {
               <div className="inline-flex items-center gap-1.5 bg-[#e53a24]/10 text-[#e53a24] px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider mb-3">
                 <Star size={12} fill="currentColor" /> Premium Journeys
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-[#0f3493] leading-none tracking-tight">
+              <h2 className="text-4xl md:text-5xl font-black text-[#1e3a8a] leading-none tracking-tight">
                 Featured Tours
               </h2>
               <p className="text-slate-500 font-medium mt-2">
@@ -167,7 +167,7 @@ const FeaturedPackages = () => {
               <Link 
                 to={pkg.isTourTrip ? `/tour/${pkg.id}` : `/packages/${pkg.id}`} 
                 key={pkg.id} 
-                className="min-w-[280px] w-[280px] md:min-w-[310px] md:w-[310px] bg-white rounded-3xl shadow-sm border border-slate-100 flex flex-col snap-start shrink-0 group hover:shadow-2xl hover:shadow-[#0f3493]/5 hover:-translate-y-2 transition-all duration-300 overflow-hidden relative"
+                className="min-w-[280px] w-[280px] md:min-w-[310px] md:w-[310px] bg-white rounded-3xl shadow-sm border border-slate-100 flex flex-col snap-start shrink-0 group hover:shadow-2xl hover:shadow-[#1e3a8a]/5 hover:-translate-y-2 transition-all duration-300 overflow-hidden relative"
               >
                 {pkg.badge && (
                   <div className="absolute top-4 left-4 z-20 bg-gradient-to-r from-orange-500 to-[#e53a24] text-white text-[11px] font-black uppercase tracking-wider px-3.5 py-1.5 rounded-xl shadow-md">
@@ -225,7 +225,7 @@ const FeaturedPackages = () => {
               <div className="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-600 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider mb-3">
                 <MapIcon size={12} /> Wilderness Treks
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-[#0f3493] leading-none tracking-tight">
+              <h2 className="text-4xl md:text-5xl font-black text-[#1e3a8a] leading-none tracking-tight">
                 Featured Treks
               </h2>
               <p className="text-slate-500 font-medium mt-2">
@@ -262,7 +262,7 @@ const FeaturedPackages = () => {
               <Link 
                 to={pkg.isTourTrip ? `/tour/${pkg.id}` : `/treks/${pkg.id}`} 
                 key={pkg.id} 
-                className="min-w-[280px] w-[280px] md:min-w-[310px] md:w-[310px] bg-white rounded-3xl shadow-sm border border-slate-100 flex flex-col snap-start shrink-0 group hover:shadow-2xl hover:shadow-[#0f3493]/5 hover:-translate-y-2 transition-all duration-300 overflow-hidden relative"
+                className="min-w-[280px] w-[280px] md:min-w-[310px] md:w-[310px] bg-white rounded-3xl shadow-sm border border-slate-100 flex flex-col snap-start shrink-0 group hover:shadow-2xl hover:shadow-[#1e3a8a]/5 hover:-translate-y-2 transition-all duration-300 overflow-hidden relative"
               >
                 {pkg.badge && (
                   <div className="absolute top-4 left-4 z-20 bg-gradient-to-r from-orange-500 to-[#e53a24] text-white text-[11px] font-black uppercase tracking-wider px-3.5 py-1.5 rounded-xl shadow-md">

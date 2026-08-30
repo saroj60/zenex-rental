@@ -47,7 +47,7 @@ const SelfDrive = () => {
             alt="Self drive car rental on a scenic road in Nepal" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#0f3493]/70"></div>
+          <div className="absolute inset-0 bg-[#1e3a8a]/70"></div>
         </div>
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
@@ -69,7 +69,7 @@ const SelfDrive = () => {
           
           <div className="lg:col-span-2 space-y-12">
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-              <h2 className="text-3xl font-bold text-[#0f3493] mb-6">Why Choose Self-Drive in Nepal?</h2>
+              <h2 className="text-3xl font-bold text-[#1e3a8a] mb-6">Why Choose Self-Drive in Nepal?</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 For travelers and locals who value privacy and flexibility, our self-drive car rental service is the perfect choice. Whether you're planning a weekend getaway from Kathmandu, a business trip, or a family vacation, driving yourself gives you complete control over your itinerary. Stop where you want, stay as long as you like, and discover the hidden gems of Nepal on your own schedule.
               </p>
@@ -96,7 +96,7 @@ const SelfDrive = () => {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-              <h2 className="text-3xl font-bold text-[#0f3493] mb-6">Requirements & Policies</h2>
+              <h2 className="text-3xl font-bold text-[#1e3a8a] mb-6">Requirements & Policies</h2>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <FileText className="text-[#e53a24] shrink-0 mt-1" size={20} />

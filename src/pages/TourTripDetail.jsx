@@ -727,7 +727,7 @@ const TourTripDetail = () => {
                     <div>
                       <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Price Per Person</span>
                       <div className="flex items-baseline gap-2.5">
-                        <span className="text-3xl font-black text-[#142B5F] tracking-tight">
+                        <span className="text-3xl font-black text-[#1e3a8a] tracking-tight">
                           {currencySign}{trip.pricingInfo?.sellingPrice || trip.price}
                         </span>
                         {trip.pricingInfo?.originalPrice && (
@@ -761,11 +761,11 @@ const TourTripDetail = () => {
                         onClick={() => setIsDiscountOpen(!isDiscountOpen)}
                         className="flex justify-between items-center cursor-pointer select-none group"
                       >
-                        <span className="font-bold text-[#142B5F] text-sm flex items-center gap-2">
+                        <span className="font-bold text-[#1e3a8a] text-sm flex items-center gap-2">
                           <Activity size={16} className="text-[#0F766E]" />
                           Group Discounts
                         </span>
-                        <ChevronDown size={18} className={`text-gray-400 group-hover:text-[#142B5F] transition-transform duration-300 ${isDiscountOpen ? 'rotate-180' : ''}`} />
+                        <ChevronDown size={18} className={`text-gray-400 group-hover:text-[#1e3a8a] transition-transform duration-300 ${isDiscountOpen ? 'rotate-180' : ''}`} />
                       </div>
                       
                       {isDiscountOpen && (
@@ -786,7 +786,7 @@ const TourTripDetail = () => {
                                 return (
                                   <tr key={idx} className="hover:bg-white transition-colors">
                                     <td className="py-3 text-[#172033] font-medium text-xs">{travelers}</td>
-                                    <td className="py-3 text-right font-bold text-[#142B5F]">{tierCurrency}{tier.pricePerPerson}</td>
+                                    <td className="py-3 text-right font-bold text-[#1e3a8a]">{tierCurrency}{tier.pricePerPerson}</td>
                                   </tr>
                                 );
                               })}
@@ -806,7 +806,7 @@ const TourTripDetail = () => {
                           type="date" 
                           value={date}
                           onChange={(e) => setDate(e.target.value)}
-                          className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer" 
+                          className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
                         />
                       </div>
                     </div>
@@ -815,7 +815,7 @@ const TourTripDetail = () => {
                       <select 
                         value={travelers} 
                         onChange={(e) => setTravelers(e.target.value)}
-                        className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer appearance-none"
+                        className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer appearance-none"
                       >
                         <option value="1">1 Person</option>
                         <option value="2">2 Persons</option>
@@ -828,7 +828,7 @@ const TourTripDetail = () => {
 
                   {/* Buttons */}
                   <div className="space-y-3 pt-2">
-                    <Link to={`/checkout?pkg=${trip.id}&travelers=${travelers}&date=${date}`} className="w-full flex justify-center bg-[#142B5F] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
+                    <Link to={`/checkout?pkg=${trip.id}&travelers=${travelers}&date=${date}`} className="w-full flex justify-center bg-[#1e3a8a] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
                       BOOK THIS TRIP
                     </Link>
                     <button 
@@ -836,7 +836,7 @@ const TourTripDetail = () => {
                         const message = `Hi! I have some questions about the ${trip.title} package. Can you please help me?`;
                         window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
                       }}
-                      className="w-full flex justify-center bg-white text-[#142B5F] border-2 border-[#142B5F] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm"
+                      className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm"
                     >
                       MAKE AN INQUIRY
                     </button>

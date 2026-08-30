@@ -929,7 +929,7 @@ const TrekDetail = () => {
                   <div>
                     <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Price Per Person</span>
                     <div className="flex items-baseline gap-2.5">
-                      <span className="text-3xl font-black text-[#142B5F] tracking-tight">
+                      <span className="text-3xl font-black text-[#1e3a8a] tracking-tight">
                         {perPersonPrice ? `US$${perPersonPrice}` : 'TBA'}
                       </span>
                       {trek.originalPrice && (
@@ -955,11 +955,11 @@ const TrekDetail = () => {
                     onClick={() => setIsDiscountOpen(!isDiscountOpen)}
                     className="flex justify-between items-center cursor-pointer select-none group"
                   >
-                    <span className="font-bold text-[#142B5F] text-sm flex items-center gap-2">
+                    <span className="font-bold text-[#1e3a8a] text-sm flex items-center gap-2">
                       <Activity size={16} className="text-[#0F766E]" />
                       Group Discounts
                     </span>
-                    <ChevronDown size={18} className={`text-gray-400 group-hover:text-[#142B5F] transition-transform duration-300 ${isDiscountOpen ? 'rotate-180' : ''}`} />
+                    <ChevronDown size={18} className={`text-gray-400 group-hover:text-[#1e3a8a] transition-transform duration-300 ${isDiscountOpen ? 'rotate-180' : ''}`} />
                   </div>
                   
                   {isDiscountOpen && (
@@ -974,23 +974,23 @@ const TrekDetail = () => {
                         <tbody className="divide-y divide-gray-100">
                           <tr className="hover:bg-white transition-colors">
                             <td className="py-3 text-[#172033] font-medium text-xs">2 - 3 pax</td>
-                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(2)}</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(2)}</td>
                           </tr>
                           <tr className="hover:bg-white transition-colors">
                             <td className="py-3 text-[#172033] font-medium text-xs">4 - 7 pax</td>
-                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(4)}</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(4)}</td>
                           </tr>
                           <tr className="hover:bg-white transition-colors">
                             <td className="py-3 text-[#172033] font-medium text-xs">8 - 11 pax</td>
-                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(8)}</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(8)}</td>
                           </tr>
                           <tr className="hover:bg-white transition-colors">
                             <td className="py-3 text-[#172033] font-medium text-xs">12 - 15 pax</td>
-                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(12)}</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(12)}</td>
                           </tr>
                           <tr className="hover:bg-white transition-colors">
                             <td className="py-3 text-[#172033] font-medium text-xs">16 - 20 pax</td>
-                            <td className="py-3 text-right font-bold text-[#142B5F]">US${getDiscountedPerPersonPrice(16)}</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(16)}</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1007,7 +1007,7 @@ const TrekDetail = () => {
                         type="date" 
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
-                        className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer" 
+                        className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
                       />
                     </div>
                   </div>
@@ -1016,7 +1016,7 @@ const TrekDetail = () => {
                     <select 
                       value={persons}
                       onChange={(e) => setPersons(Number(e.target.value))}
-                      className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer appearance-none"
+                      className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer appearance-none"
                     >
                       <option value={1}>1 Person</option>
                       <option value={2}>2 Persons</option>
@@ -1029,10 +1029,10 @@ const TrekDetail = () => {
 
                 {/* Buttons */}
                 <div className="space-y-3 pt-2">
-                  <button onClick={handleBookPackage} className="w-full flex justify-center bg-[#142B5F] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
+                  <button onClick={handleBookPackage} className="w-full flex justify-center bg-[#1e3a8a] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
                     BOOK THIS TRIP
                   </button>
-                  <button onClick={handleQuickInquiry} className="w-full flex justify-center bg-white text-[#142B5F] border-2 border-[#142B5F] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm">
+                  <button onClick={handleQuickInquiry} className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm">
                     MAKE AN INQUIRY
                   </button>
                   <button onClick={handleDownloadPDF} className="w-full bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center flex justify-center items-center gap-2">

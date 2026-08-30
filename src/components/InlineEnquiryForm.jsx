@@ -35,7 +35,7 @@ Please let me know the availability and pricing.`;
     return (
       <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/50 w-full max-w-4xl mx-auto flex flex-col items-center justify-center text-center py-10 animate-fade-in">
         <CheckCircle className="text-green-500 mb-4" size={48} />
-        <h3 className="text-2xl font-extrabold text-[#0f3493] mb-2">Enquiry Sent Successfully!</h3>
+        <h3 className="text-2xl font-extrabold text-[#1e3a8a] mb-2">Enquiry Sent Successfully!</h3>
         <p className="text-gray-600 font-medium">Thank you for your interest in the {routeName} route. Our team will contact you shortly to confirm the details.</p>
         <button 
           onClick={() => setStatus('idle')}

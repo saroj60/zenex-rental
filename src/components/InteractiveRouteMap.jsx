@@ -110,7 +110,7 @@ const InteractiveRouteMap = () => {
           
           {/* Info Panel */}
           <div className="w-full lg:w-1/3 z-10">
-            <h2 className="text-4xl font-extrabold text-[#0f3493] mb-4">Interactive<br/>Route Map</h2>
+            <h2 className="text-4xl font-extrabold text-[#1e3a8a] mb-4">Interactive<br/>Route Map</h2>
             <p className="text-gray-600 mb-8 font-medium">Hover over the routes or cities to see distance, time, and vehicle recommendations for your Himalayan journey.</p>
             
             <div className="bg-white rounded-3xl p-6 shadow-xl border border-gray-100 min-h-[300px] flex flex-col transition-all">

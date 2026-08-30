@@ -13,7 +13,7 @@ const TermsConditions = () => {
               <Shield size={32} />
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl font-extrabold text-[#0f3493]">Terms & Conditions</h1>
+              <h1 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Terms & Conditions</h1>
               <p className="text-gray-500 font-medium mt-1">Last updated: June 2026</p>
             </div>
           </div>

@@ -283,7 +283,7 @@ const WhatOurGuestsSay = () => {
                     <img src={currentReview.avatar} alt={`${currentReview.name} avatar`} className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-[#142B5F] text-sm md:text-[15px] flex items-center gap-1.5">
+                    <h4 className="font-extrabold text-[#1e3a8a] text-sm md:text-[15px] flex items-center gap-1.5">
                       {currentReview.name}
                       <span className="text-[#0F9F9A] fill-[#0F9F9A]/10" title="Verified Traveler">
                         <CheckCircle2 size={13} />
@@ -303,14 +303,14 @@ const WhatOurGuestsSay = () => {
                 {/* Review Platforms Summary */}
                 <div className="flex items-center justify-between sm:justify-start w-full sm:w-auto gap-6">
                   <div className="text-left shrink-0">
-                    <p className="text-sm md:text-base font-black text-[#142B5F] leading-none">4.9 / 5</p>
+                    <p className="text-sm md:text-base font-black text-[#1e3a8a] leading-none">4.9 / 5</p>
                     <p className="text-[9px] md:text-[10px] text-slate-400 font-bold tracking-wide uppercase mt-1">150+ Reviews</p>
                   </div>
 
                   <div className="h-8 w-px bg-slate-100"></div>
 
                   <div className="flex flex-col items-start gap-1">
-                    <div className="flex items-center gap-3 text-[10px] md:text-[11px] font-extrabold text-[#142B5F]">
+                    <div className="flex items-center gap-3 text-[10px] md:text-[11px] font-extrabold text-[#1e3a8a]">
                       <span className="cursor-default">Tripadvisor</span>
                       <span className="cursor-default">Google Reviews</span>
                     </div>
@@ -325,19 +325,19 @@ const WhatOurGuestsSay = () => {
                 <div className="flex items-center justify-center gap-4 shrink-0 w-full sm:w-auto mt-2 sm:mt-0">
                   <button 
                     onClick={handlePrevTesti}
-                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#1e3a8a] hover:border-[#1e3a8a] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
                     aria-label="Previous Review"
                   >
                     <ArrowLeft size={16} />
                   </button>
 
-                  <span className="text-[10px] md:text-[11px] font-bold text-[#142B5F] min-w-[40px] text-center tracking-widest" aria-live="polite">
+                  <span className="text-[10px] md:text-[11px] font-bold text-[#1e3a8a] min-w-[40px] text-center tracking-widest" aria-live="polite">
                     {String(currentReview.id).padStart(2, '0')} / {String(guestReviews.length).padStart(2, '0')}
                   </span>
 
                   <button 
                     onClick={handleNextTesti}
-                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#1e3a8a] hover:border-[#1e3a8a] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
                     aria-label="Next Review"
                   >
                     <ArrowRight size={16} />
@@ -371,7 +371,7 @@ const WhatOurGuestsSay = () => {
               {/* Cinematic Video Card */}
               <div 
                 onMouseEnter={handleMouseEnterVideo}
-                className="relative rounded-[20px] overflow-hidden aspect-video bg-[#142B5F] group shadow-[0_8px_30px_rgba(20,43,95,0.06)] hover:shadow-[0_20px_40px_rgba(20,43,95,0.2)] border border-slate-100/50 my-auto w-full transition-shadow duration-500 cursor-pointer"
+                className="relative rounded-[20px] overflow-hidden aspect-video bg-[#1e3a8a] group shadow-[0_8px_30px_rgba(20,43,95,0.06)] hover:shadow-[0_20px_40px_rgba(20,43,95,0.2)] border border-slate-100/50 my-auto w-full transition-shadow duration-500 cursor-pointer"
               >
                 <div 
                   className="flex h-full transition-transform"
@@ -448,19 +448,19 @@ const WhatOurGuestsSay = () => {
                 <div className="flex items-center gap-4 shrink-0 w-full sm:w-auto mt-2 sm:mt-0 justify-center">
                   <button 
                     onClick={handlePrevVideo}
-                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#1e3a8a] hover:border-[#1e3a8a] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
                     aria-label="Previous Video"
                   >
                     <ArrowLeft size={16} />
                   </button>
                   
-                  <span className="text-[10px] md:text-[11px] font-bold text-[#142B5F] min-w-[35px] text-center tracking-widest" aria-live="polite">
+                  <span className="text-[10px] md:text-[11px] font-bold text-[#1e3a8a] min-w-[35px] text-center tracking-widest" aria-live="polite">
                     {String(currentVideo.id).padStart(2, '0')} / {String(travelVideos.length).padStart(2, '0')}
                   </span>
 
                   <button 
                     onClick={handleNextVideo}
-                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#142B5F] hover:border-[#142B5F] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
+                    className="w-11 h-11 sm:w-9 sm:h-9 rounded-full border border-slate-100 text-slate-400 hover:text-[#1e3a8a] hover:border-[#1e3a8a] flex items-center justify-center transition-all duration-300 hover:bg-[#F7FAFC] active:scale-95 focus:ring-2 focus:ring-[#0F9F9A] focus:ring-offset-2 focus:outline-none"
                     aria-label="Next Video"
                   >
                     <ArrowRight size={16} />

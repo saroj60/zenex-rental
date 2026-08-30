@@ -69,7 +69,7 @@ const LatestBlogs = () => {
               <Sparkles size={12} fill="currentColor" />
               <span>Travel Guides & Stories</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-[#0f3493] leading-none tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-[#1e3a8a] leading-none tracking-tight">
               Latest from Our Blog
             </h2>
             <p className="text-slate-500 font-medium mt-3">
@@ -104,7 +104,7 @@ const LatestBlogs = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   {blog.category && (
-                    <span className="absolute top-4 right-4 bg-[#0f3493] text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-md z-10">
+                    <span className="absolute top-4 right-4 bg-[#1e3a8a] text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-md z-10">
                       {blog.category}
                     </span>
                   )}

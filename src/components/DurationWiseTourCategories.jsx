@@ -127,7 +127,7 @@ const DurationWiseTourCategories = () => {
                       }}
                       className={`text-left px-4 py-3 text-[14px] font-medium rounded-xl transition-all ${
                         activeDuration === days
-                          ? 'bg-[#142B5F] text-white shadow-md'
+                          ? 'bg-[#1e3a8a] text-white shadow-md'
                           : 'text-[#64748B] bg-gray-50 hover:bg-gray-100'
                       }`}
                     >
@@ -168,7 +168,7 @@ const DurationWiseTourCategories = () => {
                       onClick={() => setActiveDuration(days)}
                       className={`relative w-full flex items-center justify-between px-4 py-3 text-[15px] font-medium rounded-xl transition-all duration-300 overflow-hidden group ${
                         activeDuration === days
-                          ? 'bg-[#142B5F] text-white shadow-md'
+                          ? 'bg-[#1e3a8a] text-white shadow-md'
                           : 'text-[#64748B] hover:bg-[#F8FAFC] hover:text-[#172033]'
                       }`}
                     >
@@ -185,7 +185,7 @@ const DurationWiseTourCategories = () => {
               
               <Link 
                 to="/packages" 
-                className="w-full flex items-center justify-center gap-2 px-5 py-4 text-[14px] font-bold text-white bg-[#142B5F] rounded-xl hover:bg-[#10224b] transition-all duration-300 shadow-sm hover:shadow-md group"
+                className="w-full flex items-center justify-center gap-2 px-5 py-4 text-[14px] font-bold text-white bg-[#1e3a8a] rounded-xl hover:bg-[#10224b] transition-all duration-300 shadow-sm hover:shadow-md group"
               >
                 View All Tours 
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -210,7 +210,7 @@ const DurationWiseTourCategories = () => {
                 <span className="text-sm font-medium text-[#64748B] bg-white px-3 py-1.5 rounded-full border border-gray-100 shadow-sm hidden sm:inline-block">
                   {activeTours.length} packages
                 </span>
-                <Link to="/packages" className="group flex items-center gap-1.5 text-[14px] font-semibold text-[#64748B] hover:text-[#142B5F] transition-colors">
+                <Link to="/packages" className="group flex items-center gap-1.5 text-[14px] font-semibold text-[#64748B] hover:text-[#1e3a8a] transition-colors">
                   View All <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -237,7 +237,7 @@ const DurationWiseTourCategories = () => {
                       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block"></div>
                       
                       {/* Save Button */}
-                      <button className="absolute top-3 left-3 sm:top-4 sm:left-4 w-8 h-8 sm:w-9 sm:h-9 bg-white rounded-full flex items-center justify-center shadow-md text-[#142B5F] hover:text-[#E59A2F] transition-colors z-10 group/btn">
+                      <button className="absolute top-3 left-3 sm:top-4 sm:left-4 w-8 h-8 sm:w-9 sm:h-9 bg-white rounded-full flex items-center justify-center shadow-md text-[#1e3a8a] hover:text-[#E59A2F] transition-colors z-10 group/btn">
                         <Heart size={14} className="sm:w-4 sm:h-4 group-hover/btn:fill-current transition-all" />
                       </button>
 
@@ -245,13 +245,13 @@ const DurationWiseTourCategories = () => {
                       {tour.price && (
                         <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/90 backdrop-blur-md px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full shadow-sm flex items-center gap-1.5 z-10">
                           <span className="text-[9px] sm:text-[10px] font-bold text-[#64748B] uppercase tracking-wider">From</span>
-                          <span className="font-extrabold text-[#142B5F] text-[13px] sm:text-[14px]">{tour.price}</span>
+                          <span className="font-extrabold text-[#1e3a8a] text-[13px] sm:text-[14px]">{tour.price}</span>
                         </div>
                       )}
                       
                       {/* Hover Arrow Overlay */}
                       <div className="hidden sm:flex absolute bottom-4 right-4 w-10 h-10 bg-white/95 backdrop-blur-sm rounded-full items-center justify-center shadow-lg translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-10">
-                        <ArrowRight size={18} className="text-[#142B5F]" />
+                        <ArrowRight size={18} className="text-[#1e3a8a]" />
                       </div>
                     </div>
                     
@@ -263,7 +263,7 @@ const DurationWiseTourCategories = () => {
                       </div>
                       
                       {/* Title */}
-                      <h3 className="text-[16px] sm:text-[18px] font-bold text-[#172033] leading-snug group-hover:text-[#142B5F] transition-colors line-clamp-2 mb-3 sm:mb-4">
+                      <h3 className="text-[16px] sm:text-[18px] font-bold text-[#172033] leading-snug group-hover:text-[#1e3a8a] transition-colors line-clamp-2 mb-3 sm:mb-4">
                         {tour.title}
                       </h3>
                       
@@ -287,7 +287,7 @@ const DurationWiseTourCategories = () => {
                           <Star key={star} size={12} className="fill-[#E59A2F] text-[#E59A2F]" />
                         ))}
                       </div>
-                      <span className="text-[12px] sm:text-[13px] font-bold text-[#142B5F] group-hover:text-[#E59A2F] flex items-center gap-1 transition-colors">
+                      <span className="text-[12px] sm:text-[13px] font-bold text-[#1e3a8a] group-hover:text-[#E59A2F] flex items-center gap-1 transition-colors">
                         View Details <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                       </span>
                     </div>
@@ -297,7 +297,7 @@ const DurationWiseTourCategories = () => {
               ) : (
                 <div className="col-span-1 md:col-span-2 xl:col-span-3 text-center py-12 sm:py-16 bg-white rounded-[16px] sm:rounded-[20px] border border-gray-100 shadow-sm">
                   <p className="text-[#64748B] text-[14px] sm:text-[15px]">No tours found for this duration.</p>
-                  <button onClick={() => setActiveDuration(4)} className="mt-4 text-[#142B5F] font-semibold hover:underline text-sm sm:text-base">
+                  <button onClick={() => setActiveDuration(4)} className="mt-4 text-[#1e3a8a] font-semibold hover:underline text-sm sm:text-base">
                     Back to 4 Days Tours
                   </button>
                 </div>

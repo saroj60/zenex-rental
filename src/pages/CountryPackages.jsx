@@ -119,7 +119,7 @@ const CountryPackages = () => {
             alt={country.name} 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#0f3493]/60"></div>
+          <div className="absolute inset-0 bg-[#1e3a8a]/60"></div>
         </div>
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">

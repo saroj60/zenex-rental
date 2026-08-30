@@ -9596,7 +9596,7 @@ const PackageDetail = () => {
                         </div>
                         <div className="flex-1 min-w-0">
                           <p className="text-sm text-gray-500 font-medium truncate">{info.label}</p>
-                          <p className="text-[#0f3493] font-semibold text-sm leading-tight mt-0.5 break-words hyphens-auto">
+                          <p className="text-[#1e3a8a] font-semibold text-sm leading-tight mt-0.5 break-words hyphens-auto">
                             {info.value.replace(/\//g, '/\u200B')}
                           </p>
                         </div>
@@ -9810,7 +9810,7 @@ const PackageDetail = () => {
                   <div>
                     <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Starting From</span>
                     <div className="flex items-baseline gap-2.5">
-                      <span className="text-3xl font-black text-[#142B5F] tracking-tight">
+                      <span className="text-3xl font-black text-[#1e3a8a] tracking-tight">
                         {currentPrice ? currentPrice : 'TBA'}
                       </span>
                     </div>
@@ -9829,7 +9829,7 @@ const PackageDetail = () => {
                 <div className="space-y-4">
                   {/* Package Type */}
                   <div className="bg-[#F8FAFC] p-4 rounded-xl border border-gray-100">
-                    <h4 className="font-bold text-xs text-[#142B5F] uppercase tracking-wider mb-3">
+                    <h4 className="font-bold text-xs text-[#1e3a8a] uppercase tracking-wider mb-3">
                       Select Package Level
                     </h4>
                     <div className="grid grid-cols-2 gap-2">
@@ -9864,7 +9864,7 @@ const PackageDetail = () => {
                           type="date" 
                           value={date}
                           onChange={(e) => setDate(e.target.value)}
-                          className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer" 
+                          className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
                         />
                       </div>
                     </div>
@@ -9873,7 +9873,7 @@ const PackageDetail = () => {
                       <select 
                         value={persons}
                         onChange={(e) => setPersons(Number(e.target.value))}
-                        className="w-full text-sm font-semibold text-[#142B5F] bg-transparent outline-none cursor-pointer appearance-none"
+                        className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer appearance-none"
                       >
                         <option value={1}>1 Person</option>
                         <option value={2}>2 Persons</option>
@@ -9886,10 +9886,10 @@ const PackageDetail = () => {
 
                   {/* Buttons */}
                   <div className="space-y-3 pt-2">
-                    <button onClick={handleBookPackage} className="w-full flex justify-center bg-[#142B5F] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
+                    <button onClick={handleBookPackage} className="w-full flex justify-center bg-[#1e3a8a] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
                       BOOK THIS PACKAGE
                     </button>
-                    <button onClick={handleQuickInquiry} className="w-full flex justify-center bg-white text-[#142B5F] border-2 border-[#142B5F] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm">
+                    <button onClick={handleQuickInquiry} className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm">
                       MAKE AN INQUIRY
                     </button>
                   </div>

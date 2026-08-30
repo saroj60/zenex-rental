@@ -87,12 +87,12 @@ const SEOLanding = ({ staticSlug }) => {
           {/* Left Column: Content */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-8">
-              <h2 className="text-3xl font-extrabold text-[#0f3493] mb-6">Overview</h2>
+              <h2 className="text-3xl font-extrabold text-[#1e3a8a] mb-6">Overview</h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-8">
                 {routeData.overview}
               </p>
               
-              <h3 className="text-2xl font-bold text-[#0f3493] mb-6 mt-10">Why Choose Us?</h3>
+              <h3 className="text-2xl font-bold text-[#1e3a8a] mb-6 mt-10">Why Choose Us?</h3>
               <ul className="space-y-4">
                 {routeData.highlights.map((highlight, idx) => (
                   <li key={idx} className="flex items-start">
@@ -106,7 +106,7 @@ const SEOLanding = ({ staticSlug }) => {
             {/* FAQs */}
             {routeData.faqs && (
               <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-8" itemScope itemType="https://schema.org/FAQPage">
-                <h2 className="text-3xl font-extrabold text-[#0f3493] mb-8">Frequently Asked Questions</h2>
+                <h2 className="text-3xl font-extrabold text-[#1e3a8a] mb-8">Frequently Asked Questions</h2>
                 <div className="space-y-6">
                   {routeData.faqs.map((faq, idx) => (
                     <div key={idx} className="border-b border-gray-100 pb-6 last:border-0 last:pb-0" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">

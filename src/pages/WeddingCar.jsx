@@ -47,7 +47,7 @@ const WeddingCar = () => {
             alt="Luxury wedding car decorated with flowers" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#0f3493]/70"></div>
+          <div className="absolute inset-0 bg-[#1e3a8a]/70"></div>
         </div>
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
@@ -72,7 +72,7 @@ const WeddingCar = () => {
           
           <div className="lg:col-span-2 space-y-12">
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-              <h2 className="text-3xl font-bold text-[#0f3493] mb-6">Your Perfect Ride for the Perfect Day</h2>
+              <h2 className="text-3xl font-bold text-[#1e3a8a] mb-6">Your Perfect Ride for the Perfect Day</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 Your wedding day is one of the most important days of your life, and your transportation should reflect the elegance and significance of the occasion. At Zenex Travel, we offer a specialized fleet of luxury wedding cars in Kathmandu, complete with beautiful floral decorations and professional, uniformed chauffeurs.
               </p>
@@ -118,7 +118,7 @@ const WeddingCar = () => {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-              <h2 className="text-3xl font-bold text-[#0f3493] mb-6">Popular Wedding Vehicles</h2>
+              <h2 className="text-3xl font-bold text-[#1e3a8a] mb-6">Popular Wedding Vehicles</h2>
               <div className="space-y-6">
                 {weddingVehicles.map(v => (
                   <div key={v.id} className="flex flex-col md:flex-row gap-6 items-center bg-gray-50 p-4 rounded-2xl group">
@@ -141,7 +141,7 @@ const WeddingCar = () => {
 
           <div className="lg:col-span-1">
             <div className="sticky top-24">
-              <div className="bg-gradient-to-br from-[#0f3493] to-[#1e3a8a] rounded-3xl p-8 shadow-xl text-white">
+              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#1e3a8a] rounded-3xl p-8 shadow-xl text-white">
                 <h3 className="text-2xl font-bold mb-4">Book Your Wedding Car</h3>
                 <p className="text-blue-100 mb-8">
                   Wedding season in Nepal gets extremely busy. We highly recommend booking your vehicle at least 1 month in advance.
@@ -151,7 +151,7 @@ const WeddingCar = () => {
                   <a href="https://wa.me/9779767476521?text=Hi,%20I%20am%20looking%20to%20book%20a%20wedding%20car." target="_blank" rel="noreferrer" className="w-full block text-center bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-green-600 transition-colors">
                     Chat on WhatsApp
                   </a>
-                  <a href="tel:+9779767476521" className="w-full block text-center bg-white text-[#0f3493] py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors">
+                  <a href="tel:+9779767476521" className="w-full block text-center bg-white text-[#1e3a8a] py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors">
                     Call Us Now
                   </a>
                 </div>
