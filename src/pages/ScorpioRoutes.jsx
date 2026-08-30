@@ -40,7 +40,7 @@ const ScorpioRoutes = () => {
 
   const handleBook = (route) => {
     const message = `Hi Zenex Travel, I'm interested in booking a Mahindra Scorpio for the route: ${route.dest} (${route.duration}) priced at ${formatPrice(route.price)}. Is it available?`;
-    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -189,7 +189,7 @@ const ScorpioRoutes = () => {
               </div>
             </div>
             <button 
-              onClick={() => window.open(`https://wa.me/9779767476521?text=${encodeURIComponent("Hi Zenex Travel, I would like to request a custom quote for a Mahindra Scorpio.")}`, '_blank')}
+              onClick={() => window.open(`https://wa.me/9779860156046?text=${encodeURIComponent("Hi Zenex Travel, I would like to request a custom quote for a Mahindra Scorpio.")}`, '_blank')}
               className="w-full sm:w-auto bg-[#1e3a8a] text-white px-6 py-3 rounded-xl hover:bg-[#152c6e] transition-colors font-bold whitespace-nowrap"
             >
               Request Custom Quote

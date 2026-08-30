@@ -35,7 +35,7 @@ const Contact = () => {
       "name": "Zenex Travel",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+977-9767476521",
+        "telephone": "+977-9860156046",
         "contactType": "customer service",
         "availableLanguage": ["English", "Nepali"]
       }
@@ -96,13 +96,13 @@ const Contact = () => {
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">Phone Numbers</h4>
                     <p className="text-gray-600 leading-relaxed mb-1">
-                      <span className="font-medium">Sales:</span> +977 976-7476521
+                      <span className="font-medium">Sales:</span> +977 9860156046
                     </p>
                     <p className="text-gray-600 leading-relaxed mb-1">
                       <span className="font-medium">Landline:</span> 015928752
                     </p>
                     <p className="text-[#e53a24] font-bold">
-                      24/7 Emergency: +977 976-7476521
+                      24/7 Emergency: +977 9860156046
                     </p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-10 pt-8 border-t border-gray-100">
-                <a href="https://wa.me/9779767476521" target="_blank" rel="noreferrer" className="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-[#1DA851] transition-colors shadow-md flex items-center justify-center gap-2">
+                <a href="https://wa.me/9779860156046" target="_blank" rel="noreferrer" className="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-[#1DA851] transition-colors shadow-md flex items-center justify-center gap-2">
                   <MessageCircle size={20} /> Chat on WhatsApp
                 </a>
               </div>

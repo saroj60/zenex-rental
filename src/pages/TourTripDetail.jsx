@@ -145,7 +145,7 @@ const TourTripDetail = () => {
         </div>
         <div style="text-align: right;">
           <p style="margin: 0; font-size: 12px; color: #666;">Web: zenextravels.com</p>
-          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 976-7476521</p>
+          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 9860156046</p>
         </div>
       </div>
     `;
@@ -834,7 +834,7 @@ const TourTripDetail = () => {
                     <button 
                       onClick={() => {
                         const message = `Hi! I have some questions about the ${trip.title} package. Can you please help me?`;
-                        window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
+                        window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
                       }}
                       className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm"
                     >

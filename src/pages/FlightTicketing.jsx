@@ -107,7 +107,7 @@ const FlightTicketing = () => {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">The Ultimate Himalayan Experience</h3>
                   <p className="text-gray-600 mb-4">Don't have time to trek? Take a 1-hour scenic flight early in the morning from Kathmandu airport. Witness the majestic Mount Everest and the sprawling Himalayan range from the comfort of a window seat.</p>
-                  <a href="https://wa.me/9779767476521?text=Hi,%20I%20want%20to%20book%20an%20Everest%20Mountain%20Flight." target="_blank" rel="noreferrer" className="inline-block bg-[#e53a24] text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition-colors">
+                  <a href="https://wa.me/9779860156046?text=Hi,%20I%20want%20to%20book%20an%20Everest%20Mountain%20Flight." target="_blank" rel="noreferrer" className="inline-block bg-[#e53a24] text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition-colors">
                     Book Mountain Flight
                   </a>
                 </div>
@@ -124,7 +124,7 @@ const FlightTicketing = () => {
                 </p>
                 
                 <div className="space-y-4">
-                  <a href="https://wa.me/9779767476521?text=Hi,%20I%20need%20help%20with%20flight%20ticketing." target="_blank" rel="noreferrer" className="w-full block text-center bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-green-600 transition-colors">
+                  <a href="https://wa.me/9779860156046?text=Hi,%20I%20need%20help%20with%20flight%20ticketing." target="_blank" rel="noreferrer" className="w-full block text-center bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-green-600 transition-colors">
                     Message on WhatsApp
                   </a>
                 </div>

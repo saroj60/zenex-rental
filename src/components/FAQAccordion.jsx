@@ -75,7 +75,7 @@ const FAQAccordion = () => {
             <Link to="/packages" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1e3a8a] hover:bg-[#0a2366] text-white font-bold px-6 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg">
               Contact Us <ArrowRight size={18} />
             </Link>
-            <a href="https://wa.me/9779767476521" target="_blank" rel="noreferrer" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-gray-200 hover:border-[#25D366] hover:text-[#25D366] text-gray-700 font-bold px-6 py-3.5 rounded-xl transition-colors">
+            <a href="https://wa.me/9779860156046" target="_blank" rel="noreferrer" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-gray-200 hover:border-[#25D366] hover:text-[#25D366] text-gray-700 font-bold px-6 py-3.5 rounded-xl transition-colors">
               <MessageCircle size={18} /> WhatsApp Us
             </a>
           </div>

@@ -75,7 +75,7 @@ const TrekDetail = () => {
 
   const handleQuickInquiry = () => {
     const message = `Hi! I have some questions about the ${trek.title}. Can you please help me?`;
-    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleDownloadPDF = () => {
@@ -93,7 +93,7 @@ const TrekDetail = () => {
         </div>
         <div style="text-align: right;">
           <p style="margin: 0; font-size: 12px; color: #666;">Web: zenextravels.com</p>
-          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 976-7476521</p>
+          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 9860156046</p>
         </div>
       </div>
     `;

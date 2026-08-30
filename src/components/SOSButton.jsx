@@ -54,7 +54,7 @@ const SOSButton = () => {
                 <PhoneCall size={20} className="text-sunset-orange" />
               </a>
 
-              <a href="tel:+9779767476521" className="flex items-center gap-4 bg-surface-container-low p-4 rounded-2xl hover:bg-surface-container transition-colors border border-outline-variant/30 group">
+              <a href="tel:+9779860156046" className="flex items-center gap-4 bg-surface-container-low p-4 rounded-2xl hover:bg-surface-container transition-colors border border-outline-variant/30 group">
                 <div className="w-12 h-12 bg-forest-green/10 text-forest-green rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Wrench size={24} />
                 </div>

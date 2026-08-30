@@ -153,7 +153,7 @@ const VehicleListing = () => {
 Is this available?`;
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/9779767476521?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/9779860156046?text=${encodedMessage}`, '_blank');
   };
 
   const structuredData = {

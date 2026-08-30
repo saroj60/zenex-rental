@@ -23,7 +23,7 @@ Details:
 
 Please let me know the availability and pricing.`;
 
-    const whatsappUrl = `https://wa.me/9779767476521?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/9779860156046?text=${encodeURIComponent(message)}`;
 
     setTimeout(() => {
       setStatus('success');

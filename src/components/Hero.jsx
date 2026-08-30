@@ -73,7 +73,7 @@ const Hero = () => {
             <Link to="/vehicles" className="w-full sm:w-auto text-white border border-white/60 px-4 py-1.5 rounded-lg font-bold flex items-center justify-center gap-1.5 hover:bg-white/10 transition-colors text-[11px] md:text-xs backdrop-blur-sm">
               Rent a Car
             </Link>
-            <a href="tel:+9779767476521" className="w-full sm:w-auto text-white px-4 py-2 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-colors shadow-md bg-[#e53a24] hover:bg-[#d04b08] text-[11px] md:text-xs">
+            <a href="tel:+9779860156046" className="w-full sm:w-auto text-white px-4 py-2 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-colors shadow-md bg-[#e53a24] hover:bg-[#d04b08] text-[11px] md:text-xs">
               <Phone size={12} fill="currentColor" /> Call Now
             </a>
           </motion.div>

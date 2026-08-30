@@ -148,10 +148,10 @@ const WeddingCar = () => {
                 </p>
                 
                 <div className="space-y-4">
-                  <a href="https://wa.me/9779767476521?text=Hi,%20I%20am%20looking%20to%20book%20a%20wedding%20car." target="_blank" rel="noreferrer" className="w-full block text-center bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-green-600 transition-colors">
+                  <a href="https://wa.me/9779860156046?text=Hi,%20I%20am%20looking%20to%20book%20a%20wedding%20car." target="_blank" rel="noreferrer" className="w-full block text-center bg-[#25D366] text-white py-4 rounded-xl font-bold hover:bg-green-600 transition-colors">
                     Chat on WhatsApp
                   </a>
-                  <a href="tel:+9779767476521" className="w-full block text-center bg-white text-[#1e3a8a] py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors">
+                  <a href="tel:+9779860156046" className="w-full block text-center bg-white text-[#1e3a8a] py-4 rounded-xl font-bold hover:bg-gray-50 transition-colors">
                     Call Us Now
                   </a>
                 </div>

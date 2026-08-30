@@ -32,7 +32,7 @@ const SelfDriveRates = () => {
 
   const handleBook = (model, duration, price) => {
     const message = `Hi Zenex Travel, I'm interested in renting the ${model.name} for self-drive (${duration}) priced at ${formatPrice(price)}. Is it available?`;
-    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
