@@ -100,10 +100,10 @@ const FAQSection = () => {
               return (
                 <div 
                   key={faq.number} 
-                  className={`border border-[#D1FAE5]/60 rounded-[15px] overflow-hidden transition-all duration-300 ${
+                  className={`border border-[#2D6A4F]/20 rounded-[15px] overflow-hidden transition-all duration-300 ${
                     isOpen 
-                      ? 'bg-[#E6F4EA]/80 shadow-[0_4px_16px_rgba(45,106,79,0.06)] border-[#a2ebd2]/40' 
-                      : 'bg-[#E6F4EA]/40 hover:bg-[#E6F4EA]/60 border-transparent'
+                      ? 'bg-[#d1fae5] shadow-[0_4px_16px_rgba(45,106,79,0.08)] border-[#2D6A4F]/30' 
+                      : 'bg-[#e6f4ea] hover:bg-[#d8f3e5] border-transparent'
                   }`}
                 >
                   <button
