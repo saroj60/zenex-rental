@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart } from 'lucide-react';
+import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 
 import SEO from '../components/SEO';
@@ -9509,70 +9509,76 @@ const PackageDetail = () => {
           }
         }}
       />
-      {/* Hero */}
-      <div className="relative h-[60vh] min-h-[400px] w-full bg-gray-900 overflow-hidden p-2 md:p-3">
-        <div className="absolute inset-0 z-0">
-          {(() => {
-            const images = [];
-            if (pkg.img) images.push(pkg.img);
-            if (pkg.gallery && pkg.gallery.length > 0) {
-              pkg.gallery.forEach(img => {
-                if (!images.includes(img)) images.push(img);
-              });
-            }
-            const displayImages = images.length > 0 ? images : ['/images/trek.png'];
+      {/* Hero Section (Clean Image Banner / Flex Accordion Gallery) */}
+      <div className="relative h-[75vh] min-h-[550px] w-full overflow-hidden bg-gray-900 p-2 md:p-3">
+        {(() => {
+          const images = [];
+          if (pkg.img) images.push(pkg.img);
+          if (pkg.gallery && pkg.gallery.length > 0) {
+            pkg.gallery.forEach(img => {
+              if (!images.includes(img)) images.push(img);
+            });
+          }
+          const displayImages = images.length > 0 ? images : ['/images/trek.png'];
 
-            if (displayImages.length === 1) {
-              return (
-                <div 
-                  className="w-full h-full bg-cover bg-center opacity-85"
-                  style={{ backgroundImage: `url("${displayImages[0]}")` }}
-                />
-              );
-            }
-
+          if (displayImages.length === 1) {
             return (
-              <div className="flex h-full w-full gap-2 md:gap-3 relative z-0">
-                {displayImages.slice(0, 4).map((img, idx) => (
-                  <div 
-                    key={idx}
-                    className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-1 hover:flex-[3] group"
-                  >
-                    <div 
-                      className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
-                      style={{ backgroundImage: `url("${img}")` }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a2f4c]/60 via-[#0a2f4c]/10 to-transparent pointer-events-none" />
-                  </div>
-                ))}
-              </div>
+              <div 
+                className="absolute inset-0 w-full h-full bg-cover bg-center opacity-85"
+                style={{ backgroundImage: `url("${displayImages[0]}")` }}
+              />
             );
-          })()}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a2f4c] via-[#0a2f4c]/40 to-transparent pointer-events-none z-10"></div>
-        </div>
-        <div className="relative z-10 flex flex-col justify-end h-full pb-16 px-4 md:px-8">
-          <div className="max-w-7xl mx-auto w-full">
-            <Link to="/packages" className="text-blue-200 hover:text-white mb-6 inline-block font-medium transition-colors">
-              &larr; Back to Packages
-            </Link>
-            <div className="flex flex-wrap items-center gap-4 mb-4">
-              <span className="bg-[#e53a24] text-white px-3 py-1 rounded-full text-sm font-bold flex items-center">
-                <Clock size={16} className="mr-1.5" /> {pkg.duration || 'N/A'}
-              </span>
-              <span className="bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-sm font-medium border border-white/20">
-                {pkg.category || 'All-Inclusive Package'}
-              </span>
+          }
+
+          // Multiple images: render side-by-side flex accordion panels
+          return (
+            <div className="flex h-full w-full gap-2 md:gap-3 relative z-0">
+              {displayImages.slice(0, 4).map((img, idx) => (
+                <div 
+                  key={idx}
+                  className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-1 hover:flex-[3] group"
+                >
+                  <div 
+                    className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
+                    style={{ backgroundImage: `url("${img}")` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
+                </div>
+              ))}
             </div>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-2 drop-shadow-lg tracking-tight leading-tight">
-              {pkg.title}
-            </h1>
-            <TrustReviewBadges title={pkg.title} lightMode={true} />
-            {pkg.desc && (
-              <p className="text-xl text-blue-100 max-w-2xl font-medium drop-shadow-md">
-                {pkg.desc}
-              </p>
+          );
+        })()}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none z-10" />
+      </div>
+
+      {/* Package Header details below Hero */}
+      <div className="bg-white border-b border-gray-150 pt-8 pb-6">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <Link to="/packages" className="inline-flex items-center gap-1.5 text-slate-500 hover:text-[#e53a24] mb-4 text-xs font-bold uppercase tracking-wider transition-colors">
+            <ArrowLeft size={14} /> Back to Packages
+          </Link>
+          
+          <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 leading-tight tracking-tight">{pkg.title}</h1>
+          <TrustReviewBadges title={pkg.title} />
+          
+          <div className="flex flex-wrap items-center gap-6 mt-4 text-slate-600">
+            {pkg.duration && (
+              <div className="flex items-center gap-1.5">
+                <Clock className="w-4 h-4 text-slate-400" />
+                <span className="text-sm font-semibold text-slate-700">{pkg.duration}</span>
+              </div>
+            )}
+            {pkg.category && (
+              <div className="flex items-center gap-1.5">
+                <Compass className="w-4 h-4 text-slate-400" />
+                <span className="text-sm font-semibold text-slate-700">{pkg.category}</span>
+              </div>
             )}
           </div>
+          
+          {pkg.desc && (
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-4">{pkg.desc}</p>
+          )}
         </div>
       </div>
 
