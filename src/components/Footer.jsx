@@ -212,7 +212,7 @@ const Footer = () => {
                     rel="noreferrer" 
                     className="inline-flex items-center gap-2 bg-gradient-to-r from-[#25d366] to-[#14ab4c] text-white px-5 py-2.5 rounded-xl text-xs font-extrabold hover:brightness-105 active:scale-95 transition-all w-full justify-center shadow-lg hover:shadow-[#25D366]/20 duration-200"
                   >
-                    <MessageCircle size={16} strokeWidth={2.5} /> Chat on WhatsApp
+                    <MessageCircle size={16} strokeWidth={2.5} /> Help Desk
                   </a>
                 </li>
               </ul>
