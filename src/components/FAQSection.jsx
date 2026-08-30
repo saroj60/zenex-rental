@@ -39,7 +39,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="relative py-16 md:py-24 bg-[#1e3a8a]/8 border-y border-[#1e3a8a]/15 overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-[#1e3a8a]/12 border-y border-[#1e3a8a]/20 overflow-hidden">
       {/* Background soft grid pattern */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#1e3a8a 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
 

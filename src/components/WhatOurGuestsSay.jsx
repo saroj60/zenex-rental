@@ -225,7 +225,7 @@ const WhatOurGuestsSay = () => {
   const currentVideo = travelVideos[videoIndex];
 
   return (
-    <section className="py-16 md:py-24 px-4 md:px-8 bg-[#e53a24]/8 border-y border-[#e53a24]/15 overflow-x-hidden font-sans relative">
+    <section className="py-16 md:py-24 px-4 md:px-8 bg-[#e53a24]/12 border-y border-[#e53a24]/20 overflow-x-hidden font-sans relative">
       
       {/* Decorative Himalayan Outline detail */}
       <div className="absolute top-10 right-10 w-24 h-24 opacity-[0.015] pointer-events-none">

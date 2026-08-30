@@ -58,7 +58,7 @@ const TrustSafety = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
-      className="bg-[#1e3a8a]/8 py-12 px-4 md:px-8 border-y border-[#1e3a8a]/15"
+      className="bg-[#1e3a8a]/12 py-12 px-4 md:px-8 border-y border-[#1e3a8a]/20"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
