@@ -187,35 +187,29 @@ const Footer = () => {
             {/* Contact Details & WhatsApp */}
             <div className="space-y-4">
               <h3 className="text-white font-bold text-sm tracking-wider uppercase relative pb-2">
-                Contact Details
+                Travel Help Desk
                 <span className="absolute bottom-0 left-0 w-8 h-0.5 bg-[#e53a24] rounded-full"></span>
               </h3>
-              <ul className="space-y-3.5">
-                <li className="flex gap-2 items-start">
-                  <MapPin size={16} className="text-[#e53a24] shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-xs leading-relaxed">Samakhushi, Kathmandu 44600, Nepal</span>
-                </li>
-                <li className="flex gap-2 items-center">
-                  <Phone size={15} className="text-[#e53a24] shrink-0" />
-                  <span className="text-slate-300 text-xs">+977 976-7476521</span>
-                </li>
-                <li className="flex gap-2 items-center">
-                  <Mail size={15} className="text-[#e53a24] shrink-0" />
-                  <a href="mailto:info@zenextravels.com" className="text-slate-300 hover:text-white text-xs transition-colors">
-                    info@zenextravels.com
-                  </a>
-                </li>
-                <li className="pt-2">
-                  <a 
-                    href="https://wa.me/9779767476521?text=Hi!%20I%20need%20help%20booking%20a%20trip." 
-                    target="_blank" 
-                    rel="noreferrer" 
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-[#25d366] to-[#14ab4c] text-white px-5 py-2.5 rounded-xl text-xs font-extrabold hover:brightness-105 active:scale-95 transition-all w-full justify-center shadow-lg hover:shadow-[#25D366]/20 duration-200"
+              <p className="text-slate-300 text-xs leading-relaxed font-medium">
+                Need assistance? Our Help Desk is here to support you before, during, and after your journey. For any issues before/after travel just call, message, or email away.
+              </p>
+              <div className="pt-2">
+                <a 
+                  href="https://wa.me/9779860156046?text=Hi!%20I%20need%20assistance." 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="inline-flex items-center gap-2.5 bg-white hover:bg-slate-50 text-slate-800 px-5 py-3 rounded-xl text-sm font-extrabold active:scale-95 transition-all w-full justify-center shadow-lg hover:shadow-white/5 duration-200 border border-slate-200/50"
+                >
+                  <svg 
+                    className="w-5 h-5 fill-[#25D366] shrink-0" 
+                    viewBox="0 0 24 24" 
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <MessageCircle size={16} strokeWidth={2.5} /> Help Desk
-                  </a>
-                </li>
-              </ul>
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.574 1.97 14.101.945 11.93.945c-5.439 0-9.865 4.372-9.87 9.802a9.74 9.74 0 001.468 4.77l-.968 3.535 3.655-.948zm11.233-7.66c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.669.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                  </svg>
+                  +977 9860156046
+                </a>
+              </div>
             </div>
             
           </div>
