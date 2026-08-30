@@ -147,10 +147,6 @@ const Header = () => {
             </div>
           </div>
 
-          <a href="tel:+9779860156046" className="hidden sm:flex w-10 h-10 rounded-full bg-gray-100 items-center justify-center text-gray-700 hover:bg-gray-200 transition-colors">
-            <Phone size={18} />
-          </a>
-          
 
           <div className="relative group hidden sm:block">
             <button className="bg-[#e53a24] text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-[#d04b08] transition-colors shadow-md flex items-center gap-1">
