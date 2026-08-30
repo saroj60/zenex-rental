@@ -195,10 +195,10 @@ const Footer = () => {
                   href="https://wa.me/9779860156046?text=Hi!%20I%20need%20assistance." 
                   target="_blank" 
                   rel="noreferrer" 
-                  className="inline-flex items-center gap-2.5 bg-white hover:bg-slate-50 text-slate-800 px-5 py-3 rounded-xl text-sm font-extrabold active:scale-95 transition-all w-full justify-center shadow-lg hover:shadow-white/5 duration-200 border border-slate-200/50"
+                  className="inline-flex items-center gap-2.5 bg-gradient-to-r from-[#25d366] to-[#14ab4c] text-white px-5 py-3 rounded-xl text-sm font-extrabold hover:brightness-105 active:scale-95 transition-all w-full justify-center shadow-lg hover:shadow-[#25D366]/20 duration-200"
                 >
                   <svg 
-                    className="w-5 h-5 fill-[#25D366] shrink-0" 
+                    className="w-5 h-5 fill-white shrink-0" 
                     viewBox="0 0 24 24" 
                     xmlns="http://www.w3.org/2000/svg"
                   >
