@@ -66,7 +66,7 @@ const TrustSafety = () => {
           <p className="text-gray-600 max-w-xl mx-auto font-medium text-sm">We exceed industry standards to ensure every mile of your journey through Nepal is safe, secure, and stress-free.</p>
         </div>
 
-        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           {featureCards.map((feat) => {
             const Icon = feat.icon;
             return (
@@ -91,31 +91,26 @@ const TrustSafety = () => {
           })}
         </motion.div>
 
-        {/* Divider */}
-        <hr className="my-16 border-gray-200" />
-
-        {/* Simple Process Section */}
-        <div className="text-center mb-12">
-          <h3 className="text-2xl font-bold text-[#0f3493] mb-2">How It Works</h3>
-          <p className="text-gray-500 max-w-xl mx-auto font-medium text-sm">Your Himalayan adventure is just four simple steps away.</p>
-        </div>
-
-        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-          {/* Connecting Line for Desktop */}
-          <div className="hidden lg:block absolute top-10 left-[12%] right-[12%] h-[2px] bg-gray-200 z-0"></div>
-          
+        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step) => {
             const StepIcon = step.icon;
             return (
-              <motion.div variants={itemVariants} key={step.id} className="relative z-10 flex flex-col items-center text-center group">
-                <div className={`w-20 h-20 rounded-full flex items-center justify-center border-4 ${step.color} mb-6 bg-white shadow-sm group-hover:scale-110 transition-transform duration-300`}>
-                  <StepIcon size={24} />
+              <motion.div 
+                variants={itemVariants}
+                key={step.title} 
+                className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex gap-4 hover:shadow-xl hover:border-slate-200 transition-all duration-300 group"
+              >
+                <div className={`w-12 h-12 rounded-2xl border flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300 ${step.color}`}>
+                  <StepIcon size={22} strokeWidth={2} />
                 </div>
-                <div className="bg-[#1e3a8a] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs absolute top-0 right-1/2 translate-x-10 -translate-y-2 shadow-md">
-                  {step.id}
+                <div className="space-y-1">
+                  <h4 className="font-bold text-slate-800 text-base">
+                    {step.title}
+                  </h4>
+                  <p className="text-slate-500 text-xs leading-relaxed">
+                    {step.desc}
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-gray-500 text-xs font-medium leading-relaxed max-w-[240px]">{step.desc}</p>
               </motion.div>
             );
           })}
