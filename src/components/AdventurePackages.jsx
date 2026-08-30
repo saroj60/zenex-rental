@@ -102,7 +102,7 @@ const AdventurePackages = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
-      className="relative py-20 overflow-hidden bg-gradient-to-b from-white via-[#F4F9F6] to-white border-t border-slate-100"
+      className="relative py-20 overflow-hidden bg-[#1e3a8a]/12 border-y border-[#1e3a8a]/20"
     >
       {/* Soft background glow */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
