@@ -15,15 +15,15 @@ const Tours = () => {
         canonicalUrl="https://zenextravel.com.np/tours"
       />
       {/* Premium Hero Section */}
-      <div className="relative h-[65vh] min-h-[500px] flex flex-col justify-center overflow-hidden bg-[#1e3a8a]">
+      <div className="relative h-[65vh] min-h-[500px] flex flex-col justify-center overflow-hidden bg-gradient-to-tr from-slate-900 via-[#1e3a8a] to-[#0F766E]">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=2070&auto=format&fit=crop"
             alt="Nepal Himalayas"
-            className="w-full h-full object-cover scale-105"
+            className="w-full h-full object-cover scale-105 opacity-80"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a8a]/95 via-[#1e3a8a]/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-[#1e3a8a]/80 to-orange-700/25"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-100 h-20 bottom-0 top-auto"></div>
         </div>
 

@@ -109,7 +109,11 @@ const DurationWiseTourCategories = () => {
                    <button 
                      key={c}
                      onClick={() => setActiveCountry(c)}
-                     className={`px-4 py-2 rounded-xl text-sm font-semibold transition-colors ${activeCountry === c ? 'bg-[#E59A2F] text-white shadow-sm' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                     className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
+                       activeCountry === c 
+                         ? 'bg-gradient-to-r from-orange-500 to-[#E59A2F] text-white shadow-sm border-transparent' 
+                         : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                     }`}
                    >
                      {c}
                    </button>
@@ -127,7 +131,7 @@ const DurationWiseTourCategories = () => {
                       }}
                       className={`text-left px-4 py-3 text-[14px] font-medium rounded-xl transition-all ${
                         activeDuration === days
-                          ? 'bg-[#1e3a8a] text-white shadow-md'
+                          ? 'bg-gradient-to-r from-blue-700 to-indigo-850 text-white shadow-md'
                           : 'text-[#64748B] bg-gray-50 hover:bg-gray-100'
                       }`}
                     >
@@ -141,7 +145,7 @@ const DurationWiseTourCategories = () => {
 
           {/* Desktop Sidebar */}
           <div className="hidden lg:block w-[280px] shrink-0">
-            <div className="bg-white rounded-[20px] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-gray-50 p-6 sticky top-24">
+            <div className="bg-white rounded-[20px] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-gray-100 p-6 sticky top-24">
               
               <h3 className="text-[11px] font-extrabold text-[#64748B] uppercase tracking-[0.15em] mb-4 pl-3">
                 Destination
@@ -151,7 +155,11 @@ const DurationWiseTourCategories = () => {
                    <button 
                      key={c}
                      onClick={() => setActiveCountry(c)}
-                     className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 ${activeCountry === c ? 'bg-[#E59A2F] text-white shadow-md' : 'bg-gray-100 text-[#64748B] hover:bg-gray-200 hover:text-gray-900'}`}
+                     className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 border ${
+                       activeCountry === c 
+                         ? 'bg-gradient-to-r from-orange-500 to-[#E59A2F] text-white border-transparent shadow-md transform scale-105' 
+                         : 'bg-gray-100 text-[#64748B] hover:bg-gray-200 hover:text-gray-900 border-slate-100'
+                     }`}
                    >
                      {c}
                    </button>
@@ -168,12 +176,12 @@ const DurationWiseTourCategories = () => {
                       onClick={() => setActiveDuration(days)}
                       className={`relative w-full flex items-center justify-between px-4 py-3 text-[15px] font-medium rounded-xl transition-all duration-300 overflow-hidden group ${
                         activeDuration === days
-                          ? 'bg-[#1e3a8a] text-white shadow-md'
+                          ? 'bg-gradient-to-r from-blue-700 to-indigo-850 text-white shadow-md'
                           : 'text-[#64748B] hover:bg-[#F8FAFC] hover:text-[#172033]'
                       }`}
                     >
                       {/* Active Indicator Line */}
-                      <span className={`absolute left-0 top-0 bottom-0 w-1 bg-[#E59A2F] transition-opacity duration-300 ${activeDuration === days ? 'opacity-100' : 'opacity-0'}`}></span>
+                      <span className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-orange-500 to-[#E59A2F] transition-opacity duration-300 ${activeDuration === days ? 'opacity-100' : 'opacity-0'}`}></span>
                       
                       <span className="pl-1">{days} Days</span>
                       
@@ -185,7 +193,7 @@ const DurationWiseTourCategories = () => {
               
               <Link 
                 to="/packages" 
-                className="w-full flex items-center justify-center gap-2 px-5 py-4 text-[14px] font-bold text-white bg-[#1e3a8a] rounded-xl hover:bg-[#10224b] transition-all duration-300 shadow-sm hover:shadow-md group"
+                className="w-full flex items-center justify-center gap-2 px-5 py-4 text-[14px] font-bold text-white bg-gradient-to-r from-[#1e3a8a] to-blue-750 rounded-xl hover:from-blue-900 hover:to-indigo-950 transition-all duration-300 shadow-sm hover:shadow-md group"
               >
                 View All Tours 
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -200,14 +208,14 @@ const DurationWiseTourCategories = () => {
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end mb-8 gap-4">
               <div>
                 <h2 className="text-[28px] sm:text-[32px] text-[#172033] font-bold tracking-tight mb-2">
-                  {activeDuration} Days Tours in {activeCountry === 'All' ? 'Nepal & Beyond' : activeCountry}
+                  {activeDuration} Days Tours in <span className="text-orange-600 font-extrabold">{activeCountry === 'All' ? 'Nepal & Beyond' : activeCountry}</span>
                 </h2>
                 <p className="text-[#64748B] text-[15px] max-w-xl">
                   Explore our handpicked tour packages designed for unforgettable experiences.
                 </p>
               </div>
               <div className="flex items-center gap-4 shrink-0">
-                <span className="text-sm font-medium text-[#64748B] bg-white px-3 py-1.5 rounded-full border border-gray-100 shadow-sm hidden sm:inline-block">
+                <span className="text-sm font-medium text-slate-700 bg-orange-55/40 px-3 py-1.5 rounded-full border border-orange-100 shadow-sm hidden sm:inline-block">
                   {activeTours.length} packages
                 </span>
                 <Link to="/packages" className="group flex items-center gap-1.5 text-[14px] font-semibold text-[#64748B] hover:text-[#1e3a8a] transition-colors">
@@ -223,10 +231,10 @@ const DurationWiseTourCategories = () => {
                   <Link
                     key={idx}
                     to={`/tour/${tour.id || tour.title.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="group flex flex-col bg-white rounded-[16px] sm:rounded-[20px] shadow-[0_4px_24px_-8px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_32px_-8px_rgba(0,0,0,0.12)] border border-transparent hover:border-gray-50 overflow-hidden transition-all duration-300 sm:hover:-translate-y-1.5"
+                    className="group flex flex-col bg-white rounded-[16px] sm:rounded-[20px] shadow-[0_4px_24px_-8px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_32px_-8px_rgba(229,154,47,0.14)] border border-slate-100 hover:border-orange-500/20 overflow-hidden transition-all duration-300 sm:hover:-translate-y-1.5"
                   >
                     {/* Image Area */}
-                    <div className="relative h-[200px] sm:h-[230px] overflow-hidden bg-gray-100">
+                    <div className="relative h-[200px] sm:h-[230px] overflow-hidden bg-slate-50">
                       <img 
                         src={tour.img || tour.image || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800'} 
                         alt={tour.title} 
@@ -241,11 +249,11 @@ const DurationWiseTourCategories = () => {
                         <Heart size={14} className="sm:w-4 sm:h-4 group-hover/btn:fill-current transition-all" />
                       </button>
 
-                      {/* Price Badge */}
+                      {/* Price Badge (Vibrant Orange Gradient) */}
                       {tour.price && (
-                        <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/90 backdrop-blur-md px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full shadow-sm flex items-center gap-1.5 z-10">
-                          <span className="text-[9px] sm:text-[10px] font-bold text-[#64748B] uppercase tracking-wider">From</span>
-                          <span className="font-extrabold text-[#1e3a8a] text-[13px] sm:text-[14px]">{tour.price}</span>
+                        <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-gradient-to-r from-orange-500 to-[#E59A2F] text-white px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full shadow-md flex items-center gap-1 z-10 border border-white/20">
+                          <span className="text-[9px] sm:text-[10px] font-bold text-orange-100 uppercase tracking-wider">From</span>
+                          <span className="font-black text-white text-[13px] sm:text-[14px]">{tour.price}</span>
                         </div>
                       )}
                       
@@ -257,9 +265,26 @@ const DurationWiseTourCategories = () => {
                     
                     {/* Content Area */}
                     <div className="p-4 sm:p-6 flex flex-col flex-1">
-                      {/* Destination Label */}
-                      <div className="text-[10px] sm:text-[11px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-2 line-clamp-1">
-                         {tour.location || 'Nepal'}
+                      {/* Dynamic Country Pill Badge */}
+                      <div className="mb-2">
+                        {(() => {
+                          const country = (tour.location || 'Nepal').trim();
+                          let colorClass = 'bg-blue-50 text-blue-750 border-blue-200/50';
+                          if (country.toLowerCase().includes('nepal')) {
+                            colorClass = 'bg-emerald-50 text-emerald-700 border-emerald-250/50';
+                          } else if (country.toLowerCase().includes('tibet')) {
+                            colorClass = 'bg-orange-50 text-orange-700 border-orange-250/50';
+                          } else if (country.toLowerCase().includes('bhutan')) {
+                            colorClass = 'bg-purple-50 text-purple-750 border-purple-250/50';
+                          } else if (country.toLowerCase().includes('india')) {
+                            colorClass = 'bg-rose-50 text-rose-700 border-rose-250/50';
+                          }
+                          return (
+                            <span className={`inline-block px-2.5 py-1 rounded-full text-[10px] sm:text-[11px] font-extrabold uppercase tracking-widest border ${colorClass}`}>
+                              {country}
+                            </span>
+                          );
+                        })()}
                       </div>
                       
                       {/* Title */}

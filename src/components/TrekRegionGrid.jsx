@@ -64,7 +64,6 @@ const TrekRegionGrid = () => {
       // Make name display format uppercase
       let displayName = region.name.toUpperCase();
       
-      // Format region display names cleaner if they are just the raw names
       if (displayName === 'EVEREST') displayName = 'EVEREST REGION TREKS';
       else if (displayName === 'ANNAPURNA') displayName = 'ANNAPURNA REGION TREKS';
       else if (displayName === 'MANASLU') displayName = 'MANASLU REGION TREKS';
@@ -92,14 +91,14 @@ const TrekRegionGrid = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a] uppercase tracking-wide">
-            Explore Trekking Regions
+            Explore <span className="text-orange-600 font-black">Trekking Regions</span>
           </h2>
           <p className="text-slate-500 text-sm md:text-base mt-2 max-w-xl mx-auto font-medium">
             Find the perfect Himalayan trek categorized by the world's most famous trekking regions.
           </p>
         </div>
 
-        {/* Country Switcher Tabs */}
+        {/* Country Switcher Tabs (Colorful) */}
         <div className="flex justify-center items-center gap-3 mb-12 flex-wrap">
           {availableCountries.map((country) => (
             <button
@@ -107,8 +106,8 @@ const TrekRegionGrid = () => {
               onClick={() => setActiveCountry(country)}
               className={`px-6 py-3 text-sm font-bold rounded-xl transition-all duration-300 ${
                 activeCountry === country
-                  ? 'bg-[#1e3a8a] text-white shadow-md'
-                  : 'text-[#64748B] bg-white border border-slate-200 hover:bg-slate-50'
+                  ? 'bg-gradient-to-r from-orange-500 to-[#E59A2F] text-white shadow-md border-transparent transform scale-105'
+                  : 'text-[#64748B] bg-white border border-slate-200 hover:bg-slate-50 hover:text-slate-900'
               }`}
             >
               {country}
@@ -121,29 +120,45 @@ const TrekRegionGrid = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {regionsWithCounts.map(region => {
               const targetUrl = region.type === 'Treks' ? `/treks/region/${region.slug}` : `/region/${region.slug}`;
+              
+              // Color coding border highlight
+              let highlightColor = 'group-hover:border-emerald-500/30';
+              if (activeCountry === 'Tibet') highlightColor = 'group-hover:border-orange-500/30';
+              else if (activeCountry === 'Bhutan') highlightColor = 'group-hover:border-purple-500/30';
+              else if (activeCountry === 'India') highlightColor = 'group-hover:border-rose-500/30';
+
               return (
                 <Link 
                   key={region.slug} 
                   to={targetUrl} 
-                  className="group flex flex-col cursor-pointer"
+                  className="group flex flex-col cursor-pointer bg-white rounded-[24px] p-3 border border-slate-100 hover:border-orange-500/20 shadow-sm hover:shadow-[0_16px_36px_-8px_rgba(229,154,47,0.18)] transition-all duration-300"
                 >
                   {/* Image Container */}
-                  <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden bg-slate-150 relative shadow-sm group-hover:shadow-md transition-shadow">
+                  <div className="w-full aspect-[4/3] rounded-[18px] overflow-hidden bg-slate-105 relative">
                     <img 
                       src={region.image || 'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=800'} 
                       alt={region.name} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                     />
+                    {/* Shadow Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-85 pointer-events-none"></div>
+                    
+                    {/* Floating Country Badge */}
+                    <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black text-slate-800 shadow-sm uppercase tracking-wider">
+                      {region.country || activeCountry}
+                    </div>
                   </div>
 
                   {/* Title & Count */}
-                  <div className="mt-3">
+                  <div className="mt-4 px-2 pb-2">
                     <h3 className="text-base font-bold text-slate-800 uppercase tracking-wide group-hover:text-blue-600 transition-colors">
                       {region.displayName}
                     </h3>
-                    <p className="text-slate-500 text-xs font-semibold mt-1">
-                      {region.count > 0 ? `${region.count} Packages` : '0 Packages'}
-                    </p>
+                    <div className="mt-2">
+                      <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-orange-600 bg-orange-50 px-2.5 py-1 rounded-full border border-orange-100/60 shadow-sm">
+                        {region.count > 0 ? `${region.count} Active Packages` : '0 Packages'}
+                      </span>
+                    </div>
                   </div>
                 </Link>
               );
