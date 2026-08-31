@@ -43,7 +43,18 @@ const upload = multer({
 });
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: [
+        'https://zenextravels.com',
+        'https://www.zenextravels.com',
+        'http://localhost:5173',
+        'http://localhost:3000',
+        'http://localhost:4173',
+    ],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 app.use(bodyParser.json());
 
 // Serve uploaded images as static files

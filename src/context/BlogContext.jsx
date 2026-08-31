@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
+const API_BASE = import.meta.env.VITE_API_URL || '';
+
 const BlogContext = createContext();
 
 export const useBlogContext = () => useContext(BlogContext);
@@ -41,7 +43,7 @@ export const BlogProvider = ({ children }) => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch('/api/blogs');
+        const res = await fetch(`${API_BASE}/api/blogs`);
         if (res.ok) {
           const data = await res.json();
           if (data && data.length > 0) {

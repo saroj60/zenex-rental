@@ -1,6 +1,11 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+﻿import React, { createContext, useContext, useState, useEffect } from 'react';
 import { featuredPackages } from '../data/packagesData';
 import { treksData } from '../data/treksData';
+
+// In production (cPanel), VITE_API_URL points to the Render.com backend.
+// In local dev, it's empty so Vite proxy handles /api/* → localhost:5000.
+const API_BASE = import.meta.env.VITE_API_URL || '';
+
 
 const AppDataContext = createContext();
 
@@ -497,14 +502,14 @@ export const AppDataProvider = ({ children }) => {
 
         try {
           const [vehRes, packRes, trekRes, drvRes, tourRes, regRes, bookRes, testRes] = await Promise.all([
-            fetch('/api/vehicles'),
-            fetch('/api/packages'),
-            fetch('/api/v2/treks'),
-            fetch('/api/drivers'),
-            fetch('/api/tour-trips'),
-            fetch('/api/regions'),
-            fetch('/api/bookings'),
-            fetch('/api/testimonials')
+            fetch(`${API_BASE}/api/vehicles`),
+            fetch(`${API_BASE}/api/packages`),
+            fetch(`${API_BASE}/api/v2/treks`),
+            fetch(`${API_BASE}/api/drivers`),
+            fetch(`${API_BASE}/api/tour-trips`),
+            fetch(`${API_BASE}/api/regions`),
+            fetch(`${API_BASE}/api/bookings`),
+            fetch(`${API_BASE}/api/testimonials`)
           ]);
 
           const isJson = (res) => {
@@ -573,7 +578,7 @@ export const AppDataProvider = ({ children }) => {
     } else {
       body = JSON.stringify(vehicleData);
     }
-    const res = await fetch('/api/vehicles', { method: 'POST', headers, body });
+    const res = await fetch(\/api/vehicles', { method: 'POST', headers, body });
     const newV = await res.json();
     setVehicles([...vehicles, newV]);
   };
@@ -602,7 +607,7 @@ export const AppDataProvider = ({ children }) => {
 
   // CRUD for Packages
   const addPackage = async (pkg) => {
-    const res = await fetch('/api/packages', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(pkg) });
+    const res = await fetch(\/api/packages', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(pkg) });
     const newPkg = await res.json();
     setPackages([...packages, newPkg]);
   };
@@ -618,7 +623,7 @@ export const AppDataProvider = ({ children }) => {
 
   // CRUD for Treks
   const addTrek = async (trek) => {
-    const res = await fetch('/api/treks', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(trek) });
+    const res = await fetch(\/api/treks', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(trek) });
     const newTrek = await res.json();
     setTreks([...treks, newTrek]);
   };
@@ -634,7 +639,7 @@ export const AppDataProvider = ({ children }) => {
 
   // CRUD for Tour Trips
   const addTourTrip = async (trip) => {
-    const res = await fetch('/api/tour-trips', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(trip) });
+    const res = await fetch(\/api/tour-trips', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(trip) });
     const newTrip = await res.json();
     setTourTrips([...tourTrips, newTrip]);
   };
@@ -650,7 +655,7 @@ export const AppDataProvider = ({ children }) => {
 
   // CRUD for Bookings
   const addBooking = async (booking) => {
-    const res = await fetch('/api/bookings', {
+    const res = await fetch(\/api/bookings', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -703,7 +708,7 @@ export const AppDataProvider = ({ children }) => {
     } else {
       body = JSON.stringify(driverData);
     }
-    const res = await fetch('/api/drivers', { method: 'POST', headers, body });
+    const res = await fetch(\/api/drivers', { method: 'POST', headers, body });
     const newD = await res.json();
     setDrivers([...drivers, newD]);
   };
@@ -730,7 +735,7 @@ export const AppDataProvider = ({ children }) => {
     try {
       const formData = new FormData();
       formData.append('image', file);
-      const res = await fetch('/api/upload', {
+      const res = await fetch(\/api/upload', {
         method: 'POST',
         body: formData
       });
@@ -745,7 +750,7 @@ export const AppDataProvider = ({ children }) => {
   // --- REGIONS ---
   const addRegion = async (region) => {
     try {
-      const res = await fetch('/api/regions', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(region) });
+      const res = await fetch(\/api/regions', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(region) });
       const data = await res.json();
       setRegions([...regions, data]);
       return data;
