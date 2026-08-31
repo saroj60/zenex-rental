@@ -9,7 +9,7 @@ import { formatDuration } from '../utils/duration';
 
 const TrekRegion = () => {
   const { region: regionId = '' } = useParams();
-  const { treks, tourTrips, regions } = useAppData();
+  const { treks, tourTrips, regions, packages } = useAppData();
   
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
