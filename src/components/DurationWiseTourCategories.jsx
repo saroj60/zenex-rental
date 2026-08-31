@@ -70,19 +70,8 @@ const DurationWiseTourCategories = () => {
       const match = tour.title.match(/^(\d+)\s+Days?/i);
       return match && parseInt(match[1], 10) === activeDuration;
     });
-    
-    // Fallback data for preview purposes
-    if (filtered.length === 0 && allTours.length === 0) {
-      return [
-        { title: `${activeDuration} Days Luxury Kathmandu & Pokhara Tour`, location: 'Nepal', price: 'US$750', id: 'ktm-pokhara' },
-        { title: `${activeDuration} Days Kathmandu, Chitwan & Nagarkot Tour`, location: 'Nepal', price: 'US$850', id: 'ktm-chitwan-nagarkot' },
-        { title: `${activeDuration} Days Everest Base Camp Trek`, location: 'Nepal', price: 'US$1200', id: 'ebc' },
-        { title: `${activeDuration} Days Annapurna Circuit Experience`, location: 'Nepal', price: 'US$950', id: 'abc' },
-        { title: `${activeDuration} Days Bhutan Cultural Tour`, location: 'Bhutan', price: 'US$1500', id: 'bhutan-culture' }
-      ];
-    }
     return filtered;
-  }, [filteredByCountry, activeDuration, allTours.length]);
+  }, [filteredByCountry, activeDuration]);
 
   return (
     <div className="w-full bg-[#F8FAFC] py-16 font-sans">
