@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Clock, Star, Calendar, Activity, ArrowLeft } from 'lucide-react';
+import { Clock, Star, Calendar, Activity, ArrowLeft, ChevronRight } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 import { regionData } from '../data/regionData';
 import SEO from '../components/SEO';
@@ -145,142 +145,177 @@ const TrekRegion = () => {
             />
           </div>
 
-          <div className="mb-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <h2 
-              className="text-2xl md:text-3xl text-gray-900 uppercase drop-shadow-sm font-semibold tracking-wide"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              Treks in this Region ({filteredTreks.length})
-            </h2>
-          </div>
-
-          {filteredTreks.length > 0 ? (
-            <>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="treks-grid">
-                {currentTreks.map((trek) => {
-                  const detailUrl = trek.link;
-                  return (
-                    <Link to={detailUrl} key={trek.id} className="block group">
-                      <div className="bg-[#E4E2DC] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full">
-                        
-                        {/* Image Header */}
-                        <div className="relative h-72 overflow-hidden">
-                          <img 
-                            src={trek.image} 
-                            alt={trek.title} 
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                          />
-                        </div>
-                        
-                        {/* Content Body */}
-                        <div className="px-5 pt-5 pb-5 flex-1 flex flex-col">
-                          <h3 className="text-xl font-bold text-gray-900 mb-3 leading-snug line-clamp-2">
-                            {trek.title}
-                          </h3>
-                          
-                          {/* Reviews & Price */}
-                          <div className="flex justify-between items-center mb-3 min-h-[20px]">
-                            {trek.price ? (
-                              <>
-                                <div className="flex items-center gap-1.5">
-                                  <span className="text-sm font-bold text-gray-900">{trek.price}</span>
-                                  {trek.originalPrice && (
-                                    <span className="text-xs text-gray-600 line-through">{trek.originalPrice}</span>
-                                  )}
-                                  <span className="text-xs text-gray-700 font-medium">/person</span>
-                                </div>
-                                <div className="flex items-center gap-1">
-                                  <div className="flex text-[#F59E0B]">
-                                    {[...Array(5)].map((_, i) => (
-                                      <Star key={i} size={12} fill={i < Math.floor(trek.rating) ? "currentColor" : "none"} strokeWidth={1.5} />
-                                    ))}
-                                  </div>
-                                  <span className="text-[10px] font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
-                                </div>
-                              </>
-                            ) : (
-                              <div className="flex items-center gap-1.5">
-                                <div className="flex text-[#F59E0B]">
-                                  {[...Array(5)].map((_, i) => (
-                                    <Star key={i} size={12} fill={i < Math.floor(trek.rating) ? "currentColor" : "none"} strokeWidth={1.5} />
-                                  ))}
-                                </div>
-                                <span className="text-xs font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
-                              </div>
-                            )}
-                          </div>
-
-                          <div className="w-full h-px bg-gray-300/80 my-3"></div>
-                          
-                          {/* Footer Features */}
-                          <div className="flex justify-between items-start mt-auto pt-1 gap-2">
-                            {trek.difficulty && (
-                              <div className="flex items-center gap-2 flex-1">
-                                <Clock size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
-                                <div className="flex flex-col justify-center">
-                                  <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Grade</span>
-                                  <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
-                                    {trek.difficulty}
-                                  </span>
-                                </div>
-                              </div>
-                            )}
-                            {trek.duration && (
-                              <div className="flex items-center gap-2 flex-1">
-                                <Calendar size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
-                                <div className="flex flex-col justify-center">
-                                  <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Duration</span>
-                                  <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
-                                    {formatDuration(trek.duration, trek.durationUnit || 'Days')}
-                                  </span>
-                                </div>
-                              </div>
-                            )}
-                            {trek.activity && (
-                              <div className="flex items-center gap-2 flex-1">
-                                <Activity size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
-                                <div className="flex flex-col justify-center">
-                                  <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Activity</span>
-                                  <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1 break-words">
-                                    {trek.activity}
-                                  </span>
-                                </div>
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
-              <Pagination 
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={(page) => {
-                  setCurrentPage(page);
-                  const gridElement = document.getElementById('treks-grid');
-                  if (gridElement) {
-                    const y = gridElement.getBoundingClientRect().top + window.scrollY - 100;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                  }
-                }}
-              />
-            </>
-          ) : (
-            <div className="text-center py-20 bg-slate-50 rounded-2xl border border-slate-100">
-              <h3 className="text-xl font-medium text-slate-700">No trekking packages found for this region yet.</h3>
-              <p className="text-slate-500 mt-2 mb-6">We are currently updating our catalog. You can add new trekking packages via the Admin Dashboard or explore our other available treks.</p>
-              <div className="flex justify-center gap-4">
-                <Link to="/treks" className="px-6 py-2.5 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition">
-                  Browse All Treks
-                </Link>
-                <Link to="/dashboard/treks" className="px-6 py-2.5 bg-slate-900 text-white rounded-xl font-semibold hover:bg-slate-800 transition">
-                  Add New Trek in Admin
+          <div className="flex flex-col lg:flex-row gap-8">
+            
+            {/* Desktop Sidebar with Countries */}
+            <div className="w-full lg:w-[280px] shrink-0">
+              <div className="bg-white rounded-[20px] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-slate-200/60 p-6 sticky top-36">
+                <h3 className="text-[11px] font-extrabold text-[#64748B] uppercase tracking-[0.15em] mb-4 pl-3">
+                  Trekking Countries
+                </h3>
+                <ul className="flex flex-col gap-2 mb-6">
+                  {['Nepal', 'Tibet', 'Bhutan', 'India'].map((c) => (
+                    <li key={c}>
+                      <Link
+                        to={`/country/${c.toLowerCase()}`}
+                        className="w-full flex items-center justify-between px-4 py-3 text-[14px] font-bold rounded-xl transition-all duration-300 text-slate-700 bg-slate-50 hover:bg-orange-50 hover:text-orange-600 border border-slate-100 hover:border-orange-200"
+                      >
+                        <span>{c}</span>
+                        <ChevronRight size={16} className="text-slate-400 group-hover:text-orange-500 transition-colors" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                
+                <Link 
+                  to="/treks" 
+                  className="w-full flex items-center justify-center gap-2 px-5 py-4 text-[13px] font-bold text-white bg-[#1e3a8a] hover:bg-[#10224b] rounded-xl transition-all duration-300 shadow-sm"
+                >
+                  View All Regions
                 </Link>
               </div>
             </div>
-          )}
+
+            {/* Main Content Area */}
+            <div className="flex-1">
+              <div className="mb-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <h2 
+                  className="text-2xl md:text-3xl text-gray-900 uppercase drop-shadow-sm font-semibold tracking-wide"
+                  style={{ fontFamily: "'Playfair Display', serif" }}
+                >
+                  Treks in this Region ({filteredTreks.length})
+                </h2>
+              </div>
+
+              {filteredTreks.length > 0 ? (
+                <>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="treks-grid">
+                    {currentTreks.map((trek) => {
+                      const detailUrl = trek.link;
+                      return (
+                        <Link to={detailUrl} key={trek.id} className="block group">
+                          <div className="bg-[#E4E2DC] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full">
+                            
+                            {/* Image Header */}
+                            <div className="relative h-72 overflow-hidden">
+                              <img 
+                                src={trek.image} 
+                                alt={trek.title} 
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              />
+                            </div>
+                            
+                            {/* Content Body */}
+                            <div className="px-5 pt-5 pb-5 flex-1 flex flex-col">
+                              <h3 className="text-xl font-bold text-gray-900 mb-3 leading-snug line-clamp-2">
+                                {trek.title}
+                              </h3>
+                              
+                              {/* Reviews & Price */}
+                              <div className="flex justify-between items-center mb-3 min-h-[20px]">
+                                {trek.price ? (
+                                  <>
+                                    <div className="flex items-center gap-1.5">
+                                      <span className="text-sm font-bold text-gray-900">{trek.price}</span>
+                                      {trek.originalPrice && (
+                                        <span className="text-xs text-gray-600 line-through">{trek.originalPrice}</span>
+                                      )}
+                                      <span className="text-xs text-gray-700 font-medium">/person</span>
+                                    </div>
+                                    <div className="flex items-center gap-1">
+                                      <div className="flex text-[#F59E0B]">
+                                        {[...Array(5)].map((_, i) => (
+                                          <Star key={i} size={12} fill={i < Math.floor(trek.rating) ? "currentColor" : "none"} strokeWidth={1.5} />
+                                        ))}
+                                      </div>
+                                      <span className="text-[10px] font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
+                                    </div>
+                                  </>
+                                ) : (
+                                  <div className="flex items-center gap-1.5">
+                                    <div className="flex text-[#F59E0B]">
+                                      {[...Array(5)].map((_, i) => (
+                                        <Star key={i} size={12} fill={i < Math.floor(trek.rating) ? "currentColor" : "none"} strokeWidth={1.5} />
+                                      ))}
+                                    </div>
+                                    <span className="text-xs font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
+                                  </div>
+                                )}
+                              </div>
+
+                              <div className="w-full h-px bg-gray-300/80 my-3"></div>
+                              
+                              {/* Footer Features */}
+                              <div className="flex justify-between items-start mt-auto pt-1 gap-2">
+                                {trek.difficulty && (
+                                  <div className="flex items-center gap-2 flex-1">
+                                    <Clock size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
+                                    <div className="flex flex-col justify-center">
+                                      <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Grade</span>
+                                      <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
+                                        {trek.difficulty}
+                                      </span>
+                                    </div>
+                                  </div>
+                                )}
+                                {trek.duration && (
+                                  <div className="flex items-center gap-2 flex-1">
+                                    <Calendar size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
+                                    <div className="flex flex-col justify-center">
+                                      <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Duration</span>
+                                      <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
+                                        {formatDuration(trek.duration, trek.durationUnit || 'Days')}
+                                      </span>
+                                    </div>
+                                  </div>
+                                )}
+                                {trek.activity && (
+                                  <div className="flex items-center gap-2 flex-1">
+                                    <Activity size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
+                                    <div className="flex flex-col justify-center">
+                                      <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Activity</span>
+                                      <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1 break-words">
+                                        {trek.activity}
+                                      </span>
+                                    </div>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                  <Pagination 
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    onPageChange={(page) => {
+                      setCurrentPage(page);
+                      const gridElement = document.getElementById('treks-grid');
+                      if (gridElement) {
+                        const y = gridElement.getBoundingClientRect().top + window.scrollY - 100;
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                      }
+                    }}
+                  />
+                </>
+              ) : (
+                <div className="text-center py-20 bg-slate-50 rounded-2xl border border-slate-100">
+                  <h3 className="text-xl font-medium text-slate-700">No trekking packages found for this region yet.</h3>
+                  <p className="text-slate-500 mt-2 mb-6">We are currently updating our catalog. You can add new trekking packages via the Admin Dashboard or explore our other available treks.</p>
+                  <div className="flex justify-center gap-4">
+                    <Link to="/treks" className="px-6 py-2.5 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition">
+                      Browse All Treks
+                    </Link>
+                    <Link to="/dashboard/treks" className="px-6 py-2.5 bg-slate-900 text-white rounded-xl font-semibold hover:bg-slate-800 transition">
+                      Add New Trek in Admin
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

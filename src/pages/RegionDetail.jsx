@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useAppData } from '../context/AppDataContext';
-import { MapPin, Clock, Star, ArrowLeft } from 'lucide-react';
+import { MapPin, Clock, Star, ArrowLeft, ChevronRight } from 'lucide-react';
 import { formatDuration } from '../utils/duration';
 
 const RegionDetail = () => {
@@ -114,58 +114,93 @@ const RegionDetail = () => {
           <ArrowLeft size={20} /> Back
         </button>
 
-        <div className="flex justify-between items-end mb-8">
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900">Packages in {region.name}</h2>
-            <p className="text-gray-500 mt-2">Showing {regionTrips.length} available packages</p>
+        <div className="flex flex-col lg:flex-row gap-8">
+          
+          {/* Desktop Sidebar with Countries */}
+          <div className="w-full lg:w-[280px] shrink-0">
+            <div className="bg-white rounded-[20px] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-slate-200/60 p-6 sticky top-36">
+              <h3 className="text-[11px] font-extrabold text-[#64748B] uppercase tracking-[0.15em] mb-4 pl-3">
+                Destinations
+              </h3>
+              <ul className="flex flex-col gap-2 mb-6">
+                {['Nepal', 'Tibet', 'Bhutan', 'India'].map((c) => (
+                  <li key={c}>
+                    <Link
+                      to={`/country/${c.toLowerCase()}`}
+                      className="w-full flex items-center justify-between px-4 py-3 text-[14px] font-bold rounded-xl transition-all duration-300 text-slate-700 bg-slate-50 hover:bg-orange-50 hover:text-orange-600 border border-slate-100 hover:border-orange-200"
+                    >
+                      <span>{c}</span>
+                      <ChevronRight size={16} className="text-slate-400 group-hover:text-orange-500 transition-colors" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              
+              <Link 
+                to="/destinations" 
+                className="w-full flex items-center justify-center gap-2 px-5 py-4 text-[13px] font-bold text-white bg-[#1e3a8a] hover:bg-[#10224b] rounded-xl transition-all duration-300 shadow-sm"
+              >
+                All Destinations
+              </Link>
+            </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {regionTrips.map(trip => (
-            <Link to={trip.link} key={trip.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 flex flex-col h-full transform hover:-translate-y-1">
-              <div className="h-56 overflow-hidden relative bg-slate-50">
-                <img 
-                  src={trip.image} 
-                  alt={trip.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-gray-800 shadow-sm uppercase tracking-wider">
-                  {trip.activity}
-                </div>
+          {/* Main Content Area */}
+          <div className="flex-1">
+            <div className="flex justify-between items-end mb-8">
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900">Packages in {region.name}</h2>
+                <p className="text-gray-500 mt-2">Showing {regionTrips.length} available packages</p>
               </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#e53a24] uppercase tracking-wider mb-2">
-                  <MapPin size={14} /> {trip.region || trip.location}
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 leading-tight mb-4 group-hover:text-blue-600 transition-colors line-clamp-2">{trip.title}</h3>
-                
-                <div className="flex items-center gap-4 text-gray-500 text-sm mb-6 pb-6 border-b border-gray-100 mt-auto">
-                  <div className="flex items-center gap-1.5 font-medium"><Clock size={16} className="text-blue-500"/> {formatDuration(trip.duration, trip.durationUnit)}</div>
-                  {trip.rating && (
-                    <div className="flex items-center gap-1.5 font-medium"><Star size={16} className="text-yellow-500 fill-current"/> {trip.rating}</div>
-                  )}
-                </div>
+            </div>
 
-                <div className="flex items-end justify-between">
-                  <div className="text-xs text-gray-500 font-medium uppercase tracking-wide">Starting From</div>
-                  <div className="text-right">
-                    {trip.originalPrice > 0 && (
-                      <span className="text-sm text-gray-400 line-through mr-2">${trip.originalPrice}</span>
-                    )}
-                    <span className="text-2xl font-bold text-gray-900">${trip.price || 'Request'}</span>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {regionTrips.map(trip => (
+                <Link to={trip.link} key={trip.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 flex flex-col h-full transform hover:-translate-y-1">
+                  <div className="h-56 overflow-hidden relative bg-slate-50">
+                    <img 
+                      src={trip.image} 
+                      alt={trip.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-gray-800 shadow-sm uppercase tracking-wider">
+                      {trip.activity}
+                    </div>
                   </div>
-                </div>
+                  <div className="p-6 flex flex-col flex-grow">
+                    <div className="flex items-center gap-2 text-xs font-bold text-[#e53a24] uppercase tracking-wider mb-2">
+                      <MapPin size={14} /> {trip.region || trip.location}
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 leading-tight mb-4 group-hover:text-blue-600 transition-colors line-clamp-2">{trip.title}</h3>
+                    
+                    <div className="flex items-center gap-4 text-gray-500 text-sm mb-6 pb-6 border-b border-gray-100 mt-auto">
+                      <div className="flex items-center gap-1.5 font-medium"><Clock size={16} className="text-blue-500"/> {formatDuration(trip.duration, trip.durationUnit)}</div>
+                      {trip.rating && (
+                        <div className="flex items-center gap-1.5 font-medium"><Star size={16} className="text-yellow-500 fill-current"/> {trip.rating}</div>
+                      )}
+                    </div>
+
+                    <div className="flex items-end justify-between">
+                      <div className="text-xs text-gray-500 font-medium uppercase tracking-wide">Starting From</div>
+                      <div className="text-right">
+                        {trip.originalPrice > 0 && (
+                          <span className="text-sm text-gray-400 line-through mr-2">${trip.originalPrice}</span>
+                        )}
+                        <span className="text-2xl font-bold text-gray-900">${trip.price || 'Request'}</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            {regionTrips.length === 0 && (
+              <div className="text-center py-20 bg-white rounded-2xl shadow-sm border border-gray-100">
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">No packages found</h3>
+                <p className="text-gray-500">We are currently updating our packages for this region. Please check back later.</p>
               </div>
-            </Link>
-          ))}
-        </div>
-        {regionTrips.length === 0 && (
-          <div className="text-center py-20 bg-white rounded-2xl shadow-sm border border-gray-100">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">No packages found</h3>
-            <p className="text-gray-500">We are currently updating our packages for this region. Please check back later.</p>
+            )}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
