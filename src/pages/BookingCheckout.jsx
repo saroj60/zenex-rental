@@ -105,6 +105,23 @@ const BookingCheckout = () => {
   const [phone, setPhone] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
   const [extraRequirements, setExtraRequirements] = useState('');
+  const [additionalTravelers, setAdditionalTravelers] = useState([]);
+
+  // Sync additional traveler details fields with travelersCount
+  useEffect(() => {
+    const additionalCount = Math.max(0, travelersCount - 1);
+    setAdditionalTravelers(prev => {
+      const next = [...prev];
+      if (next.length < additionalCount) {
+        while (next.length < additionalCount) {
+          next.push({ firstName: '', lastName: '', email: '', passportNumber: '' });
+        }
+      } else if (next.length > additionalCount) {
+        next.splice(additionalCount);
+      }
+      return next;
+    });
+  }, [travelersCount]);
 
   // Step indicator
   const [step, setStep] = useState(1); // 1 = input, 2 = success
@@ -245,7 +262,8 @@ const BookingCheckout = () => {
         phone,
         whatsapp,
         extraRequirements
-      }
+      },
+      additionalTravelers
     };
 
     try {
@@ -264,6 +282,17 @@ const BookingCheckout = () => {
   const getMailtoLink = () => {
     if (!confirmedBooking) return '#';
     const subject = encodeURIComponent(`Booking Order - ${confirmedBooking.id} (${selectedItem.title})`);
+    
+    let travelersBody = '';
+    if (additionalTravelers.length > 0) {
+      travelersBody = '\nAdditional Travelers:\n' + additionalTravelers.map((t, idx) => {
+        let details = `- Traveler ${idx + 2}: ${t.firstName} ${t.lastName}`;
+        if (t.email) details += ` (Email: ${t.email})`;
+        if (t.passportNumber) details += ` (Passport: ${t.passportNumber})`;
+        return details;
+      }).join('\n') + '\n';
+    }
+
     const body = encodeURIComponent(`Dear Zenex Travel,
 
 Please find my booking order details below:
@@ -280,7 +309,7 @@ Lead Traveler Details:
 - Country: ${country}
 - Phone: ${phone}
 - WhatsApp: ${whatsapp}
-${extraRequirements ? `- Special Requirements: ${extraRequirements}\n` : ''}
+${extraRequirements ? `- Special Requirements: ${extraRequirements}\n` : ''}${travelersBody}
 Payment Preference: ${paymentOption === 'deposit' ? 'Pay 20% Deposit Now' : 'Book Now, Pay Later (100% on Arrival)'}
 Total Price: US$${totalPrice}
 Initial Payment Due Now: US$${initialPaymentNow}
@@ -527,6 +556,84 @@ ${firstName} ${lastName}`);
                     </div>
                   </div>
                 </div>
+
+                {/* Additional Travelers Section */}
+                {additionalTravelers.map((traveler, idx) => (
+                  <div key={idx} className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-sm">
+                    <h2 className="text-lg font-bold text-slate-800 mb-6 flex items-center gap-2">
+                      <span className="w-1.5 h-6 bg-[#1b8c00] rounded-full inline-block"></span>
+                      Traveler {idx + 2} Details
+                    </h2>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {/* First Name */}
+                      <div>
+                        <label className="block text-sm font-semibold text-slate-700 mb-2">First Name *</label>
+                        <input 
+                          type="text" 
+                          required
+                          placeholder="First Name"
+                          value={traveler.firstName}
+                          onChange={(e) => {
+                            const updated = [...additionalTravelers];
+                            updated[idx].firstName = e.target.value;
+                            setAdditionalTravelers(updated);
+                          }}
+                          className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                        />
+                      </div>
+
+                      {/* Last Name */}
+                      <div>
+                        <label className="block text-sm font-semibold text-slate-700 mb-2">Last Name *</label>
+                        <input 
+                          type="text" 
+                          required
+                          placeholder="Last Name"
+                          value={traveler.lastName}
+                          onChange={(e) => {
+                            const updated = [...additionalTravelers];
+                            updated[idx].lastName = e.target.value;
+                            setAdditionalTravelers(updated);
+                          }}
+                          className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                        />
+                      </div>
+
+                      {/* Email */}
+                      <div>
+                        <label className="block text-sm font-semibold text-slate-700 mb-2">Email Address (Optional)</label>
+                        <input 
+                          type="email" 
+                          placeholder="Email Address"
+                          value={traveler.email}
+                          onChange={(e) => {
+                            const updated = [...additionalTravelers];
+                            updated[idx].email = e.target.value;
+                            setAdditionalTravelers(updated);
+                          }}
+                          className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                        />
+                      </div>
+
+                      {/* Passport Number */}
+                      <div>
+                        <label className="block text-sm font-semibold text-slate-700 mb-2">Passport Number (Optional)</label>
+                        <input 
+                          type="text" 
+                          placeholder="Passport Number"
+                          value={traveler.passportNumber}
+                          onChange={(e) => {
+                            const updated = [...additionalTravelers];
+                            updated[idx].passportNumber = e.target.value;
+                            setAdditionalTravelers(updated);
+                          }}
+                          className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                ))}
 
                 {/* Secure Payment Options */}
                 <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-sm">
