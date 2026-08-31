@@ -7,10 +7,79 @@ import { formatDuration } from '../utils/duration';
 const RegionDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const { regions, tourTrips } = useAppData();
+  const { regions, tourTrips, treks, packages } = useAppData();
 
   const region = regions.find(r => r.slug === slug);
-  const regionTrips = tourTrips.filter(t => t.region === region?.name);
+
+  // Combine and map treks, tourTrips, and packages
+  const combinedList = [
+    ...treks.map(t => ({
+      id: t.id,
+      title: t.title,
+      image: t.image || t.img || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
+      price: t.price ? parseInt(t.price.replace(/[^0-9]/g, '')) : 0,
+      originalPrice: t.originalPrice ? parseInt(t.originalPrice.replace(/[^0-9]/g, '')) : 0,
+      rating: t.rating || 5,
+      reviewsCount: t.reviewsCount || 0,
+      difficulty: t.difficulty || t.quickFacts?.difficulty || 'Moderate',
+      duration: t.duration || t.quickFacts?.duration || '',
+      durationUnit: t.durationUnit || 'Days',
+      activity: t.activity || 'Trekking',
+      region: t.region || t.quickFacts?.region || '',
+      location: t.location || t.destination || '',
+      link: `/treks/${t.id}`
+    })),
+    ...tourTrips.filter(t => t.status === 'Published').map(t => ({
+      id: t.id,
+      title: t.title,
+      image: t.image || t.mainImage || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
+      price: t.pricingInfo?.sellingPrice || (t.price ? parseInt(t.price.replace(/[^0-9]/g, '')) : 0),
+      originalPrice: t.pricingInfo?.originalPrice || (t.originalPrice ? parseInt(t.originalPrice.replace(/[^0-9]/g, '')) : 0),
+      rating: t.rating || 5,
+      reviewsCount: t.reviewsCount || 0,
+      difficulty: t.grade || 'Moderate',
+      duration: t.duration || t.durationValue || '',
+      durationUnit: t.durationUnit || 'Days',
+      activity: t.activities?.join(', ') || 'Tour',
+      region: t.region || '',
+      location: t.destination || '',
+      link: `/tour/${t.slug || t.id}`
+    })),
+    ...packages.map(p => ({
+      id: p.id,
+      title: p.title,
+      image: p.img || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
+      price: p.price ? parseInt(p.price.replace(/[^0-9]/g, '')) : 0,
+      rating: 5,
+      reviewsCount: 1,
+      difficulty: p.difficulty || 'Moderate',
+      duration: p.duration || '',
+      durationUnit: 'Days',
+      activity: p.category || 'Package',
+      region: p.region || p.location || '',
+      location: p.location || '',
+      link: `/packages/${p.id}`
+    }))
+  ];
+
+  // Filter packages for this region
+  const regionTrips = combinedList.filter(item => {
+    if (!region) return false;
+    const titleLower = (item.title || '').toLowerCase();
+    const regProp = (item.region || '').toLowerCase();
+    const locProp = (item.location || '').toLowerCase();
+    
+    const matchRegionName = region.name.toLowerCase();
+    if (regProp === matchRegionName || locProp === matchRegionName) {
+      return true;
+    }
+
+    const normalizedRegionId = slug.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    return regProp.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) || 
+           locProp.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) || 
+           titleLower.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId);
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -54,37 +123,37 @@ const RegionDetail = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {regionTrips.map(trip => (
-            <Link to={`/tour/${trip.id}`} key={trip.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 flex flex-col h-full transform hover:-translate-y-1">
-              <div className="h-56 overflow-hidden relative">
+            <Link to={trip.link} key={trip.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 flex flex-col h-full transform hover:-translate-y-1">
+              <div className="h-56 overflow-hidden relative bg-slate-50">
                 <img 
-                  src={trip.mainImage || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa'} 
+                  src={trip.image} 
                   alt={trip.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-gray-800 shadow-sm">
-                  {trip.grade}
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-gray-800 shadow-sm uppercase tracking-wider">
+                  {trip.activity}
                 </div>
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-2 text-xs font-bold text-[#e53a24] uppercase tracking-wider mb-2">
-                  <MapPin size={14} /> {trip.region}
+                  <MapPin size={14} /> {trip.region || trip.location}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 leading-tight mb-4 group-hover:text-blue-600 transition-colors line-clamp-2">{trip.title}</h3>
                 
                 <div className="flex items-center gap-4 text-gray-500 text-sm mb-6 pb-6 border-b border-gray-100 mt-auto">
                   <div className="flex items-center gap-1.5 font-medium"><Clock size={16} className="text-blue-500"/> {formatDuration(trip.duration, trip.durationUnit)}</div>
-                  {trip.reviews?.rating && (
-                    <div className="flex items-center gap-1.5 font-medium"><Star size={16} className="text-yellow-500 fill-current"/> {trip.reviews.rating}</div>
+                  {trip.rating && (
+                    <div className="flex items-center gap-1.5 font-medium"><Star size={16} className="text-yellow-500 fill-current"/> {trip.rating}</div>
                   )}
                 </div>
 
                 <div className="flex items-end justify-between">
                   <div className="text-xs text-gray-500 font-medium uppercase tracking-wide">Starting From</div>
                   <div className="text-right">
-                    {trip.pricing?.discountPercentage > 0 && (
-                      <span className="text-sm text-gray-400 line-through mr-2">${trip.pricing.originalPrice}</span>
+                    {trip.originalPrice > 0 && (
+                      <span className="text-sm text-gray-400 line-through mr-2">${trip.originalPrice}</span>
                     )}
-                    <span className="text-2xl font-bold text-gray-900">${trip.pricing?.sellingPrice || trip.pricing?.originalPrice || '0'}</span>
+                    <span className="text-2xl font-bold text-gray-900">${trip.price || 'Request'}</span>
                   </div>
                 </div>
               </div>

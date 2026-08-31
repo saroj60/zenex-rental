@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import RegionWiseTrekCategories from '../components/RegionWiseTrekCategories';
+import TrekRegionGrid from '../components/TrekRegionGrid';
 
 const Treks = () => {
   return (
@@ -47,7 +47,7 @@ const Treks = () => {
         </div>
       </div>
 
-      <RegionWiseTrekCategories />
+      <TrekRegionGrid />
     </div>
   );
 };

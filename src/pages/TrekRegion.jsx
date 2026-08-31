@@ -29,41 +29,65 @@ const TrekRegion = () => {
       });
 
   const combinedList = [
-    ...treks.map(t => ({ ...t, source: 'trek' })),
-    ...tourTrips.map(t => ({
-      ...t,
-      source: 'tourTrip',
+    ...treks.map(t => ({
+      id: t.id,
+      title: t.title,
+      image: t.image,
+      price: t.price,
+      originalPrice: t.originalPrice,
       rating: t.rating || 5,
-      reviewsCount: t.reviewsCount || 1,
+      reviewsCount: t.reviewsCount || 0,
+      difficulty: t.difficulty || t.quickFacts?.difficulty || 'Moderate',
+      duration: t.duration || t.quickFacts?.duration || '',
+      durationUnit: t.durationUnit || 'Days',
+      activity: t.activity || 'Trekking',
+      region: t.region || t.quickFacts?.region || '',
+      location: t.location || t.destination || '',
+      link: `/treks/${t.id}`
+    })),
+    ...tourTrips.filter(t => t.status === 'Published').map(t => ({
+      id: t.id,
+      title: t.title,
+      image: t.image,
       price: t.price || (t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : ''),
+      originalPrice: t.pricingInfo?.originalPrice ? `US$${t.pricingInfo.originalPrice}` : '',
+      rating: t.rating || 5,
+      reviewsCount: t.reviewsCount || 0,
       difficulty: t.grade || 'Moderate',
-      activity: t.activities?.join(', ') || 'Trekking'
+      duration: t.duration || t.durationValue || '',
+      durationUnit: t.durationUnit || 'Days',
+      activity: t.activities?.join(', ') || 'Tour',
+      region: t.region || '',
+      location: t.destination || '',
+      link: `/tour/${t.slug || t.id}`
+    })),
+    ...packages.map(p => ({
+      id: p.id,
+      title: p.title,
+      image: p.img,
+      price: p.price ? `US$${p.price.replace('US$', '').replace('$', '').trim()}` : '',
+      rating: 5,
+      reviewsCount: 1,
+      difficulty: p.difficulty || 'Moderate',
+      duration: p.duration || '',
+      durationUnit: 'Days',
+      activity: p.category || 'Package',
+      region: p.region || p.location || '',
+      location: p.location || '',
+      link: `/packages/${p.id}`
     }))
   ];
 
   // Filter treks for this region
   const filteredTreks = combinedList.filter(trek => {
-    const actLower = trek.source === 'tourTrip'
-      ? (trek.activities || []).map(a => a.toLowerCase()).join(' ')
-      : (trek.activity || '').toLowerCase();
-    const catLower = (trek.category || '').toLowerCase();
     const titleLower = (trek.title || '').toLowerCase();
-
-    // Exclude explicit Tours, Biking, Special Interest or non-trekking items
-    if (catLower === 'tours' || actLower.includes('biking') || actLower.includes('special interest')) {
-      return false;
-    }
-    if (titleLower.includes('tour') && !titleLower.includes('trek')) {
-      return false;
-    }
-
     const regProp = (trek.region || '').toLowerCase();
-    const qRegProp = (trek.quickFacts?.region || '').toLowerCase();
+    const locProp = (trek.location || '').toLowerCase();
 
     // Match database region strictly
     if (matchedRegion) {
       const matchRegionName = matchedRegion.name.toLowerCase();
-      if (regProp === matchRegionName || qRegProp === matchRegionName) {
+      if (regProp === matchRegionName || locProp === matchRegionName) {
         return true;
       }
     }
@@ -72,7 +96,7 @@ const TrekRegion = () => {
 
     // Match region strictly
     return regProp.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) || 
-           qRegProp.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) || 
+           locProp.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) || 
            titleLower.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId);
   });
 
@@ -134,7 +158,7 @@ const TrekRegion = () => {
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="treks-grid">
                 {currentTreks.map((trek) => {
-                  const detailUrl = trek.source === 'tourTrip' ? `/tour-trip/${trek.slug || trek.id}` : `/treks/${trek.id}`;
+                  const detailUrl = trek.link;
                   return (
                     <Link to={detailUrl} key={trek.id} className="block group">
                       <div className="bg-[#E4E2DC] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full">

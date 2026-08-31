@@ -100,7 +100,7 @@ const router = createBrowserRouter([
       { path: 'faq', element: <FAQPage /> },
       { path: 'guest-reviews', element: <GuestReviews /> },
       { path: 'packages', element: <Packages /> },
-      { path: 'packages/:id', element: <TourTripDetail /> },
+      { path: 'packages/:id', element: <PackageDetail /> },
       { path: 'tours', element: <Tours /> },
       { path: 'tours/category/:categoryName', element: <TourCategoryDetail /> },
       { path: 'blogs', element: <Blogs /> },
