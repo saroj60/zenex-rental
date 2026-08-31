@@ -418,6 +418,76 @@ const AddTourTrip = () => {
               )}
             </div>
 
+            {/* Gallery Image 2 Upload */}
+            <div className="bg-white p-5 rounded-xl border border-gray-200 space-y-4 shadow-sm">
+              <h3 className="font-bold text-gray-800 flex items-center gap-2"><ImageIcon size={18} className="text-[#e53a24]"/> Hero Gallery Image 2</h3>
+              <p className="text-xs text-gray-500">The second image shown in the hero grid (25% width on desktop).</p>
+              <div className="flex flex-col md:flex-row items-center gap-4">
+                <input 
+                  type="text" 
+                  value={formData.gallery?.[0] || ''} 
+                  onChange={(e) => {
+                    const newGallery = [...(formData.gallery || [])];
+                    newGallery[0] = e.target.value;
+                    setFormData(p => ({ ...p, gallery: newGallery }));
+                  }} 
+                  placeholder="Hero Gallery Image 2 URL" 
+                  className="flex-1 w-full border border-gray-200 rounded-xl px-4 py-2 text-sm focus:ring-[#e53a24]" 
+                />
+                <label className="w-full md:w-auto bg-[#e53a24] text-white px-5 py-2.5 rounded-xl cursor-pointer text-sm font-bold flex items-center justify-center hover:bg-red-700 transition-colors shrink-0">
+                  Upload Image 2
+                  <input type="file" className="hidden" accept="image/*" onChange={async (e) => {
+                    if (e.target.files[0]) {
+                      const url = await uploadImage(e.target.files[0]);
+                      const newGallery = [...(formData.gallery || [])];
+                      newGallery[0] = url;
+                      setFormData(p => ({ ...p, gallery: newGallery }));
+                    }
+                  }} />
+                </label>
+              </div>
+              {formData.gallery?.[0] && (
+                <div className="border border-gray-100 rounded-lg p-2 bg-gray-50 max-w-md">
+                  <img src={formData.gallery[0]} alt="Gallery Image 2 Preview" className="h-32 w-auto object-cover rounded-md" />
+                </div>
+              )}
+            </div>
+
+            {/* Gallery Image 3 Upload */}
+            <div className="bg-white p-5 rounded-xl border border-gray-200 space-y-4 shadow-sm">
+              <h3 className="font-bold text-gray-800 flex items-center gap-2"><ImageIcon size={18} className="text-[#e53a24]"/> Hero Gallery Image 3</h3>
+              <p className="text-xs text-gray-500">The third image shown in the hero grid (25% width on desktop).</p>
+              <div className="flex flex-col md:flex-row items-center gap-4">
+                <input 
+                  type="text" 
+                  value={formData.gallery?.[1] || ''} 
+                  onChange={(e) => {
+                    const newGallery = [...(formData.gallery || [])];
+                    newGallery[1] = e.target.value;
+                    setFormData(p => ({ ...p, gallery: newGallery }));
+                  }} 
+                  placeholder="Hero Gallery Image 3 URL" 
+                  className="flex-1 w-full border border-gray-200 rounded-xl px-4 py-2 text-sm focus:ring-[#e53a24]" 
+                />
+                <label className="w-full md:w-auto bg-[#e53a24] text-white px-5 py-2.5 rounded-xl cursor-pointer text-sm font-bold flex items-center justify-center hover:bg-red-700 transition-colors shrink-0">
+                  Upload Image 3
+                  <input type="file" className="hidden" accept="image/*" onChange={async (e) => {
+                    if (e.target.files[0]) {
+                      const url = await uploadImage(e.target.files[0]);
+                      const newGallery = [...(formData.gallery || [])];
+                      newGallery[1] = url;
+                      setFormData(p => ({ ...p, gallery: newGallery }));
+                    }
+                  }} />
+                </label>
+              </div>
+              {formData.gallery?.[1] && (
+                <div className="border border-gray-100 rounded-lg p-2 bg-gray-50 max-w-md">
+                  <img src={formData.gallery[1]} alt="Gallery Image 3 Preview" className="h-32 w-auto object-cover rounded-md" />
+                </div>
+              )}
+            </div>
+
           </div>
         </div>
 
