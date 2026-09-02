@@ -26,8 +26,8 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
 
   // Always fall back to static data so search works immediately on page load
   const vehicles = (ctxVehicles && ctxVehicles.length > 0) ? ctxVehicles : STATIC_VEHICLES;
-  const packages = (ctxPackages && ctxPackages.length > 0) ? ctxPackages : (featuredPackages || []);
-  const treks = (ctxTreks && ctxTreks.length > 0) ? ctxTreks : (treksData || []);
+  const packages = Array.isArray(ctxPackages) ? ctxPackages : [];
+  const treks = Array.isArray(ctxTreks) ? ctxTreks : [];
 
   useEffect(() => {
     if (isOpen) {

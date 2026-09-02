@@ -13,7 +13,7 @@ const RegionDetail = () => {
 
   // Combine and map treks, tourTrips, and packages
   const combinedList = [
-    ...treks.map(t => ({
+    ...(Array.isArray(treks) ? treks : []).map(t => ({
       id: t.id,
       title: t.title,
       image: t.image || t.img || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
@@ -29,7 +29,7 @@ const RegionDetail = () => {
       location: t.location || t.destination || '',
       link: `/treks/${t.id}`
     })),
-    ...tourTrips.filter(t => t.status === 'Published').map(t => ({
+    ...(Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').map(t => ({
       id: t.id,
       title: t.title,
       image: t.image || t.mainImage || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
@@ -45,7 +45,7 @@ const RegionDetail = () => {
       location: t.destination || '',
       link: `/tour/${t.slug || t.id}`
     })),
-    ...packages.map(p => ({
+    ...(Array.isArray(packages) ? packages : []).map(p => ({
       id: p.id,
       title: p.title,
       image: p.img || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',

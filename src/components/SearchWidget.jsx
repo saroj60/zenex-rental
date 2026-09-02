@@ -54,8 +54,10 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
 
   /* Merge context + static packages, de-dupe by id */
   const allPackages = (() => {
-    const base  = (ctxPackages && ctxPackages.length > 0) ? ctxPackages : (featuredPackages || []);
-    const trips = (tourTrips || []).map(t => ({
+    const safePackages = Array.isArray(ctxPackages) ? ctxPackages : [];
+    const safeTourTrips = Array.isArray(tourTrips) ? tourTrips : [];
+    const base  = safePackages;
+    const trips = safeTourTrips.map(t => ({
       id:       t.id,
       title:    t.title,
       location: t.destinations?.join(', ') || t.location || '',

@@ -11,17 +11,17 @@ const TrekRegionGrid = () => {
   // Flatten all packages to count matches
   const combinedList = useMemo(() => {
     return [
-      ...treks.map(t => ({
+      ...(Array.isArray(treks) ? treks : []).map(t => ({
         title: t.title,
         region: t.region || t.quickFacts?.region || '',
         location: t.location || t.destination || ''
       })),
-      ...tourTrips.filter(t => t.status === 'Published').map(t => ({
+      ...(Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').map(t => ({
         title: t.title,
         region: t.region || '',
         location: t.destination || ''
       })),
-      ...packages.map(p => ({
+      ...(Array.isArray(packages) ? packages : []).map(p => ({
         title: p.title,
         region: p.region || p.location || '',
         location: p.location || ''

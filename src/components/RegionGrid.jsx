@@ -13,7 +13,7 @@ const RegionGrid = () => {
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center uppercase">Explore By Region</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {regions.map(region => {
-            const count = tourTrips.filter(t => t.region === region.name).length;
+            const count = (Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.region === region.name).length;
             return (
               <Link to={`/region/${region.slug}`} key={region.id} className="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                 <div className="h-64 overflow-hidden relative">

@@ -26,10 +26,10 @@ const BookingCheckout = () => {
   let defaultPrice = 1200;
   let durationText = 'N/A';
 
-  const matchedTrek = treks ? treks.find(t => t.id === pkgId) : null;
-  const matchedTourTrip = tourTrips ? tourTrips.find(t => t.id === pkgId || t.slug === pkgId) : null;
-  const matchedTour = packages ? packages.find(p => p.id === pkgId) : null;
-  const matchedVehicle = carId ? vehicles.find(v => v.id.toString() === carId) : null;
+  const matchedTrek = Array.isArray(treks) ? treks.find(t => t.id === pkgId) : null;
+  const matchedTourTrip = Array.isArray(tourTrips) ? tourTrips.find(t => t.id === pkgId || t.slug === pkgId) : null;
+  const matchedTour = Array.isArray(packages) ? packages.find(p => p.id === pkgId) : null;
+  const matchedVehicle = (carId && Array.isArray(vehicles)) ? vehicles.find(v => v.id.toString() === carId) : null;
 
   if (matchedTrek) {
     selectedItem = {

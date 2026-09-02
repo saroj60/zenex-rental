@@ -1,4 +1,4 @@
-﻿import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { featuredPackages } from '../data/packagesData';
 import { treksData } from '../data/treksData';
 
@@ -417,7 +417,7 @@ const initialDestinations = [
   }
 ];
 
-const initialPackages = featuredPackages;
+const initialPackages = [];
 
 const initialBookings = [];
 
@@ -474,8 +474,8 @@ export const AppDataProvider = ({ children }) => {
 
   const [vehicles, setVehicles] = useState(initialVehicles);
   const [destinations, setDestinations] = useState(initialDestinations);
-  const [packages, setPackages] = useState(featuredPackages || []);
-  const [treks, setTreks] = useState(treksData || []);
+  const [packages, setPackages] = useState([]);
+  const [treks, setTreks] = useState([]);
   const [bookings, setBookings] = useState([]);
   const [drivers, setDrivers] = useState([]);
   const [galleryImages, setGalleryImages] = useState(initialGallery);
@@ -517,15 +517,22 @@ export const AppDataProvider = ({ children }) => {
             return contentType && contentType.includes('application/json');
           };
 
+          const ensureArray = (data) => {
+            if (Array.isArray(data)) return data;
+            if (data && Array.isArray(data.value)) return data.value;
+            if (data && Array.isArray(data.data)) return data.data;
+            return [];
+          };
+
           if (isJson(vehRes) && isJson(packRes) && isJson(trekRes)) {
-            finalVehicles = await vehRes.json();
-            finalPackages = await packRes.json();
-            finalTreks = await trekRes.json();
-            finalDrivers = await drvRes.json().catch(() => []);
-            finalTourTrips = await tourRes.json().catch(() => []);
-            finalRegions = await regRes.json().catch(() => []);
-            finalBookings = await bookRes.json().catch(() => []);
-            finalTestimonials = await testRes.json().catch(() => []);
+            finalVehicles = ensureArray(await vehRes.json().catch(() => []));
+            finalPackages = ensureArray(await packRes.json().catch(() => []));
+            finalTreks = ensureArray(await trekRes.json().catch(() => []));
+            finalDrivers = ensureArray(await drvRes.json().catch(() => []));
+            finalTourTrips = ensureArray(await tourRes.json().catch(() => []));
+            finalRegions = ensureArray(await regRes.json().catch(() => []));
+            finalBookings = ensureArray(await bookRes.json().catch(() => []));
+            finalTestimonials = ensureArray(await testRes.json().catch(() => []));
             loadedFromApi = true;
           }
         } catch (apiErr) {
@@ -537,27 +544,27 @@ export const AppDataProvider = ({ children }) => {
           const staticRes = await fetch('/database.json');
           if (staticRes.ok) {
             const db = await staticRes.json();
-            finalVehicles = db.vehicles || [];
-            finalPackages = db.packages || [];
-            finalTreks = db.treks || [];
-            finalDrivers = db.drivers || [];
-            finalTourTrips = db.tourTrips || [];
-            finalRegions = db.regions || [];
-            finalBookings = db.bookings || [];
-            finalTestimonials = db.testimonials || [];
+            finalVehicles = ensureArray(db.vehicles);
+            finalPackages = ensureArray(db.packages);
+            finalTreks = ensureArray(db.treks);
+            finalDrivers = ensureArray(db.drivers);
+            finalTourTrips = ensureArray(db.tourTrips);
+            finalRegions = ensureArray(db.regions);
+            finalBookings = ensureArray(db.bookings);
+            finalTestimonials = ensureArray(db.testimonials);
           } else {
             console.error("Static database.json failed to load");
           }
         }
 
-        setVehicles(finalVehicles);
-        setPackages(finalPackages);
-        setTreks(finalTreks && finalTreks.length > 0 ? finalTreks : treksData);
-        setDrivers(finalDrivers);
-        setTourTrips(finalTourTrips);
-        setRegions(finalRegions);
-        setBookings(finalBookings);
-        setTestimonials(finalTestimonials && finalTestimonials.length > 0 ? finalTestimonials : initialTestimonials);
+        setVehicles(ensureArray(finalVehicles));
+        setPackages(ensureArray(finalPackages));
+        setTreks(ensureArray(finalTreks));
+        setDrivers(ensureArray(finalDrivers));
+        setTourTrips(ensureArray(finalTourTrips));
+        setRegions(ensureArray(finalRegions));
+        setBookings(ensureArray(finalBookings));
+        setTestimonials(ensureArray(finalTestimonials && finalTestimonials.length > 0 ? finalTestimonials : initialTestimonials));
       } catch (err) {
         console.error("Error fetching data", err);
         setTreks(treksData);
@@ -578,7 +585,7 @@ export const AppDataProvider = ({ children }) => {
     } else {
       body = JSON.stringify(vehicleData);
     }
-    const res = await fetch(\/api/vehicles', { method: 'POST', headers, body });
+    const res = await fetch(`${API_BASE}/api/vehicles`, { method: 'POST', headers, body });
     const newV = await res.json();
     setVehicles([...vehicles, newV]);
   };
@@ -591,12 +598,12 @@ export const AppDataProvider = ({ children }) => {
     } else {
       body = JSON.stringify(updatedData);
     }
-    const res = await fetch(`/api/vehicles/${id}`, { method: 'PUT', headers, body });
+    const res = await fetch(`${API_BASE}/api/vehicles/${id}`, { method: 'PUT', headers, body });
     const updatedV = await res.json();
     setVehicles(vehicles.map(v => v.id === id ? updatedV : v));
   };
   const deleteVehicle = async (id) => {
-    await fetch(`/api/vehicles/${id}`, { method: 'DELETE' });
+    await fetch(`${API_BASE}/api/vehicles/${id}`, { method: 'DELETE' });
     setVehicles(vehicles.filter(v => v.id !== id));
   };
 
@@ -607,55 +614,55 @@ export const AppDataProvider = ({ children }) => {
 
   // CRUD for Packages
   const addPackage = async (pkg) => {
-    const res = await fetch(\/api/packages', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(pkg) });
+    const res = await fetch(`${API_BASE}/api/packages`, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(pkg) });
     const newPkg = await res.json();
     setPackages([...packages, newPkg]);
   };
   const updatePackage = async (id, updated) => {
-    const res = await fetch(`/api/packages/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updated) });
+    const res = await fetch(`${API_BASE}/api/packages/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updated) });
     const updatedPkg = await res.json();
     setPackages(packages.map(p => p.id === id ? updatedPkg : p));
   };
   const deletePackage = async (id) => {
-    await fetch(`/api/packages/${id}`, { method: 'DELETE' });
+    await fetch(`${API_BASE}/api/packages/${id}`, { method: 'DELETE' });
     setPackages(packages.filter(p => p.id !== id));
   };
 
   // CRUD for Treks
   const addTrek = async (trek) => {
-    const res = await fetch(\/api/treks', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(trek) });
+    const res = await fetch(`${API_BASE}/api/treks`, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(trek) });
     const newTrek = await res.json();
     setTreks([...treks, newTrek]);
   };
   const updateTrek = async (id, updated) => {
-    const res = await fetch(`/api/treks/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updated) });
+    const res = await fetch(`${API_BASE}/api/treks/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updated) });
     const updatedTrek = await res.json();
     setTreks(treks.map(t => t.id === id ? updatedTrek : t));
   };
   const deleteTrek = async (id) => {
-    await fetch(`/api/treks/${id}`, { method: 'DELETE' });
+    await fetch(`${API_BASE}/api/treks/${id}`, { method: 'DELETE' });
     setTreks(treks.filter(t => t.id !== id));
   };
 
   // CRUD for Tour Trips
   const addTourTrip = async (trip) => {
-    const res = await fetch(\/api/tour-trips', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(trip) });
+    const res = await fetch(`${API_BASE}/api/tour-trips`, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(trip) });
     const newTrip = await res.json();
     setTourTrips([...tourTrips, newTrip]);
   };
   const updateTourTrip = async (id, updated) => {
-    const res = await fetch(`/api/tour-trips/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updated) });
+    const res = await fetch(`${API_BASE}/api/tour-trips/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updated) });
     const updatedTrip = await res.json();
     setTourTrips(tourTrips.map(t => t.id === id ? updatedTrip : t));
   };
   const deleteTourTrip = async (id) => {
-    await fetch(`/api/tour-trips/${id}`, { method: 'DELETE' });
+    await fetch(`${API_BASE}/api/tour-trips/${id}`, { method: 'DELETE' });
     setTourTrips(tourTrips.filter(t => t.id !== id));
   };
 
   // CRUD for Bookings
   const addBooking = async (booking) => {
-    const res = await fetch(\/api/bookings', {
+    const res = await fetch(`${API_BASE}/api/bookings`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -674,7 +681,7 @@ export const AppDataProvider = ({ children }) => {
     }
   };
   const updateBooking = async (id, updated) => {
-    const res = await fetch(`/api/bookings/${id}`, {
+    const res = await fetch(`${API_BASE}/api/bookings/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(updated)
@@ -685,7 +692,7 @@ export const AppDataProvider = ({ children }) => {
     }
   };
   const deleteBooking = async (id) => {
-    const res = await fetch(`/api/bookings/${id}`, {
+    const res = await fetch(`${API_BASE}/api/bookings/${id}`, {
       method: 'DELETE'
     });
     const data = await res.json();
@@ -708,7 +715,7 @@ export const AppDataProvider = ({ children }) => {
     } else {
       body = JSON.stringify(driverData);
     }
-    const res = await fetch(\/api/drivers', { method: 'POST', headers, body });
+    const res = await fetch(`${API_BASE}/api/drivers`, { method: 'POST', headers, body });
     const newD = await res.json();
     setDrivers([...drivers, newD]);
   };
@@ -721,12 +728,12 @@ export const AppDataProvider = ({ children }) => {
     } else {
       body = JSON.stringify(updatedData);
     }
-    const res = await fetch(`/api/drivers/${id}`, { method: 'PUT', headers, body });
+    const res = await fetch(`${API_BASE}/api/drivers/${id}`, { method: 'PUT', headers, body });
     const updatedD = await res.json();
     setDrivers(drivers.map(d => d.id === id ? updatedD : d));
   };
   const deleteDriver = async (id) => {
-    await fetch(`/api/drivers/${id}`, { method: 'DELETE' });
+    await fetch(`${API_BASE}/api/drivers/${id}`, { method: 'DELETE' });
     setDrivers(drivers.filter(d => d.id !== id));
   };
 
@@ -735,7 +742,7 @@ export const AppDataProvider = ({ children }) => {
     try {
       const formData = new FormData();
       formData.append('image', file);
-      const res = await fetch(\/api/upload', {
+      const res = await fetch(`${API_BASE}/api/upload`, {
         method: 'POST',
         body: formData
       });
@@ -750,7 +757,7 @@ export const AppDataProvider = ({ children }) => {
   // --- REGIONS ---
   const addRegion = async (region) => {
     try {
-      const res = await fetch(\/api/regions', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(region) });
+      const res = await fetch(`${API_BASE}/api/regions`, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(region) });
       const data = await res.json();
       setRegions([...regions, data]);
       return data;
@@ -762,7 +769,7 @@ export const AppDataProvider = ({ children }) => {
 
   const updateRegion = async (id, updatedRegion) => {
     try {
-      const res = await fetch(`/api/regions/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updatedRegion) });
+      const res = await fetch(`${API_BASE}/api/regions/${id}`, { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(updatedRegion) });
       const data = await res.json();
       setRegions(regions.map(r => r.id === id ? data : r));
       return data;
@@ -774,7 +781,7 @@ export const AppDataProvider = ({ children }) => {
 
   const deleteRegion = async (id) => {
     try {
-      await fetch(`/api/regions/${id}`, { method: 'DELETE' });
+      await fetch(`${API_BASE}/api/regions/${id}`, { method: 'DELETE' });
       setRegions(regions.filter(r => r.id !== id));
     } catch (error) {
       console.error('Error deleting region:', error);

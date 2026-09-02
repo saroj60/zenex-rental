@@ -10,7 +10,7 @@ const ManageRegions = () => {
   const [formData, setFormData] = useState({ name: '', description: '', image: '', country: 'Nepal', type: 'Tours' });
 
   const getPackageCount = (regionName) => {
-    return tourTrips.filter(t => t.region === regionName).length;
+    return (Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.region === regionName).length;
   };
 
   const handleOpenEdit = (region = null) => {
