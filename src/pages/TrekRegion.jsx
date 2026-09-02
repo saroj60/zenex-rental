@@ -16,17 +16,20 @@ const TrekRegion = () => {
 
   // Find dynamic database region first, fall back to regionData
   const matchedRegion = (regions || []).find(r => r.slug === regionId);
-  const region = matchedRegion 
-    ? {
-        id: matchedRegion.slug,
-        title: matchedRegion.name,
-        description: matchedRegion.description ? `<p>${matchedRegion.description}</p>` : `<p>Explore the breathtaking trails of ${matchedRegion.name}.</p>`
-      }
-    : (regionData[regionId] || {
-        id: regionId,
-        title: `${regionId.charAt(0).toUpperCase() + regionId.slice(1)} Region Treks`,
-        description: `<p>Explore the breathtaking trails of the ${regionId} region.</p>`
-      });
+  const fallbackKey = (regionId || '').toLowerCase();
+  const fallbackData = regionData[fallbackKey] || 
+                       regionData[fallbackKey.replace(/-region.*/, '')] ||
+                       regionData[fallbackKey.split('-')[0]] || null;
+
+  const rawTitle = matchedRegion?.name || fallbackData?.title || `${regionId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Region Treks`;
+  const cleanTitle = rawTitle.replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
+  const cleanDescription = matchedRegion?.description || fallbackData?.description || `Discover pristine mountain landscapes, authentic Himalayan heritage, and unforgettable trail experiences in the ${cleanTitle}.`;
+
+  const region = {
+    id: regionId,
+    title: cleanTitle,
+    description: cleanDescription.startsWith('<p>') ? cleanDescription : `<p>${cleanDescription}</p>`
+  };
 
   const combinedList = [
     ...(Array.isArray(treks) ? treks : []).map(t => ({

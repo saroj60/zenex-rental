@@ -4,12 +4,39 @@ import { useAppData } from '../context/AppDataContext';
 import { MapPin, Clock, Star, ArrowLeft, ChevronRight } from 'lucide-react';
 import { formatDuration } from '../utils/duration';
 
+import { regionData } from '../data/regionData';
+
 const RegionDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const { regions, tourTrips, treks, packages } = useAppData();
 
-  const region = regions.find(r => r.slug === slug);
+  const matchedRegion = (regions || []).find(r => r.slug === slug);
+  const fallbackKey = (slug || '').toLowerCase();
+  const fallbackData = regionData[fallbackKey] || 
+                       regionData[fallbackKey.replace(/-region.*/, '')] ||
+                       regionData[fallbackKey.split('-')[0]] || null;
+
+  const rawTitle = matchedRegion?.name || fallbackData?.title || `${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Region Treks`;
+  const cleanTitle = rawTitle.replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
+  const cleanDescription = matchedRegion?.description || fallbackData?.description || `Discover pristine mountain landscapes, authentic Himalayan heritage, and unforgettable trail experiences in the ${cleanTitle}.`;
+
+  const region = matchedRegion ? {
+    ...matchedRegion,
+    name: cleanTitle,
+    description: cleanDescription
+  } : (fallbackData ? {
+    id: slug,
+    slug: slug,
+    name: cleanTitle,
+    description: cleanDescription,
+    image: 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=2070'
+  } : {
+    id: slug,
+    slug: slug,
+    name: cleanTitle,
+    description: cleanDescription
+  });
 
   // Combine and map treks, tourTrips, and packages
   const combinedList = [
