@@ -25,9 +25,12 @@ const TrekRegion = () => {
   const cleanTitle = rawTitle.replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
   const cleanDescription = matchedRegion?.description || fallbackData?.description || `Discover pristine mountain landscapes, authentic Himalayan heritage, and unforgettable trail experiences in the ${cleanTitle}.`;
 
+  const cleanImage = matchedRegion?.image || fallbackData?.image || '/images/everest base.jpg';
+
   const region = {
     id: regionId,
     title: cleanTitle,
+    image: cleanImage,
     description: cleanDescription.startsWith('<p>') ? cleanDescription : `<p>${cleanDescription}</p>`
   };
 
@@ -114,36 +117,63 @@ const TrekRegion = () => {
   }, [regionId]);
 
   return (
-    <div className="min-h-screen bg-white pb-16 overflow-x-hidden pt-32">
+    <div className="min-h-screen bg-white pb-16 overflow-x-hidden">
       <SEO 
         title={`${region.title} | Zenex Rental`}
         description={`Trekking packages for ${region.title}.`}
       />
       
-      <div className="w-full bg-white pt-8 pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          {/* Breadcrumbs */}
-          <nav className="flex items-center gap-2 text-sm text-slate-500 mb-6 flex-wrap">
-            <Link to="/" className="hover:text-orange-500 transition-colors">Home</Link>
-            <span>&gt;</span>
-            <Link to="/destinations" className="hover:text-orange-500 transition-colors">Destinations</Link>
-            <span>&gt;</span>
-            <span>Nepal</span>
-            <span>&gt;</span>
-            <Link to="/treks" className="hover:text-orange-500 transition-colors">Treks in Nepal</Link>
-            <span>&gt;</span>
-            <span className="font-semibold text-slate-900">{region.title}</span>
-          </nav>
+      {/* Premium Hero Banner Section with Related Image */}
+      <div className="relative h-[60vh] min-h-[480px] flex flex-col justify-center overflow-hidden bg-gradient-to-tr from-slate-950 via-[#1e3a8a] to-[#0F766E]">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={region.image}
+            alt={region.title}
+            className="w-full h-full object-cover scale-105 opacity-85 transition-transform duration-1000"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-[#1e3a8a]/80 to-orange-700/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-100 h-20 bottom-0 top-auto"></div>
+        </div>
 
-          {/* Region Description */}
-          <div className="mb-12 bg-slate-50 rounded-[2rem] p-8 md:p-12 border border-slate-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]">
-            <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 uppercase tracking-wider flex items-center gap-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              <span className="w-12 h-1 bg-orange-500 rounded-full"></span>
-              {region.title}
-            </h1>
+        {/* Hero Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6">
+            <span className="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse"></span>
+            <span className="text-xs font-bold text-white uppercase tracking-widest">Himalayan Destination Guide</span>
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight leading-tight max-w-4xl drop-shadow-lg uppercase">
+            {region.title}
+          </h1>
+
+          {/* Breadcrumbs inside Hero */}
+          <nav className="flex items-center gap-2 text-sm font-bold text-white/80 uppercase tracking-wider flex-wrap">
+            <Link to="/" className="hover:text-orange-400 text-white transition-colors">Home</Link>
+            <span className="text-orange-400">&bull;</span>
+            <Link to="/treks" className="hover:text-orange-400 text-white transition-colors">Treks</Link>
+            <span className="text-orange-400">&bull;</span>
+            <span className="text-orange-400">{region.title}</span>
+          </nav>
+        </div>
+      </div>
+
+      {/* Main Content Area */}
+      <div className="w-full bg-white pt-10 pb-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Destination Introduction Box */}
+          <div className="mb-12 bg-slate-50/90 rounded-[2rem] p-8 md:p-12 border border-slate-200/80 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-10 h-10 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-600 font-bold">
+                🏔️
+              </span>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 uppercase tracking-wide">
+                Destination Overview
+              </h2>
+            </div>
             <div 
-              className="text-slate-600 leading-relaxed text-lg"
+              className="text-slate-700 leading-relaxed text-base md:text-lg font-normal"
               dangerouslySetInnerHTML={{ __html: region.description }}
             />
           </div>
