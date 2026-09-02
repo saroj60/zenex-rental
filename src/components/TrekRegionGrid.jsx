@@ -1,6 +1,164 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppData } from '../context/AppDataContext';
+import { Mountain, Compass, MapPin, ArrowRight, ShieldCheck } from 'lucide-react';
+
+const DEFAULT_TREK_DESTINATIONS = [
+  {
+    id: 'REG-trk-eve',
+    slug: 'everest-base-camp',
+    name: 'Everest Region Treks',
+    displayName: 'EVEREST REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'EBC, Gokyo Lakes & Kala Patthar',
+    difficulty: 'Challenging',
+    maxAltitude: '5,545 m',
+    duration: '12 - 16 Days',
+    image: '/images/everest base.jpg',
+    description: 'Walk among giants. Stand beneath Mount Everest, navigate turquoise Gokyo Lakes, and experience Sherpa culture.'
+  },
+  {
+    id: 'REG-trk-ann',
+    slug: 'annapurna',
+    name: 'Annapurna Region Treks',
+    displayName: 'ANNAPURNA REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'Circuit, Base Camp & Poon Hill Sunrise',
+    difficulty: 'Moderate to Strenuous',
+    maxAltitude: '5,416 m',
+    duration: '7 - 14 Days',
+    image: '/images/annapurna.jpg',
+    description: 'Diverse landscapes from sub-tropical valleys to Thorong La Pass and rhododendron forests.'
+  },
+  {
+    id: 'REG-trk-lan',
+    slug: 'langtang',
+    name: 'Langtang Valley Hikes',
+    displayName: 'LANGTANG REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'Valley of Glaciers & Holy Gosaikunda',
+    difficulty: 'Moderate',
+    maxAltitude: '4,380 m',
+    duration: '7 - 10 Days',
+    image: '/images/langtang1.jpg',
+    description: 'Accessible Himalayan paradise close to Kathmandu with Tamang culture and alpine glacial lakes.'
+  },
+  {
+    id: 'REG-trk-man',
+    slug: 'manaslu',
+    name: 'Manaslu Circuit Adventures',
+    displayName: 'MANASLU REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'Untouched Wilderness & Larke Pass',
+    difficulty: 'Strenuous',
+    maxAltitude: '5,106 m',
+    duration: '14 - 18 Days',
+    image: '/images/manaslu.jpg',
+    description: 'Quiet, restricted trail encircling Mount Manaslu with Tibetan monasteries and high mountain passes.'
+  },
+  {
+    id: 'REG-trk-mus',
+    slug: 'upper-mustang',
+    name: 'Upper Mustang Expeditions',
+    displayName: 'MUSTANG REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'The Last Forbidden Kingdom of Lo Manthang',
+    difficulty: 'Moderate',
+    maxAltitude: '3,840 m',
+    duration: '10 - 14 Days',
+    image: '/images/upper mustang.jpg',
+    description: 'Rain-shadow desert filled with wind-eroded cliff caves, ancient monasteries, and royal Mustang heritage.'
+  },
+  {
+    id: 'REG-trk-kan',
+    slug: 'kanchenjunga',
+    name: 'Kanchenjunga Discoveries',
+    displayName: 'KANCHENJUNGA REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'Wild East & World 3rd Highest Peak',
+    difficulty: 'Strenuous',
+    maxAltitude: '5,143 m',
+    duration: '18 - 22 Days',
+    image: '/images/kanchenjunga.jpg',
+    description: 'Remote eastern frontier trekking through wild alpine rhododendrons, massive glaciers, and secluded villages.'
+  },
+  {
+    id: 'REG-trk-dol',
+    slug: 'dolpo',
+    name: 'Hidden Dolpo Journeys',
+    displayName: 'DOLPO REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'Phoksundo Turquoise Lake & Bon Culture',
+    difficulty: 'Strenuous',
+    maxAltitude: '5,350 m',
+    duration: '14 - 21 Days',
+    image: '/images/dorpatan dolpo.jpg',
+    description: 'Mystical high-altitude desert kingdom featuring deep turquoise glacial lakes and pre-Buddhist Bon traditions.'
+  },
+  {
+    id: 'REG-trk-fws',
+    slug: 'far-western-nepal',
+    name: 'Far-Western Nepal Escapes',
+    displayName: 'FAR-WEST REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'Khaptad Plateau & Uncrowded Trails',
+    difficulty: 'Moderate',
+    maxAltitude: '3,300 m',
+    duration: '8 - 12 Days',
+    image: '/images/Khaptad Trek 11 Days.jpg',
+    description: 'Serene rolling green meadows, sacred hermitage sites, and untouched nature far from crowds.'
+  },
+  {
+    id: 'REG-tib-ebc',
+    slug: 'everest-base-camp-tibet',
+    name: 'Everest Base Camp Tibet',
+    displayName: 'TIBET EVEREST NORTH FACE',
+    country: 'Tibet',
+    type: 'Treks',
+    tagline: 'North Face of Everest & Rongbuk Monastery',
+    difficulty: 'Moderate',
+    maxAltitude: '5,200 m',
+    duration: '8 - 12 Days',
+    image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070',
+    description: 'Breathtaking views of Everest North Face combined with Lhasa cultural highlights.'
+  },
+  {
+    id: 'REG-bhu-cul',
+    slug: 'bhutan-trekking',
+    name: 'Bhutan Himalayan Trails',
+    displayName: 'BHUTAN HIMALAYAN TRAILS',
+    country: 'Bhutan',
+    type: 'Treks',
+    tagline: 'Tiger Nest, Paro Valley & Druk Path',
+    difficulty: 'Moderate',
+    maxAltitude: '4,200 m',
+    duration: '6 - 10 Days',
+    image: 'https://images.unsplash.com/photo-1578593139811-2928a2a829b3?q=80&w=2070',
+    description: 'Journey through pristine pine forests, ancient dzongs, and dramatic mountain passes.'
+  },
+  {
+    id: 'REG-ind-lad',
+    slug: 'ladakh-adventure',
+    name: 'Ladakh High Pass Trails',
+    displayName: 'LADAKH HIGH PASS TRAILS',
+    country: 'India',
+    type: 'Treks',
+    tagline: 'Markha Valley & Pangong Tso Hikes',
+    difficulty: 'Moderate to Strenuous',
+    maxAltitude: '5,150 m',
+    duration: '7 - 12 Days',
+    image: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?q=80&w=2070',
+    description: 'High altitude desert passes, spectacular Buddhist gompas, and moonscape Himalayan valleys.'
+  }
+];
 
 const TrekRegionGrid = () => {
   const { treks, tourTrips, packages, regions } = useAppData();
@@ -29,28 +187,35 @@ const TrekRegionGrid = () => {
     ];
   }, [treks, tourTrips, packages]);
 
-  // Get regions dynamically for the selected country
+  // Combine context regions with default fallback destinations
+  const sourceRegions = useMemo(() => {
+    if (regions && regions.length > 0) {
+      return regions;
+    }
+    return DEFAULT_TREK_DESTINATIONS;
+  }, [regions]);
+
+  // Filter regions by selected country
   const filteredRegions = useMemo(() => {
-    if (!regions || regions.length === 0) return [];
-    
-    return regions.filter(r => {
+    const list = sourceRegions.filter(r => {
       const countryMatch = (r.country || 'Nepal').toLowerCase() === activeCountry.toLowerCase();
       if (!countryMatch) return false;
-      
       if (activeCountry === 'Nepal') {
-        // Only show trekking regions for Nepal
-        return r.type === 'Treks' || r.type === 'Both';
+        return r.type === 'Treks' || r.type === 'Both' || !r.type;
       }
-      
-      // Show all regions for other countries
       return true;
     });
-  }, [regions, activeCountry]);
 
-  // Calculate dynamic counts
+    if (list.length > 0) return list;
+
+    // Fall back to default destination subset if database list had 0 matches for country
+    return DEFAULT_TREK_DESTINATIONS.filter(r => r.country.toLowerCase() === activeCountry.toLowerCase());
+  }, [sourceRegions, activeCountry]);
+
+  // Calculate dynamic counts and metadata
   const regionsWithCounts = useMemo(() => {
     return filteredRegions.map(region => {
-      const normalizedSlug = region.slug.toLowerCase().replace(/[^a-z0-9]/g, '');
+      const normalizedSlug = (region.slug || '').toLowerCase().replace(/[^a-z0-9]/g, '');
       const count = combinedList.filter(item => {
         const titleLower = (item.title || '').toLowerCase();
         const regProp = (item.region || '').toLowerCase();
@@ -61,25 +226,22 @@ const TrekRegionGrid = () => {
                titleLower.replace(/[^a-z0-9]/g, '').includes(normalizedSlug);
       }).length;
 
-      // Make name display format uppercase
-      let displayName = region.name.toUpperCase();
-      
-      if (displayName === 'EVEREST') displayName = 'EVEREST REGION TREKS';
-      else if (displayName === 'ANNAPURNA') displayName = 'ANNAPURNA REGION TREKS';
-      else if (displayName === 'MANASLU') displayName = 'MANASLU REGION TREKS';
-      else if (displayName === 'LANGTANG') displayName = 'LANGTANG REGION TREKS';
-      else if (displayName === 'MUSTANG') displayName = 'MUSTANG REGION TREKS';
-      else if (displayName === 'KANCHENJUNGA') displayName = 'KANCHENJUNGA REGION TREKS';
-      else if (displayName === 'DOLPO') displayName = 'DOLPO REGION TREKS';
-      else if (displayName === 'DHAULAGIRI') displayName = 'DHAULAGIRI REGION TREKS';
-      else if (displayName === 'ROLWALING') displayName = 'ROLWALING REGION TREKS';
-      else if (displayName === 'MAKALU') displayName = 'MAKALU REGION TREKS';
-      else if (displayName === 'FAR-WEST') displayName = 'FAR-WEST REGION TREKS';
+      let displayName = (region.displayName || region.name || '').toUpperCase();
+      if (!displayName.includes('TREKS') && !displayName.includes('TRAILS') && !displayName.includes('EXPEDITIONS')) {
+        displayName = `${displayName} REGION TREKS`;
+      }
+
+      const defaultMatch = DEFAULT_TREK_DESTINATIONS.find(d => d.slug === region.slug || d.id === region.id);
 
       return {
         ...region,
         displayName,
-        count
+        count,
+        tagline: region.tagline || defaultMatch?.tagline || 'Himalayan Trekking Route',
+        difficulty: region.difficulty || defaultMatch?.difficulty || 'Moderate',
+        maxAltitude: region.maxAltitude || defaultMatch?.maxAltitude || '4,500 m',
+        duration: region.duration || defaultMatch?.duration || '7 - 14 Days',
+        description: region.description || defaultMatch?.description || 'Experience stunning mountain views and local Himalayan culture.'
       };
     });
   }, [filteredRegions, combinedList]);
@@ -90,15 +252,19 @@ const TrekRegionGrid = () => {
         
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a] uppercase tracking-wide">
-            Explore <span className="text-orange-600 font-black">Trekking Regions</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/60 text-[#1e3a8a] text-xs font-bold uppercase tracking-widest mb-3">
+            <Compass size={14} className="text-orange-500" />
+            Trekking Destination Guide
+          </div>
+          <h2 className="text-3xl md:text-5xl font-black text-[#1e3a8a] uppercase tracking-tight">
+            Explore <span className="text-orange-600">Trek Destinations</span>
           </h2>
-          <p className="text-slate-500 text-sm md:text-base mt-2 max-w-xl mx-auto font-medium">
-            Find the perfect Himalayan trek categorized by the world's most famous trekking regions.
+          <p className="text-slate-500 text-sm md:text-base mt-3 max-w-xl mx-auto font-medium leading-relaxed">
+            Choose your destination region to discover iconic Himalayan base camps, mountain circuits, and alpine trail routes.
           </p>
         </div>
 
-        {/* Country Switcher Tabs (Colorful) */}
+        {/* Country Switcher Tabs */}
         <div className="flex justify-center items-center gap-3 mb-12 flex-wrap">
           {availableCountries.map((country) => (
             <button
@@ -115,48 +281,66 @@ const TrekRegionGrid = () => {
           ))}
         </div>
 
-        {/* Grid */}
+        {/* Grid of Trek Destination Cards */}
         {regionsWithCounts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {regionsWithCounts.map(region => {
               const targetUrl = region.type === 'Treks' ? `/treks/region/${region.slug}` : `/region/${region.slug}`;
-              
-              // Color coding border highlight
-              let highlightColor = 'group-hover:border-emerald-500/30';
-              if (activeCountry === 'Tibet') highlightColor = 'group-hover:border-orange-500/30';
-              else if (activeCountry === 'Bhutan') highlightColor = 'group-hover:border-purple-500/30';
-              else if (activeCountry === 'India') highlightColor = 'group-hover:border-rose-500/30';
 
               return (
                 <Link 
-                  key={region.slug} 
+                  key={region.slug || region.id} 
                   to={targetUrl} 
-                  className="group flex flex-col cursor-pointer bg-white rounded-[24px] p-3 border border-slate-100 hover:border-orange-500/20 shadow-sm hover:shadow-[0_16px_36px_-8px_rgba(229,154,47,0.18)] transition-all duration-300"
+                  className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/70 hover:border-orange-500/40 shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1.5"
                 >
                   {/* Image Container */}
-                  <div className="w-full aspect-[4/3] rounded-[18px] overflow-hidden bg-slate-105 relative">
+                  <div className="w-full h-64 overflow-hidden relative bg-slate-100">
                     <img 
-                      src={region.image || 'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=800'} 
+                      src={region.image || '/images/everest base.jpg'} 
                       alt={region.name} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                     />
-                    {/* Shadow Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-85 pointer-events-none"></div>
+                    
+                    {/* Dark Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/25 to-transparent"></div>
                     
                     {/* Floating Country Badge */}
-                    <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black text-slate-800 shadow-sm uppercase tracking-wider">
+                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-extrabold text-slate-800 shadow-md uppercase tracking-wider">
                       {region.country || activeCountry}
+                    </div>
+
+                    {/* Max Altitude Badge */}
+                    <div className="absolute top-4 left-4 bg-slate-900/80 backdrop-blur-md text-white px-3 py-1 rounded-full text-[11px] font-bold flex items-center gap-1.5 shadow-md border border-white/10">
+                      <Mountain size={13} className="text-orange-400" />
+                      {region.maxAltitude}
+                    </div>
+
+                    {/* Card Title on Image */}
+                    <div className="absolute bottom-4 left-4 right-4 text-white">
+                      <div className="text-[11px] font-extrabold uppercase text-orange-400 tracking-wider mb-1">
+                        {region.tagline}
+                      </div>
+                      <h3 className="text-xl font-black text-white uppercase tracking-wide group-hover:text-orange-300 transition-colors drop-shadow-md">
+                        {region.displayName}
+                      </h3>
                     </div>
                   </div>
 
-                  {/* Title & Count */}
-                  <div className="mt-4 px-2 pb-2">
-                    <h3 className="text-base font-bold text-slate-800 uppercase tracking-wide group-hover:text-blue-600 transition-colors">
-                      {region.displayName}
-                    </h3>
-                    <div className="mt-2">
-                      <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-orange-600 bg-orange-50 px-2.5 py-1 rounded-full border border-orange-100/60 shadow-sm">
-                        {region.count > 0 ? `${region.count} Active Packages` : '0 Packages'}
+                  {/* Card Content Body */}
+                  <div className="p-6 flex-1 flex flex-col justify-between bg-white">
+                    <p className="text-slate-600 text-xs md:text-sm line-clamp-2 font-normal leading-relaxed mb-4">
+                      {region.description}
+                    </p>
+
+                    {/* Meta info pills & Action Button */}
+                    <div className="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-orange-600 bg-orange-50 px-3 py-1 rounded-full border border-orange-100 shadow-xs">
+                        {region.count > 0 ? `${region.count} Active Packages` : 'Explore Routes'}
+                      </span>
+
+                      <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1e3a8a] group-hover:text-orange-600 transition-colors">
+                        View Treks
+                        <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                       </span>
                     </div>
                   </div>
@@ -165,8 +349,9 @@ const TrekRegionGrid = () => {
             })}
           </div>
         ) : (
-          <div className="text-center py-16 bg-white rounded-2xl border border-slate-100 shadow-sm max-w-lg mx-auto">
-            <p className="text-slate-500 font-medium">No trekking regions found for {activeCountry}.</p>
+          <div className="text-center py-16 bg-white rounded-3xl border border-slate-100 shadow-sm max-w-lg mx-auto">
+            <MapPin size={40} className="mx-auto text-slate-300 mb-3" />
+            <p className="text-slate-600 font-semibold">No trekking destination cards available for {activeCountry}.</p>
           </div>
         )}
       </div>
