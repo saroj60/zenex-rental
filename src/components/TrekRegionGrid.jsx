@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppData } from '../context/AppDataContext';
-import { Mountain, Compass, MapPin, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Mountain, Compass, MapPin, ArrowRight } from 'lucide-react';
 
 const DEFAULT_TREK_DESTINATIONS = [
   {
@@ -16,7 +16,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '5,545 m',
     duration: '12 - 16 Days',
     image: '/images/everest base.jpg',
-    description: 'Walk among giants. Stand beneath Mount Everest, navigate turquoise Gokyo Lakes, and experience Sherpa culture.'
+    description: 'The Everest region is the ultimate Himalayan pilgrimage, offering a breathtaking journey into the heart of the Khumbu valley. Trekkers walk past ancient Sherpa settlements, historic Buddhist monasteries like Tengboche, turquoise glacial Gokyo Lakes, and breathtaking panoramic views from Kala Patthar. Reaching Everest Base Camp provides an unforgettable close-up view of Mount Everest, Lhotse, and Nuptse.'
   },
   {
     id: 'REG-trk-ann',
@@ -30,7 +30,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '5,416 m',
     duration: '7 - 14 Days',
     image: '/images/annapurna.jpg',
-    description: 'Diverse landscapes from sub-tropical valleys to Thorong La Pass and rhododendron forests.'
+    description: 'Renowned as one of the world’s most diverse trekking routes, the Annapurna region spans sub-tropical forests, dramatic river gorges, and high-altitude alpine deserts. Travelers can challenge themselves on the famous Annapurna Circuit over Thorong La Pass, hike into the natural amphitheater of Annapurna Base Camp, or enjoy early morning sunrises over Machhapuchhre from Poon Hill.'
   },
   {
     id: 'REG-trk-lan',
@@ -44,7 +44,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '4,380 m',
     duration: '7 - 10 Days',
     image: '/images/langtang1.jpg',
-    description: 'Accessible Himalayan paradise close to Kathmandu with Tamang culture and alpine glacial lakes.'
+    description: 'Located just north of Kathmandu, the Langtang Valley offers a pristine mountain escape rich in Tamang heritage and Tibetan-influenced culture. The trail wanders through lush bamboo and rhododendron forests, past traditional yak cheese factories, and up to the sacred alpine waters of Gosaikunda Lake under the shadows of Langtang Lirung.'
   },
   {
     id: 'REG-trk-man',
@@ -58,7 +58,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '5,106 m',
     duration: '14 - 18 Days',
     image: '/images/manaslu.jpg',
-    description: 'Quiet, restricted trail encircling Mount Manaslu with Tibetan monasteries and high mountain passes.'
+    description: 'The Manaslu Circuit is a premier off-the-beaten-path trekking route that circles Mount Manaslu, the eighth highest mountain in the world. As a restricted area, it preserves untouched mountain wilderness, traditional cliffside Tibetan villages, and dramatic river crossings before culminating in the thrilling climb over Larke La Pass.'
   },
   {
     id: 'REG-trk-mus',
@@ -72,7 +72,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '3,840 m',
     duration: '10 - 14 Days',
     image: '/images/upper mustang.jpg',
-    description: 'Rain-shadow desert filled with wind-eroded cliff caves, ancient monasteries, and royal Mustang heritage.'
+    description: 'Hidden in the rain-shadow desert behind the Dhaulagiri range, Upper Mustang is a high-altitude sanctuary often called "The Last Forbidden Kingdom of Lo Manthang". This unique region is famous for wind-sculpted red rock canyons, ancient cliffside cave dwellings, centuries-old Buddhist monasteries, and authentic Mustang royal traditions.'
   },
   {
     id: 'REG-trk-kan',
@@ -86,7 +86,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '5,143 m',
     duration: '18 - 22 Days',
     image: '/images/kanchenjunga.jpg',
-    description: 'Remote eastern frontier trekking through wild alpine rhododendrons, massive glaciers, and secluded villages.'
+    description: 'Exploring the far eastern corner of Nepal, Kanchenjunga trekking takes adventurers into an untouched wilderness surrounding the world’s third highest peak. The journey features dense rhododendron forests, vast glacial moraines, rare Himalayan wildlife, and remote ethnic villages untouched by modern tourism.'
   },
   {
     id: 'REG-trk-dol',
@@ -100,7 +100,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '5,350 m',
     duration: '14 - 21 Days',
     image: '/images/dorpatan dolpo.jpg',
-    description: 'Mystical high-altitude desert kingdom featuring deep turquoise glacial lakes and pre-Buddhist Bon traditions.'
+    description: 'Dolpo is a mystical land in northwestern Nepal known for its dramatic trans-Himalayan landscapes and deep turquoise Shey Phoksundo Lake. Immortalized in classic Himalayan literature, Dolpo offers high-altitude desert passes, pre-Buddhist Bon culture, and an unforgettable sense of remoteness.'
   },
   {
     id: 'REG-trk-fws',
@@ -114,7 +114,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '3,300 m',
     duration: '8 - 12 Days',
     image: '/images/Khaptad Trek 11 Days.jpg',
-    description: 'Serene rolling green meadows, sacred hermitage sites, and untouched nature far from crowds.'
+    description: 'Far-Western Nepal is a serene, uncharted paradise featuring rolling green plateaus, untouched forests, and peaceful sacred hermitage sites like Khaptad. Free from mainstream trekking crowds, this region offers authentic rural hospitality, peaceful meadow walks, and pristine Himalayan solitude.'
   },
   {
     id: 'REG-tib-ebc',
@@ -128,7 +128,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '5,200 m',
     duration: '8 - 12 Days',
     image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070',
-    description: 'Breathtaking views of Everest North Face combined with Lhasa cultural highlights.'
+    description: 'Tibet trekking and overland journeys showcase the majestic North Face of Mount Everest alongside the spiritual heartland of Lhasa. Travelers explore historic monasteries including Potala Palace and Rongbuk—the world’s highest monastery—while traversing the dramatic vastness of the Tibetan plateau.'
   },
   {
     id: 'REG-bhu-cul',
@@ -142,7 +142,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '4,200 m',
     duration: '6 - 10 Days',
     image: 'https://images.unsplash.com/photo-1578593139811-2928a2a829b3?q=80&w=2070',
-    description: 'Journey through pristine pine forests, ancient dzongs, and dramatic mountain passes.'
+    description: 'The Kingdom of Bhutan offers peaceful trekking routes through pristine pine forests, mist-shrouded mountain passes, and historic dzong fortresses. From the legendary Tiger’s Nest Monastery perched on a sheer cliffside in Paro to rewarding ridge walks, Bhutan delivers a harmonious blend of nature and spiritual culture.'
   },
   {
     id: 'REG-ind-lad',
@@ -156,7 +156,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '5,150 m',
     duration: '7 - 12 Days',
     image: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?q=80&w=2070',
-    description: 'High altitude desert passes, spectacular Buddhist gompas, and moonscape Himalayan valleys.'
+    description: 'Nestled in northern India, Ladakh is a high-altitude mountain desert characterized by dramatic barren peaks, blue alpine lakes like Pangong Tso, and centuries-old Buddhist gompas. Trekkers traverse high mountain passes such as Markha Valley while experiencing rich Indo-Tibetan mountain traditions.'
   }
 ];
 
@@ -241,7 +241,7 @@ const TrekRegionGrid = () => {
         difficulty: region.difficulty || defaultMatch?.difficulty || 'Moderate',
         maxAltitude: region.maxAltitude || defaultMatch?.maxAltitude || '4,500 m',
         duration: region.duration || defaultMatch?.duration || '7 - 14 Days',
-        description: region.description || defaultMatch?.description || 'Experience stunning mountain views and local Himalayan culture.'
+        description: region.description && region.description.length > 30 ? region.description : (defaultMatch?.description || 'Experience stunning mountain views and local Himalayan culture.')
       };
     });
   }, [filteredRegions, combinedList]);
@@ -259,8 +259,8 @@ const TrekRegionGrid = () => {
           <h2 className="text-3xl md:text-5xl font-black text-[#1e3a8a] uppercase tracking-tight">
             Explore <span className="text-orange-600">Trek Destinations</span>
           </h2>
-          <p className="text-slate-500 text-sm md:text-base mt-3 max-w-xl mx-auto font-medium leading-relaxed">
-            Choose your destination region to discover iconic Himalayan base camps, mountain circuits, and alpine trail routes.
+          <p className="text-slate-500 text-sm md:text-base mt-3 max-w-2xl mx-auto font-medium leading-relaxed">
+            Discover iconic Himalayan base camps, high mountain passes, and alpine valley routes with a detailed overview of each destination.
           </p>
         </div>
 
@@ -302,7 +302,7 @@ const TrekRegionGrid = () => {
                     />
                     
                     {/* Dark Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/25 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/30 to-transparent"></div>
                     
                     {/* Floating Country Badge */}
                     <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-extrabold text-slate-800 shadow-md uppercase tracking-wider">
@@ -326,9 +326,9 @@ const TrekRegionGrid = () => {
                     </div>
                   </div>
 
-                  {/* Card Content Body */}
+                  {/* Card Content Body - Full 1-Paragraph Introduction */}
                   <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                    <p className="text-slate-600 text-xs md:text-sm line-clamp-2 font-normal leading-relaxed mb-4">
+                    <p className="text-slate-600 text-xs md:text-sm font-normal leading-relaxed mb-6">
                       {region.description}
                     </p>
 
@@ -339,7 +339,7 @@ const TrekRegionGrid = () => {
                       </span>
 
                       <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1e3a8a] group-hover:text-orange-600 transition-colors">
-                        View Treks
+                        View Details
                         <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                       </span>
                     </div>
