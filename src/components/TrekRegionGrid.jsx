@@ -326,14 +326,10 @@ const TrekRegionGrid = () => {
                     </div>
                   </div>
 
-                  {/* Card Content Body - Full 1-Paragraph Introduction */}
-                  <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                    <p className="text-slate-600 text-xs md:text-sm font-normal leading-relaxed mb-6">
-                      {region.description}
-                    </p>
-
+                  {/* Card Content Body */}
+                  <div className="p-5 flex-1 flex flex-col justify-between bg-white">
                     {/* Meta info pills & Action Button */}
-                    <div className="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                    <div className="pt-2 flex items-center justify-between mt-auto">
                       <span className="inline-flex items-center gap-1 text-[11px] font-bold text-orange-600 bg-orange-50 px-3 py-1 rounded-full border border-orange-100 shadow-xs">
                         {region.count > 0 ? `${region.count} Active Packages` : 'Explore Routes'}
                       </span>
