@@ -98,20 +98,27 @@ const TrekRegion = () => {
     const regProp = (trek.region || '').toLowerCase();
     const locProp = (trek.location || '').toLowerCase();
 
-    // Match database region strictly
+    const normalizedRegionId = regionId.toLowerCase().replace(/[^a-z0-9]/g, '');
+
     if (matchedRegion) {
-      const matchRegionName = matchedRegion.name.toLowerCase();
-      if (regProp === matchRegionName || locProp === matchRegionName) {
+      const matchRegionName = matchedRegion.name.toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (matchRegionName && (
+        regProp.replace(/[^a-z0-9]/g, '').includes(matchRegionName) || 
+        locProp.replace(/[^a-z0-9]/g, '').includes(matchRegionName) ||
+        matchRegionName.includes(regProp.replace(/[^a-z0-9]/g, ''))
+      )) {
         return true;
       }
     }
 
-    const normalizedRegionId = regionId.toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (!normalizedRegionId) return true;
 
-    // Match region strictly
+    const keywords = normalizedRegionId.replace(/treks|region|trails|hikes|expeditions|circuit/g, '').trim();
+
     return regProp.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) || 
            locProp.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) || 
-           titleLower.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId);
+           titleLower.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) ||
+           (keywords.length > 2 && (regProp.includes(keywords) || locProp.includes(keywords) || titleLower.includes(keywords)));
   });
 
   const totalPages = Math.ceil(filteredTreks.length / itemsPerPage);
