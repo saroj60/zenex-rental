@@ -286,8 +286,8 @@
     },
     {
       "id": "REG-trk-eve",
-      "name": "Mount Everest Base Camp Trails",
-      "slug": "everest",
+      "name": "Everest Region Treks",
+      "slug": "everest-base-camp",
       "description": "Iconic trekking trails to Everest Base Camp, Gokyo Lakes, and Three Passes.",
       "image": "/images/everest base.jpg",
       "country": "Nepal",

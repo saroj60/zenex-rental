@@ -94,31 +94,34 @@ const TrekRegion = () => {
 
   // Filter treks for this region
   const filteredTreks = combinedList.filter(trek => {
-    const titleLower = (trek.title || '').toLowerCase();
-    const regProp = (trek.region || '').toLowerCase();
-    const locProp = (trek.location || '').toLowerCase();
+    const sanitize = (str) => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 
-    const normalizedRegionId = regionId.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const normRegionId = sanitize(regionId);
+    const normTitle = sanitize(trek.title);
+    const normReg = sanitize(trek.region);
+    const normLoc = sanitize(trek.location);
+
+    if (!normRegionId) return true;
+
+    // Check direct normalized inclusion (ignores spaces and hyphens)
+    if (normReg.includes(normRegionId) || normLoc.includes(normRegionId) || normTitle.includes(normRegionId)) {
+      return true;
+    }
 
     if (matchedRegion) {
-      const matchRegionName = matchedRegion.name.toLowerCase().replace(/[^a-z0-9]/g, '');
-      if (matchRegionName && (
-        regProp.replace(/[^a-z0-9]/g, '').includes(matchRegionName) || 
-        locProp.replace(/[^a-z0-9]/g, '').includes(matchRegionName) ||
-        matchRegionName.includes(regProp.replace(/[^a-z0-9]/g, ''))
-      )) {
+      const matchName = sanitize(matchedRegion.name);
+      if (matchName && (normReg.includes(matchName) || normLoc.includes(matchName) || matchName.includes(normReg))) {
         return true;
       }
     }
 
-    if (!normalizedRegionId) return true;
+    // Extract significant search words (e.g. "everest", "base", "camp")
+    const words = regionId
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter(w => w.length > 2 && !['treks', 'region', 'trails', 'hikes', 'expeditions', 'circuit'].includes(w));
 
-    const keywords = normalizedRegionId.replace(/treks|region|trails|hikes|expeditions|circuit/g, '').trim();
-
-    return regProp.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) || 
-           locProp.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) || 
-           titleLower.replace(/[^a-z0-9]/g, '').includes(normalizedRegionId) ||
-           (keywords.length > 2 && (regProp.includes(keywords) || locProp.includes(keywords) || titleLower.includes(keywords)));
+    return words.length > 0 && words.some(w => normReg.includes(w) || normLoc.includes(w) || normTitle.includes(w));
   });
 
   const totalPages = Math.ceil(filteredTreks.length / itemsPerPage);
