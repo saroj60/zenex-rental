@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Clock, Star, Calendar, Activity, ArrowLeft, ChevronRight } from 'lucide-react';
+import { Clock, Star, Calendar, Activity, ArrowLeft, ChevronRight, Heart, ArrowRight } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 import { regionData } from '../data/regionData';
 import SEO from '../components/SEO';
@@ -39,8 +39,9 @@ const TrekRegion = () => {
       id: t.id,
       title: t.title,
       image: t.image,
-      price: t.price,
-      originalPrice: t.originalPrice,
+      badge: t.badge || 'Popular Trek',
+      price: t.price ? `US$${t.price.toString().replace(/[^0-9]/g, '')}` : '',
+      originalPrice: t.originalPrice ? `US$${t.originalPrice.toString().replace(/[^0-9]/g, '')}` : '',
       rating: t.rating || 5,
       reviewsCount: t.reviewsCount || 0,
       difficulty: t.difficulty || t.quickFacts?.difficulty || 'Moderate',
@@ -51,27 +52,34 @@ const TrekRegion = () => {
       location: t.location || t.destination || '',
       link: `/treks/${t.id}`
     })),
-    ...(Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').map(t => ({
-      id: t.id,
-      title: t.title,
-      image: t.image,
-      price: t.price || (t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : ''),
-      originalPrice: t.pricingInfo?.originalPrice ? `US$${t.pricingInfo.originalPrice}` : '',
-      rating: t.rating || 5,
-      reviewsCount: t.reviewsCount || 0,
-      difficulty: t.grade || 'Moderate',
-      duration: t.duration || t.durationValue || '',
-      durationUnit: t.durationUnit || 'Days',
-      activity: t.activities?.join(', ') || 'Tour',
-      region: t.region || '',
-      location: t.destination || '',
-      link: `/tour/${t.slug || t.id}`
-    })),
+    ...(Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').map(t => {
+      const sellP = t.pricingInfo?.sellingPrice || t.price || '';
+      const origP = t.pricingInfo?.originalPrice || t.originalPrice || '';
+      return {
+        id: t.id,
+        title: t.title,
+        image: t.image,
+        badge: t.badge || '',
+        price: sellP ? `US$${sellP.toString().replace(/[^0-9]/g, '')}` : '',
+        originalPrice: origP ? `US$${origP.toString().replace(/[^0-9]/g, '')}` : '',
+        rating: t.rating || 5,
+        reviewsCount: t.reviewsCount || 1,
+        difficulty: t.grade || 'Moderate',
+        duration: t.duration || '',
+        durationUnit: t.durationUnit || 'Days',
+        activity: t.activities?.join(', ') || 'Tour',
+        region: t.region || '',
+        location: t.destination || '',
+        link: `/tour/${t.slug || t.id}`
+      };
+    }),
     ...(Array.isArray(packages) ? packages : []).map(p => ({
       id: p.id,
       title: p.title,
       image: p.img,
-      price: p.price ? `US$${p.price.replace('US$', '').replace('$', '').trim()}` : '',
+      badge: p.badge || '',
+      price: p.price ? `US$${p.price.toString().replace(/[^0-9]/g, '')}` : '',
+      originalPrice: p.originalPrice ? `US$${p.originalPrice.toString().replace(/[^0-9]/g, '')}` : '',
       rating: 5,
       reviewsCount: 1,
       difficulty: p.difficulty || 'Moderate',
@@ -209,7 +217,7 @@ const TrekRegion = () => {
               </div>
             </div>
 
-            {/* Main Content Area */}
+            {/* Main Packages Area */}
             <div className="flex-1">
               <div className="mb-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <h2 
@@ -226,93 +234,79 @@ const TrekRegion = () => {
                     {currentTreks.map((trek) => {
                       const detailUrl = trek.link;
                       return (
-                        <Link to={detailUrl} key={trek.id} className="block group">
-                          <div className="bg-[#E4E2DC] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full">
+                        <Link to={detailUrl} key={trek.id} className="block group h-full">
+                          <div className="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-orange-500/30 transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1">
                             
-                            {/* Image Header */}
-                            <div className="relative h-72 overflow-hidden">
+                            {/* Image Container with Badges */}
+                            <div className="relative h-60 overflow-hidden bg-slate-100">
                               <img 
-                                src={trek.image} 
+                                src={trek.image || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800'} 
                                 alt={trek.title} 
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                               />
+                              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+
+                              {/* Floating Badge */}
+                              {trek.badge && (
+                                <div className="absolute top-3 left-3 bg-gradient-to-r from-orange-500 to-[#E59A2F] text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider shadow-md">
+                                  {trek.badge}
+                                </div>
+                              )}
+
+                              {/* Wishlist Heart Icon */}
+                              <button 
+                                onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}
+                                className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-slate-600 hover:text-rose-500 hover:bg-white shadow-sm transition-colors"
+                              >
+                                <Heart size={16} />
+                              </button>
+
+                              {/* Duration Badge on Image */}
+                              {trek.duration && (
+                                <div className="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur-md text-white px-3 py-1 rounded-full text-[11px] font-bold flex items-center gap-1.5 border border-white/10">
+                                  <Calendar size={13} className="text-orange-400" />
+                                  Duration: {trek.duration} {trek.durationUnit || 'Days'}
+                                </div>
+                              )}
                             </div>
-                            
+
                             {/* Content Body */}
-                            <div className="px-5 pt-5 pb-5 flex-1 flex flex-col">
-                              <h3 className="text-xl font-bold text-gray-900 mb-3 leading-snug line-clamp-2">
-                                {trek.title}
-                              </h3>
-                              
-                              {/* Reviews & Price */}
-                              <div className="flex justify-between items-center mb-3 min-h-[20px]">
-                                {trek.price ? (
-                                  <>
-                                    <div className="flex items-center gap-1.5">
-                                      <span className="text-sm font-bold text-gray-900">{trek.price}</span>
-                                      {trek.originalPrice && (
-                                        <span className="text-xs text-gray-600 line-through">{trek.originalPrice}</span>
-                                      )}
-                                      <span className="text-xs text-gray-700 font-medium">/person</span>
-                                    </div>
-                                    <div className="flex items-center gap-1">
-                                      <div className="flex text-[#F59E0B]">
-                                        {[...Array(5)].map((_, i) => (
-                                          <Star key={i} size={12} fill={i < Math.floor(trek.rating) ? "currentColor" : "none"} strokeWidth={1.5} />
-                                        ))}
-                                      </div>
-                                      <span className="text-[10px] font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
-                                    </div>
-                                  </>
-                                ) : (
-                                  <div className="flex items-center gap-1.5">
-                                    <div className="flex text-[#F59E0B]">
-                                      {[...Array(5)].map((_, i) => (
-                                        <Star key={i} size={12} fill={i < Math.floor(trek.rating) ? "currentColor" : "none"} strokeWidth={1.5} />
-                                      ))}
-                                    </div>
-                                    <span className="text-xs font-semibold text-gray-700">from {trek.reviewsCount} reviews</span>
+                            <div className="p-5 flex-1 flex flex-col justify-between bg-white">
+                              <div>
+                                {/* Title */}
+                                <h3 className="text-lg font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors leading-snug line-clamp-2 mb-2">
+                                  {trek.title}
+                                </h3>
+
+                                {/* Rating & Reviews */}
+                                <div className="flex items-center gap-1.5 mb-4 text-xs">
+                                  <div className="flex text-amber-400">
+                                    {[...Array(5)].map((_, i) => (
+                                      <Star key={i} size={13} fill={i < Math.floor(trek.rating || 5) ? "currentColor" : "none"} strokeWidth={1.5} />
+                                    ))}
                                   </div>
-                                )}
+                                  <span className="text-slate-500 font-medium">
+                                    {trek.rating || 5} ({trek.reviewsCount || 1} {trek.reviewsCount === 1 ? 'Review' : 'Reviews'})
+                                  </span>
+                                </div>
                               </div>
 
-                              <div className="w-full h-px bg-gray-300/80 my-3"></div>
-                              
-                              {/* Footer Features */}
-                              <div className="flex justify-between items-start mt-auto pt-1 gap-2">
-                                {trek.difficulty && (
-                                  <div className="flex items-center gap-2 flex-1">
-                                    <Clock size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
-                                    <div className="flex flex-col justify-center">
-                                      <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Grade</span>
-                                      <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
-                                        {trek.difficulty}
-                                      </span>
-                                    </div>
+                              {/* Price & Action Section */}
+                              <div className="pt-4 border-t border-slate-100 flex items-end justify-between mt-auto">
+                                <div>
+                                  <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-0.5">Price From</span>
+                                  <div className="flex items-baseline gap-2">
+                                    <span className="text-lg font-black text-[#1e3a8a]">{trek.price || 'Contact Us'}</span>
+                                    {trek.originalPrice && (
+                                      <span className="text-xs text-slate-400 line-through font-medium">{trek.originalPrice}</span>
+                                    )}
                                   </div>
-                                )}
-                                {trek.duration && (
-                                  <div className="flex items-center gap-2 flex-1">
-                                    <Calendar size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
-                                    <div className="flex flex-col justify-center">
-                                      <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Duration</span>
-                                      <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1">
-                                        {formatDuration(trek.duration, trek.durationUnit || 'Days')}
-                                      </span>
-                                    </div>
-                                  </div>
-                                )}
-                                {trek.activity && (
-                                  <div className="flex items-center gap-2 flex-1">
-                                    <Activity size={20} strokeWidth={1.5} className="text-gray-800 shrink-0" />
-                                    <div className="flex flex-col justify-center">
-                                      <span className="text-[10px] text-gray-700 font-medium leading-none mb-1">Activity</span>
-                                      <span className="text-[11px] font-bold text-gray-900 leading-tight pr-1 break-words">
-                                        {trek.activity}
-                                      </span>
-                                    </div>
-                                  </div>
-                                )}
+                                </div>
+
+                                <span className="inline-flex items-center gap-1 text-xs font-bold text-orange-600 group-hover:text-[#1e3a8a] transition-colors pb-1">
+                                  Explore
+                                  <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
+                                </span>
                               </div>
                             </div>
                           </div>
