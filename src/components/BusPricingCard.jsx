@@ -8,7 +8,7 @@ const BusPricingCard = ({ isSmall = false }) => {
 
   const handleBook = () => {
     const message = `Hi Zenex Travel, I'm interested in booking a Tourist Bus (30-35 Seater). Could you please provide more details on availability?`;
-    window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (

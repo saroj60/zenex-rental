@@ -40,7 +40,7 @@ const CarModels = () => {
 
   const handleBook = (model) => {
     const message = `Hi Zenex Travel, I'm interested in renting the ${model.name} for a wedding priced at ${formatPrice(model.price)} / Day. Is it available?`;
-    window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -187,7 +187,7 @@ const CarModels = () => {
               </div>
             </div>
             <button 
-              onClick={() => window.open(`https://wa.me/9779860156046?text=${encodeURIComponent("Hi Zenex Travel, I would like to request a custom quote for wedding vehicles.")}`, '_blank')}
+              onClick={() => window.open(`https://wa.me/9779767476521?text=${encodeURIComponent("Hi Zenex Travel, I would like to request a custom quote for wedding vehicles.")}`, '_blank')}
               className="w-full sm:w-auto bg-[#1e3a8a] text-white px-6 py-3 rounded-xl hover:bg-[#152c6e] transition-colors font-bold whitespace-nowrap"
             >
               Contact Event Team

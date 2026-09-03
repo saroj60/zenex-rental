@@ -348,7 +348,7 @@ const VehicleDetail = () => {
               Continue to Book
             </Link>
             
-            <a href="https://wa.me/9779860156046?text=Hi!%20I%20want%20to%20book%20the%20Toyota%20Fortuner." target="_blank" rel="noreferrer" className="mt-3 block w-full bg-[#25D366] text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-[#1DA851] transition-colors shadow-lg flex items-center justify-center gap-2 active:scale-95 duration-200">
+            <a href="https://wa.me/9779767476521?text=Hi!%20I%20want%20to%20book%20the%20Toyota%20Fortuner." target="_blank" rel="noreferrer" className="mt-3 block w-full bg-[#25D366] text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-[#1DA851] transition-colors shadow-lg flex items-center justify-center gap-2 active:scale-95 duration-200">
               <MessageCircle size={20} /> Book via WhatsApp
             </a>
             

@@ -420,7 +420,7 @@ app.get('/api/tour-trips', (req, res) => {
 
 app.get('/api/tour-trips/:id', (req, res) => {
     const data = readDB();
-    const trip = (data.tourTrips || []).find(t => t.id === req.params.id);
+    const trip = (data.tourTrips || []).find(t => t.id === req.params.id || t.slug === req.params.id);
     if (trip) {
         res.json(trip);
     } else {

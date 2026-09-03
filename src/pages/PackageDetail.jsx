@@ -9484,7 +9484,7 @@ const PackageDetail = () => {
 
   const handleQuickInquiry = () => {
     const message = `Hi! I have some questions about the ${pkg.title} package. Can you please help me?`;
-    window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   useEffect(() => {

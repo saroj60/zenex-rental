@@ -89,7 +89,7 @@ const AirportRental = () => {
             <h2 className="font-headline-md text-3xl mb-4">Ready to bypass the taxi line?</h2>
             <p className="text-sky-tint text-lg mb-0">Secure your vehicle today and start your journey seamlessly.</p>
           </div>
-          <a href={`https://wa.me/9779860156046?text=${encodeURIComponent('Hi, I am looking to book an airport pickup from ' + airport.name + '.')}`} target="_blank" rel="noreferrer" className="bg-white text-himalayan-blue px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-surface-container-low transition-colors shadow-lg whitespace-nowrap">
+          <a href={`https://wa.me/9779767476521?text=${encodeURIComponent('Hi, I am looking to book an airport pickup from ' + airport.name + '.')}`} target="_blank" rel="noreferrer" className="bg-white text-himalayan-blue px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-surface-container-low transition-colors shadow-lg whitespace-nowrap">
             Book Now <ChevronRight size={20} />
           </a>
         </div>

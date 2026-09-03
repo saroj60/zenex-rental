@@ -8,7 +8,7 @@ const HiacePricingCard = ({ isSmall = false }) => {
 
   const handleBook = () => {
     const message = `Hi Zenex Travel, I'm interested in booking a Toyota Hiace. Could you please provide more details on availability?`;
-    window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (

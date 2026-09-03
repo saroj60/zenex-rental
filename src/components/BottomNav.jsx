@@ -34,7 +34,7 @@ const BottomNav = () => {
 
         {/* Bottom Bar */}
         <div className="flex items-center justify-between p-3 gap-3">
-          <a href="tel:+9779860156046" className="flex-1 flex items-center justify-center gap-2 bg-blue-50 text-[#1e3a8a] py-3.5 rounded-xl font-bold active:scale-95 transition-transform">
+          <a href="tel:+9779767476521" className="flex-1 flex items-center justify-center gap-2 bg-blue-50 text-[#1e3a8a] py-3.5 rounded-xl font-bold active:scale-95 transition-transform">
             <Phone size={18} />
             Call Us
           </a>

@@ -47,16 +47,25 @@ const TourTripDetail = () => {
     }
   };
 
+  const [isScrolledDown, setIsScrolledDown] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
+      const currentY = window.scrollY;
+      if (currentY > 100) {
+        setIsScrolledDown(true);
+      } else {
+        setIsScrolledDown(false);
+      }
+
       const sections = ['overview', 'gallery', 'outline-itinerary', 'itinerary', 'route-map', 'cost', 'info', 'equipment'];
-      const scrollPosition = window.scrollY + 120;
+      const scrollPosition = currentY + 140;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         const element = document.getElementById(section);
         if (element) {
-          const elementTop = element.getBoundingClientRect().top + window.scrollY;
+          const elementTop = element.getBoundingClientRect().top + currentY;
           if (scrollPosition >= elementTop) {
             setActiveTab(section);
             break;
@@ -68,6 +77,23 @@ const TourTripDetail = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Auto-slide subnav scrollable container to keep active tab centered as user scrolls
+  useEffect(() => {
+    if (!activeTab) return;
+    const activeBtn = document.getElementById(`subnav-btn-${activeTab}`);
+    const navContainer = document.getElementById('subnav-scroll-container');
+    if (activeBtn && navContainer) {
+      const containerWidth = navContainer.clientWidth;
+      const btnLeft = activeBtn.offsetLeft;
+      const btnWidth = activeBtn.clientWidth;
+      const targetScrollLeft = btnLeft - (containerWidth / 2) + (btnWidth / 2);
+      navContainer.scrollTo({
+        left: Math.max(0, targetScrollLeft),
+        behavior: 'smooth'
+      });
+    }
+  }, [activeTab]);
 
   useEffect(() => {
     if (tourTrips && tourTrips.length > 0) {
@@ -145,7 +171,7 @@ const TourTripDetail = () => {
         </div>
         <div style="text-align: right;">
           <p style="margin: 0; font-size: 12px; color: #666;">Web: zenextravels.com</p>
-          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 9860156046</p>
+          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 9767476521</p>
         </div>
       </div>
     `;
@@ -211,7 +237,7 @@ const TourTripDetail = () => {
           ${trip.itinerary.map((day, idx) => `
             <div style="margin-bottom: 20px; border-left: 3px solid #10b981; padding-left: 15px; page-break-inside: avoid;">
               <h4 style="margin: 0 0 5px 0; color: #0f172a; font-size: 14px; font-weight: bold;">Day ${day.dayNumber || (idx + 1)}: ${day.title}</h4>
-              <p style="margin: 0; font-size: 12.5px; line-height: 1.5; color: #475569;">${day.description || ''}</p>
+              <p style="margin: 0; font-size: 12.5px; line-height: 1.5; color: #475569;">${day.details || day.description || ''}</p>
             </div>
           `).join('')}
         </div>
@@ -267,7 +293,18 @@ const TourTripDetail = () => {
       margin:       10,
       filename:     `${trip.title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_itinerary.pdf`,
       image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2, useCORS: true },
+      html2canvas:  { 
+        scale: 2, 
+        useCORS: true,
+        onclone: (clonedDoc) => {
+          const styles = clonedDoc.querySelectorAll('style');
+          styles.forEach(s => {
+            if (s.textContent && s.textContent.includes('oklch')) {
+              s.textContent = s.textContent.replace(/oklch\([^)]+\)/g, '#333333');
+            }
+          });
+        }
+      },
       jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
 
@@ -287,7 +324,8 @@ const TourTripDetail = () => {
           if (trip.image) images.push(trip.image);
           if (trip.gallery && trip.gallery.length > 0) {
             trip.gallery.forEach(img => {
-              if (img && !images.includes(img)) images.push(img);
+              const url = typeof img === 'object' ? (img.url || img.src) : img;
+              if (url && !images.includes(url)) images.push(url);
             });
           }
           const displayImages = images.length > 0 ? images : ['/images/trek.png'];
@@ -365,9 +403,9 @@ const TourTripDetail = () => {
       </div>
 
       {/* Navigation Tabs (Sticky) */}
-      <div className="bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-40 shadow-sm overflow-x-auto no-scrollbar">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="flex whitespace-nowrap gap-2">
+      <div className={`bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky ${isScrolledDown ? 'top-0' : 'top-[56px] md:top-[68px]'} z-40 shadow-sm w-full transition-all duration-300`}>
+        <div className="max-w-7xl mx-auto px-2 md:px-8">
+          <div id="subnav-scroll-container" className="flex items-center gap-1 md:gap-2 overflow-x-auto whitespace-nowrap scroll-smooth touch-pan-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden py-1">
             {[
               { id: 'overview', label: 'Overview', icon: FileText },
               { id: 'gallery', label: 'Gallery', icon: ImageIcon },
@@ -382,11 +420,12 @@ const TourTripDetail = () => {
               return (
                 <button
                   key={tab.id}
+                  id={`subnav-btn-${tab.id}`}
                   onClick={() => scrollToSection(tab.id)}
-                  className={`flex items-center gap-2 py-4 px-4 font-bold text-xs uppercase tracking-wider border-b-4 transition-all duration-300 ${
+                  className={`flex items-center gap-1.5 py-3 md:py-3.5 px-3.5 md:px-4 font-bold text-xs uppercase tracking-wider border-b-2 md:border-b-4 transition-all duration-200 shrink-0 select-none cursor-pointer rounded-t-lg ${
                     activeTab === tab.id
-                      ? 'border-[#e53a24] text-[#e53a24]'
-                      : 'border-transparent text-slate-500 hover:text-slate-900 hover:bg-slate-50/50'
+                      ? 'border-[#e53a24] text-[#e53a24] bg-red-50/50 scale-[1.02]'
+                      : 'border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-50'
                   }`}
                 >
                   <Icon size={14} className="shrink-0" />
@@ -398,19 +437,19 @@ const TourTripDetail = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 pb-28 lg:pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
           {/* Main Content Area */}
-          <div className="lg:col-span-2 space-y-12">
+          <div className="lg:col-span-2 space-y-10 md:space-y-12">
             
             {/* Overview Section */}
-            <section id="overview" className="space-y-12 scroll-mt-24">
+            <section id="overview" className="space-y-8 md:space-y-12 scroll-mt-28">
               
               {/* TRIP FACTS GRID */}
-              <div className="bg-[#eef5ef] p-6 md:p-8 rounded-2xl">
-                <h2 className="text-lg font-bold text-gray-800 mb-6">Trip Facts</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+              <div className="bg-[#eef5ef] p-4 sm:p-6 md:p-8 rounded-2xl border border-emerald-100/50 shadow-sm">
+                <h2 className="text-base sm:text-lg font-bold text-gray-800 mb-4 sm:mb-6">Trip Facts</h2>
+                <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-3.5 sm:gap-5">
                   {trip.country && (
                     <div className="flex items-center gap-3">
                       <Globe className="text-gray-600" size={24} strokeWidth={1.5} />
@@ -514,9 +553,8 @@ const TourTripDetail = () => {
               {trip.gallery && trip.gallery.length > 0 ? (
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {trip.gallery.map((img, i) => (
-                    <div key={i} className="rounded-2xl overflow-hidden shadow-sm group relative aspect-square bg-gray-100">
-                      {img.url && <img src={img.url} alt={img.alt || 'Gallery image'} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />}
-                      {img.caption && <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 translate-y-2 group-hover:translate-y-0 transition-transform"><p className="text-sm font-medium">{img.caption}</p></div>}
+                    <div key={i} className="rounded-2xl overflow-hidden shadow-sm group relative aspect-square bg-gray-100 cursor-pointer">
+                      {img.url && <img src={img.url} alt={img.alt || 'Gallery image'} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />}
                     </div>
                   ))}
                 </div>
@@ -585,7 +623,7 @@ const TourTripDetail = () => {
                         {/* Day Content */}
                         <div className="pt-8">
                           <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{day.title}</h3>
-                          <p className="text-gray-600 leading-relaxed mb-4">{day.description}</p>
+                          <div className="text-gray-600 leading-relaxed whitespace-pre-wrap mb-4 font-normal text-base">{day.details || day.description}</div>
                           
                           {day.image && (
                             <img src={day.image} alt={day.title} className="w-full max-w-xl h-48 md:h-64 object-cover rounded-xl mb-4 shadow-sm" />
@@ -661,8 +699,8 @@ const TourTripDetail = () => {
 
             {/* Cost Details Section */}
             {(trip.inclusions?.length > 0 || trip.exclusions?.length > 0) && (
-              <section id="cost" className="space-y-8 scroll-mt-24">
-                <h2 className="text-2xl font-black text-gray-900 mb-6 uppercase tracking-tight">{trip.title} - {formatDuration(trip.duration, trip.durationUnit)}: COST DETAILS</h2>
+              <section id="cost" className="space-y-6 md:space-y-8 scroll-mt-28">
+                <h2 className="text-xl sm:text-2xl font-black text-gray-900 mb-4 sm:mb-6 uppercase tracking-tight">Cost Details (Inclusions & Exclusions)</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   {/* INCLUDES */}
                   {trip.inclusions && trip.inclusions.length > 0 && (
@@ -896,7 +934,7 @@ const TourTripDetail = () => {
                     <button 
                       onClick={() => {
                         const message = `Hi! I have some questions about the ${trip.title} package. Can you please help me?`;
-                        window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
+                        window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
                       }}
                       className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm"
                     >

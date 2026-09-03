@@ -94,7 +94,7 @@ const Header = () => {
                     <span className="text-[10px] font-bold text-gray-500">Talk to Janardhan</span>
                   </div>
                   <div className="flex items-center gap-1.5 mt-0.5">
-                    <span className="text-[13px] font-black text-gray-700 tracking-tight">+977 9860156046</span>
+                    <span className="text-[13px] font-black text-gray-700 tracking-tight">+977 9767476521</span>
                     <ChevronDown size={11} className="text-gray-400 group-hover:rotate-180 transition-transform duration-300" />
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const Header = () => {
                   </div>
                   <div className="py-1">
                     <a 
-                      href="https://wa.me/9779860156046?text=Hi%20Janardhan,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
+                      href="https://wa.me/9779767476521?text=Hi%20Janardhan,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-2.5 px-4 py-2 text-xs font-bold text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
@@ -126,7 +126,7 @@ const Header = () => {
                       Chat on WhatsApp
                     </a>
                     <a 
-                      href="tel:+9779860156046"
+                      href="tel:+9779767476521"
                       className="flex items-center gap-2.5 px-4 py-2 text-xs font-bold text-gray-700 hover:bg-gray-50 hover:text-[#e53a24] transition-colors"
                     >
                       <Phone size={14} className="text-blue-600 shrink-0" />
@@ -192,7 +192,7 @@ const Header = () => {
             
             {/* Mobile Janardhan Chat Card */}
             <a 
-              href="https://wa.me/9779860156046?text=Hi%20Janardhan,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
+              href="https://wa.me/9779767476521?text=Hi%20Janardhan,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between p-3.5 bg-green-50/40 hover:bg-green-50 rounded-2xl border border-green-100/60 transition-colors"
@@ -210,14 +210,14 @@ const Header = () => {
                     </svg>
                     Talk to Janardhan
                   </span>
-                  <span className="text-sm font-bold text-gray-800 mt-0.5">+977 9860156046</span>
+                  <span className="text-sm font-bold text-gray-800 mt-0.5">+977 9767476521</span>
                 </div>
               </div>
               <span className="bg-[#00a859] text-white text-xs font-bold px-3 py-1.5 rounded-xl">Chat</span>
             </a>
 
             <div className="h-px bg-gray-100 my-2"></div>
-            <a href="tel:+9779860156046" className="text-base font-bold text-gray-800 flex items-center gap-2">
+            <a href="tel:+9779767476521" className="text-base font-bold text-gray-800 flex items-center gap-2">
               <Phone size={18} /> Call Us
             </a>
 

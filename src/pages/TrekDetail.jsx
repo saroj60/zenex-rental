@@ -75,7 +75,7 @@ const TrekDetail = () => {
 
   const handleQuickInquiry = () => {
     const message = `Hi! I have some questions about the ${trek.title}. Can you please help me?`;
-    window.open(`https://wa.me/9779860156046?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleDownloadPDF = () => {
@@ -93,7 +93,7 @@ const TrekDetail = () => {
         </div>
         <div style="text-align: right;">
           <p style="margin: 0; font-size: 12px; color: #666;">Web: zenextravels.com</p>
-          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 9860156046</p>
+          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 9767476521</p>
         </div>
       </div>
     `;
@@ -215,7 +215,18 @@ const TrekDetail = () => {
       margin:       10,
       filename:     `${trek.title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_itinerary.pdf`,
       image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2, useCORS: true },
+      html2canvas:  { 
+        scale: 2, 
+        useCORS: true,
+        onclone: (clonedDoc) => {
+          const styles = clonedDoc.querySelectorAll('style');
+          styles.forEach(s => {
+            if (s.textContent && s.textContent.includes('oklch')) {
+              s.textContent = s.textContent.replace(/oklch\([^)]+\)/g, '#333333');
+            }
+          });
+        }
+      },
       jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
 
@@ -233,22 +244,27 @@ const TrekDetail = () => {
     }
   };
 
+  const [isScrolledDown, setIsScrolledDown] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
+      const currentY = window.scrollY;
+      if (currentY > 100) {
+        setIsScrolledDown(true);
+      } else {
+        setIsScrolledDown(false);
+      }
+
       const sections = ['overview', 'gallery', 'itinerary', 'cost', 'info', 'faqs'];
-      // The sticky nav offset is around 80px, add a bit more so it triggers as soon as the section header hits the nav
-      const scrollPosition = window.scrollY + 150;
+      const scrollPosition = currentY + 150;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         const element = document.getElementById(section);
         if (element) {
-          const elementTop = element.getBoundingClientRect().top + window.scrollY;
+          const elementTop = element.getBoundingClientRect().top + currentY;
           if (scrollPosition >= elementTop) {
-            setActiveTab(prev => {
-              if (prev !== section) return section;
-              return prev;
-            });
+            setActiveTab(section);
             break;
           }
         }
@@ -258,6 +274,23 @@ const TrekDetail = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Auto-slide subnav scrollable container to keep active tab centered as user scrolls
+  useEffect(() => {
+    if (!activeTab) return;
+    const activeBtn = document.getElementById(`trek-subnav-btn-${activeTab}`);
+    const navContainer = document.getElementById('trek-subnav-scroll-container');
+    if (activeBtn && navContainer) {
+      const containerWidth = navContainer.clientWidth;
+      const btnLeft = activeBtn.offsetLeft;
+      const btnWidth = activeBtn.clientWidth;
+      const targetScrollLeft = btnLeft - (containerWidth / 2) + (btnWidth / 2);
+      navContainer.scrollTo({
+        left: Math.max(0, targetScrollLeft),
+        behavior: 'smooth'
+      });
+    }
+  }, [activeTab]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -401,9 +434,9 @@ const TrekDetail = () => {
       </div>
 
       {/* Sticky Navigation Bar */}
-      <div className="bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-50 shadow-sm overflow-x-auto no-scrollbar">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="flex whitespace-nowrap gap-2">
+      <div className={`bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky ${isScrolledDown ? 'top-0' : 'top-[56px] md:top-[68px]'} z-40 shadow-sm w-full transition-all duration-300`}>
+        <div className="max-w-7xl mx-auto px-2 md:px-8">
+          <div id="trek-subnav-scroll-container" className="flex items-center gap-1 md:gap-2 overflow-x-auto whitespace-nowrap scroll-smooth touch-pan-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden py-1">
             {[
               { id: 'overview', label: 'Overview', icon: FileText },
               { id: 'gallery', label: 'Gallery', icon: ImageIcon },
@@ -416,11 +449,12 @@ const TrekDetail = () => {
               return (
                 <button
                   key={tab.id}
+                  id={`trek-subnav-btn-${tab.id}`}
                   onClick={() => scrollToSection(tab.id)}
-                  className={`flex items-center gap-2 py-4 px-4 font-bold text-xs uppercase tracking-wider border-b-4 transition-all duration-300 ${
+                  className={`flex items-center gap-1.5 py-3 md:py-3.5 px-3.5 md:px-4 font-bold text-xs uppercase tracking-wider border-b-2 md:border-b-4 transition-all duration-200 shrink-0 select-none cursor-pointer rounded-t-lg ${
                     activeTab === tab.id
-                      ? 'border-[#e53a24] text-[#e53a24]'
-                      : 'border-transparent text-slate-500 hover:text-slate-900 hover:bg-slate-50/50'
+                      ? 'border-[#e53a24] text-[#e53a24] bg-red-50/50 scale-[1.02]'
+                      : 'border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-50'
                   }`}
                 >
                   <Icon size={14} className="shrink-0" />

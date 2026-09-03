@@ -3,10 +3,10 @@ import React from 'react';
 const WhatsAppButton = () => {
   return (
     <a 
-      href="https://wa.me/9779860156046?text=Hi%20Zenex%20Travel!%20I%20would%20like%20to%20know%20more%20about%20your%20car%20rentals." 
+      href="https://wa.me/9779767476521?text=Hi%20Zenex%20Travel!%20I%20would%20like%20to%20know%20more%20about%20your%20car%20rentals." 
       target="_blank" 
       rel="noopener noreferrer"
-      className="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 bg-[#25D366] text-white p-3 sm:p-4 rounded-full shadow-lg z-50 hover:scale-110 transition-all duration-300 flex items-center justify-center border-2 border-white group animate-bounce-slow"
+      className="fixed bottom-24 right-4 sm:bottom-6 sm:right-6 bg-[#25D366] text-white p-3 sm:p-4 rounded-full shadow-xl z-40 hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center border-2 border-white group animate-bounce-slow"
       aria-label="Chat on WhatsApp"
     >
       {/* Pulse Effect */}

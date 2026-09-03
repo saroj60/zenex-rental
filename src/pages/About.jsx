@@ -199,7 +199,7 @@ const About = () => {
                 <h4 className="text-xl font-bold text-[#1e3a8a]">Janardhan Gautam</h4>
                 <p className="text-[#e53a24] font-bold text-sm mb-3">CEO & Travel Expert</p>
                 <p className="text-gray-600 text-sm mb-4">With 5+ years of experience, dedicated to ensuring your travel experience is safe, comfortable, and memorable.</p>
-                <a href="https://wa.me/9779860156046" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 w-full bg-[#25D366] text-white py-2.5 rounded-xl font-bold hover:bg-[#1ebd59] transition-colors shadow-sm">
+                <a href="https://wa.me/9779767476521" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 w-full bg-[#25D366] text-white py-2.5 rounded-xl font-bold hover:bg-[#1ebd59] transition-colors shadow-sm">
                   <MessageCircle size={18} /> Contact via WhatsApp
                 </a>
               </div>

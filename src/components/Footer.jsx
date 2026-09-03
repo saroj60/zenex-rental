@@ -70,7 +70,7 @@ const Footer = () => {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
               </a>
               <a 
-                href="https://wa.me/9779860156046" 
+                href="https://wa.me/9779767476521" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700/60 flex items-center justify-center text-slate-300 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:-translate-y-1 transition-all duration-300 shadow-sm"
@@ -192,7 +192,7 @@ const Footer = () => {
               </h3>
               <div className="pt-2">
                 <a 
-                  href="https://wa.me/9779860156046?text=Hi!%20I%20need%20assistance." 
+                  href="https://wa.me/9779767476521?text=Hi!%20I%20need%20assistance." 
                   target="_blank" 
                   rel="noreferrer" 
                   className="inline-flex items-center gap-2.5 bg-gradient-to-r from-[#25d366] to-[#14ab4c] text-white px-5 py-3 rounded-xl text-sm font-extrabold hover:brightness-105 active:scale-95 transition-all w-full justify-center shadow-lg hover:shadow-[#25D366]/20 duration-200"
@@ -204,7 +204,7 @@ const Footer = () => {
                   >
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.574 1.97 14.101.945 11.93.945c-5.439 0-9.865 4.372-9.87 9.802a9.74 9.74 0 001.468 4.77l-.968 3.535 3.655-.948zm11.233-7.66c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.669.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                   </svg>
-                  +977 9860156046
+                  +977 9767476521
                 </a>
               </div>
             </div>

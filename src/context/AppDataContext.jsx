@@ -500,6 +500,13 @@ export const AppDataProvider = ({ children }) => {
         let finalBookings = [];
         let finalTestimonials = [];
 
+        const ensureArray = (data) => {
+          if (Array.isArray(data)) return data;
+          if (data && Array.isArray(data.value)) return data.value;
+          if (data && Array.isArray(data.data)) return data.data;
+          return [];
+        };
+
         try {
           const [vehRes, packRes, trekRes, drvRes, tourRes, regRes, bookRes, testRes] = await Promise.all([
             fetch(`${API_BASE}/api/vehicles`),
@@ -515,13 +522,6 @@ export const AppDataProvider = ({ children }) => {
           const isJson = (res) => {
             const contentType = res.headers.get('content-type');
             return contentType && contentType.includes('application/json');
-          };
-
-          const ensureArray = (data) => {
-            if (Array.isArray(data)) return data;
-            if (data && Array.isArray(data.value)) return data.value;
-            if (data && Array.isArray(data.data)) return data.data;
-            return [];
           };
 
           if (isJson(vehRes) && isJson(packRes) && isJson(trekRes)) {
