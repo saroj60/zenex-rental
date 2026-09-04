@@ -371,290 +371,951 @@
   ],
   "tourTrips": [
     {
-      "id": "TRIP-ebc-15d",
-      "title": "Everest Base Camp Trek – 15 Days",
+      "id": "TRIP-everest-base-camp-15d",
+      "title": "Everest Base Camp Trek - 15 Days",
       "slug": "everest-base-camp-trek-15-days",
-      "category": "Treks",
-      "destination": "Everest Base Camp, Nepal",
-      "region": "Everest Region",
-      "tripType": "Group",
-      "duration": "15",
-      "durationUnit": "Days",
-      "price": "1500",
+      "region": "REG-trk-eve",
+      "regionName": "Everest Region Adventures",
       "status": "Published",
-      "featured": true,
-      "badge": "Trekker's Choice",
-      "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/ae/9a/f1.jpg",
-      "rating": 5,
-      "reviewsCount": 8,
-      "grade": "Moderate",
-      "maxAltitude": "5,545",
-      "altitudeUnit": "m",
-      "country": "Nepal",
-      "startLocation": "Kathmandu",
-      "endLocation": "Kathmandu",
+      "badge": "Himalayan Bucket List",
+      "price": 1345,
+      "originalPrice": 1550,
+      "duration": 15,
+      "durationUnit": "Days",
+      "grade": "Hard",
+      "maxAltitude": "5,545 m / 18,192 ft",
+      "startsAt": "Kathmandu",
+      "endsAt": "Kathmandu",
       "activities": [
         "Trekking",
-        "Hiking"
+        "Mountain Flight",
+        "High Altitude Pass",
+        "Cultural Exploration"
       ],
-      "accommodation": "Hotels & Mountain Lodges",
-      "meals": [
-        "Breakfast",
-        "Lunch & Dinner during trek"
+      "bestSeason": [
+        "Spring (March - May)",
+        "Autumn (Sept - Nov)"
       ],
-      "bestTime": "Spring & Autumn",
-      "pricingInfo": {
-        "currency": "USD",
-        "originalPrice": "1650",
-        "sellingPrice": "1500",
-        "pricePer": "Person"
-      },
-      "shortDescription": "An unforgettable 15-day Himalayan adventure to Everest Base Camp (5,360 m) and Kala Patthar (5,545 m) through the heart of the Khumbu region.",
-      "description": "<p class=\"mb-4\">The <strong>15-Day Everest Base Camp Trek</strong> is an unforgettable Himalayan adventure that takes you through the heart of the Khumbu region to the base of <strong>Mount Everest (8,848 m)</strong>.</p><p class=\"mb-6\">Experience spectacular mountain scenery, Sherpa culture, Buddhist monasteries, traditional villages, and the legendary Everest Base Camp. The trek also includes an early-morning hike to <strong>Kala Patthar (5,545 m)</strong> for breathtaking panoramic views of Everest and the surrounding peaks.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Why Everest Base Camp?</h3><p class=\"mb-4\">Everest Base Camp is more than a trek—it is an opportunity to experience the Himalayas up close. The trail passes through colorful Sherpa villages, suspension bridges, alpine forests, monasteries and dramatic mountain landscapes.</p><p class=\"mb-6\">From Namche Bazaar to Tengboche, Dingboche and Gorakshep, every stage offers a different Himalayan experience. The journey reaches its highlight at Everest Base Camp, followed by the spectacular sunrise hike to Kala Patthar.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Who Can Join?</h3><p class=\"mb-4\">The Everest Base Camp Trek is suitable for <strong>fit beginners as well as experienced trekkers</strong>. Previous high-altitude trekking experience is not essential, but regular walking and good physical preparation are recommended.</p><p class=\"mb-6\">The itinerary can also be customized according to your <strong>fitness level, available time and travel preferences</strong>.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Lukla Flight Information</h3><p class=\"mb-4\">During busy trekking seasons, flights to Lukla may operate from <strong>Ramechhap Airport</strong> due to air traffic conditions. During other periods, flights may operate directly from Kathmandu.</p><p class=\"mb-6\">Flight schedules are subject to weather and operational conditions.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Customize Your Everest Adventure</h3><p class=\"mb-4\">Looking for a different pace or level of comfort? We can customize the Everest Base Camp Trek according to your requirements, including <strong>duration, accommodation, private groups and additional sightseeing in Nepal</strong>.</p>",
-      "highlights": [
-        "Reach Everest Base Camp (5,360 m)",
-        "Enjoy sunrise and panoramic views from Kala Patthar (5,545 m)",
-        "Scenic flight to Lukla",
-        "Explore the vibrant Sherpa town of Namche Bazaar",
-        "Visit the famous Tengboche Monastery",
-        "Experience traditional Sherpa culture and mountain villages",
-        "Walk through the beautiful Sagarmatha National Park",
-        "See Everest, Lhotse, Nuptse, Ama Dablam, Pumori and other Himalayan peaks",
-        "Enjoy a fully guided and professionally organized trekking experience"
-      ],
-      "itinerary": [
-        {
-          "dayNumber": 1,
-          "title": "Arrival in Kathmandu",
-          "details": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport, you will be greeted by our representative and transferred to your hotel in Kathmandu. After check-in, you can rest and recover from your journey. In the evening, there may be a short briefing about the trek and an opportunity to explore the nearby area.",
-          "modeOfTravel": "-",
-          "maxAltitude": "1,400 m",
-          "overnight": "Kathmandu"
-        },
-        {
-          "dayNumber": 2,
-          "title": "Kathmandu – Lukla – Phakding",
-          "details": "Early in the morning, take a scenic flight toward Lukla, the gateway to the Everest region. The short flight offers spectacular views of the Himalayan landscape.\n\nAfter landing at Lukla, meet the trekking team and begin walking through small mountain settlements, forests, and along the Dudh Koshi River. After several hours of trekking, arrive at Phakding.",
-          "modeOfTravel": "3–4 hours trek",
-          "maxAltitude": "2,610 m",
-          "overnight": "Phakding"
-        },
-        {
-          "dayNumber": 3,
-          "title": "Phakding – Namche Bazaar",
-          "details": "After breakfast, continue your trek through pine and rhododendron forests following the Dudh Koshi River. Cross several suspension bridges and pass through traditional Sherpa villages.\n\nAs you approach Namche, the trail becomes steeper. After entering Sagarmatha National Park and completing the final uphill section, you reach Namche Bazaar, the main trading and cultural center of the Khumbu region.",
-          "modeOfTravel": "5–6 hours trek",
-          "maxAltitude": "3,440 m",
-          "overnight": "Namche Bazaar"
-        },
-        {
-          "dayNumber": 4,
-          "title": "Acclimatization Day in Namche",
-          "details": "Today is an important rest and acclimatization day. Rather than staying completely inactive, take a short hike around Namche to help your body adjust to the increasing altitude.\n\nYou can hike toward the Everest View Hotel for impressive mountain scenery and views of Everest, Ama Dablam, Lhotse, and other Himalayan peaks. Later, explore Namche Bazaar, its shops, cafes, and local surroundings.",
-          "modeOfTravel": "Acclimatization Hike",
-          "maxAltitude": "3,440 m",
-          "overnight": "Namche Bazaar"
-        },
-        {
-          "dayNumber": 5,
-          "title": "Namche Bazaar – Tengboche",
-          "details": "Leave Namche and follow a scenic trail overlooking the Himalayan valleys. The route offers beautiful views of Everest, Lhotse, Nuptse, and Ama Dablam.\n\nThe trail gradually descends before crossing the Dudh Koshi River and climbing through beautiful forests toward Tengboche. Tengboche is famous for its historic Buddhist monastery and spectacular mountain surroundings.",
-          "modeOfTravel": "5–6 hours trek",
-          "maxAltitude": "3,860 m",
-          "overnight": "Tengboche"
-        },
-        {
-          "dayNumber": 6,
-          "title": "Tengboche – Dingboche",
-          "details": "Start the morning with beautiful views around Tengboche before descending through rhododendron and pine forests.\n\nContinue toward Pangboche and follow the Imja Khola valley. As you move higher, the landscape becomes more open and alpine. Eventually, arrive at Dingboche, a traditional Sherpa settlement surrounded by impressive Himalayan peaks.",
-          "modeOfTravel": "5–6 hours trek",
-          "maxAltitude": "4,410 m",
-          "overnight": "Dingboche"
-        },
-        {
-          "dayNumber": 7,
-          "title": "Acclimatization Day in Dingboche",
-          "details": "Another acclimatization day is scheduled before heading toward higher elevations. You can take a gradual hike toward Nangkartshang Peak or explore the surrounding hills and valleys.\n\nThe hike provides excellent views of Ama Dablam, Island Peak, Makalu, and other surrounding mountains. Spend the afternoon relaxing and preparing for the higher-altitude trekking days ahead.",
-          "modeOfTravel": "Acclimatization Hike",
-          "maxAltitude": "4,410 m",
-          "overnight": "Dingboche"
-        },
-        {
-          "dayNumber": 8,
-          "title": "Dingboche – Lobuche",
-          "details": "After breakfast, begin your journey toward Lobuche. The trail climbs gradually through the dry and rugged Himalayan landscape.\n\nYou will pass memorials dedicated to climbers and mountaineers who lost their lives in the Everest region. As you continue through the Khumbu valley, the surrounding mountains become increasingly dramatic.\n\nArrive at Lobuche and rest for the evening.",
-          "modeOfTravel": "5–6 hours trek",
-          "maxAltitude": "4,940 m",
-          "overnight": "Lobuche"
-        },
-        {
-          "dayNumber": 9,
-          "title": "Lobuche – Gorak Shep – Everest Base Camp – Gorak Shep",
-          "details": "Today is one of the most important days of the trek. Begin early and walk toward Gorak Shep through the rugged Khumbu landscape.\n\nAfter a short break, continue toward Everest Base Camp. The trail passes through glacial terrain and offers unforgettable views of the surrounding peaks and Khumbu Glacier.\n\nReach Everest Base Camp at approximately 5,360 meters, where you can enjoy the incredible atmosphere of the world's highest mountain region. After spending time at Base Camp, return to Gorak Shep for the night.",
-          "modeOfTravel": "7–8 hours trek",
-          "maxAltitude": "5,360 m",
-          "overnight": "Gorak Shep"
-        },
-        {
-          "dayNumber": 10,
-          "title": "Gorak Shep – Kala Patthar – Dingboche",
-          "details": "Wake up early for the hike to Kala Patthar, one of the best viewpoints in the Everest region.\n\nFrom the summit, enjoy spectacular panoramic views of Mount Everest, Nuptse, Pumori, Ama Dablam, and the surrounding Himalayan range. After taking in the scenery, descend toward Gorak Shep and continue down the trail to Dingboche.",
-          "modeOfTravel": "7–8 hours trek",
-          "maxAltitude": "5,545 m",
-          "overnight": "Dingboche"
-        },
-        {
-          "dayNumber": 11,
-          "title": "Dingboche – Namche Bazaar",
-          "details": "Begin the return journey through the beautiful Khumbu Valley. The trail gradually descends through familiar villages and mountain landscapes.\n\nPass through Pangboche and Tengboche before continuing toward the lower elevations. After several hours of trekking, arrive back in Namche Bazaar, where you can enjoy a comfortable evening.",
-          "modeOfTravel": "6–7 hours trek",
-          "maxAltitude": "3,440 m",
-          "overnight": "Namche Bazaar"
-        },
-        {
-          "dayNumber": 12,
-          "title": "Namche Bazaar – Lukla",
-          "details": "After breakfast, begin the final major trekking day. Follow the trail downhill toward Phakding and continue along the Dudh Koshi River.\n\nCross suspension bridges and pass through the villages and forests of the Khumbu region before reaching Lukla. Celebrate the completion of your trek with your trekking team.",
-          "modeOfTravel": "6–7 hours trek",
-          "maxAltitude": "2,860 m",
-          "overnight": "Lukla"
-        },
-        {
-          "dayNumber": 13,
-          "title": "Lukla – Kathmandu",
-          "details": "After breakfast, take your return flight from Lukla to Kathmandu, subject to weather and flight operations.\n\nUpon arrival in Kathmandu, transfer to your hotel and enjoy the rest of the day at leisure. You can relax, explore the city, shop for souvenirs, or simply recover after the trek.",
-          "modeOfTravel": "Flight to Kathmandu",
-          "maxAltitude": "1,400 m",
-          "overnight": "Kathmandu"
-        },
-        {
-          "dayNumber": 14,
-          "title": "Kathmandu – Free Day",
-          "details": "Enjoy a relaxed day in Kathmandu after completing your Everest adventure.\n\nYou can explore local attractions, visit cultural and historical sites, shop for souvenirs, or simply enjoy the city's restaurants and cafes. This day also provides some flexibility in case of earlier flight or weather-related changes during the trek.",
-          "modeOfTravel": "-",
-          "maxAltitude": "1,400 m",
-          "overnight": "Kathmandu"
-        },
-        {
-          "dayNumber": 15,
-          "title": "Departure",
-          "details": "Your Everest Base Camp adventure comes to an end today. Depending on your flight schedule, you will be transferred to Tribhuvan International Airport for your onward journey.\n\nTake home unforgettable memories of the Himalayas, Sherpa culture, mountain villages, and your journey to the base of Mount Everest.",
-          "modeOfTravel": "-",
-          "maxAltitude": "1,400 m",
-          "overnight": "-"
-        }
-      ],
+      "rating": 5,
+      "reviewsCount": 248,
+      "recommendationRate": 99,
+      "image": "https://www.intrepidtravel.com/adventures/wp-content/uploads/2018/05/Hiker-800.jpg",
       "gallery": [
         {
-          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJUVC_63kGgGR8HnJTxu4m5zjSl9y59OXjQjl9-Dj9hQ&s=10",
-          "caption": "Tengboche Monastery",
-          "alt": "Tengboche"
+          "url": "https://www.intrepidtravel.com/adventures/wp-content/uploads/2018/05/Hiker-800.jpg",
+          "alt": "Everest Base Camp trail view"
         },
         {
-          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQXjvr1p5Xr10YfiJHGfXuQzGOccrybkqFmYBspgGEuw&s=10",
-          "caption": "Chola Pass Trek (5,330 m)",
-          "alt": "Chola Pass"
+          "url": "https://media.nepaltrekadventures.com/uploads/img/view-of-tilicho-lake-nepal-1.webp",
+          "alt": "Kala Patthar summit view of Mt Everest"
         },
         {
-          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-bBqNAhj4r9UXIJ0ebrDbtn-wwHnTGKMoybrmPi-v9A&s=10",
-          "caption": "Gokyo Lakes & Gokyo Ri",
-          "alt": "Gokyo Lakes"
+          "url": "https://indexadventure.com/uploads/fullbanner/annapurna-poonhill-viewtreks.webp",
+          "alt": "Namche Bazaar Sherpa capital"
         },
         {
-          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoDdrbRkRXDFiFe_pxHIwg4Tr63HMVhHyHxBkvOt10w&s=10",
-          "caption": "Everest Base Camp & Viewpoint",
-          "alt": "Everest Base Camp"
-        },
-        {
-          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3L7IyRvVrtCK3AQxXcvYfcRqAfvCDQfJLUe5ZMBBsA&s=10",
-          "caption": "Himalayan Trekking Trail View",
-          "alt": "Himalayan Trail"
-        },
-        {
-          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0XzC0hPABV0Jto5-49CoODCgc6QYcAjSmzMOI1D-W7A&s=10",
-          "caption": "Everest Region Mountain Vistas",
-          "alt": "Everest Vistas"
-        },
-        {
-          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1INFOloHsxmis9VlnPoa-2Jbd4gv17cm6zald7UyEA&s=10",
-          "caption": "Everest High Pass Landscape",
-          "alt": "Everest Landscape"
+          "url": "https://himalayanecstasynepal.com/_next/image?url=https%3A%2F%2Fmedia.app.himalayanecstasynepal.com%2Fuploads%2Ffullbanner%2Fmesokanto-pass-top.webp&w=3840&q=75&dpl=dpl_FCn4ycV1wCAtqYMLuEPwWY2GzYpE",
+          "alt": "Tengboche Monastery and Ama Dablam"
         }
       ],
+      "shortDescription": "Embark on the legendary 15-day trek to Everest Base Camp (5,364 m) and Kala Patthar summit (5,545 m). Experience thrilling Lukla flights, Sherpa culture in Namche Bazaar, and up-close panoramas of Mount Everest.",
+      "overview": "<p class=\"mb-4\">The <strong>Everest Base Camp Trek - 15 Days</strong> is the ultimate bucket-list Himalayan adventure. Starting with a spectacular mountain flight to Lukla, the route follows the Dudh Kosi river through pine forests and Sherpa villages up to <strong>Namche Bazaar (3,440 m)</strong>, the bustling capital of Khumbu.</p><p class=\"mb-4\">Trek past famous Buddhist monasteries like Tengboche, under the majestic shadows of Ama Dablam, Lhotse, and Nuptse, until you reach <strong>Everest Base Camp (5,364 m)</strong> at the foot of the Khumbu Icefall. The journey culminates with an early morning sunrise climb to <strong>Kala Patthar (5,545 m)</strong> for the grandest 360° view of Mount Everest (8,848.86 m).</p>",
+      "highlights": [
+        "Thrilling mountain flight to and from Lukla Airport (Tenzing-Hillary Airport)",
+        "Stand at Everest Base Camp (5,364 m) at the foot of the Khumbu Icefall",
+        "Summit Kala Patthar (5,545 m) for iconic sunrise panoramas of Mount Everest, Lhotse, and Nuptse",
+        "Explore Namche Bazaar (3,440 m) — the historic Sherpa capital with colorful cafes and bakeries",
+        "Visit ancient Tengboche Monastery — the spiritual heart of Khumbu region with views of Ama Dablam",
+        "Cross iconic high suspension bridges adorned with Buddhist prayer flags over Dudh Kosi River",
+        "Immerse in Sherpa Buddhist heritage, spinning prayer wheels, and ancient mani stone walls",
+        "Hike through Sagarmatha National Park (UNESCO World Heritage site) spotting Himalayan Tahr and Danphe pheasants",
+        "Rest and acclimatize safely with dedicated days in Namche Bazaar and Dingboche",
+        "Taste authentic Sherpa and Nepali teahouse cuisine with warm mountain hospitality"
+      ],
+      "pricingInfo": {
+        "currency": "USD",
+        "sellingPrice": 1345,
+        "originalPrice": 1550,
+        "unit": "per person",
+        "groupTiers": [
+          {
+            "pax": "2 - 3 pax",
+            "price2026": 1445,
+            "price2027": 1545
+          },
+          {
+            "pax": "4 - 7 pax",
+            "price2026": 1385,
+            "price2027": 1485
+          },
+          {
+            "pax": "8 - 11 pax",
+            "price2026": 1345,
+            "price2027": 1445
+          },
+          {
+            "pax": "12 - 15 pax",
+            "price2026": 1285,
+            "price2027": 1385
+          }
+        ]
+      },
       "inclusions": [
         {
-          "title": "Transfer from Airport – Hotel – Airport including domestic transfers"
+          "title": "Airport Transfers",
+          "description": "All arrival and departure airport transfers by private vehicle"
         },
         {
-          "title": "3 nights reservation in 3-star Hotel in Kathmandu with breakfast on twin sharing basis"
+          "title": "Kathmandu Hotel",
+          "description": "3 nights 3-star hotel in Kathmandu with breakfast (twin sharing basis)"
         },
         {
-          "title": "Flight tickets from Kathmandu / Ramechhap – Lukla – Ramechhap / Kathmandu (15 kg luggage per person), including guide and airport taxes"
+          "title": "Domestic Mountain Flights",
+          "description": "Return domestic flight Kathmandu/Ramechhap – Lukla – Ramechhap/Kathmandu including airport taxes"
         },
         {
-          "title": "Khumbu Gaupalika Tax + Sagarmatha National Park Permit fees"
+          "title": "Conservation & Local Permits",
+          "description": "Sagarmatha National Park Entry Permit & Khumbu Pasang Lhamu Rural Municipality Permit"
         },
         {
-          "title": "All meals (breakfast, lunch, and dinner with tea/coffee) during the trek"
+          "title": "Full Board Meals During Trek",
+          "description": "Breakfast, lunch, and dinner with tea/coffee throughout the trek"
         },
         {
-          "title": "Accommodation at mountain lodges during the trek"
+          "title": "Teahouse Lodging",
+          "description": "11 nights teahouse/lodge accommodation during the trek (twin sharing)"
         },
         {
-          "title": "Professional Nepal Government license holder English-speaking trekking guide during the trek"
+          "title": "Licensed Guide",
+          "description": "Experienced Nepal Government licensed English-speaking mountain guide"
         },
         {
-          "title": "1 porter (20-22 kg luggage allowance) every two-person basis during the trek"
+          "title": "Trekking Porters",
+          "description": "1 porter for every 2 trekkers (carrying up to 20-22 kg total)"
         },
         {
-          "title": "Insurance, equipment, accommodation, all meals, and salary of the guide and porter(s)"
+          "title": "Staff Insurance & Expenses",
+          "description": "Complete medical insurance, equipment, meals, lodging, and salary for guide and porters"
         },
         {
-          "title": "Duffel Bag for the trek"
+          "title": "Duffel Bag",
+          "description": "Complimentary Zenex / Trekking duffel bag for porter gear"
         },
         {
-          "title": "Achievement certificates of Everest Gokyo & Renjo La Pass Trek"
+          "title": "Oximeter Check",
+          "description": "Daily pulse oximeter monitoring for oxygen levels & altitude safety"
         },
         {
-          "title": "Farewell Dinner"
+          "title": "Completion Certificate",
+          "description": "Official Everest Base Camp Trek achievement certificate"
         },
         {
-          "title": "Company service charge & all necessary government taxes"
+          "title": "Farewell Dinner",
+          "description": "Traditional Nepali farewell dinner with cultural performance in Kathmandu"
+        },
+        {
+          "title": "Government Taxes",
+          "description": "All local government taxes, VAT, and official permit processing"
         }
       ],
       "exclusions": [
         {
-          "title": "International airfare & Nepal VISA fees"
+          "title": "International Airfare & Visa",
+          "description": "International flights to/from Nepal and Tourist Visa fee ($50 for 30 days)"
         },
         {
-          "title": "Personal equipment & gear"
+          "title": "Travel & Rescue Insurance",
+          "description": "Emergency helicopter evacuation & high-altitude medical insurance (up to 6,000m)"
         },
         {
-          "title": "Personal and medical insurance"
+          "title": "Kathmandu Meals",
+          "description": "Lunch and dinner during stay in Kathmandu (except Farewell Dinner)"
         },
         {
-          "title": "Emergency Rescue evacuation by helicopter in cases needed"
+          "title": "Personal Expenses",
+          "description": "Hot showers, Wi-Fi, battery charging, laundry, and soft/alcoholic drinks"
         },
         {
-          "title": "Hot showers, electric charging, and Wi-Fi during the trek"
+          "title": "Tips & Gratuities",
+          "description": "Customary tipping for trekking guide, porters, and drivers"
+        }
+      ],
+      "essentialInfo": [
+        {
+          "title": "Permits Required for Everest Base Camp",
+          "content": "<p class=\"mb-2\">Two primary permits are required for the EBC trek:</p><ul class=\"list-disc pl-5 space-y-1 text-sm text-gray-700\"><li><strong>Sagarmatha National Park Permit:</strong> NPR 3,000 per person.</li><li><strong>Khumbu Pasang Lhamu Permit:</strong> NPR 2,000 per person (collected in Lukla).</li></ul><p class=\"mt-2 text-xs text-gray-500\">All permit fees and processing are handled by our company prior to trekking.</p>"
         },
         {
-          "title": "Lunch and dinner in Kathmandu"
+          "title": "Flight Details (Lukla Flight)",
+          "content": "<p>During peak seasons (Spring March–May & Autumn Sept–Nov), flights to Lukla operate from Ramechhap Airport (Manthali) to minimize Kathmandu air traffic congestion. Ground transport from Kathmandu to Ramechhap (approx. 4-5 hours drive) is included in private vehicles.</p>"
+        }
+      ],
+      "equipmentList": [
+        {
+          "category": "Clothing & Layering System",
+          "items": [
+            "Base Layers: 3-4 moisture-wicking synthetic or merino wool long-sleeve & short-sleeve t-shirts",
+            "Thermal Underwear: 2 sets of heavy thermal tops and bottoms (merino wool recommended)",
+            "Insulation Layers: 1 fleece jacket or pullover & 1 heavy down jacket (rated for -15°C to -20°C with hood)",
+            "Outer Layers: 1 waterproof & windproof breathable jacket (Gore-Tex) & 1 pair of waterproof trekking pants",
+            "Trekking Pants: 2-3 pairs of comfortable, quick-dry trekking trousers",
+            "Headwear: 1 warm fleece/woolen beanie hat, 1 sun hat/cap, and 2 buffs/neck gaiters (essential for Khumbu cough protection)",
+            "Handwear: 1 pair lightweight liner gloves & 1 pair warm insulated waterproof gloves/mittens"
+          ]
         },
         {
-          "title": "Visits and/or entrance fees to temples in Kathmandu"
+          "category": "Footwear & Trekking Gear",
+          "items": [
+            "Trekking Boots: Sturdy, waterproof, ankle-support broken-in trekking boots with good traction",
+            "Socks: 4-5 pairs of thick merino wool trekking socks & 2 pairs of thin liner socks",
+            "Camp Shoes: 1 pair of lightweight sneakers or Crocs/sandals for evenings inside teahouses",
+            "Daypack: 25-35 Liter daypack with rain cover (for carrying water, camera, jacket, and daily essentials)",
+            "Duffel Bag: 60-70 Liter heavy-duty duffel bag (provided by Zenex for porters to carry up to 10-12 kg per client)",
+            "Sleeping Gear: Sleeping bag rated for -15°C (5°F) & fleece sleeping bag liner for extra warmth",
+            "Trekking Poles: 1 pair of lightweight, adjustable anti-shock trekking poles",
+            "Eyewear & Lighting: 1 pair of UV-blocking polarized sunglasses & 1 LED headlamp (min 200 lumens) with extra batteries"
+          ]
         },
         {
-          "title": "Unforeseen expenses caused by uncontrollable circumstances (flight cancellations or delays, blocked roads, weather conditions, altitude sickness, etc.)"
+          "category": "Hydration & Health Essentials",
+          "items": [
+            "Water Bottles: 2 wide-mouth Nalgene 1-liter water bottles (suitable for boiling hot water)",
+            "Water Purification: Water purification tablets (Aquatabs) or SteriPen UV purifier",
+            "Personal Medical Kit: Diamox (acetazolamide for altitude prevention), Ibuprofen, Imodium, antiseptic wipes, blister tape/bandaids",
+            "Sun & Skin Care: High SPF 50+ sunscreen, SPF lip balm, cold cream/moisturizer",
+            "Personal Hygiene: Biodegradable wet wipes, hand sanitizer, pocket tissues/toilet paper, travel quick-dry towel",
+            "Electronics: 10,000–20,000 mAh Power bank, camera with spare batteries (cold drains batteries fast!), universal plug adapter"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How hard is the Everest Base Camp Trek?",
+          "answer": "It is rated Hard (3.5 out of 5). You trek 5 to 7 hours daily on steep mountain paths. No technical climbing experience is needed, but strong cardiovascular fitness is essential."
         },
         {
-          "title": "Tips for guide and porters"
+          "question": "What is the highest point of the trek?",
+          "answer": "The highest point reached is Kala Patthar summit at 5,545 meters (18,192 ft), which offers the famous panoramic sunrise view of Mount Everest."
         },
         {
-          "title": "Personal Expenses (laundry, soft drinks, alcohol, snacks, etc.)"
+          "question": "How cold does it get on the EBC trek?",
+          "answer": "At higher altitudes (Gorak Shep & EBC), night temperatures can drop to -10°C to -15°C (5°F to 14°F) in Spring/Autumn. A good -15°C down jacket and sleeping bag are mandatory."
         },
         {
-          "title": "Any other expenses not mentioned in INCLUDED section"
+          "question": "How do we handle altitude sickness (AMS)?",
+          "answer": "Our 15-day itinerary includes 2 mandatory acclimatization rest days in Namche Bazaar (3,440 m) and Dingboche (4,410 m). Guides carry pulse oximeters to check oxygen levels daily."
+        },
+        {
+          "question": "What are the accommodations like?",
+          "answer": "Accommodation is in traditional Sherpa teahouses with basic twin beds, warm blankets, and central heated dining halls."
+        }
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu",
+          "maxAltitude": "1,350m / 4,429ft",
+          "accommodation": "Hotel (3-Star)",
+          "meals": "Welcome Dinner",
+          "modeOfTravel": "Private vehicle",
+          "description": "Arrive at Tribhuvan International Airport in Kathmandu. Transfer to your hotel, followed by a pre-trip briefing and introduction to your trekking guide. Spend the evening exploring Thamel.",
+          "highlights": [
+            "Airport pickup and hotel check-in",
+            "Trek briefing and gear inspection",
+            "Explore Thamel tourist district"
+          ]
+        },
+        {
+          "day": "Day 02",
+          "title": "Fly to Lukla (2,860 m) & Trek to Phakding (2,610 m)",
+          "maxAltitude": "2,860m / 9,383ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Flight (35 mins) + Trek (3-4 hours, 8 km)",
+          "description": "Take an exciting morning flight to Lukla (Tenzing-Hillary Airport). Meet your porter team and begin trekking downhill along the Dudh Kosi river gorge to Phakding village.",
+          "highlights": [
+            "Scenic flight past Himalayan range to Lukla",
+            "Trek along Dudh Kosi river",
+            "Overnight at Phakding riverside village"
+          ]
+        },
+        {
+          "day": "Day 03",
+          "title": "Phakding to Namche Bazaar (3,440 m)",
+          "maxAltitude": "3,440m / 11,286ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (5-6 hours, 11 km)",
+          "description": "Trek through pine forests, entering Sagarmatha National Park at Monjo. Cross high suspension bridges including the iconic Hillary Suspension Bridge, followed by a steep climb to Namche Bazaar.",
+          "highlights": [
+            "Enter Sagarmatha National Park checkpoint",
+            "Cross famous Hillary Suspension Bridge",
+            "First views of Mt. Everest & Namche Bazaar"
+          ]
+        },
+        {
+          "day": "Day 04",
+          "title": "Acclimatization Day in Namche Bazaar (3,440 m)",
+          "maxAltitude": "3,880m / 12,729ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Acclimatization Hike (3-4 hours)",
+          "description": "Rest and acclimatize. Take a morning hike to Everest View Hotel (3,880 m) for panoramic views of Mt. Everest, Lhotse, Ama Dablam, and Thamserku. Visit the Sherpa Culture Museum in Namche.",
+          "highlights": [
+            "Panoramic view from Everest View Hotel",
+            "Visit Sherpa Culture Museum",
+            "Explore Namche bakeries & markets"
+          ]
+        },
+        {
+          "day": "Day 05",
+          "title": "Namche Bazaar to Tengboche (3,860 m)",
+          "maxAltitude": "3,860m / 12,664ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (5-6 hours, 10 km)",
+          "description": "Follow the scenic ridge trail with sweeping views of Everest and Ama Dablam. Descend to Phunki Thenga for lunch, then climb through rhododendron forests to Tengboche Monastery.",
+          "highlights": [
+            "Visit Tengboche Monastery — spiritual heart of Khumbu",
+            "Up-close view of towering Ama Dablam",
+            "Monk chanting ceremony"
+          ]
+        },
+        {
+          "day": "Day 06",
+          "title": "Tengboche to Dingboche (4,410 m)",
+          "maxAltitude": "4,410m / 14,468ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (5-6 hours, 11 km)",
+          "description": "Descend through birch and rhododendron forests to Pangboche village. Ascend above the tree line into the alpine valley of Imja Tse, reaching the stone-walled village of Dingboche.",
+          "highlights": [
+            "Walk past ancient Pangboche Gompa",
+            "Ascend above tree line into high alpine zone",
+            "Overnight in stone-walled Dingboche village"
+          ]
+        },
+        {
+          "day": "Day 07",
+          "title": "Acclimatization Day in Dingboche (4,410 m)",
+          "maxAltitude": "5,100m / 16,732ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Acclimatization Hike (4-5 hours)",
+          "description": "Second acclimatization day. Hike up Nangkartshang Peak (5,100 m) or Nagarjun Hill for views of Makalu (8,485 m), Lhotse, Ama Dablam, and Island Peak.",
+          "highlights": [
+            "Summit Nangkartshang Peak viewpoint (5,100 m)",
+            "View of Makalu (world's 5th highest peak)",
+            "Acclimatize for higher elevations"
+          ]
+        },
+        {
+          "day": "Day 08",
+          "title": "Dingboche to Lobuche (4,940 m)",
+          "maxAltitude": "4,940m / 16,207ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (5-6 hours, 9 km)",
+          "description": "Trek along the lateral moraine of Khumbu Glacier. Stop at Thokla Pass memorial ridge honoring fallen Everest climbers. Continue across glacial moraines to Lobuche.",
+          "highlights": [
+            "Thokla Pass climber memorial ridge",
+            "Traverse Khumbu Glacier lateral moraine",
+            "Dramatic views of Pumori and Nuptse"
+          ]
+        },
+        {
+          "day": "Day 09",
+          "title": "Lobuche to Gorak Shep (5,164 m) & Hike to Everest Base Camp (5,364 m)",
+          "maxAltitude": "5,364m / 17,598ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (7-8 hours, 13 km)",
+          "description": "Trek over rocky glacial moraines to Gorak Shep. Check in and continue trekking along the Khumbu Glacier to reach Everest Base Camp (5,364 m)! Celebrate at the base camp sign with Khumbu Icefall views before returning to Gorak Shep.",
+          "highlights": [
+            "Reach Everest Base Camp (5,364 m)",
+            "Stand at the foot of Khumbu Icefall",
+            "Overnight at Gorak Shep — highest lodge stay"
+          ]
+        },
+        {
+          "day": "Day 10",
+          "title": "Hike Kala Patthar (5,545 m) & Trek to Pheriche (4,371 m)",
+          "maxAltitude": "5,545m / 18,192ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (7-8 hours, 16 km)",
+          "description": "Early morning 4:30 AM steep climb to Kala Patthar summit (5,545 m) for the classic 360° sunrise view of Mount Everest, Nuptse, and Changtse. Return to Gorak Shep for breakfast and descend to Pheriche.",
+          "highlights": [
+            "Summit Kala Patthar (5,545 m) sunrise viewpoint",
+            "360-degree panorama of Mt. Everest & surrounding peaks",
+            "Descend to Pheriche valley"
+          ]
+        },
+        {
+          "day": "Day 11",
+          "title": "Pheriche to Namche Bazaar (3,440 m)",
+          "maxAltitude": "4,371m / 14,340ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (6-7 hours, 14 km)",
+          "description": "Descend through Pangboche and Tengboche, walking back through rhododendron and pine forests to Namche Bazaar. Enjoy hot showers and bakeries in Namche.",
+          "highlights": [
+            "Descend back into lush green forests",
+            "Revisit Tengboche Monastery",
+            "Celebrate back in Namche Bazaar"
+          ]
+        },
+        {
+          "day": "Day 12",
+          "title": "Namche Bazaar to Lukla (2,860 m)",
+          "maxAltitude": "3,440m / 11,286ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (6-7 hours, 19 km)",
+          "description": "Our final day of trekking. Descend steep trail to Hillary Suspension Bridge, walking along Dudh Kosi river past Phakding back to Lukla. Enjoy a farewell celebration evening with your guide and porter team.",
+          "highlights": [
+            "Final day on the trail along Dudh Kosi",
+            "Cross Hillary Suspension Bridge",
+            "Farewell celebration with Sherpa porters & team in Lukla"
+          ]
+        },
+        {
+          "day": "Day 13",
+          "title": "Fly Lukla to Kathmandu (1,350 m)",
+          "maxAltitude": "2,860m / 9,383ft",
+          "accommodation": "Hotel (3-Star)",
+          "meals": "Breakfast",
+          "modeOfTravel": "Flight (35 mins) + Private vehicle",
+          "description": "Board early morning flight from Lukla back to Kathmandu (or Ramechhap). Transfer to your hotel in Kathmandu. Rest of the day is free for shopping or relaxing.",
+          "highlights": [
+            "Morning mountain flight from Lukla",
+            "Hotel check-in and resting",
+            "Thamel souvenir shopping"
+          ]
+        },
+        {
+          "day": "Day 14",
+          "title": "Contingency Day / Free Day in Kathmandu",
+          "maxAltitude": "1,350m / 4,429ft",
+          "accommodation": "Hotel (3-Star)",
+          "meals": "Breakfast, Farewell Dinner",
+          "description": "Buffer day for Lukla flight weather delays or leisure sightseeing in Kathmandu. Evening farewell dinner with authentic Nepali cultural dance show.",
+          "highlights": [
+            "Contingency day for flight delays",
+            "Kathmandu city exploration",
+            "Farewell dinner & certificate presentation"
+          ]
+        },
+        {
+          "day": "Day 15",
+          "title": "Final Departure from Kathmandu",
+          "maxAltitude": "1,350m / 4,429ft",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle transfer",
+          "description": "Transfer to Tribhuvan International Airport 3 hours prior to your flight home, with unforgettable memories of Mount Everest.",
+          "highlights": [
+            "Hotel checkout",
+            "Airport transfer and departure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TRIP-manaslu-circuit-16d",
+      "title": "Manaslu Circuit Trek - 16 Days",
+      "slug": "manaslu-circuit-trek-16-days",
+      "region": "REG-trk-man",
+      "regionName": "Manaslu Circuit Adventures",
+      "status": "Published",
+      "badge": "Restricted Area Classic",
+      "price": 1675,
+      "originalPrice": 1950,
+      "duration": 16,
+      "durationUnit": "Days",
+      "grade": "Hard",
+      "maxAltitude": "5,106 m / 16,751 ft",
+      "startsAt": "Kathmandu",
+      "endsAt": "Kathmandu",
+      "activities": [
+        "Trekking",
+        "High Altitude Pass",
+        "Cultural Exploration"
+      ],
+      "bestSeason": [
+        "Spring (March - May)",
+        "Autumn (Sept - Nov)"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "recommendationRate": 99,
+      "image": "https://northnepaltrek.com/images/trekpackage/multiple/539512328.webp",
+      "gallery": [
+        {
+          "url": "https://northnepaltrek.com/images/trekpackage/multiple/539512328.webp",
+          "alt": "Manaslu Circuit Trek - 16 Days"
+        },
+        {
+          "url": "https://boldhimalaya.com/wp-content/uploads/2024/12/Manaslu-circuit-scaled.jpg",
+          "alt": "Manaslu Circuit Trek - 16 Days"
+        },
+        {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVVyccwvNdJarPjXAJZaDil8dT5p29qZUvib4ne59fa9Tm7IsZsyNAUYk&s=10",
+          "alt": "Manaslu Circuit Trek - 16 Days"
+        },
+        {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNJWiL95TATtIoa_jp6GT2cjQ9itbWbO1nBa-Uu575GjsvxAxqgHWK5YQ&s=10",
+          "alt": "Manaslu Circuit Trek - 16 Days"
+        },
+        {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnECEVu1BXNe7Gn-YHvs44qsag7O5Sw6dcH85v1H-7VvNeGf1fULrpLj0Z&s=10",
+          "alt": "Manaslu Circuit Trek - 16 Days"
+        }
+      ],
+      "shortDescription": "Manaslu Circuit Trek is a remote, restricted 16-day Himalayan journey around Mount Manaslu (8,163 m), crossing the thrilling Larkya La Pass (5,106 m) with side trips to Manaslu Base Camp and Birendra Lake.",
+      "overview": "<p class=\"mb-4\"><strong>Manaslu Circuit Trek - 16 Days</strong> is a remote and adventurous journey around <strong>Mount Manaslu (8,163 m / 26,781 ft)</strong>, the world’s 8th highest peak. Opened to foreign trekkers in 1992, this 16-day circuit offers breathtaking mountain vistas, deeply preserved Tibetan Buddhist culture, and peaceful teahouse trails far from crowded routes.</p><p class=\"mb-4\">Trekking in the Manaslu region requires a Special Restricted Area Permit issued by Nepal Immigration and mandatory accompaniment by a Nepal Government licensed guide. During the trek, you will cross the formidable <strong>Larkya La Pass (5,106 m)</strong>, visit ancient monasteries like Pungyen Gompa, and take side trips to Manaslu Base Camp (4,895 m) and serene Birendra Lake.</p>",
+      "highlights": [
+        "Up-close views of Mount Manaslu (8,163 m) — the 8th highest mountain in the world",
+        "Acclimatization hike to Manaslu Base Camp (approx. 4,895 m) with stunning icefall views",
+        "Breathtaking 360-degree panoramas from Larkya La Pass (5,106 m) of Manaslu, Himlung Himal, Cheo Himal, and Annapurna II",
+        "Experience authentic Tibetan village life in Samagaun, Samdo, and Namrung with stone houses and mani walls",
+        "Visit ancient monasteries including Pungyen Gompa in Samagaun and the monastery in Lho",
+        "Scenic hike to Birendra Lake — a serene, turquoise glacial lake at the foot of Manaslu",
+        "Relax at Tatopani’s natural hot springs after crossing the Machha Khola suspension bridge",
+        "Trek through rhododendron and pine forests, bamboo groves, and alpine yak pastures along Budi Gandaki gorge",
+        "Taste authentic home-cooked dal bhat at traditional teahouses with warm Gurung and Tibetan hospitality",
+        "Ever-changing landscapes from sub-tropical river gorges up to stark high-altitude glacial zones"
+      ],
+      "pricingInfo": {
+        "currency": "USD",
+        "sellingPrice": 1675,
+        "originalPrice": 1950,
+        "unit": "per person",
+        "groupTiers": [
+          {
+            "pax": "2 - 3 pax",
+            "price2026": 1795,
+            "price2027": 1895
+          },
+          {
+            "pax": "4 - 7 pax",
+            "price2026": 1745,
+            "price2027": 1845
+          },
+          {
+            "pax": "8 - 11 pax",
+            "price2026": 1695,
+            "price2027": 1845
+          },
+          {
+            "pax": "12 - 15 pax",
+            "price2026": 1675,
+            "price2027": 1775
+          }
+        ]
+      },
+      "inclusions": [
+        {
+          "title": "Airport Transfers",
+          "description": "Arrival and departure transfers by private vehicle"
+        },
+        {
+          "title": "Kathmandu Hotel",
+          "description": "4 nights 3-star hotel in Kathmandu with breakfast (twin sharing basis)"
+        },
+        {
+          "title": "Kathmandu to Soti Khola / Machha Khola Drive",
+          "description": "Private jeep transport from Kathmandu to Machha Khola with guide & porter"
+        },
+        {
+          "title": "Restricted Area Permit",
+          "description": "Manaslu Restricted Area Special Permit (issued by Nepal Immigration)"
+        },
+        {
+          "title": "Conservation Permits",
+          "description": "Manaslu Conservation Area Permit (MCAP) & Annapurna Conservation Area Permit (ACAP)"
+        },
+        {
+          "title": "All Meals During Trek",
+          "description": "Breakfast, lunch, and dinner with tea/coffee during the entire trek"
+        },
+        {
+          "title": "Teahouse Lodging",
+          "description": "11 nights teahouse/lodge accommodation during the trek"
+        },
+        {
+          "title": "Licensed Guide",
+          "description": "Professional Nepal Government licensed English-speaking trekking guide"
+        },
+        {
+          "title": "Trekking Porters",
+          "description": "1 porter for every 2 trekkers (carrying up to 20-22 kg total)"
+        },
+        {
+          "title": "Staff Insurance & Expenses",
+          "description": "Full insurance, equipment, accommodation, meals, and salary for guide and porters"
+        },
+        {
+          "title": "Return Drive to Kathmandu",
+          "description": "Private jeep from Dharapani to Besisahar & private vehicle from Besisahar to Kathmandu"
+        },
+        {
+          "title": "Duffel Bag",
+          "description": "Complimentary Zenex / Trekking duffel bag for porter equipment"
+        },
+        {
+          "title": "Certificate of Completion",
+          "description": "Achievement certificate for successfully crossing Larkya La Pass (5,106 m)"
+        },
+        {
+          "title": "Farewell Dinner",
+          "description": "Traditional Nepali cultural farewell dinner in Kathmandu"
+        },
+        {
+          "title": "Government Taxes",
+          "description": "All local government taxes, VAT, and official paperwork fees"
+        }
+      ],
+      "exclusions": [
+        {
+          "title": "International Flights & Visa",
+          "description": "Airfare to/from Kathmandu and Nepal Tourist Visa fees"
+        },
+        {
+          "title": "Travel Insurance",
+          "description": "Emergency medical evacuation, high-altitude rescue & travel insurance"
+        },
+        {
+          "title": "Kathmandu Lunch & Dinner",
+          "description": "Lunch and dinner during stay in Kathmandu (except Farewell Dinner)"
+        },
+        {
+          "title": "Personal Expenses",
+          "description": "Hot showers, Wi-Fi, battery charging, laundry, and bottled water"
+        },
+        {
+          "title": "Tips & Gratuities",
+          "description": "Tips for trekking guide, porters, and driver"
+        },
+        {
+          "title": "Add-on Expenses",
+          "description": "Extra hotel nights in Kathmandu or optional single room supplement"
+        }
+      ],
+      "essentialInfo": [
+        {
+          "title": "Permits Required for Manaslu Circuit Trek",
+          "content": "<p class=\"mb-2\">Three official permits are mandatory for the Manaslu Circuit Trek:</p><ul class=\"list-disc pl-5 space-y-1 text-sm text-gray-700\"><li><strong>Manaslu Restricted Area Permit (RAP):</strong> Issued by Nepal Immigration for restricted zone between Jagat and Bhimtang. September–November: USD 100/week + USD 15/day extra. December–August: USD 75/week + USD 10/day extra. Must be booked via a registered Nepali agency with min. 2 trekkers & licensed guide.</li><li><strong>Manaslu Conservation Area Permit (MCAP):</strong> NPR 3,000 per person.</li><li><strong>Annapurna Conservation Area Permit (ACAP):</strong> NPR 3,000 per person (required after crossing Larkya La Pass into Dharapani).</li></ul>"
+        },
+        {
+          "title": "Best Seasons to Trek",
+          "content": "<p class=\"mb-2\"><strong>Spring (March to May):</strong> Mild temperatures, clear morning views, and rhododendrons blooming along the lower gorge.</p><p><strong>Autumn (September to November):</strong> The peak season with stable weather, crisp skies, and crystal-clear views of Mount Manaslu and surrounding peaks.</p>"
+        },
+        {
+          "title": "Meals & Accommodation",
+          "content": "<p class=\"mb-2\">Accommodations consist of mountain teahouses and lodges. Rooms are basic twin-share with comfortable mattresses and blankets. Meals include local Nepali Thali (Dal Bhat), soups, fried rice, chowmein, pasta, Tibetan bread, and hot beverages.</p>"
+        }
+      ],
+      "equipmentList": [
+        {
+          "category": "Clothing",
+          "items": [
+            "Moisture-wicking base layers",
+            "Thermal underwear",
+            "Fleece jacket",
+            "Heavy down jacket (-10°C rated)",
+            "Waterproof Gore-Tex jacket & pants",
+            "Quick-dry trekking trousers",
+            "Warm fleece hat & sun cap",
+            "Insulated waterproof gloves & inner gloves"
+          ]
+        },
+        {
+          "category": "Footwear & Gear",
+          "items": [
+            "Sturdy broken-in trekking boots",
+            "Moisture-wicking merino wool socks",
+            "Camp sandals/shoes",
+            "30L Daypack with rain cover",
+            "50-70L Duffel bag (carried by porter)",
+            "-10°C Sleeping bag & liner",
+            "Adjustable trekking poles",
+            "UV sunglasses & Headlamp with extra batteries"
+          ]
+        },
+        {
+          "category": "Personal & Hygiene",
+          "items": [
+            "Water bottle & SteriPen / purification tablets",
+            "High SPF sunscreen & lip balm",
+            "First aid kit with Diamox & blister pads",
+            "Biodegradable wet wipes & hand sanitizer",
+            "Personal passport & permit copies",
+            "Cash in NPR for snacks/Wi-Fi"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Where is the Manaslu Circuit Trek located?",
+          "answer": "The trek is located in western Nepal in the Gorkha and Manang districts, encircling Mount Manaslu (8,163 m) just east of the Annapurna range."
+        },
+        {
+          "question": "What is the highest point of the trek?",
+          "answer": "The highest point is Larkya La Pass at 5,106 meters (16,751 feet), offering breathtaking 360-degree views of Manaslu, Himlung Himal, and Annapurna II."
+        },
+        {
+          "question": "How difficult is the Manaslu Circuit Trek?",
+          "answer": "It is graded Hard (3 out of 5 difficulty). Trekkers walk 6 to 8 hours daily over rugged terrain. Good physical fitness and proper acclimatization are essential."
+        },
+        {
+          "question": "Can a solo trekker do this trek?",
+          "answer": "No. Because Manaslu is a restricted area, Nepal Immigration requires at least 2 trekkers in a group accompanied by a licensed Nepali guide."
+        },
+        {
+          "question": "What permits are required?",
+          "answer": "You need the Manaslu Restricted Area Permit (RAP), Manaslu Conservation Area Permit (MCAP), and Annapurna Conservation Area Permit (ACAP)."
+        },
+        {
+          "question": "What is the accommodation like?",
+          "answer": "Accommodation is in local family-run teahouses with basic twin-bed rooms, shared bathrooms, and central heated dining halls."
+        },
+        {
+          "question": "Is altitude sickness a risk?",
+          "answer": "Yes, as you cross above 5,000 meters. The 16-day itinerary includes a dedicated acclimatization day in Samagaun (3,520 m) with side hikes to Base Camp or Birendra Lake."
+        },
+        {
+          "question": "Is there Wi-Fi and mobile network?",
+          "answer": "Mobile network (Ncell/NTC) works up to Namrung. Above Samagaun, signal is sparse, but teahouses offer paid Wi-Fi (Everest Link / Ncell cards)."
+        },
+        {
+          "question": "Are there ATMs on the trek?",
+          "answer": "No ATMs exist on the trail beyond Arughat/Besisahar. You must carry sufficient Nepali cash (NPR) from Kathmandu for personal expenses."
+        },
+        {
+          "question": "Can I combine Manaslu with Tsum Valley?",
+          "answer": "Yes! Tsum Valley can be added to the Manaslu Circuit for a 18-21 day extended spiritual journey into the sacred hidden valley."
+        }
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu",
+          "maxAltitude": "1,350m / 4,429ft",
+          "accommodation": "Hotel (3-Star)",
+          "meals": "Welcome Dinner",
+          "modeOfTravel": "Private vehicle",
+          "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our representative will transfer you to your hotel. We will host a pre-trip briefing to review equipment, introduce your licensed trekking guide, and answer any questions. Enjoy the rest of the day relaxing in Thamel.",
+          "highlights": [
+            "Airport pickup and hotel check-in",
+            "Trek orientation and guide introduction",
+            "Explore Thamel tourist hub"
+          ]
+        },
+        {
+          "day": "Day 02",
+          "title": "Permit Preparation & Free Day in Kathmandu (1,350 m)",
+          "maxAltitude": "1,350m / 4,429ft",
+          "accommodation": "Hotel (3-Star)",
+          "meals": "Breakfast",
+          "description": "While our team submits your original passport to Nepal Immigration to issue the official Manaslu Restricted Area Permit, you can explore UNESCO World Heritage sites in Kathmandu including Durbar Square, Swoyambhunath (Monkey Temple), Boudhanath Stupa, and Pashupatinath Temple.",
+          "highlights": [
+            "Official Manaslu Restricted Permit processing",
+            "Sightseeing at UNESCO World Heritage sites",
+            "Final gear check in Thamel"
+          ]
+        },
+        {
+          "day": "Day 03",
+          "title": "Kathmandu – Arughat Bazaar (608 m) – Machha Khola (870 m)",
+          "maxAltitude": "870m / 2,854ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private Jeep / Vehicle (8-9 hours drive, 146 km)",
+          "description": "We depart Kathmandu early at 7:00 AM in a private 4WD jeep, driving through winding mountain roads, terraced farmland, and along the Trishuli and Budi Gandaki rivers via Arughat Bazaar and Soti Khola to reach Machha Khola. Machha Khola is a pleasant Gurung village where we stay overnight.",
+          "highlights": [
+            "Scenic drive through Himalayan foothills",
+            "Cross Budi Gandaki river valley at Arughat Bazaar",
+            "Overnight at Machha Khola Gurung village"
+          ]
+        },
+        {
+          "day": "Day 04",
+          "title": "Machha Khola to Jagat (1,340 m)",
+          "maxAltitude": "1,340m / 4,396ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (7 hours, 17 km)",
+          "description": "We start our trek by crossing the suspension bridge over Machha Khola and following a winding trail to Tatopani, a natural hot spring where we can take a refreshing break. Passing Doban, we cross another suspension bridge over the roaring Budi Gandaki river at Lauri and climb through Sal forests to reach the stone-paved village of Jagat, the entry checkpoint for the restricted zone.",
+          "highlights": [
+            "Cross Machha Khola suspension bridge",
+            "Relax at Tatopani natural hot springs",
+            "Enter Jagat restricted area checkpoint"
+          ]
+        },
+        {
+          "day": "Day 05",
+          "title": "Jagat to Deng (1,860 m)",
+          "maxAltitude": "1,860m / 6,102ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (7 hours, 18 km)",
+          "description": "Descending from Jagat to the riverbed, we cross a suspension bridge to Nagjet and climb uphill to Philim, a large Gurung village surrounded by terraced fields of wheat and barley. Continuing through bamboo forests, we cross the Budi Gandaki river again at Dyang and press onward to Deng, enjoying first views of Siringi Himal.",
+          "highlights": [
+            "Walk through Philim village and terraced barley fields",
+            "Explore bamboo forests along Budi Gandaki gorge",
+            "Stunning views of Siringi Himal"
+          ]
+        },
+        {
+          "day": "Day 06",
+          "title": "Deng to Namrung (2,630 m)",
+          "maxAltitude": "2,630m / 8,628ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (7-8 hours, 17 km)",
+          "description": "Today's trek ascends steeply into Tibetan-influenced cultural territory. Crossing multiple suspension bridges, we walk through dense pine and rhododendron forests past the cliffside settlements of Rana and Bihi Phedi. As we climb higher, snow-capped peaks come into view before arriving at Namrung, famous for stone houses, Buddhist monasteries, and friendly locals.",
+          "highlights": [
+            "Enter Tibetan Nubri cultural valley",
+            "Pass ancient mani walls and prayer wheels",
+            "Overnight at Namrung with views of Himalchuli"
+          ]
+        },
+        {
+          "day": "Day 07",
+          "title": "Namrung to Samagaun (3,520 m)",
+          "maxAltitude": "3,520m / 11,548ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (7-8 hours, 17 km)",
+          "description": "A breathtaking day of trekking uphill through pine forests to Lho village, home to a grand Buddhist monastery and a stunning panoramic view of Mount Manaslu (8,163 m). After exploring Lho and Shyala village, surrounded by glaciers and peaks, we walk across a broad alpine valley to Samagaun, the central hub of the Nubri people.",
+          "highlights": [
+            "Unforgettable view of Mount Manaslu from Lho village",
+            "Visit Lho Gompa monastery and chortens",
+            "Arrive in historic Samagaun stone village"
+          ]
+        },
+        {
+          "day": "Day 08",
+          "title": "Acclimatization Day in Samagaun (3,520 m)",
+          "maxAltitude": "4,895m / 16,059ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Acclimatization Hikes (6-7 hours, 7 km)",
+          "description": "A crucial acclimatization day in Samagaun. Option 1: A rewarding side hike to Manaslu Base Camp (4,895 m, 6-7 hrs round trip) offering up-close views of Manaslu Glacier and icefalls. Option 2: An easy 1-hour walk to turquoise Birendra Glacial Lake. Option 3: A hike to Pungyen Gompa monastery resting on a high meadow plateau.",
+          "highlights": [
+            "Hike to Manaslu Base Camp (4,895 m)",
+            "Visit turquoise Birendra Glacial Lake",
+            "Spiritual side trip to Pungyen Gompa"
+          ]
+        },
+        {
+          "day": "Day 09",
+          "title": "Samagaun to Samdo (3,875 m)",
+          "maxAltitude": "3,875m / 12,713ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (4-5 hours, 8 km)",
+          "description": "We follow a gentle uphill trail past long stone mani walls and birch forests as the valley widens near the Tibetan border. We cross a wooden bridge over Budi Gandaki river and ascend slowly to Samdo, a traditional Tibetan refugee village where yak herding and border trade thrive.",
+          "highlights": [
+            "Gentle scenic alpine trek along widening valley",
+            "Views of Samdo Peak and Tibetan border ridge",
+            "Explore Samdo Tibetan refugee community"
+          ]
+        },
+        {
+          "day": "Day 10",
+          "title": "Samdo to Dharmasala / Larkya Phedi (4,460 m)",
+          "maxAltitude": "4,460m / 14,632ft",
+          "accommodation": "Lodge / Teahouse (Basic)",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (4-5 hours, 6 km)",
+          "description": "We descend from Samdo to cross the river, then climb steadily past the ruins of the ancient Larkya Bazaar market. Traversing alpine yak pastures and moraine ridges with views of Manaslu Glacier and Larkya Peak, we reach Dharmasala (Larkya Phedi), the high base camp lodge before the pass. We rest early for tomorrow's big climb.",
+          "highlights": [
+            "Cross high alpine moraine ridges",
+            "Views of Larkya Glacier and Larkya Peak",
+            "Early rest at Dharmasala base camp (4,460 m)"
+          ]
+        },
+        {
+          "day": "Day 11",
+          "title": "Dharmasala – Larkya La Pass (5,106 m) – Bhimtang (3,590 m)",
+          "maxAltitude": "5,106m / 16,751ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (8-9 hours, 16 km)",
+          "description": "The peak highlight of the trek! We start early at 4:30 AM, ascending a steep glacial moraine trail to cross Larkya La Pass (5,106 m / 16,751 ft). Decorated with colorful prayer flags, the pass delivers 360° panoramas of Mount Manaslu, Himlung Himal (7,126 m), Cheo Himal, Kang Guru, and Annapurna II. We descend long rocky slopes to the peaceful green valley of Bhimtang.",
+          "highlights": [
+            "Summit Larkya La Pass (5,106 m / 16,751 ft)",
+            "360-degree panoramas of Manaslu, Himlung Himal & Annapurna II",
+            "Descend through moraines to Bhimtang valley"
+          ]
+        },
+        {
+          "day": "Day 12",
+          "title": "Bhimtang to Tilche (2,300 m)",
+          "maxAltitude": "2,300m / 7,545ft",
+          "accommodation": "Lodge / Teahouse",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (6-7 hours, 21 km)",
+          "description": "From Bhimtang, we descend through lush pine, fir, and rhododendron forests alongside the Dudh Khola river. Passing Yak Kharka, Karche, and Gho village, we observe traditional stone houses, farming terraces, and friendly local Gurung communities before reaching Tilche.",
+          "highlights": [
+            "Descend through ancient rhododendron and fir forests",
+            "Follow the rushing waters of Dudh Khola river",
+            "Overnight at Tilche Gurung village"
+          ]
+        },
+        {
+          "day": "Day 13",
+          "title": "Tilche to Dharapani (1,860 m) – Drive to Besisahar (760 m)",
+          "maxAltitude": "1,860m / 6,102ft",
+          "accommodation": "Hotel / Lodge",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trek (2 hours) + Private Jeep Drive (3 hours)",
+          "description": "A short 2-hour morning walk brings us from Tilche to Dharapani, where our trail merges with the classic Annapurna Circuit route. Here we board a private 4WD jeep and drive along the Marshyangdi River gorge to Besisahar, celebrating the end of our trekking journey.",
+          "highlights": [
+            "Reach Dharapani joining Annapurna Circuit route",
+            "Scenic jeep ride along Marshyangdi River gorge",
+            "Celebratory dinner in Besisahar"
+          ]
+        },
+        {
+          "day": "Day 14",
+          "title": "Besisahar to Kathmandu (1,350 m)",
+          "maxAltitude": "1,350m / 4,429ft",
+          "accommodation": "Hotel (3-Star)",
+          "meals": "Breakfast, Lunch",
+          "modeOfTravel": "Private Vehicle (6-7 hours drive, 175 km)",
+          "description": "After breakfast in Besisahar, we drive back to Kathmandu in a comfortable private vehicle, following the Trishuli River. Upon arrival in Kathmandu, check in at your hotel and spend the evening shopping for souvenirs or relaxing.",
+          "highlights": [
+            "Drive back to Kathmandu along Trishuli River",
+            "Hotel check-in and evening relaxation",
+            "Souvenir shopping in Thamel"
+          ]
+        },
+        {
+          "day": "Day 15",
+          "title": "Free Day in Kathmandu",
+          "maxAltitude": "1,350m / 4,429ft",
+          "accommodation": "Hotel (3-Star)",
+          "meals": "Breakfast, Farewell Dinner",
+          "description": "A leisure day in Kathmandu for shopping, spa/massage, or relaxing. In the evening, we host a celebratory farewell dinner at an authentic Nepali restaurant featuring traditional cultural dance performances to celebrate your Manaslu Circuit achievement.",
+          "highlights": [
+            "Leisure day for relaxation or shopping in Kathmandu",
+            "Authentic Nepali farewell dinner with cultural show",
+            "Receive official Manaslu Trek completion certificate"
+          ]
+        },
+        {
+          "day": "Day 16",
+          "title": "Final Departure from Kathmandu",
+          "maxAltitude": "1,350m / 4,429ft",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle transfer",
+          "description": "After breakfast, our team will transfer you to Tribhuvan International Airport (TIA) 3 hours before your international flight home, taking back unforgettable Himalayan memories of Mount Manaslu.",
+          "highlights": [
+            "Hotel checkout and airport transfer",
+            "Final departure from Nepal"
+          ]
         }
       ]
     },
@@ -668,7 +1329,7 @@
       "tripType": "Group",
       "duration": "17",
       "durationUnit": "Days",
-      "price": "1405",
+      "price": "1400",
       "status": "Published",
       "featured": true,
       "badge": "Best Selling Trek",
@@ -694,7 +1355,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1500",
-        "sellingPrice": "1405",
+        "sellingPrice": "1400",
         "pricePer": "Person"
       },
       "shortDescription": "Comprehensive high-altitude circuit combining turquoise Gokyo Lakes, Gokyo Ri (5,360 m), challenging Cho La Pass (5,330 m), Everest Base Camp (5,360 m), and Kala Patthar (5,545 m).",
@@ -1191,7 +1852,7 @@
       "tripType": "Group",
       "duration": "13",
       "durationUnit": "Days",
-      "price": "865",
+      "price": "860",
       "status": "Published",
       "featured": false,
       "badge": "High Pass Trek",
@@ -1217,7 +1878,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "950",
-        "sellingPrice": "865",
+        "sellingPrice": "860",
         "pricePer": "Person"
       },
       "shortDescription": "Scenic, quieter high-pass trek to turquoise Gokyo Lakes, Gokyo Ri (5,360 m), and across the breathtaking Renjo La Pass (5,340 m).",
@@ -1681,7 +2342,7 @@
       "tripType": "Private / Luxury",
       "duration": "12",
       "durationUnit": "Days",
-      "price": "2660",
+      "price": "2655",
       "status": "Published",
       "featured": true,
       "badge": "Best Selling Luxury Trek",
@@ -1708,7 +2369,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "2850",
-        "sellingPrice": "2660",
+        "sellingPrice": "2655",
         "pricePer": "Person"
       },
       "shortDescription": "Luxurious 12-day Everest Base Camp trek featuring a scenic return helicopter flight from Kala Patthar / Gorak Shep to Kathmandu.",
@@ -2171,7 +2832,7 @@
       "tripType": "Group",
       "duration": "14",
       "durationUnit": "Days",
-      "price": "1220",
+      "price": "1215",
       "status": "Published",
       "featured": true,
       "badge": "Alpine Lake Trek",
@@ -2197,7 +2858,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1300",
-        "sellingPrice": "1220",
+        "sellingPrice": "1215",
         "pricePer": "Person"
       },
       "shortDescription": "Trek to the turquoise Gokyo Glacial Lakes, climb Gokyo Ri (5,360 m), and explore the 5th Lake and Ngozumpa Glacier.",
@@ -2667,7 +3328,7 @@
       "tripType": "Group",
       "duration": "11",
       "durationUnit": "Days",
-      "price": "1150",
+      "price": "1145",
       "status": "Published",
       "featured": true,
       "badge": "Best Short Trek in Everest",
@@ -2693,7 +3354,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1300",
-        "sellingPrice": "1150",
+        "sellingPrice": "1145",
         "pricePer": "Person"
       },
       "shortDescription": "Spectacular 11-day short trek to the base camp of Mount Ama Dablam (4,700 m) beneath one of the world's most iconic mountain pyramids.",
@@ -3116,7 +3777,7 @@
       "tripType": "Group",
       "duration": "9",
       "durationUnit": "Days",
-      "price": "1025",
+      "price": "1020",
       "status": "Published",
       "featured": true,
       "badge": "Best Short Everest View Trek",
@@ -3142,7 +3803,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1100",
-        "sellingPrice": "1025",
+        "sellingPrice": "1020",
         "pricePer": "Person"
       },
       "shortDescription": "Peaceful 9-day trek in lower Solukhumbu offering Sir Edmund Hillary's favorite 360° summit view of Mt. Everest, Makalu, and Kanchenjunga.",
@@ -3565,7 +4226,7 @@
       "tripType": "Group",
       "duration": "10",
       "durationUnit": "Days",
-      "price": "980",
+      "price": "975",
       "status": "Published",
       "featured": true,
       "badge": "Best Short Family Trek",
@@ -3591,7 +4252,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1050",
-        "sellingPrice": "980",
+        "sellingPrice": "975",
         "pricePer": "Person"
       },
       "shortDescription": "Ideal 10-day short family trek to Everest View Hotel (3,880 m) and Tengboche Monastery offering spectacular panoramas of Mt. Everest.",
@@ -3850,7 +4511,7 @@
       "tripType": "Group",
       "duration": "19",
       "durationUnit": "Days",
-      "price": "1540",
+      "price": "1535",
       "status": "Published",
       "featured": true,
       "badge": "Ultimate High-Altitude Adventure",
@@ -3876,7 +4537,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1690",
-        "sellingPrice": "1540",
+        "sellingPrice": "1535",
         "pricePer": "Person"
       },
       "shortDescription": "Ultimate 19-day Himalayan adventure crossing 3 high passes (Renjo La, Cho La, Kongma La), Gokyo Lakes, Everest Base Camp & Kala Patthar.",
@@ -4292,7 +4953,7 @@
       "tripType": "Group",
       "duration": "22",
       "durationUnit": "Days",
-      "price": "1780",
+      "price": "1775",
       "status": "Published",
       "featured": true,
       "badge": "Classic Route to Everest",
@@ -4318,7 +4979,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1900",
-        "sellingPrice": "1780",
+        "sellingPrice": "1775",
         "pricePer": "Person"
       },
       "shortDescription": "The legendary pioneer trail used by Hillary & Tenzing in 1953 from Jiri to Gokyo Lakes, Cho La Pass, Everest Base Camp & Kala Patthar.",
@@ -4757,7 +5418,7 @@
       "tripType": "Group",
       "duration": "19",
       "durationUnit": "Days",
-      "price": "2450",
+      "price": "2445",
       "status": "Published",
       "featured": true,
       "badge": "Ultimate High-Altitude Expedition",
@@ -4784,7 +5445,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "2650",
-        "sellingPrice": "2450",
+        "sellingPrice": "2445",
         "pricePer": "Person"
       },
       "shortDescription": "Summit Nepal's highest trekking peak (Mera Peak 6,461 m) and cross the technical Amphu Lapcha Pass (5,845 m) through remote Hongu Valley.",
@@ -5177,7 +5838,7 @@
       "tripType": "Group",
       "duration": "12",
       "durationUnit": "Days",
-      "price": "1050",
+      "price": "1045",
       "status": "Published",
       "featured": true,
       "badge": "Must Do Experience",
@@ -5203,7 +5864,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1150",
-        "sellingPrice": "1050",
+        "sellingPrice": "1045",
         "pricePer": "Person"
       },
       "shortDescription": "Iconic 12-day Himalayan trek into the heart of Annapurna Sanctuary (4,130 m) via traditional Gurung village of Ghandruk and Jhinu hot springs.",
@@ -5522,7 +6183,7 @@
       "tripType": "Group",
       "duration": "18",
       "durationUnit": "Days",
-      "price": "1450",
+      "price": "1445",
       "status": "Published",
       "featured": true,
       "badge": "High Pass & Great Ice Lake",
@@ -5548,7 +6209,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1600",
-        "sellingPrice": "1450",
+        "sellingPrice": "1445",
         "pricePer": "Person"
       },
       "shortDescription": "Legendary 18-day Himalayan journey combining the classic Annapurna Circuit with high-altitude Tilicho Lake (4,990 m) and Thorong La Pass (5,416 m).",
@@ -5953,7 +6614,7 @@
       "tripType": "Group",
       "duration": "10",
       "durationUnit": "Days",
-      "price": "515",
+      "price": "510",
       "status": "Published",
       "featured": true,
       "badge": "Short & Scenic",
@@ -5979,7 +6640,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "615",
-        "sellingPrice": "515",
+        "sellingPrice": "510",
         "pricePer": "Person"
       },
       "shortDescription": "Short and peaceful 10-day Annapurna trek leading up the Mardi ridge to Base Camp (4,450 m) with close-up views of Mount Machhapuchhre.",
@@ -6275,7 +6936,7 @@
       "tripType": "Group",
       "duration": "10",
       "durationUnit": "Days",
-      "price": "625",
+      "price": "620",
       "status": "Published",
       "featured": true,
       "badge": "Culture & Safari",
@@ -6303,7 +6964,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "805",
-        "sellingPrice": "625",
+        "sellingPrice": "620",
         "pricePer": "Person"
       },
       "shortDescription": "Charming 10-day cultural village homestay trek in Lamjung Gurung villages (Ghalegaun & Bhujung) combined with a 4-star Chitwan National Park wildlife safari.",
@@ -6618,7 +7279,7 @@
       "tripType": "Group",
       "duration": "12",
       "durationUnit": "Days",
-      "price": "790",
+      "price": "785",
       "status": "Published",
       "featured": true,
       "badge": "Mountains & Safari",
@@ -6646,7 +7307,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "890",
-        "sellingPrice": "790",
+        "sellingPrice": "785",
         "pricePer": "Person"
       },
       "shortDescription": "The ultimate 12-day Nepal adventure combining the famous Poon Hill sunrise trek (3,200 m) and Ghandruk village with a Chitwan National Park wildlife safari.",
@@ -6975,7 +7636,7 @@
       "tripType": "Group",
       "duration": "14",
       "durationUnit": "Days",
-      "price": "700",
+      "price": "695",
       "status": "Published",
       "featured": true,
       "badge": "Offbeat Community Trek",
@@ -7001,7 +7662,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "870",
-        "sellingPrice": "700",
+        "sellingPrice": "695",
         "pricePer": "Person"
       },
       "shortDescription": "Peaceful 14-day community lodge trek along Khopra Ridge (3,660 m) with Muldai viewpoint panoramas, optional Khayer Lake hike, and Jhinu hot springs.",
@@ -7341,7 +8002,7 @@
       "tripType": "Group",
       "duration": "12",
       "durationUnit": "Days",
-      "price": "1150",
+      "price": "1145",
       "status": "Published",
       "featured": true,
       "badge": "Restricted Lost Valleys",
@@ -7367,7 +8028,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1350",
-        "sellingPrice": "1150",
+        "sellingPrice": "1145",
         "pricePer": "Person"
       },
       "shortDescription": "Off-the-beaten-path 12-day restricted area trek into the medieval Tibetan lost valleys of Nar and Phu, crossing high Kang La Pass (5,306 m).",
@@ -7660,7 +8321,7 @@
       "tripType": "Group",
       "duration": "11",
       "durationUnit": "Days",
-      "price": "875",
+      "price": "870",
       "status": "Published",
       "featured": true,
       "badge": "Camping & Wilderness",
@@ -7686,7 +8347,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1140",
-        "sellingPrice": "875",
+        "sellingPrice": "870",
         "pricePer": "Person"
       },
       "shortDescription": "Off-the-beaten-path 11-day wilderness camping trek crossing Namun La Pass (4,910 m) with sacred Dudhpokhari Lake (4,560 m) and Ghalegaun homestay.",
@@ -7997,7 +8658,7 @@
       "tripType": "Group",
       "duration": "13",
       "durationUnit": "Days",
-      "price": "999",
+      "price": "994",
       "status": "Published",
       "featured": true,
       "badge": "New 2024 Heritage Trail",
@@ -8023,7 +8684,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1279",
-        "sellingPrice": "999",
+        "sellingPrice": "994",
         "pricePer": "Person"
       },
       "shortDescription": "Newly explored 2024 cultural wilderness camping trail visiting Kwholasothar ancestral origin village, sacred Dudh Pokhari Lake (4,585 m), and Gurung Deurali (4,910 m).",
@@ -8362,7 +9023,7 @@
       "tripType": "Group",
       "duration": "14",
       "durationUnit": "Days",
-      "price": "935",
+      "price": "930",
       "status": "Published",
       "featured": true,
       "badge": "World's Highest Pass",
@@ -8388,7 +9049,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1165",
-        "sellingPrice": "935",
+        "sellingPrice": "930",
         "pricePer": "Person"
       },
       "shortDescription": "Essential 14-day Annapurna Circuit experience crossing world-famous Thorong La Pass (5,416 m), visiting sacred Muktinath Temple, and scenic Jomsom flight to Pokhara.",
@@ -8729,7 +9390,7 @@
       "tripType": "Group",
       "duration": "14",
       "durationUnit": "Days",
-      "price": "1150",
+      "price": "1145",
       "status": "Published",
       "featured": true,
       "badge": "High Alpine & Wild Camping",
@@ -8755,7 +9416,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "1380",
-        "sellingPrice": "1150",
+        "sellingPrice": "1145",
         "pricePer": "Person"
       },
       "shortDescription": "Off-the-beaten-path 14-day high alpine adventure visiting Tilicho Lake (4,919 m), 2-night wilderness camping, and crossing Mesokanta La Pass (5,330 m) to Jomsom.",
@@ -9098,7 +9759,7 @@
       "tripType": "Group",
       "duration": "15",
       "durationUnit": "Days",
-      "price": "800",
+      "price": "795",
       "status": "Published",
       "featured": true,
       "badge": "Sunrise & Sanctuary",
@@ -9124,7 +9785,7 @@
       "pricingInfo": {
         "currency": "USD",
         "originalPrice": "920",
-        "sellingPrice": "800",
+        "sellingPrice": "795",
         "pricePer": "Person"
       },
       "shortDescription": "Classic 15-day Nepal trek combining Poon Hill 360° sunrise vistas (3,200 m) with the iconic Annapurna Base Camp Sanctuary (4,130 m) and Jhinu hot springs.",

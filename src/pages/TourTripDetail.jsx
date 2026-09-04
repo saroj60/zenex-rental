@@ -486,10 +486,10 @@ const TourTripDetail = () => {
                       <div><p className="text-xs text-gray-500 font-medium leading-tight">Ends</p><p className="text-sm font-bold text-gray-800">{trip.endLocation}</p></div>
                     </div>
                   )}
-                  {trip.activities && trip.activities.length > 0 && (
+                  {trip.activities && (
                     <div className="flex items-center gap-3">
                       <Compass className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Activities</p><p className="text-sm font-bold text-gray-800">{trip.activities.join(' / ')}</p></div>
+                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Activities</p><p className="text-sm font-bold text-gray-800">{Array.isArray(trip.activities) ? trip.activities.join(' / ') : trip.activities}</p></div>
                     </div>
                   )}
                   {trip.accommodation && (
@@ -498,10 +498,10 @@ const TourTripDetail = () => {
                       <div><p className="text-xs text-gray-500 font-medium leading-tight">Accommodation</p><p className="text-sm font-bold text-gray-800">{trip.accommodation}</p></div>
                     </div>
                   )}
-                  {trip.meals && trip.meals.length > 0 && (
+                  {trip.meals && (
                     <div className="flex items-center gap-3">
                       <Utensils className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Meals</p><p className="text-sm font-bold text-gray-800">{trip.meals.join(', ')}</p></div>
+                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Meals</p><p className="text-sm font-bold text-gray-800">{Array.isArray(trip.meals) ? trip.meals.join(', ') : trip.meals}</p></div>
                     </div>
                   )}
                   {trip.bestTime && (
@@ -671,10 +671,10 @@ const TourTripDetail = () => {
                                   </div>
                                 )}
                               </div>
-                              {day.meals?.length > 0 && (
+                              {day.meals && (
                                 <div className="mt-3 flex items-center gap-1.5 text-xs text-gray-500 font-bold">
                                   <Coffee size={14} className="text-orange-400" />
-                                  <span>Meals: {day.meals.join(', ')}</span>
+                                  <span>Meals: {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
                                 </div>
                               )}
                             </div>

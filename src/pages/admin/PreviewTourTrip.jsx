@@ -98,7 +98,7 @@ const PreviewTourTrip = () => {
                               {day.walkingDuration && <div><strong className="text-gray-900">Duration:</strong> {day.walkingDuration}</div>}
                               {day.modeOfTravel && <div><strong className="text-gray-900">Mode of Travel:</strong> {day.modeOfTravel}</div>}
                               {day.accommodation && <div><strong className="text-gray-900">Accom:</strong> {day.accommodation}</div>}
-                              {day.meals?.length > 0 && <div><strong className="text-gray-900">Meals:</strong> {day.meals.join(', ')}</div>}
+                              {day.meals && <div><strong className="text-gray-900">Meals:</strong> {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</div>}
                             </div>
                           </div>
                         )}
