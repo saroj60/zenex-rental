@@ -3007,5 +3007,399 @@ export const treksData = [
         answer: "Tipping is customary in Nepal for good service and is greatly appreciated by guides and drivers."
       }
     ]
+  },
+  {
+    id: "upper-mustang-trek-18d",
+    slug: "upper-mustang-trek-18d",
+    title: "Upper Mustang Trek - 18 Days",
+    region: "mustang",
+    regionName: "Mustang Region",
+    location: "Upper Mustang & Lo Manthang, Mustang District, Nepal",
+    duration: "18",
+    durationUnit: "Days",
+    price: "US$1,955",
+    originalPrice: "US$2,150",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Hard",
+    maxAltitude: "4,077 m / 13,375 ft (Gyu La Pass)",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "Walking / Hiking & Cultural Exploration",
+    accommodation: "3-Star Hotel in Kathmandu & Pokhara / Mountain Teahouses & Lodges",
+    meals: "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Trek",
+    bestSeason: "Spring (March - May), Summer/Monsoon & Autumn (Sept - Nov)",
+    image: "https://cdn.tripspoint.com/uploads/photos/8866/upper-mustang-trek-15-days_HIely.jpg",
+    gallery: [
+      "https://cdn.tripspoint.com/uploads/photos/8866/upper-mustang-trek-15-days_HIely.jpg",
+      "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/Mustang-Trekking-2.jpg",
+      "https://visithimalayastrek.com/uploads/photos/1/Lo-Manthang-Upper-Mustang.jpg",
+      "https://media.app.regulusnepal.com/uploads/media/badimalika/upper-mustang.jpg",
+      "/images/upper mustang.jpg"
+    ],
+    overview: `
+      <h3>Short Upper Mustang Trek 18 Days | Discover Nepal's Forbidden Kingdom & Tibetan Culture</h3>
+      <p>The 18-Day Upper Mustang Trek in Nepal is a culturally rich and scenic mountain expedition into one of Nepal's most remote and preserved Himalayan destinations. Often referred to as the <strong>"Last Forbidden Kingdom"</strong>, Upper Mustang was closed to foreign travelers until 1992, preserving its ancient Tibetan Buddhist traditions, centuries-old monasteries, cliffside cave dwellings, and desert-like landscapes.</p>
+      <p>Starting with a scenic flight or drive from Pokhara to Jomsom, the trail leads past black Shaligram fossils in Kali Gandaki Valley to Kagbeni, the restricted boundary of Upper Mustang. Trekkers walk through colorful traditional villages like Chele, Samar, Syanbochen, Ghami, and Charang before reaching the ancient walled capital of <strong>Lo Manthang (3,810 m)</strong>. The return trail crosses the high <strong>Gyu La Pass (4,077 m)</strong> to holy Muktinath Temple.</p>
+      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Special Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), round-trip domestic flights/transfers, licensed high-altitude guides, porters, teahouse bookings, and hotel stays in Kathmandu and Pokhara.</p>
+    `,
+    highlights: [
+      "Scenic Flight to Jomsom: Fly over the Kali Gandaki Gorge, the world's deepest gorge, with stunning views of Dhaulagiri and Annapurna.",
+      "Explore Kagbeni: Visit the historic village of Kagbeni, the gateway to Upper Mustang, filled with traditional mud-brick houses and Tibetan chortens.",
+      "Ancient Salt Trade Route: Walk historic trails once used by salt traders between Nepal and Tibet, passing windswept canyons and red-rock cliffs.",
+      "Visit Chungsi Cave: A sacred meditation cliffside cave used by Guru Rinpoche (Padmasambhava) tucked near Syanbochen.",
+      "Lo Manthang – The Walled Kingdom: Discover the old capital of Mustang with its 5-story Royal Palace and centuries-old gompas (Jampa, Thubchen & Chode).",
+      "Rich Tibetan Buddhist Heritage: Experience traditional dress, prayer flags, Mani walls, and centuries-old monasteries.",
+      "Vibrant Villages: Trek through Chele, Samar, Ghami, Dhakmar, and Charang, each offering distinct character and mountain vistas.",
+      "Gyu La Pass & Muktinath Temple: Cross Gyu La Pass (4,077 m) and visit sacred Muktinath Temple, holy to both Hindus and Buddhists.",
+      "Rain-Shadow Desert Scenery: Experience dry, high-altitude desert plateaus suitable even for summer monsoon trekking."
+    ],
+    quickFacts: {
+      country: "Nepal",
+      duration: "18 Days",
+      tripGrade: "Hard",
+      maxAltitude: "4,077 m / 13,375 ft",
+      startsEnds: "Kathmandu / Kathmandu",
+      activities: "Walking / Hiking & Cultural Exploration",
+      accommodation: "3-Star Hotel in Kathmandu & Pokhara / Mountain Lodges & Teahouses",
+      meals: "Breakfast, Lunch & Dinner during trek",
+      bestTime: "Spring (March - May), Summer/Monsoon & Autumn (Sept - Nov)"
+    },
+    itinerary: [
+      {
+        day: "01",
+        title: "Arrival in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Welcome Briefing",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport pickup, hotel transfer, pre-trip briefing & guide meeting.",
+        description: "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. After check-in, we hold a pre-trip briefing to review the restricted permit requirements and introduce your trekking guide. Overnight at hotel."
+      },
+      {
+        day: "02",
+        title: "Preparation for Restricted Permit + Sightseeing in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "5-6 hrs sightseeing",
+        distance: "25 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        highlights: "Passport check for Special Permit, UNESCO tour of Kathmandu Durbar Square, Swayambhunath, Boudhanath & Pashupatinath.",
+        description: "Submit original passports to the Nepal Immigration Department for the Special Restricted Area Permit. Spend the rest of the day on a guided UNESCO World Heritage tour of Kathmandu, visiting ancient palaces at Kathmandu Durbar Square, Swayambhunath Stupa, Boudhanath Stupa, and Pashupatinath Temple. Overnight at hotel."
+      },
+      {
+        day: "03",
+        title: "Kathmandu – Pokhara",
+        altitude: "820 m / 2,690 ft",
+        walkingTime: "8-9 hrs drive",
+        distance: "200 km",
+        accommodation: "Hotel in Pokhara",
+        meals: "Breakfast",
+        modeOfTravel: "Tourist Bus / Private Vehicle",
+        highlights: "Drive through Trishuli and Marshyangdi river valleys to lakeside Pokhara.",
+        description: "Travel from Kathmandu to Pokhara by comfortable vehicle (approx. 7-8 hrs drive, or optional 25-minute domestic flight). Arrive in Pokhara, check into your hotel, and spend a relaxing evening by Phewa Lake. Overnight at hotel."
+      },
+      {
+        day: "04",
+        title: "Pokhara – Jomsom (2,700 m) – Trek to Kagbeni",
+        altitude: "2,800 m / 9,186 ft",
+        walkingTime: "3 hrs trek",
+        distance: "11 km",
+        accommodation: "Lodge at Kagbeni",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Flight / Trekking",
+        highlights: "25-min flight to Jomsom over Annapurna & Dhaulagiri, trek along Kali Gandaki riverbed past Shaligram fossils.",
+        description: "Take an early morning 25-minute flight from Pokhara to Jomsom (or 6-hr drive). Assemble with your trekking crew in Jomsom and trek for 3 hours along the Kali Gandaki riverbed to Kagbeni (2,800 m), searching for ancient black Shaligram fossils along the way. Visit 15th-century Kagchode Thubten Sampheling Gompa. Overnight at lodge."
+      },
+      {
+        day: "05",
+        title: "Kagbeni – Chele",
+        altitude: "3,050 m / 10,006 ft",
+        walkingTime: "5-6 hrs trek",
+        distance: "12 km",
+        accommodation: "Lodge at Chele",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Check restricted permit at Kagbeni, trek past Tangbe stone houses, Chhusang red cliffs & Chele village.",
+        description: "Verify your restricted area permit at the Kagbeni checkpoint and officially enter Upper Mustang. Trek through Tangbe village with its narrow whitewashed alleys, apple orchards, and barley fields. Pass Chhusang red cliffs and cross the river bridge to reach Chele village (3,050 m). Overnight at lodge."
+      },
+      {
+        day: "06",
+        title: "Chele – Samar",
+        altitude: "3,660 m / 12,007 ft",
+        walkingTime: "4-5 hrs trek",
+        distance: "10 km",
+        accommodation: "Lodge at Samar",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Cross Taklam La (3,624 m) & Dajori La (3,735 m), views of Tilicho Peak & Damodar Danda, poplar trees of Samar.",
+        description: "Climb steeply out of Chele up a rocky gully to Ghyakar village. Cross Taklam La (3,624 m) and Dajori La (3,735 m) passes, enjoying dramatic views of Tilicho Peak and Damodar Danda. Descend into Samar (3,660 m), a pleasant village shaded by poplar trees. Overnight at lodge."
+      },
+      {
+        day: "07",
+        title: "Samar – Chungsi Cave – Syanbochen",
+        altitude: "3,800 m / 12,467 ft",
+        walkingTime: "5-6 hrs trek",
+        distance: "11 km",
+        accommodation: "Lodge at Syanbochen",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Descend into deep canyon to visit sacred Chungsi Meditation Cave, cross Yamda La (3,850 m) to Syanbochen.",
+        description: "Descend into a deep gorge and trek up to Chungsi Cave—a sacred meditation cave tucked into a cliff face used by Guru Rinpoche in the 8th century. Continue ascending past Bhena and cross Yamda La pass (3,850 m) before descending gently into Syanbochen village (3,800 m). Overnight at lodge."
+      },
+      {
+        day: "08",
+        title: "Syanbochen – Ghami",
+        altitude: "3,520 m / 11,548 ft",
+        walkingTime: "5-6 hrs trek",
+        distance: "12 km",
+        accommodation: "Lodge at Ghami",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Cross Syangboche La (3,850 m) & Nyi La (4,010 m), views of Geling valley, arrive in Ghami village.",
+        description: "Ascend gradually to Syangboche La pass (3,850 m) with views over Geling valley. Continue climbing to Nyi La pass (4,010 m)—the highest point on today's route. Descend steeply into Ghami (3,520 m), one of the largest villages in Upper Mustang, surrounded by green fields and ancient monasteries. Overnight at lodge."
+      },
+      {
+        day: "09",
+        title: "Ghami – Charang",
+        altitude: "3,560 m / 11,679 ft",
+        walkingTime: "5-6 hrs trek",
+        distance: "11 km",
+        accommodation: "Lodge at Charang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Walk past the longest Mani wall in Mustang, visit 1300-yr Gekar Gompa, explore 5-story Tsarang Palace & library.",
+        description: "Trek past the longest Mani prayer wall in Mustang, intricately decorated with carved stone mantras. Visit ancient Gekar Gompa before crossing a pass into Charang (Tsarang, 3,560 m). Explore the 5-story Tsarang Palace and the ancient monastery holding rare Buddhist scriptures. Overnight at lodge."
+      },
+      {
+        day: "10",
+        title: "Charang – Lo Manthang",
+        altitude: "3,810 m / 12,500 ft",
+        walkingTime: "4-5 hrs trek",
+        distance: "13 km",
+        accommodation: "Lodge at Lo Manthang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Cross Lo La pass (3,950 m) for first panorama of walled city of Lo Manthang, enter city gates.",
+        description: "Descend into Charang canyon, cross the river, and climb steadily up to Lo La pass (3,950 m). Catch your first breathtaking view of the ancient walled city of Lo Manthang against the Tibetan plateau. Descend gently into the city gates of Lo Manthang (3,810 m). Overnight at lodge."
+      },
+      {
+        day: "11",
+        title: "Lo Manthang Exploration (Monasteries, Royal Palace & Chhoser Sky Caves)",
+        altitude: "3,810 m / 12,500 ft",
+        walkingTime: "Full day exploration",
+        distance: "15 km excursion",
+        accommodation: "Lodge at Lo Manthang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking / Horse / Jeep Excursion",
+        highlights: "Jampa Gompa, Thubchen Gompa, Chhoede Gompa, Royal Palace & multi-story Jhong Sky Cave at Chhoser.",
+        description: "Spend a full day exploring ancient Lo Manthang. Visit 15th-century Jampa Gompa, Thubchen Gompa, and active Chhoede Gompa. Take a short excursion to Chhoser to explore Jhong Cave—a multi-story cliff dwelling used for centuries as meditation cells and storage. Walk along the historic city walls. Overnight at lodge."
+      },
+      {
+        day: "12",
+        title: "Lo Manthang – Dhakmar – Ghami",
+        altitude: "3,520 m / 11,548 ft",
+        walkingTime: "6 hrs trek",
+        distance: "16 km",
+        accommodation: "Lodge at Ghami",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek high alpine meadows, descend past dramatic red rock cliffs of Dhakmar back to Ghami.",
+        description: "Begin the return trek on the highland trail, crossing high alpine pastures before dropping down a steep, eroded canyon into Dhakmar, famous for towering blood-red rock cliffs. Enjoy lunch in Dhakmar and continue down the valley to Ghami (3,520 m). Overnight at lodge."
+      },
+      {
+        day: "13",
+        title: "Ghami – Geling – Samar",
+        altitude: "3,660 m / 12,007 ft",
+        walkingTime: "6 hrs trek",
+        distance: "14 km",
+        accommodation: "Lodge at Samar",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek past Geling Tibetan village, cross Yamda La back to Samar village.",
+        description: "Trek from Ghami following a winding trail past Geling village. Re-cross Yamda La pass and descend into the quiet poplar-shaded village of Samar (3,660 m). Overnight at lodge."
+      },
+      {
+        day: "14",
+        title: "Samar – Gyu La Pass (4,077 m) – Muktinath",
+        altitude: "3,800 m / 12,467 ft (Gyu La Pass 4,077 m)",
+        walkingTime: "7.5 hrs trek",
+        distance: "16 km",
+        accommodation: "Lodge at Muktinath",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Climb Gyu La Pass (4,077 m) for mountain views, cross Chhusang river bridge, arrive at holy Muktinath Temple.",
+        description: "Climb steadily up to Gyu La Pass (4,077 m), enjoying panoramic views across Upper Mustang and snow-capped peaks. Descend through rugged canyons towards Chhusang apple orchards, then follow the trail up to holy Muktinath Temple (3,800 m). Visit the 108 stone water spouts and eternal natural flame. Overnight at lodge."
+      },
+      {
+        day: "15",
+        title: "Muktinath – Kagbeni – Jomsom",
+        altitude: "2,700 m / 8,858 ft",
+        walkingTime: "5.5 hrs trek",
+        distance: "22 km",
+        accommodation: "Lodge at Jomsom",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Descend from Muktinath to Kagbeni, trek down Kali Gandaki riverbed back to Jomsom.",
+        description: "Trek downhill from Muktinath to Kagbeni (approx. 2.5 hrs), taking in morning views of Dhaulagiri. Continue walking along the wide Kali Gandaki riverbed past Ekle Bhatti back to Jomsom (2,700 m). Celebrate the completion of the trek with your guide and porters. Overnight at lodge."
+      },
+      {
+        day: "16",
+        title: "Jomsom – Pokhara",
+        altitude: "820 m / 2,690 ft",
+        walkingTime: "25 min flight / 6 hrs drive",
+        distance: "148 km",
+        accommodation: "Hotel in Pokhara",
+        meals: "Breakfast",
+        modeOfTravel: "Flight / Private Vehicle",
+        highlights: "Morning scenic flight from Jomsom to Pokhara, free afternoon by Phewa Lake.",
+        description: "Take an early morning 25-minute flight from Jomsom to Pokhara (or overland drive if flight delayed by wind). Check into your hotel in Pokhara and spend the rest of the day relaxing, enjoying spa massages, or visiting Lakeside cafes. Overnight at hotel."
+      },
+      {
+        day: "17",
+        title: "Pokhara – Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "8-9 hrs drive",
+        distance: "200 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast & Farewell Dinner",
+        modeOfTravel: "Tourist Bus / Private Vehicle",
+        highlights: "Return drive to Kathmandu, evening official farewell dinner with cultural show.",
+        description: "Travel back to Kathmandu from Pokhara in a tourist vehicle (approx. 7-8 hrs drive). Check into your hotel and enjoy free time for souvenir shopping in Thamel. In the evening, join Zenex Travels for a traditional farewell dinner with cultural performances. Overnight at hotel."
+      },
+      {
+        day: "18",
+        title: "Departure from Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6 km",
+        accommodation: "-",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport transfer for departure flight.",
+        description: "Enjoy breakfast at your hotel. At your scheduled departure time, your Zenex Travels representative will transfer you by private vehicle to Tribhuvan International Airport for your international departure flight."
+      }
+    ],
+    includes: [
+      "Airport – Hotel – Airport transfers by private vehicle",
+      "Special Restricted Area Upper Mustang Permit (USD 500 per person)",
+      "Annapurna Conservation Area Permit Fee (ACAP)",
+      "4 nights 3-star hotel accommodation in Kathmandu & 1 night in Pokhara with breakfast",
+      "Domestic flight tickets: Kathmandu – Pokhara – Jomsom – Pokhara – Kathmandu (including guide & airport taxes)",
+      "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the 18-day trek",
+      "Accommodation at mountain teahouses and lodges during the trek",
+      "Professional Nepal Government licensed English-speaking high-altitude trekking guide",
+      "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+      "Full insurance, equipment, accommodation, meals, and salary for guide and porters",
+      "Zenex Travels duffel bag for the trek",
+      "Official Achievement Certificate for Upper Mustang Trek",
+      "Traditional Farewell Dinner in Kathmandu",
+      "All necessary government taxes, VAT, and company service charges"
+    ],
+    costIncludes: [
+      "Airport – Hotel – Airport transfers by private vehicle",
+      "Special Restricted Area Upper Mustang Permit (USD 500 per person)",
+      "Annapurna Conservation Area Permit Fee (ACAP)",
+      "4 nights 3-star hotel accommodation in Kathmandu & 1 night in Pokhara with breakfast",
+      "Domestic flight tickets: Kathmandu – Pokhara – Jomsom – Pokhara – Kathmandu (including guide & airport taxes)",
+      "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the 18-day trek",
+      "Accommodation at mountain teahouses and lodges during the trek",
+      "Professional Nepal Government licensed English-speaking high-altitude trekking guide",
+      "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+      "Full insurance, equipment, accommodation, meals, and salary for guide and porters",
+      "Zenex Travels duffel bag for the trek",
+      "Official Achievement Certificate for Upper Mustang Trek",
+      "Traditional Farewell Dinner in Kathmandu",
+      "All necessary government taxes, VAT, and company service charges"
+    ],
+    excludes: [
+      "International airfare & Nepal VISA entry fees",
+      "Personal travel and medical insurance (helicopter emergency rescue compulsory)",
+      "Bar bills, mineral water, soft drinks, beer, snacks & personal expenses",
+      "Hot showers, Wi-Fi & electric device charging fees in mountain lodges",
+      "Lunches and dinners in Kathmandu & Pokhara (except farewell dinner)",
+      "Sightseeing entrance fees to temples and monuments in Kathmandu & Pokhara",
+      "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+      "Tips and gratuities for guide and porters"
+    ],
+    costExcludes: [
+      "International airfare & Nepal VISA entry fees",
+      "Personal travel and medical insurance (helicopter emergency rescue compulsory)",
+      "Bar bills, mineral water, soft drinks, beer, snacks & personal expenses",
+      "Hot showers, Wi-Fi & electric device charging fees in mountain lodges",
+      "Lunches and dinners in Kathmandu & Pokhara (except farewell dinner)",
+      "Sightseeing entrance fees to temples and monuments in Kathmandu & Pokhara",
+      "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+      "Tips and gratuities for guide and porters"
+    ],
+    groupDiscounts: [
+      { pax: "1 - 3 Pax", price: "US$ 1,955" },
+      { pax: "4 - 7 Pax", price: "US$ 1,820" },
+      { pax: "8 - 11 Pax", price: "US$ 1,730" },
+      { pax: "12 - 15 Pax", price: "US$ 1,650" }
+    ],
+    difficultyInfo: "The 18-day Upper Mustang Trek is graded HARD. It requires walking 5 to 8 hours daily over rocky, dry, windswept trails with ascents over high passes like Nyi La (4,010 m) and Gyu La Pass (4,077 m). While technical climbing is not required, good physical stamina and acclimatization are essential.",
+    altitudeSickness: {
+      description: "Reaching a maximum altitude of 4,077 meters at Gyu La Pass and 3,810 meters at Lo Manthang, altitude sickness (AMS) can affect trekkers. Gradual ascent and acclimatization built into the 18-day itinerary keep risks low.",
+      prevention: [
+        "Trek at a slow, steady pace without rushing uphill.",
+        "Drink 3 to 4 liters of clean water daily and enjoy warm ginger/garlic soups.",
+        "Avoid alcohol, smoking, and reduce caffeine intake during high altitude trek days.",
+        "Inform your Zenex Travels guide immediately if you experience headache, nausea, or dizziness."
+      ]
+    },
+    equipmentList: [
+      { category: "Clothing", items: ["Moisture-wicking T-shirts (2-3)", "Fleece jacket & heavy down jacket (-10°C rated)", "Waterproof/windproof Gore-Tex jacket & pants", "Trekking pants (2)", "Thermal leggings", "Warm beanie & sun hat", "Inner fleece gloves & outer windproof gloves"] },
+      { category: "Footwear", items: ["Sturdy trekking boots with ankle support", "Camp sandals / crocs", "Wool trekking socks (4 pairs)"] },
+      { category: "Backpacking & Sleeping", items: ["Daypack (20-30L) with rain cover", "Duffel bag (provided by Zenex Travels)", "Four-season sleeping bag rated to -10°C (rental available in Kathmandu)"] },
+      { category: "Personal Care & Toiletries", items: ["Sunscreen (SPF 50+) & lip balm with SPF", "Water bottles / hydration bladder & purification tablets", "Wet wipes, hand sanitizer & personal first aid kit"] }
+    ],
+    extendedInfo: [
+      {
+        title: "Lo Manthang – Ancient Capital of Mustang Kingdom",
+        description: "Founded in 1380, Lo Manthang is a walled fortress city that served as the capital of the Mustang Kingdom. It preserves centuries-old royal palaces, Buddhist assembly halls, and living Tibetan culture."
+      },
+      {
+        title: "Restricted Area Permits for Upper Mustang",
+        description: "Upper Mustang is a regulated restricted zone requiring a Special Restricted Area Permit ($500 for 10 days) issued by Nepal Immigration. Zenex Travels & Tours handles all permit logistics."
+      },
+      {
+        title: "Chungsi Cave & Ancient Sky Caves",
+        description: "Upper Mustang is famous for thousands of ancient sky caves carved into vertical cliffs. Chungsi Cave near Syanbochen is a sacred 8th-century meditation site used by Guru Rinpoche."
+      },
+      {
+        title: "Why Trek with Zenex Travels & Tours?",
+        description: "Zenex Travels & Tours brings over two decades of Himalayan experience, licensed guides, flight arrangements, quality teahouse bookings, and full safety support."
+      }
+    ],
+    faqs: [
+      {
+        question: "Where is Upper Mustang located?",
+        answer: "Upper Mustang is located in northwestern Nepal inside the Mustang District along the border of Tibet, behind the Dhaulagiri and Annapurna ranges."
+      },
+      {
+        question: "How difficult is the 18-day Upper Mustang Trek?",
+        answer: "It is rated HARD due to 5-8 hours of daily walking over dry, dusty trails, high passes up to 4,077 m, and windy mountain terrain."
+      },
+      {
+        question: "Is a special permit required for Upper Mustang?",
+        answer: "Yes, a Special Restricted Area Permit (USD 500 per person for 10 days) and ACAP permit are mandatory. Zenex Travels & Tours handles all permits."
+      },
+      {
+        question: "Can I trek solo in Upper Mustang?",
+        answer: "No, government rules mandate a minimum group of 2 trekkers accompanied by a licensed guide from a registered agency like Zenex Travels & Tours."
+      },
+      {
+        question: "What accommodation is available on the trek?",
+        answer: "Lodges and teahouses in villages like Kagbeni, Chele, Ghami, Charang, and Lo Manthang provide clean twin-sharing rooms with basic facilities."
+      },
+      {
+        question: "Is internet and electricity available in Upper Mustang?",
+        answer: "Yes, major villages (Jomsom, Kagbeni, Lo Manthang) have mobile network coverage (NTC/Ncell) and teahouses offer Wi-Fi and solar battery charging for a small fee."
+      }
+    ]
   }
 ];
