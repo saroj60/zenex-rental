@@ -572,7 +572,11 @@ export const AppDataProvider = ({ children }) => {
         ensureArray(finalTreks).forEach(t => {
           if (t && (t.id || t.slug)) {
             const key = t.id || t.slug;
-            allTreksMap.set(key, { ...allTreksMap.get(key), ...t });
+            const existing = allTreksMap.get(key) || {};
+            const merged = { ...existing, ...t };
+            merged.description = t.description || t.overview || existing.description || existing.overview || '';
+            merged.overview = t.overview || t.description || existing.overview || existing.description || '';
+            allTreksMap.set(key, merged);
           }
         });
 

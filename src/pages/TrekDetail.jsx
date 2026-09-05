@@ -214,11 +214,13 @@ const TrekDetail = () => {
   const addons = getAddonsList(trek);
   const highlights = getHighlightsList(trek);
 
+  const trekDesc = trek.description || trek.overview || trek.shortDescription || '';
+
   return (
     <div className="pt-24 pb-16 min-h-screen bg-white">
       <SEO 
         title={`${trek.title} | Zenex Rental`}
-        description={trek.description}
+        description={trekDesc}
       />
 
       {/* Hero Section (Clean Image Banner / Mobile Responsive Gallery) */}
@@ -488,14 +490,14 @@ const TrekDetail = () => {
             {/* Overview text */}
             <div className="pb-6 border-b border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Explore {trek.title}</h2>
-              {typeof trek.description === 'string' && /<\/?[a-z][\s\S]*>/i.test(trek.description) ? (
+              {typeof trekDesc === 'string' && /<\/?[a-z][\s\S]*>/i.test(trekDesc) ? (
                 <div 
                   className="prose max-w-none text-[15px] text-gray-600 leading-relaxed space-y-4"
-                  dangerouslySetInnerHTML={{ __html: trek.description }}
+                  dangerouslySetInnerHTML={{ __html: trekDesc }}
                 />
               ) : (
                 <p className="text-[15px] text-gray-600 leading-relaxed whitespace-pre-wrap">
-                  {trek.description}
+                  {trekDesc}
                 </p>
               )}
             </div>
