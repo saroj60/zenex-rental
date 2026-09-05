@@ -23,6 +23,7 @@ const TrekDetail = () => {
   const [date, setDate] = useState('');
   const [persons, setPersons] = useState(2);
   const [isDiscountOpen, setIsDiscountOpen] = useState(false);
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
   
   // Active tab state for sticky nav
   const [activeTab, setActiveTab] = useState('overview');
