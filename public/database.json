@@ -7962,6 +7962,456 @@
           "answer": "Spring (March to May) and Autumn (September to November) offer clear skies, stable weather, and optimal mountain visibility."
         }
       ]
+    },
+    {
+      "id": "rolwaling-tashi-lapcha-pass-trek-19d",
+      "slug": "rolwaling-tashi-lapcha-pass-trek-19d",
+      "title": "Rolwaling Tashi Lapcha Pass Trek - 19 Days",
+      "region": "rolwaling",
+      "regionName": "Rolwaling Region",
+      "location": "Rolwaling Valley & Khumbu Region, Dolakha & Solukhumbu Districts, Nepal",
+      "duration": "19",
+      "durationUnit": "Days",
+      "price": "US$2,850",
+      "originalPrice": "US$3,150",
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "difficulty": "Hard",
+      "maxAltitude": "5,755 m / 18,881 ft",
+      "starts": "Kathmandu",
+      "ends": "Kathmandu",
+      "activities": "Walking / Hiking & High Pass Crossing",
+      "accommodation": "Hotels / Lodges / Tented camp",
+      "meals": "Breakfast, Lunch & Dinner",
+      "bestSeason": "Spring & Autumn",
+      "image": "https://www.visithimalayastrek.com/uploads/galleries/rolwaling-trek-4256.webp",
+      "gallery": [
+        "https://www.visithimalayastrek.com/uploads/galleries/rolwaling-trek-4256.webp",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBvR9hDgkzFPmMdZP0o19x5MPQzvM1nHvYhOSxUQRdYtYcMmTj1H3t81w&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdHbM-oDWLWL3fDmHFyGlylbEMFdUMC4p_g0HTsKwlPwTxtGdLZBLI8KI&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZ9O8bQB0BAWbf5A_62O7nG0jSrwIeK6kctcpo69W75i0dNZr-FAwbrY8&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGu0lPRP2KSS8TDS5zJ_V_sJ5KLHn_4qlaJOU_ffZAtN2b9V6KJP2e2Nwu&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM3N00s8YESEZAdhraCo9KxIj_iTJ4sTbSKXymaaYvYQ&s=10"
+      ],
+      "overview": "\n      <h3>Rolwaling Tashi Lapcha Pass Trek - 19 Days | High Mountain Pass & Glacial Expedition to Everest Region</h3>\n      <p>The <strong>Rolwaling – Tashi Lapcha Pass Trek (19 Days)</strong> is a formidable, remote, and thrilling Himalayan expedition that connects the secluded Rolwaling Valley with the iconic Everest (Khumbu) region across the high-altitude <strong>Tashi Lapcha Pass (5,755m)</strong>. Starting from the low mid-hills of Singati, the route leads through terraced fields, deep river gorges, and ancient Tamang and Sherpa villages including Simigaon, Beding, and Na.</p>\n      <p>Trekkers explore the turquoise glacial waters of <strong>Tsho Rolpa Lake (4,580m)</strong> before venturing onto the icy moraine of the Trakarding Glacier and Pachermo Base Camp. Crossing the technical Tashi Lapcha Pass (5,755m) requires fixed ropes, crampons, ice axes, and expert mountaineering Sherpas. Standing at the pass summit rewards climbers with breathtaking 360-degree views of Everest (8,848m), Cho Oyu, Makalu, Shishapangma, Pumori, Pachermo Peak, and Mount Gaurishankar (7,145m). The descent leads into the Khumbu region, passing Thame, Namche Bazaar, and concluding with a scenic flight from Lukla to Kathmandu.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage complete expedition logistics—including Special Rolwaling Restricted Area Permits, Gaurishankar Conservation Area Permits (GCAP), Sagarmatha National Park Permits, Khumbu Rural Municipality Permits, domestic Lukla flight tickets, full tented camping gear, climbing Sherpa guides, cooks, and porters.</p>\n    ",
+      "highlights": [
+        "Cross the formidable Tashi Lapcha Pass (5,755m) — one of Nepal's highest and most adventurous mountain pass crossings.",
+        "Connect two iconic regions: the pristine, remote Rolwaling Valley and the classic Everest (Khumbu) Region.",
+        "Trek across the vast icefields of Tsho Rolpa Glacier and Trakarding Glacier to Pachermo Base Camp.",
+        "Stand at Tsho Rolpa Glacial Lake (4,580m) — one of Nepal's largest high-altitude glacial lakes.",
+        "Witness 360° panoramas of Himalayan giants including Everest (8,848m), Cho Oyu, Makalu, Gaurishankar, and Pachermo Peak.",
+        "Explore traditional Sherpa and Tamang cultural strongholds of Simigaon, Beding, Na, Thame, and Namche Bazaar.",
+        "Enjoy full high-wilderness tented camping support with dedicated cooks, kitchen staff, and spacious tents.",
+        "Scenic mountain flight from Lukla to Kathmandu overlooking the eastern Himalayan ranges.",
+        "Full expedition management by Zenex Travels & Tours including all restricted permits, climbing gear, and licensed Sherpas."
+      ],
+      "quickFacts": {
+        "country": "Nepal",
+        "duration": "19 Days",
+        "tripGrade": "Hard",
+        "maxAltitude": "5,755 m / 18,881 ft",
+        "startsEnds": "Kathmandu / Kathmandu",
+        "starts": "Kathmandu",
+        "ends": "Kathmandu",
+        "activities": "Walking / Hiking & High Pass Crossing",
+        "accommodation": "Hotels / Lodges / Tented camp",
+        "meals": "Breakfast, Lunch & Dinner",
+        "bestTime": "Spring & Autumn"
+      },
+      "itinerary": [
+        {
+          "day": "01",
+          "title": "Arrival in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "6 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Briefing",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport pickup, hotel check-in, pre-trip briefing & guide meeting.",
+          "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. We hold a short pre-trip briefing to inspect mountaineering/climbing gear, review permits, and introduce your guide. Overnight at hotel."
+        },
+        {
+          "day": "02",
+          "title": "Free day / Permit Preparation in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "10 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast",
+          "modeOfTravel": "Free day / Sightseeing",
+          "highlights": "Restricted permit processing (Rolwaling & Sagarmatha) & optional UNESCO sightseeing (Swoyambhunath, Boudhanath, Pashupatinath).",
+          "description": "Reserved day for acquiring the Special Restricted Area Permit for Rolwaling Valley. Enjoy optional guided sightseeing across UNESCO World Heritage sites in Kathmandu or relax in Thamel. Overnight at hotel."
+        },
+        {
+          "day": "03",
+          "title": "Kathmandu - Singati (950 m)",
+          "altitude": "950 m / 3,116 ft",
+          "walkingTime": "7 hours drive",
+          "distance": "145 km",
+          "accommodation": "Lodge at Singati",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Scenic drive through Bhaktapur & Dolalghat along Tamakoshi river valley to Singati.",
+          "description": "Drive early morning from Kathmandu along winding hill roads past Bhaktapur, Dolalghat, and Charikot down to Singati (950m) along the Tamakoshi River. Overnight at lodge."
+        },
+        {
+          "day": "04",
+          "title": "Singati - Jagat (1,150 m)",
+          "altitude": "1,150 m / 3,772 ft",
+          "walkingTime": "5 hours",
+          "distance": "12 km",
+          "accommodation": "Lodge at Jagat",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Trek along Tamakoshi River, cross suspension bridges & green terraced rice fields.",
+          "description": "Begin trekking from Singati alongside the Tamakoshi River. The trail is gentle, passing small agricultural hamlets, terraced rice fields, and suspension bridges. Reach the riverside village of Jagat (1,150m). Overnight at lodge."
+        },
+        {
+          "day": "05",
+          "title": "Jagat - Simigaon (2,036 m)",
+          "altitude": "2,036 m / 6,679 ft",
+          "walkingTime": "6 hours",
+          "distance": "11 km",
+          "accommodation": "Lodge at Simigaon",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Cross Tamakoshi bridge, climb steep forest trail to Sherpa-Tamang ridge village of Simigaon.",
+          "description": "Trek along the river road to Chhetchhet, cross the suspension bridge over the Tamakoshi River, and begin a steady uphill climb through forests and terraced slopes. Arrive at Simigaon (2,036m), a peaceful Sherpa and Tamang village with a prominent monastery. Overnight at lodge."
+        },
+        {
+          "day": "06",
+          "title": "Simigaon - Kelthang Kharka (3,700 m)",
+          "altitude": "3,700 m / 12,139 ft",
+          "walkingTime": "6 hours",
+          "distance": "11 km",
+          "accommodation": "Tented camp",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Visit Simigaon Monastery, trek dense rhododendron & bamboo forests to alpine pasture Kelthang Kharka.",
+          "description": "Visit Simigaon Monastery before ascending through thick rhododendron, pine, and bamboo forests. As altitude increases, vegetation opens up to reveal sub-alpine pasture clearings. Reach Kelthang Kharka (3,700m). Overnight at tented camp."
+        },
+        {
+          "day": "07",
+          "title": "Kelthang Kharka – Beding (3,740 m)",
+          "altitude": "3,740 m / 12,270 ft",
+          "walkingTime": "6 hours",
+          "distance": "10 km",
+          "accommodation": "Tented camp",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Trek high Rolwaling river gorge, suspension bridges, enter main Sherpa settlement of Beding.",
+          "description": "Trek along the upper Rolwaling river gorge, crossing suspension bridges over glacial streams. Arrive in Beding (3,740m), the largest traditional Sherpa settlement in the Rolwaling Valley. Overnight at tented camp."
+        },
+        {
+          "day": "08",
+          "title": "Beding - Na (4,180 m)",
+          "altitude": "4,180 m / 13,713 ft",
+          "walkingTime": "4 hours",
+          "distance": "7 km",
+          "accommodation": "Lodge at Na",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Gentle trek along U-shaped valley floor, close-up vistas of Mount Gaurishankar to Na.",
+          "description": "A gentle 4-hour walk along the glacial valley floor past Buddhist Mani walls and stupas. Enjoy breathtaking close-up views of Mount Gaurishankar (7,145m). Reach Na (4,180m), a high alpine summer settlement. Overnight at lodge."
+        },
+        {
+          "day": "09",
+          "title": "Acclimatization day at Na & Hike to Tso Rolpa Lake (4,540 m)",
+          "altitude": "4,540 m / 14,895 ft",
+          "walkingTime": "4-5 hours",
+          "distance": "8 km round trip",
+          "accommodation": "Lodge at Na",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking / Excursion",
+          "highlights": "Acclimatization day hike to turquoise Tsho Rolpa Glacial Lake (4,540m) & return to Na.",
+          "description": "Essential acclimatization day. Take a day hike up to **Tsho Rolpa Lake (4,540m)**—Nepal's largest glacial lake. Marvel at turquoise waters framed by icefalls and snow peaks. Return to Na for rest. Overnight at lodge."
+        },
+        {
+          "day": "10",
+          "title": "Na – Thakkarding (4,610 m)",
+          "altitude": "4,610 m / 15,124 ft",
+          "walkingTime": "7 hours",
+          "distance": "10 km",
+          "accommodation": "Tented camp",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Glacier Trekking & Camping",
+          "highlights": "Trek over Tsho Rolpa Glacier moraine, vistas of Yalung, Ramdung & Pachermo Peaks.",
+          "description": "Climb past Tsho Rolpa Lake and enter the glacial moraine trail of Trakarding Glacier. Navigate ice and scree terrain with views of Yalung Peak, Ramdung Peak, and Pachermo. Set up tented camp at Thakkarding (4,610m). Overnight at tented camp."
+        },
+        {
+          "day": "11",
+          "title": "Thakkarding – Pachermo Base Camp (4,735 m)",
+          "altitude": "4,735 m / 15,534 ft",
+          "walkingTime": "6 hours",
+          "distance": "9 km",
+          "accommodation": "Tented camp",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Glacier Trekking & Camping",
+          "highlights": "Trek along Trakarding Glacier lateral moraine beneath towering rock walls & icefalls.",
+          "description": "Ascend along the rocky lateral moraine of Trakarding Glacier. Surrounded by sheer icefalls and granite faces, reach Pachermo Base Camp (4,735m). Inspect climbing gear and fixed ropes with guides. Overnight at tented camp."
+        },
+        {
+          "day": "12",
+          "title": "Pachermo Base Camp – Tashi Lapcha High Camp (5,700 m)",
+          "altitude": "5,700 m / 18,700 ft",
+          "walkingTime": "5-6 hours",
+          "distance": "7 km",
+          "accommodation": "Tented camp",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "High Pass Ascent & Camping",
+          "highlights": "Steep climb over snow & ice slopes to Tashi Lapcha High Camp (5,700m) below Pachermo peak.",
+          "description": "Ascend steeply over snowfields and ice slopes towards **Tashi Lapcha High Camp (5,700m)**, situated on the southwest face of Pachermo Peak. Air is thin and cold. Rest early for tomorrow's pass crossing. Overnight at tented camp."
+        },
+        {
+          "day": "13",
+          "title": "Tashi Lapcha High Camp - Tashi Lapcha Pass (5,755 m) - Phedi (5,110 m)",
+          "altitude": "5,755 m / 18,881 ft (Pass summit)",
+          "walkingTime": "7-8 hours",
+          "distance": "11 km",
+          "accommodation": "Tented camp",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Technical Pass Crossing & Camping",
+          "highlights": "Cross technical Tashi Lapcha Pass (5,755m) using fixed ropes, 360° views of Everest, Makalu & Cho Oyu, descent to Phedi.",
+          "description": "Alpine pre-dawn start. Climb steep snow/ice slopes to **Tashi Lapcha Pass (5,755m)**, using fixed ropes and crampons guided by Sherpas. Stand at the pass summit for breathtaking 360° panoramas of Everest (8,848m), Makalu, Cho Oyu, Shishapangma, Pumori, and Kanchenjunga. Descend ice slopes down to Phedi (5,110m). Overnight at tented camp."
+        },
+        {
+          "day": "14",
+          "title": "Phedi - Thame Village (3,820 m)",
+          "altitude": "3,820 m / 12,532 ft",
+          "walkingTime": "6 hours",
+          "distance": "12 km",
+          "accommodation": "Lodge at Thame",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Descend into Khumbu region, juniper & rhododendron forests, historic Sherpa village of Thame.",
+          "description": "Descend out of glacial pass terrain into the upper Khumbu Valley. Walk past juniper and rhododendron woods into Thame (3,820m), home to legendary Everest Sherpas and historic Thame Monastery. Overnight at lodge."
+        },
+        {
+          "day": "15",
+          "title": "Thame Village - Namche Bazaar (3,440 m)",
+          "altitude": "3,440 m / 11,286 ft",
+          "walkingTime": "4-5 hours",
+          "distance": "10 km",
+          "accommodation": "Lodge at Namche Bazaar",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Trek high trail along Bhote Koshi river to famous Sherpa capital of Namche Bazaar.",
+          "description": "Trek along a gentle undulating trail high above the Bhote Koshi River. Reach **Namche Bazaar (3,440m)**, the vibrant mountain amphitheater capital of the Khumbu region. Explore cafes, bakeries, and markets. Overnight at lodge."
+        },
+        {
+          "day": "16",
+          "title": "Namche Bazar – Phakding – Lukla (2,840 m)",
+          "altitude": "2,840 m / 9,317 ft",
+          "walkingTime": "7-8 hours",
+          "distance": "21 km",
+          "accommodation": "Lodge at Lukla",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Descend Namche hill, cross Dudh Koshi suspension bridges via Phakding back to Lukla.",
+          "description": "Descend steeply down Namche hill, cross the Hillary Suspension Bridge over the Dudh Koshi River, and trek past Phakding back up to Lukla (2,840m). Celebrate the expedition completion with your trekking crew. Overnight at lodge."
+        },
+        {
+          "day": "17",
+          "title": "Lukla – Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "35 min flight",
+          "distance": "135 km flight",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast",
+          "modeOfTravel": "Flight / Private Vehicle",
+          "highlights": "Scenic morning flight Lukla to Kathmandu with panoramic mountain views.",
+          "description": "Board an early morning flight from Lukla back to Kathmandu (or Ramechhap flight connection). Transfer by private vehicle to your hotel and rest. Overnight at hotel."
+        },
+        {
+          "day": "18",
+          "title": "Reserve day in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "10 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Farewell Dinner",
+          "modeOfTravel": "Free day",
+          "highlights": "Reserve day for flight contingencies, Thamel shopping & official Zenex Travels farewell dinner.",
+          "description": "Buffer reserve day in Kathmandu in case of flight delays from Lukla. Enjoy free time for souvenir shopping in Thamel and join your Zenex Travels team for an official farewell dinner. Overnight at hotel."
+        },
+        {
+          "day": "19",
+          "title": "Departure from Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "6 km",
+          "accommodation": "-",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport transfer for international departure flight.",
+          "description": "Enjoy breakfast at your hotel. At your scheduled departure time, our Zenex Travels representative will transfer you to Tribhuvan International Airport for your return flight home."
+        }
+      ],
+      "includes": [
+        "Flight tickets: Lukla – Kathmandu / Ramechhap including guide/cook and airport taxes",
+        "Airport - Hotel - Airport transfers by private vehicle",
+        "4 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Private vehicle ground transportation Kathmandu – Singati",
+        "Special Restricted Area Permit (Rolwaling) + Gaurishankar Conservation Area Permit (GCAP)",
+        "Sagarmatha National Park Entry Permit + Khumbu Rural Municipality Entry Permit",
+        "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during lodge and camping sections",
+        "Tea house lodge accommodation during lodge sections and full tented camping gear during high pass crossing",
+        "Full camping gear: 2-person tents, dining tent, kitchen tent, toilet tent & cooking utensils",
+        "Professional Nepal Government licensed English-speaking high-altitude trekking guide & climbing Sherpa guide",
+        "Experienced camping cook, kitchen helpers, and porters (1 porter for 2 trekkers, carrying up to 20-22 kg total)",
+        "Full insurance, equipment, clothing, food, and daily wages for guide, Sherpa, cook, and porters",
+        "Group climbing gear (fixed ropes, snow bars, ice screws)",
+        "Porters local bus ticket Lukla – Jiri – Kathmandu",
+        "Zenex Travels duffel bag for the trek",
+        "Official Achievement Certificate for Rolwaling Tashi Lapcha Pass Trek",
+        "Traditional Farewell Dinner in Kathmandu",
+        "All necessary government taxes, VAT, and company service charges"
+      ],
+      "costIncludes": [
+        "Flight tickets: Lukla – Kathmandu / Ramechhap including guide/cook and airport taxes",
+        "Airport - Hotel - Airport transfers by private vehicle",
+        "4 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Private vehicle ground transportation Kathmandu – Singati",
+        "Special Restricted Area Permit (Rolwaling) + Gaurishankar Conservation Area Permit (GCAP)",
+        "Sagarmatha National Park Entry Permit + Khumbu Rural Municipality Entry Permit",
+        "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during lodge and camping sections",
+        "Tea house lodge accommodation during lodge sections and full tented camping gear during high pass crossing",
+        "Full camping gear: 2-person tents, dining tent, kitchen tent, toilet tent & cooking utensils",
+        "Professional Nepal Government licensed English-speaking high-altitude trekking guide & climbing Sherpa guide",
+        "Experienced camping cook, kitchen helpers, and porters (1 porter for 2 trekkers, carrying up to 20-22 kg total)",
+        "Full insurance, equipment, clothing, food, and daily wages for guide, Sherpa, cook, and porters",
+        "Group climbing gear (fixed ropes, snow bars, ice screws)",
+        "Porters local bus ticket Lukla – Jiri – Kathmandu",
+        "Zenex Travels duffel bag for the trek",
+        "Official Achievement Certificate for Rolwaling Tashi Lapcha Pass Trek",
+        "Traditional Farewell Dinner in Kathmandu",
+        "All necessary government taxes, VAT, and company service charges"
+      ],
+      "excludes": [
+        "International airfare & Nepal VISA fees",
+        "Personal travel and medical insurance (helicopter emergency rescue compulsory)",
+        "Personal climbing gear (crampons, ice axe, harness, helmet, mountaineering boots)",
+        "Lunches & dinners in Kathmandu (except farewell dinner)",
+        "Hot showers, Wi-Fi, battery charging & bottled beverages in mountain lodges",
+        "Sightseeing entry fees to temples and monuments in Kathmandu",
+        "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+        "Tips and gratuities for guides, climbing Sherpas, cook, and porters"
+      ],
+      "costExcludes": [
+        "International airfare & Nepal VISA fees",
+        "Personal travel and medical insurance (helicopter emergency rescue compulsory)",
+        "Personal climbing gear (crampons, ice axe, harness, helmet, mountaineering boots)",
+        "Lunches & dinners in Kathmandu (except farewell dinner)",
+        "Hot showers, Wi-Fi, battery charging & bottled beverages in mountain lodges",
+        "Sightseeing entry fees to temples and monuments in Kathmandu",
+        "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+        "Tips and gratuities for guides, climbing Sherpas, cook, and porters"
+      ],
+      "groupDiscounts": [
+        {
+          "pax": "1 - 3 Pax",
+          "price": "US$ 2,850"
+        },
+        {
+          "pax": "4 - 7 Pax",
+          "price": "US$ 2,650"
+        },
+        {
+          "pax": "8 - 11 Pax",
+          "price": "US$ 2,480"
+        }
+      ],
+      "difficultyInfo": "The 19-day Rolwaling Tashi Lapcha Pass Trek is graded HARD / STRENUOUS. It involves crossing a 5,755m technical mountain pass over snow and ice using fixed ropes, traversing moraines and glaciers (Trakarding Glacier), multi-day tented camping at high altitude, and 6 to 9 hours of daily walking. Prior high-altitude trekking experience and technical preparation are required.",
+      "altitudeSickness": {
+        "description": "Reaching a maximum elevation of 5,755 meters at Tashi Lapcha Pass, altitude sickness (AMS) is a significant consideration. Gradual ascent rates, acclimatization rest days at Na (4,180m), and experienced guide monitoring ensure safety.",
+        "prevention": [
+          "Ascend at a steady pace without overexertion.",
+          "Utilize acclimatization rest days built into the itinerary at Na.",
+          "Drink 3 to 4 liters of clean water and warm fluids daily.",
+          "Inform your Zenex Travels guide immediately if experiencing AMS symptoms."
+        ]
+      },
+      "equipmentList": [
+        {
+          "category": "Climbing & Technical Gear",
+          "items": [
+            "Climbing harness & helmet",
+            "Crampons (compatible with mountaineering boots)",
+            "General mountaineering ice axe",
+            "Carabiners (2 locking, 2 non-locking)",
+            "Belay/rappel device & Jumar ascender",
+            "Mountaineering boots"
+          ]
+        },
+        {
+          "category": "Clothing & Layers",
+          "items": [
+            "Moisture-wicking base layers (2-3)",
+            "Fleece jacket & heavy expedition down jacket (-20°C rated)",
+            "Waterproof and windproof Gore-Tex jacket & pants",
+            "Trekking pants (2) & thermal leggings",
+            "Insulated summit mittens & fleece gloves",
+            "Warm beanie, sun hat & buff"
+          ]
+        },
+        {
+          "category": "Footwear & Backpacks",
+          "items": [
+            "Sturdy high-altitude trekking boots",
+            "Lightweight camp shoes / sandals",
+            "Thermal wool socks (4-5 pairs)",
+            "Daypack (20-30L) with rain cover",
+            "Zenex Travels duffel bag for porters"
+          ]
+        },
+        {
+          "category": "Sleeping & Gear",
+          "items": [
+            "Four-season sleeping bag rated to -20°C",
+            "Adjustable trekking poles",
+            "UV protection glacier sunglasses",
+            "Headlamp with extra batteries",
+            "Water bottles, purification tablets & personal first aid kit"
+          ]
+        }
+      ],
+      "extendedInfo": [
+        {
+          "title": "Tashi Lapcha Pass (5,755 m)",
+          "description": "Tashi Lapcha Pass (5,755m) is a high technical Himalayan pass connecting the Rolwaling Valley to the Khumbu (Everest) Region."
+        },
+        {
+          "title": "Tsho Rolpa & Trakarding Glaciers",
+          "description": "Trekkers traverse the moraine and icefields of Tsho Rolpa and Trakarding Glaciers surrounded by towering Himalayan peaks."
+        },
+        {
+          "title": "Why Trek with Zenex Travels & Tours?",
+          "description": "Zenex Travels & Tours provides experienced climbing Sherpas, complete camping gear, flight logistics, transparent pricing, and safety support."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Where is the Rolwaling Tashi Lapcha Trek located?",
+          "answer": "It connects the Rolwaling Valley in Dolakha district with the Everest (Khumbu) region in Solukhumbu district across Tashi Lapcha Pass (5,755m)."
+        },
+        {
+          "question": "How difficult is the Tashi Lapcha Pass Trek?",
+          "answer": "The trek is graded HARD / STRENUOUS. It involves crossing a 5,755m technical pass requiring fixed ropes, crampons, ice axes, and multi-day glacier camping."
+        },
+        {
+          "question": "What permits are required for the Tashi Lapcha Trek?",
+          "answer": "You need the Special Rolwaling Restricted Area Permit, Gaurishankar Conservation Area Permit (GCAP), Sagarmatha National Park Permit, and Khumbu Rural Municipality Permit, all arranged by Zenex Travels & Tours."
+        },
+        {
+          "question": "Is camping required on the Tashi Lapcha Pass Trek?",
+          "answer": "Yes, while lower trail sections have teahouses, upper pass sections (Thakkarding to Phedi) require full wilderness tented camping with dedicated cooks."
+        },
+        {
+          "question": "When is the best time for the Tashi Lapcha Pass Trek?",
+          "answer": "Spring (March to May) and Autumn (September to November) offer optimal weather, stable snow conditions on the pass, and clear mountain views."
+        }
+      ]
     }
   ],
   "destinations": [],
