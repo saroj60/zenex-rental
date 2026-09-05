@@ -1553,14 +1553,16 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges & Homestays",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (September - November)",
-    image: "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+    image: "https://questhimalayan.com/wp-content/uploads/2023/03/Tamang-Heritage-Trek.jpg",
     gallery: [
-      "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
-      "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
-      "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
-      "https://hillsherpatrekking.com/wp-content/uploads/2025/08/kyanjima-1.webp",
-      "https://api.escapehimalaya.com/media/featured/langtang-gosainkunda-helambu-trek-1711350634.jpg",
-      "https://www.apexasiaholidays.com/wp-content/uploads/2018/09/Lantang-Helambu-Gosaikunda-Lake-Trek-Nepal.jpg"
+      "https://questhimalayan.com/wp-content/uploads/2023/03/Tamang-Heritage-Trek.jpg",
+      "https://peacefulnepal.com/wp-content/uploads/2025/08/Langtang-valley-scaled.jpg",
+      "https://images.unsplash.com/photo-1725017323744-2a1bc339c179?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhbmd0YW5nJTIwdmFsbGV5JTIwdHJla3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQctISVHNfUkluZhYLFmGrPlGXGEZlETtL7xB-UQ6cgoAK6q7PgshkHfS8&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ECdfRlkcrUsQDpwd5PvE0Myat2Bx8-qS7td21fzM25ctY5XkIKfjCXNt&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOiXhD2ju4JJ5hXkkBxJjNsknCa8p_lO-zmgtFk85mrkXcbMm49HsMUU&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDi2iVYJHwR8DRtt8fOqDiA7xZuaHr7e4GSgqDMbsSFGe_mCamIqlonoU&s=10",
+      "https://www.magnificenthimalayan.com/public/uploads/WhatsApp%20Image%202023-06-22%20at%2010.19.21.jpeg"
     ],
     overview: `
       <h3>Tamang Heritage and Langtang Valley Trek | Cultural Homestays, Hot Springs & Glacial Peaks</h3>
