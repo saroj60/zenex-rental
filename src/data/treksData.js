@@ -3866,13 +3866,15 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Mountain Teahouses & Tented Camping",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (Sept - Nov)",
-    image: "https://media.hikingadventuretreks.com/uploads/fullbanner/upper-mustang-trek-banner.webp",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgONcDOQ9m18ZrPg9owmEDtK8jS1V5mUHBMbkw_EJ_2QkjdVaGWJTz83I0&s=10",
     gallery: [
-      "https://media.hikingadventuretreks.com/uploads/fullbanner/upper-mustang-trek-banner.webp",
-      "https://www.culturaltreks.com/assets/images/upper-mustang/lo-manthang-lori-gompa/gallery/lo-manthang-lori-gompa-with-muktinath-trek.jpg",
-      "https://nepalmotherhousetreks.com/uploads/package/gallery/tangya-upper-mustang.webp",
-      "https://media.app.himalayanecstasynepal.com/uploads/media/upper-mustang-camping-trek/luri-gumba.jpg",
-      "/images/upper mustang.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgONcDOQ9m18ZrPg9owmEDtK8jS1V5mUHBMbkw_EJ_2QkjdVaGWJTz83I0&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8t60nskGIXECK4tHsdbCn5MCs8266grvQc93uBbIFZDwWUJbBmX7hUno&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRFc9dbV2Mx5fGl2xIK3YUSMpiPP3j0sSC31hT75r69ypeo2vtzpqcTE&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQumZVE4ug3_b7m02O7_fNOI9jAI-9EqpsPW75wMwpXI40CAoQtyDX-ZN0&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXhuUyB2Zj1S_kLsR7E661y4vNCkg3dpeGtTszrTi4ybKp-2WL6IhU7Dc&s=10",
+      "https://northnepaltrek.com/filemanager/uploads/community%20of%20upper%20mussatng%202-29.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aTWoTsjs4j5Di3v4-R0seUgNi9hTxNsut818NZ-stbGka7MfoxU1WkOq&s=10"
     ],
     overview: `
       <h3>Nar Phu and Upper Mustang Trek 27 Days | High Altitude Wilderness & Trans-Himalayan Pass Expedition</h3>
