@@ -443,9 +443,9 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges on Trail",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (September - December)",
-    image: "https://www.thirdrockadventures.com/assets-back/images/blog/langtang-trek-complete-guide.jpg",
+    image: "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
     gallery: [
-      "https://www.thirdrockadventures.com/assets-back/images/blog/langtang-trek-complete-guide.jpg",
+      "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-cSiHGPWfEOIwa8wqrzZJpWvj_fC-GP1ujFfw_3D77f8iLbiJ3i2US4-W&s=10",
       "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
       "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
