@@ -77,7 +77,7 @@ const DEFAULT_TREK_DESTINATIONS = [
   {
     id: 'REG-trk-kan',
     slug: 'kanchenjunga',
-    name: 'Kanchenjunga Discoveries',
+    name: 'Kanchenjunga Region Treks',
     displayName: 'KANCHENJUNGA REGION TREKS',
     country: 'Nepal',
     type: 'Treks',
