@@ -26,9 +26,9 @@ const routes = [
 ];
 
 const galleryImages = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdg3_UvWEPHQouJ-9lyCfgrzZJxSSwjZVOodJC50OSs62dSSTlEjOni5E&s=10",
+  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80",
   "https://img.12go.asia/0/plain/s3://12go-web-static/static/images/operator/28480/class/4807-outside.jpeg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiDEI2rGPgnfDSiphdpUj3vrIbQtp1OwedNKJL7cC7aCQrO-QnrMRbgWZt&s=10",
+  "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80",
   "https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg"
 ];
 

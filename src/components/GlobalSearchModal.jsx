@@ -13,7 +13,7 @@ const STATIC_VEHICLES = [
   { id: 5, name: 'Mahindra Scorpio', type: 'SUV / 4x4', img: 'https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg' },
   { id: 6, name: 'Standard Car', type: 'Sedan', img: 'https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg' },
   { id: 7, name: 'Tourist Bus', type: 'Minibus', img: 'https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg' },
-  { id: 8, name: 'Toyota Coaster', type: 'Minibus', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTmOTRvXlpRu1DFUtFy-oRCbC0EZtbBoNC490O4k9-g&s=10' },
+  { id: 8, name: 'Toyota Coaster', type: 'Minibus', img: 'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80' },
   { id: 9, name: 'Wedding Cars', type: 'Luxury', img: '/vehicles/wedding car.avif' },
   { id: 10, name: 'Self Drive Cars', type: 'Economy', img: '/vehicles/self drive.jpg' },
 ];

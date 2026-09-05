@@ -4080,7 +4080,7 @@ The tour concludes with a return to Kathmandu, where you’ll explore the ancien
     <img src="https://econepaltrekkers.com/wp-content/uploads/2024/07/pexels-photo-6872553.webp" alt="Himalayan Views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
   </div>
   <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv5ec7WPrRZvgu1Hnxo0S0pANgOQE1WHhaOw&s" alt="Cultural Sites" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+    <img src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?auto=format&fit=crop&w=1200&q=80" alt="Cultural Sites" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
   </div>
 </div>
 
@@ -5983,7 +5983,7 @@ The final day of your 10 Days Nepal Tour with Lumbini includes visits to Swayamb
     <img src="https://lumbinidevtrust.gov.np/upload_file/images/slider/1721894939_276597348_lumbini.jpg" alt="Lumbini Sacred Garden" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
   </div>
   <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdf-1q2D2gKUn6sDvE_lzEoe8thBDlrf5XrQ&s" alt="Buddhist Monasteries" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80" alt="Buddhist Monasteries" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
   </div>
   <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
     <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0d/0c/bd/25.jpg" alt="Chitwan Safari Experience" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
@@ -9246,7 +9246,7 @@ Whether you're tracking tigers in Bardiya or exploring the historical sites of K
     <img src="https://republicaimg.nagariknewscdn.com/shared/web/uploads/media/TigerBardia-1200x560_20201027200017.jpg" alt="Tiger Tracking" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
   </div>
   <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYif5ULV0SfS-KOOG0IOCXiotYqbk8Adj4Rg&s" alt="Bardia Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+    <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80" alt="Bardia Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
   </div>
   <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
     <img src="https://tigerencounter.com/wp-content/uploads/2026/01/Tiger-Cubs-in-Bardia-A-Rare-Sighting-That-Shows-Conservation-Is-Working.jpg" alt="Tiger Cubs" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />

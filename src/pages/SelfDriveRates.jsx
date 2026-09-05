@@ -21,9 +21,9 @@ const models = [
 ];
 
 const galleryImages = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAOaHguRl2Bw0sfnTWEXtHm64fVnXOf5A9onFp3SSn7Q&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpBG3xp5_0UQL07EbIuAj8J2FA73wUFWc8KEtCSUabJg&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-CQUP4HYJ07TbSMzFTuezs6NTRIpr1tMGY6lOMNaxRA&s=10",
+  "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
   "https://autoncell.com/storage/x75I8HLAiD7oGljmNeNIBluVZz0fx3e8ip9g2mn4.webp"
 ];
 

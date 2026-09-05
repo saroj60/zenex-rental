@@ -24,11 +24,11 @@ const routes = [
 ];
 
 const galleryImages = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf5AEEWTdCXS-nVhbgnQYywscAhWhhq2BWK0xi1AGA2A&s=10",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbKjzRgUbeHVQzWvuYKBT9IwgEib29zNREKG1BF3KO9w&s=10",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCEzP6Bit30tnnIX2CZVaK7eyt_Czfru4OqFRSA3z_5g&s=10",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1umKKxpq6uMN24Bb65tqnomWdyy59tOm76_qi8-XA7w&s=10",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2z-VZAkkxQ7dLSk42VCVlLP9ayqHL_CIpL-W34US5zQ&s=10"
+  "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80"
 ];
 
 const HiaceRoutes = () => {

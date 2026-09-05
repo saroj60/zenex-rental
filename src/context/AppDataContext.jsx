@@ -16,7 +16,7 @@ const initialVehicles = [
   { id: 5, name: 'Mahindra Scorpio', type: 'SUV / 4x4', price: 8000, priceWithDriver: 10000, img: 'https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg', seats: 7, trans: 'Manual', fuel: 'Diesel', luggage: 4, rating: 4.9, seoTitle: 'Rent Mahindra Scorpio in Nepal - Zenex Travels', seoDescription: 'Hire Mahindra Scorpio 4x4 SUV with driver. Perfect for offroad tours to Mustang, Muktinath, and Rara Lake.' },
   { id: 6, name: 'Standard Car', type: 'Sedan', price: 5500, priceWithDriver: 7000, img: 'https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg', seats: 4, trans: 'Manual', fuel: 'Petrol', luggage: 2, rating: 4.8, seoTitle: 'Rent Standard Car in Kathmandu - Zenex Travels', seoDescription: 'Hire standard Nissan or other sedan/hatchback cars for comfortable city tours and inter-city travels in Nepal.' },
   { id: 7, name: 'Tourist Bus', type: 'Minibus', price: 15000, priceWithDriver: 18000, img: 'https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg', seats: 35, trans: 'Manual', fuel: 'Diesel', luggage: 15, rating: 4.9, seoTitle: 'Rent Tourist Bus in Nepal - Zenex Travels', seoDescription: 'Rent comfortable 30-35 seater tourist bus for group sightseeing tours across Pokhara, Chitwan, and Lumbini.' },
-  { id: 8, name: 'Toyota Coaster', type: 'Minibus', price: 12000, priceWithDriver: 15000, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTmOTRvXlpRu1DFUtFy-oRCbC0EZtbBoNC490O4k9-g&s=10', seats: 22, trans: 'Manual', fuel: 'Diesel', luggage: 8, rating: 4.8, seoTitle: 'Rent Toyota Coaster in Kathmandu - Zenex Travels', seoDescription: 'Spacious 22-seater Toyota Coaster rental with professional driver. Best for medium-sized group tours in Nepal.' },
+  { id: 8, name: 'Toyota Coaster', type: 'Minibus', price: 12000, priceWithDriver: 15000, img: 'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80', seats: 22, trans: 'Manual', fuel: 'Diesel', luggage: 8, rating: 4.8, seoTitle: 'Rent Toyota Coaster in Kathmandu - Zenex Travels', seoDescription: 'Spacious 22-seater Toyota Coaster rental with professional driver. Best for medium-sized group tours in Nepal.' },
   { id: 9, name: 'Wedding Cars', type: 'Luxury', price: 8000, priceWithDriver: 12000, img: '/vehicles/wedding car.avif', seats: 4, trans: 'Automatic', fuel: 'Petrol', luggage: 2, rating: 5.0, seoTitle: 'Luxury Wedding Car Rental in Kathmandu - Zenex Travels', seoDescription: 'Premium luxury cars for wedding events. Hire decorated vintage, luxury, or modern cars for your special day in Nepal.' },
   { id: 10, name: 'Self Drive Cars', type: 'Economy', price: 5000, priceWithDriver: 5000, img: '/vehicles/self drive.jpg', seats: 5, trans: 'Manual', fuel: 'Petrol', luggage: 3, rating: 4.7, seoTitle: 'Self Drive Car Rental in Kathmandu - Zenex Travels', seoDescription: 'Rent cars for self-driving in Nepal. Flexible daily, weekly, and monthly rates. Drive your own adventure.' }
 ];
@@ -435,9 +435,9 @@ const initialGallery = [
   { id: 'G-5', url: 'https://images.unsplash.com/photo-1611516491426-03025e6043c8?q=80&w=1333&auto=format&fit=crop', title: 'Cultural Heritage' },
   { id: 'G-6', url: 'https://images.unsplash.com/photo-1553886334-43d24f24d3bd?q=80&w=1177&auto=format&fit=crop', title: 'Wildlife Encounters' }
 ,
-  { id: 'G-7', url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpBJN1DqlFxqoaHMMIsrOf0IcCYycsT3hb0-ziYzHm3Q&s=10', title: 'Helicopter Return 1' },
-  { id: 'G-8', url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0wlvt4a57yn0n-R9EbGDDuFH1XgVOC2P9SCPo2OdZxQ&s=10', title: 'Helicopter Return 2' },
-  { id: 'G-9', url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiAqV4I_xhUpiNUuIa_VM6y1pj7pC-AIgNQ_laaHfKQg&s=10', title: 'Helicopter Return 3' }
+  { id: 'G-7', url: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80', title: 'Helicopter Return 1' },
+  { id: 'G-8', url: 'https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80', title: 'Helicopter Return 2' },
+  { id: 'G-9', url: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80', title: 'Helicopter Return 3' }
 ];
 
 const initialTestimonials = [

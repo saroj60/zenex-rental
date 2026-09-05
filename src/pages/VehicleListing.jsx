@@ -65,7 +65,7 @@ const VehicleListing = () => {
     { title: 'Mahindra Scorpio', price: 8000, img: 'https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg' },
     { title: 'Standard Car', price: 5500, img: 'https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg' },
     { title: 'Tourist Bus', price: 15000, img: 'https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg' },
-    { title: 'Toyota Coaster', price: 12000, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTmOTRvXlpRu1DFUtFy-oRCbC0EZtbBoNC490O4k9-g&s=10' },
+    { title: 'Toyota Coaster', price: 12000, img: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80' },
     { title: 'Wedding Cars', price: 8000, img: '/vehicles/wedding car.avif' },
     { title: 'Self Drive Cars', price: 5000, img: '/vehicles/self drive.jpg' }
   ];

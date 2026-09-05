@@ -30,9 +30,9 @@ const models = [
 ];
 
 const galleryImages = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy8CZG6TpisCO4Y-ZnRPy3U6eQtyNxJ0kfqS56wnxJea-sLrxaEXaN0S2p&s=10",
+  "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
   "https://www.vivaanadventure.com/wp-content/uploads/2021/03/received_1697574793740466.jpeg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvfiRo6ZKudQCPdfbbLwSWnmgjxHxr0I0Hcly_tAuSA&s=10"
+  "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80"
 ];
 
 const CarModels = () => {

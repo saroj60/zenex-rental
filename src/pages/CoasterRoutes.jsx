@@ -9,9 +9,9 @@ const routes = [
 ];
 
 const galleryImages = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTmOTRvXlpRu1DFUtFy-oRCbC0EZtbBoNC490O4k9-g&s=10",
+  "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80",
   "https://www.toyota.com.sg/-/media/ae9ceaa9654747a8a51de8e84c0d98e2.png",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFS-LLze5d0RrvAzczJSlY48osdODcYY4sH7rTXcTLizIbEnAMaBzEjE&s=10"
+  "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=80"
 ];
 
 const CoasterRoutes = () => {
@@ -35,7 +35,7 @@ const CoasterRoutes = () => {
           <img
             alt="Toyota Coaster"
             className="w-full h-full object-cover object-center"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTmOTRvXlpRu1DFUtFy-oRCbC0EZtbBoNC490O4k9-g&s=10"
+            src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
         </div>

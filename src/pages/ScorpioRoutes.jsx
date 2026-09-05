@@ -29,7 +29,7 @@ const routes = [
 ];
 
 const galleryImages = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwmgftVaf1QfhTnOyffarA3_Ce0T-eEiypS2f1X_dSLKduufaTE1bfCak&s=10",
+  "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
   "https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg",
   "https://images.hindustantimes.com/auto/img/2022/09/06/1600x900/Mahindra_Scorpio_Classic_review_1662168947639_1662442851152_1662443416695_1662443416695.jpg",
   "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Scorpio/10765/1754638266191/front-right-view-120.jpg"

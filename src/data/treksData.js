@@ -23,13 +23,13 @@ export const treksData = [
     image: "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/Tsum-valley-trek-1.webp",
     gallery: [
       "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/Tsum-valley-trek-1.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu0V6pvlPDGobIBIg34zgQMXEHFS5YP-z2bC32OcyFTok_Q23752v5rXY&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE4Szvo8_AkN0K7JENCGHZszJ78Di3rpn9arVnG-6GFtNlFvbYbEDx28M&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3i4gE1-6dK0UbsHPkUcgEG52pwFgNOI0Jvfif54m7RgoXrvuHk1pqkXr9&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJEst-OkBCb8hB_hYL-6OEFRYnHRKoIhd-x-QOUdvV6yhNGU8aa3ddq6b&s=10",
+      "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80",
       "https://www.nepalguideinfo.com/new/wp-content/uploads/2024/03/Manaslu-Tsum-Valley-Trek.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6VNX_spuTrrxGl_hi9sIuXHLBuWnnCF7GoctkJc6SC2wxO6iAak6tYWY&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWGItNuHd2fQX6zXVAmDUQ3zF70jk5pAwZsk4DXbSQcw&s=10",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80",
       "https://hike.bidhee.net/media/packages/featured/Tsum_valley.jpg",
       "https://www.nepalecotrekking.com/public/uploads/tsum-valley-trek-2.jpg"
     ],
@@ -446,7 +446,7 @@ export const treksData = [
     image: "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
     gallery: [
       "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-cSiHGPWfEOIwa8wqrzZJpWvj_fC-GP1ujFfw_3D77f8iLbiJ3i2US4-W&s=10",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
       "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
       "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
       "https://i.pinimg.com/736x/40/23/81/4023812490863bcf8f8b228a12570582.jpg",
@@ -1564,10 +1564,10 @@ export const treksData = [
       "https://questhimalayan.com/wp-content/uploads/2023/03/Tamang-Heritage-Trek.jpg",
       "https://peacefulnepal.com/wp-content/uploads/2025/08/Langtang-valley-scaled.jpg",
       "https://images.unsplash.com/photo-1725017323744-2a1bc339c179?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhbmd0YW5nJTIwdmFsbGV5JTIwdHJla3xlbnwwfHwwfHx8MA%3D%3D",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQctISVHNfUkluZhYLFmGrPlGXGEZlETtL7xB-UQ6cgoAK6q7PgshkHfS8&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ECdfRlkcrUsQDpwd5PvE0Myat2Bx8-qS7td21fzM25ctY5XkIKfjCXNt&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOiXhD2ju4JJ5hXkkBxJjNsknCa8p_lO-zmgtFk85mrkXcbMm49HsMUU&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDi2iVYJHwR8DRtt8fOqDiA7xZuaHr7e4GSgqDMbsSFGe_mCamIqlonoU&s=10",
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80",
       "https://www.magnificenthimalayan.com/public/uploads/WhatsApp%20Image%202023-06-22%20at%2010.19.21.jpeg"
     ],
     overview: `
@@ -1944,10 +1944,10 @@ export const treksData = [
       "https://questhimalayan.com/wp-content/uploads/2023/03/Tamang-Heritage-Trek.jpg",
       "https://peacefulnepal.com/wp-content/uploads/2025/08/Langtang-valley-scaled.jpg",
       "https://images.unsplash.com/photo-1725017323744-2a1bc339c179?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhbmd0YW5nJTIwdmFsbGV5JTIwdHJla3xlbnwwfHwwfHx8MA%3D%3D",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQctISVHNfUkluZhYLFmGrPlGXGEZlETtL7xB-UQ6cgoAK6q7PgshkHfS8&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ECdfRlkcrUsQDpwd5PvE0Myat2Bx8-qS7td21fzM25ctY5XkIKfjCXNt&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOiXhD2ju4JJ5hXkkBxJjNsknCa8p_lO-zmgtFk85mrkXcbMm49HsMUU&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDi2iVYJHwR8DRtt8fOqDiA7xZuaHr7e4GSgqDMbsSFGe_mCamIqlonoU&s=10",
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80",
       "https://www.magnificenthimalayan.com/public/uploads/WhatsApp%20Image%202023-06-22%20at%2010.19.21.jpeg"
     ],
     overview: `
@@ -2264,13 +2264,13 @@ export const treksData = [
     image: "https://langtang.com/wp-content/uploads/2024/09/WhatsApp-Image-2026-04-13-at-4.50.06-PM-768x1024.jpeg",
     gallery: [
       "https://langtang.com/wp-content/uploads/2024/09/WhatsApp-Image-2026-04-13-at-4.50.06-PM-768x1024.jpeg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5S1QO2fZ-jFWlHNHIvsBnpWGsw9s6-HhYUG4soFSrxSmGSbk81eUwkn5Q&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQuWiRLPfKdQ_VMbFohWN50JcME6fVa19IepJN4iZ4v9WTw38rv5UnZHc&s=10",
+      "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80",
       "https://media.exploreradventure.com/uploads/media/Altitude-Sickness-in-Ganja-La-Pass.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXxosH05bqowPQwf2kMO_6rBdF-vd43M7FzwdEtQrm_HXvO0zUloiQVw&s=10",
+      "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80",
       "https://www.peacenepaltreks.com/uploads/langtang-ganjala-trek.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQahFaORvEBr-p5LkJDiAigleJxk4NR9FbFVTWZkB--N6yI_oM-r0KUmt8&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPdZ9uvXDP-Cc8pm1pGwVr5r5-asUQLsI_5J37Ct7cK5nkSRNA1UQRYDE&s=10"
+      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Langtang Ganja La Pass Trek | High Altitude Technical Pass & Himalayan Camping Expedition</h3>
@@ -2660,7 +2660,7 @@ export const treksData = [
       "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/Mustang-Trekking-2.jpg",
       "https://www.teamhimalaya.com/_next/image?url=https%3A%2F%2Ffis-api.teamhimalaya.com%2Fmedia%2Ftrip-gallery%2Fmedia-8937ef3e-1769667761.jpg&w=1920&q=75",
       "https://visithimalayastrek.com/uploads/photos/1/Lo-Manthang-Upper-Mustang.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsqw6BO7aalaKxU0kOJQeIoIE0utp_qXpcu_1aGqZzS23WDuxplYupWat7&s=10",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80",
       "https://media.app.regulusnepal.com/uploads/media/badimalika/upper-mustang.jpg"
     ],
     overview: `
@@ -3032,10 +3032,10 @@ export const treksData = [
     image: "https://media.hikingadventuretreks.com/uploads/fullbanner/upper-mustang-trek-banner.webp",
     gallery: [
       "https://media.hikingadventuretreks.com/uploads/fullbanner/upper-mustang-trek-banner.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_lJ0TwMGmgkg-KnjzgQlGABUVLd21El3cyl3ro2qOSQptMWaRKPGBfV0&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwLn2TcKgLSOVuKKW2CGuE3OHFoSmkQ39BtMohZruDxc0_FTW2_G5oO_9N&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEn_goIMLPo7yX66QSpTHcX6T-VMUPKigMDfQlHI7ROMD6b98XlHwXTmw&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_KKGYBqdGEIwiMLTVhSSjLsr-Axsa2L52kkSKkwBhsDk3DJ9zgqA7XI&s=10"
+      "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Short Upper Mustang Trek 18 Days | Discover Nepal's Forbidden Kingdom & Tibetan Culture</h3>
@@ -3426,11 +3426,11 @@ export const treksData = [
     image: "https://www.culturaltreks.com/assets/images/upper-mustang/lo-manthang-lori-gompa/gallery/lo-manthang-lori-gompa-with-muktinath-trek.jpg",
     gallery: [
       "https://www.culturaltreks.com/assets/images/upper-mustang/lo-manthang-lori-gompa/gallery/lo-manthang-lori-gompa-with-muktinath-trek.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpKtlyhpo3SYkcLGppeI3-AN5j_Gqk9fZ4j8fmrR3r0M51lsHNxvRxkbLO&s=10",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
       "https://nepalmotherhousetreks.com/uploads/package/gallery/tangya-upper-mustang.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5LVCqhoL53iDjP3E_SM2m7TsPpCfxu6Yg7Ltzpqjam3CQ7vF6NFTYbec&s=10",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
       "https://media.app.himalayanecstasynepal.com/uploads/media/upper-mustang-camping-trek/luri-gumba.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqPGZiy_3Al0ukcZFYCX5K4JzRD5zCbHy9b8I-7Bl_utSUrftR-5BY4mMI&s=10"
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Upper Mustang Trek with Luri Gompa 22 Days | Hidden Kingdom & Sacred Cliffside Cave Monastery</h3>
@@ -3866,15 +3866,15 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Mountain Teahouses & Tented Camping",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (Sept - Nov)",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgONcDOQ9m18ZrPg9owmEDtK8jS1V5mUHBMbkw_EJ_2QkjdVaGWJTz83I0&s=10",
+    image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgONcDOQ9m18ZrPg9owmEDtK8jS1V5mUHBMbkw_EJ_2QkjdVaGWJTz83I0&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8t60nskGIXECK4tHsdbCn5MCs8266grvQc93uBbIFZDwWUJbBmX7hUno&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRFc9dbV2Mx5fGl2xIK3YUSMpiPP3j0sSC31hT75r69ypeo2vtzpqcTE&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQumZVE4ug3_b7m02O7_fNOI9jAI-9EqpsPW75wMwpXI40CAoQtyDX-ZN0&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXhuUyB2Zj1S_kLsR7E661y4vNCkg3dpeGtTszrTi4ybKp-2WL6IhU7Dc&s=10",
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80",
       "https://northnepaltrek.com/filemanager/uploads/community%20of%20upper%20mussatng%202-29.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aTWoTsjs4j5Di3v4-R0seUgNi9hTxNsut818NZ-stbGka7MfoxU1WkOq&s=10"
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Nar Phu and Upper Mustang Trek 27 Days | High Altitude Wilderness & Trans-Himalayan Pass Expedition</h3>
@@ -4406,15 +4406,15 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (Sept - Nov)",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLauRBbrO3TSDBHlt4F4AvvIXv3cPfH9OnualDKq1Npv1m7q02NiXvy-A&s=10",
+    image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLauRBbrO3TSDBHlt4F4AvvIXv3cPfH9OnualDKq1Npv1m7q02NiXvy-A&s=10",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
       "https://media.greenvalleynepaltreks.com/uploads/fullbanner/kanchenjunga-base-camp-trek.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8aO3H6Tw4UPnuLn4YpHl0yje4h1gtYz6QF94r-gJhQ4Vn_SLK6M4rEkI&s=10",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
       "https://boldadventuresnepal.com/wp-content/uploads/2025/06/kanchenjunga-north-base-camp-trek-1.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0nk9dr96FhlsT43S3D6F9uSMObgyGq9R1RWut4mpyqZyfXKTvhLugWHY&s=10",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
       "https://www.wondersofnepal.com/wp-content/uploads/2020/08/kanchenjunga-trek_1545198984.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvbkx9KQTW0NJwx2b5Hy5HB3x8a3Oxy8rK-ErmKbs5vWqVs5rOoY5ubd0&s=10"
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Kanchenjunga North Base Camp Trek 17 Days | Expedition to Mount Kanchenjunga (8,586 m)</h3>
@@ -4700,16 +4700,16 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (Sept - Nov)",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBF7spFKgaVlZ7RZ030ffp29MaHDDfoScUmlgdQLh3_Bl8tGSVfb1gQX3&s=10",
+    image: "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHBF7spFKgaVlZ7RZ030ffp29MaHDDfoScUmlgdQLh3_Bl8tGSVfb1gQX3&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLauRBbrO3TSDBHlt4F4AvvIXv3cPfH9OnualDKq1Npv1m7q02NiXvy-A&s=10",
+      "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
       "https://media.greenvalleynepaltreks.com/uploads/fullbanner/kanchenjunga-base-camp-trek.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8aO3H6Tw4UPnuLn4YpHl0yje4h1gtYz6QF94r-gJhQ4Vn_SLK6M4rEkI&s=10",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
       "https://boldadventuresnepal.com/wp-content/uploads/2025/06/kanchenjunga-north-base-camp-trek-1.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0nk9dr96FhlsT43S3D6F9uSMObgyGq9R1RWut4mpyqZyfXKTvhLugWHY&s=10",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
       "https://www.wondersofnepal.com/wp-content/uploads/2020/08/kanchenjunga-trek_1545198984.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvbkx9KQTW0NJwx2b5Hy5HB3x8a3Oxy8rK-ErmKbs5vWqVs5rOoY5ubd0&s=10"
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Kanchenjunga South Base Camp Trek 14 Days | Untouched Eastern Himalayan Wilderness</h3>
@@ -4974,9 +4974,9 @@ export const treksData = [
     gallery: [
       "https://www.pioneeradventure.com/uploads/images/2018-12-17_21:23:26-68X8BhWGUeyIZBDdGao7f2EBZcQh1D.jpeg",
       "https://www.himalayantrekkingpath.com/_next/image?url=https%3A%2F%2Fmedia.app.himalayantrekkingpath.com%2Fuploads%2Ffullbanner%2Fkanchenjunga-trek-nepal-2.webp&w=3840&q=75&dpl=dpl_3KNdaNwCDiUgUVh4mjVZ9wigSein",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogALCcCSscl7fEY0j9DyJyiqvAt83LEwq1ESSem7lPsM6-T-2AN8_xj8&s=10",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
       "https://i0.wp.com/www.langtangtreks.com/blog/wp-content/uploads/2026/01/Kanchenjunga-Trek-Itinerary.png?fit=748%2C748&ssl=1",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwHNpNp0A8vzNki3m7D2-uIebNR6r3SMSCZTK5qFMLrFbJ8jl52ZMg_AK&s=10",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
       "https://media.greenvalleynepaltreks.com/uploads/package/kanchenjunga-base-camp-trek.webp"
     ],
     overview: `
@@ -5303,13 +5303,13 @@ export const treksData = [
     accommodation: "3-Star Hotel in KTM & Nepalgunj / Mountain Lodges & Tented Camps",
     meals: "Breakfast in KTM & Nepalgunj, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May), Summer & Autumn (Sept - Nov)",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4Ne4lpPa3EHxM2LySDv_AIrI3ouLj8ZaIR1V3v4W5jlBZaVHCD7IiINh&s=10",
+    image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4Ne4lpPa3EHxM2LySDv_AIrI3ouLj8ZaIR1V3v4W5jlBZaVHCD7IiINh&s=10",
+      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
       "https://himalayanecologicaltrek.com/uploads/fullbanner/lower-dolpo.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA5c7VRlMfPzm20S6aLIgib5UCM908ixGj5mZU4SODnQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyI0baCcwfg4TNx5H3qFjfqhnI-csg7RFwEcZxWwdyMmm7WJ5_DjWPQI&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2gzCzhrl3EWlStncG8j48LMGe_Tk4I2uTeokzNKNqcSmhAfAzJYM3HLO&s=10"
+      "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Lower Dolpo Trek from Jhuphal 18 Days | High Altitude Wilderness & Phoksundo Lake Expedition</h3>
@@ -5598,8 +5598,8 @@ export const treksData = [
     gallery: [
       "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/dolpo.jpg",
       "https://himalayantrekkers.com/_next/image?url=https%3A%2F%2Fapi.himalayantrekkers.com%2Fapi%2Ffile-upload%2Ftrips%252FMarch2021%252Fupper-dolpo-trek-Tinje-village.jpg&w=1920&q=75",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQySI7eWgBNvOrjxM7lVJnj7J8yI-g4LoOrR2816bThua3IS6eeiAI76mk&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5enAYAziq_aOB0Igw1uX-3WXMzkLMd0TYOuSUf-FxTlpurMejYFu3Kzgo&s=10"
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Upper Dolpo Trek 25 Days | Sacred Shey Gompa, Phoksundo Lake & High Pass Trans-Himalayan Expedition</h3>
@@ -5941,13 +5941,13 @@ export const treksData = [
     duration: "17 Days",
     price: "US$2,450",
     difficulty: "Hard",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3pjDfi19Iju0AESQ8Nlb7Lj0DDwIX-zaCHQM4GqlBeNAkT0X_031R-8&s=10",
+    image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3pjDfi19Iju0AESQ8Nlb7Lj0DDwIX-zaCHQM4GqlBeNAkT0X_031R-8&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjoEVuFH1vtbXMSnYpd__suxHuThD3VsGEfN2vCev-Qz4kBtbc6z6ERMT&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ22b6UA4E23xnfn6INdSqK_op8A6l4NbGlg-msMzqbgwibcMTwszImMs&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRRlAOpbQz3agae6OTRP8LyjGgFGZI2Wmi10XKHgm3m4SjleV-vCeJ9qY&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZzSHSjJfzfW_6VU9eCFGYMCO0MFQtQCouKnXOLBwyUaZ_pyu9xiTnCcW&s=10"
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
     ],
     quickFacts: {
       duration: "17 Days",
@@ -6288,10 +6288,10 @@ Accommodation is a mix of basic village tea houses (Dunai, Juphal, Ringmo) and w
     image: "https://www.blossomexpeditions.com/wp-content/uploads/2025/12/dhorpatan-lower-dolpo-trek2.webp",
     gallery: [
       "https://www.blossomexpeditions.com/wp-content/uploads/2025/12/dhorpatan-lower-dolpo-trek2.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3VNkCY9GUgs8gbyba_fGi_U7eW8x-IDf2_FvHZZY775Fz9xkDjSFNd1Ar&s=10",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
       "https://langtang.com/wp-content/uploads/2025/07/8-1-1024x689.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2V5rbx8DyAsWXaTm1GVFWi-y9QtJ-tz2aysQeLRDFQ-dnKhaoxgOQGQ&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLh-Aq4c5U0aHTF1u3k-x1hKKiEbpalYRuD52aNJjHZcxJF8s4shnKGxXE&s=10"
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80"
     ],
     quickFacts: {
       duration: "23 Days",
@@ -6725,9 +6725,9 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
     gallery: [
       "https://www.thirdrockadventures.com/assets-back/images/trip/dhampus-peak-clmbing.jpgEnX.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Thapa_Peak.jpg/1280px-Thapa_Peak.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTze9SYS9A5CCAUyj9buMJ-NpnSgCyVZiDwVz9EkZiTsg&s",
+      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
       "https://www.yogisadventure.com/_next/image?url=https%3A%2F%2Fapi.yogisadventure.com%2Fuploads%2F5d1713c4-58a5-4da0-b753-65368ee3120f.jpg&w=3840&q=75",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQ6LyyPZdoDxHcv9kk4-GUinENiKCsEFi1LVQDCQq0APAJfQDKGQFKrE&s=10",
+      "https://images.unsplash.com/photo-1516655855035-d5215bcb5604?auto=format&fit=crop&w=1200&q=80",
       "https://i0.wp.com/www.langtangtreks.com/blog/wp-content/uploads/2019/12/short-everest-base-camp-trek-7-days-1.jpg?resize=819%2C460&ssl=1"
     ],
     overview: `
@@ -7162,10 +7162,10 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
     image: "https://missionecotrek.com/wp-content/uploads/2024/08/Dhaulagiri-Circuit-Trek-575x513.webp",
     gallery: [
       "https://missionecotrek.com/wp-content/uploads/2024/08/Dhaulagiri-Circuit-Trek-575x513.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO_G0_Zf6-tODzdj0Nmc5Hmj4tZ8RyA1hKwolkSyJTlDdAHmtaP3WLwiO0&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHPpKwf5puGa8HL_MFogpx80k7dkyNUG6wWAC_s3P38NlG3O5EczDye0U&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2yLUZnNoNo_ZeESWVCMmhB7NCL2omTDwQdisw7LfS_gN41KuMI3NRqQBc&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDKxsr5HQZ63JiTYRaTD1fER1-fCT-NevpqdCcOuGJmxpOA2-9Ey0Y5ZEK&s=10"
+      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Dhaulagiri Circuit Trek - 17 Days | High Altitude Glacial Expedition & Pass Crossing</h3>
@@ -7565,9 +7565,9 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
     image: "https://www.himalayajourneys.com/assets/images/off-the-beaten/rolwaling-trek.jpg",
     gallery: [
       "https://www.himalayajourneys.com/assets/images/off-the-beaten/rolwaling-trek.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPkpxEVbEm6-Yhi2ZDYtqNzjHR1p3in-kW65RYx1gKVOltIl67stb5hYcq&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MMhAfHRe010efHSo2zG_RhwMR6wudt5bMEkWP9w9YFIdoifIcicCvgI&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXO9AwbvlkhlCelAmGcXoP2dIdKkGZk4F3_KNBhrYOluwyQjzrsqlyw9c&s=10",
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
       "https://alpineecotrek.com/wp-content/uploads/2023/01/Rowaling-Trekkinggal3.webp",
       "/trek images/Rolwaling Region Treks.jpg"
     ],
@@ -7979,11 +7979,11 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
     image: "https://www.visithimalayastrek.com/uploads/galleries/rolwaling-trek-4256.webp",
     gallery: [
       "https://www.visithimalayastrek.com/uploads/galleries/rolwaling-trek-4256.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBvR9hDgkzFPmMdZP0o19x5MPQzvM1nHvYhOSxUQRdYtYcMmTj1H3t81w&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdHbM-oDWLWL3fDmHFyGlylbEMFdUMC4p_g0HTsKwlPwTxtGdLZBLI8KI&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZ9O8bQB0BAWbf5A_62O7nG0jSrwIeK6kctcpo69W75i0dNZr-FAwbrY8&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGu0lPRP2KSS8TDS5zJ_V_sJ5KLHn_4qlaJOU_ffZAtN2b9V6KJP2e2Nwu&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM3N00s8YESEZAdhraCo9KxIj_iTJ4sTbSKXymaaYvYQ&s=10"
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1516655855035-d5215bcb5604?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Rolwaling Tashi Lapcha Pass Trek - 19 Days | High Mountain Pass & Glacial Expedition to Everest Region</h3>
@@ -8427,7 +8427,7 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
       "https://www.alpineadventureclub.com/_next/image?url=https%3A%2F%2Fwww.alpineadventureclub.com%2Fuploads%2Flapchi_trek_03_3536122f82.webp&w=3840&q=75",
       "https://media.mountainrocktreks.com/uploads/package/bimthang-manaslu-trek.webp",
       "https://thebluespace.com/wp-content/uploads/2021/12/sarah-2-555x790.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmVZ9VxAMHprv1iSca4uipEaRmCIIMJjaOcfDG7XNwLaM8Aqy-1ArX850&s=10",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80",
       "https://api.enticinghimalayas.com/uploads/activities/b75a72ec-49bc-4d9f-8e0b-a87ba0a67c81.webp"
     ],
     overview: `
@@ -8748,10 +8748,10 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
       "https://media.mountgloryadventures.com/uploads/fullbanner/makalu-base-camp-trekking.webp",
       "https://socialtreknepal.com/wp-content/uploads/2025/02/trekkers-trekking-makalu-base-camp.jpg",
       "https://8kexpeditions.com/uploaded_images/package/package-1719397573.jpeg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHApJRnpJrluvbgFQxN9f6RWrwLzqquO30TSdTfpDwwJmSdZW9QtgHaDU&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRADa89pqun0sHLzPFLvz_KHFeTNQLMOWsy_tv8y0GBdsdRpoGc4VNX-LbX&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfMuNoscuzOHjLvJt6zUBrcIh-nr8Mg8RqacY44Eey-aaKG51snkdl6k0&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSrMGYPTExdJqyFN1pqaRlvJv2AsZz2C4qQECL5ZSXfPHQ9QnluZz3vDg&s=10"
+      "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `Makalu Base Camp Trek in Nepal of 18 days is one of the challenging as well as beautiful off-the-beaten-path journey in the Eastern part of Nepal. This trek is one the less explored destination with the less flow of tourist en route, making it perfect for the travellers who want to escape huge crowd while trekking in Himalayas and enjoy serene mother nature. Makalu Base Camp is one of the high altitude trek in Nepal with the chance to explore the diverse culture and serene nature of the eastern side of Nepal along with the Himalayan wilderness.
 
@@ -9015,8 +9015,8 @@ Organized by Zenex Travels & Tours with full safety equipment, experienced mount
       "https://admin.buddhaair.com/upload/blog/thumbnail/1574327215_jYmkI_1567571648-ebeyj-makalu.webp",
       "https://wildernessexcursion.com/_next/image?url=https%3A%2F%2Fmedia.app.wildernessexcursion.com%2Fuploads%2Ffullbanner%2Fview-of-mount-makalu-and-a-blue-lake-from-kongma-la-pass.webp&w=3840&q=75&dpl=dpl_HCc9D1rQjzpLEeq9FyyGvkGQtxh8",
       "https://www.highpassadventure.com/public/uploads/Guide%20and%20porter%20Hire%20for%20Makalu%20Base%20Camp%20Trek.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIs4HEMGawS_zcZ3KXT1dC4dKTLKld9YqgxeptO_nRQYcxui9vUF3GEKU&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREBquo7zhRcf4il1XQLjePZQzXfNZ45YgMc1oZDuOMMCOnM6akhyezM8qY&s=10"
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `Makalu Three Pass Trek (via Sherpani Col, Baruntse Col & Amphu Laptse) is one of Nepal’s most demanding, technical, and adventurous high-altitude expedition treks. Starting from Tumlingtar in the Makalu region and concluding at Lukla in the Khumbu Everest region, this 25-day grand Himalayan traverse connects two iconic mountain wildernesses across three formidable high passes above 5,800 meters.
 
@@ -9355,9 +9355,9 @@ Organized with full expedition support by Zenex Travels & Tours, including certi
     heroImage: "https://www.bestheritagetour.com/public/images/upload/package/slider/api-himal-trek-5-1.jpg",
     gallery: [
       "https://www.bestheritagetour.com/public/images/upload/package/slider/api-himal-trek-5-1.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-WbzEh7JCfiuT2ZgdoF-nxC0XUpnEVx2_KBjJi5VTJQJh5K2gUAxuknip&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYSCVirilV29iPsMpvfp9Eqc296Do0bgXprZXAemhJPouPA51ojWCHuvC4&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjrby-4xB1AiEvQaSjMVifeztnzKSv4u5GJJ67eQGmOu-H6s9Dm74eL-7&s=10"
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `Api Himal Base Camp Trekking (Api Base Camp Trek), located in the remote Far Western Region of Nepal, is one of the most pristine, uncrowded, and untouched trekking destinations in the Himalayas. Named after Mount Api (7,132m)—the highest peak in far-western Nepal—this off-the-beaten-path camping adventure is ideal for travelers seeking solitude, authentic mountain heritage, and raw Himalayan wilderness.
 
@@ -9613,7 +9613,7 @@ Organized by Zenex Travels & Tours with full logistics, private 4WD transfers, e
       "https://media.nepaltrekadventures.com/uploads/package/gallery/thumb/rara-lake-trek.webp",
       "https://english.onlinekhabar.com/wp-content/uploads/2022/08/khaptad-wildflower-1024x683.jpg",
       "https://res.cloudinary.com/tourhq/image/upload/fl_progressive,f_auto,h_507,w_900,g_auto,c_fill,q_auto/y7ljpujvgo5o4wqnmge3",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpn1iYd23CMpa-z5zjUoXxfekL3eB8t7OlUAC5VegpW_HqRaG5B6ckCRE&s=10",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
       "https://www.himalayastrek.com/public/uploads/Rara-to-Khaptad-trekking.jpg942224955jpg"
     ],
     overview: `The Jumla – Rara Lake Trek takes you through some of Nepal’s most stunning, quiet, and untouched landscapes in the far-western Karnali region. Starting with a mountain flight to Jumla, you traverse the Jaljala Pass (3,580m) offering breathtaking views of snowy Himalayan ranges before entering the historic Sinja Valley—the ancient capital of the Khasa Malla Kingdom and the birthplace of the written Khas (Nepali) language.

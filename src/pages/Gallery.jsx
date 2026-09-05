@@ -106,7 +106,7 @@ const CURATED_GALLERY_ITEMS = [
   },
   {
     id: 'c-12',
-    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpBJN1DqlFxqoaHMMIsrOf0IcCYycsT3hb0-ziYzHm3Q&s=10',
+    url: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80',
     title: 'Everest Heli Tour Return',
     category: 'Helicopter & Scenic',
     location: 'Kala Patthar / Everest View',
