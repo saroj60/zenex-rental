@@ -9624,6 +9624,251 @@
           "answer": "Spring (March to May) offers blooming rhododendrons and mild temperatures, while Autumn (September to November) offers crisp blue skies and stable mountain weather."
         }
       ]
+    },
+    {
+      "id": "jumla-rara-trek-13d",
+      "slug": "jumla-rara-trek-13d",
+      "title": "Jumla - Rara Trek - 13 Days",
+      "region": "far-west",
+      "category": "Far-Western Region Treks",
+      "location": "Rara National Park, Karnali Region, Far-Western Nepal",
+      "duration": "13 Days",
+      "maxAltitude": "3,690 m",
+      "difficulty": "Moderate",
+      "bestSeason": "Spring (Mar-May) & Autumn (Sep-Nov)",
+      "groupSize": "1 - 12 Persons",
+      "price": 1450,
+      "originalPrice": 1680,
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "image": "https://media.nepaltrekadventures.com/uploads/package/gallery/thumb/rara-lake-trek.webp",
+      "heroImage": "https://media.nepaltrekadventures.com/uploads/package/gallery/thumb/rara-lake-trek.webp",
+      "gallery": [
+        "https://media.nepaltrekadventures.com/uploads/package/gallery/thumb/rara-lake-trek.webp",
+        "https://english.onlinekhabar.com/wp-content/uploads/2022/08/khaptad-wildflower-1024x683.jpg",
+        "https://res.cloudinary.com/tourhq/image/upload/fl_progressive,f_auto,h_507,w_900,g_auto,c_fill,q_auto/y7ljpujvgo5o4wqnmge3",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpn1iYd23CMpa-z5zjUoXxfekL3eB8t7OlUAC5VegpW_HqRaG5B6ckCRE&s=10",
+        "https://www.himalayastrek.com/public/uploads/Rara-to-Khaptad-trekking.jpg942224955jpg"
+      ],
+      "overview": "The Jumla – Rara Lake Trek takes you through some of Nepal’s most stunning, quiet, and untouched landscapes in the far-western Karnali region. Starting with a mountain flight to Jumla, you traverse the Jaljala Pass (3,580m) offering breathtaking views of snowy Himalayan ranges before entering the historic Sinja Valley—the ancient capital of the Khasa Malla Kingdom and the birthplace of the written Khas (Nepali) language.\n\nThe ultimate highlight of this 13-day journey is reaching Rara Lake (2,990m)—Nepal’s largest and deepest natural body of water, often crowned the 'Pearl of Nepal'. Surrounded by dense pine, spruce, and rhododendron forests within Rara National Park, the lake reflects shimmering turquoise alpine waters and snowy mountain horizons.\n\nOrganized by Zenex Travels & Tours with full logistics, mountain flights, experienced local guides, and authentic lodge and homestay arrangements, this trek offers a serene escape far from commercial crowded trails.",
+      "highlights": [
+        "Explore Rara Lake (2,990m), Nepal's largest and deepest alpine lake known for its turquoise waters",
+        "Traverse the scenic Jaljala Pass (3,580m) and Dhanphe Lagna Pass (3,690m) with sweeping Himalayan panoramas",
+        "Discover the ancient Sinja Valley, former capital of the Khasa Malla Empire and birth site of the Nepali language",
+        "Scenic mountain flights connecting Kathmandu, Nepalgunj, and Jumla",
+        "Hike up to Murma Top viewpoint for 360-degree aerial vistas of Rara Lake and surrounding snow peaks",
+        "Trek through pristine Rara National Park forests rich in pine, rhododendron, Himalayan thar, and birdlife",
+        "Stay in traditional mountain hamlets like Chere Chaur, Chala Chaur, Ghorosingha, Pina, and Bumra",
+        "Experience authentic, uncrowded Himalayan wilderness with expert guidance from Zenex Travels & Tours"
+      ],
+      "quickFacts": {
+        "duration": "13 Days",
+        "destination": "Rara National Park, Karnali & Far-Western Nepal",
+        "startPoint": "Kathmandu / Nepalgunj / Jumla",
+        "endPoint": "Jumla / Nepalgunj / Kathmandu",
+        "maxAltitude": "3,690 m (Dhanphe Lagna Pass)",
+        "difficulty": "Moderate",
+        "activity": "High Altitude Lake & Wilderness Trekking",
+        "meals": "All meals during trek (Breakfast, Lunch, Dinner)",
+        "accommodation": "Hotels in Kathmandu & Nepalgunj / Teahouses & Homestays on trail",
+        "transportation": "Domestic Flights (Kathmandu - Nepalgunj - Jumla - Nepalgunj - Kathmandu)",
+        "bestSeason": "Spring (March to May) & Autumn (September to November)",
+        "region": "far-west"
+      },
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu & Transfer to Hotel",
+          "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport in Kathmandu, our Zenex Travels & Tours representative will meet you and transfer you to your hotel. Attend an evening trip briefing with your guide.",
+          "overnight": "Hotel in Kathmandu",
+          "elevation": "1,350 m"
+        },
+        {
+          "day": "Day 02",
+          "title": "Fly from Kathmandu to Nepalgunj (150m)",
+          "description": "Take a 1-hour domestic flight from Kathmandu down to Nepalgunj in the Terai plains of western Nepal. Transfer to your hotel and explore local bazaars and temples in the evening.",
+          "overnight": "Hotel in Nepalgunj",
+          "elevation": "150 m"
+        },
+        {
+          "day": "Day 03",
+          "title": "Fly to Jumla (2,500m) & Trek to Chere Chaur (3,050m)",
+          "description": "Take a early morning 45-minute mountain flight from Nepalgunj to Jumla airport (2,500m). Meet your trek crew and begin a gentle 2 to 3 hour warm-up trek through pine forests to Chere Chaur.",
+          "overnight": "Lodge in Chere Chaur",
+          "elevation": "3,050 m"
+        },
+        {
+          "day": "Day 04",
+          "title": "Trek to Chala Chaur (2,980m) via Jaljala Pass (3,580m)",
+          "description": "Ascend up to cross the Jaljala Pass (3,580m) for panoramic views of mountain ranges and deep river valleys. Descend gently through peaceful pine and rhododendron forests to Chala Chaur.",
+          "overnight": "Lodge in Chala Chaur",
+          "elevation": "2,980 m"
+        },
+        {
+          "day": "Day 05",
+          "title": "Trek from Chala Chaur to Sinja Valley (2,440m)",
+          "description": "Descend for 5 to 6 hours through terraced farmland and ancient hamlets to Sinja Valley, the ancient capital of the Khasa Malla kingdom and historical origin of the Khas language.",
+          "overnight": "Lodge in Sinja Valley",
+          "elevation": "2,440 m"
+        },
+        {
+          "day": "Day 06",
+          "title": "Trek from Sinja Valley to Ghorosingha (3,050m)",
+          "description": "Hike uphill through dense pine, oak, and rhododendron forests past small mountain farms to the alpine village of Ghorosingha.",
+          "overnight": "Lodge / Homestay in Ghorosingha",
+          "elevation": "3,050 m"
+        },
+        {
+          "day": "Day 07",
+          "title": "Trek from Ghorosingha to Rara Lake (2,990m)",
+          "description": "Trek through Rara National Park forests as the trail opens up to reveal the stunning turquoise waters of Rara Lake (2,990m), Nepal's largest natural lake.",
+          "overnight": "Lodge near Rara Lake",
+          "elevation": "2,990 m"
+        },
+        {
+          "day": "Day 08",
+          "title": "Full Day Exploration at Rara Lake & Hike to Murma Top (3,630m)",
+          "description": "Spend a full day exploring Rara Lake. Take a morning walk along the lake shore and hike up to Murma Top viewpoint for 360-degree views of the lake and surrounding snow peaks.",
+          "overnight": "Lodge near Rara Lake",
+          "elevation": "2,990 m"
+        },
+        {
+          "day": "Day 09",
+          "title": "Trek from Rara Lake to Pina Village (2,440m)",
+          "description": "Begin retracing your trek down through dense spruce and pine woodlands past rural Karnali hamlets to Pina Village.",
+          "overnight": "Lodge in Pina Village",
+          "elevation": "2,440 m"
+        },
+        {
+          "day": "Day 10",
+          "title": "Trek from Pina Village to Bumra / Nauri Ghat (2,850m)",
+          "description": "Trek 5 to 6 hours uphill through terraced fields and forests to the traditional mountain village of Bumra.",
+          "overnight": "Lodge in Bumra",
+          "elevation": "2,850 m"
+        },
+        {
+          "day": "Day 11",
+          "title": "Trek to Jumla (2,514m) via Dhanphe Lagna Pass (3,690m)",
+          "description": "The longest trek day! Ascend steadily to cross Dhanphe Lagna Pass (3,690m) for final mountain panoramas before descending back to Jumla town.",
+          "overnight": "Lodge in Jumla",
+          "elevation": "2,514 m"
+        },
+        {
+          "day": "Day 12",
+          "title": "Fly from Jumla to Nepalgunj & Flight to Kathmandu",
+          "description": "Take the morning scenic flight from Jumla to Nepalgunj and connect to your domestic flight back to Kathmandu. Transfer to hotel.",
+          "overnight": "Hotel in Kathmandu",
+          "elevation": "1,350 m"
+        },
+        {
+          "day": "Day 13",
+          "title": "Final Departure from Kathmandu",
+          "description": "Enjoy breakfast at hotel before our Zenex Travels representative transfers you to Tribhuvan International Airport for your international departure flight.",
+          "overnight": "Homebound / Departure",
+          "elevation": "1,350 m"
+        }
+      ],
+      "inclusions": [
+        "Airport - Hotel - Airport transfers in Kathmandu & Nepalgunj by private vehicle",
+        "2 Nights hotel accommodation in Kathmandu with breakfast",
+        "1 Night hotel accommodation in Nepalgunj with breakfast",
+        "Domestic airfare: Kathmandu - Nepalgunj - Jumla - Nepalgunj - Kathmandu including airport taxes",
+        "Rara National Park entry permit & all local area trekking permits",
+        "Full board meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the trek",
+        "Lodge and local homestay accommodation during the trek",
+        "Licensed, experienced English-speaking Himalayan mountain trekking guide",
+        "Porters for luggage carrying (1 porter for every 2 trekkers, carrying up to 15 kg per trekker)",
+        "Guide & porter wages, food, accommodation, transport, and insurance",
+        "Zenex Travels & Tours duffel bag & official Achievement Certificate",
+        "First aid medical kit with pulse oximeter monitoring",
+        "All applicable government taxes, VAT, and official agency service charges"
+      ],
+      "exclusions": [
+        "International airfare and Nepal entry visa fees",
+        "Personal travel, medical, and emergency helicopter evacuation insurance",
+        "Lunches and dinners in Kathmandu and Nepalgunj",
+        "Personal trekking gear and clothing",
+        "Personal expenses (hot showers, Wi-Fi, battery charging, laundry, mineral water, beverages)",
+        "Tips for mountain guide, porters, and driver (customary reward)"
+      ],
+      "equipmentList": [
+        {
+          "category": "Clothing & Layers",
+          "items": [
+            "Moisture-wicking T-shirts (2–3)",
+            "Fleece jacket or lightweight down jacket (-10°C rated)",
+            "Waterproof & windproof hard shell jacket & pants",
+            "Comfortable trekking pants (2 pairs)",
+            "Thermal base layers & warm beanie, sun hat, gloves"
+          ]
+        },
+        {
+          "category": "Footwear",
+          "items": [
+            "Sturdy, broken-in waterproof trekking boots with ankle support",
+            "Lightweight camp shoes or sandals",
+            "Merino wool trekking socks (3–4 pairs)"
+          ]
+        },
+        {
+          "category": "Backpacking & Gear",
+          "items": [
+            "Daypack (20–30L) with rain cover",
+            "Four-season sleeping bag rated to -10°C or lower",
+            "Trekking poles (pair)",
+            "Headlamp with spare batteries",
+            "Water bottles & water purification tablets"
+          ]
+        },
+        {
+          "category": "Personal Care & Medical",
+          "items": [
+            "Personal first aid kit with altitude medication (Diamox)",
+            "Sunscreen SPF 50+ & lip balm with SPF",
+            "Quick-dry microfiber towel, wet wipes & hand sanitizer"
+          ]
+        }
+      ],
+      "whyTrekWithUs": [
+        {
+          "title": "Karnali & Rara Region Experts",
+          "description": "Zenex Travels & Tours provides licensed mountain guides native to western Nepal with deep knowledge of Rara National Park trails and Sinja Valley history."
+        },
+        {
+          "title": "All-Inclusive & Hassle-Free Flight Coordination",
+          "description": "We handle all mountain flight connections between Kathmandu, Nepalgunj, and Jumla seamlessly with backup flight contingency planning."
+        },
+        {
+          "title": "Transparent All-Inclusive Pricing",
+          "description": "Domestic flights, park permits, lodging, all meals, and porter support are fully covered with no hidden charges."
+        },
+        {
+          "title": "Ethical & Responsible Trekking",
+          "description": "We adhere strictly to Leave No Trace principles, support local homestays, and ensure fair wages and full insurance for our mountain staff."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Where is Rara Lake located?",
+          "answer": "Rara Lake (2,990m) is located inside Rara National Park in the Mugu and Jumla districts of the remote Karnali region in Far-Western Nepal."
+        },
+        {
+          "question": "How difficult is the Jumla - Rara Lake Trek?",
+          "answer": "It is rated as a Moderate trek. Daily walking hours range from 4 to 7 hours over well-marked forest trails and high mountain passes (Dhanphe Lagna 3,690m). No technical climbing is required."
+        },
+        {
+          "question": "What permits are required for the Jumla - Rara Trek?",
+          "answer": "You require the Rara National Park Entry Permit, arranged by Zenex Travels & Tours."
+        },
+        {
+          "question": "What kind of accommodation is available on the trail?",
+          "answer": "Accommodation is provided in cozy local teahouses, mountain lodges, and authentic village homestays."
+        },
+        {
+          "question": "When is the best season for the Jumla - Rara Trek?",
+          "answer": "Spring (March to May) features blooming rhododendrons and green forests, while Autumn (September to November) offers crisp mountain visibility and stable clear skies."
+        }
+      ]
     }
   ],
   "destinations": [],
