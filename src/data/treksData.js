@@ -8,8 +8,8 @@ export const treksData = [
     location: "Manaslu Conservation Area, Gorkha, Nepal",
     duration: "17",
     durationUnit: "Days",
-    price: "US$1,250",
-    originalPrice: "US$1,450",
+    price: "US$870",
+    originalPrice: "US$950",
     rating: 4.9,
     reviewsCount: 143,
     difficulty: "Moderate",
@@ -45,7 +45,7 @@ export const treksData = [
       "Day excursion hike to Ganesh Himal Base Camp (4,200m) for high-altitude mountain scenery.",
       "Immerse in authentic Tibetan culture, stone mani walls, prayer flags, and local mountain hospitality.",
       "Pass through pristine rhododendron forests, pine groves, alpine meadows, and cliffside trails.",
-      "Enjoy full logistics support, expert licensed guide, porters, and permit processing by Zenex Travels."
+      "Enjoy full logistics support, expert licensed guide, porters, and permit processing by Zenex Travels & Tours."
     ],
     quickFacts: {
       duration: "17 Days (14 Trekking Days + 3 Nights Kathmandu)",
@@ -270,6 +270,113 @@ export const treksData = [
       "Tips",
       "Any other expenses not mentioned in INCLUDED"
     ],
+    addOns: [
+      {
+        title: "Full Meals Package (Breakfast, Lunch & Dinner during trek)",
+        price: "USD 500 per person",
+        details: "Enjoy breakfast, lunch, and dinner throughout the 17-day trekking period."
+      },
+      {
+        title: "Upgrade to 4-Star Accommodation in Kathmandu",
+        price: "USD 45 per 2 persons",
+        details: "Upgrade 3 nights twin-sharing stay in Kathmandu from 3-star to 4-star hotel."
+      },
+      {
+        title: "Upgrade to 5-Star Standard Accommodation in Kathmandu",
+        price: "USD 210 per 2 persons",
+        details: "Upgrade 3 nights twin-sharing stay in Kathmandu from 3-star to 5-star standard hotel."
+      }
+    ],
+    difficultyInfo: "The Tsum Valley Trek is a MODERATE-level trek, suitable for people who are reasonably fit and enjoy walking for 5 to 7 hours a day on uneven mountain trails. It does not involve crossing extremely high altitude passes like Thorong La or Larkya La, but involves steady walking through pristine forests, suspension bridges, and remote monasteries. Highest point: Mu Gompa (3,700 m) & Ganesh Himal Base Camp (4,200 m). First-time Himalayan trekkers can safely complete this trek with proper preparation and licensed Zenex Travels guide support.",
+    altitudeSickness: {
+      description: "On the Manaslu Tsum Valley Trek, key high points like Mu Gompa (3,700 m) and Ganesh Himal Base Camp (4,200 m) require proper acclimatization, hydration, and pacing.",
+      prevention: [
+        "Walk slowly at your own pace; allow your body to adjust gradually to higher elevations.",
+        "Drink 3 to 4 liters of water daily, along with ginger tea & garlic soup.",
+        "Eat regular, carbohydrate-rich meals for sustained high-altitude energy.",
+        "Wear warm layers (head, chest, feet) and stay cozy in evenings.",
+        "Inform your Zenex Travels guide immediately if you experience headache, dizziness, or weakness.",
+        "Preventative medicines & remedies: Diamox (Acetazolamide) 1-2 days before ascending higher, plus Paracetamol or Ibuprofen for body aches."
+      ]
+    },
+    equipmentList: [
+      {
+        category: "Clothing & Base Layers",
+        items: [
+          "Moisture-wicking long & short sleeve thermal shirts",
+          "Thermal underwear & fleece jacket/pullover",
+          "Lightweight down jacket (rated for freezing temperatures)",
+          "Waterproof & windproof jacket with hood (Gore-Tex) and trousers",
+          "Comfortable trekking pants & moisture-wicking t-shirts",
+          "Warm fleece/wool hat, sun hat, and dust buff/neck gaiter",
+          "Lightweight inner gloves & waterproof insulated gloves/mittens",
+          "Sturdy broken-in trekking boots, moisture-wicking socks, and camp shoes"
+        ]
+      },
+      {
+        category: "Gear, Equipment & Sleeping",
+        items: [
+          "Daypack (25-35L) with rain cover",
+          "Duffel bag (50-70L provided for porters, carrying up to 10-12 kg per client)",
+          "Four-season sleeping bag (rated for -10°C / 14°F or lower) & liner",
+          "Adjustable trekking poles",
+          "Nalgene water bottles & water purification tablets/SteriPen",
+          "UV protection sunglasses, headlamp with extra batteries"
+        ]
+      },
+      {
+        category: "Health, Hygiene & Personal Items",
+        items: [
+          "First aid kit (band-aids, antiseptic wipes, blister kit, Diamox, pain relievers)",
+          "Hand sanitizer, wet wipes, biodegradable soap, sunscreen (SPF 50+), lip balm",
+          "Passport, trekking permits, and cash (NPR) for trail expenses",
+          "Camera with extra batteries, power bank, travel towel, reusable trash bags"
+        ]
+      },
+      {
+        category: "Optional Items",
+        items: [
+          "Lightweight book or e-reader, journal and pen, travel card games"
+        ]
+      }
+    ],
+    extendedInfo: [
+      {
+        title: "Permits Required for Tsum Valley Trek",
+        description: "To complete the Tsum Valley Trek, you will need mandatory restricted area and conservation permits:",
+        items: [
+          "**Tsum Valley Restricted Area Permit (RAP):** Special restricted area permit mandatory for all foreign trekkers (minimum 2 trekkers + licensed Nepali guide required).",
+          "**Manaslu Conservation Area Permit (MCAP):** Required for entering the Manaslu Conservation Area covering the Tsum Valley trail.",
+          "**Full Logistics Handling:** Zenex Travels & Tours handles all permit applications and official immigration paperwork prior to departure."
+        ]
+      },
+      {
+        title: "Best Time for Tsum Valley Trek in Nepal",
+        description: "Tsum Valley can be trekked most times of the year, with Spring and Autumn offering prime mountain views and weather:",
+        items: [
+          "**Spring (March to May):** Warm temperatures, clear skies, blooming rhododendrons, and active mountain village farming.",
+          "**Autumn (Mid-September to November):** Crisp mountain vistas of Ganesh Himal and Manaslu, dry trails, and vibrant local Himalayan festivals (Dashain & Tihar)."
+        ]
+      },
+      {
+        title: "Meals & Accommodation during Tsum Valley Trek",
+        description: "Stay in authentic teahouses and family-run lodges featuring simple twin-sharing rooms. High altitude points like Mu Gompa provide basic but warm shelter.",
+        subsections: [
+          {
+            subtitle: "Meals Menu",
+            description: "Freshly cooked local Dal Bhat (rice, lentils, curry) along with noodles, soups, fried rice, chapati, potatoes, pasta, pancakes, and eggs. Breakfast includes hot tea/coffee and main course; Lunch includes main course; Dinner includes soup and main course."
+          },
+          {
+            subtitle: "Dietary Requirements",
+            description: "Vegetarian, vegan, and gluten-free dietary options are arranged upon early request with Zenex Travels & Tours."
+          }
+        ]
+      },
+      {
+        title: "Customization Note",
+        description: "The Tsum Valley Trek can be customized into a 14-Day itinerary by excluding the 3-day side excursion hike to Ganesh Himal Base Camp."
+      }
+    ],
     faqs: [
       {
         question: "Where is the Tsum Valley Trek located?",
@@ -285,7 +392,7 @@ export const treksData = [
       },
       {
         question: "What permits are required for the Tsum Valley Trek?",
-        answer: "You require the Tsum Valley Special Restricted Area Permit (RAP) and the Manaslu Conservation Area Permit (MCAP). Zenex Travels processes all permits on your behalf."
+        answer: "You require the Tsum Valley Special Restricted Area Permit (RAP) and the Manaslu Conservation Area Permit (MCAP). Zenex Travels & Tours processes all permits on your behalf."
       },
       {
         question: "Is a guide compulsory for Tsum Valley?",

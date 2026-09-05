@@ -788,6 +788,31 @@ const TrekDetail = () => {
                     </div>
                   )}
                 </div>
+
+                {/* Add-ons & Exclusive Options */}
+                {trek.addOns && trek.addOns.length > 0 && (
+                  <div className="mt-8 bg-purple-50/70 border border-purple-100 rounded-2xl p-6">
+                    <h3 className="text-lg font-bold text-purple-900 mb-4 flex items-center gap-2">
+                      <Plus className="text-purple-600" size={20} />
+                      Add-ons & Exclusive Upgrade Options
+                    </h3>
+                    <div className="grid grid-cols-1 gap-3">
+                      {trek.addOns.map((addon, idx) => (
+                        <div key={idx} className="bg-white/80 rounded-xl p-4 border border-purple-100/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                          <div>
+                            <h4 className="font-bold text-purple-950 text-sm">{addon.title}</h4>
+                            {addon.details && <p className="text-xs text-purple-800/80 mt-1">{addon.details}</p>}
+                          </div>
+                          {addon.price && (
+                            <span className="bg-purple-100 text-purple-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0 w-fit">
+                              {addon.price}
+                            </span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
 
