@@ -12,7 +12,7 @@ export const megaMenuData = {
             { name: 'Langtang Valley Hikes', url: '/treks/region/langtang', image: '/images/langtang1.jpg' },
             { name: 'Mustang Region Treks', url: '/treks/region/mustang', image: '/images/upper mustang.jpg' },
             { name: 'Kanchenjunga Region Treks', url: '/treks/region/kanchenjunga', image: '/images/kanchenjunga.jpg' },
-            { name: 'Hidden Dolpo Journeys', url: '/treks/region/dolpo', image: '/images/dorpatan dolpo.jpg' },
+            { name: 'Dolpo Region Treks', url: '/treks/region/dolpo', image: '/images/dorpatan dolpo.jpg' },
             { name: 'Dhaulagiri Pathways', url: '/treks/region/dhaulagiri', image: '/trek images/Dhaulagiri-Circuit-Trek.jpeg' },
             { name: 'Rolwaling Wilderness', url: '/treks/region/rolwaling', image: '/trek images/Rolwaling Region Treks.jpg' },
             { name: 'Makalu Base Camp Treks', url: '/treks/region/makalu', image: '/images/trek.png' },

@@ -91,7 +91,7 @@ const DEFAULT_TREK_DESTINATIONS = [
   {
     id: 'REG-trk-dol',
     slug: 'dolpo',
-    name: 'Hidden Dolpo Journeys',
+    name: 'Dolpo Region Treks',
     displayName: 'DOLPO REGION TREKS',
     country: 'Nepal',
     type: 'Treks',

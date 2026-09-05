@@ -5281,5 +5281,292 @@ export const treksData = [
         answer: "Contact Zenex Travels & Tours to organize permits, guides, porters, domestic flights, and private transfers."
       }
     ]
+  },
+  {
+    id: "lower-dolpo-trek-from-jhuphal-18d",
+    slug: "lower-dolpo-trek-from-jhuphal-18d",
+    title: "Lower Dolpo Trek from Jhuphal - 18 Days",
+    region: "dolpo",
+    regionName: "Dolpo Region",
+    location: "Shey Phoksundo National Park, Dolpa District, Mid-Western Nepal",
+    duration: "18",
+    durationUnit: "Days",
+    price: "US$1,950",
+    originalPrice: "US$2,200",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Hard",
+    maxAltitude: "5,238 m / 17,185 ft (Numa La Pass)",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "Walking / Hiking & High Passes Wilderness Expedition",
+    accommodation: "3-Star Hotel in KTM & Nepalgunj / Mountain Lodges & Tented Camps",
+    meals: "Breakfast in KTM & Nepalgunj, All Meals (Breakfast, Lunch & Dinner) on Trek",
+    bestSeason: "Spring (March - May), Summer & Autumn (Sept - Nov)",
+    image: "/images/dorpatan dolpo.jpg",
+    gallery: [
+      "/images/dorpatan dolpo.jpg"
+    ],
+    overview: `
+      <h3>Lower Dolpo Trek from Jhuphal 18 Days | High Altitude Wilderness & Phoksundo Lake Expedition</h3>
+      <p>The <strong>Lower Dolpo Trek from Jhuphal (18 Days)</strong> offers an extraordinary expedition through one of Nepal's most remote, pristine, and culturally rich trans-Himalayan regions. Flying into Juphal in western Nepal, trekkers journey through rugged river gorges, windswept high plateaus, and ancient stone villages like Dho-Tarap before arriving at the ethereal turquoise waters of <strong>Shey Phoksundo Lake (3,641 m)</strong>.</p>
+      <p>This challenging expedition crosses two high-altitude mountain passes: <strong>Numa La Pass (5,238 m)</strong> and <strong>Bagala Pass (5,169 m)</strong>, presenting breathtaking panoramas of Mount Kanjiroba and the Dhaulagiri range. The trail traverses Shey Phoksundo National Park, immersing trekkers in pre-Buddhist Bon culture, ancient gompas, and uncrowded alpine wilderness.</p>
+      <p>At <strong>Zenex Travels & Tours</strong>, we manage all expedition details—including domestic flights (Kathmandu – Nepalgunj – Juphal round trip), Lower Dolpo Restricted Area Permits (RAP), Shey Phoksundo National Park Entry Permits, full tented camping crew (cook, kitchen staff, mules/yaks), licensed mountain guide, lodge arrangements, and hotel stays in Kathmandu and Nepalgunj.</p>
+    `,
+    highlights: [
+      "Cross two formidable high mountain passes above 5,000 meters: Numa La Pass (5,238 m) and Bagala Pass (5,169 m).",
+      "Visit Shey Phoksundo Lake (3,641 m)—Nepal's deepest and most sacred turquoise-blue lake surrounded by dramatic cliffs.",
+      "Explore Dho-Tarap (3,944 m)—one of the highest permanent human settlements on Earth with authentic Bonpo and Tibetan Buddhist culture.",
+      "Visit ancient spiritual sites including Ribo Bhumpa Gompa, Drakmar Dewa, and traditional Bon monasteries in Ringmo.",
+      "Trek through Shey Phoksundo National Park, sanctuary for rare wildlife like snow leopards, blue sheep, and Himalayan thar.",
+      "Experience a mix of mountain lodge stays and full wilderness tented camping with dedicated kitchen crew.",
+      "Scenic mountain flights connecting Kathmandu, Nepalgunj, and the remote airstrip of Juphal in Dolpa.",
+      "Comprehensive expedition management by Zenex Travels & Tours with permits, flights, camping logistics, guide, and staff."
+    ],
+    quickFacts: {
+      country: "Nepal",
+      duration: "18 Days",
+      tripGrade: "Hard",
+      maxAltitude: "5,238 m / 17,185 ft",
+      starts: "Kathmandu",
+      ends: "Kathmandu",
+      activities: "Walking / Hiking",
+      accommodation: "Hotels in KTM & Nepalgunj / Lodges & Tented Camps",
+      meals: "Breakfast in Cities, All Meals on Trek",
+      bestTime: "Spring, Summer (Rain Shadow) & Autumn"
+    },
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Arrival in Kathmandu (1,350 m)",
+        description: "Welcome to Nepal! Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels & Tours representative greets you and transfers you to your hotel. Pre-trip briefing meeting in the evening.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Not Included"
+      },
+      {
+        day: "Day 02",
+        title: "Kathmandu: Permit Preparation & Sightseeing",
+        description: "Free day in Kathmandu while our team submits your passport and visa copies to Nepal Immigration to issue the Special Restricted Area Permit for Lower Dolpo. Sightseeing options include Kathmandu Durbar Square, Swoyambhunath, and Boudhanath Stupa.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast"
+      },
+      {
+        day: "Day 03",
+        title: "Kathmandu - Nepalgunj (173 m) (Flight)",
+        description: "Afternoon 1-hour flight from Kathmandu to Nepalgunj in southwestern Terai near the Indian border. Check into your hotel and rest. Overnight in Nepalgunj.",
+        maxAltitude: "173 m / 567 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast"
+      },
+      {
+        day: "Day 04",
+        title: "Nepalgunj - Juphal (2,475 m) (Flight) & Trek to Dunai (2,140 m)",
+        description: "Early morning 45-minute flight from Nepalgunj to Juphal airstrip in Dolpa. Meet your trekking team, pack mules/yaks, and trek 3 to 4 hours downhill alongside Thuli Bheri River to Dunai (2,140 m), the administrative headquarters of Dolpa.",
+        maxAltitude: "2,475 m / 8,120 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 05",
+        title: "Dunai - Beluwa (2,545 m)",
+        description: "Trek for 6 to 7 hours (15 km) following Thuli Bheri River upstream. Pass through pine forests and small settlements to reach Beluwa (2,545 m), a quiet village surrounded by terraced fields.",
+        maxAltitude: "2,545 m / 8,349 ft",
+        accommodation: "Tented Camp / Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 06",
+        title: "Beluwa - Laina Odar (3,370 m)",
+        description: "Ascend along Suli Gad River through narrow gorges, waterfalls, and pine/juniper forests (7 to 8 hours, 15 km). Reach Laina Odar (3,370 m), a cliffside camp used by mule caravans.",
+        maxAltitude: "3,370 m / 11,056 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 07",
+        title: "Laina Odar - Langa Camp (3,870 m)",
+        description: "Follow Tarap Khola through deep canyons and rocky paths cut into cliff faces (7 to 8 hours, 14 km). Cross wooden bridges to reach Langa Camp (3,870 m) in a quiet riverside valley.",
+        maxAltitude: "3,870 m / 12,696 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 08",
+        title: "Langa Camp - Dho-Tarap (3,944 m)",
+        description: "Ascend through Tarap Khola gorge as the valley widens into broad alpine meadows. Arrive at Dho-Tarap (3,944 m), one of the world's highest permanent villages rich in Tibetan Buddhist and Bon heritage (7 to 8 hours).",
+        maxAltitude: "3,944 m / 12,939 ft",
+        accommodation: "Tented Camp / Basic Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 09",
+        title: "Rest & Acclimatization Day in Dho-Tarap (3,944 m)",
+        description: "Essential acclimatization rest day in Dho-Tarap. Explore ancient monasteries such as Ribo Bhumpa Gompa and Drakmar Dewa, meet local Dolpo-pa villagers, and soak in the trans-Himalayan scenery.",
+        maxAltitude: "3,944 m / 12,939 ft",
+        accommodation: "Tented Camp / Basic Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 10",
+        title: "Dho-Tarap - Numa La Base Camp (4,440 m)",
+        description: "Trek for 6 to 7 hours (11 km) ascending gradually along Tarap Khola past yak pastures and chortens to reach Numa La Base Camp (4,440 m), a high windswept valley below the pass.",
+        maxAltitude: "4,440 m / 14,566 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 11",
+        title: "Numa La Base Camp - Numa La Pass (5,238 m) - Danigar (4,512 m)",
+        description: "Challenging pass crossing day! Steep early morning climb to Numa La Pass (5,238 m) for panoramic vistas of Mt. Dhaulagiri and Kanjiroba range. Descend to Danigar campsite (4,512 m) after 8 to 9 hours (13 km).",
+        maxAltitude: "5,238 m / 17,185 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 12",
+        title: "Danigar - Bagala Pass (5,169 m) - Ringmo / Phoksundo Lake (3,641 m)",
+        description: "Climb steeply over scree and rocky ridges to cross Bagala Pass (5,169 m) with views of Mt. Kanjiroba. Descend steeply through alpine meadows into pine forests to Ringmo village on the shore of turquoise Phoksundo Lake (9 to 10 hours, 19 km).",
+        maxAltitude: "5,169 m / 16,958 ft",
+        accommodation: "Lodge / Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 13",
+        title: "Exploration Day at Ringmo & Shey Phoksundo Lake (3,641 m)",
+        description: "Rest and explore the magical turquoise Phoksundo Lake (3,641 m), Nepal's deepest lake. Visit ancient Bonpo Gompa in Ringmo, walk along cliffside trails, and admire the majestic waterfall outlet.",
+        maxAltitude: "3,641 m / 11,945 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 14",
+        title: "Ringmo - Chekpa (2,678 m)",
+        description: "Descend steadily from Phoksundo Lake along Phoksundo Khola through pine and cedar forests to Chekpa (2,678 m) after 6 to 7 hours (15 km).",
+        maxAltitude: "2,678 m / 8,786 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 15",
+        title: "Chekpa - Juphal (2,475 m)",
+        description: "Trek for 5 to 6 hours (13 km) down river valleys and terraced farmlands back to Juphal (2,475 m). Celebrate the completion of the trek with your guiding team.",
+        maxAltitude: "2,475 m / 8,120 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 16",
+        title: "Juphal - Nepalgunj - Kathmandu (1,350 m) (Flights)",
+        description: "Morning flight from Juphal to Nepalgunj (30 mins) and connecting flight to Kathmandu (1 hour). Transfer to your hotel and enjoy a warm shower and evening rest.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast & Lunch"
+      },
+      {
+        day: "Day 17",
+        title: "Free Day in Kathmandu",
+        description: "A buffer day in Kathmandu in case of weather delays in Juphal. Spend the day resting, shopping in Thamel, or enjoying a traditional Nepali Farewell Dinner hosted by Zenex Travels & Tours.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast & Farewell Dinner"
+      },
+      {
+        day: "Day 18",
+        title: "Final Departure from Kathmandu",
+        description: "Breakfast at the hotel. Our Zenex Travels & Tours representative will transfer you to Tribhuvan International Airport 3 hours prior to your flight departure.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Not Included",
+        meals: "Breakfast"
+      }
+    ],
+    costIncludes: [
+      "Airport transfers (Airport – Hotel – Airport) by private vehicle.",
+      "4 Nights hotel accommodation in Kathmandu and 1 Night in Nepalgunj with breakfast.",
+      "Domestic flight tickets (Kathmandu – Nepalgunj – Juphal – Nepalgunj – Kathmandu) including guide and taxes.",
+      "Lower Dolpo Special Restricted Area Permit (RAP).",
+      "Shey Phoksundo National Park Entry Permit.",
+      "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the trek.",
+      "Lodge accommodation in lower villages and full tented camping gear (tents, mattresses, kitchen tent, dining tent, toilet tent).",
+      "Professional licensed English-speaking guide, cook, kitchen staff, and porters/mules/yaks.",
+      "Guide and staff insurance, salary, food, accommodation, and equipment.",
+      "Zenex Travels & Tours duffel bag for the trek.",
+      "Official Achievement Certificate of Lower Dolpo Trek.",
+      "Traditional Nepali Farewell Dinner in Kathmandu.",
+      "All government taxes, service charges, and official fees."
+    ],
+    costExcludes: [
+      "International airfare and Nepal entry visa fees.",
+      "Personal travel and medical insurance (must cover high-altitude rescue up to 6,000m).",
+      "Lunch and Dinner in Kathmandu & Nepalgunj (except Farewell Dinner).",
+      "Emergency helicopter rescue expenses.",
+      "Personal expenses (Wi-Fi, hot showers, battery charging, laundry, extra snacks, alcoholic drinks).",
+      "Tips for guide, cook, staff, porters, and driver."
+    ],
+    essentialInfo: `
+      <h3>Essential Information for Lower Dolpo Trek from Jhuphal</h3>
+
+      <h4>Permits Required</h4>
+      <p>Trekking in Lower Dolpo requires two mandatory permits:</p>
+      <ul>
+        <li><strong>Lower Dolpo Restricted Area Permit (RAP):</strong> USD $500 per person for the first 10 days, plus USD $50 per person per day thereafter.</li>
+        <li><strong>Shey Phoksundo National Park Entry Permit:</strong> NPR 3,000 per person.</li>
+      </ul>
+      <p>Individual/solo trekking is prohibited in Dolpo. A minimum of two trekkers accompanied by a licensed guide from a registered agency like Zenex Travels & Tours is required.</p>
+
+      <h4>Best Time to Trek</h4>
+      <p>The optimal trekking seasons are:</p>
+      <ul>
+        <li><strong>Spring (March to May):</strong> Clear skies, mild temperatures, blooming alpine flowers, and active local cultural festivals.</li>
+        <li><strong>Autumn (September to November):</strong> Peak season with post-monsoon crystal clarity, dry trails, and spectacular mountain views.</li>
+        <li><strong>Summer (June to August):</strong> Dolpo lies in a Himalayan rain shadow, making monsoon trekking possible with lush greenery and quiet trails.</li>
+      </ul>
+
+      <h4>Accommodations & Meals</h4>
+      <p>The trek combines basic teahouse lodges in villages like Juphal, Dunai, and Ringmo with full wilderness tented camping across high-pass sections (Dho-Tarap, Numa La, Danigar). Our expedition cook provides fresh, hot, nutritious meals during camping days.</p>
+    `,
+    faqs: [
+      {
+        question: "Where is Lower Dolpo located?",
+        answer: "Lower Dolpo is located in the rain-shadow region of the Dolpa district in mid-western Nepal, surrounded by Dhaulagiri and Kanjiroba mountain ranges inside Shey Phoksundo National Park."
+      },
+      {
+        question: "How difficult is the Lower Dolpo Trek from Juphal?",
+        answer: "The trek is graded Hard. It involves crossing two 5,000+ meter passes (Numa La 5,238 m and Bagala Pass 5,169 m), with daily walks of 6 to 10 hours across remote trans-Himalayan wilderness."
+      },
+      {
+        question: "What is the maximum altitude on this trek?",
+        answer: "The highest elevation reached is Numa La Pass at 5,238 meters (17,185 feet)."
+      },
+      {
+        question: "What permits are required for Lower Dolpo?",
+        answer: "You need the Lower Dolpo Special Restricted Area Permit (RAP) and the Shey Phoksundo National Park Entry Permit, arranged via Zenex Travels & Tours."
+      },
+      {
+        question: "What is the best time to trek Lower Dolpo?",
+        answer: "Spring (March to May) and Autumn (September to November) offer clear skies and dry trails. Summer/Monsoon (June to August) is also possible due to Dolpo's rain-shadow location."
+      },
+      {
+        question: "What makes Shey Phoksundo Lake special?",
+        answer: "At 3,641 m, Phoksundo Lake is Nepal's deepest lake, famous for its mesmerizing turquoise-blue color, steep cliffs, and sacred Bonpo monasteries in Ringmo."
+      },
+      {
+        question: "What accommodation is available during the trek?",
+        answer: "Accommodation is a mix of basic teahouses/lodges in lower settlements and full tented camping with a dedicated cook staff in high-pass sections."
+      },
+      {
+        question: "Can I trek Lower Dolpo solo?",
+        answer: "No, Nepal immigration regulations require a minimum of 2 trekkers accompanied by a licensed guide."
+      },
+      {
+        question: "Is travel insurance mandatory?",
+        answer: "Yes, travel insurance covering medical expenses and emergency high-altitude rescue up to 6,000 meters is mandatory."
+      },
+      {
+        question: "How do I book this trek?",
+        answer: "Contact Zenex Travels & Tours to process restricted permits, arrange domestic flights, and organize full camping expedition logistics."
+      }
+    ]
   }
 ];
