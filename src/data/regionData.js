@@ -63,6 +63,16 @@ Traversing rugged terrain, dense rhododendron forests, and traditional Magar and
 
 As a true high-wilderness trek, Dhaulagiri requires organized camping support across upper trail sections where lodges are absent. Whether circumnavigating Mount Dhaulagiri or ascending non-technical trekking peaks like Dhampus (Thapa) Peak (6,012 m), Zenex Travels & Tours provides full logistics, expert climbing Sherpas, mountain cooks, and safety management for an unforgettable journey into Nepal's land of the white mountain.`
   },
+  'rolwaling': {
+    id: 'rolwaling',
+    title: 'Rolwaling Region Treks',
+    image: '/trek images/Rolwaling Region Treks.jpg',
+    description: `Rolwaling Valley Trek in the Himalayas of Nepal takes you through quiet villages, dense rhododendron forests, sacred monasteries, and high alpine valleys near the Tibetan border. Beginning with a scenic drive to Charikot and a visit to the sacred Kalinchowk Temple (3,842m), the journey passes through culturally rich settlements like Bigu Gompa, Laduk, and Simigaon before entering the stunning Rolwaling Valley.
+
+Along the way, trekkers experience warm hospitality, Buddhist Sherpa heritage, and views of majestic peaks like Mount Gaurishankar (7,145m), Melungtse, and the Jugal Himal range. Highlights include day hikes to the turquoise glacial waters of Tsho Rolpa Lake (4,580m) and staying in authentic Sherpa settlements like Beding and Na.
+
+Organized by Zenex Travels & Tours with expert local guides, safety equipment, and full camping and permit arrangements, Rolwaling offers a peaceful yet adventurous Himalayan escape far from crowded trekking routes.`
+  },
   'far-western-nepal': {
     id: 'far-western-nepal',
     title: 'Far-West Region Treks',

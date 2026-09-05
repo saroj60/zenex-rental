@@ -7541,6 +7541,425 @@
           "answer": "Spring (March to May) and Autumn (September to November) offer stable weather, clear mountain views, and dry pass conditions."
         }
       ]
+    },
+    {
+      "id": "rolwaling-valley-trek-18d",
+      "slug": "rolwaling-valley-trek-18d",
+      "title": "Rolwaling Valley Trek - 18 Days",
+      "region": "rolwaling",
+      "regionName": "Rolwaling Region",
+      "location": "Rolwaling Valley & Tsho Rolpa Lake, Dolakha District, Nepal",
+      "duration": "18",
+      "durationUnit": "Days",
+      "price": "US$2,500",
+      "originalPrice": "US$2,800",
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "difficulty": "Hard",
+      "maxAltitude": "4,580 m / 15,026 ft (Tsho Rolpa Lake)",
+      "starts": "Kathmandu",
+      "ends": "Kathmandu",
+      "activities": "Walking / Hiking",
+      "accommodation": "Hotels / Lodges / Tented camp",
+      "meals": "Breakfast, Lunch & Dinner",
+      "bestSeason": "Spring & Autumn",
+      "image": "/trek images/Rolwaling Region Treks.jpg",
+      "gallery": [
+        "/trek images/Rolwaling Region Treks.jpg",
+        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2070",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aTWoTsjs4j5Di3v4-R0seUgNi9hTxNsut818NZ-stbGka7MfoxU1WkOq&s=10",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070"
+      ],
+      "overview": "\n      <h3>Rolwaling Valley Trek - 18 Days | Remote Villages, Glacial Lakes & Sherpa Culture</h3>\n      <p>The <strong>Rolwaling Valley Trek (18 Days)</strong> is a tranquil and off-the-beaten-path Himalayan journey into the hidden Rolwaling Himal region, situated west of Everest near the Tibetan border. Starting from Kathmandu with a scenic overland drive to Charikot, the trail ascends to the sacred Hindu shrine of <strong>Kalinchowk Bhagwati (3,842m)</strong> before descending to the serene Buddhist nunnery at <strong>Bigu Gompa (2,516m)</strong>.</p>\n      <p>Trekkers venture through traditional Tamang and Sherpa settlements including Laduk, Jagat, and Simigaon, following the Tamakoshi and Rolwaling rivers. As you trek through pristine pine and rhododendron forests, you'll reach the iconic Sherpa mountain villages of <strong>Beding (3,740m)</strong> and <strong>Na (4,180m)</strong>, framed by the towering north face of Mount Gaurishankar (7,145m). A major highlight is an acclimatization day hike to the turquoise waters of <strong>Tsho Rolpa Lake (4,580m)</strong>—Nepal's largest glacial lake.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we handle all logistics—including Gaurishankar Conservation Area Permits (GCAP), Special Restricted Area Permits, 3-star hotel bookings in Kathmandu, private vehicle transfers, teahouse and tented camping accommodations, licensed guides, cooks, and porters.</p>\n    ",
+      "highlights": [
+        "Hike to sacred Kalinchowk Temple (3,842m) for panoramic vistas of Gaurishankar, Annapurna, and Jugal Himal.",
+        "Visit Bigu Gompa, an ancient monastery and spiritual retreat for Buddhist nuns nestled in peaceful hills.",
+        "Explore remote Tamang and Sherpa cultural villages including Laduk, Simigaon, Beding, and Na.",
+        "Trek through untouched pine, bamboo, and rhododendron forests along roaring mountain river gorges.",
+        "Day hike to breathtaking Tsho Rolpa Lake (4,580m) — Nepal’s largest high-altitude glacial lake.",
+        "Marvel at up-close views of Mount Gaurishankar (7,145m), Melungtse, and surrounding snow-capped peaks.",
+        "Experience high alpine wilderness camping at Thangthing Kharka and Jaisar Kharka pastures.",
+        "Enjoy a quiet, uncrowded alternative to mainstream Everest or Annapurna trails.",
+        "Full expedition support by Zenex Travels & Tours with experienced guides, camping cooks, and porters."
+      ],
+      "quickFacts": {
+        "country": "Nepal",
+        "duration": "18 Days",
+        "tripGrade": "Hard",
+        "maxAltitude": "4,580 m / 15,026 ft",
+        "startsEnds": "Kathmandu / Kathmandu",
+        "starts": "Kathmandu",
+        "ends": "Kathmandu",
+        "activities": "Walking / Hiking",
+        "accommodation": "Hotels / Lodges / Tented camp",
+        "meals": "Breakfast, Lunch & Dinner",
+        "bestTime": "Spring & Autumn"
+      },
+      "itinerary": [
+        {
+          "day": "01",
+          "title": "Arrival in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "6 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Briefing",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport transfer, hotel check-in, pre-trip briefing & guide meeting.",
+          "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. We hold a short pre-trip briefing to review gear, restricted permits, and introduce your trekking guide. Overnight at hotel."
+        },
+        {
+          "day": "02",
+          "title": "Preparation for Permit & Free day in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "10 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast",
+          "modeOfTravel": "Free day / Sightseeing",
+          "highlights": "Restricted permit processing & optional UNESCO heritage sightseeing (Patan, Boudhanath, Pashupatinath).",
+          "description": "Reserved day for acquiring the Special Restricted Area Permit for Rolwaling Valley. Enjoy optional guided sightseeing across UNESCO World Heritage sites in Kathmandu or relax in Thamel. Overnight at hotel."
+        },
+        {
+          "day": "03",
+          "title": "Kathmandu – Charikot (1,980 m)",
+          "altitude": "1,980 m / 6,496 ft",
+          "walkingTime": "7 hours drive",
+          "distance": "135 km",
+          "accommodation": "Lodge at Charikot",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Scenic drive through Bhaktapur & Dolalghat to hill town of Charikot with views of Mt. Gaurishankar.",
+          "description": "Drive east from Kathmandu along winding hill highways through Bhaktapur, Dolalghat, and Mude to Charikot (1,980m). Enjoy crisp hill air and sunset views over Mount Gaurishankar (7,145m). Overnight at lodge."
+        },
+        {
+          "day": "04",
+          "title": "Charikot – Kuri Village (3,200 m)",
+          "altitude": "3,200 m / 10,498 ft",
+          "walkingTime": "5 hours",
+          "distance": "12 km",
+          "accommodation": "Lodge at Kuri Village",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Ascend through tranquil pine forests to highland hamlet of Kuri Village below Kalinchowk.",
+          "description": "Begin trekking from Charikot, ascending through quiet forests and scattered hillside hamlets. As altitude increases, the air turns cool and crisp. Reach Kuri Village (3,200m), nestled directly beneath Kalinchowk ridge. Overnight at lodge."
+        },
+        {
+          "day": "05",
+          "title": "Kuri Village - Kalinchowk (3,842 m) – Bigu Gompa (2,516 m)",
+          "altitude": "2,516 m / 8,254 ft (Peak 3,842m)",
+          "walkingTime": "9 hours",
+          "distance": "16 km",
+          "accommodation": "Lodge at Bigu Gompa",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Hike to Kalinchowk Bhagwati shrine (3,842m), 360° views of Gaurishankar & descent to Bigu Gompa nuns' monastery.",
+          "description": "Early morning 1-hour steep hike to sacred Kalinchowk Bhagwati Temple (3,842m). Enjoy breathtaking panoramas of Mount Gaurishankar, Jugal Himal, and Numbur. Descend through alpine meadows and remote forested trails down to peaceful Bigu Gompa (2,516m). Overnight at lodge near monastery."
+        },
+        {
+          "day": "06",
+          "title": "Bigu Gompa – Laduk (2,050 m)",
+          "altitude": "2,050 m / 6,725 ft",
+          "walkingTime": "6 hours",
+          "distance": "11 km",
+          "accommodation": "Lodge at Laduk",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Explore Bigu Gompa nuns' monastery, gentle trek through Tamang terraced farmlands to Laduk.",
+          "description": "Morning visit to explore Bigu Gompa and observe monastic rituals of resident Buddhist nuns. Set off on a 6-hour gentle trek through terraced farmlands and Tamang settlements to quiet Laduk village (2,050m). Overnight at lodge."
+        },
+        {
+          "day": "07",
+          "title": "Laduk – Jagat (1,150 m)",
+          "altitude": "1,150 m / 3,772 ft",
+          "walkingTime": "6 hours",
+          "distance": "13 km",
+          "accommodation": "Lodge at Jagat",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Descend into Tamakoshi river valley, green sub-tropical landscapes down to Jagat.",
+          "description": "Descend along gentle valley trails towards lower elevations along the Tamakoshi River. Surroundings become lush, green, and warmer as you reach the riverside village of Jagat (1,150m). Overnight at lodge."
+        },
+        {
+          "day": "08",
+          "title": "Jagat - Simigaon (2,036 m)",
+          "altitude": "2,036 m / 6,679 ft",
+          "walkingTime": "5 hours",
+          "distance": "10 km",
+          "accommodation": "Lodge at Simigaon",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Cross Tamakoshi suspension bridge, climb ridge to Sherpa-Tamang village of Simigaon.",
+          "description": "Follow the river trail, cross the Tamakoshi suspension bridge, and begin a steady climb up terraced hillsides and forests. Reach Simigaon (2,036m), a peaceful Sherpa and Tamang village perched on a high ridge with a Buddhist monastery. Overnight at lodge."
+        },
+        {
+          "day": "09",
+          "title": "Simigaon - Kelthang Kharka (3,700 m)",
+          "altitude": "3,700 m / 12,139 ft",
+          "walkingTime": "6 hours",
+          "distance": "11 km",
+          "accommodation": "Lodge / Tented Camp",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Monastery visit in Simigaon, trek through dense rhododendron forests to alpine pasture Kelthang Kharka.",
+          "description": "Visit Simigaon Monastery before setting off through thick rhododendron and bamboo forests. Ascend into alpine zones with views of surrounding river gorges. Arrive at Kelthang Kharka pasture (3,700m). Overnight at lodge or tented camp."
+        },
+        {
+          "day": "10",
+          "title": "Kelthang Kharka – Beding (3,740 m)",
+          "altitude": "3,740 m / 12,270 ft",
+          "walkingTime": "6 hours",
+          "distance": "10 km",
+          "accommodation": "Lodge at Beding",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Trek high Rolwaling river gorge, suspension bridges, enter main Sherpa village of Beding.",
+          "description": "Trek along the upper Rolwaling river gorge, crossing wooden and suspension bridges over glacial torrents. Arrive in Beding (3,740m), the largest traditional Sherpa settlement in the Rolwaling Valley. Overnight at lodge."
+        },
+        {
+          "day": "11",
+          "title": "Beding - Na (4,180 m)",
+          "altitude": "4,180 m / 13,713 ft",
+          "walkingTime": "4 hours",
+          "distance": "7 km",
+          "accommodation": "Lodge at Na",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Gentle trek past pine forests, up-close views of Mount Gaurishankar to high settlement of Na.",
+          "description": "A gentle 4-hour walk along the U-shaped glacial valley floor. Pass ancient Buddhist Mani walls and enjoy dramatic close-up views of Mount Gaurishankar. Reach Na (4,180m), a high alpine summer settlement. Overnight at lodge."
+        },
+        {
+          "day": "12",
+          "title": "Acclimatization Day – Hike to Tso Rolpa Lake (4,580 m) - Na",
+          "altitude": "4,580 m / 15,026 ft",
+          "walkingTime": "4-5 hours",
+          "distance": "8 km round trip",
+          "accommodation": "Lodge at Na",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking / Excursion",
+          "highlights": "Acclimatization hike to turquoise Tsho Rolpa Glacial Lake (4,580m), glacier views & return to Na.",
+          "description": "Dedicated acclimatization day. Take a rewarding day hike up to **Tsho Rolpa Lake (4,580m)**—Nepal's largest glacial lake. Admire turquoise waters surrounded by icefalls and glacier walls. Return to Na for rest. Overnight at lodge."
+        },
+        {
+          "day": "13",
+          "title": "Na - Thangthing Kharka (3,200 m)",
+          "altitude": "3,200 m / 10,498 ft",
+          "walkingTime": "7 hours",
+          "distance": "14 km",
+          "accommodation": "Lodge at Thangthing Kharka",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Descend lower Rolwaling Valley past alpine pastures & river clearings.",
+          "description": "Begin your return journey down the valley, passing Beding and descending through alpine pastures and forests to Thangthing Kharka (3,200m). Overnight at lodge."
+        },
+        {
+          "day": "14",
+          "title": "Thangthing Kharka – Simi gaon (2,036 m)",
+          "altitude": "2,036 m / 6,679 ft",
+          "walkingTime": "6 hours",
+          "distance": "12 km",
+          "accommodation": "Tented camp / Lodge",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Trek back through rhododendron forests down to ridge village of Simigaon.",
+          "description": "Continue descending through quiet forest trails and river valleys back to Simigaon (2,036m). Enjoy peaceful mountain atmosphere. Overnight at tented camp / lodge."
+        },
+        {
+          "day": "15",
+          "title": "Jaisar Kharka – Jagat (1,150 m)",
+          "altitude": "1,150 m / 3,772 ft",
+          "walkingTime": "7 hours",
+          "distance": "13 km",
+          "accommodation": "Lodge at Jagat",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Descend terraced fields & small hamlets back to riverside Jagat.",
+          "description": "Trek downhill through terraced fields, crossing the Tamakoshi river bridge back to Jagat (1,150m). Overnight at lodge."
+        },
+        {
+          "day": "16",
+          "title": "Jagat – Kathmandu (1,350 m)",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "8 hours drive",
+          "distance": "180 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Lunch",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Scenic drive from Jagat back to Kathmandu along hill highways.",
+          "description": "Board your private vehicle from Jagat for a scenic 8-hour drive back to Kathmandu. Check into your hotel and enjoy leisure time. Overnight at hotel."
+        },
+        {
+          "day": "17",
+          "title": "Free day in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "10 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Farewell Dinner",
+          "modeOfTravel": "Free day",
+          "highlights": "Shopping in Thamel, relaxation & Zenex Travels farewell dinner.",
+          "description": "A free day in Kathmandu for shopping, relaxation, or optional spa treatments. Celebrate your journey at a traditional farewell dinner hosted by Zenex Travels & Tours. Overnight at hotel."
+        },
+        {
+          "day": "18",
+          "title": "Departure from Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "6 km",
+          "accommodation": "-",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport transfer for international departure flight.",
+          "description": "Enjoy breakfast at your hotel. At your scheduled departure time, your Zenex Travels representative will transfer you to Tribhuvan International Airport for your return flight."
+        }
+      ],
+      "includes": [
+        "Airport - Hotel - Airport transfers by private vehicle",
+        "4 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Private vehicle transportation Kathmandu – Charikot and Jagat – Kathmandu including guide & porters",
+        "Gaurishankar Conservation Area Permit (GCAP) + Bigu Gompa & Restricted Area Permits",
+        "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the trek",
+        "Mountain lodge and tented camping accommodations during the trek",
+        "Full camping equipment: sleeping tents, dining tent, kitchen tent, toilet tent & cooking gear",
+        "Professional Nepal Government licensed English-speaking trekking guide",
+        "Experienced camping cook, kitchen staff, and porters (1 porter for 2 trekkers, carrying up to 20-22 kg total)",
+        "Full insurance, equipment, clothing, food, and daily wages for guide, cook, and porters",
+        "Zenex Travels duffel bag for the trek",
+        "Official Achievement Certificate for Rolwaling Valley Trek",
+        "Traditional Farewell Dinner in Kathmandu",
+        "All necessary government taxes, VAT, and company service charges"
+      ],
+      "costIncludes": [
+        "Airport - Hotel - Airport transfers by private vehicle",
+        "4 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Private vehicle transportation Kathmandu – Charikot and Jagat – Kathmandu including guide & porters",
+        "Gaurishankar Conservation Area Permit (GCAP) + Bigu Gompa & Restricted Area Permits",
+        "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the trek",
+        "Mountain lodge and tented camping accommodations during the trek",
+        "Full camping equipment: sleeping tents, dining tent, kitchen tent, toilet tent & cooking gear",
+        "Professional Nepal Government licensed English-speaking trekking guide",
+        "Experienced camping cook, kitchen staff, and porters (1 porter for 2 trekkers, carrying up to 20-22 kg total)",
+        "Full insurance, equipment, clothing, food, and daily wages for guide, cook, and porters",
+        "Zenex Travels duffel bag for the trek",
+        "Official Achievement Certificate for Rolwaling Valley Trek",
+        "Traditional Farewell Dinner in Kathmandu",
+        "All necessary government taxes, VAT, and company service charges"
+      ],
+      "excludes": [
+        "International airfare & Nepal VISA fees",
+        "Personal travel and medical insurance (helicopter emergency evacuation compulsory)",
+        "Lunches & dinners in Kathmandu (except farewell dinner)",
+        "Hot showers, Wi-Fi, battery charging & bottled drinks in mountain lodges",
+        "Sightseeing entry fees to temples and monuments in Kathmandu",
+        "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+        "Tips and gratuities for guide, cook, and porters"
+      ],
+      "costExcludes": [
+        "International airfare & Nepal VISA fees",
+        "Personal travel and medical insurance (helicopter emergency evacuation compulsory)",
+        "Lunches & dinners in Kathmandu (except farewell dinner)",
+        "Hot showers, Wi-Fi, battery charging & bottled drinks in mountain lodges",
+        "Sightseeing entry fees to temples and monuments in Kathmandu",
+        "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+        "Tips and gratuities for guide, cook, and porters"
+      ],
+      "groupDiscounts": [
+        {
+          "pax": "1 - 3 Pax",
+          "price": "US$ 2,500"
+        },
+        {
+          "pax": "4 - 7 Pax",
+          "price": "US$ 2,300"
+        },
+        {
+          "pax": "8 - 11 Pax",
+          "price": "US$ 2,100"
+        },
+        {
+          "pax": "12 - 15 Pax",
+          "price": "US$ 2,000"
+        }
+      ],
+      "difficultyInfo": "The 18-day Rolwaling Valley Trek is graded HARD. It involves sustained trekking up to 4,580m at Tsho Rolpa Lake, multi-day mountain walking (5 to 8 hours daily), and high-altitude wilderness camping. Prior high-altitude trekking experience and good physical endurance are required.",
+      "altitudeSickness": {
+        "description": "Reaching high elevations up to 4,580 meters at Tsho Rolpa Lake, altitude sickness (AMS) is a factor to manage. The itinerary includes acclimatization days at Na (4,180m) to ensure safety.",
+        "prevention": [
+          "Ascend at a steady, unhurried pace.",
+          "Follow acclimatization rest days at Na.",
+          "Drink 3 to 4 liters of water and warm fluids daily.",
+          "Inform your Zenex Travels guide immediately if experiencing AMS symptoms."
+        ]
+      },
+      "equipmentList": [
+        {
+          "category": "Clothing & Layers",
+          "items": [
+            "Moisture-wicking base layers (2-3)",
+            "Fleece jacket & down jacket (-15°C rated)",
+            "Waterproof and windproof Gore-Tex jacket & pants",
+            "Trekking pants (2) & thermal leggings",
+            "Inner fleece gloves & heavy waterproof outer gloves",
+            "Warm beanie, sun hat & neck gaiter"
+          ]
+        },
+        {
+          "category": "Footwear & Bags",
+          "items": [
+            "Sturdy broken-in high-altitude trekking boots",
+            "Lightweight camp shoes / sandals",
+            "Thermal wool socks (4-5 pairs)",
+            "Daypack (20-30L) with rain cover",
+            "Zenex Travels duffel bag for porters"
+          ]
+        },
+        {
+          "category": "Sleeping & Gear",
+          "items": [
+            "Four-season sleeping bag rated to -20°C",
+            "Adjustable trekking poles",
+            "UV protection sunglasses",
+            "Headlamp with extra batteries",
+            "Water bottles, purification tablets & personal first aid kit"
+          ]
+        }
+      ],
+      "extendedInfo": [
+        {
+          "title": "Tsho Rolpa Lake (4,580 m)",
+          "description": "Tsho Rolpa is Nepal's largest glacial lake, located in the high Rolwaling Valley surrounded by dramatic snow peaks and icefalls."
+        },
+        {
+          "title": "Kalinchowk & Bigu Gompa",
+          "description": "Kalinchowk Temple (3,842m) and Bigu Gompa are prominent cultural and spiritual highlights of the lower trail."
+        },
+        {
+          "title": "Why Trek with Zenex Travels & Tours?",
+          "description": "Zenex Travels & Tours offers 20+ years of Himalayan expertise, licensed local guides, full camping infrastructure, transparent pricing, and safety management."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How long is the Rolwaling Valley Trek?",
+          "answer": "The full trek takes 18 days from arrival to departure in Kathmandu."
+        },
+        {
+          "question": "What is the highest altitude on the Rolwaling Valley Trek?",
+          "answer": "The highest altitude reached is 4,580 meters at Tsho Rolpa Lake."
+        },
+        {
+          "question": "What permits are required for the Rolwaling Trek?",
+          "answer": "You need the Gaurishankar Conservation Area Permit (GCAP) and Special Restricted Area Permit, both arranged by Zenex Travels & Tours."
+        },
+        {
+          "question": "What is the difficulty level of the Rolwaling Trek?",
+          "answer": "The trek is graded HARD due to long daily walking hours, steep terrain, and high altitude up to 4,580m."
+        },
+        {
+          "question": "When is the best time for the Rolwaling Trek?",
+          "answer": "Spring (March to May) and Autumn (September to November) offer clear skies, stable weather, and optimal mountain visibility."
+        }
+      ]
     }
   ],
   "destinations": [],

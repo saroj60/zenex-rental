@@ -117,6 +117,20 @@ const DEFAULT_TREK_DESTINATIONS = [
     description: 'The Dhaulagiri Region stands as one of Nepal’s most formidable and pristine Himalayan trekking destinations, taking adventurers around Mount Dhaulagiri (8,167 m). Known for its untamed alpine wilderness, high-altitude glaciers, French Pass (5,360m), and isolated Hidden Valley.'
   },
   {
+    id: 'REG-trk-rol',
+    slug: 'rolwaling',
+    name: 'Rolwaling Region Treks',
+    displayName: 'ROLWALING REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'Tsho Rolpa Lake, Bigu Gompa & Gaurishankar',
+    difficulty: 'Hard',
+    maxAltitude: '4,580 m',
+    duration: '18 Days',
+    image: '/trek images/Rolwaling Region Treks.jpg',
+    description: 'Rolwaling Valley Trek in Nepal takes you through quiet Sherpa villages, dense forests, sacred monasteries, and Tsho Rolpa Lake near the Tibetan border, under the shadow of Mount Gaurishankar (7,145m).'
+  },
+  {
     id: 'REG-trk-fws',
     slug: 'far-western-nepal',
     name: 'Far-Western Nepal Escapes',
