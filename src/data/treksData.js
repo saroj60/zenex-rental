@@ -1530,9 +1530,384 @@ export const treksData = [
         question: "How long is the drive from Kathmandu to Syabrubesi?",
         answer: "The drive takes approximately 5 to 6 hours (90 km) by private vehicle."
       },
+    ]
+  },
+  {
+    id: "tamang-heritage-langtang-valley-trek-15d",
+    slug: "tamang-heritage-langtang-valley-trek-15d",
+    title: "Tamang Heritage and Langtang Valley Trek - 15 Days",
+    region: "langtang",
+    regionName: "Langtang Region",
+    location: "Langtang National Park & Tamang Heritage Trail, Rasuwa, Nepal",
+    duration: "15",
+    durationUnit: "Days",
+    price: "US$1,145",
+    originalPrice: "US$1,220",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Moderate",
+    maxAltitude: "4,773 m / 4,985 m (Kyanjin Ri / Tserko Ri)",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "Walking / Hiking & Cultural Homestay Exploration",
+    accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges & Homestays",
+    meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
+    bestSeason: "Spring (March - May) & Autumn (September - November)",
+    image: "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+    gallery: [
+      "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+      "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
+      "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
+      "https://hillsherpatrekking.com/wp-content/uploads/2025/08/kyanjima-1.webp",
+      "https://api.escapehimalaya.com/media/featured/langtang-gosainkunda-helambu-trek-1711350634.jpg",
+      "https://www.apexasiaholidays.com/wp-content/uploads/2018/09/Lantang-Helambu-Gosaikunda-Lake-Trek-Nepal.jpg"
+    ],
+    overview: `
+      <h3>Tamang Heritage and Langtang Valley Trek | Cultural Homestays, Hot Springs & Glacial Peaks</h3>
+      <p>The 15-Day Tamang Heritage and Langtang Valley Trek offers a unique blend of cultural immersion and stunning Himalayan wilderness in Nepal’s Rasuwa district. Combining the traditional <strong>Tamang Heritage Trail</strong> with the alpine beauty of <strong>Langtang Valley</strong>, this moderate-grade trek takes you through ancient stone villages, sacred monasteries, and natural hot springs before ascending into high-altitude glacial terrain.</p>
+      <p>Along the initial cultural trail, trekkers visit Gatlang, Tatopani (famous for natural healing hot springs), Nagthali viewpoint (3,165 m), Thuman, and Briddhim homestay village. You'll experience warm Tamang-Tibetan hospitality, traditional dances, and ancient craft traditions. Joining the main Langtang route past Lama Hotel and Langtang Village, the trail reaches <strong>Kyanjin Gompa (3,870 m)</strong> where optional ascents to <strong>Kyanjin Ri (4,773 m)</strong> or <strong>Tserko Ri (4,985 m)</strong> afford breathtaking 360-degree panoramas of Langtang Lirung (7,227 m), Dorje Lakpa, and Ganesh Himal.</p>
+      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Langtang National Park entry permits, TIMS registration, private vehicle transfers, certified English-speaking guides and porters, homestay bookings, and gear support—ensuring a seamless, safe, and deeply rewarding Himalayan adventure.</p>
+    `,
+    highlights: [
+      "Explore the vibrant culture, traditions, and festivals of indigenous Tamang communities.",
+      "Visit Tatopani's natural hot springs and ancient Buddhist monasteries like Kyanjin Gompa.",
+      "Trek through Langtang National Park, home to rare wildlife like red pandas and Himalayan thars.",
+      "Enjoy panoramic views of Langtang Lirung (7,227 m), Ganesh Himal, Dorje Lakpa, and Tibetan peaks.",
+      "Climb to Nagthali viewpoint (3,165 m), a historic meditation retreat site with 360-degree mountain vistas.",
+      "Stay in community-based homestays in Briddhim and authentic mountain teahouses along the trail.",
+      "Experience serene rhododendron, pine, and bamboo forests with cascading waterfalls and river bridges.",
+      "Enjoy a quiet, off-the-beaten-path cultural trek with moderate physical challenge suitable for all hikers."
+    ],
+    quickFacts: {
+      country: "Nepal",
+      duration: "15 Days",
+      tripGrade: "Moderate",
+      maxAltitude: "4,773 m / 4,985 m",
+      startsEnds: "Kathmandu / Kathmandu",
+      activities: "Walking / Hiking & Cultural Exploration",
+      accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges & Homestays",
+      meals: "Breakfast, Lunch & Dinner during trek",
+      bestTime: "Spring (March - May) & Autumn (September - November)"
+    },
+    itinerary: [
       {
-        question: "Can the 12-day Ruby Valley itinerary be customized?",
-        answer: "Yes! Zenex Travels & Tours can adjust the duration, vehicle transfers, and hotel standards according to your preferences."
+        day: "01",
+        title: "Arrival in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Welcome Briefing",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport transfer, pre-trip briefing, guide meeting, gear preparation.",
+        description: "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be greeted by our Zenex Travels representative who will assist with your hotel transfer. After check-in, we host a pre-trip briefing, answer questions, and introduce your trekking guide. Overnight at hotel."
+      },
+      {
+        day: "02",
+        title: "Kathmandu – Syabrubesi",
+        altitude: "1,503 m / 4,931 ft",
+        walkingTime: "5-6 hrs drive",
+        distance: "90 km",
+        accommodation: "Lodge at Syabrubesi",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Private vehicle",
+        highlights: "Drive along Trishuli River valley to the gateway town of Langtang National Park.",
+        description: "Depart Kathmandu around 7-8 AM, driving north through winding mountain roads, terraced farmlands, and mountain towns like Dhunche. Arrive in Syabrubesi (1,503 m), located along the banks of the Trishuli River inside Langtang National Park. Overnight at lodge."
+      },
+      {
+        day: "03",
+        title: "Syabrubesi – Gatlang",
+        altitude: "2,238 m / 7,342 ft",
+        walkingTime: "5-6 hrs",
+        distance: "12 km",
+        accommodation: "Lodge at Gatlang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Uphill trek through Tamang hamlets, view of Ganesh Himal, stone-built houses of Gatlang.",
+        description: "Trek uphill for 2.5 hours through forested hills and Tamang settlements. Enjoy views of Ganesh Himal and Langtang ranges. Reach Gatlang (2,238 m), a traditional Tamang village famous for stone houses, chortens, and warm mountain hospitality. Overnight at lodge."
+      },
+      {
+        day: "04",
+        title: "Gatlang – Tatopani",
+        altitude: "2,607 m / 8,553 ft",
+        walkingTime: "6 hrs",
+        distance: "12 km",
+        accommodation: "Lodge at Tatopani",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Descend to Thangbuche river bridge, steady climb to Tatopani natural hot springs.",
+        description: "Descend to Thangbuche, cross a suspension bridge, and climb steadily through terraced fields and forested ridges. Enjoy views of Ganesh Himal. Arrive in Tatopani (2,607 m), famous for its natural hot springs believed to have healing properties. Relax in the hot springs. Overnight at lodge."
+      },
+      {
+        day: "05",
+        title: "Tatopani – Nagthali (3,165 m) – Thuman",
+        altitude: "3,165 m / 10,383 ft",
+        walkingTime: "6-7 hrs",
+        distance: "11 km",
+        accommodation: "Lodge at Thuman",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Climb to Nagthali viewpoint for panoramas of Ganesh Himal & Tibetan peaks, descend to Thuman.",
+        description: "Ascend 2.5 hours to Nagthali (3,165 m), a high ridge viewpoint once used as a meditation retreat for Tibetan monks. Enjoy 360-degree views of Paldor Peak, Ganesh Himal, and Langtang Lirung. Descend through rhododendron forests to Thuman (2,338 m), a village rich in Tibetan-influenced Tamang culture. Overnight at lodge."
+      },
+      {
+        day: "06",
+        title: "Thuman – Briddhim",
+        altitude: "2,229 m / 7,312 ft",
+        walkingTime: "5-6 hrs",
+        distance: "10.5 km",
+        accommodation: "Lodge / Homestay at Briddhim",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Cross Bhote Koshi River, walk through corn fields, stay in Briddhim community homestay.",
+        description: "Trek along a narrow trail through forests and corn fields, crossing the Bhote Koshi River via suspension bridge. Climb to Briddhim (2,229 m), a peaceful village on the lap of Langtang Himal known for community-based homestays, old monasteries, and Tamang hospitality. Overnight at lodge/homestay."
+      },
+      {
+        day: "07",
+        title: "Briddhim – Lama Hotel",
+        altitude: "2,480 m / 8,136 ft",
+        walkingTime: "5-6 hrs",
+        distance: "12 km",
+        accommodation: "Lodge at Lama Hotel",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Connect with the main Langtang Valley trail, walk along Langtang Khola river to Lama Hotel.",
+        description: "Descend gently through pine and rhododendron woods before ascending along the roaring Langtang Khola. Pass small settlements and spot langur monkeys and birdlife before reaching Lama Hotel (2,480 m), nestled in the forest. Overnight at lodge."
+      },
+      {
+        day: "08",
+        title: "Lama Hotel – Langtang Village",
+        altitude: "3,430 m / 11,253 ft",
+        walkingTime: "7-8 hrs",
+        distance: "12 km",
+        accommodation: "Lodge at Langtang Village",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek through Ghodatabela & Thyangsyap, view waterfalls and towering Langtang Lirung.",
+        description: "Walk through oak and rhododendron forests to Ghodatabela (3,030 m) for rest or lunch. Continue past Thyangsyap and Chayamki to reach Langtang Village (3,430 m). Marvel at the inspiring village resilience following the 2015 earthquake under the shadow of Langtang Lirung. Overnight at lodge."
+      },
+      {
+        day: "09",
+        title: "Langtang – Kyanjin Gompa",
+        altitude: "3,870 m / 12,696 ft",
+        walkingTime: "3 hrs",
+        distance: "6.5 km",
+        accommodation: "Lodge at Kyanjin Gompa",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Short scenic hike past Mani walls & chortens, visit Kyanjin Gompa & Yala Cheese Factory.",
+        description: "Enjoy a short 3-hour trek past chortens, prayer flags, and yak pastures to Kyanjin Gompa (3,870 m). Visit the ancient monastery and the historic Yala Cheese Factory established in 1952 with Swiss assistance. Overnight at lodge."
+      },
+      {
+        day: "10",
+        title: "Kyanjin Gompa | Ascend Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m)",
+        altitude: "4,773 m / 15,659 ft",
+        walkingTime: "3-4 hrs hike",
+        distance: "2 km",
+        accommodation: "Lodge at Kyanjin Gompa",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Hiking",
+        highlights: "Early sunrise climb to Kyanjin Ri or Tserko Ri, 360-degree glacier panoramas.",
+        description: "Hike early morning to Kyanjin Ri (4,773 m) for sunrise over Langtang Lirung (7,245 m), Langtang Ri (6,370 m), Yala Peak (5,520 m), and Dorje Lakpa (6,966 m). Return for breakfast and optional hike up Tserko Ri (4,985 m) for ultimate glacier views. Overnight at lodge."
+      },
+      {
+        day: "11",
+        title: "Kyanjin Gompa – Lama Hotel",
+        altitude: "2,470 m / 8,103 ft",
+        walkingTime: "7-8 hrs",
+        distance: "18.5 km",
+        accommodation: "Lodge at Lama Hotel",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Descend back through Ghodatabela along the Langtang Khola.",
+        description: "Bid farewell to Kyanjin Gompa and trek downhill through Langtang Village and Ghodatabela for lunch. Continue descending back to Lama Hotel. Overnight at lodge."
+      },
+      {
+        day: "12",
+        title: "Lama Hotel – Thulo Syabru",
+        altitude: "2,210 m / 7,250 ft",
+        walkingTime: "6-7 hrs",
+        distance: "10 km",
+        accommodation: "Lodge at Thulo Syabru",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek via Sherpagaon & Bhanjyang, view Kerung Peak (Tibet) & Ganesh Himal.",
+        description: "Trek along easy trails through terraced fields to Sherpagaon (2,500 m). Continue up and down to Bhanjyang village for panoramic views of Ganesh Himal and Kerung Peak in Tibet, then descend steeply into Thulo Syabru (2,210 m). Overnight at lodge."
+      },
+      {
+        day: "13",
+        title: "Thulo Syabru – Dhunche – Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "9 hrs total",
+        distance: "10 km trek + drive",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast & Lunch",
+        modeOfTravel: "Trekking & Vehicle",
+        highlights: "Walk to Dhunche, scenic drive back to Kathmandu city hotel.",
+        description: "Trek to Dhunche (1,960 m) to complete your trail journey. Meet your private vehicle for a 5-hour drive back to Kathmandu. Check into your hotel and relax. Overnight at hotel."
+      },
+      {
+        day: "14",
+        title: "Free day in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "-",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast & Farewell Dinner",
+        modeOfTravel: "Free day / Sightseeing",
+        highlights: "Relaxation, souvenir shopping in Thamel, official farewell dinner.",
+        description: "Enjoy a free day in Kathmandu for shopping, visiting UNESCO sites like Swoyambhunath and Boudhanath, or relaxing. In the evening, join your guide for a traditional farewell dinner hosted by Zenex Travels & Tours. Overnight at hotel."
+      },
+      {
+        day: "15",
+        title: "Departure from Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "-",
+        accommodation: "-",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport transfer for departure flight.",
+        description: "Enjoy breakfast at your hotel. At your scheduled departure time, our Zenex Travels representative will transfer you to Tribhuvan International Airport for your flight home."
+      }
+    ],
+    includes: [
+      "Airport – Hotel – Airport transfers by private vehicle",
+      "3 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+      "Private vehicle transportation: Kathmandu to Syabrubesi and Dhunche to Kathmandu",
+      "Langtang National Park Entrance Fee + TIMS Card permits",
+      "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the 15-day trek",
+      "Accommodation at local teahouses/lodges and homestays during the trek",
+      "Professional Nepal Government licensed English-speaking trekking guide",
+      "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+      "Full insurance, equipment, accommodation, meals, and salary for guide and porters",
+      "Zenex Travels duffel bag and trekking gear support",
+      "Official Achievement Certificate for Tamang Heritage and Langtang Valley Trek",
+      "Traditional Farewell Dinner in Kathmandu",
+      "All necessary government taxes and service fees"
+    ],
+    costIncludes: [
+      "Airport – Hotel – Airport transfers by private vehicle",
+      "3 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+      "Private vehicle transportation: Kathmandu to Syabrubesi and Dhunche to Kathmandu",
+      "Langtang National Park Entrance Fee + TIMS Card permits",
+      "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the 15-day trek",
+      "Accommodation at local teahouses/lodges and homestays during the trek",
+      "Professional Nepal Government licensed English-speaking trekking guide",
+      "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+      "Full insurance, equipment, accommodation, meals, and salary for guide and porters",
+      "Zenex Travels duffel bag and trekking gear support",
+      "Official Achievement Certificate for Tamang Heritage and Langtang Valley Trek",
+      "Traditional Farewell Dinner in Kathmandu",
+      "All necessary government taxes and service fees"
+    ],
+    excludes: [
+      "International airfare & Nepal VISA entry fees",
+      "Personal trekking equipment & clothing",
+      "Personal medical and travel insurance (helicopter rescue coverage compulsory)",
+      "Bar bills, mineral water, soft drinks, beer, hot showers, Wi-Fi & electric charging on trail",
+      "Lunch and Dinner in Kathmandu (except farewell dinner)",
+      "Sightseeing entrance fees to temples in Kathmandu",
+      "Unforeseen costs due to road blockages, extreme weather, altitude sickness, or early return",
+      "Tips and gratuities for guide and porters",
+      "Any extra expenses not listed in INCLUDED"
+    ],
+    costExcludes: [
+      "International airfare & Nepal VISA entry fees",
+      "Personal trekking equipment & clothing",
+      "Personal medical and travel insurance (helicopter rescue coverage compulsory)",
+      "Bar bills, mineral water, soft drinks, beer, hot showers, Wi-Fi & electric charging on trail",
+      "Lunch and Dinner in Kathmandu (except farewell dinner)",
+      "Sightseeing entrance fees to temples in Kathmandu",
+      "Unforeseen costs due to road blockages, extreme weather, altitude sickness, or early return",
+      "Tips and gratuities for guide and porters",
+      "Any extra expenses not listed in INCLUDED"
+    ],
+    groupDiscounts: [
+      { pax: "2 - 3 Pax", price: "US$ 1,145" },
+      { pax: "4 - 7 Pax", price: "US$ 995" },
+      { pax: "8 - 11 Pax", price: "US$ 905" },
+      { pax: "12 - 15 Pax", price: "US$ 870" }
+    ],
+    difficultyInfo: {
+      grade: "Moderate",
+      details: "Graded MODERATE. Daily trekking averages 4 to 6 hours over 8–12 km. Reaches maximum altitude of 4,773 m (Kyanjin Ri) or 4,985 m (Tserko Ri). Suitable for hikers with basic fitness and preparation."
+    },
+    altitudeSickness: {
+      prevention: "Gradual elevation profile, hydration (3-4L daily), acclimatization in Kyanjin Gompa, avoiding alcohol, and guide monitoring."
+    },
+    equipmentList: [
+      { category: "Clothing", items: ["Moisture-wicking T-shirts (2-3)", "Fleece jacket / down jacket", "Waterproof Gore-Tex jacket", "Trekking pants (2)", "Thermal leggings", "Warm beanie & sun hat", "Fleece + waterproof gloves"] },
+      { category: "Footwear", items: ["Ankle-support trekking boots", "Camp shoes / sandals", "Wool trekking socks (3-4 pairs)"] },
+      { category: "Gears", items: ["Daypack (20-30L) with rain cover", "Duffel bag (provided by Zenex Travels)", "Sleeping bag rated to -10°C", "Trekking poles"] },
+      { category: "Personal Care", items: ["Water bottle / hydration bladder", "Water purification tablets", "Sunscreen (SPF 50+) & lip balm", "First aid kit"] }
+    ],
+    extendedInfo: [
+      {
+        title: "Tamang Heritage Culture & Monasteries",
+        description: "The Tamang Heritage Trail offers an authentic window into Tibetan Buddhist culture, ancient stone villages like Gatlang and Thuman, and traditional homestay hospitality in Briddhim."
+      },
+      {
+        title: "Tatopani Hot Springs & Nagthali Viewpoint",
+        description: "Enjoy natural healing hot springs at Tatopani and climb Nagthali (3,165 m)—a historic meditation retreat providing 360-degree panoramas of Paldor Peak, Ganesh Himal, and Tibet."
+      },
+      {
+        title: "Why Book with Zenex Travels & Tours?",
+        description: "Zenex Travels & Tours arranges all permits, private transportation, verified lodge and homestay bookings, and experienced local guides to ensure a safe, memorable adventure."
+      },
+      {
+        title: "Permits Required",
+        description: "Langtang National Park Entry Permit and TIMS Card are required. Zenex Travels & Tours manages all permit processing on your behalf."
+      }
+    ],
+    faqs: [
+      {
+        question: "Where is the Tamang Heritage and Langtang Trek located?",
+        answer: "It is located in the Rasuwa district of Nepal inside Langtang National Park, 90 km north of Kathmandu."
+      },
+      {
+        question: "What is the maximum altitude reached on this trek?",
+        answer: "The highest sleeping altitude is Kyanjin Gompa (3,870 m), with optional peak climbs to Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m)."
+      },
+      {
+        question: "How difficult is this 15-day trek?",
+        answer: "It is graded Moderate. Daily walking is 4 to 6 hours across well-marked forest trails, river valleys, and mountain ridges."
+      },
+      {
+        question: "What is the best time for the Tamang Heritage & Langtang Trek?",
+        answer: "Spring (March to May) for blooming rhododendrons and Autumn (September to November) for clear skies and peak visibility."
+      },
+      {
+        question: "What permits are required?",
+        answer: "Langtang National Park Entry Permit and TIMS Card. Zenex Travels & Tours handles all permit paperwork."
+      },
+      {
+        question: "Is a guide mandatory for this trek?",
+        answer: "Yes, hiring a licensed guide from Zenex Travels & Tours is recommended for navigation, safety, and cultural insight."
+      },
+      {
+        question: "What accommodation is provided?",
+        answer: "A mix of community homestays (Briddhim) and comfortable mountain teahouses/lodges offering twin-sharing rooms and warm dining areas."
+      },
+      {
+        question: "What mountains can be seen during the trek?",
+        answer: "Views include Langtang Lirung (7,227m), Ganesh Himal, Dorje Lakpa (6,966m), Paldor Peak, and Kerung Peak in Tibet."
+      },
+      {
+        question: "Are there hot springs on the route?",
+        answer: "Yes! Tatopani features natural thermal hot springs frequented by locals and travelers alike."
+      },
+      {
+        question: "Is this trek suitable for beginners?",
+        answer: "Yes, active beginners with reasonable physical fitness can complete this 15-day trek comfortably."
+      },
+      {
+        question: "What food is served during the trek?",
+        answer: "Freshly cooked local Dal Bhat, momos, noodles, soups, pancakes, chapati, pasta, and hot tea/coffee."
+      },
+      {
+        question: "Can this 15-day itinerary be customized?",
+        answer: "Yes! Zenex Travels & Tours can adjust the duration, transport, and hotel choices to suit your preferences."
       }
     ]
   }
