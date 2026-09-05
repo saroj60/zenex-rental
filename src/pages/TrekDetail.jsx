@@ -886,7 +886,12 @@ const TrekDetail = () => {
                       {trek.altitudeSickness.description}
                     </p>
                     <div className="space-y-2">
-                      {trek.altitudeSickness.prevention.map((item, idx) => (
+                      {(Array.isArray(trek?.altitudeSickness?.prevention)
+                        ? trek.altitudeSickness.prevention
+                        : trek?.altitudeSickness?.prevention
+                        ? [trek.altitudeSickness.prevention]
+                        : []
+                      ).map((item, idx) => (
                         <div key={idx} className="flex items-start gap-2">
                           <CheckCircle2 size={18} className="text-red-500 shrink-0 mt-0.5" />
                           <span className="text-red-900/80 text-[15px]">{item}</span>

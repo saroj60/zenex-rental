@@ -1257,7 +1257,13 @@
         "details": "The Helambu & Langtang Trek is graded as MODERATE. It involves steady ascents, forest trails, and high altitude pass crossing at Lauribina Pass (4,610 m) and viewpoints like Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m). Daily walking averages 5 to 7 hours. Suitable for trekkers with basic physical fitness."
       },
       "altitudeSickness": {
-        "prevention": "Gradual elevation gain built into the 17-day itinerary, stay hydrated (3-4L water daily), avoid alcohol/smoking, and consult guide immediately if experiencing headaches or nausea."
+        "description": "Altitude sickness can occur above 3,000 meters. Our itinerary is carefully designed with gradual elevation gain for proper acclimatization.",
+        "prevention": [
+          "Follow the gradual elevation gain built into the 17-day itinerary.",
+          "Drink at least 3-4 liters of clean water daily to stay hydrated.",
+          "Avoid alcohol, smoking, and sleeping pills at high altitudes.",
+          "Inform your Zenex Travels guide immediately if you experience headaches or nausea."
+        ]
       },
       "equipmentList": [
         {
@@ -1645,7 +1651,13 @@
         "details": "Ruby Valley Trek is graded MODERATE. The highest elevation is Pangsang Pass at 3,850 m. Trekkers walk 5 to 7 hours daily over unpaved forest paths, terraced slopes, and rocky trails. No technical climbing experience is required."
       },
       "altitudeSickness": {
-        "prevention": "Gradual elevation gain up to 3,850m, rest days at Shertung, hydration (3-4L daily), avoiding alcohol, and following guide instructions."
+        "description": "Altitude sickness can occur above 3,000 meters. Our itinerary is carefully designed with gradual elevation gain for proper acclimatization.",
+        "prevention": [
+          "Follow the gradual elevation profile up to Pangsang Pass (3,850 m).",
+          "Take advantage of rest and acclimatization days at Shertung.",
+          "Drink 3-4 liters of clean water daily and stay hydrated.",
+          "Avoid alcohol and report any symptoms immediately to your guide."
+        ]
       },
       "equipmentList": [
         {
@@ -2063,7 +2075,13 @@
         "details": "Graded MODERATE. Daily trekking averages 4 to 6 hours over 8–12 km. Reaches maximum altitude of 4,773 m (Kyanjin Ri) or 4,985 m (Tserko Ri). Suitable for hikers with basic fitness and preparation."
       },
       "altitudeSickness": {
-        "prevention": "Gradual elevation profile, hydration (3-4L daily), acclimatization in Kyanjin Gompa, avoiding alcohol, and guide monitoring."
+        "description": "Altitude sickness can occur above 3,000 meters. Our itinerary is carefully designed with gradual elevation gain for proper acclimatization.",
+        "prevention": [
+          "Follow the gradual elevation gain profile across Tamang Heritage Trail into Langtang.",
+          "Drink 3-4 liters of clean water daily to remain well hydrated.",
+          "Take extra acclimatization care at Kyanjin Gompa before peak climbs.",
+          "Avoid alcohol, smoking, and notify your guide immediately if feeling unwell."
+        ]
       },
       "equipmentList": [
         {
