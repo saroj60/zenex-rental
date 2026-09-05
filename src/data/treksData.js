@@ -20,12 +20,16 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Teahouses on Trail",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (September - November)",
-    image: "/images/manaslu.jpg",
+    image: "https://www.nepalecotrekking.com/public/uploads/tsum-valley-trek-2.jpg",
     gallery: [
-      "/images/manaslu.jpg",
-      "/images/everest base.jpg",
-      "/images/annapurna.jpg",
-      "/images/langtang1.jpg"
+      "https://www.nepalecotrekking.com/public/uploads/tsum-valley-trek-2.jpg",
+      "https://himalayaguidenepal.com/wp-content/uploads/2025/08/Tsum-Valley.jpg",
+      "https://www.acethehimalaya.com/wp-content/uploads/2022/10/Nepal2017-1504-600x400.jpg",
+      "https://media.app.nepalguidetrekking.com/uploads/media/Tsum/Tsum-Valley-Trekking.jpg",
+      "https://hike.bidhee.net/media/packages/featured/Tsum_valley.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGar5QKcs5svnrb_2nqPfEdRkumhzeoAJNVHQ-jGydZrO_JGiKygCwtlgD&s=10",
+      "https://titatour.com/wp-content/uploads/2025/10/Tsum-Valley-Trek.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgXo1bA3v_VV9gH5wombD-glEeFchOcIiSUjVr-Qbm05Sog5e_JP-0ixI&s=10"
     ],
     overview: `
       <h3>Tsum Valley Trek | A Journey into Tibetan-Buddhist Culture & Himalayan Beauty</h3>
