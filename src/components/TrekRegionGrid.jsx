@@ -103,6 +103,20 @@ const DEFAULT_TREK_DESTINATIONS = [
     description: 'Dolpo is a mystical land in northwestern Nepal known for its dramatic trans-Himalayan landscapes and deep turquoise Shey Phoksundo Lake. Immortalized in classic Himalayan literature, Dolpo offers high-altitude desert passes, pre-Buddhist Bon culture, and an unforgettable sense of remoteness.'
   },
   {
+    id: 'REG-trk-dha',
+    slug: 'dhaulagiri',
+    name: 'Dhaulagiri Region Treks',
+    displayName: 'DHAULAGIRI REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'French Pass, Hidden Valley & Mt. Dhaulagiri (8,167m)',
+    difficulty: 'Hard',
+    maxAltitude: '5,360 m',
+    duration: '17 - 19 Days',
+    image: '/trek images/Dhaulagiri-Circuit-Trek.jpeg',
+    description: 'The Dhaulagiri Region stands as one of Nepal’s most formidable and pristine Himalayan trekking destinations, taking adventurers around Mount Dhaulagiri (8,167 m). Known for its untamed alpine wilderness, high-altitude glaciers, French Pass (5,360m), and isolated Hidden Valley.'
+  },
+  {
     id: 'REG-trk-fws',
     slug: 'far-western-nepal',
     name: 'Far-Western Nepal Escapes',

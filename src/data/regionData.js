@@ -57,7 +57,11 @@ export const regionData = {
     id: 'dhaulagiri',
     title: 'Dhaulagiri Region Treks',
     image: '/trek images/Dhaulagiri-Circuit-Trek.jpeg',
-    description: `Circumnavigating the giant peak of Dhaulagiri (8,167m), this circuit trek is a true alpine expedition for seasoned trekkers. The trail crosses high passes like French Pass and Dhampus Pass while offering dramatic views of icefalls, glaciers, and rugged mountain terrain.`
+    description: `The Dhaulagiri Region stands as one of Nepal’s most formidable, pristine, and remote Himalayan trekking destinations, taking adventurers around Mount Dhaulagiri (8,167 m)—the world’s seventh highest peak. Known for its untamed alpine wilderness, high-altitude desert valleys, and dramatic glaciers, this region offers an authentic expedition experience for seasoned trekkers seeking solitude and raw mountain landscapes.
+
+Traversing rugged terrain, dense rhododendron forests, and traditional Magar and Thakali villages like Muri and Marpha, the route ascends to Dhaulagiri Base Camp. Key highlights include traversing the expansive Chhonbardan Glacier and crossing two spectacular high mountain passes—French Pass (5,360 m) and Thapa Pass (5,244 m)—before descending into the isolated, snow-capped Hidden Valley.
+
+As a true high-wilderness trek, Dhaulagiri requires organized camping support across upper trail sections where lodges are absent. Whether circumnavigating Mount Dhaulagiri or ascending non-technical trekking peaks like Dhampus (Thapa) Peak (6,012 m), Zenex Travels & Tours provides full logistics, expert climbing Sherpas, mountain cooks, and safety management for an unforgettable journey into Nepal's land of the white mountain.`
   },
   'far-western-nepal': {
     id: 'far-western-nepal',
