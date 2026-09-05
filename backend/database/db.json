@@ -9372,6 +9372,258 @@
           "answer": "Spring (March to May) and Autumn (September to November) offer stable weather, low avalanche risk, and optimum mountain visibility."
         }
       ]
+    },
+    {
+      "id": "api-base-camp-trek-14d",
+      "slug": "api-base-camp-trek-14d",
+      "title": "Api Base Camp Trek - 14 Days",
+      "region": "far-west",
+      "category": "Far-Western Region Treks",
+      "location": "Api Nampa Conservation Area, Darchula, Far-Western Nepal",
+      "duration": "14 Days",
+      "maxAltitude": "3,900 m",
+      "difficulty": "Moderate",
+      "bestSeason": "Spring (Mar-May) & Autumn (Sep-Nov)",
+      "groupSize": "1 - 12 Persons",
+      "price": 1750,
+      "originalPrice": 1980,
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "image": "https://www.bestheritagetour.com/public/images/upload/package/slider/api-himal-trek-5-1.jpg",
+      "heroImage": "https://www.bestheritagetour.com/public/images/upload/package/slider/api-himal-trek-5-1.jpg",
+      "gallery": [
+        "https://www.bestheritagetour.com/public/images/upload/package/slider/api-himal-trek-5-1.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-WbzEh7JCfiuT2ZgdoF-nxC0XUpnEVx2_KBjJi5VTJQJh5K2gUAxuknip&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYSCVirilV29iPsMpvfp9Eqc296Do0bgXprZXAemhJPouPA51ojWCHuvC4&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjrby-4xB1AiEvQaSjMVifeztnzKSv4u5GJJ67eQGmOu-H6s9Dm74eL-7&s=10"
+      ],
+      "overview": "Api Himal Base Camp Trekking (Api Base Camp Trek), located in the remote Far Western Region of Nepal, is one of the most pristine, uncrowded, and untouched trekking destinations in the Himalayas. Named after Mount Api (7,132m)—the highest peak in far-western Nepal—this off-the-beaten-path camping adventure is ideal for travelers seeking solitude, authentic mountain heritage, and raw Himalayan wilderness.\n\nManaged within the Api Nampa Conservation Area, this region preserves rich biodiversity, ancient Byansi and Doteli traditions, and sacred alpine lakes like Kali Dhunga Tal (4,200m). The journey takes trekkers through isolated mountain settlements, dense bamboo and rhododendron forests, rushing river gorges along the Chamelia River, and expansive high-altitude alpine pastures.\n\nOrganized by Zenex Travels & Tours with full logistics, private 4WD transfers, experienced mountain guides, and complete camping infrastructure, this 14-day expedition delivers an extraordinary journey into Nepal's uncharted western frontier.",
+      "highlights": [
+        "Trek to Api Base Camp (3,900m) directly beneath the majestic south face of Mount Api (7,132m)",
+        "Explore the untouched wilderness of the Api Nampa Conservation Area, home to snow leopards, thar, and red pandas",
+        "Spectacular views of Api (7,132m), Nampa (6,929m), Bobaye (6,808m), and peaks along the Nepal–India border",
+        "Visit sacred high-altitude alpine lakes including Kali Dhunga Tal (4,200m) and Chameliya River source",
+        "Experience authentic local culture in Byansi, Chhetri, and Doteli Hindu mountain villages",
+        "Traverse dense pine, oak, and rhododendron cloud forests and pristine alpine meadows",
+        "Off-the-beaten-path camping expedition far from commercial crowded trails",
+        "Full professional guidance, permits, private transfers, and logistics by Zenex Travels & Tours"
+      ],
+      "quickFacts": {
+        "duration": "14 Days",
+        "destination": "Api Nampa Conservation Area, Far-Western Nepal",
+        "startPoint": "Kathmandu / Dhangadhi",
+        "endPoint": "Dhangadhi / Kathmandu",
+        "maxAltitude": "3,900 m (Api Base Camp)",
+        "difficulty": "Moderate",
+        "activity": "Remote Wilderness Camping & Trekking",
+        "meals": "All meals during trek (Breakfast, Lunch, Dinner)",
+        "accommodation": "Hotels / Lodges / Tented Camping",
+        "transportation": "Domestic Flights (Kathmandu - Dhangadhi - Kathmandu) & Private 4WD Jeeps",
+        "bestSeason": "Spring (March to May) & Autumn (September to November)",
+        "region": "far-west"
+      },
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu & Transfer to Hotel",
+          "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport in Kathmandu, our Zenex Travels & Tours representative will meet you and transfer you to your hotel. Prepare for the journey and attend an evening trip briefing with your guide.",
+          "overnight": "Hotel in Kathmandu",
+          "elevation": "1,350 m"
+        },
+        {
+          "day": "Day 02",
+          "title": "Fly from Kathmandu to Dhangadhi & Drive to Dadeldhura (2,650m)",
+          "description": "Take a scenic 1-hour domestic flight from Kathmandu to Dhangadhi in the Terai region of Far-Western Nepal. Meet your driving crew and take a 4-hour scenic drive (66 km) up into the forested hills of Dadeldhura.",
+          "overnight": "Lodge in Dadeldhura",
+          "elevation": "2,650 m"
+        },
+        {
+          "day": "Day 03",
+          "title": "Drive from Dadeldhura to Makarigadh (1,460m)",
+          "description": "Board a private 4WD jeep for an 8 to 9 hour drive (205 km) through Gokuleshwor and mountain country roads to Makarigadh, the starting point of the trek.",
+          "overnight": "Tented Camp / Lodge in Makarigadh",
+          "elevation": "1,460 m"
+        },
+        {
+          "day": "Day 04",
+          "title": "Trek from Makarigadh to Khandeswori (2,280m)",
+          "description": "Begin trekking with a pleasant 2 to 3 hour ascend through dense bamboo and rhododendron forests to Khandeswori village.",
+          "overnight": "Homestay / Tented Camp in Khandeswori",
+          "elevation": "2,280 m"
+        },
+        {
+          "day": "Day 05",
+          "title": "Trek from Khandeswori to Lumcha (2,350m) via Thumti",
+          "description": "Trek uphill for 2 hours to Thumti village to explore traditional western Nepalese architecture. Continue ascending past Kothadhar (2,720m) through rhododendron forests to reach the Sherpa-Tibetan hamlet of Lumcha.",
+          "overnight": "Homestay / Tented Camp in Lumcha",
+          "elevation": "2,350 m"
+        },
+        {
+          "day": "Day 06",
+          "title": "Trek from Lumcha to Simar (2,852m) via Chhirchhire",
+          "description": "Follow the Chamelia River Valley past Khaykot and Bedali hamlets up to Chhirchhire for lunch. Continue along the river trail for another 1.5 hours to Simar, featuring mountain views of Jethi Bahurani Chuli (6,850m) and Bobaye Chuli (6,808m).",
+          "overnight": "Tented Camp in Simar",
+          "elevation": "2,852 m"
+        },
+        {
+          "day": "Day 07",
+          "title": "Trek from Simar to Dhauli Odar (3,450m) & Bhabaya Valley Exploration",
+          "description": "Trek 3 to 4 hours through a wide, open valley to Dhauli Odar. After lunch, take an acclimatization exploration hike into Bhabaya Valley (6 km round trip) for panoramas of Lhayul Peak (6,395m).",
+          "overnight": "Tented Camp in Dhauli Odar",
+          "elevation": "3,450 m"
+        },
+        {
+          "day": "Day 08",
+          "title": "Trek to Api Himal Base Camp (3,900m), Explore Sacred Lake & Return to Dhauli Odar",
+          "description": "The highlight day! Trek 3 km (2 hours) to Api Himal Base Camp (3,900m) for 360-degree views of Api Himal (7,132m) and Nampa Chuli (6,929m). Explore Chameliya River source and hike up to sacred Kali Dhunga Tal (4,200m). Return to Dhauli Odar for a safe overnight sleep.",
+          "overnight": "Tented Camp in Dhauli Odar",
+          "elevation": "3,900 m"
+        },
+        {
+          "day": "Day 09",
+          "title": "Trek from Dhauli Odar to Khaykot (2,050m) via Chhirchhire",
+          "description": "Descend 18 km back through the scenic Chamelia River Valley past Chhirchhire to the riverside settlement of Khaykot.",
+          "overnight": "Tented Camp in Khaykot",
+          "elevation": "2,050 m"
+        },
+        {
+          "day": "Day 10",
+          "title": "Trek from Khaykot to Ghusa (2,284m) via Siti Village",
+          "description": "Trek through traditional terraced farms and forests past Siti Village for lunch, arriving at Ghusa village to experience authentic Doteli mountain life.",
+          "overnight": "Homestay / Tented Camp in Ghusa",
+          "elevation": "2,284 m"
+        },
+        {
+          "day": "Day 11",
+          "title": "Trek from Ghusa to Makarigad (1,460m) & Drive to Dadeldhura (2,650m)",
+          "description": "Trek 1.5 hours back to Makarigad and board a private 4WD jeep for the 8-hour drive back to Dadeldhura.",
+          "overnight": "Lodge in Dadeldhura",
+          "elevation": "2,650 m"
+        },
+        {
+          "day": "Day 12",
+          "title": "Drive from Dadeldhura to Dhangadhi & Fly to Kathmandu",
+          "description": "Drive 4 hours down to Dhangadhi airport and take the afternoon flight back to Kathmandu. Transfer to hotel.",
+          "overnight": "Hotel in Kathmandu",
+          "elevation": "1,350 m"
+        },
+        {
+          "day": "Day 13",
+          "title": "Free Day in Kathmandu for Sightseeing & Relaxation",
+          "description": "Leisure day in Kathmandu to explore UNESCO World Heritage sites (Boudhanath Stupa, Pashupatinath, Bhaktapur Durbar Square) or enjoy shopping in Thamel.",
+          "overnight": "Hotel in Kathmandu",
+          "elevation": "1,350 m"
+        },
+        {
+          "day": "Day 14",
+          "title": "Final Departure from Kathmandu",
+          "description": "Enjoy breakfast at hotel before our Zenex Travels representative transfers you to Tribhuvan International Airport for your return flight home.",
+          "overnight": "Homebound / Departure",
+          "elevation": "1,350 m"
+        }
+      ],
+      "inclusions": [
+        "Airport - Hotel - Airport transfers in Kathmandu & Dhangadhi by private vehicle",
+        "3 Nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Kathmandu - Dhangadhi - Kathmandu round-trip domestic airfare & airport taxes",
+        "Private 4WD jeep transport between Dhangadhi, Dadeldhura, and Makarigadh",
+        "Api Nampa Conservation Area Permit (ANCAP) & all necessary local permits",
+        "Full board meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the trek",
+        "Lodge, homestay, and 4-season tented camping accommodation during trek",
+        "Complete camping equipment: sleeping tents (twin sharing), dining tent, kitchen tent, toilet tent & utensils",
+        "Licensed, experienced English-speaking Himalayan mountain trekking guide",
+        "Experienced camping cook, kitchen staff, and high-altitude porters (1 porter for 2 trekkers, up to 15 kg per trekker)",
+        "Full wages, equipment, insurance, food, and daily allowance for guide, cook, and porters",
+        "Zenex Travels & Tours duffel bag & official Achievement Certificate",
+        "First aid medical kit with pulse oximeter monitoring",
+        "All applicable government taxes, VAT, and official agency service charges"
+      ],
+      "exclusions": [
+        "International airfare and Nepal entry visa fee",
+        "Personal travel, medical, and emergency helicopter evacuation insurance",
+        "Lunches and dinners in Kathmandu",
+        "Personal trekking gear and clothing",
+        "Personal expenses (hot showers, Wi-Fi, battery charging, laundry, mineral water, beverages)",
+        "Tips for mountain guide, cook, porters, and driver (customary reward)"
+      ],
+      "equipmentList": [
+        {
+          "category": "Clothing & Layers",
+          "items": [
+            "Moisture-wicking thermal base layers (top & bottom)",
+            "Fleece jacket & down jacket (-10°C rated)",
+            "Waterproof & windproof hard shell jacket & pants",
+            "Comfortable trekking pants (2 pairs)",
+            "Warm beanie, sun hat, buff & insulated gloves"
+          ]
+        },
+        {
+          "category": "Footwear",
+          "items": [
+            "Sturdy, broken-in waterproof trekking boots",
+            "Camp shoes or light sandals",
+            "Merino wool trekking socks (4-5 pairs)"
+          ]
+        },
+        {
+          "category": "Gear & Accessories",
+          "items": [
+            "Daypack (25-35L) with rain cover",
+            "Four-season sleeping bag rated to -10°C or lower",
+            "Trekking poles (pair)",
+            "Headlamp with spare batteries",
+            "Insulated water bottle & water purification tablets"
+          ]
+        },
+        {
+          "category": "Personal & Medical",
+          "items": [
+            "Personal first aid kit with altitude medication (Diamox)",
+            "Sunscreen SPF 50+ & lip balm",
+            "Quick-dry microfiber towel & biodegradable wet wipes"
+          ]
+        }
+      ],
+      "whyTrekWithUs": [
+        {
+          "title": "Far-West Wilderness Experts",
+          "description": "Zenex Travels & Tours provides veteran mountain guides native to Nepal's Far-Western region with deep knowledge of Api Nampa trails and local Byansi heritage."
+        },
+        {
+          "title": "Complete Expedition Camping Setup",
+          "description": "We provide high-altitude four-season tents, dedicated kitchen staff, satellite communications, and high-altitude safety management for untouched remote segments."
+        },
+        {
+          "title": "All-Inclusive & Transparent Pricing",
+          "description": "Domestic flights, private 4WD jeeps, permits, lodging, camping meals, and porter support are fully covered with zero hidden charges."
+        },
+        {
+          "title": "Ethical & Sustainable Tourism",
+          "description": "We enforce strict Leave No Trace environmental standards and ensure ethical porter care, fair wages, and equipment for all local staff."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Where is Api Himal Base Camp located?",
+          "answer": "Api Base Camp (3,900m) is located in the Api Nampa Conservation Area, Darchula District in the remote Far-Western Region of Nepal."
+        },
+        {
+          "question": "How difficult is the Api Himal Base Camp Trek?",
+          "answer": "It is rated as a Moderate trek. It involves 5 to 7 hours of daily hiking over rugged, remote terrain reaching 3,900m altitude. No technical climbing is required."
+        },
+        {
+          "question": "What permits are required for Api Base Camp Trek?",
+          "answer": "You require the Api Nampa Conservation Area Permit (ANCAP), arranged by Zenex Travels & Tours."
+        },
+        {
+          "question": "What type of accommodation is available on this trek?",
+          "answer": "Basic lodges and homestays are used in lower villages (Dadeldhura, Khandeswori), while 4-season tented camping is used at upper stops and Base Camp."
+        },
+        {
+          "question": "When is the best season to trek to Api Base Camp?",
+          "answer": "Spring (March to May) offers blooming rhododendrons and mild temperatures, while Autumn (September to November) offers crisp blue skies and stable mountain weather."
+        }
+      ]
     }
   ],
   "destinations": [],
