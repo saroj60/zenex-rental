@@ -5941,13 +5941,13 @@ export const treksData = [
     duration: "17 Days",
     price: "US$2,450",
     difficulty: "Hard",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4Ne4lpPa3EHxM2LySDv_AIrI3ouLj8ZaIR1V3v4W5jlBZaVHCD7IiINh&s=10",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3pjDfi19Iju0AESQ8Nlb7Lj0DDwIX-zaCHQM4GqlBeNAkT0X_031R-8&s=10",
     gallery: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4Ne4lpPa3EHxM2LySDv_AIrI3ouLj8ZaIR1V3v4W5jlBZaVHCD7IiINh&s=10",
-      "https://himalayanecologicaltrek.com/uploads/fullbanner/lower-dolpo.webp",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA5c7VRlMfPzm20S6aLIgib5UCM908ixGj5mZU4SODnQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyI0baCcwfg4TNx5H3qFjfqhnI-csg7RFwEcZxWwdyMmm7WJ5_DjWPQI&s=10",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2gzCzhrl3EWlStncG8j48LMGe_Tk4I2uTeokzNKNqcSmhAfAzJYM3HLO&s=10"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3pjDfi19Iju0AESQ8Nlb7Lj0DDwIX-zaCHQM4GqlBeNAkT0X_031R-8&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjoEVuFH1vtbXMSnYpd__suxHuThD3VsGEfN2vCev-Qz4kBtbc6z6ERMT&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ22b6UA4E23xnfn6INdSqK_op8A6l4NbGlg-msMzqbgwibcMTwszImMs&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRRlAOpbQz3agae6OTRP8LyjGgFGZI2Wmi10XKHgm3m4SjleV-vCeJ9qY&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZzSHSjJfzfW_6VU9eCFGYMCO0MFQtQCouKnXOLBwyUaZ_pyu9xiTnCcW&s=10"
     ],
     quickFacts: {
       duration: "17 Days",
