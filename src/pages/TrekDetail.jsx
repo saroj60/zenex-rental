@@ -847,7 +847,9 @@ const TrekDetail = () => {
                       Difficulty Level
                     </h3>
                     <p className="text-orange-900/80 leading-relaxed text-[15px]">
-                      {trek.difficultyInfo}
+                      {typeof trek.difficultyInfo === 'object'
+                        ? trek.difficultyInfo.details || trek.difficultyInfo.grade
+                        : trek.difficultyInfo}
                     </p>
                   </div>
                 )}

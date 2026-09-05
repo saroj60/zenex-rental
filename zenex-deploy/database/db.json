@@ -1252,10 +1252,7 @@
           "price": "US$ 910"
         }
       ],
-      "difficultyInfo": {
-        "grade": "Moderate",
-        "details": "The Helambu & Langtang Trek is graded as MODERATE. It involves steady ascents, forest trails, and high altitude pass crossing at Lauribina Pass (4,610 m) and viewpoints like Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m). Daily walking averages 5 to 7 hours. Suitable for trekkers with basic physical fitness."
-      },
+      "difficultyInfo": "The Helambu & Langtang Trek is graded as MODERATE. It involves steady ascents, forest trails, and high altitude pass crossing at Lauribina Pass (4,610 m) and viewpoints like Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m). Daily walking averages 5 to 7 hours. Suitable for trekkers with basic physical fitness.",
       "altitudeSickness": {
         "description": "Altitude sickness can occur above 3,000 meters. Our itinerary is carefully designed with gradual elevation gain for proper acclimatization.",
         "prevention": [
@@ -1646,10 +1643,7 @@
           "price": "US$ 655"
         }
       ],
-      "difficultyInfo": {
-        "grade": "Moderate",
-        "details": "Ruby Valley Trek is graded MODERATE. The highest elevation is Pangsang Pass at 3,850 m. Trekkers walk 5 to 7 hours daily over unpaved forest paths, terraced slopes, and rocky trails. No technical climbing experience is required."
-      },
+      "difficultyInfo": "Ruby Valley Trek is graded MODERATE. The highest elevation is Pangsang Pass at 3,850 m. Trekkers walk 5 to 7 hours daily over unpaved forest paths, terraced slopes, and rocky trails. No technical climbing experience is required.",
       "altitudeSickness": {
         "description": "Altitude sickness can occur above 3,000 meters. Our itinerary is carefully designed with gradual elevation gain for proper acclimatization.",
         "prevention": [
@@ -2070,10 +2064,7 @@
           "price": "US$ 870"
         }
       ],
-      "difficultyInfo": {
-        "grade": "Moderate",
-        "details": "Graded MODERATE. Daily trekking averages 4 to 6 hours over 8–12 km. Reaches maximum altitude of 4,773 m (Kyanjin Ri) or 4,985 m (Tserko Ri). Suitable for hikers with basic fitness and preparation."
-      },
+      "difficultyInfo": "Graded MODERATE. Daily trekking averages 4 to 6 hours over 8–12 km. Reaches maximum altitude of 4,773 m (Kyanjin Ri) or 4,985 m (Tserko Ri). Suitable for hikers with basic fitness and preparation.",
       "altitudeSickness": {
         "description": "Altitude sickness can occur above 3,000 meters. Our itinerary is carefully designed with gradual elevation gain for proper acclimatization.",
         "prevention": [
@@ -2436,10 +2427,7 @@
           "price": "US$ 530"
         }
       ],
-      "difficultyInfo": {
-        "grade": "Easy",
-        "details": "The 10-Day Tamang Heritage Trek is graded EASY. Daily walking is around 4 to 6 hours over gradual uphill and downhill paths. The highest altitude is Nagthali at 3,165 m, making the risk of altitude sickness low. Ideal for beginners and families."
-      },
+      "difficultyInfo": "The 10-Day Tamang Heritage Trek is graded EASY. Daily walking is around 4 to 6 hours over gradual uphill and downhill paths. The highest altitude is Nagthali at 3,165 m, making the risk of altitude sickness low. Ideal for beginners and families.",
       "altitudeSickness": {
         "description": "With a maximum altitude of 3,165 meters at Nagthali, risk of severe altitude sickness is low. Basic precautions ensure a smooth trek.",
         "prevention": [
