@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { useAppData } from '../../context/AppDataContext';
 import { Upload, X, CheckCircle2 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const AddDriver = () => {
-  const { addDriver } = useAppData();
+  const { addDriver, updateDriver } = useAppData();
   const navigate = useNavigate();
+  const location = useLocation();
+  const editingDriver = location.state?.driver;
   
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState(editingDriver || {
     name: '',
     phone: '',
     licenseNo: '',
@@ -15,7 +17,7 @@ const AddDriver = () => {
   });
   
   const [imageFile, setImageFile] = useState(null);
-  const [imagePreview, setImagePreview] = useState('');
+  const [imagePreview, setImagePreview] = useState(editingDriver?.image || '');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -56,15 +58,19 @@ const AddDriver = () => {
         data.append('image', imageFile);
       }
 
-      await addDriver(data);
+      if (editingDriver) {
+        await updateDriver(editingDriver.id, data);
+      } else {
+        await addDriver(data);
+      }
       
       setSuccess(true);
       setTimeout(() => {
         navigate('/admin/drivers');
       }, 1500);
     } catch (error) {
-      console.error('Error adding driver:', error);
-      alert('Failed to add driver. Please try again.');
+      console.error('Error saving driver:', error);
+      alert('Failed to save driver. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -73,8 +79,8 @@ const AddDriver = () => {
   return (
     <div className="max-w-2xl mx-auto">
       <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800">Add New Driver</h2>
-        <p className="text-gray-600 mt-1">Create a new driver profile</p>
+        <h2 className="text-2xl font-bold text-gray-800">{editingDriver ? 'Edit Driver' : 'Add New Driver'}</h2>
+        <p className="text-gray-600 mt-1">{editingDriver ? 'Update driver profile details' : 'Create a new driver profile'}</p>
       </div>
 
       {success && (
@@ -185,7 +191,7 @@ const AddDriver = () => {
             disabled={isSubmitting}
             className="bg-[#e53a24] text-white px-6 py-2.5 font-medium rounded-lg shadow-md hover:bg-red-700 hover:shadow-lg transition-all disabled:opacity-70 flex items-center gap-2"
           >
-            {isSubmitting ? 'Saving...' : 'Add Driver'}
+            {isSubmitting ? 'Saving...' : (editingDriver ? 'Update Driver' : 'Add Driver')}
           </button>
         </div>
       </form>

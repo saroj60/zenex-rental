@@ -1,15 +1,20 @@
 import React from 'react';
 import { useAppData } from '../../context/AppDataContext';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { PlusCircle, Trash2, Edit, Car } from 'lucide-react';
 
 const ManageVehicles = () => {
   const { vehicles, deleteVehicle } = useAppData();
+  const navigate = useNavigate();
 
   const handleDelete = (id) => {
     if (window.confirm('Are you sure you want to delete this vehicle?')) {
       deleteVehicle(id);
     }
+  };
+
+  const handleEdit = (vehicle) => {
+    navigate('/admin/add-vehicle', { state: { vehicle } });
   };
 
   return (
@@ -46,13 +51,22 @@ const ManageVehicles = () => {
                   <td className="px-6 py-4 text-gray-600 font-medium">{v.type}</td>
                   <td className="px-6 py-4 text-[#e53a24] font-bold">NPR {v.price}</td>
                   <td className="px-6 py-4 text-right">
-                    <button 
-                      onClick={() => handleDelete(v.id)}
-                      className="text-red-500 hover:text-red-700 p-2 rounded-lg hover:bg-red-50 transition-colors"
-                      title="Delete"
-                    >
-                      <Trash2 size={20} />
-                    </button>
+                    <div className="flex items-center justify-end gap-2">
+                      <button 
+                        onClick={() => handleEdit(v)}
+                        className="text-blue-500 hover:text-blue-700 p-2 rounded-lg hover:bg-blue-50 transition-colors"
+                        title="Edit"
+                      >
+                        <Edit size={20} />
+                      </button>
+                      <button 
+                        onClick={() => handleDelete(v.id)}
+                        className="text-red-500 hover:text-red-700 p-2 rounded-lg hover:bg-red-50 transition-colors"
+                        title="Delete"
+                      >
+                        <Trash2 size={20} />
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ))}

@@ -1,24 +1,45 @@
 import React, { useState } from 'react';
 import { useAppData } from '../../context/AppDataContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Package, Save, Info, ImageIcon, Settings } from 'lucide-react';
 
 const AddPackage = () => {
-  const { addPackage } = useAppData();
+  const { addPackage, updatePackage } = useAppData();
   const navigate = useNavigate();
+  const location = useLocation();
+  const editingPackage = location.state?.package;
 
-  const [formData, setFormData] = useState({
-    title: '',
-    category: 'Packages',
-    location: '',
-    duration: '',
-    price: '',
-    desc: '',
-    img: '',
-    highlights: '',
-    itinerary: '',
-    tripCode: '',
-    persons: ''
+  const [formData, setFormData] = useState(() => {
+    if (editingPackage) {
+      const highlightsStr = Array.isArray(editingPackage.highlights) ? editingPackage.highlights.join(', ') : (editingPackage.highlights || '');
+      const itineraryStr = Array.isArray(editingPackage.itinerary) ? editingPackage.itinerary.map(i => typeof i === 'string' ? i : `${i.day || ''}: ${i.desc || ''}`).join('\n') : (editingPackage.itinerary || '');
+      return {
+        title: editingPackage.title || '',
+        category: editingPackage.category || 'Packages',
+        location: editingPackage.location || '',
+        duration: editingPackage.duration || '',
+        price: editingPackage.price || '',
+        desc: editingPackage.desc || editingPackage.description || '',
+        img: editingPackage.img || editingPackage.image || '',
+        highlights: highlightsStr,
+        itinerary: itineraryStr,
+        tripCode: editingPackage.tripCode || '',
+        persons: editingPackage.persons || ''
+      };
+    }
+    return {
+      title: '',
+      category: 'Packages',
+      location: '',
+      duration: '',
+      price: '',
+      desc: '',
+      img: '',
+      highlights: '',
+      itinerary: '',
+      tripCode: '',
+      persons: ''
+    };
   });
 
   const handleChange = (e) => {
@@ -26,7 +47,7 @@ const AddPackage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     // Parse highlights and itinerary
@@ -41,12 +62,16 @@ const AddPackage = () => {
 
     const formattedPackage = {
       ...formData,
-      id: formData.title.toLowerCase().replace(/\s+/g, '-'),
+      id: editingPackage ? editingPackage.id : formData.title.toLowerCase().replace(/\s+/g, '-'),
       highlights: highlightsArray,
       itinerary: itineraryArray
     };
 
-    addPackage(formattedPackage);
+    if (editingPackage) {
+      await updatePackage(editingPackage.id, formattedPackage);
+    } else {
+      await addPackage(formattedPackage);
+    }
     navigate('/admin/packages');
   };
 
@@ -55,9 +80,9 @@ const AddPackage = () => {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-3">
           <Package className="text-[#e53a24]" size={32} />
-          Add New Package
+          {editingPackage ? 'Edit Package' : 'Add New Package'}
         </h1>
-        <p className="text-gray-500 mt-2">Enter the details of the new package.</p>
+        <p className="text-gray-500 mt-2">{editingPackage ? 'Update the details of the package.' : 'Enter the details of the new package.'}</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-8 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
@@ -171,7 +196,7 @@ const AddPackage = () => {
 
         <div className="pt-4 border-t border-gray-100 flex justify-end">
           <button type="submit" className="bg-[#1e3a8a] text-white px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-blue-900 transition-colors shadow-lg">
-            <Save size={20} /> Save Package
+            <Save size={20} /> {editingPackage ? 'Update Package' : 'Save Package'}
           </button>
         </div>
 

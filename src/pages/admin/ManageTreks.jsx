@@ -1,15 +1,20 @@
 import React from 'react';
 import { useAppData } from '../../context/AppDataContext';
-import { Link } from 'react-router-dom';
-import { PlusCircle, Trash2, Mountain } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { PlusCircle, Trash2, Edit, Mountain } from 'lucide-react';
 
 const ManageTreks = () => {
   const { treks, deleteTrek } = useAppData();
+  const navigate = useNavigate();
 
   const handleDelete = (id) => {
     if (window.confirm('Are you sure you want to delete this trek?')) {
       deleteTrek(id);
     }
+  };
+
+  const handleEdit = (trek) => {
+    navigate('/admin/add-trek', { state: { trek } });
   };
 
   return (
@@ -39,7 +44,7 @@ const ManageTreks = () => {
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-4">
                       <div className="w-16 h-12 bg-gray-100 rounded overflow-hidden flex items-center justify-center shrink-0">
-                        <img src={t.img || '/images/ktm-home.jpg'} alt={t.title} className="w-full h-full object-cover" onError={(e) => { e.target.onerror = null; e.target.src = '/images/ktm-home.jpg'; }} />
+                        <img src={t.img || t.image || '/images/ktm-home.jpg'} alt={t.title} className="w-full h-full object-cover" onError={(e) => { e.target.onerror = null; e.target.src = '/images/ktm-home.jpg'; }} />
                       </div>
                       <span className="font-bold text-gray-900">{t.title}</span>
                     </div>
@@ -48,13 +53,22 @@ const ManageTreks = () => {
                   <td className="px-6 py-4 text-gray-600 font-medium">{t.duration}</td>
                   <td className="px-6 py-4 text-[#e53a24] font-bold">{t.price}</td>
                   <td className="px-6 py-4 text-right">
-                    <button 
-                      onClick={() => handleDelete(t.id)}
-                      className="text-red-500 hover:text-red-700 p-2 rounded-lg hover:bg-red-50 transition-colors"
-                      title="Delete"
-                    >
-                      <Trash2 size={20} />
-                    </button>
+                    <div className="flex items-center justify-end gap-2">
+                      <button 
+                        onClick={() => handleEdit(t)}
+                        className="text-blue-500 hover:text-blue-700 p-2 rounded-lg hover:bg-blue-50 transition-colors"
+                        title="Edit"
+                      >
+                        <Edit size={20} />
+                      </button>
+                      <button 
+                        onClick={() => handleDelete(t.id)}
+                        className="text-red-500 hover:text-red-700 p-2 rounded-lg hover:bg-red-50 transition-colors"
+                        title="Delete"
+                      >
+                        <Trash2 size={20} />
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ))}

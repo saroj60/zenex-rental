@@ -1,29 +1,55 @@
 import React, { useState } from 'react';
 import { useAppData } from '../../context/AppDataContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Car, Save, Info, Image as ImageIcon, Settings, Star } from 'lucide-react';
 
 const AddVehicle = () => {
-  const { addVehicle } = useAppData();
+  const { addVehicle, updateVehicle } = useAppData();
   const navigate = useNavigate();
+  const location = useLocation();
+  const editingVehicle = location.state?.vehicle;
 
   const [file, setFile] = useState(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    type: 'Economy',
-    price: '',
-    img: '',
-    pax: 4,
-    trans: 'Manual',
-    fuel: 'Petrol',
-    luggage: 2,
-    rating: 5.0,
-    urgency: 'Available Now',
-    description: '',
-    features: '',
-    driverIncluded: true,
-    priceWithDriver: '',
-    tax: ''
+  const [formData, setFormData] = useState(() => {
+    if (editingVehicle) {
+      const featuresStr = Array.isArray(editingVehicle.features)
+        ? editingVehicle.features.join(', ')
+        : (editingVehicle.features || '');
+      return {
+        name: editingVehicle.name || '',
+        type: editingVehicle.type || 'Economy',
+        price: editingVehicle.price || '',
+        img: editingVehicle.img || '',
+        pax: editingVehicle.pax || editingVehicle.seats || 4,
+        trans: editingVehicle.trans || 'Manual',
+        fuel: editingVehicle.fuel || 'Petrol',
+        luggage: editingVehicle.luggage || 2,
+        rating: editingVehicle.rating || 5.0,
+        urgency: editingVehicle.urgency || 'Available Now',
+        description: editingVehicle.description || '',
+        features: featuresStr,
+        driverIncluded: editingVehicle.driverIncluded !== undefined ? editingVehicle.driverIncluded : true,
+        priceWithDriver: editingVehicle.priceWithDriver || '',
+        tax: editingVehicle.tax || ''
+      };
+    }
+    return {
+      name: '',
+      type: 'Economy',
+      price: '',
+      img: '',
+      pax: 4,
+      trans: 'Manual',
+      fuel: 'Petrol',
+      luggage: 2,
+      rating: 5.0,
+      urgency: 'Available Now',
+      description: '',
+      features: '',
+      driverIncluded: true,
+      priceWithDriver: '',
+      tax: ''
+    };
   });
 
   const handleChange = (e) => {
@@ -34,11 +60,13 @@ const AddVehicle = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     // Process features into an array
-    const processedFeatures = formData.features.split(',').map(f => f.trim()).filter(f => f);
+    const processedFeatures = typeof formData.features === 'string'
+      ? formData.features.split(',').map(f => f.trim()).filter(f => f)
+      : formData.features;
     
     const data = new FormData();
     data.append('name', formData.name);
@@ -60,7 +88,11 @@ const AddVehicle = () => {
       data.append('images', file);
     }
 
-    addVehicle(data);
+    if (editingVehicle) {
+      await updateVehicle(editingVehicle.id, data);
+    } else {
+      await addVehicle(data);
+    }
     navigate('/admin/vehicles');
   };
 
@@ -69,9 +101,9 @@ const AddVehicle = () => {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-3">
           <Car className="text-[#e53a24]" size={32} />
-          Add New Vehicle
+          {editingVehicle ? 'Edit Vehicle' : 'Add New Vehicle'}
         </h1>
-        <p className="text-gray-500 mt-2">Enter the details of the new vehicle to add it to your fleet.</p>
+        <p className="text-gray-500 mt-2">{editingVehicle ? 'Update the details of the vehicle.' : 'Enter the details of the new vehicle to add it to your fleet.'}</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-8 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
@@ -291,7 +323,7 @@ const AddVehicle = () => {
             type="submit" 
             className="bg-[#1e3a8a] text-white px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-blue-900 transition-colors shadow-lg"
           >
-            <Save size={20} /> Save Vehicle
+            <Save size={20} /> {editingVehicle ? 'Update Vehicle' : 'Save Vehicle'}
           </button>
         </div>
 

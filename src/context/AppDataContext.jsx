@@ -760,6 +760,7 @@ export const AppDataProvider = ({ children }) => {
 
   // CRUD for Gallery
   const addGalleryImage = (image) => setGalleryImages([{ ...image, id: 'G-' + Date.now() }, ...galleryImages]);
+  const updateGalleryImage = (id, updated) => setGalleryImages(galleryImages.map(g => g.id === id ? { ...g, ...updated } : g));
   const deleteGalleryImage = (id) => setGalleryImages(galleryImages.filter(g => g.id !== id));
 
   // CRUD for Drivers
@@ -854,7 +855,7 @@ export const AppDataProvider = ({ children }) => {
       treks, addTrek, updateTrek, deleteTrek,
       bookings, addBooking, updateBooking, deleteBooking,
       drivers, addDriver, updateDriver, deleteDriver,
-      galleryImages, addGalleryImage, deleteGalleryImage,
+      galleryImages, addGalleryImage, updateGalleryImage, deleteGalleryImage,
       tourTrips, addTourTrip, updateTourTrip, deleteTourTrip,
       regions, addRegion, updateRegion, deleteRegion,
       testimonials,

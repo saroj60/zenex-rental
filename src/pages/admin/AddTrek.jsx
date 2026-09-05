@@ -1,24 +1,45 @@
 import React, { useState } from 'react';
 import { useAppData } from '../../context/AppDataContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Mountain, Save, Info, ImageIcon, Settings } from 'lucide-react';
 
 const AddTrek = () => {
-  const { addTrek } = useAppData();
+  const { addTrek, updateTrek } = useAppData();
   const navigate = useNavigate();
+  const location = useLocation();
+  const editingTrek = location.state?.trek;
 
-  const [formData, setFormData] = useState({
-    title: '',
-    category: 'Treks',
-    location: '',
-    duration: '',
-    price: '',
-    desc: '',
-    img: '',
-    highlights: '',
-    itinerary: '',
-    tripCode: '',
-    persons: ''
+  const [formData, setFormData] = useState(() => {
+    if (editingTrek) {
+      const highlightsStr = Array.isArray(editingTrek.highlights) ? editingTrek.highlights.join(', ') : (editingTrek.highlights || '');
+      const itineraryStr = Array.isArray(editingTrek.itinerary) ? editingTrek.itinerary.map(i => typeof i === 'string' ? i : `${i.day || ''}: ${i.desc || ''}`).join('\n') : (editingTrek.itinerary || '');
+      return {
+        title: editingTrek.title || '',
+        category: editingTrek.category || 'Treks',
+        location: editingTrek.location || '',
+        duration: editingTrek.duration || '',
+        price: editingTrek.price || '',
+        desc: editingTrek.desc || editingTrek.description || '',
+        img: editingTrek.img || editingTrek.image || '',
+        highlights: highlightsStr,
+        itinerary: itineraryStr,
+        tripCode: editingTrek.tripCode || '',
+        persons: editingTrek.persons || ''
+      };
+    }
+    return {
+      title: '',
+      category: 'Treks',
+      location: '',
+      duration: '',
+      price: '',
+      desc: '',
+      img: '',
+      highlights: '',
+      itinerary: '',
+      tripCode: '',
+      persons: ''
+    };
   });
 
   const handleChange = (e) => {
@@ -26,7 +47,7 @@ const AddTrek = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     // Parse highlights and itinerary
@@ -41,12 +62,16 @@ const AddTrek = () => {
 
     const formattedTrek = {
       ...formData,
-      id: formData.title.toLowerCase().replace(/\s+/g, '-'),
+      id: editingTrek ? editingTrek.id : formData.title.toLowerCase().replace(/\s+/g, '-'),
       highlights: highlightsArray,
       itinerary: itineraryArray
     };
 
-    addTrek(formattedTrek);
+    if (editingTrek) {
+      await updateTrek(editingTrek.id, formattedTrek);
+    } else {
+      await addTrek(formattedTrek);
+    }
     navigate('/admin/treks');
   };
 
@@ -55,9 +80,9 @@ const AddTrek = () => {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-3">
           <Mountain className="text-[#e53a24]" size={32} />
-          Add New Trek
+          {editingTrek ? 'Edit Trek' : 'Add New Trek'}
         </h1>
-        <p className="text-gray-500 mt-2">Enter the details of the new trek.</p>
+        <p className="text-gray-500 mt-2">{editingTrek ? 'Update the details of the trek.' : 'Enter the details of the new trek.'}</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-8 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
@@ -171,7 +196,7 @@ const AddTrek = () => {
 
         <div className="pt-4 border-t border-gray-100 flex justify-end">
           <button type="submit" className="bg-[#1e3a8a] text-white px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-blue-900 transition-colors shadow-lg">
-            <Save size={20} /> Save Trek
+            <Save size={20} /> {editingTrek ? 'Update Trek' : 'Save Trek'}
           </button>
         </div>
 
