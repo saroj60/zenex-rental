@@ -2238,9 +2238,396 @@ export const treksData = [
         question: "What food options are available?",
         answer: "Local Dal Bhat, momos, noodles, fried rice, soups, Tibetan bread, pancakes, pasta, and hot beverages."
       },
+    ]
+  },
+  {
+    id: "langtang-ganja-la-pass-trek-15d",
+    slug: "langtang-ganja-la-pass-trek-15d",
+    title: "Langtang Ganja La Pass Trek - 15 Days",
+    region: "langtang",
+    regionName: "Langtang Region",
+    location: "Langtang National Park & Helambu, Rasuwa / Sindhupalchok, Nepal",
+    duration: "15",
+    durationUnit: "Days",
+    price: "US$1,280",
+    originalPrice: "US$1,380",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Hard",
+    maxAltitude: "5,130 m / 16,830 ft (Ganja La Pass)",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "High Altitude Trekking & Technical Pass Crossing",
+    accommodation: "3-Star Hotel in Kathmandu / Mountain Teahouses & Tented Camps",
+    meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
+    bestSeason: "Spring (March - May) & Autumn (September - November)",
+    image: "https://api.escapehimalaya.com/media/featured/langtang-gosainkunda-helambu-trek-1711350634.jpg",
+    gallery: [
+      "https://api.escapehimalaya.com/media/featured/langtang-gosainkunda-helambu-trek-1711350634.jpg",
+      "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+      "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
+      "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
+      "https://hillsherpatrekking.com/wp-content/uploads/2025/08/kyanjima-1.webp",
+      "https://www.apexasiaholidays.com/wp-content/uploads/2018/09/Lantang-Helambu-Gosaikunda-Lake-Trek-Nepal.jpg"
+    ],
+    overview: `
+      <h3>Langtang Ganja La Pass Trek | High Altitude Technical Pass & Himalayan Camping Expedition</h3>
+      <p>The 15-Day Langtang Ganja La Pass Trek is a thrilling high-altitude adventure combining the cultural richness of Langtang Valley with the rugged wilderness of the Helambu region. Starting from Syabrubesi, the trail winds through Tamang villages, pine forests, and alpine pastures to Kyanjin Gompa (3,870 m) before ascending into remote, unpopulated terrain to cross the formidable <strong>Ganja La Pass (5,130 m)</strong>.</p>
+      <p>Ganja La Pass offers spectacular 360-degree views of <strong>Langtang Lirung (7,227 m), Dorje Lakpa, Shishapangma (Tibet), and Ganesh Himal</strong>. Descending from the pass into the less-traveled Helambu valley involves camping at high altitude pastures (Ngegang Kharka, Keldang, Dhukpa) managed by a full camping support crew. The trail continues through traditional Sherpa villages including Tarkeghyang and Shermathang before concluding at Melamchi Bazaar.</p>
+      <p>At <strong>Zenex Travels & Tours</strong>, we provide comprehensive logistics—including full camping gear, licensed high-altitude guides, camping cooks, porters, Langtang National Park permits, private vehicle transfers, and hotel arrangements—to ensure a safe and unforgettable Himalayan expedition for experienced trekkers.</p>
+    `,
+    highlights: [
+      "Scenic drive from Kathmandu to Syabrubesi through rural hills and Trishuli river valley.",
+      "Explore Langtang Valley, rich in Tamang Buddhist culture, Mani walls, and alpine landscapes.",
+      "Visit Kyanjin Gompa (3,870 m) and Yala Cheese Factory surrounded by snow-capped Himalayan peaks.",
+      "Hike to Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m) for sunrise views over Langtang Lirung Glacier.",
+      "Cross Ganja La Pass (5,130 m)—a challenging and remote technical mountain pass.",
+      "Experience wild alpine camping at High Camp (4,960 m) and isolated yak pastures at Keldang.",
+      "Authentic cultural immersion in traditional Sherpa & Hyolmo villages of Tarkeghyang and Shermathang.",
+      "Diverse landscapes—from lush rhododendron forests to rugged glacial moraines and high plateaus.",
+      "Stunning panoramas of Langtang Lirung, Dorje Lakpa, Ganesh Himal, and Shishapangma.",
+      "Off-the-beaten-path trails offering peace, solitude, and fewer crowds compared to Everest or Annapurna.",
+      "End the trek in Helambu with a descent to Melamchi Bazaar and return drive to Kathmandu."
+    ],
+    quickFacts: {
+      country: "Nepal",
+      duration: "15 Days",
+      tripGrade: "Hard",
+      maxAltitude: "5,130 m / 16,830 ft",
+      startsEnds: "Kathmandu / Kathmandu",
+      activities: "High Altitude Trekking & Technical Pass Crossing",
+      accommodation: "3-Star Hotel in Kathmandu / Teahouses & Tented Camps",
+      meals: "Breakfast, Lunch & Dinner during trek",
+      bestTime: "Spring (March - May) & Autumn (September - November)"
+    },
+    itinerary: [
       {
-        question: "Can this 10-day itinerary be customized?",
-        answer: "Yes! Zenex Travels & Tours can adjust vehicle transfers, duration, and hotel options upon request."
+        day: "01",
+        title: "Arrival in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Welcome Briefing",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport transfer, trip briefing, equipment & climbing gear check.",
+        description: "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels representative will pick you up in a private vehicle and transfer you to your hotel. After check-in, we hold a pre-trip briefing to verify climbing gear, review the high-pass itinerary, and introduce your guide. Overnight at hotel."
+      },
+      {
+        day: "02",
+        title: "Kathmandu – Syabrubesi",
+        altitude: "1,503 m / 4,931 ft",
+        walkingTime: "5-6 hrs drive",
+        distance: "90 km",
+        accommodation: "Lodge at Syabrubesi",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Private vehicle",
+        highlights: "Scenic drive through mountain roads and river valleys to Syabrubesi.",
+        description: "Drive north from Kathmandu early morning through scenic mountain roads and the town of Dhunche. Arrive in Syabrubesi (1,503 m), nestled along the Trishuli River inside Langtang National Park. Overnight at lodge."
+      },
+      {
+        day: "03",
+        title: "Syabrubesi – Lama Hotel",
+        altitude: "2,480 m / 8,136 ft",
+        walkingTime: "6-7 hrs",
+        distance: "12 km",
+        accommodation: "Lodge at Lama Hotel",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Cross Bhote Koshi River, walk along Langtang Khola through bamboo forests.",
+        description: "Begin trekking across the Bhote Koshi River, following the Langtang Khola uphill through oak, rhododendron, and bamboo forests. Lunch at Bamboo (1,960 m) before ascending past Rimche to Lama Hotel (2,480 m). Overnight at lodge."
+      },
+      {
+        day: "04",
+        title: "Lama Hotel – Langtang Village",
+        altitude: "3,430 m / 11,253 ft",
+        walkingTime: "7-8 hrs",
+        distance: "12 km",
+        accommodation: "Lodge at Langtang Village",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trail through Ghodatabela, waterfalls, Tamang settlements, view of Langtang Lirung.",
+        description: "Trek through oak and rhododendron forests to Ghodatabela (3,030 m) for lunch. Continue past Thyangsyap and Chayamki to Langtang Village (3,430 m). Witness the inspiring village rebuilding under the shadow of Langtang Lirung. Overnight at lodge."
+      },
+      {
+        day: "05",
+        title: "Langtang – Kyanjin Gompa",
+        altitude: "3,870 m / 12,696 ft",
+        walkingTime: "3 hrs",
+        distance: "6.5 km",
+        accommodation: "Lodge at Kyanjin Gompa",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Walk past Mani walls & chortens, visit Kyanjin Gompa & Yala Cheese Factory.",
+        description: "Enjoy a short 3-hour trek winding past Mani walls, prayer flags, and yak pastures to Kyanjin Gompa (3,870 m). Visit the historic Kyanjin Monastery and the famous Yala Cheese Factory established in 1952. Overnight at lodge."
+      },
+      {
+        day: "06",
+        title: "Kyanjin Gompa | Ascend Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m)",
+        altitude: "4,773 m / 15,659 ft",
+        walkingTime: "5 hrs hike",
+        distance: "4 km",
+        accommodation: "Lodge at Kyanjin Gompa",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Hiking",
+        highlights: "Sunrise peak climb to Kyanjin Ri or Tserko Ri, 360-degree glacier panoramas.",
+        description: "Hike early morning to Kyanjin Ri (4,773 m) for an unforgettable sunrise over Langtang Lirung (7,245 m), Yala Peak, and Dorje Lakpa. Return for breakfast and optional excursion up Tserko Ri (4,985 m) for acclimatization before tomorrow's climb. Overnight at lodge."
+      },
+      {
+        day: "07",
+        title: "Kyanjin Gompa – High Camp",
+        altitude: "4,960 m / 16,272 ft",
+        walkingTime: "4 hrs",
+        distance: "6 km",
+        accommodation: "Tented Camp at High Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Climb past yak pastures & glacial streams into remote alpine terrain at High Camp.",
+        description: "Ascend eastward from Kyanjin Gompa into remote alpine terrain above Langtang Valley. Cross rocky ridges, glacial streams, and loose scree to reach Ganja La High Camp (4,960 m). Set up camp under mountain slopes in preparation for crossing Ganja La Pass. Overnight at tented camp."
+      },
+      {
+        day: "08",
+        title: "High Camp – Ganja La Pass (5,130 m) – Keldang",
+        altitude: "5,130 m / 16,830 ft",
+        walkingTime: "6-7 hrs",
+        distance: "10 km",
+        accommodation: "Tented Camp at Keldang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Technical Pass Crossing & Trekking",
+        highlights: "Cross Ganja La Pass (5130m), technical descent over snowfields to Keldang pastures.",
+        description: "Start before sunrise for the steep push to Ganja La Pass (5,130 m). Cross snowfields and rocky ridges (using ropes/crampons if required) to reach the prayer-flag-strewn pass. Marvel at 360-degree views of Langtang Lirung, Dorje Lakpa, and Shishapangma. Descend steep, technical moraine slopes down to Keldang (4,270 m) yak pastures. Overnight at tented camp."
+      },
+      {
+        day: "09",
+        title: "Keldang – Dhukpa",
+        altitude: "4,040 m / 13,254 ft",
+        walkingTime: "4.5 hrs",
+        distance: "9 km",
+        accommodation: "Tented Camp at Dhukpa",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Descend wide alpine valley, cross glacial streams to Dhukpa yak pastures.",
+        description: "Trek gently downhill across wide alpine valleys, crossing glacial streams and grassy pastures surrounded by dramatic mountain walls. Arrive at Dhukpa (4,040 m), a tranquil yak-grazing sanctuary. Overnight at tented camp."
+      },
+      {
+        day: "10",
+        title: "Dhukpa – Tarkeghyang",
+        altitude: "2,600 m / 8,530 ft",
+        walkingTime: "6 hrs",
+        distance: "12 km",
+        accommodation: "Lodge at Tarkeghyang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Descend into rhododendron forests, arrive in historic Hyolmo village of Tarkeghyang.",
+        description: "Descend from alpine pastures into lush rhododendron, pine, and oak forests. Enter the Helambu region and reach Tarkeghyang (2,600 m), an ancient Hyolmo village famous for stone houses, Buddhist monasteries, and local culture. Overnight at lodge."
+      },
+      {
+        day: "11",
+        title: "Tarkeghyang – Shermathang",
+        altitude: "2,590 m / 8,497 ft",
+        walkingTime: "4 hrs",
+        distance: "9 km",
+        accommodation: "Lodge at Shermathang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Easy walk past Mani walls, chortens & apple orchards of Shermathang.",
+        description: "Enjoy a comfortable flat walk through pine forests, passing Mani walls, chortens, and traditional Sherpa settlements. Arrive in Shermathang (2,590 m), offering views of Jugal and Ganesh Himal ranges and local apple orchards. Overnight at lodge."
+      },
+      {
+        day: "12",
+        title: "Shermathang – Melamchi Bazaar",
+        altitude: "870 m / 2,854 ft",
+        walkingTime: "5 hrs",
+        distance: "11 km",
+        accommodation: "Lodge at Melamchi Bazaar",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Final downhill walk through terraced farmlands to Melamchi Bazaar.",
+        description: "Trek downhill through terraced farmlands, Sherpa hamlets, and river valleys, descending to Melamchi Bazaar (870 m). Celebrate the completion of the high pass circuit. Overnight at lodge."
+      },
+      {
+        day: "13",
+        title: "Melamchi Bazaar – Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "3-4 hrs drive",
+        distance: "45-50 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast & Lunch",
+        modeOfTravel: "Private vehicle",
+        highlights: "Return drive to Kathmandu, check in hotel and relax.",
+        description: "After breakfast in Melamchi Bazaar, drive back to Kathmandu in a private vehicle (approx. 3-4 hours). Check into your hotel and spend the rest of the day relaxing or taking a spa treatment. Overnight at hotel."
+      },
+      {
+        day: "14",
+        title: "Free day in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "-",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast & Farewell Dinner",
+        modeOfTravel: "Free day / Sightseeing",
+        highlights: "UNESCO Heritage sightseeing, Thamel shopping, official farewell dinner.",
+        description: "Free day in Kathmandu for shopping, resting, or visiting UNESCO World Heritage sites (Swoyambhunath, Boudhanath, Pashupatinath). In the evening, join your guide for a traditional farewell dinner hosted by Zenex Travels & Tours. Overnight at hotel."
+      },
+      {
+        day: "15",
+        title: "Departure from Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6 km",
+        accommodation: "-",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport transfer for departure flight.",
+        description: "Enjoy breakfast at your hotel. At your scheduled departure time, our Zenex Travels representative will transfer you to Tribhuvan International Airport for your international departure flight."
+      }
+    ],
+    includes: [
+      "Airport – Hotel – Airport transfers by private vehicle",
+      "4 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+      "Private vehicle transportation: Kathmandu – Syabrubesi and Melamchi Bazaar – Kathmandu",
+      "Langtang National Park Entrance Fee permit",
+      "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the 15-day trek",
+      "Accommodation at lodges and tented camping during high pass crossing as per itinerary",
+      "Full camping gear: 2-person sleeping tents, kitchen tent, dining tent, toilet tent, mattresses & kitchen equipment",
+      "Professional Nepal Government licensed English-speaking high-altitude trekking guide",
+      "Experienced camping cook, kitchen crew, and porters during camping period",
+      "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+      "Full insurance, equipment, accommodation, meals, and salary for guide, cook, crew, and porters",
+      "Zenex Travels duffel bag and trekking gear support",
+      "Official Achievement Certificate for Langtang Ganja La Pass Trek",
+      "Traditional Farewell Dinner in Kathmandu",
+      "All necessary government taxes and company service fees"
+    ],
+    costIncludes: [
+      "Airport – Hotel – Airport transfers by private vehicle",
+      "4 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+      "Private vehicle transportation: Kathmandu – Syabrubesi and Melamchi Bazaar – Kathmandu",
+      "Langtang National Park Entrance Fee permit",
+      "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the 15-day trek",
+      "Accommodation at lodges and tented camping during high pass crossing as per itinerary",
+      "Full camping gear: 2-person sleeping tents, kitchen tent, dining tent, toilet tent, mattresses & kitchen equipment",
+      "Professional Nepal Government licensed English-speaking high-altitude trekking guide",
+      "Experienced camping cook, kitchen crew, and porters during camping period",
+      "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+      "Full insurance, equipment, accommodation, meals, and salary for guide, cook, crew, and porters",
+      "Zenex Travels duffel bag and trekking gear support",
+      "Official Achievement Certificate for Langtang Ganja La Pass Trek",
+      "Traditional Farewell Dinner in Kathmandu",
+      "All necessary government taxes and company service fees"
+    ],
+    excludes: [
+      "International airfare & Nepal VISA entry fees",
+      "Personal trekking equipment & clothing",
+      "Technical climbing gear (crampons, ice axe, harness, helmet, fixed rope if required)",
+      "Personal medical and travel insurance (helicopter rescue coverage compulsory)",
+      "Bar bills, mineral water, soft drinks, beer, hot showers, Wi-Fi & electric charging on trail",
+      "Lunch and Dinner in Kathmandu (except farewell dinner)",
+      "Sightseeing entrance fees to temples in Kathmandu",
+      "Unforeseen costs due to pass blockage, extreme weather, altitude sickness, or early return",
+      "Tips and gratuities for guide, cook, and porters",
+      "Any extra expenses not listed in INCLUDED"
+    ],
+    costExcludes: [
+      "International airfare & Nepal VISA entry fees",
+      "Personal trekking equipment & clothing",
+      "Technical climbing gear (crampons, ice axe, harness, helmet, fixed rope if required)",
+      "Personal medical and travel insurance (helicopter rescue coverage compulsory)",
+      "Bar bills, mineral water, soft drinks, beer, hot showers, Wi-Fi & electric charging on trail",
+      "Lunch and Dinner in Kathmandu (except farewell dinner)",
+      "Sightseeing entrance fees to temples in Kathmandu",
+      "Unforeseen costs due to pass blockage, extreme weather, altitude sickness, or early return",
+      "Tips and gratuities for guide, cook, and porters",
+      "Any extra expenses not listed in INCLUDED"
+    ],
+    groupDiscounts: [
+      { pax: "2 - 3 Pax", price: "US$ 1,280" },
+      { pax: "4 - 7 Pax", price: "US$ 1,150" },
+      { pax: "8 - 11 Pax", price: "US$ 1,080" },
+      { pax: "12 - 15 Pax", price: "US$ 1,020" }
+    ],
+    difficultyInfo: "Trekking to Langtang Ganja La Pass is graded HARD, suitable for experienced and physically fit trekkers. The trek reaches a maximum altitude of 5,130 meters at Ganja La Pass. The crossing involves steep ascents, loose scree, glacier traverses, and possible snow/ice conditions requiring crampons and ropes. After Kyanjin Gompa, the trail is unpopulated and requires full camping gear and logistics support.",
+    altitudeSickness: {
+      description: "With a high point of 5,130 meters at Ganja La Pass, altitude sickness is a key risk. Gradual acclimatization in Langtang and Kyanjin Gompa is built into the 15-day itinerary.",
+      prevention: [
+        "Maintain a steady pace during the climb to Kyanjin Gompa and High Camp.",
+        "Ascend Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m) for acclimatization before pass day.",
+        "Drink 3-4 liters of clean water daily to stay hydrated.",
+        "Avoid alcohol, smoking, and notify your Zenex Travels guide immediately if feeling unwell."
+      ]
+    },
+    equipmentList: [
+      { category: "Clothing", items: ["Moisture-wicking base layers", "Fleece jacket & heavy down jacket (-15°C rated)", "Waterproof/windproof Gore-Tex jacket & pants", "Trekking pants", "Thermal underwear", "Warm beanie & balaclava", "Heavy waterproof gloves & inner fleece gloves"] },
+      { category: "Footwear", items: ["Sturdy stiff-soled high-altitude trekking boots", "Camp boots / sandals", "Thermal wool socks (4 pairs)"] },
+      { category: "High Pass & Camping Gears", items: ["Daypack (30-40L) with rain cover", "Duffel bag (provided by Zenex Travels)", "Four-season sleeping bag rated to -15°C", "Trekking poles", "Headlamp with extra batteries", "Crampons / microspikes (if snow present)"] },
+      { category: "Personal Care", items: ["Water bottles / hydration bladder", "Water purification tablets/filter", "Sunscreen (SPF 50+) & lip balm", "First aid kit & personal medication"] }
+    ],
+    extendedInfo: [
+      {
+        title: "Ganja La Pass (5,130 m) – High Mountain Technical Crossing",
+        description: "Ganja La Pass (5,130 m) is one of the most adventurous high pass crossings in Nepal, connecting the Langtang Valley to Helambu. The pass demands good physical fitness, high-altitude experience, and technical care over scree and snow slopes."
+      },
+      {
+        title: "Wilderness Camping & High Camp Logistics",
+        description: "Beyond Kyanjin Gompa, teahouses are unavailable. Zenex Travels provides complete tented camp equipment, a professional camping cook, kitchen staff, and porters to ensure safety and comfort in high alpine terrain."
+      },
+      {
+        title: "Why Book with Zenex Travels & Tours?",
+        description: "Zenex Travels & Tours brings over two decades of high-altitude Himalayan logistics experience. We arrange all permits, camping gear, experienced guides, cooks, and porters for a safe high-pass expedition."
+      },
+      {
+        title: "Required Permits",
+        description: "Langtang National Park Entry Permit is required. Zenex Travels & Tours handles all permit processing on your behalf."
+      }
+    ],
+    faqs: [
+      {
+        question: "Where is the Langtang Ganja La Pass Trek located?",
+        answer: "The trek is located in the Langtang region of Nepal inside Langtang National Park, connecting Langtang Valley to the Helambu region via Ganja La Pass."
+      },
+      {
+        question: "What is the maximum altitude of the Ganja La Pass Trek?",
+        answer: "The highest elevation is Ganja La Pass at 5,130 meters (16,830 ft)."
+      },
+      {
+        question: "How difficult is the Langtang Ganja La Pass Trek?",
+        answer: "It is rated HARD. It requires crossing a 5,130 m technical pass over loose scree and snow, multi-day wilderness camping, and 6-7 hours of daily walking."
+      },
+      {
+        question: "What is the best time for Ganja La Pass Trek?",
+        answer: "Spring (late March to May) and Autumn (October to early November) offer stable weather, clear skies, and safer pass conditions."
+      },
+      {
+        question: "What permits are required for Ganja La Pass Trek?",
+        answer: "Langtang National Park Entry Permit is required. Zenex Travels & Tours handles all permit logistics."
+      },
+      {
+        question: "Is camping required on the Ganja La Pass Trek?",
+        answer: "Yes, between Kyanjin Gompa and Tarkeghyang there are no teahouses, requiring 3 nights of wild tented camping."
+      },
+      {
+        question: "Is a guide and support crew mandatory?",
+        answer: "Yes, a licensed high-altitude guide, camping cook, and porters are mandatory for safety and camping logistics on Ganja La Pass."
+      },
+      {
+        question: "What equipment is provided by Zenex Travels?",
+        answer: "We provide 2-person sleeping tents, dining tent, kitchen tent, toilet tent, mattresses, cooking gear, and duffel bags."
+      },
+      {
+        question: "What mountains can you see from Ganja La Pass?",
+        answer: "Panoramas include Langtang Lirung (7,227 m), Dorje Lakpa, Ganesh Himal, Yala Peak, and Shishapangma in Tibet."
+      },
+      {
+        question: "Is technical climbing gear needed for Ganja La Pass?",
+        answer: "Depending on snow conditions, crampons, ice axes, or fixed ropes may be used on the steep pass sections."
+      },
+      {
+        question: "Is this trek suitable for beginners?",
+        answer: "No, this trek is recommended only for experienced trekkers with prior multi-day high altitude experience."
+      },
+      {
+        question: "Can the 15-day Ganja La Pass itinerary be customized?",
+        answer: "Yes! Zenex Travels & Tours can adjust acclimatization days, camping arrangements, and private vehicle transport."
       }
     ]
   }
