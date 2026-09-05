@@ -658,31 +658,91 @@ const TrekDetail = () => {
                     const circleClass = currentColors.split(' ').slice(0, 3).join(' ');
                     const dotClass = currentColors.split(' ')[3].replace('dot-', '');
 
+                    // Extract clean day label, e.g. "Day 01" or "01"
+                    let dayLabel = day.day ? day.day.trim() : `Day ${String(index + 1).padStart(2, '0')}`;
+                    if (/^D\s+Day/i.test(dayLabel)) dayLabel = dayLabel.replace(/^D\s+/i, '');
+                    
+                    const descriptionText = day.details || day.description || day.desc || '';
+                    const travelModeText = day.travelMode || day.modeOfTravel;
+
                     return (
-                    <div key={day.day} className="flex gap-4 group">
+                    <div key={day.day || index} className="flex gap-4 group">
                       <div className="flex flex-col items-center">
-                        <div className={`w-12 h-12 rounded-full border flex items-center justify-center font-bold text-sm shrink-0 ${circleClass}`}>
-                          D {day.day}
+                        <div className={`w-14 h-14 rounded-full border-2 flex flex-col items-center justify-center font-bold text-xs shrink-0 text-center shadow-sm leading-tight p-1 ${circleClass}`}>
+                          <span>{dayLabel}</span>
                         </div>
                         <div className="w-px h-full bg-gray-200 my-2 group-last:hidden"></div>
                       </div>
-                      <div className="pb-6">
+                      <div className="pb-6 flex-1">
                         <h3 className="text-lg font-bold text-gray-900 mb-2">{day.title}</h3>
-                        <p className="text-gray-600 leading-relaxed text-[15px] whitespace-pre-line">{day.details}</p>
+                        {descriptionText && (
+                          <p className="text-gray-600 leading-relaxed text-[15px] whitespace-pre-line mb-3">{descriptionText}</p>
+                        )}
+
+                        {/* Day Metadata (Altitude, Accommodation, Meals, Travel Mode, Duration) */}
+                        {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
+                          <div className="mt-3 bg-slate-50/80 rounded-xl p-3.5 border border-slate-100 text-xs text-slate-700 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+                            {day.maxAltitude && (
+                              <div className="flex items-center gap-2">
+                                <Mountain size={14} className="text-slate-400 shrink-0" />
+                                <span><strong className="font-semibold text-slate-800">Max Altitude:</strong> {day.maxAltitude}</span>
+                              </div>
+                            )}
+                            {day.accommodation && (
+                              <div className="flex items-center gap-2">
+                                <Bed size={14} className="text-slate-400 shrink-0" />
+                                <span><strong className="font-semibold text-slate-800">Accommodation:</strong> {day.accommodation}</span>
+                              </div>
+                            )}
+                            {day.meals && (
+                              <div className="flex items-center gap-2">
+                                <Utensils size={14} className="text-slate-400 shrink-0" />
+                                <span><strong className="font-semibold text-slate-800">Meals:</strong> {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
+                              </div>
+                            )}
+                            {travelModeText && (
+                              <div className="flex items-center gap-2">
+                                <Car size={14} className="text-slate-400 shrink-0" />
+                                <span><strong className="font-semibold text-slate-800">Mode of Travel:</strong> {travelModeText}</span>
+                              </div>
+                            )}
+                            {day.duration && (
+                              <div className="flex items-center gap-2">
+                                <Clock size={14} className="text-slate-400 shrink-0" />
+                                <span><strong className="font-semibold text-slate-800">Duration:</strong> {day.duration}</span>
+                              </div>
+                            )}
+                          </div>
+                        )}
+
+                        {/* Day Highlights */}
                         {day.highlights && (
-                          <div className="mt-4 bg-gray-50 rounded-xl p-4 border border-gray-100">
-                            <h4 className="font-bold text-gray-900 mb-3 text-sm flex items-center gap-2">
-                              <Star className="text-yellow-500 w-4 h-4 fill-current" />
+                          <div className="mt-3 bg-amber-50/50 rounded-xl p-3.5 border border-amber-100/80">
+                            <h4 className="font-bold text-slate-900 mb-2 text-xs uppercase tracking-wider flex items-center gap-1.5">
+                              <Star className="text-amber-500 w-3.5 h-3.5 fill-current" />
                               Day Highlights
                             </h4>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4">
-                              {Object.entries(day.highlights).map(([k, v]) => (
-                                <div key={k} className="flex items-start gap-2 text-sm text-gray-700">
-                                  <div className={`w-1.5 h-1.5 rounded-full mt-1.5 shrink-0 ${dotClass}`}></div>
-                                  <span className="font-semibold text-gray-800">{k}:</span> {v}
-                                </div>
-                              ))}
-                            </div>
+                            {Array.isArray(day.highlights) ? (
+                              <ul className="space-y-1.5 text-xs text-slate-700">
+                                {day.highlights.map((h, i) => (
+                                  <li key={i} className="flex items-start gap-2">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1 shrink-0"></div>
+                                    <span>{h}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            ) : typeof day.highlights === 'object' ? (
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-1.5 gap-x-4 text-xs text-slate-700">
+                                {Object.entries(day.highlights).map(([k, v]) => (
+                                  <div key={k} className="flex items-start gap-2">
+                                    <div className={`w-1.5 h-1.5 rounded-full mt-1 shrink-0 ${dotClass}`}></div>
+                                    <span className="font-semibold text-slate-800">{k}:</span> {v}
+                                  </div>
+                                ))}
+                              </div>
+                            ) : (
+                              <p className="text-xs text-slate-700">{String(day.highlights)}</p>
+                            )}
                           </div>
                         )}
                       </div>
