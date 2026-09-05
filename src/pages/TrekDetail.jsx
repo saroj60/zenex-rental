@@ -753,17 +753,17 @@ const TrekDetail = () => {
             )}
 
             {/* Includes / Excludes */}
-            {(trek.costIncludes || trek.costExcludes) && (
+            {((trek.costIncludes && trek.costIncludes.length > 0) || (trek.includes && trek.includes.length > 0) || (trek.costExcludes && trek.costExcludes.length > 0) || (trek.excludes && trek.excludes.length > 0)) && (
               <div id="cost" className="scroll-mt-40 pb-6 border-b border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 mb-8 font-serif">Cost Details</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {trek.costIncludes && (
+                  {((trek.costIncludes && trek.costIncludes.length > 0) || (trek.includes && trek.includes.length > 0)) && (
                     <div className="bg-green-50 p-6 rounded-2xl">
                       <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2">
                         <Check className="text-green-600" /> What's Included
                       </h4>
                       <ul className="space-y-3">
-                        {trek.costIncludes.map((item, i) => (
+                        {(trek.costIncludes || trek.includes).map((item, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
                             <Check size={16} className="text-green-500 shrink-0 mt-0.5" />
                             <span>{item}</span>
@@ -772,13 +772,13 @@ const TrekDetail = () => {
                       </ul>
                     </div>
                   )}
-                  {trek.costExcludes && (
+                  {((trek.costExcludes && trek.costExcludes.length > 0) || (trek.excludes && trek.excludes.length > 0)) && (
                     <div className="bg-red-50 p-6 rounded-2xl">
                       <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2">
                         <X className="text-red-600" /> What's Excluded
                       </h4>
                       <ul className="space-y-3">
-                        {trek.costExcludes.map((item, i) => (
+                        {(trek.costExcludes || trek.excludes).map((item, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
                             <X size={16} className="text-red-500 shrink-0 mt-0.5" />
                             <span>{item}</span>
