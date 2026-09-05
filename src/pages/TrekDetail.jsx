@@ -34,22 +34,50 @@ const TrekDetail = () => {
   };
 
   const getDiscountedPerPersonPrice = (pax) => {
-    if (trek?.groupDiscounts) {
-      if (pax >= 16 && trek.groupDiscounts["16"]) return trek.groupDiscounts["16"];
-      if (pax >= 12 && trek.groupDiscounts["12"]) return trek.groupDiscounts["12"];
-      if (pax >= 8 && trek.groupDiscounts["8"]) return trek.groupDiscounts["8"];
-      if (pax >= 4 && trek.groupDiscounts["4"]) return trek.groupDiscounts["4"];
-      if (pax >= 2 && trek.groupDiscounts["2"]) return trek.groupDiscounts["2"];
+    let rawVal = null;
+
+    if (Array.isArray(trek?.groupDiscounts)) {
+      const tier = trek.groupDiscounts.find(item => {
+        const paxStr = String(item.pax || item.paxRange || '');
+        const matches = paxStr.match(/\d+/g);
+        if (matches && matches.length >= 2) {
+          const min = parseInt(matches[0], 10);
+          const max = parseInt(matches[1], 10);
+          return pax >= min && pax <= max;
+        } else if (matches && matches.length === 1) {
+          const min = parseInt(matches[0], 10);
+          return pax >= min;
+        }
+        return false;
+      });
+
+      if (tier && tier.price) {
+        rawVal = tier.price;
+      }
+    } else if (trek?.groupDiscounts && typeof trek.groupDiscounts === 'object') {
+      if (pax >= 16 && trek.groupDiscounts["16"]) rawVal = trek.groupDiscounts["16"];
+      else if (pax >= 12 && trek.groupDiscounts["12"]) rawVal = trek.groupDiscounts["12"];
+      else if (pax >= 8 && trek.groupDiscounts["8"]) rawVal = trek.groupDiscounts["8"];
+      else if (pax >= 4 && trek.groupDiscounts["4"]) rawVal = trek.groupDiscounts["4"];
+      else if (pax >= 2 && trek.groupDiscounts["2"]) rawVal = trek.groupDiscounts["2"];
+    }
+
+    if (rawVal) {
+      if (typeof rawVal === 'number') return rawVal;
+      if (typeof rawVal === 'string') {
+        const num = parseFloat(rawVal.replace(/[^0-9.]/g, ''));
+        if (!isNaN(num) && num > 0) return num;
+      }
     }
 
     const base = getBasePriceNum();
     if (!base) return 0;
     
     // Fallback Group discount logic
-    if (pax >= 16) return base - 145;
-    if (pax >= 12) return base - 140;
-    if (pax >= 8) return base - 115;
-    if (pax >= 4) return base - 95;
+    if (pax >= 16) return Math.max(0, base - 145);
+    if (pax >= 12) return Math.max(0, base - 140);
+    if (pax >= 8) return Math.max(0, base - 115);
+    if (pax >= 4) return Math.max(0, base - 95);
     return base;
   };
 
@@ -1131,7 +1159,7 @@ const TrekDetail = () => {
                     <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Price Per Person</span>
                     <div className="flex items-baseline gap-2.5">
                       <span className="text-3xl font-black text-[#1e3a8a] tracking-tight">
-                        {perPersonPrice ? `US$${perPersonPrice}` : 'TBA'}
+                        {perPersonPrice ? `US$${typeof perPersonPrice === 'number' ? perPersonPrice.toLocaleString() : perPersonPrice}` : (trek?.price || 'TBA')}
                       </span>
                       {trek.originalPrice && (
                         <span className="text-sm text-gray-400 line-through font-semibold">
