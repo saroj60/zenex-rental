@@ -20,6 +20,7 @@ const TourTripDetail = () => {
   const [isDiscountOpen, setIsDiscountOpen] = useState(true);
   const [travelers, setTravelers] = useState("2");
   const [date, setDate] = useState("");
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
   const formatAltitude = (alt, unit) => {
     if (!alt) return '-';
     const num = parseInt(String(alt).replace(/[^0-9]/g, ''));
@@ -155,8 +156,6 @@ const TourTripDetail = () => {
       </div>
     );
   }
-
-  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
 
   const handleDownloadPDF = async () => {
     if (!trip || isGeneratingPDF) return;
