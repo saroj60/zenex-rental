@@ -4678,5 +4678,268 @@ export const treksData = [
         answer: "Yes, travel insurance covering emergency high-altitude medical evacuation up to 6,000 meters is mandatory."
       }
     ]
+  },
+  {
+    id: "kanchenjunga-south-base-camp-trek-14d",
+    slug: "kanchenjunga-south-base-camp-trek-14d",
+    title: "Kanchenjunga South Base Camp Trek - 14 Days",
+    region: "kanchenjunga",
+    regionName: "Kanchenjunga Region",
+    location: "Kanchenjunga Conservation Area, Taplejung District, Eastern Nepal",
+    duration: "14",
+    durationUnit: "Days",
+    price: "US$1,590",
+    originalPrice: "US$1,790",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Moderate",
+    maxAltitude: "4,730 m / 15,518 ft (Oktang View Point)",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "Walking / Hiking & High Altitude Exploration",
+    accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
+    meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
+    bestSeason: "Spring (March - May) & Autumn (Sept - Nov)",
+    image: "/images/kanchenjunga.jpg",
+    gallery: [
+      "/images/kanchenjunga.jpg"
+    ],
+    overview: `
+      <h3>Kanchenjunga South Base Camp Trek 14 Days | Untouched Eastern Himalayan Wilderness</h3>
+      <p>The <strong>Kanchenjunga South Base Camp Trek (14 Days)</strong> is one of the shortest yet most rewarding journeys in eastern Nepal, taking trekkers to the foot of Mount Kanchenjunga (8,586 m)—the third-highest mountain on Earth. This off-the-beaten-path route inside the Kanchenjunga Conservation Area offers an ideal blend of raw high-altitude scenery, deep solitude, and authentic cultural immersion.</p>
+      <p>The crowning highlight of the trek is reaching <strong>Oktang View Point (4,730 m)</strong>, offering jaw-dropping views of the south and west faces of Mount Kanchenjunga (8,586 m), Yalung Kang (8,505 m), Khambachen Peak (7,903 m), Kabru Range, and the expansive Yalung Glacier. Along the trail, trekkers pass through terraced farmlands, lush rhododendron forests, and traditional Rai, Limbu, and Sherpa villages like Yasang, Tortang, Tseram, and Ramche.</p>
+      <p>At <strong>Zenex Travels & Tours</strong>, we handle every detail of your expedition—including domestic flights (Kathmandu – Bhadrapur), private jeep transfers to Taplejung and Hellok, Kanchenjunga Conservation Area Permits (KCAP), Special Restricted Area Permits (RAP), licensed local English-speaking guides, experienced porters, lodge reservations, and hotel stays in Kathmandu.</p>
+    `,
+    highlights: [
+      "Stand at Oktang View Point (4,730 m) for breathtaking 360-degree panoramas of Mt. Kanchenjunga (8,586 m) South Face and Yalung Glacier.",
+      "Enjoy spectacular views of Yalung Kang (8,505 m), Khambachen Peak (7,903 m), Rathong (6,678 m), and Kabru Peaks.",
+      "Explore the pristine wilderness of Kanchenjunga Conservation Area, home to red pandas, Himalayan black bears, and rare birds.",
+      "Trek through changing eco-zones—from subtropical bamboo and rhododendron forests to high alpine meadows and glacial valleys.",
+      "Experience authentic hospitality, ancient traditions, and animist/Buddhist culture in Rai, Limbu, and Sherpa villages.",
+      "Shorter 14-day itinerary ideal for trekkers seeking a remote, peaceful Himalayan escape without an extended 3-week trip.",
+      "Overland jeep journey through the iconic rolling tea gardens of Ilam and Taplejung in eastern Nepal.",
+      "Comprehensive trip management by Zenex Travels & Tours including permits, flights, private transport, guide, and porters."
+    ],
+    quickFacts: {
+      country: "Nepal",
+      duration: "14 Days",
+      tripGrade: "Moderate",
+      maxAltitude: "4,730 m / 15,518 ft",
+      starts: "Kathmandu",
+      ends: "Kathmandu",
+      activities: "Walking / Hiking",
+      accommodation: "3-Star Hotel / Mountain Lodges & Teahouses",
+      meals: "Breakfast in KTM, All Meals on Trek",
+      bestTime: "Spring (March - May) & Autumn (Sept - Nov)"
+    },
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Arrival in Kathmandu (1,350 m)",
+        description: "Welcome to Nepal! Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be met by our representative from Zenex Travels & Tours and transferred to your hotel. We will host a pre-trip briefing meeting to introduce your guide and go over trek details. Rest of the day is at leisure.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Not Included"
+      },
+      {
+        day: "Day 02",
+        title: "Permit Preparation & Free Day for Sightseeing in Kathmandu",
+        description: "While our team prepares your Kanchenjunga Special Restricted Area Permit at the Nepal Immigration Office, enjoy a free day exploring UNESCO World Heritage Sites in Kathmandu, including Kathmandu Durbar Square, Swoyambhunath (Monkey Temple), and Patan Durbar Square.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast"
+      },
+      {
+        day: "Day 03",
+        title: "Kathmandu - Bhadrapur (Flight) & Drive to Taplejung (1,820 m)",
+        description: "Fly early morning (45 mins) from Kathmandu to Bhadrapur in eastern Nepal. Meet your local drive crew and embark on a scenic 7 to 8 hour overland drive (214 km) through the lush tea hills of Ilam to Taplejung.",
+        maxAltitude: "1,820 m / 5,971 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 04",
+        title: "Taplejung - Hellok (1,550 m) - Kyansar / Yasang (1,700 m)",
+        description: "Drive off-road by private 4WD jeep from Taplejung to Hellok (approx. 6 hours) along the Tamor River. After lunch in Hellok, begin trekking uphill through bamboo forests for 2.5 hours to reach Yasang (1,700 m). Overnight at lodge.",
+        maxAltitude: "1,700 m / 5,577 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 05",
+        title: "Kyansar / Yasang - Tortang (2,995 m)",
+        description: "Trek for 6 hours alongside the Amji Khola river, walking through pristine pine and rhododendron forests and high pasture lands. Reach Tortang (2,995 m) by afternoon and stay at a local lodge.",
+        maxAltitude: "2,995 m / 9,826 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 06",
+        title: "Tortang - Tseram (3870 m)",
+        description: "Trek uphill for 4 to 5 hours through dense high-altitude forest following the Simbuwa Khola. As you reach Tseram (3,870 m), enjoy stunning views of Rathong Peak (6,678 m). Tseram is a traditional Limbu settlement. Overnight at lodge.",
+        maxAltitude: "3,870 m / 12,696 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 07",
+        title: "Tseram - Ramche (4,580 m)",
+        description: "Ascend gradually through alpine meadows for 3 to 4 hours, passing grazing yaks and glacial streams. Visuals of Mt. Kokthang (6,148 m), Rathong (6,678 m), and Boktoh (6,020 m) greet you on arrival at Ramche.",
+        maxAltitude: "4,580 m / 15,026 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 08",
+        title: "Ramche - Oktang View Point (4,730 m) - Ramche (4,580 m)",
+        description: "Highlight day! Early morning hike (2 hours) along the lateral moraine of Yalung Glacier to Oktang View Point (4,730 m). Marvel at the dramatic 360-degree views of Kanchenjunga South (8,586 m), Yalung Kang (8,505 m), and Khambachen Peak (7,903 m). Visit local Limbu shrine before descending back to Ramche.",
+        maxAltitude: "4,730 m / 15,518 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 09",
+        title: "Ramche - Tseram - Tortang (2,995 m)",
+        description: "Descend from Ramche past Tseram following the Simbuwa Khola down to Tortang (approx. 7 hours walking). Enjoy the warmer air as you re-enter forested terrain.",
+        maxAltitude: "2,995 m / 9,826 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 10",
+        title: "Tortang - Kyansar / Yasang (1,700 m)",
+        description: "Retrace your trail down through bamboo and pine forests to Yasang / Kyansar (5 to 6 hours walking). Stay overnight at a local mountain lodge.",
+        maxAltitude: "1,700 m / 5,577 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 11",
+        title: "Yasang - Hellok (Trek) - Taplejung - Ilam (1,200 m) (Drive)",
+        description: "Trek 2 hours down to Hellok, then board your private jeep to drive via Taplejung to Ilam (8 hours total drive). Relax in the peaceful surroundings of Ilam's renowned tea plantations.",
+        maxAltitude: "1,200 m / 3,937 ft",
+        accommodation: "Hotel / Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 12",
+        title: "Ilam - Bhadrapur (Drive) & Fly to Kathmandu (1,350 m)",
+        description: "Drive 2.5 hours from Ilam to Bhadrapur Airport and fly back to Kathmandu. Transfer to your hotel and enjoy free time in the evening.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast"
+      },
+      {
+        day: "Day 13",
+        title: "Free Day in Kathmandu (Optional Sightseeing / Everest Flight)",
+        description: "A free leisure day in Kathmandu for optional mountain flights over Mt. Everest, exploring souvenir markets in Thamel, or visiting World Heritage Sites like Boudhanath Stupa and Bhaktapur.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast & Farewell Dinner"
+      },
+      {
+        day: "Day 14",
+        title: "Final Departure from Kathmandu",
+        description: "Enjoy breakfast at the hotel. Our Zenex Travels & Tours representative will transfer you to Tribhuvan International Airport 3 hours prior to your international flight departure.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Not Included",
+        meals: "Breakfast"
+      }
+    ],
+    costIncludes: [
+      "Airport transfers (Airport – Hotel – Airport) by private vehicle.",
+      "4 Nights 3-Star hotel accommodation in Kathmandu with breakfast (twin-sharing).",
+      "Domestic flight tickets (Kathmandu – Bhadrapur – Kathmandu) including guide and taxes.",
+      "Private local overland transfers (Bhadrapur – Taplejung – Hellok – Ilam – Bhadrapur) for clients, guide, and porters.",
+      "Kanchenjunga Conservation Area Permit (KCAP).",
+      "Special Restricted Area Permit to Kanchenjunga (RAP).",
+      "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the trek.",
+      "Teahouse/Lodge accommodation during the trek.",
+      "Government-licensed English-speaking trekking guide.",
+      "Porters (1 porter for 2 clients, carrying up to 20-22 kg total).",
+      "Guide and porter salary, insurance, food, accommodation, and equipment.",
+      "Zenex Travels & Tours duffel bag for the trek.",
+      "Official Achievement Certificate of Kanchenjunga South Base Camp Trek.",
+      "Traditional Nepali Farewell Dinner in Kathmandu.",
+      "All government taxes, service charges, and official fees."
+    ],
+    costExcludes: [
+      "International airfare and Nepal entry visa fees.",
+      "Personal travel and medical insurance (must cover high-altitude rescue up to 5,000m).",
+      "Lunch and Dinner in Kathmandu (except Farewell Dinner).",
+      "Emergency helicopter rescue expenses.",
+      "Personal expenses (Wi-Fi, hot showers, battery charging, laundry, extra snacks, alcoholic drinks).",
+      "Tips for guide, porters, and driver."
+    ],
+    essentialInfo: `
+      <h3>Essential Information for Kanchenjunga South Base Camp Trek</h3>
+
+      <h4>Permits Required</h4>
+      <p>Trekking in the Kanchenjunga region requires two mandatory permits:</p>
+      <ul>
+        <li><strong>Kanchenjunga Conservation Area Permit (KCAP):</strong> NPR 2,000 per person.</li>
+        <li><strong>Special Restricted Area Permit (RAP):</strong> Required for entry into restricted zones, issued via registered agencies like Zenex Travels & Tours. Minimum 2 trekkers required.</li>
+      </ul>
+
+      <h4>Best Time to Trek</h4>
+      <p>The optimal trekking seasons are:</p>
+      <ul>
+        <li><strong>Spring (March to May):</strong> Mild temperatures, blooming rhododendrons, and clear morning vistas.</li>
+        <li><strong>Autumn (September to November):</strong> Crisp air, post-monsoon clarity, and stable weather.</li>
+      </ul>
+
+      <h4>Accommodations & Meals</h4>
+      <p>Accommodation is in basic family-run teahouses with simple twin rooms and shared facilities. Bringing a warm -10°C sleeping bag is recommended for higher stops like Ramche (4,580 m).</p>
+
+      <h4>Group Tariff (2026/2027)</h4>
+      <ul>
+        <li><strong>2 - 3 Pax:</strong> US$ 1,590 per person</li>
+        <li><strong>4 - 7 Pax:</strong> US$ 1,390 per person</li>
+        <li><strong>8 - 11 Pax:</strong> US$ 1,350 per person</li>
+        <li><strong>12 - 15 Pax:</strong> US$ 1,280 per person</li>
+      </ul>
+    `,
+    faqs: [
+      {
+        question: "Where is Kanchenjunga South Base Camp located?",
+        answer: "Kanchenjunga South Base Camp (Oktang View Point) is located in the Taplejung district of eastern Nepal, facing the dramatic south face of Mt. Kanchenjunga (8,586 m)."
+      },
+      {
+        question: "How difficult is the Kanchenjunga South Base Camp Trek?",
+        answer: "The trek is graded Moderate. It reaches a peak elevation of 4,730 m at Oktang View Point and highest sleeping altitude of 4,580 m at Ramche. It involves 4 to 7 hours of daily walking."
+      },
+      {
+        question: "What is the highest point on Kanchenjunga South BC Trek?",
+        answer: "The highest point reached on the trek is Oktang View Point at 4,730 meters (15,518 feet)."
+      },
+      {
+        question: "Do I need special permits for Kanchenjunga South Base Camp Trek?",
+        answer: "Yes, you need the Kanchenjunga Conservation Area Permit (KCAP) and the Special Restricted Area Permit (RAP), which requires a minimum of 2 trekkers and a licensed guide."
+      },
+      {
+        question: "What is the best time to trek Kanchenjunga South BC?",
+        answer: "Spring (March to May) and Autumn (September to November) offer the clearest mountain views, pleasant temperatures, and dry trails."
+      },
+      {
+        question: "What scenery can I expect from Oktang View Point?",
+        answer: "Oktang View Point offers breathtaking close-up panoramas of Mt. Kanchenjunga (8,586 m) South Face, Yalung Kang (8,505 m), Khambachen Peak (7,903 m), Kabru range, and the expansive Yalung Glacier."
+      },
+      {
+        question: "What kind of accommodation is available on the trek?",
+        answer: "Accommodation is in basic local teahouses with twin-share rooms and shared toilets. Warm sleeping bags are recommended for higher elevations."
+      },
+      {
+        question: "Can I trek Kanchenjunga South Base Camp solo?",
+        answer: "No, restricted area regulations in Nepal require a minimum of 2 trekkers accompanied by a licensed guide from a registered agency."
+      },
+      {
+        question: "Is travel insurance mandatory?",
+        answer: "Yes, travel insurance covering medical expenses and emergency high-altitude helicopter evacuation up to 5,000 meters is compulsory."
+      },
+      {
+        question: "How do I book this trek?",
+        answer: "Contact Zenex Travels & Tours to customize your departure dates, process restricted permits, and reserve your expedition."
+      }
+    ]
   }
 ];
