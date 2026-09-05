@@ -30,7 +30,7 @@ const TrekDetail = () => {
 
   const getBasePriceNum = () => {
     if (!trek || !trek.price) return 0;
-    const basePriceStr = trek.price.replace(/[^0-9.]/g, '');
+    const basePriceStr = String(trek.price).replace(/[^0-9.]/g, '');
     return parseFloat(basePriceStr) || 0;
   };
 

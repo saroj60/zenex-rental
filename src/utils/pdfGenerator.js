@@ -173,7 +173,8 @@ export const generatePackagePDF = async (item) => {
   const title = item.title || 'Trekking Package';
   const category = item.category || item.region || item.destination || 'Trekking & Tours';
   const duration = item.duration || (item.quickFacts && item.quickFacts.duration) || 'N/A';
-  const price = item.price ? (item.price.startsWith('US') ? item.price : `US$${item.price.replace(/[^0-9.]/g, '')}`) : 'Inquire for price';
+  const priceStr = item.price ? String(item.price) : '';
+  const price = priceStr ? (priceStr.startsWith('US') ? priceStr : `US$${priceStr.replace(/[^0-9.]/g, '')}`) : 'Inquire for price';
 
   const tripTitleHtml = `
     <div style="margin-bottom: 20px;">

@@ -327,7 +327,7 @@ const BookingCheckout = () => {
       title: matchedTrek.title,
       img: matchedTrek.image,
       duration: matchedTrek.quickFacts?.duration || '15 Days',
-      price: matchedTrek.price ? parseInt(matchedTrek.price.replace(/\D/g, ''), 10) : 1500,
+      price: matchedTrek.price ? parseInt(String(matchedTrek.price).replace(/\D/g, ''), 10) : 1500,
       addOns: matchedTrek.addOns || null
     };
     durationText = selectedItem.duration;
@@ -337,7 +337,7 @@ const BookingCheckout = () => {
       title: matchedTourTrip.title,
       img: matchedTourTrip.image,
       duration: matchedTourTrip.quickFacts?.duration || '7 Days',
-      price: matchedTourTrip.price ? parseInt(matchedTourTrip.price.toString().replace(/\D/g, ''), 10) : 1200,
+      price: matchedTourTrip.price ? parseInt(String(matchedTourTrip.price).replace(/\D/g, ''), 10) : 1200,
       addOns: matchedTourTrip.addOns || null
     };
     durationText = selectedItem.duration;
@@ -347,7 +347,7 @@ const BookingCheckout = () => {
       title: matchedTour.title,
       img: matchedTour.img,
       duration: matchedTour.title.match(/\d+/) ? `${matchedTour.title.match(/\d+/)[0]} Days` : '7 Days',
-      price: matchedTour.price ? parseInt(matchedTour.price.replace(/\D/g, ''), 10) : 1000,
+      price: matchedTour.price ? parseInt(String(matchedTour.price).replace(/\D/g, ''), 10) : 1000,
       addOns: matchedTour.addOns || null
     };
     durationText = selectedItem.duration;

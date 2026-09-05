@@ -83,7 +83,7 @@ const CountryPackages = () => {
     img: t.image,
     category: 'Treks',
     location: t.quickFacts?.destination || t.destination || t.region || 'Nepal',
-    price: t.price ? t.price.replace('$', '').trim() : '',
+    price: t.price ? String(t.price).replace('$', '').trim() : '',
     duration: t.quickFacts?.duration || t.duration,
     durationUnit: '',
     rating: 5,

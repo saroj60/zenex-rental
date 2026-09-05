@@ -83,7 +83,7 @@ const EditTourTrip = () => {
           slug: foundPkg.id,
           category: foundPkg.category,
           destination: foundPkg.location,
-          price: foundPkg.price ? foundPkg.price.replace('US$', '') : '',
+          price: foundPkg.price ? String(foundPkg.price).replace('US$', '') : '',
           shortDescription: extra.overview?.replace(/<[^>]*>/g, '').slice(0, 150) + '...' || foundPkg.title,
           description: extra.overview || foundPkg.title,
           status: 'Published',
@@ -114,7 +114,7 @@ const EditTourTrip = () => {
           pricingInfo: {
             currency: 'USD',
             originalPrice: '',
-            sellingPrice: foundPkg.price ? foundPkg.price.replace('US$', '') : '',
+            sellingPrice: foundPkg.price ? String(foundPkg.price).replace('US$', '') : '',
             discountPercentage: '',
             pricePer: foundPkg.persons ? foundPkg.persons.replace('for ', '') : 'Person',
             notes: ''

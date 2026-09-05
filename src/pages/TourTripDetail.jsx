@@ -113,7 +113,7 @@ const TourTripDetail = () => {
           image: foundPkg.img,
           category: foundPkg.category,
           destination: foundPkg.location,
-          price: foundPkg.price ? foundPkg.price.replace('US$', '') : '',
+          price: foundPkg.price ? String(foundPkg.price).replace('US$', '') : '',
           shortDescription: extra.overview 
             ? (extra.overview.replace(/<[^>]*>/g, '').split(/[.!?]/)[0] + '.') 
             : foundPkg.title,

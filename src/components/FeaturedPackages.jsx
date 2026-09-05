@@ -50,7 +50,7 @@ const FeaturedPackages = () => {
       location: t.quickFacts?.destination || t.destination || 'Nepal',
       badge: t.badge || 'Popular Trek',
       displayOrder: 99999,
-      price: t.price ? `US$${t.price.replace('$', '').trim()}` : 'From Price',
+      price: t.price ? `US$${String(t.price).replace('$', '').trim()}` : 'From Price',
       persons: '/ Person'
     }));
 

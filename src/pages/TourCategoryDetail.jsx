@@ -75,7 +75,7 @@ const TourCategoryDetail = () => {
       category: 'Adventure Tour',
       location: t.quickFacts?.destination || t.destination || 'Nepal',
       region: t.region,
-      price: t.price ? `US$${t.price.replace('$', '').trim()}` : 'From Price',
+      price: t.price ? `US$${String(t.price).replace('$', '').trim()}` : 'From Price',
       persons: 'per person'
     }));
 
