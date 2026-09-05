@@ -6277,5 +6277,427 @@ Accommodation is a mix of basic village tea houses (Dunai, Juphal, Ringmo) and w
         answer: "Prior high-altitude trekking experience and good physical stamina are strongly recommended due to high passes and remote camping conditions."
       }
     ]
+  },
+  {
+    id: "lower-dolpo-trek-via-dhorpatan-23d",
+    title: "Lower Dolpo Trek via Dhorpatan - 23 Days",
+    region: "dolpo",
+    duration: "23 Days",
+    price: "US$3,250",
+    difficulty: "Hard",
+    image: "https://www.blossomexpeditions.com/wp-content/uploads/2025/12/dhorpatan-lower-dolpo-trek2.webp",
+    gallery: [
+      "https://www.blossomexpeditions.com/wp-content/uploads/2025/12/dhorpatan-lower-dolpo-trek2.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3VNkCY9GUgs8gbyba_fGi_U7eW8x-IDf2_FvHZZY775Fz9xkDjSFNd1Ar&s=10",
+      "https://langtang.com/wp-content/uploads/2025/07/8-1-1024x689.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2V5rbx8DyAsWXaTm1GVFWi-y9QtJ-tz2aysQeLRDFQ-dnKhaoxgOQGQ&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLh-Aq4c5U0aHTF1u3k-x1hKKiEbpalYRuD52aNJjHZcxJF8s4shnKGxXE&s=10"
+    ],
+    quickFacts: {
+      duration: "23 Days",
+      difficulty: "Hard / Challenging",
+      maxAltitude: "5,238 m / 17,185 ft",
+      bestSeason: "Spring, Autumn & Summer",
+      starts: "Kathmandu",
+      ends: "Kathmandu",
+      activity: "Walking / Hiking",
+      accommodation: "Hotels, Lodges & Tented Camp",
+      meals: "Breakfast, Lunch & Dinner"
+    },
+    facts: {
+      "Country": "Nepal",
+      "Duration": "23 Days",
+      "Trip Grade": "Hard / Challenging",
+      "Max. Altitude": "5,238 m / 17,185 ft",
+      "Starts": "Kathmandu",
+      "Ends": "Kathmandu",
+      "Activities": "Walking / Hiking",
+      "Accomodation": "Hotels, Lodges & Tented Camp",
+      "Meals": "Breakfast, Lunch & Dinner",
+      "Best Time": "Spring, Autumn & Summer"
+    },
+    description: `Lower Dolpo Trek via Dhorpatan 23 days from-to Kathmandu is a remote and adventurous journey through western Nepal, combining the rich biodiversity of the Dhorpatan Hunting Reserve with the raw, untouched beauty of Dolpo. This off-the-beaten-path trek crosses high Himalayan passes like Jangla La (4,535 m), Numa La (5,238 m), and Bagala Pass (5,169 m), offering breathtaking mountain views and deep cultural encounters with Tibetan-influenced villages like Dho-Tarap.
+
+Organized by Zenex Travels & Tours, this 23-day expedition allows you to explore the turquoise waters of Phoksundo Lake, scenic alpine landscapes, and authentic wilderness camping experiences, making it an ideal trek for seasoned hikers seeking solitude and cultural immersion in Nepal’s hidden trans-Himalayan corners.`,
+    highlights: [
+      "Traverse one of Nepal’s least-visited and wildest trekking routes, starting from Dhorpatan — the only hunting reserve in the country — leading deep into hidden Dolpo valleys.",
+      "Cross high-altitude passes such as Jangla La (4,535 m), Numa La (5,238 m), and Bagala Pass (5,169 m), each offering dramatic alpine panoramas.",
+      "Explore turquoise-blue Shey Phoksundo Lake (3,641 m), sacred to local Bonpo and Tibetan Buddhist communities.",
+      "Discover authentic Tibetan culture in Dho-Tarap (3,944 m), one of the world's highest human settlements.",
+      "Camp in untouched wilderness far from commercial trekking routes with dedicated Zenex expedition staff.",
+      "Trek through lush pine forests, windswept alpine plateaus, deep gorges, high pastures, and trans-Himalayan desert landscapes.",
+      "Encounter rare Himalayan wildlife including blue sheep, Himalayan thar, and elusive snow leopards."
+    ],
+    itinerary: [
+      {
+        day: "01",
+        dayNumber: 1,
+        title: "Arrival in Kathmandu",
+        maxAltitude: "1,350 m / 4,429 ft",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6-7 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "None",
+        modeOfTravel: "Private vehicle",
+        description: "Arrival at Kathmandu airport, pick up by our Zenex Travels & Tours representative and transfer to the hotel. After check-in, meet your guide for a pre-trip briefing and gear inspection. Relax and spend the rest of the day at your leisure. Overnight at hotel."
+      },
+      {
+        day: "02",
+        dayNumber: 2,
+        title: "Kathmandu: Preparation & Sightseeing",
+        maxAltitude: "1,350 m / 4,429 ft",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "-",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        description: "A preparation day in Kathmandu while our team processes Special Restricted Area Permits for Lower Dolpo. Enjoy optional sightseeing to UNESCO World Heritage Sites (Kathmandu Durbar Square, Swoyambhunath, Boudhanath, Pashupatinath) or prepare trekking gear in Thamel. Overnight at hotel."
+      },
+      {
+        day: "03",
+        dayNumber: 3,
+        title: "Kathmandu – Pokhara – Burtibang – Dhorpatan",
+        maxAltitude: "2,870 m / 9,416 ft",
+        altitude: "2,870 m / 9,416 ft",
+        walkingTime: "25 min flight + 7-8 hrs drive",
+        distance: "180 km drive",
+        accommodation: "Tented Camp / Basic Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Flight & Private vehicle",
+        description: "Morning scenic 25-minute flight to Pokhara. Meet our driving team and drive via Burtibang into the western highlands to Dhorpatan (2,870 m), a serene alpine valley inside the Dhorpatan Hunting Reserve. Overnight at tented camp or basic lodge."
+      },
+      {
+        day: "04",
+        dayNumber: 4,
+        title: "Dhorpatan – Phalgune Pass (3,915 m) – Thankur",
+        maxAltitude: "3,915 m / 12,844 ft",
+        altitude: "3,175 m / 10,416 ft",
+        walkingTime: "8-9 hrs",
+        distance: "17 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Begin trekking with a steady climb through alpine forests and yak pastures to Phalgune Pass / Pagune Lekh (3,915 m). Enjoy sweeping mountain panoramas before descending through highland meadows to Thankur (3,175 m). Overnight at tented camp."
+      },
+      {
+        day: "05",
+        dayNumber: 5,
+        title: "Thankur – Pelma",
+        maxAltitude: "2,425 m / 7,956 ft",
+        altitude: "2,425 m / 7,956 ft",
+        walkingTime: "7-8 hrs",
+        distance: "15 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Descend from Thankur through mixed forests and river valleys. Follow rugged trails with gentle river crossings and valley contours to Pelma (2,425 m), a small hamlet in lower Dolpo border. Overnight at tented camp."
+      },
+      {
+        day: "06",
+        dayNumber: 6,
+        title: "Pelma – Dhule",
+        maxAltitude: "3,410 m / 11,187 ft",
+        altitude: "3,410 m / 11,187 ft",
+        walkingTime: "7-8 hrs",
+        distance: "15 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Ascend steadily from Pelma into higher alpine terrain. Cross ridges, pine forests, and summer yak pastures to reach Dhule (3,410 m), a remote settlement surrounded by Himalayan peaks. Overnight at tented camp."
+      },
+      {
+        day: "07",
+        dayNumber: 7,
+        title: "Dhule – Phuphal Phedi",
+        maxAltitude: "3,940 m / 12,926 ft",
+        altitude: "3,940 m / 12,926 ft",
+        walkingTime: "7-8 hrs",
+        distance: "13 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Trek gradually uphill through alpine meadows and rocky paths, passing scattered yak shelters. Gain elevation steadily en route to Phuphal Phedi (3,940 m), a high base camp beneath mountain ridges. Overnight at tented camp."
+      },
+      {
+        day: "08",
+        dayNumber: 8,
+        title: "Phuphal Phedi – Purbang",
+        maxAltitude: "4,065 m / 13,336 ft",
+        altitude: "4,065 m / 13,336 ft",
+        walkingTime: "6-7 hrs",
+        distance: "11 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Ascend across rocky ridges, scree slopes, and wide alpine pastures to Purbang (4,065 m). The landscape becomes increasingly dramatic and arid, serving as a staging camp before crossing Jangla La Pass. Overnight at tented camp."
+      },
+      {
+        day: "09",
+        dayNumber: 9,
+        title: "Purbang – Jangla La Pass (4,535 m) – Beluwa",
+        maxAltitude: "4,535 m / 14,878 ft",
+        altitude: "2,545 m / 8,349 ft",
+        walkingTime: "9 hrs",
+        distance: "19 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "A strenuous and scenic pass crossing! Climb steeply to Jangla La Pass (4,535 m) for panoramic vistas of the Dolpo mountain ranges. Descend through rocky gorges and pine woods to Beluwa (2,545 m). Overnight at tented camp."
+      },
+      {
+        day: "10",
+        dayNumber: 10,
+        title: "Rest Day & Exploration at Beluwa",
+        maxAltitude: "2,545 m / 8,349 ft",
+        altitude: "2,545 m / 8,349 ft",
+        walkingTime: "Rest & Short Walks",
+        distance: "4 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "A well-deserved rest day in Beluwa. Relax, wash clothes, and explore local terraced farmlands and forested valleys of Lower Dolpo. Overnight at tented camp."
+      },
+      {
+        day: "11",
+        dayNumber: 11,
+        title: "Beluwa – Nawarpani",
+        maxAltitude: "3,780 m / 12,401 ft",
+        altitude: "3,780 m / 12,401 ft",
+        walkingTime: "8-9 hrs",
+        distance: "17 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Ascend along narrow river valleys, dense forests, and stream crossings heading deeper into trans-Himalayan Dolpo. Reach Nawarpani (3,780 m), a scenic campsite beside a glacial stream. Overnight at tented camp."
+      },
+      {
+        day: "12",
+        dayNumber: 12,
+        title: "Nawarpani – Langa Camp",
+        maxAltitude: "3,870 m / 12,696 ft",
+        altitude: "3,870 m / 12,696 ft",
+        walkingTime: "8-9 hrs",
+        distance: "15 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Follow the river valley upwards along rugged trails and cliffside paths. Transition into high alpine terrain with dramatic barren hillsides to reach Langa Camp (3,870 m). Overnight at tented camp."
+      },
+      {
+        day: "13",
+        dayNumber: 13,
+        title: "Langa Camp – Dho-Tarap",
+        maxAltitude: "3,944 m / 12,939 ft",
+        altitude: "3,944 m / 12,939 ft",
+        walkingTime: "8 hrs",
+        distance: "14 km",
+        accommodation: "Tented Camp / Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Trek through the wide Dolpo valley past ancient chortens and mani walls into Dho-Tarap (3,944 m), one of the world's highest human settlements, rich in Tibetan Buddhist & Bon heritage. Overnight at tented camp or local lodge."
+      },
+      {
+        day: "14",
+        dayNumber: 14,
+        title: "Dho-Tarap Rest & Exploration Day",
+        maxAltitude: "3,944 m / 12,939 ft",
+        altitude: "3,944 m / 12,939 ft",
+        walkingTime: "Rest & Exploration",
+        distance: "5 km",
+        accommodation: "Tented Camp / Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Rest and acclimatization day in Dho-Tarap. Visit ancient monasteries (Ribo Bhumpa Gompa & Bon Gompas), interact with local Tibetan villagers, and observe centuries-old customs before crossing the 5,000m passes. Overnight at camp or lodge."
+      },
+      {
+        day: "15",
+        dayNumber: 15,
+        title: "Dho-Tarap – Numa La Base Camp",
+        maxAltitude: "4,440 m / 14,566 ft",
+        altitude: "4,440 m / 14,566 ft",
+        walkingTime: "6-7 hrs",
+        distance: "11 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Ascend along the Tarap Khola valley through yak pastures and barren mountain slopes to Numa La Base Camp (4,440 m), a broad high-altitude valley below Numa La Pass. Overnight at tented camp."
+      },
+      {
+        day: "16",
+        dayNumber: 16,
+        title: "Numa La Base Camp – Numa La Pass (5,238 m) – Danigar",
+        maxAltitude: "5,238 m / 17,185 ft",
+        altitude: "4,512 m / 14,803 ft",
+        walkingTime: "8-9 hrs",
+        distance: "13 km",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Climb early morning over steep scree trails to Numa La Pass (5,238 m), the highest point of the trek. Enjoy breathtaking panoramas of Mount Dhaulagiri and Kanjiroba ranges before descending to Danigar (4,512 m). Overnight at tented camp."
+      },
+      {
+        day: "17",
+        dayNumber: 17,
+        title: "Danigar – Bagala Pass (5,169 m) – Ringmo (Phoksundo Lake)",
+        maxAltitude: "5,169 m / 16,958 ft",
+        altitude: "3,641 m / 11,945 ft",
+        walkingTime: "9-10 hrs",
+        distance: "19 km",
+        accommodation: "Lodge at Ringmo",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Cross another giant pass — Bagala Pass (5,169 m) — with views of Mount Kanjiroba and deep Dolpo gorges. Descend sharply into pine forests to Ringmo village beside turquoise Phoksundo Lake (3,641 m). Overnight at lodge."
+      },
+      {
+        day: "18",
+        dayNumber: 18,
+        title: "Ringmo: Exploration Day at Phoksundo Lake",
+        maxAltitude: "3,540 m / 11,614 ft",
+        altitude: "3,540 m / 11,614 ft",
+        walkingTime: "Rest & Exploration",
+        distance: "5-6 km",
+        accommodation: "Lodge at Ringmo",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Rest and exploration day around sacred Phoksundo Lake (3,611 m), Nepal's deepest turquoise blue lake. Visit ancient Bonpo monasteries, walk along lake cliffs, and enjoy the pristine mountain atmosphere. Overnight at lodge."
+      },
+      {
+        day: "19",
+        dayNumber: 19,
+        title: "Ringmo – Chekpa",
+        maxAltitude: "2,678 m / 8,786 ft",
+        altitude: "2,678 m / 8,786 ft",
+        walkingTime: "6-7 hrs",
+        distance: "15 km",
+        accommodation: "Lodge at Chekpa",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Descend steadily along the river valley through terraced fields and temperate pine woods to Chekpa (2,678 m). Overnight at lodge/camp."
+      },
+      {
+        day: "20",
+        dayNumber: 20,
+        title: "Chekpa – Juphal",
+        maxAltitude: "2,475 m / 8,120 ft",
+        altitude: "2,475 m / 8,120 ft",
+        walkingTime: "5-6 hrs",
+        distance: "13 km",
+        accommodation: "Lodge at Juphal",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking",
+        description: "Final day of trekking following the Bheri River valley past Dunai up to Juphal (2,475 m), gateway airstrip town. Celebrate the successful trek with your guide and crew. Overnight at lodge."
+      },
+      {
+        day: "21",
+        dayNumber: 21,
+        title: "Juphal – Nepalgunj – Kathmandu",
+        maxAltitude: "1,350 m / 4,429 ft",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "1.5 hrs total flight",
+        distance: "-",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast & Lunch",
+        modeOfTravel: "Flight",
+        description: "Morning flight from Juphal to Nepalgunj (30 min) followed by connecting flight to Kathmandu (1 hr). Transfer to hotel in Kathmandu. Overnight at hotel."
+      },
+      {
+        day: "22",
+        dayNumber: 22,
+        title: "Free Day in Kathmandu",
+        maxAltitude: "1,350 m / 4,429 ft",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "-",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        description: "A free buffer day in Kathmandu for rest, shopping in Thamel, or optional city sightseeing (Patan Durbar Square, Bhaktapur). Overnight at hotel."
+      },
+      {
+        day: "23",
+        dayNumber: 23,
+        title: "Final Departure from Kathmandu",
+        maxAltitude: "1,350 m / 4,429 ft",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "-",
+        accommodation: "-",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        description: "Enjoy breakfast at hotel. Transfer to Kathmandu Tribhuvan International Airport for your homebound flight."
+      }
+    ],
+    costIncludes: [
+      "Airport – Hotel – Airport transfers by private vehicle",
+      "4 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+      "1 night 3-star hotel accommodation in Nepalgunj with breakfast (twin sharing)",
+      "Domestic flight tickets Kathmandu – Pokhara & Juphal – Nepalgunj – Kathmandu (including guide)",
+      "Land transfers Pokhara – Dhorpatan by private jeep",
+      "Special Permit to Lower Dolpo Restricted Area",
+      "Shey Phoksundo National Park Entry Permit",
+      "Full camping equipment (tents, kitchen tent, toilet tent, foam mattresses) & kitchen utensils",
+      "Camping fees & accommodation in lodges/tents during the trek",
+      "All meals (Breakfast, Lunch & Dinner with tea/coffee) during the trek",
+      "Licensed guide, professional cook, kitchen staff, and porters or mules",
+      "Insurance, equipment, food, accommodation, and fair salary for all local crew",
+      "Zenex Travels achievement certificate for completing Lower Dolpo via Dhorpatan Trek",
+      "All government taxes, service charges, and official entry fees"
+    ],
+    costExcludes: [
+      "International airfare & Nepal visa fees",
+      "Personal trekking equipment & sleeping bag",
+      "Travel, medical, and emergency helicopter evacuation insurance",
+      "Bar bills, mineral water, soft drinks, and alcoholic beverages",
+      "Hot showers, battery charging, and Wi-Fi charges at lodges during the trek",
+      "Lunch & dinner in Kathmandu and Pokhara",
+      "Personal expenses, laundry, and tips for guide, cook, and porters"
+    ],
+    essentialInfo: `### Restricted Area Permits & Regulations
+Lower Dolpo via Dhorpatan requires a Special Lower Dolpo Restricted Area Permit (USD 500 for 10 days + USD 50/day extra) and a Shey Phoksundo National Park Entry Permit (NPR 3,000). Zenex Travels & Tours manages all permit applications and official documentation. Solo trekking is strictly prohibited; minimum 2 trekkers accompanied by a licensed guide is mandatory.
+
+### Best Season to Trek
+- **Spring (March to May):** Clear mountain views, dry trails, blooming wildflowers, and vibrant local Bon Buddhist festivals.
+- **Autumn (September to November):** Peak season with post-monsoon crisp skies, panoramic peak views, and pleasant daytime temperatures.
+- **Summer/Monsoon (June to August):** Trans-Himalayan rain-shadow terrain makes trekking possible with lush greenery and zero crowds.
+
+### Meals & Accommodation
+This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo, Juphal) with full wilderness camping across remote high passes (Pagune Lekh, Jangla La, Numa La, Bagala). All meals during camping days are freshly prepared by our expedition cook staff.`,
+    equipment: [
+      "Moisture-wicking base layer T-shirts (3)",
+      "Fleece jacket or warm sweater",
+      "Heavy down jacket rated to -10°C",
+      "Waterproof / windproof jacket & rain poncho",
+      "Trekking trousers (2) & thermal leggings",
+      "Sturdy waterproof trekking boots with ankle support",
+      "Sleeping bag rated to -10°C to -15°C",
+      "Daypack (30L) with rain cover & duffel bag for porter",
+      "Warm beanie, sun hat, UV sunglasses, and fleece/waterproof gloves",
+      "Water purification tablets or LifeStraw filter",
+      "Headlamp with spare batteries, sunscreen SPF 50+, lip balm, first-aid kit"
+    ],
+    faqs: [
+      {
+        question: "What permits are required for Lower Dolpo Trek via Dhorpatan?",
+        answer: "You need the Special Lower Dolpo Restricted Area Permit and Shey Phoksundo National Park Entry Permit, both arranged by Zenex Travels & Tours."
+      },
+      {
+        question: "How challenging is the 23 Days Lower Dolpo via Dhorpatan Trek?",
+        answer: "The trek is graded Hard / Challenging. It crosses three 4,500m+ passes: Jangla La (4,535 m), Numa La (5,238 m), and Bagala Pass (5,169 m)."
+      },
+      {
+        question: "What is Dhorpatan famous for?",
+        answer: "Dhorpatan is Nepal's only Hunting Reserve, famous for blue sheep, Himalayan thar, alpine valley grasslands, and traditional Dhorpatan settlements."
+      },
+      {
+        question: "What accommodation is provided during the trek?",
+        answer: "A mix of basic teahouses in gateway villages and full wilderness tented camping with dedicated Zenex cook staff across high mountain passes."
+      },
+      {
+        question: "Can beginners do the Lower Dolpo via Dhorpatan Trek?",
+        answer: "No, prior high-altitude trekking experience and strong physical endurance are mandatory due to high passes and 23 days of remote wilderness."
+      }
+    ]
   }
 ];
