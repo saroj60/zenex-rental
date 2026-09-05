@@ -141,7 +141,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     difficulty: 'Strenuous',
     maxAltitude: '4,870 m',
     duration: '18 Days',
-    image: '/images/trek.png',
+    image: 'https://media.mountgloryadventures.com/uploads/fullbanner/makalu-base-camp-trekking.webp',
     description: 'The Makalu Region in eastern Nepal is a wilderness sanctuary surrounding Mount Makalu (8,485 m)—the fifth highest peak in the world. Encompassing Makalu Barun National Park, high alpine passes, and pristine river valleys.'
   },
   {

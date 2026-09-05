@@ -8742,7 +8742,17 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
     originalPrice: 2150,
     rating: 4.9,
     reviewsCount: 143,
-    heroImage: "/images/trek.png",
+    image: "https://media.mountgloryadventures.com/uploads/fullbanner/makalu-base-camp-trekking.webp",
+    heroImage: "https://media.mountgloryadventures.com/uploads/fullbanner/makalu-base-camp-trekking.webp",
+    gallery: [
+      "https://media.mountgloryadventures.com/uploads/fullbanner/makalu-base-camp-trekking.webp",
+      "https://socialtreknepal.com/wp-content/uploads/2025/02/trekkers-trekking-makalu-base-camp.jpg",
+      "https://8kexpeditions.com/uploaded_images/package/package-1719397573.jpeg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHApJRnpJrluvbgFQxN9f6RWrwLzqquO30TSdTfpDwwJmSdZW9QtgHaDU&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRADa89pqun0sHLzPFLvz_KHFeTNQLMOWsy_tv8y0GBdsdRpoGc4VNX-LbX&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfMuNoscuzOHjLvJt6zUBrcIh-nr8Mg8RqacY44Eey-aaKG51snkdl6k0&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSrMGYPTExdJqyFN1pqaRlvJv2AsZz2C4qQECL5ZSXfPHQ9QnluZz3vDg&s=10"
+    ],
     overview: `Makalu Base Camp Trek in Nepal of 18 days is one of the challenging as well as beautiful off-the-beaten-path journey in the Eastern part of Nepal. This trek is one the less explored destination with the less flow of tourist en route, making it perfect for the travellers who want to escape huge crowd while trekking in Himalayas and enjoy serene mother nature. Makalu Base Camp is one of the high altitude trek in Nepal with the chance to explore the diverse culture and serene nature of the eastern side of Nepal along with the Himalayan wilderness.
 
 Trekking in the Makalu Region of Nepal offers an unforgettable journey through beautiful, evergreen rhododendron forests and provides panoramic views of several eight-thousanders, including Mount Everest (8848 m), Mount Lhotse (8516 m), Mount Makalu (8463 m), and Mount Kanchenjunga (8568 m) and other Himalayas. Makalu Base Camp Trek offers a rare and rewarding adventure through remote landscapes, deep river valleys, alpine meadows, and glacial lakes.
