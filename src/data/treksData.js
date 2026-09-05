@@ -5303,9 +5303,13 @@ export const treksData = [
     accommodation: "3-Star Hotel in KTM & Nepalgunj / Mountain Lodges & Tented Camps",
     meals: "Breakfast in KTM & Nepalgunj, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May), Summer & Autumn (Sept - Nov)",
-    image: "/images/dorpatan dolpo.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4Ne4lpPa3EHxM2LySDv_AIrI3ouLj8ZaIR1V3v4W5jlBZaVHCD7IiINh&s=10",
     gallery: [
-      "/images/dorpatan dolpo.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4Ne4lpPa3EHxM2LySDv_AIrI3ouLj8ZaIR1V3v4W5jlBZaVHCD7IiINh&s=10",
+      "https://himalayanecologicaltrek.com/uploads/fullbanner/lower-dolpo.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA5c7VRlMfPzm20S6aLIgib5UCM908ixGj5mZU4SODnQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyI0baCcwfg4TNx5H3qFjfqhnI-csg7RFwEcZxWwdyMmm7WJ5_DjWPQI&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2gzCzhrl3EWlStncG8j48LMGe_Tk4I2uTeokzNKNqcSmhAfAzJYM3HLO&s=10"
     ],
     overview: `
       <h3>Lower Dolpo Trek from Jhuphal 18 Days | High Altitude Wilderness & Phoksundo Lake Expedition</h3>
