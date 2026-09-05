@@ -1,33 +1,118 @@
 import html2pdf from 'html2pdf.js';
 
 /**
- * Converts an image URL to a base64 Data URL so html2canvas renders it cleanly.
+ * Converts any image URL (local asset, CORS-enabled CDN, or external domain)
+ * into a Base64 Data URL so html2canvas renders it cleanly without blank spaces or tainted canvas errors.
  */
 export const urlToBase64 = (url) => {
   if (!url) return Promise.resolve(null);
   if (url.startsWith('data:')) return Promise.resolve(url);
 
   return new Promise((resolve) => {
-    const img = new Image();
-    img.crossOrigin = 'Anonymous';
-    img.onload = () => {
-      try {
-        const canvas = document.createElement('canvas');
-        canvas.width = img.naturalWidth || img.width || 600;
-        canvas.height = img.naturalHeight || img.height || 400;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0);
-        resolve(canvas.toDataURL('image/jpeg', 0.85));
-      } catch (err) {
-        resolve(url);
-      }
-    };
-    img.onerror = () => {
-      resolve(url);
-    };
     const srcUrl = url.startsWith('/') ? `${window.location.origin}${url}` : url;
-    img.src = srcUrl;
+
+    // Level 1: Try direct fetch blob (fastest for local assets & CORS-enabled CDN images)
+    fetch(srcUrl, { mode: 'cors' })
+      .then((res) => {
+        if (!res.ok) throw new Error('Fetch failed');
+        return res.blob();
+      })
+      .then((blob) => {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          if (reader.result && reader.result.startsWith('data:image')) {
+            resolve(reader.result);
+          } else {
+            tryCanvasFallback(srcUrl, resolve);
+          }
+        };
+        reader.onerror = () => tryCanvasFallback(srcUrl, resolve);
+        reader.readAsDataURL(blob);
+      })
+      .catch(() => {
+        tryCanvasFallback(srcUrl, resolve);
+      });
   });
+};
+
+const tryCanvasFallback = (url, resolve) => {
+  const img = new Image();
+  img.crossOrigin = 'Anonymous';
+  img.onload = () => {
+    try {
+      const canvas = document.createElement('canvas');
+      canvas.width = img.naturalWidth || img.width || 600;
+      canvas.height = img.naturalHeight || img.height || 400;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+      const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+      if (dataUrl && dataUrl.startsWith('data:image')) {
+        resolve(dataUrl);
+      } else {
+        tryProxyFallback(url, resolve);
+      }
+    } catch (e) {
+      tryProxyFallback(url, resolve);
+    }
+  };
+  img.onerror = () => {
+    tryProxyFallback(url, resolve);
+  };
+  img.src = url;
+};
+
+const tryProxyFallback = (originalUrl, resolve) => {
+  if (originalUrl.startsWith('/') || originalUrl.startsWith(window.location.origin)) {
+    resolve(null);
+    return;
+  }
+  // Level 3: Route via wsrv.nl image proxy (attaches Access-Control-Allow-Origin: *)
+  const proxyUrl = `https://images.weserv.nl/?url=${encodeURIComponent(originalUrl)}&output=jpg`;
+  const img = new Image();
+  img.crossOrigin = 'Anonymous';
+  img.onload = () => {
+    try {
+      const canvas = document.createElement('canvas');
+      canvas.width = img.naturalWidth || img.width || 600;
+      canvas.height = img.naturalHeight || img.height || 400;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+      const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+      if (dataUrl && dataUrl.startsWith('data:image')) {
+        resolve(dataUrl);
+      } else {
+        tryCorsProxyFallback(originalUrl, resolve);
+      }
+    } catch (e) {
+      tryCorsProxyFallback(originalUrl, resolve);
+    }
+  };
+  img.onerror = () => {
+    tryCorsProxyFallback(originalUrl, resolve);
+  };
+  img.src = proxyUrl;
+};
+
+const tryCorsProxyFallback = (originalUrl, resolve) => {
+  // Level 4: Route via corsproxy.io
+  fetch(`https://corsproxy.io/?${encodeURIComponent(originalUrl)}`)
+    .then((res) => {
+      if (!res.ok) throw new Error('Proxy failed');
+      return res.blob();
+    })
+    .then((blob) => {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        if (reader.result && reader.result.startsWith('data:image')) {
+          resolve(reader.result);
+        } else {
+          resolve(null);
+        }
+      };
+      reader.onerror = () => resolve(null);
+      reader.readAsDataURL(blob);
+    })
+    .catch(() => resolve(null));
 };
 
 /**
@@ -42,8 +127,9 @@ export const generatePackagePDF = async (item) => {
   const mainImgUrl = item.image || item.banner || (Array.isArray(item.gallery) && item.gallery[0]);
   const coverImageBase64 = mainImgUrl ? await urlToBase64(mainImgUrl) : null;
   
-  const galleryUrls = (item.gallery || []).filter(g => g !== mainImgUrl).slice(0, 6);
-  const galleryBase64List = await Promise.all(galleryUrls.map(url => urlToBase64(url)));
+  const galleryUrls = (item.gallery || []).filter(g => g && g !== mainImgUrl).slice(0, 6);
+  const galleryBase64ListRaw = await Promise.all(galleryUrls.map(url => urlToBase64(url)));
+  const galleryBase64List = galleryBase64ListRaw.filter(img => img && img.startsWith('data:image'));
 
   const routeMapBase64 = item.routeMap ? await urlToBase64(item.routeMap) : null;
 
@@ -53,11 +139,11 @@ export const generatePackagePDF = async (item) => {
     itinerary.map(async (day) => {
       const dayImg = day.image || day.img;
       const dayImgBase64 = dayImg ? await urlToBase64(dayImg) : null;
-      return { ...day, dayImgBase64 };
+      return { ...day, dayImgBase64: (dayImgBase64 && dayImgBase64.startsWith('data:image')) ? dayImgBase64 : null };
     })
   );
 
-  // 2. Prepare HTML Sections
+  // 2. Prepare HTML Container
   const element = document.createElement('div');
   element.style.padding = '35px 30px';
   element.style.fontFamily = "'Inter', 'Helvetica Neue', Arial, sans-serif";
@@ -65,10 +151,11 @@ export const generatePackagePDF = async (item) => {
   element.style.backgroundColor = '#ffffff';
 
   // --- HEADER BRANDING WITH LOGO ---
+  const validLogo = logoBase64 && logoBase64.startsWith('data:image') ? logoBase64 : null;
   const headerHtml = `
     <div style="border-bottom: 2.5px solid #e53a24; padding-bottom: 16px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
       <div style="display: flex; align-items: center; gap: 14px;">
-        ${logoBase64 ? `<img src="${logoBase64}" alt="Zenex Logo" style="height: 52px; width: auto; object-fit: contain; border-radius: 6px;" />` : ''}
+        ${validLogo ? `<img src="${validLogo}" alt="Zenex Logo" style="height: 52px; width: auto; object-fit: contain; border-radius: 6px;" />` : ''}
         <div>
           <h1 style="color: #1e3a8a; margin: 0; font-size: 22px; font-weight: 800; tracking-tight: -0.5px;">Zenex Travels and Tours</h1>
           <p style="color: #e53a24; margin: 3px 0 0 0; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Himalayan Tours & Trekking Experts</p>
@@ -99,9 +186,10 @@ export const generatePackagePDF = async (item) => {
   `;
 
   // --- COVER FEATURED IMAGE ---
-  const coverHtml = coverImageBase64 ? `
-    <div style="margin-bottom: 22px; border-radius: 12px; overflow: hidden; max-height: 260px; width: 100%; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-      <img src="${coverImageBase64}" alt="${title}" style="width: 100%; height: 260px; object-fit: cover; border-radius: 12px;" />
+  const validCover = coverImageBase64 && coverImageBase64.startsWith('data:image') ? coverImageBase64 : null;
+  const coverHtml = validCover ? `
+    <div style="margin-bottom: 22px; border-radius: 12px; overflow: hidden; max-height: 280px; width: 100%; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.06); background-color: #f8fafc;">
+      <img src="${validCover}" alt="${title}" style="width: 100%; height: 280px; object-fit: cover; border-radius: 12px; display: block;" />
     </div>
   ` : '';
 
@@ -188,11 +276,12 @@ export const generatePackagePDF = async (item) => {
   ` : '';
 
   // --- ROUTE MAP IMAGE ---
-  const routeMapHtml = routeMapBase64 ? `
+  const validRouteMap = routeMapBase64 && routeMapBase64.startsWith('data:image') ? routeMapBase64 : null;
+  const routeMapHtml = validRouteMap ? `
     <div style="margin-bottom: 22px; page-break-inside: avoid;">
       <h3 style="color: #1e3a8a; font-size: 15px; font-weight: 700; margin: 0 0 10px 0; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 4px;">Trek Route Map</h3>
       <div style="border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0; text-align: center; padding: 6px; background-color: #f8fafc;">
-        <img src="${routeMapBase64}" alt="Route Map" style="max-width: 100%; height: auto; max-height: 260px; object-fit: contain; border-radius: 6px;" />
+        <img src="${validRouteMap}" alt="Route Map" style="max-width: 100%; height: auto; max-height: 260px; object-fit: contain; border-radius: 6px;" />
       </div>
     </div>
   ` : '';
@@ -264,7 +353,7 @@ export const generatePackagePDF = async (item) => {
             <div style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 12px;">
               <h4 style="color: #15803d; font-size: 13px; font-weight: 700; margin: 0 0 8px 0;">✓ What's Included</h4>
               <ul style="margin: 0; padding-left: 16px; font-size: 11px; color: #166534; line-height: 1.5;">
-                ${includes.map(inc => `<li style="margin-bottom: 3px;">${inc}</li>`).join('')}
+                ${includes.map(inc => `<li style="margin-bottom: 3px;">${typeof inc === 'object' ? (inc.title || inc.text) : inc}</li>`).join('')}
               </ul>
             </div>
           </td>
@@ -272,7 +361,7 @@ export const generatePackagePDF = async (item) => {
             <div style="background-color: #fef2f2; border: 1px solid #fecaca; border-radius: 10px; padding: 12px;">
               <h4 style="color: #b91c1c; font-size: 13px; font-weight: 700; margin: 0 0 8px 0;">✕ What's Excluded</h4>
               <ul style="margin: 0; padding-left: 16px; font-size: 11px; color: #991b1b; line-height: 1.5;">
-                ${excludes.map(exc => `<li style="margin-bottom: 3px;">${exc}</li>`).join('')}
+                ${excludes.map(exc => `<li style="margin-bottom: 3px;">${typeof exc === 'object' ? (exc.title || exc.text) : exc}</li>`).join('')}
               </ul>
             </div>
           </td>
