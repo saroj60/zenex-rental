@@ -6699,5 +6699,443 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
         answer: "No, prior high-altitude trekking experience and strong physical endurance are mandatory due to high passes and 23 days of remote wilderness."
       }
     ]
+  },
+  {
+    id: "dhampus-thapa-peak-climbing-19d",
+    slug: "dhampus-thapa-peak-climbing-19d",
+    title: "Dhampus (Thapa) Peak Climbing - 19 Days",
+    region: "dhaulagiri",
+    regionName: "Dhaulagiri Region",
+    location: "Dhaulagiri Circuit & Hidden Valley, Dhaulagiri Region, Nepal",
+    duration: "19",
+    durationUnit: "Days",
+    price: "US$2,450",
+    originalPrice: "US$2,750",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Hard",
+    maxAltitude: "6,012 m / 19,724 ft",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "Walking / Climbing",
+    accommodation: "Hotels / Lodges / Tented camp",
+    meals: "Breakfast, Lunch & Dinner",
+    bestSeason: "Spring & Autumn",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Thapa_Peak.jpg/1280px-Thapa_Peak.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    gallery: [
+      "https://www.thirdrockadventures.com/assets-back/images/trip/dhampus-peak-clmbing.jpgEnX.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Thapa_Peak.jpg/1280px-Thapa_Peak.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTze9SYS9A5CCAUyj9buMJ-NpnSgCyVZiDwVz9EkZiTsg&s",
+      "https://www.yogisadventure.com/_next/image?url=https%3A%2F%2Fapi.yogisadventure.com%2Fuploads%2F5d1713c4-58a5-4da0-b753-65368ee3120f.jpg&w=3840&q=75",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQ6LyyPZdoDxHcv9kk4-GUinENiKCsEFi1LVQDCQq0APAJfQDKGQFKrE&s=10",
+      "https://i0.wp.com/www.langtangtreks.com/blog/wp-content/uploads/2019/12/short-everest-base-camp-trek-7-days-1.jpg?resize=819%2C460&ssl=1"
+    ],
+    overview: `
+      <h3>Dhampus (Thapa) Peak Climbing - 19 Days | Non-Technical 6,000m Trekking Peak Adventure in Dhaulagiri</h3>
+      <p>Dhampus Peak, also known as <strong>Thapa Peak (6,012 meters / 19,724 ft)</strong>, is a stunning non-technical trekking peak located in the high-altitude wilderness of the Dhaulagiri region of Nepal. This 19-day expedition combines the legendary <strong>Dhaulagiri Circuit Trek</strong> with a rewarding 6,000m peak climb, offering dramatic high-pass crossings, glacier trekking, and breathtaking 360-degree vistas of Dhaulagiri (8,167m), Annapurna I, Nilgiri, Tukuche Peak, and Tilicho Peak.</p>
+      <p>The journey begins from Kathmandu to Pokhara and onwards to Muri, traversing pristine forests, dramatic river gorges, and remote Magar settlements. As you ascend through Italian Base Camp and Japanese Base Camp onto the Chhonbardan Glacier, you'll reach Dhaulagiri Base Camp before crossing the spectacular <strong>French Pass (5,360m)</strong> into the isolated <strong>Hidden Valley (5,166m)</strong>. From high camp in Hidden Valley, climbers launch the summit push up the snow slopes of Dhampus Peak (6,012m) before crossing <strong>Thapa Pass (5,244m)</strong> and descending to Marpha and Pokhara.</p>
+      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Dhampus Peak Climbing Permits, Annapurna Conservation Area Permits (ACAP), TIMS cards, full tented camping gear, licensed climbing Sherpa guides, cooks, porters, private transfers, and hotel bookings in Kathmandu and Pokhara.</p>
+    `,
+    highlights: [
+      "Scenic Summit (6,012m): Stand atop Thapa Peak for 360-degree panoramas of Dhaulagiri (8,167m), Tukuche Peak, Nilgiri, Annapurna I, and Tilicho Peak.",
+      "Non-Technical Trekking Peak: Ideal for adventurous trekkers and first-time climbers seeking a 6,000m summit experience.",
+      "Dhaulagiri Region Wilderness: Trek through pristine, off-the-beaten-path trails via Italian Base Camp, Dhaulagiri Base Camp, and Hidden Valley.",
+      "Two Dramatic High Passes: Cross French Pass (5,360m) and Thapa Pass (5,244m) for unmatched views of the Himalayan ranges.",
+      "Glacier & High Pass Adventure: Traverse the Chhonbardan Glacier surrounded by towering icefalls, seracs, and mountain rock faces.",
+      "Cultural Encounters: Explore traditional Magar and Thakali villages like Muri, Bagar, and Marpha with warm hospitality and rich culture.",
+      "High Wilderness Camping: Enjoy full camping support with dedicated cooks, kitchen staff, and spacious tents in alpine settings.",
+      "Professional Support: Led by expert licensed climbing Sherpa guides from Zenex Travels & Tours with full group climbing equipment included."
+    ],
+    quickFacts: {
+      country: "Nepal",
+      duration: "19 Days",
+      tripGrade: "Hard",
+      maxAltitude: "6,012 m / 19,724 ft",
+      startsEnds: "Kathmandu / Kathmandu",
+      starts: "Kathmandu",
+      ends: "Kathmandu",
+      activities: "Walking / Climbing",
+      accommodation: "Hotels / Lodges / Tented camp",
+      meals: "Breakfast, Lunch & Dinner",
+      bestTime: "Spring & Autumn"
+    },
+    itinerary: [
+      {
+        day: "01",
+        title: "Arrival in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6-7 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Welcome Briefing",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport arrival transfer, pre-trip briefing & guide introduction.",
+        description: "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be greeted by our Zenex Travels representative who will transfer you to the hotel. Once checked in, we hold a pre-trip briefing to review climbing gear, permits, and introduce your trekking/climbing guide. Overnight at hotel."
+      },
+      {
+        day: "02",
+        title: "Kathmandu – Pokhara (820 m)",
+        altitude: "820 m / 2,690 ft",
+        walkingTime: "8-9 hours drive",
+        distance: "200 km",
+        accommodation: "Hotel in Pokhara",
+        meals: "Breakfast",
+        modeOfTravel: "Tourist Bus / Private Vehicle",
+        highlights: "Drive along Trishuli and Marshyangdi rivers to lakeside Pokhara.",
+        description: "In the morning after breakfast, travel to Pokhara via scenic tourist vehicle along winding river valleys (approx 8-9 hours). Enjoy leisure time along the serene shores of Phewa Lake in Pokhara in the evening. Overnight at hotel. (Optional 25-minute flight available upon request)."
+      },
+      {
+        day: "03",
+        title: "Pokhara – Muri (1,720 m)",
+        altitude: "1,850 m / 6,069 ft",
+        walkingTime: "7-8 hours drive",
+        distance: "110 km",
+        accommodation: "Lodge at Muri",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Private 4WD vehicle",
+        highlights: "Drive through Myagdi river valley, terraced farmlands & gateway village of Muri.",
+        description: "Drive from Pokhara towards Muri, taking rugged mountain roads along the Myagdi Khola valley. The journey passes deep river canyons, terraced farms, and remote Magar hamlets. Muri marks the official trailhead for the Dhaulagiri Circuit and Dhampus Peak expedition. Overnight at lodge."
+      },
+      {
+        day: "04",
+        title: "Muri – Bagar (2,080 m)",
+        altitude: "2,080 m / 6,824 ft",
+        walkingTime: "7-8 hours",
+        distance: "14 km",
+        accommodation: "Lodge at Bagar",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek along Myagdi Khola bank, bamboo & rhododendron forests, Magar hospitality.",
+        description: "Leave Muri following the left bank of the deep Myagdi Khola. The path features ascents and descents through lush tropical vegetation, bamboo groves, and terraced slopes. Witness authentic traditional rural lifestyles of Magar communities before reaching Bagar. Overnight at lodge."
+      },
+      {
+        day: "05",
+        title: "Bagar – Doban (2,520 m)",
+        altitude: "2,545 m / 8,349 ft",
+        walkingTime: "6-7 hours",
+        distance: "12 km",
+        accommodation: "Lodge at Doban",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Ascend dense pine & bamboo forests, tranquil wilderness trail to Doban.",
+        description: "Trek gently upwards alongside the roaring Myagdi Khola through thick forests of pine, rhododendron, and bamboo. The trail winds deeper into remote mountain valleys, offering solitude and dramatic canyon views. Reach the seasonal settlement of Doban. Overnight at lodge."
+      },
+      {
+        day: "06",
+        title: "Doban – Sallaghari (3,100 m)",
+        altitude: "3,100 m / 10,170 ft",
+        walkingTime: "5-6 hours",
+        distance: "10 km",
+        accommodation: "Lodge at Sallaghari",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Ascend pine forests ('Sallaghari'), spectacular waterfalls & opening alpine views.",
+        description: "Ascend steadily through pine and rhododendron forests as the jungle thins out into sub-alpine terrain. Pass dramatic cascading waterfalls plummeting into the valley floor. Arrive at Sallaghari, surrounded by towering pine trees. Overnight at lodge."
+      },
+      {
+        day: "07",
+        title: "Sallaghari – Italian Base Camp (3,660 m)",
+        altitude: "3,660 m / 12,007 ft",
+        walkingTime: "4 hours",
+        distance: "7 km",
+        accommodation: "Tea House / Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Short ascent into high alpine zone, panoramic views of Dhaulagiri massif & Manapathi.",
+        description: "A short but significant 4-hour climb transition from pine forests to open high-alpine meadows. As vegetation thins, air grows crisp and cool. Reach Italian Base Camp (3,660m) offering towering views of Dhaulagiri II, III, V, and Manapathi peak. Overnight at lodge / teahouse."
+      },
+      {
+        day: "08",
+        title: "Rest day for acclimatization at Italian Base Camp",
+        altitude: "3,660 m / 12,007 ft",
+        walkingTime: "Acclimatization Walk",
+        distance: "3-4 km",
+        accommodation: "Tea House / Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Rest & Acclimatization",
+        highlights: "Acclimatization day hike towards Dhaulagiri icefall, rest & altitude preparation.",
+        description: "Spend a dedicated acclimatization day at Italian Base Camp. Take short day hikes up surrounding ridges to gain altitude and allow your body to adapt before heading onto the glacier. Overnight at teahouse / lodge."
+      },
+      {
+        day: "09",
+        title: "Italian Base Camp – Japanese Base Camp (3,890 m)",
+        altitude: "3,892 m / 12,769 ft",
+        walkingTime: "5-6 hours",
+        distance: "8 km",
+        accommodation: "Tented camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Glacier Trekking & Camping",
+        highlights: "Traverse Chhonbardan Glacier, icefalls, seracs & moraine camping.",
+        description: "Cross the lower Chhonbardan Glacier onto moraine trails. Navigating rocky moraine debris and ice slopes requires steady footing. Surrounded by soaring icefalls and granite cliffs, set up tented camp at Japanese Base Camp (3,890m). Overnight at tented camp."
+      },
+      {
+        day: "10",
+        title: "Japanese Base Camp – Dhaulagiri Base Camp (4,750 m)",
+        altitude: "4,750 m / 15,583 ft",
+        walkingTime: "5-6 hours",
+        distance: "9 km",
+        accommodation: "Tented camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Glacier Trekking & Camping",
+        highlights: "Trek over Chhonbardan Glacier directly beneath massive Dhaulagiri I (8,167m).",
+        description: "Continue ascending along the lateral moraine of Chhonbardan Glacier. Towering directly above is the formidable north face of Dhaulagiri I (8,167m). Arrive at Dhaulagiri Base Camp (4,750m) surrounded by dramatic glaciers and high Himalayan ice walls. Overnight at tented camp."
+      },
+      {
+        day: "11",
+        title: "Dhaulagiri Base Camp – French Pass (5,360 m) – Hidden Valley (5,166 m)",
+        altitude: "5,166 m / 16,948 ft",
+        walkingTime: "5-6 hours",
+        distance: "10 km",
+        accommodation: "Tented camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "High Pass Crossing & Camping",
+        highlights: "Cross highest pass of trek French Pass (5,360m), 360° views of Dhaulagiri & enter mystical Hidden Valley.",
+        description: "Ascend steeply for 5-6 hours to **French Pass (5,360m)**, the highest pass on the circuit. Enjoy jaw-dropping panoramas of Dhaulagiri I, Tukuche Peak, and vast mountain ridges. Descend gently 200m into the high desert expanse of Hidden Valley (5,166m). Overnight at tented camp."
+      },
+      {
+        day: "12",
+        title: "Rest Day at Hidden Valley (5,166 m)",
+        altitude: "5,166 m / 16,948 ft",
+        walkingTime: "Rest & Summit Prep",
+        distance: "2-3 km",
+        accommodation: "Tented camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Rest / Summit Prep",
+        highlights: "Climbing equipment check, crampon fitting, briefing & rest for summit push.",
+        description: "Rest and preparation day in Hidden Valley high camp. Climbing Sherpas inspect personal harnesses, crampons, ice axes, and fixed ropes, conducting a summit briefing. Rest early to save energy. Overnight at tented camp."
+      },
+      {
+        day: "13",
+        title: "Climb Dhampus (Thapa) Peak (6,012 m) - Hidden Valley (5,166 m)",
+        altitude: "6,012 m / 19,724 ft",
+        walkingTime: "8-9 hours",
+        distance: "10 km round trip",
+        accommodation: "Tented camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Peak Climbing & Camping",
+        highlights: "Summit push to Dhampus Peak (6,012m), 360° vistas of Annapurna, Dhaulagiri, Nilgiri & return to Hidden Valley.",
+        description: "Alpine start around 3:00 AM. Climb steady snow slopes along the northwest ridge towards the summit of **Dhampus (Thapa) Peak (6,012m)**. Use crampons, ropes, and ice axes as required by snow conditions. Stand atop the peak for unforgettable 360-degree views of Dhaulagiri, Annapurna I, Nilgiri, Tukuche, and Tilicho Peak. Descend back to Hidden Valley to recover. Overnight at tented camp."
+      },
+      {
+        day: "14",
+        title: "Hidden Valley – Thapa Pass (5,244 m) – Yak Kharka (4,190 m)",
+        altitude: "4,190 m / 13,746 ft",
+        walkingTime: "6-7 hours",
+        distance: "12 km",
+        accommodation: "Tented camp",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "High Pass Crossing & Camping",
+        highlights: "Cross Thapa Pass (5,244m), views of Tilicho & Annapurna range, descent to Yak Kharka.",
+        description: "Ascend out of Hidden Valley to cross **Thapa Pass (5,244m)**. Enjoy sweeping vistas across the Kali Gandaki valley towards the Annapurna range and Tilicho Peak. Descend steeply along high ridge trails down to Yak Kharka pasture settlement (4,190m). Overnight at tented camp."
+      },
+      {
+        day: "15",
+        title: "Yak Kharka – Marpha (2,650 m)",
+        altitude: "2,650 m / 8,694 ft",
+        walkingTime: "5-6 hours",
+        distance: "11 km",
+        accommodation: "Lodge at Marpha",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Descend into Kali Gandaki Valley, visit historic Thakali stone village & monastery in Marpha.",
+        description: "Descend steeply from alpine pastures down to the Kali Gandaki River valley. Arrive in the beautiful apple-capital village of Marpha (2,650m). Explore whitewashed stone alleys, traditional Thakali culture, and local Buddhist monasteries. Overnight at lodge."
+      },
+      {
+        day: "16",
+        title: "Marpha – Pokhara (820 m)",
+        altitude: "820 m / 2,690 ft",
+        walkingTime: "8-10 hours drive",
+        distance: "140 km",
+        accommodation: "Hotel in Pokhara",
+        meals: "Breakfast & Lunch",
+        modeOfTravel: "Private local 4WD vehicle",
+        highlights: "Drive along Kali Gandaki gorge via Jomsom, Tatopani & Beni to Pokhara.",
+        description: "Board a private 4WD vehicle from Marpha through the Kali Gandaki gorge, passing Jomsom, Kalopani, Ghasa, and Tatopani before joining the highway to Pokhara (approx 8-10 hours). Check into hotel and relax along Phewa Lakeside. Overnight at hotel."
+      },
+      {
+        day: "17",
+        title: "Pokhara – Kathmandu (1,350 m)",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "7-8 hours drive",
+        distance: "200 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast",
+        modeOfTravel: "Tourist Bus / Private Vehicle",
+        highlights: "Scenic drive back to Kathmandu along Prithvi Highway.",
+        description: "After breakfast, drive back to Kathmandu along the scenic Prithvi Highway (approx 7-8 hours). Transfer to your hotel upon arrival. Free time for evening rest and shopping in Thamel. Overnight at hotel."
+      },
+      {
+        day: "18",
+        title: "Free day in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "Free / Sightseeing",
+        distance: "10 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast & Farewell Dinner",
+        modeOfTravel: "Free day / Sightseeing",
+        highlights: "Optional UNESCO heritage tour (Patan, Boudhanath, Pashupatinath) & Zenex Travels farewell dinner.",
+        description: "Leisure day in Kathmandu for optional UNESCO World Heritage sightseeing (Patan Durbar Square, Boudhanath Stupa, Pashupatinath) or shopping. In the evening, join your Zenex Travels team for a celebration farewell dinner with summit certificates. Overnight at hotel."
+      },
+      {
+        day: "19",
+        title: "Departure from Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6-7 km",
+        accommodation: "-",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport transfer for international departure flight.",
+        description: "Enjoy breakfast at your hotel. At your scheduled departure time, our Zenex Travels representative will pick you up from the hotel and transfer you to Tribhuvan International Airport for your return flight home."
+      }
+    ],
+    includes: [
+      "Airport - Hotel - Airport transfers by private vehicle",
+      "3 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+      "2 nights 3-star hotel accommodation in Pokhara with breakfast (twin sharing)",
+      "Private vehicle / Tourist Bus ground transportation Kathmandu – Pokhara – Kathmandu",
+      "Private 4WD local jeep Pokhara – Muri and Marpha – Pokhara including guide",
+      "Annapurna Conservation Area Permit (ACAP) + TIMS Card",
+      "Dhampus (Thapa) Peak Climbing Permit fee & garbage deposit",
+      "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during lodge and camping trek period",
+      "Mountain lodge accommodations during teahouse sections",
+      "Full tented camping gear: sleeping tents (2-person), kitchen tent, dining tent, toilet tent & cooking utensils",
+      "Government licensed English-speaking high-altitude trekking guide & climbing Sherpa guide",
+      "Professional camping cook, kitchen helpers, and porters (1 porter for 2 trekkers, carrying up to 20-22 kg total)",
+      "Insurance, equipment, clothing, food, and daily wages for guide, climbing Sherpa, cook, and porters",
+      "Group climbing gear (fixed ropes, snow bars, ice screws)",
+      "Zenex Travels duffel bag for the trek",
+      "Summit Achievement Certificate for Dhampus (Thapa) Peak (6,012m)",
+      "Official Farewell Dinner in Kathmandu",
+      "All government taxes, VAT, and company service fees"
+    ],
+    costIncludes: [
+      "Airport - Hotel - Airport transfers by private vehicle",
+      "3 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+      "2 nights 3-star hotel accommodation in Pokhara with breakfast (twin sharing)",
+      "Private vehicle / Tourist Bus ground transportation Kathmandu – Pokhara – Kathmandu",
+      "Private 4WD local jeep Pokhara – Muri and Marpha – Pokhara including guide",
+      "Annapurna Conservation Area Permit (ACAP) + TIMS Card",
+      "Dhampus (Thapa) Peak Climbing Permit fee & garbage deposit",
+      "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during lodge and camping trek period",
+      "Mountain lodge accommodations during teahouse sections",
+      "Full tented camping gear: sleeping tents (2-person), kitchen tent, dining tent, toilet tent & cooking utensils",
+      "Government licensed English-speaking high-altitude trekking guide & climbing Sherpa guide",
+      "Professional camping cook, kitchen helpers, and porters (1 porter for 2 trekkers, carrying up to 20-22 kg total)",
+      "Insurance, equipment, clothing, food, and daily wages for guide, climbing Sherpa, cook, and porters",
+      "Group climbing gear (fixed ropes, snow bars, ice screws)",
+      "Zenex Travels duffel bag for the trek",
+      "Summit Achievement Certificate for Dhampus (Thapa) Peak (6,012m)",
+      "Official Farewell Dinner in Kathmandu",
+      "All government taxes, VAT, and company service fees"
+    ],
+    excludes: [
+      "International airfare & Nepal VISA fees",
+      "Personal travel and medical insurance (helicopter emergency evacuation mandatory)",
+      "Personal climbing equipment (mountaineering boots, crampons, ice axe, harness, helmet, etc.)",
+      "Lunches & dinners in Kathmandu and Pokhara (except farewell dinner)",
+      "Hot showers, Wi-Fi, battery charging & bottled water/beverages in mountain lodges",
+      "Sightseeing entry fees to monuments in Kathmandu & Pokhara",
+      "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+      "Tips and gratuities for guides, climbing Sherpa, cook, and porters"
+    ],
+    costExcludes: [
+      "International airfare & Nepal VISA fees",
+      "Personal travel and medical insurance (helicopter emergency evacuation mandatory)",
+      "Personal climbing equipment (mountaineering boots, crampons, ice axe, harness, helmet, etc.)",
+      "Lunches & dinners in Kathmandu and Pokhara (except farewell dinner)",
+      "Hot showers, Wi-Fi, battery charging & bottled water/beverages in mountain lodges",
+      "Sightseeing entry fees to monuments in Kathmandu & Pokhara",
+      "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+      "Tips and gratuities for guides, climbing Sherpa, cook, and porters"
+    ],
+    groupDiscounts: [
+      { pax: "1 - 3 Pax", price: "US$ 2,450" },
+      { pax: "4 - 7 Pax", price: "US$ 2,300" },
+      { pax: "8 - 11 Pax", price: "US$ 2,180" }
+    ],
+    difficultyInfo: "The 19-day Dhampus (Thapa) Peak Climbing is rated HARD / CHALLENGING. It combines high-pass crossing over French Pass (5,360m) and Thapa Pass (5,244m) with a non-technical 6,012m summit climb over snow slopes. Good physical fitness, stamina, and prior high-altitude trekking experience are highly recommended.",
+    altitudeSickness: {
+      description: "Reaching a summit elevation of 6,012 meters, altitude sickness (AMS) is a primary consideration. The itinerary includes acclimatization rest days at Italian Base Camp (3,660m) and Hidden Valley (5,166m) to optimize safety.",
+      prevention: [
+        "Ascend at a steady, manageable pace without rushing.",
+        "Utilize acclimatization rest days built into the program.",
+        "Drink 3 to 4 liters of water and warm fluids daily.",
+        "Inform your Zenex Travels guide immediately if experiencing AMS symptoms."
+      ]
+    },
+    equipmentList: [
+      {
+        category: "Climbing & Technical Gear",
+        items: [
+          "Climbing harness & helmet",
+          "Crampons (compatible with mountaineering boots)",
+          "General mountaineering ice axe",
+          "Carabiners (2 locking, 2 non-locking)",
+          "Belay/rappel device & Jumar ascender",
+          "Mountaineering boots (Double boots like La Sportiva G2 / Scarpa Phantom 6000)"
+        ]
+      },
+      {
+        category: "Clothing & Footwear",
+        items: [
+          "Moisture-wicking thermal base layers",
+          "Fleece jacket & heavy expedition down jacket (-20°C rated)",
+          "Waterproof & windproof Gore-Tex jacket and pants",
+          "Trekking pants & warm thermal leggings",
+          "Insulated summit mittens & windproof fleece gloves",
+          "Sturdy broken-in trekking boots & gaiters",
+          "Thermal wool socks (4-5 pairs)"
+        ]
+      },
+      {
+        category: "Personal Gear & Sleeping",
+        items: [
+          "Daypack (30-40L) with rain cover",
+          "Zenex Travels duffel bag for porters",
+          "Four-season sleeping bag rated to -20°C",
+          "Adjustable trekking poles",
+          "UV 400 glacier sunglasses & ski goggles",
+          "Headlamp with extra batteries",
+          "Water bottles, purification tablets & personal first aid kit"
+        ]
+      }
+    ],
+    extendedInfo: [
+      {
+        title: "Permits for Dhampus Peak Climbing",
+        description: "Mandatory permits include the Dhampus Peak Climbing Permit, Annapurna Conservation Area Permit (ACAP), and TIMS Card. Zenex Travels & Tours handles all permit processing."
+      },
+      {
+        title: "Best Seasons to Climb",
+        description: "Spring (March to May) and Autumn (September to November) offer clear skies, stable snow conditions, and moderate high-altitude temperatures."
+      },
+      {
+        title: "Why Trek with Zenex Travels & Tours?",
+        description: "Zenex Travels & Tours provides experienced licensed climbing Sherpas, complete camping infrastructure, quality meals, transparent pricing, and comprehensive safety protocols."
+      }
+    ],
+    faqs: [
+      {
+        question: "Where is Dhampus (Thapa) Peak located?",
+        answer: "Dhampus Peak (6,012m) is located in the Dhaulagiri region of Nepal, near Hidden Valley and opposite the Annapurna range."
+      },
+      {
+        question: "Is Dhampus Peak a technical climb?",
+        answer: "No, Dhampus Peak is classified as a non-technical trekking peak. It involves walking on snow-covered slopes using crampons, ropes, and ice axes for safety."
+      },
+      {
+        question: "What permits are required for Dhampus Peak Climbing?",
+        answer: "You need a Dhampus Peak Climbing Permit, ACAP permit, and TIMS card. All permits are arranged by Zenex Travels & Tours."
+      },
+      {
+        question: "What accommodation is provided on the trek?",
+        answer: "Lodges/teahouses in lower villages (Muri, Bagar, Marpha) and full wilderness tented camping with cooks from Italian Base Camp through Hidden Valley."
+      },
+      {
+        question: "Is prior climbing experience mandatory?",
+        answer: "Prior climbing experience is not strictly required, but strong physical fitness and prior high-altitude trekking experience are essential."
+      }
+    ]
   }
 ];
