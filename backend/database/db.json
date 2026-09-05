@@ -9034,6 +9034,344 @@
           "answer": "Spring (March to May) offers blooming rhododendron forests and clear skies, while Autumn (September to November) offers crisp mountain visibility and stable weather."
         }
       ]
+    },
+    {
+      "id": "makalu-three-pass-sherpani-amphu-laptsa",
+      "slug": "makalu-three-pass-sherpani-amphu-laptsa",
+      "title": "Makalu Baruntse Col - Sherpani Col & Amphu Laptse Trek - 25 Days",
+      "region": "makalu",
+      "category": "Makalu Region Treks",
+      "location": "Makalu & Everest Regions, Nepal",
+      "duration": "25 Days",
+      "maxAltitude": "6,180 m",
+      "difficulty": "Challenging / Technical",
+      "bestSeason": "Spring (Mar-May) & Autumn (Sep-Nov)",
+      "groupSize": "1 - 8 Persons",
+      "price": 3250,
+      "originalPrice": 3600,
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "image": "https://admin.buddhaair.com/upload/blog/thumbnail/1574327215_jYmkI_1567571648-ebeyj-makalu.webp",
+      "heroImage": "https://admin.buddhaair.com/upload/blog/thumbnail/1574327215_jYmkI_1567571648-ebeyj-makalu.webp",
+      "gallery": [
+        "https://admin.buddhaair.com/upload/blog/thumbnail/1574327215_jYmkI_1567571648-ebeyj-makalu.webp",
+        "https://wildernessexcursion.com/_next/image?url=https%3A%2F%2Fmedia.app.wildernessexcursion.com%2Fuploads%2Ffullbanner%2Fview-of-mount-makalu-and-a-blue-lake-from-kongma-la-pass.webp&w=3840&q=75&dpl=dpl_HCc9D1rQjzpLEeq9FyyGvkGQtxh8",
+        "https://www.highpassadventure.com/public/uploads/Guide%20and%20porter%20Hire%20for%20Makalu%20Base%20Camp%20Trek.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIs4HEMGawS_zcZ3KXT1dC4dKTLKld9YqgxeptO_nRQYcxui9vUF3GEKU&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREBquo7zhRcf4il1XQLjePZQzXfNZ45YgMc1oZDuOMMCOnM6akhyezM8qY&s=10"
+      ],
+      "overview": "Makalu Three Pass Trek (via Sherpani Col, Baruntse Col & Amphu Laptse) is one of Nepal’s most demanding, technical, and adventurous high-altitude expedition treks. Starting from Tumlingtar in the Makalu region and concluding at Lukla in the Khumbu Everest region, this 25-day grand Himalayan traverse connects two iconic mountain wildernesses across three formidable high passes above 5,800 meters.\n\nThe route ventures deep into the Makalu-Barun National Park before climbing into extreme glacial wilderness to cross Sherpani Col (6,180 m), Baruntse East/West Col (6,143 m), and Amphu Laptse Pass (5,845 m). Trekkers negotiate crevassed glaciers, fixed ropes, ice wall descents, and pristine high alpine moraines while taking in breathtaking panoramic vistas of Everest (8,848 m), Lhotse (8,516 m), Makalu (8,485 m), Baruntse (7,129 m), and Chamlang.\n\nOrganized with full expedition support by Zenex Travels & Tours, including certified climbing Sherpas, tented camping infrastructure, satellite communications, and specialized safety gear, this trek offers an unforgettable journey far from commercial trails.",
+      "highlights": [
+        "Embark on a rare cross-Himalayan expedition connecting Makalu region (Tumlingtar) with Everest region (Lukla)",
+        "Cross three extreme high mountain passes: Sherpani Col (6,180m), West/Baruntse Col (6,143m), and Amphu Laptse Pass (5,845m)",
+        "Witness four 8,000m giants: Mount Makalu (8,485m), Mount Everest (8,848m), Mount Lhotse (8,516m), and Kanchenjunga",
+        "Trek through Makalu Barun National Park's untouched river gorges and isolated Rai & Sherpa settlements",
+        "Full expedition-style tented camping with dedicated climbing Sherpas, cooks, and high-altitude porters",
+        "Experience technical fixed-rope glacier traverses and ice wall rappelling in remote Himalayan solitude",
+        "Explore legendary Everest landmarks including Chhukung, Tengboche Monastery, Namche Bazaar, and Lukla"
+      ],
+      "quickFacts": {
+        "duration": "25 Days",
+        "destination": "Makalu & Everest Regions, Nepal",
+        "startPoint": "Kathmandu / Tumlingtar",
+        "endPoint": "Lukla / Kathmandu",
+        "maxAltitude": "6,180 m (Sherpani Col)",
+        "difficulty": "Challenging / Technical",
+        "activity": "Expedition Trekking & Technical Pass Crossing",
+        "meals": "All meals during trek (Breakfast, Lunch, Dinner)",
+        "accommodation": "Teahouses / Lodges & Expedition Tented Camps",
+        "transportation": "Domestic Flights (Kathmandu - Tumlingtar & Lukla - Kathmandu) & Private 4WD",
+        "bestSeason": "Spring (March to May) & Autumn (September to November)",
+        "region": "makalu"
+      },
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu & Transfer to Hotel",
+          "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport in Kathmandu (1,350m), meet our Zenex Travels & Tours representative for a private transfer to your hotel. Rest, prepare gear, and meet your expedition guide in the evening for a comprehensive trip briefing.",
+          "overnight": "Hotel in Kathmandu",
+          "elevation": "1,350 m"
+        },
+        {
+          "day": "Day 02",
+          "title": "Fly to Tumlingtar (410m) & Drive to Num (1,560m)",
+          "description": "Board an early morning 45-minute scenic domestic flight from Kathmandu to Tumlingtar airport. Meet your trekking support team and take a 3 to 4 hour 4WD jeep drive past terraced sub-tropical farms and rural hamlets to Num village.",
+          "overnight": "Lodge in Num",
+          "elevation": "1,560 m"
+        },
+        {
+          "day": "Day 03",
+          "title": "Trek from Num to Seduwa (1,500m)",
+          "description": "Descend steeply for 2.5 hours through bamboo forests to the suspension bridge over the rushing Arun River. Cross the river and ascend through lush forests and terraced fields for another 2.5 hours to Seduwa, home to the Makalu Barun National Park permit checkpoint.",
+          "overnight": "Lodge / Tea House in Seduwa",
+          "elevation": "1,500 m"
+        },
+        {
+          "day": "Day 04",
+          "title": "Trek from Seduwa to Tashigaon (2,100m)",
+          "description": "Trek through pleasant terraced fields and small paddy farms to Tashigaon, a vibrant Sherpa village surrounded by dense forest. Tashigaon is the last permanent village on the route before ascending into high alpine territory.",
+          "overnight": "Lodge / Tea House in Tashigaon",
+          "elevation": "2,100 m"
+        },
+        {
+          "day": "Day 05",
+          "title": "Rest & Acclimatization Day at Tashigaon",
+          "description": "Rest and acclimatization day in Tashigaon. Take short walks around the village, inspect climbing equipment, and prepare body and mind for the high-altitude wilderness ahead.",
+          "overnight": "Lodge / Tea House in Tashigaon",
+          "elevation": "2,100 m"
+        },
+        {
+          "day": "Day 06",
+          "title": "Trek from Tashigaon to Khongma Danda (3,500m)",
+          "description": "A steep and challenging ascend through enchanted rhododendron and oak cloud forests onto a high ridge. Enter the core wilderness of Makalu Barun National Park as timberline thins, arriving at Khongma Danda after approx. 6 hours.",
+          "overnight": "Lodge / Tea House in Khongma Danda",
+          "elevation": "3,500 m"
+        },
+        {
+          "day": "Day 07",
+          "title": "Trek to Mumbuk (3,540m) via Shipton La (4,125m) & Keke La (4,170m)",
+          "description": "A dramatic ridge trek crossing Tutu La / Shipton's Pass (4,125m) and Keke La (4,170m). Pass the serene sacred lake of Kalo Pokhari (3,930m) before descending through hemlock and pine forests to Mumbuk (Dobato).",
+          "overnight": "Lodge / Tea House in Mumbuk",
+          "elevation": "3,540 m"
+        },
+        {
+          "day": "Day 08",
+          "title": "Trek from Mumbuk to Yangri Kharka (3,557m)",
+          "description": "Descend into the deep Barun River gorge, crossing wooden bridges and tracking alongside the river. Take in spectacular views of Mt. Tutse (6,739m) and Peak 7 (6,185m) before reaching the alpine meadow of Yangri Kharka.",
+          "overnight": "Lodge / Tea House in Yangri Kharka",
+          "elevation": "3,557 m"
+        },
+        {
+          "day": "Day 09",
+          "title": "Trek from Yangri Kharka to Langma Le Kharka (4,410m)",
+          "description": "Trek upstream beside Barun Khola through high pastures (Kharkas) past Merek (4,100m). Vegetation transitions to sparse alpine shrubs with soaring views of Chamlang and surrounding peaks. Arrive at Langma Le Kharka.",
+          "overnight": "Lodge / Tea House in Langma Le Kharka",
+          "elevation": "4,410 m"
+        },
+        {
+          "day": "Day 10",
+          "title": "Trek from Langma Le Kharka to Makalu Base Camp (4,870m)",
+          "description": "Trek along barren moraine trails beside the Barun Glacier. Mount Makalu’s colossal south wall dominates the skyline. Arrive at Makalu Base Camp (4,870m) surrounded by towering granite and ice peaks.",
+          "overnight": "Lodge / Tea House in Makalu Base Camp",
+          "elevation": "4,870 m"
+        },
+        {
+          "day": "Day 11",
+          "title": "Rest & Exploration Day at Makalu Base Camp",
+          "description": "A crucial acclimatization day. Explore Barun Pokhari, inspect the Barun Glacier, or hike towards Swiss Base Camp (5,150m) for panoramic views of Makalu, Everest, and Lhotse.",
+          "overnight": "Lodge / Tea House in Makalu Base Camp",
+          "elevation": "4,870 m"
+        },
+        {
+          "day": "Day 12",
+          "title": "Trek from Makalu Base Camp to Baruntse East Col / Glacier Camp (5,400m)",
+          "description": "Leave basic teahouses behind and enter full expedition camping mode. Trek across zigzagging glacial moraines and boulder fields up to Baruntse East Col / Glacier Camp.",
+          "overnight": "Tented Camp",
+          "elevation": "5,400 m"
+        },
+        {
+          "day": "Day 13",
+          "title": "Trek to Sherpani Col Base Camp (5,688m)",
+          "description": "A steep, rigorous 6 to 7 hour ascent over icy moraine ridges and rocky glaciers to reach Sherpani Col Base Camp in a remote alpine basin.",
+          "overnight": "Tented Camp",
+          "elevation": "5,688 m"
+        },
+        {
+          "day": "Day 14",
+          "title": "Trek from Sherpani Col Base Camp to High Camp (5,900m)",
+          "description": "Climb steeply up loose rock and ice slopes to High Camp (5,900m). Specialized climbing gear including crampons, ice axes, and fixed ropes are utilized by our Sherpa guides for safety.",
+          "overnight": "Tented Camp",
+          "elevation": "5,900 m"
+        },
+        {
+          "day": "Day 15",
+          "title": "Cross Sherpani Col (6,180m) & West Col (6,143m)",
+          "description": "The crux day of the expedition! Begin before dawn to climb the steep ice wall of Sherpani Col (6,180m) using fixed ropes and ascenders. Enjoy breathtaking 360-degree Himalayan vistas before crossing the snow plateau to West Col (6,143m). Abseil down onto the glacial floor.",
+          "overnight": "Tented Camp",
+          "elevation": "6,180 m"
+        },
+        {
+          "day": "Day 16",
+          "title": "Trek from West Col to Baruntse South Base Camp (5,565m)",
+          "description": "Descend safely across glacial moraines using fixed lines where necessary to reach Baruntse South Base Camp beneath the looming ridges of Mount Baruntse (7,129m).",
+          "overnight": "Tented Camp",
+          "elevation": "5,565 m"
+        },
+        {
+          "day": "Day 17",
+          "title": "Trek to Amphu Laptse Base Camp (5,527m)",
+          "description": "Traverse high alpine glacial terrain with steep ascents and descents across icy ridges to reach the foot of Amphu Laptse Pass.",
+          "overnight": "Tented Camp",
+          "elevation": "5,527 m"
+        },
+        {
+          "day": "Day 18",
+          "title": "Cross Amphu Laptse Pass (5,845m) to Baruntse North Base Camp (5,100m)",
+          "description": "Cross the formidable Amphu Laptse Pass (5,845m), negotiating steep ice gullies and rock steps using fixed ropes. Descend into the upper Imja Khola Valley to Baruntse North Base Camp.",
+          "overnight": "Tented Camp",
+          "elevation": "5,845 m"
+        },
+        {
+          "day": "Day 19",
+          "title": "Trek from Base Camp to Chhukung (4,730m)",
+          "description": "Descend from upper moraines into the alpine pastures of the Khumbu Valley, reaching the Sherpa hamlet of Chhukung beneath Lhotse and Island Peak.",
+          "overnight": "Lodge in Chhukung",
+          "elevation": "4,730 m"
+        },
+        {
+          "day": "Day 20",
+          "title": "Trek from Chhukung to Tengboche (3,860m)",
+          "description": "Descend through Dingboche, Pangboche, and Debuche, crossing the Imja River to reach Tengboche, home to the famous Tengboche Monastery.",
+          "overnight": "Lodge in Tengboche",
+          "elevation": "3,860 m"
+        },
+        {
+          "day": "Day 21",
+          "title": "Trek from Tengboche to Namche Bazaar (3,440m)",
+          "description": "Descend to Phunki Tenga and ascend through pine forests past Sanasa to the bustling Sherpa capital of Namche Bazaar. Enjoy bakery cafes, shops, and hot showers.",
+          "overnight": "Lodge in Namche Bazaar",
+          "elevation": "3,440 m"
+        },
+        {
+          "day": "Day 22",
+          "title": "Trek from Namche Bazaar to Lukla (2,840m)",
+          "description": "Final trekking day! Descend steeply down the Dudh Koshi Valley, crossing suspension bridges past Phakding to complete your epic traverse in Lukla.",
+          "overnight": "Lodge in Lukla",
+          "elevation": "2,840 m"
+        },
+        {
+          "day": "Day 23",
+          "title": "Fly from Lukla to Kathmandu",
+          "description": "Take an early morning scenic 35-minute flight from Lukla back to Kathmandu (or Ramechhap). Transfer to hotel and rest after the demanding expedition.",
+          "overnight": "Hotel in Kathmandu",
+          "elevation": "1,350 m"
+        },
+        {
+          "day": "Day 24",
+          "title": "Free Day / Buffer Day in Kathmandu",
+          "description": "A leisure and contingency buffer day in Kathmandu for rest, sightseeing at UNESCO World Heritage sites (Swayambhunath, Boudhanath, Pashupatinath), or shopping in Thamel.",
+          "overnight": "Hotel in Kathmandu",
+          "elevation": "1,350 m"
+        },
+        {
+          "day": "Day 25",
+          "title": "Final Departure from Kathmandu",
+          "description": "Enjoy breakfast at hotel before our Zenex Travels representative transfers you to Tribhuvan International Airport for your international departure flight.",
+          "overnight": "Homebound / Departure",
+          "elevation": "1,350 m"
+        }
+      ],
+      "inclusions": [
+        "Airport - Hotel - Airport transfers in Kathmandu by private vehicle",
+        "3 Nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Kathmandu - Tumlingtar domestic flight & Lukla - Kathmandu flight including taxes & crew transport",
+        "Private 4WD jeep transport from Tumlingtar to Num",
+        "Makalu Barun National Park permit, Sagarmatha (Everest) National Park permit & Pasang Lhamu Rural Municipality fee",
+        "Teahouse/Lodge accommodation during lower trail and high-altitude tented camping during pass crossings",
+        "All standard meals (Breakfast, Lunch, Dinner with tea/coffee) during the entire trek & camping period",
+        "Expedition camping equipment: sleeping tents (1 per 2 trekkers), dining tent, kitchen tent, toilet tent & cooking utensils",
+        "Technical climbing gear support (fixed ropes, ice screws, snow bars, main ropes)",
+        "Licensed, highly experienced Himalayan climbing Sherpa guide & cook crew",
+        "High-altitude porters for carrying heavy expedition gear & personal duffel bags (up to 15-20 kg per trekker)",
+        "Full wages, equipment, insurance, food, and daily allowance for guide, cook, and porters",
+        "Zenex Travels & Tours duffel bag & official Achievement Certificate",
+        "Comprehensive first aid kit with oxygen cylinder & pulse oximeter",
+        "Traditional Farewell Dinner in Kathmandu",
+        "All government taxes, VAT, and official agency service charges"
+      ],
+      "exclusions": [
+        "International airfare and Nepal entry visa fee",
+        "Personal travel, medical, and high-altitude emergency helicopter evacuation insurance (mandatory)",
+        "Lunch and dinner in Kathmandu (except welcome/farewell dinner)",
+        "Personal climbing gear (harness, crampons, ice axe, carabiners, helmet, plastic boots)",
+        "Personal expenses (hot showers, Wi-Fi, battery charging, laundry, mineral water, alcohol)",
+        "Tips for climbing guide, cook, kitchen staff, and porters (customary reward)"
+      ],
+      "equipmentList": [
+        {
+          "category": "Technical Climbing Gear",
+          "items": [
+            "Climbing harness & safety lanyard",
+            "Crampons suitable for steep ice/snow",
+            "Ice axe with wrist leash",
+            "Ascender (Jumar) & Descender (Abseil device / Figure 8)",
+            "Locking & non-locking carabiners (3-4 pairs)",
+            "Climbing helmet (UIAA approved)",
+            "Double mountaineering boots (suitable for 6,000m+)"
+          ]
+        },
+        {
+          "category": "High Altitude Clothing",
+          "items": [
+            "Thermal base layers (top & bottom, merino wool)",
+            "Fleece jacket & heavy down suit/jacket (-20°C rated)",
+            "Gore-Tex windproof/waterproof hard shell jacket & pants",
+            "Trekking pants & stretch thermal tights",
+            "Heavy summit down mittens & liner gloves",
+            "Balaclava, neck gaiter & thermal beanie",
+            "UV-protection glacier sunglasses & ski goggles"
+          ]
+        },
+        {
+          "category": "Trekking & Camping Gear",
+          "items": [
+            "50-65L backpack with rain cover",
+            "Four-season expedition sleeping bag (-20°C to -30°C rated)",
+            "Inflatable insulated sleeping pad / foam mat",
+            "Trekking poles (pair)",
+            "High-lumen headlamp with spare lithium batteries",
+            "1L & 2L insulated water thermoses & purification tablets"
+          ]
+        },
+        {
+          "category": "Personal & Medical",
+          "items": [
+            "Personal medical kit (Diamox, antibiotics, painkillers, blister tape)",
+            "Sunscreen SPF 50+ & lip balm with SPF",
+            "Quick-dry towel, biodegradable wet wipes & hand sanitizer"
+          ]
+        }
+      ],
+      "whyTrekWithUs": [
+        {
+          "title": "Technical High-Pass Specialists",
+          "description": "Zenex Travels & Tours specializes in Nepal's most demanding high-altitude passes, deploying veteran Sherpa climbing guides with multiple 6,000m+ pass crossings."
+        },
+        {
+          "title": "Complete Expedition Camping Setup",
+          "description": "We provide high-altitude four-season tents, dedicated kitchen staff, satellite communications, and high-altitude safety management for isolated pass segments."
+        },
+        {
+          "title": "Safety & Emergency Protocols",
+          "description": "Equipped with pulse oximeters, emergency medical oxygen, and 24/7 helicopter evacuation coordination for complete peace of mind."
+        },
+        {
+          "title": "Ethical & Fair Porter Care",
+          "description": "We ensure our high-altitude porters and staff receive proper high-altitude gear, insurance, fair wages, and warm shelter."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How technical is the Makalu Three Pass Trek?",
+          "answer": "It is a highly technical expedition trek requiring previous high-altitude experience and basic mountaineering skills (using crampons, ice axes, fixed ropes, and rappelling)."
+        },
+        {
+          "question": "What are the three passes crossed on this route?",
+          "answer": "The three high passes are Sherpani Col (6,180m), West/Baruntse Col (6,143m), and Amphu Laptse Pass (5,845m)."
+        },
+        {
+          "question": "What permits are required for the Makalu Three Pass Trek?",
+          "answer": "You require the Makalu Barun National Park Permit, Sagarmatha National Park Permit, and Pasang Lhamu Rural Municipality Permit, all arranged by Zenex Travels & Tours."
+        },
+        {
+          "question": "What type of accommodation is used on the trek?",
+          "answer": "Basic teahouses/lodges are used along lower trail sections (Seduwa, Tashigaon, Namche), while 4-season tented camping is required for the high pass section (Days 12–18)."
+        },
+        {
+          "question": "When is the best season for the Makalu Three Pass Trek?",
+          "answer": "Spring (March to May) and Autumn (September to November) offer stable weather, low avalanche risk, and optimum mountain visibility."
+        }
+      ]
     }
   ],
   "destinations": [],
