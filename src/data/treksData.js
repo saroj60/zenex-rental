@@ -1210,14 +1210,14 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Local Lodges & Homestays",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (September - November)",
-    image: "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+    image: "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/ruby-valley-trek.jpg",
     gallery: [
-      "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
-      "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
-      "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
-      "https://hillsherpatrekking.com/wp-content/uploads/2025/08/kyanjima-1.webp",
-      "https://api.escapehimalaya.com/media/featured/langtang-gosainkunda-helambu-trek-1711350634.jpg",
-      "https://www.apexasiaholidays.com/wp-content/uploads/2018/09/Lantang-Helambu-Gosaikunda-Lake-Trek-Nepal.jpg"
+      "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/ruby-valley-trek.jpg",
+      "https://lhassoadventure.com/wp-content/uploads/2024/06/Untitled-design-12.jpg",
+      "https://media.outshineadventure.com/uploads/socialmedia/ruby-valley-trekking.jpg",
+      "https://images.unsplash.com/photo-1662517772886-105aa3de1e6d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1754254956570-4c87b721e755?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1754240435877-dc09e704a671?q=80&w=1180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ],
     overview: `
       <h3>Ruby Valley Trek | Untouched Wilderness & Homestay Trails Between Langtang & Manaslu</h3>
