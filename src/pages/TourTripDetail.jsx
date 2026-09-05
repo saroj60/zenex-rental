@@ -175,8 +175,8 @@ const TourTripDetail = () => {
   return (
     <div className="bg-gray-50 font-sans pb-20">
       
-      {/* Hero Section (Clean Image Banner / Flex Grid Gallery) */}
-      <div className="relative h-[75vh] min-h-[550px] w-full overflow-hidden bg-gray-900 p-2 md:p-3">
+      {/* Hero Section (Clean Image Banner / Mobile Responsive Gallery) */}
+      <div className="relative h-[42vh] sm:h-[55vh] md:h-[70vh] min-h-[300px] md:min-h-[550px] w-full overflow-hidden bg-gray-900 p-2 md:p-3">
         {(() => {
           const images = [];
           if (trip.image) images.push(trip.image);
@@ -188,56 +188,74 @@ const TourTripDetail = () => {
           }
           const displayImages = images.length > 0 ? images : ['/images/trek.png'];
 
-          if (displayImages.length === 1) {
-            return (
-              <div 
-                className="absolute inset-0 w-full h-full bg-cover bg-center opacity-85"
-                style={{ backgroundImage: `url("${displayImages[0]}")` }}
-              />
-            );
-          }
-
-          if (displayImages.length === 2) {
-            return (
-              <div className="flex h-full w-full gap-2 md:gap-3 relative z-0">
-                {displayImages.slice(0, 2).map((img, idx) => (
-                  <div 
-                    key={idx}
-                    className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-1 hover:flex-[1.2] group"
-                  >
-                    <div 
-                      className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
-                      style={{ backgroundImage: `url("${img}")` }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
-                  </div>
-                ))}
-              </div>
-            );
-          }
-
           return (
-            <div className="flex h-full w-full gap-2 md:gap-3 relative z-0">
-              <div className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-[2] hover:flex-[2.5] group">
+            <div className="relative h-full w-full">
+              {/* Mobile View: Single clean full-width hero image with photo count badge */}
+              <div className="md:hidden relative h-full w-full rounded-xl overflow-hidden">
                 <div 
-                  className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full bg-cover bg-center"
                   style={{ backgroundImage: `url("${displayImages[0]}")` }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
+                {displayImages.length > 1 && (
+                  <button 
+                    onClick={() => {
+                      const el = document.getElementById('gallery');
+                      if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="absolute bottom-3 right-3 z-20 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg border border-white/20 active:scale-95 transition-transform"
+                  >
+                    <ImageIcon size={14} />
+                    <span>1 / {displayImages.length} Photos</span>
+                  </button>
+                )}
               </div>
-              <div className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-[1] hover:flex-[1.4] group">
-                <div 
-                  className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
-                  style={{ backgroundImage: `url("${displayImages[1] || displayImages[0]}")` }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
-              </div>
-              <div className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-[1] hover:flex-[1.4] group">
-                <div 
-                  className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
-                  style={{ backgroundImage: `url("${displayImages[2] || displayImages[0]}")` }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
+
+              {/* Desktop View: Multi-column interactive accordion gallery */}
+              <div className="hidden md:flex h-full w-full gap-2 md:gap-3 relative z-0">
+                {displayImages.length === 1 ? (
+                  <div 
+                    className="relative h-full w-full rounded-2xl overflow-hidden bg-cover bg-center opacity-90"
+                    style={{ backgroundImage: `url("${displayImages[0]}")` }}
+                  />
+                ) : displayImages.length === 2 ? (
+                  displayImages.slice(0, 2).map((img, idx) => (
+                    <div 
+                      key={idx}
+                      className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-1 hover:flex-[1.2] group"
+                    >
+                      <div 
+                        className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
+                        style={{ backgroundImage: `url("${img}")` }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
+                    </div>
+                  ))
+                ) : (
+                  <>
+                    <div className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-[2] hover:flex-[2.5] group">
+                      <div 
+                        className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
+                        style={{ backgroundImage: `url("${displayImages[0]}")` }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
+                    </div>
+                    <div className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-[1] hover:flex-[1.4] group">
+                      <div 
+                        className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
+                        style={{ backgroundImage: `url("${displayImages[1] || displayImages[0]}")` }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
+                    </div>
+                    <div className="relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out flex-[1] hover:flex-[1.4] group">
+                      <div 
+                        className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
+                        style={{ backgroundImage: `url("${displayImages[2] || displayImages[0]}")` }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none" />
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           );
