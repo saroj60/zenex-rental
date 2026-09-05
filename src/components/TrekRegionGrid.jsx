@@ -257,15 +257,44 @@ const TrekRegionGrid = () => {
   // Calculate dynamic counts and metadata
   const regionsWithCounts = useMemo(() => {
     return filteredRegions.map(region => {
-      const normalizedSlug = (region.slug || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-      const count = combinedList.filter(item => {
-        const titleLower = (item.title || '').toLowerCase();
-        const regProp = (item.region || '').toLowerCase();
-        const locProp = (item.location || '').toLowerCase();
+      const sanitize = (str) => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      const normSlug = sanitize(region.slug);
+      const targetKey = (region.slug || '').toLowerCase();
 
-        return regProp.replace(/[^a-z0-9]/g, '').includes(normalizedSlug) || 
-               locProp.replace(/[^a-z0-9]/g, '').includes(normalizedSlug) || 
-               titleLower.replace(/[^a-z0-9]/g, '').includes(normalizedSlug);
+      const regionAliases = {
+        'everest': ['everest', 'ebc', 'khumbu'],
+        'everest-base-camp': ['everest', 'ebc', 'khumbu'],
+        'annapurna': ['annapurna', 'abc', 'poonhill', 'thorong'],
+        'langtang': ['langtang', 'helambu', 'tamang', 'ruby'],
+        'manaslu': ['manaslu', 'tsum'],
+        'upper-mustang': ['mustang', 'lomanthang'],
+        'mustang': ['mustang', 'lomanthang'],
+        'kanchenjunga': ['kanchenjunga'],
+        'dolpo': ['dolpo', 'dolpa', 'phoksundo'],
+        'dhaulagiri': ['dhaulagiri', 'dhampus'],
+        'rolwaling': ['rolwaling', 'lapchi'],
+        'makalu': ['makalu'],
+        'far-western-nepal': ['farwest', 'farwestern', 'khaptad'],
+        'far-west': ['farwest', 'farwestern', 'khaptad'],
+        'kathmandu-valley': ['kathmandu'],
+        'kathmandu-pokhara': ['pokhara'],
+        'everest-base-camp-tibet': ['tibet', 'lhasa'],
+        'bhutan-trekking': ['bhutan'],
+        'ladakh-adventure': ['ladakh']
+      };
+
+      const aliases = (regionAliases[targetKey] || [normSlug]).map(a => sanitize(a));
+
+      const count = combinedList.filter(item => {
+        const regProp = sanitize(item.region);
+        const locProp = sanitize(item.location);
+        const titleLower = sanitize(item.title);
+
+        if (regProp) {
+          return regProp === normSlug || aliases.some(a => regProp.includes(a));
+        }
+
+        return aliases.some(a => locProp.includes(a) || titleLower.includes(a));
       }).length;
 
       let displayName = (region.displayName || region.name || '').toUpperCase();

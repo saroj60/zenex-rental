@@ -101,36 +101,47 @@ const TrekRegion = () => {
     }))
   ];
 
+  const regionAliases = {
+    'everest': ['everest', 'ebc', 'khumbu'],
+    'everest-base-camp': ['everest', 'ebc', 'khumbu'],
+    'annapurna': ['annapurna', 'abc', 'poonhill', 'thorong'],
+    'langtang': ['langtang', 'helambu', 'tamang', 'ruby'],
+    'manaslu': ['manaslu', 'tsum'],
+    'upper-mustang': ['mustang', 'lomanthang'],
+    'mustang': ['mustang', 'lomanthang'],
+    'kanchenjunga': ['kanchenjunga'],
+    'dolpo': ['dolpo', 'dolpa', 'phoksundo'],
+    'dhaulagiri': ['dhaulagiri', 'dhampus'],
+    'rolwaling': ['rolwaling', 'lapchi'],
+    'makalu': ['makalu'],
+    'far-western-nepal': ['farwest', 'farwestern', 'khaptad'],
+    'far-west': ['farwest', 'farwestern', 'khaptad'],
+    'kathmandu-valley': ['kathmandu'],
+    'kathmandu-pokhara': ['pokhara'],
+    'everest-base-camp-tibet': ['tibet', 'lhasa'],
+    'bhutan-trekking': ['bhutan'],
+    'ladakh-adventure': ['ladakh']
+  };
+
   // Filter treks for this region
   const filteredTreks = combinedList.filter(trek => {
     const sanitize = (str) => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 
     const normRegionId = sanitize(regionId);
-    const normTitle = sanitize(trek.title);
-    const normReg = sanitize(trek.region);
-    const normLoc = sanitize(trek.location);
-
     if (!normRegionId) return true;
 
-    // Check direct normalized inclusion (ignores spaces and hyphens)
-    if (normReg.includes(normRegionId) || normLoc.includes(normRegionId) || normTitle.includes(normRegionId)) {
-      return true;
+    const targetKey = (regionId || '').toLowerCase();
+    const aliases = (regionAliases[targetKey] || [normRegionId]).map(a => sanitize(a));
+
+    const normReg = sanitize(trek.region);
+    const normLoc = sanitize(trek.location);
+    const normTitle = sanitize(trek.title);
+
+    if (normReg) {
+      return normReg === normRegionId || aliases.some(a => normReg.includes(a));
     }
 
-    if (matchedRegion) {
-      const matchName = sanitize(matchedRegion.name);
-      if (matchName && (normReg.includes(matchName) || normLoc.includes(matchName) || matchName.includes(normReg))) {
-        return true;
-      }
-    }
-
-    // Extract significant search words (e.g. "everest", "base", "camp")
-    const words = regionId
-      .toLowerCase()
-      .split(/[^a-z0-9]+/)
-      .filter(w => w.length > 2 && !['treks', 'region', 'trails', 'hikes', 'expeditions', 'circuit'].includes(w));
-
-    return words.length > 0 && words.some(w => normReg.includes(w) || normLoc.includes(w) || normTitle.includes(w));
+    return aliases.some(a => normLoc.includes(a) || normTitle.includes(a));
   });
 
   const totalPages = Math.ceil(filteredTreks.length / itemsPerPage);
