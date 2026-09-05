@@ -911,15 +911,17 @@ const TrekDetail = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {(trek.equipmentList || trek.equipment?.categories || []).map((category, idx) => (
                         <div key={idx}>
-                          <h4 className="font-bold text-blue-800 mb-2">{category.category || category.name}</h4>
-                          <ul className="space-y-1">
-                            {category.items.map((item, i) => (
-                              <li key={i} className="flex items-start gap-2 text-sm text-blue-900/80">
-                                <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 shrink-0"></div>
-                                <span>{item}</span>
-                              </li>
-                            ))}
-                          </ul>
+                          <h4 className="font-bold text-blue-800 mb-2">{typeof category === 'string' ? category : (category.category || category.name)}</h4>
+                          {category.items && Array.isArray(category.items) && (
+                            <ul className="space-y-1">
+                              {category.items.map((item, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-blue-900/80">
+                                  <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 shrink-0"></div>
+                                  <span>{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
                         </div>
                       ))}
                     </div>
@@ -1046,23 +1048,40 @@ const TrekDetail = () => {
               <div className="scroll-mt-40 pb-6 border-b border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 font-serif">Add-ons & Options</h2>
                 <div className="space-y-4">
-                  <p className="text-gray-600 mb-4">{trek.addOns.intro}</p>
-                  {trek.addOns.options.map((opt, idx) => (
-                    <div key={idx} className="bg-orange-50/50 p-5 rounded-xl border border-orange-100">
-                      <p className="text-gray-800 text-[15px]">
-                        <span className="font-bold text-orange-800">{opt.title}:</span> {opt.description}
-                      </p>
-                    </div>
-                  ))}
+                  {trek.addOns.intro && <p className="text-gray-600 mb-4">{trek.addOns.intro}</p>}
+                  {Array.isArray(trek.addOns) ? (
+                    trek.addOns.map((opt, idx) => (
+                      <div key={idx} className="bg-orange-50/50 p-5 rounded-xl border border-orange-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div>
+                          <span className="font-bold text-orange-900 text-sm block">{opt.title}</span>
+                          {opt.details && <span className="text-gray-700 text-xs mt-1 block">{opt.details}</span>}
+                          {opt.description && <span className="text-gray-700 text-xs mt-1 block">{opt.description}</span>}
+                        </div>
+                        {opt.price && (
+                          <span className="bg-orange-100 text-orange-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0 w-fit">
+                            {opt.price}
+                          </span>
+                        )}
+                      </div>
+                    ))
+                  ) : trek.addOns.options && Array.isArray(trek.addOns.options) ? (
+                    trek.addOns.options.map((opt, idx) => (
+                      <div key={idx} className="bg-orange-50/50 p-5 rounded-xl border border-orange-100">
+                        <p className="text-gray-800 text-[15px]">
+                          <span className="font-bold text-orange-800">{opt.title}:</span> {opt.description}
+                        </p>
+                      </div>
+                    ))
+                  ) : null}
                 </div>
               </div>
             )}
 
             {/* Booking Steps */}
-            {trek.bookingSteps && (
+            {trek.bookingSteps && trek.bookingSteps.steps && Array.isArray(trek.bookingSteps.steps) && (
               <div className="scroll-mt-40 pb-6 border-b border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 font-serif">Booking Process</h2>
-                <p className="text-gray-600 mb-6">{trek.bookingSteps.intro}</p>
+                {trek.bookingSteps.intro && <p className="text-gray-600 mb-6">{trek.bookingSteps.intro}</p>}
                 <div className="space-y-3">
                   {trek.bookingSteps.steps.map((step, idx) => (
                     <div key={idx} className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg border border-gray-100">
