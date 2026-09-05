@@ -443,12 +443,17 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges on Trail",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (September - December)",
-    image: "/images/langtang2.jpg",
+    image: "https://www.thirdrockadventures.com/assets-back/images/blog/langtang-trek-complete-guide.jpg",
     gallery: [
-      "/images/langtang2.jpg",
-      "/images/langtang1.jpg",
-      "/images/langtang3.jpg",
-      "https://www.nepalguideinfo.com/new/wp-content/uploads/2024/03/Manaslu-Tsum-Valley-Trek.jpg"
+      "https://www.thirdrockadventures.com/assets-back/images/blog/langtang-trek-complete-guide.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-cSiHGPWfEOIwa8wqrzZJpWvj_fC-GP1ujFfw_3D77f8iLbiJ3i2US4-W&s=10",
+      "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
+      "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
+      "https://i.pinimg.com/736x/40/23/81/4023812490863bcf8f8b228a12570582.jpg",
+      "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+      "https://hillsherpatrekking.com/wp-content/uploads/2025/08/kyanjima-1.webp",
+      "https://trekkingplus.com/uploads/fullbanner/langtang-kyanji-gompa.webp",
+      "https://www.treknepalhimalayas.com/wp-content/uploads/2024/01/Langtang-Valley-Trek-20.jpg"
     ],
     overview: `
       <h3>Langtang Valley Trek | Tamang Hospitality, Glaciers & Himalayan Peaks</h3>
