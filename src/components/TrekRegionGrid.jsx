@@ -208,25 +208,50 @@ const TrekRegionGrid = () => {
 
   const availableCountries = ['Nepal', 'Tibet', 'Bhutan', 'India'];
 
-  // Flatten all packages to count matches
+  // Flatten all packages to count matches (deduplicated by ID/title)
   const combinedList = useMemo(() => {
-    return [
-      ...(Array.isArray(treks) ? treks : []).map(t => ({
-        title: t.title,
-        region: t.region || t.quickFacts?.region || '',
-        location: t.location || t.destination || ''
-      })),
-      ...(Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').map(t => ({
-        title: t.title,
-        region: t.region || '',
-        location: t.destination || ''
-      })),
-      ...(Array.isArray(packages) ? packages : []).map(p => ({
-        title: p.title,
-        region: p.region || p.location || '',
-        location: p.location || ''
-      }))
-    ];
+    const map = new Map();
+
+    (Array.isArray(treks) ? treks : []).forEach(t => {
+      if (!t) return;
+      const key = (t.id || t.slug || t.title || '').toLowerCase();
+      if (!map.has(key)) {
+        map.set(key, {
+          id: t.id,
+          title: t.title,
+          region: t.region || t.quickFacts?.region || '',
+          location: t.location || t.destination || ''
+        });
+      }
+    });
+
+    (Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').forEach(t => {
+      if (!t) return;
+      const key = (t.id || t.slug || t.title || '').toLowerCase();
+      if (!map.has(key)) {
+        map.set(key, {
+          id: t.id,
+          title: t.title,
+          region: t.region || '',
+          location: t.destination || ''
+        });
+      }
+    });
+
+    (Array.isArray(packages) ? packages : []).forEach(p => {
+      if (!p) return;
+      const key = (p.id || p.slug || p.title || '').toLowerCase();
+      if (!map.has(key)) {
+        map.set(key, {
+          id: p.id,
+          title: p.title,
+          region: p.region || p.location || '',
+          location: p.location || ''
+        });
+      }
+    });
+
+    return Array.from(map.values());
   }, [treks, tourTrips, packages]);
 
   // Combine context regions with default fallback destinations

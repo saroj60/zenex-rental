@@ -43,28 +43,39 @@ const TrekRegion = () => {
     description: formattedDescription
   };
 
-  const combinedList = [
-    ...(Array.isArray(treks) ? treks : []).map(t => ({
-      id: t.id,
-      title: t.title,
-      image: t.image,
-      badge: t.badge || 'Popular Trek',
-      price: t.price ? `US$${t.price.toString().replace(/[^0-9]/g, '')}` : '',
-      originalPrice: t.originalPrice ? `US$${t.originalPrice.toString().replace(/[^0-9]/g, '')}` : '',
-      rating: t.rating || 5,
-      reviewsCount: t.reviewsCount || 0,
-      difficulty: t.difficulty || t.quickFacts?.difficulty || 'Moderate',
-      duration: t.duration || t.quickFacts?.duration || '',
-      durationUnit: t.durationUnit || 'Days',
-      activity: t.activity || 'Trekking',
-      region: t.region || t.quickFacts?.region || '',
-      location: t.location || t.destination || '',
-      link: `/treks/${t.id}`
-    })),
-    ...(Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').map(t => {
+  const combinedMap = new Map();
+
+  (Array.isArray(treks) ? treks : []).forEach(t => {
+    if (!t) return;
+    const key = (t.id || t.slug || t.title || '').toLowerCase();
+    if (!combinedMap.has(key)) {
+      combinedMap.set(key, {
+        id: t.id,
+        title: t.title,
+        image: t.image,
+        badge: t.badge || 'Popular Trek',
+        price: t.price ? `US$${t.price.toString().replace(/[^0-9]/g, '')}` : '',
+        originalPrice: t.originalPrice ? `US$${t.originalPrice.toString().replace(/[^0-9]/g, '')}` : '',
+        rating: t.rating || 5,
+        reviewsCount: t.reviewsCount || 0,
+        difficulty: t.difficulty || t.quickFacts?.difficulty || 'Moderate',
+        duration: t.duration || t.quickFacts?.duration || '',
+        durationUnit: t.durationUnit || 'Days',
+        activity: t.activity || 'Trekking',
+        region: t.region || t.quickFacts?.region || '',
+        location: t.location || t.destination || '',
+        link: `/treks/${t.id}`
+      });
+    }
+  });
+
+  (Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').forEach(t => {
+    if (!t) return;
+    const key = (t.id || t.slug || t.title || '').toLowerCase();
+    if (!combinedMap.has(key)) {
       const sellP = t.pricingInfo?.sellingPrice || t.price || '';
       const origP = t.pricingInfo?.originalPrice || t.originalPrice || '';
-      return {
+      combinedMap.set(key, {
         id: t.id,
         title: t.title,
         image: t.image,
@@ -80,26 +91,35 @@ const TrekRegion = () => {
         region: t.region || '',
         location: t.destination || '',
         link: `/tour/${t.slug || t.id}`
-      };
-    }),
-    ...(Array.isArray(packages) ? packages : []).map(p => ({
-      id: p.id,
-      title: p.title,
-      image: p.img,
-      badge: p.badge || '',
-      price: p.price ? `US$${p.price.toString().replace(/[^0-9]/g, '')}` : '',
-      originalPrice: p.originalPrice ? `US$${p.originalPrice.toString().replace(/[^0-9]/g, '')}` : '',
-      rating: 5,
-      reviewsCount: 1,
-      difficulty: p.difficulty || 'Moderate',
-      duration: p.duration || '',
-      durationUnit: 'Days',
-      activity: p.category || 'Package',
-      region: p.region || p.location || '',
-      location: p.location || '',
-      link: `/packages/${p.id}`
-    }))
-  ];
+      });
+    }
+  });
+
+  (Array.isArray(packages) ? packages : []).forEach(p => {
+    if (!p) return;
+    const key = (p.id || p.slug || p.title || '').toLowerCase();
+    if (!combinedMap.has(key)) {
+      combinedMap.set(key, {
+        id: p.id,
+        title: p.title,
+        image: p.img,
+        badge: p.badge || '',
+        price: p.price ? `US$${p.price.toString().replace(/[^0-9]/g, '')}` : '',
+        originalPrice: p.originalPrice ? `US$${p.originalPrice.toString().replace(/[^0-9]/g, '')}` : '',
+        rating: 5,
+        reviewsCount: 1,
+        difficulty: p.difficulty || 'Moderate',
+        duration: p.duration || '',
+        durationUnit: 'Days',
+        activity: p.category || 'Package',
+        region: p.region || p.location || '',
+        location: p.location || '',
+        link: `/packages/${p.id}`
+      });
+    }
+  });
+
+  const combinedList = Array.from(combinedMap.values());
 
   const regionAliases = {
     'everest': ['everest', 'ebc', 'khumbu'],

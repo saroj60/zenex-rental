@@ -38,56 +38,78 @@ const RegionDetail = () => {
     description: cleanDescription
   });
 
-  // Combine and map treks, tourTrips, and packages
-  const combinedList = [
-    ...(Array.isArray(treks) ? treks : []).map(t => ({
-      id: t.id,
-      title: t.title,
-      image: t.image || t.img || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
-      price: t.price ? parseInt(String(t.price).replace(/[^0-9]/g, '')) : 0,
-      originalPrice: t.originalPrice ? parseInt(String(t.originalPrice).replace(/[^0-9]/g, '')) : 0,
-      rating: t.rating || 5,
-      reviewsCount: t.reviewsCount || 0,
-      difficulty: t.difficulty || t.quickFacts?.difficulty || 'Moderate',
-      duration: t.duration || t.quickFacts?.duration || '',
-      durationUnit: t.durationUnit || 'Days',
-      activity: t.activity || 'Trekking',
-      region: t.region || t.quickFacts?.region || '',
-      location: t.location || t.destination || '',
-      link: `/treks/${t.id}`
-    })),
-    ...(Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').map(t => ({
-      id: t.id,
-      title: t.title,
-      image: t.image || t.mainImage || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
-      price: t.pricingInfo?.sellingPrice || (t.price ? parseInt(String(t.price).replace(/[^0-9]/g, '')) : 0),
-      originalPrice: t.pricingInfo?.originalPrice || (t.originalPrice ? parseInt(String(t.originalPrice).replace(/[^0-9]/g, '')) : 0),
-      rating: t.rating || 5,
-      reviewsCount: t.reviewsCount || 0,
-      difficulty: t.grade || 'Moderate',
-      duration: t.duration || t.durationValue || '',
-      durationUnit: t.durationUnit || 'Days',
-      activity: t.activities?.join(', ') || 'Tour',
-      region: t.region || '',
-      location: t.destination || '',
-      link: `/tour/${t.slug || t.id}`
-    })),
-    ...(Array.isArray(packages) ? packages : []).map(p => ({
-      id: p.id,
-      title: p.title,
-      image: p.img || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
-      price: p.price ? parseInt(String(p.price).replace(/[^0-9]/g, '')) : 0,
-      rating: 5,
-      reviewsCount: 1,
-      difficulty: p.difficulty || 'Moderate',
-      duration: p.duration || '',
-      durationUnit: 'Days',
-      activity: p.category || 'Package',
-      region: p.region || p.location || '',
-      location: p.location || '',
-      link: `/packages/${p.id}`
-    }))
-  ];
+  // Combine and map treks, tourTrips, and packages (deduplicated)
+  const combinedMap = new Map();
+
+  (Array.isArray(treks) ? treks : []).forEach(t => {
+    if (!t) return;
+    const key = (t.id || t.slug || t.title || '').toLowerCase();
+    if (!combinedMap.has(key)) {
+      combinedMap.set(key, {
+        id: t.id,
+        title: t.title,
+        image: t.image || t.img || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
+        price: t.price ? parseInt(String(t.price).replace(/[^0-9]/g, '')) : 0,
+        originalPrice: t.originalPrice ? parseInt(String(t.originalPrice).replace(/[^0-9]/g, '')) : 0,
+        rating: t.rating || 5,
+        reviewsCount: t.reviewsCount || 0,
+        difficulty: t.difficulty || t.quickFacts?.difficulty || 'Moderate',
+        duration: t.duration || t.quickFacts?.duration || '',
+        durationUnit: t.durationUnit || 'Days',
+        activity: t.activity || 'Trekking',
+        region: t.region || t.quickFacts?.region || '',
+        location: t.location || t.destination || '',
+        link: `/treks/${t.id}`
+      });
+    }
+  });
+
+  (Array.isArray(tourTrips) ? tourTrips : []).filter(t => t.status === 'Published').forEach(t => {
+    if (!t) return;
+    const key = (t.id || t.slug || t.title || '').toLowerCase();
+    if (!combinedMap.has(key)) {
+      combinedMap.set(key, {
+        id: t.id,
+        title: t.title,
+        image: t.image || t.mainImage || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
+        price: t.pricingInfo?.sellingPrice || (t.price ? parseInt(String(t.price).replace(/[^0-9]/g, '')) : 0),
+        originalPrice: t.pricingInfo?.originalPrice || (t.originalPrice ? parseInt(String(t.originalPrice).replace(/[^0-9]/g, '')) : 0),
+        rating: t.rating || 5,
+        reviewsCount: t.reviewsCount || 0,
+        difficulty: t.grade || 'Moderate',
+        duration: t.duration || t.durationValue || '',
+        durationUnit: t.durationUnit || 'Days',
+        activity: t.activities?.join(', ') || 'Tour',
+        region: t.region || '',
+        location: t.destination || '',
+        link: `/tour/${t.slug || t.id}`
+      });
+    }
+  });
+
+  (Array.isArray(packages) ? packages : []).forEach(p => {
+    if (!p) return;
+    const key = (p.id || p.slug || p.title || '').toLowerCase();
+    if (!combinedMap.has(key)) {
+      combinedMap.set(key, {
+        id: p.id,
+        title: p.title,
+        image: p.img || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa',
+        price: p.price ? parseInt(String(p.price).replace(/[^0-9]/g, '')) : 0,
+        rating: 5,
+        reviewsCount: 1,
+        difficulty: p.difficulty || 'Moderate',
+        duration: p.duration || '',
+        durationUnit: 'Days',
+        activity: p.category || 'Package',
+        region: p.region || p.location || '',
+        location: p.location || '',
+        link: `/packages/${p.id}`
+      });
+    }
+  });
+
+  const combinedList = Array.from(combinedMap.values());
 
   // Filter packages for this region
   const regionTrips = combinedList.filter(item => {
