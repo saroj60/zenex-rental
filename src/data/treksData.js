@@ -8,7 +8,7 @@ export const treksData = [
     location: "Manaslu Conservation Area, Gorkha, Nepal",
     duration: "17",
     durationUnit: "Days",
-    price: "US$870",
+    price: "US$865",
     originalPrice: "US$950",
     rating: 4.9,
     reviewsCount: 143,
