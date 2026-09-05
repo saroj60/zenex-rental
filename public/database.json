@@ -1365,10 +1365,394 @@
         {
           "question": "What makes combining Helambu and Langtang special?",
           "answer": "It blends two distinct regions into one journey: the peaceful Hyolmo-Sherpa cultural villages of Helambu, the sacred lakes of Gosaikunda, and the dramatic glacier valley of Langtang."
+        }
+      ]
+    },
+    {
+      "id": "ruby-valley-trek-12d",
+      "slug": "ruby-valley-trek-12d",
+      "title": "Ruby Valley Trek - 12 Days",
+      "region": "langtang",
+      "regionName": "Langtang Region",
+      "location": "Ganesh Himal & Ruby Valley, Rasuwa / Dhading, Nepal",
+      "duration": "12",
+      "durationUnit": "Days",
+      "price": "US$845",
+      "originalPrice": "US$920",
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "difficulty": "Moderate",
+      "maxAltitude": "3,850 m / 12,631 ft (Pangsang Pass)",
+      "starts": "Kathmandu",
+      "ends": "Kathmandu",
+      "activities": "Walking / Hiking & Homestay Cultural Exploration",
+      "accommodation": "3-Star Hotel in Kathmandu / Local Lodges & Homestays",
+      "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
+      "bestSeason": "Spring (March - May) & Autumn (September - November)",
+      "image": "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+      "gallery": [
+        "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+        "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
+        "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
+        "https://hillsherpatrekking.com/wp-content/uploads/2025/08/kyanjima-1.webp",
+        "https://api.escapehimalaya.com/media/featured/langtang-gosainkunda-helambu-trek-1711350634.jpg",
+        "https://www.apexasiaholidays.com/wp-content/uploads/2018/09/Lantang-Helambu-Gosaikunda-Lake-Trek-Nepal.jpg"
+      ],
+      "overview": "\n      <h3>Ruby Valley Trek | Untouched Wilderness & Homestay Trails Between Langtang & Manaslu</h3>\n      <p>The 12-Day Ruby Valley Trek is a hidden gem tucked into the Ganesh Himal region of central Nepal, nestled serenely between the Langtang Valley to the east and the Manaslu region to the west. Named after the precious gem mines hidden in the surrounding mountains, the Ruby Valley offers a quiet, crowd-free alternative to Nepal's mainstream trekking routes.</p>\n      <p>Throughout this 12-day journey, trekkers are treated to spectacular mountain views of <strong>Ganesh Himal, Langtang Lirung, Mt. Manaslu, and Annapurna</strong>. The trail climbs through dense rhododendron and pine forests, peaceful valleys, and alpine pastures, crossing high suspension bridges and the panoramic <strong>Pangsang Pass (3,850 m)</strong>—the highest point of the trek. A major highlight is authentic cultural immersion: staying in local homestays with Tamang, Gurung, and Dalit villagers, relaxing in natural hot springs at Shertung, and visiting ancient Buddhist monasteries and Mani walls.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all trek details—including Langtang National Park entry permits, ground transportation, certified English-speaking guides and porters, homestay bookings, and gear support—ensuring a memorable, safe, and culturally rich Himalayan experience.</p>\n    ",
+      "highlights": [
+        "Explore a quiet, crowd-free off-the-beaten-path trekking trail in the Ganesh Himal region.",
+        "Enjoy breathtaking views of Ganesh Himal, Langtang Lirung, Mt. Manaslu, and Annapurna peaks.",
+        "Cross the scenic Pangsang Pass (3,850 m), offering panoramic 360-degree Himalayan vistas.",
+        "Experience authentic Tamang and Gurung homestays, warm hospitality, and traditional local cuisine.",
+        "Relax in natural hot springs near Shertung village after trekking days.",
+        "Discover ancient Buddhist monasteries, chortens, prayer flags, and historic copper mines near Somdang.",
+        "Trek through blooming rhododendron, bamboo, and pine forests with chances to spot langurs and musk deer.",
+        "Support sustainable community-based tourism directly benefiting local mountain villages."
+      ],
+      "quickFacts": {
+        "country": "Nepal",
+        "duration": "12 Days",
+        "tripGrade": "Moderate",
+        "maxAltitude": "3,850 m / 12,631 ft",
+        "startsEnds": "Kathmandu / Kathmandu",
+        "activities": "Walking / Hiking & Homestay Cultural Exploration",
+        "accommodation": "3-Star Hotel in Kathmandu / Local Lodges & Homestays",
+        "meals": "Breakfast, Lunch & Dinner during trek",
+        "bestTime": "Spring (March - May) & Autumn (September - November)"
+      },
+      "itinerary": [
+        {
+          "day": "01",
+          "title": "Arrival in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "6 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Briefing",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport arrival transfer, pre-trip briefing, equipment check.",
+          "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels representative will pick you up in a private vehicle and transfer you to your hotel. After check-in, we host a pre-trip briefing, meet your trekking guide, and prepare gear for the upcoming journey. Overnight at hotel."
         },
         {
-          "question": "Can this 17-day itinerary be customized?",
-          "answer": "Yes! Zenex Travels & Tours can shorten or extend the trek depending on your holiday timeline and physical preferences."
+          "day": "02",
+          "title": "Kathmandu – Syabrubesi",
+          "altitude": "1,503 m / 4,931 ft",
+          "walkingTime": "5-6 hrs drive",
+          "distance": "90 km",
+          "accommodation": "Lodge at Syabrubesi",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Scenic drive through hills and along the Trishuli River to the gateway of Langtang.",
+          "description": "Depart Kathmandu early morning around 7-8 AM, driving north through scenic hills, terraced farmlands, and mountain towns like Dhunche. Arrive in Syabrubesi (1,503 m), a bustling town nestled along the Trishuli River inside Langtang National Park. Overnight at lodge."
+        },
+        {
+          "day": "03",
+          "title": "Syabrubesi – Gatlang",
+          "altitude": "2,238 m / 7,342 ft",
+          "walkingTime": "5-6 hrs",
+          "distance": "12 km",
+          "accommodation": "Lodge at Gatlang",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Steady ascent through Tamang settlements with views of Ganesh Himal & stone houses of Gatlang.",
+          "description": "Begin trekking with a steady 2.5-hour uphill climb through forested hills and traditional Tamang villages. Enjoy sweeping views of Ganesh Himal and the Langtang range. Arrive in Gatlang (2,238 m), a charming cultural village renowned for its distinctive stone houses and Tamang heritage. Overnight at lodge."
+        },
+        {
+          "day": "04",
+          "title": "Gatlang – Somdang",
+          "altitude": "3,270 m / 10,728 ft",
+          "walkingTime": "6 hrs",
+          "distance": "14 km",
+          "accommodation": "Lodge at Somdang",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Visit sacred Parvati Kunda lake, walk through bamboo/rhododendron forests & old copper mines.",
+          "description": "Trek through terraced fields and pine forests, passing the sacred Parvati Kunda lake where locals perform rituals. The trail grows steeper and more secluded through dense rhododendron and bamboo woods, passing abandoned copper mines before reaching the quiet valley of Somdang (3,270 m). Overnight at lodge."
+        },
+        {
+          "day": "05",
+          "title": "Somdang – Pangsang Pass (3,850 m) – Tipling",
+          "altitude": "3,850 m / 12,631 ft",
+          "walkingTime": "6-7 hrs",
+          "distance": "15 km",
+          "accommodation": "Teahouse / Homestay at Tipling",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Climb to Pangsang Pass (3850m) for 360-degree views of Ganesh Himal, Manaslu & Annapurna.",
+          "description": "A highlight day! Ascend gradually from Somdang to Pangsang Pass (3,850 m), the highest point of the trek. Be rewarded with breathtaking panoramas of Ganesh Himal, Langtang Lirung, Manaslu, and Annapurna. After enjoying the pass, descend through forests and streams into Tipling (1,890 m), a vibrant Tamang village. Overnight at teahouse/homestay."
+        },
+        {
+          "day": "06",
+          "title": "Tipling – Shertung",
+          "altitude": "1,920 m / 6,299 ft",
+          "walkingTime": "3-4 hrs",
+          "distance": "7 km",
+          "accommodation": "Lodge / Homestay at Shertung",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Short scenic walk through farmlands & terraced hills to Shertung ('Place of Gold').",
+          "description": "Enjoy a lighter 3 to 4 hour trek descending through terraced fields, pine groves, and traditional settlements. Arrive in Shertung (1,920 m), meaning 'Place of Gold', inhabited by Tamang and Gurung communities. Spend the afternoon exploring local monasteries or relaxing. Overnight at homestay/lodge."
+        },
+        {
+          "day": "07",
+          "title": "Acclimatization & Exploration Day at Shertung | Chalish Gaun & Hot Springs",
+          "altitude": "1,920 m / 6,299 ft",
+          "walkingTime": "3-4 hrs exploration",
+          "distance": "5 km",
+          "accommodation": "Lodge / Homestay at Shertung",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Hiking & Hot Springs",
+          "highlights": "Explore Chalish Gaun village, soak in natural hot springs, experience local culture.",
+          "description": "A rest and acclimatization day. In the afternoon, take a relaxed 3-hour walk to Chalish Gaun, a picturesque Tamang village with stone houses and friendly locals. Soak in the nearby natural hot springs to soothe muscles before returning to Shertung for the night. Overnight at homestay/lodge."
+        },
+        {
+          "day": "08",
+          "title": "Shertung – Lapa Gaun",
+          "altitude": "1,850 m / 6,069 ft",
+          "walkingTime": "4-5 hrs",
+          "distance": "10 km",
+          "accommodation": "Lodge at Lapa Gaun",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Comfortable walk through rhododendron forests, valley vistas, peaceful rural life.",
+          "description": "Trek along a gentle downhill and flat path through lush rhododendron and pine forests. Enjoy serene views of valley hillsides and farmlands while observing local wildlife and bird species. Arrive in the peaceful village of Lapa Gaun (1,850 m). Overnight at lodge."
+        },
+        {
+          "day": "09",
+          "title": "Lapa Gaun – Jharlang",
+          "altitude": "3,000 m / 9,842 ft",
+          "walkingTime": "5 hrs",
+          "distance": "11 km",
+          "accommodation": "Lodge at Jharlang",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Scenic trail across terraced farmlands, traditional Tamang & Gurung hamlets.",
+          "description": "Walk across terraced fields, forest trails, and small traditional hamlets toward Jharlang (3,000 m). The gentle, well-marked path offers authentic interactions with local villagers and peaceful nature views. Overnight at lodge."
+        },
+        {
+          "day": "10",
+          "title": "Jharlang – Darkha Gaun (850 m) [Trek] – Dhading Besi (580 m)",
+          "altitude": "580 m / 1,902 ft",
+          "walkingTime": "4-5 hrs trek + 2 hrs drive",
+          "distance": "12 km trek",
+          "accommodation": "Hotel in Dhading Besi",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking & Vehicle",
+          "highlights": "Final trek down to Darkha Gaun, scenic drive to lowland town of Dhading Besi.",
+          "description": "Hike downhill from Jharlang to Darkha Gaun (850 m) in about 4-5 hours, passing through lush green hills and farmland. Meet your private vehicle at Darkha Gaun for a scenic drive to Dhading Besi (580 m). Overnight at hotel."
+        },
+        {
+          "day": "11",
+          "title": "Dhading Besi – Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "5-6 hrs drive",
+          "distance": "90 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Lunch",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Return drive along Trishuli river valley to Kathmandu, leisure evening in Thamel.",
+          "description": "Drive back to Kathmandu (approx. 5-6 hours) through river valleys and rural villages. Check into your city hotel, relax, explore Thamel markets, or enjoy a celebratory dinner. Overnight at hotel."
+        },
+        {
+          "day": "12",
+          "title": "Departure from Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "-",
+          "accommodation": "-",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport transfer for departure flight.",
+          "description": "Enjoy your final breakfast in Kathmandu. Our representative from Zenex Travels & Tours will pick you up from your hotel and transfer you to Tribhuvan International Airport for your departure flight."
+        }
+      ],
+      "includes": [
+        "Airport – Hotel – Airport transfers by private vehicle",
+        "3 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Transportation Kathmandu to Syabrubesi by private vehicle",
+        "Langtang National Park Entrance Fee permit",
+        "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the 12-day trek",
+        "Accommodation at local lodges and homestays during the trek",
+        "Professional Nepal Government licensed English-speaking trekking guide",
+        "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+        "Full insurance, equipment, accommodation, meals, and salary for guide and porters",
+        "Transportation Darkha Gaun – Dhading Besi – Kathmandu by private vehicle",
+        "Water purification tablets",
+        "Zenex Travels duffel bag and trekking gear support",
+        "Official Achievement Certificate for Ruby Valley Trekking",
+        "Traditional Farewell Dinner in Kathmandu",
+        "All necessary government taxes and service fees"
+      ],
+      "costIncludes": [
+        "Airport – Hotel – Airport transfers by private vehicle",
+        "3 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Transportation Kathmandu to Syabrubesi by private vehicle",
+        "Langtang National Park Entrance Fee permit",
+        "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the 12-day trek",
+        "Accommodation at local lodges and homestays during the trek",
+        "Professional Nepal Government licensed English-speaking trekking guide",
+        "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+        "Full insurance, equipment, accommodation, meals, and salary for guide and porters",
+        "Transportation Darkha Gaun – Dhading Besi – Kathmandu by private vehicle",
+        "Water purification tablets",
+        "Zenex Travels duffel bag and trekking gear support",
+        "Official Achievement Certificate for Ruby Valley Trekking",
+        "Traditional Farewell Dinner in Kathmandu",
+        "All necessary government taxes and service fees"
+      ],
+      "excludes": [
+        "International airfare & Nepal VISA entry fees",
+        "Personal trekking equipment & clothing",
+        "Personal medical and travel insurance (helicopter rescue coverage compulsory)",
+        "Bar bills, mineral water, soft drinks, beer, hot showers, Wi-Fi & electric charging on trail",
+        "Lunch and Dinner in Kathmandu (except farewell dinner)",
+        "Sightseeing entrance fees to temples in Kathmandu",
+        "Unforeseen costs due to road blockages, extreme weather, altitude sickness, or early return",
+        "Tips and gratuities for guide and porters",
+        "Any extra expenses not listed in INCLUDED"
+      ],
+      "costExcludes": [
+        "International airfare & Nepal VISA entry fees",
+        "Personal trekking equipment & clothing",
+        "Personal medical and travel insurance (helicopter rescue coverage compulsory)",
+        "Bar bills, mineral water, soft drinks, beer, hot showers, Wi-Fi & electric charging on trail",
+        "Lunch and Dinner in Kathmandu (except farewell dinner)",
+        "Sightseeing entrance fees to temples in Kathmandu",
+        "Unforeseen costs due to road blockages, extreme weather, altitude sickness, or early return",
+        "Tips and gratuities for guide and porters",
+        "Any extra expenses not listed in INCLUDED"
+      ],
+      "groupDiscounts": [
+        {
+          "pax": "2 - 3 Pax",
+          "price": "US$ 845"
+        },
+        {
+          "pax": "4 - 7 Pax",
+          "price": "US$ 765"
+        },
+        {
+          "pax": "8 - 11 Pax",
+          "price": "US$ 675"
+        },
+        {
+          "pax": "12 - 15 Pax",
+          "price": "US$ 655"
+        }
+      ],
+      "difficultyInfo": {
+        "grade": "Moderate",
+        "details": "Ruby Valley Trek is graded MODERATE. The highest elevation is Pangsang Pass at 3,850 m. Trekkers walk 5 to 7 hours daily over unpaved forest paths, terraced slopes, and rocky trails. No technical climbing experience is required."
+      },
+      "altitudeSickness": {
+        "prevention": "Gradual elevation gain up to 3,850m, rest days at Shertung, hydration (3-4L daily), avoiding alcohol, and following guide instructions."
+      },
+      "equipmentList": [
+        {
+          "category": "Clothing",
+          "items": [
+            "Moisture-wicking base layers (2-3)",
+            "Fleece jacket / down jacket",
+            "Waterproof Gore-Tex jacket",
+            "Trekking pants (2)",
+            "Thermal leggings",
+            "Warm beanie & sun hat",
+            "Fleece + waterproof gloves"
+          ]
+        },
+        {
+          "category": "Footwear",
+          "items": [
+            "Ankle-support trekking boots",
+            "Camp shoes / sandals",
+            "Wool trekking socks (3-4 pairs)"
+          ]
+        },
+        {
+          "category": "Gears",
+          "items": [
+            "Daypack (20-30L) with rain cover",
+            "Duffel bag (provided by Zenex Travels)",
+            "Sleeping bag rated to -10°C",
+            "Trekking poles"
+          ]
+        },
+        {
+          "category": "Personal Care",
+          "items": [
+            "Water bottle / hydration bladder",
+            "Water purification tablets",
+            "Sunscreen (SPF 50+) & lip balm",
+            "First aid kit"
+          ]
+        }
+      ],
+      "extendedInfo": [
+        {
+          "title": "Ruby Valley – Untouched Trail Between Langtang & Manaslu",
+          "description": "Situated within the Ganesh Himal region, Ruby Valley is an off-the-beaten-path paradise. It offers serene, crowd-free trails, panoramic Himalayan vistas (Ganesh Himal, Langtang Lirung, Manaslu), and authentic Tamang and Gurung culture."
+        },
+        {
+          "title": "Pangsang Pass (3,850 m)",
+          "description": "Pangsang Pass is the highest vantage point of the trek, rewarding hikers with breathtaking 360-degree views of Ganesh Himal range, Manaslu, Langtang Lirung, and Annapurna."
+        },
+        {
+          "title": "Homestay Experience & Shertung Hot Springs",
+          "description": "Trekkers stay in community-run homestays and teahouses, tasting home-cooked Nepali meals. At Shertung ('Place of Gold'), trekkers enjoy relaxing natural hot springs."
+        },
+        {
+          "title": "Why Book with Zenex Travels & Tours?",
+          "description": "Zenex Travels & Tours ensures hassle-free permit preparation, private vehicle transfers, local guide and porter employment, and personalized care throughout your 12-day Himalayan journey."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Where is the Ruby Valley Trek located?",
+          "answer": "Ruby Valley is located in central Nepal within the Ganesh Himal region between Langtang National Park and Manaslu."
+        },
+        {
+          "question": "What is the maximum altitude of the Ruby Valley Trek?",
+          "answer": "The highest point is Pangsang Pass at 3,850 meters (12,631 ft)."
+        },
+        {
+          "question": "How difficult is the Ruby Valley Trek?",
+          "answer": "It is rated Moderate. Daily walking is about 5-7 hours over unpaved mountain trails without technical climbing."
+        },
+        {
+          "question": "What is the best time to do the Ruby Valley Trek?",
+          "answer": "Spring (March to May) for blooming rhododendrons and Autumn (September to November) for clear skies and mountain visibility."
+        },
+        {
+          "question": "What permits are required for the Ruby Valley Trek?",
+          "answer": "Langtang National Park Entry Permit is required. Zenex Travels & Tours arranges all permits."
+        },
+        {
+          "question": "Is a guide required for the Ruby Valley Trek?",
+          "answer": "Yes, hiring a licensed guide from Zenex Travels is strongly recommended due to remote trails and homestay logistics."
+        },
+        {
+          "question": "What kind of accommodation is available on the Ruby Valley Trek?",
+          "answer": "Clean local teahouses and authentic village homestays offering twin beds and home-cooked meals."
+        },
+        {
+          "question": "What mountains can you see on the Ruby Valley Trek?",
+          "answer": "Panoramas include Ganesh Himal I, II, III & IV, Langtang Lirung, Mt. Manaslu, and Annapurna."
+        },
+        {
+          "question": "Are there hot springs on the Ruby Valley trail?",
+          "answer": "Yes! Near Shertung village, trekkers can soak in natural hot springs on their acclimatization day."
+        },
+        {
+          "question": "Is Ruby Valley Trek suitable for beginners?",
+          "answer": "Yes, beginners with reasonable physical fitness and preparation can complete the trek successfully."
+        },
+        {
+          "question": "How long is the drive from Kathmandu to Syabrubesi?",
+          "answer": "The drive takes approximately 5 to 6 hours (90 km) by private vehicle."
+        },
+        {
+          "question": "Can the 12-day Ruby Valley itinerary be customized?",
+          "answer": "Yes! Zenex Travels & Tours can adjust the duration, vehicle transfers, and hotel standards according to your preferences."
         }
       ]
     }
