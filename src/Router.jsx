@@ -72,11 +72,13 @@ import TrekRegion from './pages/TrekRegion';
 import RegionDetail from './pages/RegionDetail';
 import TourTripDetail from './pages/TourTripDetail';
 import CountryPackages from './pages/CountryPackages';
+import { RouteErrorFallback } from './components/ErrorBoundary';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <RouteErrorFallback />,
     children: [
       { index: true, element: <Home /> },
       { path: 'vehicles', element: <VehicleListing /> },

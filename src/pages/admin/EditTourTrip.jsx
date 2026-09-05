@@ -205,7 +205,7 @@ const EditTourTrip = () => {
 
   const SectionHeader = ({ title, icon: Icon, count = null }) => (
     <div className="flex justify-between items-center p-6 border-b border-gray-100 bg-gray-50/50 select-none">
-      <h2 className="text-xl font-bold text-gray-800 flex items-center gap-3"><Icon size={24} className="text-[#e53a24]"/> {title} {count !== null && <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full ml-2">{count}</span>}</h2>
+      <h2 className="text-xl font-bold text-gray-800 flex items-center gap-3">{Icon && <Icon size={24} className="text-[#e53a24]"/>} {title} {count !== null && <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full ml-2">{count}</span>}</h2>
     </div>
   );
 
