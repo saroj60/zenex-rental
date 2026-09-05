@@ -3029,13 +3029,13 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu & Pokhara / Mountain Teahouses & Lodges",
     meals: "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May), Summer/Monsoon & Autumn (Sept - Nov)",
-    image: "https://cdn.tripspoint.com/uploads/photos/8866/upper-mustang-trek-15-days_HIely.jpg",
+    image: "https://media.hikingadventuretreks.com/uploads/fullbanner/upper-mustang-trek-banner.webp",
     gallery: [
-      "https://cdn.tripspoint.com/uploads/photos/8866/upper-mustang-trek-15-days_HIely.jpg",
-      "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/Mustang-Trekking-2.jpg",
-      "https://visithimalayastrek.com/uploads/photos/1/Lo-Manthang-Upper-Mustang.jpg",
-      "https://media.app.regulusnepal.com/uploads/media/badimalika/upper-mustang.jpg",
-      "/images/upper mustang.jpg"
+      "https://media.hikingadventuretreks.com/uploads/fullbanner/upper-mustang-trek-banner.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_lJ0TwMGmgkg-KnjzgQlGABUVLd21El3cyl3ro2qOSQptMWaRKPGBfV0&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwLn2TcKgLSOVuKKW2CGuE3OHFoSmkQ39BtMohZruDxc0_FTW2_G5oO_9N&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEn_goIMLPo7yX66QSpTHcX6T-VMUPKigMDfQlHI7ROMD6b98XlHwXTmw&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_KKGYBqdGEIwiMLTVhSSjLsr-Axsa2L52kkSKkwBhsDk3DJ9zgqA7XI&s=10"
     ],
     overview: `
       <h3>Short Upper Mustang Trek 18 Days | Discover Nepal's Forbidden Kingdom & Tibetan Culture</h3>
