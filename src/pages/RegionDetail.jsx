@@ -119,20 +119,20 @@ const RegionDetail = () => {
     const targetKey = (slug || '').toLowerCase();
 
     const regionAliases = {
-      'everest': ['everest', 'ebc', 'khumbu'],
-      'everest-base-camp': ['everest', 'ebc', 'khumbu'],
-      'annapurna': ['annapurna', 'abc', 'poonhill', 'thorong'],
-      'langtang': ['langtang', 'helambu', 'tamang', 'ruby'],
-      'manaslu': ['manaslu', 'tsum'],
-      'upper-mustang': ['mustang', 'lomanthang'],
-      'mustang': ['mustang', 'lomanthang'],
-      'kanchenjunga': ['kanchenjunga'],
-      'dolpo': ['dolpo', 'dolpa', 'phoksundo'],
-      'dhaulagiri': ['dhaulagiri', 'dhampus'],
-      'rolwaling': ['rolwaling', 'lapchi'],
-      'makalu': ['makalu'],
-      'far-western-nepal': ['farwest', 'farwestern', 'khaptad'],
-      'far-west': ['farwest', 'farwestern', 'khaptad'],
+      'everest': ['everest', 'ebc', 'khumbu', 'regtrkeve'],
+      'everest-base-camp': ['everest', 'ebc', 'khumbu', 'regtrkeve'],
+      'annapurna': ['annapurna', 'abc', 'poonhill', 'thorong', 'regtrkann'],
+      'langtang': ['langtang', 'helambu', 'tamang', 'ruby', 'regtrklan'],
+      'manaslu': ['manaslu', 'tsum', 'regtrkman'],
+      'upper-mustang': ['mustang', 'lomanthang', 'regtrkmus'],
+      'mustang': ['mustang', 'lomanthang', 'regtrkmus'],
+      'kanchenjunga': ['kanchenjunga', 'regtrkkan'],
+      'dolpo': ['dolpo', 'dolpa', 'phoksundo', 'regtrkdol'],
+      'dhaulagiri': ['dhaulagiri', 'dhampus', 'regtrkdha'],
+      'rolwaling': ['rolwaling', 'lapchi', 'regtrkrol'],
+      'makalu': ['makalu', 'regtrkmak'],
+      'far-western-nepal': ['farwest', 'farwestern', 'khaptad', 'api', 'rara', 'jumla', 'regtrkfws'],
+      'far-west': ['farwest', 'farwestern', 'khaptad', 'api', 'rara', 'jumla', 'regtrkfws'],
       'kathmandu-valley': ['kathmandu'],
       'kathmandu-pokhara': ['pokhara'],
       'everest-base-camp-tibet': ['tibet', 'lhasa'],
@@ -147,7 +147,7 @@ const RegionDetail = () => {
     const titleLower = sanitize(item.title);
 
     if (regProp) {
-      return regProp === normSlug || aliases.some(a => regProp.includes(a));
+      return regProp === normSlug || aliases.some(a => regProp === a || regProp.includes(a));
     }
 
     return aliases.some(a => locProp.includes(a) || titleLower.includes(a));
