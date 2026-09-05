@@ -2977,6 +2977,416 @@
           "answer": "Yes! Zenex Travels & Tours can adjust acclimatization days, camping arrangements, and private vehicle transport."
         }
       ]
+    },
+    {
+      "id": "upper-mustang-tour-13d",
+      "slug": "upper-mustang-tour-13d",
+      "title": "Upper Mustang Tour - 13 Days",
+      "region": "mustang",
+      "regionName": "Mustang Region",
+      "location": "Upper Mustang & Lo Manthang, Mustang District, Nepal",
+      "duration": "13",
+      "durationUnit": "Days",
+      "price": "US$1,450",
+      "originalPrice": "US$1,550",
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "difficulty": "Easy",
+      "maxAltitude": "3,810 m / 12,500 ft",
+      "starts": "Kathmandu",
+      "ends": "Kathmandu",
+      "activities": "4WD Jeep Overland Tour, Cultural Exploration & Cave Visits",
+      "accommodation": "Hotels in Kathmandu & Pokhara / Mountain Lodges & Teahouses",
+      "meals": "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Mustang Tour",
+      "bestSeason": "All Seasons (Spring, Summer/Monsoon, Autumn & Winter)",
+      "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200",
+      "gallery": [
+        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200",
+        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1200",
+        "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200",
+        "/images/upper mustang.jpg",
+        "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1200"
+      ],
+      "overview": "\n      <h3>Upper Mustang Drive-In Drive-Out 4WD Jeep Tour | Explore Mustang's Ancient Culture & Himalayan Desert Landscapes</h3>\n      <p>The 13-Day Upper Mustang Tour from Kathmandu is a culturally rich and scenic overland journey to one of Nepal's most remote and fascinating Himalayan regions. Known as the <strong>\"Last Forbidden Kingdom\"</strong>, Upper Mustang offers a unique blend of ancient Tibetan Buddhist heritage, wind-carved desert canyons, 1,000-year-old cliffside cave dwellings, and sacred monasteries.</p>\n      <p>Travelers explore the historic walled capital of <strong>Lo Manthang</strong>, sacred Muktinath Temple, ancient sky caves in Chhoser, and 1,300-year-old Ghar Gompa (Lo-Ghyakar). With 4WD vehicle access throughout the circuit, this tour is suitable for travelers who wish to avoid long trekking walks while fully immersing in Mustang's spiritual and natural beauty. Located in the rain-shadow of the Dhaulagiri and Annapurna ranges, Upper Mustang is also ideal for summer monsoon travel.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we arrange all logistics—including Special Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), private 4WD Mahindra Scorpio / Toyota Land Cruiser vehicles with expert drivers, licensed tour guides, quality lodge bookings, and hotel stays in Kathmandu and Pokhara.</p>\n    ",
+      "highlights": [
+        "Explore the Ancient Walled City of Lo Manthang — historic capital of the Mustang Kingdom with rich Tibetan architecture and royal heritage.",
+        "Visit sacred Muktinath Temple at 3,800 m altitude, a holy pilgrimage site for both Hindus and Buddhists with 108 stone spouts.",
+        "Experience the stunning Mustang rain-shadow desert landscape, featuring dramatic red cliffs, deep canyons, and vast wind-sculpted valleys.",
+        "Drive through traditional Mustang villages like Kagbeni, Chele, Geling, Dhakmar, Charang, and Marpha showcasing ancient Tibetan culture.",
+        "Discover thousands of ancient man-made sky caves in Chhoser and Jhong carved vertically into desert cliffs.",
+        "Witness panoramic views of Dhaulagiri (8,167 m), Annapurna, Nilgiri, Tukuche, and Tibetan plateau peaks.",
+        "Visit 1,300-year-old historic Buddhist monasteries including Ghar Gompa (Lo-Ghyakar), Charang Monastery, and Thubchen Gompa.",
+        "Relax in natural thermal hot springs at Tatopani along the Kali Gandaki River Valley.",
+        "Experience the vibrant 3-day Tiji Festival (seasonal May/June) featuring monk mask dances in Lo Manthang.",
+        "Drive along the Kali Gandaki River through the world's deepest gorge in heavy-duty 4WD Jeeps.",
+        "Enjoy leisure, sightseeing, and Phewa Lake boating in Pokhara before and after the Mustang expedition."
+      ],
+      "quickFacts": {
+        "country": "Nepal",
+        "duration": "13 Days",
+        "tripGrade": "Easy (4WD Overland Tour)",
+        "maxAltitude": "3,810 m / 12,500 ft",
+        "startsEnds": "Kathmandu / Kathmandu",
+        "activities": "4WD Jeep Overland Tour & Cultural Exploration",
+        "accommodation": "Hotels in Kathmandu & Pokhara / Mountain Lodges & Teahouses",
+        "meals": "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Tour",
+        "bestTime": "All Seasons (Spring, Summer/Monsoon, Autumn & Winter)"
+      },
+      "itinerary": [
+        {
+          "day": "01",
+          "title": "Arrival in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "6 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Briefing",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport pickup, hotel transfer, pre-trip briefing & tour guide introduction.",
+          "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will pick you up in a private vehicle and transfer you to your hotel. After check-in, we hold a brief pre-trip meeting to review tour permits, answer questions, and introduce your guide. Overnight at hotel."
+        },
+        {
+          "day": "02",
+          "title": "Kathmandu UNESCO World Heritage Sightseeing & Tour Preparation",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "5-6 hrs sightseeing",
+          "distance": "25 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Guided UNESCO tour: Kathmandu Durbar Square, Swayambhunath (Monkey Temple), Boudhanath Stupa & Pashupatinath.",
+          "description": "Spend the day exploring Kathmandu's famous UNESCO World Heritage Sites. Visit ancient palaces at Kathmandu Durbar Square, panoramic views at Swayambhunath Stupa, sacred Hindu rituals along Bagmati River at Pashupatinath, and the giant Buddhist stupa at Boudhanath. Finalize restricted area permits for Upper Mustang. Overnight at hotel."
+        },
+        {
+          "day": "03",
+          "title": "Kathmandu – Pokhara",
+          "altitude": "820 m / 2,690 ft",
+          "walkingTime": "7 hrs drive",
+          "distance": "200 km",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Drive along Trishuli and Marshyangdi rivers to lakeside city of Pokhara.",
+          "description": "Depart Kathmandu after breakfast in a private vehicle for Pokhara (approx. 7 hours drive). Enjoy scenic countryside views along river valleys and terraced farmlands. Check into your hotel in Pokhara and enjoy an evening stroll along Phewa Lake. Overnight at hotel."
+        },
+        {
+          "day": "04",
+          "title": "Pokhara – Tatopani",
+          "altitude": "1,190 m / 3,904 ft",
+          "walkingTime": "5-6 hrs drive",
+          "distance": "110 km",
+          "accommodation": "Lodge at Tatopani",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private 4WD vehicle",
+          "highlights": "Drive through Beni along Kali Gandaki Valley, relax in natural hot springs at Tatopani.",
+          "description": "Drive from Pokhara past Nayapul, Kushma, and Beni into the Kali Gandaki River Valley. Beyond Beni, the road turns off-road into mountain terrain. Arrive in Tatopani (1,190 m) and spend the afternoon soaking in warm, mineral-rich natural thermal hot springs. Overnight at lodge."
+        },
+        {
+          "day": "05",
+          "title": "Tatopani – Marpha – Jomsom – Muktinath (3,800 m) – Kagbeni",
+          "altitude": "2,800 m / 9,186 ft (Muktinath 3,800 m)",
+          "walkingTime": "7-8 hrs drive",
+          "distance": "100 km",
+          "accommodation": "Lodge at Kagbeni",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private 4WD vehicle",
+          "highlights": "World's deepest Kali Gandaki Gorge, apple orchards of Marpha, Muktinath Temple & Kagbeni.",
+          "description": "Drive north through the spectacular Kali Gandaki Gorge between Dhaulagiri and Annapurna ranges. Pass permit checkpoint at Ghasa and explore Marpha village, famous for apple orchards and whitewashed Thakali stone houses. Continue to Jomsom and ascend to holy Muktinath Temple (3,800 m) to view 108 sacred water spouts and eternal flame. Descend to Kagbeni (2,800 m), the historic gateway to Upper Mustang. Overnight at lodge."
+        },
+        {
+          "day": "06",
+          "title": "Kagbeni – Chele – Geling",
+          "altitude": "3,570 m / 11,712 ft",
+          "walkingTime": "6-7 hrs drive",
+          "distance": "40 km",
+          "accommodation": "Lodge at Geling",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private 4WD vehicle",
+          "highlights": "Enter restricted Upper Mustang, pass Tangbe stone houses, Chhusang cliffs & Chele village.",
+          "description": "Submit restricted area permits at Kagbeni checkpoint and enter Upper Mustang. Drive past traditional stone hamlets of Tangbe and towering red cliffs of Chhusang. Cross the Kali Gandaki River bridge to Chele for lunch. Continue past Samar and Syangbochen pass to Geling (3,570 m) and visit historic Geling Monastery. Overnight at lodge."
+        },
+        {
+          "day": "07",
+          "title": "Geling – Dhakmar – Lo-Ghyakar Gompa – Charang – Lo Manthang",
+          "altitude": "3,810 m / 12,500 ft",
+          "walkingTime": "6-7 hrs drive",
+          "distance": "40-45 km",
+          "accommodation": "Lodge at Lo Manthang",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private 4WD vehicle",
+          "highlights": "Longest Mani wall at Ghemi, red cliffs of Dhakmar, 1300-yr Ghar Gompa, Charang Palace & Lo Manthang.",
+          "description": "Drive from Geling past Ghemi village and its famous long Mani wall. Continue to Dhakmar red cliff canyons and visit 1,300-year-old Lo-Ghyakar Gompa (Ghar Gompa, 3,950 m) established by Guru Rinpoche. Stop in historic Charang village to explore Charang Monastery. Arrive in the walled capital of Lo Manthang (3,810 m). Stroll around old courtyards and the Royal Palace. Overnight at lodge."
+        },
+        {
+          "day": "08",
+          "title": "Lo Manthang Exploration (Monasteries, Royal Palace & Chhoser Sky Caves)",
+          "altitude": "3,810 m / 12,500 ft",
+          "walkingTime": "Full day excursion",
+          "distance": "15 km jeep/horse excursion",
+          "accommodation": "Lodge at Lo Manthang",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private 4WD vehicle / Walking",
+          "highlights": "Jampa Gompa, Thubchen Gompa, Chhoede Gompa, Royal Palace & Jhong Sky Cave complex at Chhoser.",
+          "description": "Spend a full day exploring ancient Lo Manthang. Visit 15th-century Jampa Gompa (God House), Thubchen Gompa assembly hall, and active Chhoede Gompa. Take a short 4WD excursion north to Chhoser to explore Jhong Cave—a multi-story cliff dwelling carved thousands of years ago for meditation and refuge. Return to Lo Manthang for evening local interactions. Overnight at lodge."
+        },
+        {
+          "day": "09",
+          "title": "Lo Manthang – Marpha",
+          "altitude": "2,650 m / 8,694 ft",
+          "walkingTime": "8 hrs drive",
+          "distance": "110 km",
+          "accommodation": "Lodge at Marpha",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private 4WD vehicle",
+          "highlights": "Scenic return drive across desert plateaus, Ghami, Kagbeni & Jomsom to Marpha.",
+          "description": "Begin the return drive from Lo Manthang following the Kali Gandaki Valley back down through Upper Mustang. Enjoy changing light over red rock canyons and snow peaks. Pass Kagbeni and Jomsom to reach the tranquil apple village of Marpha (2,650 m). Sample fresh apple cider and bakery items. Overnight at lodge."
+        },
+        {
+          "day": "10",
+          "title": "Marpha – Pokhara",
+          "altitude": "820 m / 2,690 ft",
+          "walkingTime": "6-7 hrs drive",
+          "distance": "148 km",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private 4WD vehicle",
+          "highlights": "Drive along Kali Gandaki river gorge, Tatopani & Beni back to Pokhara.",
+          "description": "Drive back from Marpha down through Ghasa, Tatopani, and Beni to Pokhara. Upon arrival in Pokhara, check into your hotel. Spend a relaxed evening by Phewa Lake or enjoy dining at Lakeside restaurants. Overnight at hotel."
+        },
+        {
+          "day": "11",
+          "title": "Free Day in Pokhara for Sightseeing & Relaxation",
+          "altitude": "820 m / 2,690 ft",
+          "walkingTime": "-",
+          "distance": "15 km",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle / Boating",
+          "highlights": "Boating on Phewa Lake, Tal Barahi Temple, World Peace Stupa, Davis Fall & Gupteshwor Cave.",
+          "description": "Enjoy a free relaxation day in Pokhara. Options include morning boating on Phewa Lake, visiting Tal Barahi Island Temple, taking a cable car or drive to World Peace Stupa / Pumdikot Shiva Temple for mountain panoramas, or exploring Davis Fall and Gupteshwor Cave. Overnight at hotel."
+        },
+        {
+          "day": "12",
+          "title": "Pokhara – Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "7 hrs drive",
+          "distance": "200 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Farewell Dinner",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Return drive to Kathmandu, evening official farewell dinner with traditional cultural performance.",
+          "description": "Drive back from Pokhara to Kathmandu in a private vehicle (approx. 7 hours). Check into your hotel and enjoy free time for souvenir shopping in Thamel. In the evening, join your Zenex Travels team for a traditional Nepali farewell dinner. Overnight at hotel."
+        },
+        {
+          "day": "13",
+          "title": "Departure from Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "6 km",
+          "accommodation": "-",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport transfer for international departure flight.",
+          "description": "Enjoy breakfast at your hotel. At your scheduled flight departure time, your Zenex Travels representative will transfer you by private vehicle to Tribhuvan International Airport for your return flight home."
+        }
+      ],
+      "includes": [
+        "Airport – Hotel – Airport transfers by private vehicle",
+        "Special Restricted Area Upper Mustang Permit (USD 500 per person)",
+        "Annapurna Conservation Area Permit Fee (ACAP)",
+        "4 nights hotel accommodation in Kathmandu & Pokhara with breakfast",
+        "All transportation by private heavy-duty 4WD Jeep (Mahindra Scorpio or Toyota Land Cruiser)",
+        "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the Upper Mustang tour",
+        "Accommodation at comfortable mountain teahouses and lodges during the 13-day tour",
+        "Professional Nepal Government licensed English-speaking tour & trekking guide",
+        "Experienced 4WD Himalayan driver with full vehicle fuel & road tolls included",
+        "Guide & driver salary, meals, accommodation, equipment, and insurance",
+        "Traditional Nepali Farewell Dinner in Kathmandu",
+        "Zenex Travels duffel bag and official trip achievement certificate",
+        "All necessary government taxes, VAT, and company service charges"
+      ],
+      "costIncludes": [
+        "Airport – Hotel – Airport transfers by private vehicle",
+        "Special Restricted Area Upper Mustang Permit (USD 500 per person)",
+        "Annapurna Conservation Area Permit Fee (ACAP)",
+        "4 nights hotel accommodation in Kathmandu & Pokhara with breakfast",
+        "All transportation by private heavy-duty 4WD Jeep (Mahindra Scorpio or Toyota Land Cruiser)",
+        "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the Upper Mustang tour",
+        "Accommodation at comfortable mountain teahouses and lodges during the 13-day tour",
+        "Professional Nepal Government licensed English-speaking tour & trekking guide",
+        "Experienced 4WD Himalayan driver with full vehicle fuel & road tolls included",
+        "Guide & driver salary, meals, accommodation, equipment, and insurance",
+        "Traditional Nepali Farewell Dinner in Kathmandu",
+        "Zenex Travels duffel bag and official trip achievement certificate",
+        "All necessary government taxes, VAT, and company service charges"
+      ],
+      "excludes": [
+        "International airfare & Nepal VISA entry fees",
+        "Personal travel and medical insurance (helicopter rescue coverage recommended)",
+        "Bar bills, mineral water, soft drinks, beer, snacks & personal expenses",
+        "Hot showers, Wi-Fi & device charging fees in mountain lodges",
+        "Lunches and dinners in Kathmandu & Pokhara (except farewell dinner)",
+        "Sightseeing entrance fees to temples and monuments in Kathmandu",
+        "Unforeseen costs caused by road blockages, natural disasters, weather delays, or early return",
+        "Tips and gratuities for guide and driver"
+      ],
+      "costExcludes": [
+        "International airfare & Nepal VISA entry fees",
+        "Personal travel and medical insurance (helicopter rescue coverage recommended)",
+        "Bar bills, mineral water, soft drinks, beer, snacks & personal expenses",
+        "Hot showers, Wi-Fi & device charging fees in mountain lodges",
+        "Lunches and dinners in Kathmandu & Pokhara (except farewell dinner)",
+        "Sightseeing entrance fees to temples and monuments in Kathmandu",
+        "Unforeseen costs caused by road blockages, natural disasters, weather delays, or early return",
+        "Tips and gratuities for guide and driver"
+      ],
+      "groupDiscounts": [
+        {
+          "pax": "1 - 2 Pax",
+          "price": "US$ 1,450"
+        },
+        {
+          "pax": "3 - 5 Pax",
+          "price": "US$ 1,350"
+        },
+        {
+          "pax": "6 - 10 Pax",
+          "price": "US$ 1,250"
+        },
+        {
+          "pax": "11+ Pax",
+          "price": "US$ 1,180"
+        }
+      ],
+      "difficultyInfo": "Upper Mustang Tour by 4WD Jeep is rated EASY, designed for travelers who wish to explore the ancient Kingdom of Lo Manthang, Tibetan Buddhist culture, and rain-shadow desert landscapes without long daily walks. Roads are unpaved off-road mountain tracks beyond Beni, but travel is in comfortable 4WD Scorpio or Land Cruiser vehicles with short walking excursions to villages and caves.",
+      "altitudeSickness": {
+        "description": "The tour reaches a maximum altitude of 3,810 meters in Lo Manthang (with Muktinath at 3,800 m). Because travel is by vehicle, gradual ascent and acclimatization built into the itinerary keep the risk of altitude sickness low.",
+        "prevention": [
+          "Ascend gradually following the built-in 13-day itinerary schedule.",
+          "Drink 3-4 liters of water and warm fluids daily to stay well hydrated.",
+          "Avoid alcohol and heavy caffeine at high elevations above 3,000 meters.",
+          "Notify your Zenex Travels guide immediately if you experience headache or nausea."
+        ]
+      },
+      "equipmentList": [
+        {
+          "category": "Clothing",
+          "items": [
+            "Moisture-wicking T-shirts",
+            "Fleece jacket & heavy windproof jacket",
+            "Comfortable pants & thermal leggings for cool nights",
+            "Sun hat & warm beanie",
+            "Lightweight gloves"
+          ]
+        },
+        {
+          "category": "Footwear",
+          "items": [
+            "Comfortable walking/hiking shoes with good traction",
+            "Camp sandals or crocs for lodge wear"
+          ]
+        },
+        {
+          "category": "Backpacking & Travel Gear",
+          "items": [
+            "Daypack (20-30L) for personal items",
+            "Duffel bag (provided by Zenex Travels)",
+            "Sleeping bag rated to -10°C (optional, rental available in Kathmandu/Pokhara)"
+          ]
+        },
+        {
+          "category": "Personal Care & Toiletries",
+          "items": [
+            "Sunscreen (SPF 50+) & lip balm with SPF",
+            "Water purification tablets or filter bottle",
+            "Wet wipes, hand sanitizer & personal medication"
+          ]
+        }
+      ],
+      "extendedInfo": [
+        {
+          "title": "Lo Manthang – The Last Walled Kingdom of Nepal",
+          "description": "Founded in 1380 by Ame Pal, Lo Manthang is a walled fortress city that served as the capital of the Mustang Kingdom. It preserves centuries-old royal palaces, Buddhist art assembly halls, and traditional Tibetan living heritage."
+        },
+        {
+          "title": "Restricted Area Permits for Upper Mustang",
+          "description": "Upper Mustang is a regulated restricted zone requiring a Special Restricted Area Permit ($500 for 10 days) issued by the Nepal Immigration Department. Zenex Travels & Tours handles all permit processing."
+        },
+        {
+          "title": "Comfortable 4WD Jeep Safari Experience",
+          "description": "Instead of strenuous multi-day trekking, travel in heavy-duty 4WD Mahindra Scorpio or Toyota Land Cruiser vehicles driven by experienced Himalayan off-road drivers."
+        },
+        {
+          "title": "Why Travel with Zenex Travels & Tours?",
+          "description": "Zenex Travels & Tours provides top-tier 4WD vehicles, licensed guides, permit management, quality lodge bookings, and 24/7 support throughout your Himalayan journey."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the Upper Mustang Jeep Tour?",
+          "answer": "It is a 13-day overland 4WD Jeep tour from Kathmandu that takes you through Kali Gandaki Valley to Lo Manthang in Upper Mustang without requiring long multi-day walks."
+        },
+        {
+          "question": "Do I need a special permit for the Upper Mustang Tour?",
+          "answer": "Yes, you need the Special Restricted Area Permit (USD 500 for 10 days) and an ACAP permit. Zenex Travels & Tours handles all permit applications."
+        },
+        {
+          "question": "Is this tour suitable for families and senior citizens?",
+          "answer": "Yes! Since the journey is in a 4WD vehicle with only short village walks, it is suitable for seniors, families, and travelers of all age groups."
+        },
+        {
+          "question": "What is the highest altitude reached on the tour?",
+          "answer": "The highest points are Lo-Ghyakar Gompa (3,950 m), Lo Manthang (3,810 m), and Muktinath (3,800 m)."
+        },
+        {
+          "question": "What type of vehicle is used?",
+          "answer": "We use private 4WD Mahindra Scorpio or Toyota Land Cruiser SUVs for groups of 1-5 passengers, and tourist mini-buses for larger groups."
+        },
+        {
+          "question": "When is the best time for the Upper Mustang Jeep Tour?",
+          "answer": "Upper Mustang lies in a rain shadow and can be visited year-round, including Spring (March-May), Autumn (Sept-Nov), and Summer Monsoon (June-August)."
+        },
+        {
+          "question": "What type of accommodation is provided during the tour?",
+          "answer": "Comfortable 3-star hotels in Kathmandu and Pokhara, and clean mountain teahouses and lodges with attached or shared bathrooms in Mustang."
+        },
+        {
+          "question": "What food is available during the Upper Mustang Tour?",
+          "answer": "Lodges serve fresh local Dal Bhat, momos, noodles, fried rice, soups, Tibetan bread, as well as Western dishes like pasta, pizza, and pancakes."
+        },
+        {
+          "question": "Do I need to be physically fit for the tour?",
+          "answer": "Basic physical fitness is sufficient. There is no technical climbing or long daily trekking involved."
+        },
+        {
+          "question": "Can I visit Lo Manthang and Chhoser caves by Jeep?",
+          "answer": "Yes, 4WD dirt tracks connect Lo Manthang, Chhoser sky caves, Ghar Gompa, and Charang village."
+        },
+        {
+          "question": "Can the 13-day itinerary be customized?",
+          "answer": "Yes! Zenex Travels & Tours can adjust hotel categories, add extra days in Pokhara or Lo Manthang, or combine with flight options from Jomsom."
+        },
+        {
+          "question": "What should I pack for the Upper Mustang Tour?",
+          "answer": "Pack windproof jackets, warm layers for cool nights, comfortable walking shoes, sunglasses, sunscreen (SPF 50+), and a daypack."
+        },
+        {
+          "question": "Is Wi-Fi or mobile signal available in Upper Mustang?",
+          "answer": "NTC and Ncell mobile networks work in major settlements (Jomsom, Kagbeni, Lo Manthang), and most teahouses offer Wi-Fi for a small fee."
+        },
+        {
+          "question": "Can I use credit cards in Mustang?",
+          "answer": "Credit cards are only accepted in Kathmandu and Pokhara. Please bring sufficient cash (NPR) for personal expenses in Mustang."
+        },
+        {
+          "question": "Why travel with Zenex Travels & Tours?",
+          "answer": "Zenex Travels & Tours brings over two decades of Himalayan travel experience, licensed guides, reliable 4WD vehicles, and transparent pricing."
+        },
+        {
+          "question": "Is tipping expected for tour guide and driver?",
+          "answer": "Tipping is customary in Nepal for good service and is greatly appreciated by guides and drivers."
+        }
+      ]
     }
   ],
   "destinations": [],
