@@ -5572,5 +5572,366 @@ export const treksData = [
         answer: "Contact Zenex Travels & Tours to process restricted permits, arrange domestic flights, and organize full camping expedition logistics."
       }
     ]
+  },
+  {
+    id: "upper-dolpo-trek-25d",
+    slug: "upper-dolpo-trek-25d",
+    title: "Upper Dolpo Trek - 25 Days",
+    region: "dolpo",
+    regionName: "Dolpo Region",
+    location: "Shey Phoksundo National Park, Upper Dolpo & Mustang, Mid-Western Nepal",
+    duration: "25",
+    durationUnit: "Days",
+    price: "US$3,630",
+    originalPrice: "US$3,950",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Challenging",
+    maxAltitude: "5,550 m / 18,208 ft (Jungben La Pass)",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "Walking / Hiking & Remote Trans-Himalayan Expedition",
+    accommodation: "Hotels in KTM, Nepalgunj & Pokhara / Mountain Lodges & Tented Camps",
+    meals: "Breakfast in Cities, All Meals (Breakfast, Lunch & Dinner) on Trek",
+    bestSeason: "Spring (March - May), Summer (Rain Shadow) & Autumn (Sept - Nov)",
+    image: "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/dolpo.jpg",
+    gallery: [
+      "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/dolpo.jpg",
+      "https://himalayantrekkers.com/_next/image?url=https%3A%2F%2Fapi.himalayantrekkers.com%2Fapi%2Ffile-upload%2Ftrips%252FMarch2021%252Fupper-dolpo-trek-Tinje-village.jpg&w=1920&q=75",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQySI7eWgBNvOrjxM7lVJnj7J8yI-g4LoOrR2816bThua3IS6eeiAI76mk&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5enAYAziq_aOB0Igw1uX-3WXMzkLMd0TYOuSUf-FxTlpurMejYFu3Kzgo&s=10"
+    ],
+    overview: `
+      <h3>Upper Dolpo Trek 25 Days | Sacred Shey Gompa, Phoksundo Lake & High Pass Trans-Himalayan Expedition</h3>
+      <p>The <strong>Upper Dolpo Trek (25 Days)</strong> is one of the ultimate wilderness expeditions in Nepal, taking experienced adventurers across Nepal's last unexplored frontier. Located in the rain-shadow of the Dhaulagiri and Kanjiroba ranges, Upper Dolpo offers high-altitude desert plateaus, turquoise glacial lakes, ancient salt-trade routes, and centuries-old Bon and Tibetan Buddhist monasteries.</p>
+      <p>This 25-day grand circuit crosses multiple high mountain passes above 5,000 meters—including <strong>Jungben La (5,550 m)</strong>, <strong>Nagdalo Pass (5,350 m)</strong>, <strong>Niwas La (5,120 m)</strong>, <strong>Sele La (5,094 m)</strong>, and <strong>Mo La Pass (5,027 m)</strong>. The journey highlights the sacred 800-year-old <strong>Shey Gompa (4,343 m)</strong> at the foot of Crystal Mountain, magical <strong>Phoksundo Lake (3,641 m)</strong>, and remote trans-Himalayan stone villages like Saldang, Tinjegaon, and Chharka Bhot before exiting via Kagbeni to Jomsom and Pokhara.</p>
+      <p>At <strong>Zenex Travels & Tours</strong>, we provide full expedition support—including Upper Dolpo Restricted Area Permits (RAP), Shey Phoksundo National Park Entry Permits, domestic flights (Kathmandu – Nepalgunj – Juphal & Jomsom – Pokhara), full camping setup with experienced cooks and kitchen staff, yaks/mules, licensed mountain guides, and hotel stays in Kathmandu, Nepalgunj, and Pokhara.</p>
+    `,
+    highlights: [
+      "Cross four major high Himalayan passes over 5,000 meters: Jungben La (5,550 m), Nagdalo Pass (5,350 m), Niwas La (5,120 m), and Sele La (5,094 m).",
+      "Visit the sacred 800-year-old Shey Gompa (4,343 m) and pilgrimage around the mystical Crystal Mountain.",
+      "Experience the turquoise-blue Phoksundo Lake (3,641 m)—Nepal's deepest lake surrounded by towering sheer cliffs.",
+      "Explore isolated Tibetan-Bon settlements of Saldang, Tinjegaon, Chharka Bhot, and Simengaon along historic salt trade routes.",
+      "Immerse in ancient pre-Buddhist Bon culture, animism, and Tibetan Buddhist traditions preserved for centuries.",
+      "Traverse Shey Phoksundo National Park, sanctuary for snow leopards, Himalayan blue sheep, and rare alpine flora.",
+      "Exit the expedition through Kagbeni—the medieval gateway village to Upper Mustang in the Kali Gandaki Valley.",
+      "Full expedition management by Zenex Travels & Tours including permits, flights, camping crew, guide, and porters."
+    ],
+    quickFacts: {
+      country: "Nepal",
+      duration: "25 Days",
+      tripGrade: "Challenging",
+      maxAltitude: "5,550 m / 18,208 ft",
+      starts: "Kathmandu",
+      ends: "Kathmandu",
+      activities: "Walking / Hiking",
+      accommodation: "Hotels in Cities / Lodges & Tented Camps",
+      meals: "Breakfast in Cities, All Meals on Trek",
+      bestTime: "Spring, Summer (Rain Shadow) & Autumn"
+    },
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Arrival in Kathmandu (1,350 m)",
+        description: "Welcome to Nepal! Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels & Tours correspondent meets you and transfers you to your hotel. Pre-trip briefing held in the evening.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Not Included"
+      },
+      {
+        day: "Day 02",
+        title: "Kathmandu: Permit Preparation & Sightseeing",
+        description: "Free day in Kathmandu while our team submits passport details to Nepal Immigration to issue the Upper Dolpo Special Restricted Area Permit. Option to explore UNESCO World Heritage Sites such as Pashupatinath, Boudhanath, and Kathmandu Durbar Square.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast"
+      },
+      {
+        day: "Day 03",
+        title: "Kathmandu - Nepalgunj (173 m) (Flight)",
+        description: "Afternoon 1-hour flight from Kathmandu to Nepalgunj in Terai region near the Indian border. Check into hotel and rest overnight.",
+        maxAltitude: "173 m / 567 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast"
+      },
+      {
+        day: "Day 04",
+        title: "Nepalgunj - Juphal (2,475 m) (Flight) & Trek to Dunai (2,140 m)",
+        description: "Early morning 45-minute flight to Juphal airstrip in Dolpa. Meet your porters and yak team, then trek 3 to 4 hours downhill along Thuli Bheri River to Dunai (2,140 m).",
+        maxAltitude: "2,475 m / 8,120 ft",
+        accommodation: "Tented Camp / Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 05",
+        title: "Dunai - Chhekpa (2,678 m)",
+        description: "Trek for 6 to 7 hours (17-18 km) following Phoksundo Khola River upstream through forested hills and terraced fields to Chhekpa (2,678 m).",
+        maxAltitude: "2,678 m / 8,786 ft",
+        accommodation: "Tented Camp / Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 06",
+        title: "Chhekpa - Ringmo / Phoksundo Lake (3,641 m)",
+        description: "Trek for 7 hours ascending through pine and rhododendron forests, crossing wooden bridges. Reach Ringmo village on the shore of turquoise Phoksundo Lake (3,641 m).",
+        maxAltitude: "3,641 m / 11,945 ft",
+        accommodation: "Lodge / Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 07",
+        title: "Exploration Day around Phoksundo Lake & Bon Monastery (3,600 m)",
+        description: "Rest and explore Phoksundo Lake, Nepal's deepest lake. Visit ancient Bonpo Monastery in Ringmo, learn local Bon Buddhist customs, and admire lake reflections.",
+        maxAltitude: "3,600 m / 11,811 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 08",
+        title: "Ringmo - Phoksundo Khola Camp / Sallaghari (3,750 m)",
+        description: "Trek along the famous cliffside trail above Phoksundo Lake, entering the remote inner Dolpo region. Camp at Sallaghari (3,750 m) after 7 hours of walking.",
+        maxAltitude: "3,750 m / 12,303 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 09",
+        title: "Sallaghari - Nagdalo Phedi / High Camp (4,500 m)",
+        description: "Ascend through wide alpine grasslands past grazing yak herds to Nagdalo Phedi / High Camp (4,500 m) in 7 hours.",
+        maxAltitude: "4,500 m / 14,763 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 10",
+        title: "Nagdalo Phedi - Nagdalo Pass (5,350 m) - Shey Gompa (4,343 m)",
+        description: "Cross Nagdalo Pass (5,350 m) with views of Mt. Kanjiroba and Tangtung Lake. Descend to the sacred Shey Gompa (4,343 m) at the base of Crystal Mountain (7 hours).",
+        maxAltitude: "5,350 m / 17,552 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 11",
+        title: "Rest & Spiritual Exploration Day at Shey Gompa (4,343 m)",
+        description: "Rest day at Shey Gompa. Visit the 800-year-old monastery, Shey Gompa Cave, interact with local monks, and explore the sacred pilgrimage trails of Crystal Mountain.",
+        maxAltitude: "4,343 m / 14,248 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 12",
+        title: "Shey Gompa - Sele La Pass (5,094 m) - Namagung (4,360 m)",
+        description: "Climb through barren rocky landscapes over Sele La Pass (5,094 m) for panoramic mountain vistas, then descend to the quiet village of Namagung (4,360 m) after 7 hours.",
+        maxAltitude: "5,094 m / 16,712 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 13",
+        title: "Namagung - Saldang (3,770 m)",
+        description: "Trek for 7 hours into arid trans-Himalayan desert terrain to Saldang (3,770 m), one of the largest ancient stone-built villages in Upper Dolpo.",
+        maxAltitude: "3,770 m / 12,368 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 14",
+        title: "Saldang - Shimengaon (3,885 m)",
+        description: "Follow gentle trails through the highlands of Dolpo past river streams and prayer flag chortens to Shimengaon (3,885 m) after 7 hours.",
+        maxAltitude: "3,885 m / 12,746 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 15",
+        title: "Simengaon - Tinjegaon (4,110 m)",
+        description: "Trek 7 hours through diverse meadows and desert canyons, crossing small streams to reach Tinjegaon (4,110 m).",
+        maxAltitude: "4,110 m / 13,484 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 16",
+        title: "Tinjegaon - Keheing Khola / Kharka (4,500 m)",
+        description: "Trek for 7 hours across open high-altitude plains and yak pastures to Keheing Khola campsite (4,500 m).",
+        maxAltitude: "4,500 m / 14,763 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 17",
+        title: "Yak Kharka - Mo La Pass (5,027 m) - Chharka Bhot (4,302 m)",
+        description: "Climb over Mo La Pass (5,027 m) with views of Dhaulagiri range before descending to the ancient walled salt-trade village of Chharka Bhot (4,302 m) (7 hours).",
+        maxAltitude: "5,027 m / 16,492 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 18",
+        title: "Chharka Bhot - Nulungsumde Kharka (4,987 m)",
+        description: "Trek 7 hours through remote barren valleys with views of Nilgiri and Dhaulagiri peaks to Nulungsumde Kharka (4,987 m).",
+        maxAltitude: "4,987 m / 16,361 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 19",
+        title: "Nulungsumde - Niwas La (5,120 m) - Jungben La (5,550 m) - Ghaldan Ghuldun Khola (4,247 m)",
+        description: "High pass expedition day! Cross Niwas La (5,120 m) and Jungben La (5,550 m)—the highest elevation of the trek. Descend to Ghaldan Ghuldun Khola Camp (4,247 m).",
+        maxAltitude: "5,550 m / 18,208 ft",
+        accommodation: "Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 20",
+        title: "Ghaldan Ghuldun Khola Camp - Santa (3,777 m)",
+        description: "Trek 6 to 7 hours descending into warmer valleys towards the traditional village of Santa (3,777 m).",
+        maxAltitude: "3,777 m / 12,391 ft",
+        accommodation: "Lodge / Tented Camp",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 21",
+        title: "Santa - Bhima Lojun La (4,460 m) - Yak Kharka (3,478 m)",
+        description: "Cross Bhima Lojun La (4,460 m) and descend towards Yak Kharka (3,478 m) above Kali Gandaki Valley.",
+        maxAltitude: "4,460 m / 14,632 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 22",
+        title: "Yak Kharka - Sangdak - Kagbeni - Marpha - Pokhara (820 m)",
+        description: "Descend to Kagbeni, gateway to Upper Mustang. Board private vehicle for a drive down Kali Gandaki Valley past Marpha to Pokhara (820 m). Overnight at hotel.",
+        maxAltitude: "820 m / 2,690 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast"
+      },
+      {
+        day: "Day 23",
+        title: "Pokhara - Kathmandu (1,350 m) (Fly / Drive)",
+        description: "Return from Pokhara to Kathmandu by tourist bus or short domestic flight. Check into hotel and rest in Kathmandu.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast"
+      },
+      {
+        day: "Day 24",
+        title: "Free Buffer Day in Kathmandu",
+        description: "A reserve day in Kathmandu for shopping in Thamel or city sightseeing. Traditional Nepali Farewell Dinner hosted by Zenex Travels & Tours in the evening.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast & Farewell Dinner"
+      },
+      {
+        day: "Day 25",
+        title: "Final Departure from Kathmandu",
+        description: "Breakfast at hotel. Our Zenex Travels & Tours representative will transfer you to Tribhuvan International Airport 3 hours prior to your international flight departure.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Not Included",
+        meals: "Breakfast"
+      }
+    ],
+    costIncludes: [
+      "Airport transfers (Airport – Hotel – Airport) by private vehicle.",
+      "4 Nights in 3-Star hotel in Kathmandu, 1 Night in 4-Star hotel in Nepalgunj, and 1 Night in Pokhara with breakfast.",
+      "Domestic flight tickets (Kathmandu – Nepalgunj – Juphal & Jomsom – Pokhara) including guide and airport taxes.",
+      "Special Restricted Area Permits for Lower Dolpo & Upper Dolpo.",
+      "Shey Phoksundo National Park Entrance Fees.",
+      "All meals: breakfast, lunch, and dinner with tea/coffee during the trek & tented camp.",
+      "Member tents (2-man), kitchen tent, toilet tent, kitchen utensils, gas, and camping fees.",
+      "Professional licensed English-speaking guide, cook, kitchen staff, and porters/mules/yaks.",
+      "Satellite Phone support (available for member calls).",
+      "Guide and staff insurance, equipment, food, accommodation, and salary.",
+      "Tourist bus or flight tickets Pokhara - Kathmandu including guide.",
+      "Zenex Travels & Tours duffel bag for the trek.",
+      "Official Achievement Certificate for completion of Upper Dolpo Trek.",
+      "Traditional Nepali Farewell Dinner in Kathmandu.",
+      "All necessary government taxes and fees."
+    ],
+    costExcludes: [
+      "International airfare and Nepal entry visa fees.",
+      "Personal travel and medical insurance (must cover high-altitude rescue up to 6,000m).",
+      "Lunch and Dinner in Kathmandu, Nepalgunj, and Pokhara (except Farewell Dinner).",
+      "Emergency helicopter rescue expenses.",
+      "Personal expenses (Wi-Fi, hot showers, battery charging, laundry, extra snacks, alcoholic drinks).",
+      "Tips for guide, cook, staff, porters, and driver."
+    ],
+    essentialInfo: `
+      <h3>Essential Information for Upper Dolpo Trek - 25 Days</h3>
+
+      <h4>Permits Required</h4>
+      <p>Trekking Upper Dolpo requires two mandatory permits:</p>
+      <ul>
+        <li><strong>Upper Dolpo Restricted Area Permit (RAP):</strong> USD $500 per person for the first 10 days, plus USD $50 per person per day thereafter. Minimum 2 trekkers required.</li>
+        <li><strong>Shey Phoksundo National Park Entry Permit:</strong> NPR 3,000 per person.</li>
+      </ul>
+      <p>All permits are arranged in advance by Zenex Travels & Tours.</p>
+
+      <h4>Best Time to Trek</h4>
+      <p>The optimal trekking seasons are:</p>
+      <ul>
+        <li><strong>Spring (March to May):</strong> Pleasant weather, dry trails, blooming wildflowers, and vibrant local cultural festivals.</li>
+        <li><strong>Autumn (September to November):</strong> Post-monsoon crystal clarity, dry passes, and breathtaking mountain panoramas.</li>
+        <li><strong>Summer (June to August):</strong> Upper Dolpo lies in a Himalayan rain shadow, making monsoon trekking dry and ideal with vibrant green alpine meadows.</li>
+      </ul>
+
+      <h4>Group Tariff (2026/2027)</h4>
+      <ul>
+        <li><strong>2 - 3 Pax:</strong> US$ 3,630 per person</li>
+        <li><strong>4 - 7 Pax:</strong> US$ 3,040 per person</li>
+        <li><strong>8 - 11 Pax:</strong> US$ 2,875 per person</li>
+        <li><strong>12 - 15 Pax:</strong> US$ 2,760 per person</li>
+      </ul>
+    `,
+    faqs: [
+      {
+        question: "Where is Upper Dolpo located?",
+        answer: "Upper Dolpo is located in the far western trans-Himalayan region of Nepal, bordering Tibet inside Shey Phoksundo National Park."
+      },
+      {
+        question: "How do I reach Upper Dolpo?",
+        answer: "Fly from Kathmandu to Nepalgunj, then take a mountain flight to Juphal airstrip in Dolpa. The trek ends in Kagbeni/Jomsom with flights to Pokhara and Kathmandu."
+      },
+      {
+        question: "When is the best time for Upper Dolpo trek in Nepal?",
+        answer: "Spring (March to May), Autumn (September to November), and Summer (June to August) are ideal because Upper Dolpo lies in a Himalayan rain shadow."
+      },
+      {
+        question: "What permits are required for the Upper Dolpo trek?",
+        answer: "You need the Upper Dolpo Special Restricted Area Permit ($500 USD for 10 days + $50/day after) and Shey Phoksundo National Park Permit, arranged via Zenex Travels & Tours."
+      },
+      {
+        question: "How difficult is the Upper Dolpo trek?",
+        answer: "The trek is graded Challenging. It crosses multiple passes above 5,000 meters including Jungben La (5,550 m), Nagdalo (5,350 m), and Sele La (5,094 m), requiring 6 to 9 hours of daily walking."
+      },
+      {
+        question: "What kind of accommodation is available on Upper Dolpo trek?",
+        answer: "Accommodation is a mix of basic teahouses in gateway villages and full wilderness tented camping with a dedicated cook crew throughout Upper Dolpo."
+      },
+      {
+        question: "What food can I expect during Upper Dolpo trek?",
+        answer: "During camping days, our cook staff prepares hot soups, rice, pasta, curries, tsampa, and traditional Dal Bhat."
+      },
+      {
+        question: "Is it possible to do the Upper Dolpo trek independently?",
+        answer: "No, Nepal government restricted area regulations prohibit solo trekking. A minimum of 2 trekkers accompanied by a licensed guide is required."
+      },
+      {
+        question: "What are the major highlights of the Upper Dolpo trek?",
+        answer: "Highlights include the 800-year-old Shey Gompa, Crystal Mountain, turquoise Phoksundo Lake, Saldang, Tinjegaon, Chharka Bhot, and Kagbeni."
+      },
+      {
+        question: "How is mobile and internet connectivity during Upper Dolpo trek?",
+        answer: "Connectivity is non-existent past Ringmo/Dunai. Satellite phone support is carried for safety."
+      },
+      {
+        question: "Is altitude sickness a concern on Upper Dolpo trekking?",
+        answer: "Yes, passes exceed 5,500m. Acclimatization rest days at Dho-Tarap, Phoksundo, and Shey Gompa are built into the 25-day itinerary."
+      },
+      {
+        question: "How do I book this trek?",
+        answer: "Contact Zenex Travels & Tours to arrange restricted area permits, charter/domestic flights, guides, porters, and full camping logistics."
+      }
+    ]
   }
 ];
