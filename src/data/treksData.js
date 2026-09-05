@@ -4948,5 +4948,333 @@ export const treksData = [
         answer: "Contact Zenex Travels & Tours to customize your departure dates, process restricted permits, and reserve your expedition."
       }
     ]
+  },
+  {
+    id: "kanchenjunga-circuit-trek-22d",
+    slug: "kanchenjunga-circuit-trek-22d",
+    title: "Kanchenjunga Circuit Trek - 22 Days",
+    region: "kanchenjunga",
+    regionName: "Kanchenjunga Region",
+    location: "Kanchenjunga Conservation Area, Taplejung District, Eastern Nepal",
+    duration: "22",
+    durationUnit: "Days",
+    price: "US$2,055",
+    originalPrice: "US$2,290",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Hard",
+    maxAltitude: "5,400 m / 17,716 ft (Yalung Base Camp)",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "Walking / Hiking & High Passes Expedition",
+    accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
+    meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
+    bestSeason: "Spring (March - May) & Autumn (Sept - Nov)",
+    image: "/images/kanchenjunga.jpg",
+    gallery: [
+      "/images/kanchenjunga.jpg"
+    ],
+    overview: `
+      <h3>Kanchenjunga Circuit Trek 22 Days | Full Expedition to North & South Base Camps</h3>
+      <p>The <strong>Kanchenjunga Circuit Trek (22 Days)</strong> is the ultimate high-altitude adventure in eastern Nepal, taking seasoned trekkers to both the <strong>North Base Camp (Pangpema – 5,143 m)</strong> and <strong>South Base Camp (Yalung – 5,400 m)</strong> of Mount Kanchenjunga (8,586 m)—the world's third-highest peak. As a key section of Nepal's Great Himalayan Trail (GHT), this circuit traverses raw, uncrowded landscapes from subtropical bamboo forests to glacial moraines.</p>
+      <p>The expedition crosses three challenging high-altitude Himalayan passes: <strong>Sele La (4,290 m)</strong>, <strong>Sinion La (4,646 m)</strong>, and <strong>Mirgin Pass (4,480 m)</strong>, offering 360-degree panoramas of Mt. Kanchenjunga, Mt. Jannu (Kumbhakarna – 7,711 m), Yalung Kang (8,505 m), Kabru Peaks, and Rathong. Along the circuit, explore authentic Sherpa and Limbu villages like Ghunsa, Gyabla, Khambachen, Lhonak, Tseram, and Ramche.</p>
+      <p>At <strong>Zenex Travels & Tours</strong>, we provide complete, professional expedition logistics—including domestic flights (Kathmandu – Bhadrapur), private 4WD jeep transfers to Taplejung and Sekathum, Kanchenjunga Conservation Area Permits (KCAP), Special Restricted Area Permits (RAP), licensed English-speaking mountain guides, experienced porters, lodge bookings, and 3-star hotel stays in Kathmandu.</p>
+    `,
+    highlights: [
+      "Visit both Kanchenjunga North Base Camp (Pangpema – 5,143 m) and Yalung South Base Camp (5,400 m) on a single 22-day circuit.",
+      "Cross three high Himalayan passes above 4,000 meters: Sele La (4,290 m), Sinion La (4,646 m), and Mirgin Pass (4,480 m).",
+      "Stand at Oktang View Point (4,730 m) for jaw-dropping close-up views of Kanchenjunga South Face and Yalung Glacier.",
+      "Marvel at towering peaks: Kumbhakarna (Jannu – 7,711 m), Yalung Kang (8,505 m), Nepal Peak, Tent Peak, and Kabru Range.",
+      "Trek along a key section of the Great Himalayan Trail (GHT) through pristine, uncrowded eastern wilderness.",
+      "Immerse in authentic Sherpa, Limbu, and Rai mountain heritage in villages like Ghunsa, Gyabla, and Phale.",
+      "Explore the Kanchenjunga Conservation Area, sanctuary for red pandas, blue sheep, and rare Himalayan wildlife.",
+      "Overland jeep travel through the scenic tea gardens of Ilam and Taplejung.",
+      "Full expedition management by Zenex Travels & Tours with permits, flights, private transport, guide, and porters."
+    ],
+    quickFacts: {
+      country: "Nepal",
+      duration: "22 Days",
+      tripGrade: "Hard",
+      maxAltitude: "5,400 m / 17,716 ft",
+      starts: "Kathmandu",
+      ends: "Kathmandu",
+      activities: "Walking / Hiking",
+      accommodation: "3-Star Hotel / Mountain Lodges & Teahouses",
+      meals: "Breakfast in KTM, All Meals on Trek",
+      bestTime: "Spring (March - May) & Autumn (Sept - Nov)"
+    },
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Arrival in Kathmandu (1,350 m)",
+        description: "Welcome to Nepal! Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be met by our representative from Zenex Travels & Tours and transferred to your hotel. Pre-trip briefing meeting held in the evening.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Not Included"
+      },
+      {
+        day: "Day 02",
+        title: "Free Day in Kathmandu for Permit Preparation & Sightseeing",
+        description: "Free day in Kathmandu while our team submits passport details to immigration to issue the Kanchenjunga Special Restricted Area Permit. Option to explore UNESCO World Heritage Sites like Boudhanath, Pashupatinath, or Bhaktapur.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast"
+      },
+      {
+        day: "Day 03",
+        title: "Kathmandu - Bhadrapur (Flight) & Drive to Taplejung (1,820 m)",
+        description: "Morning 45-minute domestic flight from Kathmandu to Bhadrapur. Meet your driver and proceed on a 7 to 8 hour overland jeep drive (214 km) through the rolling tea gardens of Ilam to Taplejung.",
+        maxAltitude: "1,820 m / 5,971 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 04",
+        title: "Taplejung - Sekathum (1,585 m)",
+        description: "Drive off-road by private jeep (4 to 5 hours) to Sekathum along the Tamor River valley, passing terraced farms and rural Limbu/Sherpa villages.",
+        maxAltitude: "1,585 m / 5,200 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 05",
+        title: "Sekathum - Amjilasa (2,395 m)",
+        description: "Begin trekking along Ghunsa Khola valley. Ascend stone staircases through bamboo and rhododendron forests, crossing suspension bridges to reach the cliffside village of Amjilasa (6 hours).",
+        maxAltitude: "2,395 m / 7,857 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 06",
+        title: "Amjilasa - Gyabla (2,730 m)",
+        description: "Trek for 6 hours past Thyangyan through oak and rhododendron forests. Spot yaks grazing in meadows as you reach the Tibetan-Sherpa village of Gyabla.",
+        maxAltitude: "2,730 m / 8,956 ft",
+        accommodation: "Basic Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 07",
+        title: "Gyabla - Ghunsa (3,427 m)",
+        description: "Trek 7 hours past Phale village—a Tibetan refugee settlement—crossing iron bridges over Ghunsa Khola to Ghunsa (3,427 m), the largest Sherpa settlement in the region.",
+        maxAltitude: "3,427 m / 11,243 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 08",
+        title: "Ghunsa - Khambachen (4,050 m)",
+        description: "Ascend through pine and larch forests alongside Ghunsa Khola. Pass mani walls as mountain views of Mt. Jannu (Kumbhakarna) open up. Reach Khambachen in 5 hours.",
+        maxAltitude: "4,050 m / 13,287 ft",
+        accommodation: "Tea House",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 09",
+        title: "Acclimatization Day in Khambachen (Hiking to Kumbhakarna Base Camp)",
+        description: "Rest and acclimatize in Khambachen. Take a 3-hour side hike uphill to Kumbhakarna Base Camp (4,100 m) for dramatic views of Mount Jannu's sheer north face.",
+        maxAltitude: "4,100 m / 13,451 ft",
+        accommodation: "Tea House",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 10",
+        title: "Khambachen - Lhonak (4,780 m)",
+        description: "Ascend over rocky glacial moraines past Ramtang viewpoint with views of Kirat Chuli and Mera Peak. Reach the windswept plateau of Lhonak after 5 hours.",
+        maxAltitude: "4,780 m / 15,682 ft",
+        accommodation: "Tea House",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 11",
+        title: "Lhonak - Kanchenjunga North Base Camp (Pangpema – 5,143 m) - Lhonak",
+        description: "Early departure on a 3.5-hour trek along Kanchenjunga Glacier to North Base Camp (Pangpema – 5,143 m). Enjoy spectacular close-up views of Mt. Kanchenjunga (8,586 m). Return to Lhonak (2 hours).",
+        maxAltitude: "5,143 m / 16,873 ft",
+        accommodation: "Tea House",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 12",
+        title: "Lhonak - Khambachen - Ghunsa (3,427 m)",
+        description: "Descend back down the valley past Khambachen to Ghunsa (6 to 7 hours walking). Enjoy a warm meal and rest in preparation for the high passes.",
+        maxAltitude: "3,427 m / 11,243 ft",
+        accommodation: "Tea House",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 13",
+        title: "Ghunsa - Selele Phedi (4,000 m)",
+        description: "Leave Ghunsa and climb steeply through rhododendron and juniper forests into high alpine pastures. Reach the staging point of Selele Phedi (4,000 m) after 5 to 6 hours.",
+        maxAltitude: "4,000 m / 13,123 ft",
+        accommodation: "Tea House",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 14",
+        title: "Selele Phedi - Sele La (4,480 m) - Sinion La (4,646 m) - Mirgin Pass (4,480 m) - Tseram (3,870 m)",
+        description: "High pass crossing day! Early morning start (5 AM) traversing three passes: Sele La (4,480 m), Sinion La (4,646 m), and Mirgin Pass (4,480 m). Enjoy views of Kabru, Talung, and Kanchenjunga South before descending to Tseram (7 hours).",
+        maxAltitude: "4,646 m / 15,242 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 15",
+        title: "Tseram - Ramche (4,580 m)",
+        description: "Ascend wide Yalung Valley along glacial streams for 5 hours, passing Lapsang to reach Ramche (4,580 m) with views of Rathong and Kokthang.",
+        maxAltitude: "4,580 m / 15,026 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 16",
+        title: "Ramche - Yalung Base Camp (5,400 m) / Oktang View Point (4,730 m) - Ramche",
+        description: "Hike along Yalung Glacier to Oktang View Point (4,730 m) for panoramas of Kanchenjunga South Face and Yalung Kang (8,505 m). Continue to Yalung Base Camp (5,400 m) before descending to Ramche (7 to 8 hours round trip).",
+        maxAltitude: "5,400 m / 17,716 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 17",
+        title: "Ramche - Tortang (2,995 m)",
+        description: "Descend along Simbuwa Khola through high alpine and rhododendron forests to Tortang (7 hours walking).",
+        maxAltitude: "2,995 m / 9,826 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 18",
+        title: "Tortang - Kyansar / Yasang (1,700 m)",
+        description: "Continue descending through bamboo and pine forests to Yasang / Kyansar (5 to 6 hours).",
+        maxAltitude: "1,700 m / 5,577 ft",
+        accommodation: "Lodge",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 19",
+        title: "Yasang - Hellok (Trek) - Taplejung / Ilam (1,200 m) (Drive)",
+        description: "Trek 2 hours down to Hellok, then board a private jeep for a 7 to 8 hour drive via Taplejung to Ilam / Kanyam tea gardens.",
+        maxAltitude: "1,820 m / 5,971 ft",
+        accommodation: "Lodge / Hotel",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 20",
+        title: "Ilam / Taplejung - Bhadrapur (Drive) & Fly to Kathmandu (1,350 m)",
+        description: "Drive from Ilam to Bhadrapur Airport (7 to 8 hours drive from Taplejung or 2.5 hours from Ilam) and catch your domestic flight back to Kathmandu. Overnight at hotel.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast, Lunch & Dinner"
+      },
+      {
+        day: "Day 21",
+        title: "Free Buffer / Sightseeing Day in Kathmandu",
+        description: "Reserve day in Kathmandu for rest, optional UNESCO World Heritage sightseeing, or souvenir shopping in Thamel. Farewell dinner hosted by Zenex Travels & Tours.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Hotel",
+        meals: "Breakfast & Farewell Dinner"
+      },
+      {
+        day: "Day 22",
+        title: "Final Departure from Kathmandu",
+        description: "Breakfast at hotel. Our Zenex Travels & Tours correspondent will pick you up and transfer you to Kathmandu Airport for your international flight.",
+        maxAltitude: "1,350 m / 4,429 ft",
+        accommodation: "Not Included",
+        meals: "Breakfast"
+      }
+    ],
+    costIncludes: [
+      "Airport transfers (Airport – Hotel – Airport) by private vehicle.",
+      "4 Nights 3-Star hotel accommodation in Kathmandu with breakfast (twin-sharing).",
+      "Domestic flight tickets (Kathmandu – Bhadrapur – Kathmandu) including guide and taxes.",
+      "Private local overland transfers (Bhadrapur – Taplejung – Sekathum – Ilam – Bhadrapur) for clients, guide, and porters.",
+      "Kanchenjunga Conservation Area Permit (KCAP).",
+      "Special Restricted Area Permit to Kanchenjunga (RAP).",
+      "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the trek.",
+      "Teahouse/Lodge accommodation during the trek.",
+      "Government-licensed English-speaking trekking guide.",
+      "Porters (1 porter for 2 clients, carrying up to 20-22 kg total).",
+      "Guide and porter salary, insurance, food, accommodation, and equipment.",
+      "Zenex Travels & Tours duffel bag for the trek.",
+      "Official Achievement Certificate of Kanchenjunga Circuit Trek.",
+      "Traditional Nepali Farewell Dinner in Kathmandu.",
+      "All government taxes, service charges, and official fees."
+    ],
+    costExcludes: [
+      "International airfare and Nepal entry visa fees.",
+      "Personal travel and medical insurance (must cover high-altitude rescue up to 6,000m).",
+      "Lunch and Dinner in Kathmandu (except Farewell Dinner).",
+      "Emergency helicopter rescue expenses.",
+      "Personal expenses (Wi-Fi, hot showers, battery charging, laundry, extra snacks, alcoholic drinks).",
+      "Tips for guide, porters, and driver."
+    ],
+    essentialInfo: `
+      <h3>Essential Information for Kanchenjunga Circuit Trek</h3>
+
+      <h4>Permits Required</h4>
+      <p>Trekking the Kanchenjunga Circuit requires two mandatory permits:</p>
+      <ul>
+        <li><strong>Kanchenjunga Conservation Area Permit (KCAP):</strong> NPR 2,000 per person.</li>
+        <li><strong>Special Restricted Area Permit (RAP):</strong> Mandatory for restricted zones, issued via registered agencies like Zenex Travels & Tours. Minimum 2 trekkers required.</li>
+      </ul>
+
+      <h4>Best Time to Trek</h4>
+      <p>The optimal trekking seasons are:</p>
+      <ul>
+        <li><strong>Spring (March to May):</strong> Mild temperatures, blooming rhododendrons, and clear morning vistas.</li>
+        <li><strong>Autumn (September to November):</strong> Crisp air, post-monsoon clarity, and stable weather.</li>
+      </ul>
+
+      <h4>Accommodations & Meals</h4>
+      <p>Accommodation is in basic family-run teahouses with simple twin rooms and shared facilities. Bringing a warm -10°C to -15°C sleeping bag is recommended for higher stops like Lhonak, Pangpema, and Ramche.</p>
+
+      <h4>Group Tariff (2026/2027)</h4>
+      <ul>
+        <li><strong>2 - 3 Pax:</strong> US$ 2,055 per person</li>
+        <li><strong>4 - 7 Pax:</strong> US$ 1,800 per person</li>
+        <li><strong>8 - 11 Pax:</strong> US$ 1,765 per person</li>
+        <li><strong>12 - 15 Pax:</strong> US$ 1,670 per person</li>
+      </ul>
+    `,
+    faqs: [
+      {
+        question: "What is the Kanchenjunga Circuit Trek?",
+        answer: "The Kanchenjunga Circuit is a comprehensive 22-day expedition that loops around both North Base Camp (Pangpema – 5,143 m) and South Base Camp (Yalung – 5,400 m), crossing three high passes above 4,400 meters."
+      },
+      {
+        question: "How difficult is the Kanchenjunga Circuit Trek?",
+        answer: "The trek is graded Hard. It reaches altitudes up to 5,400 m, involves crossing 3 high passes (Sele La, Sinion La, Mirgin Pass), and requires walking 6 to 8 hours daily across remote, rugged Himalayan terrain."
+      },
+      {
+        question: "What are the highest points on the Kanchenjunga Circuit?",
+        answer: "The highest points reached on the circuit are Yalung Base Camp (5,400 m), Pangpema North Base Camp (5,143 m), and Sinion La Pass (4,646 m)."
+      },
+      {
+        question: "Do I need special permits for the Kanchenjunga Circuit?",
+        answer: "Yes, you need the Kanchenjunga Conservation Area Permit (KCAP) and Special Restricted Area Permit (RAP), which requires a minimum of 2 trekkers accompanied by a licensed guide."
+      },
+      {
+        question: "What is the best time to trek the Kanchenjunga Circuit?",
+        answer: "Spring (March to May) and Autumn (September to November) offer the best weather, clear mountain visibility, and safe pass conditions."
+      },
+      {
+        question: "What mountain views can I see on the circuit?",
+        answer: "You will see Mt. Kanchenjunga (8,586 m), Mt. Jannu/Kumbhakarna (7,711 m), Yalung Kang (8,505 m), Kabru range, Rathong, Kirat Chuli, and Nepal Peak."
+      },
+      {
+        question: "What accommodation is available on the circuit?",
+        answer: "Accommodation is in basic family-run teahouses in villages like Ghunsa, Khambachen, Lhonak, and Ramche, and rustic high-pass teahouses at Selele Phedi."
+      },
+      {
+        question: "Can I trek the Kanchenjunga Circuit solo?",
+        answer: "No, restricted area regulations in Nepal require a minimum of 2 trekkers accompanied by a licensed guide from a registered agency."
+      },
+      {
+        question: "Is travel insurance mandatory?",
+        answer: "Yes, travel insurance covering medical expenses and emergency high-altitude helicopter evacuation up to 6,000 meters is mandatory."
+      },
+      {
+        question: "How do I book this trek?",
+        answer: "Contact Zenex Travels & Tours to organize permits, guides, porters, domestic flights, and private transfers."
+      }
+    ]
   }
 ];
