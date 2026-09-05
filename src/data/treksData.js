@@ -7562,12 +7562,14 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
     accommodation: "Hotels / Lodges / Tented camp",
     meals: "Breakfast, Lunch & Dinner",
     bestSeason: "Spring & Autumn",
-    image: "/trek images/Rolwaling Region Treks.jpg",
+    image: "https://www.himalayajourneys.com/assets/images/off-the-beaten/rolwaling-trek.jpg",
     gallery: [
-      "/trek images/Rolwaling Region Treks.jpg",
-      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2070",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aTWoTsjs4j5Di3v4-R0seUgNi9hTxNsut818NZ-stbGka7MfoxU1WkOq&s=10",
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070"
+      "https://www.himalayajourneys.com/assets/images/off-the-beaten/rolwaling-trek.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPkpxEVbEm6-Yhi2ZDYtqNzjHR1p3in-kW65RYx1gKVOltIl67stb5hYcq&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MMhAfHRe010efHSo2zG_RhwMR6wudt5bMEkWP9w9YFIdoifIcicCvgI&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXO9AwbvlkhlCelAmGcXoP2dIdKkGZk4F3_KNBhrYOluwyQjzrsqlyw9c&s=10",
+      "https://alpineecotrek.com/wp-content/uploads/2023/01/Rowaling-Trekkinggal3.webp",
+      "/trek images/Rolwaling Region Treks.jpg"
     ],
     overview: `
       <h3>Rolwaling Valley Trek - 18 Days | Remote Villages, Glacial Lakes & Sherpa Culture</h3>
