@@ -323,7 +323,7 @@ const TrekDetail = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const foundTrek = treks.find(t => t.id === id);
+    const foundTrek = treks.find(t => t.id === id || t.slug === id || t.id === `TRIP-${id}` || t.slug === `TRIP-${id}`);
     setTrek(foundTrek);
   }, [id, treks]);
 

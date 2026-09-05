@@ -557,9 +557,66 @@ export const AppDataProvider = ({ children }) => {
           }
         }
 
+        // Merge treksData static definitions with API/database treks and trekking tourTrips
+        const allTreksMap = new Map();
+
+        // 1. Add static treksData from local data file first
+        (treksData || []).forEach(t => {
+          if (t && (t.id || t.slug)) {
+            const key = t.id || t.slug;
+            allTreksMap.set(key, t);
+          }
+        });
+
+        // 2. Add API/DB fetched treks (overwriting or extending)
+        ensureArray(finalTreks).forEach(t => {
+          if (t && (t.id || t.slug)) {
+            const key = t.id || t.slug;
+            allTreksMap.set(key, { ...allTreksMap.get(key), ...t });
+          }
+        });
+
+        // 3. Add any tourTrips categorized as Treks if not already in treks
+        ensureArray(finalTourTrips).forEach(t => {
+          if (t && (t.id || t.slug) && (t.id.startsWith('TRIP-') || t.activities?.includes('Trekking') || t.type === 'Trek' || t.category === 'Trek')) {
+            const trekKey = t.slug || t.id.replace(/^TRIP-/, '');
+            if (!allTreksMap.has(trekKey) && !allTreksMap.has(t.id)) {
+              allTreksMap.set(t.id, {
+                id: t.id,
+                slug: t.slug || t.id,
+                title: t.title,
+                region: t.region || 'nepal',
+                duration: t.duration || '14',
+                durationUnit: t.durationUnit || 'Days',
+                price: t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : t.price || '',
+                originalPrice: t.pricingInfo?.originalPrice ? `US$${t.pricingInfo.originalPrice}` : t.originalPrice || '',
+                rating: t.rating || 4.9,
+                reviewsCount: t.reviewsCount || 12,
+                difficulty: t.grade || t.difficulty || 'Moderate',
+                maxAltitude: t.maxAltitude || '',
+                starts: 'Kathmandu',
+                ends: 'Kathmandu',
+                activities: 'Trekking & Exploration',
+                image: t.image || t.featuredImage,
+                gallery: t.gallery || [t.image],
+                description: t.overview || t.description,
+                overview: t.overview || t.description,
+                highlights: t.highlights || [],
+                quickFacts: t.quickFacts || {},
+                itinerary: t.itinerary || [],
+                costIncludes: t.costIncludes || t.includes || [],
+                costExcludes: t.costExcludes || t.excludes || [],
+                faqs: t.faqs || []
+              });
+            }
+          }
+        });
+
+        const mergedTreks = Array.from(allTreksMap.values());
+
         setVehicles(ensureArray(finalVehicles));
         setPackages(ensureArray(finalPackages));
-        setTreks(ensureArray(finalTreks));
+        setTreks(mergedTreks);
         setDrivers(ensureArray(finalDrivers));
         setTourTrips(ensureArray(finalTourTrips));
         setRegions(ensureArray(finalRegions));
