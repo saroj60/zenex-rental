@@ -668,6 +668,47 @@ const TrekDetail = () => {
               </div>
             )}
 
+            {/* Outline Itinerary */}
+            {trek.itinerary && trek.itinerary.length > 0 && (
+              <div id="outline-itinerary" className="scroll-mt-40 pb-8 border-b border-gray-100">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif flex items-center gap-2">
+                  <Calendar className="text-himalayan-blue" size={24} />
+                  Outline Itinerary
+                </h2>
+                <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm bg-white">
+                  <table className="w-full text-left border-collapse text-sm">
+                    <thead>
+                      <tr className="bg-slate-900 text-white font-semibold">
+                        <th className="py-3.5 px-4 rounded-tl-2xl">Day & Title</th>
+                        <th className="py-3.5 px-4">Max Altitude</th>
+                        <th className="py-3.5 px-4 rounded-tr-2xl">Activity / Travel</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100 text-gray-700">
+                      {trek.itinerary.map((day, idx) => {
+                        let dayLabel = day.day ? day.day.trim() : `Day ${String(idx + 1).padStart(2, '0')}`;
+                        if (/^D\s+Day/i.test(dayLabel)) dayLabel = dayLabel.replace(/^D\s+/i, '');
+                        return (
+                          <tr key={idx} className="hover:bg-slate-50/80 transition-colors">
+                            <td className="py-3 px-4 font-medium text-gray-900">
+                              <span className="font-bold text-himalayan-blue mr-2">{dayLabel}:</span>
+                              {day.title}
+                            </td>
+                            <td className="py-3 px-4 text-gray-600 whitespace-nowrap">
+                              {day.maxAltitude || '-'}
+                            </td>
+                            <td className="py-3 px-4 text-gray-600 whitespace-nowrap">
+                              {day.travelMode || day.modeOfTravel || (day.activities ? day.activities : 'Walking')}
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
             {/* Detailed Itinerary */}
             {trek.itinerary && trek.itinerary.length > 0 && (
               <div id="itinerary" className="scroll-mt-40 pb-6 border-b border-gray-100">
