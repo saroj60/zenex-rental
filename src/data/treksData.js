@@ -2269,7 +2269,7 @@ export const treksData = [
       "https://media.exploreradventure.com/uploads/media/Altitude-Sickness-in-Ganja-La-Pass.jpg",
       "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80",
       "https://www.peacenepaltreks.com/uploads/langtang-ganjala-trek.jpg",
-      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
@@ -3035,7 +3035,7 @@ export const treksData = [
       "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
       <h3>Short Upper Mustang Trek 18 Days | Discover Nepal's Forbidden Kingdom & Tibetan Culture</h3>
@@ -5303,12 +5303,12 @@ export const treksData = [
     accommodation: "3-Star Hotel in KTM & Nepalgunj / Mountain Lodges & Tented Camps",
     meals: "Breakfast in KTM & Nepalgunj, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May), Summer & Autumn (Sept - Nov)",
-    image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
       "https://himalayanecologicaltrek.com/uploads/fullbanner/lower-dolpo.webp",
       "https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
@@ -7162,9 +7162,9 @@ This route combines basic lodges in gateway towns (Burtibang, Dhorpatan, Ringmo,
     image: "https://missionecotrek.com/wp-content/uploads/2024/08/Dhaulagiri-Circuit-Trek-575x513.webp",
     gallery: [
       "https://missionecotrek.com/wp-content/uploads/2024/08/Dhaulagiri-Circuit-Trek-575x513.webp",
-      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80"
     ],
     overview: `
