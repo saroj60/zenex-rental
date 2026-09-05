@@ -10,6 +10,7 @@ import { useAppData } from '../context/AppDataContext';
 import SEO from '../components/SEO';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
+import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList } from '../utils/detailFormatters';
 
 const TrekDetail = () => {
   const { id } = useParams();
@@ -207,6 +208,11 @@ const TrekDetail = () => {
       </div>
     );
   }
+
+  const inclusions = getInclusionsList(trek);
+  const exclusions = getExclusionsList(trek);
+  const addons = getAddonsList(trek);
+  const highlights = getHighlightsList(trek);
 
   return (
     <div className="pt-24 pb-16 min-h-screen bg-white">
@@ -460,16 +466,19 @@ const TrekDetail = () => {
             </div>
 
             {/* Highlights */}
-            {trek.highlights && trek.highlights.length > 0 && (
+            {highlights.length > 0 && (
               <div className="pb-6 border-b border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Highlights of {trek.title}</h2>
                 <ul className="space-y-4">
-                  {trek.highlights.map((highlight, index) => (
+                  {highlights.map((hlt, index) => (
                     <li key={index} className="flex items-start gap-4">
                       <div className="mt-0.5">
                         <CheckCircle2 className="w-6 h-6 text-green-500" strokeWidth={2} />
                       </div>
-                      <span className="text-gray-700 leading-relaxed text-[15px]">{highlight}</span>
+                      <div>
+                        <span className="text-gray-800 font-bold leading-relaxed text-[15px]">{hlt.title}</span>
+                        {hlt.description && <p className="text-gray-600 text-sm mt-0.5">{hlt.description}</p>}
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -679,36 +688,42 @@ const TrekDetail = () => {
               </div>
             )}
 
-            {/* Includes / Excludes */}
-            {((trek.costIncludes && trek.costIncludes.length > 0) || (trek.includes && trek.includes.length > 0) || (trek.costExcludes && trek.costExcludes.length > 0) || (trek.excludes && trek.excludes.length > 0)) && (
+            {/* Includes / Excludes & Add-ons */}
+            {(inclusions.length > 0 || exclusions.length > 0 || addons.length > 0) && (
               <div id="cost" className="scroll-mt-40 pb-6 border-b border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 mb-8 font-serif">Cost Details</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {((trek.costIncludes && trek.costIncludes.length > 0) || (trek.includes && trek.includes.length > 0)) && (
-                    <div className="bg-green-50 p-6 rounded-2xl">
+                  {inclusions.length > 0 && (
+                    <div className="bg-green-50/80 border border-green-100 p-6 rounded-2xl">
                       <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2">
                         <Check className="text-green-600" /> What's Included
                       </h4>
                       <ul className="space-y-3">
-                        {(trek.costIncludes || trek.includes).map((item, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                        {inclusions.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                             <Check size={16} className="text-green-500 shrink-0 mt-0.5" />
-                            <span>{item}</span>
+                            <div>
+                              <span className="font-medium text-gray-800">{item.title}</span>
+                              {item.description && <p className="text-xs text-gray-500 mt-0.5">{item.description}</p>}
+                            </div>
                           </li>
                         ))}
                       </ul>
                     </div>
                   )}
-                  {((trek.costExcludes && trek.costExcludes.length > 0) || (trek.excludes && trek.excludes.length > 0)) && (
-                    <div className="bg-red-50 p-6 rounded-2xl">
+                  {exclusions.length > 0 && (
+                    <div className="bg-red-50/80 border border-red-100 p-6 rounded-2xl">
                       <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2">
                         <X className="text-red-600" /> What's Excluded
                       </h4>
                       <ul className="space-y-3">
-                        {(trek.costExcludes || trek.excludes).map((item, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                        {exclusions.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                             <X size={16} className="text-red-500 shrink-0 mt-0.5" />
-                            <span>{item}</span>
+                            <div>
+                              <span className="font-medium text-gray-800">{item.title}</span>
+                              {item.description && <p className="text-xs text-gray-500 mt-0.5">{item.description}</p>}
+                            </div>
                           </li>
                         ))}
                       </ul>
@@ -717,14 +732,14 @@ const TrekDetail = () => {
                 </div>
 
                 {/* Add-ons & Exclusive Options */}
-                {trek.addOns && trek.addOns.length > 0 && (
+                {addons.length > 0 && (
                   <div className="mt-8 bg-purple-50/70 border border-purple-100 rounded-2xl p-6">
                     <h3 className="text-lg font-bold text-purple-900 mb-4 flex items-center gap-2">
                       <Plus className="text-purple-600" size={20} />
                       Add-ons & Exclusive Upgrade Options
                     </h3>
                     <div className="grid grid-cols-1 gap-3">
-                      {trek.addOns.map((addon, idx) => (
+                      {addons.map((addon, idx) => (
                         <div key={idx} className="bg-white/80 rounded-xl p-4 border border-purple-100/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                           <div>
                             <h4 className="font-bold text-purple-950 text-sm">{addon.title}</h4>

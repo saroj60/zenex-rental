@@ -6,6 +6,7 @@ import { useAppData } from '../context/AppDataContext';
 
 import SEO from '../components/SEO';
 import TrustReviewBadges from '../components/TrustReviewBadges';
+import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList } from '../utils/detailFormatters';
 
 export const packageExtraData = {
   'nepal-tour-poon-hill-trek-12d': {
@@ -9506,6 +9507,11 @@ const PackageDetail = () => {
     window.scrollTo(0, 0);
   }, [id]);
 
+  const inclusions = getInclusionsList(pkg);
+  const exclusions = getExclusionsList(pkg);
+  const addons = getAddonsList(pkg);
+  const highlights = getHighlightsList(pkg);
+
   return (
     <div className="bg-[#F4F6F8] min-h-screen">
       <SEO 
@@ -9698,17 +9704,20 @@ const PackageDetail = () => {
               </div>
             )}
 
-            {/* Highlights, Inclusions & Exclusions */}
-            {(pkg.highlights || pkg.inclusions || pkg.exclusions) && (
+            {/* Highlights, Inclusions, Exclusions & Add-ons */}
+            {(highlights.length > 0 || inclusions.length > 0 || exclusions.length > 0 || addons.length > 0) && (
               <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
-                {pkg.highlights && (
+                {highlights.length > 0 && (
                   <>
                     <h2 className="text-2xl font-extrabold text-[#1e3a8a] mb-6">Package Highlights</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                      {pkg.highlights.map((highlight, idx) => (
+                      {highlights.map((hlt, idx) => (
                         <div key={idx} className="flex items-start">
                           <CheckCircle2 className="text-[#e53a24] mr-3 shrink-0 mt-0.5" size={20} />
-                          <span className="text-gray-700 font-medium">{highlight}</span>
+                          <div>
+                            <span className="text-gray-800 font-semibold">{hlt.title}</span>
+                            {hlt.description && <p className="text-xs text-gray-500 mt-0.5">{hlt.description}</p>}
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -9716,31 +9725,56 @@ const PackageDetail = () => {
                 )}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {pkg.inclusions && (
+                  {inclusions.length > 0 && (
                     <div>
                       <h3 className="text-lg font-bold text-green-700 mb-4 flex items-center"><CheckCircle2 className="mr-2" size={20} /> What's Included</h3>
                       <ul className="space-y-3">
-                        {pkg.inclusions.map((item, idx) => (
+                        {inclusions.map((item, idx) => (
                           <li key={idx} className="flex items-start text-sm text-gray-700">
-                            <span className="text-green-500 mr-2 mt-0.5">•</span> {item}
+                            <span className="text-green-500 mr-2 mt-0.5">•</span>
+                            <div>
+                              <span className="font-medium text-gray-800">{item.title}</span>
+                              {item.description && <p className="text-xs text-gray-500 mt-0.5">{item.description}</p>}
+                            </div>
                           </li>
                         ))}
                       </ul>
                     </div>
                   )}
-                  {pkg.exclusions && (
+                  {exclusions.length > 0 && (
                     <div>
                       <h3 className="text-lg font-bold text-red-700 mb-4 flex items-center"><span className="material-symbols-outlined mr-2">cancel</span> Not Included</h3>
                       <ul className="space-y-3">
-                        {pkg.exclusions.map((item, idx) => (
+                        {exclusions.map((item, idx) => (
                           <li key={idx} className="flex items-start text-sm text-gray-700">
-                            <span className="text-red-500 mr-2 mt-0.5">•</span> {item}
+                            <span className="text-red-500 mr-2 mt-0.5">•</span>
+                            <div>
+                              <span className="font-medium text-gray-800">{item.title}</span>
+                              {item.description && <p className="text-xs text-gray-500 mt-0.5">{item.description}</p>}
+                            </div>
                           </li>
                         ))}
                       </ul>
                     </div>
                   )}
                 </div>
+
+                {addons.length > 0 && (
+                  <div className="mt-8 bg-purple-50 p-6 rounded-2xl border border-purple-100">
+                    <h3 className="text-lg font-bold text-purple-900 mb-4">Add-ons & Exclusive Upgrade Options</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {addons.map((addon, idx) => (
+                        <div key={idx} className="bg-white p-3.5 rounded-xl border border-purple-100 flex justify-between items-center gap-3">
+                          <div>
+                            <span className="font-bold text-gray-900 text-sm block">{addon.title}</span>
+                            {addon.details && <span className="text-xs text-gray-500 block mt-0.5">{addon.details}</span>}
+                          </div>
+                          {addon.price && <span className="bg-purple-100 text-purple-800 font-bold text-xs px-2.5 py-1 rounded-lg shrink-0">{addon.price}</span>}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
 
