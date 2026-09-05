@@ -21,17 +21,26 @@ const TrekRegion = () => {
                        regionData[fallbackKey.replace(/-region.*/, '')] ||
                        regionData[fallbackKey.split('-')[0]] || null;
 
-  const rawTitle = matchedRegion?.name || fallbackData?.title || `${regionId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Region Treks`;
+  const rawTitle = fallbackData?.title || matchedRegion?.name || `${regionId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())} Region Treks`;
   const cleanTitle = rawTitle.replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
-  const cleanDescription = matchedRegion?.description || fallbackData?.description || `Discover pristine mountain landscapes, authentic Himalayan heritage, and unforgettable trail experiences in the ${cleanTitle}.`;
+  
+  const fallbackDesc = fallbackData?.description;
+  const dbDesc = matchedRegion?.description;
+  const rawDesc = (fallbackDesc && fallbackDesc.length >= (dbDesc?.length || 0)) 
+    ? fallbackDesc 
+    : (dbDesc || `Discover pristine mountain landscapes, authentic Himalayan heritage, and unforgettable trail experiences in the ${cleanTitle}.`);
 
-  const cleanImage = matchedRegion?.image || fallbackData?.image || '/images/everest base.jpg';
+  const cleanImage = fallbackData?.image || matchedRegion?.image || '/images/everest base.jpg';
+
+  const formattedDescription = rawDesc.includes('<p>') 
+    ? rawDesc 
+    : rawDesc.split(/\n\s*\n/).map(p => `<p class="mb-4 last:mb-0 leading-relaxed text-slate-700 font-normal">${p.trim()}</p>`).join('');
 
   const region = {
     id: regionId,
     title: cleanTitle,
     image: cleanImage,
-    description: cleanDescription.startsWith('<p>') ? cleanDescription : `<p>${cleanDescription}</p>`
+    description: formattedDescription
   };
 
   const combinedList = [
