@@ -1,1 +1,277 @@
-export const treksData = [];
+export const treksData = [
+  {
+    id: "tsum-valley-trek-17d",
+    slug: "tsum-valley-trek-17d",
+    title: "Tsum Valley Trek - 17 Days",
+    region: "manaslu",
+    regionName: "Manaslu Region",
+    location: "Manaslu Conservation Area, Gorkha, Nepal",
+    duration: "17",
+    durationUnit: "Days",
+    price: "US$1,250",
+    originalPrice: "US$1,450",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Moderate",
+    maxAltitude: "4,200 m / 13,779 ft",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "Trekking & Cultural Exploration",
+    accommodation: "3-Star Hotel in Kathmandu / Teahouses on Trail",
+    meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
+    bestSeason: "Spring (March - May) & Autumn (September - November)",
+    image: "/images/manaslu.jpg",
+    gallery: [
+      "/images/manaslu.jpg",
+      "/images/everest base.jpg",
+      "/images/annapurna.jpg",
+      "/images/langtang1.jpg"
+    ],
+    overview: `
+      <h3>Tsum Valley Trek | A Journey into Tibetan-Buddhist Culture & Himalayan Beauty</h3>
+      <p>Tsum Valley, located in the northern Gorkha district of western Nepal, is a remote and culturally rich trekking destination within the Manaslu Conservation Area near the Tibetan border. Closed to foreigners until 2008 A.D., Tsum Valley offers a rare, untouched glimpse into ancient Tibetan Buddhist traditions, ancient monasteries like <strong>Mu Gompa</strong> and <strong>Rachen Gompa</strong>, and sacred caves where the 11th-century Buddhist yogi <strong>Milarepa</strong> once meditated.</p>
+      <p>This 17-day Tsum Valley Trek is the ultimate Buddhist cultural journey for travelers seeking peace, spiritual depth, and pristine mountain wilderness. Beyond the deep cultural immersion, you will enjoy spectacular mountain views of <strong>Ganesh Himal, Mount Manaslu, Himalchuli, Shringi Himal, and Boudha Himal</strong> during an excursion hike to <strong>Ganesh Himal Base Camp (4,200 m)</strong>—the highest point of the trip.</p>
+      <p>Trekking in Tsum Valley requires a <strong>Special Restricted Area Permit (RAP)</strong> and a <strong>Manaslu Conservation Area Permit (MCAP)</strong>. A minimum of 2 trekkers accompanied by a licensed Nepali guide is required by government regulation. <strong>Zenex Travels & Tours</strong> handles all permit logistics, private transportation, teahouse arrangements, and guide services to ensure a seamless, unforgettable Himalayan adventure.</p>
+    `,
+    highlights: [
+      "Experience breathtaking panoramic views of the Ganesh Himal range, Mt. Manaslu, Himalchuli, and Shringi Himal.",
+      "Trek through serene, uncrowded off-the-beaten-path trails inside the sacred Tsum Valley.",
+      "Explore ancient Tibetan-style Buddhist monasteries including Mu Gompa (3,700m) and Rachen Gompa.",
+      "Discover the historical caves where the famous 11th-century Buddhist yogi Milarepa meditated.",
+      "Day excursion hike to Ganesh Himal Base Camp (4,200m) for high-altitude mountain scenery.",
+      "Immerse in authentic Tibetan culture, stone mani walls, prayer flags, and local mountain hospitality.",
+      "Pass through pristine rhododendron forests, pine groves, alpine meadows, and cliffside trails.",
+      "Enjoy full logistics support, expert licensed guide, porters, and permit processing by Zenex Travels."
+    ],
+    quickFacts: {
+      duration: "17 Days (14 Trekking Days + 3 Nights Kathmandu)",
+      difficulty: "Moderate",
+      maxAltitude: "4,200 m / 13,779 ft (Ganesh Himal Base Camp)",
+      bestSeason: "Spring (Mar - May) & Autumn (Sep - Nov)",
+      groupSize: "Minimum 2 Trekkers (Restricted Area Rule)",
+      permits: "Tsum Valley Restricted Area Permit + MCAP + TIMS",
+      accommodation: "3-Star Hotel in Kathmandu / Mountain Teahouses",
+      startingPoint: "Kathmandu (Drive to Machha Khola)"
+    },
+    itinerary: [
+      {
+        day: "Day 01",
+        title: "Arrival in Kathmandu",
+        maxAltitude: "1,350m / 4,429ft",
+        accommodation: "3-Star Hotel in Kathmandu",
+        travelMode: "Private Vehicle",
+        desc: "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be met by a Zenex Travels representative and transferred to your hotel. We will hold a pre-trip briefing to review the itinerary, answer questions, and introduce your trekking guide. Overnight in Kathmandu."
+      },
+      {
+        day: "Day 02",
+        title: "Trekking Preparation + Free Day / Kathmandu Sightseeing",
+        maxAltitude: "1,350m / 4,429ft",
+        accommodation: "3-Star Hotel in Kathmandu",
+        meals: "Breakfast",
+        desc: "Today our team processes your Special Restricted Area Permit with the Nepal Department of Immigration. You have a free day to explore UNESCO World Heritage sites in Kathmandu including Kathmandu Durbar Square, Swayambhunath (Monkey Temple), Boudhanath Stupa, and Pashupatinath Temple. Overnight in Kathmandu."
+      },
+      {
+        day: "Day 03",
+        title: "Drive from Kathmandu to Machha Khola (870m)",
+        maxAltitude: "870m / 2,854ft",
+        duration: "9 hours (146 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        travelMode: "Private 4x4 Jeep / Vehicle",
+        desc: "After early breakfast, depart Kathmandu for a scenic 9-hour drive along the Prithvi Highway, passing Dhading, Arughat, and Soti Khola before arriving at Machha Khola. Overnight at lodge."
+      },
+      {
+        day: "Day 04",
+        title: "Trek from Machha Khola to Jagat (1,340m)",
+        maxAltitude: "1,340m / 4,396ft",
+        duration: "7 hours (17 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "The trail follows the Budhi Gandaki River through Gurung and Tamang villages, passing Khorlabesi, Tatopani natural hot springs, and suspension bridges up stone staircases to Jagat—the entry checkpoint for MCAP. Overnight at lodge."
+      },
+      {
+        day: "Day 05",
+        title: "Trek from Jagat to Lokpa (2,240m) - Gateway to Tsum",
+        maxAltitude: "2,240m / 7,349ft",
+        duration: "5-6 hours (13 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "After permit registration at Jagat, trek along the river gorge via Salleri and Philim. Branch off the main Manaslu Circuit trail at Nyak Phedi and climb steep trails to Lokpa—the official entry point of Tsum Valley. Overnight at lodge."
+      },
+      {
+        day: "Day 06",
+        title: "Trek from Lokpa to Chumling (2,386m)",
+        maxAltitude: "2,386m / 7,828ft",
+        duration: "5-6 hours (7 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "Descend into the Lungwa River valley through pine and rhododendron forests. Cross suspension bridges and climb steep rocky trails up to Chumling village, home to three ancient monasteries: Gurwa Gompa, Mani Dhumgyur, and Panago Gompa. Overnight at lodge."
+      },
+      {
+        day: "Day 07",
+        title: "Trek from Chumling to Chokangparo (3,031m)",
+        maxAltitude: "3,031m / 9,944ft",
+        duration: "5-6 hours (10 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "Enter Upper Tsum Valley, trekking past Tibetan-influenced villages to Rainjam and Gho. Ascend past yak pastures and stone chortens to Chokangparo (Chekampar), where flat terrace farms and traditional stone houses reflect authentic Tibetan heritage. Overnight at lodge."
+      },
+      {
+        day: "Day 08",
+        title: "Trek from Chokangparo to Nile / Chule (3,361m) via Milarepa Cave",
+        maxAltitude: "3,361m / 11,026ft",
+        duration: "4 hours (9 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "Trek up the valley to Lamagaun and visit the sacred Milarepa Cave where the 11th-century yogi meditated, leaving footprints in the rock. Continue past ancient stone murals to Chule and cross the Shiar Khola to Nile—the northernmost village in Upper Tsum. Overnight at lodge."
+      },
+      {
+        day: "Day 09",
+        title: "Trek from Nile to Mu Gompa (3,700m)",
+        maxAltitude: "3,700m / 12,139ft",
+        duration: "2 hours (5 km)",
+        accommodation: "Tea House / Monastery Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "A gradual 2-hour uphill trek leads to historic Mu Gompa (est. 1895), the highest and largest monastery in Tsum Valley, located near the Tibet border. Explore ancient Buddhist thangkas, life-size Avalokiteshwara statues, and sacred texts while interacting with local lamas. Overnight at monastery teahouse."
+      },
+      {
+        day: "Day 10",
+        title: "Mu Gompa to Rechen Gompa (3,240m) & Lama Gaun (3,302m)",
+        maxAltitude: "3,302m / 10,833ft",
+        duration: "3-4 hours",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "Descend past Phurbe village along the eastern bank of the Shiar Khola to Rechen Gompa (est. 1905), a nunnery showcasing vibrant Buddhist murals. Continue walking 30 minutes to Lama Gaun. Overnight at lodge."
+      },
+      {
+        day: "Day 11",
+        title: "Trek from Rechen Gompa to Gumba Langdang (3,200m)",
+        maxAltitude: "3,200m / 10,498ft",
+        duration: "8 hours (10 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "Descend to Gho for lunch, then cross the Shiar Khola bridge at Domje. Ascend through thick rhododendron and pine forests adorned with prayer flags up to Gumba Langdang, boasting incredible views of the Ganesh Himal range. Overnight at lodge."
+      },
+      {
+        day: "Day 12",
+        title: "Excursion Hike to Ganesh Himal Base Camp (4,200m) & return",
+        maxAltitude: "4,200m / 13,779ft",
+        duration: "6-7 hours (14 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "An exciting high-altitude day hike climbing through forests and alpine glacial moraines up to Ganesh Himal Base Camp (4,200m). Enjoy towering close-up vistas of Ganesh Himal peaks before descending back to Gumba Langdang. Overnight at lodge."
+      },
+      {
+        day: "Day 13",
+        title: "Trek from Gumba Langdang back to Lokpa (2,240m)",
+        maxAltitude: "2,240m / 7,349ft",
+        duration: "8-9 hours (17.5 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "Descend back through Domje, cross Ludang Khola, pass Ripche and Bhatti Ghumlong, and ascend back to Lokpa village. Overnight at lodge."
+      },
+      {
+        day: "Day 14",
+        title: "Trek from Lokpa back to Jagat (1,340m)",
+        maxAltitude: "1,340m / 4,396ft",
+        duration: "4-5 hours (13 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "Retrace your steps downhill past Philim and Sirdibas along the Budhi Gandaki River back to Jagat. Overnight at lodge."
+      },
+      {
+        day: "Day 15",
+        title: "Trek from Jagat back to Machha Khola (870m)",
+        maxAltitude: "870m / 2,854ft",
+        duration: "6-7 hours (17 km)",
+        accommodation: "Mountain Lodge",
+        meals: "Breakfast, Lunch & Dinner",
+        desc: "Final day on the trekking trail walking past Tatopani hot springs and Khorlabesi to reach Machha Khola. Celebrate the trek completion with your guide and porter crew. Overnight at lodge."
+      },
+      {
+        day: "Day 16",
+        title: "Drive from Machha Khola back to Kathmandu (1,350m)",
+        maxAltitude: "1,350m / 4,429ft",
+        duration: "9 hours (146 km)",
+        accommodation: "3-Star Hotel in Kathmandu",
+        meals: "Breakfast & Farewell Dinner",
+        travelMode: "Private Vehicle",
+        desc: "Board your private vehicle for the drive back to Kathmandu. In the evening, join the Zenex Travels team for a traditional Nepali farewell dinner with cultural performances. Overnight at hotel."
+      },
+      {
+        day: "Day 17",
+        title: "Departure from Kathmandu",
+        maxAltitude: "1,350m / 4,429ft",
+        meals: "Breakfast",
+        desc: "Enjoy breakfast at your hotel. At the appointed time, our representative will transfer you to Tribhuvan International Airport (TIA) for your return flight home."
+      }
+    ],
+    includes: [
+      "Airport transfers (pickup & drop-off) in private vehicle.",
+      "3 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing).",
+      "Private overland transportation (Kathmandu - Machha Khola - Kathmandu) including guide.",
+      "Tsum Valley Special Restricted Area Permit (RAP).",
+      "Manaslu Conservation Area Permit (MCAP) and TIMS card.",
+      "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the 14-day trekking period.",
+      "Teahouse/lodge accommodation during the trek.",
+      "Licensed English-speaking local mountain trekking guide.",
+      "Experienced porter (1 porter per 2 trekkers, carrying up to 20-22 kg).",
+      "Guide and porter salary, insurance, food, gear, and lodging.",
+      "Zenex Travels duffel bag for trail luggage.",
+      "Official Tsum Valley Trek achievement completion certificate.",
+      "Traditional Nepali farewell dinner in Kathmandu.",
+      "All government taxes and service charges."
+    ],
+    excludes: [
+      "International flight tickets & Nepal entry visa fees.",
+      "Personal travel, medical, and emergency helicopter evacuation insurance.",
+      "Lunch & dinner in Kathmandu (except farewell dinner).",
+      "Bar bills, mineral water, soft drinks, alcohol, hot showers, Wi-Fi, and device charging fees on trail.",
+      "Personal clothing and trekking equipment.",
+      "Tips for guide and porters.",
+      "Costs arising from delays due to weather, landslides, flight disruptions, or illness."
+    ],
+    faqs: [
+      {
+        question: "Where is the Tsum Valley Trek located?",
+        answer: "Tsum Valley is located in the northern Gorkha district of western Nepal, nestled inside the Manaslu Conservation Area near the Tibetan border."
+      },
+      {
+        question: "What is Tsum Valley Trek popular for?",
+        answer: "It is famous for its untouched Tibetan Buddhist heritage, ancient monasteries (Mu Gompa & Rachen Gompa), Milarepa's meditation caves, and panoramic views of Ganesh Himal and Mt. Manaslu."
+      },
+      {
+        question: "When is the best time to trek in Tsum Valley?",
+        answer: "Spring (March to May) and Autumn (September to November) offer clear mountain views, blooming rhododendrons, dry trails, and pleasant temperatures."
+      },
+      {
+        question: "What permits are required for the Tsum Valley Trek?",
+        answer: "You require the Tsum Valley Special Restricted Area Permit (RAP) and the Manaslu Conservation Area Permit (MCAP). Zenex Travels processes all permits on your behalf."
+      },
+      {
+        question: "Is a guide compulsory for Tsum Valley?",
+        answer: "Yes, as per Nepal government restricted area regulations, a minimum of 2 trekkers accompanied by a licensed Nepali guide is mandatory."
+      },
+      {
+        question: "What kind of accommodation is available during the Tsum trek?",
+        answer: "Accommodation consists of clean, family-run mountain teahouses and lodges providing twin beds and warm communal dining halls."
+      },
+      {
+        question: "Is food easily available on the route to Tsum Valley?",
+        answer: "Yes, teahouses prepare hot local meals including Dal Bhat, noodles, soups, fried rice, chapati, pancakes, and tea."
+      },
+      {
+        question: "How difficult is the Tsum Valley Trek?",
+        answer: "It is graded as Moderate, suitable for anyone with reasonable physical fitness. The highest altitude point is 4,200m at Ganesh Himal Base Camp."
+      },
+      {
+        question: "Is there mobile network or internet in Tsum Valley?",
+        answer: "Teahouses along lower trails offer basic Wi-Fi and solar charging for a small fee ($2-$5). Higher altitude areas may have limited connectivity."
+      },
+      {
+        question: "Can I combine Tsum Valley with other treks?",
+        answer: "Yes! Tsum Valley can be seamlessly combined with the full Manaslu Circuit Trek or Annapurna Circuit."
+      }
+    ]
+  }
+];
