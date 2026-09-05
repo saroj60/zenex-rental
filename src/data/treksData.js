@@ -3844,5 +3844,543 @@ export const treksData = [
         answer: "Yes, major villages (Jomsom, Kagbeni, Lo Manthang) have mobile network coverage (NTC/Ncell) and teahouses offer Wi-Fi and solar battery charging for a small fee."
       }
     ]
+  },
+  {
+    id: "nar-phu-and-upper-mustang-trek-27d",
+    slug: "nar-phu-and-upper-mustang-trek-27d",
+    title: "Nar Phu and Upper Mustang Trek - 27 Days",
+    region: "mustang",
+    regionName: "Mustang Region",
+    location: "Nar Phu Valley & Upper Mustang, Manang & Mustang Districts, Nepal",
+    duration: "27",
+    durationUnit: "Days",
+    price: "US$3,450",
+    originalPrice: "US$3,750",
+    rating: 4.9,
+    reviewsCount: 143,
+    difficulty: "Hard",
+    maxAltitude: "5,595 m / 18,356 ft (Teri La Pass)",
+    starts: "Kathmandu",
+    ends: "Kathmandu",
+    activities: "Walking / Camping & High Mountain Pass Crossing",
+    accommodation: "3-Star Hotel in Kathmandu / Mountain Teahouses & Tented Camping",
+    meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
+    bestSeason: "Spring (March - May) & Autumn (Sept - Nov)",
+    image: "https://media.hikingadventuretreks.com/uploads/fullbanner/upper-mustang-trek-banner.webp",
+    gallery: [
+      "https://media.hikingadventuretreks.com/uploads/fullbanner/upper-mustang-trek-banner.webp",
+      "https://www.culturaltreks.com/assets/images/upper-mustang/lo-manthang-lori-gompa/gallery/lo-manthang-lori-gompa-with-muktinath-trek.jpg",
+      "https://nepalmotherhousetreks.com/uploads/package/gallery/tangya-upper-mustang.webp",
+      "https://media.app.himalayanecstasynepal.com/uploads/media/upper-mustang-camping-trek/luri-gumba.jpg",
+      "/images/upper mustang.jpg"
+    ],
+    overview: `
+      <h3>Nar Phu and Upper Mustang Trek 27 Days | High Altitude Wilderness & Trans-Himalayan Pass Expedition</h3>
+      <p>The 27-Day Nar Phu and Upper Mustang Trek is one of the most adventurous, remote, and culturally rich expeditions in the Nepalese Himalayas. Crossing two restricted regions—the hidden Tibetan-influenced valleys of <strong>Nar and Phu</strong> in Manang and the ancient Kingdom of <strong>Upper Mustang</strong>—this trek links both regions via the formidable, wild <strong>Teri La Pass (5,595 m)</strong>.</p>
+      <p>The expedition begins along the Annapurna Circuit from Besisahar to Koto before turning off into Nar Phu's narrow gorges, ancient stone villages, and Tashi Lhakhang Monastery. Crossing the uninhabited alpine wilderness over Teri La Pass (5,595 m) requires full wilderness tented camping and camping support staff. Descending into Upper Mustang, trekkers explore Tangge, Yara, the walled city of <strong>Lo Manthang (3,810 m)</strong>, Charang, and Kagbeni before flying back from Jomsom.</p>
+      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Nar Phu Restricted Area Permits, Upper Mustang Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), full wilderness camping gear, licensed high-altitude guides, camping cooks, porters, domestic flights (Jomsom – Pokhara – Kathmandu), and hotel stays in Kathmandu.</p>
+    `,
+    highlights: [
+      "Explore two unique restricted regions: Nar Phu Valley in Manang and Upper Mustang.",
+      "Trek through ancient Tibetan-influenced villages of Meta, Kyang, Phu, and Nar with preserved centuries-old culture.",
+      "Cross the formidable Teri La Pass (5,595 m), enjoying 360-degree views of Himlung Himal, Annapurna II, and Tilicho Peak.",
+      "Visit the medieval walled city of Lo Manthang — former royal capital of Mustang with ancient palaces and active gompas.",
+      "Experience high-wilderness tented camping across uninhabited alpine meadows (Dharamshala, Pokhari, Teri Bhanjyang Phedi, Yak Kharka).",
+      "Visit historic monasteries including Tashi Lhakhang in Phu, Guru Choling in Nar, and 1,300-year-old Ghar Gompa.",
+      "Traverse diverse Himalayan landscapes—from pine forests and river gorges to high-altitude rain-shadow desert canyons.",
+      "Spot rare Himalayan wildlife such as blue sheep (Bharal) and snow leopard tracks in remote high passes.",
+      "Enjoy full camping crew support (cook, kitchen staff, porters, camping tents & equipment).",
+      "Fly out from Jomsom to Pokhara and Kathmandu over spectacular Himalayan mountain ranges.",
+      "Travel with licensed high-altitude guides from Zenex Travels & Tours with deep expertise in restricted region logistics."
+    ],
+    quickFacts: {
+      country: "Nepal",
+      duration: "27 Days",
+      tripGrade: "Hard",
+      maxAltitude: "5,595 m / 18,356 ft",
+      startsEnds: "Kathmandu / Kathmandu",
+      activities: "Walking / Camping & High Mountain Pass Crossing",
+      accommodation: "3-Star Hotel in Kathmandu / Teahouses & Tented Camping",
+      meals: "Breakfast, Lunch & Dinner during trek",
+      bestTime: "Spring (March - May) & Autumn (Sept - Nov)"
+    },
+    itinerary: [
+      {
+        day: "01",
+        title: "Arrival in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Welcome Briefing",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport pickup, hotel transfer, pre-trip expedition briefing & guide meeting.",
+        description: "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. After check-in, we hold a comprehensive pre-trip briefing to verify high-altitude climbing/trekking gear, review restricted permits, and introduce your guide. Overnight at hotel."
+      },
+      {
+        day: "02",
+        title: "Preparation for Restricted Permits + Sightseeing in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "5-6 hrs sightseeing",
+        distance: "25 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        highlights: "Permit processing (Nar Phu & Upper Mustang RAPs), guided UNESCO tour of Patan Durbar Square, Boudhanath & Pashupatinath.",
+        description: "Submit original passports to the Department of Immigration for Nar Phu and Upper Mustang Restricted Area Permits. Enjoy a guided UNESCO World Heritage tour of Patan Durbar Square, sacred Pashupatinath Temple, and the giant stupa at Boudhanath. Finalize gear checks. Overnight at hotel."
+      },
+      {
+        day: "03",
+        title: "Kathmandu – Besisahar",
+        altitude: "760 m / 2,493 ft",
+        walkingTime: "6-7 hrs drive",
+        distance: "175 km",
+        accommodation: "Lodge at Besisahar",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Private vehicle",
+        highlights: "Drive along Trishuli and Marshyangdi rivers to gateway town of Besisahar.",
+        description: "Drive east and north from Kathmandu along scenic river valleys and terraced hillsides to Besisahar (760 m), the starting town for the Annapurna Circuit. Check into your lodge and rest. Overnight at lodge."
+      },
+      {
+        day: "04",
+        title: "Besisahar – Koto",
+        altitude: "2,600 m / 8,530 ft",
+        walkingTime: "3-4 hrs drive",
+        distance: "45 km",
+        accommodation: "Lodge at Koto",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Private 4WD vehicle",
+        highlights: "Off-road drive through Marshyangdi gorge, views of Annapurna II & Manaslu, arrival at Koto checkpoint.",
+        description: "Drive by 4WD jeep along the rugged Marshyangdi River valley, passing villages like Bagarchhap, Timang, and Dharapani. Enjoy views of Annapurna II (7,937 m) and Mount Manaslu. Arrive in Koto (2,600 m), the official entrance gate to Nar Phu Valley. Overnight at lodge."
+      },
+      {
+        day: "05",
+        title: "Koto – Meta",
+        altitude: "3,560 m / 11,679 ft",
+        walkingTime: "6-7 hrs trek",
+        distance: "17 km",
+        accommodation: "Lodge at Meta",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Check restricted permit at Koto, walk narrow Soti Khola gorge, suspension bridges & pine forests to Meta plateau.",
+        description: "Register restricted permits at Koto post and turn off the main Annapurna trail into the narrow Soti Khola gorge. Cross suspension bridges, pass Chhongche caves, and ascend through pine forests and waterfalls past Dharmasala. Climb up to Meta (3,560 m), an open Tibetan plateau with views of Annapurna II and Himlung Himal. Overnight at lodge."
+      },
+      {
+        day: "06",
+        title: "Meta – Kyang",
+        altitude: "3,887 m / 12,752 ft",
+        walkingTime: "5-6 hrs trek",
+        distance: "10 km",
+        accommodation: "Lodge at Kyang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek high desert valley along Phu Khola, pass Khampa winter settlements, views of Pisang Peak & Kangaru Himal.",
+        description: "Trek along the Phu Khola through a high-altitude mountain desert featuring eroded clay cliffs, narrow gorges, and ancient seasonal Khampa settlements. Enjoy vistas of Pisang Peak and Kangaru Himal before arriving in Kyang (3,887 m). Overnight at lodge."
+      },
+      {
+        day: "07",
+        title: "Kyang – Phu Gaun",
+        altitude: "4,080 m / 13,385 ft",
+        walkingTime: "3-4 hrs trek",
+        distance: "9 km",
+        accommodation: "Lodge at Phu Gaun",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek past ancient wooden gate of Phu, explore 800-year-old Tashi Lhakhang Monastery in historic Phu village.",
+        description: "Ascend through dry, rugged canyon landscapes along glacial streams. Pass ancient chortens and stone Mani walls while looking for rare blue sheep on cliff slopes. Pass through the carved wooden entrance gate into ancient Phu Gaun (4,080 m). Visit Tashi Lhakhang Monastery blessed by the Dalai Lama. Overnight at lodge."
+      },
+      {
+        day: "08",
+        title: "Phu Gaun – Nar Phedi",
+        altitude: "3,490 m / 11,450 ft",
+        walkingTime: "6-7 hrs trek",
+        distance: "14 km",
+        accommodation: "Lodge at Nar Phedi Monastery",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Descend Phu valley, cross suspension bridge at Phu Khola, stay at Nar Phedi Monastery.",
+        description: "Trek back down the Phu valley past Kyang and Upper Chyako. Cross the suspension bridge over Phu Khola and ascend gently to Nar Phedi (3,490 m). Stay in the peaceful monastery lodge and observe evening butter lamp prayer rituals with resident monks. Overnight at lodge."
+      },
+      {
+        day: "09",
+        title: "Nar Phedi – Nar Village",
+        altitude: "4,200 m / 13,779 ft",
+        walkingTime: "3 hrs trek",
+        distance: "6 km",
+        accommodation: "Lodge at Nar Village",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Ascend winding trail past chortens & yak pastures to ancient Nar village, visit 4 historic gompas.",
+        description: "Climb steeply out of Nar Phedi past long lines of Mani walls and chortens into Nar Village (4,200 m). Nar is a traditional stone-built Gurung-Tibetan village larger than Phu. Explore its four main historic monasteries: Guru Choling, Samten Pelgye Ling, Kunsei Dechen, and Samdru Choling. Overnight at lodge."
+      },
+      {
+        day: "10",
+        title: "Acclimatization Day at Nar Village",
+        altitude: "4,200 m / 13,779 ft",
+        walkingTime: "Rest / Short hike",
+        distance: "4 km",
+        accommodation: "Lodge at Nar Village",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking / Rest",
+        highlights: "Rest and high-altitude acclimatization day, village walks, interaction with Tibetan weaving communities.",
+        description: "Rest day in Nar village (4,200 m) to allow your body to properly adjust before heading into high wilderness camping over Teri La Pass. Take short walks up nearby ridges, observe local women weaving wool rugs, and rest. Overnight at lodge."
+      },
+      {
+        day: "11",
+        title: "Nar – Dharamshala / Lapse Kharka (Camping Begins)",
+        altitude: "4,500 m / 14,763 ft",
+        walkingTime: "5-6 hrs trek",
+        distance: "8-9 km",
+        accommodation: "Tented Camp at Dharamshala",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking & Wilderness Camping",
+        highlights: "Leave lodge settlements behind, enter pristine alpine pastures at Dharamshala, set up tented camp.",
+        description: "Leave Nar village and step onto the unpopulated wilderness trail leading towards Teri La Pass. Trek through high alpine meadows filled with wildflowers and grazing yaks. Reach Dharamshala (Lapse Kharka, 4,500 m) where your camping crew sets up sleeping, dining, and kitchen tents. Overnight at tented camp."
+      },
+      {
+        day: "12",
+        title: "Dharamshala – Pokhari",
+        altitude: "5,150 m / 16,896 ft",
+        walkingTime: "5-6 hrs trek",
+        distance: "8 km",
+        accommodation: "Tented Camp at Pokhari",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking & Wilderness Camping",
+        highlights: "Ascend past high glacial moraines & mountain tarns to Pokhari camp at 5,150 m.",
+        description: "Trek uphill through rugged mountain terrain and lateral moraines. Gain altitude steadily as views of surrounding snow peaks expand. Arrive at Pokhari (5,150 m), a high alpine tarn meadow serving as a key acclimatization camp. Overnight at tented camp."
+      },
+      {
+        day: "13",
+        title: "Pokhari – Teri Bhanjyang Phedi",
+        altitude: "5,500 m / 18,044 ft",
+        walkingTime: "5-6 hrs trek",
+        distance: "7 km",
+        accommodation: "Tented Camp at Teri Bhanjyang Phedi",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking & Wilderness Camping",
+        highlights: "Trek through high rocky scree slopes to High Base Camp of Teri La Pass.",
+        description: "Trek across rocky scree and barren high-altitude plateaus towards the base of Teri La Pass. Reach Teri Bhanjyang Phedi (5,500 m), tucked beneath snow ridges. Prepare climbing gear and early morning pass crossing strategy with your guide. Overnight at tented camp."
+      },
+      {
+        day: "14",
+        title: "Teri Bhanjyang Phedi – Cross Teri La Pass (5,595 m) – Yak Kharka",
+        altitude: "5,595 m / 18,356 ft (Pass crossing)",
+        walkingTime: "10-11 hrs trek",
+        distance: "14 km",
+        accommodation: "Tented Camp at Yak Kharka",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "High Pass Crossing & Wilderness Camping",
+        highlights: "Pre-dawn start, climb steep snow/scree to Teri La Pass (5,595 m), 360° panoramas of Himlung Himal & Tibetan plateau, descent to Yak Kharka (4,600 m).",
+        description: "Start before dawn for the steep and challenging climb to **Teri La Pass (5,595 m)**—the pinnacle of the expedition. Reach the flag-strewn summit pass for breathtaking panoramas of Himlung Himal, Annapurna II, Tilicho Peak, and the vast Tibetan plateau. Descend long scree and moraine slopes down into Upper Mustang territory at Yak Kharka (4,600 m). Overnight at tented camp."
+      },
+      {
+        day: "15",
+        title: "Yak Kharka – Bhedi Kharka (Camping Ends)",
+        altitude: "3,450 m / 11,318 ft",
+        walkingTime: "6 hrs trek",
+        distance: "12 km",
+        accommodation: "Tented Camp at Bhedi Kharka",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking & Wilderness Camping",
+        highlights: "Descend alpine pastures into Upper Mustang river valleys, final night of tented camping.",
+        description: "Trek down from high alpine pastures through rolling grassy valleys and rocky ravines. Pass seasonal herder pastures where yaks and sheep graze. Reach Bhedi Kharka (3,450 m) for your final wilderness camp night. Overnight at tented camp."
+      },
+      {
+        day: "16",
+        title: "Bhedi Kharka – Tangge",
+        altitude: "3,240 m / 10,629 ft",
+        walkingTime: "4-5 hrs trek",
+        distance: "10 km",
+        accommodation: "Lodge at Tangge",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Descend into ancient Mustang village of Tangge, rejoin teahouse accommodation.",
+        description: "Trek downhill into the isolated Upper Mustang village of Tangge (3,240 m). Tangge is famous for its long rows of colorful chortens, clay-walled houses, and peaceful remote atmosphere. Rejoin teahouse accommodation. Overnight at lodge."
+      },
+      {
+        day: "17",
+        title: "Tangge – Yara",
+        altitude: "3,650 m / 11,975 ft",
+        walkingTime: "5 hrs trek",
+        distance: "15 km",
+        accommodation: "Lodge at Yara",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Cross Dhechang River, walk beneath wind-sculpted sandstone cliff pillars to Yara village.",
+        description: "Trek out of Tangge across the Dhechang River and ascend gently past sculpted clay cliff formations. Reach Yara village (3,650 m), a peaceful hamlet nestled under vertical canyon walls with optional excursion towards Luri Gompa cave monastery. Overnight at lodge."
+      },
+      {
+        day: "18",
+        title: "Yara – Lo Manthang",
+        altitude: "3,810 m / 12,500 ft",
+        walkingTime: "5 hrs trek",
+        distance: "16 km",
+        accommodation: "Lodge at Lo Manthang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek across plateau, enter ancient walled city of Lo Manthang.",
+        description: "Trek across dry desert plateaus, crossing small streams and passing ancient chortens. Reach the famous walled capital city of **Lo Manthang (3,810 m)**. Check into your lodge and stroll through historic narrow alleys. Overnight at lodge."
+      },
+      {
+        day: "19",
+        title: "Lo Manthang Exploration (Monasteries, Royal Palace & Chhoser Sky Caves)",
+        altitude: "3,810 m / 12,500 ft",
+        walkingTime: "Full day exploration",
+        distance: "15 km excursion",
+        accommodation: "Lodge at Lo Manthang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Walking / Horse / Jeep Excursion",
+        highlights: "Jampa Gompa, Thubchen Gompa, Chhoede Gompa, 5-story Royal Palace & Jhong Sky Caves at Chhoser.",
+        description: "Spend a full day exploring ancient Lo Manthang. Visit 15th-century Jampa Gompa, Thubchen Gompa, and active Chhoede Gompa. Take an excursion to Chhoser to explore Jhong Cave—a multi-story cliff dwelling used for centuries as meditation cells and refuge. Overnight at lodge."
+      },
+      {
+        day: "20",
+        title: "Lo Manthang – Charang (Tsarang)",
+        altitude: "3,560 m / 11,679 ft",
+        walkingTime: "5 hrs trek",
+        distance: "13 km",
+        accommodation: "Lodge at Charang",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Cross Lo La pass, descend to Charang village, visit 5-story Tsarang Palace & monastery library.",
+        description: "Trek out of Lo Manthang across Lo La pass (3,950 m) and descend into Charang (3,560 m). Visit the historic 5-story Tsarang Palace and the ancient monastery holding rare Buddhist scriptures. Overnight at lodge."
+      },
+      {
+        day: "21",
+        title: "Charang – Geling",
+        altitude: "3,570 m / 11,712 ft",
+        walkingTime: "5 hrs trek",
+        distance: "11 km",
+        accommodation: "Lodge at Geling",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek past Ghemi's long Mani wall, cross Nyi La pass (4,010 m) to Geling.",
+        description: "Trek past Ghemi village and its famous carved Mani wall. Cross Nyi La pass (4,010 m) and descend into Geling village (3,570 m), surrounded by wide barley fields. Overnight at lodge."
+      },
+      {
+        day: "22",
+        title: "Geling – Chele",
+        altitude: "3,050 m / 10,006 ft",
+        walkingTime: "4-5 hrs trek",
+        distance: "12 km",
+        accommodation: "Lodge at Chele",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek through Syangbochen & Samar past red canyon walls down to Chele.",
+        description: "Trek back through Syangbochen and poplar-shaded Samar village, descending through narrow red rock gorges down to Chele (3,050 m). Overnight at lodge."
+      },
+      {
+        day: "23",
+        title: "Chele – Kagbeni",
+        altitude: "2,810 m / 9,219 ft",
+        walkingTime: "4-5 hrs trek",
+        distance: "12 km",
+        accommodation: "Lodge at Kagbeni",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking",
+        highlights: "Trek past Chhusang & Tangbe stone houses to Kagbeni gateway town.",
+        description: "Trek past Chhusang red cliffs and Tangbe apple orchards back to Kagbeni (2,810 m), completing the restricted Upper Mustang loop. Overnight at lodge."
+      },
+      {
+        day: "24",
+        title: "Kagbeni – Jomsom",
+        altitude: "2,700 m / 8,858 ft",
+        walkingTime: "3-4 hrs trek / drive",
+        distance: "11 km",
+        accommodation: "Lodge at Jomsom",
+        meals: "Breakfast, Lunch & Dinner",
+        modeOfTravel: "Trekking / 4WD Vehicle",
+        highlights: "Gentle trek along Kali Gandaki riverbed back to Jomsom, celebration with crew.",
+        description: "Trek or drive gently along the Kali Gandaki riverbed past Ekle Bhatti back to Jomsom (2,700 m). Celebrate the completion of the 27-day expedition with your guide and camping crew. Overnight at lodge."
+      },
+      {
+        day: "25",
+        title: "Jomsom – Pokhara – Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "50 mins total flights",
+        distance: "200 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast",
+        modeOfTravel: "Flight / Private Vehicle",
+        highlights: "Morning flight Jomsom – Pokhara – Kathmandu with views of Annapurna & Dhaulagiri.",
+        description: "Take an early morning flight from Jomsom to Pokhara (25 mins), connecting directly to your flight back to Kathmandu (25 mins). Transfer to your hotel and rest after the expedition. Overnight at hotel."
+      },
+      {
+        day: "26",
+        title: "Free Day in Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "10 km",
+        accommodation: "Hotel in Kathmandu",
+        meals: "Breakfast & Farewell Dinner",
+        modeOfTravel: "Free day / Sightseeing",
+        highlights: "Relaxation, spa treatments, Thamel shopping, official farewell dinner.",
+        description: "Reserve day in Kathmandu for rest, shopping, or optional sightseeing. In the evening, join your Zenex Travels team for an official farewell dinner with traditional cultural performances. Overnight at hotel."
+      },
+      {
+        day: "27",
+        title: "Departure from Kathmandu",
+        altitude: "1,350 m / 4,429 ft",
+        walkingTime: "-",
+        distance: "6 km",
+        accommodation: "-",
+        meals: "Breakfast",
+        modeOfTravel: "Private vehicle",
+        highlights: "Airport transfer for international departure flight.",
+        description: "Enjoy breakfast at your hotel. At your scheduled departure time, your Zenex Travels representative will transfer you by private vehicle to Tribhuvan International Airport for your return flight home."
+      }
+    ],
+    includes: [
+      "Airport – Hotel – Airport transfers by private vehicle",
+      "Nar Phu Restricted Area Permit & Upper Mustang Restricted Area Permit (USD 500 per person)",
+      "Annapurna Conservation Area Permit Fee (ACAP)",
+      "4 nights 3-star hotel accommodation in Kathmandu with breakfast",
+      "Private transportation Kathmandu – Besisahar & local jeep Besisahar – Koto",
+      "Domestic flight tickets: Jomsom – Pokhara – Kathmandu (including guide & airport taxes)",
+      "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the 27-day trek",
+      "Accommodation at mountain teahouses and lodges during lodge sections",
+      "Full tented camping gear: sleeping tents, dining tent, kitchen tent, toilet tent, mattresses & kitchen equipment for camping section",
+      "Professional Nepal Government licensed English-speaking high-altitude trekking guide",
+      "Experienced camping cook, kitchen staff, and porters during camping section",
+      "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+      "Full insurance, equipment, accommodation, meals, and salary for guide, cook, crew, and porters",
+      "Zenex Travels duffel bag for the trek",
+      "Official Achievement Certificate for Nar Phu and Upper Mustang Trek",
+      "Traditional Farewell Dinner in Kathmandu",
+      "All necessary government taxes, VAT, and company service charges"
+    ],
+    costIncludes: [
+      "Airport – Hotel – Airport transfers by private vehicle",
+      "Nar Phu Restricted Area Permit & Upper Mustang Restricted Area Permit (USD 500 per person)",
+      "Annapurna Conservation Area Permit Fee (ACAP)",
+      "4 nights 3-star hotel accommodation in Kathmandu with breakfast",
+      "Private transportation Kathmandu – Besisahar & local jeep Besisahar – Koto",
+      "Domestic flight tickets: Jomsom – Pokhara – Kathmandu (including guide & airport taxes)",
+      "All meals (Breakfast, Lunch, Dinner with hot tea/coffee) during the 27-day trek",
+      "Accommodation at mountain teahouses and lodges during lodge sections",
+      "Full tented camping gear: sleeping tents, dining tent, kitchen tent, toilet tent, mattresses & kitchen equipment for camping section",
+      "Professional Nepal Government licensed English-speaking high-altitude trekking guide",
+      "Experienced camping cook, kitchen staff, and porters during camping section",
+      "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+      "Full insurance, equipment, accommodation, meals, and salary for guide, cook, crew, and porters",
+      "Zenex Travels duffel bag for the trek",
+      "Official Achievement Certificate for Nar Phu and Upper Mustang Trek",
+      "Traditional Farewell Dinner in Kathmandu",
+      "All necessary government taxes, VAT, and company service charges"
+    ],
+    excludes: [
+      "International airfare & Nepal VISA entry fees",
+      "Personal travel and medical insurance (helicopter emergency rescue compulsory)",
+      "Bar bills, mineral water, soft drinks, beer, snacks & personal expenses",
+      "Hot showers, Wi-Fi & electric device charging fees in mountain lodges",
+      "Lunches and dinners in Kathmandu (except farewell dinner)",
+      "Sightseeing entrance fees to temples and monuments in Kathmandu",
+      "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+      "Tips and gratuities for guide, cook, crew, and porters"
+    ],
+    costExcludes: [
+      "International airfare & Nepal VISA entry fees",
+      "Personal travel and medical insurance (helicopter emergency rescue compulsory)",
+      "Bar bills, mineral water, soft drinks, beer, snacks & personal expenses",
+      "Hot showers, Wi-Fi & electric device charging fees in mountain lodges",
+      "Lunches and dinners in Kathmandu (except farewell dinner)",
+      "Sightseeing entrance fees to temples and monuments in Kathmandu",
+      "Unforeseen costs caused by flight delays, road blockages, natural disasters, weather, or altitude sickness",
+      "Tips and gratuities for guide, cook, crew, and porters"
+    ],
+    groupDiscounts: [
+      { pax: "1 - 3 Pax", price: "US$ 3,450" },
+      { pax: "4 - 7 Pax", price: "US$ 3,250" },
+      { pax: "8 - 11 Pax", price: "US$ 3,100" },
+      { pax: "12 - 15 Pax", price: "US$ 2,980" }
+    ],
+    difficultyInfo: "The 27-day Nar Phu and Upper Mustang Trek is graded HARD. It involves high pass crossing over Teri La Pass (5,595 m), multi-day wilderness camping in remote unpopulated terrain, and 5 to 11 hours of daily walking over steep scree and high desert trails. Experienced physical fitness, stamina, and prior high-altitude trekking experience are essential.",
+    altitudeSickness: {
+      description: "Reaching a maximum altitude of 5,595 meters at Teri La Pass, altitude sickness (AMS) is a significant factor. Gradual ascending stages, built-in acclimatization days at Nar (4,200 m), and experienced guide monitoring ensure safety.",
+      prevention: [
+        "Maintain a slow, steady pace during high pass climbs.",
+        "Follow acclimatization rest days built into the 27-day itinerary.",
+        "Drink 3 to 4 liters of clean water and warm fluids daily.",
+        "Avoid alcohol, smoking, and notify your Zenex Travels guide immediately if feeling unwell."
+      ]
+    },
+    equipmentList: [
+      { category: "Clothing", items: ["Moisture-wicking base layers", "Fleece jacket & heavy expedition down jacket (-15°C rated)", "Waterproof/windproof Gore-Tex jacket & pants", "Trekking pants (2)", "Thermal leggings", "Warm beanie & balaclava", "Heavy waterproof gloves & inner fleece gloves"] },
+      { category: "Footwear", items: ["Sturdy stiff-soled high-altitude trekking boots", "Camp sandals / crocs", "Thermal wool socks (5 pairs)"] },
+      { category: "High Pass & Camping Gear", items: ["Daypack (30-40L) with rain cover", "Duffel bag (provided by Zenex Travels)", "Four-season sleeping bag rated to -15°C", "Trekking poles", "Headlamp with extra batteries", "Microspikes / crampons (if snow present on pass)"] },
+      { category: "Personal Care", items: ["Water bottles / hydration bladder", "Water purification tablets/filter", "Sunscreen (SPF 50+) & lip balm", "First aid kit & personal medication"] }
+    ],
+    extendedInfo: [
+      {
+        title: "Teri La Pass (5,595 m) – High Mountain Remote Pass",
+        description: "Teri La Pass (5,595 m) is one of Nepal's most remote high-altitude pass crossings, connecting Nar Phu Valley in Manang directly to Upper Mustang through uninhabited alpine wilderness."
+      },
+      {
+        title: "Nar Phu Valley – Forbidden Valleys of Manang",
+        description: "Opened to foreign trekkers only in 2003, Nar Phu Valley preserves ancient stone villages, uncrowded trails, and traditional Tibetan-Buddhist heritage."
+      },
+      {
+        title: "Lo Manthang – Walled Capital of Mustang",
+        description: "Founded in 1380, Lo Manthang is a medieval walled fortress city preserving royal palaces, ancient monasteries, and living Tibetan culture."
+      },
+      {
+        title: "Why Trek with Zenex Travels & Tours?",
+        description: "Zenex Travels & Tours brings over two decades of high-altitude Himalayan logistics experience, licensed guides, camping crews, and transparent pricing."
+      }
+    ],
+    faqs: [
+      {
+        question: "How long is the Nar Phu and Upper Mustang Trek?",
+        answer: "The full expedition takes 27 days from arrival to departure in Kathmandu, covering Nar Phu, Teri La Pass (5,595 m), and Upper Mustang."
+      },
+      {
+        question: "Do I need special permits for this trek?",
+        answer: "Yes, you need Nar Phu Restricted Area Permit, Upper Mustang Restricted Area Permit (USD 500 for 10 days), and ACAP permit. Zenex Travels & Tours handles all permit arrangements."
+      },
+      {
+        question: "What is the difficulty level of the trek?",
+        answer: "It is rated HARD due to crossing a 5,595 m high mountain pass, 5 nights of wilderness camping, and 5-11 hours of daily walking in remote high-altitude terrain."
+      },
+      {
+        question: "When is the best time for the Nar Phu & Upper Mustang Trek?",
+        answer: "Spring (March to May) and Autumn (September to November) offer clear weather, dry pass conditions, and excellent mountain visibility."
+      },
+      {
+        question: "Is this trek suitable for beginners?",
+        answer: "No, this trek is recommended for experienced trekkers with prior multi-day high altitude experience and high physical fitness."
+      },
+      {
+        question: "What accommodation is available on the trek?",
+        answer: "A mix of teahouses/lodges in villages (Meta, Kyang, Phu, Nar, Tangge, Lo Manthang) and full wilderness tented camping during the pass crossing (Dharamshala to Bhedi Kharka)."
+      },
+      {
+        question: "What food will I get during the trek?",
+        answer: "Freshly cooked meals by the camping crew during camping days, and traditional local Dal Bhat, momos, noodles, soups, and pancakes in teahouses."
+      },
+      {
+        question: "Will I experience altitude sickness?",
+        answer: "The trek reaches 5,595 m at Teri La Pass. Acclimatization rest days built into the 27-day itinerary help your body adjust gradually."
+      },
+      {
+        question: "Do I need a licensed guide?",
+        answer: "Yes, government regulations require at least 2 trekkers accompanied by a licensed guide from a registered agency like Zenex Travels & Tours."
+      },
+      {
+        question: "How do I prepare physically?",
+        answer: "Train 2-3 months in advance with cardio, stair climbing, hiking with a backpack, and leg strength conditioning."
+      },
+      {
+        question: "What should I pack?",
+        answer: "Pack four-season sleeping bag (-15°C), expedition down jacket, Gore-Tex outerwear, sturdy high-altitude boots, thermal layers, and headlamp."
+      },
+      {
+        question: "Is internet or mobile signal available?",
+        answer: "Mobile network works in lower villages and Jomsom/Lo Manthang, but there is no mobile signal or Wi-Fi during the high pass camping days."
+      },
+      {
+        question: "How do I book this trek?",
+        answer: "Contact Zenex Travels & Tours to customize your departure dates, confirm permit requirements, and reserve your expedition slot."
+      }
+    ]
   }
 ];
