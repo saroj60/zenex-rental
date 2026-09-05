@@ -481,7 +481,13 @@ const TourTripDetail = () => {
                         {/* Day Content */}
                         <div className="pt-8">
                           <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{day.title}</h3>
-                          <div className="text-gray-600 leading-relaxed whitespace-pre-wrap mb-4 font-normal text-base">{day.details || day.description}</div>
+                          {(day.details || day.description) && (
+                            typeof (day.details || day.description) === 'string' && /<\/?[a-z][\s\S]*>/i.test(day.details || day.description) ? (
+                              <div className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none" dangerouslySetInnerHTML={{ __html: day.details || day.description }} />
+                            ) : (
+                              <div className="text-gray-600 leading-relaxed whitespace-pre-wrap mb-4 font-normal text-base">{day.details || day.description}</div>
+                            )
+                          )}
                           
                           {day.image && (
                             <img src={day.image} alt={day.title} className="w-full max-w-xl h-48 md:h-64 object-cover rounded-xl mb-4 shadow-sm" />
