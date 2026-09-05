@@ -8741,6 +8741,289 @@
           "answer": "Spring (March to May) and Autumn (September to November) offer clear skies, mild weather, and optimal mountain visibility."
         }
       ]
+    },
+    {
+      "id": "makalu-base-camp-trek-18d",
+      "slug": "makalu-base-camp-trek-18d",
+      "title": "Makalu Base Camp Trek - 18 Days",
+      "region": "makalu",
+      "category": "Makalu Region Treks",
+      "location": "Makalu Region, Nepal",
+      "duration": "18 Days",
+      "maxAltitude": "4,870 m",
+      "difficulty": "Strenuous",
+      "bestSeason": "Spring (Mar-May) & Autumn (Sep-Nov)",
+      "groupSize": "1 - 12 Persons",
+      "price": 1850,
+      "originalPrice": 2150,
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "heroImage": "/images/trek.png",
+      "overview": "Makalu Base Camp Trek in Nepal of 18 days is one of the challenging as well as beautiful off-the-beaten-path journey in the Eastern part of Nepal. This trek is one the less explored destination with the less flow of tourist en route, making it perfect for the travellers who want to escape huge crowd while trekking in Himalayas and enjoy serene mother nature. Makalu Base Camp is one of the high altitude trek in Nepal with the chance to explore the diverse culture and serene nature of the eastern side of Nepal along with the Himalayan wilderness.\n\nTrekking in the Makalu Region of Nepal offers an unforgettable journey through beautiful, evergreen rhododendron forests and provides panoramic views of several eight-thousanders, including Mount Everest (8848 m), Mount Lhotse (8516 m), Mount Makalu (8463 m), and Mount Kanchenjunga (8568 m) and other Himalayas. Makalu Base Camp Trek offers a rare and rewarding adventure through remote landscapes, deep river valleys, alpine meadows, and glacial lakes.\n\nOrganized by Zenex Travels & Tours with full safety equipment, experienced mountain guides, private transfers, and permit arrangements, this 18-day Makalu expedition guarantees an exceptional Himalayan trek.",
+      "highlights": [
+        "Reach Makalu Base Camp (4,870m) directly beneath the sheer granite face of Mount Makalu (8,485m)",
+        "Breathtaking views of Everest, Lhotse, Kanchenjunga, Baruntse, and Chamlang",
+        "Trek through Makalu Barun National Park, home to rare wildlife such as snow leopards and red pandas",
+        "Traverse dramatic alpine terrain including Shipton La Pass (4,220m) and Keke La Pass (4,150m)",
+        "Explore pristine Himalayan river valleys, deep rhododendron forests, and isolated Rai & Sherpa settlements",
+        "Off-the-beaten-path adventure far from crowded commercial trekking trails",
+        "Full logistics, permits, and professional guidance by Zenex Travels & Tours"
+      ],
+      "quickFacts": {
+        "duration": "18 Days",
+        "destination": "Makalu Region, Nepal",
+        "startPoint": "Kathmandu / Tumlingtar",
+        "endPoint": "Tumlingtar / Kathmandu",
+        "maxAltitude": "4,870 m (Makalu Base Camp)",
+        "difficulty": "Strenuous",
+        "activity": "High Altitude Wilderness Trekking",
+        "meals": "All meals during trek (Breakfast, Lunch, Dinner)",
+        "accommodation": "Teahouse / Lodge / Campsites",
+        "transportation": "Domestic Flights (Kathmandu - Tumlingtar - Kathmandu) & Local Jeeps",
+        "bestSeason": "Spring (March to May) & Autumn (September to November)",
+        "region": "makalu"
+      },
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu & Transfer to Hotel",
+          "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport in Kathmandu, our Zenex Travels & Tours representative will meet you and transfer you to your hotel. Rest and prepare for the upcoming Makalu Base Camp Trek. In the evening, attend a detailed trip briefing with your guide.",
+          "overnight": "Hotel in Kathmandu",
+          "elevation": "1,400 m"
+        },
+        {
+          "day": "Day 02",
+          "title": "Fly from Kathmandu to Tumlingtar and Drive to Num",
+          "description": "Take an early morning scenic domestic flight from Kathmandu to Tumlingtar (approx. 50 mins), enjoying aerial views of the Eastern Himalayas. Meet our local trek crew in Tumlingtar and board a 4WD jeep for a scenic drive past terraced fields and sub-tropical villages to Num.",
+          "overnight": "Lodge in Num",
+          "elevation": "1,560 m"
+        },
+        {
+          "day": "Day 03",
+          "title": "Trek from Num to Seduwa",
+          "description": "Descend steeply from Num through bamboo groves and terraced fields down to the Arun River crossing via a long suspension bridge. After crossing the river, begin a steep climb up the opposite side of the valley to Seduwa, the gateway village to Makalu Barun National Park where permit checkpoint registration is completed.",
+          "overnight": "Lodge in Seduwa",
+          "elevation": "1,500 m"
+        },
+        {
+          "day": "Day 04",
+          "title": "Trek from Seduwa to Tashigaon",
+          "description": "A pleasant and steady climb today through terraced farmland, traditional Sherpa hamlets, and dense rhododendron forests. Arrive at Tashigaon, the last permanent Sherpa village on the trek route before entering upper wilderness.",
+          "overnight": "Lodge in Tashigaon",
+          "elevation": "2,100 m"
+        },
+        {
+          "day": "Day 05",
+          "title": "Trek from Tashigaon to Khongma Danda",
+          "description": "Ascend steeply through magical cloud forests of oak, bamboo, and ancient rhododendrons. As the trail climbs higher onto a steep ridge, timberline thins into alpine shrubs, offering spectacular vistas of surrounding peak ranges. Reach Khongma Danda for overnight stay.",
+          "overnight": "Lodge in Khongma Danda",
+          "elevation": "3,500 m"
+        },
+        {
+          "day": "Day 06",
+          "title": "Acclimatization Day at Khongma Danda",
+          "description": "Rest and acclimatization day at Khongma Danda before crossing high mountain passes. Take short acclimatization hikes up to surrounding ridge viewpoints to adapt to altitude while enjoying mountain panoramas.",
+          "overnight": "Lodge in Khongma Danda",
+          "elevation": "3,500 m"
+        },
+        {
+          "day": "Day 07",
+          "title": "Trek from Khongma Danda to Dobate via Shipton La Pass & Keke La Pass",
+          "description": "A dramatic day crossing four mountain passes: Ghungru La (4,050m), Shipton La (4,220m), Keke La (4,150m), and Tutu La (4,050m). Pass high sacred alpine lakes like Kalo Pokhari before descending sharply through alpine terrain to Dobate.",
+          "overnight": "Lodge in Dobate",
+          "elevation": "3,500 m"
+        },
+        {
+          "day": "Day 08",
+          "title": "Trek from Dobate to Yangri Kharka",
+          "description": "Descend through rhododendron forests down into the deep, sheer-sided Barun River Valley. Cross wooden bridges over rushing alpine streams and follow the river upstream through lush alpine pastures to Yangri Kharka.",
+          "overnight": "Lodge in Yangri Kharka",
+          "elevation": "3,550 m"
+        },
+        {
+          "day": "Day 09",
+          "title": "Trek from Yangri Kharka to Langmale Kharka",
+          "description": "Ascend gradually along the Barun Valley past summer yak grazing pastures (Kharkas) and waterfalls cascading down vertical cliff faces. As vegetation thins, snow-capped peaks like Peak 6, Peak 7, and Chamlang dominate the horizon. Arrive at Langmale Kharka.",
+          "overnight": "Lodge / Camp in Langmale Kharka",
+          "elevation": "4,410 m"
+        },
+        {
+          "day": "Day 10",
+          "title": "Trek from Langmale Kharka to Makalu Base Camp",
+          "description": "The highlight day of the trek! Ascend along glacial moraines beside the Barun Glacier. Mount Makalu’s colossal south face rises dramatically directly ahead. Reach Makalu Base Camp (4,870m) surrounded by an amphitheater of ice and granite peaks.",
+          "overnight": "Lodge / Camp in Makalu Base Camp",
+          "elevation": "4,870 m"
+        },
+        {
+          "day": "Day 11",
+          "title": "Exploration & Viewpoint Hike at Makalu Base Camp",
+          "description": "Spend a full day exploring Makalu Base Camp. Hike up to surrounding ridge viewpoints for unobstructed panoramas of Everest, Lhotse, Baruntse, Chamlang, and the towering peak of Makalu (8,485m). Inspect the vast Barun Glacier before returning to camp.",
+          "overnight": "Lodge / Camp in Makalu Base Camp",
+          "elevation": "4,870 m"
+        },
+        {
+          "day": "Day 12",
+          "title": "Trek from Makalu Base Camp to Yangri Kharka",
+          "description": "Begin retracing your route down the Barun River Valley. Descend past Langmale Kharka, enjoying descending views of the Barun gorge to Yangri Kharka.",
+          "overnight": "Lodge in Yangri Kharka",
+          "elevation": "3,550 m"
+        },
+        {
+          "day": "Day 13",
+          "title": "Trek from Yangri Kharka to Dobate",
+          "description": "Continue descending along the Barun River trail through alpine rhododendron and juniper woodlands to Dobate.",
+          "overnight": "Lodge in Dobate",
+          "elevation": "3,500 m"
+        },
+        {
+          "day": "Day 14",
+          "title": "Trek from Dobate to Khongma Danda via Passes",
+          "description": "Ascend back up out of the Barun gorge to cross Keke La Pass (4,150m) and Shipton La Pass (4,220m) in reverse, descending back down to Khongma Danda.",
+          "overnight": "Lodge in Khongma Danda",
+          "elevation": "3,500 m"
+        },
+        {
+          "day": "Day 15",
+          "title": "Trek from Khongma Danda to Tashigaon",
+          "description": "Descend steeply down from the ridge through cloud forests back to the Sherpa settlement of Tashigaon.",
+          "overnight": "Lodge in Tashigaon",
+          "elevation": "2,100 m"
+        },
+        {
+          "day": "Day 16",
+          "title": "Trek from Tashigaon to Num via Seduwa",
+          "description": "Trek through Seduwa, cross the Arun River suspension bridge, and make the final climb back up to Num village.",
+          "overnight": "Lodge in Num",
+          "elevation": "1,560 m"
+        },
+        {
+          "day": "Day 17",
+          "title": "Drive from Num to Tumlingtar",
+          "description": "Board a private 4WD jeep from Num for a scenic drive back to Tumlingtar. Celebrate the successful trek completion with your guide and crew.",
+          "overnight": "Lodge / Hotel in Tumlingtar",
+          "elevation": "510 m"
+        },
+        {
+          "day": "Day 18",
+          "title": "Fly from Tumlingtar to Kathmandu & Final Departure",
+          "description": "Take the morning scenic flight from Tumlingtar back to Kathmandu. Transfer to hotel for souvenir shopping or airport transfer for final international departure flight.",
+          "overnight": "Homebound / Departure",
+          "elevation": "1,400 m"
+        }
+      ],
+      "inclusions": [
+        "Kathmandu - Tumlingtar - Kathmandu round-trip domestic airfare & airport taxes",
+        "Private vehicle airport transfers in Kathmandu & jeep transfers between Tumlingtar and Num",
+        "2 Nights hotel accommodation in Kathmandu with breakfast",
+        "15 Nights teahouse / lodge / campsite accommodation during trek",
+        "All standard meals (Breakfast, Lunch, Dinner) with hot tea/coffee during the trek",
+        "Makalu Barun National Park entry permit & Trekkers' Information Management System (TIMS) card",
+        "Licensed, highly experienced Himalayan mountain trekking guide",
+        "Porters for luggage carrying (1 porter for every 2 trekkers, up to 15 kg per trekker)",
+        "Guide & porter wages, food, accommodation, transport, and comprehensive insurance",
+        "First aid medical kit with pulse oximeter monitoring",
+        "All applicable government taxes, official service charges, and paperwork processing"
+      ],
+      "exclusions": [
+        "International airfare and Nepal entry visa fees",
+        "Travel, medical emergency, and high-altitude helicopter evacuation insurance",
+        "Lunch and dinner during stay in Kathmandu",
+        "Personal trekking gear and equipment",
+        "Personal expenses (hot showers, Wi-Fi, battery charging, laundry, beverages, mineral water)",
+        "Tips for mountain guide, porters, and driver (customary reward)"
+      ],
+      "equipmentList": [
+        {
+          "category": "Clothing & Layers",
+          "items": [
+            "Thermal base layers (top & bottom)",
+            "Fleece jacket / mid-layer pull-overs",
+            "Waterproof & windproof hard shell jacket & pants",
+            "Down jacket rated for -15°C",
+            "Quick-dry trekking trousers (2-3 pairs)",
+            "Long-sleeve moisture-wicking shirts"
+          ]
+        },
+        {
+          "category": "Footwear",
+          "items": [
+            "Sturdy, broken-in waterproof trekking boots",
+            "Camp shoes or light sandals",
+            "4-5 pairs of merino wool trekking socks",
+            "Gaiters for snow & gravel protection"
+          ]
+        },
+        {
+          "category": "Head, Hands & Eye Protection",
+          "items": [
+            "Warm beanie / fleece hat",
+            "Sun hat / baseball cap",
+            "UV-protection glacier sunglasses",
+            "Lightweight liner gloves",
+            "Waterproof, warm fleece/down mittens"
+          ]
+        },
+        {
+          "category": "Gear & Accessories",
+          "items": [
+            "40-50L daypack with rain cover",
+            "Sleeping bag rated for -15°C to -20°C",
+            "Trekking poles (pair)",
+            "Headlamp with extra batteries / powerbank",
+            "1L or 2L insulated water bottles & purification tablets",
+            "Microspikes / Crampons (for high passes)"
+          ]
+        },
+        {
+          "category": "Personal & Medical",
+          "items": [
+            "Personal first aid kit with altitude medication (Diamox)",
+            "Sunscreen SPF 50+ & lip balm",
+            "Quick-dry microfiber towel",
+            "Biodegradable wet wipes & hand sanitizer"
+          ]
+        }
+      ],
+      "whyTrekWithUs": [
+        {
+          "title": "Expert Wilderness Guides",
+          "description": "Our guides are certified high-altitude professionals native to Eastern Nepal with deep knowledge of Makalu Barun trails and weather conditions."
+        },
+        {
+          "title": "Comprehensive Safety First",
+          "description": "We equip every trek with pulse oximeters, emergency oxygen protocols, satellite communications, and 24/7 helicopter evacuation logistics."
+        },
+        {
+          "title": "Transparent All-Inclusive Pricing",
+          "description": "No hidden charges—domestic flights, permits, lodging, all meals, and porter support are completely covered."
+        },
+        {
+          "title": "Eco-Friendly & Sustainable Trekking",
+          "description": "Zenex Travels & Tours practices strict Leave No Trace principles and supports local mountain communities with fair wages and ethical porter care."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How difficult is the Makalu Base Camp Trek?",
+          "answer": "It is rated as a Strenuous trek. It requires good physical fitness and prior hiking experience due to steep ascents, high altitude passes (Shipton La 4,220m), and remote wilderness terrain."
+        },
+        {
+          "question": "What is the maximum altitude reached on this trek?",
+          "answer": "The highest altitude reached is 4,870 meters (15,977 ft) at Makalu Base Camp."
+        },
+        {
+          "question": "What permits are needed for Makalu Base Camp Trek?",
+          "answer": "You need the Makalu Barun National Park Entry Permit and TIMS Card, both arranged by Zenex Travels & Tours."
+        },
+        {
+          "question": "What kind of accommodation is available on the trail?",
+          "answer": "Basic teahouses and lodges are available up to Khongma and lower Barun valley. Camping or basic shelter is utilized at higher altitudes like Langmale and Base Camp."
+        },
+        {
+          "question": "When is the best season to trek to Makalu Base Camp?",
+          "answer": "Spring (March to May) offers blooming rhododendron forests and clear skies, while Autumn (September to November) offers crisp mountain visibility and stable weather."
+        }
+      ]
     }
   ],
   "destinations": [],

@@ -73,6 +73,16 @@ Along the way, trekkers experience warm hospitality, Buddhist Sherpa heritage, a
 
 Organized by Zenex Travels & Tours with expert local guides, safety equipment, and full camping and permit arrangements, Rolwaling offers a peaceful yet adventurous Himalayan escape far from crowded trekking routes.`
   },
+  'makalu': {
+    id: 'makalu',
+    title: 'Makalu Region Treks',
+    image: '/images/trek.png',
+    description: `The Makalu Region in eastern Nepal is a wilderness sanctuary surrounding Mount Makalu (8,485 m)—the fifth highest peak in the world. Known for the Makalu Barun National Park, this region encompasses rare biodiversity, pristine granite cliffs, cascading waterfalls, and high-altitude alpine glacial lakes.
+
+Trekkers explore remote Rai and Sherpa villages, dense subtropical forests, and dramatic granite gorges of the Barun Valley before reaching Makalu Base Camp (4,870 m). Offering breathtaking vistas of Everest, Lhotse, Baruntse, and Kanchenjunga, Makalu is ideal for wilderness adventurers seeking solitude and raw Himalayan grandeur.
+
+Organized with expert guidance from Zenex Travels & Tours, Makalu trekking promises an authentic, off-the-beaten-path Himalayan expedition.`
+  },
   'far-western-nepal': {
     id: 'far-western-nepal',
     title: 'Far-West Region Treks',

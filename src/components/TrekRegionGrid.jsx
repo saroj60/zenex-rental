@@ -131,6 +131,20 @@ const DEFAULT_TREK_DESTINATIONS = [
     description: 'Rolwaling Valley Trek in Nepal takes you through quiet Sherpa villages, dense forests, sacred monasteries, and Tsho Rolpa Lake near the Tibetan border, under the shadow of Mount Gaurishankar (7,145m).'
   },
   {
+    id: 'REG-trk-mak',
+    slug: 'makalu',
+    name: 'Makalu Region Treks',
+    displayName: 'MAKALU REGION TREKS',
+    country: 'Nepal',
+    type: 'Treks',
+    tagline: 'Makalu Base Camp (4,870m) & Barun Valley',
+    difficulty: 'Strenuous',
+    maxAltitude: '4,870 m',
+    duration: '18 Days',
+    image: '/images/trek.png',
+    description: 'The Makalu Region in eastern Nepal is a wilderness sanctuary surrounding Mount Makalu (8,485 m)—the fifth highest peak in the world. Encompassing Makalu Barun National Park, high alpine passes, and pristine river valleys.'
+  },
+  {
     id: 'REG-trk-fws',
     slug: 'far-western-nepal',
     name: 'Far-Western Nepal Escapes',
