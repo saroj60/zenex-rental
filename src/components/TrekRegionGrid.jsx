@@ -62,8 +62,8 @@ const DEFAULT_TREK_DESTINATIONS = [
   },
   {
     id: 'REG-trk-mus',
-    slug: 'upper-mustang',
-    name: 'Upper Mustang Expeditions',
+    slug: 'mustang',
+    name: 'Mustang Region Treks',
     displayName: 'MUSTANG REGION TREKS',
     country: 'Nepal',
     type: 'Treks',
@@ -72,7 +72,7 @@ const DEFAULT_TREK_DESTINATIONS = [
     maxAltitude: '3,840 m',
     duration: '10 - 14 Days',
     image: '/images/upper mustang.jpg',
-    description: 'Hidden in the rain-shadow desert behind the Dhaulagiri range, Upper Mustang is a high-altitude sanctuary often called "The Last Forbidden Kingdom of Lo Manthang". This unique region is famous for wind-sculpted red rock canyons, ancient cliffside cave dwellings, centuries-old Buddhist monasteries, and authentic Mustang royal traditions.'
+    description: 'Hidden in the rain-shadow desert behind the Dhaulagiri range, Mustang is a high-altitude sanctuary often called "The Last Forbidden Kingdom of Lo Manthang". This unique region is famous for wind-sculpted red rock canyons, ancient cliffside cave dwellings, centuries-old Buddhist monasteries, and authentic Mustang royal traditions.'
   },
   {
     id: 'REG-trk-kan',

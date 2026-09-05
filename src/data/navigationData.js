@@ -10,7 +10,7 @@ export const megaMenuData = {
             { name: 'Annapurna Circuit & Sanctuary', url: '/treks/region/annapurna', image: '/images/annapurna.jpg' },
             { name: 'Manaslu Circuit Adventures', url: '/treks/region/manaslu', image: '/images/manaslu.jpg' },
             { name: 'Langtang Valley Hikes', url: '/treks/region/langtang', image: '/images/langtang1.jpg' },
-            { name: 'Upper Mustang Expeditions', url: '/treks/region/mustang', image: '/images/upper mustang.jpg' },
+            { name: 'Mustang Region Treks', url: '/treks/region/mustang', image: '/images/upper mustang.jpg' },
             { name: 'Kanchenjunga Discoveries', url: '/treks/region/kanchenjunga', image: '/images/kanchenjunga.jpg' },
             { name: 'Hidden Dolpo Journeys', url: '/treks/region/dolpo', image: '/images/dorpatan dolpo.jpg' },
             { name: 'Dhaulagiri Pathways', url: '/treks/region/dhaulagiri', image: '/trek images/Dhaulagiri-Circuit-Trek.jpeg' },
