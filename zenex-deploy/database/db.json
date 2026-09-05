@@ -564,6 +564,356 @@
           "answer": "Yes! Tsum Valley can be seamlessly combined with the full Manaslu Circuit Trek or Annapurna Circuit."
         }
       ]
+    },
+    {
+      "id": "langtang-valley-trek-10d",
+      "slug": "langtang-valley-trek-10d",
+      "title": "Langtang Valley Trek - 10 Days",
+      "region": "langtang",
+      "regionName": "Langtang Region",
+      "location": "Langtang National Park, Rasuwa, Nepal",
+      "duration": "10",
+      "durationUnit": "Days",
+      "price": "US$650",
+      "originalPrice": "US$750",
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "difficulty": "Easy",
+      "maxAltitude": "4,773 m / 15,659 ft (Kyanjin Ri)",
+      "starts": "Kathmandu",
+      "ends": "Kathmandu",
+      "activities": "Walking / Hiking & Cultural Exploration",
+      "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges on Trail",
+      "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
+      "bestSeason": "Spring (March - May) & Autumn (September - December)",
+      "image": "/images/langtang2.jpg",
+      "gallery": [
+        "/images/langtang2.jpg",
+        "/images/langtang1.jpg",
+        "/images/langtang3.jpg",
+        "https://www.nepalguideinfo.com/new/wp-content/uploads/2024/03/Manaslu-Tsum-Valley-Trek.jpg"
+      ],
+      "overview": "\n      <h3>Langtang Valley Trek | Tamang Hospitality, Glaciers & Himalayan Peaks</h3>\n      <p>Langtang Valley, situated just 123 km north of Kathmandu city, is often referred to as the <strong>\"Valley of Glaciers\"</strong>. The 10-day Langtang Valley Trek is one of the most scenic and accessible short treks in Nepal, beginning and ending in Kathmandu with only a 6-hour drive to the trailhead at Syabrubesi.</p>\n      <p>Throughout this 10-day journey, travelers explore spectacular mountain panoramas of the <strong>Langtang Himalayan range</strong>, snow-capped peaks, lush pine and rhododendron forests, pristine alpine wilderness, and the rich native Tamang-Tibetan culture. The trail leads into <strong>Langtang National Park</strong> up to the sacred valley of <strong>Kyanjin Gompa (3,870 m)</strong>, where options exist to ascend <strong>Kyanjin Ri (4,773 m)</strong> or <strong>Tserko Ri (4,985 m)</strong> for breathtaking views of Langtang Lirung Glacier and towering mountain giants.</p>\n      <p>Following the 2015 earthquake, Langtang village has been reborn with vibrant local spirit, featuring modern lodges, enhanced trails, and warm Tamang mountain hospitality. <strong>Zenex Travels & Tours</strong> arranges all permits, private transportation, teahouse accommodation, and expert guide services for a safe, memorable adventure.</p>\n    ",
+      "highlights": [
+        "Explore the beautiful Langtang Valley, famously known as the 'Valley of Glaciers'.",
+        "Trek through serene mountain trails, rivers, pine forests, and alpine wilderness.",
+        "Discover traditional Tamang villages and immerse in local mountain culture & hospitality.",
+        "Explore historic Tibetan Buddhist heritage, ancient monasteries, chortens, and Mani walls.",
+        "Observe herds of yaks grazing peacefully in alpine pastures.",
+        "Opportunity to see rare Himalayan wildlife & birds inside Langtang National Park.",
+        "Breathtaking 360-degree mountain views from Kyanjin Ri (4,773m) or Tserko Ri (4,985m).",
+        "Mind-blowing views of Mount Langtang Lirung (7,227m), Langtang Ri (6,370m), Yala Peak (5,500m), Ganjala Peak, and Dorje Lakpa (6,966m).",
+        "Stunning panoramas of Langtang Lirung Glacier, Dagpachen Glacier, and Yula Glacier.",
+        "No domestic flights required—accessible by a 6-hour drive from Kathmandu to Syabrubesi.",
+        "Enjoy lesser crowds and peaceful trails compared to Everest or Annapurna routes.",
+        "Full logistics support, expert licensed guide, porters, and permit processing by Zenex Travels & Tours."
+      ],
+      "quickFacts": {
+        "duration": "10 Days (8 Trekking Days + 2 Nights Kathmandu)",
+        "difficulty": "Easy",
+        "maxAltitude": "4,773 m / 15,659 ft (Kyanjin Ri)",
+        "bestSeason": "Spring (March - May) & Autumn (September - December)",
+        "groupSize": "1 to 15 Trekkers",
+        "permits": "Langtang National Park Permit + TIMS Card",
+        "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges",
+        "startingPoint": "Kathmandu (Drive to Syabrubesi)"
+      },
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu (1,350 m)",
+          "maxAltitude": "1,350m / 4,429ft",
+          "accommodation": "3-Star Hotel in Kathmandu",
+          "meals": "Breakfast",
+          "desc": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be greeted by a Zenex Travels representative and transferred to your hotel. We will hold a pre-trip briefing to review the trek itinerary, check equipment, and introduce your trekking guide. Overnight in Kathmandu."
+        },
+        {
+          "day": "Day 02",
+          "title": "Drive from Kathmandu to Syabrubesi (1,503 m)",
+          "maxAltitude": "1,503m / 4,931ft",
+          "duration": "5-6 hours (90 km)",
+          "accommodation": "Lodge",
+          "meals": "Breakfast, Lunch & Dinner",
+          "travelMode": "Private Jeep",
+          "desc": "After breakfast, depart Kathmandu around 7-8 AM for a scenic 5-6 hour drive heading north through rolling green hills, passing Dunche to reach Syabrubesi (1,503 m)—the gateway town for the Langtang Valley Trek. Overnight at lodge."
+        },
+        {
+          "day": "Day 03",
+          "title": "Trek from Syabrubesi to Lama Hotel (2,480 m)",
+          "maxAltitude": "2,480m / 8,136ft",
+          "duration": "6-7 hours (11 km)",
+          "accommodation": "Lodge",
+          "meals": "Breakfast, Lunch & Dinner",
+          "desc": "Begin trekking by crossing the Bhote Koshi River and following the Langtang Khola. Hike gently uphill through dense oak, rhododendron, and bamboo forests inside Langtang National Park. Stop for lunch at Bamboo (1,960 m), climb up to Rimche (2,485 m), and continue 20 minutes to Lama Hotel. Overnight at lodge."
+        },
+        {
+          "day": "Day 04",
+          "title": "Trek from Lama Hotel to Langtang Village (3,430 m)",
+          "maxAltitude": "3,430m / 11,253ft",
+          "duration": "7-8 hours (12 km)",
+          "accommodation": "Lodge",
+          "meals": "Breakfast, Lunch & Dinner",
+          "desc": "Trek through lush rhododendron and oak forests up to Ghoratabela (3,030 m) for lunch while enjoying views of Langtang Lirung. Continue past Thyangsyap and Langtang Gompa to reach the beautifully rebuilt Langtang Village (3,430 m). Overnight at lodge."
+        },
+        {
+          "day": "Day 05",
+          "title": "Trek from Langtang Village to Kyanjin Gompa (3,870 m)",
+          "maxAltitude": "3,870m / 12,696ft",
+          "duration": "3 hours (6.5 km)",
+          "accommodation": "Lodge",
+          "meals": "Breakfast, Lunch & Dinner",
+          "desc": "A shorter, gradual 3-hour trek walking past stone chortens, carved Mani walls, prayer flags, and yak pastures leading to Kyanjin Gompa (3,870 m). Explore the historic monastery and visit the famous Yala Cheese Factory established in 1952. Overnight at lodge."
+        },
+        {
+          "day": "Day 06",
+          "title": "Kyanjin Gompa: Excursion Hike to Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m)",
+          "maxAltitude": "4,773m / 15,659ft",
+          "duration": "3-4 hours (2 km)",
+          "accommodation": "Lodge",
+          "meals": "Breakfast, Lunch & Dinner",
+          "desc": "Early morning sunrise hike up Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m) for jaw-dropping 360-degree views of Langtang Lirung (7,227 m), Langtang Ri, Yala Peak, Dorje Lakpa, and surrounding glaciers. Return to Kyanjin Gompa for breakfast and rest. Overnight at lodge."
+        },
+        {
+          "day": "Day 07",
+          "title": "Trek from Kyanjin Gompa back to Lama Hotel (2,480 m)",
+          "maxAltitude": "2,480m / 8,136ft",
+          "duration": "7-8 hours (18.5 km)",
+          "accommodation": "Lodge",
+          "meals": "Breakfast, Lunch & Dinner",
+          "desc": "Bid farewell to Kyanjin Gompa and retrace your steps downhill along the Langtang River past Langtang Village and Ghoratabela for lunch, descending back to Lama Hotel. Overnight at lodge."
+        },
+        {
+          "day": "Day 08",
+          "title": "Trek from Lama Hotel to Thulo Syabru (2,210 m)",
+          "maxAltitude": "2,210m / 7,250ft",
+          "duration": "6-7 hours (10 km)",
+          "accommodation": "Lodge",
+          "meals": "Breakfast, Lunch & Dinner",
+          "desc": "Trek downhill past Rimche and Bamboo, then cross the river and ascend through green hills and terraced fields to Bhanjyang village. Enjoy stunning views of Ganesh Himal and Kerung Peak in Tibet before steeply descending to Thulo Syabru village. Overnight at lodge."
+        },
+        {
+          "day": "Day 09",
+          "title": "Trek from Thulo Syabru to Dunche (1,960 m) & Drive back to Kathmandu (1,350 m)",
+          "maxAltitude": "1,350m / 4,429ft",
+          "duration": "9 hours (100 km)",
+          "accommodation": "3-Star Hotel in Kathmandu",
+          "meals": "Breakfast, Lunch & Farewell Dinner",
+          "travelMode": "Private Jeep",
+          "desc": "Trek to Dunche town, board your private vehicle, and drive 5 hours back to Kathmandu. In the evening, join the Zenex Travels team for a traditional Nepali farewell dinner with cultural performances. Overnight at hotel."
+        },
+        {
+          "day": "Day 10",
+          "title": "Departure from Kathmandu",
+          "maxAltitude": "1,350m / 4,429ft",
+          "meals": "Breakfast",
+          "desc": "Enjoy breakfast at your hotel. At your scheduled departure time, our representative will transfer you to Tribhuvan International Airport (TIA) for your return flight home."
+        }
+      ],
+      "includes": [
+        "Airport transfers (pickup & drop-off) in private vehicle",
+        "2 nights in 3-star Hotel in Kathmandu with breakfast (twin sharing basis)",
+        "Private vehicle transportation from Kathmandu to Syabrubesi and Dunche to Kathmandu including guide and porter",
+        "Langtang National Park entrance fee & TIMS Card",
+        "All meals (Breakfast, Lunch and Dinner with hot tea/coffee) during the 8-day trek",
+        "Accommodation at clean teahouses and lodges during the trek as per itinerary",
+        "Professional Nepal Government licensed English-speaking trekking guide",
+        "1 porter per 2 trekkers (carrying up to 20-22 kg)",
+        "Insurance, equipment, lodging, food, and salary for guide and porters",
+        "Zenex Travels duffel bag for trail luggage",
+        "Official Achievement Certificate for Langtang Valley Trek",
+        "Traditional Nepali Farewell Dinner in Kathmandu",
+        "All necessary government taxes and service fees"
+      ],
+      "costIncludes": [
+        "Airport transfers (pickup & drop-off) in private vehicle",
+        "2 nights in 3-star Hotel in Kathmandu with breakfast (twin sharing basis)",
+        "Private vehicle transportation from Kathmandu to Syabrubesi and Dunche to Kathmandu including guide and porter",
+        "Langtang National Park entrance fee & TIMS Card",
+        "All meals (Breakfast, Lunch and Dinner with hot tea/coffee) during the 8-day trek",
+        "Accommodation at clean teahouses and lodges during the trek as per itinerary",
+        "Professional Nepal Government licensed English-speaking trekking guide",
+        "1 porter per 2 trekkers (carrying up to 20-22 kg)",
+        "Insurance, equipment, lodging, food, and salary for guide and porters",
+        "Zenex Travels duffel bag for trail luggage",
+        "Official Achievement Certificate for Langtang Valley Trek",
+        "Traditional Nepali Farewell Dinner in Kathmandu",
+        "All necessary government taxes and service fees"
+      ],
+      "excludes": [
+        "International airfare & Nepal VISA fees",
+        "Personal clothing and trekking equipment",
+        "Personal travel and medical insurance (including high-altitude helicopter rescue)",
+        "Emergency rescue by helicopter (if required)",
+        "Bar bills, mineral water, soft drinks, beer, and snacks",
+        "Hot showers, device charging fees, and Wi-Fi charges on trail",
+        "Lunch & Dinner in Kathmandu (except Farewell Dinner)",
+        "Visits and entrance fees to temples/heritage sites in Kathmandu",
+        "Unforeseen expenses caused by flight cancellations, landslides, weather delays, or illness",
+        "Personal expenses & tips for guide and porters",
+        "Any other expenses not explicitly mentioned in What's Included"
+      ],
+      "costExcludes": [
+        "International airfare & Nepal VISA fees",
+        "Personal clothing and trekking equipment",
+        "Personal travel and medical insurance (including high-altitude helicopter rescue)",
+        "Emergency rescue by helicopter (if required)",
+        "Bar bills, mineral water, soft drinks, beer, and snacks",
+        "Hot showers, device charging fees, and Wi-Fi charges on trail",
+        "Lunch & Dinner in Kathmandu (except Farewell Dinner)",
+        "Visits and entrance fees to temples/heritage sites in Kathmandu",
+        "Unforeseen expenses caused by flight cancellations, landslides, weather delays, or illness",
+        "Personal expenses & tips for guide and porters",
+        "Any other expenses not explicitly mentioned in What's Included"
+      ],
+      "groupDiscounts": {
+        "2": 650,
+        "4": 615,
+        "8": 555,
+        "12": 530
+      },
+      "difficultyInfo": "Langtang Valley Trek is graded as an EASY to MODERATE trek in Nepal. It features well-maintained trails with gradual elevation gain, walking 5-6 hours daily. Suitable for beginners, families, and nature lovers without prior high-altitude trekking experience.",
+      "altitudeSickness": {
+        "description": "Acute Mountain Sickness (AMS) can occur above 3,500 meters. The highest sleeping point is Kyanjin Gompa (3,870 m), with optional day hikes to Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m).",
+        "prevention": [
+          "Ascend gradually with proper acclimatization pacing.",
+          "Drink at least 3–4 liters of water daily, along with ginger or garlic soups and herbal teas.",
+          "Eat carbohydrate-rich meals for sustained high-altitude energy.",
+          "Dress in warm layers to protect against cold and wind.",
+          "Inform your Zenex Travels guide immediately if you feel headache, nausea, or dizziness.",
+          "Medications & remedies: Diamox (Acetazolamide) 1-2 days before ascending higher, plus Ibuprofen or Paracetamol for headaches."
+        ]
+      },
+      "equipmentList": [
+        {
+          "category": "Clothing & Footwear",
+          "items": [
+            "Moisture-wicking T-shirts (2–3)",
+            "Fleece jacket or light down jacket & sweater",
+            "Waterproof & windproof jacket (Gore-Tex) and rain poncho",
+            "Trekking pants (2) & thermal leggings for cold nights",
+            "Warm beanie hat, sun cap, & inner/waterproof outer gloves",
+            "Sturdy trekking boots with ankle support & lightweight camp shoes/sandals"
+          ]
+        },
+        {
+          "category": "Gear & Sleeping Essentials",
+          "items": [
+            "Daypack (20–30L) with rain cover",
+            "Duffel bag (50-70L provided for porters, carrying up to 10 kg per client)",
+            "Four-season sleeping bag (rated to at least -10°C)",
+            "Water bottles (1–2L) or hydration bladder & water purification tablets/filter",
+            "Electrolyte tablets & energy bars/trail mix"
+          ]
+        },
+        {
+          "category": "Personal Care & Hygiene",
+          "items": [
+            "First aid kit, Diamox, Ibuprofen, antiseptic wipes, blister kit",
+            "Biodegradable soap/shampoo, toothbrush & paste",
+            "Sunscreen (SPF 50+), lip balm with SPF",
+            "Toilet paper, wet wipes, hand sanitizer, & reusable trash bags"
+          ]
+        }
+      ],
+      "extendedInfo": [
+        {
+          "title": "Permits Required for Langtang Valley Trek",
+          "description": "To complete the Langtang Valley Trek, foreign travelers require the following mandatory permits:",
+          "items": [
+            "**Langtang National Park Entrance Fee:** Required for entering the protected national park zone.",
+            "**TIMS Card (Trekkers' Information Management System):** Official registration card for safety tracking.",
+            "**Permit Handling:** Zenex Travels & Tours arranges all required permits and paperwork prior to departure."
+          ]
+        },
+        {
+          "title": "Best Time for Langtang Trek in Nepal",
+          "description": "Langtang Trek can be completed year-round, with peak seasons offering optimal weather:",
+          "items": [
+            "**Spring (March to May):** Warm temperatures, clear skies, and vibrant blooming rhododendron forests.",
+            "**Autumn (September to November):** Stable weather, crisp air, and crystal-clear Himalayan mountain views.",
+            "**Winter (December to February):** Peaceful white snow-covered trails with fewer crowds (extra warm layers required)."
+          ]
+        },
+        {
+          "title": "Meals & Accommodations on Langtang Trail",
+          "description": "Stay in comfortable teahouses and lodges featuring clean twin-sharing rooms and warm communal dining halls.",
+          "subsections": [
+            {
+              "subtitle": "Meals Menu",
+              "description": "Freshly cooked local Dal Bhat, chowmein, fried rice, pasta, french fries, momo, spring rolls, pizza, pancakes, Tibetan bread, chapati, and hot tea/coffee."
+            },
+            {
+              "subtitle": "Special Dietary Needs",
+              "description": "Vegetarian, vegan, and gluten-free dietary requirements are gladly catered for upon early notice."
+            }
+          ]
+        },
+        {
+          "title": "Preparations & Fitness for Langtang Trek",
+          "description": "Requires basic physical fitness. Regular walking, light cardio, or leg exercises 4-6 weeks prior to travel are recommended."
+        },
+        {
+          "title": "Alternative Trekking Options in Langtang Region",
+          "description": "Depending on your vacation schedule, Zenex Travels offers several Langtang trekking alternatives:",
+          "items": [
+            "**Langtang – Gosaikunda Trek**",
+            "**Helambu – Langtang Trek**",
+            "**Langtang – Gosaikunda – Helambu Circuit Trek**",
+            "**Tamang Heritage Trail Trek**",
+            "**Langtang Yala Peak Climbing**"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Where is the Langtang Valley Trek located?",
+          "answer": "Langtang Valley is located in the Rasuwa district of Nepal, inside Langtang National Park, just 123 km north of Kathmandu."
+        },
+        {
+          "question": "What is the maximum altitude of Langtang Trek?",
+          "answer": "The highest sleeping point is Kyanjin Gompa (3,870 m), and the highest excursion point is Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m)."
+        },
+        {
+          "question": "How difficult is the Langtang Valley Trek?",
+          "answer": "It is graded as an Easy to Moderate trek, suitable for beginners, families, and nature lovers with reasonable physical fitness."
+        },
+        {
+          "question": "What is the best time to do the Langtang Trek?",
+          "answer": "Spring (March to May) and Autumn (September to November) offer clear skies, pleasant temperatures, and blooming rhododendrons."
+        },
+        {
+          "question": "What permits are required for Langtang Trek?",
+          "answer": "You need the Langtang National Park Permit and the TIMS card. Zenex Travels & Tours handles all permit processing."
+        },
+        {
+          "question": "Is a guide mandatory for Langtang Valley Trek?",
+          "answer": "While solo trekking with a porter is possible, hiring a licensed guide from Zenex Travels is strongly recommended for safety, navigation, and local cultural insights."
+        },
+        {
+          "question": "What accommodation is available on the Langtang Trek?",
+          "answer": "Clean, family-run mountain teahouses and lodges offering twin-sharing rooms, warm blankets, and communal heated dining rooms."
+        },
+        {
+          "question": "What is the temperature during Langtang Trek?",
+          "answer": "Daytime temperatures in Spring/Autumn range from 10°C to 20°C in lower trails, dropping to 0°C to -5°C at night at Kyanjin Gompa."
+        },
+        {
+          "question": "What mountains can you see during the Langtang Trek?",
+          "answer": "You can view Mount Langtang Lirung (7,227m), Langtang Ri (6,370m), Yala Peak (5,500m), Dorje Lakpa (6,966m), and Ganesh Himal."
+        },
+        {
+          "question": "Is Langtang Trek suitable for beginners and families?",
+          "answer": "Yes! With gradual elevation gain, well-maintained trails, and a 6-hour drive from Kathmandu, it is ideal for beginners, kids, and seniors."
+        },
+        {
+          "question": "What makes Langtang Valley Trek special?",
+          "answer": "It combines glacier panoramas, rich Tamang-Tibetan culture, ancient monasteries, herds of yaks, and inspiring community resilience after the 2015 earthquake."
+        },
+        {
+          "question": "Can Langtang trekking be done in 5 days?",
+          "answer": "Yes, a shortened 5-day or 7-day version focusing purely on the core Syabrubesi to Kyanjin Gompa trail can be customized upon request."
+        }
+      ]
     }
   ],
   "destinations": [],
