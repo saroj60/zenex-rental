@@ -2654,13 +2654,14 @@ export const treksData = [
     accommodation: "Hotels in Kathmandu & Pokhara / Mountain Lodges & Teahouses",
     meals: "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Mustang Tour",
     bestSeason: "All Seasons (Spring, Summer/Monsoon, Autumn & Winter)",
-    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200",
+    image: "https://cdn.tripspoint.com/uploads/photos/8866/upper-mustang-trek-15-days_HIely.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200",
-      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1200",
-      "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200",
-      "/images/upper mustang.jpg",
-      "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1200"
+      "https://cdn.tripspoint.com/uploads/photos/8866/upper-mustang-trek-15-days_HIely.jpg",
+      "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/Mustang-Trekking-2.jpg",
+      "https://www.teamhimalaya.com/_next/image?url=https%3A%2F%2Ffis-api.teamhimalaya.com%2Fmedia%2Ftrip-gallery%2Fmedia-8937ef3e-1769667761.jpg&w=1920&q=75",
+      "https://visithimalayastrek.com/uploads/photos/1/Lo-Manthang-Upper-Mustang.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsqw6BO7aalaKxU0kOJQeIoIE0utp_qXpcu_1aGqZzS23WDuxplYupWat7&s=10",
+      "https://media.app.regulusnepal.com/uploads/media/badimalika/upper-mustang.jpg"
     ],
     overview: `
       <h3>Upper Mustang Drive-In Drive-Out 4WD Jeep Tour | Explore Mustang's Ancient Culture & Himalayan Desert Landscapes</h3>
