@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useAppData } from '../context/AppDataContext';
 import { packageExtraData } from './PackageDetail';
 import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, Play, ImageIcon, Calendar, List, DollarSign, ChevronDown, ChevronUp, CheckCircle2, XCircle, BookOpen, Puzzle, Briefcase, HelpCircle, ChevronRight, Globe, CalendarDays, Activity, Mountain, Bed, Utensils, CloudSun, Car, Heart, FileText, Info } from 'lucide-react';
-import html2pdf from 'html2pdf.js';
+import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
 import { formatDuration } from '../utils/duration';
 
@@ -156,184 +156,18 @@ const TourTripDetail = () => {
     );
   }
 
-  const handleDownloadPDF = () => {
-    const element = document.createElement('div');
-    element.style.padding = '40px';
-    element.style.fontFamily = 'sans-serif';
-    element.style.color = '#333';
-    
-    // Add header branding
-    const headerHtml = `
-      <div style="border-bottom: 2px solid #e53a24; padding-bottom: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
-        <div>
-          <h1 style="color: #1e3a8a; margin: 0; font-size: 28px;">Zenex Travels and Tours</h1>
-          <p style="color: #e53a24; margin: 5px 0 0 0; font-size: 14px; font-weight: bold;">Himalayan Tours & Trekking Experts</p>
-        </div>
-        <div style="text-align: right;">
-          <p style="margin: 0; font-size: 12px; color: #666;">Web: zenextravels.com</p>
-          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 9767476521</p>
-        </div>
-      </div>
-    `;
-    
-    // Add trip details
-    const tripTitleHtml = `
-      <div style="margin-bottom: 25px;">
-        <span style="background-color: #e53a24; color: white; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: bold; text-transform: uppercase;">${trip.category}</span>
-        <h2 style="color: #1e3a8a; font-size: 24px; margin: 10px 0 5px 0;">${trip.title}</h2>
-        <p style="color: #666; font-size: 13px; margin: 0;">Destination: ${trip.destination} ${trip.price ? `| Price: From US$${trip.price}` : ''}</p>
-      </div>
-    `;
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
 
-    // Quick Facts
-    const facts = trip.quickFacts || {};
-    const factsHtml = `
-      <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 15px; margin-bottom: 25px;">
-        <h3 style="color: #1e3a8a; margin: 0 0 10px 0; font-size: 16px; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px;">Quick Facts</h3>
-        <table style="width: 100%; font-size: 13px; border-collapse: collapse;">
-          <tr>
-            <td style="padding: 6px 0; font-weight: bold; color: #475569; width: 35%;">Duration:</td>
-            <td style="padding: 6px 0; color: #0f172a;">${facts.duration || 'N/A'}</td>
-            <td style="padding: 6px 0; font-weight: bold; color: #475569; width: 30%;">Difficulty:</td>
-            <td style="padding: 6px 0; color: #0f172a;">${facts.difficulty || 'Easy'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 6px 0; font-weight: bold; color: #475569;">Max Altitude:</td>
-            <td style="padding: 6px 0; color: #0f172a;">${facts.maxAltitude || 'N/A'}</td>
-            <td style="padding: 6px 0; font-weight: bold; color: #475569;">Best Season:</td>
-            <td style="padding: 6px 0; color: #0f172a;">${facts.bestTime || 'N/A'}</td>
-          </tr>
-        </table>
-      </div>
-    `;
-
-    // Overview / Description
-    const overviewHtml = `
-      <div style="margin-bottom: 25px;">
-        <h3 style="color: #1e3a8a; font-size: 16px; margin: 0 0 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Overview</h3>
-        <div style="font-size: 13px; line-height: 1.6; color: #334155; margin: 0;">${trip.description || ''}</div>
-      </div>
-    `;
-
-    // Highlights
-    let highlightsHtml = '';
-    if (trip.highlights && trip.highlights.length > 0) {
-      highlightsHtml = `
-        <div style="margin-bottom: 25px; page-break-inside: avoid;">
-          <h3 style="color: #1e3a8a; font-size: 16px; margin: 0 0 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Highlights</h3>
-          <ul style="margin: 0; padding-left: 20px; font-size: 13px; color: #334155; line-height: 1.6;">
-            ${trip.highlights.map(h => `<li>${typeof h === 'object' ? h.title : h}</li>`).join('')}
-          </ul>
-        </div>
-      `;
+  const handleDownloadPDF = async () => {
+    if (!trip || isGeneratingPDF) return;
+    try {
+      setIsGeneratingPDF(true);
+      await generatePackagePDF(trip);
+    } catch (err) {
+      console.error("PDF generation failed:", err);
+    } finally {
+      setIsGeneratingPDF(false);
     }
-
-    // Itinerary
-    let itineraryHtml = '';
-    if (trip.itinerary && trip.itinerary.length > 0) {
-      itineraryHtml = `
-        <div style="page-break-before: always;">
-          <h3 style="color: #1e3a8a; font-size: 18px; margin: 0 0 15px 0; border-bottom: 2px solid #1e3a8a; padding-bottom: 5px;">Day-by-Day Itinerary</h3>
-          ${trip.itinerary.map((day, idx) => `
-            <div style="margin-bottom: 20px; border-left: 3px solid #10b981; padding-left: 15px; page-break-inside: avoid;">
-              <h4 style="margin: 0 0 5px 0; color: #0f172a; font-size: 14px; font-weight: bold;">Day ${day.dayNumber || (idx + 1)}: ${day.title}</h4>
-              <p style="margin: 0; font-size: 12.5px; line-height: 1.5; color: #475569;">${day.details || day.description || ''}</p>
-            </div>
-          `).join('')}
-        </div>
-      `;
-    }
-
-    // Inclusions & Exclusions
-    let costDetailsHtml = '';
-    if ((trip.inclusions && trip.inclusions.length > 0) || (trip.exclusions && trip.exclusions.length > 0)) {
-      costDetailsHtml = `
-        <div style="page-break-before: always; margin-top: 20px;">
-          <h3 style="color: #1e3a8a; font-size: 18px; margin: 0 0 15px 0; border-bottom: 2px solid #1e3a8a; padding-bottom: 5px;">Cost Details</h3>
-          <table style="width: 100%; border-collapse: collapse;">
-            <tr>
-              <td style="width: 50%; vertical-align: top; padding-right: 15px;">
-                <h4 style="color: #10b981; font-size: 14px; margin: 0 0 10px 0;">What's Included</h4>
-                <ul style="margin: 0; padding-left: 20px; font-size: 12px; color: #334155; line-height: 1.5;">
-                  ${(trip.inclusions || []).map(inc => `<li>${inc.title || inc}</li>`).join('')}
-                </ul>
-              </td>
-              <td style="width: 50%; vertical-align: top; padding-left: 15px; border-left: 1px solid #e2e8f0;">
-                <h4 style="color: #e53a24; font-size: 14px; margin: 0 0 10px 0;">What's Excluded</h4>
-                <ul style="margin: 0; padding-left: 20px; font-size: 12px; color: #334155; line-height: 1.5;">
-                  ${(trip.exclusions || []).map(exc => `<li>${exc.title || exc}</li>`).join('')}
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-      `;
-    }
-
-    // Additional Package Information (Useful Info, FAQs)
-    let extraInfoHtml = '';
-    const essential = trip.usefulInfo || trip.information || trip.essentialInfo;
-    const faqs = trip.faqs || [];
-
-    if (essential || (faqs && faqs.length > 0)) {
-      let content = '';
-      if (essential) {
-        content += `<h4 style="color:#1e3a8a;margin-top:15px;margin-bottom:5px;font-size:14px;">Essential & Useful Information</h4><div style="font-size:12px;line-height:1.6;color:#334155;">${essential.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n\n/g, '<br/>')}</div>`;
-      }
-      if (faqs && faqs.length > 0) {
-        content += `<h4 style="color:#1e3a8a;margin-top:15px;margin-bottom:5px;font-size:14px;">Frequently Asked Questions</h4>`;
-        faqs.forEach(faq => {
-          content += `<div style="margin-bottom:8px;"><strong style="font-size:12.5px;color:#0f172a;">Q: ${faq.question || faq.title}</strong><p style="margin:2px 0 0 0;font-size:12px;color:#475569;">${faq.answer || faq.desc}</p></div>`;
-        });
-      }
-      extraInfoHtml = `
-        <div style="margin-top: 25px; page-break-inside: avoid;">
-          <h3 style="color: #1e3a8a; font-size: 16px; margin: 0 0 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Package Details & Essential Info</h3>
-          ${content}
-        </div>
-      `;
-    }
-
-    // Footer info
-    const footerHtml = `
-      <div style="margin-top: 40px; border-top: 1px dashed #cbd5e1; padding-top: 15px; text-align: center; font-size: 11px; color: #94a3b8; page-break-inside: avoid;">
-        <p>Thank you for choosing Zenex Travels and Tours. For bookings and inquiries, please visit our website or contact us.</p>
-        <p style="margin: 5px 0 0 0;">© ${new Date().getFullYear()} Zenex Travels and Tours. All Rights Reserved.</p>
-      </div>
-    `;
-
-    element.innerHTML = `
-      ${headerHtml}
-      ${tripTitleHtml}
-      ${factsHtml}
-      ${overviewHtml}
-      ${highlightsHtml}
-      ${itineraryHtml}
-      ${costDetailsHtml}
-      ${extraInfoHtml}
-      ${footerHtml}
-    `;
-
-    const opt = {
-      margin:       10,
-      filename:     `${trip.title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_itinerary.pdf`,
-      image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { 
-        scale: 2, 
-        useCORS: true,
-        onclone: (clonedDoc) => {
-          const styles = clonedDoc.querySelectorAll('style');
-          styles.forEach(s => {
-            if (s.textContent && s.textContent.includes('oklch')) {
-              s.textContent = s.textContent.replace(/oklch\([^)]+\)/g, '#333333');
-            }
-          });
-        }
-      },
-      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
-
-    html2pdf().from(element).set(opt).save();
   };
 
   const toggleDay = (idx) => setExpandedDay(expandedDay === idx ? -1 : idx);
@@ -967,9 +801,11 @@ const TourTripDetail = () => {
                     </button>
                     <button 
                       onClick={handleDownloadPDF}
-                      className="w-full bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center flex justify-center items-center gap-2"
+                      disabled={isGeneratingPDF}
+                      className="w-full bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center flex justify-center items-center gap-2 disabled:opacity-50 cursor-pointer"
                     >
-                      <FileText size={16} className="text-[#e53a24]" /> Download Itinerary (PDF)
+                      <FileText size={16} className="text-[#e53a24]" /> 
+                      {isGeneratingPDF ? 'GENERATING PDF...' : 'DOWNLOAD ITINERARY (PDF)'}
                     </button>
                   </div>
                 </div>
