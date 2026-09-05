@@ -4700,9 +4700,15 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (Sept - Nov)",
-    image: "/images/kanchenjunga.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLauRBbrO3TSDBHlt4F4AvvIXv3cPfH9OnualDKq1Npv1m7q02NiXvy-A&s=10",
     gallery: [
-      "/images/kanchenjunga.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLauRBbrO3TSDBHlt4F4AvvIXv3cPfH9OnualDKq1Npv1m7q02NiXvy-A&s=10",
+      "https://media.greenvalleynepaltreks.com/uploads/fullbanner/kanchenjunga-base-camp-trek.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8aO3H6Tw4UPnuLn4YpHl0yje4h1gtYz6QF94r-gJhQ4Vn_SLK6M4rEkI&s=10",
+      "https://boldadventuresnepal.com/wp-content/uploads/2025/06/kanchenjunga-north-base-camp-trek-1.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0nk9dr96FhlsT43S3D6F9uSMObgyGq9R1RWut4mpyqZyfXKTvhLugWHY&s=10",
+      "https://www.wondersofnepal.com/wp-content/uploads/2020/08/kanchenjunga-trek_1545198984.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvbkx9KQTW0NJwx2b5Hy5HB3x8a3Oxy8rK-ErmKbs5vWqVs5rOoY5ubd0&s=10"
     ],
     overview: `
       <h3>Kanchenjunga South Base Camp Trek 14 Days | Untouched Eastern Himalayan Wilderness</h3>
