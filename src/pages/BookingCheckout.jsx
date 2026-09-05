@@ -7,10 +7,301 @@ import { useBooking } from '../context/BookingContext';
 import SEO from '../components/SEO';
 
 const countries = [
-  'United States', 'United Kingdom', 'Canada', 'Australia', 'Germany', 
-  'France', 'Nepal', 'India', 'China', 'Japan', 'Singapore', 
-  'Netherlands', 'New Zealand', 'Switzerland', 'Spain', 'Italy', 'Other'
+  'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 
+  'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 
+  'Belgium', 'Belize', 'Benin', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 
+  'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cambodia', 'Cameroon', 'Canada', 'Cape Verde', 
+  'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica', 
+  'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 
+  'Ecuador', 'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 
+  'Fiji', 'Finland', 'France', 'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 
+  'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hong Kong', 'Hungary', 
+  'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland', 'Israel', 'Italy', 'Ivory Coast', 'Jamaica', 
+  'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kosovo', 'Kuwait', 'Kyrgyzstan', 'Laos', 
+  'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 
+  'Macau', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 
+  'Mauritania', 'Mauritius', 'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 
+  'Morocco', 'Mozambique', 'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 
+  'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway', 'Oman', 'Pakistan', 
+  'Palau', 'Palestine', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland', 
+  'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 
+  'Saint Vincent and the Grenadines', 'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia', 
+  'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 
+  'Solomon Islands', 'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 
+  'Sudan', 'Suriname', 'Sweden', 'Switzerland', 'Syria', 'Taiwan', 'Tajikistan', 'Tanzania', 
+  'Thailand', 'Timor-Leste', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 
+  'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 
+  'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Vatican City', 'Venezuela', 'Vietnam', 
+  'Yemen', 'Zambia', 'Zimbabwe', 'Other'
 ];
+
+const countryCallingCodes = {
+  'afghanistan': '+93',
+  'albania': '+355',
+  'algeria': '+213',
+  'american samoa': '+1684',
+  'andorra': '+376',
+  'angola': '+244',
+  'anguilla': '+1264',
+  'antarctica': '+672',
+  'antigua and barbuda': '+1268',
+  'antigua': '+1268',
+  'barbuda': '+1268',
+  'argentina': '+54',
+  'armenia': '+374',
+  'aruba': '+297',
+  'australia': '+61',
+  'austria': '+43',
+  'azerbaijan': '+994',
+  'bahamas': '+1242',
+  'bahrain': '+973',
+  'bangladesh': '+880',
+  'barbados': '+1246',
+  'belarus': '+375',
+  'belgium': '+32',
+  'belize': '+501',
+  'benin': '+229',
+  'bermuda': '+1441',
+  'bhutan': '+975',
+  'bolivia': '+591',
+  'bosnia and herzegovina': '+387',
+  'bosnia': '+387',
+  'herzegovina': '+387',
+  'botswana': '+267',
+  'brazil': '+55',
+  'british virgin islands': '+1284',
+  'brunei': '+673',
+  'bulgaria': '+359',
+  'burkina faso': '+226',
+  'burundi': '+257',
+  'cambodia': '+855',
+  'cameroon': '+237',
+  'canada': '+1',
+  'cape verde': '+238',
+  'cayman islands': '+1345',
+  'central african republic': '+236',
+  'chad': '+235',
+  'chile': '+56',
+  'china': '+86',
+  'colombia': '+57',
+  'comoros': '+269',
+  'congo': '+242',
+  'cook islands': '+682',
+  'costa rica': '+506',
+  'croatia': '+385',
+  'cuba': '+53',
+  'curacao': '+599',
+  'cyprus': '+357',
+  'czech republic': '+420',
+  'czechia': '+420',
+  'democratic republic of the congo': '+243',
+  'drc': '+243',
+  'denmark': '+45',
+  'djibouti': '+253',
+  'dominica': '+1767',
+  'dominican republic': '+1809',
+  'ecuador': '+593',
+  'egypt': '+20',
+  'el salvador': '+503',
+  'equatorial guinea': '+240',
+  'eritrea': '+291',
+  'estonia': '+372',
+  'eswatini': '+268',
+  'swaziland': '+268',
+  'ethiopia': '+251',
+  'falkland islands': '+500',
+  'faroe islands': '+298',
+  'fiji': '+679',
+  'finland': '+358',
+  'france': '+33',
+  'french guiana': '+594',
+  'french polynesia': '+689',
+  'gabon': '+241',
+  'gambia': '+220',
+  'georgia': '+995',
+  'germany': '+49',
+  'ghana': '+233',
+  'gibraltar': '+350',
+  'greece': '+30',
+  'greenland': '+299',
+  'grenada': '+1473',
+  'guadeloupe': '+590',
+  'guam': '+1671',
+  'guatemala': '+502',
+  'guernsey': '+44',
+  'guinea': '+224',
+  'guinea-bissau': '+245',
+  'guyana': '+592',
+  'haiti': '+509',
+  'honduras': '+504',
+  'hong kong': '+852',
+  'hungary': '+36',
+  'iceland': '+354',
+  'india': '+91',
+  'indonesia': '+62',
+  'iran': '+98',
+  'iraq': '+964',
+  'ireland': '+353',
+  'isle of man': '+44',
+  'israel': '+972',
+  'italy': '+39',
+  'ivory coast': '+225',
+  'cote d\'ivoire': '+225',
+  'jamaica': '+1876',
+  'japan': '+81',
+  'jersey': '+44',
+  'jordan': '+962',
+  'kazakhstan': '+7',
+  'kenya': '+254',
+  'kiribati': '+686',
+  'kosovo': '+383',
+  'kuwait': '+965',
+  'kyrgyzstan': '+996',
+  'laos': '+856',
+  'latvia': '+371',
+  'lebanon': '+961',
+  'lesotho': '+266',
+  'liberia': '+231',
+  'libya': '+218',
+  'liechtenstein': '+423',
+  'lithuania': '+370',
+  'luxembourg': '+352',
+  'macau': '+853',
+  'madagascar': '+261',
+  'malawi': '+265',
+  'malaysia': '+60',
+  'maldives': '+960',
+  'mali': '+223',
+  'malta': '+356',
+  'marshall islands': '+692',
+  'martinique': '+596',
+  'mauritania': '+222',
+  'mauritius': '+230',
+  'mayotte': '+262',
+  'mexico': '+52',
+  'micronesia': '+691',
+  'moldova': '+373',
+  'monaco': '+377',
+  'mongolia': '+976',
+  'montenegro': '+382',
+  'montserrat': '+1664',
+  'morocco': '+212',
+  'mozambique': '+258',
+  'myanmar': '+95',
+  'burma': '+95',
+  'namibia': '+264',
+  'nauru': '+674',
+  'nepal': '+977',
+  'netherlands': '+31',
+  'new caledonia': '+687',
+  'new zealand': '+64',
+  'nicaragua': '+505',
+  'niger': '+227',
+  'nigeria': '+234',
+  'niue': '+683',
+  'norfolk island': '+672',
+  'north korea': '+850',
+  'north macedonia': '+389',
+  'macedonia': '+389',
+  'northern mariana islands': '+1670',
+  'norway': '+47',
+  'oman': '+968',
+  'pakistan': '+92',
+  'palau': '+680',
+  'palestine': '+970',
+  'panama': '+507',
+  'papua new guinea': '+675',
+  'paraguay': '+595',
+  'peru': '+51',
+  'philippines': '+63',
+  'poland': '+48',
+  'portugal': '+351',
+  'puerto rico': '+1787',
+  'qatar': '+974',
+  'reunion': '+262',
+  'romania': '+40',
+  'russia': '+7',
+  'rwanda': '+250',
+  'saint barthelemy': '+590',
+  'saint helena': '+290',
+  'saint kitts and nevis': '+1869',
+  'saint lucia': '+1758',
+  'saint martin': '+590',
+  'saint pierre and miquelon': '+508',
+  'saint vincent and the grenadines': '+1784',
+  'samoa': '+685',
+  'san marino': '+378',
+  'sao tome and principe': '+239',
+  'saudi arabia': '+966',
+  'senegal': '+221',
+  'serbia': '+381',
+  'seychelles': '+248',
+  'sierra leone': '+232',
+  'singapore': '+65',
+  'sint maarten': '+1721',
+  'slovakia': '+421',
+  'slovenia': '+386',
+  'solomon islands': '+677',
+  'somalia': '+252',
+  'south africa': '+27',
+  'south korea': '+82',
+  'korea': '+82',
+  'south sudan': '+211',
+  'spain': '+34',
+  'sri lanka': '+94',
+  'sudan': '+249',
+  'suriname': '+597',
+  'svalbard and jan mayen': '+47',
+  'sweden': '+46',
+  'switzerland': '+41',
+  'syria': '+963',
+  'taiwan': '+886',
+  'tajikistan': '+992',
+  'tanzania': '+255',
+  'thailand': '+66',
+  'timor-leste': '+670',
+  'east timor': '+670',
+  'togo': '+228',
+  'tokelau': '+690',
+  'tonga': '+676',
+  'trinidad and tobago': '+1868',
+  'trinidad': '+1868',
+  'tobago': '+1868',
+  'tunisia': '+216',
+  'turkey': '+90',
+  'turkmenistan': '+993',
+  'turks and caicos islands': '+1649',
+  'tuvalu': '+688',
+  'uganda': '+256',
+  'ukraine': '+380',
+  'united arab emirates': '+971',
+  'uae': '+971',
+  'dubai': '+971',
+  'united kingdom': '+44',
+  'uk': '+44',
+  'england': '+44',
+  'scotland': '+44',
+  'wales': '+44',
+  'northern ireland': '+44',
+  'great britain': '+44',
+  'united states': '+1',
+  'usa': '+1',
+  'us': '+1',
+  'united states of america': '+1',
+  'united states virgin islands': '+1340',
+  'uruguay': '+598',
+  'uzbekistan': '+998',
+  'vanuatu': '+678',
+  'vatican city': '+379',
+  'vatican': '+379',
+  'venezuela': '+58',
+  'vietnam': '+84',
+  'wallis and futuna': '+681',
+  'western sahara': '+212',
+  'yemen': '+967',
+  'zambia': '+260',
+  'zimbabwe': '+263'
+};
 
 const BookingCheckout = () => {
   const [searchParams] = useSearchParams();
@@ -101,11 +392,35 @@ const BookingCheckout = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
-  const [country, setCountry] = useState('Choose Your Country');
+  const [passportNumber, setPassportNumber] = useState('');
+  const [country, setCountry] = useState('');
   const [phone, setPhone] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
   const [extraRequirements, setExtraRequirements] = useState('');
   const [additionalTravelers, setAdditionalTravelers] = useState([]);
+
+  const handleCountryChange = (typedCountry) => {
+    setCountry(typedCountry);
+    const key = typedCountry.trim().toLowerCase();
+    if (!key) return;
+
+    let matchedCode = countryCallingCodes[key];
+    if (!matchedCode) {
+      const foundKey = Object.keys(countryCallingCodes).find(c => key === c || key.startsWith(c) || (c.length > 3 && key.includes(c)));
+      if (foundKey) matchedCode = countryCallingCodes[foundKey];
+    }
+
+    if (matchedCode) {
+      setPhone(prev => {
+        if (!prev || prev.trim() === '' || prev.startsWith('+')) {
+          const spaceIdx = prev.indexOf(' ');
+          const existingDigits = spaceIdx !== -1 ? prev.slice(spaceIdx + 1) : '';
+          return existingDigits ? `${matchedCode} ${existingDigits}` : `${matchedCode} `;
+        }
+        return `${matchedCode} ${prev}`;
+      });
+    }
+  };
 
   // Sync additional traveler details fields with travelersCount
   useEffect(() => {
@@ -231,7 +546,7 @@ const BookingCheckout = () => {
 
   const handleBookingSubmit = async (e) => {
     e.preventDefault();
-    if (!firstName || !lastName || !email || !phone || country === 'Choose Your Country') {
+    if (!firstName || !lastName || !email || !phone || !country || country.trim() === '') {
       alert('Please fill out all required fields marked with *');
       return;
     }
@@ -258,6 +573,7 @@ const BookingCheckout = () => {
         firstName,
         lastName,
         email,
+        passportNumber,
         country,
         phone,
         whatsapp,
@@ -306,7 +622,7 @@ Duration: ${durationText}
 Lead Traveler Details:
 - Name: ${firstName} ${lastName}
 - Email: ${email}
-- Country: ${country}
+${passportNumber ? `- Passport Number: ${passportNumber}\n` : ''}- Country: ${country}
 - Phone: ${phone}
 - WhatsApp: ${whatsapp}
 ${extraRequirements ? `- Special Requirements: ${extraRequirements}\n` : ''}${travelersBody}
@@ -490,7 +806,7 @@ ${firstName} ${lastName}`);
                     </div>
 
                     {/* Email */}
-                    <div className="md:col-span-2">
+                    <div>
                       <label className="block text-sm font-semibold text-slate-700 mb-2">Email Address *</label>
                       <input 
                         type="email" 
@@ -502,20 +818,35 @@ ${firstName} ${lastName}`);
                       />
                     </div>
 
+                    {/* Passport Number */}
+                    <div>
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">Passport Number (Optional)</label>
+                      <input 
+                        type="text" 
+                        placeholder="Passport Number"
+                        value={passportNumber}
+                        onChange={(e) => setPassportNumber(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                      />
+                    </div>
+
                     {/* Choose Country */}
                     <div>
-                      <label className="block text-sm font-semibold text-slate-700 mb-2">Choose Your Country *</label>
-                      <select 
+                      <label className="block text-sm font-semibold text-slate-700 mb-2">Your Country *</label>
+                      <input 
+                        type="text" 
                         required
+                        list="country-suggestions"
+                        placeholder="Enter Your Country"
                         value={country}
-                        onChange={(e) => setCountry(e.target.value)}
-                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3.5 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium cursor-pointer"
-                      >
-                        <option disabled value="Choose Your Country">Choose Your Country</option>
+                        onChange={(e) => handleCountryChange(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl py-3 px-4 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e53a24] font-medium"
+                      />
+                      <datalist id="country-suggestions">
                         {countries.map(c => (
-                          <option key={c} value={c}>{c}</option>
+                          <option key={c} value={c} />
                         ))}
-                      </select>
+                      </datalist>
                     </div>
 
                     {/* Phone Number */}

@@ -30,9 +30,20 @@ export const BookingProvider = ({ children }) => {
       console.error("Error saving booking on backend", err);
     }
 
+    let maxNum = 0;
+    bookings.forEach(b => {
+      if (b && b.id) {
+        const match = String(b.id).match(/ZNX\s*-\s*(\d+)/i) || String(b.id).match(/(\d+)/);
+        if (match) {
+          const num = parseInt(match[1], 10);
+          if (num > maxNum) maxNum = num;
+        }
+      }
+    });
+    const nextNum = maxNum + 1;
     const newBooking = {
       ...bookingData,
-      id: `BK-${Math.random().toString(36).substr(2, 9).toUpperCase()}`,
+      id: `ZNX - ${String(nextNum).padStart(3, '0')}`,
       status: 'pending',
       createdAt: new Date().toISOString()
     };

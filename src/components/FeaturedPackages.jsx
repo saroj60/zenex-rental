@@ -169,12 +169,6 @@ const FeaturedPackages = () => {
                 key={pkg.id} 
                 className="min-w-[280px] w-[280px] md:min-w-[310px] md:w-[310px] bg-white rounded-3xl shadow-sm border border-slate-100 flex flex-col snap-start shrink-0 group hover:shadow-2xl hover:shadow-[#1e3a8a]/5 hover:-translate-y-2 transition-all duration-300 overflow-hidden relative"
               >
-                {pkg.badge && (
-                  <div className="absolute top-4 left-4 z-20 bg-gradient-to-r from-orange-500 to-[#e53a24] text-white text-[11px] font-black uppercase tracking-wider px-3.5 py-1.5 rounded-xl shadow-md">
-                    {pkg.badge}
-                  </div>
-                )}
-                
                 <div className="relative h-52 overflow-hidden">
                   <img src={pkg.img} alt={pkg.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -264,12 +258,6 @@ const FeaturedPackages = () => {
                 key={pkg.id} 
                 className="min-w-[280px] w-[280px] md:min-w-[310px] md:w-[310px] bg-white rounded-3xl shadow-sm border border-slate-100 flex flex-col snap-start shrink-0 group hover:shadow-2xl hover:shadow-[#1e3a8a]/5 hover:-translate-y-2 transition-all duration-300 overflow-hidden relative"
               >
-                {pkg.badge && (
-                  <div className="absolute top-4 left-4 z-20 bg-gradient-to-r from-orange-500 to-[#e53a24] text-white text-[11px] font-black uppercase tracking-wider px-3.5 py-1.5 rounded-xl shadow-md">
-                    {pkg.badge}
-                  </div>
-                )}
-                
                 <div className="relative h-52 overflow-hidden">
                   <img src={pkg.img} alt={pkg.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>

@@ -2,8 +2,8 @@
   "vehicles": [
     {
       "id": 1,
-      "name": "Toyota Corolla",
-      "type": "Sedan",
+      "name": "Suzuki Swift",
+      "type": "Hatchback / Sedan",
       "price": 3500,
       "priceWithDriver": 5000,
       "img": "/images/economy_car.png",
@@ -13,24 +13,24 @@
       "luggage": 2,
       "rating": 4.8,
       "reviews": 120,
-      "seoTitle": "Rent Toyota Corolla Sedan in Kathmandu - Zenex Travel",
-      "seoDescription": "Premium Toyota Corolla sedan rental in Kathmandu. Perfect for city tours, airport transfers, and business trips."
+      "seoTitle": "Rent Suzuki Swift in Kathmandu - Zenex Travel",
+      "seoDescription": "Premium Suzuki Swift hatchback rental in Kathmandu. Perfect for city tours, airport transfers, and family trips."
     },
     {
       "id": 2,
-      "name": "Hyundai Creta",
+      "name": "Toyota Fortuner",
       "type": "SUV / 4x4",
       "price": 5500,
       "priceWithDriver": 7500,
       "img": "/images/suv_car.png",
-      "seats": 5,
-      "trans": "Manual",
+      "seats": 7,
+      "trans": "Automatic",
       "fuel": "Diesel",
-      "luggage": 3,
+      "luggage": 4,
       "rating": 4.9,
       "reviews": 98,
-      "seoTitle": "Hire Hyundai Creta SUV in Nepal - Best for Chitwan Safari",
-      "seoDescription": "Premium Hyundai Creta SUV rental in Kathmandu. Perfect for jungle safaris, mountain drives, and family tours."
+      "seoTitle": "Hire Toyota Fortuner 4x4 SUV in Nepal - Zenex Travels",
+      "seoDescription": "Premium Toyota Fortuner 4x4 SUV rental in Kathmandu. Perfect for mountain drives, offroad tours, and luxury travel."
     },
     {
       "id": 4,
@@ -1627,7 +1627,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Gokyo and Renjo La Pass Trek - 13 Days",
-          "content": "For travelers interested in the Gokyo Lake & Renjo La Pass trek in Everest, you will need two main permits:\n\n• Sagarmatha National Park Permit – NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Entry Permit – NPR 3,000\n\nThese permits are mandatory and will be arranged by Asian Adventure Treks & Expedition on your behalf before your trek begins. No need to worry about visiting offices or standing in lines!"
+          "content": "For travelers interested in the Gokyo Lake & Renjo La Pass trek in Everest, you will need two main permits:\n\n• Sagarmatha National Park Permit – NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Entry Permit – NPR 3,000\n\nThese permits are mandatory and will be arranged by Zenex Travels on your behalf before your trek begins. No need to worry about visiting offices or standing in lines!"
         },
         {
           "title": "Best Time for Everest Gokyo & Renjo La Pass Trek",
@@ -2117,7 +2117,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Gokyo and Renjo La Pass Trek - 13 Days",
-          "content": "For travelers interested in the Gokyo Lake & Renjo La Pass trek in Everest, you will need two main permits:\n\n• Sagarmatha National Park Permit – NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Entry Permit – NPR 3,000\n\nThese permits are mandatory and will be arranged by Asian Adventure Treks & Expedition on your behalf before your trek begins. No need to worry about visiting offices or standing in lines!"
+          "content": "For travelers interested in the Gokyo Lake & Renjo La Pass trek in Everest, you will need two main permits:\n\n• Sagarmatha National Park Permit – NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Entry Permit – NPR 3,000\n\nThese permits are mandatory and will be arranged by Zenex Travels on your behalf before your trek begins. No need to worry about visiting offices or standing in lines!"
         },
         {
           "title": "Best Time for Everest Gokyo & Renjo La Pass Trek",
@@ -2633,7 +2633,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Everest Base Camp Trekking with Helicopter Return",
-          "content": "For travelers doing the Everest Base Camp Trek with Helicopter Return, you will need two main permits:\n\n• Sagarmatha National Park Entry Permit: Required to enter the park covering EBC, Kala Patthar, and Khumbu glacier.\n• Khumbu Pasang Lhamu Rural Municipality Permit: Local permit required to trek in the Khumbu region.\n\nNote: The TIMS card is no longer required for treks in the Everest region. At Asian Adventure Treks & Expedition, we arrange all permits in advance!"
+          "content": "For travelers doing the Everest Base Camp Trek with Helicopter Return, you will need two main permits:\n\n• Sagarmatha National Park Entry Permit: Required to enter the park covering EBC, Kala Patthar, and Khumbu glacier.\n• Khumbu Pasang Lhamu Rural Municipality Permit: Local permit required to trek in the Khumbu region.\n\nNote: The TIMS card is no longer required for treks in the Everest region. At Zenex Travels, we arrange all permits in advance!"
         },
         {
           "title": "Best Time for Everest Base Camp Trek with Heli Return",
@@ -3133,7 +3133,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Everest - Gokyo Lake Trek",
-          "content": "For travelers interested in the Gokyo Lake trek in Everest, you will need two main permits:\n\n• Sagarmatha National Park Permit – NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Entry Permit – NPR 3,000\n\nThese permits are mandatory and will be arranged by Asian Adventure Treks & Expedition on your behalf before your trek begins!"
+          "content": "For travelers interested in the Gokyo Lake trek in Everest, you will need two main permits:\n\n• Sagarmatha National Park Permit – NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Entry Permit – NPR 3,000\n\nThese permits are mandatory and will be arranged by Zenex Travels on your behalf before your trek begins!"
         },
         {
           "title": "Best Time for Everest Gokyo Lake Trek",
@@ -3470,7 +3470,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Amadablam Base Camp Trekking",
-          "content": "For travelers doing the Ama Dablam Base Camp Trek, you will need two main permits:\n\n• Sagarmatha National Park Entry Permit: Required to enter the park covering Tengboche, Pangboche, and Base Camp.\n• Khumbu Pasang Lhamu Rural Municipality Permit: Local permit required to trek in the Khumbu region.\n\nNote: The TIMS card is no longer required for treks in the Everest region. At Asian Adventure Treks & Expedition, we arrange all permits in advance!"
+          "content": "For travelers doing the Ama Dablam Base Camp Trek, you will need two main permits:\n\n• Sagarmatha National Park Entry Permit: Required to enter the park covering Tengboche, Pangboche, and Base Camp.\n• Khumbu Pasang Lhamu Rural Municipality Permit: Local permit required to trek in the Khumbu region.\n\nNote: The TIMS card is no longer required for treks in the Everest region. At Zenex Travels, we arrange all permits in advance!"
         },
         {
           "title": "Best Time for Everest Amadablam Base Camp Trek",
@@ -3921,7 +3921,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required For The Pikey Peak Trek",
-          "content": "To trek to Pikey Peak in the lower Everest region, you will need:\n\n• Gaurishankar Conservation Area Permit (GCAP): Required as parts of the Pikey Peak trail fall under the Gaurishankar Conservation Area.\n• Trekker’s Information Management System (TIMS) / Local Entry Permit: For trekker safety and registration.\n\nOur team at Asian Adventure Treks & Expedition handles all permit arrangements for you in advance!"
+          "content": "To trek to Pikey Peak in the lower Everest region, you will need:\n\n• Gaurishankar Conservation Area Permit (GCAP): Required as parts of the Pikey Peak trail fall under the Gaurishankar Conservation Area.\n• Trekker’s Information Management System (TIMS) / Local Entry Permit: For trekker safety and registration.\n\nOur team at Zenex Travels handles all permit arrangements for you in advance!"
         },
         {
           "title": "Best Time for Everest Pikey Peak Trek",
@@ -4369,7 +4369,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Everest View Trek",
-          "content": "For the Everest View Trek, you will need two main permits:\n\n• Sagarmatha National Park Entry Permit: NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Permit: NPR 3,000\n\nThese permits are arranged by Asian Adventure Treks & Expedition on your behalf in advance!"
+          "content": "For the Everest View Trek, you will need two main permits:\n\n• Sagarmatha National Park Entry Permit: NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Permit: NPR 3,000\n\nThese permits are arranged by Zenex Travels on your behalf in advance!"
         },
         {
           "title": "Best Season for Everest View Trek",
@@ -4714,7 +4714,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Everest Three Pass Trekking",
-          "content": "To complete the Everest Three Passes Trek, you will need:\n\n• Sagarmatha National Park Entry Permit: NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Permit: NPR 3,000\n\nThese permits are arranged by Asian Adventure Treks & Expedition on your behalf!"
+          "content": "To complete the Everest Three Passes Trek, you will need:\n\n• Sagarmatha National Park Entry Permit: NPR 3,000\n• Khumbu Pasang Lhamu Rural Municipality Permit: NPR 3,000\n\nThese permits are arranged by Zenex Travels on your behalf!"
         },
         {
           "title": "Best Time for Everest Three Pass Trek",
@@ -5155,7 +5155,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Jiri to EBC Trek",
-          "content": "To complete the Jiri to Everest Base Camp Trek, you will need three permits:\n\n• Gaurishankar Conservation Area Permit (GCAP): NPR 3,000 (Jiri to Nunthala section)\n• Sagarmatha National Park Entry Permit: NPR 3,000 (Upper Khumbu region)\n• Khumbu Pasang Lhamu Rural Municipality Permit: NPR 3,000\n\nThese permits are arranged by Asian Adventure Treks & Expedition on your behalf!"
+          "content": "To complete the Jiri to Everest Base Camp Trek, you will need three permits:\n\n• Gaurishankar Conservation Area Permit (GCAP): NPR 3,000 (Jiri to Nunthala section)\n• Sagarmatha National Park Entry Permit: NPR 3,000 (Upper Khumbu region)\n• Khumbu Pasang Lhamu Rural Municipality Permit: NPR 3,000\n\nThese permits are arranged by Zenex Travels on your behalf!"
         },
         {
           "title": "Best Time for Jiri to Everest Base Camp Trek",
@@ -5574,7 +5574,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Mera Peak & Amphu Lapcha Pass",
-          "content": "To climb Mera Peak and cross Amphu Lapcha Pass, you will need four permits:\n\n• Mera Peak Climbing Permit (NMA): Official NMA climbing permit.\n• Makalu Barun National Park Permit: Required for Hinku/Hongu valleys.\n• Sagarmatha National Park Permit: Required for Imja valley/Khumbu section.\n• Khumbu Pasang Lhamu Rural Municipality Permit: Local entry permit.\n\nAll permits are pre-arranged by Asian Adventure Treks & Expedition!"
+          "content": "To climb Mera Peak and cross Amphu Lapcha Pass, you will need four permits:\n\n• Mera Peak Climbing Permit (NMA): Official NMA climbing permit.\n• Makalu Barun National Park Permit: Required for Hinku/Hongu valleys.\n• Sagarmatha National Park Permit: Required for Imja valley/Khumbu section.\n• Khumbu Pasang Lhamu Rural Municipality Permit: Local entry permit.\n\nAll permits are pre-arranged by Zenex Travels!"
         },
         {
           "title": "Best Time for Mera Peak & Amphu Lapcha Pass",
@@ -6009,7 +6009,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Annapurna Base Camp Trek",
-          "content": "To trek to Annapurna Base Camp via Ghandruk, you will need two main permits:\n\n• Annapurna Conservation Area Permit (ACAP): NPR 3,000 per person\n• Trekkers' Information Management System (TIMS) Card: NPR 2,000 per person\n\nAll permits are arranged by Asian Adventure Treks & Expedition on your behalf in advance!"
+          "content": "To trek to Annapurna Base Camp via Ghandruk, you will need two main permits:\n\n• Annapurna Conservation Area Permit (ACAP): NPR 3,000 per person\n• Trekkers' Information Management System (TIMS) Card: NPR 2,000 per person\n\nAll permits are arranged by Zenex Travels on your behalf in advance!"
         },
         {
           "title": "Best Time for Annapurna Base Camp Trek",
@@ -6386,7 +6386,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Annapurna Circuit & Tilicho Lake",
-          "content": "To complete this trek, you will need two permits:\n\n• Annapurna Conservation Area Permit (ACAP): NPR 3,000 per person\n• Trekkers' Information Management System (TIMS) Card: NPR 2,000 per person\n\nArranged in advance by Asian Adventure Treks & Expedition!"
+          "content": "To complete this trek, you will need two permits:\n\n• Annapurna Conservation Area Permit (ACAP): NPR 3,000 per person\n• Trekkers' Information Management System (TIMS) Card: NPR 2,000 per person\n\nArranged in advance by Zenex Travels!"
         },
         {
           "title": "Best Seasons for Tilicho & Thorong La Pass",
@@ -6772,7 +6772,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Mardi Himal Trek",
-          "content": "To trek to Mardi Himal Base Camp, you will need two main permits:\n\n• Annapurna Conservation Area Permit (ACAP): NPR 3,000 per person\n• Trekkers' Information Management System (TIMS) Card: NPR 2,000 per person\n\nArranged in advance by Asian Adventure Treks & Expedition!"
+          "content": "To trek to Mardi Himal Base Camp, you will need two main permits:\n\n• Annapurna Conservation Area Permit (ACAP): NPR 3,000 per person\n• Trekkers' Information Management System (TIMS) Card: NPR 2,000 per person\n\nArranged in advance by Zenex Travels!"
         },
         {
           "title": "Best Seasons for Mardi Himal Trek",
@@ -7456,7 +7456,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Ghorepani & Chitwan Tour",
-          "content": "To complete this trek, you will need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Both permits are arranged in advance by Asian Adventure Treks & Expedition!"
+          "content": "To complete this trek, you will need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Both permits are arranged in advance by Zenex Travels!"
         },
         {
           "title": "Best Seasons for Poon Hill & Safari",
@@ -7806,7 +7806,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Khopra Danda Trek",
-          "content": "To complete this trek, you will need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Asian Adventure Treks & Expedition!"
+          "content": "To complete this trek, you will need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Zenex Travels!"
         },
         {
           "title": "Best Seasons for Khopra Danda",
@@ -8032,7 +8032,7 @@
         "pricePer": "Person"
       },
       "shortDescription": "Off-the-beaten-path 12-day restricted area trek into the medieval Tibetan lost valleys of Nar and Phu, crossing high Kang La Pass (5,306 m).",
-      "description": "<p class=\"mb-4\"><strong>Short Nar Phu Valley Trek of 12 days</strong> in Nepal is a remote, restricted, and culturally rich journey into the lost valleys of the northern Annapurna region. Opened to trekkers only in 2003, this off-the-beaten-path trail takes you into hidden Tibetan-influenced valleys filled with ancient stone villages, fortresses, and medieval monasteries untouched by modern development.</p><p class=\"mb-6\">The trek starts from <strong>Koto (2,600 m)</strong> where you leave the main Annapurna Circuit to enter the restricted Nar and Phu valleys. Highlights include <strong>Phu Gaun (4,080 m)</strong>, home to the centuries-old <strong>Tashi Lhakhang Monastery</strong> blessed by the Dalai Lama, and <strong>Nar Village (4,200 m)</strong>.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Kang La Pass (5,306 m) & Hidden Himalayan Vistas</h3><p class=\"mb-4\">The ultimate adventure of the trek is crossing <strong>Kang La Pass (5,306 m)</strong>, offering jaw-dropping views of Annapurna II (7,937 m), Himlung Himal (7,126 m), Tilicho Peak, Gangapurna, and Pisang Peak before descending to Ngawal on the Annapurna Circuit.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Permits & Restricted Area Regulations</h3><p class=\"mb-6\">Nar Phu is a Special Restricted Area requiring a Special Restricted Area Permit (min. 2 trekkers accompanied by a licensed guide). All permits are arranged by Asian Adventure Treks & Expedition!</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Who Can Do Nar Phu Valley Trek?</h3><p class=\"mb-6\">Graded MODERATE (3/4). Suitable for physically fit trekkers and culture lovers looking for remote, peaceful high-altitude Himalayan wilderness away from crowded trails.</p>",
+      "description": "<p class=\"mb-4\"><strong>Short Nar Phu Valley Trek of 12 days</strong> in Nepal is a remote, restricted, and culturally rich journey into the lost valleys of the northern Annapurna region. Opened to trekkers only in 2003, this off-the-beaten-path trail takes you into hidden Tibetan-influenced valleys filled with ancient stone villages, fortresses, and medieval monasteries untouched by modern development.</p><p class=\"mb-6\">The trek starts from <strong>Koto (2,600 m)</strong> where you leave the main Annapurna Circuit to enter the restricted Nar and Phu valleys. Highlights include <strong>Phu Gaun (4,080 m)</strong>, home to the centuries-old <strong>Tashi Lhakhang Monastery</strong> blessed by the Dalai Lama, and <strong>Nar Village (4,200 m)</strong>.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Kang La Pass (5,306 m) & Hidden Himalayan Vistas</h3><p class=\"mb-4\">The ultimate adventure of the trek is crossing <strong>Kang La Pass (5,306 m)</strong>, offering jaw-dropping views of Annapurna II (7,937 m), Himlung Himal (7,126 m), Tilicho Peak, Gangapurna, and Pisang Peak before descending to Ngawal on the Annapurna Circuit.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Permits & Restricted Area Regulations</h3><p class=\"mb-6\">Nar Phu is a Special Restricted Area requiring a Special Restricted Area Permit (min. 2 trekkers accompanied by a licensed guide). All permits are arranged by Zenex Travels!</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Who Can Do Nar Phu Valley Trek?</h3><p class=\"mb-6\">Graded MODERATE (3/4). Suitable for physically fit trekkers and culture lovers looking for remote, peaceful high-altitude Himalayan wilderness away from crowded trails.</p>",
       "highlights": [
         "Journey through restricted lost valleys of Nar and Phu, opened to trekkers only in 2003",
         "Cross the thrilling high mountain Kang La Pass (5,306 m) with vistas of Annapurna II, Tilicho Peak, and Himlung Himal",
@@ -8486,7 +8486,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Namun La Pass Trek",
-          "content": "Requires the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Asian Adventure Treks & Expedition!"
+          "content": "Requires the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Zenex Travels!"
         },
         {
           "title": "Best Seasons for Namun Bhanjyang Camping",
@@ -8688,9 +8688,9 @@
         "pricePer": "Person"
       },
       "shortDescription": "Newly explored 2024 cultural wilderness camping trail visiting Kwholasothar ancestral origin village, sacred Dudh Pokhari Lake (4,585 m), and Gurung Deurali (4,910 m).",
-      "description": "<p class=\"mb-4\">The <strong>Gurung Heritage Trekking Trail (GHTT) of 13 days</strong> is a newly opened cultural and wilderness camping route in the Annapurna region of Nepal. Officially explored in 2024 by local Gurung leaders from Lamjung & Pokhara alongside Mr. B.B. Suyal (CEO of Asian Adventure Treks & Expedition), who praised it as <em>\"one of the best, most authentic Himalayan treks ever experienced.\"</em></p><p class=\"mb-6\">This offbeat trail traverses ancestral migration routes, ancient salt-trade paths, and sacred sites far away from commercial tourist crowds. You will visit <strong>Kwholasothar (3,283 m)</strong> — the historic origin village from which all Gurung communities migrated across Nepal.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Sacred Dudh Pokhari Lake (4,585 m) & Gurung Deurali Pass (4,910 m)</h3><p class=\"mb-4\">Trek to high alpine plateaus including <strong>Karpu Danda (3,072 m)</strong>, <strong>Thulek (4,070 m)</strong>, and <strong>Thurju</strong>. Take a spiritual excursion to sacred <strong>Dudh Pokhari Lake (4,585 m)</strong> before crossing <strong>Gurung Deurali Pass (4,910 m)</strong> for breathtaking panoramas of Mount Manaslu (8,163 m), Annapurna II, Annapurna IV, and Lamjung Himal.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Wilderness Camping Experience & Community Support</h3><p class=\"mb-6\">As a newly opened wilderness route, high-altitude sections feature tented camping setup provided by our professional camp crew, cook, and staff, while lower settlements offer authentic homestays in Tangting and teahouses in Timang.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Who Can Do Gurung Heritage Trekking?</h3><p class=\"mb-6\">Graded MODERATE (max altitude 4,910 m). Suitable for physically fit trekkers, photographers, culture lovers, and nature enthusiasts seeking an authentic, crowd-free Himalayan expedition!</p>",
+      "description": "<p class=\"mb-4\">The <strong>Gurung Heritage Trekking Trail (GHTT) of 13 days</strong> is a newly opened cultural and wilderness camping route in the Annapurna region of Nepal. Officially explored in 2024 by local Gurung leaders from Lamjung & Pokhara alongside Mr. B.B. Suyal (CEO of Zenex Travels), who praised it as <em>\"one of the best, most authentic Himalayan treks ever experienced.\"</em></p><p class=\"mb-6\">This offbeat trail traverses ancestral migration routes, ancient salt-trade paths, and sacred sites far away from commercial tourist crowds. You will visit <strong>Kwholasothar (3,283 m)</strong> — the historic origin village from which all Gurung communities migrated across Nepal.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Sacred Dudh Pokhari Lake (4,585 m) & Gurung Deurali Pass (4,910 m)</h3><p class=\"mb-4\">Trek to high alpine plateaus including <strong>Karpu Danda (3,072 m)</strong>, <strong>Thulek (4,070 m)</strong>, and <strong>Thurju</strong>. Take a spiritual excursion to sacred <strong>Dudh Pokhari Lake (4,585 m)</strong> before crossing <strong>Gurung Deurali Pass (4,910 m)</strong> for breathtaking panoramas of Mount Manaslu (8,163 m), Annapurna II, Annapurna IV, and Lamjung Himal.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Wilderness Camping Experience & Community Support</h3><p class=\"mb-6\">As a newly opened wilderness route, high-altitude sections feature tented camping setup provided by our professional camp crew, cook, and staff, while lower settlements offer authentic homestays in Tangting and teahouses in Timang.</p><h3 class=\"text-xl font-bold text-gray-900 mt-8 mb-4\">Who Can Do Gurung Heritage Trekking?</h3><p class=\"mb-6\">Graded MODERATE (max altitude 4,910 m). Suitable for physically fit trekkers, photographers, culture lovers, and nature enthusiasts seeking an authentic, crowd-free Himalayan expedition!</p>",
       "highlights": [
-        "Newly opened trail in 2024 explored & promoted by local Lamjung & Pokhara Gurung communities along with Asian Adventure Treks CEO B.B. Suyal",
+        "Newly opened trail in 2024 explored & promoted by local Lamjung & Pokhara Gurung communities along with Zenex Travels CEO B.B. Suyal",
         "Trek through ancient Gurung ancestral migration paths, salt-trade routes, and sacred high-altitude pilgrimage sites",
         "Visit Kwholasothar (3,283 m), the historical ancestral cradle of all Gurung communities in Nepal with palace ruins",
         "Cross Gurung Deurali Pass (4,910 m) offering 360° panoramas of Annapurna II, Lamjung Himal, Manaslu (8,163 m), and Himalchuli",
@@ -8835,7 +8835,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Gurung Heritage Trekking Trail",
-          "content": "To trek the GHTT, you need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Arranged in advance by Asian Adventure Treks & Expedition!"
+          "content": "To trek the GHTT, you need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Arranged in advance by Zenex Travels!"
         },
         {
           "title": "Best Seasons for GHTT Camping",
@@ -8891,7 +8891,7 @@
       "faqs": [
         {
           "question": "When was the Gurung Heritage Trekking Trail explored?",
-          "answer": "It was officially explored in 2024 by local Gurung leaders and Asian Adventure Treks CEO Mr. B.B. Suyal as a quiet cultural camping alternative to busy Annapurna routes."
+          "answer": "It was officially explored in 2024 by local Gurung leaders and Zenex Travels CEO Mr. B.B. Suyal as a quiet cultural camping alternative to busy Annapurna routes."
         },
         {
           "question": "What is Kwholasothar?",
@@ -9194,7 +9194,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Annapurna Circuit Trek",
-          "content": "To complete this trek, you will need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Asian Adventure Treks & Expedition!"
+          "content": "To complete this trek, you will need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Zenex Travels!"
         },
         {
           "title": "Best Seasons for Annapurna Circuit",
@@ -9563,7 +9563,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for Tilicho & Mesokanta Pass Trek",
-          "content": "Requires the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Asian Adventure Treks & Expedition!"
+          "content": "Requires the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Zenex Travels!"
         },
         {
           "title": "Best Seasons for Mesokanta La Crossing",
@@ -9921,7 +9921,7 @@
       "essentialInfo": [
         {
           "title": "Permits Required for ABC via Ghorepani Trek",
-          "content": "To complete this trek, you will need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Asian Adventure Treks & Expedition!"
+          "content": "To complete this trek, you will need the Annapurna Conservation Area Permit (ACAP) and TIMS Card. Handled in advance by Zenex Travels!"
         },
         {
           "title": "Best Seasons for ABC via Poon Hill",

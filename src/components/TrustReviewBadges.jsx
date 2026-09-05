@@ -23,13 +23,23 @@ const TrustReviewBadges = ({ title, lightMode = false }) => {
       
       {/* TripAdvisor Badge */}
       <div className="flex items-center gap-2">
-        {/* Custom TripAdvisor Owl Icon */}
-        <svg className="w-5 h-5 text-[#00AA6C] shrink-0" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm0 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
-          <circle cx="9.5" cy="12" r="1.5" fill="white" />
-          <circle cx="14.5" cy="12" r="1.5" fill="white" />
-          <circle cx="9.5" cy="12" r="0.7" fill="#00AA6C" />
-          <circle cx="14.5" cy="12" r="0.7" fill="#00AA6C" />
+        {/* Official TripAdvisor Logo */}
+        <svg className="w-5.5 h-5.5 shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="16" fill="#00AA6C"/>
+          {/* Left Eye Outer Ring */}
+          <circle cx="11" cy="15" r="4.5" fill="white"/>
+          <circle cx="11" cy="15" r="3" fill="#00AA6C"/>
+          <circle cx="11" cy="15" r="1.5" fill="#002D1D"/>
+          <circle cx="11.5" cy="14.5" r="0.5" fill="white"/>
+          
+          {/* Right Eye Outer Ring */}
+          <circle cx="21" cy="15" r="4.5" fill="white"/>
+          <circle cx="21" cy="15" r="3" fill="#00AA6C"/>
+          <circle cx="21" cy="15" r="1.5" fill="#002D1D"/>
+          <circle cx="21.5" cy="14.5" r="0.5" fill="white"/>
+
+          {/* Beak */}
+          <path d="M16 14.5L13.8 19.5H18.2L16 14.5Z" fill="#FF5E00"/>
         </svg>
         {/* TripAdvisor Green Bubble Stars */}
         <div className="flex gap-0.5 shrink-0">

@@ -22,17 +22,9 @@ const Footer = () => {
                 <img 
                   src="/logo.jpg" 
                   alt="Zenex Travels and Tours Logo" 
-                  className="h-14 w-14 rounded-2xl object-cover bg-white p-0.5 border border-slate-700/50 shadow-md"
+                  className="h-14 sm:h-16 w-auto rounded-2xl object-contain bg-white p-1.5 border border-slate-700/60 shadow-lg hover:scale-105 transition-transform duration-300"
                 />
-                <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 border-2 border-[#071624] rounded-full"></span>
-              </div>
-              <div>
-                <h2 className="text-xl font-black text-white tracking-tight leading-none uppercase">
-                  Zenex
-                </h2>
-                <p className="text-xs font-bold text-[#e53a24] uppercase tracking-widest mt-1">
-                  Travels & Tours
-                </p>
+                <span className="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-green-500 border-2 border-[#071624] rounded-full"></span>
               </div>
             </div>
             
@@ -154,31 +146,36 @@ const Footer = () => {
               </ul>
             </div>
             
-            {/* Popular Routes */}
+            {/* Resources */}
             <div className="space-y-4">
               <h3 className="text-white font-bold text-sm tracking-wider uppercase relative pb-2">
-                Popular Routes
+                Resources
                 <span className="absolute bottom-0 left-0 w-8 h-0.5 bg-[#e53a24] rounded-full"></span>
               </h3>
               <ul className="space-y-2.5">
                 <li>
-                  <Link to="/route/kathmandu-to-pokhara" className="text-slate-300 hover:text-[#e53a24] text-[13.5px] transition-colors flex items-center gap-1 group">
-                    <ChevronRight size={12} className="text-slate-500 group-hover:translate-x-0.5 transition-transform" /> KTM to Pokhara
+                  <Link to="/travel-info" className="text-slate-300 hover:text-[#e53a24] text-[13.5px] transition-colors flex items-center gap-1 group">
+                    <ChevronRight size={12} className="text-slate-500 group-hover:translate-x-0.5 transition-transform" /> Travel Info
                   </Link>
                 </li>
                 <li>
-                  <Link to="/route/jeep-hire-mustang" className="text-slate-300 hover:text-[#e53a24] text-[13.5px] transition-colors flex items-center gap-1 group">
-                    <ChevronRight size={12} className="text-slate-500 group-hover:translate-x-0.5 transition-transform" /> Mustang Jeep Hire
+                  <Link to="/travel-guide" className="text-slate-300 hover:text-[#e53a24] text-[13.5px] transition-colors flex items-center gap-1 group">
+                    <ChevronRight size={12} className="text-slate-500 group-hover:translate-x-0.5 transition-transform" /> Travel Guide
                   </Link>
                 </li>
                 <li>
-                  <Link to="/route/kathmandu-to-chitwan" className="text-slate-300 hover:text-[#e53a24] text-[13.5px] transition-colors flex items-center gap-1 group">
-                    <ChevronRight size={12} className="text-slate-500 group-hover:translate-x-0.5 transition-transform" /> KTM to Chitwan
+                  <Link to="/guest-reviews" className="text-slate-300 hover:text-[#e53a24] text-[13.5px] transition-colors flex items-center gap-1 group">
+                    <ChevronRight size={12} className="text-slate-500 group-hover:translate-x-0.5 transition-transform" /> Client Review
                   </Link>
                 </li>
                 <li>
-                  <Link to="/route/pokhara-to-lumbini" className="text-slate-300 hover:text-[#e53a24] text-[13.5px] transition-colors flex items-center gap-1 group">
-                    <ChevronRight size={12} className="text-slate-500 group-hover:translate-x-0.5 transition-transform" /> Pokhara to Lumbini
+                  <Link to="/guest-reviews?modal=write" className="text-slate-300 hover:text-[#e53a24] text-[13.5px] transition-colors flex items-center gap-1 group">
+                    <ChevronRight size={12} className="text-slate-500 group-hover:translate-x-0.5 transition-transform" /> Write a Review
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/planner" className="text-slate-300 hover:text-[#e53a24] text-[13.5px] transition-colors flex items-center gap-1 group">
+                    <ChevronRight size={12} className="text-slate-500 group-hover:translate-x-0.5 transition-transform" /> Customise Trip
                   </Link>
                 </li>
               </ul>
@@ -195,16 +192,22 @@ const Footer = () => {
                   href="https://wa.me/9779767476521?text=Hi!%20I%20need%20assistance." 
                   target="_blank" 
                   rel="noreferrer" 
-                  className="inline-flex items-center gap-2.5 bg-gradient-to-r from-[#25d366] to-[#14ab4c] text-white px-5 py-3 rounded-xl text-sm font-extrabold hover:brightness-105 active:scale-95 transition-all w-full justify-center shadow-lg hover:shadow-[#25D366]/20 duration-200"
+                  className="group relative inline-flex items-center gap-2.5 bg-gradient-to-r from-[#25D366] via-[#20bd5a] to-[#12B04B] text-white py-2.5 px-3 rounded-2xl shadow-lg shadow-[#25D366]/20 hover:shadow-xl hover:shadow-[#25D366]/35 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 w-full border border-white/20"
                 >
-                  <svg 
-                    className="w-5 h-5 fill-white shrink-0" 
-                    viewBox="0 0 24 24" 
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.574 1.97 14.101.945 11.93.945c-5.439 0-9.865 4.372-9.87 9.802a9.74 9.74 0 001.468 4.77l-.968 3.535 3.655-.948zm11.233-7.66c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.669.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                  </svg>
-                  +977 9767476521
+                  <div className="relative flex items-center justify-center w-8 h-8 rounded-xl bg-white/20 shrink-0 group-hover:scale-105 transition-transform">
+                    <svg 
+                      className="w-4 h-4 fill-white drop-shadow-sm shrink-0" 
+                      viewBox="0 0 24 24" 
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.574 1.97 14.101.945 11.93.945c-5.439 0-9.865 4.372-9.87 9.802a9.74 9.74 0 001.468 4.77l-.968 3.535 3.655-.948zm11.233-7.66c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.669.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.011c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                    </svg>
+                    <span className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-emerald-300 rounded-full border-2 border-[#25D366] animate-pulse"></span>
+                  </div>
+                  <div className="flex flex-col text-left min-w-0">
+                    <span className="text-[9px] uppercase tracking-wider font-extrabold text-white/85 leading-none mb-1 whitespace-nowrap">24/7 Chat Support</span>
+                    <span className="text-[12px] xl:text-xs font-extrabold text-white tracking-tight whitespace-nowrap leading-none">+977 9767476521</span>
+                  </div>
                 </a>
               </div>
             </div>

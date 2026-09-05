@@ -50,19 +50,15 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 w-full transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="bg-white/95 backdrop-blur-md border-b border-gray-200/85 shadow-sm flex justify-between items-center px-4 md:px-12 py-3">
         <div className="flex items-center gap-2">
-          <Link to="/" className="flex items-center gap-3" onClick={() => {
+          <Link to="/" className="flex items-center" onClick={() => {
             setIsMobileMenuOpen(false);
             if (window.location.pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' });
           }}>
-            <img src="/logo.jpg" alt="Zenex Rental" className="h-12 w-12 rounded-full object-cover drop-shadow-sm border-2 border-white" />
-            <div className="flex flex-col leading-none">
-              <span className="font-bold text-[#1e3a8a] text-lg sm:text-xl tracking-tight">
-                Zenex Travels
-              </span>
-              <span className="text-xs text-[#e53a24] font-semibold mt-0.5">
-                and Tours
-              </span>
-            </div>
+            <img 
+              src="/logo.jpg" 
+              alt="Zenex Travels and Tours" 
+              className="h-11 sm:h-14 w-auto rounded-2xl object-contain bg-white p-1 shadow-sm border border-slate-100 hover:scale-105 transition-transform duration-300" 
+            />
           </Link>
         </div>
 
@@ -75,6 +71,7 @@ const Header = () => {
           <Link to="/tours" className={getLinkClass('/tours')}>Tours</Link>
           <Link to="/vehicles" className={getLinkClass('/vehicles')}>Vehicles</Link>
           <Link to="/destinations" className={getLinkClass('/destinations')}>Destinations</Link>
+          <Link to="/gallery" className={getLinkClass('/gallery')}>Gallery</Link>
           <Link to="/blogs" className={getLinkClass('/blogs')}>Blogs</Link>
           <Link to="/about" className={getLinkClass('/about')}>About</Link>
           <Link to="/contact" className={getLinkClass('/contact')}>Contact</Link>
@@ -91,7 +88,7 @@ const Header = () => {
                     <svg className="w-3 h-3 text-green-500 fill-current shrink-0" viewBox="0 0 24 24">
                       <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.37 5.054L2 22l5.077-1.332a9.936 9.936 0 004.93 1.302c5.506 0 9.99-4.478 9.99-9.985S17.519 2 12.012 2zm0 18.29a8.275 8.275 0 01-4.218-1.155l-.302-.18-3.13.82.836-3.05-.198-.316a8.278 8.278 0 01-1.268-4.426c.001-4.57 3.72-8.29 8.29-8.29s8.29 3.72 8.29 8.29-3.719 8.29-8.288 8.29zm4.55-6.2c-.25-.124-1.477-.727-1.705-.81-.228-.083-.393-.124-.559.124-.166.248-.641.81-.786.973-.145.163-.29.182-.539.058a6.8 6.8 0 01-1.996-1.232 7.487 7.487 0 01-1.383-1.722c-.145-.248-.015-.382.11-.506.113-.112.25-.29.374-.435.124-.145.166-.248.25-.414.083-.166.04-.31-.02-.435-.06-.124-.559-1.347-.766-1.844-.2-.486-.403-.42-.559-.427h-.477a.92.92 0 00-.663.31c-.228.248-.87.85-.87 2.07s.89 2.4 1.014 2.565c.124.166 1.752 2.675 4.244 3.75.592.256 1.055.409 1.414.523.596.19 1.138.163 1.567.099.478-.072 1.477-.604 1.684-1.159.207-.555.207-1.03.145-1.13-.062-.099-.228-.155-.477-.28z"/>
                     </svg>
-                    <span className="text-[10px] font-bold text-gray-500">Talk to Janardhan</span>
+                    <span className="text-[10px] font-bold text-gray-500">Talk to JD Gautam</span>
                   </div>
                   <div className="flex items-center gap-1.5 mt-0.5">
                     <span className="text-[13px] font-black text-gray-700 tracking-tight">+977 9767476521</span>
@@ -100,7 +97,7 @@ const Header = () => {
                 </div>
                 <img 
                   src="/images/zenexexpert.png" 
-                  alt="Janardhan Gautam" 
+                  alt="JD Gautam" 
                   className="w-9 h-9 rounded-full object-cover border border-gray-200 shadow-sm shrink-0"
                 />
               </div>
@@ -111,11 +108,11 @@ const Header = () => {
                 <div className="flex flex-col py-2.5 divide-y divide-gray-50">
                   <div className="px-4 py-1.5 pb-2">
                     <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Travel Expert</p>
-                    <p className="text-xs font-bold text-gray-800 mt-0.5">Janardhan Gautam</p>
+                    <p className="text-xs font-bold text-gray-800 mt-0.5">JD Gautam</p>
                   </div>
                   <div className="py-1">
                     <a 
-                      href="https://wa.me/9779767476521?text=Hi%20Janardhan,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
+                      href="https://wa.me/9779767476521?text=Hi%20JD,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-2.5 px-4 py-2 text-xs font-bold text-gray-700 hover:bg-gray-50 hover:text-green-600 transition-colors"
@@ -185,14 +182,15 @@ const Header = () => {
             <Link to="/tours" className={getMobileLinkClass('/tours')} onClick={() => setIsMobileMenuOpen(false)}>Tours</Link>
             <Link to="/vehicles" className={getMobileLinkClass('/vehicles')} onClick={() => setIsMobileMenuOpen(false)}>Vehicles</Link>
             <Link to="/destinations" className={getMobileLinkClass('/destinations')} onClick={() => setIsMobileMenuOpen(false)}>Destinations</Link>
+            <Link to="/gallery" className={getMobileLinkClass('/gallery')} onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
             <Link to="/blogs" className={getMobileLinkClass('/blogs')} onClick={() => setIsMobileMenuOpen(false)}>Blogs</Link>
             <Link to="/about" className={getMobileLinkClass('/about')} onClick={() => setIsMobileMenuOpen(false)}>About</Link>
             <Link to="/contact" className={getMobileLinkClass('/contact')} onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
             <div className="h-px bg-gray-100 my-2"></div>
             
-            {/* Mobile Janardhan Chat Card */}
+            {/* Mobile JD Gautam Chat Card */}
             <a 
-              href="https://wa.me/9779767476521?text=Hi%20Janardhan,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
+              href="https://wa.me/9779767476521?text=Hi%20JD,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between p-3.5 bg-green-50/40 hover:bg-green-50 rounded-2xl border border-green-100/60 transition-colors"
@@ -200,7 +198,7 @@ const Header = () => {
               <div className="flex items-center gap-3">
                 <img 
                   src="/images/zenexexpert.png" 
-                  alt="Janardhan Gautam" 
+                  alt="JD Gautam" 
                   className="w-11 h-11 rounded-full object-cover border border-white shadow-sm"
                 />
                 <div className="flex flex-col text-left leading-tight">
@@ -208,7 +206,7 @@ const Header = () => {
                     <svg className="w-3 h-3 text-green-500 fill-current" viewBox="0 0 24 24">
                       <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.37 5.054L2 22l5.077-1.332a9.936 9.936 0 004.93 1.302c5.506 0 9.99-4.478 9.99-9.985S17.519 2 12.012 2zm0 18.29a8.275 8.275 0 01-4.218-1.155l-.302-.18-3.13.82.836-3.05-.198-.316a8.278 8.278 0 01-1.268-4.426c.001-4.57 3.72-8.29 8.29-8.29s8.29 3.72 8.29 8.29-3.719 8.29-8.288 8.29zm4.55-6.2c-.25-.124-1.477-.727-1.705-.81-.228-.083-.393-.124-.559.124-.166.248-.641.81-.786.973-.145.163-.29.182-.539.058a6.8 6.8 0 01-1.996-1.232 7.487 7.487 0 01-1.383-1.722c-.145-.248-.015-.382.11-.506.113-.112.25-.29.374-.435.124-.145.166-.248.25-.414.083-.166.04-.31-.02-.435-.06-.124-.559-1.347-.766-1.844-.2-.486-.403-.42-.559-.427h-.477a.92.92 0 00-.663.31c-.228.248-.87.85-.87 2.07s.89 2.4 1.014 2.565c.124.166 1.752 2.675 4.244 3.75.592.256 1.055.409 1.414.523.596.19 1.138.163 1.567.099.478-.072 1.477-.604 1.684-1.159.207-.555.207-1.03.145-1.13-.062-.099-.228-.155-.477-.28z"/>
                     </svg>
-                    Talk to Janardhan
+                    Talk to JD Gautam
                   </span>
                   <span className="text-sm font-bold text-gray-800 mt-0.5">+977 9767476521</span>
                 </div>

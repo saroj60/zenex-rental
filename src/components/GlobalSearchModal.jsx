@@ -6,8 +6,8 @@ import { featuredPackages } from '../data/packagesData';
 import { treksData } from '../data/treksData';
 
 const STATIC_VEHICLES = [
-  { id: 1, name: 'Toyota Corolla', type: 'Sedan', img: '/images/economy_car.png' },
-  { id: 2, name: 'Hyundai Creta', type: 'SUV / 4x4', img: '/images/suv_car.png' },
+  { id: 1, name: 'Suzuki Swift', type: 'Hatchback / Sedan', img: '/images/economy_car.png' },
+  { id: 2, name: 'Toyota Fortuner', type: 'SUV / 4x4', img: '/images/suv_car.png' },
   { id: 3, name: 'Kia EV6', type: 'EV', img: '/images/luxury_car.png' },
   { id: 4, name: 'Toyota Hiace', type: 'Van / Micro', img: 'https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg' },
   { id: 5, name: 'Mahindra Scorpio', type: 'SUV / 4x4', img: 'https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg' },

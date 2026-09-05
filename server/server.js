@@ -272,13 +272,27 @@ app.get('/api/bookings', (req, res) => {
 
 app.post('/api/bookings', (req, res) => {
   const db = readDb();
-  const booking = {
-    id: `BK-${Math.random().toString(36).substr(2, 9).toUpperCase()}`,
-    status: 'pending',
-    createdAt: new Date().toISOString(),
-    ...req.body
-  };
   if (!db.bookings) db.bookings = [];
+
+  let maxNum = 0;
+  db.bookings.forEach(b => {
+    if (b && b.id) {
+      const match = String(b.id).match(/ZNX\s*-\s*(\d+)/i) || String(b.id).match(/(\d+)/);
+      if (match) {
+        const num = parseInt(match[1], 10);
+        if (num > maxNum) maxNum = num;
+      }
+    }
+  });
+  const nextNum = maxNum + 1;
+  const bookingId = `ZNX - ${String(nextNum).padStart(3, '0')}`;
+
+  const booking = {
+    ...req.body,
+    id: bookingId,
+    status: req.body.status || 'pending',
+    createdAt: req.body.createdAt || new Date().toISOString()
+  };
   db.bookings.push(booking);
   writeDb(db);
 

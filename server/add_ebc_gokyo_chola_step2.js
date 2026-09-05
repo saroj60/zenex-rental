@@ -19,7 +19,7 @@ This journey is achievable for anyone with a passion for adventure and walking. 
 - **Moderately Experienced Trekkers:** If you have prior hiking experience, this trek serves as a fantastic next-level challenge testing your endurance at higher altitudes.
 - **All Group Sizes:** Whether you're traveling solo, as a couple, or in a large group, this well-traveled route offers an unforgettable shared experience in the Himalayas.
 
-### Why Choose Asian Adventure Treks & Expedition?
+### Why Choose Zenex Travels?
 With over two decades of expertise, our team knows these trails intimately. We handle all logistics—from permits and Lukla flights to tea-house accommodations—allowing you to focus entirely on the adventure. Our local Sherpa guides and porters prioritize your safety, adjusting the pace to your comfort while sharing their rich cultural heritage. By trekking with us, you are also supporting responsible tourism and local Himalayan communities.
 
 ### Alternative Treks

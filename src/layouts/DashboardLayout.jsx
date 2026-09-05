@@ -40,9 +40,8 @@ const DashboardLayout = () => {
       <aside className={`w-64 bg-[#0a2f4c] shadow-2xl flex flex-col fixed inset-y-0 left-0 z-30 transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'max-lg:-translate-x-full'}`}>
         <div className="p-6">
           <div className="flex justify-between items-center mb-8">
-            <Link to="/" className="flex items-center gap-2" onClick={() => setIsSidebarOpen(false)}>
-              <img src="/logo.jpg" alt="Zenex Travel Logo" className="h-10 w-10 rounded-full object-cover" />
-              <h1 className="text-xl font-extrabold text-white tracking-tight leading-none">Zenex<span className="text-[#e53a24]">Travel</span></h1>
+            <Link to="/" className="flex items-center" onClick={() => setIsSidebarOpen(false)}>
+              <img src="/logo.jpg" alt="Zenex Travel Logo" className="h-10 w-auto rounded-2xl object-contain bg-white p-1" />
             </Link>
             <button className="lg:hidden text-white" onClick={() => setIsSidebarOpen(false)}>
               <X size={24} />

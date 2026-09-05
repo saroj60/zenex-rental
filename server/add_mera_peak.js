@@ -69,7 +69,7 @@ The Mera Peak and Amphu Lapcha Pass Trekking is a challenging yet rewarding jour
 *   People new to trekking or not used to long walks and mountain terrain
 *   Trekkers without enough time for acclimatization or who prefer unguided routes
 
-*Important Note:* While no prior technical climbing experience is required, basic mountaineering knowledge and strong fitness are essential. Your experienced guide will teach you to use crampons, ropes, and ice axes during the glacier and pass sections. Asian Adventure Treks & Expedition ensures full support, proper acclimatization, and experienced guidance throughout the expedition.`,
+*Important Note:* While no prior technical climbing experience is required, basic mountaineering knowledge and strong fitness are essential. Your experienced guide will teach you to use crampons, ropes, and ice axes during the glacier and pass sections. Zenex Travels ensures full support, proper acclimatization, and experienced guidance throughout the expedition.`,
   facts: {
     "Country": "Nepal",
     "Duration": "19 Days",

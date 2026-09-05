@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, X, ArrowRight, MessageCircle } from 'lucide-react';
+import { Plus, X, ArrowRight, MessageCircle, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -62,22 +62,60 @@ const FAQAccordion = () => {
           })}
         </div>
 
-        {/* CTA Area */}
-        <div className="mt-16 bg-white rounded-3xl p-8 md:p-10 border border-gray-100 shadow-sm flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
-          <div className="absolute right-0 top-0 w-64 h-64 bg-sky-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-          
-          <div className="relative z-10 max-w-xl text-center md:text-left">
-            <h3 className="text-2xl font-bold text-[#1e3a8a] mb-2">Still have questions?</h3>
-            <p className="text-gray-600 font-medium">Talk to our travel experts and get personalized advice for your Nepal trip.</p>
-          </div>
-          
-          <div className="relative z-10 flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
-            <Link to="/packages" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1e3a8a] hover:bg-[#0a2366] text-white font-bold px-6 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg">
-              Contact Us <ArrowRight size={18} />
-            </Link>
-            <a href="https://wa.me/9779767476521" target="_blank" rel="noreferrer" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-gray-200 hover:border-[#25D366] hover:text-[#25D366] text-gray-700 font-bold px-6 py-3.5 rounded-xl transition-colors">
-              <MessageCircle size={18} /> WhatsApp Us
-            </a>
+        {/* Enhanced CTA Banner Area */}
+        <div className="mt-16 relative bg-gradient-to-r from-[#1e3a8a] via-[#1e40af] to-[#0f172a] text-white rounded-3xl p-8 sm:p-10 shadow-xl border border-blue-900/30 overflow-hidden">
+          {/* Subtle Background Glows */}
+          <div className="absolute -right-10 -top-10 w-64 h-64 bg-[#e53a24]/15 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -left-10 -bottom-10 w-64 h-64 bg-teal-500/15 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 text-center md:text-left">
+            
+            {/* Left Info with Expert Avatar */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 max-w-xl">
+              <div className="relative shrink-0">
+                <img 
+                  src="/images/zenexexpert.png" 
+                  alt="JD Gautam - Travel Expert" 
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover border-2 border-white/20 shadow-md"
+                />
+                <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 border-2 border-[#1e3a8a] rounded-full" title="Online now" />
+              </div>
+              
+              <div>
+                <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-md text-amber-300 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-2 border border-white/10">
+                  <Sparkles size={12} /> 24/7 Personal Travel Assistance
+                </span>
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-snug">
+                  Still have questions?
+                </h3>
+                <p className="text-blue-100/90 text-sm sm:text-base font-light mt-1 leading-relaxed">
+                  Talk to <strong className="font-semibold text-white">JD Gautam</strong> and our travel experts for tailored advice on your Nepal trip.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Action Buttons */}
+            <div className="flex flex-col sm:flex-row items-center gap-3.5 w-full md:w-auto shrink-0">
+              <Link 
+                to="/contact" 
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#e53a24] hover:bg-red-600 text-white font-bold px-6 py-3.5 rounded-2xl transition-all duration-300 shadow-lg shadow-red-900/30 whitespace-nowrap hover:scale-105"
+              >
+                <span>Contact Us</span>
+                <ArrowRight size={18} />
+              </Link>
+              
+              <a 
+                href="https://wa.me/9779767476521?text=Hi%20JD,%20I'd%20like%20to%20inquire%20about%20a%20trip/vehicle!" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-6 py-3.5 rounded-2xl transition-all duration-300 shadow-lg shadow-emerald-950/20 whitespace-nowrap hover:scale-105"
+              >
+                <MessageCircle size={19} className="fill-current" />
+                <span>WhatsApp Us</span>
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

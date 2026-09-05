@@ -193,10 +193,10 @@ const About = () => {
           <div className="flex justify-center">
             <div className="bg-[#F4F6F8] rounded-3xl overflow-hidden group max-w-sm w-full">
               <div className="h-80 overflow-hidden relative">
-                <img src="/images/zenexexpert.png" alt="Janardhan Gautam" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <img src="/images/zenexexpert.png" alt="JD Gautam" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
               </div>
               <div className="p-6 text-center">
-                <h4 className="text-xl font-bold text-[#1e3a8a]">Janardhan Gautam</h4>
+                <h4 className="text-xl font-bold text-[#1e3a8a]">JD Gautam</h4>
                 <p className="text-[#e53a24] font-bold text-sm mb-3">CEO & Travel Expert</p>
                 <p className="text-gray-600 text-sm mb-4">With 5+ years of experience, dedicated to ensuring your travel experience is safe, comfortable, and memorable.</p>
                 <a href="https://wa.me/9779767476521" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 w-full bg-[#25D366] text-white py-2.5 rounded-xl font-bold hover:bg-[#1ebd59] transition-colors shadow-sm">

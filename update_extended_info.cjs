@@ -10,7 +10,7 @@ const extendedInfo = [
       "Sagarmatha National Park Entry Permit: This permit is needed once you enter the Sagarmatha National Park, which covers the upper Everest region including Everest Base Camp, Gokyo, and Kala Patthar.",
       "Khumbu Pasang Lhamu Rural Municipality Permit: This local permit is required to trek in the Khumbu region. It replaces the TIMS card for this area and is usually obtained in Lukla or Monjo."
     ],
-    footer: "Note: The TIMS (Trekkers' Information Management System) card is no longer required for treks in the Everest region as per the latest rules.\n\nAt Asian Adventure Treks & Expedition, we take care of all the necessary permits for you. Our team arranges everything in advance, and your guide will carry the documents to ensure smooth passage through all checkpoints."
+    footer: "Note: The TIMS (Trekkers' Information Management System) card is no longer required for treks in the Everest region as per the latest rules.\n\nAt Zenex Travels, we take care of all the necessary permits for you. Our team arranges everything in advance, and your guide will carry the documents to ensure smooth passage through all checkpoints."
   },
   {
     title: "Best Time for Everest Base Camp Trek with Heli Return in Nepal",
@@ -51,7 +51,7 @@ const extendedInfo = [
       },
       {
         subtitle: "Menu Options",
-        description: "During the peak season it will not be easy to get the accommodation during the trek, so for better service and hassle-free journey to Himalayas, book with Asian Adventure Treks & Expedition, we will pre book and ensure to make your holiday memorable and pleasant.",
+        description: "During the peak season it will not be easy to get the accommodation during the trek, so for better service and hassle-free journey to Himalayas, book with Zenex Travels, we will pre book and ensure to make your holiday memorable and pleasant.",
         items: [
           "A. Breakfast Menu (Main Course with a cup of a tea / coffee): Bread / Muesli / Porridge / Pancake / Tibetan Bread / Chapatti / Corn flakes / Burger / Sandwich or any main course dish as per menu with a cup of tea / coffee",
           "B. Lunch Menu (Main Course with a cup of a tea / coffee): Chowmein / Fried Rice / Pasta / French Fries / Chips / Momo / Spring Roll / Pizza / Burger / or any main course dish as per menu with a cup of tea / coffee",

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass } from 'lucide-react';
+import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText } from 'lucide-react';
+import html2pdf from 'html2pdf.js';
 import { useAppData } from '../context/AppDataContext';
 
 import SEO from '../components/SEO';
@@ -9487,6 +9488,224 @@ const PackageDetail = () => {
     window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
   };
 
+  const handleDownloadPDF = () => {
+    if (!pkg) return;
+    const element = document.createElement('div');
+    element.style.padding = '40px';
+    element.style.fontFamily = 'sans-serif';
+    element.style.color = '#333';
+    
+    const headerHtml = `
+      <div style="border-bottom: 2px solid #e53a24; padding-bottom: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <h1 style="color: #1e3a8a; margin: 0; font-size: 28px; font-weight: 800;">Zenex Travels and Tours</h1>
+          <p style="color: #e53a24; margin: 5px 0 0 0; font-size: 14px; font-weight: bold;">Himalayan Tours & Trekking Experts</p>
+        </div>
+        <div style="text-align: right;">
+          <p style="margin: 0; font-size: 12px; color: #666;">Web: zenextravels.com</p>
+          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Phone: +977 9767476521</p>
+          <p style="margin: 3px 0 0 0; font-size: 12px; color: #666;">Email: info@zenextravels.com</p>
+        </div>
+      </div>
+    `;
+    
+    const tripTitleHtml = `
+      <div style="margin-bottom: 25px;">
+        <span style="background-color: #e53a24; color: white; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: bold; text-transform: uppercase;">${pkg.category || 'Tour Package'}</span>
+        <h2 style="color: #1e3a8a; font-size: 24px; margin: 10px 0 5px 0;">${pkg.title}</h2>
+        <p style="color: #666; font-size: 13px; margin: 0;">${pkg.duration ? `Duration: ${pkg.duration} | ` : ''}Price: From ${pkg.price || 'USD 900'}</p>
+      </div>
+    `;
+
+    const quickInfoList = pkg.quickInfo || [];
+    let factsHtml = '';
+    if (quickInfoList.length > 0) {
+      factsHtml = `
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 15px; margin-bottom: 25px;">
+          <h3 style="color: #1e3a8a; margin: 0 0 10px 0; font-size: 16px; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px;">Quick Facts</h3>
+          <table style="width: 100%; font-size: 13px; border-collapse: collapse;">
+            ${quickInfoList.map((item, idx) => {
+              if (idx % 2 === 0) {
+                const nextItem = quickInfoList[idx + 1];
+                return `
+                  <tr>
+                    <td style="padding: 6px 0; font-weight: bold; color: #475569; width: 25%;">${item.label}:</td>
+                    <td style="padding: 6px 0; color: #0f172a; width: 25%;">${item.value}</td>
+                    ${nextItem ? `
+                      <td style="padding: 6px 0; font-weight: bold; color: #475569; width: 25%;">${nextItem.label}:</td>
+                      <td style="padding: 6px 0; color: #0f172a; width: 25%;">${nextItem.value}</td>
+                    ` : '<td colspan="2"></td>'}
+                  </tr>
+                `;
+              }
+              return '';
+            }).join('')}
+          </table>
+        </div>
+      `;
+    }
+
+    const rawOverview = pkg.overview || pkg.desc || pkg.description || '';
+    const cleanOverview = rawOverview.replace(/<div[^>]*>.*?<\/div>/gs, '').replace(/<img[^>]*>/g, '').replace(/### (.*?)\n/g, '<h4 style="color:#1e3a8a;margin-top:15px;margin-bottom:5px;">$1</h4>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    const overviewHtml = `
+      <div style="margin-bottom: 25px;">
+        <h3 style="color: #1e3a8a; font-size: 16px; margin: 0 0 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Overview</h3>
+        <div style="font-size: 13px; line-height: 1.6; color: #334155; margin: 0;">${cleanOverview.replace(/\n\n/g, '<br/><br/>')}</div>
+      </div>
+    `;
+
+    const highlightsList = pkg.highlights || [];
+    let highlightsHtml = '';
+    if (highlightsList.length > 0) {
+      highlightsHtml = `
+        <div style="margin-bottom: 25px; page-break-inside: avoid;">
+          <h3 style="color: #1e3a8a; font-size: 16px; margin: 0 0 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Highlights</h3>
+          <ul style="margin: 0; padding-left: 20px; font-size: 13px; color: #334155; line-height: 1.6;">
+            ${highlightsList.map(h => `<li>${typeof h === 'object' ? h.title : h}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    const itineraryList = pkg.itinerary || [];
+    let itineraryHtml = '';
+    if (itineraryList.length > 0) {
+      itineraryHtml = `
+        <div style="page-break-before: always;">
+          <h3 style="color: #1e3a8a; font-size: 18px; margin: 0 0 15px 0; border-bottom: 2px solid #1e3a8a; padding-bottom: 5px;">Day-by-Day Itinerary</h3>
+          ${itineraryList.map((day, idx) => `
+            <div style="margin-bottom: 20px; border-left: 3px solid #10b981; padding-left: 15px; page-break-inside: avoid;">
+              <h4 style="margin: 0 0 5px 0; color: #0f172a; font-size: 14px; font-weight: bold;">${day.day || `Day ${idx + 1}`}: ${day.title}</h4>
+              <p style="margin: 0; font-size: 12.5px; line-height: 1.5; color: #475569;">${day.desc || day.description || day.details || ''}</p>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    const inclusionsList = pkg.inclusions || [];
+    const exclusionsList = pkg.exclusions || [];
+    let costDetailsHtml = '';
+    if (inclusionsList.length > 0 || exclusionsList.length > 0) {
+      costDetailsHtml = `
+        <div style="page-break-before: always; margin-top: 20px;">
+          <h3 style="color: #1e3a8a; font-size: 18px; margin: 0 0 15px 0; border-bottom: 2px solid #1e3a8a; padding-bottom: 5px;">Cost Details</h3>
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="width: 50%; vertical-align: top; padding-right: 15px;">
+                <h4 style="color: #10b981; font-size: 14px; margin: 0 0 10px 0;">What's Included</h4>
+                <ul style="margin: 0; padding-left: 20px; font-size: 12px; color: #334155; line-height: 1.5;">
+                  ${inclusionsList.map(inc => `<li>${typeof inc === 'object' ? inc.title : inc}</li>`).join('')}
+                </ul>
+              </td>
+              <td style="width: 50%; vertical-align: top; padding-left: 15px; border-left: 1px solid #e2e8f0;">
+                <h4 style="color: #e53a24; font-size: 14px; margin: 0 0 10px 0;">What's Excluded</h4>
+                <ul style="margin: 0; padding-left: 20px; font-size: 12px; color: #334155; line-height: 1.5;">
+                  ${exclusionsList.map(exc => `<li>${typeof exc === 'object' ? exc.title : exc}</li>`).join('')}
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      `;
+    }
+
+    let tripCostHtml = '';
+    if (pkg.tripCost && pkg.tripCost.length > 0) {
+      tripCostHtml = `
+        <div style="margin-top: 25px; page-break-inside: avoid;">
+          <h3 style="color: #1e3a8a; font-size: 16px; margin: 0 0 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Trip Cost</h3>
+          <table style="width: 100%; font-size: 12px; border-collapse: collapse; border: 1px solid #e2e8f0;">
+            <thead>
+              <tr style="background-color: #1e3a8a; color: white;">
+                <th style="padding: 8px; text-align: left;">Category</th>
+                <th style="padding: 8px; text-align: left;">1 Pax</th>
+                <th style="padding: 8px; text-align: left;">2 Pax</th>
+                <th style="padding: 8px; text-align: left;">3-5 Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${pkg.tripCost.map(row => `
+                <tr style="border-bottom: 1px solid #e2e8f0;">
+                  <td style="padding: 8px; font-weight: bold;">${row.category}</td>
+                  <td style="padding: 8px;">${row.pax1}</td>
+                  <td style="padding: 8px;">${row.pax2}</td>
+                  <td style="padding: 8px;">${row.pax3_5}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    let infoHtml = '';
+    if (pkg.information) {
+      infoHtml = `
+        <div style="margin-top: 25px; page-break-inside: avoid;">
+          <h3 style="color: #1e3a8a; font-size: 16px; margin: 0 0 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Essential Trip Information</h3>
+          <div style="font-size: 12px; line-height: 1.6; color: #334155;">
+            ${pkg.information.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n\n/g, '<br/><br/>')}
+          </div>
+        </div>
+      `;
+    }
+
+    let whyBookHtml = '';
+    if (pkg.whyBookWithUs && pkg.whyBookWithUs.length > 0) {
+      whyBookHtml = `
+        <div style="margin-top: 25px; page-break-inside: avoid;">
+          <h3 style="color: #1e3a8a; font-size: 16px; margin: 0 0 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Why Book With Us</h3>
+          <ul style="margin: 0; padding-left: 20px; font-size: 12px; color: #334155; line-height: 1.5;">
+            ${pkg.whyBookWithUs.map(item => `<li>${item}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    const footerHtml = `
+      <div style="margin-top: 40px; border-top: 1px dashed #cbd5e1; padding-top: 15px; text-align: center; font-size: 11px; color: #94a3b8; page-break-inside: avoid;">
+        <p>Thank you for choosing Zenex Travels and Tours. For bookings and inquiries, please visit our website or contact us.</p>
+        <p style="margin: 5px 0 0 0;">© ${new Date().getFullYear()} Zenex Travels and Tours. All Rights Reserved.</p>
+      </div>
+    `;
+
+    element.innerHTML = `
+      ${headerHtml}
+      ${tripTitleHtml}
+      ${factsHtml}
+      ${overviewHtml}
+      ${highlightsHtml}
+      ${itineraryHtml}
+      ${costDetailsHtml}
+      ${tripCostHtml}
+      ${infoHtml}
+      ${whyBookHtml}
+      ${footerHtml}
+    `;
+
+    const opt = {
+      margin:       10,
+      filename:     `${pkg.title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_itinerary.pdf`,
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { 
+        scale: 2, 
+        useCORS: true,
+        onclone: (clonedDoc) => {
+          const styles = clonedDoc.querySelectorAll('style');
+          styles.forEach(s => {
+            if (s.textContent && s.textContent.includes('oklch')) {
+              s.textContent = s.textContent.replace(/oklch\([^)]+\)/g, '#333333');
+            }
+          });
+        }
+      },
+      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().from(element).set(opt).save();
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
@@ -9924,6 +10143,9 @@ const PackageDetail = () => {
                     </button>
                     <button onClick={handleQuickInquiry} className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm">
                       MAKE AN INQUIRY
+                    </button>
+                    <button onClick={handleDownloadPDF} className="w-full flex justify-center items-center gap-2 bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center">
+                      <FileText size={16} className="text-[#e53a24]" /> DOWNLOAD AS PDF
                     </button>
                   </div>
                 </div>

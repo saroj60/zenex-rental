@@ -270,6 +270,30 @@ const TourTripDetail = () => {
       `;
     }
 
+    // Additional Package Information (Useful Info, FAQs)
+    let extraInfoHtml = '';
+    const essential = trip.usefulInfo || trip.information || trip.essentialInfo;
+    const faqs = trip.faqs || [];
+
+    if (essential || (faqs && faqs.length > 0)) {
+      let content = '';
+      if (essential) {
+        content += `<h4 style="color:#1e3a8a;margin-top:15px;margin-bottom:5px;font-size:14px;">Essential & Useful Information</h4><div style="font-size:12px;line-height:1.6;color:#334155;">${essential.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n\n/g, '<br/>')}</div>`;
+      }
+      if (faqs && faqs.length > 0) {
+        content += `<h4 style="color:#1e3a8a;margin-top:15px;margin-bottom:5px;font-size:14px;">Frequently Asked Questions</h4>`;
+        faqs.forEach(faq => {
+          content += `<div style="margin-bottom:8px;"><strong style="font-size:12.5px;color:#0f172a;">Q: ${faq.question || faq.title}</strong><p style="margin:2px 0 0 0;font-size:12px;color:#475569;">${faq.answer || faq.desc}</p></div>`;
+        });
+      }
+      extraInfoHtml = `
+        <div style="margin-top: 25px; page-break-inside: avoid;">
+          <h3 style="color: #1e3a8a; font-size: 16px; margin: 0 0 10px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Package Details & Essential Info</h3>
+          ${content}
+        </div>
+      `;
+    }
+
     // Footer info
     const footerHtml = `
       <div style="margin-top: 40px; border-top: 1px dashed #cbd5e1; padding-top: 15px; text-align: center; font-size: 11px; color: #94a3b8; page-break-inside: avoid;">
@@ -286,6 +310,7 @@ const TourTripDetail = () => {
       ${highlightsHtml}
       ${itineraryHtml}
       ${costDetailsHtml}
+      ${extraInfoHtml}
       ${footerHtml}
     `;
 

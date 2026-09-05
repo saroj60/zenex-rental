@@ -256,13 +256,6 @@ const TrekRegion = () => {
                               />
                               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
 
-                              {/* Floating Badge */}
-                              {trek.badge && (
-                                <div className="absolute top-3 left-3 bg-gradient-to-r from-orange-500 to-[#E59A2F] text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider shadow-md">
-                                  {trek.badge}
-                                </div>
-                              )}
-
                               {/* Wishlist Heart Icon */}
                               <button 
                                 onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}

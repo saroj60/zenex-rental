@@ -26,7 +26,7 @@ const newTrek = {
 
 Trekking to Everest Base Camp is not just about conquering mountains; it's a cultural immersion into the Sherpa way of life along with Tibetan Buddhist Culture. EBC trek is overall the combination of amazing landscapes and cultural immersion. The unforgettable highlights of Everest trek are best views from Everest Base Camp (5360 m) & sunrise hike to Kalapatthar (5545 m).
 
-Get to know about the Everest region, Sherpa people and encounter dozens of snowy mountains with us! Our fixed departures for 2026 are wide open for booking and secure your spot today and embark towards the lifetime experience of world's highest Mountain with Asian Adventure Treks & Expedition!`,
+Get to know about the Everest region, Sherpa people and encounter dozens of snowy mountains with us! Our fixed departures for 2026 are wide open for booking and secure your spot today and embark towards the lifetime experience of world's highest Mountain with Zenex Travels!`,
   facts: {
     "Country": "Nepal",
     "Duration": "15 Days",
