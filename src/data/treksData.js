@@ -803,16 +803,16 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Mountain Lodges on Trail",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (September - November)",
-    image: "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+    image: "https://api.escapehimalaya.com/media/featured/langtang-gosainkunda-helambu-trek-1711350634.jpg",
     gallery: [
-      "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-cSiHGPWfEOIwa8wqrzZJpWvj_fC-GP1ujFfw_3D77f8iLbiJ3i2US4-W&s=10",
+      "https://api.escapehimalaya.com/media/featured/langtang-gosainkunda-helambu-trek-1711350634.jpg",
+      "https://www.apexasiaholidays.com/wp-content/uploads/2018/09/Lantang-Helambu-Gosaikunda-Lake-Trek-Nepal.jpg",
+      "https://www.nestadventure.com/wp-content/uploads/2019/08/Helambu-Trek.jpg",
+      "https://globaladventuretrekking.com/_next/image?url=https%3A%2F%2Fmedia.app.globaladventuretrekking.com%2Fuploads%2Fpackage%2Flangtang-helambu-thumb.webp&w=1200&q=75&dpl=dpl_BDt6aHosuKiHYjiaEDTNv5DbZm7J",
+      "https://globaladventuretrekking.com/_next/image?url=https%3A%2F%2Fmedia.app.globaladventuretrekking.com%2Fuploads%2Fpackage%2Fhelambu-thumb.webp&w=1200&q=75&dpl=dpl_BDt6aHosuKiHYjiaEDTNv5DbZm7J",
       "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
-      "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
-      "https://i.pinimg.com/736x/40/23/81/4023812490863bcf8f8b228a12570582.jpg",
-      "https://hillsherpatrekking.com/wp-content/uploads/2025/08/kyanjima-1.webp",
-      "https://trekkingplus.com/uploads/fullbanner/langtang-kyanji-gompa.webp",
-      "https://www.treknepalhimalayas.com/wp-content/uploads/2024/01/Langtang-Valley-Trek-20.jpg"
+      "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+      "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg"
     ],
     overview: `
       <h3>Helambu & Langtang Trek | Sacred Alpine Lakes, Lauribina Pass & Glacial Peaks</h3>
