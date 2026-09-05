@@ -20,16 +20,18 @@ export const treksData = [
     accommodation: "3-Star Hotel in Kathmandu / Teahouses on Trail",
     meals: "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     bestSeason: "Spring (March - May) & Autumn (September - November)",
-    image: "https://www.nepalecotrekking.com/public/uploads/tsum-valley-trek-2.jpg",
+    image: "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/Tsum-valley-trek-1.webp",
     gallery: [
-      "https://www.nepalecotrekking.com/public/uploads/tsum-valley-trek-2.jpg",
-      "https://himalayaguidenepal.com/wp-content/uploads/2025/08/Tsum-Valley.jpg",
-      "https://www.acethehimalaya.com/wp-content/uploads/2022/10/Nepal2017-1504-600x400.jpg",
-      "https://media.app.nepalguidetrekking.com/uploads/media/Tsum/Tsum-Valley-Trekking.jpg",
+      "https://www.nepalindependentguide.com/wp-content/uploads/2017/07/Tsum-valley-trek-1.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu0V6pvlPDGobIBIg34zgQMXEHFS5YP-z2bC32OcyFTok_Q23752v5rXY&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE4Szvo8_AkN0K7JENCGHZszJ78Di3rpn9arVnG-6GFtNlFvbYbEDx28M&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3i4gE1-6dK0UbsHPkUcgEG52pwFgNOI0Jvfif54m7RgoXrvuHk1pqkXr9&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJEst-OkBCb8hB_hYL-6OEFRYnHRKoIhd-x-QOUdvV6yhNGU8aa3ddq6b&s=10",
+      "https://www.nepalguideinfo.com/new/wp-content/uploads/2024/03/Manaslu-Tsum-Valley-Trek.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6VNX_spuTrrxGl_hi9sIuXHLBuWnnCF7GoctkJc6SC2wxO6iAak6tYWY&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWGItNuHd2fQX6zXVAmDUQ3zF70jk5pAwZsk4DXbSQcw&s=10",
       "https://hike.bidhee.net/media/packages/featured/Tsum_valley.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGar5QKcs5svnrb_2nqPfEdRkumhzeoAJNVHQ-jGydZrO_JGiKygCwtlgD&s=10",
-      "https://titatour.com/wp-content/uploads/2025/10/Tsum-Valley-Trek.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgXo1bA3v_VV9gH5wombD-glEeFchOcIiSUjVr-Qbm05Sog5e_JP-0ixI&s=10"
+      "https://www.nepalecotrekking.com/public/uploads/tsum-valley-trek-2.jpg"
     ],
     overview: `
       <h3>Tsum Valley Trek | A Journey into Tibetan-Buddhist Culture & Himalayan Beauty</h3>
