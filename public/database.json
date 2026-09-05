@@ -919,6 +919,458 @@
           "answer": "Yes, a shortened 5-day or 7-day version focusing purely on the core Syabrubesi to Kyanjin Gompa trail can be customized upon request."
         }
       ]
+    },
+    {
+      "id": "helambu-langtang-trek-17d",
+      "slug": "helambu-langtang-trek-17d",
+      "title": "Helambu & Langtang Trek - 17 Days",
+      "region": "langtang",
+      "regionName": "Langtang Region",
+      "location": "Langtang National Park & Helambu, Rasuwa / Sindhupalchok, Nepal",
+      "duration": "17",
+      "durationUnit": "Days",
+      "price": "US$1,180",
+      "originalPrice": "US$1,250",
+      "rating": 4.9,
+      "reviewsCount": 143,
+      "difficulty": "Moderate",
+      "maxAltitude": "4,773 m / 4,985 m (Kyanjin Ri / Tserko Ri)",
+      "starts": "Kathmandu",
+      "ends": "Kathmandu",
+      "activities": "Walking / Hiking & Cultural Exploration",
+      "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges on Trail",
+      "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
+      "bestSeason": "Spring (March - May) & Autumn (September - November)",
+      "image": "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+      "gallery": [
+        "https://www.everesttrekkingroutes.com/wp-content/uploads/2023/11/langtang-valley-trek.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-cSiHGPWfEOIwa8wqrzZJpWvj_fC-GP1ujFfw_3D77f8iLbiJ3i2US4-W&s=10",
+        "https://www.nepalfootprintholiday.com/wp-content/uploads/2024/10/langtang-trek-kyangin-gompa-village.webp",
+        "https://www.dolpocaravantreks.com/uploads/2024/03/zinpa-3.jpg",
+        "https://i.pinimg.com/736x/40/23/81/4023812490863bcf8f8b228a12570582.jpg",
+        "https://hillsherpatrekking.com/wp-content/uploads/2025/08/kyanjima-1.webp",
+        "https://trekkingplus.com/uploads/fullbanner/langtang-kyanji-gompa.webp",
+        "https://www.treknepalhimalayas.com/wp-content/uploads/2024/01/Langtang-Valley-Trek-20.jpg"
+      ],
+      "overview": "\n      <h3>Helambu & Langtang Trek | Sacred Alpine Lakes, Lauribina Pass & Glacial Peaks</h3>\n      <p>The 17-Day Helambu & Langtang Valley Trek in the Langtang region of Nepal is a grand Himalayan journey combining the culturally rich Hyolmo-Sherpa villages of Helambu, the sacred high-altitude Gosaikunda Lakes, and the glacial vistas of Langtang Valley. By connecting the <strong>Helambu Circuit Trek</strong> with the <strong>Langtang Valley Trek</strong> via <strong>Lauribina Pass (4,610 m)</strong>, trekkers experience one of Nepal's most complete and rewarding off-the-beaten-path adventures.</p>\n      <p>Beginning with a scenic drive from Kathmandu to Melamchi Bazar, the trail climbs through tranquil forests, terraced fields, and ancient Buddhist villages including Kakani, Tarke Ghyang, and Sermathang. Crossing the high Lauribina Pass brings you to the sacred turquoise waters of <strong>Gosaikunda Lake (4,380 m)</strong>—a revered pilgrimage site for both Hindus (abode of Lord Shiva) and Buddhists (dwelling place of Chenrezig). Continuing past Shin Gompa and Thulo Syabru, the route enters <strong>Langtang National Park</strong>, leading up to <strong>Kyanjin Gompa (3,870 m)</strong> with optional ascents to <strong>Kyanjin Ri (4,773 m)</strong> or <strong>Tserko Ri (4,985 m)</strong> for breathtaking 360-degree views of Langtang Lirung (7,227 m), Dorje Lakpa, Ganesh Himal, and Manaslu.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we handle every detail—from permit processing (Langtang National Park & TIMS) to private ground transfers, licensed professional guide and porter services, teahouse reservations, and personalized itinerary support—ensuring a smooth, safe, and soulful Himalayan experience.</p>\n    ",
+      "highlights": [
+        "Explore two culturally rich regions—Helambu and Langtang—known for serene villages, Tibetan Buddhist heritage, and warm hospitality.",
+        "Begin your journey from the peaceful villages of Kakani and Tarke Ghyang, passing through traditional Sherpa and Tamang communities.",
+        "Cross the scenic Lauribina Pass (4,610 m) and visit the sacred alpine lakes of Gosaikunda, a major pilgrimage site.",
+        "Trek through Langtang National Park, home to diverse flora, fauna, and chances to spot red pandas, Himalayan thars, and langurs.",
+        "Visit ancient monasteries such as Kyanjin Gompa and Sermathang, staying in spiritual villages influenced by Tibetan Buddhism.",
+        "Reach Kyanjin Gompa (3,870 m) and optionally ascend Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m) for panoramas of Langtang Lirung & Ganesh Himal.",
+        "Enjoy varied landscapes—from lush rhododendron and pine forests to rugged high-altitude terrain, glacial valleys, and snow-capped mountains.",
+        "Discover a peaceful, off-the-beaten-path trekking experience with fewer crowds compared to Everest and Annapurna regions.",
+        "Taste authentic local food and learn about the traditional lifestyle of mountain communities.",
+        "A perfect mix of nature, spirituality, and soft adventure, ideal for trekkers looking for cultural depth and scenic Himalayan beauty."
+      ],
+      "quickFacts": {
+        "country": "Nepal",
+        "duration": "17 Days",
+        "tripGrade": "Moderate",
+        "maxAltitude": "4,773 m / 4,985 m",
+        "startsEnds": "Kathmandu / Kathmandu",
+        "activities": "Walking / Hiking & Cultural Exploration",
+        "accommodation": "3-Star Hotel in Kathmandu / Teahouses on Trail",
+        "meals": "Breakfast, Lunch & Dinner during trek",
+        "bestTime": "Spring (March - May) & Autumn (September - November)"
+      },
+      "itinerary": [
+        {
+          "day": "01",
+          "title": "Arrival in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "6 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Briefing",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport transfer, pre-trip briefing, guide meeting, equipment check.",
+          "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be greeted by our correspondent from Zenex Travels & Tours who will assist with your hotel transfer. Checked in, we arrange a pre-trip meeting to brief you on the trek, answer questions, and introduce your trekking guide. Rest and relax at leisure. Overnight at hotel."
+        },
+        {
+          "day": "02",
+          "title": "Kathmandu – Melamchi Bazar – Kakani",
+          "altitude": "1,995 m / 6,545 ft",
+          "walkingTime": "4 hrs drive + 2 hrs trek",
+          "distance": "75 km drive",
+          "accommodation": "Lodge at Kakani",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private vehicle & Trekking",
+          "highlights": "Drive to Melamchi Bazar, uphill hike through Tamang & Sherpa villages, views of Gaurishankar.",
+          "description": "After breakfast in Kathmandu, your guide meets you to begin driving toward Melamchi Bazar (870 m), taking about 4 hours. After lunch at Melamchi Bazar, prepare to trek uphill toward Kakani for about 2 hours. Pass several ethnic villages of Tamang, Sherpa, Chhetri, and Brahmin communities with stunning vistas of Langtang and Gaurishankar ranges. Overnight at lodge."
+        },
+        {
+          "day": "03",
+          "title": "Kakani – Tarke Ghyang",
+          "altitude": "2,600 m / 8,530 ft",
+          "walkingTime": "4-5 hrs",
+          "distance": "10-11 km",
+          "accommodation": "Lodge at Tarke Ghyang",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Gentle uphill through forests, lunch at Sermathang Sherpa village, ancient monasteries.",
+          "description": "Begin trekking toward Tarke Ghyang with a gentle uphill walk through lush forests, terraced fields, and charming Sherpa settlements. Stop at Sermathang, a traditional Sherpa village famous for its ancient monastery and community life, for lunch. Continue hiking toward Tarke Ghyang—one of the oldest Sherpa villages in Helambu offering serene Buddhist heritage. Overnight at lodge."
+        },
+        {
+          "day": "04",
+          "title": "Tarke Ghyang – Melamchi Gaun",
+          "altitude": "2,530 m / 8,300 ft",
+          "walkingTime": "5-6 hrs",
+          "distance": "12 km",
+          "accommodation": "Lodge at Melamchi Gaun",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Undulating forest trail, prayer flags, Buddhist monasteries, authentic rural life.",
+          "description": "Trek through a scenic trial filled with up-and-down sections across dense forests, terraced farmlands, and hillside settlements. Enjoy views of traditional homes, prayer flags, and verdant hills. Arrive in Melamchi Gaun, a vibrant Tamang and Sherpa village renowned for its monastery and warm mountain hospitality. Overnight at lodge."
+        },
+        {
+          "day": "05",
+          "title": "Melamchi Gaun – Tharepati",
+          "altitude": "3,690 m / 12,106 ft",
+          "walkingTime": "3-4 hrs",
+          "distance": "5-6 km",
+          "accommodation": "Lodge at Tharepati",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Steady ascent through rhododendron & oak forests, ridge viewpoint of Manaslu & Ganesh Himal.",
+          "description": "Ascend steadily through dense rhododendron and oak forests, gaining altitude as lower hills fall behind. As trees thin out, panoramic views of Langtang, Ganesh Himal, Manaslu, and Gaurishankar open up. Reach Tharepati on an open ridge by lunchtime—a major junction offering one of the finest viewpoints on the trail. Overnight at lodge."
+        },
+        {
+          "day": "06",
+          "title": "Tharepati – Phedi",
+          "altitude": "3,630 m / 11,909 ft",
+          "walkingTime": "7 hrs",
+          "distance": "11-12 km",
+          "accommodation": "Lodge at Phedi",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Alpine terrain walk, rugged mountain ridges, preparation for Lauribina Pass.",
+          "description": "Embark on a long, gradual trek through alpine terrain as you approach Lauribina Pass. Climb through rhododendron and juniper bushes before entering the treeless high-altitude zone. Expect rocky ridges and thinning air with dramatic views of Langtang and Manaslu ranges. Arrive in Phedi ('foot of the pass') to rest and acclimatize before tomorrow's pass crossing. Overnight at lodge."
+        },
+        {
+          "day": "07",
+          "title": "Phedi – Lauribina Pass (4,610 m) – Gosaikunda",
+          "altitude": "4,380 m / 14,370 ft",
+          "walkingTime": "5-6 hrs",
+          "distance": "9-10 km",
+          "accommodation": "Lodge at Gosaikunda",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Cross Lauribina Pass (4610m), stunning high altitude views, arrival at sacred Gosaikunda Lake.",
+          "description": "Start early with a steep 2-hour ascent to Lauribina Pass (4,610 m), the highest pass of the trek. Enjoy breathtaking panoramas of Langtang Lirung, Ganesh Himal, Manaslu, Dorje Lakpa, and Tibetan peaks. Descend gradually through rocky terrain for 2.5 hours to reach sacred Gosaikunda Lake (4,380 m)—a pristine alpine pilgrimage site for Hindus and Buddhists. Overnight at lodge."
+        },
+        {
+          "day": "08",
+          "title": "Gosaikunda – Shin Gompa – Thulo Syabru",
+          "altitude": "3,330 m / 10,925 ft",
+          "walkingTime": "6-7 hrs",
+          "distance": "13-14 km",
+          "accommodation": "Lodge at Thulo Syabru",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Descent through Shin Gompa yak cheese center, pine & rhododendron forests to Thulo Syabru.",
+          "description": "Complete the Helambu circuit leg by descending from Gosaikunda to Shin Gompa (3,330 m) in about 3 hours, taking in continuous views of Langtang and Ganesh Himal. After resting at Shin Gompa (famous for its local monastery and yak cheese factory), continue descending 3 hours through pine forests into Thulo Syabru (2,210 m), a scenic Tamang village. Overnight at lodge."
+        },
+        {
+          "day": "09",
+          "title": "Thulo Syabru – Lama Hotel",
+          "altitude": "2,480 m / 8,136 ft",
+          "walkingTime": "5-6 hrs",
+          "distance": "12 km",
+          "accommodation": "Lodge at Lama Hotel",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Cross Ghopche Khola suspension bridge, spot wildlife (monkeys, red pandas), reach Lama Hotel.",
+          "description": "Transition into the core Langtang Valley trail. Descend steeply to cross Ghopche Khola through subtropical forests rich with wildlife including langurs, red pandas, and rare birds. Ascend past Bamboo and Rimche to reach the serene forest village of Lama Hotel along the Langtang Khola. Overnight at lodge."
+        },
+        {
+          "day": "10",
+          "title": "Lama Hotel – Langtang Village",
+          "altitude": "3,430 m / 11,253 ft",
+          "walkingTime": "7-8 hrs",
+          "distance": "12 km",
+          "accommodation": "Lodge at Langtang Village",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Trail through Ghodatabela, waterfalls, Tamang settlements, view of Langtang Lirung.",
+          "description": "Trek through oak and rhododendron forests toward Ghodatabela (3,030 m) for lunch or rest. Continue past Thyangsyap, Chayamki, and Langtang Gompa to reach Langtang Village (3,430 m). Witness the inspiring rebuilding of the village after the 2015 earthquake, set beneath towering peaks of Langtang Lirung and Ganesh Himal. Overnight at lodge."
+        },
+        {
+          "day": "11",
+          "title": "Langtang – Kyanjin Gompa",
+          "altitude": "3,870 m / 12,696 ft",
+          "walkingTime": "3 hrs",
+          "distance": "6.5 km",
+          "accommodation": "Lodge at Kyanjin Gompa",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Shorter trek past Mani walls & chortens, visit Kyanjin Gompa monastery & Swiss cheese factory.",
+          "description": "Enjoy a shorter 3-hour trek winding past chortens, prayer flags, Mani walls, and grazing yaks. Arrive in Kyanjin Gompa (3,870 m), the spiritual heart of Langtang Valley. Visit the historic Kyanjin Monastery and the famous Yala Cheese Factory established in 1952 with Swiss support. Overnight at lodge."
+        },
+        {
+          "day": "12",
+          "title": "Kyanjin Gompa | Ascend Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m)",
+          "altitude": "4,773 m / 15,659 ft",
+          "walkingTime": "3-7 hrs hike",
+          "distance": "2-8 km",
+          "accommodation": "Lodge at Kyanjin Gompa",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Hiking",
+          "highlights": "Sunrise peak climb to Kyanjin Ri or Tserko Ri, 360-degree glacier panoramas of Langtang range.",
+          "description": "Hike early morning to Kyanjin Ri (4,773 m) in 2.5 hours for an unforgettable sunrise over Langtang Lirung (7,245 m), Langtang Ri (6,370 m), Yala Peak (5,520 m), and Dorje Lakpa (6,966 m). Return for breakfast and optional further excursion up Tserko Ri (4,985 m) for ultimate Himalayan panoramas. Overnight at lodge."
+        },
+        {
+          "day": "13",
+          "title": "Kyanjin Gompa – Lama Hotel",
+          "altitude": "2,480 m / 8,136 ft",
+          "walkingTime": "7-8 hrs",
+          "distance": "18.5 km",
+          "accommodation": "Lodge at Lama Hotel",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Descend back through Ghodatabela, enjoy lush forest scenery and rivers.",
+          "description": "Bid farewell to Kyanjin Gompa and retrace your steps downhill through Langtang Village and Ghodatabela for lunch. Continue descending back to Lama Hotel alongside the roaring Langtang Khola. Overnight at lodge."
+        },
+        {
+          "day": "14",
+          "title": "Lama Hotel – Syabrubesi",
+          "altitude": "1,503 m / 4,931 ft",
+          "walkingTime": "5-6 hrs",
+          "distance": "10 km",
+          "accommodation": "Lodge at Syabrubesi",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Trekking",
+          "highlights": "Final trek day along Langtang Khola through bamboo & pine forests to Syabrubesi.",
+          "description": "Trek the final leg of the trail down to Syabrubesi (1,503 m), descending through pine and bamboo groves with chances to see langurs and colorful mountain birds. Celebrate the successful trek completion with your guide and porters. Overnight at lodge."
+        },
+        {
+          "day": "15",
+          "title": "Syabrubesi – Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "6 hrs drive",
+          "distance": "90 km",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Lunch",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Scenic drive through Trishuli valley back to Kathmandu city hotel.",
+          "description": "After breakfast in Syabrubesi, drive back to Kathmandu in a private vehicle (approx. 6 hours). Check into your hotel and spend the evening unwinding or celebrating your mountain achievement. Overnight at hotel."
+        },
+        {
+          "day": "16",
+          "title": "Free day in Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "-",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Farewell Dinner",
+          "modeOfTravel": "Free day / Sightseeing",
+          "highlights": "Optional UNESCO heritage tour (Swoyambhunath, Boudhanath, Pashupatinath), shopping, farewell dinner.",
+          "description": "Free day in Kathmandu for relaxing, spa/massage, souvenir shopping in Thamel, or visiting UNESCO World Heritage sites such as Swoyambhunath (Monkey Temple), Boudhanath Stupa, and Pashupatinath. In the evening, enjoy an official farewell dinner hosted by Zenex Travels & Tours. Overnight at hotel."
+        },
+        {
+          "day": "17",
+          "title": "Departure from Kathmandu",
+          "altitude": "1,350 m / 4,429 ft",
+          "walkingTime": "-",
+          "distance": "-",
+          "accommodation": "-",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private vehicle",
+          "highlights": "Airport transfer for international departure flight.",
+          "description": "Enjoy your final morning in Kathmandu. At your scheduled departure time, our Zenex Travels representative will pick you up from the hotel and transfer you to Tribhuvan International Airport for your flight home."
+        }
+      ],
+      "includes": [
+        "Airport – Hotel – Airport transfers by private vehicle",
+        "3 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Private vehicle transportation: Kathmandu to Melamchi Pul and Syabrubesi to Kathmandu",
+        "Langtang National Park Entrance Fee + TIMS Card permits",
+        "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the 17-day trek",
+        "Accommodation in clean teahouses/lodges during the trek",
+        "Professional Nepal Government licensed English-speaking trekking guide",
+        "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+        "Full insurance, equipment, meals, salary, and lodge for guide and porters",
+        "Zenex Travels duffel bag and trekking gear support",
+        "Official Achievement Certificate for Helambu & Langtang Trek",
+        "Traditional Farewell Dinner in Kathmandu",
+        "All government taxes, service fees, and VAT"
+      ],
+      "costIncludes": [
+        "Airport – Hotel – Airport transfers by private vehicle",
+        "3 nights 3-star hotel accommodation in Kathmandu with breakfast (twin sharing)",
+        "Private vehicle transportation: Kathmandu to Melamchi Pul and Syabrubesi to Kathmandu",
+        "Langtang National Park Entrance Fee + TIMS Card permits",
+        "All meals (Breakfast, Lunch, Dinner with tea/coffee) during the 17-day trek",
+        "Accommodation in clean teahouses/lodges during the trek",
+        "Professional Nepal Government licensed English-speaking trekking guide",
+        "1 porter for every 2 trekkers (carrying up to 20-22 kg total)",
+        "Full insurance, equipment, meals, salary, and lodge for guide and porters",
+        "Zenex Travels duffel bag and trekking gear support",
+        "Official Achievement Certificate for Helambu & Langtang Trek",
+        "Traditional Farewell Dinner in Kathmandu",
+        "All government taxes, service fees, and VAT"
+      ],
+      "excludes": [
+        "International airfare & Nepal VISA entry fees",
+        "Personal trekking equipment & clothing",
+        "Personal medical and travel insurance (helicopter rescue coverage compulsory)",
+        "Bar bills, mineral water, soft drinks, beer, snacks, hot showers, Wi-Fi & battery charging on trail",
+        "Lunch and Dinner in Kathmandu (except farewell dinner)",
+        "Sightseeing entrance fees to temples in Kathmandu",
+        "Unforeseen costs due to flight delays, road blockages, extreme weather, or early return",
+        "Tips and gratuities for trekking guide and porters",
+        "Any extra services not mentioned in the INCLUDED list"
+      ],
+      "costExcludes": [
+        "International airfare & Nepal VISA entry fees",
+        "Personal trekking equipment & clothing",
+        "Personal medical and travel insurance (helicopter rescue coverage compulsory)",
+        "Bar bills, mineral water, soft drinks, beer, snacks, hot showers, Wi-Fi & battery charging on trail",
+        "Lunch and Dinner in Kathmandu (except farewell dinner)",
+        "Sightseeing entrance fees to temples in Kathmandu",
+        "Unforeseen costs due to flight delays, road blockages, extreme weather, or early return",
+        "Tips and gratuities for trekking guide and porters",
+        "Any extra services not mentioned in the INCLUDED list"
+      ],
+      "groupDiscounts": [
+        {
+          "pax": "2 - 3 Pax",
+          "price": "US$ 1,180"
+        },
+        {
+          "pax": "4 - 7 Pax",
+          "price": "US$ 985"
+        },
+        {
+          "pax": "8 - 11 Pax",
+          "price": "US$ 960"
+        },
+        {
+          "pax": "12 - 15 Pax",
+          "price": "US$ 910"
+        }
+      ],
+      "difficultyInfo": {
+        "grade": "Moderate",
+        "details": "The Helambu & Langtang Trek is graded as MODERATE. It involves steady ascents, forest trails, and high altitude pass crossing at Lauribina Pass (4,610 m) and viewpoints like Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m). Daily walking averages 5 to 7 hours. Suitable for trekkers with basic physical fitness."
+      },
+      "altitudeSickness": {
+        "prevention": "Gradual elevation gain built into the 17-day itinerary, stay hydrated (3-4L water daily), avoid alcohol/smoking, and consult guide immediately if experiencing headaches or nausea."
+      },
+      "equipmentList": [
+        {
+          "category": "Clothing",
+          "items": [
+            "Moisture-wicking base layers",
+            "Fleece jacket / down jacket",
+            "Waterproof/windproof Gore-Tex jacket",
+            "Trekking pants (2 pairs)",
+            "Thermal leggings",
+            "Warm beanie & sun cap",
+            "Warm gloves (fleece + outer waterproof)"
+          ]
+        },
+        {
+          "category": "Footwear",
+          "items": [
+            "Sturdy ankle-support trekking boots",
+            "Camp shoes / sandals",
+            "Moisture-wicking wool socks (3-4 pairs)"
+          ]
+        },
+        {
+          "category": "Gears",
+          "items": [
+            "Daypack (20–30L) with rain cover",
+            "Duffel bag (provided by Zenex Travels)",
+            "Sleeping bag rated to -10°C",
+            "Trekking poles"
+          ]
+        },
+        {
+          "category": "Hydration & Essentials",
+          "items": [
+            "Water bottles / hydration bladder",
+            "Water purification tablets/filter",
+            "Sunscreen (SPF 50+) & lip balm",
+            "First aid kit & personal medication"
+          ]
+        }
+      ],
+      "extendedInfo": [
+        {
+          "title": "Lauribina Pass (4,610 m) – High Point of Helambu & Langtang Trek",
+          "description": "Lauribina Pass (4,610 m) connects the scenic Buddhist hills of Helambu with the sacred alpine Gosaikunda lakes and Langtang National Park. In local dialect, 'Lauri' means staff and 'bina' means without. Legend says only those walking with pure spirit cross without reliance on a staff. Reaching the pass rewards trekkers with breathtaking views of Langtang Lirung, Manaslu, and Ganesh Himal."
+        },
+        {
+          "title": "Gosaikunda Lake – Sacred Alpine Sanctuary",
+          "description": "Gosaikunda Lake is a sacred high-altitude alpine lake nestled at 4,380 meters inside Langtang National Park. In Hindu belief, Lord Shiva created the lake by striking his trident (Trishul) into the mountain to release cooling water after consuming poison. In Tibetan Buddhist tradition, Gosaikunda is revered as the dwelling place of Avalokiteshvara (Chenrezig)—the Bodhisattva of Compassion."
+        },
+        {
+          "title": "Why Choose Zenex Travels & Tours for Helambu & Langtang Trekking?",
+          "description": "Zenex Travels & Tours brings over two decades of expert Himalayan trekking logistics. We handle all park entry permits, TIMS registration, private vehicular transfers, verified teahouse reservations, and certified English-speaking guides and porters to ensure your 17-day journey is safe, authentic, and unforgettable."
+        },
+        {
+          "title": "Required Permits",
+          "description": "Trekkers require the Langtang National Park Entry Permit and TIMS (Trekker's Information Management System) Card. Zenex Travels & Tours prepares and processes all permit documentation in advance."
+        },
+        {
+          "title": "Meals & Accommodations on Trail",
+          "description": "Lodges along Helambu and Langtang offer comfortable twin-bed rooms with communal heated dining halls. Menus feature fresh local Dal Bhat, chowmein, fried rice, momos, pasta, pizza, Tibetan bread, and hot beverages."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Where is the Helambu & Langtang Trek located?",
+          "answer": "The trek is located in the Langtang Region of Nepal, spanning Helambu (Sindhupalchok) and Langtang National Park (Rasuwa), just northeast of Kathmandu."
+        },
+        {
+          "question": "What is the maximum altitude reached on this trek?",
+          "answer": "The maximum pass altitude is Lauribina Pass at 4,610 m, with optional excursion peak climbs to Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m)."
+        },
+        {
+          "question": "How difficult is the Helambu & Langtang 17-Day Trek?",
+          "answer": "It is rated Moderate. While trails are well-established, it requires walking 5-7 hours daily and crossing a high pass (4,610 m), suitable for fit beginners and experienced hikers."
+        },
+        {
+          "question": "What is the best season for this trek?",
+          "answer": "Spring (March to May) for blooming rhododendrons and pleasant weather, and Autumn (September to November) for crystal clear mountain visibility."
+        },
+        {
+          "question": "What permits are required for Helambu & Langtang Trek?",
+          "answer": "You need the Langtang National Park Entry Permit and TIMS Card. Zenex Travels & Tours handles all permit logistics."
+        },
+        {
+          "question": "Is a guide mandatory for this trek?",
+          "answer": "Yes, hiring a licensed Nepali guide from Zenex Travels & Tours is required for safety, navigation across high passes, and local cultural interaction."
+        },
+        {
+          "question": "What style of accommodation is provided during the trek?",
+          "answer": "Comfortable teahouses and mountain lodges with twin-sharing beds, warm blankets, and heated dining areas."
+        },
+        {
+          "question": "What temperatures can be expected during the trek?",
+          "answer": "Spring and Autumn daytime temperatures range between 10°C and 18°C in lower trails, dropping to 0°C to -5°C at higher elevations like Gosaikunda and Kyanjin Gompa."
+        },
+        {
+          "question": "What mountains can be seen on the Helambu & Langtang Trek?",
+          "answer": "Panoramas include Langtang Lirung (7,227m), Ganesh Himal, Mt. Manaslu, Dorje Lakpa (6,966m), Langtang Ri, and Gaurishankar."
+        },
+        {
+          "question": "Is this trek suitable for beginners?",
+          "answer": "Yes, active beginners with good health and basic hiking preparation can complete this 17-day trek successfully with our gradual acclimatization itinerary."
+        },
+        {
+          "question": "What makes combining Helambu and Langtang special?",
+          "answer": "It blends two distinct regions into one journey: the peaceful Hyolmo-Sherpa cultural villages of Helambu, the sacred lakes of Gosaikunda, and the dramatic glacier valley of Langtang."
+        },
+        {
+          "question": "Can this 17-day itinerary be customized?",
+          "answer": "Yes! Zenex Travels & Tours can shorten or extend the trek depending on your holiday timeline and physical preferences."
+        }
+      ]
     }
   ],
   "destinations": [],
