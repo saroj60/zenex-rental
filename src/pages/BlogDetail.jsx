@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useBlogContext } from '../context/BlogContext';
 import { Calendar, User, ArrowLeft, Tag } from 'lucide-react';
+import { formatMarkdownToHTML } from '../utils/detailFormatters';
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -76,7 +77,7 @@ const BlogDetail = () => {
 
             <div 
               className="prose prose-lg max-w-none text-gray-700"
-              dangerouslySetInnerHTML={{ __html: blog.content }}
+              dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(blog.content) }}
             />
           </div>
         </article>

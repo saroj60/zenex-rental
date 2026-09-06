@@ -10,7 +10,7 @@ import { useAppData } from '../context/AppDataContext';
 import SEO from '../components/SEO';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
-import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList } from '../utils/detailFormatters';
+import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML } from '../utils/detailFormatters';
 
 const TrekDetail = () => {
   const { id } = useParams();
@@ -490,16 +490,10 @@ const TrekDetail = () => {
             {/* Overview text */}
             <div className="pb-6 border-b border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Explore {trek.title}</h2>
-              {typeof trekDesc === 'string' && /<\/?[a-z][\s\S]*>/i.test(trekDesc) ? (
-                <div 
-                  className="prose max-w-none text-[15px] text-gray-600 leading-relaxed space-y-4"
-                  dangerouslySetInnerHTML={{ __html: trekDesc }}
-                />
-              ) : (
-                <p className="text-[15px] text-gray-600 leading-relaxed whitespace-pre-wrap">
-                  {trekDesc}
-                </p>
-              )}
+              <div 
+                className="prose max-w-none text-[15px] text-gray-600 leading-relaxed space-y-4"
+                dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trekDesc) }}
+              />
             </div>
 
             {/* Gallery Section */}
@@ -610,11 +604,10 @@ const TrekDetail = () => {
                       <div className="pb-6 flex-1">
                         <h3 className="text-lg font-bold text-gray-900 mb-2">{day.title}</h3>
                         {descriptionText && (
-                          typeof descriptionText === 'string' && /<\/?[a-z][\s\S]*>/i.test(descriptionText) ? (
-                            <div className="text-gray-600 leading-relaxed text-[15px] mb-3 space-y-2 prose max-w-none" dangerouslySetInnerHTML={{ __html: descriptionText }} />
-                          ) : (
-                            <p className="text-gray-600 leading-relaxed text-[15px] whitespace-pre-line mb-3">{descriptionText}</p>
-                          )
+                          <div 
+                            className="text-gray-600 leading-relaxed text-[15px] mb-3 space-y-2 prose max-w-none" 
+                            dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(descriptionText) }} 
+                          />
                         )}
 
                         {/* Day Metadata (Altitude, Accommodation, Meals, Travel Mode, Duration) */}

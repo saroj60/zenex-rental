@@ -17,7 +17,9 @@ const Packages = () => {
       img: t.image,
       category: t.category,
       location: t.destination,
-      price: t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : (t.price ? `US$${t.price}` : 'From Price'),
+      price: t.pricingInfo?.sellingPrice 
+        ? `US$${t.pricingInfo.sellingPrice}` 
+        : (t.price ? `US$${String(t.price).replace(/^(US\$|\$|\s)+/gi, '').trim()}` : 'From Price'),
       persons: `per ${t.pricingInfo?.pricePer || 'person'}`
     }));
 

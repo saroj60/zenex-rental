@@ -18,7 +18,9 @@ const FeaturedPackages = () => {
       location: t.destination,
       badge: t.badge,
       displayOrder: t.displayOrder ? parseInt(t.displayOrder, 10) : 99999,
-      price: t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : (t.price ? `US$${t.price}` : 'From Price'),
+      price: t.pricingInfo?.sellingPrice 
+        ? `US$${t.pricingInfo.sellingPrice}` 
+        : (t.price ? `US$${String(t.price).replace(/^(US\$|\$|\s)+/gi, '').trim()}` : 'From Price'),
       persons: `/ ${t.pricingInfo?.pricePer || 'Person'}`
     }));
 
@@ -54,9 +56,8 @@ const FeaturedPackages = () => {
       persons: '/ Person'
     }));
 
-  // Separate Tours vs Treks lists
   const featuredToursList = [
-    ...mappedTourTrips.filter(t => t.category === 'Tours' || t.category === 'Tours Packages'),
+    ...mappedTourTrips.filter(t => !t.category || t.category === 'Tours' || t.category === 'Tours Packages' || t.category === 'Packages'),
     ...staticTours.filter(p => !mappedTourTrips.some(m => m.title === p.title))
   ];
   featuredToursList.sort((a, b) => a.displayOrder - b.displayOrder);

@@ -51,7 +51,7 @@ const TourCategoryDetail = () => {
   const description = matchedRegion ? matchedRegion.description : (categoryDescriptions[categoryName] || 'Explore our custom crafted holiday tour packages.');
 
   const mappedTourTrips = (tourTrips || [])
-    .filter(t => t.status === 'Published' && (t.category === 'Tours' || t.category === 'Tours Packages'))
+    .filter(t => (!t.status || t.status === 'Published') && (!t.category || t.category === 'Tours' || t.category === 'Tours Packages' || t.category === 'Packages'))
     .map(t => ({
       id: t.slug || t.id,
       isTourTrip: true,
@@ -60,7 +60,9 @@ const TourCategoryDetail = () => {
       category: t.category,
       location: t.destination,
       region: t.region,
-      price: t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : (t.price ? `US$${t.price}` : 'From Price'),
+      price: t.pricingInfo?.sellingPrice 
+        ? `US$${t.pricingInfo.sellingPrice}` 
+        : (t.price ? `US$${String(t.price).replace(/^(US\$|\$|\s)+/gi, '').trim()}` : 'From Price'),
       persons: `per ${t.pricingInfo?.pricePer || 'person'}`
     }));
 

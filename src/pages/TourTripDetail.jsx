@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import SEO from '../components/SEO';
 import { useAppData } from '../context/AppDataContext';
 import { packageExtraData } from './PackageDetail';
 import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, Play, ImageIcon, Calendar, List, DollarSign, ChevronDown, ChevronUp, CheckCircle2, XCircle, BookOpen, Puzzle, Briefcase, HelpCircle, ChevronRight, Globe, CalendarDays, Activity, Mountain, Bed, Utensils, CloudSun, Car, Heart, FileText, Info, Plus } from 'lucide-react';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
 import { formatDuration } from '../utils/duration';
-import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList } from '../utils/detailFormatters';
+import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML } from '../utils/detailFormatters';
 
 const TourTripDetail = () => {
   const { slug, id } = useParams();
@@ -98,50 +99,108 @@ const TourTripDetail = () => {
   }, [activeTab]);
 
   useEffect(() => {
+    let baseTrip = null;
     if (tourTrips && tourTrips.length > 0) {
       const foundTrip = tourTrips.find(t => t.slug === tripIdOrSlug || t.id === tripIdOrSlug);
       if (foundTrip && foundTrip.status === 'Published') {
-        setTrip(foundTrip);
-        return;
+        baseTrip = foundTrip;
       }
     }
-    if (packages && packages.length > 0) {
-      const foundPkg = packages.find(p => p.id === tripIdOrSlug);
+    if (!baseTrip && packages && packages.length > 0) {
+      const foundPkg = packages.find(p => p.id === tripIdOrSlug || p.slug === tripIdOrSlug);
       if (foundPkg) {
-        const extra = packageExtraData[foundPkg.id] || {};
-        const mappedTrip = {
-          id: foundPkg.id,
-          title: foundPkg.title,
-          image: foundPkg.img,
-          category: foundPkg.category,
-          destination: foundPkg.location,
-          price: foundPkg.price ? String(foundPkg.price).replace('US$', '') : '',
-          shortDescription: extra.overview 
-            ? (extra.overview.replace(/<[^>]*>/g, '').split(/[.!?]/)[0] + '.') 
-            : foundPkg.title,
-          description: extra.overview || foundPkg.title,
-          status: 'Published',
-          featured: false,
-          quickFacts: {
-            duration: extra.quickInfo?.find(q => q.label === 'Duration')?.value || foundPkg.duration || '',
-            difficulty: extra.quickInfo?.find(q => q.label === 'Grade')?.value || 'Easy',
-            maxAltitude: extra.quickInfo?.find(q => q.label === 'Max. Altitude')?.value || '',
-            bestTime: extra.quickInfo?.find(q => q.label === 'Best Season')?.value || '',
-            minTravelers: 2,
-            maxTravelers: 12
-          },
-          itinerary: extra.itinerary?.map((it, idx) => ({
-            dayNumber: idx + 1,
-            title: it.title || `Day ${idx + 1}`,
-            description: it.desc || ''
-          })) || [],
-          inclusions: extra.inclusions?.map(inc => ({ title: inc })) || [],
-          exclusions: extra.exclusions?.map(exc => ({ title: exc })) || [],
-          equipment: [],
-          faqs: []
-        };
-        setTrip(mappedTrip);
+        baseTrip = foundPkg;
       }
+    }
+
+    if (baseTrip) {
+      const key = baseTrip.slug || baseTrip.id;
+      let extra = packageExtraData[key] || packageExtraData[baseTrip.id] || packageExtraData[baseTrip.slug];
+
+      if (!extra || !extra.itinerary) {
+        const numMatch = key.match(/^(\d+)-days/i);
+        if (numMatch) {
+          const num = numMatch[1];
+          const shortCandidate = key
+            .toLowerCase()
+            .replace(/^\d+-days-/, '')
+            .replace(/-tour$/, '')
+            .replace(/kathmandu/g, 'ktm')
+            + '-' + num + 'd';
+          if (packageExtraData[shortCandidate]) {
+            extra = packageExtraData[shortCandidate];
+          }
+        }
+      }
+
+      if (!extra) extra = {};
+
+      const rawPrice = baseTrip.price || extra.tripCostTiers?.budget?.[0]?.price || '';
+      const cleanPrice = String(rawPrice).replace(/^(US\$|\$|\s)+/gi, '').trim();
+
+      const itineraryData = (baseTrip.itinerary && baseTrip.itinerary.length > 0)
+        ? baseTrip.itinerary
+        : (extra.itinerary?.map((it, idx) => ({
+            dayNumber: parseInt(it.day || idx + 1) || (idx + 1),
+            title: it.title || `Day ${idx + 1}`,
+            description: it.desc || '',
+            accommodation: it.accommodation || '',
+            meals: it.meals || ''
+          })) || []);
+
+      const inclusionsData = (baseTrip.inclusions && baseTrip.inclusions.length > 0)
+        ? baseTrip.inclusions
+        : (extra.inclusions?.map(inc => (typeof inc === 'string' ? { title: inc } : inc)) || []);
+
+      const exclusionsData = (baseTrip.exclusions && baseTrip.exclusions.length > 0)
+        ? baseTrip.exclusions
+        : (extra.exclusions?.map(exc => (typeof exc === 'string' ? { title: exc } : exc)) || []);
+
+      const highlightsData = (baseTrip.highlights && baseTrip.highlights.length > 0)
+        ? baseTrip.highlights
+        : (extra.highlights?.map(h => (typeof h === 'string' ? { title: h } : h)) || []);
+
+      const mappedTrip = {
+        ...baseTrip,
+        id: baseTrip.id || key,
+        slug: baseTrip.slug || key,
+        title: baseTrip.title,
+        image: baseTrip.image || baseTrip.img || baseTrip.bannerImage,
+        bannerImage: baseTrip.bannerImage || baseTrip.image || baseTrip.img,
+        category: baseTrip.category || 'Tours',
+        destination: baseTrip.destination || baseTrip.location || 'Nepal',
+        price: cleanPrice,
+        shortDescription: extra.overview 
+          ? (extra.overview.replace(/<[^>]*>/g, '').split(/[.!?]/)[0] + '.') 
+          : (baseTrip.overview || baseTrip.description || baseTrip.title),
+        description: extra.overview || baseTrip.overview || baseTrip.description || baseTrip.title,
+        overview: extra.overview || baseTrip.overview,
+        status: 'Published',
+        featured: baseTrip.featured || false,
+        quickFacts: baseTrip.quickFacts || {
+          duration: baseTrip.duration || extra.quickInfo?.find(q => q.label === 'Duration')?.value || '',
+          difficulty: baseTrip.grade || extra.quickInfo?.find(q => q.label === 'Grade')?.value || 'Easy',
+          maxAltitude: baseTrip.maxAltitude || extra.quickInfo?.find(q => q.label === 'Max. Altitude')?.value || '',
+          bestTime: baseTrip.bestSeason || extra.quickInfo?.find(q => q.label === 'Best Season')?.value || '',
+          transportation: baseTrip.transportation || extra.quickInfo?.find(q => q.label === 'Transportation')?.value || '',
+          start: baseTrip.start || extra.quickInfo?.find(q => q.label === 'Start')?.value || '',
+          end: baseTrip.end || extra.quickInfo?.find(q => q.label === 'End')?.value || '',
+          minTravelers: 2,
+          maxTravelers: 12
+        },
+        itinerary: itineraryData,
+        inclusions: inclusionsData,
+        exclusions: exclusionsData,
+        highlights: highlightsData,
+        hotelOptions: extra.hotelOptions || baseTrip.hotelOptions || [],
+        tripCostTiers: extra.tripCostTiers || baseTrip.tripCostTiers || null,
+        estimatedPersonalExpenses: extra.estimatedPersonalExpenses || baseTrip.estimatedPersonalExpenses || [],
+        generalInformation: extra.generalInformation || baseTrip.generalInformation || [],
+        whyBookWithUs: extra.whyBookWithUs || baseTrip.whyBookWithUs || [],
+        equipment: baseTrip.equipment || [],
+        faqs: baseTrip.faqs || []
+      };
+      setTrip(mappedTrip);
     }
   }, [tripIdOrSlug, tourTrips, packages]);
 
@@ -180,6 +239,19 @@ const TourTripDetail = () => {
 
   return (
     <div className="bg-gray-50 font-sans pb-20">
+      <SEO 
+        title={`${trip.title} | Nepal Tour & Trek`}
+        description={trip.shortDescription || `Book ${trip.title} with Zenex Travel. Premium Nepal tour experience.`}
+        canonicalUrl={`https://zenextravel.com/tour/${trip.slug || trip.id}`}
+        ogImage={trip.image || 'https://zenextravel.com/logo.jpg'}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "TouristTrip",
+          "name": trip.title,
+          "description": trip.shortDescription || trip.title,
+          "touristType": ["Culture", "Adventure", "Nature"]
+        }}
+      />
       
       {/* Hero Section (Clean Image Banner / Mobile Responsive Gallery) */}
       <div className="relative h-[42vh] sm:h-[55vh] md:h-[70vh] min-h-[300px] md:min-h-[550px] w-full overflow-hidden bg-gray-900 p-2 md:p-3">
@@ -399,8 +471,8 @@ const TourTripDetail = () => {
               <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Overview</h2>
                 <div 
-                  className="text-gray-700 text-lg leading-relaxed whitespace-pre-wrap"
-                  dangerouslySetInnerHTML={{ __html: trip.description }}
+                  className="text-gray-700 text-lg leading-relaxed space-y-3"
+                  dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trip.description || trip.overview) }}
                 />
               </div>
 
@@ -502,11 +574,10 @@ const TourTripDetail = () => {
                         <div className="pt-8">
                           <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{day.title}</h3>
                           {(day.details || day.description) && (
-                            typeof (day.details || day.description) === 'string' && /<\/?[a-z][\s\S]*>/i.test(day.details || day.description) ? (
-                              <div className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none" dangerouslySetInnerHTML={{ __html: day.details || day.description }} />
-                            ) : (
-                              <div className="text-gray-600 leading-relaxed whitespace-pre-wrap mb-4 font-normal text-base">{day.details || day.description}</div>
-                            )
+                            <div 
+                              className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none" 
+                              dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(day.details || day.description) }} 
+                            />
                           )}
                           
                           {day.image && (

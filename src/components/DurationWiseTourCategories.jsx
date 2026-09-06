@@ -9,21 +9,50 @@ const DurationWiseTourCategories = () => {
   const [activeCountry, setActiveCountry] = useState('All');
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   
-  const countries = ['All', 'Nepal', 'Bhutan', 'Tibet'];
+  const countries = ['All', 'Nepal', 'Bhutan', 'India', 'Tibet'];
+
+  // Helper to extract days from tour object
+  const getTourDays = (tour) => {
+    let match = (tour.title || '').match(/(\d+)\s+Days?/i);
+    if (match) return parseInt(match[1], 10);
+    if (tour.duration) {
+      match = String(tour.duration).match(/(\d+)\s+Days?/i);
+      if (match) return parseInt(match[1], 10);
+      const numOnly = parseInt(tour.duration, 10);
+      if (!isNaN(numOnly)) return numOnly;
+    }
+    return null;
+  };
+
+  const formatPriceStr = (rawPrice) => {
+    if (!rawPrice) return null;
+    const clean = String(rawPrice).replace(/^(US\$|\$|\s)+/gi, '').trim();
+    return clean ? `US$${clean}` : null;
+  };
 
   // Get all tours from packages and tourTrips
   const allTours = useMemo(() => {
     const mappedTourTrips = (tourTrips || [])
-      .filter(t => t.status === 'Published' && (t.category === 'Tours' || t.category === 'Tours Packages'))
+      .filter(t => (!t.status || t.status === 'Published') && (!t.category || t.category === 'Tours' || t.category === 'Tours Packages' || t.category === 'Packages'))
       .map(t => ({
         id: t.slug || t.id,
         title: t.title,
-        img: t.image || t.img || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=600',
-        price: t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : (t.price ? `US$${t.price}` : null),
-        location: t.destination || 'Nepal',
+        duration: t.duration,
+        img: t.heroImage || t.image || t.img || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=600',
+        price: formatPriceStr(t.pricingInfo?.sellingPrice || t.price),
+        location: t.destination || t.country || 'Nepal',
         isTourTrip: true
       }));
-    const standardPackages = (packages || []).filter(p => p.category === 'Tours' && !mappedTourTrips.some(m => m.title === p.title));
+    const standardPackages = (packages || [])
+      .filter(p => (!p.status || p.status === 'Published') && (!p.category || p.category === 'Tours' || p.category === 'Packages') && !mappedTourTrips.some(m => m.id === p.id || m.title === p.title))
+      .map(p => ({
+        id: p.slug || p.id,
+        title: p.title,
+        duration: p.duration,
+        img: p.heroImage || p.image || p.img || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=600',
+        price: formatPriceStr(p.pricingInfo?.sellingPrice || p.price),
+        location: p.destination || p.country || 'Nepal'
+      }));
     return [...mappedTourTrips, ...standardPackages];
   }, [packages, tourTrips]);
 
@@ -38,14 +67,12 @@ const DurationWiseTourCategories = () => {
     });
   }, [allTours, activeCountry]);
 
-  // Extract unique days from titles
+  // Extract unique days from titles or duration
   const availableDurations = useMemo(() => {
     const days = new Set();
     filteredByCountry.forEach(tour => {
-      const match = tour.title.match(/^(\d+)\s+Days?/i);
-      if (match) {
-        days.add(parseInt(match[1], 10));
-      }
+      const d = getTourDays(tour);
+      if (d) days.add(d);
     });
     
     // Sort days ascending
@@ -67,8 +94,8 @@ const DurationWiseTourCategories = () => {
   // Get tours for the active duration
   const activeTours = useMemo(() => {
     const filtered = filteredByCountry.filter(tour => {
-      const match = tour.title.match(/^(\d+)\s+Days?/i);
-      return match && parseInt(match[1], 10) === activeDuration;
+      const d = getTourDays(tour);
+      return d === activeDuration;
     });
     return filtered;
   }, [filteredByCountry, activeDuration]);
@@ -227,6 +254,10 @@ const DurationWiseTourCategories = () => {
                       <img 
                         src={tour.img || tour.image || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800'} 
                         alt={tour.title} 
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800';
+                        }}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
                       />
                       

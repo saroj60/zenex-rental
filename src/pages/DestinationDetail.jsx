@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { MapPin, Calendar, Compass, ShieldCheck, ArrowRight, Car, Globe, Building2, Users, Languages, Info, Clock, Zap, Phone, ChevronDown, Plane, Bus, Wallet, ThermometerSun, Camera } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 import SEO from '../components/SEO';
+import { formatMarkdownToHTML } from '../utils/detailFormatters';
 
 const getIcon = (iconName) => {
   const icons = {
@@ -124,7 +125,7 @@ const DestinationDetail = () => {
             {/* Overview */}
             <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
               <h2 className="text-3xl font-extrabold text-[#1e3a8a] mb-6">Trip Overview</h2>
-              <div className="prose prose-lg text-gray-700 mb-8 max-w-none" dangerouslySetInnerHTML={{ __html: dest.extendedOverview || dest.desc }} />
+              <div className="prose prose-lg text-gray-700 mb-8 max-w-none" dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(dest.extendedOverview || dest.desc) }} />
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                 <div className="flex flex-col p-5 bg-blue-50/50 rounded-2xl border border-blue-100/50">

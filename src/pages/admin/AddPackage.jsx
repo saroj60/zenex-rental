@@ -144,13 +144,6 @@ const AddPackage = () => {
                 className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
               />
             </div>
-            <div>
-              <label className="block text-sm font-bold text-gray-700 mb-2">Trip Code</label>
-              <input type="text" name="tripCode" value={formData.tripCode} onChange={handleChange}
-                placeholder="e.g. ZNX-KTM" 
-                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#e53a24]/50 outline-none"
-              />
-            </div>
           </div>
         </div>
 
