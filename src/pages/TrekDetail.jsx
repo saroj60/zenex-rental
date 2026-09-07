@@ -572,114 +572,90 @@ const TrekDetail = () => {
             {/* Detailed Itinerary */}
             {trek.itinerary && trek.itinerary.length > 0 && (
               <div id="itinerary" className="scroll-mt-40 pb-6 border-b border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-8 font-serif">Detailed Itinerary</h2>
-                <div className="space-y-6">
-                  {trek.itinerary.map((day, index) => {
-                    const colors = [
-                      "bg-blue-50 border-blue-100 text-blue-600 dot-bg-blue-400",
-                      "bg-green-50 border-green-100 text-green-600 dot-bg-green-400",
-                      "bg-orange-50 border-orange-100 text-orange-600 dot-bg-orange-400",
-                      "bg-purple-50 border-purple-100 text-purple-600 dot-bg-purple-400",
-                      "bg-rose-50 border-rose-100 text-rose-600 dot-bg-rose-400",
-                      "bg-teal-50 border-teal-100 text-teal-600 dot-bg-teal-400"
-                    ];
-                    const currentColors = colors[index % colors.length];
-                    const circleClass = currentColors.split(' ').slice(0, 3).join(' ');
-                    const dotClass = currentColors.split(' ')[3].replace('dot-', '');
-
-                    // Extract clean day label, e.g. "Day 01" or "01"
-                    let dayLabel = day.day ? day.day.trim() : `Day ${String(index + 1).padStart(2, '0')}`;
+                <div className="flex justify-between items-end mb-8 border-b border-gray-100 pb-4">
+                  <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+                    <List className="text-[#10b981]" size={28} />
+                    Day-by-Day Itinerary
+                  </h2>
+                  <span className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-bold">{trek.itinerary.length} Days</span>
+                </div>
+                <div className="space-y-2">
+                  {trek.itinerary.map((day, idx) => {
+                    let dayLabel = day.day ? day.day.trim() : `DAY ${String(idx + 1).padStart(2, '0')}`;
                     if (/^D\s+Day/i.test(dayLabel)) dayLabel = dayLabel.replace(/^D\s+/i, '');
-                    
+                    if (!dayLabel.toUpperCase().startsWith('DAY')) dayLabel = `DAY ${dayLabel}`;
                     const descriptionText = day.details || day.description || day.desc || '';
                     const travelModeText = day.travelMode || day.modeOfTravel;
 
                     return (
-                    <div key={day.day || index} className="flex gap-4 group">
-                      <div className="flex flex-col items-center">
-                        <div className={`w-14 h-14 rounded-full border-2 flex flex-col items-center justify-center font-bold text-xs shrink-0 text-center shadow-sm leading-tight p-1 ${circleClass}`}>
-                          <span>{dayLabel}</span>
+                      <div key={idx} className="relative pl-10 pb-8 last:pb-0">
+                        {/* Timeline Line */}
+                        {idx < trek.itinerary.length - 1 && (
+                          <div className="absolute left-[15px] top-6 bottom-0 w-[2px] bg-[#10b981]"></div>
+                        )}
+
+                        {/* Timeline Pill Badge */}
+                        <div className="absolute left-0 top-0 flex items-center gap-2 bg-[#10b981] text-white px-3 py-1 rounded-full text-xs font-bold shadow-xs">
+                          <div className="w-2 h-2 rounded-full bg-white"></div>
+                          {dayLabel.toUpperCase()}
                         </div>
-                        <div className="w-px h-full bg-gray-200 my-2 group-last:hidden"></div>
-                      </div>
-                      <div className="pb-6 flex-1">
-                        <h3 className="text-lg font-bold text-gray-900 mb-2">{day.title}</h3>
-                        {descriptionText && (
-                          <div 
-                            className="text-gray-600 leading-relaxed text-[15px] mb-3 space-y-2 prose max-w-none" 
-                            dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(descriptionText) }} 
-                          />
-                        )}
 
-                        {/* Day Metadata (Altitude, Accommodation, Meals, Travel Mode, Duration) */}
-                        {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
-                          <div className="mt-3 bg-slate-50/80 rounded-xl p-3.5 border border-slate-100 text-xs text-slate-700 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
-                            {day.maxAltitude && (
-                              <div className="flex items-center gap-2">
-                                <Mountain size={14} className="text-slate-400 shrink-0" />
-                                <span><strong className="font-semibold text-slate-800">Max Altitude:</strong> {day.maxAltitude}</span>
-                              </div>
-                            )}
-                            {day.accommodation && (
-                              <div className="flex items-center gap-2">
-                                <Bed size={14} className="text-slate-400 shrink-0" />
-                                <span><strong className="font-semibold text-slate-800">Accommodation:</strong> {day.accommodation}</span>
-                              </div>
-                            )}
-                            {day.meals && (
-                              <div className="flex items-center gap-2">
-                                <Utensils size={14} className="text-slate-400 shrink-0" />
-                                <span><strong className="font-semibold text-slate-800">Meals:</strong> {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
-                              </div>
-                            )}
-                            {travelModeText && (
-                              <div className="flex items-center gap-2">
-                                <Car size={14} className="text-slate-400 shrink-0" />
-                                <span><strong className="font-semibold text-slate-800">Mode of Travel:</strong> {travelModeText}</span>
-                              </div>
-                            )}
-                            {day.duration && (
-                              <div className="flex items-center gap-2">
-                                <Clock size={14} className="text-slate-400 shrink-0" />
-                                <span><strong className="font-semibold text-slate-800">Duration:</strong> {day.duration}</span>
-                              </div>
-                            )}
-                          </div>
-                        )}
+                        {/* Day Content */}
+                        <div className="pt-8">
+                          <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{day.title}</h3>
+                          {descriptionText && (
+                            <div 
+                              className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none" 
+                              dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(descriptionText) }} 
+                            />
+                          )}
 
-                        {/* Day Highlights */}
-                        {day.highlights && (
-                          <div className="mt-3 bg-amber-50/50 rounded-xl p-3.5 border border-amber-100/80">
-                            <h4 className="font-bold text-slate-900 mb-2 text-xs uppercase tracking-wider flex items-center gap-1.5">
-                              <Star className="text-amber-500 w-3.5 h-3.5 fill-current" />
-                              Day Highlights
-                            </h4>
-                            {Array.isArray(day.highlights) ? (
-                              <ul className="space-y-1.5 text-xs text-slate-700">
-                                {day.highlights.map((h, i) => (
-                                  <li key={i} className="flex items-start gap-2">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1 shrink-0"></div>
-                                    <span>{h}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            ) : typeof day.highlights === 'object' ? (
-                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-1.5 gap-x-4 text-xs text-slate-700">
-                                {Object.entries(day.highlights).map(([k, v]) => (
-                                  <div key={k} className="flex items-start gap-2">
-                                    <div className={`w-1.5 h-1.5 rounded-full mt-1 shrink-0 ${dotClass}`}></div>
-                                    <span className="font-semibold text-slate-800">{k}:</span> {v}
+                          {day.image && (
+                            <img src={day.image} alt={day.title} className="w-full max-w-xl h-48 md:h-64 object-cover rounded-xl mb-4 shadow-sm" />
+                          )}
+
+                          {/* Day Highlights Metadata */}
+                          {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
+                            <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
+                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">DAY HIGHLIGHTS</h4>
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
+                                {day.maxAltitude && (
+                                  <div className="flex items-center gap-2">
+                                    <Mountain size={16} className="text-gray-400 shrink-0" />
+                                    <span>Max Altitude: {day.maxAltitude}</span>
                                   </div>
-                                ))}
+                                )}
+                                {travelModeText && (
+                                  <div className="flex items-center gap-2">
+                                    <Car size={16} className="text-gray-400 shrink-0" />
+                                    <span>Mode of Travel: {travelModeText}</span>
+                                  </div>
+                                )}
+                                {day.accommodation && (
+                                  <div className="flex items-center gap-2">
+                                    <Bed size={16} className="text-gray-400 shrink-0" />
+                                    <span>Accommodation: {day.accommodation}</span>
+                                  </div>
+                                )}
+                                {day.meals && (
+                                  <div className="flex items-center gap-2">
+                                    <Utensils size={16} className="text-gray-400 shrink-0" />
+                                    <span>Meals: {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
+                                  </div>
+                                )}
+                                {day.duration && (
+                                  <div className="flex items-center gap-2">
+                                    <Clock size={16} className="text-gray-400 shrink-0" />
+                                    <span>Duration: {day.duration}</span>
+                                  </div>
+                                )}
                               </div>
-                            ) : (
-                              <p className="text-xs text-slate-700">{String(day.highlights)}</p>
-                            )}
-                          </div>
-                        )}
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  )})}
+                    );
+                  })}
                 </div>
               </div>
             )}

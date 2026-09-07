@@ -602,7 +602,7 @@ const TourTripDetail = () => {
                                 {day.maxAltitude && (
                                   <div className="flex items-center gap-2">
                                     <Mountain size={16} className="text-gray-400 shrink-0" />
-                                    <span>Max Altitude: {day.maxAltitude} {day.altitudeUnit || 'm'}</span>
+                                    <span>Max Altitude: {formatAltitude(day.maxAltitude, day.altitudeUnit)}</span>
                                   </div>
                                 )}
                                 {day.distance && (
