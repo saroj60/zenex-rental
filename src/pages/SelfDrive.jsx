@@ -12,11 +12,11 @@ const SelfDrive = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Filter out heavy duty vehicles that aren't good for self drive and get the 4 most recently added
-  const selfDriveVehicles = [...vehicles]
-    .reverse()
-    .filter(v => ['Sedan', 'SUV / 4x4', 'EV'].includes(v.type))
-    .slice(0, 4);
+  // Include all available vehicles in the fleet for self drive & rental options
+  const selfDriveVehicles = [...vehicles].reverse();
+  const availableVehicleTypes = Array.from(
+    new Set(vehicles.map(v => v.type).filter(Boolean))
+  );
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -58,7 +58,7 @@ const SelfDrive = () => {
             Experience the ultimate freedom. Rent a car without a driver and explore Kathmandu and beyond at your own pace.
           </p>
           <div className="flex justify-center">
-            <InlineEnquiryForm routeName="Self-Drive Enquiry" recommendedVehicles={['Sedan', 'SUV / 4x4', 'EV']} />
+            <InlineEnquiryForm routeName="Self-Drive Enquiry" recommendedVehicles={availableVehicleTypes} />
           </div>
         </div>
       </div>
@@ -129,16 +129,16 @@ const SelfDrive = () => {
                 <h3 className="text-xl font-bold text-[#1e3a8a] mb-6 border-b border-gray-100 pb-4">
                   Available Self-Drive Vehicles
                 </h3>
-                <div className="space-y-6">
+                <div className="space-y-4 max-h-[650px] overflow-y-auto pr-2">
                   {selfDriveVehicles.map(v => (
-                    <div key={v.id} className="flex gap-4 items-center group">
-                      <div className="w-20 h-16 rounded-xl overflow-hidden shrink-0 bg-gray-100">
-                        <img src={v.img} alt={v.name} className="w-full h-full object-cover" />
+                    <div key={v.id} className="flex gap-4 items-center group bg-gray-50/80 hover:bg-gray-50 p-2.5 rounded-2xl border border-gray-100 transition-all">
+                      <div className="w-20 h-16 rounded-xl overflow-hidden shrink-0 bg-white">
+                        <img src={v.img} alt={v.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                       </div>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-gray-900 mb-1 leading-tight">{v.name}</h4>
-                        <p className="text-xs text-gray-500 mb-2">{v.type}</p>
-                        <Link to={`/vehicles/${v.id}?driver=self`} className="text-xs font-bold text-[#e53a24] hover:underline flex items-center gap-1">
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-bold text-gray-900 text-sm mb-0.5 truncate">{v.name}</h4>
+                        <p className="text-xs text-gray-500 mb-1">{v.type}</p>
+                        <Link to={`/vehicle/${v.id}`} className="text-xs font-bold text-[#e53a24] hover:underline flex items-center gap-1">
                           Book Now <span className="text-[10px]">→</span>
                         </Link>
                       </div>
