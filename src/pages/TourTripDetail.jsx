@@ -472,11 +472,13 @@ const TourTripDetail = () => {
                 </div>
               </div>
 
-              {/* Description Overview */}
-              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Overview</h2>
+              {/* Description Overview / Package Introduction */}
+              <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3">
+                  <FileText className="text-[#e53a24]" size={28} /> Package Introduction & Overview
+                </h2>
                 <div 
-                  className="text-gray-700 text-lg leading-relaxed space-y-3"
+                  className="prose prose-red max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
                   dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trip.description || trip.overview) }}
                 />
               </div>

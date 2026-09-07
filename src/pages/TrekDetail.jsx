@@ -484,6 +484,17 @@ const TrekDetail = () => {
               </div>
             </div>
 
+            {/* Package Introduction & Overview */}
+            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3 font-serif">
+                <BookOpen className="text-green-600" size={28} /> Package Introduction & Overview
+              </h2>
+              <div 
+                className="prose prose-emerald max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
+                dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trekDesc) }}
+              />
+            </div>
+
             {/* Step-by-Step Package Introduction & Journey */}
             <StepByStepPackageIntro itinerary={trek.itinerary || trek.detailedItinerary} title={trek.title} category="Trekking" />
 
@@ -506,15 +517,6 @@ const TrekDetail = () => {
                 </ul>
               </div>
             )}
-
-            {/* Overview text */}
-            <div className="pb-6 border-b border-gray-100">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Explore {trek.title}</h2>
-              <div 
-                className="prose max-w-none text-[15px] text-gray-600 leading-relaxed space-y-4"
-                dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trekDesc) }}
-              />
-            </div>
 
             {/* Gallery Section */}
             {trek.gallery && trek.gallery.length > 0 && (

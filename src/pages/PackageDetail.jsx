@@ -13829,10 +13829,28 @@ const PackageDetail = () => {
               </div>
             )}
 
+            {/* Package Introduction & Overview */}
+            {(pkg.overview || pkg.description) && (
+              <div id="overview" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e3a8a] mb-6 flex items-center gap-3">
+                  <FileText className="text-[#0F766E]" size={28} /> Package Introduction & Overview
+                </h2>
+                <div 
+                  className="prose prose-blue max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
+                  dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(pkg.overview || pkg.description) }}
+                />
+              </div>
+            )}
+
+            {/* Step-by-Step Package Introduction & Journey */}
+            <StepByStepPackageIntro itinerary={pkg.itinerary} title={pkg.title} category={pkg.category} />
+
             {/* Photo Gallery */}
             {pkg.gallery && pkg.gallery.length > 0 && (
-              <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 mb-10">
-                <h2 className="text-2xl font-extrabold text-[#1e3a8a] mb-6 flex items-center">Photo Gallery</h2>
+              <div id="gallery" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24">
+                <h2 className="text-2xl font-extrabold text-[#1e3a8a] mb-6 flex items-center gap-3">
+                  <ImageIcon className="text-[#e53a24]" size={28} /> Photo Gallery
+                </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                   {pkg.gallery.map((imgUrl, idx) => (
                     <div key={idx} className="relative h-48 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
@@ -13840,20 +13858,6 @@ const PackageDetail = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-            )}
-
-            {/* Step-by-Step Package Introduction & Journey */}
-            <StepByStepPackageIntro itinerary={pkg.itinerary} title={pkg.title} category={pkg.category} />
-
-            {/* Overview */}
-            {pkg.overview && (
-              <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
-                <h2 className="text-2xl font-extrabold text-[#1e3a8a] mb-6">Overview</h2>
-                <div 
-                  className="prose prose-blue max-w-none text-gray-700 leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(pkg.overview) }}
-                />
               </div>
             )}
 
