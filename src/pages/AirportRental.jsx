@@ -26,8 +26,9 @@ const AirportRental = () => {
   return (
     <div className="bg-background min-h-screen">
       <SEO 
-        title="Kathmandu Airport Pickup | Airport Transfer Nepal"
-        description="Reliable Kathmandu airport pickup and airport transfer services in Nepal. Hire cars, SUVs, or tourist buses for seamless transportation from Tribhuvan International Airport."
+        keywords="Kathmandu Airport Transfer, KTM Airport Car Rental, Airport Pickup Kathmandu, Zenex Travels, Zenex Travel" 
+        title="Kathmandu Airport Transfer & Car Rental (KTM) | Zenex Travels & Tours"
+        description="Punctual 24/7 Kathmandu Tribhuvan International Airport (KTM) pickup & drop transfers. Luxury sedans, SUVs, and Hiace microbuses at affordable rates."
         canonicalUrl="https://www.zenextravels.com/airport-transfer"
       />
       {/* Hero Section */}

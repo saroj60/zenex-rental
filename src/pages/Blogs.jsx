@@ -14,8 +14,9 @@ const Blogs = () => {
   return (
     <div className="bg-[#ebf3fa] min-h-screen pb-20 pt-32">
       <SEO 
-        title="Nepal Travel Blog | Car Rental Tips & Trekking Guides"
-        description="Read our latest travel blogs for tips on renting cars in Nepal, trekking guides, packing lists, and the best time to visit Nepal."
+        keywords="Nepal Travel Guide, Nepal Trekking Tips, Kathmandu Road Trips, Zenex Travels Blog, Zenex Travel" 
+        title="Nepal Travel Guide, Tips & Trekking Blog | Zenex Travels & Tours"
+        description="Read essential Nepal travel tips, trekking guides, road trip itineraries, and destination guides curated by Zenex Travels & Tours."
         canonicalUrl="https://www.zenextravels.com/blog"
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8">

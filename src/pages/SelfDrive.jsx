@@ -33,8 +33,9 @@ const SelfDrive = () => {
   return (
     <div className="bg-[#ebf3fa] min-h-screen pb-20">
       <SEO 
-        title="Self Drive Car Rental Nepal | Rent Without Driver in Kathmandu"
-        description="Experience ultimate freedom with our self-drive car rentals in Nepal. Choose from a wide range of well-maintained sedans and SUVs. Book your self-drive car today!"
+        keywords="Self Drive Car Rental Nepal, Rent Car Without Driver Kathmandu, Self Drive SUV Nepal, Zenex Travels, Zenex Travel" 
+        title="Self Drive Car Rental Nepal | Rent Car Without Driver | Zenex Travels"
+        description="Rent a self-drive car in Kathmandu and Nepal without a driver. Premium sedans, 4x4 SUVs, and electric vehicles for complete travel freedom."
         canonicalUrl="https://www.zenextravels.com/self-drive-car-rental-nepal"
         structuredData={structuredData}
       />

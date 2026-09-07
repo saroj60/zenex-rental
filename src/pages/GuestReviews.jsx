@@ -208,8 +208,9 @@ const GuestReviews = () => {
   return (
     <div className="bg-[#EBF3FA] min-h-screen pt-28 md:pt-32 pb-24 font-sans">
       <SEO 
-        title="Verified Guest Reviews & Stories | Zenex Travels"
-        description="Read real traveler reviews and write your own review for Zenex Travels and Tours Nepal."
+        keywords="Zenex Travels Reviews, Zenex Travel Testimonials, Best Car Rental Nepal Reviews" 
+        title="Guest Reviews & Testimonials | Zenex Travels & Tours Nepal"
+        description="Read authentic guest reviews and testimonials from international travelers and locals who rented cars or booked tours with Zenex Travels."
         canonicalUrl="https://www.zenextravels.com/guest-reviews"
       />
 

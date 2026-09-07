@@ -10,8 +10,9 @@ const Tours = () => {
   return (
     <div className="bg-white min-h-screen pb-20">
       <SEO 
-        title="Adventure Tours Nepal | Luxury & Budget Tours in Nepal"
-        description="Experience the thrill of adventure tours in Nepal. We offer a wide range of luxury tours, budget tours, and custom holiday packages across Nepal."
+        keywords="Nepal Sightseeing Tours, Pokhara Tour Package, Kathmandu Heritage Tour, Chitwan Safari Tour, Zenex Travels, Zenex Travel" 
+        title="Nepal Sightseeing Tours & Holiday Packages | Zenex Travels & Tours"
+        description="Book unforgettable Nepal holiday tours in Kathmandu, Pokhara, Chitwan, Lumbini, and Mustang. Cultural, wildlife, and luxury mountain tours with Zenex Travels."
         canonicalUrl="https://www.zenextravels.com/tours"
       />
       {/* Premium Hero Section */}

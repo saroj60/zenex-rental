@@ -19,8 +19,9 @@ const FlightTicketing = () => {
   return (
     <div className="bg-[#ebf3fa] min-h-screen pb-20">
       <SEO 
-        title="Domestic & International Flight Ticketing Nepal | Zenex Travel"
-        description="Book domestic flights in Nepal including Pokhara, Everest Base Camp (Lukla), and breathtaking Mountain Flights. We also handle international air ticketing."
+        keywords="Nepal Flight Tickets, Everest Mountain Flight Booking, Kathmandu to Pokhara Flight, Zenex Travels, Zenex Travel" 
+        title="Domestic & International Flight Tickets Nepal | Zenex Travels & Tours"
+        description="Book domestic flights in Nepal (Kathmandu, Pokhara, Lukla, Chitwan) and Everest Mountain flights. Fast international air ticketing with Zenex Travels."
         canonicalUrl="https://www.zenextravels.com/flight-ticketing-nepal"
         structuredData={structuredData}
       />

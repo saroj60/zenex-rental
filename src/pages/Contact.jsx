@@ -45,8 +45,9 @@ const Contact = () => {
   return (
     <div className="bg-[#F4F6F8] min-h-screen pb-20">
       <SEO 
-        title="Contact Us"
-        description="Get in touch with Zenex Travel. Our expert team is available 24/7 for tour bookings, trek planning, and vehicle rentals across Nepal."
+        keywords="Contact Zenex Travels, Zenex Travel Phone Number, Kathmandu Travel Office, Zenex WhatsApp" 
+        title="Contact Zenex Travels & Tours | Kathmandu Travel & Rental Support"
+        description="Get in touch with Zenex Travels & Tours in Thamel, Kathmandu. Call +977-9767476521 or WhatsApp for immediate tour & car rental bookings."
         canonicalUrl="https://www.zenextravels.com/contact"
         structuredData={structuredData}
       />

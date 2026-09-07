@@ -444,8 +444,9 @@ ${moreInfo || 'N/A'}`;
   return (
     <div className="bg-[#f8fafc] min-h-screen pb-20 pt-28 md:pt-32">
       <SEO 
-        title="Customize Trip | Zenex Travel"
-        description="Customize your trip to Nepal. Select your trip, travel date, group size, and personal details to request a custom itinerary and quote."
+        keywords="Nepal Trip Planner, Custom Nepal Itinerary, Customized Tour Nepal, Zenex Travels" 
+        title="Custom Nepal Trip Planner & Itinerary Builder | Zenex Travels & Tours"
+        description="Plan your custom Nepal trip itinerary with Zenex Travels & Tours. Tailor-made tour packages, private vehicle rentals, and customized trekking routes."
         canonicalUrl="https://www.zenextravels.com/planner"
       />
 

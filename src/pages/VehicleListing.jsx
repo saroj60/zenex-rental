@@ -179,8 +179,9 @@ Is this available?`;
   return (
     <div className="bg-background min-h-screen">
       <SEO 
-        title="Our Fleet | Car Rentals in Nepal"
-        description="Browse our fleet of economy, SUV, luxury, and electric vehicles. Calculate real-time prices for self-drive or chauffeur services and book instantly via WhatsApp."
+        keywords="Car Rental Nepal, Rent SUV Nepal, Scorpio Hire Kathmandu, Hiace Rental Nepal, Zenex Travels, Zenex Travel, Self Drive Nepal" 
+        title="Car Rental Nepal Fleet | Rent SUV, Scorpio, Hiace & Sedan | Zenex Travels"
+        description="Rent vehicles in Nepal with driver or self-drive. Explore Suzuki Swift, Toyota Fortuner 4x4, Mahindra Scorpio, Toyota Hiace, and Tourist Buses at best rates."
         canonicalUrl="https://www.zenextravels.com/vehicles"
         structuredData={structuredData}
       />

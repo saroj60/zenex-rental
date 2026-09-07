@@ -105,9 +105,10 @@ const VehicleDetail = () => {
   return (
     <div className="px-margin-mobile md:px-margin-desktop py-8 bg-background min-h-screen">
       <SEO 
-        title={vehicle.seoTitle || `Rent ${vehicle.name} in Nepal | Zenex Travel`}
-        description={vehicle.seoDescription || `Looking to rent a ${vehicle.name} in Nepal? Book now with Zenex Travel for the best rates and service.`}
-        canonicalUrl={`https://www.zenextravels.com/vehicles/${vehicle.id}`}
+        title={vehicle.seoTitle || `Rent ${vehicle.name} in Nepal | Zenex Travels & Tours`}
+        description={vehicle.seoDescription || `Looking to rent a ${vehicle.name} in Nepal? Book now with Zenex Travels & Tours for the best rates and service.`}
+        keywords={`${vehicle.name} rental Nepal, rent ${vehicle.name} Kathmandu, Zenex Travels, Zenex Travel, Car Rental Nepal`}
+        canonicalUrl={`https://www.zenextravels.com/vehicle/${vehicle.id}`}
         structuredData={structuredData}
       />
       {/* Breadcrumb */}

@@ -7,8 +7,9 @@ const Treks = () => {
   return (
     <div className="bg-white min-h-screen pb-20">
       <SEO 
-        title="Trekking in Nepal | Zenex Rental"
-        description="Explore the majestic Himalayas with our guided trekking packages in Nepal."
+        keywords="Trekking in Nepal, Everest Base Camp Trek, Annapurna Base Camp Trek, Langtang Trek, Zenex Travels, Zenex Travel" 
+        title="Trekking Packages in Nepal | Annapurna, Everest, Langtang | Zenex Travels"
+        description="Himalayan trekking packages in Nepal. Annapurna Base Camp, Everest Base Camp, Langtang Valley, Ghorepani Poon Hill, and Mustang treks with expert guides."
       />
       
       {/* Premium Hero Section */}

@@ -11,8 +11,9 @@ const About = () => {
   return (
     <div className="bg-[#F4F6F8] min-h-screen pb-20">
       <SEO 
-        title="About Zenex Travel | Best Tour & Travel Company in Nepal"
-        description="Learn about Zenex Travel, the best tour operator and car rental company in Nepal. We offer premium travel services, certified guides, and reliable vehicles."
+        keywords="About Zenex Travels, Zenex Travel Company, Travel Agency Kathmandu, Car Rental Company Nepal" 
+        title="About Zenex Travels & Tours | Leading Nepal Travel & Rental Company"
+        description="Learn about Zenex Travels & Tours - Nepal premier vehicle rental operator and tour agency based in Thamel, Kathmandu. Trusted by thousands of travelers."
         canonicalUrl="https://www.zenextravels.com/about"
       />
       {/* Hero Section */}

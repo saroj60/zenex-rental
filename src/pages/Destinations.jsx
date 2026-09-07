@@ -25,8 +25,9 @@ const Destinations = () => {
   return (
     <div className="bg-[#F4F6F8] min-h-screen pb-20">
       <SEO 
-        title="Top Destinations in Nepal | Explore Kathmandu, Pokhara, Chitwan"
-        description="Discover the best tourist destinations in Nepal. Plan your next adventure to Kathmandu, Pokhara, Lumbini, and the Himalayas with our expert travel guides."
+        keywords="Nepal Tourist Destinations, Best Places in Nepal, Pokhara Sightseeing, Mustang Trip, Zenex Travels, Zenex Travel" 
+        title="Top Nepal Destinations | Pokhara, Mustang, Chitwan | Zenex Travels"
+        description="Explore top tourist destinations in Nepal: Kathmandu Valley, Pokhara, Chitwan National Park, Lumbini, Muktinath, and Mustang with Zenex Travels."
         canonicalUrl="https://www.zenextravels.com/destinations"
       />
       {/* Hero Section */}

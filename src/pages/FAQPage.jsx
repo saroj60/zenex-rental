@@ -22,8 +22,9 @@ const FAQPage = () => {
   return (
     <div className="bg-[#ebf3fa] min-h-screen py-24">
       <SEO 
-        title="Frequently Asked Questions (FAQ) | Zenex Travel"
-        description="Find answers to common questions about booking tour packages, trekking in Nepal, and renting vehicles with Zenex Travel."
+        keywords="Zenex Travels FAQ, Nepal Car Rental Rules, Self Drive Requirements Nepal, Zenex Support" 
+        title="Frequently Asked Questions (FAQ) | Zenex Travels & Tours Nepal"
+        description="Find quick answers to common questions about car rental terms, driver allowances, self-drive requirements, trekking permits, and flight bookings in Nepal."
         canonicalUrl="https://www.zenextravels.com/faq"
         structuredData={structuredData}
       />

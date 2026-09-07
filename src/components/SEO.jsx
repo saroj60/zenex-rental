@@ -22,6 +22,9 @@ const SEO = ({
       <title>{fullTitle}</title>
       <meta name="description" content={description || defaultDescription} />
       {keywords && <meta name="keywords" content={keywords} />}
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="author" content="Zenex Travels & Tours" />
       
       {/* Canonical Link */}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}

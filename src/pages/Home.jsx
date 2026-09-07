@@ -42,7 +42,7 @@ const Home = () => {
     <>
       <SEO 
         title="Zenex Travels & Tours | #1 Car Rental & Tour Operator in Nepal" 
-        description="Zenex Travels & Tours (Zenex Travel) is Nepal's top travel agency & car rental provider. Book Himalayan trekking packages, vehicle rentals, and private tours in Nepal."
+        description="Zenex Travels & Tours (Zenex Travel) is Nepal top travel agency & car rental provider. Book Himalayan trekking packages, vehicle rentals, and private tours in Nepal."
         keywords="Zenex Travels, Zenex Travel, Zenex Tours, Zenex Car Rental, Zenex Travel Nepal, car rental nepal, himalayan tours, kathmandu car hire, pokhara tours"
         canonicalUrl="https://www.zenextravels.com/"
         structuredData={structuredData}

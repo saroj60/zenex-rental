@@ -208,8 +208,9 @@ const Packages = () => {
   return (
     <div className="bg-[#ebf3fa] min-h-screen pb-20 pt-28 md:pt-32">
       <SEO 
-        title="Nepal Tour Packages | Best Holiday & Adventure Tours in Nepal"
-        description="Book the best Nepal tour packages, holiday packages, and adventure tours. From family tours to luxury honeymoon packages, we offer unbeatable prices."
+        keywords="Nepal Tour Packages, Best Nepal Packages, Nepal Holiday Trips, Zenex Travels, Zenex Travel, Everest Trek Package, Pokhara Tour" 
+        title="Best Tour & Trekking Packages in Nepal 2026 | Zenex Travels & Tours"
+        description="Explore curated Nepal tour packages, Everest & Annapurna treks, jungle safaris, and luxury holiday trips with Zenex Travels & Tours. Best prices guaranteed."
         canonicalUrl="https://www.zenextravels.com/packages"
       />
 

@@ -33,8 +33,9 @@ const WeddingCar = () => {
   return (
     <div className="bg-[#ebf3fa] min-h-screen pb-20">
       <SEO 
-        title="Wedding Car Rental Kathmandu | Luxury Marriage Cars"
-        description="Make your grand entrance unforgettable with our luxury wedding car rentals in Kathmandu. Professionally decorated vehicles and uniformed chauffeurs."
+        keywords="Wedding Car Rental Kathmandu, Marriage Car Hire Nepal, Luxury Wedding Cars Nepal, Zenex Travels, Zenex Travel" 
+        title="Wedding Car Rental Kathmandu Nepal | Luxury Marriage Cars | Zenex Travels"
+        description="Hire luxury decorated wedding cars in Kathmandu, Lalitpur, and Bhaktapur. Vintage cars, SUVs, and luxury sedans for marriage ceremonies."
         canonicalUrl="https://www.zenextravels.com/wedding-car-rental-kathmandu"
         structuredData={structuredData}
       />
