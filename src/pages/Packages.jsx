@@ -217,8 +217,65 @@ const Packages = () => {
       {/* Categories Switcher */}
       <CountryWiseTourCategories />
 
+      {/* Step-by-Step Package Booking Introduction */}
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mt-8 mb-4">
+        <div className="bg-gradient-to-r from-[#0a2f4c] via-[#1e3a8a] to-[#0f172a] text-white rounded-3xl p-6 md:p-8 shadow-xl border border-white/10 text-left relative overflow-hidden">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-4 border-b border-white/15">
+            <div>
+              <span className="text-[11px] font-extrabold uppercase tracking-widest text-amber-400 bg-amber-400/10 border border-amber-400/20 px-3 py-1 rounded-full">
+                Step-by-Step Guide
+              </span>
+              <h2 className="text-2xl md:text-3xl font-extrabold mt-2 tracking-tight">How Our Packages Work</h2>
+              <p className="text-sm text-blue-200 mt-1">Simple 4-step process to explore Nepal, Tibet, Bhutan & India hassle-free</p>
+            </div>
+            <div className="flex items-center gap-2 text-xs font-bold bg-white/10 backdrop-blur-md px-4 py-2 rounded-2xl border border-white/15 text-blue-100 w-fit">
+              <CheckCircle2 size={16} className="text-amber-400 shrink-0" />
+              <span>All-Inclusive Private Vehicles & Guides</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 transition-transform hover:-translate-y-1">
+              <div className="flex items-center justify-between mb-2">
+                <span className="w-8 h-8 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-sm flex items-center justify-center shadow-md">1</span>
+                <span className="text-[10px] uppercase tracking-wider font-bold text-amber-300">Step 1</span>
+              </div>
+              <h3 className="font-bold text-base text-white mb-1">Choose Your Package</h3>
+              <p className="text-xs text-blue-100/80 leading-relaxed">Select from classic Nepal tours, Annapurna/Everest treks, or multi-country itineraries.</p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 transition-transform hover:-translate-y-1">
+              <div className="flex items-center justify-between mb-2">
+                <span className="w-8 h-8 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-sm flex items-center justify-center shadow-md">2</span>
+                <span className="text-[10px] uppercase tracking-wider font-bold text-amber-300">Step 2</span>
+              </div>
+              <h3 className="font-bold text-base text-white mb-1">Select Hotel & Vehicle</h3>
+              <p className="text-xs text-blue-100/80 leading-relaxed">Choose from 2★ Budget to 5★ Luxury hotels and private AC SUVs, Sedans or Hiace microbuses.</p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 transition-transform hover:-translate-y-1">
+              <div className="flex items-center justify-between mb-2">
+                <span className="w-8 h-8 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-sm flex items-center justify-center shadow-md">3</span>
+                <span className="text-[10px] uppercase tracking-wider font-bold text-amber-300">Step 3</span>
+              </div>
+              <h3 className="font-bold text-base text-white mb-1">Instant Confirmation</h3>
+              <p className="text-xs text-blue-100/80 leading-relaxed">Get immediate booking confirmation, detailed day-by-day PDF itinerary & 24/7 WhatsApp assistance.</p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 transition-transform hover:-translate-y-1">
+              <div className="flex items-center justify-between mb-2">
+                <span className="w-8 h-8 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-sm flex items-center justify-center shadow-md">4</span>
+                <span className="text-[10px] uppercase tracking-wider font-bold text-amber-300">Step 4</span>
+              </div>
+              <h3 className="font-bold text-base text-white mb-1">Enjoy Your Journey</h3>
+              <p className="text-xs text-blue-100/80 leading-relaxed">Punctual airport pickup, private sightseeing, licensed local guides & authentic Nepali cultural shows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Packages Grid */}
-      <div id="packages-list" className="max-w-7xl mx-auto px-4 md:px-8 mt-12">
+      <div id="packages-list" className="max-w-7xl mx-auto px-4 md:px-8 mt-8">
         
         {/* Filter and Sort Options */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 bg-white p-4 rounded-3xl shadow-sm border border-gray-100">
