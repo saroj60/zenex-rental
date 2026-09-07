@@ -517,7 +517,7 @@ const TourTripDetail = () => {
 
             {/* Outline Itinerary Section */}
             <section id="outline-itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3"><List className="text-[#10b981]" size={28} /> Outline Itinerary</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2.5 font-serif"><Calendar className="text-[#1e3a8a]" size={24} /> Outline Itinerary</h2>
               <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
                 <table className="w-full text-left border-collapse text-sm">
                   <thead>
@@ -534,7 +534,7 @@ const TourTripDetail = () => {
                         return (
                           <tr key={idx} className="hover:bg-slate-50/80 transition-colors">
                             <td className="py-3.5 px-4 font-medium text-gray-900">
-                              <span className="font-bold text-[#10b981] mr-2">Day {dayNum}:</span>
+                              <span className="font-bold text-[#1e3a8a] mr-2">Day {dayNum}:</span>
                               {day.title}
                             </td>
                             <td className="py-3.5 px-4 text-gray-600 whitespace-nowrap">{formatAltitude(day.maxAltitude, day.altitudeUnit)}</td>
@@ -932,7 +932,7 @@ const TourTripDetail = () => {
                       className="w-full bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center flex justify-center items-center gap-2 disabled:opacity-50 cursor-pointer"
                     >
                       <FileText size={16} className="text-[#e53a24]" /> 
-                      {isGeneratingPDF ? 'GENERATING PDF...' : 'DOWNLOAD ITINERARY (PDF)'}
+                      {isGeneratingPDF ? 'GENERATING PDF...' : 'DOWNLOAD AS PDF'}
                     </button>
                   </div>
                 </div>
