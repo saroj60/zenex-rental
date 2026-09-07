@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { 
-  Clock, DollarSign, MapPin, CheckCircle2, ArrowLeft, Calendar,
+  Clock, DollarSign, MapPin, CheckCircle2, ArrowLeft, Calendar, List,
   Mountain, Bed, Utensils, Users, Sun, Check, X, Map as MapIcon, Car, Star,
   ShieldCheck, CalendarCheck, FileText, Info, HelpCircle, Heart, Phone, Plus, Minus, Image as ImageIcon,
   AlertTriangle, Backpack, PlaneTakeoff, Activity, ChevronDown
@@ -28,6 +28,22 @@ const TrekDetail = () => {
   
   // Active tab state for sticky nav
   const [activeTab, setActiveTab] = useState('overview');
+
+  const formatAltitude = (alt, unit) => {
+    if (!alt) return '-';
+    const str = String(alt).trim();
+    if (str.includes('/') || (str.includes('m') && str.includes('ft'))) return str;
+    const match = str.match(/([0-9,.]+)/);
+    if (!match) return alt;
+    const num = parseFloat(match[1].replace(/,/g, ''));
+    if (isNaN(num) || num <= 0) return alt;
+    const unitStr = unit || (str.includes('ft') ? 'ft' : 'm');
+    if (unitStr.toLowerCase() === 'm' || unitStr.toLowerCase() === 'meters') {
+      return `${num.toLocaleString()}m / ${Math.round(num * 3.28084).toLocaleString()}ft`;
+    } else {
+      return `${Math.round(num / 3.28084).toLocaleString()}m / ${num.toLocaleString()}ft`;
+    }
+  };
 
   const getBasePriceNum = () => {
     if (!trek || !trek.price) return 0;
@@ -622,7 +638,7 @@ const TrekDetail = () => {
                                 {day.maxAltitude && (
                                   <div className="flex items-center gap-2">
                                     <Mountain size={16} className="text-gray-400 shrink-0" />
-                                    <span>Max Altitude: {day.maxAltitude}</span>
+                                    <span>Max Altitude: {formatAltitude(day.maxAltitude, day.altitudeUnit)}</span>
                                   </div>
                                 )}
                                 {travelModeText && (
