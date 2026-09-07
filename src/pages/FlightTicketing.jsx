@@ -26,7 +26,7 @@ const FlightTicketing = () => {
       />
       
       {/* Hero Section */}
-      <div className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      <div className="relative py-16 md:py-24 flex items-center justify-center overflow-hidden min-h-[520px]">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1174&auto=format&fit=crop" 
@@ -36,15 +36,15 @@ const FlightTicketing = () => {
           <div className="absolute inset-0 bg-[#1e3a8a]/70"></div>
         </div>
         
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-8">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 drop-shadow-lg">
             Domestic & International Flights
           </h1>
-          <p className="text-xl text-blue-100 font-medium mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-blue-100 font-medium mb-6 max-w-2xl mx-auto">
             Hassle-free flight bookings across Nepal and worldwide. From Everest Mountain flights to international connections.
           </p>
           <div className="flex justify-center">
-            <InlineEnquiryForm routeName="Flight Ticketing Enquiry" />
+            <InlineEnquiryForm routeName="Flight Ticketing Enquiry" isFlight={true} />
           </div>
         </div>
       </div>
