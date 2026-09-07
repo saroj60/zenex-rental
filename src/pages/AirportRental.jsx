@@ -28,7 +28,7 @@ const AirportRental = () => {
       <SEO 
         title="Kathmandu Airport Pickup | Airport Transfer Nepal"
         description="Reliable Kathmandu airport pickup and airport transfer services in Nepal. Hire cars, SUVs, or tourist buses for seamless transportation from Tribhuvan International Airport."
-        canonicalUrl="https://zenextravel.com.np/airport-transfer"
+        canonicalUrl="https://www.zenextravels.com/airport-transfer"
       />
       {/* Hero Section */}
       <div className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center">

@@ -17,11 +17,12 @@ import LatestBlogs from '../components/LatestBlogs';
 const Home = () => {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Zenex Travel",
-    "image": "https://zenextravel.com/logo.jpg",
-    "@id": "https://zenextravel.com",
-    "url": "https://zenextravel.com",
+    "@type": "TravelAgency",
+    "name": "Zenex Travels & Tours",
+    "alternateName": ["Zenex Travel", "Zenex Travels", "Zenex Car Rental Nepal"],
+    "image": "https://www.zenextravels.com/logo.jpg",
+    "@id": "https://www.zenextravels.com",
+    "url": "https://www.zenextravels.com",
     "telephone": "+9779800000000",
     "address": {
       "@type": "PostalAddress",
@@ -40,10 +41,10 @@ const Home = () => {
   return (
     <>
       <SEO 
-        title="Best Tour Operator & Travel Company in Nepal | Car Rental" 
-        description="Zenex Travel is the best tour and travel company in Nepal. We offer premium trekking packages, holiday tours, and car rental services in Kathmandu and beyond."
-        keywords="car rental nepal, himalayan tours, kathmandu car hire, pokhara tours"
-        canonicalUrl="https://zenextravel.com/"
+        title="Zenex Travels & Tours | #1 Car Rental & Tour Operator in Nepal" 
+        description="Zenex Travels & Tours (Zenex Travel) is Nepal's top travel agency & car rental provider. Book Himalayan trekking packages, vehicle rentals, and private tours in Nepal."
+        keywords="Zenex Travels, Zenex Travel, Zenex Tours, Zenex Car Rental, Zenex Travel Nepal, car rental nepal, himalayan tours, kathmandu car hire, pokhara tours"
+        canonicalUrl="https://www.zenextravels.com/"
         structuredData={structuredData}
       />
       <Hero />

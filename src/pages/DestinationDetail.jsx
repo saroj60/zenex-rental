@@ -92,7 +92,7 @@ const DestinationDetail = () => {
       <SEO 
         title={`${dest.name} Travel Guide | Best Time, Weather & Tours`}
         description={`Plan your trip to ${dest.name}, Nepal. Get essential travel information, weather data, budget estimates, and discover the best tour packages.`}
-        canonicalUrl={`https://zenextravel.com.np/destinations/${dest.id}`}
+        canonicalUrl={`https://www.zenextravels.com/destinations/${dest.id}`}
         structuredData={structuredData}
       />
       

@@ -27,7 +27,7 @@ const Destinations = () => {
       <SEO 
         title="Top Destinations in Nepal | Explore Kathmandu, Pokhara, Chitwan"
         description="Discover the best tourist destinations in Nepal. Plan your next adventure to Kathmandu, Pokhara, Lumbini, and the Himalayas with our expert travel guides."
-        canonicalUrl="https://zenextravel.com.np/destinations"
+        canonicalUrl="https://www.zenextravels.com/destinations"
       />
       {/* Hero Section */}
       <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">

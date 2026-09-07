@@ -12,7 +12,7 @@ const Tours = () => {
       <SEO 
         title="Adventure Tours Nepal | Luxury & Budget Tours in Nepal"
         description="Experience the thrill of adventure tours in Nepal. We offer a wide range of luxury tours, budget tours, and custom holiday packages across Nepal."
-        canonicalUrl="https://zenextravel.com.np/tours"
+        canonicalUrl="https://www.zenextravels.com/tours"
       />
       {/* Premium Hero Section */}
       <div className="relative h-[65vh] min-h-[500px] flex flex-col justify-center overflow-hidden bg-gradient-to-tr from-slate-900 via-[#1e3a8a] to-[#0F766E]">

@@ -24,7 +24,7 @@ const FAQPage = () => {
       <SEO 
         title="Frequently Asked Questions (FAQ) | Zenex Travel"
         description="Find answers to common questions about booking tour packages, trekking in Nepal, and renting vehicles with Zenex Travel."
-        canonicalUrl="https://zenextravel.com/faq"
+        canonicalUrl="https://www.zenextravels.com/faq"
         structuredData={structuredData}
       />
       <div className="max-w-4xl mx-auto px-4 md:px-8 mb-8 text-center">

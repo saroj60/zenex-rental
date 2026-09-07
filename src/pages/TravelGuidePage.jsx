@@ -86,7 +86,7 @@ const TravelGuidePage = () => {
       <SEO 
         title="Nepal Travel & Trekking Guide | Zenex Travel"
         description="Comprehensive Nepal travel guide: Popular trekking regions, interactive gear checklist, cultural etiquette, and transport options."
-        canonicalUrl="https://zenextravel.com/travel-guide"
+        canonicalUrl="https://www.zenextravels.com/travel-guide"
       />
 
       {/* Header Banner */}

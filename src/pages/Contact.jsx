@@ -47,7 +47,7 @@ const Contact = () => {
       <SEO 
         title="Contact Us"
         description="Get in touch with Zenex Travel. Our expert team is available 24/7 for tour bookings, trek planning, and vehicle rentals across Nepal."
-        canonicalUrl="https://zenextravel.com/contact"
+        canonicalUrl="https://www.zenextravels.com/contact"
         structuredData={structuredData}
       />
       {/* Hero Section */}

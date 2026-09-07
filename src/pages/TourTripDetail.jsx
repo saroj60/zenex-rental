@@ -246,8 +246,8 @@ const TourTripDetail = () => {
       <SEO 
         title={`${trip.title} | Nepal Tour & Trek`}
         description={trip.shortDescription || `Book ${trip.title} with Zenex Travel. Premium Nepal tour experience.`}
-        canonicalUrl={`https://zenextravel.com/tour/${trip.slug || trip.id}`}
-        ogImage={trip.image || 'https://zenextravel.com/logo.jpg'}
+        canonicalUrl={`https://www.zenextravels.com/tour/${trip.slug || trip.id}`}
+        ogImage={trip.image || 'https://www.zenextravels.com/logo.jpg'}
         structuredData={{
           "@context": "https://schema.org",
           "@type": "TouristTrip",

@@ -49,7 +49,7 @@ const SEOLanding = ({ staticSlug }) => {
       <SEO 
         title={routeData.title}
         description={routeData.metaDescription}
-        canonicalUrl={`https://zenextravel.com/${slug}`}
+        canonicalUrl={`https://www.zenextravels.com/${slug}`}
         structuredData={structuredData}
       />
       {/* Hero Section */}

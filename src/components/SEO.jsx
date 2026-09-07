@@ -7,11 +7,13 @@ const SEO = ({
   keywords,
   canonicalUrl,
   ogType = 'website',
-  ogImage = 'https://zenextravel.com/logo.jpg',
+  ogImage = 'https://www.zenextravels.com/logo.jpg',
   structuredData
 }) => {
-  const siteName = 'Zenex Travel';
-  const fullTitle = title ? `${title} | ${siteName}` : siteName;
+  const siteName = 'Zenex Travels & Tours';
+  const fullTitle = title 
+    ? (title.toLowerCase().includes('zenex') ? title : `${title} | ${siteName}`) 
+    : 'Zenex Travels & Tours | Car Rental & Nepal Tours';
   const defaultDescription = 'Premium Himalayan car rentals and tour packages. Experience the beauty of Nepal, Tibet, and Bhutan with our reliable and comfortable vehicles.';
   
   return (

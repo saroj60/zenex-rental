@@ -13666,7 +13666,7 @@ const PackageDetail = () => {
       <SEO 
         title={`${pkg.title} | Nepal Tour Packages`}
         description={`Book the ${pkg.title} tour package with Zenex Travel. ${pkg.category || 'Adventure'} tour in Nepal starting at ${pkg.price || 'best price'}.`}
-        canonicalUrl={`https://zenextravel.com/packages/${id}`}
+        canonicalUrl={`https://www.zenextravels.com/packages/${id}`}
         structuredData={{
           "@context": "https://schema.org",
           "@type": "TouristTrip",

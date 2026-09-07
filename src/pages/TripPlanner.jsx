@@ -446,7 +446,7 @@ ${moreInfo || 'N/A'}`;
       <SEO 
         title="Customize Trip | Zenex Travel"
         description="Customize your trip to Nepal. Select your trip, travel date, group size, and personal details to request a custom itinerary and quote."
-        canonicalUrl="https://zenextravel.com/planner"
+        canonicalUrl="https://www.zenextravels.com/planner"
       />
 
       <div className="max-w-4xl mx-auto px-4 md:px-8">

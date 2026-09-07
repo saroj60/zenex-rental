@@ -43,7 +43,7 @@ const RouteLanding = () => {
       <SEO 
         title={routeData.title}
         description={routeData.metaDescription}
-        canonicalUrl={`https://zenextravel.com/route/${slug}`}
+        canonicalUrl={`https://www.zenextravels.com/route/${slug}`}
         structuredData={structuredData}
       />
       {/* Hero Section */}

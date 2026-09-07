@@ -107,7 +107,7 @@ const VehicleDetail = () => {
       <SEO 
         title={vehicle.seoTitle || `Rent ${vehicle.name} in Nepal | Zenex Travel`}
         description={vehicle.seoDescription || `Looking to rent a ${vehicle.name} in Nepal? Book now with Zenex Travel for the best rates and service.`}
-        canonicalUrl={`https://zenextravel.com.np/vehicles/${vehicle.id}`}
+        canonicalUrl={`https://www.zenextravels.com/vehicles/${vehicle.id}`}
         structuredData={structuredData}
       />
       {/* Breadcrumb */}

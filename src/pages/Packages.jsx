@@ -210,7 +210,7 @@ const Packages = () => {
       <SEO 
         title="Nepal Tour Packages | Best Holiday & Adventure Tours in Nepal"
         description="Book the best Nepal tour packages, holiday packages, and adventure tours. From family tours to luxury honeymoon packages, we offer unbeatable prices."
-        canonicalUrl="https://zenextravel.com.np/packages"
+        canonicalUrl="https://www.zenextravels.com/packages"
       />
 
       {/* Categories Switcher */}

@@ -35,7 +35,7 @@ const WeddingCar = () => {
       <SEO 
         title="Wedding Car Rental Kathmandu | Luxury Marriage Cars"
         description="Make your grand entrance unforgettable with our luxury wedding car rentals in Kathmandu. Professionally decorated vehicles and uniformed chauffeurs."
-        canonicalUrl="https://zenextravel.com.np/wedding-car-rental-kathmandu"
+        canonicalUrl="https://www.zenextravels.com/wedding-car-rental-kathmandu"
         structuredData={structuredData}
       />
       

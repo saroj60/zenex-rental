@@ -13,7 +13,7 @@ const About = () => {
       <SEO 
         title="About Zenex Travel | Best Tour & Travel Company in Nepal"
         description="Learn about Zenex Travel, the best tour operator and car rental company in Nepal. We offer premium travel services, certified guides, and reliable vehicles."
-        canonicalUrl="https://zenextravel.com.np/about"
+        canonicalUrl="https://www.zenextravels.com/about"
       />
       {/* Hero Section */}
       <div className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">

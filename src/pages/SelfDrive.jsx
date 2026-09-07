@@ -35,7 +35,7 @@ const SelfDrive = () => {
       <SEO 
         title="Self Drive Car Rental Nepal | Rent Without Driver in Kathmandu"
         description="Experience ultimate freedom with our self-drive car rentals in Nepal. Choose from a wide range of well-maintained sedans and SUVs. Book your self-drive car today!"
-        canonicalUrl="https://zenextravel.com.np/self-drive-car-rental-nepal"
+        canonicalUrl="https://www.zenextravels.com/self-drive-car-rental-nepal"
         structuredData={structuredData}
       />
       

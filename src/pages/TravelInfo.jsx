@@ -22,7 +22,7 @@ const TravelInfo = () => {
       <SEO 
         title="Nepal Travel Information & Logistics Guide | Zenex Travel"
         description="Complete Nepal travel info guide: On-arrival visas, currency & ATMs, weather & seasons, altitude safety, permits, and travel insurance."
-        canonicalUrl="https://zenextravel.com/travel-info"
+        canonicalUrl="https://www.zenextravels.com/travel-info"
       />
 
       {/* Hero Header */}

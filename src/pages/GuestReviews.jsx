@@ -210,7 +210,7 @@ const GuestReviews = () => {
       <SEO 
         title="Verified Guest Reviews & Stories | Zenex Travels"
         description="Read real traveler reviews and write your own review for Zenex Travels and Tours Nepal."
-        canonicalUrl="https://zenextravel.com/guest-reviews"
+        canonicalUrl="https://www.zenextravels.com/guest-reviews"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

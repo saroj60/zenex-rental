@@ -181,7 +181,7 @@ Is this available?`;
       <SEO 
         title="Our Fleet | Car Rentals in Nepal"
         description="Browse our fleet of economy, SUV, luxury, and electric vehicles. Calculate real-time prices for self-drive or chauffeur services and book instantly via WhatsApp."
-        canonicalUrl="https://zenextravel.com.np/vehicles"
+        canonicalUrl="https://www.zenextravels.com/vehicles"
         structuredData={structuredData}
       />
       

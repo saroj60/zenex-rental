@@ -16,7 +16,7 @@ const Blogs = () => {
       <SEO 
         title="Nepal Travel Blog | Car Rental Tips & Trekking Guides"
         description="Read our latest travel blogs for tips on renting cars in Nepal, trekking guides, packing lists, and the best time to visit Nepal."
-        canonicalUrl="https://zenextravel.com.np/blog"
+        canonicalUrl="https://www.zenextravels.com/blog"
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">

@@ -4,4 +4,4 @@ Disallow: /admin/
 Disallow: /dashboard/
 Disallow: /checkout
 
-Sitemap: https://zenextravel.com/sitemap.xml
+Sitemap: https://www.zenextravels.com/sitemap.xml
