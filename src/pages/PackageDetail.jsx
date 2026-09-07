@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon } from 'lucide-react';
+import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils } from 'lucide-react';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import { useAppData } from '../context/AppDataContext';
 
@@ -13630,6 +13630,28 @@ const PackageDetail = () => {
     }
   };
 
+  const formatAltitude = (alt, unit) => {
+    if (!alt) return '-';
+    const str = String(alt).trim();
+    if (str.includes('/') || (str.includes('m') && str.includes('ft'))) return str;
+    const match = str.match(/([0-9,.]+)/);
+    if (!match) return alt;
+    const num = parseFloat(match[1].replace(/,/g, ''));
+    if (isNaN(num) || num <= 0) return alt;
+    const unitStr = unit || (str.includes('ft') ? 'ft' : 'm');
+    if (unitStr.toLowerCase() === 'm' || unitStr.toLowerCase() === 'meters') {
+      return `${num.toLocaleString()}m / ${Math.round(num * 3.28084).toLocaleString()}ft`;
+    } else {
+      return `${Math.round(num / 3.28084).toLocaleString()}m / ${num.toLocaleString()}ft`;
+    }
+  };
+
+  const getWalkingOrHiking = (day) => {
+    if (day.modeOfTravel) return day.modeOfTravel;
+    if (day.dayNumber === 1 || day.day === '01' || day.day === '1' || (day.title && day.title.toLowerCase().includes('arrival'))) return '-';
+    return 'Walking';
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
@@ -13905,24 +13927,122 @@ const PackageDetail = () => {
               </div>
             )}
 
-            {/* Itinerary */}
-            {pkg.itinerary && (
-              <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
-                <h2 className="text-2xl font-extrabold text-[#1e3a8a] mb-8">Route Itinerary</h2>
-                <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-200 before:to-transparent">
-                  {pkg.itinerary.map((step, idx) => (
-                    <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                      <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-[#e53a24] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                        <MapPin size={16} />
-                      </div>
-                      <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-5 rounded-2xl border border-gray-100">
-                        <h3 className="font-bold text-[#1e3a8a] text-lg mb-1">{step.day}: {step.title}</h3>
-                        <p className="text-gray-600">{step.desc}</p>
-                      </div>
-                    </div>
-                  ))}
+            {/* Outline Itinerary Section */}
+            {pkg.itinerary && pkg.itinerary.length > 0 && (
+              <section id="outline-itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 mb-10">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3"><List className="text-[#10b981]" size={28} /> Outline Itinerary</h2>
+                <div className="overflow-hidden rounded-2xl border border-blue-100">
+                  <table className="w-full text-left text-sm border-collapse">
+                    <thead>
+                      <tr className="bg-[#5cc0e6] text-white font-bold">
+                        <th className="px-6 py-4">Itinerary</th>
+                        <th className="px-6 py-4">Max Altitude</th>
+                        <th className="px-6 py-4">Walking/Hiking</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-blue-50">
+                      {pkg.itinerary.map((day, idx) => {
+                        let dayLabel = day.day ? String(day.day).trim() : `DAY ${String(idx + 1).padStart(2, '0')}`;
+                        if (/^D\s+Day/i.test(dayLabel)) dayLabel = dayLabel.replace(/^D\s+/i, '');
+                        if (!dayLabel.toUpperCase().startsWith('DAY')) dayLabel = `DAY ${dayLabel}`;
+                        const isEven = idx % 2 === 1;
+                        return (
+                          <tr key={idx} className={isEven ? 'bg-[#eef8fc]' : 'bg-white'}>
+                            <td className="px-6 py-4 font-medium text-gray-900">{dayLabel}: {day.title}</td>
+                            <td className="px-6 py-4 text-gray-600">{formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}</td>
+                            <td className="px-6 py-4 text-gray-600">{getWalkingOrHiking(day)}</td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
                 </div>
-              </div>
+              </section>
+            )}
+
+            {/* Detailed Day-by-Day Itinerary */}
+            {pkg.itinerary && pkg.itinerary.length > 0 && (
+              <section id="itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 mb-10">
+                <div className="flex justify-between items-end mb-8 border-b border-gray-100 pb-4">
+                  <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+                    <List className="text-[#10b981]" size={28} />
+                    Day-by-Day Itinerary
+                  </h2>
+                  <span className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-bold">{pkg.itinerary.length} Days</span>
+                </div>
+                <div className="space-y-2">
+                  {pkg.itinerary.map((day, idx) => {
+                    let dayLabel = day.day ? String(day.day).trim() : `DAY ${String(idx + 1).padStart(2, '0')}`;
+                    if (/^D\s+Day/i.test(dayLabel)) dayLabel = dayLabel.replace(/^D\s+/i, '');
+                    if (!dayLabel.toUpperCase().startsWith('DAY')) dayLabel = `DAY ${dayLabel}`;
+                    const descriptionText = day.desc || day.details || day.description || '';
+                    const travelModeText = day.travelMode || day.modeOfTravel;
+
+                    return (
+                      <div key={idx} className="relative pl-10 pb-8 last:pb-0">
+                        {/* Timeline Line */}
+                        {idx < pkg.itinerary.length - 1 && (
+                          <div className="absolute left-[15px] top-6 bottom-0 w-[2px] bg-[#10b981]"></div>
+                        )}
+
+                        {/* Timeline Pill Badge */}
+                        <div className="absolute left-0 top-0 flex items-center gap-2 bg-[#10b981] text-white px-3 py-1 rounded-full text-xs font-bold shadow-xs">
+                          <div className="w-2 h-2 rounded-full bg-white"></div>
+                          {dayLabel.toUpperCase()}
+                        </div>
+
+                        {/* Day Content */}
+                        <div className="pt-8">
+                          <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{day.title}</h3>
+                          {descriptionText && (
+                            <div 
+                              className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none" 
+                              dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(descriptionText) }} 
+                            />
+                          )}
+
+                          {day.image && (
+                            <img src={day.image} alt={day.title} className="w-full max-w-xl h-48 md:h-64 object-cover rounded-xl mb-4 shadow-sm" />
+                          )}
+
+                          {/* Day Highlights Metadata */}
+                          {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
+                            <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
+                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">DAY HIGHLIGHTS</h4>
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
+                                {(day.maxAltitude || day.altitude) && (
+                                  <div className="flex items-center gap-2">
+                                    <Mountain size={16} className="text-gray-400 shrink-0" />
+                                    <span>Max Altitude: {formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}</span>
+                                  </div>
+                                )}
+                                {travelModeText && (
+                                  <div className="flex items-center gap-2">
+                                    <Car size={16} className="text-gray-400 shrink-0" />
+                                    <span>Mode of Travel: {travelModeText}</span>
+                                  </div>
+                                )}
+                                {day.accommodation && (
+                                  <div className="flex items-center gap-2">
+                                    <Bed size={16} className="text-gray-400 shrink-0" />
+                                    <span>Accommodation: {day.accommodation}</span>
+                                  </div>
+                                )}
+                                {day.meals && (
+                                  <div className="flex items-center gap-2">
+                                    <Utensils size={16} className="text-gray-400 shrink-0" />
+                                    <span>Meals: {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </section>
             )}
 
             {/* Trip Cost */}
