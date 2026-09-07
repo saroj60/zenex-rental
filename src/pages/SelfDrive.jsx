@@ -40,7 +40,7 @@ const SelfDrive = () => {
       />
       
       {/* Hero Section */}
-      <div className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      <div className="relative py-16 md:py-24 flex items-center justify-center overflow-hidden min-h-[500px]">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1170&auto=format&fit=crop" 
@@ -50,11 +50,11 @@ const SelfDrive = () => {
           <div className="absolute inset-0 bg-[#1e3a8a]/70"></div>
         </div>
         
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-8">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 drop-shadow-lg">
             Self-Drive Car Rental Nepal
           </h1>
-          <p className="text-xl text-blue-100 font-medium mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-blue-100 font-medium mb-6 max-w-2xl mx-auto">
             Experience the ultimate freedom. Rent a car without a driver and explore Kathmandu and beyond at your own pace.
           </p>
           <div className="flex justify-center">
