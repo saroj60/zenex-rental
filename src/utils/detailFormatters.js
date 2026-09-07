@@ -71,30 +71,46 @@ export const getHighlightsList = (data) => {
 
 export const formatMarkdownToHTML = (text) => {
   if (!text) return '';
-  if (typeof text !== 'string') return text;
+  if (typeof text !== 'string') return String(text);
 
   let html = text;
 
-  // Normalize newlines
+  // 1. Normalize line endings
   html = html.replace(/\r\n/g, '\n');
 
-  // Headings
+  // 2. Fix inline markdown formatting where newlines were missing before ### or - ** or -
+  html = html.replace(/([^\n])\s*###\s+/g, '$1\n\n### ');
+  html = html.replace(/([^\n])\s*-\s+\*\*/g, '$1\n- **');
+  html = html.replace(/([^\n])\s*-\s+([A-Z0-9])/gi, '$1\n- $2');
+
+  // 3. Headings (#, ##, ###)
   html = html.replace(/^###\s+(.*?)$/gm, '<h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">$1</h3>');
   html = html.replace(/^##\s+(.*?)$/gm, '<h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">$1</h2>');
   html = html.replace(/^#\s+(.*?)$/gm, '<h1 class="text-3xl font-extrabold text-gray-900 mt-8 mb-4">$1</h1>');
 
-  // Bold & Italic
+  // Catch any inline ### that didn't match start of line anchor
+  html = html.replace(/\s*###\s+([^<\n]+)/g, '<h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">$1</h3>');
+
+  // 4. Bold & Italic (convert **text** to <strong>text</strong>)
   html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
   html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
 
-  // Bullet list items
-  html = html.replace(/^[*\-]\s+(.*?)$/gm, '<li class="ml-5 list-disc my-1 text-gray-700">$1</li>');
+  // 5. Bullet list items
+  html = html.replace(/^[*\-]\s+(.*?)$/gm, '<li class="ml-5 list-disc my-1.5 text-gray-700">$1</li>');
 
-  // Wrap consecutive <li> items in <ul>
-  html = html.replace(/((?:<li class="ml-5 list-disc my-1 text-gray-700">[\s\S]*?<\/li>\s*)+)/g, '<ul class="my-4 space-y-1">\n$1</ul>\n');
+  // Catch any remaining inline "- " bullet items
+  html = html.replace(/\s*-\s+(<strong>.*?<\/strong>.*?)(?=(?:\s*-\s+|<h[1-6]|<p|$))/g, '<li class="ml-5 list-disc my-1.5 text-gray-700">$1</li>');
 
-  // Paragraph breaks
+  // 6. Wrap consecutive <li> items in <ul>
+  html = html.replace(/((?:<li class="ml-5 list-disc my-1.5 text-gray-700">[\s\S]*?<\/li>\s*)+)/g, '<ul class="my-4 space-y-1.5 list-disc pl-5">\n$1</ul>\n');
+
+  // 7. Paragraph breaks
   html = html.replace(/\n\n+/g, '<br/><br/>');
+  html = html.replace(/\n/g, ' ');
+
+  // 8. Safety cleanup: remove any orphan double asterisks ** or ###
+  html = html.replace(/\*\*/g, '');
+  html = html.replace(/###/g, '');
 
   return html;
 };
