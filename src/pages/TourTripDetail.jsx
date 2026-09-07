@@ -517,34 +517,32 @@ const TourTripDetail = () => {
 
             {/* Outline Itinerary Section */}
             <section id="outline-itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
-              <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2.5 font-serif"><Calendar className="text-[#1e3a8a]" size={24} /> Outline Itinerary</h2>
-              <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
-                <table className="w-full text-left border-collapse text-sm">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3"><List className="text-[#10b981]" size={28} /> Outline Itinerary</h2>
+              <div className="overflow-hidden rounded-2xl border border-blue-100">
+                <table className="w-full text-left text-sm border-collapse">
                   <thead>
-                    <tr className="bg-slate-900 text-white font-semibold">
-                      <th className="py-3.5 px-4 rounded-tl-2xl">Day & Title</th>
-                      <th className="py-3.5 px-4">Max Altitude</th>
-                      <th className="py-3.5 px-4 rounded-tr-2xl">Activity / Travel</th>
+                    <tr className="bg-[#5cc0e6] text-white font-bold">
+                      <th className="px-6 py-4">Itinerary</th>
+                      <th className="px-6 py-4">Max Altitude</th>
+                      <th className="px-6 py-4">Walking/Hiking</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-100 text-gray-700">
+                  <tbody className="divide-y divide-blue-50">
                     {trip.itinerary && trip.itinerary.length > 0 ? (
                       trip.itinerary.map((day, idx) => {
                         const dayNum = String(day.dayNumber || idx + 1).padStart(2, '0');
+                        const isEven = idx % 2 === 1;
                         return (
-                          <tr key={idx} className="hover:bg-slate-50/80 transition-colors">
-                            <td className="py-3.5 px-4 font-medium text-gray-900">
-                              <span className="font-bold text-[#1e3a8a] mr-2">Day {dayNum}:</span>
-                              {day.title}
-                            </td>
-                            <td className="py-3.5 px-4 text-gray-600 whitespace-nowrap">{formatAltitude(day.maxAltitude, day.altitudeUnit)}</td>
-                            <td className="py-3.5 px-4 text-gray-600 whitespace-nowrap">{getWalkingOrHiking(day)}</td>
+                          <tr key={idx} className={isEven ? 'bg-[#eef8fc]' : 'bg-white'}>
+                            <td className="px-6 py-4 font-medium text-gray-900">DAY {dayNum}: {day.title}</td>
+                            <td className="px-6 py-4 text-gray-600">{formatAltitude(day.maxAltitude, day.altitudeUnit)}</td>
+                            <td className="px-6 py-4 text-gray-600">{getWalkingOrHiking(day)}</td>
                           </tr>
                         );
                       })
                     ) : (
                       <tr>
-                        <td colSpan="3" className="py-3.5 px-4 text-center text-gray-500 italic">Itinerary outline not available.</td>
+                        <td colSpan="3" className="px-6 py-4 text-center text-gray-500 italic">Itinerary outline not available.</td>
                       </tr>
                     )}
                   </tbody>
