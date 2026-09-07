@@ -25,9 +25,13 @@ const TourTripDetail = () => {
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
   const formatAltitude = (alt, unit) => {
     if (!alt) return '-';
-    const num = parseInt(String(alt).replace(/[^0-9]/g, ''));
-    if (isNaN(num)) return alt;
-    const unitStr = unit || (String(alt).includes('ft') ? 'ft' : 'm');
+    const str = String(alt).trim();
+    if (str.includes('/') || (str.includes('m') && str.includes('ft'))) return str;
+    const match = str.match(/([0-9,.]+)/);
+    if (!match) return alt;
+    const num = parseFloat(match[1].replace(/,/g, ''));
+    if (isNaN(num) || num <= 0) return alt;
+    const unitStr = unit || (str.includes('ft') ? 'ft' : 'm');
     if (unitStr.toLowerCase() === 'm' || unitStr.toLowerCase() === 'meters') {
       return `${num.toLocaleString()}m / ${Math.round(num * 3.28084).toLocaleString()}ft`;
     } else {
@@ -514,31 +518,33 @@ const TourTripDetail = () => {
             {/* Outline Itinerary Section */}
             <section id="outline-itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3"><List className="text-[#10b981]" size={28} /> Outline Itinerary</h2>
-              <div className="overflow-hidden rounded-2xl border border-blue-100">
-                <table className="w-full text-left text-sm border-collapse">
+              <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
+                <table className="w-full text-left border-collapse text-sm">
                   <thead>
-                    <tr className="bg-[#5cc0e6] text-white font-bold">
-                      <th className="px-6 py-4">Itinerary</th>
-                      <th className="px-6 py-4">Max Altitude</th>
-                      <th className="px-6 py-4">Walking/Hiking</th>
+                    <tr className="bg-slate-900 text-white font-semibold">
+                      <th className="py-3.5 px-4 rounded-tl-2xl">Day & Title</th>
+                      <th className="py-3.5 px-4">Max Altitude</th>
+                      <th className="py-3.5 px-4 rounded-tr-2xl">Activity / Travel</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-blue-50">
+                  <tbody className="divide-y divide-gray-100 text-gray-700">
                     {trip.itinerary && trip.itinerary.length > 0 ? (
                       trip.itinerary.map((day, idx) => {
                         const dayNum = String(day.dayNumber || idx + 1).padStart(2, '0');
-                        const isEven = idx % 2 === 1;
                         return (
-                          <tr key={idx} className={isEven ? 'bg-[#eef8fc]' : 'bg-white'}>
-                            <td className="px-6 py-4 font-medium text-gray-900">DAY {dayNum}: {day.title}</td>
-                            <td className="px-6 py-4 text-gray-600">{formatAltitude(day.maxAltitude, day.altitudeUnit)}</td>
-                            <td className="px-6 py-4 text-gray-600">{getWalkingOrHiking(day)}</td>
+                          <tr key={idx} className="hover:bg-slate-50/80 transition-colors">
+                            <td className="py-3.5 px-4 font-medium text-gray-900">
+                              <span className="font-bold text-[#10b981] mr-2">Day {dayNum}:</span>
+                              {day.title}
+                            </td>
+                            <td className="py-3.5 px-4 text-gray-600 whitespace-nowrap">{formatAltitude(day.maxAltitude, day.altitudeUnit)}</td>
+                            <td className="py-3.5 px-4 text-gray-600 whitespace-nowrap">{getWalkingOrHiking(day)}</td>
                           </tr>
                         );
                       })
                     ) : (
                       <tr>
-                        <td colSpan="3" className="px-6 py-4 text-center text-gray-500 italic">Itinerary outline not available.</td>
+                        <td colSpan="3" className="py-3.5 px-4 text-center text-gray-500 italic">Itinerary outline not available.</td>
                       </tr>
                     )}
                   </tbody>
