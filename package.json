@@ -8,6 +8,7 @@
     "start": "node backend/server.js",
     "dev": "vite --host",
     "dev:all": "concurrently \"npm run dev\" \"cd backend && npm run dev\"",
+    "prebuild": "node -e \"const fs=require('fs'); fs.copyFileSync('backend/database/db.json', 'public/database.json'); fs.copyFileSync('backend/database/db.json', 'server/database.json'); console.log('Synced db.json to public & server');\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
