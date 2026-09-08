@@ -11239,6 +11239,232 @@
           "answer": "Yes, roundtrip cable car tickets to Chandragiri Hills top are included."
         }
       ]
+    },
+    {
+      "id": "13-days-explore-nepal-tour",
+      "slug": "13-days-explore-nepal-tour",
+      "title": "13 Days Explore Nepal Tour",
+      "tripCode": "DNTT/T/13D/03",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Jomsom, Muktinath temple & Bandipur Village",
+      "country": "Nepal",
+      "duration": "13 Days / 12 Nights",
+      "price": "1675",
+      "pricingInfo": {
+        "regularPrice": 1980,
+        "sellingPrice": 1675,
+        "currency": "USD",
+        "luxury": {
+          "p1": 4400,
+          "p2": 3200,
+          "p3_5": 2950,
+          "p6_8": 2800,
+          "p9plus": 2680
+        },
+        "comfort": {
+          "p1": 3450,
+          "p2": 2450,
+          "p3_5": 2200,
+          "p6_8": 2080,
+          "p9plus": 1980
+        },
+        "standard": {
+          "p1": 2900,
+          "p2": 1980,
+          "p3_5": 1820,
+          "p6_8": 1720,
+          "p9plus": 1675
+        },
+        "budget": {
+          "p1": 2750,
+          "p2": 1880,
+          "p3_5": 1720,
+          "p6_8": 1620,
+          "p9plus": 1550
+        }
+      },
+      "maxAltitude": "3,710m / 12,172ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Easy",
+      "transportation": "Private Vehicle & Domestic flight",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "The ultimate 13-day Nepal experience: Chitwan jungle safaris, Buddha birthplace Lumbini, Pokhara lake beauty, Jomsom-Muktinath mountain flight pilgrimage (3,710m), hilltop Bandipur village, and complete Kathmandu Valley exploration.",
+      "overview": "The 13 Days Explore Nepal Tour offers a perfect combination of culture, spirituality, and scenic beauty, making it an unforgettable experience for every traveler. This tour covers Nepal’s most iconic destinations, blending nature, heritage, and adventure.\n\nYour journey begins with a warm welcome at Tribhuwan International Airport in Kathmandu. After a free day or an optional tour, you will set out on a scenic drive through the lush hills and riverside landscapes of Trishuli and Narayani to reach Chitwan. Here, enjoy two nights of thrilling activities, including the Tharu cultural program, Elephant Safari or Jeep Safari, Canoe ride, and Bird Watching at Chitwan National Park.\n\nNext, travel to Lumbini, the birthplace of Lord Buddha, for a guided tour of this sacred UNESCO World Heritage Site. From Lumbini, head to the serene city of Pokhara. A short flight takes you to Jomsom, followed by a visit to Muktinath, Kagbeni, and Dhumba Lake, offering both spiritual and scenic experiences.\n\nReturning to Pokhara, explore attractions like Bindabasini Temple, Davis Falls, Gupteshwor Cave, Seti Gorge, and Phewa Lake with a relaxing boat ride. Continue to Bandipur village, a charming hilltop destination with cultural richness and breathtaking views.\n\nThe tour concludes in Kathmandu with visits to iconic sites, including Bhaktapur Durbar Square, Boudhanath Stupa, Pashupatinath Temple, Patan Durbar Square, and Swayambhunath Stupa. Explore the cultural gems of Dakshinkali, Chobhar, Pharping, and Kirtipur. Celebrate your journey with a traditional Nepali dinner and cultural show before departing with cherished memories.\n\nThe 13 Days Explore Nepal Tour is the ultimate way to experience Nepal’s diverse culture, heritage, and natural beauty.",
+      "highlights": [
+        "Diverse Cultural Experiences: Explore the vibrant traditions of Nepal through visits to historical and spiritual sites like Bhaktapur Durbar Square, Boudhanath Stupa, Pashupatinath Temple, Patan, and ancient Bandipur.",
+        "Spiritual Serenity at Muktinath: Muktinath is a revered pilgrimage site for Hindus and Buddhists. Its serene atmosphere, 108 water spouts, and eternal flame provide a deep sense of peace and spiritual connection.",
+        "Nature and Wildlife Adventures: Enjoy a range of exciting activities in Chitwan National Park, including a Jeep Safari, canoe ride, birdwatching, and Tharu cultural program.",
+        "Stunning Landscapes and Scenic Mountain Flights: From Pokhara lakes to Jomsom flight views over Annapurna & Dhaulagiri ranges, experience breathtaking vistas at every turn.",
+        "Southern Kathmandu Exploration: Discover Dakshinkali Temple, Chobhar Gorge, Pharping Monasteries, and historic Kirtipur town alongside a farewell traditional Nepali cultural dinner."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 5-6 hrs)",
+          "description": "Drive from Kathmandu to Chitwan National Park. Check into your resort, take a walk through the traditional Tharu village, and enjoy an evening Tharu cultural dance show."
+        },
+        {
+          "day": "Day 03",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 04",
+          "title": "Chitwan-Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Chitwan to Lumbini, the sacred birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 05",
+          "title": "Lumbini-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Lumbini to Pokhara. Check into your lakeside hotel and spend a peaceful evening walking along Phewa Lake."
+        },
+        {
+          "day": "Day 06",
+          "title": "Pokhara-Jomsom Flight & Muktinath Temple Visit [3710m/12172 ft]",
+          "maxAltitude": "3,710m / 12,172ft",
+          "accommodation": "Hotel in Jomsom [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Domestic Flight (20 mins) & Jeep Ride",
+          "description": "Early morning mountain flight to Jomsom (2,745m). Drive by jeep to Muktinath (3,710m) to visit sacred Muktinath Temple, 108 water spouts, eternal flame, Kagbeni village, and Dhumba Lake. Return to Jomsom."
+        },
+        {
+          "day": "Day 07",
+          "title": "Jomsom-Pokhara Flight & Pokhara Sightseeing",
+          "maxAltitude": "2,745m / 9,005ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Domestic Flight (20 mins) & Private Vehicle",
+          "description": "Fly back from Jomsom to Pokhara. Visit Bindabasini Temple, Seti Gorge, Gupteshwor Mahadev Cave, Davis Fall, and enjoy a serene boat ride on Phewa Lake to Tal Barahi Temple."
+        },
+        {
+          "day": "Day 08",
+          "title": "Pokhara-Bandipur [Altitude 1030m/3380ft]",
+          "maxAltitude": "1,030m / 3,380ft",
+          "accommodation": "Heritage Hotel in Bandipur [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 2-3 hrs)",
+          "description": "Drive from Pokhara to Bandipur village, a charming hilltop town featuring classic Newari architecture, stone-paved streets, and scenic mountain view points."
+        },
+        {
+          "day": "Day 09",
+          "title": "Bandipur-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive back from Bandipur to Kathmandu. Check into your hotel and enjoy free time exploring Thamel markets."
+        },
+        {
+          "day": "Day 10",
+          "title": "Kathmandu Sightseeing (Bhaktapur, Boudhanath & Pashupatinath)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of historic Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to spiritual Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 11",
+          "title": "Kathmandu Valley Sightseeing (Patan, Swayambhunath & Kathmandu Durbar Square)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Explore Patan Durbar Square (Krishna Mandir, Patan Museum), Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square (Kumari Ghar)."
+        },
+        {
+          "day": "Day 12",
+          "title": "Dakshinkali, Chobhar, Pharping & Kirtipur Tour with Cultural Dinner",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Excursion to southern Kathmandu Valley: Dakshinkali Temple, Chobhar Gorge, Pharping Buddhist Monasteries, and historic hilltop Newari town of Kirtipur. In the evening, enjoy a special farewell dinner with live traditional music and dance."
+        },
+        {
+          "day": "Day 13",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara & Lumbini city tour and Sarangkot Sunrise tour with an English speaking local guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "Jomsom-Muktinath tour with an English speaking local guide",
+        "All applicable monument entrance fees",
+        "Pokhara-Jomsom-Pokhara roundtrip domestic flight tickets with airport taxes",
+        "All government and local taxes",
+        "Daily buffet breakfast in Kathmandu, Pokhara, Jomsom, Lumbini, Bandipur",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 5 Nights Kathmandu, 2 Nights Chitwan, 2 Nights Pokhara, 1 Night Jomsom, 1 Night Lumbini, 1 Night Bandipur"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver & guide (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "5 Nights The Soaltee Kathmandu | 2 Nights Jungle Villa Resort Chitwan | 2 Nights Sarangkot Mountain Lodge Pokhara | 1 Night Om's Home Jomsom | 1 Night Buddha Maya Garden Lumbini | 1 Night The Old Inn Bandipur",
+        "comfort": "4 Star Hotels in Kathmandu, Chitwan, Pokhara, Jomsom, Lumbini & Bandipur",
+        "standard": "3 Star Hotels in Kathmandu, Chitwan, Pokhara, Jomsom, Lumbini & Bandipur",
+        "budget": "2 Star Hotels in Kathmandu, Chitwan, Pokhara, Jomsom, Lumbini & Bandipur"
+      },
+      "faqs": [
+        {
+          "question": "What places are covered in the 13 Days Explore Nepal Tour?",
+          "answer": "The tour covers Kathmandu, Chitwan National Park, Lumbini (Buddha's birthplace), Pokhara, Jomsom, Muktinath Temple (3,710m), Bandipur, and southern Kathmandu Valley (Dakshinkali, Chobhar, Pharping & Kirtipur)."
+        },
+        {
+          "question": "Are domestic flights included?",
+          "answer": "Yes, roundtrip mountain flights between Pokhara and Jomsom including airport taxes are fully included."
+        },
+        {
+          "question": "Is this tour suitable for families?",
+          "answer": "Yes, it is an easy private tour with comfortable vehicle transfers and flight options, making it ideal for families and travelers of all ages."
+        }
+      ]
     }
   ],
   "treks": [
@@ -43710,6 +43936,232 @@
         {
           "question": "Is Chandragiri Hills Cable Car ticket included?",
           "answer": "Yes, roundtrip cable car tickets to Chandragiri Hills top are included."
+        }
+      ]
+    },
+    {
+      "id": "13-days-explore-nepal-tour",
+      "slug": "13-days-explore-nepal-tour",
+      "title": "13 Days Explore Nepal Tour",
+      "tripCode": "DNTT/T/13D/03",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Jomsom, Muktinath temple & Bandipur Village",
+      "country": "Nepal",
+      "duration": "13 Days / 12 Nights",
+      "price": "1675",
+      "pricingInfo": {
+        "regularPrice": 1980,
+        "sellingPrice": 1675,
+        "currency": "USD",
+        "luxury": {
+          "p1": 4400,
+          "p2": 3200,
+          "p3_5": 2950,
+          "p6_8": 2800,
+          "p9plus": 2680
+        },
+        "comfort": {
+          "p1": 3450,
+          "p2": 2450,
+          "p3_5": 2200,
+          "p6_8": 2080,
+          "p9plus": 1980
+        },
+        "standard": {
+          "p1": 2900,
+          "p2": 1980,
+          "p3_5": 1820,
+          "p6_8": 1720,
+          "p9plus": 1675
+        },
+        "budget": {
+          "p1": 2750,
+          "p2": 1880,
+          "p3_5": 1720,
+          "p6_8": 1620,
+          "p9plus": 1550
+        }
+      },
+      "maxAltitude": "3,710m / 12,172ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Easy",
+      "transportation": "Private Vehicle & Domestic flight",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "The ultimate 13-day Nepal experience: Chitwan jungle safaris, Buddha birthplace Lumbini, Pokhara lake beauty, Jomsom-Muktinath mountain flight pilgrimage (3,710m), hilltop Bandipur village, and complete Kathmandu Valley exploration.",
+      "overview": "The 13 Days Explore Nepal Tour offers a perfect combination of culture, spirituality, and scenic beauty, making it an unforgettable experience for every traveler. This tour covers Nepal’s most iconic destinations, blending nature, heritage, and adventure.\n\nYour journey begins with a warm welcome at Tribhuwan International Airport in Kathmandu. After a free day or an optional tour, you will set out on a scenic drive through the lush hills and riverside landscapes of Trishuli and Narayani to reach Chitwan. Here, enjoy two nights of thrilling activities, including the Tharu cultural program, Elephant Safari or Jeep Safari, Canoe ride, and Bird Watching at Chitwan National Park.\n\nNext, travel to Lumbini, the birthplace of Lord Buddha, for a guided tour of this sacred UNESCO World Heritage Site. From Lumbini, head to the serene city of Pokhara. A short flight takes you to Jomsom, followed by a visit to Muktinath, Kagbeni, and Dhumba Lake, offering both spiritual and scenic experiences.\n\nReturning to Pokhara, explore attractions like Bindabasini Temple, Davis Falls, Gupteshwor Cave, Seti Gorge, and Phewa Lake with a relaxing boat ride. Continue to Bandipur village, a charming hilltop destination with cultural richness and breathtaking views.\n\nThe tour concludes in Kathmandu with visits to iconic sites, including Bhaktapur Durbar Square, Boudhanath Stupa, Pashupatinath Temple, Patan Durbar Square, and Swayambhunath Stupa. Explore the cultural gems of Dakshinkali, Chobhar, Pharping, and Kirtipur. Celebrate your journey with a traditional Nepali dinner and cultural show before departing with cherished memories.\n\nThe 13 Days Explore Nepal Tour is the ultimate way to experience Nepal’s diverse culture, heritage, and natural beauty.",
+      "highlights": [
+        "Diverse Cultural Experiences: Explore the vibrant traditions of Nepal through visits to historical and spiritual sites like Bhaktapur Durbar Square, Boudhanath Stupa, Pashupatinath Temple, Patan, and ancient Bandipur.",
+        "Spiritual Serenity at Muktinath: Muktinath is a revered pilgrimage site for Hindus and Buddhists. Its serene atmosphere, 108 water spouts, and eternal flame provide a deep sense of peace and spiritual connection.",
+        "Nature and Wildlife Adventures: Enjoy a range of exciting activities in Chitwan National Park, including a Jeep Safari, canoe ride, birdwatching, and Tharu cultural program.",
+        "Stunning Landscapes and Scenic Mountain Flights: From Pokhara lakes to Jomsom flight views over Annapurna & Dhaulagiri ranges, experience breathtaking vistas at every turn.",
+        "Southern Kathmandu Exploration: Discover Dakshinkali Temple, Chobhar Gorge, Pharping Monasteries, and historic Kirtipur town alongside a farewell traditional Nepali cultural dinner."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 5-6 hrs)",
+          "description": "Drive from Kathmandu to Chitwan National Park. Check into your resort, take a walk through the traditional Tharu village, and enjoy an evening Tharu cultural dance show."
+        },
+        {
+          "day": "Day 03",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 04",
+          "title": "Chitwan-Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Chitwan to Lumbini, the sacred birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 05",
+          "title": "Lumbini-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Lumbini to Pokhara. Check into your lakeside hotel and spend a peaceful evening walking along Phewa Lake."
+        },
+        {
+          "day": "Day 06",
+          "title": "Pokhara-Jomsom Flight & Muktinath Temple Visit [3710m/12172 ft]",
+          "maxAltitude": "3,710m / 12,172ft",
+          "accommodation": "Hotel in Jomsom [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Domestic Flight (20 mins) & Jeep Ride",
+          "description": "Early morning mountain flight to Jomsom (2,745m). Drive by jeep to Muktinath (3,710m) to visit sacred Muktinath Temple, 108 water spouts, eternal flame, Kagbeni village, and Dhumba Lake. Return to Jomsom."
+        },
+        {
+          "day": "Day 07",
+          "title": "Jomsom-Pokhara Flight & Pokhara Sightseeing",
+          "maxAltitude": "2,745m / 9,005ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Domestic Flight (20 mins) & Private Vehicle",
+          "description": "Fly back from Jomsom to Pokhara. Visit Bindabasini Temple, Seti Gorge, Gupteshwor Mahadev Cave, Davis Fall, and enjoy a serene boat ride on Phewa Lake to Tal Barahi Temple."
+        },
+        {
+          "day": "Day 08",
+          "title": "Pokhara-Bandipur [Altitude 1030m/3380ft]",
+          "maxAltitude": "1,030m / 3,380ft",
+          "accommodation": "Heritage Hotel in Bandipur [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 2-3 hrs)",
+          "description": "Drive from Pokhara to Bandipur village, a charming hilltop town featuring classic Newari architecture, stone-paved streets, and scenic mountain view points."
+        },
+        {
+          "day": "Day 09",
+          "title": "Bandipur-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive back from Bandipur to Kathmandu. Check into your hotel and enjoy free time exploring Thamel markets."
+        },
+        {
+          "day": "Day 10",
+          "title": "Kathmandu Sightseeing (Bhaktapur, Boudhanath & Pashupatinath)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of historic Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to spiritual Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 11",
+          "title": "Kathmandu Valley Sightseeing (Patan, Swayambhunath & Kathmandu Durbar Square)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Explore Patan Durbar Square (Krishna Mandir, Patan Museum), Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square (Kumari Ghar)."
+        },
+        {
+          "day": "Day 12",
+          "title": "Dakshinkali, Chobhar, Pharping & Kirtipur Tour with Cultural Dinner",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Excursion to southern Kathmandu Valley: Dakshinkali Temple, Chobhar Gorge, Pharping Buddhist Monasteries, and historic hilltop Newari town of Kirtipur. In the evening, enjoy a special farewell dinner with live traditional music and dance."
+        },
+        {
+          "day": "Day 13",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara & Lumbini city tour and Sarangkot Sunrise tour with an English speaking local guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "Jomsom-Muktinath tour with an English speaking local guide",
+        "All applicable monument entrance fees",
+        "Pokhara-Jomsom-Pokhara roundtrip domestic flight tickets with airport taxes",
+        "All government and local taxes",
+        "Daily buffet breakfast in Kathmandu, Pokhara, Jomsom, Lumbini, Bandipur",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 5 Nights Kathmandu, 2 Nights Chitwan, 2 Nights Pokhara, 1 Night Jomsom, 1 Night Lumbini, 1 Night Bandipur"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver & guide (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "5 Nights The Soaltee Kathmandu | 2 Nights Jungle Villa Resort Chitwan | 2 Nights Sarangkot Mountain Lodge Pokhara | 1 Night Om's Home Jomsom | 1 Night Buddha Maya Garden Lumbini | 1 Night The Old Inn Bandipur",
+        "comfort": "4 Star Hotels in Kathmandu, Chitwan, Pokhara, Jomsom, Lumbini & Bandipur",
+        "standard": "3 Star Hotels in Kathmandu, Chitwan, Pokhara, Jomsom, Lumbini & Bandipur",
+        "budget": "2 Star Hotels in Kathmandu, Chitwan, Pokhara, Jomsom, Lumbini & Bandipur"
+      },
+      "faqs": [
+        {
+          "question": "What places are covered in the 13 Days Explore Nepal Tour?",
+          "answer": "The tour covers Kathmandu, Chitwan National Park, Lumbini (Buddha's birthplace), Pokhara, Jomsom, Muktinath Temple (3,710m), Bandipur, and southern Kathmandu Valley (Dakshinkali, Chobhar, Pharping & Kirtipur)."
+        },
+        {
+          "question": "Are domestic flights included?",
+          "answer": "Yes, roundtrip mountain flights between Pokhara and Jomsom including airport taxes are fully included."
+        },
+        {
+          "question": "Is this tour suitable for families?",
+          "answer": "Yes, it is an easy private tour with comfortable vehicle transfers and flight options, making it ideal for families and travelers of all ages."
         }
       ]
     }
