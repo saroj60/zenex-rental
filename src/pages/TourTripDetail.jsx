@@ -267,16 +267,28 @@ const TourTripDetail = () => {
   return (
     <div className="bg-gray-50 font-sans pb-20">
       <SEO 
-        title={`${trip.title} | Nepal Tour & Trek`}
-        description={trip.shortDescription || `Book ${trip.title} with Zenex Travel. Premium Nepal tour experience.`}
+        title={trip.seoTitle || `${trip.title} - Itinerary, Price & Guide | Zenex Travels`}
+        description={trip.seoDescription || trip.shortDescription || `Book ${trip.title} with Zenex Travels. Best price guarantee & expert local guide.`}
+        keywords={trip.keywords || `${trip.title}, ${trip.location || ''}, ${trip.destination || 'Nepal'}, Zenex Travels`}
         canonicalUrl={`https://www.zenextravels.com/tour/${trip.slug || trip.id}`}
-        ogImage={trip.image || 'https://www.zenextravels.com/logo.jpg'}
+        ogImage={trip.image ? `https://www.zenextravels.com${trip.image}` : 'https://www.zenextravels.com/logo.jpg'}
         structuredData={{
           "@context": "https://schema.org",
           "@type": "TouristTrip",
           "name": trip.title,
-          "description": trip.shortDescription || trip.title,
-          "touristType": ["Culture", "Adventure", "Nature"]
+          "description": trip.seoDescription || trip.shortDescription || trip.title,
+          "touristType": ["Culture", "Adventure", "Nature"],
+          "offers": {
+            "@type": "Offer",
+            "price": trip.price || "1000",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "provider": {
+            "@type": "TravelAgency",
+            "name": "Zenex Travels & Tours",
+            "url": "https://www.zenextravels.com"
+          }
         }}
       />
       
