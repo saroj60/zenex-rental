@@ -640,7 +640,7 @@ Experience Muktinath and Chitwan in every season:
       {
         day: '01',
         title: 'Arrival in Kathmandu[altitude 1400m/4595ft]',
-        desc: `On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.`,
+        desc: `On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.`,
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -860,7 +860,7 @@ The 8 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour is a year-round adventure,
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. Transfer to your hotel in Kathmandu. Depending on arrival time, explore the city or relax.',
+        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours Transfer to your hotel in Kathmandu. Depending on arrival time, explore the city or relax.',
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -1002,7 +1002,7 @@ The 8 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour is a year-round adventure,
     ],
     overview: `7 Days Kathmandu Bandipur Pokhara Tour is the perfect way to experience the diverse beauty and culture of Nepal. Starting from Kathmandu, this Nepal tour package offers an exciting journey filled with historical landmarks, stunning landscapes, and memorable cultural experiences.
 
-Upon arrival at Tribhuvan International Airport, you will be welcomed by a representative from Destination Nepal Tours and Travels. The next day, begin your adventure by driving to Bandipur village, where you can soak in the peaceful ambiance and admire traditional Newari architecture. A cable car ride in Bandipur is a scenic feature, offering breathtaking views of surrounding hills.
+Upon arrival at Tribhuvan International Airport, you will be welcomed by a representative from Zenex Travels & Tours. The next day, begin your adventure by driving to Bandipur village, where you can soak in the peaceful ambiance and admire traditional Newari architecture. A cable car ride in Bandipur is a scenic feature, offering breathtaking views of surrounding hills.
 
 On day three, drive from Bandipur to Pokhara, the city of lakes. Relax by Lakeside Phewa Lake in the evening. The next morning, visit Sarangkot for a breathtaking sunrise over the Annapurna and Dhaulagiri ranges. Explore Bindabasini Temple, Davis Falls, Gupteshwor Mahadev Cave, Seti Gorge, Tal Barahi Island Temple, and World Peace Pagoda.
 
@@ -1025,7 +1025,7 @@ Return to Kathmandu on day five and explore UNESCO Heritage sites including Boud
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. Transfer to your hotel in Kathmandu. Relax or explore Thamel on your own.',
+        desc: 'On arrival at Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours Transfer to your hotel in Kathmandu. Relax or explore Thamel on your own.',
         accommodation: 'Hotel [1 Night]',
         meals: 'Breakfast'
       },
@@ -1163,7 +1163,7 @@ Return to Kathmandu on day five and explore UNESCO Heritage sites including Boud
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 7 Days Kathmandu Chitwan Pokhara Lumbini Tour is the perfect way to experience the beauty and culture of Nepal in a short time. This Nepal city tour starts in the capital, Kathmandu, where you'll be welcomed by a representative of Destination Nepal Tours and Travels at Tribhuvan International Airport.
+    overview: `The 7 Days Kathmandu Chitwan Pokhara Lumbini Tour is the perfect way to experience the beauty and culture of Nepal in a short time. This Nepal city tour starts in the capital, Kathmandu, where you'll be welcomed by a representative of Zenex Travels & Tours at Tribhuvan International Airport.
 
 The next morning, you'll take a flight from Kathmandu to Chitwan, where you will enjoy a 2-night stay. In Chitwan, you’ll visit a Tharu village to witness the local way of life and watch their Tharu cultural dance performances. Depending on your hotel location, you’ll experience either an Elephant safari or a Jeep safari through Chitwan National Park for a chance to spot some of Nepal’s amazing wildlife. The tour also includes a Canoe ride in the Rapti River to spot crocodiles and aquatic birds, and a visit to the Crocodile or Elephant Breeding Centre.
 
@@ -1189,7 +1189,7 @@ Early morning on day 5, enjoy a Sarangkot sunrise over Annapurna & Fishtail moun
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at Tribhuvan International Airport in Kathmandu, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. Transfer to your hotel in Kathmandu. Spend the rest of the day relaxing or exploring the local streets of Thamel.',
+        desc: 'On arrival at Tribhuvan International Airport in Kathmandu, you will be greeted by a representative from Zenex Travels & Tours Transfer to your hotel in Kathmandu. Spend the rest of the day relaxing or exploring the local streets of Thamel.',
         accommodation: 'Hotel [1 Night]',
         meals: 'Breakfast'
       },
@@ -1330,7 +1330,7 @@ Early morning on day 5, enjoy a Sarangkot sunrise over Annapurna & Fishtail moun
     ],
     overview: `The 6 Days Kathmandu Chitwan Pokhara Lumbini Tour is perfect for those who have limited time but wish to explore Nepal’s most iconic tourist attractions. This itinerary allows travelers to experience Nepal’s rich cultural heritage, scenic beauty, and unique wildlife in just six days. With well-planned flights between destinations, this tour ensures maximum comfort and convenience for travelers.
 
-Your journey begins as soon as you land at Tribhuvan International Airport in Kathmandu, where you will be greeted by a representative from Destination Nepal Tours & Travels. After a warm welcome and transfer to your hotel, you’ll have time to relax and prepare for the adventure ahead.
+Your journey begins as soon as you land at Tribhuvan International Airport in Kathmandu, where you will be greeted by a representative from Zenex Travels & Tours. After a warm welcome and transfer to your hotel, you’ll have time to relax and prepare for the adventure ahead.
 
 The next morning, take a quick flight to Chitwan for a full board jungle safari (Jeep or Elephant safari), Tharu village tour, and traditional Tharu cultural dance show. Fly to Pokhara on day three to visit Phewa Lake, Bindabasini Temple, Davis Fall, Gupteswori Cave, Tibetan Refugee Camp, and Seti Gorge.
 
@@ -1363,7 +1363,7 @@ The final full day includes guided visits to Kathmandu UNESCO Heritage Sites: Bo
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
+        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -1509,7 +1509,7 @@ The final full day includes guided visits to Kathmandu UNESCO Heritage Sites: Bo
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 6 Days Kathmandu Bandipur Pokhara Tour is a perfect blend of culture, natural beauty, and adventure, designed to offer an unforgettable experience in Nepal. Your journey begins with a warm welcome by Destination Nepal Tours and Travels at Tribhuvan International Airport, Kathmandu. If you arrive early, you can enjoy a free day or an optional tour.
+    overview: `The 6 Days Kathmandu Bandipur Pokhara Tour is a perfect blend of culture, natural beauty, and adventure, designed to offer an unforgettable experience in Nepal. Your journey begins with a warm welcome by Zenex Travels & Tours at Tribhuvan International Airport, Kathmandu. If you arrive early, you can enjoy a free day or an optional tour.
 
 On the second day, embark on a scenic drive to Bandipur, a charming hilltop village with breathtaking views of the Trishuli and Marshyandi rivers. En route, thrill-seekers can opt for an exciting Trishuli River Rafting adventure. Explore the quaint Bandipur village at your leisure and soak in its serene ambiance.
 
@@ -1543,7 +1543,7 @@ The tour ends with your departure on day six, leaving you with cherished memorie
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
+        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -1681,7 +1681,7 @@ The tour ends with your departure on day six, leaving you with cherished memorie
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 6 Days Kathmandu Pokhara Muktinath Tour is a perfect blend of spirituality, scenic beauty, and cultural exploration in Nepal. Your journey begins as you arrive at Tribhuvan International Airport in Kathmandu, where Destination Nepal Tours and Travels warmly welcomes you. If you arrive early, you can relax or opt for an additional city tour.
+    overview: `The 6 Days Kathmandu Pokhara Muktinath Tour is a perfect blend of spirituality, scenic beauty, and cultural exploration in Nepal. Your journey begins as you arrive at Tribhuvan International Airport in Kathmandu, where Zenex Travels & Tours warmly welcomes you. If you arrive early, you can relax or opt for an additional city tour.
 
 The next day, enjoy a scenic drive to Pokhara along the beautiful riversides of Trishuli, Marshyandi, and Seti. For adventure enthusiasts, optional activities include rafting in the Trishuli River or a cable car ride to the sacred Manakamana Temple.
 
@@ -1717,7 +1717,7 @@ Your 6-day adventure concludes with a departure, leaving you with unforgettable 
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
+        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -1892,7 +1892,7 @@ This 6 Days Kathmandu Pokhara Tour is ideal for nature lovers, cultural enthusia
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
+        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -2030,7 +2030,7 @@ This 6 Days Kathmandu Pokhara Tour is ideal for nature lovers, cultural enthusia
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `6 Days Kathmandu Lumbini Nagarkot Tour offers an enriching experience of Nepal’s cultural heritage, spiritual landmarks, and natural beauty. Begin your journey with a warm welcome at Tribhuvan International Airport by Destination Nepal Tours and Travels. The arrival day is free for relaxation or optional tours if you arrive early.
+    overview: `6 Days Kathmandu Lumbini Nagarkot Tour offers an enriching experience of Nepal’s cultural heritage, spiritual landmarks, and natural beauty. Begin your journey with a warm welcome at Tribhuvan International Airport by Zenex Travels & Tours. The arrival day is free for relaxation or optional tours if you arrive early.
 
 Start the second day with a flight to Lumbini, the birthplace of Lord Buddha, and explore its serene monasteries. The next morning, return to Kathmandu and visit the historic Changunarayan Temple and Bhaktapur Durbar Square, followed by an evening drive to Nagarkot for an overnight stay.
 
@@ -2062,7 +2062,7 @@ Your 6 Days Kathmandu Lumbini Nagarkot Tour ends with a memorable departure, tak
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
+        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -2201,7 +2201,7 @@ Your 6 Days Kathmandu Lumbini Nagarkot Tour ends with a memorable departure, tak
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `6 Days Kathmandu Chitwan Nagarkot Tour combines cultural exploration, thrilling wildlife adventure, and scenic beauty for an unforgettable experience in Nepal. Start with a warm welcome at Tribhuvan International Airport by Destination Nepal Tours and Travels. Your arrival day is free for relaxation or optional tours if you arrive early in Kathmandu.
+    overview: `6 Days Kathmandu Chitwan Nagarkot Tour combines cultural exploration, thrilling wildlife adventure, and scenic beauty for an unforgettable experience in Nepal. Start with a warm welcome at Tribhuvan International Airport by Zenex Travels & Tours. Your arrival day is free for relaxation or optional tours if you arrive early in Kathmandu.
 
 On the second day, drive to Chitwan, enjoying stunning views of the Trishuli and Narayani rivers. Optional activities include rafting in the Trishuli River or visiting the Manakamana Temple via cable car. Spend two nights in Chitwan, exploring the Tharu village, enjoying a cultural dance presentation or slide show, and experiencing bird watching, an elephant or jeep safari, and visits to the elephant or crocodile breeding centers.
 
@@ -2234,7 +2234,7 @@ Your 6 Days Kathmandu Chitwan Nagarkot Tour concludes with wonderful memories of
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
+        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours Transfer to your hotel in Kathmandu. Explore the city on your own or relax at your hotel.',
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -2373,7 +2373,7 @@ Your 6 Days Kathmandu Chitwan Nagarkot Tour concludes with wonderful memories of
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `Embark on an unforgettable 6 Days Kathmandu Nagarkot Tour and explore the cultural and natural wonders of Nepal. Your journey begins with a warm welcome at Tribhuvan International Airport by Destination Nepal Tours and Travels. Spend your first day at leisure or enjoy an optional tour if you arrive early.
+    overview: `Embark on an unforgettable 6 Days Kathmandu Nagarkot Tour and explore the cultural and natural wonders of Nepal. Your journey begins with a warm welcome at Tribhuvan International Airport by Zenex Travels & Tours. Spend your first day at leisure or enjoy an optional tour if you arrive early.
 
 Day two includes a sightseeing tour of the Changunarayan Temple and Bhaktapur Durbar Square, followed by a scenic drive to Nagarkot for an overnight stay. Wake up to breathtaking sunrise views over the Himalayas from your Nagarkot hotel. After breakfast, return to Kathmandu and visit iconic sites such as Boudhanath Stupa, Pashupatinath Temple, and Kapan Monastery.
 
@@ -2405,7 +2405,7 @@ Your tour concludes with memories of Nepal’s rich heritage and stunning landsc
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.',
+        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.',
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -2550,7 +2550,7 @@ Your tour concludes with memories of Nepal’s rich heritage and stunning landsc
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 5 Days Kathmandu Lumbini Nagarkot Tour is a perfect blend of cultural heritage, spiritual exploration, and breathtaking natural beauty. This 5-day journey begins with a warm welcome by a representative of Destination Nepal Tours and Travels upon your arrival at Tribhuvan International Airport in Kathmandu. Depending on your arrival time, you’ll have the option to relax or take part in an optional city tour.
+    overview: `The 5 Days Kathmandu Lumbini Nagarkot Tour is a perfect blend of cultural heritage, spiritual exploration, and breathtaking natural beauty. This 5-day journey begins with a warm welcome by a representative of Zenex Travels & Tours upon your arrival at Tribhuvan International Airport in Kathmandu. Depending on your arrival time, you’ll have the option to relax or take part in an optional city tour.
 
 On the second day, enjoy a scenic morning flight to Lumbini, the birthplace of Lord Buddha. Explore the sacred Maya Devi Temple, serene monasteries, and surrounding landmarks that signify peace and spirituality.
 
@@ -2584,7 +2584,7 @@ On the final day, you will depart with unforgettable memories of your Kathmandu 
       {
         day: '01',
         title: 'Arrival in Kathmandu [altitude 1400m/4595ft]',
-        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.',
+        desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.',
         accommodation: 'Hotel [1 Night]',
         meals: 'There are no Meals included on this day'
       },
@@ -2725,7 +2725,7 @@ On the final day, you will depart with unforgettable memories of your Kathmandu 
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 5 Days Kathmandu Chitwan Tour offers an exciting blend of culture, heritage, and wildlife exploration in Nepal. Your journey begins with a warm welcome at Tribhuvan International Airport by Destination Nepal Tours & Travels.
+    overview: `The 5 Days Kathmandu Chitwan Tour offers an exciting blend of culture, heritage, and wildlife exploration in Nepal. Your journey begins with a warm welcome at Tribhuvan International Airport by Zenex Travels & Tours.
 
 On the second day, embark on a scenic drive to Chitwan (175 km, 4-5 hrs) along the beautiful Trishuli and Narayani rivers, passing terrace fields and rural villages. For adventure enthusiasts, an optional white-water rafting experience on the Trishuli River adds excitement to the trip.
 
@@ -2821,7 +2821,7 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 5 Days Kathmandu Pokhara Tour is a perfect blend of culture, nature, and adventure, offering a memorable experience in two of Nepal's most iconic destinations. Your journey begins with a warm welcome at Tribhuvan International Airport by Destination Nepal Tours and Travels.
+    overview: `The 5 Days Kathmandu Pokhara Tour is a perfect blend of culture, nature, and adventure, offering a memorable experience in two of Nepal's most iconic destinations. Your journey begins with a warm welcome at Tribhuvan International Airport by Zenex Travels & Tours.
 
 The next day, embark on a scenic drive to Pokhara (210 km, 5-6 hrs), passing the picturesque riversides of Trishuli, Marshyangdi, and Seti Rivers with terrace fields and mountain views. Adventure enthusiasts can choose an optional white-water rafting activity on Trishuli river.
 
@@ -2916,7 +2916,7 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 5 Days Kathmandu Nagarkot Tour offers a perfect blend of culture, heritage, and stunning Himalayan views. Your journey begins with a warm welcome at Tribhuvan International Airport by Destination Nepal Tours & Travels. If you arrive early, enjoy a free day or opt for an optional tour to explore the vibrant city.
+    overview: `The 5 Days Kathmandu Nagarkot Tour offers a perfect blend of culture, heritage, and stunning Himalayan views. Your journey begins with a warm welcome at Tribhuvan International Airport by Zenex Travels & Tours. If you arrive early, enjoy a free day or opt for an optional tour to explore the vibrant city.
 
 On the second day, explore iconic landmarks such as Boudhanath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square, followed by a scenic drive to Nagarkot to enjoy a breathtaking sunset over the Himalayas. The next morning, marvel at the golden sunrise over Mount Everest and the central Himalayas before driving back to Kathmandu for a full-day sightseeing tour of Patan Durbar Square, Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square.
 
@@ -3110,7 +3110,7 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ],
     overview: `4 Days Kathmandu Lumbini Nagarkot Tour is perfect for travelers seeking a quick spiritual and cultural journey in Nepal. This tour blends visits to UNESCO World Heritage Sites in Kathmandu, the sacred birthplace of Lord Buddha in Lumbini, and the serene hill station of Nagarkot, renowned for its Himalayan sunrise views.
 
-Your Kathmandu Lumbini Nagarkot Tour begins with a warm welcome at Tribhuvan International Airport by Destination Nepal Tours and Travels. On the first day, enjoy exploring the lively Thamel market and its vibrant atmosphere.
+Your Kathmandu Lumbini Nagarkot Tour begins with a warm welcome at Tribhuvan International Airport by Zenex Travels & Tours. On the first day, enjoy exploring the lively Thamel market and its vibrant atmosphere.
 
 The next morning, take a scenic flight to Bhairahawa and drive to Lumbini. Visit the Maya Devi Temple, the spiritual heart of Lumbini, and explore stunning monasteries built by various countries. This pilgrimage site offers a deep spiritual experience.
 
@@ -3203,7 +3203,7 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 5 Days Kathmandu Pokhara Muktinath Tour is a perfect combination of natural beauty, spiritual experiences, and cultural exploration in Nepal. This tour begins with a warm welcome at Tribhuvan International Airport, Kathmandu, by Destination Nepal Tours & Travels.
+    overview: `The 5 Days Kathmandu Pokhara Muktinath Tour is a perfect combination of natural beauty, spiritual experiences, and cultural exploration in Nepal. This tour begins with a warm welcome at Tribhuvan International Airport, Kathmandu, by Zenex Travels & Tours.
 
 On the second day, take a morning flight to Pokhara, where you’ll explore attractions such as Phewa Lake (with boating), Bindabasini Temple, Davis Fall, Gupteswori Mahadev Cave, Tibetan Refugee Camp, and Seti Gorge.
 
@@ -3302,7 +3302,7 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `5 Days Kathmandu Chitwan Pokhara Tour is the perfect itinerary to explore Nepal’s most popular destinations in a short time. This well-designed tour takes you from Kathmandu to Chitwan by flight and then from Chitwan to Pokhara by flight, allowing you to make the most of your visit while avoiding long drives. Upon arrival at Tribhuvan International Airport, you will be warmly welcomed by Destination Nepal Tours & Travels.
+    overview: `5 Days Kathmandu Chitwan Pokhara Tour is the perfect itinerary to explore Nepal’s most popular destinations in a short time. This well-designed tour takes you from Kathmandu to Chitwan by flight and then from Chitwan to Pokhara by flight, allowing you to make the most of your visit while avoiding long drives. Upon arrival at Tribhuvan International Airport, you will be warmly welcomed by Zenex Travels & Tours.
 
 On the second day, take a quick flight to Chitwan, known for its lush jungles and diverse wildlife. Enjoy a thrilling Chitwan Jeep Safari or an Elephant Safari, with chances to spot rhinos, tigers, and wild elephants. Visit the traditional Tharu Village and experience the vibrant Tharu cultural program in the evening.
 
@@ -3493,7 +3493,7 @@ Tips are recommended: US$ 5-10 per day per tourist for wildlife naturalist guide
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The Kathmandu Nagarkot Tour is the perfect short trip to explore Nepal’s cultural and natural beauty. Starting with a warm welcome at Tribhuvan International Airport by Destination Nepal Tours & Travels, this 4-day journey immerses you in the vibrant heritage of Kathmandu and the serene landscapes of Nagarkot.
+    overview: `The Kathmandu Nagarkot Tour is the perfect short trip to explore Nepal’s cultural and natural beauty. Starting with a warm welcome at Tribhuvan International Airport by Zenex Travels & Tours, this 4-day journey immerses you in the vibrant heritage of Kathmandu and the serene landscapes of Nagarkot.
 
 Your adventure begins with a sightseeing tour of Kathmandu’s iconic landmarks, including the sacred Pashupatinath Temple, the massive Boudhanath Stupa, the historic Kathmandu Durbar Square, and the serene Swoyambhunath Stupa. In the evening, enjoy a traditional Nepali dinner with a cultural performance, adding a delightful touch to your experience.
 
@@ -4083,7 +4083,7 @@ Nepal’s diverse climate makes Kathmandu & Chandragiri Hills Tour enjoyable yea
       'Experience the sunrise over the Himalayan range.'
     ],
     itinerary: [
-      { day: 'Day 1', title: 'Arrival in Kathmandu [altitude 1400m/4595ft]', desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.' },
+      { day: 'Day 1', title: 'Arrival in Kathmandu [altitude 1400m/4595ft]', desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.' },
       { day: 'Day 2', title: 'Kathmandu (Bhaktapur Durbar Square & Changunarayan Temple)', desc: 'After breakfast, full day sightseeing tour of Bhaktapur durbar square & Changunarayan temple. Bhaktapur Durbar Square showcases ancient palaces and pagoda temples. Changunarayan Temple offers breathtaking views and stunning stone sculptures.' },
       { day: 'Day 3', title: 'Kathmandu-Chandragiri Hills [2551m/8370ft]', desc: 'After breakfast, full day sightseeing tour of Pashupatinath temple, Boudhanath stupa, Kathmandu durbar square. Evening drive to Chandragiri Hills for overnight stay. Enjoy cable car ride, Bhaleshwar Mahadev Temple, and panoramic views of Everest and Annapurna.' },
       { day: 'Day 4', title: 'Chandragiri Hills-Kathmandu/Departure', desc: 'Wake up early to see the sunrise on the Himalayan ranges including Mount Everest. After breakfast in Chandragiri Hills, drive back to Kathmandu / Tribhuvan International Airport for departure.' }
@@ -4466,7 +4466,7 @@ The best time to visit Tibet is from **April to June** and **September to Novemb
       { category: 'Budget', pax1: 'US$ 1490', pax2: 'US$ 1020', pax3_5: 'US$ 890' }
     ],
     information: `**Insurance**
-It is recommended of joining any of Destination Nepal Tours & Travels trips that be protected against comprehensive expenses potential to incur due to medical issues or accidents (to include air ambulance, helicopter rescue, and treatment costs). Please note that we do not arrange insurance. Please note that your insurance should be covered 5600m.
+It is recommended of joining any of Zenex Travels & Tours trips that be protected against comprehensive expenses potential to incur due to medical issues or accidents (to include air ambulance, helicopter rescue, and treatment costs). Please note that we do not arrange insurance. Please note that your insurance should be covered 5600m.
 
 **Visa Information**
 All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Visas are available at Nepalese embassies/consulates or entry points. To avoid queues, complete the online visa form within 10 days of your arrival date. Fees: 15 Days ($30), 30 Days ($50), 90 Days ($125).
@@ -4565,7 +4565,7 @@ Many pilgrims prefer to schedule their journey during the full moon days for an 
     ],
     information: `**Model of Payments**
 • Advance of 40% of the total amount to be provided as token of confirmation.
-• 20 days prior to tour departure date, 100% of the total cost should reach Destination Nepal Tours and Travels Pvt. Ltd account.
+• 20 days prior to tour departure date, 100% of the total cost should reach Zenex Travels & Tours Pvt. Ltd account.
 
 **Tour Cancellation Policy**
 • All notice of cancellation must be sent to our office in written.
@@ -4809,7 +4809,7 @@ All visitors (except Indian nationals) must have a valid passport and visa to en
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `6 Days Bhutan Tour begins with a warm welcome by Destination Nepal Tours and Travels representative at Tribhuvan International Airport, Kathmandu. Upon arrival, you will have a free day to relax, followed by an evening briefing and visa document preparation for Bhutan.
+    overview: `6 Days Bhutan Tour begins with a warm welcome by Zenex Travels & Tours representative at Tribhuvan International Airport, Kathmandu. Upon arrival, you will have a free day to relax, followed by an evening briefing and visa document preparation for Bhutan.
 
 On the second day, enjoy a spectacular flight to Paro, offering breathtaking views of Everest, Kanchenjunga, Makalu, and Bhutanese peaks like Chomolhari, Jichu Drake, and Tsrim Gang. Upon landing at Paro, your guide will meet you and take you for sightseeing. Visit the National Museum and Paro Dzong. In the evening, take a scenic one-hour drive to Thimphu, stopping at Tamchoe Monastery and Chuzom en route.
 
@@ -5145,7 +5145,7 @@ The 4 days Kathmandu tour offers a perfect blend of culture, spirituality, natur
       'Optional Mountain Flight to see Mount Everest'
     ],
     itinerary: [
-      { day: 'Day 1', title: 'Arrival in Kathmandu [altitude 1400m/4595ft]', desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel. Accommodation: Hotel [1 Night].' },
+      { day: 'Day 1', title: 'Arrival in Kathmandu [altitude 1400m/4595ft]', desc: 'On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Zenex Travels & Tours You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel. Accommodation: Hotel [1 Night].' },
       { day: 'Day 2', title: 'Kathmandu City Tour', desc: 'Visit Chandragiri Hills, Swoyambhunath Stupa and Kathmandu Durbar Square.' },
       { day: 'Day 3', title: 'Kathmandu City Tour', desc: 'Explore Boudhanath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square. Enjoy a cultural dinner in the evening.' },
       { day: 'Day 4', title: 'Depart from Kathmandu', desc: 'Optional Everest mountain flight in the morning. Seamless transfer to Tribhuvan International Airport for your departure.' }
@@ -5362,7 +5362,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `5 Days Kathmandu Chitwan Pokhara Tour is the perfect itinerary to explore Nepal’s most popular destinations in a short time. This well-designed tour takes you from Kathmandu to Chitwan by flight and then from Chitwan to Pokhara, allowing you to make the most of your visit while avoiding long drives. Upon arrival at Tribhuvan International Airport, you will be warmly welcomed by Destination Nepal Tours & Travels.
+    overview: `5 Days Kathmandu Chitwan Pokhara Tour is the perfect itinerary to explore Nepal’s most popular destinations in a short time. This well-designed tour takes you from Kathmandu to Chitwan by flight and then from Chitwan to Pokhara, allowing you to make the most of your visit while avoiding long drives. Upon arrival at Tribhuvan International Airport, you will be warmly welcomed by Zenex Travels & Tours.
 
 On the second day, take a flight to Chitwan, known for its lush jungles and diverse wildlife. Enjoy a thrilling Chitwan Jeep Safari or an Elephant Safari, with chances to spot rhinos, tigers, and elephants. Visit the traditional Tharu Village and experience the vibrant Tharu cultural program in the evening.
 
@@ -5633,7 +5633,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 5 Days Kathmandu Pokhara Muktinath Tour is a perfect combination of natural beauty, spiritual experiences, and cultural exploration in Nepal. This tour begins with a warm welcome at Tribhuwan International Airport, Kathmandu, by Destination Nepal Tours & Travels. Upon arrival, you’ll have free time or the option for an additional tour if you arrive early.
+    overview: `The 5 Days Kathmandu Pokhara Muktinath Tour is a perfect combination of natural beauty, spiritual experiences, and cultural exploration in Nepal. This tour begins with a warm welcome at Tribhuwan International Airport, Kathmandu, by Zenex Travels & Tours. Upon arrival, you’ll have free time or the option for an additional tour if you arrive early.
 
 On the second day, take a morning flight to Pokhara, where you’ll explore attractions such as Phewa Lake (with boating), Bindabasini Temple, Davis Fall, Gupteswori Mahadev Cave, Tibetan Refugee Camp, and Seti Gorge.
 
@@ -5775,7 +5775,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ],
     overview: `The 6 Days Kathmandu Chitwan Pokhara Lumbini Tour is perfect for those who have limited time but wish to explore Nepal’s most iconic tourist attractions. This itinerary allows travelers to experience Nepal’s rich cultural heritage, scenic beauty, and unique wildlife in just six days. With well-planned flights between destinations, this tour ensures maximum comfort and convenience for travelers.
 
-Your journey begins as soon as you land at Tribhuvan International Airport in Kathmandu, where you will be greeted by a representative from Destination Nepal Tours & Travels. After a warm welcome and transfer to your hotel, you’ll have time to relax and prepare for the adventure ahead.
+Your journey begins as soon as you land at Tribhuvan International Airport in Kathmandu, where you will be greeted by a representative from Zenex Travels & Tours. After a warm welcome and transfer to your hotel, you’ll have time to relax and prepare for the adventure ahead.
 
 The next morning, the tour truly begins with a flight to Chitwan. Known for its wildlife and lush jungles, Chitwan offers a memorable experience for nature lovers. After arriving, you will either embark on an Elephant Safari or a Jeep Safari, depending on your resort location. This is a fantastic opportunity to spot rhinos, deer, crocodiles, and even Bengal tigers if you're lucky. In the evening, you will visit a traditional Tharu Village to get a glimpse of the local way of life, followed by a Tharu cultural program, where you’ll enjoy traditional dances and songs.
 
@@ -5965,7 +5965,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 6 Days Kathmandu Bandipur Pokhara Tour is a perfect blend of culture, natural beauty, and adventure, designed to offer an unforgettable experience in Nepal. Your journey begins with a warm welcome by Destination Nepal Tours and Travels at Tribhuvan International Airport, Kathmandu. If you arrive early, you can enjoy a free day or an optional tour.
+    overview: `The 6 Days Kathmandu Bandipur Pokhara Tour is a perfect blend of culture, natural beauty, and adventure, designed to offer an unforgettable experience in Nepal. Your journey begins with a warm welcome by Zenex Travels & Tours at Tribhuvan International Airport, Kathmandu. If you arrive early, you can enjoy a free day or an optional tour.
 
 On the second day, embark on a scenic drive to Bandipur, a charming hilltop village with breathtaking views of the Trishuli and Marshyandi rivers. En route, thrill-seekers can opt for an exciting Trishuli River Rafting adventure. Explore the quaint Bandipur village at your leisure and soak in its serene ambiance.
 
@@ -6146,7 +6146,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 6 Days Kathmandu Pokhara Muktinath Tour is a perfect blend of spirituality, scenic beauty, and cultural exploration in Nepal. Your journey begins as you arrive at Tribhuvan International Airport in Kathmandu, where Destination Nepal Tours and Travels warmly welcomes you. If you arrive early, you can relax or opt for an additional city tour.
+    overview: `The 6 Days Kathmandu Pokhara Muktinath Tour is a perfect blend of spirituality, scenic beauty, and cultural exploration in Nepal. Your journey begins as you arrive at Tribhuvan International Airport in Kathmandu, where Zenex Travels & Tours warmly welcomes you. If you arrive early, you can relax or opt for an additional city tour.
 
 The next day, enjoy a scenic drive to Pokhara along the beautiful riversides of Trishuli, Marshyandi, and Seti. For adventure enthusiasts, optional activities include rafting in the Trishuli River or a cable car ride to the sacred Manakamana Temple.
 
@@ -6333,7 +6333,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `Kathmandu Pokhara Nagarkot Tour-7 Days is an incredible journey showcasing Nepal’s most iconic destinations. Starting with a warm welcome from a representative of Destination Nepal Tours and Travels at Tribhuvan International Airport, this tour takes you on a cultural, spiritual, and scenic adventure through Kathmandu, Pokhara, and Nagarkot, creating memories to last a lifetime.
+    overview: `Kathmandu Pokhara Nagarkot Tour-7 Days is an incredible journey showcasing Nepal’s most iconic destinations. Starting with a warm welcome from a representative of Zenex Travels & Tours at Tribhuvan International Airport, this tour takes you on a cultural, spiritual, and scenic adventure through Kathmandu, Pokhara, and Nagarkot, creating memories to last a lifetime.
 
 On the second day, explore the cultural wonders of Kathmandu. Begin at the sacred Pashupatinath Temple, a revered Hindu shrine dedicated to Lord Shiva. Visit the majestic Boudhanath Stupa, one of the largest in the world, followed by the Swayambhunath Stupa (Monkey Temple) with panoramic views of the Kathmandu Valley. End the day at Kathmandu Durbar Square, a UNESCO World Heritage Site brimming with ancient palaces and temples.
 
@@ -6525,7 +6525,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `7 Days Kathmandu Pokhara Chitwan Tour is the perfect way to explore Nepal’s diverse landscapes, cultural heritage, and wildlife in a short time. Starting from your arrival at Tribhuwan International Airport, you will be warmly welcomed by a representative from Destination Nepal Tours & Travels, setting the tone for a memorable journey ahead.
+    overview: `7 Days Kathmandu Pokhara Chitwan Tour is the perfect way to explore Nepal’s diverse landscapes, cultural heritage, and wildlife in a short time. Starting from your arrival at Tribhuwan International Airport, you will be warmly welcomed by a representative from Zenex Travels & Tours, setting the tone for a memorable journey ahead.
 
 The tour begins with a scenic drive to Pokhara, one of Nepal's most picturesque cities. Along the way, you’ll pass beautiful landscapes, rivers, and small villages. Once in Pokhara, you will experience breathtaking views of the Annapurna mountain range and visit some of the most iconic attractions. Early the next morning, you will take in the mesmerizing sunrise view from Nagarkot, where the Himalayas are bathed in golden light. Afterward, a visit to the Bindabasi Temple, dedicated to Goddess Durga, will add a spiritual start to the day.
 
@@ -6896,7 +6896,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `7 Days Kathmandu Pokhara Jomsom Muktinath Tour is a perfect blend of natural beauty, cultural richness, and spiritual experiences. The tour begins as you are warmly welcomed by a representative from Destination Nepal Tours & Travels at Tribhuwan International Airport, Kathmandu. The next day, you embark on a scenic countryside drive from Kathmandu to Pokhara, passing riversides and lush landscapes that showcase the beauty of rural Nepal. On the third day, an early morning flight from Pokhara to Jomsom offers stunning aerial views of the Annapurna range. Upon arrival at Jomsom Airport, you are greeted by our representative and transferred to your hotel. After checking in, you will proceed on a spiritual journey to Muktinath Temple for the Muktinath Temple Darshan. The temple is a sacred pilgrimage site for both Hindus and Buddhists. After visiting the temple and the surrounding area, you will return to Jomsom, where you will explore the serene Dhumba Lake.
+    overview: `7 Days Kathmandu Pokhara Jomsom Muktinath Tour is a perfect blend of natural beauty, cultural richness, and spiritual experiences. The tour begins as you are warmly welcomed by a representative from Zenex Travels & Tours at Tribhuwan International Airport, Kathmandu. The next day, you embark on a scenic countryside drive from Kathmandu to Pokhara, passing riversides and lush landscapes that showcase the beauty of rural Nepal. On the third day, an early morning flight from Pokhara to Jomsom offers stunning aerial views of the Annapurna range. Upon arrival at Jomsom Airport, you are greeted by our representative and transferred to your hotel. After checking in, you will proceed on a spiritual journey to Muktinath Temple for the Muktinath Temple Darshan. The temple is a sacred pilgrimage site for both Hindus and Buddhists. After visiting the temple and the surrounding area, you will return to Jomsom, where you will explore the serene Dhumba Lake.
 
 The next morning, a flight back to Pokhara awaits, and once you arrive, your Pokhara sightseeing begins. The day is filled with visits to iconic sites such as the Bindabasini Temple, Seti Gorge, Davis Fall, and Gupteswor Mahadev Cave, as well as a stop at the Tibetan Refugee Camp. End the day with a peaceful boating experience on the tranquil waters of Phewa Lake. The following day, you will drive back to Kathmandu, where you will visit some of the city’s most famous cultural and religious landmarks. These include Patan Durbar Square, a UNESCO World Heritage Site known for its stunning Newari architecture, and the revered Budhanilkantha Temple. You will also visit the majestic Boudhanath Stupa and the sacred Pashupatinath Temple, one of the most important Hindu temples in Nepal. In the evening, enjoy a traditional Nepali dinner accompanied by a cultural program in a typical Nepali restaurant, offering an authentic experience of Nepali hospitality and cuisine.
 
@@ -7079,7 +7079,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `Embark on an unforgettable 7 Days Kathmandu Nagarkot Dhulikhel Tour and explore Nepal's cultural and natural wonders. Your adventure begins with a warm welcome at Tribhuvan International Airport by Destination Nepal Tours and Travels. Spend your arrival day at leisure or enjoy an optional tour if you arrive early.
+    overview: `Embark on an unforgettable 7 Days Kathmandu Nagarkot Dhulikhel Tour and explore Nepal's cultural and natural wonders. Your adventure begins with a warm welcome at Tribhuvan International Airport by Zenex Travels & Tours. Spend your arrival day at leisure or enjoy an optional tour if you arrive early.
 
 Day two features a full-day sightseeing tour of Changunarayan Temple and Bhaktapur Durbar Square, followed by a scenic drive to Nagarkot for an overnight stay. Wake up to a stunning Himalayan sunrise and, after breakfast, drive to Dhulikhel, stopping en route at the charming Panauti Village. Enjoy another morning of Himalayan views in Dhulikhel before returning to Kathmandu to visit Namo Buddha, Boudhanath Stupa, and Pashupatinath Temple.
 
@@ -7260,7 +7260,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `7 Days Kathmandu Bandipur Pokhara Tour is the perfect way to experience the diverse beauty and culture of Nepal. Starting from Kathmandu, this Nepal tour package offers an exciting journey filled with historical landmarks, stunning landscapes, and memorable cultural experiences. Upon arrival at Tribhuvan International Airport, you will be welcomed by a representative from Destination Nepal Tours and Travels. If you arrive early in Kathmandu, you can enjoy some free time exploring the vibrant streets or relaxing at your hotel. The next day, you’ll begin your adventure by driving to Bandipur village, where you can soak in the peaceful ambiance and admire the traditional Newari architecture. A cable car ride in Bandipur is a recent addition to the itinerary, offering a fun and scenic way to take in the stunning views of the surrounding hills.
+    overview: `7 Days Kathmandu Bandipur Pokhara Tour is the perfect way to experience the diverse beauty and culture of Nepal. Starting from Kathmandu, this Nepal tour package offers an exciting journey filled with historical landmarks, stunning landscapes, and memorable cultural experiences. Upon arrival at Tribhuvan International Airport, you will be welcomed by a representative from Zenex Travels & Tours. If you arrive early in Kathmandu, you can enjoy some free time exploring the vibrant streets or relaxing at your hotel. The next day, you’ll begin your adventure by driving to Bandipur village, where you can soak in the peaceful ambiance and admire the traditional Newari architecture. A cable car ride in Bandipur is a recent addition to the itinerary, offering a fun and scenic way to take in the stunning views of the surrounding hills.
 
 On the third day, you’ll drive from Bandipur to Pokhara, the city of lakes. Once you arrive, you’ll have the opportunity to relax and explore the famous Lakeside area, situated on the bank of Phewa Lake. You can enjoy a leisurely evening walk or unwind in one of the cozy cafes by the water. The next morning, a visit to Sarangkot awaits, where you can witness a breathtaking sunrise and panoramic views of the Himalayas, including the majestic Annapurna and Dhaulagiri ranges. After breakfast, your Pokhara tour continues with visits to Bindabasini Temple, Davis Fall, Gupteswori Mahadev Cave, and Seti Gorge, all of which showcase the natural and cultural beauty of this region. You’ll also enjoy a peaceful boat ride on Phewa Lake, stopping at the Tal Barahi Temple, which is situated on a small island in the middle of the lake. Later in the evening, you’ll visit the World Peace Pagoda, a tranquil site that offers stunning views of the city and the lake.
 
@@ -7440,7 +7440,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 7 Days Kathmandu Chitwan Pokhara Lumbini Tour is the perfect way to experience the beauty and culture of Nepal in a short time. This Nepal city tour starts in the capital, Kathmandu, where you'll be welcomed by a representative of Destination Nepal Tours and Travels at Tribhuvan International Airport. The next morning, you'll take a flight from Kathmandu to Chitwan, where you will enjoy a 2-night stay. In Chitwan, you’ll visit a Tharu village to witness the local way of life and watch their Tharu cultural dance performances. Depending on your hotel location, you’ll experience either an Elephant safari or a Jeep safari, which takes you through Chitwan National Park for a chance to spot some of Nepal’s amazing wildlife. The tour also includes a Canoe ride in the Rapti River, where you can spot crocodiles and other aquatic creatures, and a visit to the Crocodile Breeding Centre or Elephant Breeding Centre, depending on the location of your stay.
+    overview: `The 7 Days Kathmandu Chitwan Pokhara Lumbini Tour is the perfect way to experience the beauty and culture of Nepal in a short time. This Nepal city tour starts in the capital, Kathmandu, where you'll be welcomed by a representative of Zenex Travels & Tours at Tribhuvan International Airport. The next morning, you'll take a flight from Kathmandu to Chitwan, where you will enjoy a 2-night stay. In Chitwan, you’ll visit a Tharu village to witness the local way of life and watch their Tharu cultural dance performances. Depending on your hotel location, you’ll experience either an Elephant safari or a Jeep safari, which takes you through Chitwan National Park for a chance to spot some of Nepal’s amazing wildlife. The tour also includes a Canoe ride in the Rapti River, where you can spot crocodiles and other aquatic creatures, and a visit to the Crocodile Breeding Centre or Elephant Breeding Centre, depending on the location of your stay.
 
 After your exciting time in Chitwan, you will fly to Pokhara. Known for its stunning landscapes, Pokhara is a must-see during your Kathmandu to Pokhara tour. You’ll visit popular sites such as the Bindabasini Temple, the Davis Falls, and the Gupteshwor Mahadev Cave, a sacred cave dedicated to Lord Shiva. You’ll also explore the Tibetan Refugee Camp and the beautiful Seti Gorge. Another highlight of the Pokhara visit is a trip to the World Peace Stupa, where you can enjoy breathtaking views of the city and the surrounding Himalayas. Afterward, you’ll go boating on Phewa Lake, a serene experience in one of Nepal's most scenic spots.
 
@@ -7630,7 +7630,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `8 Days Kathmandu Bandipur Pokhara Tour with Trek is a perfect way to experience Nepal's cultural and natural beauty with adventure. This tour begins with your arrival in Kathmandu, where you will be warmly welcomed by a representative from Destination Nepal Tours & Travels at Tribhuvan International Airport. The next day, you’ll embark on a scenic drive to Bandipur village, a charming hilltop settlement known for its preserved cultural heritage and stunning views of the Himalayan range. After exploring Bandipur’s traditional Newari architecture and vibrant community, you will drive to Pokhara, Nepal’s adventure capital.
+    overview: `8 Days Kathmandu Bandipur Pokhara Tour with Trek is a perfect way to experience Nepal's cultural and natural beauty with adventure. This tour begins with your arrival in Kathmandu, where you will be warmly welcomed by a representative from Zenex Travels & Tours at Tribhuvan International Airport. The next day, you’ll embark on a scenic drive to Bandipur village, a charming hilltop settlement known for its preserved cultural heritage and stunning views of the Himalayan range. After exploring Bandipur’s traditional Newari architecture and vibrant community, you will drive to Pokhara, Nepal’s adventure capital.
 
 In Pokhara, you will visit several iconic landmarks including Bindabasini Temple, a sacred Hindu site dedicated to the goddess Bhagwati, and Davis Fall, a unique waterfall that plunges into an underground gorge. You’ll also explore the mystical Gupteshwor Mahadev Cave, which houses a revered Shiva shrine. A visit to the Tibetan Refugee Camp offers insight into the local Tibetan culture, while the serene Seti Gorge and Phewa Lake will leave you mesmerized. Boating on Phewa Lake amidst stunning mountain views is one of the highlights of this Pokhara tour.
 
@@ -8003,7 +8003,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `8 Days Kathmandu Pokhara Chitwan Tour with Rafting Adventure is the perfect trip for those who want to explore Nepal's cultural heritage, natural beauty, wildlife, and adventure all in one. The tour begins in Kathmandu, where you’ll meet the representative from Destination Nepal Tours and Travels at Tribhuvan International Airport.
+    overview: `8 Days Kathmandu Pokhara Chitwan Tour with Rafting Adventure is the perfect trip for those who want to explore Nepal's cultural heritage, natural beauty, wildlife, and adventure all in one. The tour begins in Kathmandu, where you’ll meet the representative from Zenex Travels & Tours at Tribhuvan International Airport.
 
 After a scenic drive to Pokhara, you’ll visit Sarangkot the next morning for a breathtaking sunrise view of the Himalayas. After breakfast, enjoy boating on Phewa Lake, and explore Bindabasini Temple, Davis Fall, Gupteswori Mahadev Cave, the Tibetan Refugee Camp, and Seti Gorge. Pokhara, with its stunning landscapes and tranquil surroundings, offers a perfect blend of culture and nature.
 
@@ -8764,7 +8764,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `Nepal adventure trip offers an unforgettable experience combining culture, nature, and trekking. This 9-day Kathmandu Pokhara Chitwan Tour with Trek allows you to explore Nepal’s vibrant cities, serene landscapes, and rich wildlife. After your arrival in Kathmandu, you will be greeted by a representative from Destination Nepal Tours & Travels at Tribhuvan International Airport, marking the beginning of your adventure. The next morning, you’ll embark on a scenic drive to Pokhara, one of Nepal’s most beautiful cities. In Pokhara, enjoy the peaceful Phewa Lake with a boat ride, visit the famous Bindabasini Temple, marvel at Davis Fall, explore the mystical Gupteswor Mahadev Cave, visit the Tibetan refugee camp, and see the dramatic Seti Gorge.
+    overview: `Nepal adventure trip offers an unforgettable experience combining culture, nature, and trekking. This 9-day Kathmandu Pokhara Chitwan Tour with Trek allows you to explore Nepal’s vibrant cities, serene landscapes, and rich wildlife. After your arrival in Kathmandu, you will be greeted by a representative from Zenex Travels & Tours at Tribhuvan International Airport, marking the beginning of your adventure. The next morning, you’ll embark on a scenic drive to Pokhara, one of Nepal’s most beautiful cities. In Pokhara, enjoy the peaceful Phewa Lake with a boat ride, visit the famous Bindabasini Temple, marvel at Davis Fall, explore the mystical Gupteswor Mahadev Cave, visit the Tibetan refugee camp, and see the dramatic Seti Gorge.
 
 From Pokhara, your trekking journey begins. A short drive takes you to Phedi, the starting point of your trek. The first day’s trek to Tolka takes about five hours, offering stunning views of lush landscapes and traditional villages. The following day, you’ll trek to the picturesque Ghandruk village, a four-hour journey where you can experience the warm hospitality of the local Gurung community and enjoy incredible views of the Annapurna and Machhapuchhre mountains. Afterward, you will trek from Ghandruk to Nayapul, where a drive will take you back to Pokhara.
 
@@ -8953,7 +8953,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `Kathmandu Pokhara Chitwan Tour with Rafting is the perfect 9-day adventure for travelers seeking a blend of culture, nature, and thrill in Nepal. This journey begins when you are warmly welcomed at Tribhuvan International Airport by a representative from Destination Nepal Tours & Travels. The next day, you’ll embark on a scenic drive to Pokhara, a city known for its serene lakes and stunning views of the Annapurna range. Early the following morning, experience the magical sunrise over the Himalayas from Sarangkot, one of the best vantage points in Pokhara. After breakfast, your day continues with an exploration of Pokhara's top attractions: a relaxing boat ride on Phewa Lake, a visit to the Bindabasini Temple, and stops at Davis Falls, the mystical Gupteswor Mahadev Cave, the Tibetan refugee camp, and the awe-inspiring Seti Gorge. As the evening falls, you’ll visit either the World Peace Stupa or the impressive Pumdikot Shiva Temple, offering panoramic views of the city and surrounding landscape.
+    overview: `Kathmandu Pokhara Chitwan Tour with Rafting is the perfect 9-day adventure for travelers seeking a blend of culture, nature, and thrill in Nepal. This journey begins when you are warmly welcomed at Tribhuvan International Airport by a representative from Zenex Travels & Tours. The next day, you’ll embark on a scenic drive to Pokhara, a city known for its serene lakes and stunning views of the Annapurna range. Early the following morning, experience the magical sunrise over the Himalayas from Sarangkot, one of the best vantage points in Pokhara. After breakfast, your day continues with an exploration of Pokhara's top attractions: a relaxing boat ride on Phewa Lake, a visit to the Bindabasini Temple, and stops at Davis Falls, the mystical Gupteswor Mahadev Cave, the Tibetan refugee camp, and the awe-inspiring Seti Gorge. As the evening falls, you’ll visit either the World Peace Stupa or the impressive Pumdikot Shiva Temple, offering panoramic views of the city and surrounding landscape.
 
 The next part of your adventure takes you to Damauli for a two-day Seti River rafting experience. Enjoy thrilling rapids on the Seti River as you raft from Damauli to Saranghat, where you’ll stay overnight by the riverside. The following day, you’ll continue rafting to Gai Ghat before driving to Chitwan for a unique jungle experience. During your two-night stay in Chitwan, you’ll be immersed in the local culture with a Tharu village tour, and enjoy a traditional Tharu cultural program in the evening. Your jungle activities will include an elephant safari or jeep safari, depending on your resort’s location, a visit to the Crocodile Breeding Center or the Elephant Breeding Center, and a canoe ride along the peaceful Rapti River.
 
@@ -9516,7 +9516,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 10 Days Nepal Tour with Ghandruk Trek is a perfect blend of adventure, culture, and natural beauty. This journey begins when a representative from Destination Nepal Tours and Travels welcomes you at Tribhuvan International Airport. You can relax on your arrival day, or explore a bit of Kathmandu if you arrive early.
+    overview: `The 10 Days Nepal Tour with Ghandruk Trek is a perfect blend of adventure, culture, and natural beauty. This journey begins when a representative from Zenex Travels & Tours welcomes you at Tribhuvan International Airport. You can relax on your arrival day, or explore a bit of Kathmandu if you arrive early.
 
 The next day, your journey starts with a drive to Chitwan National Park. This park is famous for its wildlife activities. During your two-night stay, you will visit a Tharu village, enjoy a Tharu cultural program, take a canoe ride on the Rapti River, and go on an elephant safari or a jeep safari, depending on your resort location. You can also visit the Elephant Breeding Centre or the Crocodile Breeding Centre.
 
@@ -9526,7 +9526,7 @@ The highlight of the tour is the 3-day Ghandruk Trek. From Pokhara, you will dri
 
 After returning to Pokhara, you will drive back to Kathmandu. The scenic drive offers beautiful views of rivers, hills, and small villages along the way. In Kathmandu, you will visit famous sites like Boudhanath Stupa, Pashupatinath Temple, Swoyambhunath Stupa, and Kathmandu Durbar Square. In the evening, enjoy a traditional Nepali dinner with a cultural program at a typical Nepali restaurant.
 
-Your 10 Days Nepal Tour with Ghandruk Trek ends with departure from Kathmandu, taking with you unforgettable memories of Nepal's wildlife, culture, and mountains. This tour is designed by Destination Nepal Tours and Travels to give you the best of Nepal in a short time.
+Your 10 Days Nepal Tour with Ghandruk Trek ends with departure from Kathmandu, taking with you unforgettable memories of Nepal's wildlife, culture, and mountains. This tour is designed by Zenex Travels & Tours to give you the best of Nepal in a short time.
 
 <div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
   <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
@@ -9717,7 +9717,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ],
     overview: `Embark on an unforgettable journey with our 10 Days Nepal Tour with Rafting, blending adventure, culture, and natural beauty. This tour takes you through the scenic landscapes of Pokhara, Chitwan, and Nagarkot while giving you the thrill of rafting in the Seti River. You will experience everything from breathtaking mountain views to thrilling safaris and vibrant cultural encounters.
 
-Your adventure begins with a warm welcome at Tribhuvan International Airport by a representative from Destination Nepal Tours & Travels. The next day, enjoy a scenic drive to Pokhara, a city known for its stunning mountain scenery. Early the next morning, visit Sarangkot to witness a mesmerizing sunrise over the Himalayas. After breakfast, explore Pokhara’s highlights, including Bindabasi Temple, Davis Fall, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, Seti Gorge, and enjoy a peaceful boat ride on Phewa Lake. In the evening, visit the serene World Peace Stupa for panoramic views of the city and surrounding mountains.
+Your adventure begins with a warm welcome at Tribhuvan International Airport by a representative from Zenex Travels & Tours. The next day, enjoy a scenic drive to Pokhara, a city known for its stunning mountain scenery. Early the next morning, visit Sarangkot to witness a mesmerizing sunrise over the Himalayas. After breakfast, explore Pokhara’s highlights, including Bindabasi Temple, Davis Fall, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, Seti Gorge, and enjoy a peaceful boat ride on Phewa Lake. In the evening, visit the serene World Peace Stupa for panoramic views of the city and surrounding mountains.
 
 The adventure continues with a drive to Damauli for a thrilling rafting experience on the Seti River, followed by an overnight stay at a beach camp under the stars. After rafting, head to Chitwan National Park for a two-night stay, where you'll dive into the heart of Nepal's rich wildlife. Highlights include a Tharu village tour, a Tharu cultural program, an Elephant Safari or Jeep Safari, and a Canoe ride on the Rapti River. Depending on your resort location, you will also visit either the Crocodile Breeding Center or the Elephant Breeding Center.
 
@@ -9906,7 +9906,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `10 Days Nepal Tour with Muktinath is the perfect way to experience the best of Nepal's cultural, spiritual, and natural beauty. Your journey begins when you are welcomed by a representative from Destination Nepal Tours and Travels at Tribhuwan International Airport. The next day, you will drive to Chitwan, where you will stay for two nights. Chitwan offers an exciting jungle safari experience where you can spot wildlife in Chitwan National Park. Activities like the Tharu village tour, Tharu cultural program, and either an elephant safari or jeep safari will be arranged, depending on the location of your resort. You will also enjoy a canoe ride in the Rapti River and visit the crocodile breeding center or elephant breeding center as per your resort’s proximity.
+    overview: `10 Days Nepal Tour with Muktinath is the perfect way to experience the best of Nepal's cultural, spiritual, and natural beauty. Your journey begins when you are welcomed by a representative from Zenex Travels & Tours at Tribhuwan International Airport. The next day, you will drive to Chitwan, where you will stay for two nights. Chitwan offers an exciting jungle safari experience where you can spot wildlife in Chitwan National Park. Activities like the Tharu village tour, Tharu cultural program, and either an elephant safari or jeep safari will be arranged, depending on the location of your resort. You will also enjoy a canoe ride in the Rapti River and visit the crocodile breeding center or elephant breeding center as per your resort’s proximity.
 
 After your stay in Chitwan, you will drive to Pokhara, one of Nepal’s most beautiful cities, known for its serene lakes and mountain views. From Pokhara, you will take a flight to Muktinath, a sacred pilgrimage site for both Hindus and Buddhists. At Muktinath, you will visit the Muktinath Temple, which sits at 3,710 meters and is famous for its 108 water spouts and eternal flame. You’ll also explore nearby sites such as Kagbeni and Dhumba Lake, offering breathtaking views of the Annapurna mountain range. The next day, you will return to Pokhara, where you can enjoy a relaxing boat ride at Phewa Lake and visit some of the city’s most famous attractions, such as the Bindabasini Temple, Gupteshwor Mahadev Cave, Davis Fall, and the Tibetan refugee camp.
 
@@ -10096,7 +10096,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `10 Days Nepal Tour with Lumbini is a perfect journey for travelers who want to explore Nepal’s natural beauty, spiritual sites, and rich culture. The tour begins when a representative from Destination Nepal Tours & Travels welcomes you at Tribhuvan International Airport in Kathmandu. The adventure kicks off the next day with a scenic drive to Pokhara, a city famous for its lakes and breathtaking views of the Himalayas. The following morning, you will visit Sarangkot to experience a stunning sunrise over the snow-capped mountains. Afterward, you will tour the Bindabasini Temple, Seti Gorge, Gupteshwor Mahadev Cave, and Davis Fall, which are some of Pokhara's most famous attractions. You will also visit the Tibetan Refugee Camp, take a boat ride on the serene Phewa Lake, and end the day at the World Peace Stupa, enjoying the peaceful atmosphere.
+    overview: `10 Days Nepal Tour with Lumbini is a perfect journey for travelers who want to explore Nepal’s natural beauty, spiritual sites, and rich culture. The tour begins when a representative from Zenex Travels & Tours welcomes you at Tribhuvan International Airport in Kathmandu. The adventure kicks off the next day with a scenic drive to Pokhara, a city famous for its lakes and breathtaking views of the Himalayas. The following morning, you will visit Sarangkot to experience a stunning sunrise over the snow-capped mountains. Afterward, you will tour the Bindabasini Temple, Seti Gorge, Gupteshwor Mahadev Cave, and Davis Fall, which are some of Pokhara's most famous attractions. You will also visit the Tibetan Refugee Camp, take a boat ride on the serene Phewa Lake, and end the day at the World Peace Stupa, enjoying the peaceful atmosphere.
 
 After Pokhara, your 10 Days Nepal Tour with Lumbini continues with a drive to Lumbini, the birthplace of Lord Buddha and a UNESCO World Heritage Site. Here, you will visit the sacred Maya Devi Temple and explore the monasteries built by Buddhist communities from different countries. Lumbini’s tranquil environment offers a deeply spiritual experience, making it a must-visit for those interested in Buddhism and peace.
 
@@ -10288,7 +10288,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `Start your 11 Days Nepal Tour with Ghandruk Village Trek upon arrival at Tribhuvan International Airport in Kathmandu, where a Destination Nepal Tours and Travels representative will warmly welcome you. Spend this day unwinding from your journey, with the option to explore Kathmandu if you arrive early.
+    overview: `Start your 11 Days Nepal Tour with Ghandruk Village Trek upon arrival at Tribhuvan International Airport in Kathmandu, where a Zenex Travels & Tours representative will warmly welcome you. Spend this day unwinding from your journey, with the option to explore Kathmandu if you arrive early.
 
 On Day 2, the adventure continues as you take a scenic 5-6 hour drive to Chitwan National Park for a two-night stay. Dive into the local culture with a visit to a traditional Tharu village, attend a Tharu cultural program, and relax on a canoe ride along the Rapti River. Depending on your resort location, enjoy either an elephant safari or jeep safari through the jungle, with stops at the Elephant Breeding Center or Crocodile Breeding Center for a closer look at Nepal’s unique wildlife.
 
@@ -10436,7 +10436,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `Welcome to our 11 Days Nepal Tour with Muktinath! Upon arrival at Tribhuvan International Airport in Kathmandu, our Destination Nepal Tours & Travels representative will greet you. The first day is free for relaxation or optional tours if you arrive early.
+    overview: `Welcome to our 11 Days Nepal Tour with Muktinath! Upon arrival at Tribhuvan International Airport in Kathmandu, our Zenex Travels & Tours representative will greet you. The first day is free for relaxation or optional tours if you arrive early.
 
 On Day 2, enjoy a scenic 5-6 hour drive from Kathmandu to Chitwan for a 2-night stay. Explore the fascinating Tharu Village, experience the Tharu Cultural Program, and choose between a thrilling Elephant Safari or Jeep Safari (depending on your resort location). You may also visit a Crocodile Breeding Center or Elephant Breeding Center.
 
@@ -10579,7 +10579,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `11 Days Nepal Tour; Kathmandu, Chitwan, Lumbini, Pokhara, Bandipur & Nagarkot Tour is the perfect way to explore Nepal's rich heritage, culture, and natural beauty. Begin your journey in Kathmandu, where you’ll be welcomed by a Destination Nepal Tours & Travels representative at Tribhuvan International Airport. The first day offers leisure time to rest or explore if you arrive early.
+    overview: `11 Days Nepal Tour; Kathmandu, Chitwan, Lumbini, Pokhara, Bandipur & Nagarkot Tour is the perfect way to explore Nepal's rich heritage, culture, and natural beauty. Begin your journey in Kathmandu, where you’ll be welcomed by a Zenex Travels & Tours representative at Tribhuvan International Airport. The first day offers leisure time to rest or explore if you arrive early.
 
 The adventure starts as you drive to Chitwan for a two-night stay. Experience the region's wildlife through activities like elephant safari or jeep safari, depending on your resort's location. Visit the Tharu village, enjoy a Tharu cultural program, and explore the Elephant breeding center or Crocodile breeding center. Don't miss the serene canoe ride in the Rapti River, perfect for wildlife spotting and enjoying the peaceful atmosphere.
 
@@ -11599,7 +11599,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ],
     overview: `The 13 Days Discover Nepal Tour offers an incredible journey through Nepal’s rich culture, natural beauty, and spiritual heritage. From exploring UNESCO World Heritage Sites to enjoying wildlife safaris and breathtaking Himalayan views, this tour ensures a lifetime of unforgettable memories.
 
-Your adventure begins with a warm welcome at Tribhuvan International Airport, where a representative from Destination Nepal Tours & Travels will greet you. Spend your first day at leisure or opt for an optional tour if you arrive early.
+Your adventure begins with a warm welcome at Tribhuvan International Airport, where a representative from Zenex Travels & Tours will greet you. Spend your first day at leisure or opt for an optional tour if you arrive early.
 
 The next morning, enjoy a delicious breakfast before driving along the picturesque hills and riversides of Trishuli and Narayani River to reach Chitwan National Park. Spend two nights in Chitwan, indulging in activities such as elephant safari, jeep safari, Tharu village tour, Tharu cultural program, canoe rides on the Rapti River, and visits to the Crocodile Breeding Centre or Elephant Breeding Centre.
 
@@ -11747,7 +11747,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 13 Days Discover Nepal Tour with Ghandruk Trek is a perfect combination of cultural exploration and trekking in Nepal. Your journey begins as you are warmly welcomed by a representative from Destination Nepal Tours & Travels at Tribhuvan International Airport. The first day is free to relax or explore with an optional tour.
+    overview: `The 13 Days Discover Nepal Tour with Ghandruk Trek is a perfect combination of cultural exploration and trekking in Nepal. Your journey begins as you are warmly welcomed by a representative from Zenex Travels & Tours at Tribhuvan International Airport. The first day is free to relax or explore with an optional tour.
 
 After a delightful breakfast, you will drive through scenic hill areas alongside the Trishuli and Narayani rivers to reach Chitwan. Enjoy two nights here, experiencing the Tharu cultural program, elephant safari or jeep safari, crocodile breeding center, and canoeing in the Rapti River. Next, head to Lumbini, the birthplace of Lord Buddha, with a guided tour of its sacred sites.
 
@@ -11896,7 +11896,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 14 Days Explore Nepal Tour with Poon Hill Trek begins with a warm welcome by Destination Nepal Tours & Travels' representative at Tribhuvan International Airport. On your arrival day, relax or opt for an additional tour if you arrive early. The next day, after a delightful breakfast, enjoy a scenic drive through lush hills and along the Trishuli and Narayani rivers to reach Chitwan. Spend two nights exploring Tharu village, experiencing the Tharu cultural program, and enjoying activities like elephant safari or jeep safari, visits to the crocodile breeding center, canoe rides, and birdwatching.
+    overview: `The 14 Days Explore Nepal Tour with Poon Hill Trek begins with a warm welcome by Zenex Travels & Tours' representative at Tribhuvan International Airport. On your arrival day, relax or opt for an additional tour if you arrive early. The next day, after a delightful breakfast, enjoy a scenic drive through lush hills and along the Trishuli and Narayani rivers to reach Chitwan. Spend two nights exploring Tharu village, experiencing the Tharu cultural program, and enjoying activities like elephant safari or jeep safari, visits to the crocodile breeding center, canoe rides, and birdwatching.
 
 Proceed to Lumbini, the birthplace of Lord Buddha, with a guided tour to sacred sites. From Lumbini, journey to Pokhara, where you'll visit attractions such as Bindabasini Temple, Davis Falls, Gupteshwor Cave, Tibetan Refugee Camp, and Seti Gorge. Begin the trekking adventure by driving to Nayapul and trekking to Tikhedhunga. Continue to Ghorepani, followed by a sunrise trek to Poon Hill for panoramic Himalayan views. Trek onward to Tadapani and Ghandruk, enjoying the natural beauty and cultural charm of these iconic villages.
 
@@ -12043,7 +12043,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `14 Days Explore Nepal Tour offers a rich blend of cultural heritage, scenic landscapes, and spiritual experiences. Your journey begins as Destination Nepal Tours & Travels warmly welcomes you at Tribhuvan International Airport. The first day is free, or you can opt for an optional city tour.
+    overview: `14 Days Explore Nepal Tour offers a rich blend of cultural heritage, scenic landscapes, and spiritual experiences. Your journey begins as Zenex Travels & Tours warmly welcomes you at Tribhuvan International Airport. The first day is free, or you can opt for an optional city tour.
 
 On the second day, enjoy a delightful breakfast before heading to Chitwan via the picturesque Trishuli and Narayani rivers. Spend two nights in Chitwan, exploring the Tharu village, enjoying the cultural program, and experiencing an Elephant or Jeep safari, a canoe ride on the Rapti River, and bird watching.
 
@@ -12345,7 +12345,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `The 14 Days Discover Nepal Tour with Ghandruk Trek is a perfect blend of culture, adventure, and breathtaking natural beauty. Upon arrival at Tribhuvan International Airport, you’ll be welcomed by Destination Nepal Tours & Travels' representative. Your first day will be free, or you can opt for an additional tour.
+    overview: `The 14 Days Discover Nepal Tour with Ghandruk Trek is a perfect blend of culture, adventure, and breathtaking natural beauty. Upon arrival at Tribhuvan International Airport, you’ll be welcomed by Zenex Travels & Tours' representative. Your first day will be free, or you can opt for an additional tour.
 
 The journey begins with a scenic drive along the Trishuli and Narayani rivers to Chitwan, where you’ll enjoy a 2-night stay. Activities include a Tharu village tour, cultural program, jungle safari, canoe ride, and birdwatching. Next, head to Lumbini, the birthplace of Lord Buddha, for a guided tour of its sacred sites.
 
@@ -12925,7 +12925,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `Embark on the 15 Days Explore Nepal Tour with Poon Hill Trek and uncover the breathtaking beauty and cultural treasures of Nepal. Your journey begins as Destination Nepal Tours & Travels welcomes you at Tribhuvan International Airport. On the first day, enjoy free time or opt for an additional tour.
+    overview: `Embark on the 15 Days Explore Nepal Tour with Poon Hill Trek and uncover the breathtaking beauty and cultural treasures of Nepal. Your journey begins as Zenex Travels & Tours welcomes you at Tribhuvan International Airport. On the first day, enjoy free time or opt for an additional tour.
 
 The adventure starts with a scenic drive along Trishuli and Narayani rivers to reach Chitwan, where you’ll stay for two nights. Experience the vibrant Tharu culture, enjoy an elephant or jeep safari, and explore the Crocodile Breeding Center or Elephant Breeding Center, along with a canoe ride and birdwatching.
 
@@ -13072,7 +13072,7 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       { label: 'Start', value: 'Kathmandu', icon: 'MapPin' },
       { label: 'End', value: 'Kathmandu', icon: 'MapPin' }
     ],
-    overview: `Discover Nepal Tour with Ghandruk Trek starts as soon as you are welcomed by Destination Nepal Tours & Travels at Tribhuvan International Airport. Upon arrival, enjoy a free day or take an optional tour if you arrive early.
+    overview: `Discover Nepal Tour with Ghandruk Trek starts as soon as you are welcomed by Zenex Travels & Tours at Tribhuvan International Airport. Upon arrival, enjoy a free day or take an optional tour if you arrive early.
 
 The next morning, after a delightful breakfast, embark on a scenic drive through hilly roads and alongside the Trishuli and Narayani rivers to reach Chitwan. Spend two nights exploring Chitwan National Park with activities like a Tharu village tour, cultural program, elephant safari or jeep safari, and a visit to the crocodile breeding center.
 
