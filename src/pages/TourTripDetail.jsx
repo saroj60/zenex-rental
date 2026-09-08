@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import SEO from '../components/SEO';
-import StepByStepPackageIntro from '../components/StepByStepPackageIntro';
 import { useAppData } from '../context/AppDataContext';
 import { packageExtraData } from './PackageDetail';
 import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, Play, ImageIcon, Calendar, List, DollarSign, ChevronDown, ChevronUp, CheckCircle2, XCircle, BookOpen, Puzzle, Briefcase, HelpCircle, ChevronRight, Globe, CalendarDays, Activity, Mountain, Bed, Utensils, CloudSun, Car, Heart, FileText, Info, Plus } from 'lucide-react';
@@ -482,9 +481,6 @@ const TourTripDetail = () => {
                   dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trip.description || trip.overview) }}
                 />
               </div>
-
-              {/* Step-by-Step Package Introduction & Journey */}
-              <StepByStepPackageIntro itinerary={trip.itinerary || trip.detailedItinerary} title={trip.title} category={trip.category} />
 
               {/* Highlights */}
               {highlights.length > 0 && (

@@ -6,7 +6,6 @@ import { useAppData } from '../context/AppDataContext';
 
 import SEO from '../components/SEO';
 import TrustReviewBadges from '../components/TrustReviewBadges';
-import StepByStepPackageIntro from '../components/StepByStepPackageIntro';
 import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML } from '../utils/detailFormatters';
 
 export const packageExtraData = {
@@ -13841,9 +13840,6 @@ const PackageDetail = () => {
                 />
               </div>
             )}
-
-            {/* Step-by-Step Package Introduction & Journey */}
-            <StepByStepPackageIntro itinerary={pkg.itinerary} title={pkg.title} category={pkg.category} />
 
             {/* Photo Gallery */}
             {pkg.gallery && pkg.gallery.length > 0 && (

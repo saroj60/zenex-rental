@@ -8,7 +8,6 @@ import {
 } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 import SEO from '../components/SEO';
-import StepByStepPackageIntro from '../components/StepByStepPackageIntro';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
 import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML } from '../utils/detailFormatters';
@@ -494,9 +493,6 @@ const TrekDetail = () => {
                 dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trekDesc) }}
               />
             </div>
-
-            {/* Step-by-Step Package Introduction & Journey */}
-            <StepByStepPackageIntro itinerary={trek.itinerary || trek.detailedItinerary} title={trek.title} category="Trekking" />
 
             {/* Highlights */}
             {highlights.length > 0 && (
