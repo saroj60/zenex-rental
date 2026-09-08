@@ -4,7 +4,7 @@ import {
   Clock, DollarSign, MapPin, CheckCircle2, ArrowLeft, Calendar, List,
   Mountain, Bed, Utensils, Users, Sun, Check, X, Map as MapIcon, Car, Star,
   ShieldCheck, CalendarCheck, FileText, Info, HelpCircle, Heart, Phone, Plus, Minus, Image as ImageIcon,
-  AlertTriangle, Backpack, PlaneTakeoff, Activity, ChevronDown
+  AlertTriangle, Backpack, PlaneTakeoff, Activity, ChevronDown, BookOpen
 } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 import SEO from '../components/SEO';
