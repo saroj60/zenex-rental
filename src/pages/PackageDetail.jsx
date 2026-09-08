@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils } from 'lucide-react';
+import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils, HelpCircle, ChevronDown } from 'lucide-react';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import { useAppData } from '../context/AppDataContext';
 
@@ -13584,6 +13584,32 @@ const PackageDetail = () => {
   const [persons, setPersons] = useState(2);
   const [packageType, setPackageType] = useState('Budget');
   const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
+  const [expandedFaq, setExpandedFaq] = useState(null);
+
+  const defaultPackageFaqs = [
+    {
+      question: `What is included in the ${pkg.title} package?`,
+      answer: `The package includes private air-conditioned transport, dedicated driver, professional local guide support, hotel accommodations with daily breakfast, airport transfers, and all sightseeing entry permits as outlined in the itinerary.`
+    },
+    {
+      question: "Can I customize the trip schedule or extend my stay?",
+      answer: "Yes! All packages are 100% customizable. You can extend your itinerary, upgrade hotel categories, or add custom activities like mountain flights, jungle safaris, or river rafting."
+    },
+    {
+      question: "How do airport pickups work?",
+      answer: "Our representative will greet you at Tribhuvan International Airport (KTM) with a personalized greeting placard and escort you directly to your hotel in a private AC vehicle."
+    },
+    {
+      question: "What is the best time of year for this package?",
+      answer: "Spring (March to May) and Autumn (September to November) provide clear skies, comfortable travel weather, and optimal Himalayan visibility across all destinations."
+    },
+    {
+      question: "What are the payment and cancellation terms?",
+      answer: "A small deposit confirms your trip. We offer zero-fee date changes up to 30 days prior to departure and full refunds for cancellations caused by official travel warnings."
+    }
+  ];
+
+  const displayFaqs = (pkg.faqs && pkg.faqs.length > 0) ? pkg.faqs : defaultPackageFaqs;
   
   // Calculate dynamic price
   const calculatePrice = () => {
@@ -14119,6 +14145,53 @@ const PackageDetail = () => {
                 />
               </div>
             )}
+
+            {/* Frequently Asked Questions */}
+            <div id="faqs" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24">
+              <div className="flex items-center justify-between mb-8 pb-4 border-b border-gray-100">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e3a8a] flex items-center gap-3">
+                  <HelpCircle className="text-[#0F766E]" size={28} /> Frequently Asked Questions
+                </h2>
+                <span className="bg-teal-50 text-[#0F766E] font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+                  Step-by-Step FAQ Guide
+                </span>
+              </div>
+
+              <div className="space-y-4">
+                {displayFaqs.map((faq, index) => {
+                  const isOpen = expandedFaq === index;
+                  return (
+                    <div 
+                      key={index} 
+                      className={`border rounded-2xl transition-all duration-200 overflow-hidden ${
+                        isOpen ? 'border-[#0F766E] bg-teal-50/20 shadow-sm' : 'border-gray-100 bg-gray-50/50 hover:bg-gray-50'
+                      }`}
+                    >
+                      <button
+                        onClick={() => setExpandedFaq(isOpen ? null : index)}
+                        className="w-full p-5 text-left flex justify-between items-center gap-4 focus:outline-none"
+                      >
+                        <span className="font-bold text-gray-900 text-base md:text-lg flex items-center gap-3">
+                          <span className="w-7 h-7 rounded-full bg-[#0F766E]/10 text-[#0F766E] text-xs flex items-center justify-center font-black shrink-0">
+                            Q{index + 1}
+                          </span>
+                          {faq.question}
+                        </span>
+                        <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${isOpen ? 'bg-[#0F766E] text-white rotate-180' : 'bg-gray-200 text-gray-600'}`}>
+                          <ChevronDown size={18} />
+                        </div>
+                      </button>
+
+                      {isOpen && (
+                        <div className="px-5 pb-5 pt-1 text-gray-600 text-sm md:text-base leading-relaxed border-t border-teal-100/50">
+                          {faq.answer}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
 
             {/* Why Book With Us */}
             {pkg.whyBookWithUs && (

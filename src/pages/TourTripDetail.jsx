@@ -224,6 +224,31 @@ const TourTripDetail = () => {
   const addons = getAddonsList(trip);
   const highlights = getHighlightsList(trip);
 
+  const defaultTourFaqs = [
+    {
+      question: `What is included in the ${trip.title} package?`,
+      answer: `The package includes private air-conditioned vehicle transfers, dedicated driver, experienced English-speaking tour guide, hotel accommodation with daily breakfast, airport pickups, and all entry/permit fees as specified in the itinerary.`
+    },
+    {
+      question: "Can I customize the itinerary or hotel category?",
+      answer: "Yes! All Zenex Travel tour packages are 100% customizable. You can adjust the trip duration, add extra days, upgrade to 4-Star or 5-Star luxury hotels, or add helicopter transfers by contacting our 24/7 helpdesk."
+    },
+    {
+      question: "Is airport pickup and drop-off included?",
+      answer: "Yes, complimentary private airport pickup and drop-off at Tribhuvan International Airport (KTM) are included for all travelers on this package."
+    },
+    {
+      question: "What is the best season to book this tour?",
+      answer: "Spring (March to May) and Autumn (September to November) offer clear blue skies, pleasant temperatures, and unobstructed Himalayan mountain views across Kathmandu, Pokhara, Chitwan, and Nagarkot."
+    },
+    {
+      question: "What is the booking deposit and cancellation policy?",
+      answer: "We require a flexible deposit to confirm your reservation. Free date changes are supported up to 30 days before arrival, and full refunds are guaranteed if trips are canceled due to official travel restrictions."
+    }
+  ];
+
+  const displayFaqs = (trip.faqs && trip.faqs.length > 0) ? trip.faqs : defaultTourFaqs;
+
   const handleDownloadPDF = async () => {
     if (!trip || isGeneratingPDF) return;
     try {
@@ -370,7 +395,8 @@ const TourTripDetail = () => {
               ...(trip.routeMap ? [{ id: 'route-map', label: 'Route Map', icon: Globe }] : []),
               ...((trip.inclusions?.length > 0 || trip.exclusions?.length > 0) ? [{ id: 'cost', label: 'Cost Details', icon: DollarSign }] : []),
               { id: 'info', label: 'Essential Info', icon: Info },
-              { id: 'equipment', label: 'Equipment', icon: Briefcase }
+              { id: 'equipment', label: 'Equipment', icon: Briefcase },
+              { id: 'faqs', label: 'FAQs', icon: HelpCircle }
             ].map((tab) => {
               const Icon = tab.icon;
               return (
@@ -742,27 +768,52 @@ const TourTripDetail = () => {
                 </div>
               )}
 
-              {/* FAQs */}
-              {trip.faqs && trip.faqs.length > 0 && (
-                <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3"><HelpCircle className="text-purple-600" size={32}/> Frequently Asked Questions</h2>
-                  <div className="space-y-4">
-                    {trip.faqs.map((faq, idx) => (
-                      <div key={idx} className="border border-gray-200 rounded-xl overflow-hidden">
-                        <div className="bg-gray-50 p-5 flex justify-between items-center cursor-pointer hover:bg-purple-50 hover:text-purple-700 transition-colors" onClick={() => toggleFaq(idx)}>
-                          <h4 className="font-bold text-lg">{faq.question}</h4>
-                          {expandedFaq === idx ? <ChevronDown size={24} className="text-purple-500 shrink-0"/> : <ChevronRight size={24} className="text-gray-400 shrink-0"/>}
-                        </div>
-                        {expandedFaq === idx && (
-                          <div className="p-6 bg-white border-t border-gray-100">
-                            <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+              {/* Frequently Asked Questions */}
+              <div id="faqs" className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 scroll-mt-28">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-4 border-b border-gray-100">
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 flex items-center gap-3">
+                    <HelpCircle className="text-[#e53a24]" size={28} /> Frequently Asked Questions
+                  </h2>
+                  <span className="bg-red-50 text-[#e53a24] font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider w-fit">
+                    Step-by-Step FAQ Guide
+                  </span>
+                </div>
+
+                <div className="space-y-4">
+                  {displayFaqs.map((faq, idx) => {
+                    const isOpen = expandedFaq === idx;
+                    return (
+                      <div 
+                        key={idx} 
+                        className={`border rounded-2xl transition-all duration-200 overflow-hidden ${
+                          isOpen ? 'border-[#e53a24] bg-red-50/20 shadow-sm' : 'border-gray-100 bg-gray-50/50 hover:bg-gray-50'
+                        }`}
+                      >
+                        <button
+                          onClick={() => toggleFaq(idx)}
+                          className="w-full p-5 text-left flex justify-between items-center gap-4 focus:outline-none"
+                        >
+                          <span className="font-bold text-gray-900 text-base md:text-lg flex items-center gap-3">
+                            <span className="w-7 h-7 rounded-full bg-[#e53a24]/10 text-[#e53a24] text-xs flex items-center justify-center font-black shrink-0">
+                              Q{idx + 1}
+                            </span>
+                            {faq.question}
+                          </span>
+                          <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${isOpen ? 'bg-[#e53a24] text-white rotate-180' : 'bg-gray-200 text-gray-600'}`}>
+                            <ChevronDown size={18} />
+                          </div>
+                        </button>
+
+                        {isOpen && (
+                          <div className="px-5 pb-5 pt-1 text-gray-600 text-sm md:text-base leading-relaxed border-t border-red-100/50">
+                            {faq.answer}
                           </div>
                         )}
                       </div>
-                    ))}
-                  </div>
+                    );
+                  })}
                 </div>
-              )}
+              </div>
             </section>
 
             {/* Equipment Section */}

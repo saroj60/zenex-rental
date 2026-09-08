@@ -26,8 +26,8 @@ const TrekDetail = () => {
   const [isDiscountOpen, setIsDiscountOpen] = useState(false);
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
   
-  // Active tab state for sticky nav
   const [activeTab, setActiveTab] = useState('overview');
+  const [expandedFaq, setExpandedFaq] = useState(null);
 
   const formatAltitude = (alt, unit) => {
     if (!alt) return '-';
@@ -229,8 +229,31 @@ const TrekDetail = () => {
   const exclusions = getExclusionsList(trek);
   const addons = getAddonsList(trek);
   const highlights = getHighlightsList(trek);
-
   const trekDesc = trek.description || trek.overview || trek.shortDescription || '';
+  const defaultTrekFaqs = [
+    {
+      question: `What physical fitness level is required for ${trek.title}?`,
+      answer: `This trek requires a moderate level of physical fitness. Previous trekking experience is beneficial, but regular cardio preparation (stair walking, jogging, hiking) 4-6 weeks prior to departure is sufficient.`
+    },
+    {
+      question: "Do I need travel insurance for high-altitude trekking?",
+      answer: "Yes! Comprehensive travel insurance explicitly covering medical treatment, emergency helicopter rescue, and high-altitude evacuation up to the maximum altitude of this trek is required for all participants."
+    },
+    {
+      question: "What is teahouse accommodation like on this route?",
+      answer: "Teahouses are clean, family-operated mountain lodges featuring twin-bed rooms with comfortable mattresses, blankets, shared or private bathrooms, and cozy communal dining rooms heated by wood or yak stoves."
+    },
+    {
+      question: "Are vegetarian, vegan, and special diets available?",
+      answer: "Yes, teahouse menus offer extensive vegetarian, vegan, and gluten-free options. Freshly cooked traditional Nepali 'Dal Bhat' (lentils, rice, vegetables) is fresh, nutrient-rich, and available daily."
+    },
+    {
+      question: "Can I charge phone batteries and use Wi-Fi during the trek?",
+      answer: "Yes, teahouses offer device charging stations and Wi-Fi access for a small daily fee ($2-$5). Bringing a high-capacity power bank (20,000mAh+) is recommended for higher mountain elevations."
+    }
+  ];
+
+  const displayFaqs = (trek.faqs && trek.faqs.length > 0) ? trek.faqs : defaultTrekFaqs;
 
   return (
     <div className="pt-24 pb-16 min-h-screen bg-white">
@@ -1037,20 +1060,52 @@ const TrekDetail = () => {
               </div>
             )}
 
-            {/* FAQs */}
-            {trek.faqs && trek.faqs.length > 0 && (
-              <div id="faqs" className="scroll-mt-40">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Frequently Asked Questions</h2>
-                <div className="space-y-4">
-                  {trek.faqs.map((faq, index) => (
-                    <div key={index} className="border border-gray-100 rounded-xl p-5 bg-gray-50/50">
-                      <h4 className="font-bold text-gray-900 mb-2">{faq.question}</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
-                    </div>
-                  ))}
-                </div>
+            {/* Frequently Asked Questions */}
+            <div id="faqs" className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 scroll-mt-40">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-4 border-b border-gray-100">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 flex items-center gap-3 font-serif">
+                  <HelpCircle className="text-green-600" size={28} /> Frequently Asked Questions
+                </h2>
+                <span className="bg-green-50 text-green-700 font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider w-fit">
+                  Step-by-Step FAQ Guide
+                </span>
               </div>
-            )}
+
+              <div className="space-y-4">
+                {displayFaqs.map((faq, index) => {
+                  const isOpen = expandedFaq === index;
+                  return (
+                    <div 
+                      key={index} 
+                      className={`border rounded-2xl transition-all duration-200 overflow-hidden ${
+                        isOpen ? 'border-green-600 bg-green-50/20 shadow-sm' : 'border-gray-100 bg-gray-50/50 hover:bg-gray-50'
+                      }`}
+                    >
+                      <button
+                        onClick={() => setExpandedFaq(isOpen ? null : index)}
+                        className="w-full p-5 text-left flex justify-between items-center gap-4 focus:outline-none"
+                      >
+                        <span className="font-bold text-gray-900 text-base md:text-lg flex items-center gap-3">
+                          <span className="w-7 h-7 rounded-full bg-green-600/10 text-green-700 text-xs flex items-center justify-center font-black shrink-0">
+                            Q{index + 1}
+                          </span>
+                          {faq.question}
+                        </span>
+                        <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${isOpen ? 'bg-green-600 text-white rotate-180' : 'bg-gray-200 text-gray-600'}`}>
+                          <ChevronDown size={18} />
+                        </div>
+                      </button>
+
+                      {isOpen && (
+                        <div className="px-5 pb-5 pt-1 text-gray-600 text-sm md:text-base leading-relaxed border-t border-green-100/50">
+                          {faq.answer}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
           {/* Sidebar */}
