@@ -4,7 +4,7 @@ import { MapPin, Calendar, Car, Search, X } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 import { featuredPackages } from '../data/packagesData';
 
-/* ─── Highlight matching text ────────────────────────────────────── */
+/* â”€â”€â”€ Highlight matching text â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const Highlight = ({ text = '', query = '' }) => {
   if (!query.trim()) return <span>{text}</span>;
   const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
@@ -22,7 +22,7 @@ const Highlight = ({ text = '', query = '' }) => {
   );
 };
 
-/* ─── Category badge colour helper ───────────────────────────────── */
+/* â”€â”€â”€ Category badge colour helper â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const categoryColor = (cat = '') => {
   const c = cat.toLowerCase();
   if (c.includes('trek'))     return 'bg-green-100 text-green-700';
@@ -32,10 +32,10 @@ const categoryColor = (cat = '') => {
   return 'bg-blue-100 text-blue-700';
 };
 
-/* ════════════════════════════════════════════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 const SearchWidget = ({ activeTab = 'cars' }) => {
-  /* ── Cars state ─────────────────────────────────────────────────── */
+  /* â”€â”€ Cars state â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   const [pickupLocation,  setPickupLocation]  = useState('Kathmandu, Nepal');
   const [dropoffLocation, setDropoffLocation] = useState('Kathmandu, Nepal');
   const [pickupDate,  setPickupDate]  = useState('');
@@ -43,7 +43,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
   const [vehicleType, setVehicleType] = useState('SUV / 4x4');
   const [isSearching, setIsSearching] = useState(false);
 
-  /* ── Tour live-search state ─────────────────────────────────────── */
+  /* â”€â”€ Tour live-search state â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   const [tourQuery,    setTourQuery]    = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
   const searchRef = useRef(null);
@@ -74,8 +74,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
   const filteredPackages = q.length < 1 ? [] : allPackages.filter(p =>
     (p.title    || '').toLowerCase().includes(q) ||
     (p.location || '').toLowerCase().includes(q) ||
-    (p.category || '').toLowerCase().includes(q) ||
-    (p.tripCode || '').toLowerCase().includes(q)
+    (p.category || '').toLowerCase().includes(q)
   ).slice(0, 8);
 
   /* Close on outside click */
@@ -112,11 +111,11 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
     navigate(`/packages/${pkg.id}`);
   };
 
-  /* ── JSX ─────────────────────────────────────────────────────────── */
+  /* â”€â”€ JSX â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   return (
     <div className={activeTab === 'cars' ? "bg-white border border-gray-200 rounded-3xl p-6 md:p-8 shadow-lg" : "w-full"}>
 
-      {/* ══ Cars Tab ══════════════════════════════════════════════════ */}
+      {/* â•â• Cars Tab â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       {activeTab === 'cars' && (
         <div className="grid grid-cols-1 md:grid-cols-6 gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-300/50 bg-[#F4F6F8]/80 backdrop-blur-md rounded-2xl p-2">
 
@@ -201,7 +200,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
         </div>
       )}
 
-      {/* ══ Tours Tab — Live Search ════════════════════════════════════ */}
+      {/* â•â• Tours Tab â€” Live Search â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       {activeTab === 'tours' && (
         <div ref={searchRef} className="relative">
 
@@ -216,7 +215,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
               value={tourQuery}
               onChange={(e) => { setTourQuery(e.target.value); setShowDropdown(true); }}
               onFocus={() => setShowDropdown(true)}
-              placeholder="Search destinations, tours, packages…"
+              placeholder="Search destinations, tours, packagesâ€¦"
               className={`flex-1 bg-transparent border-none outline-none font-semibold text-sm md:text-base placeholder:font-medium transition-colors ${
                 showDropdown && tourQuery ? 'text-gray-900 placeholder:text-gray-400' : 'text-white placeholder:text-white/80'
               }`}
@@ -249,7 +248,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
                       onClick={() => { setShowDropdown(false); navigate('/packages'); }}
                       className="text-xs font-bold text-[#1e3a8a] hover:underline"
                     >
-                      Browse all →
+                      Browse all â†’
                     </button>
                   </div>
 
@@ -307,7 +306,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
                     onClick={() => { setShowDropdown(false); navigate('/packages'); }}
                     className="text-xs font-bold text-[#1e3a8a] bg-blue-50 hover:bg-blue-100 px-4 py-2 rounded-xl transition-colors"
                   >
-                    Browse all packages →
+                    Browse all packages â†’
                   </button>
                 </div>
               )}

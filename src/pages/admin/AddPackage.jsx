@@ -23,7 +23,6 @@ const AddPackage = () => {
         img: editingPackage.img || editingPackage.image || '',
         highlights: highlightsStr,
         itinerary: itineraryStr,
-        tripCode: editingPackage.tripCode || '',
         persons: editingPackage.persons || ''
       };
     }
@@ -37,7 +36,6 @@ const AddPackage = () => {
       img: '',
       highlights: '',
       itinerary: '',
-      tripCode: '',
       persons: ''
     };
   });

@@ -23,7 +23,6 @@ const AddTrek = () => {
         img: editingTrek.img || editingTrek.image || '',
         highlights: highlightsStr,
         itinerary: itineraryStr,
-        tripCode: editingTrek.tripCode || '',
         persons: editingTrek.persons || ''
       };
     }
@@ -37,7 +36,6 @@ const AddTrek = () => {
       img: '',
       highlights: '',
       itinerary: '',
-      tripCode: '',
       persons: ''
     };
   });

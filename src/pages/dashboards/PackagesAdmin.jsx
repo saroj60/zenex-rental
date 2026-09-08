@@ -13,7 +13,7 @@ const PackagesAdmin = () => {
   const [inlineEditingId, setInlineEditingId] = useState(null);
   const [inlinePrice, setInlinePrice] = useState('');
   const [newPkg, setNewPkg] = useState({
-    id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '', category: 'Packages', location: '', tripCode: '', persons: ''
+    id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '', category: 'Packages', location: '', persons: ''
   });
 
   const filteredPackages = packages.filter(p => p.title.toLowerCase().includes(searchTerm.toLowerCase()));
@@ -33,7 +33,6 @@ const PackagesAdmin = () => {
       itinerary: itineraryStr,
       category: pkg.category || 'Packages',
       location: pkg.location || '',
-      tripCode: pkg.tripCode || '',
       persons: pkg.persons || ''
     });
     setIsModalOpen(true);
@@ -66,14 +65,14 @@ const PackagesAdmin = () => {
     }
     setEditingId(null);
     setIsModalOpen(false);
-    setNewPkg({ id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '', category: 'Packages', location: '', tripCode: '', persons: '' });
+    setNewPkg({ id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '', category: 'Packages', location: '', persons: '' });
   };
 
   return (
     <div className="space-y-6 relative">
       <div className="flex justify-between items-center mb-6">
         <h1 className="font-headline-lg text-2xl md:text-3xl font-bold text-himalayan-blue">Packages Management</h1>
-        <button onClick={() => { setEditingId(null); setNewPkg({ id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '', category: 'Packages', location: '', tripCode: '', persons: '' }); setIsModalOpen(true); }} className="bg-himalayan-blue text-white px-4 py-2 rounded-lg text-sm font-bold shadow hover:bg-primary transition flex items-center gap-2">
+        <button onClick={() => { setEditingId(null); setNewPkg({ id: '', title: '', duration: '', desc: '', price: '', img: '', highlights: '', itinerary: '', category: 'Packages', location: '', persons: '' }); setIsModalOpen(true); }} className="bg-himalayan-blue text-white px-4 py-2 rounded-lg text-sm font-bold shadow hover:bg-primary transition flex items-center gap-2">
           <Plus size={16} /> Create Package
         </button>
       </div>
