@@ -10801,6 +10801,226 @@
           "answer": "The highest point reached on the trek is Poon Hill at 3,210 meters (10,531 feet), famous for sunrise view of the Annapurnas."
         }
       ]
+    },
+    {
+      "id": "12-days-nepal-tour-with-ghandruk-trek",
+      "slug": "12-days-nepal-tour-with-ghandruk-trek",
+      "title": "12 Days Nepal Tour with Ghandruk Trek",
+      "tripCode": "DNTT/T/12D/03",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Chitwan, Pokhara, Ghandruk Village Trekking & Chandragiri Hills",
+      "country": "Nepal",
+      "duration": "12 Days / 11 Nights",
+      "price": "US$1165",
+      "pricingInfo": {
+        "regularPrice": 1480,
+        "sellingPrice": 1165,
+        "currency": "USD",
+        "luxury": {
+          "p1": 3500,
+          "p2": 2450,
+          "p3_5": 2250,
+          "p6_8": 2150,
+          "p9plus": 2080
+        },
+        "comfort": {
+          "p1": 2650,
+          "p2": 1800,
+          "p3_5": 1620,
+          "p6_8": 1540,
+          "p9plus": 1480
+        },
+        "standard": {
+          "p1": 2200,
+          "p2": 1480,
+          "p3_5": 1350,
+          "p6_8": 1280,
+          "p9plus": 1210
+        },
+        "budget": {
+          "p1": 2100,
+          "p2": 1400,
+          "p3_5": 1290,
+          "p6_8": 1210,
+          "p9plus": 1165
+        }
+      },
+      "maxAltitude": "1,940m / 6,365ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Moderate",
+      "transportation": "Private Vehicle & Trekking",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "Discover Nepal over 12 grand days combining Chitwan jungle safaris, Pokhara lake beauty, easy beginner-friendly Ghandruk Gurung village trek, Chandragiri Hills cable car, and rich Kathmandu UNESCO heritage.",
+      "overview": "12 Days Nepal Tour with Ghandruk Trek is the perfect blend of cultural exploration, wildlife adventure, and scenic trekking in Nepal. This tour begins with a warm welcome at Tribhuvan International Airport. After a relaxing day, the journey starts with a drive to Chitwan, where you will enjoy a Chitwan jungle safari, Tharu village tour, canoe rides, and visits to the Crocodile Breeding Centre. This unique wildlife experience is perfect for nature lovers.\n\nFrom Chitwan, you will drive to the beautiful Pokhara city tour, where you can explore attractions like Phewa Lake boating, Davis Fall, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, and Seti Gorge Pokhara. After Pokhara, the real adventure begins with an easy trek to Tolka to Ghandruk trek, ideal for beginners. Ghandruk, a charming Gurung village, offers stunning Himalayan views and a peaceful trekking experience. The trek concludes with a drive back to Pokhara from Ghandruk to Nayapul trek.\n\nThe tour continues with a scenic drive back to Kathmandu, where you will explore famous cultural landmarks like Boudhanath Stupa, Pashupatinath Temple, Bhaktapur Durbar Square, Patan Durbar Square, and Swayambhunath Stupa. A visit to Chandragiri Hills by cable car offers panoramic views of the Himalayas and the Kathmandu Valley.\n\nThis 12 Days Nepal Tour with Ghandruk Trek is a perfect choice for those looking for an easy trekking experience combined with wildlife, nature, and cultural exploration. Complete your trip with a complimentary Nepali cultural dinner and create unforgettable memories. Whether you’re a beginner or a culture enthusiast, this easy Nepal trekking tour will leave you amazed by Nepal’s beauty and diversity.",
+      "highlights": [
+        "Perfect for Beginners: The Ghandruk trek offers an easy and scenic hiking experience, making it ideal for beginners and families who want to enjoy the beauty of the Himalayas without strenuous trekking.",
+        "Blend of Nature, Wildlife, and Culture: Explore diverse experiences, including the Chitwan jungle safari, Pokhara city tour, and cultural sightseeing in Kathmandu, creating a perfect mix of adventure and heritage.",
+        "Breathtaking Himalayan Views: The trek to Ghandruk village offers stunning views of Annapurna, Machhapuchhre (Fishtail), and Hiunchuli peaks, providing a serene Himalayan experience.",
+        "Rich Cultural Experiences: Witness the vibrant culture of the Tharu community in Chitwan, visit historical sites like Pashupatinath Temple and Bhaktapur Durbar Square, and enjoy a traditional Nepali cultural dinner with live performances.",
+        "Scenic Drives and Boating: Enjoy beautiful drives alongside rivers, hills, and villages, and relax with a peaceful Phewa Lake boating experience in Pokhara, the city of lakes.",
+        "A Complete Nepal Tour: This 12-day tour combines trekking, wildlife adventures, natural beauty, and UNESCO heritage sightseeing, offering a comprehensive and memorable Nepal experience."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Safari Lodge [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 5-6 hrs)",
+          "description": "Drive from Kathmandu to Chitwan National Park. Check into your resort, take a walk through the traditional Tharu village, and enjoy an evening Tharu cultural dance show."
+        },
+        {
+          "day": "Day 03",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Safari Lodge [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 04",
+          "title": "Chitwan-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Chitwan to Pokhara along scenic river valleys. Check in at your hotel near Phewa Lake and enjoy an evening walk around the vibrant lakeside."
+        },
+        {
+          "day": "Day 05",
+          "title": "Pokhara-Tolka [Altitude 1700m/5578ft]",
+          "maxAltitude": "1,700m / 5,578ft",
+          "accommodation": "Trekking Lodge in Tolka [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private Vehicle Drive to Kande (1 hr) & Trekking (3-4 hrs)",
+          "description": "Drive from Pokhara to Kande, then begin your scenic trek through Australian Camp and Pothana ridge villages to reach Tolka."
+        },
+        {
+          "day": "Day 06",
+          "title": "Tolka-Ghandruk [Altitude 1940m/6365ft]",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Trekking Lodge in Ghandruk [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4-5 hrs)",
+          "description": "Trek down to Landruk village and cross the Modi Khola river suspension bridge before ascending stone steps to Ghandruk village, renowned for traditional Gurung culture and views of Annapurna South."
+        },
+        {
+          "day": "Day 07",
+          "title": "Ghandruk-Nayapul Trek & Drive to Pokhara",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4 hrs) & Private Vehicle Drive (1.5 hrs)",
+          "description": "Trek down from Ghandruk to Nayapul, passing terrace fields and river valleys. Meet your vehicle at Nayapul and drive back to Pokhara for lakeside relaxation."
+        },
+        {
+          "day": "Day 08",
+          "title": "Pokhara-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (6-7 hrs)",
+          "description": "Drive back from Pokhara to Kathmandu along the scenic Prithvi Highway. Check into your hotel in Kathmandu."
+        },
+        {
+          "day": "Day 09",
+          "title": "Kathmandu Valley Sightseeing (Bhaktapur, Boudhanath & Pashupatinath)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of historic Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to spiritual Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 10",
+          "title": "Chandragiri Hills Cable Car Ride & Patan Durbar Square",
+          "maxAltitude": "2,551m / 8,369ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle & Cable Car",
+          "description": "Take a scenic cable car ride up Chandragiri Hills for breathtaking panoramic views of the Kathmandu Valley and Himalayan mountain ranges. Afterwards, visit Patan Durbar Square and Swayambhunath Stupa."
+        },
+        {
+          "day": "Day 11",
+          "title": "Kathmandu Durbar Square & Cultural Farewell Dinner",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Visit Kathmandu Durbar Square and the Living Goddess Kumari House. Enjoy last-minute shopping in Thamel. In the evening, enjoy a special farewell Nepali dinner with traditional live song and dance performances."
+        },
+        {
+          "day": "Day 12",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara city tour with an English speaking local guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "Chandragiri Hills Cable Car tickets",
+        "All applicable monument entrance fees",
+        "Trekking guide & Porter",
+        "TIMS & ACAP trekking permits",
+        "First Aid Kit & Trekking bag",
+        "All government and local taxes",
+        "Daily buffet breakfast in all hotels/lodges",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 4 Nights Kathmandu, 2 Nights Pokhara, 2 Nights Trekking Lodges, 2 Nights Chitwan"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver, guide & porters (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan and trekking days: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "4 Nights The Soaltee Kathmandu | 2 Nights Sarangkot Mountain Lodge | 2 Nights best available teahouses during Trek | 2 Nights Jungle Villa Resort Chitwan",
+        "comfort": "4 Star Hotels in Kathmandu, Pokhara, Chitwan & best available teahouses on trek",
+        "standard": "3 Star Hotels in Kathmandu, Pokhara, Chitwan & standard teahouses on trek",
+        "budget": "2 Star Hotels in Kathmandu, Pokhara, Chitwan & budget teahouses on trek"
+      },
+      "faqs": [
+        {
+          "question": "Is the Ghandruk trek suitable for beginners?",
+          "answer": "Yes, the trek to Ghandruk is very easy to moderate and perfect for beginners, families, and senior travelers."
+        },
+        {
+          "question": "What permits are included?",
+          "answer": "TIMS permits and Annapurna Conservation Area Project (ACAP) permits, along with Chandragiri Cable Car tickets, are included."
+        },
+        {
+          "question": "What is included in Chitwan?",
+          "answer": "Full jungle safari package: dugout canoeing, Elephant or Jeep safari, Tharu village walk, Tharu cultural dance, and entrance fees."
+        }
+      ]
     }
   ],
   "treks": [
@@ -42834,6 +43054,226 @@
         {
           "question": "What is the maximum altitude reached during the trek?",
           "answer": "The highest point reached on the trek is Poon Hill at 3,210 meters (10,531 feet), famous for sunrise view of the Annapurnas."
+        }
+      ]
+    },
+    {
+      "id": "12-days-nepal-tour-with-ghandruk-trek",
+      "slug": "12-days-nepal-tour-with-ghandruk-trek",
+      "title": "12 Days Nepal Tour with Ghandruk Trek",
+      "tripCode": "DNTT/T/12D/03",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Chitwan, Pokhara, Ghandruk Village Trekking & Chandragiri Hills",
+      "country": "Nepal",
+      "duration": "12 Days / 11 Nights",
+      "price": "US$1165",
+      "pricingInfo": {
+        "regularPrice": 1480,
+        "sellingPrice": 1165,
+        "currency": "USD",
+        "luxury": {
+          "p1": 3500,
+          "p2": 2450,
+          "p3_5": 2250,
+          "p6_8": 2150,
+          "p9plus": 2080
+        },
+        "comfort": {
+          "p1": 2650,
+          "p2": 1800,
+          "p3_5": 1620,
+          "p6_8": 1540,
+          "p9plus": 1480
+        },
+        "standard": {
+          "p1": 2200,
+          "p2": 1480,
+          "p3_5": 1350,
+          "p6_8": 1280,
+          "p9plus": 1210
+        },
+        "budget": {
+          "p1": 2100,
+          "p2": 1400,
+          "p3_5": 1290,
+          "p6_8": 1210,
+          "p9plus": 1165
+        }
+      },
+      "maxAltitude": "1,940m / 6,365ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Moderate",
+      "transportation": "Private Vehicle & Trekking",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "Discover Nepal over 12 grand days combining Chitwan jungle safaris, Pokhara lake beauty, easy beginner-friendly Ghandruk Gurung village trek, Chandragiri Hills cable car, and rich Kathmandu UNESCO heritage.",
+      "overview": "12 Days Nepal Tour with Ghandruk Trek is the perfect blend of cultural exploration, wildlife adventure, and scenic trekking in Nepal. This tour begins with a warm welcome at Tribhuvan International Airport. After a relaxing day, the journey starts with a drive to Chitwan, where you will enjoy a Chitwan jungle safari, Tharu village tour, canoe rides, and visits to the Crocodile Breeding Centre. This unique wildlife experience is perfect for nature lovers.\n\nFrom Chitwan, you will drive to the beautiful Pokhara city tour, where you can explore attractions like Phewa Lake boating, Davis Fall, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, and Seti Gorge Pokhara. After Pokhara, the real adventure begins with an easy trek to Tolka to Ghandruk trek, ideal for beginners. Ghandruk, a charming Gurung village, offers stunning Himalayan views and a peaceful trekking experience. The trek concludes with a drive back to Pokhara from Ghandruk to Nayapul trek.\n\nThe tour continues with a scenic drive back to Kathmandu, where you will explore famous cultural landmarks like Boudhanath Stupa, Pashupatinath Temple, Bhaktapur Durbar Square, Patan Durbar Square, and Swayambhunath Stupa. A visit to Chandragiri Hills by cable car offers panoramic views of the Himalayas and the Kathmandu Valley.\n\nThis 12 Days Nepal Tour with Ghandruk Trek is a perfect choice for those looking for an easy trekking experience combined with wildlife, nature, and cultural exploration. Complete your trip with a complimentary Nepali cultural dinner and create unforgettable memories. Whether you’re a beginner or a culture enthusiast, this easy Nepal trekking tour will leave you amazed by Nepal’s beauty and diversity.",
+      "highlights": [
+        "Perfect for Beginners: The Ghandruk trek offers an easy and scenic hiking experience, making it ideal for beginners and families who want to enjoy the beauty of the Himalayas without strenuous trekking.",
+        "Blend of Nature, Wildlife, and Culture: Explore diverse experiences, including the Chitwan jungle safari, Pokhara city tour, and cultural sightseeing in Kathmandu, creating a perfect mix of adventure and heritage.",
+        "Breathtaking Himalayan Views: The trek to Ghandruk village offers stunning views of Annapurna, Machhapuchhre (Fishtail), and Hiunchuli peaks, providing a serene Himalayan experience.",
+        "Rich Cultural Experiences: Witness the vibrant culture of the Tharu community in Chitwan, visit historical sites like Pashupatinath Temple and Bhaktapur Durbar Square, and enjoy a traditional Nepali cultural dinner with live performances.",
+        "Scenic Drives and Boating: Enjoy beautiful drives alongside rivers, hills, and villages, and relax with a peaceful Phewa Lake boating experience in Pokhara, the city of lakes.",
+        "A Complete Nepal Tour: This 12-day tour combines trekking, wildlife adventures, natural beauty, and UNESCO heritage sightseeing, offering a comprehensive and memorable Nepal experience."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at the Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Safari Lodge [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 5-6 hrs)",
+          "description": "Drive from Kathmandu to Chitwan National Park. Check into your resort, take a walk through the traditional Tharu village, and enjoy an evening Tharu cultural dance show."
+        },
+        {
+          "day": "Day 03",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Safari Lodge [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 04",
+          "title": "Chitwan-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Chitwan to Pokhara along scenic river valleys. Check in at your hotel near Phewa Lake and enjoy an evening walk around the vibrant lakeside."
+        },
+        {
+          "day": "Day 05",
+          "title": "Pokhara-Tolka [Altitude 1700m/5578ft]",
+          "maxAltitude": "1,700m / 5,578ft",
+          "accommodation": "Trekking Lodge in Tolka [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private Vehicle Drive to Kande (1 hr) & Trekking (3-4 hrs)",
+          "description": "Drive from Pokhara to Kande, then begin your scenic trek through Australian Camp and Pothana ridge villages to reach Tolka."
+        },
+        {
+          "day": "Day 06",
+          "title": "Tolka-Ghandruk [Altitude 1940m/6365ft]",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Trekking Lodge in Ghandruk [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4-5 hrs)",
+          "description": "Trek down to Landruk village and cross the Modi Khola river suspension bridge before ascending stone steps to Ghandruk village, renowned for traditional Gurung culture and views of Annapurna South."
+        },
+        {
+          "day": "Day 07",
+          "title": "Ghandruk-Nayapul Trek & Drive to Pokhara",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4 hrs) & Private Vehicle Drive (1.5 hrs)",
+          "description": "Trek down from Ghandruk to Nayapul, passing terrace fields and river valleys. Meet your vehicle at Nayapul and drive back to Pokhara for lakeside relaxation."
+        },
+        {
+          "day": "Day 08",
+          "title": "Pokhara-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (6-7 hrs)",
+          "description": "Drive back from Pokhara to Kathmandu along the scenic Prithvi Highway. Check into your hotel in Kathmandu."
+        },
+        {
+          "day": "Day 09",
+          "title": "Kathmandu Valley Sightseeing (Bhaktapur, Boudhanath & Pashupatinath)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of historic Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to spiritual Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 10",
+          "title": "Chandragiri Hills Cable Car Ride & Patan Durbar Square",
+          "maxAltitude": "2,551m / 8,369ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle & Cable Car",
+          "description": "Take a scenic cable car ride up Chandragiri Hills for breathtaking panoramic views of the Kathmandu Valley and Himalayan mountain ranges. Afterwards, visit Patan Durbar Square and Swayambhunath Stupa."
+        },
+        {
+          "day": "Day 11",
+          "title": "Kathmandu Durbar Square & Cultural Farewell Dinner",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Visit Kathmandu Durbar Square and the Living Goddess Kumari House. Enjoy last-minute shopping in Thamel. In the evening, enjoy a special farewell Nepali dinner with traditional live song and dance performances."
+        },
+        {
+          "day": "Day 12",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara city tour with an English speaking local guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "Chandragiri Hills Cable Car tickets",
+        "All applicable monument entrance fees",
+        "Trekking guide & Porter",
+        "TIMS & ACAP trekking permits",
+        "First Aid Kit & Trekking bag",
+        "All government and local taxes",
+        "Daily buffet breakfast in all hotels/lodges",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 4 Nights Kathmandu, 2 Nights Pokhara, 2 Nights Trekking Lodges, 2 Nights Chitwan"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver, guide & porters (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan and trekking days: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "4 Nights The Soaltee Kathmandu | 2 Nights Sarangkot Mountain Lodge | 2 Nights best available teahouses during Trek | 2 Nights Jungle Villa Resort Chitwan",
+        "comfort": "4 Star Hotels in Kathmandu, Pokhara, Chitwan & best available teahouses on trek",
+        "standard": "3 Star Hotels in Kathmandu, Pokhara, Chitwan & standard teahouses on trek",
+        "budget": "2 Star Hotels in Kathmandu, Pokhara, Chitwan & budget teahouses on trek"
+      },
+      "faqs": [
+        {
+          "question": "Is the Ghandruk trek suitable for beginners?",
+          "answer": "Yes, the trek to Ghandruk is very easy to moderate and perfect for beginners, families, and senior travelers."
+        },
+        {
+          "question": "What permits are included?",
+          "answer": "TIMS permits and Annapurna Conservation Area Project (ACAP) permits, along with Chandragiri Cable Car tickets, are included."
+        },
+        {
+          "question": "What is included in Chitwan?",
+          "answer": "Full jungle safari package: dugout canoeing, Elephant or Jeep safari, Tharu village walk, Tharu cultural dance, and entrance fees."
         }
       ]
     }
