@@ -684,38 +684,44 @@ const TourTripDetail = () => {
 
             {/* Cost Details Section */}
             {(inclusions.length > 0 || exclusions.length > 0 || addons.length > 0) && (
-              <section id="cost" className="space-y-6 md:space-y-8 scroll-mt-28">
-                <h2 className="text-xl sm:text-2xl font-black text-gray-900 mb-4 sm:mb-6 uppercase tracking-tight">Cost Details (Inclusions & Exclusions)</h2>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <section id="cost" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-8 flex items-center gap-3 font-serif">
+                  <DollarSign className="text-emerald-600" size={28} /> Cost Details (Inclusions & Exclusions)
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {/* INCLUDES */}
                   {inclusions.length > 0 && (
-                    <div className="bg-[#eefbf4] border border-green-100 p-8 rounded-3xl shadow-sm relative overflow-hidden">
-                      <h3 className="text-xl font-bold text-gray-800 mb-6 uppercase tracking-wider">INCLUDES</h3>
-                      <ul className="space-y-4">
+                    <div className="bg-green-50/80 border border-green-100 p-6 md:p-8 rounded-2xl">
+                      <h3 className="text-lg font-bold text-green-800 mb-6 flex items-center gap-2">
+                        <Check className="text-green-600" size={22} /> What's Included
+                      </h3>
+                      <ul className="space-y-3.5">
                         {inclusions.map((inc, i) => (
-                          <li key={i} className="flex gap-3 items-start">
-                            <CheckCircle2 size={20} className="text-emerald-500 shrink-0 mt-0.5" />
-                            <div className="text-gray-700 text-sm leading-relaxed">
-                              <span className="font-bold text-gray-900">{inc.title}</span>
-                              {inc.description && <span className="text-gray-500 font-normal block mt-0.5">{inc.description}</span>}
+                          <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
+                            <Check size={16} className="text-green-500 shrink-0 mt-0.5" />
+                            <div>
+                              <span className="font-bold text-gray-900 leading-snug block">{inc.title}</span>
+                              {inc.description && <p className="text-xs text-gray-500 mt-0.5">{inc.description}</p>}
                             </div>
                           </li>
                         ))}
                       </ul>
                     </div>
                   )}
-                  
+
                   {/* EXCLUDES */}
                   {exclusions.length > 0 && (
-                    <div className="bg-[#f0f9ff] border border-blue-100 p-8 rounded-3xl shadow-sm relative overflow-hidden">
-                      <h3 className="text-xl font-bold text-gray-800 mb-6 uppercase tracking-wider">EXCLUDES</h3>
-                      <ul className="space-y-4">
+                    <div className="bg-red-50/80 border border-red-100 p-6 md:p-8 rounded-2xl">
+                      <h3 className="text-lg font-bold text-red-800 mb-6 flex items-center gap-2">
+                        <X className="text-red-600" size={22} /> What's Excluded
+                      </h3>
+                      <ul className="space-y-3.5">
                         {exclusions.map((exc, i) => (
-                          <li key={i} className="flex gap-3 items-start">
-                            <XCircle size={20} className="text-sky-400 shrink-0 mt-0.5" />
-                            <div className="text-gray-700 text-sm leading-relaxed">
-                              <span className="font-bold text-gray-900">{exc.title}</span>
-                              {exc.description && <span className="text-gray-500 font-normal block mt-0.5">{exc.description}</span>}
+                          <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
+                            <X size={16} className="text-red-500 shrink-0 mt-0.5" />
+                            <div>
+                              <span className="font-bold text-gray-900 leading-snug block">{exc.title}</span>
+                              {exc.description && <p className="text-xs text-gray-500 mt-0.5">{exc.description}</p>}
                             </div>
                           </li>
                         ))}
@@ -726,20 +732,20 @@ const TourTripDetail = () => {
 
                 {/* Add-ons */}
                 {addons.length > 0 && (
-                  <div className="bg-purple-50/70 border border-purple-100 p-8 rounded-3xl shadow-sm">
-                    <h3 className="text-xl font-bold text-purple-900 mb-6 uppercase tracking-wider flex items-center gap-2">
-                      <Plus className="text-purple-600" size={24} />
-                      Add-ons & Upgrade Options
+                  <div className="mt-8 bg-purple-50/70 border border-purple-100 rounded-2xl p-6 md:p-8">
+                    <h3 className="text-lg font-bold text-purple-900 mb-4 flex items-center gap-2">
+                      <Plus className="text-purple-600" size={20} />
+                      Add-ons & Exclusive Upgrade Options
                     </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {addons.map((addon, idx) => (
-                        <div key={idx} className="bg-white p-5 rounded-2xl border border-purple-100 flex justify-between items-center gap-4 shadow-xs">
+                        <div key={idx} className="bg-white/80 rounded-xl p-4 border border-purple-100/80 flex justify-between items-center gap-3 hover:bg-white transition-colors">
                           <div>
-                            <h4 className="font-bold text-gray-900 text-base">{addon.title}</h4>
-                            {addon.details && <p className="text-xs text-gray-600 mt-1">{addon.details}</p>}
+                            <h4 className="font-bold text-purple-950 text-sm">{addon.title}</h4>
+                            {addon.details && <p className="text-xs text-purple-800/80 mt-0.5">{addon.details}</p>}
                           </div>
                           {addon.price && (
-                            <span className="bg-purple-100 text-purple-800 font-extrabold text-sm px-3.5 py-1.5 rounded-xl shrink-0">
+                            <span className="bg-purple-100 text-purple-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0">
                               {addon.price}
                             </span>
                           )}

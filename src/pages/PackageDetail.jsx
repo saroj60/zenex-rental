@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils, HelpCircle, ChevronDown, Star, BookOpen } from 'lucide-react';
+import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils, HelpCircle, ChevronDown, Star, BookOpen, Check, X, Plus } from 'lucide-react';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import { useAppData } from '../context/AppDataContext';
 
@@ -13900,23 +13900,22 @@ const PackageDetail = () => {
               </div>
             )}
 
-            {/* Standalone Section 2: What's Included & Not Included */}
-            {(inclusions.length > 0 || exclusions.length > 0) && (
-              <div id="cost" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24 space-y-8">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e3a8a] flex items-center gap-3 border-b border-gray-100 pb-4">
+            {/* Cost Details (Inclusions, Exclusions & Add-ons) */}
+            {(inclusions.length > 0 || exclusions.length > 0 || addons.length > 0) && (
+              <div id="cost" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-8 flex items-center gap-3 font-serif">
                   <DollarSign className="text-emerald-600" size={28} /> Cost Details (Inclusions & Exclusions)
                 </h2>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {inclusions.length > 0 && (
-                    <div className="bg-[#eefbf4] border border-green-100 p-6 md:p-8 rounded-2xl">
-                      <h3 className="text-lg font-bold text-emerald-800 mb-6 flex items-center gap-2">
-                        <CheckCircle2 className="text-emerald-600" size={22} /> What's Included
+                    <div className="bg-green-50/80 border border-green-100 p-6 md:p-8 rounded-2xl">
+                      <h3 className="text-lg font-bold text-green-800 mb-6 flex items-center gap-2">
+                        <Check className="text-green-600" size={22} /> What's Included
                       </h3>
                       <ul className="space-y-3.5">
                         {inclusions.map((item, idx) => (
-                          <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
-                            <CheckCircle2 className="text-emerald-500 shrink-0 mt-0.5" size={18} />
+                          <li key={idx} className="flex items-start gap-2.5 text-sm text-gray-700">
+                            <Check size={16} className="text-green-500 shrink-0 mt-0.5" />
                             <div>
                               <span className="font-bold text-gray-900 leading-snug block">{item.title}</span>
                               {item.description && <p className="text-xs text-gray-500 mt-0.5">{item.description}</p>}
@@ -13928,14 +13927,14 @@ const PackageDetail = () => {
                   )}
 
                   {exclusions.length > 0 && (
-                    <div className="bg-[#fff5f5] border border-red-100 p-6 md:p-8 rounded-2xl">
+                    <div className="bg-red-50/80 border border-red-100 p-6 md:p-8 rounded-2xl">
                       <h3 className="text-lg font-bold text-red-800 mb-6 flex items-center gap-2">
-                        <ShieldCheck className="text-red-500" size={22} /> Not Included
+                        <X className="text-red-600" size={22} /> What's Excluded
                       </h3>
                       <ul className="space-y-3.5">
                         {exclusions.map((item, idx) => (
-                          <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
-                            <span className="w-4 h-4 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-xs font-black shrink-0 mt-0.5">✕</span>
+                          <li key={idx} className="flex items-start gap-2.5 text-sm text-gray-700">
+                            <X size={16} className="text-red-500 shrink-0 mt-0.5" />
                             <div>
                               <span className="font-bold text-gray-900 leading-snug block">{item.title}</span>
                               {item.description && <p className="text-xs text-gray-500 mt-0.5">{item.description}</p>}
@@ -13946,26 +13945,31 @@ const PackageDetail = () => {
                     </div>
                   )}
                 </div>
-              </div>
-            )}
 
-            {/* Standalone Section 3: Add-ons & Exclusive Upgrades */}
-            {addons.length > 0 && (
-              <div id="addons" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e3a8a] mb-6 flex items-center gap-3">
-                  <Star className="text-purple-600" size={28} /> Add-ons & Upgrade Options
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {addons.map((addon, idx) => (
-                    <div key={idx} className="bg-purple-50/50 p-4 rounded-2xl border border-purple-100 flex justify-between items-center gap-3 hover:bg-purple-50 transition-colors">
-                      <div>
-                        <span className="font-bold text-gray-900 text-sm block">{addon.title}</span>
-                        {addon.details && <span className="text-xs text-gray-500 block mt-0.5">{addon.details}</span>}
-                      </div>
-                      {addon.price && <span className="bg-purple-100 text-purple-800 font-extrabold text-xs px-3 py-1.5 rounded-xl shrink-0">{addon.price}</span>}
+                {/* Add-ons & Exclusive Upgrade Options */}
+                {addons.length > 0 && (
+                  <div className="mt-8 bg-purple-50/70 border border-purple-100 rounded-2xl p-6 md:p-8">
+                    <h3 className="text-lg font-bold text-purple-900 mb-4 flex items-center gap-2">
+                      <Plus className="text-purple-600" size={20} />
+                      Add-ons & Exclusive Upgrade Options
+                    </h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {addons.map((addon, idx) => (
+                        <div key={idx} className="bg-white/80 rounded-xl p-4 border border-purple-100/80 flex justify-between items-center gap-3 hover:bg-white transition-colors">
+                          <div>
+                            <h4 className="font-bold text-purple-950 text-sm">{addon.title}</h4>
+                            {addon.details && <p className="text-xs text-purple-800/80 mt-0.5">{addon.details}</p>}
+                          </div>
+                          {addon.price && (
+                            <span className="bg-purple-100 text-purple-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0">
+                              {addon.price}
+                            </span>
+                          )}
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                )}
               </div>
             )}
 
