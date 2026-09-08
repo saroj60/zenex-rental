@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils, HelpCircle, ChevronDown, Star, BookOpen, Check, X, Plus } from 'lucide-react';
+import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils, HelpCircle, ChevronDown, Star, BookOpen, Check, X, Plus, Activity } from 'lucide-react';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import { useAppData } from '../context/AppDataContext';
 
@@ -13585,6 +13585,64 @@ const PackageDetail = () => {
   const [packageType, setPackageType] = useState('Budget');
   const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
   const [expandedFaq, setExpandedFaq] = useState(null);
+  const [isDiscountOpen, setIsDiscountOpen] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  const getBasePriceNum = () => {
+    if (!pkg || !pkg.price) return 0;
+    const basePriceStr = String(pkg.price).replace(/[^0-9.]/g, '');
+    return parseFloat(basePriceStr) || 0;
+  };
+
+  const getDiscountedPerPersonPrice = (pax) => {
+    let rawVal = null;
+
+    if (Array.isArray(pkg?.groupDiscounts)) {
+      const tier = pkg.groupDiscounts.find(item => {
+        const paxStr = String(item.pax || item.paxRange || '');
+        const matches = paxStr.match(/\d+/g);
+        if (matches && matches.length >= 2) {
+          const min = parseInt(matches[0], 10);
+          const max = parseInt(matches[1], 10);
+          return pax >= min && pax <= max;
+        } else if (matches && matches.length === 1) {
+          const min = parseInt(matches[0], 10);
+          return pax >= min;
+        }
+        return false;
+      });
+
+      if (tier && tier.price) {
+        rawVal = tier.price;
+      }
+    } else if (pkg?.groupDiscounts && typeof pkg.groupDiscounts === 'object') {
+      if (pax >= 16 && pkg.groupDiscounts["16"]) rawVal = pkg.groupDiscounts["16"];
+      else if (pax >= 12 && pkg.groupDiscounts["12"]) rawVal = pkg.groupDiscounts["12"];
+      else if (pax >= 8 && pkg.groupDiscounts["8"]) rawVal = pkg.groupDiscounts["8"];
+      else if (pax >= 4 && pkg.groupDiscounts["4"]) rawVal = pkg.groupDiscounts["4"];
+      else if (pax >= 2 && pkg.groupDiscounts["2"]) rawVal = pkg.groupDiscounts["2"];
+    }
+
+    if (rawVal) {
+      if (typeof rawVal === 'number') return rawVal;
+      if (typeof rawVal === 'string') {
+        const num = parseFloat(rawVal.replace(/[^0-9.]/g, ''));
+        if (!isNaN(num) && num > 0) return num;
+      }
+    }
+
+    const base = getBasePriceNum();
+    if (!base) return 0;
+    
+    if (pax >= 16) return Math.max(0, Math.round(base * 0.75));
+    if (pax >= 12) return Math.max(0, Math.round(base * 0.80));
+    if (pax >= 8) return Math.max(0, Math.round(base * 0.85));
+    if (pax >= 4) return Math.max(0, Math.round(base * 0.90));
+    return base;
+  };
+
+  const perPersonPrice = getDiscountedPerPersonPrice(persons);
+  const calculatedTotalPrice = perPersonPrice ? perPersonPrice * persons : 0;
 
   const defaultPackageFaqs = [
     {
@@ -14242,105 +14300,146 @@ const PackageDetail = () => {
           <div className="lg:col-span-1">
             <div className="sticky top-24 space-y-6">
               
-              {/* Main Booking Card (Redesigned) */}
+              {/* Main Booking Card (Redesigned Trek Style) */}
               <div className="bg-white border border-gray-100 p-7 rounded-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] space-y-6">
                 
                 {/* Header Area */}
                 <div className="flex justify-between items-start border-b border-gray-100 pb-5">
                   <div>
-                    <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Starting From</span>
+                    <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Price Per Person</span>
                     <div className="flex items-baseline gap-2.5">
                       <span className="text-3xl font-black text-[#1e3a8a] tracking-tight">
-                        {currentPrice ? currentPrice : 'TBA'}
+                        {perPersonPrice ? `US$${typeof perPersonPrice === 'number' ? perPersonPrice.toLocaleString() : perPersonPrice}` : (pkg?.price || 'TBA')}
                       </span>
+                      {pkg.originalPrice && (
+                        <span className="text-sm text-gray-400 line-through font-semibold">
+                          {pkg.originalPrice}
+                        </span>
+                      )}
                     </div>
-                    <p className="text-[10px] text-[#64748B] mt-1 font-bold uppercase tracking-wider">Per Person / All Inclusive</p>
                   </div>
                   
                   {/* Favorite Icon */}
-                  <button className="group flex flex-col items-center focus:outline-none">
-                    <div className="w-10 h-10 rounded-full flex items-center justify-center shadow-sm border border-gray-200 bg-gray-50 text-gray-400 group-hover:text-[#E59A2F] group-hover:border-[#E59A2F] transition-all duration-300">
-                      <Heart size={18} fill="none" strokeWidth={2} className="group-hover:fill-current transition-colors" />
+                  <button 
+                    onClick={() => setIsFavorite(!isFavorite)}
+                    className="group flex flex-col items-center focus:outline-none"
+                  >
+                    <div className={`w-10 h-10 rounded-full flex items-center justify-center shadow-sm border transition-all duration-300 ${
+                      isFavorite 
+                        ? 'bg-[#E59A2F] border-[#E59A2F] text-white' 
+                        : 'bg-gray-50 border-gray-200 text-gray-400 group-hover:text-[#E59A2F] group-hover:border-[#E59A2F]'
+                    }`}>
+                      <Heart size={18} fill={isFavorite ? 'currentColor' : 'none'} strokeWidth={2} />
                     </div>
                     <span className="text-[9px] text-gray-500 font-bold mt-1.5 uppercase tracking-wider">Save</span>
                   </button>
                 </div>
-                
+
+                {/* Group Discount Price Card */}
+                <div className="bg-[#F8FAFC] rounded-2xl p-4 border border-gray-100">
+                  <div 
+                    onClick={() => setIsDiscountOpen(!isDiscountOpen)}
+                    className="flex justify-between items-center cursor-pointer select-none group"
+                  >
+                    <span className="font-bold text-[#1e3a8a] text-sm flex items-center gap-2">
+                      <Activity size={16} className="text-[#0F766E]" />
+                      Group Discounts
+                    </span>
+                    <ChevronDown size={18} className={`text-gray-400 group-hover:text-[#1e3a8a] transition-transform duration-300 ${isDiscountOpen ? 'rotate-180' : ''}`} />
+                  </div>
+                  
+                  {isDiscountOpen && (
+                    <div className="mt-4 pt-4 border-t border-gray-200/60 overflow-hidden">
+                      <table className="w-full text-left text-sm">
+                        <thead>
+                          <tr className="text-[#64748B] font-medium border-b border-gray-200 pb-2">
+                            <th className="pb-2 font-semibold text-xs uppercase tracking-wider">Group Size</th>
+                            <th className="pb-2 text-right font-semibold text-xs uppercase tracking-wider">Price / Pax</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100">
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">2 - 3 pax</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(2)}</td>
+                          </tr>
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">4 - 7 pax</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(4)}</td>
+                          </tr>
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">8 - 11 pax</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(8)}</td>
+                          </tr>
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">12 - 15 pax</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(12)}</td>
+                          </tr>
+                          <tr className="hover:bg-white transition-colors">
+                            <td className="py-3 text-[#172033] font-medium text-xs">16+ pax</td>
+                            <td className="py-3 text-right font-bold text-[#1e3a8a]">US${getDiscountedPerPersonPrice(16)}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                </div>
+
+                {/* Inputs */}
                 <div className="space-y-4">
-                  {/* Package Type */}
-                  <div className="bg-[#F8FAFC] p-4 rounded-xl border border-gray-100">
-                    <h4 className="font-bold text-xs text-[#1e3a8a] uppercase tracking-wider mb-3">
-                      Select Package Level
-                    </h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      {['Budget', 'Comfort', 'Standard', 'Luxury'].map((type) => (
-                        <label 
-                          key={type} 
-                          className={`flex items-center justify-center py-2 px-3 rounded-lg cursor-pointer text-xs font-bold transition-all duration-200 border ${
-                            packageType === type 
-                              ? 'border-[#0F766E] bg-[#0F766E] text-white shadow-sm' 
-                              : 'border-gray-200 bg-white text-[#64748B] hover:border-[#0F766E] hover:text-[#0F766E]'
-                          }`}
-                        >
-                          <input 
-                            type="radio" 
-                            name="package_type" 
-                            className="hidden" 
-                            checked={packageType === type}
-                            onChange={() => setPackageType(type)}
-                          /> 
-                          {type}
-                        </label>
-                      ))}
-                    </div>
+                  <div className="bg-white border border-gray-200 rounded-xl p-3.5 focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
+                    <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1 block">Travel Date</label>
+                    <input 
+                      type="date" 
+                      value={date}
+                      onChange={(e) => setDate(e.target.value)}
+                      className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
+                    />
                   </div>
 
-                  {/* Inputs */}
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
-                      <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Date</span>
-                      <div className="flex items-center justify-between">
-                        <input 
-                          type="date" 
-                          value={date}
-                          onChange={(e) => setDate(e.target.value)}
-                          className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
-                        />
-                      </div>
-                    </div>
-                    <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
-                      <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Travelers</span>
-                      <select 
-                        value={persons}
-                        onChange={(e) => setPersons(Number(e.target.value))}
-                        className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer appearance-none"
+                  <div className="bg-white border border-gray-200 rounded-xl p-3.5">
+                    <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-2 block">Number of Travelers</label>
+                    <div className="flex items-center justify-between">
+                      <button 
+                        onClick={() => setPersons(Math.max(1, persons - 1))}
+                        className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer"
                       >
-                        <option value={1}>1 Person</option>
-                        <option value={2}>2 Persons</option>
-                        <option value={3}>3 Persons</option>
-                        <option value={4}>4 Persons</option>
-                        <option value={5}>5+ Persons</option>
-                      </select>
+                        -
+                      </button>
+                      <span className="font-extrabold text-[#1e3a8a] text-base">{persons} {persons === 1 ? 'Person' : 'Persons'}</span>
+                      <button 
+                        onClick={() => setPersons(persons + 1)}
+                        className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer"
+                      >
+                        +
+                      </button>
                     </div>
                   </div>
+                </div>
 
-                  {/* Buttons */}
-                  <div className="space-y-3 pt-2">
-                    <button onClick={handleBookPackage} className="w-full flex justify-center bg-[#1e3a8a] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
-                      BOOK THIS PACKAGE
-                    </button>
-                    <button onClick={handleQuickInquiry} className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm">
-                      MAKE AN INQUIRY
-                    </button>
-                    <button 
-                      onClick={handleDownloadPDF} 
-                      disabled={isGeneratingPDF}
-                      className="w-full flex justify-center items-center gap-2 bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center disabled:opacity-50 cursor-pointer"
-                    >
-                      <FileText size={16} className="text-[#e53a24]" /> 
-                      {isGeneratingPDF ? 'GENERATING PDF...' : 'DOWNLOAD AS PDF'}
-                    </button>
+                {/* Calculated Total Price */}
+                {calculatedTotalPrice > 0 && (
+                  <div className="bg-emerald-50/70 border border-emerald-100 rounded-xl p-3.5 flex justify-between items-center">
+                    <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider">Total Price ({persons} Pax):</span>
+                    <span className="text-xl font-black text-emerald-700">US${calculatedTotalPrice.toLocaleString()}</span>
                   </div>
+                )}
+
+                {/* Action Buttons */}
+                <div className="space-y-3 pt-2">
+                  <button onClick={handleBookPackage} className="w-full flex justify-center bg-[#1e3a8a] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm cursor-pointer">
+                    BOOK THIS PACKAGE
+                  </button>
+                  <button onClick={handleQuickInquiry} className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm cursor-pointer">
+                    MAKE AN INQUIRY
+                  </button>
+                  <button 
+                    onClick={handleDownloadPDF} 
+                    disabled={isGeneratingPDF}
+                    className="w-full flex justify-center items-center gap-2 bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center disabled:opacity-50 cursor-pointer"
+                  >
+                    <FileText size={16} className="text-[#e53a24]" /> 
+                    {isGeneratingPDF ? 'GENERATING PDF...' : 'DOWNLOAD AS PDF'}
+                  </button>
                 </div>
               </div>
               
