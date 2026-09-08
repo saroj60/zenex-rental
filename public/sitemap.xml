@@ -1161,4 +1161,14 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://www.zenextravels.com/packages/9-days-kathmandu-pokhara-chitwan-tour-with-trek</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.zenextravels.com/tour/9-days-kathmandu-pokhara-chitwan-tour-with-trek</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
