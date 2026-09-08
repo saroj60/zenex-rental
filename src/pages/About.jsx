@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SEO from '../components/SEO';
-import { ShieldCheck, Map as MapIcon, Star, ArrowRight, MessageCircle, Search, Download, X } from 'lucide-react';
+import { ShieldCheck, Map as MapIcon, Star, ArrowRight, MessageCircle, Search, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About = () => {
@@ -330,16 +330,8 @@ const About = () => {
             </div>
 
             {/* Modal Footer */}
-            <div className="px-6 py-4 bg-white border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <span className="text-xs text-gray-500 font-medium">Government of Nepal Authorized Certificate</span>
-              <a 
-                href={selectedDoc.pdf} 
-                target="_blank" 
-                rel="noreferrer" 
-                className="bg-[#1e3a8a] hover:bg-[#e53a24] text-white px-5 py-2.5 rounded-xl text-xs font-bold transition-colors flex items-center gap-2 shadow-sm"
-              >
-                <Download size={14} /> Download Original PDF
-              </a>
+            <div className="px-6 py-4 bg-white border-t border-gray-100 flex items-center justify-center">
+              <span className="text-xs text-gray-500 font-semibold">Government of Nepal Authorized Certificate</span>
             </div>
           </div>
         </div>
