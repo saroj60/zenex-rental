@@ -11919,6 +11919,233 @@
           "answer": "Yes, this private vehicle tour is easy-paced and perfect for families, couples, and seniors."
         }
       ]
+    },
+    {
+      "id": "13-days-discover-nepal-tour-with-ghandruk-trek",
+      "slug": "13-days-discover-nepal-tour-with-ghandruk-trek",
+      "title": "13 Days Discover Nepal Tour with Ghandruk Trek",
+      "tripCode": "DNTT/T/13D/01",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Chitwan, Lumbini, Ghandruk & Pokhara",
+      "country": "Nepal",
+      "duration": "13 Days / 12 Nights",
+      "price": "1350",
+      "pricingInfo": {
+        "regularPrice": 1700,
+        "sellingPrice": 1350,
+        "currency": "USD",
+        "luxury": {
+          "p1": 3850,
+          "p2": 2800,
+          "p3_5": 2550,
+          "p6_8": 2420,
+          "p9plus": 2320
+        },
+        "comfort": {
+          "p1": 3000,
+          "p2": 2100,
+          "p3_5": 1900,
+          "p6_8": 1780,
+          "p9plus": 1680
+        },
+        "standard": {
+          "p1": 2500,
+          "p2": 1700,
+          "p3_5": 1540,
+          "p6_8": 1450,
+          "p9plus": 1350
+        },
+        "budget": {
+          "p1": 2400,
+          "p2": 1600,
+          "p3_5": 1450,
+          "p6_8": 1350,
+          "p9plus": 1290
+        }
+      },
+      "maxAltitude": "1,940m / 6,365ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Moderate",
+      "transportation": "Private Vehicle & Trekking",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "Combine Chitwan wildlife safaris, Buddha birthplace Lumbini, beginner-friendly Ghandruk Gurung village trek, Pokhara lakes, and 3 full days of Kathmandu UNESCO heritage & southern valley exploration.",
+      "overview": "The 13 Days Discover Nepal Tour with Ghandruk Trek is a perfect combination of cultural exploration and trekking in Nepal. Your journey begins as you are warmly welcomed by a representative from Destination Nepal Tours & Travels at Tribhuvan International Airport. The first day is free to relax or explore with an optional tour.\n\nAfter a delightful breakfast, you will drive through scenic hill areas alongside the Trishuli and Narayani rivers to reach Chitwan. Enjoy two nights here, experiencing the Tharu cultural program, elephant safari or jeep safari, crocodile breeding center, and canoeing in the Rapti River. Next, head to Lumbini, the birthplace of Lord Buddha, with a guided tour of its sacred sites.\n\nFrom Lumbini, drive to Pokhara, where you’ll visit Bindabasini Temple, Davis Fall, Gupteshwor Mahadev Cave, Seti Gorge, and a Tibetan refugee camp. Begin your trek the next day, driving to Phedi and trekking to Tolka. Continue trekking to Ghandruk, a picturesque Gurung village, and descend to Nayapul before returning to Pokhara.\n\nDrive or optionally fly back to Kathmandu, followed by sightseeing at Boudhanath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square. Visit Patan Durbar Square, Swayambhunath Stupa, and Kathmandu Durbar Square the next day. Conclude your cultural journey with visits to Dakshinkali, Chobhar, Pharping, and Kirtipur, and enjoy a traditional Nepali dinner with a cultural show.\n\nThis tour combines Nepal’s cultural treasures with the beauty of the Ghandruk Trek, creating memories to cherish for a lifetime.",
+      "highlights": [
+        "Diverse Experiences in One Journey: Blends Nepal's cultural richness with the stunning beauty of the Himalayas. From Lumbini Buddha birthplace to Annapurna Ghandruk trek.",
+        "Picturesque Ghandruk Trek: Walk through lush rhododendron forests, traditional Gurung villages, and terraced fields with spectacular views of Annapurna South & Machhapuchhre.",
+        "Wildlife Adventures in Chitwan: Jungle safaris, Rapti river dugout canoeing, birdwatching, and Tharu cultural program.",
+        "Cultural & Spiritual Exploration: Discover UNESCO World Heritage sites including Boudhanath, Pashupatinath, Bhaktapur, Patan, and Swayambhunath.",
+        "Southern Kathmandu Exploration: Excursion to Dakshinkali Temple, Chobhar Gorge, Pharping Monasteries, Kirtipur village, and a farewell cultural dinner."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 5-6 hrs)",
+          "description": "Drive from Kathmandu to Chitwan National Park. Check into your resort, take a walk through the traditional Tharu village, and enjoy an evening Tharu cultural dance show."
+        },
+        {
+          "day": "Day 03",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 04",
+          "title": "Chitwan-Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Chitwan to Lumbini, the sacred birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 05",
+          "title": "Lumbini-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Lumbini to Pokhara. Visit Bindabasini Temple, Seti Gorge, Gupteshwor Mahadev Cave, Davis Fall, Tibetan Refugee Camp, and Phewa Lake boating."
+        },
+        {
+          "day": "Day 06",
+          "title": "Pokhara-Tolka [Altitude 1700m/5578ft]",
+          "maxAltitude": "1,700m / 5,578ft",
+          "accommodation": "Trekking Lodge in Tolka [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private Vehicle Drive to Phedi (45 mins) & Trekking (3-4 hrs)",
+          "description": "Drive from Pokhara to Phedi/Kande, then begin your scenic trek through Australian Camp and Pothana ridge villages to reach Tolka."
+        },
+        {
+          "day": "Day 07",
+          "title": "Tolka-Ghandruk [Altitude 1940m/6365ft]",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Trekking Lodge in Ghandruk [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4-5 hrs)",
+          "description": "Trek down to Landruk village and cross the Modi Khola river suspension bridge before ascending stone steps to Ghandruk village, renowned for traditional Gurung culture and views of Annapurna South."
+        },
+        {
+          "day": "Day 08",
+          "title": "Ghandruk-Nayapul Trek & Drive to Pokhara",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4 hrs) & Private Vehicle Drive (1.5 hrs)",
+          "description": "Trek down from Ghandruk to Nayapul, passing terrace fields and river valleys. Meet your vehicle at Nayapul and drive back to Pokhara for lakeside relaxation."
+        },
+        {
+          "day": "Day 09",
+          "title": "Pokhara-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (6-7 hrs)",
+          "description": "Drive back from Pokhara to Kathmandu along the scenic Prithvi Highway. Check into your hotel in Kathmandu."
+        },
+        {
+          "day": "Day 10",
+          "title": "Kathmandu Sightseeing (Bhaktapur, Boudhanath & Pashupatinath)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of historic Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to spiritual Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 11",
+          "title": "Kathmandu Valley Sightseeing (Patan, Swayambhunath & Kathmandu Durbar Square)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Explore Patan Durbar Square (Krishna Mandir, Patan Museum), Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square (Kumari Ghar)."
+        },
+        {
+          "day": "Day 12",
+          "title": "Dakshinkali, Chobhar, Pharping & Kirtipur Tour with Cultural Dinner",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Excursion to southern Kathmandu Valley: Dakshinkali Temple, Chobhar Gorge, Pharping Buddhist Monasteries, and historic hilltop Newari town of Kirtipur. Farewell traditional Nepali dinner with cultural performance."
+        },
+        {
+          "day": "Day 13",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara & Lumbini city tour with an English speaking local guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "All applicable monument entrance fees",
+        "Trekking guide & Porter",
+        "TIMS & ACAP trekking permits",
+        "First Aid Kit & Trekking bag",
+        "All government and local taxes",
+        "Daily buffet breakfast in all hotels/lodges",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 5 Nights Kathmandu, 2 Nights Chitwan, 1 Night Lumbini, 2 Nights Pokhara, 2 Nights Trekking Lodges"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver, guide & porters (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan and trekking days: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "5 Nights The Soaltee Kathmandu | 2 Nights Jungle Villa Resort Chitwan | 1 Night Buddha Maya Garden Lumbini | 2 Nights Sarangkot Mountain Lodge Pokhara | 2 Nights best available teahouses during Trek",
+        "comfort": "4 Star Hotels in Kathmandu, Chitwan, Lumbini, Pokhara & best teahouses on trek",
+        "standard": "3 Star Hotels in Kathmandu, Chitwan, Lumbini, Pokhara & standard teahouses on trek",
+        "budget": "2 Star Hotels in Kathmandu, Chitwan, Lumbini, Pokhara & budget teahouses on trek"
+      },
+      "faqs": [
+        {
+          "question": "Is the Ghandruk Trek suitable for beginners?",
+          "answer": "Yes, the Ghandruk village trek is rated as Moderate/Easy and is suitable for beginners and families."
+        },
+        {
+          "question": "Are TIMS & ACAP permits included?",
+          "answer": "Yes, both TIMS permits and ACAP permits along with guide and porter services are included."
+        },
+        {
+          "question": "What wildlife activities are included in Chitwan?",
+          "answer": "Elephant or Jeep safari, dugout canoeing on Rapti River, Tharu village walk, Crocodile/Elephant breeding center, and Tharu cultural dance show."
+        }
+      ]
     }
   ],
   "treks": [
@@ -45070,6 +45297,233 @@
         {
           "question": "Is this tour suitable for all age groups?",
           "answer": "Yes, this private vehicle tour is easy-paced and perfect for families, couples, and seniors."
+        }
+      ]
+    },
+    {
+      "id": "13-days-discover-nepal-tour-with-ghandruk-trek",
+      "slug": "13-days-discover-nepal-tour-with-ghandruk-trek",
+      "title": "13 Days Discover Nepal Tour with Ghandruk Trek",
+      "tripCode": "DNTT/T/13D/01",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Chitwan, Lumbini, Ghandruk & Pokhara",
+      "country": "Nepal",
+      "duration": "13 Days / 12 Nights",
+      "price": "1350",
+      "pricingInfo": {
+        "regularPrice": 1700,
+        "sellingPrice": 1350,
+        "currency": "USD",
+        "luxury": {
+          "p1": 3850,
+          "p2": 2800,
+          "p3_5": 2550,
+          "p6_8": 2420,
+          "p9plus": 2320
+        },
+        "comfort": {
+          "p1": 3000,
+          "p2": 2100,
+          "p3_5": 1900,
+          "p6_8": 1780,
+          "p9plus": 1680
+        },
+        "standard": {
+          "p1": 2500,
+          "p2": 1700,
+          "p3_5": 1540,
+          "p6_8": 1450,
+          "p9plus": 1350
+        },
+        "budget": {
+          "p1": 2400,
+          "p2": 1600,
+          "p3_5": 1450,
+          "p6_8": 1350,
+          "p9plus": 1290
+        }
+      },
+      "maxAltitude": "1,940m / 6,365ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Moderate",
+      "transportation": "Private Vehicle & Trekking",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "Combine Chitwan wildlife safaris, Buddha birthplace Lumbini, beginner-friendly Ghandruk Gurung village trek, Pokhara lakes, and 3 full days of Kathmandu UNESCO heritage & southern valley exploration.",
+      "overview": "The 13 Days Discover Nepal Tour with Ghandruk Trek is a perfect combination of cultural exploration and trekking in Nepal. Your journey begins as you are warmly welcomed by a representative from Destination Nepal Tours & Travels at Tribhuvan International Airport. The first day is free to relax or explore with an optional tour.\n\nAfter a delightful breakfast, you will drive through scenic hill areas alongside the Trishuli and Narayani rivers to reach Chitwan. Enjoy two nights here, experiencing the Tharu cultural program, elephant safari or jeep safari, crocodile breeding center, and canoeing in the Rapti River. Next, head to Lumbini, the birthplace of Lord Buddha, with a guided tour of its sacred sites.\n\nFrom Lumbini, drive to Pokhara, where you’ll visit Bindabasini Temple, Davis Fall, Gupteshwor Mahadev Cave, Seti Gorge, and a Tibetan refugee camp. Begin your trek the next day, driving to Phedi and trekking to Tolka. Continue trekking to Ghandruk, a picturesque Gurung village, and descend to Nayapul before returning to Pokhara.\n\nDrive or optionally fly back to Kathmandu, followed by sightseeing at Boudhanath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square. Visit Patan Durbar Square, Swayambhunath Stupa, and Kathmandu Durbar Square the next day. Conclude your cultural journey with visits to Dakshinkali, Chobhar, Pharping, and Kirtipur, and enjoy a traditional Nepali dinner with a cultural show.\n\nThis tour combines Nepal’s cultural treasures with the beauty of the Ghandruk Trek, creating memories to cherish for a lifetime.",
+      "highlights": [
+        "Diverse Experiences in One Journey: Blends Nepal's cultural richness with the stunning beauty of the Himalayas. From Lumbini Buddha birthplace to Annapurna Ghandruk trek.",
+        "Picturesque Ghandruk Trek: Walk through lush rhododendron forests, traditional Gurung villages, and terraced fields with spectacular views of Annapurna South & Machhapuchhre.",
+        "Wildlife Adventures in Chitwan: Jungle safaris, Rapti river dugout canoeing, birdwatching, and Tharu cultural program.",
+        "Cultural & Spiritual Exploration: Discover UNESCO World Heritage sites including Boudhanath, Pashupatinath, Bhaktapur, Patan, and Swayambhunath.",
+        "Southern Kathmandu Exploration: Excursion to Dakshinkali Temple, Chobhar Gorge, Pharping Monasteries, Kirtipur village, and a farewell cultural dinner."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 5-6 hrs)",
+          "description": "Drive from Kathmandu to Chitwan National Park. Check into your resort, take a walk through the traditional Tharu village, and enjoy an evening Tharu cultural dance show."
+        },
+        {
+          "day": "Day 03",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 04",
+          "title": "Chitwan-Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Chitwan to Lumbini, the sacred birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 05",
+          "title": "Lumbini-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Lumbini to Pokhara. Visit Bindabasini Temple, Seti Gorge, Gupteshwor Mahadev Cave, Davis Fall, Tibetan Refugee Camp, and Phewa Lake boating."
+        },
+        {
+          "day": "Day 06",
+          "title": "Pokhara-Tolka [Altitude 1700m/5578ft]",
+          "maxAltitude": "1,700m / 5,578ft",
+          "accommodation": "Trekking Lodge in Tolka [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private Vehicle Drive to Phedi (45 mins) & Trekking (3-4 hrs)",
+          "description": "Drive from Pokhara to Phedi/Kande, then begin your scenic trek through Australian Camp and Pothana ridge villages to reach Tolka."
+        },
+        {
+          "day": "Day 07",
+          "title": "Tolka-Ghandruk [Altitude 1940m/6365ft]",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Trekking Lodge in Ghandruk [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4-5 hrs)",
+          "description": "Trek down to Landruk village and cross the Modi Khola river suspension bridge before ascending stone steps to Ghandruk village, renowned for traditional Gurung culture and views of Annapurna South."
+        },
+        {
+          "day": "Day 08",
+          "title": "Ghandruk-Nayapul Trek & Drive to Pokhara",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4 hrs) & Private Vehicle Drive (1.5 hrs)",
+          "description": "Trek down from Ghandruk to Nayapul, passing terrace fields and river valleys. Meet your vehicle at Nayapul and drive back to Pokhara for lakeside relaxation."
+        },
+        {
+          "day": "Day 09",
+          "title": "Pokhara-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (6-7 hrs)",
+          "description": "Drive back from Pokhara to Kathmandu along the scenic Prithvi Highway. Check into your hotel in Kathmandu."
+        },
+        {
+          "day": "Day 10",
+          "title": "Kathmandu Sightseeing (Bhaktapur, Boudhanath & Pashupatinath)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of historic Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to spiritual Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 11",
+          "title": "Kathmandu Valley Sightseeing (Patan, Swayambhunath & Kathmandu Durbar Square)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Explore Patan Durbar Square (Krishna Mandir, Patan Museum), Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square (Kumari Ghar)."
+        },
+        {
+          "day": "Day 12",
+          "title": "Dakshinkali, Chobhar, Pharping & Kirtipur Tour with Cultural Dinner",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Excursion to southern Kathmandu Valley: Dakshinkali Temple, Chobhar Gorge, Pharping Buddhist Monasteries, and historic hilltop Newari town of Kirtipur. Farewell traditional Nepali dinner with cultural performance."
+        },
+        {
+          "day": "Day 13",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara & Lumbini city tour with an English speaking local guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "All applicable monument entrance fees",
+        "Trekking guide & Porter",
+        "TIMS & ACAP trekking permits",
+        "First Aid Kit & Trekking bag",
+        "All government and local taxes",
+        "Daily buffet breakfast in all hotels/lodges",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 5 Nights Kathmandu, 2 Nights Chitwan, 1 Night Lumbini, 2 Nights Pokhara, 2 Nights Trekking Lodges"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver, guide & porters (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan and trekking days: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "5 Nights The Soaltee Kathmandu | 2 Nights Jungle Villa Resort Chitwan | 1 Night Buddha Maya Garden Lumbini | 2 Nights Sarangkot Mountain Lodge Pokhara | 2 Nights best available teahouses during Trek",
+        "comfort": "4 Star Hotels in Kathmandu, Chitwan, Lumbini, Pokhara & best teahouses on trek",
+        "standard": "3 Star Hotels in Kathmandu, Chitwan, Lumbini, Pokhara & standard teahouses on trek",
+        "budget": "2 Star Hotels in Kathmandu, Chitwan, Lumbini, Pokhara & budget teahouses on trek"
+      },
+      "faqs": [
+        {
+          "question": "Is the Ghandruk Trek suitable for beginners?",
+          "answer": "Yes, the Ghandruk village trek is rated as Moderate/Easy and is suitable for beginners and families."
+        },
+        {
+          "question": "Are TIMS & ACAP permits included?",
+          "answer": "Yes, both TIMS permits and ACAP permits along with guide and porter services are included."
+        },
+        {
+          "question": "What wildlife activities are included in Chitwan?",
+          "answer": "Elephant or Jeep safari, dugout canoeing on Rapti River, Tharu village walk, Crocodile/Elephant breeding center, and Tharu cultural dance show."
         }
       ]
     }
