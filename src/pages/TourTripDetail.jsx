@@ -534,7 +534,14 @@ const TourTripDetail = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {trip.gallery.map((img, i) => (
                     <div key={i} className="rounded-2xl overflow-hidden shadow-sm group relative aspect-square bg-gray-100 cursor-pointer">
-                      {img.url && <img src={img.url} alt={img.alt || 'Gallery image'} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />}
+                      {img.url && (
+                        <img 
+                          src={img.url} 
+                          alt={img.alt || 'Gallery image'} 
+                          onError={(e) => { e.target.onerror = null; e.target.src = '/images/nepal luxuary.jpg'; }}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                        />
+                      )}
                     </div>
                   ))}
                 </div>
