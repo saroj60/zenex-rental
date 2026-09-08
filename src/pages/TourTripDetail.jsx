@@ -429,67 +429,67 @@ const TourTripDetail = () => {
             <section id="overview" className="space-y-8 md:space-y-12 scroll-mt-28">
               
               {/* TRIP FACTS GRID */}
-              <div className="bg-[#eef5ef] p-4 sm:p-6 md:p-8 rounded-2xl border border-emerald-100/50 shadow-sm">
-                <h2 className="text-base sm:text-lg font-bold text-gray-800 mb-4 sm:mb-6">Trip Facts</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-3.5 sm:gap-5">
+              <div className="bg-[#eff6f1] rounded-2xl p-6 md:p-8 border border-green-100 shadow-sm">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Trip Facts</h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
                   {trip.country && (
-                    <div className="flex items-center gap-3">
-                      <Globe className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Country</p><p className="text-sm font-bold text-gray-800">{trip.country}</p></div>
+                    <div className="flex gap-3">
+                      <Globe className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Country</p><p className="text-sm font-bold text-gray-900">{trip.country}</p></div>
                     </div>
                   )}
                   {trip.duration && (
-                    <div className="flex items-center gap-3">
-                      <CalendarDays className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Duration</p><p className="text-sm font-bold text-gray-800">{formatDuration(trip.duration, trip.durationUnit)}</p></div>
+                    <div className="flex gap-3">
+                      <CalendarDays className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Duration</p><p className="text-sm font-bold text-gray-900">{formatDuration(trip.duration, trip.durationUnit)}</p></div>
                     </div>
                   )}
                   {trip.grade && (
-                    <div className="flex items-center gap-3">
-                      <Activity className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Trip Grade</p><p className="text-sm font-bold text-gray-800">{trip.grade}</p></div>
+                    <div className="flex gap-3">
+                      <Activity className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Trip Grade</p><p className="text-sm font-bold text-gray-900">{trip.grade}</p></div>
                     </div>
                   )}
                   {trip.maxAltitude && (
-                    <div className="flex items-center gap-3">
-                      <Mountain className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Max. Altitude</p><p className="text-sm font-bold text-gray-800">{trip.maxAltitude} {trip.altitudeUnit}</p></div>
+                    <div className="flex gap-3">
+                      <Mountain className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Max. Altitude</p><p className="text-sm font-bold text-gray-900">{trip.maxAltitude} {trip.altitudeUnit}</p></div>
                     </div>
                   )}
                   {trip.startLocation && (
-                    <div className="flex items-center gap-3">
-                      <MapPin className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Starts</p><p className="text-sm font-bold text-gray-800">{trip.startLocation}</p></div>
+                    <div className="flex gap-3">
+                      <MapPin className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Starts</p><p className="text-sm font-bold text-gray-900">{trip.startLocation}</p></div>
                     </div>
                   )}
                   {trip.endLocation && (
-                    <div className="flex items-center gap-3">
-                      <MapPin className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Ends</p><p className="text-sm font-bold text-gray-800">{trip.endLocation}</p></div>
+                    <div className="flex gap-3">
+                      <MapPin className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Ends</p><p className="text-sm font-bold text-gray-900">{trip.endLocation}</p></div>
                     </div>
                   )}
                   {trip.activities && (
-                    <div className="flex items-center gap-3">
-                      <Compass className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Activities</p><p className="text-sm font-bold text-gray-800">{Array.isArray(trip.activities) ? trip.activities.join(' / ') : trip.activities}</p></div>
+                    <div className="flex gap-3">
+                      <Compass className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Activities</p><p className="text-sm font-bold text-gray-900">{Array.isArray(trip.activities) ? trip.activities.join(' / ') : trip.activities}</p></div>
                     </div>
                   )}
                   {trip.accommodation && (
-                    <div className="flex items-center gap-3">
-                      <Bed className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Accommodation</p><p className="text-sm font-bold text-gray-800">{trip.accommodation}</p></div>
+                    <div className="flex gap-3">
+                      <Bed className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Accommodation</p><p className="text-sm font-bold text-gray-900">{trip.accommodation}</p></div>
                     </div>
                   )}
                   {trip.meals && (
-                    <div className="flex items-center gap-3">
-                      <Utensils className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Meals</p><p className="text-sm font-bold text-gray-800">{Array.isArray(trip.meals) ? trip.meals.join(', ') : trip.meals}</p></div>
+                    <div className="flex gap-3">
+                      <Utensils className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Meals</p><p className="text-sm font-bold text-gray-900">{Array.isArray(trip.meals) ? trip.meals.join(', ') : trip.meals}</p></div>
                     </div>
                   )}
                   {trip.bestTime && (
-                    <div className="flex items-center gap-3">
-                      <CloudSun className="text-gray-600" size={24} strokeWidth={1.5} />
-                      <div><p className="text-xs text-gray-500 font-medium leading-tight">Best Time</p><p className="text-sm font-bold text-gray-800">{trip.bestTime}</p></div>
+                    <div className="flex gap-3">
+                      <CloudSun className="w-6 h-6 text-gray-500 shrink-0" />
+                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Best Time</p><p className="text-sm font-bold text-gray-900">{trip.bestTime}</p></div>
                     </div>
                   )}
                 </div>
@@ -497,11 +497,11 @@ const TourTripDetail = () => {
 
               {/* Description Overview / Package Introduction */}
               <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3">
-                  <FileText className="text-[#e53a24]" size={28} /> Package Introduction & Overview
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3 font-serif">
+                  <BookOpen className="text-green-600" size={28} /> Package Introduction & Overview
                 </h2>
                 <div 
-                  className="prose prose-red max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
+                  className="prose prose-emerald max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
                   dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trip.description || trip.overview) }}
                 />
               </div>

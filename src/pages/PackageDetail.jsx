@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils, HelpCircle, ChevronDown, Star } from 'lucide-react';
+import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils, HelpCircle, ChevronDown, Star, BookOpen } from 'lucide-react';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import { useAppData } from '../context/AppDataContext';
 
@@ -13828,24 +13828,21 @@ const PackageDetail = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           
           <div className="lg:col-span-2 space-y-10">
-            {/* Quick Info Grid */}
+            {/* Quick Info / Trip Facts Grid */}
             {pkg.quickInfo && (
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 mb-10">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
+              <div className="bg-[#eff6f1] rounded-2xl p-6 md:p-8 border border-green-100 shadow-sm scroll-mt-24">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Trip Facts</h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
                   {pkg.quickInfo.map((info, idx) => {
                     const IconComponent = {
                       Calendar, Flag, Mountain, Sun, Users, BarChart, Car, MapPin
                     }[info.icon] || Info;
                     return (
-                      <div key={idx} className="flex items-center">
-                        <div className="w-12 h-12 rounded border border-gray-200 flex items-center justify-center shrink-0 mr-4">
-                          <IconComponent className="text-gray-700" size={24} />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-sm text-gray-500 font-medium truncate">{info.label}</p>
-                          <p className="text-[#1e3a8a] font-semibold text-sm leading-tight mt-0.5 break-words hyphens-auto">
-                            {info.value.replace(/\//g, '/\u200B')}
-                          </p>
+                      <div key={idx} className="flex gap-3">
+                        <IconComponent className="w-6 h-6 text-gray-500 shrink-0" />
+                        <div>
+                          <p className="text-[11px] text-gray-500 uppercase font-semibold">{info.label}</p>
+                          <p className="text-sm font-bold text-gray-900">{info.value}</p>
                         </div>
                       </div>
                     );
@@ -13857,11 +13854,11 @@ const PackageDetail = () => {
             {/* Package Introduction & Overview */}
             {(pkg.overview || pkg.description) && (
               <div id="overview" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e3a8a] mb-6 flex items-center gap-3">
-                  <FileText className="text-[#0F766E]" size={28} /> Package Introduction & Overview
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3 font-serif">
+                  <BookOpen className="text-green-600" size={28} /> Package Introduction & Overview
                 </h2>
                 <div 
-                  className="prose prose-blue max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
+                  className="prose prose-emerald max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
                   dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(pkg.overview || pkg.description) }}
                 />
               </div>
