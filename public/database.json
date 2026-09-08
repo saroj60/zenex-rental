@@ -11465,6 +11465,234 @@
           "answer": "Yes, it is an easy private tour with comfortable vehicle transfers and flight options, making it ideal for families and travelers of all ages."
         }
       ]
+    },
+    {
+      "id": "13-days-explore-nepal-tour-with-poon-hill-trek",
+      "slug": "13-days-explore-nepal-tour-with-poon-hill-trek",
+      "title": "13 Days Explore Nepal Tour with Poon Hill Trek",
+      "tripCode": "DNTT/T/13D/04",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Ghorepani, Poon Hill & Ghandruk Village",
+      "country": "Nepal",
+      "duration": "13 Days / 12 Nights",
+      "price": "1340",
+      "pricingInfo": {
+        "regularPrice": 1650,
+        "sellingPrice": 1340,
+        "currency": "USD",
+        "luxury": {
+          "p1": 3800,
+          "p2": 2750,
+          "p3_5": 2500,
+          "p6_8": 2380,
+          "p9plus": 2280
+        },
+        "comfort": {
+          "p1": 2950,
+          "p2": 2050,
+          "p3_5": 1850,
+          "p6_8": 1740,
+          "p9plus": 1650
+        },
+        "standard": {
+          "p1": 2450,
+          "p2": 1650,
+          "p3_5": 1500,
+          "p6_8": 1420,
+          "p9plus": 1340
+        },
+        "budget": {
+          "p1": 2350,
+          "p2": 1550,
+          "p3_5": 1420,
+          "p6_8": 1340,
+          "p9plus": 1280
+        }
+      },
+      "maxAltitude": "3,210m / 10,531ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Moderate",
+      "transportation": "Private Vehicle & Trekking",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "A comprehensive 13-day adventure: Chitwan wildlife safaris, Buddha birthplace Lumbini, 4-day Ghorepani Poon Hill trek (3,210m) with Annapurna sunrise, Ghandruk Gurung village, Pokhara lakes, and Kathmandu UNESCO heritage.",
+      "overview": "The 13 Days Explore Nepal Tour with Poon Hill Trek is a perfect blend of cultural exploration, natural beauty, and trekking adventure. This tour takes you through Nepal’s iconic destinations, offering diverse experiences for every traveler.\n\nYour journey begins with a warm welcome at Tribhuwan International Airport in Kathmandu. After a free day or optional sightseeing, drive through scenic hills and riversides to Chitwan. Spend two nights enjoying thrilling activities such as Elephant Safari, Canoe Ride, Tharu Cultural Program, and birdwatching at Chitwan National Park.\n\nNext, visit Lumbini, the birthplace of Lord Buddha, for a guided spiritual experience. From Lumbini, head to Pokhara and explore popular attractions like Bindabasini Temple, Davis Falls, Gupteshwor Cave, Tibetan Refugee Camp, and Seti Gorge.\n\nBegin the trekking adventure with a drive to Nayapul, followed by a trek to Tikhedhunga. Trek to Ghorepani the next day, and experience a magical sunrise over the Annapurna and Dhaulagiri ranges from Poon Hill. Continue trekking through Tadapani and Ghandruk, offering stunning mountain views and charming villages. Return to Nayapul and drive back to Pokhara.\n\nConclude your journey with a scenic drive or optional flight to Kathmandu. Visit UNESCO World Heritage Sites such as Boudhanath Stupa, Pashupatinath Temple, Swayambhunath Stupa, and Kathmandu Durbar Square. End the tour with a traditional Nepali dinner and cultural show, creating lasting memories.\n\nThe 13 Days Explore Nepal Tour with Poon Hill Trek is ideal for those seeking a mix of cultural, spiritual, and trekking experiences. It offers an unforgettable journey through Nepal’s breathtaking landscapes and rich heritage.",
+      "highlights": [
+        "Stunning Sunrise at Poon Hill: The highlight of the trek is the breathtaking sunrise view from Poon Hill (3,210m). Witness the golden rays of the sun illuminate the Annapurna and Dhaulagiri ranges.",
+        "A Perfect Mix of Adventure and Culture: Combined trekking through scenic mountain trails, Chitwan wildlife safaris, Buddha's birthplace Lumbini, and UNESCO heritage sites in Kathmandu.",
+        "Immersion in Local Life: Walk through charming mountain villages like Ghandruk, interact with Gurung locals, and experience traditional hill hospitality.",
+        "Thrilling Wildlife Encounters: Enjoy Jeep/Elephant Safari, Rapti River dugout canoeing, and birdwatching in Chitwan National Park.",
+        "Spiritual and Historical Exploration: Sacred pilgrimage visit to Maya Devi Temple in Lumbini plus holy Pashupatinath Temple, Boudhanath Stupa, and Kathmandu Durbar Square."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 5-6 hrs)",
+          "description": "Drive from Kathmandu to Chitwan National Park. Check into your resort, take a walk through the traditional Tharu village, and enjoy an evening Tharu cultural dance show."
+        },
+        {
+          "day": "Day 03",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 04",
+          "title": "Chitwan-Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Chitwan to Lumbini, the sacred birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 05",
+          "title": "Lumbini-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Lumbini to Pokhara. Check into your lakeside hotel and spend a peaceful evening walking along Phewa Lake."
+        },
+        {
+          "day": "Day 06",
+          "title": "Pokhara-Tikhedhunga [Altitude 1480m/4855ft]",
+          "maxAltitude": "1,480m / 4,855ft",
+          "accommodation": "Trekking Lodge in Tikhedhunga [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private Vehicle Drive to Nayapul (1.5 hrs) & Trekking (3-4 hrs)",
+          "description": "Drive from Pokhara to Nayapul, then start your trek along the Modi Khola stream passing through Birethanti to reach Tikhedhunga."
+        },
+        {
+          "day": "Day 07",
+          "title": "Tikhedhunga-Ghorepani [Altitude 2874m/9430ft]",
+          "maxAltitude": "2,874m / 9,430ft",
+          "accommodation": "Trekking Lodge in Ghorepani [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (5-6 hrs)",
+          "description": "Ascend steep stone steps up the Ulleri hill, leading through lush oak and rhododendron forests to the mountain ridge village of Ghorepani."
+        },
+        {
+          "day": "Day 08",
+          "title": "Ghorepani-Poon Hill [3210m/10531ft]-Tadapani [2630m/8628ft]",
+          "maxAltitude": "3,210m / 10,531ft",
+          "accommodation": "Trekking Lodge in Tadapani [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (6-7 hrs)",
+          "description": "Early morning hike up to Poon Hill (3,210m) for a glorious sunrise over Dhaulagiri, Annapurna I, Machhapuchhre, and Nilgiri. Return to Ghorepani for breakfast, then trek through rhododendron forests to Tadapani."
+        },
+        {
+          "day": "Day 09",
+          "title": "Tadapani-Ghandruk [Altitude 1940m/6365ft]",
+          "maxAltitude": "2,630m / 8,628ft",
+          "accommodation": "Trekking Lodge in Ghandruk [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (3-4 hrs)",
+          "description": "Trek downhill through mossy pine forests to Ghandruk village, famous for stone houses, Gurung culture, local museum, and close-up views of Annapurna South and Hiunchuli."
+        },
+        {
+          "day": "Day 10",
+          "title": "Ghandruk-Nayapul Trek & Drive to Pokhara",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4 hrs) & Private Vehicle Drive (1.5 hrs)",
+          "description": "Trek down from Ghandruk to Nayapul, meet your private vehicle, and drive back to Pokhara for lakeside relaxation."
+        },
+        {
+          "day": "Day 11",
+          "title": "Pokhara-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (6-7 hrs)",
+          "description": "Drive back from Pokhara to Kathmandu along the scenic Prithvi Highway. Check into your hotel in Kathmandu."
+        },
+        {
+          "day": "Day 12",
+          "title": "Kathmandu Valley UNESCO Heritage Tour & Cultural Dinner",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of iconic Kathmandu UNESCO World Heritage Sites: Boudhanath Stupa, Pashupatinath Temple, Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square. Conclude with a complimentary traditional Nepali cultural dinner show."
+        },
+        {
+          "day": "Day 13",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time for shopping until transfer to Tribhuvan International Airport for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "Pokhara city tour with an English speaking local guide",
+        "Lumbini guided tour with an English speaking local guide",
+        "All applicable monument entrance fees",
+        "Trekking guide & Porter",
+        "TIMS & ACAP trekking permits",
+        "First Aid Kit & Trekking bag",
+        "All government and local taxes",
+        "Daily buffet breakfast in all hotels/lodges",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 3 Nights Kathmandu, 2 Nights Pokhara, 2 Nights Chitwan, 4 Nights Trekking Lodges, 1 Night Lumbini"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver, guide & porters (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan and trekking days: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "3 Nights The Soaltee Kathmandu | 2 Nights Sarangkot Mountain Lodge Pokhara | 2 Nights Jungle Villa Resort Chitwan | 4 Nights best available teahouses during Trek | 1 Night Buddha Maya Garden Lumbini",
+        "comfort": "4 Star Hotels in Kathmandu, Pokhara, Chitwan, Lumbini & best teahouses on trek",
+        "standard": "3 Star Hotels in Kathmandu, Pokhara, Chitwan, Lumbini & standard teahouses on trek",
+        "budget": "2 Star Hotels in Kathmandu, Pokhara, Chitwan, Lumbini & budget teahouses on trek"
+      },
+      "faqs": [
+        {
+          "question": "What is included in the 13 Days Explore Nepal Tour with Poon Hill Trek?",
+          "answer": "The package includes Chitwan jungle safari with meals, Lumbini guided tour, 4-day Poon Hill trek with TIMS & ACAP permits, guide & porter, Pokhara city tour, Kathmandu heritage tour, and farewell cultural dinner."
+        },
+        {
+          "question": "What is the maximum altitude reached on this tour?",
+          "answer": "The highest altitude reached is Poon Hill viewpoint at 3,210 meters (10,531 feet)."
+        },
+        {
+          "question": "Is trekking experience required for Poon Hill?",
+          "answer": "No prior trekking experience is required. The Poon Hill trek is rated as Moderate and suitable for anyone with basic physical fitness."
+        }
+      ]
     }
   ],
   "treks": [
@@ -44162,6 +44390,234 @@
         {
           "question": "Is this tour suitable for families?",
           "answer": "Yes, it is an easy private tour with comfortable vehicle transfers and flight options, making it ideal for families and travelers of all ages."
+        }
+      ]
+    },
+    {
+      "id": "13-days-explore-nepal-tour-with-poon-hill-trek",
+      "slug": "13-days-explore-nepal-tour-with-poon-hill-trek",
+      "title": "13 Days Explore Nepal Tour with Poon Hill Trek",
+      "tripCode": "DNTT/T/13D/04",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Ghorepani, Poon Hill & Ghandruk Village",
+      "country": "Nepal",
+      "duration": "13 Days / 12 Nights",
+      "price": "1340",
+      "pricingInfo": {
+        "regularPrice": 1650,
+        "sellingPrice": 1340,
+        "currency": "USD",
+        "luxury": {
+          "p1": 3800,
+          "p2": 2750,
+          "p3_5": 2500,
+          "p6_8": 2380,
+          "p9plus": 2280
+        },
+        "comfort": {
+          "p1": 2950,
+          "p2": 2050,
+          "p3_5": 1850,
+          "p6_8": 1740,
+          "p9plus": 1650
+        },
+        "standard": {
+          "p1": 2450,
+          "p2": 1650,
+          "p3_5": 1500,
+          "p6_8": 1420,
+          "p9plus": 1340
+        },
+        "budget": {
+          "p1": 2350,
+          "p2": 1550,
+          "p3_5": 1420,
+          "p6_8": 1340,
+          "p9plus": 1280
+        }
+      },
+      "maxAltitude": "3,210m / 10,531ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Moderate",
+      "transportation": "Private Vehicle & Trekking",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "A comprehensive 13-day adventure: Chitwan wildlife safaris, Buddha birthplace Lumbini, 4-day Ghorepani Poon Hill trek (3,210m) with Annapurna sunrise, Ghandruk Gurung village, Pokhara lakes, and Kathmandu UNESCO heritage.",
+      "overview": "The 13 Days Explore Nepal Tour with Poon Hill Trek is a perfect blend of cultural exploration, natural beauty, and trekking adventure. This tour takes you through Nepal’s iconic destinations, offering diverse experiences for every traveler.\n\nYour journey begins with a warm welcome at Tribhuwan International Airport in Kathmandu. After a free day or optional sightseeing, drive through scenic hills and riversides to Chitwan. Spend two nights enjoying thrilling activities such as Elephant Safari, Canoe Ride, Tharu Cultural Program, and birdwatching at Chitwan National Park.\n\nNext, visit Lumbini, the birthplace of Lord Buddha, for a guided spiritual experience. From Lumbini, head to Pokhara and explore popular attractions like Bindabasini Temple, Davis Falls, Gupteshwor Cave, Tibetan Refugee Camp, and Seti Gorge.\n\nBegin the trekking adventure with a drive to Nayapul, followed by a trek to Tikhedhunga. Trek to Ghorepani the next day, and experience a magical sunrise over the Annapurna and Dhaulagiri ranges from Poon Hill. Continue trekking through Tadapani and Ghandruk, offering stunning mountain views and charming villages. Return to Nayapul and drive back to Pokhara.\n\nConclude your journey with a scenic drive or optional flight to Kathmandu. Visit UNESCO World Heritage Sites such as Boudhanath Stupa, Pashupatinath Temple, Swayambhunath Stupa, and Kathmandu Durbar Square. End the tour with a traditional Nepali dinner and cultural show, creating lasting memories.\n\nThe 13 Days Explore Nepal Tour with Poon Hill Trek is ideal for those seeking a mix of cultural, spiritual, and trekking experiences. It offers an unforgettable journey through Nepal’s breathtaking landscapes and rich heritage.",
+      "highlights": [
+        "Stunning Sunrise at Poon Hill: The highlight of the trek is the breathtaking sunrise view from Poon Hill (3,210m). Witness the golden rays of the sun illuminate the Annapurna and Dhaulagiri ranges.",
+        "A Perfect Mix of Adventure and Culture: Combined trekking through scenic mountain trails, Chitwan wildlife safaris, Buddha's birthplace Lumbini, and UNESCO heritage sites in Kathmandu.",
+        "Immersion in Local Life: Walk through charming mountain villages like Ghandruk, interact with Gurung locals, and experience traditional hill hospitality.",
+        "Thrilling Wildlife Encounters: Enjoy Jeep/Elephant Safari, Rapti River dugout canoeing, and birdwatching in Chitwan National Park.",
+        "Spiritual and Historical Exploration: Sacred pilgrimage visit to Maya Devi Temple in Lumbini plus holy Pashupatinath Temple, Boudhanath Stupa, and Kathmandu Durbar Square."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 5-6 hrs)",
+          "description": "Drive from Kathmandu to Chitwan National Park. Check into your resort, take a walk through the traditional Tharu village, and enjoy an evening Tharu cultural dance show."
+        },
+        {
+          "day": "Day 03",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 04",
+          "title": "Chitwan-Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Chitwan to Lumbini, the sacred birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 05",
+          "title": "Lumbini-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Lumbini to Pokhara. Check into your lakeside hotel and spend a peaceful evening walking along Phewa Lake."
+        },
+        {
+          "day": "Day 06",
+          "title": "Pokhara-Tikhedhunga [Altitude 1480m/4855ft]",
+          "maxAltitude": "1,480m / 4,855ft",
+          "accommodation": "Trekking Lodge in Tikhedhunga [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private Vehicle Drive to Nayapul (1.5 hrs) & Trekking (3-4 hrs)",
+          "description": "Drive from Pokhara to Nayapul, then start your trek along the Modi Khola stream passing through Birethanti to reach Tikhedhunga."
+        },
+        {
+          "day": "Day 07",
+          "title": "Tikhedhunga-Ghorepani [Altitude 2874m/9430ft]",
+          "maxAltitude": "2,874m / 9,430ft",
+          "accommodation": "Trekking Lodge in Ghorepani [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (5-6 hrs)",
+          "description": "Ascend steep stone steps up the Ulleri hill, leading through lush oak and rhododendron forests to the mountain ridge village of Ghorepani."
+        },
+        {
+          "day": "Day 08",
+          "title": "Ghorepani-Poon Hill [3210m/10531ft]-Tadapani [2630m/8628ft]",
+          "maxAltitude": "3,210m / 10,531ft",
+          "accommodation": "Trekking Lodge in Tadapani [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (6-7 hrs)",
+          "description": "Early morning hike up to Poon Hill (3,210m) for a glorious sunrise over Dhaulagiri, Annapurna I, Machhapuchhre, and Nilgiri. Return to Ghorepani for breakfast, then trek through rhododendron forests to Tadapani."
+        },
+        {
+          "day": "Day 09",
+          "title": "Tadapani-Ghandruk [Altitude 1940m/6365ft]",
+          "maxAltitude": "2,630m / 8,628ft",
+          "accommodation": "Trekking Lodge in Ghandruk [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (3-4 hrs)",
+          "description": "Trek downhill through mossy pine forests to Ghandruk village, famous for stone houses, Gurung culture, local museum, and close-up views of Annapurna South and Hiunchuli."
+        },
+        {
+          "day": "Day 10",
+          "title": "Ghandruk-Nayapul Trek & Drive to Pokhara",
+          "maxAltitude": "1,940m / 6,365ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Trekking (4 hrs) & Private Vehicle Drive (1.5 hrs)",
+          "description": "Trek down from Ghandruk to Nayapul, meet your private vehicle, and drive back to Pokhara for lakeside relaxation."
+        },
+        {
+          "day": "Day 11",
+          "title": "Pokhara-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (6-7 hrs)",
+          "description": "Drive back from Pokhara to Kathmandu along the scenic Prithvi Highway. Check into your hotel in Kathmandu."
+        },
+        {
+          "day": "Day 12",
+          "title": "Kathmandu Valley UNESCO Heritage Tour & Cultural Dinner",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of iconic Kathmandu UNESCO World Heritage Sites: Boudhanath Stupa, Pashupatinath Temple, Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square. Conclude with a complimentary traditional Nepali cultural dinner show."
+        },
+        {
+          "day": "Day 13",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time for shopping until transfer to Tribhuvan International Airport for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "Pokhara city tour with an English speaking local guide",
+        "Lumbini guided tour with an English speaking local guide",
+        "All applicable monument entrance fees",
+        "Trekking guide & Porter",
+        "TIMS & ACAP trekking permits",
+        "First Aid Kit & Trekking bag",
+        "All government and local taxes",
+        "Daily buffet breakfast in all hotels/lodges",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 3 Nights Kathmandu, 2 Nights Pokhara, 2 Nights Chitwan, 4 Nights Trekking Lodges, 1 Night Lumbini"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver, guide & porters (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan and trekking days: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "3 Nights The Soaltee Kathmandu | 2 Nights Sarangkot Mountain Lodge Pokhara | 2 Nights Jungle Villa Resort Chitwan | 4 Nights best available teahouses during Trek | 1 Night Buddha Maya Garden Lumbini",
+        "comfort": "4 Star Hotels in Kathmandu, Pokhara, Chitwan, Lumbini & best teahouses on trek",
+        "standard": "3 Star Hotels in Kathmandu, Pokhara, Chitwan, Lumbini & standard teahouses on trek",
+        "budget": "2 Star Hotels in Kathmandu, Pokhara, Chitwan, Lumbini & budget teahouses on trek"
+      },
+      "faqs": [
+        {
+          "question": "What is included in the 13 Days Explore Nepal Tour with Poon Hill Trek?",
+          "answer": "The package includes Chitwan jungle safari with meals, Lumbini guided tour, 4-day Poon Hill trek with TIMS & ACAP permits, guide & porter, Pokhara city tour, Kathmandu heritage tour, and farewell cultural dinner."
+        },
+        {
+          "question": "What is the maximum altitude reached on this tour?",
+          "answer": "The highest altitude reached is Poon Hill viewpoint at 3,210 meters (10,531 feet)."
+        },
+        {
+          "question": "Is trekking experience required for Poon Hill?",
+          "answer": "No prior trekking experience is required. The Poon Hill trek is rated as Moderate and suitable for anyone with basic physical fitness."
         }
       ]
     }
