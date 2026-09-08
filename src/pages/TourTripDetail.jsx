@@ -939,31 +939,34 @@ const TourTripDetail = () => {
                   )}
 
                   {/* Inputs */}
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
-                      <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Date</span>
-                      <div className="flex items-center justify-between">
-                        <input 
-                          type="date" 
-                          value={date}
-                          onChange={(e) => setDate(e.target.value)}
-                          className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
-                        />
-                      </div>
+                  <div className="space-y-4">
+                    <div className="bg-white border border-gray-200 rounded-xl p-3.5 focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
+                      <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1 block">Travel Date</label>
+                      <input 
+                        type="date" 
+                        value={date}
+                        onChange={(e) => setDate(e.target.value)}
+                        className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
+                      />
                     </div>
-                    <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
-                      <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Travelers</span>
-                      <select 
-                        value={travelers} 
-                        onChange={(e) => setTravelers(e.target.value)}
-                        className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer appearance-none"
-                      >
-                        <option value="1">1 Person</option>
-                        <option value="2">2 Persons</option>
-                        <option value="3">3 Persons</option>
-                        <option value="4">4 Persons</option>
-                        <option value="5">5+ Persons</option>
-                      </select>
+
+                    <div className="bg-white border border-gray-200 rounded-xl p-3.5">
+                      <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-2 block">Number of Travelers</label>
+                      <div className="flex items-center justify-between">
+                        <button 
+                          onClick={() => setTravelers(String(Math.max(1, (parseInt(travelers, 10) || 1) - 1)))}
+                          className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer"
+                        >
+                          -
+                        </button>
+                        <span className="font-extrabold text-[#1e3a8a] text-base">{travelers} {parseInt(travelers, 10) === 1 ? 'Person' : 'Persons'}</span>
+                        <button 
+                          onClick={() => setTravelers(String((parseInt(travelers, 10) || 1) + 1))}
+                          className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer"
+                        >
+                          +
+                        </button>
+                      </div>
                     </div>
                   </div>
 

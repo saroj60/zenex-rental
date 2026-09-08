@@ -707,7 +707,9 @@ const TrekDetail = () => {
             {/* Includes / Excludes & Add-ons */}
             {(inclusions.length > 0 || exclusions.length > 0 || addons.length > 0) && (
               <div id="cost" className="scroll-mt-40 pb-6 border-b border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-8 font-serif">Cost Details</h2>
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-8 flex items-center gap-3 font-serif">
+                  <DollarSign className="text-emerald-600" size={28} /> Cost Details (Inclusions & Exclusions)
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {inclusions.length > 0 && (
                     <div className="bg-green-50/80 border border-green-100 p-6 rounded-2xl">
@@ -1190,33 +1192,44 @@ const TrekDetail = () => {
                 </div>
                 
                 {/* Inputs */}
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
-                    <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Date</span>
+                <div className="space-y-4">
+                  <div className="bg-white border border-gray-200 rounded-xl p-3.5 focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
+                    <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1 block">Travel Date</label>
+                    <input 
+                      type="date" 
+                      value={date}
+                      onChange={(e) => setDate(e.target.value)}
+                      className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
+                    />
+                  </div>
+
+                  <div className="bg-white border border-gray-200 rounded-xl p-3.5">
+                    <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-2 block">Number of Travelers</label>
                     <div className="flex items-center justify-between">
-                      <input 
-                        type="date" 
-                        value={date}
-                        onChange={(e) => setDate(e.target.value)}
-                        className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
-                      />
+                      <button 
+                        onClick={() => setPersons(Math.max(1, persons - 1))}
+                        className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer"
+                      >
+                        -
+                      </button>
+                      <span className="font-extrabold text-[#1e3a8a] text-base">{persons} {persons === 1 ? 'Person' : 'Persons'}</span>
+                      <button 
+                        onClick={() => setPersons(persons + 1)}
+                        className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer"
+                      >
+                        +
+                      </button>
                     </div>
                   </div>
-                  <div className="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-center focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
-                    <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1">Travelers</span>
-                    <select 
-                      value={persons}
-                      onChange={(e) => setPersons(Number(e.target.value))}
-                      className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer appearance-none"
-                    >
-                      <option value={1}>1 Person</option>
-                      <option value={2}>2 Persons</option>
-                      <option value={3}>3 Persons</option>
-                      <option value={4}>4 Persons</option>
-                      <option value={5}>5+ Persons</option>
-                    </select>
-                  </div>
                 </div>
+
+                {/* Calculated Total Price */}
+                {perPersonPrice > 0 && (
+                  <div className="bg-emerald-50/70 border border-emerald-100 rounded-xl p-3.5 flex justify-between items-center">
+                    <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider">Total Price ({persons} Pax):</span>
+                    <span className="text-xl font-black text-emerald-700">US${(perPersonPrice * persons).toLocaleString()}</span>
+                  </div>
+                )}
 
                 {/* Buttons */}
                 <div className="space-y-3 pt-2">
