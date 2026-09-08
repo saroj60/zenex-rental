@@ -7,7 +7,7 @@ import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, Play, ImageIcon,
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
 import { formatDuration } from '../utils/duration';
-import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML } from '../utils/detailFormatters';
+import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt } from '../utils/detailFormatters';
 
 const TourTripDetail = () => {
   const { slug, id } = useParams();
@@ -174,9 +174,7 @@ const TourTripDetail = () => {
         category: baseTrip.category || 'Tours',
         destination: baseTrip.destination || baseTrip.location || 'Nepal',
         price: cleanPrice,
-        shortDescription: extra.overview 
-          ? (extra.overview.replace(/<[^>]*>/g, '').split(/[.!?]/)[0] + '.') 
-          : (baseTrip.overview || baseTrip.description || baseTrip.title),
+        shortDescription: getCleanExcerpt(extra.overview || baseTrip.shortDescription || baseTrip.overview || baseTrip.description || baseTrip.title),
         description: extra.overview || baseTrip.overview || baseTrip.description || baseTrip.title,
         overview: extra.overview || baseTrip.overview,
         status: 'Published',
@@ -355,7 +353,7 @@ const TourTripDetail = () => {
           <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-1 leading-tight tracking-tight">{trip.title}</h1>
           <TrustReviewBadges title={trip.title} />
           {trip.shortDescription && (
-            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium">{trip.shortDescription}</p>
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-3">{getCleanExcerpt(trip.shortDescription)}</p>
           )}
         </div>
       </div>

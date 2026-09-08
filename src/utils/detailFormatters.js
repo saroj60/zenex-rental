@@ -69,6 +69,26 @@ export const getHighlightsList = (data) => {
   }).filter(item => item.title && item.title.trim() !== '');
 };
 
+export const getCleanExcerpt = (text, maxSentences = 2) => {
+  if (!text || typeof text !== 'string') return '';
+  // 1. Remove markdown headers e.g. ### Header
+  let clean = text.replace(/###\s+[^\n.]+/g, '');
+  // 2. Remove markdown list bullets and bold asterisks
+  clean = clean.replace(/^[*\-]\s+/gm, '');
+  clean = clean.replace(/\*\*(.*?)\*\*/g, '$1');
+  clean = clean.replace(/\*(.*?)\*/g, '$1');
+  clean = clean.replace(/###/g, '');
+  clean = clean.replace(/-\s*Key Highlight:\s*/gi, '');
+  // 3. Normalize whitespace
+  clean = clean.replace(/\s+/g, ' ').trim();
+  // 4. Extract first maxSentences sentences
+  const sentences = clean.match(/[^.!?]+[.!?]+/g);
+  if (sentences && sentences.length > 0) {
+    return sentences.slice(0, maxSentences).join(' ').trim();
+  }
+  return clean.slice(0, 220).trim();
+};
+
 export const formatMarkdownToHTML = (text) => {
   if (!text) return '';
   if (typeof text !== 'string') return String(text);

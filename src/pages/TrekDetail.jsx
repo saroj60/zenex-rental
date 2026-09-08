@@ -10,7 +10,7 @@ import { useAppData } from '../context/AppDataContext';
 import SEO from '../components/SEO';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
-import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML } from '../utils/detailFormatters';
+import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt } from '../utils/detailFormatters';
 
 const TrekDetail = () => {
   const { id } = useParams();
@@ -335,6 +335,9 @@ const TrekDetail = () => {
           
           <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 leading-tight tracking-tight">{trek.title}</h1>
           <TrustReviewBadges title={trek.title} />
+          {trekDesc && (
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-3 mb-4">{getCleanExcerpt(trekDesc)}</p>
+          )}
           
           <div className="flex flex-wrap items-center gap-6 text-slate-600">
             {trek.rating && (
