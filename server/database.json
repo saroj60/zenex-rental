@@ -7838,6 +7838,290 @@
           "answer": "We require a flexible deposit to confirm your reservation. Free date changes are supported up to 30 days before arrival, and full refunds are guaranteed if trips are canceled due to official travel warnings."
         }
       ]
+    },
+    {
+      "id": "9-days-kathmandu-pokhara-lumbini-chitwan-tour",
+      "slug": "9-days-kathmandu-pokhara-lumbini-chitwan-tour",
+      "title": "9 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour",
+      "tripCode": "DNTT/T/9D/02",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Nepal - Kathmandu, Pokhara, Lumbini, Chitwan & Nagarkot",
+      "country": "Nepal",
+      "duration": "9 Days / 8 Nights",
+      "price": "US$635",
+      "pricingInfo": {
+        "regularPrice": 750,
+        "sellingPrice": 635,
+        "currency": "USD",
+        "luxury": {
+          "p1": 2795,
+          "p2": 1705,
+          "p3_5": 1625,
+          "p6_8": 1430,
+          "p9plus": 1365
+        },
+        "comfort": {
+          "p1": 2080,
+          "p2": 1240,
+          "p3_5": 1180,
+          "p6_8": 985,
+          "p9plus": 915
+        },
+        "standard": {
+          "p1": 1665,
+          "p2": 990,
+          "p3_5": 935,
+          "p6_8": 750,
+          "p9plus": 685
+        },
+        "budget": {
+          "p1": 1600,
+          "p2": 935,
+          "p3_5": 885,
+          "p6_8": 700,
+          "p9plus": 635
+        }
+      },
+      "maxAltitude": "2,175m / 7,136ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Easy",
+      "transportation": "Private AC Vehicle",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "Explore Nepal's complete golden circuit in 9 Days: Kathmandu's UNESCO heritage, Sarangkot sunrise & Phewa lake in Pokhara, Buddha's birthplace in Lumbini, Chitwan jungle safari, and Nagarkot Himalayan panorama.",
+      "overview": "The 9 Days Kathmandu Pokhara Lumbini Chitwan Tour is the perfect way to explore Nepal's rich cultural heritage, natural beauty, and wildlife. Starting with a warm welcome at Tribhuwan International Airport, you will embark on a scenic drive to Pokhara the next day. The journey includes a sunrise view from Sarangkot, offering breathtaking Himalayan scenery. After breakfast, you'll visit Bindabasini Temple, Seti Gorge, Davis Falls, Gupteshwor Cave, the Tibetan Refugee Camp, and enjoy a peaceful boat ride on Phewa Lake. In the evening, a visit to the World Peace Stupa awaits. The next day, the tour continues to Lumbini, the birthplace of Lord Buddha. Explore the sacred grounds before heading toward Chitwan.\n\nIn Chitwan, you'll stay for two nights and experience the Tharu village, the traditional Tharu cultural program, and enjoy an exciting canoe ride in the Rapti River. Depending on your hotel location, you can choose between an Elephant Safari or Jeep Safari, and visit the Crocodile Breeding Center or Elephant Breeding Center. From Chitwan, you'll drive to Nagarkot for a night stay and witness a stunning sunrise with panoramic Himalayan views. After breakfast, visit Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple in Kathmandu. The day ends with a traditional Nepali dinner and live cultural show at a local restaurant. The tour concludes the following day with departure, leaving you with lasting memories of Nepal's beauty and culture.\n\nThis 9 Days Kathmandu Pokhara Lumbini Chitwan Tour package offers a diverse experience, blending cultural, natural, and wildlife attractions, making it an ideal itinerary for those seeking a comprehensive Nepal tour.",
+      "highlights": [
+        "Diverse Experiences: Perfect mix of cultural heritage, natural beauty, and wildlife adventures in one seamless itinerary",
+        "Stunning Scenic Views: Sunrise over the Himalayas from Sarangkot and Nagarkot, plus peaceful boating on Phewa Lake",
+        "Cultural Immersion: Visit sacred UNESCO heritage sites including Lumbini (birthplace of Lord Buddha), Bhaktapur Durbar Square, Boudhanath, and Pashupatinath",
+        "Wildlife Adventure: Jungle safari in Chitwan National Park, Rapti River dugout canoeing, and Tharu cultural program",
+        "Relaxing Pace: Well-planned overnight stops providing a comfortable balance between sightseeing, adventure, and relaxation"
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport (KTM), you will be greeted by a representative from Zenex Travels & Tours. Transfer to your hotel in Kathmandu. Free time to relax or explore the vibrant streets of Thamel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu to Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (210 km, 5-6 hrs)",
+          "description": "After breakfast, enjoy a scenic drive (approx. 210 km, 5-6 hrs) to Pokhara passing through Trishuli river valleys, lush terrace fields, and mountain viewpoints. In the evening, free time to stroll around Lakeside and Phewa Lake."
+        },
+        {
+          "day": "Day 03",
+          "title": "Pokhara Sarangkot Sunrise & City Sightseeing",
+          "maxAltitude": "1,700m / 5,577ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Early morning drive to Sarangkot (1700m) for a magnificent Himalayan sunrise over the Annapurna & Dhaulagiri ranges. Return for breakfast, followed by a sightseeing tour of Bindabasini Temple, Davis Falls, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, and Seti River Gorge. Evening boat ride on Phewa Lake."
+        },
+        {
+          "day": "Day 04",
+          "title": "Pokhara to Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (250 km, 5-6 hrs)",
+          "description": "After breakfast, drive to Lumbini (250 km, 5-6 hrs). Upon arrival and hotel check-in, our expert local guide will lead you on a pilgrimage tour of the sacred birthplace of Lord Buddha, including the Maya Devi Temple, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 05",
+          "title": "Lumbini to Chitwan National Park [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Safari Lodge [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (150 km, 3-4 hrs)",
+          "description": "Drive to Chitwan National Park (150 km, 3-4 hrs). Check in at your safari resort and receive a brief orientation from naturalists. Enjoy a Tharu village walk, a late-afternoon grassland safari, and an evening Tharu cultural dance performance."
+        },
+        {
+          "day": "Day 06",
+          "title": "Chitwan Jungle Safari & Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Safari Lodge [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Jeep",
+          "description": "Embark on an early morning birdwatching tour followed by a dugout canoe adventure on the Rapti River to view mugger crocodiles and aquatic birds. Participate in an exciting Elephant Safari or Jeep Safari and visit the Crocodile/Elephant Breeding Center."
+        },
+        {
+          "day": "Day 07",
+          "title": "Chitwan to Nagarkot Hill Station [altitude 2175m/4136ft]",
+          "maxAltitude": "2,175m / 7,136ft",
+          "accommodation": "Resort in Nagarkot [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (210 km, 5-6 hrs)",
+          "description": "After breakfast, drive from the lowlands of Chitwan up to the scenic hill station of Nagarkot (210 km, 5-6 hrs). Relax in the cool mountain air and enjoy sunset views over the Kathmandu valley and Langtang ranges."
+        },
+        {
+          "day": "Day 08",
+          "title": "Nagarkot Sunrise - Kathmandu Sightseeing & Cultural Dinner",
+          "maxAltitude": "2,175m / 7,136ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Complimentary Cultural Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Wake up early for a spectacular sunrise over Mount Everest and Himalayan panoramas. Drive to Kathmandu to explore Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple. In the evening, enjoy a complimentary farewell Nepali dinner with live cultural music & dance."
+        },
+        {
+          "day": "Day 09",
+          "title": "Final Departure from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until your scheduled departure. Transfer to Tribhuvan International Airport (KTM) for your flight back home, ending your memorable 9-day Nepal adventure."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All transfers and sightseeing tours in comfortable private AC vehicle",
+        "English-speaking professional tour guide in Kathmandu, Pokhara, Lumbini, and Nagarkot",
+        "Expert naturalist guide, entrance fees, and jungle activities in Chitwan National Park",
+        "Lumbini guided sightseeing tour with local expert guide",
+        "All applicable monument entrance fees and government taxes",
+        "Daily buffet breakfast at all hotels (Plus full board meals B/L/D in Chitwan)",
+        "All accommodation in specified hotel categories (Luxury/Comfort/Standard/Budget)",
+        "01 Complimentary Nepali farewell dinner with live traditional cultural dance show",
+        "Local SIM Card with unlimited data for 9 days",
+        "Welcome arrival garlands / Khada (traditional scarf) & 2 bottles (500ml) mineral water daily",
+        "24/7 WhatsApp helpdesk support throughout the trip"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver & guide (Recommended: US$ 5/day driver, US$ 10/day guide)",
+        "Meals outside Chitwan (Lunch & Dinner: US$ 10-20 per meal)",
+        "Personal expenses such as travel insurance, medical fees, laundry, drinks, and shopping",
+        "Expenses arising due to flight delays, landslides, road blockades, or emergency evacuations"
+      ],
+      "hotelOptions": [
+        {
+          "category": "Luxury (5 Star)",
+          "ktm": "The Soaltee Kathmandu or similar (2 Nights)",
+          "pkr": "Sarangkot Mountain Lodge or similar (2 Nights)",
+          "cht": "Jungle Villa Resort / Safari Villa (2 Nights)",
+          "ngk": "Hotel Mystic Mountain (1 Night)",
+          "lmb": "Buddha Maya Garden (1 Night)"
+        },
+        {
+          "category": "Comfort (4 Star)",
+          "ktm": "Hotel Shanker / Aloft Kathmandu (2 Nights)",
+          "pkr": "Pokhara Grande / Temple Tree Resort (2 Nights)",
+          "cht": "Safari Villa Resort (2 Nights)",
+          "ngk": "Club Himalaya Nagarkot (1 Night)",
+          "lmb": "Hotel Hokke Lumbini (1 Night)"
+        },
+        {
+          "category": "Standard (3 Star)",
+          "ktm": "Hotel Thamel House / Similar (2 Nights)",
+          "pkr": "Hotel Waterfront / Mount View (2 Nights)",
+          "cht": "Chitwan Adventure Resort (2 Nights)",
+          "ngk": "Hotel Country Villa (1 Night)",
+          "lmb": "Lumbini Garden Hotel (1 Night)"
+        },
+        {
+          "category": "Budget (2 Star)",
+          "ktm": "Hotel Eco Country / Similar (2 Nights)",
+          "pkr": "Hotel Lake Star / Similar (2 Nights)",
+          "cht": "Chitwan Wildlife Lodge (2 Nights)",
+          "ngk": "Nagarkot Sunshine Hotel (1 Night)",
+          "lmb": "Lumbini Peace Hotel (1 Night)"
+        }
+      ],
+      "optionalActivities": [
+        {
+          "name": "Kathmandu Rickshaw Tour",
+          "price": "Price on request",
+          "desc": "Explore narrow alleys of Asan and Thamel on a traditional rickshaw."
+        },
+        {
+          "name": "Kathmandu Everest Scenic Flight",
+          "price": "US$ 250 Per person",
+          "desc": "1-hour morning flight for spectacular views of Mt. Everest and Himalayan peaks."
+        }
+      ],
+      "estimatedPersonalExpenses": [
+        {
+          "category": "Luxury",
+          "cost": "US$ 60-70 Per person per night"
+        },
+        {
+          "category": "Comfort",
+          "cost": "US$ 50-60 Per person per night"
+        },
+        {
+          "category": "Standard",
+          "cost": "US$ 40-50 Per person per night"
+        },
+        {
+          "category": "Budget",
+          "cost": "US$ 30-40 Per person per night"
+        }
+      ],
+      "seasonDetails": [
+        {
+          "season": "Spring (March – May)",
+          "highlights": "Pleasant and warm (20°C to 35°C), clear Himalayan views, blooming rhododendrons, and active wildlife safari in Chitwan."
+        },
+        {
+          "season": "Summer/Monsoon (June – August)",
+          "highlights": "Hot and humid (20°C to 40°C), lush green landscapes, dramatic waterfalls like Davis Falls, and budget travel deals."
+        },
+        {
+          "season": "Autumn (September – November)",
+          "highlights": "Cool and clear (15°C to 25°C), crystal-clear mountain views, perfect outdoor weather, and major Nepali festivals (Dashain & Tihar)."
+        },
+        {
+          "season": "Winter (December – February)",
+          "highlights": "Crisp and clear (5°C to 20°C), magnificent sunrise/sunset mountain panoramas, and peaceful tourist sites."
+        }
+      ],
+      "generalInformation": {
+        "visaInfo": "All visitors (except Indian nationals) require a passport (minimum 6 months validity) and visa. On-arrival tourist visa available at Tribhuvan International Airport (15 Days: US$ 30, 30 Days: US$ 50, 90 Days: US$ 125). Complete online form within 10 days of arrival.",
+        "tipping": "Tipping is recommended (US$ 5/day driver, US$ 10/day guide, 10% in restaurants). Tips should be given separately for driver and guide.",
+        "bookingConditions": "Confirmed upon 40% deposit via credit/debit card or cash. Remaining 60% is payable upon arrival in Kathmandu.",
+        "cancellationPolicy": "20% fee (>30 days), 30% (15-29 days), 60% (7-14 days), 90% (<=6 days/no-show). Postponement of travel dates is free of charge."
+      },
+      "whyBookWithUs": [
+        "Government licensed local tour operator with 16 years of operation experience",
+        "99% satisfied customers & 100% instant booking confirmation",
+        "Prompt response with 24/7 WhatsApp helpdesk (+977 9851148105)",
+        "Secure online payment gateway without additional card charges",
+        "Fully insured private vehicles, trained drivers, and licensed tour guides",
+        "Flexible tailor-made itineraries tailored to your dates and preferences"
+      ],
+      "valueAddedServices": [
+        "Welcome arrival garlands / Khada (traditional scarf)",
+        "02 Units of 500ml water bottles per day per person",
+        "01 Complimentary Nepali dinner with typical Nepal cultural dance",
+        "Local SIM Card with unlimited data for 9 days",
+        "24 hrs WhatsApp help desk for any problem"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 38,
+      "gallery": [
+        "/images/destinations/pokhara.png",
+        "/images/destinations/kathmandu.png",
+        "/images/destinations/chitwan.png",
+        "/images/lumbini.jpg",
+        "/images/nagarkot.jpg"
+      ],
+      "seoTitle": "9 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour - Zenex Travels",
+      "seoDescription": "Book 9 Days Kathmandu Pokhara Lumbini Chitwan Tour. Explore Buddha's birthplace, Chitwan jungle safari, Sarangkot sunrise, and heritage sites in Nepal.",
+      "seoKeywords": "9 days kathmandu pokhara lumbini chitwan tour, nepal tour package, lumbini tour, chitwan safari tour, sarangkot sunrise tour, zenex travels"
     }
   ],
   "treks": [
@@ -36757,6 +37041,307 @@
           "answer": "We require a flexible deposit to confirm your reservation. Free date changes are supported up to 30 days before arrival, and full refunds are guaranteed if trips are canceled due to official travel warnings."
         }
       ]
+    },
+    {
+      "id": "9-days-kathmandu-pokhara-lumbini-chitwan-tour",
+      "title": "9 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour",
+      "slug": "9-days-kathmandu-pokhara-lumbini-chitwan-tour",
+      "tripCode": "DNTT/T/9D/02",
+      "region": "golden-circuit-nepal",
+      "regionName": "Nepal Heritage & Wildlife Tours",
+      "status": "Published",
+      "badge": "Best Seller Tour",
+      "price": 635,
+      "originalPrice": 750,
+      "duration": 9,
+      "durationUnit": "Days",
+      "grade": "Easy",
+      "maxAltitude": "2,175m / 7,136ft",
+      "startsAt": "Kathmandu",
+      "endsAt": "Kathmandu",
+      "activities": [
+        "Heritage Sightseeing",
+        "Jungle Safari",
+        "Sunrise View",
+        "Cultural Exploration",
+        "Boating"
+      ],
+      "bestSeason": [
+        "Spring (March - May)",
+        "Autumn (Sept - Nov)"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 38,
+      "recommendationRate": 99,
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "gallery": [
+        "/images/destinations/pokhara.png",
+        "/images/destinations/kathmandu.png",
+        "/images/destinations/chitwan.png",
+        "/images/lumbini.jpg",
+        "/images/nagarkot.jpg"
+      ],
+      "shortDescription": "Explore Nepal's complete golden circuit in 9 Days: Kathmandu's UNESCO heritage, Sarangkot sunrise & Phewa lake in Pokhara, Buddha's birthplace in Lumbini, Chitwan jungle safari, and Nagarkot Himalayan panorama.",
+      "overview": "The 9 Days Kathmandu Pokhara Lumbini Chitwan Tour is the perfect way to explore Nepal's rich cultural heritage, natural beauty, and wildlife. Starting with a warm welcome at Tribhuwan International Airport, you will embark on a scenic drive to Pokhara the next day. The journey includes a sunrise view from Sarangkot, offering breathtaking Himalayan scenery. After breakfast, you'll visit Bindabasini Temple, Seti Gorge, Davis Falls, Gupteshwor Cave, the Tibetan Refugee Camp, and enjoy a peaceful boat ride on Phewa Lake. In the evening, a visit to the World Peace Stupa awaits. The next day, the tour continues to Lumbini, the birthplace of Lord Buddha. Explore the sacred grounds before heading toward Chitwan.\n\nIn Chitwan, you'll stay for two nights and experience the Tharu village, the traditional Tharu cultural program, and enjoy an exciting canoe ride in the Rapti River. Depending on your hotel location, you can choose between an Elephant Safari or Jeep Safari, and visit the Crocodile Breeding Center or Elephant Breeding Center. From Chitwan, you'll drive to Nagarkot for a night stay and witness a stunning sunrise with panoramic Himalayan views. After breakfast, visit Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple in Kathmandu. The day ends with a traditional Nepali dinner and live cultural show at a local restaurant. The tour concludes the following day with departure, leaving you with lasting memories of Nepal's beauty and culture.\n\nThis 9 Days Kathmandu Pokhara Lumbini Chitwan Tour package offers a diverse experience, blending cultural, natural, and wildlife attractions, making it an ideal itinerary for those seeking a comprehensive Nepal tour.",
+      "highlights": [
+        "Diverse Experiences: Perfect mix of cultural heritage, natural beauty, and wildlife adventures in one seamless itinerary",
+        "Stunning Scenic Views: Sunrise over the Himalayas from Sarangkot and Nagarkot, plus peaceful boating on Phewa Lake",
+        "Cultural Immersion: Visit sacred UNESCO heritage sites including Lumbini (birthplace of Lord Buddha), Bhaktapur Durbar Square, Boudhanath, and Pashupatinath",
+        "Wildlife Adventure: Jungle safari in Chitwan National Park, Rapti River dugout canoeing, and Tharu cultural program",
+        "Relaxing Pace: Well-planned overnight stops providing a comfortable balance between sightseeing, adventure, and relaxation"
+      ],
+      "pricingInfo": {
+        "regularPrice": 750,
+        "sellingPrice": 635,
+        "currency": "USD",
+        "luxury": {
+          "p1": 2795,
+          "p2": 1705,
+          "p3_5": 1625,
+          "p6_8": 1430,
+          "p9plus": 1365
+        },
+        "comfort": {
+          "p1": 2080,
+          "p2": 1240,
+          "p3_5": 1180,
+          "p6_8": 985,
+          "p9plus": 915
+        },
+        "standard": {
+          "p1": 1665,
+          "p2": 990,
+          "p3_5": 935,
+          "p6_8": 750,
+          "p9plus": 685
+        },
+        "budget": {
+          "p1": 1600,
+          "p2": 935,
+          "p3_5": 885,
+          "p6_8": 700,
+          "p9plus": 635
+        }
+      },
+      "inclusions": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All transfers and sightseeing tours in comfortable private AC vehicle",
+        "English-speaking professional tour guide in Kathmandu, Pokhara, Lumbini, and Nagarkot",
+        "Expert naturalist guide, entrance fees, and jungle activities in Chitwan National Park",
+        "Lumbini guided sightseeing tour with local expert guide",
+        "All applicable monument entrance fees and government taxes",
+        "Daily buffet breakfast at all hotels (Plus full board meals B/L/D in Chitwan)",
+        "All accommodation in specified hotel categories (Luxury/Comfort/Standard/Budget)",
+        "01 Complimentary Nepali farewell dinner with live traditional cultural dance show",
+        "Local SIM Card with unlimited data for 9 days",
+        "Welcome arrival garlands / Khada (traditional scarf) & 2 bottles (500ml) mineral water daily",
+        "24/7 WhatsApp helpdesk support throughout the trip"
+      ],
+      "exclusions": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver & guide (Recommended: US$ 5/day driver, US$ 10/day guide)",
+        "Meals outside Chitwan (Lunch & Dinner: US$ 10-20 per meal)",
+        "Personal expenses such as travel insurance, medical fees, laundry, drinks, and shopping",
+        "Expenses arising due to flight delays, landslides, road blockades, or emergency evacuations"
+      ],
+      "hotelOptions": [
+        {
+          "category": "Luxury (5 Star)",
+          "ktm": "The Soaltee Kathmandu or similar (2 Nights)",
+          "pkr": "Sarangkot Mountain Lodge or similar (2 Nights)",
+          "cht": "Jungle Villa Resort / Safari Villa (2 Nights)",
+          "ngk": "Hotel Mystic Mountain (1 Night)",
+          "lmb": "Buddha Maya Garden (1 Night)"
+        },
+        {
+          "category": "Comfort (4 Star)",
+          "ktm": "Hotel Shanker / Aloft Kathmandu (2 Nights)",
+          "pkr": "Pokhara Grande / Temple Tree Resort (2 Nights)",
+          "cht": "Safari Villa Resort (2 Nights)",
+          "ngk": "Club Himalaya Nagarkot (1 Night)",
+          "lmb": "Hotel Hokke Lumbini (1 Night)"
+        },
+        {
+          "category": "Standard (3 Star)",
+          "ktm": "Hotel Thamel House / Similar (2 Nights)",
+          "pkr": "Hotel Waterfront / Mount View (2 Nights)",
+          "cht": "Chitwan Adventure Resort (2 Nights)",
+          "ngk": "Hotel Country Villa (1 Night)",
+          "lmb": "Lumbini Garden Hotel (1 Night)"
+        },
+        {
+          "category": "Budget (2 Star)",
+          "ktm": "Hotel Eco Country / Similar (2 Nights)",
+          "pkr": "Hotel Lake Star / Similar (2 Nights)",
+          "cht": "Chitwan Wildlife Lodge (2 Nights)",
+          "ngk": "Nagarkot Sunshine Hotel (1 Night)",
+          "lmb": "Lumbini Peace Hotel (1 Night)"
+        }
+      ],
+      "optionalActivities": [
+        {
+          "name": "Kathmandu Rickshaw Tour",
+          "price": "Price on request",
+          "desc": "Explore narrow alleys of Asan and Thamel on a traditional rickshaw."
+        },
+        {
+          "name": "Kathmandu Everest Scenic Flight",
+          "price": "US$ 250 Per person",
+          "desc": "1-hour morning flight for spectacular views of Mt. Everest and Himalayan peaks."
+        }
+      ],
+      "estimatedPersonalExpenses": [
+        {
+          "category": "Luxury",
+          "cost": "US$ 60-70 Per person per night"
+        },
+        {
+          "category": "Comfort",
+          "cost": "US$ 50-60 Per person per night"
+        },
+        {
+          "category": "Standard",
+          "cost": "US$ 40-50 Per person per night"
+        },
+        {
+          "category": "Budget",
+          "cost": "US$ 30-40 Per person per night"
+        }
+      ],
+      "seasonDetails": [
+        {
+          "season": "Spring (March – May)",
+          "highlights": "Pleasant and warm (20°C to 35°C), clear Himalayan views, blooming rhododendrons, and active wildlife safari in Chitwan."
+        },
+        {
+          "season": "Summer/Monsoon (June – August)",
+          "highlights": "Hot and humid (20°C to 40°C), lush green landscapes, dramatic waterfalls like Davis Falls, and budget travel deals."
+        },
+        {
+          "season": "Autumn (September – November)",
+          "highlights": "Cool and clear (15°C to 25°C), crystal-clear mountain views, perfect outdoor weather, and major Nepali festivals (Dashain & Tihar)."
+        },
+        {
+          "season": "Winter (December – February)",
+          "highlights": "Crisp and clear (5°C to 20°C), magnificent sunrise/sunset mountain panoramas, and peaceful tourist sites."
+        }
+      ],
+      "generalInformation": {
+        "visaInfo": "All visitors (except Indian nationals) require a passport (minimum 6 months validity) and visa. On-arrival tourist visa available at Tribhuvan International Airport (15 Days: US$ 30, 30 Days: US$ 50, 90 Days: US$ 125). Complete online form within 10 days of arrival.",
+        "tipping": "Tipping is recommended (US$ 5/day driver, US$ 10/day guide, 10% in restaurants). Tips should be given separately for driver and guide.",
+        "bookingConditions": "Confirmed upon 40% deposit via credit/debit card or cash. Remaining 60% is payable upon arrival in Kathmandu.",
+        "cancellationPolicy": "20% fee (>30 days), 30% (15-29 days), 60% (7-14 days), 90% (<=6 days/no-show). Postponement of travel dates is free of charge."
+      },
+      "whyBookWithUs": [
+        "Government licensed local tour operator with 16 years of operation experience",
+        "99% satisfied customers & 100% instant booking confirmation",
+        "Prompt response with 24/7 WhatsApp helpdesk (+977 9851148105)",
+        "Secure online payment gateway without additional card charges",
+        "Fully insured private vehicles, trained drivers, and licensed tour guides",
+        "Flexible tailor-made itineraries tailored to your dates and preferences"
+      ],
+      "valueAddedServices": [
+        "Welcome arrival garlands / Khada (traditional scarf)",
+        "02 Units of 500ml water bottles per day per person",
+        "01 Complimentary Nepali dinner with typical Nepal cultural dance",
+        "Local SIM Card with unlimited data for 9 days",
+        "24 hrs WhatsApp help desk for any problem"
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport (KTM), you will be greeted by a representative from Zenex Travels & Tours. Transfer to your hotel in Kathmandu. Free time to relax or explore the vibrant streets of Thamel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu to Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (210 km, 5-6 hrs)",
+          "description": "After breakfast, enjoy a scenic drive (approx. 210 km, 5-6 hrs) to Pokhara passing through Trishuli river valleys, lush terrace fields, and mountain viewpoints. In the evening, free time to stroll around Lakeside and Phewa Lake."
+        },
+        {
+          "day": "Day 03",
+          "title": "Pokhara Sarangkot Sunrise & City Sightseeing",
+          "maxAltitude": "1,700m / 5,577ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Early morning drive to Sarangkot (1700m) for a magnificent Himalayan sunrise over the Annapurna & Dhaulagiri ranges. Return for breakfast, followed by a sightseeing tour of Bindabasini Temple, Davis Falls, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, and Seti River Gorge. Evening boat ride on Phewa Lake."
+        },
+        {
+          "day": "Day 04",
+          "title": "Pokhara to Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (250 km, 5-6 hrs)",
+          "description": "After breakfast, drive to Lumbini (250 km, 5-6 hrs). Upon arrival and hotel check-in, our expert local guide will lead you on a pilgrimage tour of the sacred birthplace of Lord Buddha, including the Maya Devi Temple, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 05",
+          "title": "Lumbini to Chitwan National Park [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Safari Lodge [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (150 km, 3-4 hrs)",
+          "description": "Drive to Chitwan National Park (150 km, 3-4 hrs). Check in at your safari resort and receive a brief orientation from naturalists. Enjoy a Tharu village walk, a late-afternoon grassland safari, and an evening Tharu cultural dance performance."
+        },
+        {
+          "day": "Day 06",
+          "title": "Chitwan Jungle Safari & Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Safari Lodge [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Jeep",
+          "description": "Embark on an early morning birdwatching tour followed by a dugout canoe adventure on the Rapti River to view mugger crocodiles and aquatic birds. Participate in an exciting Elephant Safari or Jeep Safari and visit the Crocodile/Elephant Breeding Center."
+        },
+        {
+          "day": "Day 07",
+          "title": "Chitwan to Nagarkot Hill Station [altitude 2175m/4136ft]",
+          "maxAltitude": "2,175m / 7,136ft",
+          "accommodation": "Resort in Nagarkot [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (210 km, 5-6 hrs)",
+          "description": "After breakfast, drive from the lowlands of Chitwan up to the scenic hill station of Nagarkot (210 km, 5-6 hrs). Relax in the cool mountain air and enjoy sunset views over the Kathmandu valley and Langtang ranges."
+        },
+        {
+          "day": "Day 08",
+          "title": "Nagarkot Sunrise - Kathmandu Sightseeing & Cultural Dinner",
+          "maxAltitude": "2,175m / 7,136ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Complimentary Cultural Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Wake up early for a spectacular sunrise over Mount Everest and Himalayan panoramas. Drive to Kathmandu to explore Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple. In the evening, enjoy a complimentary farewell Nepali dinner with live cultural music & dance."
+        },
+        {
+          "day": "Day 09",
+          "title": "Final Departure from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until your scheduled departure. Transfer to Tribhuvan International Airport (KTM) for your flight back home, ending your memorable 9-day Nepal adventure."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is included in the 9 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour?",
+          "answer": "This package includes private air-conditioned vehicle transfers, professional English-speaking tour guides, Chitwan jungle safari activities, hotel accommodation with breakfast, daily water, SIM card, and a complimentary cultural dinner."
+        },
+        {
+          "question": "Can I customize this 9-day itinerary?",
+          "answer": "Yes, all Zenex Travels tour packages can be customized to adjust hotel category, add days, or include optional activities like the Everest Scenic Flight."
+        }
+      ],
+      "category": "Tours"
     }
   ],
   "blogs": [
