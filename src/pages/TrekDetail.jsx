@@ -359,7 +359,7 @@ const TrekDetail = () => {
           <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 leading-tight tracking-tight">{trek.title}</h1>
           <TrustReviewBadges title={trek.title} />
           {trekDesc && (
-            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-3 mb-4">{getCleanExcerpt(trekDesc)}</p>
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-3 mb-4 text-justify">{getCleanExcerpt(trekDesc)}</p>
           )}
           
           <div className="flex flex-wrap items-center gap-6 text-slate-600">

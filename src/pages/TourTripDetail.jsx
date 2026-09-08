@@ -378,7 +378,7 @@ const TourTripDetail = () => {
           <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-1 leading-tight tracking-tight">{trip.title}</h1>
           <TrustReviewBadges title={trip.title} />
           {trip.shortDescription && (
-            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-3">{getCleanExcerpt(trip.shortDescription)}</p>
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-3 text-justify">{getCleanExcerpt(trip.shortDescription)}</p>
           )}
         </div>
       </div>

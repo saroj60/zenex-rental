@@ -13818,7 +13818,7 @@ const PackageDetail = () => {
           </div>
           
           {pkg.desc && (
-            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-4">{pkg.desc}</p>
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-4 text-justify">{pkg.desc}</p>
           )}
         </div>
       </div>

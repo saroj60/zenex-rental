@@ -125,12 +125,16 @@ export const formatMarkdownToHTML = (text) => {
   html = html.replace(/((?:<li class="ml-5 list-disc my-1.5 text-gray-700">[\s\S]*?<\/li>\s*)+)/g, '<ul class="my-4 space-y-1.5 list-disc pl-5">\n$1</ul>\n');
 
   // 7. Paragraph breaks
-  html = html.replace(/\n\n+/g, '<br/><br/>');
+  html = html.replace(/\n\n+/g, '</p><p class="mt-4 text-gray-700 leading-relaxed text-justify">');
   html = html.replace(/\n/g, ' ');
 
   // 8. Safety cleanup: remove any orphan double asterisks ** or ###
   html = html.replace(/\*\*/g, '');
   html = html.replace(/###/g, '');
+
+  if (!html.startsWith('<') && !html.startsWith('<ul') && !html.startsWith('<h')) {
+    html = `<p class="text-gray-700 leading-relaxed text-justify">${html}</p>`;
+  }
 
   return html;
 };

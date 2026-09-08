@@ -213,3 +213,15 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
+/* Justified Paragraph Text Alignment for Clean Dual-Side Alignment */
+.prose p,
+.prose div,
+#overview p,
+#overview div,
+#itinerary p,
+.text-justify-paragraphs p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
