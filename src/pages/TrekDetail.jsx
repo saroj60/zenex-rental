@@ -447,62 +447,62 @@ const TrekDetail = () => {
                     };
                     const IconComponent = icons[key] || CheckCircle2;
                     return (
-                      <div key={idx} className="flex gap-3">
-                        <IconComponent className="w-6 h-6 text-gray-500 shrink-0" />
-                        <div>
-                          <p className="text-[11px] text-gray-500 uppercase font-semibold">{key}</p>
-                          <p className="text-sm font-bold text-gray-900">{value}</p>
+                      <div key={idx} className="flex gap-3 min-w-0">
+                        <IconComponent className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1">
+                          <p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">{key}</p>
+                          <p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words [word-break:break-word]">{value}</p>
                         </div>
                       </div>
                     );
                   })
                 ) : (
                   <>
-                    <div className="flex gap-3">
-                      <MapPin className="w-6 h-6 text-gray-500 shrink-0" />
-                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Country</p><p className="text-sm font-bold text-gray-900">Nepal</p></div>
+                    <div className="flex gap-3 min-w-0">
+                      <MapPin className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Country</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Nepal</p></div>
                     </div>
-                    <div className="flex gap-3">
-                      <Calendar className="w-6 h-6 text-gray-500 shrink-0" />
-                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Duration</p><p className="text-sm font-bold text-gray-900">{trek.duration}</p></div>
+                    <div className="flex gap-3 min-w-0">
+                      <Calendar className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Duration</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.duration}</p></div>
                     </div>
-                    <div className="flex gap-3">
-                      <Mountain className="w-6 h-6 text-gray-500 shrink-0" />
-                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Trip Grade</p><p className="text-sm font-bold text-gray-900">{trek.difficulty}</p></div>
+                    <div className="flex gap-3 min-w-0">
+                      <Mountain className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Trip Grade</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.difficulty}</p></div>
                     </div>
                     {trek.quickFacts?.maxAltitude && (
-                      <div className="flex gap-3">
-                        <Mountain className="w-6 h-6 text-gray-500 shrink-0" />
-                        <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Max. Altitude</p><p className="text-sm font-bold text-gray-900">{trek.quickFacts.maxAltitude}</p></div>
+                      <div className="flex gap-3 min-w-0">
+                        <Mountain className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Max. Altitude</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts.maxAltitude}</p></div>
                       </div>
                     )}
                     {trek.quickFacts?.region && (
-                      <div className="flex gap-3">
-                        <MapIcon className="w-6 h-6 text-gray-500 shrink-0" />
-                        <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Starts</p><p className="text-sm font-bold text-gray-900">Kathmandu</p></div>
+                      <div className="flex gap-3 min-w-0">
+                        <MapIcon className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Starts</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Kathmandu</p></div>
                       </div>
                     )}
                     {trek.quickFacts?.region && (
-                      <div className="flex gap-3">
-                        <CheckCircle2 className="w-6 h-6 text-gray-500 shrink-0" />
-                        <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Ends</p><p className="text-sm font-bold text-gray-900">Kathmandu</p></div>
+                      <div className="flex gap-3 min-w-0">
+                        <CheckCircle2 className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Ends</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Kathmandu</p></div>
                       </div>
                     )}
-                    <div className="flex gap-3">
-                      <Users className="w-6 h-6 text-gray-500 shrink-0" />
-                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Activities</p><p className="text-sm font-bold text-gray-900">{trek.activity || 'Trekking'}</p></div>
+                    <div className="flex gap-3 min-w-0">
+                      <Users className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Activities</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.activity || 'Trekking'}</p></div>
                     </div>
-                    <div className="flex gap-3">
-                      <Bed className="w-6 h-6 text-gray-500 shrink-0" />
-                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Accommodation</p><p className="text-sm font-bold text-gray-900 line-clamp-1">{trek.quickFacts?.accommodation || 'Hotel / Lodges'}</p></div>
+                    <div className="flex gap-3 min-w-0">
+                      <Bed className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Accommodation</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.accommodation || 'Hotel / Lodges'}</p></div>
                     </div>
-                    <div className="flex gap-3">
-                      <Utensils className="w-6 h-6 text-gray-500 shrink-0" />
-                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Meals</p><p className="text-sm font-bold text-gray-900 line-clamp-1">{trek.quickFacts?.meals || 'Breakfast, Lunch & Dinner'}</p></div>
+                    <div className="flex gap-3 min-w-0">
+                      <Utensils className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Meals</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.meals || 'Breakfast, Lunch & Dinner'}</p></div>
                     </div>
-                    <div className="flex gap-3">
-                      <Sun className="w-6 h-6 text-gray-500 shrink-0" />
-                      <div><p className="text-[11px] text-gray-500 uppercase font-semibold">Best Time</p><p className="text-sm font-bold text-gray-900 line-clamp-1">{trek.quickFacts?.bestSeason || 'Spring & Autumn'}</p></div>
+                    <div className="flex gap-3 min-w-0">
+                      <Sun className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Best Time</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.bestSeason || 'Spring & Autumn'}</p></div>
                     </div>
                   </>
                 )}

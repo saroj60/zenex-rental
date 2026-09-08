@@ -13838,11 +13838,11 @@ const PackageDetail = () => {
                       Calendar, Flag, Mountain, Sun, Users, BarChart, Car, MapPin
                     }[info.icon] || Info;
                     return (
-                      <div key={idx} className="flex gap-3">
-                        <IconComponent className="w-6 h-6 text-gray-500 shrink-0" />
-                        <div>
-                          <p className="text-[11px] text-gray-500 uppercase font-semibold">{info.label}</p>
-                          <p className="text-sm font-bold text-gray-900">{info.value}</p>
+                      <div key={idx} className="flex gap-3 min-w-0">
+                        <IconComponent className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1">
+                          <p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">{info.label}</p>
+                          <p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words [word-break:break-word]">{info.value}</p>
                         </div>
                       </div>
                     );
