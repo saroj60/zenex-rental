@@ -3,6 +3,7 @@ import { useAppData } from '../../context/AppDataContext';
 import { useParams, Link } from 'react-router-dom';
 import { Map as MapIcon, ArrowLeft, Clock, MapPin, Tag, CheckCircle, Edit, Compass, List, DollarSign, Calendar, ChevronDown, ChevronUp, CheckCircle2, XCircle, Puzzle, BookOpen, Briefcase, HelpCircle } from 'lucide-react';
 import { formatDuration } from '../../utils/duration';
+import { formatMarkdownToHTML } from '../../utils/detailFormatters';
 
 const PreviewTourTrip = () => {
   const { id } = useParams();
@@ -162,7 +163,10 @@ const PreviewTourTrip = () => {
                     {trip.essentialInfo.map((info, idx) => (
                       <div key={idx}>
                         <h4 className="font-bold text-lg text-gray-800 mb-2">{info.title}</h4>
-                        <p className="text-gray-600 text-sm whitespace-pre-wrap">{info.content}</p>
+                        <div 
+                          className="prose text-gray-600 text-sm max-w-none"
+                          dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(typeof info === 'string' ? info : (info.content || '')) }}
+                        />
                       </div>
                     ))}
                   </div>

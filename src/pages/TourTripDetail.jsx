@@ -767,7 +767,10 @@ const TourTripDetail = () => {
                     {trip.essentialInfo.map((info, idx) => (
                       <div key={idx} className="bg-orange-50/30 p-6 rounded-2xl border border-orange-100">
                         <h4 className="text-xl font-bold text-gray-900 mb-3">{info.title}</h4>
-                        <p className="text-gray-700 leading-relaxed whitespace-pre-wrap">{info.content}</p>
+                        <div 
+                          className="prose text-gray-700 leading-relaxed text-sm max-w-none"
+                          dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(typeof info === 'string' ? info : (info.content || '')) }}
+                        />
                       </div>
                     ))}
                   </div>
