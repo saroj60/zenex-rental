@@ -13575,6 +13575,248 @@
           "answer": "Yes, it is a comfortable, private vehicle and flight-based tour suitable for families, couples, and travelers of all ages."
         }
       ]
+    },
+    {
+      "id": "15-days-discover-nepal-tour",
+      "slug": "15-days-discover-nepal-tour",
+      "title": "15 Days Discover Nepal Tour",
+      "tripCode": "DNTT/T/15D/02",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Bandipur, Pokhara, Tansen, Lumbini, Chitwan & Dhulikhel",
+      "country": "Nepal",
+      "duration": "15 Days / 14 Nights",
+      "price": "1500",
+      "pricingInfo": {
+        "regularPrice": 1800,
+        "sellingPrice": 1500,
+        "currency": "USD",
+        "luxury": {
+          "p1": 4200,
+          "p2": 3000,
+          "p3_5": 2750,
+          "p6_8": 2600,
+          "p9plus": 2480
+        },
+        "comfort": {
+          "p1": 3200,
+          "p2": 2250,
+          "p3_5": 2050,
+          "p6_8": 1920,
+          "p9plus": 1820
+        },
+        "standard": {
+          "p1": 2700,
+          "p2": 1800,
+          "p3_5": 1650,
+          "p6_8": 1550,
+          "p9plus": 1480
+        },
+        "budget": {
+          "p1": 2550,
+          "p2": 1700,
+          "p3_5": 1550,
+          "p6_8": 1450,
+          "p9plus": 1380
+        }
+      },
+      "maxAltitude": "2,175m / 7,135ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Easy",
+      "transportation": "Private Vehicle",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "An immersive 15-day grand Nepal tour: hilltop Bandipur village, 3 nights in Pokhara with Sarangkot sunrise & twin lakes, 2 nights historic Tansen with Rani Mahal palace, Buddha birthplace Lumbini, 2 nights Chitwan wildlife safari, panoramic Dhulikhel hill station, Bhaktapur UNESCO sites, and full Kathmandu Valley exploration.",
+      "overview": "The 15 Days Discover Nepal Tour is an extensive overland journey designed to showcase the immense cultural diversity, rich history, and breath-taking natural landscapes of Nepal. Traveling comfortably by private air-conditioned vehicle, you will explore hill stations, ancient Newari towns, lake cities, jungle reserves, and holy spiritual birthplaces.\n\nYour tour begins in Kathmandu before heading up to the historic hilltop village of Bandipur, known for its intact Newari architecture and tranquil streets. Next, spend three nights in Pokhara, enjoying early morning Sarangkot sunrise views over the Annapurna range, boating on Phewa and Begnas lakes, visiting World Peace Pagoda, and exploring underground cave temples.\n\nContinue south into the Palpa region to Tansen for two nights, visiting the famous Rani Mahal palace (the Taj Mahal of Nepal) on the banks of the Kali Gandaki River. Journey onward to Lumbini, the serene birthplace of Lord Buddha, to walk through sacred gardens and international monasteries. Experience two full nights in Chitwan National Park featuring wildlife safaris, elephant/jeep excursions, dugout canoe rides, and Tharu cultural programs.\n\nRetreat to the peaceful hill station of Dhulikhel for panoramic views of the eastern Himalayas, then conclude your trip exploring Bhaktapur Durbar Square, sacred Boudhanath & Pashupatinath, Patan, Swayambhunath, and southern Kathmandu Valley (Dakshinkali, Pharping & Kirtipur) with a traditional farewell cultural dinner.",
+      "highlights": [
+        "Comprehensive Grand Nepal Circuit: Full 15-day overland itinerary covering Bandipur, Pokhara, Tansen, Lumbini, Chitwan, Dhulikhel, and Kathmandu.",
+        "3 Nights in Pokhara & Twin Lakes: Extended stay in Pokhara including Sarangkot Himalayan sunrise, Phewa & Begnas Lake boating, and World Peace Pagoda.",
+        "Historic Tansen & Rani Mahal Palace: 2 nights exploring Palpali culture, ancient cobblestone alleys, and the regal Rani Mahal on Kali Gandaki River.",
+        "Spiritual Pilgrimage & Wildlife Safari: Visit Buddha's birthplace in Lumbini plus 2-night all-inclusive safari package in Chitwan National Park.",
+        "Panoramic Dhulikhel & UNESCO Heritage: Overnight in Dhulikhel for Himalayan mountain views, plus complete Kathmandu & Bhaktapur World Heritage tours with a farewell cultural dinner."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Bandipur [Altitude 1030m/3380ft]",
+          "maxAltitude": "1,030m / 3,380ft",
+          "accommodation": "Heritage Hotel in Bandipur [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Kathmandu to Bandipur hilltop Newari village. Walk along vehicle-free stone streets, admire traditional woodcarved architecture, and enjoy mountain views."
+        },
+        {
+          "day": "Day 03",
+          "title": "Bandipur-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 2-3 hrs)",
+          "description": "Drive from Bandipur to Pokhara. Check into your lakeside hotel and enjoy a peaceful evening strolling along Phewa Lake."
+        },
+        {
+          "day": "Day 04",
+          "title": "Pokhara Sightseeing (Sarangkot Sunrise, Phewa Lake Boating, Davis Fall, Gupteshwor Cave & Seti Gorge)",
+          "maxAltitude": "1,600m / 5,250ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Early morning drive to Sarangkot for sunrise views over Annapurna & Dhaulagiri ranges. After breakfast, visit Bindabasini Temple, Seti River Gorge, Gupteshwor Mahadev Cave, Davis Fall, and enjoy Phewa Lake boating to Tal Barahi Temple."
+        },
+        {
+          "day": "Day 05",
+          "title": "Pokhara Sightseeing (Begnas Lake & World Peace Pagoda)",
+          "maxAltitude": "1,100m / 3,608ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Excursion to quiet Begnas Lake for boating and scenic nature walks, followed by a trip up to World Peace Pagoda for panoramic sunset views over Pokhara Valley and Phewa Lake."
+        },
+        {
+          "day": "Day 06",
+          "title": "Pokhara-Tansen [altitude 1350m/4430ft]",
+          "maxAltitude": "1,350m / 4,430ft",
+          "accommodation": "Hotel in Tansen [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Pokhara to Tansen along the scenic Siddhartha Highway. Check into your hotel and explore traditional Palpali streets."
+        },
+        {
+          "day": "Day 07",
+          "title": "Tansen Full Day Sightseeing & Rani Mahal Palace",
+          "maxAltitude": "1,350m / 4,430ft",
+          "accommodation": "Hotel in Tansen [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Full day sightseeing in Tansen: visit Rani Mahal (Taj Mahal of Nepal) on the banks of Kali Gandaki River, Tundikhel, Amar Narayan Temple, and panoramic view points."
+        },
+        {
+          "day": "Day 08",
+          "title": "Tansen-Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 3-4 hrs)",
+          "description": "Drive from Tansen to Lumbini, the sacred birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 09",
+          "title": "Lumbini-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Lumbini to Chitwan National Park. Check into your safari lodge, explore the Tharu village, and enjoy an evening Tharu cultural dance performance."
+        },
+        {
+          "day": "Day 10",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 11",
+          "title": "Chitwan-Dhulikhel [altitude 1550m/5085ft]",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Resort in Dhulikhel [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Chitwan to the quiet hilltop station of Dhulikhel, bypassing inner Kathmandu city. Relax at your resort and enjoy sunset over the eastern Himalayan ranges."
+        },
+        {
+          "day": "Day 12",
+          "title": "Dhulikhel-Kathmandu via Bhaktapur, Boudhanath & Pashupatinath",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Sunrise mountain views from Dhulikhel. Drive to Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 13",
+          "title": "Kathmandu Valley Sightseeing (Patan, Swayambhunath & Kathmandu Durbar Square)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Explore Patan Durbar Square (Krishna Mandir, Patan Museum), Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square (Kumari Ghar)."
+        },
+        {
+          "day": "Day 14",
+          "title": "Southern Kathmandu Excursion (Dakshinkali, Pharping & Kirtipur) with Cultural Dinner",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Excursion to southern Kathmandu Valley: Dakshinkali Temple, Chobhar Gorge, Pharping Buddhist Monasteries, and historic hilltop Newari town of Kirtipur. Farewell traditional Nepali dinner with cultural performance."
+        },
+        {
+          "day": "Day 15",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara, Lumbini & Tansen city tours and Sarangkot Sunrise tour with an English speaking local guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "All applicable monument entrance fees",
+        "All government and local taxes",
+        "Daily buffet breakfast in Kathmandu, Pokhara, Bandipur, Lumbini, Tansen, Dhulikhel",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 4 Nights Kathmandu, 3 Nights Pokhara, 2 Nights Chitwan, 1 Night Dhulikhel, 1 Night Lumbini, 1 Night Bandipur, 2 Nights Tansen"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver & guide (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "4 Nights The Soaltee Kathmandu | 3 Nights Sarangkot Mountain Lodge Pokhara | 2 Nights Jungle Villa Resort Chitwan | 1 Night Dwarika's Resort Dhulikhel | 1 Night Buddha Maya Garden Lumbini | 1 Night The Old Inn Bandipur | 2 Nights Hotel Shreenagar Tansen",
+        "comfort": "4 Star Hotels in Kathmandu, Pokhara, Chitwan, Dhulikhel, Lumbini, Bandipur & Tansen",
+        "standard": "3 Star Hotels in Kathmandu, Pokhara, Chitwan, Dhulikhel, Lumbini, Bandipur & Tansen",
+        "budget": "2 Star Hotels in Kathmandu, Pokhara, Chitwan, Dhulikhel, Lumbini, Bandipur & Tansen"
+      },
+      "faqs": [
+        {
+          "question": "What destinations are covered in the 15-day Discover Nepal Tour?",
+          "answer": "The tour covers Kathmandu, Bandipur hilltop village, Pokhara (3 nights), Tansen (2 nights with Rani Mahal), Lumbini (Buddha's birthplace), Chitwan National Park (2 nights safari), Dhulikhel hill station, Bhaktapur, and southern Kathmandu Valley."
+        },
+        {
+          "question": "Is this package suitable for families and senior travelers?",
+          "answer": "Yes, this private vehicle tour is easy-paced without trekking, offering comfortable transfers and accessible sightseeing."
+        },
+        {
+          "question": "Are all meals in Chitwan included?",
+          "answer": "Yes, daily buffet breakfast, lunch, and dinner are fully included during your 2-night stay in Chitwan National Park."
+        }
+      ]
     }
   ],
   "treks": [
@@ -48382,6 +48624,248 @@
         {
           "question": "Is this package suitable for families?",
           "answer": "Yes, it is a comfortable, private vehicle and flight-based tour suitable for families, couples, and travelers of all ages."
+        }
+      ]
+    },
+    {
+      "id": "15-days-discover-nepal-tour",
+      "slug": "15-days-discover-nepal-tour",
+      "title": "15 Days Discover Nepal Tour",
+      "tripCode": "DNTT/T/15D/02",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Bandipur, Pokhara, Tansen, Lumbini, Chitwan & Dhulikhel",
+      "country": "Nepal",
+      "duration": "15 Days / 14 Nights",
+      "price": "1500",
+      "pricingInfo": {
+        "regularPrice": 1800,
+        "sellingPrice": 1500,
+        "currency": "USD",
+        "luxury": {
+          "p1": 4200,
+          "p2": 3000,
+          "p3_5": 2750,
+          "p6_8": 2600,
+          "p9plus": 2480
+        },
+        "comfort": {
+          "p1": 3200,
+          "p2": 2250,
+          "p3_5": 2050,
+          "p6_8": 1920,
+          "p9plus": 1820
+        },
+        "standard": {
+          "p1": 2700,
+          "p2": 1800,
+          "p3_5": 1650,
+          "p6_8": 1550,
+          "p9plus": 1480
+        },
+        "budget": {
+          "p1": 2550,
+          "p2": 1700,
+          "p3_5": 1550,
+          "p6_8": 1450,
+          "p9plus": 1380
+        }
+      },
+      "maxAltitude": "2,175m / 7,135ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Sep-Nov & Mar-May",
+      "grade": "Easy",
+      "transportation": "Private Vehicle",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "An immersive 15-day grand Nepal tour: hilltop Bandipur village, 3 nights in Pokhara with Sarangkot sunrise & twin lakes, 2 nights historic Tansen with Rani Mahal palace, Buddha birthplace Lumbini, 2 nights Chitwan wildlife safari, panoramic Dhulikhel hill station, Bhaktapur UNESCO sites, and full Kathmandu Valley exploration.",
+      "overview": "The 15 Days Discover Nepal Tour is an extensive overland journey designed to showcase the immense cultural diversity, rich history, and breath-taking natural landscapes of Nepal. Traveling comfortably by private air-conditioned vehicle, you will explore hill stations, ancient Newari towns, lake cities, jungle reserves, and holy spiritual birthplaces.\n\nYour tour begins in Kathmandu before heading up to the historic hilltop village of Bandipur, known for its intact Newari architecture and tranquil streets. Next, spend three nights in Pokhara, enjoying early morning Sarangkot sunrise views over the Annapurna range, boating on Phewa and Begnas lakes, visiting World Peace Pagoda, and exploring underground cave temples.\n\nContinue south into the Palpa region to Tansen for two nights, visiting the famous Rani Mahal palace (the Taj Mahal of Nepal) on the banks of the Kali Gandaki River. Journey onward to Lumbini, the serene birthplace of Lord Buddha, to walk through sacred gardens and international monasteries. Experience two full nights in Chitwan National Park featuring wildlife safaris, elephant/jeep excursions, dugout canoe rides, and Tharu cultural programs.\n\nRetreat to the peaceful hill station of Dhulikhel for panoramic views of the eastern Himalayas, then conclude your trip exploring Bhaktapur Durbar Square, sacred Boudhanath & Pashupatinath, Patan, Swayambhunath, and southern Kathmandu Valley (Dakshinkali, Pharping & Kirtipur) with a traditional farewell cultural dinner.",
+      "highlights": [
+        "Comprehensive Grand Nepal Circuit: Full 15-day overland itinerary covering Bandipur, Pokhara, Tansen, Lumbini, Chitwan, Dhulikhel, and Kathmandu.",
+        "3 Nights in Pokhara & Twin Lakes: Extended stay in Pokhara including Sarangkot Himalayan sunrise, Phewa & Begnas Lake boating, and World Peace Pagoda.",
+        "Historic Tansen & Rani Mahal Palace: 2 nights exploring Palpali culture, ancient cobblestone alleys, and the regal Rani Mahal on Kali Gandaki River.",
+        "Spiritual Pilgrimage & Wildlife Safari: Visit Buddha's birthplace in Lumbini plus 2-night all-inclusive safari package in Chitwan National Park.",
+        "Panoramic Dhulikhel & UNESCO Heritage: Overnight in Dhulikhel for Himalayan mountain views, plus complete Kathmandu & Bhaktapur World Heritage tours with a farewell cultural dinner."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Bandipur [Altitude 1030m/3380ft]",
+          "maxAltitude": "1,030m / 3,380ft",
+          "accommodation": "Heritage Hotel in Bandipur [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Kathmandu to Bandipur hilltop Newari village. Walk along vehicle-free stone streets, admire traditional woodcarved architecture, and enjoy mountain views."
+        },
+        {
+          "day": "Day 03",
+          "title": "Bandipur-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 2-3 hrs)",
+          "description": "Drive from Bandipur to Pokhara. Check into your lakeside hotel and enjoy a peaceful evening strolling along Phewa Lake."
+        },
+        {
+          "day": "Day 04",
+          "title": "Pokhara Sightseeing (Sarangkot Sunrise, Phewa Lake Boating, Davis Fall, Gupteshwor Cave & Seti Gorge)",
+          "maxAltitude": "1,600m / 5,250ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Early morning drive to Sarangkot for sunrise views over Annapurna & Dhaulagiri ranges. After breakfast, visit Bindabasini Temple, Seti River Gorge, Gupteshwor Mahadev Cave, Davis Fall, and enjoy Phewa Lake boating to Tal Barahi Temple."
+        },
+        {
+          "day": "Day 05",
+          "title": "Pokhara Sightseeing (Begnas Lake & World Peace Pagoda)",
+          "maxAltitude": "1,100m / 3,608ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Excursion to quiet Begnas Lake for boating and scenic nature walks, followed by a trip up to World Peace Pagoda for panoramic sunset views over Pokhara Valley and Phewa Lake."
+        },
+        {
+          "day": "Day 06",
+          "title": "Pokhara-Tansen [altitude 1350m/4430ft]",
+          "maxAltitude": "1,350m / 4,430ft",
+          "accommodation": "Hotel in Tansen [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Pokhara to Tansen along the scenic Siddhartha Highway. Check into your hotel and explore traditional Palpali streets."
+        },
+        {
+          "day": "Day 07",
+          "title": "Tansen Full Day Sightseeing & Rani Mahal Palace",
+          "maxAltitude": "1,350m / 4,430ft",
+          "accommodation": "Hotel in Tansen [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Full day sightseeing in Tansen: visit Rani Mahal (Taj Mahal of Nepal) on the banks of Kali Gandaki River, Tundikhel, Amar Narayan Temple, and panoramic view points."
+        },
+        {
+          "day": "Day 08",
+          "title": "Tansen-Lumbini [altitude 150m/492ft]",
+          "maxAltitude": "150m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 3-4 hrs)",
+          "description": "Drive from Tansen to Lumbini, the sacred birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 09",
+          "title": "Lumbini-Chitwan [altitude 415m/1361ft]",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Lumbini to Chitwan National Park. Check into your safari lodge, explore the Tharu village, and enjoy an evening Tharu cultural dance performance."
+        },
+        {
+          "day": "Day 10",
+          "title": "Chitwan Full Day Safari Activities",
+          "maxAltitude": "415m / 1,361ft",
+          "accommodation": "Jungle Resort / Lodge in Chitwan [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Dugout Canoe & Safari Vehicle",
+          "description": "Full day jungle activities: dugout canoe ride on the Rapti River to view muggers and gharials, Elephant or Jeep Safari to spot rhinos and deer, plus visit Crocodile or Elephant Breeding Center."
+        },
+        {
+          "day": "Day 11",
+          "title": "Chitwan-Dhulikhel [altitude 1550m/5085ft]",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Resort in Dhulikhel [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Chitwan to the quiet hilltop station of Dhulikhel, bypassing inner Kathmandu city. Relax at your resort and enjoy sunset over the eastern Himalayan ranges."
+        },
+        {
+          "day": "Day 12",
+          "title": "Dhulikhel-Kathmandu via Bhaktapur, Boudhanath & Pashupatinath",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Sunrise mountain views from Dhulikhel. Drive to Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 13",
+          "title": "Kathmandu Valley Sightseeing (Patan, Swayambhunath & Kathmandu Durbar Square)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Explore Patan Durbar Square (Krishna Mandir, Patan Museum), Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square (Kumari Ghar)."
+        },
+        {
+          "day": "Day 14",
+          "title": "Southern Kathmandu Excursion (Dakshinkali, Pharping & Kirtipur) with Cultural Dinner",
+          "maxAltitude": "1,550m / 5,085ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Excursion to southern Kathmandu Valley: Dakshinkali Temple, Chobhar Gorge, Pharping Buddhist Monasteries, and historic hilltop Newari town of Kirtipur. Farewell traditional Nepali dinner with cultural performance."
+        },
+        {
+          "day": "Day 15",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara, Lumbini & Tansen city tours and Sarangkot Sunrise tour with an English speaking local guide",
+        "Naturalist guide, program as mentioned in itinerary and entrance fees in Chitwan",
+        "All applicable monument entrance fees",
+        "All government and local taxes",
+        "Daily buffet breakfast in Kathmandu, Pokhara, Bandipur, Lumbini, Tansen, Dhulikhel",
+        "Daily buffet breakfast, lunch & dinner in Chitwan",
+        "All accommodation in mentioned hotels: 4 Nights Kathmandu, 3 Nights Pokhara, 2 Nights Chitwan, 1 Night Dhulikhel, 1 Night Lumbini, 1 Night Bandipur, 2 Nights Tansen"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver & guide (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Chitwan: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "4 Nights The Soaltee Kathmandu | 3 Nights Sarangkot Mountain Lodge Pokhara | 2 Nights Jungle Villa Resort Chitwan | 1 Night Dwarika's Resort Dhulikhel | 1 Night Buddha Maya Garden Lumbini | 1 Night The Old Inn Bandipur | 2 Nights Hotel Shreenagar Tansen",
+        "comfort": "4 Star Hotels in Kathmandu, Pokhara, Chitwan, Dhulikhel, Lumbini, Bandipur & Tansen",
+        "standard": "3 Star Hotels in Kathmandu, Pokhara, Chitwan, Dhulikhel, Lumbini, Bandipur & Tansen",
+        "budget": "2 Star Hotels in Kathmandu, Pokhara, Chitwan, Dhulikhel, Lumbini, Bandipur & Tansen"
+      },
+      "faqs": [
+        {
+          "question": "What destinations are covered in the 15-day Discover Nepal Tour?",
+          "answer": "The tour covers Kathmandu, Bandipur hilltop village, Pokhara (3 nights), Tansen (2 nights with Rani Mahal), Lumbini (Buddha's birthplace), Chitwan National Park (2 nights safari), Dhulikhel hill station, Bhaktapur, and southern Kathmandu Valley."
+        },
+        {
+          "question": "Is this package suitable for families and senior travelers?",
+          "answer": "Yes, this private vehicle tour is easy-paced without trekking, offering comfortable transfers and accessible sightseeing."
+        },
+        {
+          "question": "Are all meals in Chitwan included?",
+          "answer": "Yes, daily buffet breakfast, lunch, and dinner are fully included during your 2-night stay in Chitwan National Park."
         }
       ]
     }

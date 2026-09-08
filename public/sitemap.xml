@@ -1471,4 +1471,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://dntt.com.np/package-detail/62/15-days-discover-nepal-tour</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dntt.com.np/tour/15-days-discover-nepal-tour</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dntt.com.np/tour-trip/15-days-discover-nepal-tour</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
