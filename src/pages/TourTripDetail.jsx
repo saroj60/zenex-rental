@@ -105,13 +105,13 @@ const TourTripDetail = () => {
   useEffect(() => {
     let baseTrip = null;
     if (tourTrips && tourTrips.length > 0) {
-      const foundTrip = tourTrips.find(t => t.slug === tripIdOrSlug || t.id === tripIdOrSlug);
-      if (foundTrip && foundTrip.status === 'Published') {
+      const foundTrip = tourTrips.find(t => t.slug === tripIdOrSlug || t.id === tripIdOrSlug || String(t.dnttId) === String(tripIdOrSlug) || String(t.numericId) === String(tripIdOrSlug));
+      if (foundTrip && (foundTrip.status === 'Published' || !foundTrip.status)) {
         baseTrip = foundTrip;
       }
     }
     if (!baseTrip && packages && packages.length > 0) {
-      const foundPkg = packages.find(p => p.id === tripIdOrSlug || p.slug === tripIdOrSlug);
+      const foundPkg = packages.find(p => p.id === tripIdOrSlug || p.slug === tripIdOrSlug || String(p.dnttId) === String(tripIdOrSlug) || String(p.numericId) === String(tripIdOrSlug));
       if (foundPkg) {
         baseTrip = foundPkg;
       }

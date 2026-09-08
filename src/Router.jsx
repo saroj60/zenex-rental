@@ -126,6 +126,8 @@ const router = createBrowserRouter([
       { path: 'treks/region/:region', element: <TrekRegion /> },
       { path: 'tour-trip/:slug', element: <TourTripDetail /> },
       { path: 'tour/:slug', element: <TourTripDetail /> },
+      { path: 'package-detail/:id/:slug?', element: <TourTripDetail /> },
+      { path: 'package-detail/:id', element: <TourTripDetail /> },
       { path: 'country/:countryId', element: <CountryPackages /> },
     ],
   },

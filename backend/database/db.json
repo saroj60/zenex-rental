@@ -15150,7 +15150,9 @@
           "question": "How is altitude acclimatization handled on this tour?",
           "answer": "The tour starts in Tsedang (3,700m) and Lhasa (3,656m) for initial acclimatization before driving over higher mountain passes like Kamba La and Karo La."
         }
-      ]
+      ],
+      "dnttId": "174",
+      "numericId": "174"
     },
     {
       "id": "8-days-tibet-tour-with-everest-base-camp-fly-in-fly-out",
@@ -15161,7 +15163,7 @@
       "type": "Tours",
       "status": "Published",
       "destination": "Tibet",
-      "location": "Lhasa, Gyantse, Shigatse, Rongbuk & Everest Base Camp (Tibet Side 5,200m)",
+      "location": "Lhasa, Gyantse, Shigatse, Shegar, Rongbuk & Everest Base Camp (5,150m)",
       "country": "Tibet",
       "duration": "8 Days / 7 Nights",
       "price": "2450",
@@ -15198,118 +15200,119 @@
           "p9plus": 1780
         }
       },
-      "maxAltitude": "5,200m / 17,060ft",
-      "groupSize": "1 - 12 Persons (Private)",
-      "bestSeason": "Apr-Jun & Sep-Nov",
-      "grade": "Easy to Moderate",
-      "transportation": "Flight & Private Vehicle",
+      "maxAltitude": "5,150 meters (16,896 feet) at EBC",
+      "groupSize": "Private",
+      "bestSeason": "April to June & Sep to Nov",
+      "grade": "Moderate",
+      "transportation": "Flight & Drive",
       "startPoint": "Kathmandu",
       "endPoint": "Kathmandu",
       "image": "/images/destinations/pokhara.png",
       "img": "/images/destinations/pokhara.png",
       "bannerImage": "/images/destinations/pokhara.png",
-      "shortDescription": "The ultimate 8-day Tibet Everest expedition with roundtrip flights: Lhasa cultural treasures (Potala Palace, Jokhang), turquoise Yamdrok Lake, Gyantse Kumbum Stupa, Shigatse Tashilhunpo, highest Rongbuk Monastery, and sunset over Mount Everest North Face (5,200m).",
-      "overview": "Experience the trip of a lifetime with our 8 Days Tibet Tour with Everest Base Camp Fly In Fly Out. Designed for travelers who want to gaze upon the majestic North Face of Mount Everest (8,848.86m) while enjoying roundtrip scenic Trans-Himalayan flights between Kathmandu and Lhasa.\n\nYour adventure begins with a flight to Gonggar Airport in Lhasa (3,656m). Spend two days exploring Lhasa's spiritual treasures including the iconic 13-story Potala Palace, sacred Jokhang Temple, Barkhor Street pilgrim circuit, and lively monk debates at Sera Monastery.\n\nDrive overland along the Friendship Highway past sacred Yamdrok Lake, Karola Glacier (5,010m), Gyantse Kumbum Stupa, and Shigatse Tashilhunpo Monastery (seat of the Panchen Lama). Continue across high mountain passes to Rongbuk Monastery (5,000m), the highest monastery in the world. Stand at Tibet Everest Base Camp (5,200m) to witness sunset and golden sunrise over Everest's towering North Face. Return to Lhasa and board your scenic flight back to Kathmandu.",
+      "shortDescription": "This 8-day Tibet Tour with Everest Base Camp Fly-In Fly-Out is an exciting journey into mystical Tibet, combining cultural exploration with breathtaking Himalayan landscapes including Potala Palace, Jokhang Temple, Yamdrok Lake, and Rongbuk Monastery at Everest Base Camp (5,150m).",
+      "overview": "This 8-day Tibet Tour with Everest Base Camp Fly-In Fly-Out is an exciting journey into the mystical land of Tibet, combining cultural exploration with breathtaking Himalayan landscapes. Starting with a scenic flight from Kathmandu to Lhasa, the tour takes you through iconic Tibetan landmarks, including the majestic Potala Palace, the revered Jokhang Temple, and the bustling Barkhor Bazaar. Experience the spiritual atmosphere of Sera and Drepung Monasteries and enjoy the scenic drive to Shigatse via the turquoise waters of Yamdrok Lake.\n\nA key highlight of this tour is the visit to Rongbuk Monastery, the highest monastery in the world, and Everest Base Camp (EBC), where you will witness awe-inspiring views of Mount Everest (8,848 meters). The journey also includes a visit to the historic Tashilhunpo Monastery, home of the Panchen Lama. This adventure blends culture, spirituality, and nature, offering a deep insight into Tibet’s heritage and stunning landscapes.",
       "highlights": [
-        "Everest Base Camp North Face (5,200m): Stand at the foot of Mount Everest's majestic North Face and witness golden sunrise over the summit.",
-        "World's Highest Monastery: Visit Rongbuk Monastery (5,000m) and experience high-altitude Tibetan Buddhist spirituality.",
-        "Trans-Himalayan Roundtrip Flights: Soar over Mount Everest and Himalayan snow peaks between Kathmandu and Lhasa.",
-        "Yamdrok Lake & Karola Glacier: Drive past turquoise Yamdrok Lake and dramatic Karola Glacier at 5,010m.",
-        "Lhasa & Shigatse Landmarks: Guided tours of Potala Palace, Jokhang Temple, Barkhor Bazaar, and Tashilhunpo Monastery."
+        "Potala Palace, Jokhang Temple & Barkhor Bazaar: Explore Lhasa’s cultural gems, including the former residence of the Dalai Lama and the vibrant local market.",
+        "Sera & Drepung Monasteries: Witness monk debates and learn about Tibetan Buddhism at these significant monasteries.",
+        "Yamdrok Lake & Gyantse’s Historic Sites: Admire the stunning turquoise lake and visit the iconic Khumbum Stupa and Phalkhor Monastery.",
+        "Everest Base Camp & Rongbuk Monastery: Enjoy spectacular views of Mount Everest from the highest monastery in the world at 5,150m.",
+        "Tashilhunpo Monastery & Panchen Lama’s Seat: Visit the historic monastery in Shigatse, known for its giant Buddha statue and religious significance."
       ],
       "itinerary": [
         {
           "day": "Day 01",
-          "title": "Kathmandu-Lhasa Scenic Flight & Arrival [3,656m]",
+          "title": "Kathmandu-Lhasa [altitude 3656m/11,995ft]",
           "maxAltitude": "3,656m / 11,995ft",
           "accommodation": "Hotel in Lhasa [1 Night]",
           "meals": "Breakfast",
-          "modeOfTravel": "Trans-Himalayan Flight & Private Vehicle",
-          "description": "Fly from Kathmandu to Lhasa Gonggar Airport (3,656m) enjoying aerial views of Mt. Everest and Himalayan ranges. Meet your local Tibetan guide, transfer to your hotel in Lhasa, and rest to acclimatize."
+          "modeOfTravel": "Flight & Private Vehicle",
+          "description": "After breakfast, transfer to Tribhuvan International Airport in Kathmandu for a 1 hour 15-minute flight to Lhasa. Upon arrival, meet your Tibetan guide and enjoy a scenic drive to your hotel, where you can relax and acclimatize to the high altitude."
         },
         {
           "day": "Day 02",
-          "title": "Lhasa Guided Sightseeing (Potala Palace, Jokhang & Barkhor Street)",
+          "title": "Lhasa Sightseeing (Potala Palace, Jokhang Temple & Barkhor Bazaar)",
           "maxAltitude": "3,656m / 11,995ft",
           "accommodation": "Hotel in Lhasa [1 Night]",
           "meals": "Breakfast",
           "modeOfTravel": "Private Vehicle & Walking Tour",
-          "description": "Guided tour of Potala Palace, former winter home of Dalai Lama. Visit sacred 7th-century Jokhang Temple and walk alongside pilgrims around Barkhor Bazaar."
+          "description": "Guided tour of the magnificent Potala Palace, former winter residence of the Dalai Lama. Visit sacred 7th-century Jokhang Temple and walk alongside prostrating pilgrims around Barkhor Bazaar."
         },
         {
           "day": "Day 03",
-          "title": "Lhasa to Gyantse [3,950m] via Yamdrok Lake (160 km)",
-          "maxAltitude": "5,010m / 16,437ft",
-          "accommodation": "Hotel in Gyantse [1 Night]",
+          "title": "Lhasa Monasteries (Drepung & Sera Monastery Monk Debates)",
+          "maxAltitude": "3,656m / 11,995ft",
+          "accommodation": "Hotel in Lhasa [1 Night]",
           "meals": "Breakfast",
-          "modeOfTravel": "Private Vehicle (approx. 5-6 hrs)",
-          "description": "Drive from Lhasa to Gyantse crossing Kamba La Pass (4,794m) for views of Yamdrok Lake's turquoise waters. Pass Karola Glacier (5,010m) and visit Gyantse Kumbum Stupa & Pelkhor Monastery."
+          "modeOfTravel": "Private Vehicle",
+          "description": "Morning visit to Drepung Monastery, once Tibet's largest monastery. In the afternoon, visit Sera Monastery to observe the lively philosophical monk debates held in the courtyard."
         },
         {
           "day": "Day 04",
-          "title": "Gyantse-Shigatse [3,900m]-Tingri [4,300m] (340 km)",
-          "maxAltitude": "4,500m / 14,763ft",
-          "accommodation": "Hotel in Tingri / Shegar [1 Night]",
+          "title": "Lhasa via Gyantse [Altitude 3950m]-Shigatse [Altitude 3900m] (371 km, 6-7 hrs)",
+          "maxAltitude": "5,010m / 16,437ft",
+          "accommodation": "Hotel in Shigatse [1 Night]",
           "meals": "Breakfast",
           "modeOfTravel": "Private Vehicle (approx. 6-7 hrs)",
-          "description": "Visit Tashilhunpo Monastery in Shigatse, seat of the Panchen Lama. Continue driving along the Friendship Highway crossing Gyatsola Pass (5,220m) to reach Tingri."
+          "description": "Drive from Lhasa crossing Kamba La Pass (4,794m) with views of turquoise Yamdrok Lake. Pass Karola Glacier (5,010m) and visit Gyantse Kumbum Stupa and Pelkhor Monastery before continuing to Shigatse."
         },
         {
           "day": "Day 05",
-          "title": "Tingri to Rongbuk Monastery & Everest Base Camp [5,200m]",
-          "maxAltitude": "5,200m / 17,060ft",
-          "accommodation": "Nomad Tent / Guesthouse at Rongbuk [1 Night]",
+          "title": "Shigatse-Shegar / Tingri [Altitude 4200m]",
+          "maxAltitude": "5,220m / 17,125ft",
+          "accommodation": "Hotel in Shegar [1 Night]",
           "meals": "Breakfast",
-          "modeOfTravel": "Private Vehicle & Eco-Bus",
-          "description": "Drive through Gawula Pass (5,198m) for panoramas of 5 Himalayan 8,000m peaks (Makalu, Lhotse, Everest, Cho Oyu, Shishapangma). Reach Rongbuk Monastery (5,000m) and take eco-bus to Everest Base Camp (5,200m) for sunset."
+          "modeOfTravel": "Private Vehicle (approx. 5-6 hrs)",
+          "description": "Visit Tashilhunpo Monastery in Shigatse, seat of the Panchen Lama. Drive along the Friendship Highway crossing Gyatsola Pass (5,220m) to reach Shegar (New Tingri)."
         },
         {
           "day": "Day 06",
-          "title": "Everest Sunrise & Drive Back to Shigatse [3,900m] (340 km)",
-          "maxAltitude": "5,200m / 17,060ft",
+          "title": "Shegar via Rongbu [Altitude 4800m] (85km) & EBC [5,150m] to Shigatse (325km)",
+          "maxAltitude": "5,150m / 16,896ft",
           "accommodation": "Hotel in Shigatse [1 Night]",
           "meals": "Breakfast",
-          "modeOfTravel": "Private Vehicle (approx. 7 hrs)",
-          "description": "Catch golden sunrise over Mount Everest North Face from Rongbuk. After breakfast, drive back through mountain passes to Shigatse. Check into your hotel."
+          "modeOfTravel": "Private Vehicle & Eco-Bus",
+          "description": "Drive over Gawula Pass for panoramas of Everest, Lhotse, Makalu, and Cho Oyu. Reach Rongbuk Monastery (4,800m) and Everest Base Camp (5,150m) for close-up views of Mount Everest North Face, then return to Shigatse."
         },
         {
           "day": "Day 07",
-          "title": "Shigatse to Lhasa [3,650m] (280 km)",
+          "title": "Shigatse-Lhasa [Altitude 3650m]",
           "maxAltitude": "3,900m / 12,795ft",
           "accommodation": "Hotel in Lhasa [1 Night]",
           "meals": "Breakfast",
           "modeOfTravel": "Private Vehicle (approx. 5 hrs)",
-          "description": "Drive back from Shigatse to Lhasa along the Yarlung Tsangpo River highway. Rest in Lhasa and do last-minute shopping at Barkhor Bazaar."
+          "description": "Drive back from Shigatse to Lhasa along the Yarlung Tsangpo River valley. Spend your final evening in Lhasa shopping for souvenirs or relaxing."
         },
         {
           "day": "Day 08",
-          "title": "Lhasa to Kathmandu Departure Flight",
+          "title": "Lhasa - Kathmandu Flight",
           "maxAltitude": "3,656m / 11,995ft",
           "accommodation": "None",
           "meals": "Breakfast",
-          "modeOfTravel": "Private Vehicle to Airport & Flight",
-          "description": "Transfer to Gonggar Airport for your return scenic flight over the Himalayas back to Kathmandu."
+          "modeOfTravel": "Flight & Private Vehicle",
+          "description": "Transfer to Lhasa Gonggar Airport for your 1 hour 15-minute return flight back to Kathmandu."
         }
       ],
       "includes": [
-        "Kathmandu-Lhasa-Kathmandu roundtrip flight tickets & airport taxes",
-        "Tibet Travel Permit & Alien's Travel Permit for Everest Base Camp",
-        "Tibet Group Visa processing fees",
-        "Airport pick up & drop off by private vehicle in Nepal & Tibet",
-        "Private vehicle transportation throughout Tibet",
-        "Licensed English-speaking local Tibetan guide",
-        "All monastery & park entrance fees including Everest Conservation Area & EBC eco-bus",
+        "Airport pick up & drop by comfortable private air-conditioned vehicle in Nepal & Tibet",
+        "All necessary transportation as per given itinerary by private vehicle in Nepal & Tibet",
+        "All government and local taxes in Nepal & Tibet",
+        "Licensed English-Speaking Tibetan Guide",
+        "Kathmandu-Lhasa return flight tickets",
+        "Sightseeing and monastery entrance fees as per itinerary",
+        "Tibet Travel Permit & Alien's Travel Permit for Everest region",
+        "Tibet Visa fees",
         "Daily buffet breakfast in all hotels",
-        "7 Nights accommodation in mentioned hotels/guesthouses",
-        "All local and government taxes in Nepal & Tibet"
+        "All accommodation in mentioned hotels in Tibet"
       ],
       "excludes": [
-        "Nepal Visa fees & International airfare to/from Nepal",
-        "Accommodation and meals in Kathmandu (minimum 3 working days needed in Kathmandu for group visa processing)",
-        "Lunch & dinner in Tibet (US$ 10-20 per meal)",
-        "Tips for Tibetan guide and driver",
-        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
-        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+        "Nepal Visa fees & International airfare to Nepal",
+        "Accommodation in Nepal (minimum 3 full working days required in Kathmandu for visa processing)",
+        "Tips for driver & guide (recommended US$ 5/day driver, US$ 10/day guide)",
+        "Meals (Lunch & dinner: US$ 10-20 per meal)",
+        "Natural or political disturbances beyond our control",
+        "Personal expenses such as travel insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation / road blockades / landslides / emergency evacuation"
       ],
       "hotelCategories": {
         "luxury": "7 Nights 4-5 Star Hotels in Lhasa/Shigatse + Best Lodge at Rongbuk",
@@ -15319,18 +15322,39 @@
       },
       "faqs": [
         {
-          "question": "What is the elevation of Everest Base Camp in Tibet?",
-          "answer": "Everest Base Camp on the Tibet side is located at an altitude of 5,200 meters (17,060 feet)."
+          "question": "What is the elevation of Everest Base Camp on this fly in/out tour?",
+          "answer": "Everest Base Camp on the Tibet side is located at an altitude of 5,150 meters (16,896 feet)."
         },
         {
-          "question": "Can we see Mount Everest clearly from the Tibet side?",
-          "answer": "Yes! The Tibet side offers an unobstructed, direct view of Mount Everest's majestic North Face from Rongbuk Monastery and EBC."
+          "question": "Are flights between Kathmandu and Lhasa included?",
+          "answer": "Yes, Kathmandu-Lhasa roundtrip flights and airport taxes are fully included in the package cost."
         },
         {
-          "question": "Are permits arranged by Zenex Travels?",
-          "answer": "Yes, Zenex Travels & Tours arranges the Tibet Travel Permit, Alien's Travel Permit, and Chinese Group Visa."
+          "question": "How many days are needed in Kathmandu for Tibet Group Visa processing?",
+          "answer": "A minimum of 3 full working days is required in Kathmandu prior to your flight to process the physical Chinese Group Visa."
         }
-      ]
+      ],
+      "dnttId": "173",
+      "numericId": "173",
+      "estimatedPersonalExpenses": [
+        {
+          "category": "Luxury",
+          "cost": "US$ 60-70 Per person per night"
+        },
+        {
+          "category": "Comfort",
+          "cost": "US$ 50-60 Per person per night"
+        },
+        {
+          "category": "Standard",
+          "cost": "US$ 40-50 Per person per night"
+        },
+        {
+          "category": "Budget",
+          "cost": "US$ 30-40 Per person per night"
+        }
+      ],
+      "essentialInfo": "### INSURANCE\nIt is recommended that all travelers joining Destination Nepal Tours & Travels trips be protected against comprehensive expenses potential to incur due to medical issues or accidents (including air ambulance, helicopter rescue, and treatment costs). Please note that insurance should cover up to 5,600m altitude.\n\n### VISA & VISA FEES\nAll visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa fees:\n- 15 Days: US$ 30\n- 30 Days: US$ 50\n- 90 Days: US$ 125\n\n### PASSPORT AND VISAS\nYou must have a valid passport (valid for at least six months beyond your trip) and all required visas, permits, and certificates for your destinations.\n\n### TIPPING\nTips are appreciated by your support team after the trip. Tipping suggestion: US$ 5 per day per tourist for driver & US$ 10 per day for guide.\n\n### BOOKING & CANCELLATION CONDITIONS\nBooking is confirmed via email after a 40% deposit. Cancellation fees:\n- 20% if canceled up to 30 days before trip\n- 30% if canceled 15-29 days before trip\n- 60% if canceled 7-14 days before trip\n- 90% if canceled 6 or fewer days before trip"
     },
     {
       "id": "8-days-tibet-tour-with-everest-base-camp",
@@ -15507,7 +15531,9 @@
           "question": "Are meals included at Everest Base Camp?",
           "answer": "Breakfast is included at all hotels/guesthouses. Simple hot local meals are available at Rongbuk."
         }
-      ]
+      ],
+      "dnttId": "172",
+      "numericId": "172"
     },
     {
       "id": "6-days-tibet-tour",
@@ -15666,7 +15692,9 @@
           "question": "Do we need a physical passport for Tibet visa processing?",
           "answer": "Yes, your original passport must be presented in Kathmandu at least 3 working days prior to your Lhasa flight."
         }
-      ]
+      ],
+      "dnttId": "171",
+      "numericId": "171"
     }
   ],
   "treks": [
@@ -52031,7 +52059,9 @@
           "question": "How is altitude acclimatization handled on this tour?",
           "answer": "The tour starts in Tsedang (3,700m) and Lhasa (3,656m) for initial acclimatization before driving over higher mountain passes like Kamba La and Karo La."
         }
-      ]
+      ],
+      "dnttId": "174",
+      "numericId": "174"
     },
     {
       "id": "8-days-tibet-tour-with-everest-base-camp-fly-in-fly-out",
@@ -52042,7 +52072,7 @@
       "type": "Tours",
       "status": "Published",
       "destination": "Tibet",
-      "location": "Lhasa, Gyantse, Shigatse, Rongbuk & Everest Base Camp (Tibet Side 5,200m)",
+      "location": "Lhasa, Gyantse, Shigatse, Shegar, Rongbuk & Everest Base Camp (5,150m)",
       "country": "Tibet",
       "duration": "8 Days / 7 Nights",
       "price": "2450",
@@ -52079,118 +52109,119 @@
           "p9plus": 1780
         }
       },
-      "maxAltitude": "5,200m / 17,060ft",
-      "groupSize": "1 - 12 Persons (Private)",
-      "bestSeason": "Apr-Jun & Sep-Nov",
-      "grade": "Easy to Moderate",
-      "transportation": "Flight & Private Vehicle",
+      "maxAltitude": "5,150 meters (16,896 feet) at EBC",
+      "groupSize": "Private",
+      "bestSeason": "April to June & Sep to Nov",
+      "grade": "Moderate",
+      "transportation": "Flight & Drive",
       "startPoint": "Kathmandu",
       "endPoint": "Kathmandu",
       "image": "/images/destinations/pokhara.png",
       "img": "/images/destinations/pokhara.png",
       "bannerImage": "/images/destinations/pokhara.png",
-      "shortDescription": "The ultimate 8-day Tibet Everest expedition with roundtrip flights: Lhasa cultural treasures (Potala Palace, Jokhang), turquoise Yamdrok Lake, Gyantse Kumbum Stupa, Shigatse Tashilhunpo, highest Rongbuk Monastery, and sunset over Mount Everest North Face (5,200m).",
-      "overview": "Experience the trip of a lifetime with our 8 Days Tibet Tour with Everest Base Camp Fly In Fly Out. Designed for travelers who want to gaze upon the majestic North Face of Mount Everest (8,848.86m) while enjoying roundtrip scenic Trans-Himalayan flights between Kathmandu and Lhasa.\n\nYour adventure begins with a flight to Gonggar Airport in Lhasa (3,656m). Spend two days exploring Lhasa's spiritual treasures including the iconic 13-story Potala Palace, sacred Jokhang Temple, Barkhor Street pilgrim circuit, and lively monk debates at Sera Monastery.\n\nDrive overland along the Friendship Highway past sacred Yamdrok Lake, Karola Glacier (5,010m), Gyantse Kumbum Stupa, and Shigatse Tashilhunpo Monastery (seat of the Panchen Lama). Continue across high mountain passes to Rongbuk Monastery (5,000m), the highest monastery in the world. Stand at Tibet Everest Base Camp (5,200m) to witness sunset and golden sunrise over Everest's towering North Face. Return to Lhasa and board your scenic flight back to Kathmandu.",
+      "shortDescription": "This 8-day Tibet Tour with Everest Base Camp Fly-In Fly-Out is an exciting journey into mystical Tibet, combining cultural exploration with breathtaking Himalayan landscapes including Potala Palace, Jokhang Temple, Yamdrok Lake, and Rongbuk Monastery at Everest Base Camp (5,150m).",
+      "overview": "This 8-day Tibet Tour with Everest Base Camp Fly-In Fly-Out is an exciting journey into the mystical land of Tibet, combining cultural exploration with breathtaking Himalayan landscapes. Starting with a scenic flight from Kathmandu to Lhasa, the tour takes you through iconic Tibetan landmarks, including the majestic Potala Palace, the revered Jokhang Temple, and the bustling Barkhor Bazaar. Experience the spiritual atmosphere of Sera and Drepung Monasteries and enjoy the scenic drive to Shigatse via the turquoise waters of Yamdrok Lake.\n\nA key highlight of this tour is the visit to Rongbuk Monastery, the highest monastery in the world, and Everest Base Camp (EBC), where you will witness awe-inspiring views of Mount Everest (8,848 meters). The journey also includes a visit to the historic Tashilhunpo Monastery, home of the Panchen Lama. This adventure blends culture, spirituality, and nature, offering a deep insight into Tibet’s heritage and stunning landscapes.",
       "highlights": [
-        "Everest Base Camp North Face (5,200m): Stand at the foot of Mount Everest's majestic North Face and witness golden sunrise over the summit.",
-        "World's Highest Monastery: Visit Rongbuk Monastery (5,000m) and experience high-altitude Tibetan Buddhist spirituality.",
-        "Trans-Himalayan Roundtrip Flights: Soar over Mount Everest and Himalayan snow peaks between Kathmandu and Lhasa.",
-        "Yamdrok Lake & Karola Glacier: Drive past turquoise Yamdrok Lake and dramatic Karola Glacier at 5,010m.",
-        "Lhasa & Shigatse Landmarks: Guided tours of Potala Palace, Jokhang Temple, Barkhor Bazaar, and Tashilhunpo Monastery."
+        "Potala Palace, Jokhang Temple & Barkhor Bazaar: Explore Lhasa’s cultural gems, including the former residence of the Dalai Lama and the vibrant local market.",
+        "Sera & Drepung Monasteries: Witness monk debates and learn about Tibetan Buddhism at these significant monasteries.",
+        "Yamdrok Lake & Gyantse’s Historic Sites: Admire the stunning turquoise lake and visit the iconic Khumbum Stupa and Phalkhor Monastery.",
+        "Everest Base Camp & Rongbuk Monastery: Enjoy spectacular views of Mount Everest from the highest monastery in the world at 5,150m.",
+        "Tashilhunpo Monastery & Panchen Lama’s Seat: Visit the historic monastery in Shigatse, known for its giant Buddha statue and religious significance."
       ],
       "itinerary": [
         {
           "day": "Day 01",
-          "title": "Kathmandu-Lhasa Scenic Flight & Arrival [3,656m]",
+          "title": "Kathmandu-Lhasa [altitude 3656m/11,995ft]",
           "maxAltitude": "3,656m / 11,995ft",
           "accommodation": "Hotel in Lhasa [1 Night]",
           "meals": "Breakfast",
-          "modeOfTravel": "Trans-Himalayan Flight & Private Vehicle",
-          "description": "Fly from Kathmandu to Lhasa Gonggar Airport (3,656m) enjoying aerial views of Mt. Everest and Himalayan ranges. Meet your local Tibetan guide, transfer to your hotel in Lhasa, and rest to acclimatize."
+          "modeOfTravel": "Flight & Private Vehicle",
+          "description": "After breakfast, transfer to Tribhuvan International Airport in Kathmandu for a 1 hour 15-minute flight to Lhasa. Upon arrival, meet your Tibetan guide and enjoy a scenic drive to your hotel, where you can relax and acclimatize to the high altitude."
         },
         {
           "day": "Day 02",
-          "title": "Lhasa Guided Sightseeing (Potala Palace, Jokhang & Barkhor Street)",
+          "title": "Lhasa Sightseeing (Potala Palace, Jokhang Temple & Barkhor Bazaar)",
           "maxAltitude": "3,656m / 11,995ft",
           "accommodation": "Hotel in Lhasa [1 Night]",
           "meals": "Breakfast",
           "modeOfTravel": "Private Vehicle & Walking Tour",
-          "description": "Guided tour of Potala Palace, former winter home of Dalai Lama. Visit sacred 7th-century Jokhang Temple and walk alongside pilgrims around Barkhor Bazaar."
+          "description": "Guided tour of the magnificent Potala Palace, former winter residence of the Dalai Lama. Visit sacred 7th-century Jokhang Temple and walk alongside prostrating pilgrims around Barkhor Bazaar."
         },
         {
           "day": "Day 03",
-          "title": "Lhasa to Gyantse [3,950m] via Yamdrok Lake (160 km)",
-          "maxAltitude": "5,010m / 16,437ft",
-          "accommodation": "Hotel in Gyantse [1 Night]",
+          "title": "Lhasa Monasteries (Drepung & Sera Monastery Monk Debates)",
+          "maxAltitude": "3,656m / 11,995ft",
+          "accommodation": "Hotel in Lhasa [1 Night]",
           "meals": "Breakfast",
-          "modeOfTravel": "Private Vehicle (approx. 5-6 hrs)",
-          "description": "Drive from Lhasa to Gyantse crossing Kamba La Pass (4,794m) for views of Yamdrok Lake's turquoise waters. Pass Karola Glacier (5,010m) and visit Gyantse Kumbum Stupa & Pelkhor Monastery."
+          "modeOfTravel": "Private Vehicle",
+          "description": "Morning visit to Drepung Monastery, once Tibet's largest monastery. In the afternoon, visit Sera Monastery to observe the lively philosophical monk debates held in the courtyard."
         },
         {
           "day": "Day 04",
-          "title": "Gyantse-Shigatse [3,900m]-Tingri [4,300m] (340 km)",
-          "maxAltitude": "4,500m / 14,763ft",
-          "accommodation": "Hotel in Tingri / Shegar [1 Night]",
+          "title": "Lhasa via Gyantse [Altitude 3950m]-Shigatse [Altitude 3900m] (371 km, 6-7 hrs)",
+          "maxAltitude": "5,010m / 16,437ft",
+          "accommodation": "Hotel in Shigatse [1 Night]",
           "meals": "Breakfast",
           "modeOfTravel": "Private Vehicle (approx. 6-7 hrs)",
-          "description": "Visit Tashilhunpo Monastery in Shigatse, seat of the Panchen Lama. Continue driving along the Friendship Highway crossing Gyatsola Pass (5,220m) to reach Tingri."
+          "description": "Drive from Lhasa crossing Kamba La Pass (4,794m) with views of turquoise Yamdrok Lake. Pass Karola Glacier (5,010m) and visit Gyantse Kumbum Stupa and Pelkhor Monastery before continuing to Shigatse."
         },
         {
           "day": "Day 05",
-          "title": "Tingri to Rongbuk Monastery & Everest Base Camp [5,200m]",
-          "maxAltitude": "5,200m / 17,060ft",
-          "accommodation": "Nomad Tent / Guesthouse at Rongbuk [1 Night]",
+          "title": "Shigatse-Shegar / Tingri [Altitude 4200m]",
+          "maxAltitude": "5,220m / 17,125ft",
+          "accommodation": "Hotel in Shegar [1 Night]",
           "meals": "Breakfast",
-          "modeOfTravel": "Private Vehicle & Eco-Bus",
-          "description": "Drive through Gawula Pass (5,198m) for panoramas of 5 Himalayan 8,000m peaks (Makalu, Lhotse, Everest, Cho Oyu, Shishapangma). Reach Rongbuk Monastery (5,000m) and take eco-bus to Everest Base Camp (5,200m) for sunset."
+          "modeOfTravel": "Private Vehicle (approx. 5-6 hrs)",
+          "description": "Visit Tashilhunpo Monastery in Shigatse, seat of the Panchen Lama. Drive along the Friendship Highway crossing Gyatsola Pass (5,220m) to reach Shegar (New Tingri)."
         },
         {
           "day": "Day 06",
-          "title": "Everest Sunrise & Drive Back to Shigatse [3,900m] (340 km)",
-          "maxAltitude": "5,200m / 17,060ft",
+          "title": "Shegar via Rongbu [Altitude 4800m] (85km) & EBC [5,150m] to Shigatse (325km)",
+          "maxAltitude": "5,150m / 16,896ft",
           "accommodation": "Hotel in Shigatse [1 Night]",
           "meals": "Breakfast",
-          "modeOfTravel": "Private Vehicle (approx. 7 hrs)",
-          "description": "Catch golden sunrise over Mount Everest North Face from Rongbuk. After breakfast, drive back through mountain passes to Shigatse. Check into your hotel."
+          "modeOfTravel": "Private Vehicle & Eco-Bus",
+          "description": "Drive over Gawula Pass for panoramas of Everest, Lhotse, Makalu, and Cho Oyu. Reach Rongbuk Monastery (4,800m) and Everest Base Camp (5,150m) for close-up views of Mount Everest North Face, then return to Shigatse."
         },
         {
           "day": "Day 07",
-          "title": "Shigatse to Lhasa [3,650m] (280 km)",
+          "title": "Shigatse-Lhasa [Altitude 3650m]",
           "maxAltitude": "3,900m / 12,795ft",
           "accommodation": "Hotel in Lhasa [1 Night]",
           "meals": "Breakfast",
           "modeOfTravel": "Private Vehicle (approx. 5 hrs)",
-          "description": "Drive back from Shigatse to Lhasa along the Yarlung Tsangpo River highway. Rest in Lhasa and do last-minute shopping at Barkhor Bazaar."
+          "description": "Drive back from Shigatse to Lhasa along the Yarlung Tsangpo River valley. Spend your final evening in Lhasa shopping for souvenirs or relaxing."
         },
         {
           "day": "Day 08",
-          "title": "Lhasa to Kathmandu Departure Flight",
+          "title": "Lhasa - Kathmandu Flight",
           "maxAltitude": "3,656m / 11,995ft",
           "accommodation": "None",
           "meals": "Breakfast",
-          "modeOfTravel": "Private Vehicle to Airport & Flight",
-          "description": "Transfer to Gonggar Airport for your return scenic flight over the Himalayas back to Kathmandu."
+          "modeOfTravel": "Flight & Private Vehicle",
+          "description": "Transfer to Lhasa Gonggar Airport for your 1 hour 15-minute return flight back to Kathmandu."
         }
       ],
       "includes": [
-        "Kathmandu-Lhasa-Kathmandu roundtrip flight tickets & airport taxes",
-        "Tibet Travel Permit & Alien's Travel Permit for Everest Base Camp",
-        "Tibet Group Visa processing fees",
-        "Airport pick up & drop off by private vehicle in Nepal & Tibet",
-        "Private vehicle transportation throughout Tibet",
-        "Licensed English-speaking local Tibetan guide",
-        "All monastery & park entrance fees including Everest Conservation Area & EBC eco-bus",
+        "Airport pick up & drop by comfortable private air-conditioned vehicle in Nepal & Tibet",
+        "All necessary transportation as per given itinerary by private vehicle in Nepal & Tibet",
+        "All government and local taxes in Nepal & Tibet",
+        "Licensed English-Speaking Tibetan Guide",
+        "Kathmandu-Lhasa return flight tickets",
+        "Sightseeing and monastery entrance fees as per itinerary",
+        "Tibet Travel Permit & Alien's Travel Permit for Everest region",
+        "Tibet Visa fees",
         "Daily buffet breakfast in all hotels",
-        "7 Nights accommodation in mentioned hotels/guesthouses",
-        "All local and government taxes in Nepal & Tibet"
+        "All accommodation in mentioned hotels in Tibet"
       ],
       "excludes": [
-        "Nepal Visa fees & International airfare to/from Nepal",
-        "Accommodation and meals in Kathmandu (minimum 3 working days needed in Kathmandu for group visa processing)",
-        "Lunch & dinner in Tibet (US$ 10-20 per meal)",
-        "Tips for Tibetan guide and driver",
-        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
-        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+        "Nepal Visa fees & International airfare to Nepal",
+        "Accommodation in Nepal (minimum 3 full working days required in Kathmandu for visa processing)",
+        "Tips for driver & guide (recommended US$ 5/day driver, US$ 10/day guide)",
+        "Meals (Lunch & dinner: US$ 10-20 per meal)",
+        "Natural or political disturbances beyond our control",
+        "Personal expenses such as travel insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation / road blockades / landslides / emergency evacuation"
       ],
       "hotelCategories": {
         "luxury": "7 Nights 4-5 Star Hotels in Lhasa/Shigatse + Best Lodge at Rongbuk",
@@ -52200,18 +52231,39 @@
       },
       "faqs": [
         {
-          "question": "What is the elevation of Everest Base Camp in Tibet?",
-          "answer": "Everest Base Camp on the Tibet side is located at an altitude of 5,200 meters (17,060 feet)."
+          "question": "What is the elevation of Everest Base Camp on this fly in/out tour?",
+          "answer": "Everest Base Camp on the Tibet side is located at an altitude of 5,150 meters (16,896 feet)."
         },
         {
-          "question": "Can we see Mount Everest clearly from the Tibet side?",
-          "answer": "Yes! The Tibet side offers an unobstructed, direct view of Mount Everest's majestic North Face from Rongbuk Monastery and EBC."
+          "question": "Are flights between Kathmandu and Lhasa included?",
+          "answer": "Yes, Kathmandu-Lhasa roundtrip flights and airport taxes are fully included in the package cost."
         },
         {
-          "question": "Are permits arranged by Zenex Travels?",
-          "answer": "Yes, Zenex Travels & Tours arranges the Tibet Travel Permit, Alien's Travel Permit, and Chinese Group Visa."
+          "question": "How many days are needed in Kathmandu for Tibet Group Visa processing?",
+          "answer": "A minimum of 3 full working days is required in Kathmandu prior to your flight to process the physical Chinese Group Visa."
         }
-      ]
+      ],
+      "dnttId": "173",
+      "numericId": "173",
+      "estimatedPersonalExpenses": [
+        {
+          "category": "Luxury",
+          "cost": "US$ 60-70 Per person per night"
+        },
+        {
+          "category": "Comfort",
+          "cost": "US$ 50-60 Per person per night"
+        },
+        {
+          "category": "Standard",
+          "cost": "US$ 40-50 Per person per night"
+        },
+        {
+          "category": "Budget",
+          "cost": "US$ 30-40 Per person per night"
+        }
+      ],
+      "essentialInfo": "### INSURANCE\nIt is recommended that all travelers joining Destination Nepal Tours & Travels trips be protected against comprehensive expenses potential to incur due to medical issues or accidents (including air ambulance, helicopter rescue, and treatment costs). Please note that insurance should cover up to 5,600m altitude.\n\n### VISA & VISA FEES\nAll visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa fees:\n- 15 Days: US$ 30\n- 30 Days: US$ 50\n- 90 Days: US$ 125\n\n### PASSPORT AND VISAS\nYou must have a valid passport (valid for at least six months beyond your trip) and all required visas, permits, and certificates for your destinations.\n\n### TIPPING\nTips are appreciated by your support team after the trip. Tipping suggestion: US$ 5 per day per tourist for driver & US$ 10 per day for guide.\n\n### BOOKING & CANCELLATION CONDITIONS\nBooking is confirmed via email after a 40% deposit. Cancellation fees:\n- 20% if canceled up to 30 days before trip\n- 30% if canceled 15-29 days before trip\n- 60% if canceled 7-14 days before trip\n- 90% if canceled 6 or fewer days before trip"
     },
     {
       "id": "8-days-tibet-tour-with-everest-base-camp",
@@ -52388,7 +52440,9 @@
           "question": "Are meals included at Everest Base Camp?",
           "answer": "Breakfast is included at all hotels/guesthouses. Simple hot local meals are available at Rongbuk."
         }
-      ]
+      ],
+      "dnttId": "172",
+      "numericId": "172"
     },
     {
       "id": "6-days-tibet-tour",
@@ -52547,7 +52601,9 @@
           "question": "Do we need a physical passport for Tibet visa processing?",
           "answer": "Yes, your original passport must be presented in Kathmandu at least 3 working days prior to your Lhasa flight."
         }
-      ]
+      ],
+      "dnttId": "171",
+      "numericId": "171"
     }
   ],
   "blogs": [
