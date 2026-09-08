@@ -649,7 +649,7 @@ const TrekDetail = () => {
                           <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{day.title}</h3>
                           {descriptionText && (
                             <div 
-                              className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none" 
+                              className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none text-justify" 
                               dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(descriptionText) }} 
                             />
                           )}

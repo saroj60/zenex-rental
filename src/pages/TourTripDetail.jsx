@@ -605,7 +605,7 @@ const TourTripDetail = () => {
                           <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{day.title}</h3>
                           {(day.details || day.description) && (
                             <div 
-                              className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none" 
+                              className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none text-justify" 
                               dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(day.details || day.description) }} 
                             />
                           )}
