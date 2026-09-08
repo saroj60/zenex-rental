@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import SEO from '../components/SEO';
-import { ShieldCheck, Map as MapIcon, Star, Users, ArrowRight, MessageCircle } from 'lucide-react';
+import { ShieldCheck, Map as MapIcon, Star, ArrowRight, MessageCircle, Search, Download, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About = () => {
+  const [selectedDoc, setSelectedDoc] = useState(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -65,7 +67,7 @@ const About = () => {
       {/* Our Comprehensive Services */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 mb-24">
         <div className="text-center mb-16">
-          <h2 className="text-SM font-bold text-[#e53a24] uppercase tracking-widest mb-2">What We Offer</h2>
+          <h2 className="text-xs md:text-sm font-bold text-[#e53a24] uppercase tracking-widest mb-2">What We Offer</h2>
           <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Our Comprehensive Services</h3>
           <p className="text-gray-500 mt-4 max-w-2xl mx-auto">Beyond car rentals, we provide a complete suite of travel solutions to ensure your journey is absolutely flawless.</p>
         </div>
@@ -129,7 +131,7 @@ const About = () => {
             />
           </div>
           <div className="order-1 lg:order-2 space-y-6">
-            <h2 className="text-SM font-bold text-[#e53a24] uppercase tracking-widest">Our Story</h2>
+            <h2 className="text-xs md:text-sm font-bold text-[#e53a24] uppercase tracking-widest">Our Story</h2>
             <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a] leading-tight">
               Driven by a Passion for Nepal
             </h3>
@@ -150,7 +152,7 @@ const About = () => {
       <div className="bg-white py-24 border-y border-gray-200/60 mb-24">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-SM font-bold text-[#e53a24] uppercase tracking-widest mb-2">Why Choose Us</h2>
+            <h2 className="text-xs md:text-sm font-bold text-[#e53a24] uppercase tracking-widest mb-2">Why Choose Us</h2>
             <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Our Core Values</h3>
           </div>
           
@@ -182,11 +184,172 @@ const About = () => {
         </div>
       </div>
 
+      {/* Government Registration & Legal Certificates */}
+      <div className="bg-white py-24 border-y border-gray-200/60 mb-24">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-xs md:text-sm font-bold text-[#e53a24] uppercase tracking-widest mb-2">Government Accreditation</h2>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Official Licensing & Registration</h3>
+            <p className="text-gray-500 mt-4 max-w-2xl mx-auto">Zenex Travels & Tours is a 100% government-authorized, fully licensed, and tax-registered travel and vehicle operator in Nepal.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* License 1: Tourism License */}
+            <div 
+              onClick={() => setSelectedDoc({
+                title: 'Tourism Industry License',
+                issuer: 'Ministry of Culture, Tourism & Civil Aviation (Govt of Nepal)',
+                img: '/documents/tourism-license.png',
+                pdf: '/Tourism Licence .pdf'
+              })}
+              className="bg-[#F4F6F8] rounded-3xl p-6 border border-gray-200/70 hover:border-[#1e3a8a]/40 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group flex flex-col justify-between"
+            >
+              <div>
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6 bg-gray-100 border border-gray-200 shadow-inner">
+                  <img 
+                    src="/documents/tourism-license.png" 
+                    alt="Tourism License - Zenex Travels" 
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" 
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                    <span className="bg-white text-[#1e3a8a] px-4 py-2 rounded-xl text-xs font-bold shadow-lg flex items-center gap-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                      <Search size={14} /> Click to Enlarge
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">Verified License</span>
+                </div>
+                <h4 className="text-lg font-extrabold text-[#1e3a8a] mb-1 group-hover:text-[#e53a24] transition-colors">Tourism Industry License</h4>
+                <p className="text-gray-500 text-xs mb-4">Ministry of Culture, Tourism & Civil Aviation (Dept of Tourism)</p>
+              </div>
+              <div className="pt-4 border-t border-gray-200/60 flex items-center justify-between text-xs font-bold text-[#1e3a8a]">
+                <span>View Full Certificate</span>
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform text-[#e53a24]" />
+              </div>
+            </div>
+
+            {/* License 2: Company Registration */}
+            <div 
+              onClick={() => setSelectedDoc({
+                title: 'Company Registration Certificate',
+                issuer: 'Office of the Company Registrar (Ministry of Industry, Nepal)',
+                img: '/documents/zenex-registration.png',
+                pdf: '/zenex Registration .pdf'
+              })}
+              className="bg-[#F4F6F8] rounded-3xl p-6 border border-gray-200/70 hover:border-[#1e3a8a]/40 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group flex flex-col justify-between"
+            >
+              <div>
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6 bg-gray-100 border border-gray-200 shadow-inner">
+                  <img 
+                    src="/documents/zenex-registration.png" 
+                    alt="Company Registration Certificate - Zenex Travels" 
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" 
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                    <span className="bg-white text-[#1e3a8a] px-4 py-2 rounded-xl text-xs font-bold shadow-lg flex items-center gap-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                      <Search size={14} /> Click to Enlarge
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="bg-blue-100 text-blue-800 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">Official Registration</span>
+                </div>
+                <h4 className="text-lg font-extrabold text-[#1e3a8a] mb-1 group-hover:text-[#e53a24] transition-colors">Company Registration Certificate</h4>
+                <p className="text-gray-500 text-xs mb-4">Office of the Company Registrar, Ministry of Industry</p>
+              </div>
+              <div className="pt-4 border-t border-gray-200/60 flex items-center justify-between text-xs font-bold text-[#1e3a8a]">
+                <span>View Full Certificate</span>
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform text-[#e53a24]" />
+              </div>
+            </div>
+
+            {/* License 3: PAN / VAT Registration */}
+            <div 
+              onClick={() => setSelectedDoc({
+                title: 'PAN & Tax Registration Certificate',
+                issuer: 'Inland Revenue Department (Ministry of Finance, Nepal)',
+                img: '/documents/zenex-pan.png',
+                pdf: '/Zenex Travel PAN.pdf'
+              })}
+              className="bg-[#F4F6F8] rounded-3xl p-6 border border-gray-200/70 hover:border-[#1e3a8a]/40 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group flex flex-col justify-between"
+            >
+              <div>
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6 bg-gray-100 border border-gray-200 shadow-inner">
+                  <img 
+                    src="/documents/zenex-pan.png" 
+                    alt="PAN & Tax Registration - Zenex Travels" 
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" 
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                    <span className="bg-white text-[#1e3a8a] px-4 py-2 rounded-xl text-xs font-bold shadow-lg flex items-center gap-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                      <Search size={14} /> Click to Enlarge
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="bg-amber-100 text-amber-800 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">Tax Compliant</span>
+                </div>
+                <h4 className="text-lg font-extrabold text-[#1e3a8a] mb-1 group-hover:text-[#e53a24] transition-colors">PAN & Tax Registration</h4>
+                <p className="text-gray-500 text-xs mb-4">Inland Revenue Department, Ministry of Finance</p>
+              </div>
+              <div className="pt-4 border-t border-gray-200/60 flex items-center justify-between text-xs font-bold text-[#1e3a8a]">
+                <span>View Full Certificate</span>
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform text-[#e53a24]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Document Lightbox Modal */}
+      {selectedDoc && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
+          <div className="relative bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl flex flex-col">
+            {/* Modal Header */}
+            <div className="px-6 py-4 bg-[#0a2f4c] text-white flex items-center justify-between">
+              <div>
+                <h3 className="font-extrabold text-lg">{selectedDoc.title}</h3>
+                <p className="text-xs text-blue-200">{selectedDoc.issuer}</p>
+              </div>
+              <button 
+                onClick={() => setSelectedDoc(null)}
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            {/* Modal Image View */}
+            <div className="flex-1 overflow-auto p-4 md:p-6 bg-gray-100 flex items-center justify-center">
+              <img 
+                src={selectedDoc.img} 
+                alt={selectedDoc.title} 
+                className="max-h-[70vh] w-auto object-contain rounded-xl shadow-lg border border-gray-200" 
+              />
+            </div>
+
+            {/* Modal Footer */}
+            <div className="px-6 py-4 bg-white border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <span className="text-xs text-gray-500 font-medium">Government of Nepal Authorized Certificate</span>
+              <a 
+                href={selectedDoc.pdf} 
+                target="_blank" 
+                rel="noreferrer" 
+                className="bg-[#1e3a8a] hover:bg-[#e53a24] text-white px-5 py-2.5 rounded-xl text-xs font-bold transition-colors flex items-center gap-2 shadow-sm"
+              >
+                <Download size={14} /> Download Original PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Meet the Team */}
       <div className="bg-white py-24 border-y border-gray-200/60 mb-24">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-SM font-bold text-[#e53a24] uppercase tracking-widest mb-2">Our People</h2>
+            <h2 className="text-xs md:text-sm font-bold text-[#e53a24] uppercase tracking-widest mb-2">Our People</h2>
             <h3 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a]">Meet The Experts</h3>
             <p className="text-gray-500 mt-4 max-w-2xl mx-auto">Our drivers and travel planners are the heart of Zenex Travel. They are trained professionals dedicated to your safety and comfort.</p>
           </div>
