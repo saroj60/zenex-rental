@@ -1543,4 +1543,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://dntt.com.np/package-detail/65/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dntt.com.np/tour/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dntt.com.np/tour-trip/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

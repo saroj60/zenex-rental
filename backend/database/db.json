@@ -14561,6 +14561,258 @@
           "answer": "Yes, this private vehicle overland tour is easy-paced without trekking, offering comfortable transfers and accessible sightseeing."
         }
       ]
+    },
+    {
+      "id": "16-day-discover-nepal-tour-with-tiger-tracking-in-bardia",
+      "slug": "16-day-discover-nepal-tour-with-tiger-tracking-in-bardia",
+      "title": "16 Day Discover Nepal Tour with Tiger Tracking in Bardia",
+      "tripCode": "DNTT/T/16D/01",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Bandipur, Pokhara, Tansen, Bardia National Park & Lumbini",
+      "country": "Nepal",
+      "duration": "16 Days / 15 Nights",
+      "price": "2215",
+      "pricingInfo": {
+        "regularPrice": 2600,
+        "sellingPrice": 2215,
+        "currency": "USD",
+        "luxury": {
+          "p1": 5400,
+          "p2": 4100,
+          "p3_5": 3800,
+          "p6_8": 3600,
+          "p9plus": 3450
+        },
+        "comfort": {
+          "p1": 4350,
+          "p2": 3150,
+          "p3_5": 2900,
+          "p6_8": 2750,
+          "p9plus": 2620
+        },
+        "standard": {
+          "p1": 3750,
+          "p2": 2600,
+          "p3_5": 2400,
+          "p6_8": 2280,
+          "p9plus": 2215
+        },
+        "budget": {
+          "p1": 3500,
+          "p2": 2450,
+          "p3_5": 2250,
+          "p6_8": 2120,
+          "p9plus": 2020
+        }
+      },
+      "maxAltitude": "1,700m / 5,577ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Aug-Oct & Mar-June",
+      "grade": "Easy",
+      "transportation": "Private Vehicle",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "An extraordinary 16-day expedition featuring 5 full nights in untouched Bardia National Park for Royal Bengal tiger tracking, Buddha birthplace Lumbini, 2 nights historic Tansen & Rani Mahal palace, Pokhara lakes, hilltop Bandipur, and 4 nights Kathmandu UNESCO heritage.",
+      "overview": "Embark on a 16-day Discover Nepal Tour and Tiger Tracking adventure, offering an unforgettable experience through Nepal's diverse landscapes and rich culture. Start your journey in Kathmandu, the vibrant capital, and travel to the charming hill town of Bandipur, where you can enjoy stunning mountain views and traditional Newari architecture. Continue to Pokhara, renowned for its serene lakes and breathtaking Annapurna scenery. Next, explore the historic town of Tansen, a hidden gem with unique architecture, Dhaka weaving, and the regal Rani Mahal palace on the Kali Gandaki River.\n\nFrom Tansen, head to Bardiya National Park, one of Asia's finest wilderness reserves. Spend five exciting days in Bardiya, tracking Royal Bengal tigers and discovering other exotic wildlife like one-horned rhinos, wild elephants, gangetic dolphins, and hundreds of bird species. The park's diverse ecosystems offer an incredible opportunity for nature and wildlife enthusiasts. After your wildlife adventure, visit Lumbini, the peaceful birthplace of Lord Buddha, and immerse yourself in its spiritual ambiance.\n\nReturn to Kathmandu to conclude your tour with two full days of sightseeing. Explore the rich cultural heritage, ancient temples, and vibrant markets of the city. Visit iconic sites such as Swayambhunath (Monkey Temple), Boudhanath Stupa, Pashupatinath, Bhaktapur Durbar Square, Patan, and Kathmandu Durbar Square.\n\nWhether you're tracking tigers in Bardiya or exploring the historical sites of Kathmandu, this 16-day tour promises an enriching and unforgettable journey through Nepal.",
+      "highlights": [
+        "Varied Grand Nepal Circuit: Perfect blend of cultural exploration, deep jungle wildlife tracking, spiritual pilgrimage, and mountain lake beauty.",
+        "5 Nights Bardia Tiger Tracking Expedition: Extended stay in Bardia National Park, Nepal's largest undisturbed wilderness, offering maximum tiger sighting probabilities with expert naturalists.",
+        "Historic Landmarks & Palaces: Explore Rani Mahal (Nepal's Taj Mahal) on the Kali Gandaki River in Tansen, plus classic hilltop Bandipur village.",
+        "Spiritual Pilgrimage in Lumbini: Visit Buddha's birthplace including Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries.",
+        "Complete Kathmandu UNESCO Heritage: Guided tours of Kathmandu, Bhaktapur & Patan Durbar Squares, Boudhanath, Pashupatinath, Swayambhunath, and a farewell cultural dinner."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Bandipur [Altitude 1030m/3380ft]",
+          "maxAltitude": "1,030m / 3,380ft",
+          "accommodation": "Heritage Hotel in Bandipur [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Kathmandu to Bandipur hilltop Newari village. Walk along cobblestone streets, admire traditional woodcarved architecture, and enjoy mountain sunset views."
+        },
+        {
+          "day": "Day 03",
+          "title": "Bandipur-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 2-3 hrs)",
+          "description": "Drive from Bandipur to Pokhara. Check into your lakeside hotel and enjoy an evening walk along Phewa Lake."
+        },
+        {
+          "day": "Day 04",
+          "title": "Pokhara Sightseeing & Sarangkot Sunrise",
+          "maxAltitude": "1,600m / 5,250ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Early morning drive to Sarangkot for sunrise views over Annapurna & Dhaulagiri. After breakfast, visit Bindabasini Temple, Seti Gorge, Gupteshwor Mahadev Cave, Davis Fall, and Phewa Lake boating."
+        },
+        {
+          "day": "Day 05",
+          "title": "Pokhara-Tansen [altitude 1350m/4430ft]",
+          "maxAltitude": "1,350m / 4,430ft",
+          "accommodation": "Hotel in Tansen [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Pokhara to Tansen along the scenic Siddhartha Highway. Check into your hotel and explore traditional Palpali streets."
+        },
+        {
+          "day": "Day 06",
+          "title": "Tansen Full Day Sightseeing & Rani Mahal Palace",
+          "maxAltitude": "1,350m / 4,430ft",
+          "accommodation": "Hotel in Tansen [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Full day sightseeing in Tansen: visit Rani Mahal (Taj Mahal of Nepal) on the banks of Kali Gandaki River, Tundikhel, Amar Narayan Temple, and panoramic view points."
+        },
+        {
+          "day": "Day 07",
+          "title": "Tansen-Bardia National Park [Altitude 300m/984ft]",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 7-8 hrs)",
+          "description": "Drive from Tansen to Bardia National Park in western Nepal. Check into your wilderness jungle lodge and enjoy a Tharu village walk."
+        },
+        {
+          "day": "Day 08",
+          "title": "Bardia National Park Tiger Tracking & Jeep Safari",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Safari Jeep & Foot Tracking",
+          "description": "Full day tiger tracking expedition in deep Bardia jungle reserves with experienced wildlife naturalists. Track Royal Bengal Tigers, one-horned rhinos, and wild elephants."
+        },
+        {
+          "day": "Day 09",
+          "title": "Bardia Deep Jungle Tiger Tracking Walk",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Guided Jungle Walk",
+          "description": "Full day guided walking safari inside the park core zone, visiting riverine watchtowers (machans) to spot Royal Bengal tigers, swamp deer, and wild Asian elephants."
+        },
+        {
+          "day": "Day 10",
+          "title": "Bardia Karnali River Rafting & Wildlife Observation",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "River Float & Canoe",
+          "description": "Scenic float trip along the Karnali/Geruwa River inside the national park to observe aquatic wildlife, gangetic dolphins, mugger crocodiles, and water birds."
+        },
+        {
+          "day": "Day 11",
+          "title": "Bardia Tharu Village & Wildlife Sanctuary Exploration",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Walking & Safari Vehicle",
+          "description": "Final full day in Bardia: explore Tharu indigenous villages, visit the elephant/crocodile conservation center, and take an evening sunset wildlife tracking walk."
+        },
+        {
+          "day": "Day 12",
+          "title": "Bardia-Lumbini [Altitude 165m/492ft]",
+          "maxAltitude": "165m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Bardia to Lumbini, the birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 13",
+          "title": "Lumbini-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 7-8 hrs)",
+          "description": "Drive back from Lumbini to Kathmandu. Check into your hotel and enjoy free time in Thamel."
+        },
+        {
+          "day": "Day 14",
+          "title": "Kathmandu UNESCO Sightseeing (Bhaktapur, Boudhanath & Pashupatinath)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of historic Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to spiritual Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 15",
+          "title": "Kathmandu Valley Sightseeing (Patan, Swayambhunath & Kathmandu Durbar Square) with Cultural Dinner",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Explore Patan Durbar Square (Krishna Mandir, Patan Museum), Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square (Kumari Ghar). Farewell traditional Nepali dinner with live cultural performance."
+        },
+        {
+          "day": "Day 16",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara city tour and Sarangkot Sunrise tour with an English speaking local guide",
+        "Expert naturalist guide, tiger tracking programs & entrance fees in Bardia National Park",
+        "Lumbini guided tour with an English speaking local guide",
+        "All applicable monument entrance fees",
+        "All government and local taxes",
+        "Daily buffet breakfast in all hotels",
+        "Daily buffet breakfast, lunch & dinner in Bardia",
+        "All accommodation in mentioned hotels: 4 Nights Kathmandu, 2 Nights Pokhara, 5 Nights Bardia Jungle Lodge, 2 Nights Tansen, 1 Night Bandipur, 1 Night Lumbini"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver & guide (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Bardia: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "4 Nights The Soaltee Kathmandu | 1 Night The Old Inn Bandipur | 2 Nights Sarangkot Mountain Lodge Pokhara | 2 Nights Hotel Shreenagar Tansen | 5 Nights Forest Hideaway Resort / Tiger Tops Karnali Lodge Bardia | 1 Night Buddha Maya Garden Lumbini",
+        "comfort": "4 Star Hotels in Kathmandu, Bandipur, Pokhara, Tansen, Bardia & Lumbini",
+        "standard": "3 Star Hotels in Kathmandu, Bandipur, Pokhara, Tansen, Bardia & Lumbini",
+        "budget": "2 Star Hotels in Kathmandu, Bandipur, Pokhara, Tansen, Bardia & Lumbini"
+      },
+      "faqs": [
+        {
+          "question": "What destinations are covered in the 16-day tour with Tiger Tracking in Bardia?",
+          "answer": "The tour covers Kathmandu, Bandipur, Pokhara, Tansen (Rani Mahal palace), Bardia National Park (5 nights deep wilderness tiger tracking), and Lumbini (Buddha's birthplace)."
+        },
+        {
+          "question": "Why spend 5 nights in Bardia National Park?",
+          "answer": "5 full nights in Bardia offer maximum probability for tracking wild Royal Bengal Tigers, Asian elephants, one-horned rhinos, and gangetic dolphins with expert naturalists."
+        },
+        {
+          "question": "Are all meals in Bardia included?",
+          "answer": "Yes, daily buffet breakfast, lunch, dinner, park permits, and safari tracking activities are fully included during your stay in Bardia."
+        }
+      ]
     }
   ],
   "treks": [
@@ -50354,6 +50606,258 @@
         {
           "question": "Is this package suitable for families and senior travelers?",
           "answer": "Yes, this private vehicle overland tour is easy-paced without trekking, offering comfortable transfers and accessible sightseeing."
+        }
+      ]
+    },
+    {
+      "id": "16-day-discover-nepal-tour-with-tiger-tracking-in-bardia",
+      "slug": "16-day-discover-nepal-tour-with-tiger-tracking-in-bardia",
+      "title": "16 Day Discover Nepal Tour with Tiger Tracking in Bardia",
+      "tripCode": "DNTT/T/16D/01",
+      "category": "Tours",
+      "type": "Tours",
+      "status": "Published",
+      "destination": "Nepal",
+      "location": "Kathmandu, Bandipur, Pokhara, Tansen, Bardia National Park & Lumbini",
+      "country": "Nepal",
+      "duration": "16 Days / 15 Nights",
+      "price": "2215",
+      "pricingInfo": {
+        "regularPrice": 2600,
+        "sellingPrice": 2215,
+        "currency": "USD",
+        "luxury": {
+          "p1": 5400,
+          "p2": 4100,
+          "p3_5": 3800,
+          "p6_8": 3600,
+          "p9plus": 3450
+        },
+        "comfort": {
+          "p1": 4350,
+          "p2": 3150,
+          "p3_5": 2900,
+          "p6_8": 2750,
+          "p9plus": 2620
+        },
+        "standard": {
+          "p1": 3750,
+          "p2": 2600,
+          "p3_5": 2400,
+          "p6_8": 2280,
+          "p9plus": 2215
+        },
+        "budget": {
+          "p1": 3500,
+          "p2": 2450,
+          "p3_5": 2250,
+          "p6_8": 2120,
+          "p9plus": 2020
+        }
+      },
+      "maxAltitude": "1,700m / 5,577ft",
+      "groupSize": "1 - 12 Persons (Private)",
+      "bestSeason": "Aug-Oct & Mar-June",
+      "grade": "Easy",
+      "transportation": "Private Vehicle",
+      "startPoint": "Kathmandu",
+      "endPoint": "Kathmandu",
+      "image": "/images/destinations/pokhara.png",
+      "img": "/images/destinations/pokhara.png",
+      "bannerImage": "/images/destinations/pokhara.png",
+      "shortDescription": "An extraordinary 16-day expedition featuring 5 full nights in untouched Bardia National Park for Royal Bengal tiger tracking, Buddha birthplace Lumbini, 2 nights historic Tansen & Rani Mahal palace, Pokhara lakes, hilltop Bandipur, and 4 nights Kathmandu UNESCO heritage.",
+      "overview": "Embark on a 16-day Discover Nepal Tour and Tiger Tracking adventure, offering an unforgettable experience through Nepal's diverse landscapes and rich culture. Start your journey in Kathmandu, the vibrant capital, and travel to the charming hill town of Bandipur, where you can enjoy stunning mountain views and traditional Newari architecture. Continue to Pokhara, renowned for its serene lakes and breathtaking Annapurna scenery. Next, explore the historic town of Tansen, a hidden gem with unique architecture, Dhaka weaving, and the regal Rani Mahal palace on the Kali Gandaki River.\n\nFrom Tansen, head to Bardiya National Park, one of Asia's finest wilderness reserves. Spend five exciting days in Bardiya, tracking Royal Bengal tigers and discovering other exotic wildlife like one-horned rhinos, wild elephants, gangetic dolphins, and hundreds of bird species. The park's diverse ecosystems offer an incredible opportunity for nature and wildlife enthusiasts. After your wildlife adventure, visit Lumbini, the peaceful birthplace of Lord Buddha, and immerse yourself in its spiritual ambiance.\n\nReturn to Kathmandu to conclude your tour with two full days of sightseeing. Explore the rich cultural heritage, ancient temples, and vibrant markets of the city. Visit iconic sites such as Swayambhunath (Monkey Temple), Boudhanath Stupa, Pashupatinath, Bhaktapur Durbar Square, Patan, and Kathmandu Durbar Square.\n\nWhether you're tracking tigers in Bardiya or exploring the historical sites of Kathmandu, this 16-day tour promises an enriching and unforgettable journey through Nepal.",
+      "highlights": [
+        "Varied Grand Nepal Circuit: Perfect blend of cultural exploration, deep jungle wildlife tracking, spiritual pilgrimage, and mountain lake beauty.",
+        "5 Nights Bardia Tiger Tracking Expedition: Extended stay in Bardia National Park, Nepal's largest undisturbed wilderness, offering maximum tiger sighting probabilities with expert naturalists.",
+        "Historic Landmarks & Palaces: Explore Rani Mahal (Nepal's Taj Mahal) on the Kali Gandaki River in Tansen, plus classic hilltop Bandipur village.",
+        "Spiritual Pilgrimage in Lumbini: Visit Buddha's birthplace including Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries.",
+        "Complete Kathmandu UNESCO Heritage: Guided tours of Kathmandu, Bhaktapur & Patan Durbar Squares, Boudhanath, Pashupatinath, Swayambhunath, and a farewell cultural dinner."
+      ],
+      "itinerary": [
+        {
+          "day": "Day 01",
+          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "No meals included on this day",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "On arrival at Tribhuvan International Airport, you will be greeted by a representative from Destination Nepal Tours & Travels Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, explore Thamel or relax at your hotel."
+        },
+        {
+          "day": "Day 02",
+          "title": "Kathmandu-Bandipur [Altitude 1030m/3380ft]",
+          "maxAltitude": "1,030m / 3,380ft",
+          "accommodation": "Heritage Hotel in Bandipur [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Kathmandu to Bandipur hilltop Newari village. Walk along cobblestone streets, admire traditional woodcarved architecture, and enjoy mountain sunset views."
+        },
+        {
+          "day": "Day 03",
+          "title": "Bandipur-Pokhara [altitude 830m/2723ft]",
+          "maxAltitude": "830m / 2,723ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 2-3 hrs)",
+          "description": "Drive from Bandipur to Pokhara. Check into your lakeside hotel and enjoy an evening walk along Phewa Lake."
+        },
+        {
+          "day": "Day 04",
+          "title": "Pokhara Sightseeing & Sarangkot Sunrise",
+          "maxAltitude": "1,600m / 5,250ft",
+          "accommodation": "Hotel in Pokhara [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Early morning drive to Sarangkot for sunrise views over Annapurna & Dhaulagiri. After breakfast, visit Bindabasini Temple, Seti Gorge, Gupteshwor Mahadev Cave, Davis Fall, and Phewa Lake boating."
+        },
+        {
+          "day": "Day 05",
+          "title": "Pokhara-Tansen [altitude 1350m/4430ft]",
+          "maxAltitude": "1,350m / 4,430ft",
+          "accommodation": "Hotel in Tansen [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 4-5 hrs)",
+          "description": "Drive from Pokhara to Tansen along the scenic Siddhartha Highway. Check into your hotel and explore traditional Palpali streets."
+        },
+        {
+          "day": "Day 06",
+          "title": "Tansen Full Day Sightseeing & Rani Mahal Palace",
+          "maxAltitude": "1,350m / 4,430ft",
+          "accommodation": "Hotel in Tansen [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Full day sightseeing in Tansen: visit Rani Mahal (Taj Mahal of Nepal) on the banks of Kali Gandaki River, Tundikhel, Amar Narayan Temple, and panoramic view points."
+        },
+        {
+          "day": "Day 07",
+          "title": "Tansen-Bardia National Park [Altitude 300m/984ft]",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Private AC Vehicle (approx. 7-8 hrs)",
+          "description": "Drive from Tansen to Bardia National Park in western Nepal. Check into your wilderness jungle lodge and enjoy a Tharu village walk."
+        },
+        {
+          "day": "Day 08",
+          "title": "Bardia National Park Tiger Tracking & Jeep Safari",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Safari Jeep & Foot Tracking",
+          "description": "Full day tiger tracking expedition in deep Bardia jungle reserves with experienced wildlife naturalists. Track Royal Bengal Tigers, one-horned rhinos, and wild elephants."
+        },
+        {
+          "day": "Day 09",
+          "title": "Bardia Deep Jungle Tiger Tracking Walk",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Guided Jungle Walk",
+          "description": "Full day guided walking safari inside the park core zone, visiting riverine watchtowers (machans) to spot Royal Bengal tigers, swamp deer, and wild Asian elephants."
+        },
+        {
+          "day": "Day 10",
+          "title": "Bardia Karnali River Rafting & Wildlife Observation",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "River Float & Canoe",
+          "description": "Scenic float trip along the Karnali/Geruwa River inside the national park to observe aquatic wildlife, gangetic dolphins, mugger crocodiles, and water birds."
+        },
+        {
+          "day": "Day 11",
+          "title": "Bardia Tharu Village & Wildlife Sanctuary Exploration",
+          "maxAltitude": "300m / 984ft",
+          "accommodation": "Jungle Lodge in Bardia [1 Night]",
+          "meals": "Breakfast, Lunch & Dinner",
+          "modeOfTravel": "Walking & Safari Vehicle",
+          "description": "Final full day in Bardia: explore Tharu indigenous villages, visit the elephant/crocodile conservation center, and take an evening sunset wildlife tracking walk."
+        },
+        {
+          "day": "Day 12",
+          "title": "Bardia-Lumbini [Altitude 165m/492ft]",
+          "maxAltitude": "165m / 492ft",
+          "accommodation": "Hotel in Lumbini [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 6-7 hrs)",
+          "description": "Drive from Bardia to Lumbini, the birthplace of Lord Buddha. Guided tour of Maya Devi Temple, sacred garden, Ashoka Pillar, and international monasteries."
+        },
+        {
+          "day": "Day 13",
+          "title": "Lumbini-Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle (approx. 7-8 hrs)",
+          "description": "Drive back from Lumbini to Kathmandu. Check into your hotel and enjoy free time in Thamel."
+        },
+        {
+          "day": "Day 14",
+          "title": "Kathmandu UNESCO Sightseeing (Bhaktapur, Boudhanath & Pashupatinath)",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Guided tour of historic Bhaktapur Durbar Square (55 Window Palace & Nyatapola Temple), followed by visits to spiritual Boudhanath Stupa and holy Pashupatinath Temple."
+        },
+        {
+          "day": "Day 15",
+          "title": "Kathmandu Valley Sightseeing (Patan, Swayambhunath & Kathmandu Durbar Square) with Cultural Dinner",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "Hotel in Kathmandu [1 Night]",
+          "meals": "Breakfast & Cultural Farewell Dinner",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Explore Patan Durbar Square (Krishna Mandir, Patan Museum), Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square (Kumari Ghar). Farewell traditional Nepali dinner with live cultural performance."
+        },
+        {
+          "day": "Day 16",
+          "title": "Depart from Kathmandu",
+          "maxAltitude": "1,400m / 4,595ft",
+          "accommodation": "None",
+          "meals": "Breakfast",
+          "modeOfTravel": "Private AC Vehicle",
+          "description": "Breakfast at hotel. Free time until airport transfer for your final departure flight."
+        }
+      ],
+      "includes": [
+        "Airport pick up & drop by comfortable private air-conditioned vehicle",
+        "All tours & transfers as per itinerary by comfortable private air-conditioned vehicle",
+        "Sightseeing tours in Kathmandu with an English speaking trained, professional guide",
+        "Pokhara city tour and Sarangkot Sunrise tour with an English speaking local guide",
+        "Expert naturalist guide, tiger tracking programs & entrance fees in Bardia National Park",
+        "Lumbini guided tour with an English speaking local guide",
+        "All applicable monument entrance fees",
+        "All government and local taxes",
+        "Daily buffet breakfast in all hotels",
+        "Daily buffet breakfast, lunch & dinner in Bardia",
+        "All accommodation in mentioned hotels: 4 Nights Kathmandu, 2 Nights Pokhara, 5 Nights Bardia Jungle Lodge, 2 Nights Tansen, 1 Night Bandipur, 1 Night Lumbini"
+      ],
+      "excludes": [
+        "Nepal Visa fees & International airfare",
+        "Tips for driver & guide (Recommended: US$ 5/day for driver, US$ 10/day for guide)",
+        "Meals (Lunch & dinner except in Bardia: US$ 10-20 per meal)",
+        "Personal expenses such as insurance, medical charges, laundry, shopping, liquor, etc.",
+        "Cost arising by flight cancellation/road blockades/landslides/emergency evacuation and reasons beyond our control"
+      ],
+      "hotelCategories": {
+        "luxury": "4 Nights The Soaltee Kathmandu | 1 Night The Old Inn Bandipur | 2 Nights Sarangkot Mountain Lodge Pokhara | 2 Nights Hotel Shreenagar Tansen | 5 Nights Forest Hideaway Resort / Tiger Tops Karnali Lodge Bardia | 1 Night Buddha Maya Garden Lumbini",
+        "comfort": "4 Star Hotels in Kathmandu, Bandipur, Pokhara, Tansen, Bardia & Lumbini",
+        "standard": "3 Star Hotels in Kathmandu, Bandipur, Pokhara, Tansen, Bardia & Lumbini",
+        "budget": "2 Star Hotels in Kathmandu, Bandipur, Pokhara, Tansen, Bardia & Lumbini"
+      },
+      "faqs": [
+        {
+          "question": "What destinations are covered in the 16-day tour with Tiger Tracking in Bardia?",
+          "answer": "The tour covers Kathmandu, Bandipur, Pokhara, Tansen (Rani Mahal palace), Bardia National Park (5 nights deep wilderness tiger tracking), and Lumbini (Buddha's birthplace)."
+        },
+        {
+          "question": "Why spend 5 nights in Bardia National Park?",
+          "answer": "5 full nights in Bardia offer maximum probability for tracking wild Royal Bengal Tigers, Asian elephants, one-horned rhinos, and gangetic dolphins with expert naturalists."
+        },
+        {
+          "question": "Are all meals in Bardia included?",
+          "answer": "Yes, daily buffet breakfast, lunch, dinner, park permits, and safari tracking activities are fully included during your stay in Bardia."
         }
       ]
     }
