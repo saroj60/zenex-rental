@@ -239,7 +239,7 @@ const Footer = () => {
               <img 
                 src="/images/zenex-rental-logo.png" 
                 alt="Zenex Car Rental" 
-                className="h-10 w-10 rounded-lg object-contain bg-white p-0.5"
+                className="h-11 w-11 rounded-full object-cover bg-white p-0.5 shadow-md border border-slate-700/50 shrink-0"
               />
               <div className="min-w-0 text-left">
                 <p className="text-xs font-bold text-white group-hover:text-[#e53a24] transition-colors leading-tight truncate">Zenex Car Rental</p>
