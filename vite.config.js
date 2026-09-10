@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   server: {
-    port: 5180,
+    port: 5185,
     proxy: {
       '/api': 'http://localhost:5000'
     }

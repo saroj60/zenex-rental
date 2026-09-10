@@ -86,7 +86,7 @@
       "type": "Minibus",
       "price": 15000,
       "priceWithDriver": 18000,
-      "img": "https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg",
+      "img": "/vehicles/tourist_bus_nepal.png",
       "seats": 35,
       "trans": "Manual",
       "fuel": "Diesel",
@@ -143,6 +143,70 @@
       "reviews": 29,
       "seoTitle": "Self Drive Car Rental in Kathmandu - Zenex Travels",
       "seoDescription": "Rent cars for self-driving in Nepal. Flexible daily, weekly, and monthly rates."
+    },
+    {
+      "id": 11,
+      "name": "BYD Atto 1 (Seagull)",
+      "type": "Electric EV",
+      "price": 7000,
+      "priceWithDriver": 8500,
+      "img": "/vehicles/byd_atto_1.png",
+      "seats": 4,
+      "trans": "Automatic",
+      "fuel": "Electric",
+      "luggage": 2,
+      "rating": 4.9,
+      "reviews": 42,
+      "seoTitle": "Rent BYD Atto 1 EV in Nepal - Zenex Travels",
+      "seoDescription": "Compact, modern BYD Atto 1 EV rental for easy city driving and eco-friendly travel."
+    },
+    {
+      "id": 12,
+      "name": "BYD Seal U SUV",
+      "type": "Electric EV",
+      "price": 14000,
+      "priceWithDriver": 16000,
+      "img": "/vehicles/byd_seal_u.png",
+      "seats": 5,
+      "trans": "Automatic",
+      "fuel": "Electric",
+      "luggage": 4,
+      "rating": 4.9,
+      "reviews": 58,
+      "seoTitle": "Rent BYD Seal U Electric SUV in Kathmandu",
+      "seoDescription": "Spacious and high-range BYD Seal U electric SUV rental in Nepal."
+    },
+    {
+      "id": 13,
+      "name": "BYD Sealion 7",
+      "type": "Electric EV",
+      "price": 16000,
+      "priceWithDriver": 18500,
+      "img": "/vehicles/byd_sealion_7.png",
+      "seats": 5,
+      "trans": "Automatic",
+      "fuel": "Electric",
+      "luggage": 4,
+      "rating": 5,
+      "reviews": 36,
+      "seoTitle": "Rent BYD Sealion 7 EV in Nepal - Zenex Travels",
+      "seoDescription": "Premium performance BYD Sealion 7 electric SUV rental for long distance trips."
+    },
+    {
+      "id": 14,
+      "name": "Luxury Mountain EV Sedan",
+      "type": "Luxury",
+      "price": 25000,
+      "priceWithDriver": 28000,
+      "img": "/vehicles/luxury_green_sedan.png",
+      "seats": 4,
+      "trans": "Automatic",
+      "fuel": "Electric",
+      "luggage": 3,
+      "rating": 5,
+      "reviews": 64,
+      "seoTitle": "Luxury Mountain EV Sedan Rental in Nepal - Zenex Travels",
+      "seoDescription": "Exclusive ultra-luxury electric sedan designed for scenic mountain highway tours."
     }
   ],
   "packages": [
@@ -17526,22 +17590,21 @@
       "bestSeason": "Spring (March - May) & Autumn (September - November)",
       "image": "/zenex images/Manaslu Region/photo-1515939169255-3e31ee7efbdf.avif",
       "gallery": [
-        {
-          "url": "/zenex images/Manaslu Region/photo-1515939169255-3e31ee7efbdf.avif",
-          "alt": "Tsum Valley Trek - 17 Days"
-        },
-        {
-          "url": "/zenex images/Manaslu Region/photo-1602589162641-449e416b88b1.avif",
-          "alt": "Tsum Valley Trek - 17 Days - View 2"
-        },
-        {
-          "url": "/zenex images/Manaslu Region/photo-1610911677104-e3e58171ae0a.avif",
-          "alt": "Tsum Valley Trek - 17 Days - View 3"
-        },
-        {
-          "url": "/zenex images/Manaslu Region/photo-1610912094854-a0301607b7de.avif",
-          "alt": "Tsum Valley Trek - 17 Days - View 4"
-        }
+        "/zenex images/Manaslu Region/photo-1515939169255-3e31ee7efbdf.avif",
+        "/zenex images/Manaslu Region/photo-1602589162641-449e416b88b1.avif",
+        "/zenex images/Manaslu Region/photo-1610911677104-e3e58171ae0a.avif",
+        "/zenex images/Manaslu Region/photo-1610912094854-a0301607b7de.avif",
+        "/zenex images/Manaslu Region/photo-1610912335893-b996d1743610.avif",
+        "/zenex images/Manaslu Region/photo-1611872110600-b619b39fa69d.avif",
+        "/zenex images/Manaslu Region/photo-1640953789949-4806a855a1f5.avif",
+        "/zenex images/Manaslu Region/photo-1650221293568-82a9823d938a.avif",
+        "/zenex images/Manaslu Region/photo-1680112365184-dc7dfb5db6ed.avif",
+        "/zenex images/Manaslu Region/photo-1687066111672-59a6656037ac.avif",
+        "/zenex images/Manaslu Region/photo-1692589250460-1ea229c9942a.avif",
+        "/zenex images/Manaslu Region/photo-1727081267987-c77bf3b7bf99.avif",
+        "/zenex images/Manaslu Region/photo-1751566609738-e1ed580bcb33.avif",
+        "/images/tsum-valley-trek-in-nepal.jpg",
+        "/images/manaslu.jpg"
       ],
       "overview": "\n      <h3>Tsum Valley Trek | A Journey into Tibetan-Buddhist Culture & Himalayan Beauty</h3>\n      <p>Tsum Valley, located in the northern Gorkha district of western Nepal, is a remote and culturally rich trekking destination within the Manaslu Conservation Area near the Tibetan border. Closed to foreigners until 2008 A.D., Tsum Valley offers a rare, untouched glimpse into ancient Tibetan Buddhist traditions, ancient monasteries like <strong>Mu Gompa</strong> and <strong>Rachen Gompa</strong>, and sacred caves where the 11th-century Buddhist yogi <strong>Milarepa</strong> once meditated.</p>\n      <p>This 17-day Tsum Valley Trek is the ultimate Buddhist cultural journey for travelers seeking peace, spiritual depth, and pristine mountain wilderness. Beyond the deep cultural immersion, you will enjoy spectacular mountain views of <strong>Ganesh Himal, Mount Manaslu, Himalchuli, Shringi Himal, and Boudha Himal</strong> during an excursion hike to <strong>Ganesh Himal Base Camp (4,200 m)</strong>—the highest point of the trip.</p>\n      <p>Trekking in Tsum Valley requires a <strong>Special Restricted Area Permit (RAP)</strong> and a <strong>Manaslu Conservation Area Permit (MCAP)</strong>. A minimum of 2 trekkers accompanied by a licensed Nepali guide is required by government regulation. <strong>Zenex Travels & Tours</strong> handles all permit logistics, private transportation, teahouse arrangements, and guide services to ensure a seamless, unforgettable Himalayan adventure.</p>\n    ",
       "highlights": [
@@ -17958,24 +18021,17 @@
       "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges on Trail",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (September - December)",
-      "image": "/zenex images/kathmandu/photo-1529733905113-027ed85d7e33.avif",
+      "image": "/images/langtang1.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/kathmandu/photo-1529733905113-027ed85d7e33.avif",
-          "alt": "Langtang Valley Trek - 10 Days"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1589791933711-d68aae51e609.avif",
-          "alt": "Langtang Valley Trek - 10 Days - View 2"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1592285896110-8d88b5b3a5d8.avif",
-          "alt": "Langtang Valley Trek - 10 Days - View 3"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1605640797058-58b7040a0e61.avif",
-          "alt": "Langtang Valley Trek - 10 Days - View 4"
-        }
+        "/images/langtang1.jpg",
+        "/images/langtang2.jpg",
+        "/images/langtang3.jpg",
+        "/zenex images/Poon Hill/istockphoto-468178599-612x612.webp",
+        "/zenex images/Poon Hill/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/Poon Hill/photo-1561142204-bb6112567a16.avif",
+        "/zenex images/Poon Hill/photo-1561891099-b8c46d2d8ee1.avif",
+        "/zenex images/Poon Hill/photo-1589800463007-3be49fe18b92.avif",
+        "/zenex images/Poon Hill/photo-1589801561572-d71f31807775.avif"
       ],
       "overview": "\n      <h3>Langtang Valley Trek | Tamang Hospitality, Glaciers & Himalayan Peaks</h3>\n      <p>Langtang Valley, situated just 123 km north of Kathmandu city, is often referred to as the <strong>\"Valley of Glaciers\"</strong>. The 10-day Langtang Valley Trek is one of the most scenic and accessible short treks in Nepal, beginning and ending in Kathmandu with only a 6-hour drive to the trailhead at Syabrubesi.</p>\n      <p>Throughout this 10-day journey, travelers explore spectacular mountain panoramas of the <strong>Langtang Himalayan range</strong>, snow-capped peaks, lush pine and rhododendron forests, pristine alpine wilderness, and the rich native Tamang-Tibetan culture. The trail leads into <strong>Langtang National Park</strong> up to the sacred valley of <strong>Kyanjin Gompa (3,870 m)</strong>, where options exist to ascend <strong>Kyanjin Ri (4,773 m)</strong> or <strong>Tserko Ri (4,985 m)</strong> for breathtaking views of Langtang Lirung Glacier and towering mountain giants.</p>\n      <p>Following the 2015 earthquake, Langtang village has been reborn with vibrant local spirit, featuring modern lodges, enhanced trails, and warm Tamang mountain hospitality. <strong>Zenex Travels & Tours</strong> arranges all permits, private transportation, teahouse accommodation, and expert guide services for a safe, memorable adventure.</p>\n    ",
       "highlights": [
@@ -18337,24 +18393,17 @@
       "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges on Trail",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (September - November)",
-      "image": "/zenex images/kathmandu/photo-1589791933711-d68aae51e609.avif",
+      "image": "/images/langtang1.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/kathmandu/photo-1589791933711-d68aae51e609.avif",
-          "alt": "Helambu & Langtang Trek - 17 Days"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1592285896110-8d88b5b3a5d8.avif",
-          "alt": "Helambu & Langtang Trek - 17 Days - View 2"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1605640797058-58b7040a0e61.avif",
-          "alt": "Helambu & Langtang Trek - 17 Days - View 3"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1605640840605-14ac1855827b.avif",
-          "alt": "Helambu & Langtang Trek - 17 Days - View 4"
-        }
+        "/images/langtang1.jpg",
+        "/images/langtang2.jpg",
+        "/images/langtang3.jpg",
+        "/zenex images/Poon Hill/istockphoto-468178599-612x612.webp",
+        "/zenex images/Poon Hill/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/Poon Hill/photo-1561142204-bb6112567a16.avif",
+        "/zenex images/Poon Hill/photo-1561891099-b8c46d2d8ee1.avif",
+        "/zenex images/Poon Hill/photo-1589800463007-3be49fe18b92.avif",
+        "/zenex images/Poon Hill/photo-1589801561572-d71f31807775.avif"
       ],
       "overview": "\n      <h3>Helambu & Langtang Trek | Sacred Alpine Lakes, Lauribina Pass & Glacial Peaks</h3>\n      <p>The 17-Day Helambu & Langtang Valley Trek in the Langtang region of Nepal is a grand Himalayan journey combining the culturally rich Hyolmo-Sherpa villages of Helambu, the sacred high-altitude Gosaikunda Lakes, and the glacial vistas of Langtang Valley. By connecting the <strong>Helambu Circuit Trek</strong> with the <strong>Langtang Valley Trek</strong> via <strong>Lauribina Pass (4,610 m)</strong>, trekkers experience one of Nepal's most complete and rewarding off-the-beaten-path adventures.</p>\n      <p>Beginning with a scenic drive from Kathmandu to Melamchi Bazar, the trail climbs through tranquil forests, terraced fields, and ancient Buddhist villages including Kakani, Tarke Ghyang, and Sermathang. Crossing the high Lauribina Pass brings you to the sacred turquoise waters of <strong>Gosaikunda Lake (4,380 m)</strong>—a revered pilgrimage site for both Hindus (abode of Lord Shiva) and Buddhists (dwelling place of Chenrezig). Continuing past Shin Gompa and Thulo Syabru, the route enters <strong>Langtang National Park</strong>, leading up to <strong>Kyanjin Gompa (3,870 m)</strong> with optional ascents to <strong>Kyanjin Ri (4,773 m)</strong> or <strong>Tserko Ri (4,985 m)</strong> for breathtaking 360-degree views of Langtang Lirung (7,227 m), Dorje Lakpa, Ganesh Himal, and Manaslu.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we handle every detail—from permit processing (Langtang National Park & TIMS) to private ground transfers, licensed professional guide and porter services, teahouse reservations, and personalized itinerary support—ensuring a smooth, safe, and soulful Himalayan experience.</p>\n    ",
       "highlights": [
@@ -18810,24 +18859,17 @@
       "accommodation": "3-Star Hotel in Kathmandu / Local Lodges & Homestays",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (September - November)",
-      "image": "/zenex images/kathmandu/photo-1592285896110-8d88b5b3a5d8.avif",
+      "image": "/images/langtang1.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/kathmandu/photo-1592285896110-8d88b5b3a5d8.avif",
-          "alt": "Ruby Valley Trek - 12 Days"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1605640797058-58b7040a0e61.avif",
-          "alt": "Ruby Valley Trek - 12 Days - View 2"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1605640840605-14ac1855827b.avif",
-          "alt": "Ruby Valley Trek - 12 Days - View 3"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1617469165786-8007eda3caa7.avif",
-          "alt": "Ruby Valley Trek - 12 Days - View 4"
-        }
+        "/images/langtang1.jpg",
+        "/images/langtang2.jpg",
+        "/images/langtang3.jpg",
+        "/zenex images/Poon Hill/istockphoto-468178599-612x612.webp",
+        "/zenex images/Poon Hill/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/Poon Hill/photo-1561142204-bb6112567a16.avif",
+        "/zenex images/Poon Hill/photo-1561891099-b8c46d2d8ee1.avif",
+        "/zenex images/Poon Hill/photo-1589800463007-3be49fe18b92.avif",
+        "/zenex images/Poon Hill/photo-1589801561572-d71f31807775.avif"
       ],
       "overview": "\n      <h3>Ruby Valley Trek | Untouched Wilderness & Homestay Trails Between Langtang & Manaslu</h3>\n      <p>The 12-Day Ruby Valley Trek is a hidden gem tucked into the Ganesh Himal region of central Nepal, nestled serenely between the Langtang Valley to the east and the Manaslu region to the west. Named after the precious gem mines hidden in the surrounding mountains, the Ruby Valley offers a quiet, crowd-free alternative to Nepal's mainstream trekking routes.</p>\n      <p>Throughout this 12-day journey, trekkers are treated to spectacular mountain views of <strong>Ganesh Himal, Langtang Lirung, Mt. Manaslu, and Annapurna</strong>. The trail climbs through dense rhododendron and pine forests, peaceful valleys, and alpine pastures, crossing high suspension bridges and the panoramic <strong>Pangsang Pass (3,850 m)</strong>—the highest point of the trek. A major highlight is authentic cultural immersion: staying in local homestays with Tamang, Gurung, and Dalit villagers, relaxing in natural hot springs at Shertung, and visiting ancient Buddhist monasteries and Mani walls.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all trek details—including Langtang National Park entry permits, ground transportation, certified English-speaking guides and porters, homestay bookings, and gear support—ensuring a memorable, safe, and culturally rich Himalayan experience.</p>\n    ",
       "highlights": [
@@ -19217,24 +19259,17 @@
       "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Homestays",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (September - November)",
-      "image": "/zenex images/kathmandu/photo-1605640797058-58b7040a0e61.avif",
+      "image": "/images/langtang1.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/kathmandu/photo-1605640797058-58b7040a0e61.avif",
-          "alt": "Tamang Heritage and Langtang Valley Trek - 15 Days"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1605640840605-14ac1855827b.avif",
-          "alt": "Tamang Heritage and Langtang Valley Trek - 15 Days - View 2"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1617469165786-8007eda3caa7.avif",
-          "alt": "Tamang Heritage and Langtang Valley Trek - 15 Days - View 3"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1623492701902-47dc207df5dc.avif",
-          "alt": "Tamang Heritage and Langtang Valley Trek - 15 Days - View 4"
-        }
+        "/images/langtang1.jpg",
+        "/images/langtang2.jpg",
+        "/images/langtang3.jpg",
+        "/zenex images/Poon Hill/istockphoto-468178599-612x612.webp",
+        "/zenex images/Poon Hill/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/Poon Hill/photo-1561142204-bb6112567a16.avif",
+        "/zenex images/Poon Hill/photo-1561891099-b8c46d2d8ee1.avif",
+        "/zenex images/Poon Hill/photo-1589800463007-3be49fe18b92.avif",
+        "/zenex images/Poon Hill/photo-1589801561572-d71f31807775.avif"
       ],
       "overview": "\n      <h3>Tamang Heritage and Langtang Valley Trek | Cultural Homestays, Hot Springs & Glacial Peaks</h3>\n      <p>The 15-Day Tamang Heritage and Langtang Valley Trek offers a unique blend of cultural immersion and stunning Himalayan wilderness in Nepal’s Rasuwa district. Combining the traditional <strong>Tamang Heritage Trail</strong> with the alpine beauty of <strong>Langtang Valley</strong>, this moderate-grade trek takes you through ancient stone villages, sacred monasteries, and natural hot springs before ascending into high-altitude glacial terrain.</p>\n      <p>Along the initial cultural trail, trekkers visit Gatlang, Tatopani (famous for natural healing hot springs), Nagthali viewpoint (3,165 m), Thuman, and Briddhim homestay village. You'll experience warm Tamang-Tibetan hospitality, traditional dances, and ancient craft traditions. Joining the main Langtang route past Lama Hotel and Langtang Village, the trail reaches <strong>Kyanjin Gompa (3,870 m)</strong> where optional ascents to <strong>Kyanjin Ri (4,773 m)</strong> or <strong>Tserko Ri (4,985 m)</strong> afford breathtaking 360-degree panoramas of Langtang Lirung (7,227 m), Dorje Lakpa, and Ganesh Himal.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Langtang National Park entry permits, TIMS registration, private vehicle transfers, certified English-speaking guides and porters, homestay bookings, and gear support—ensuring a seamless, safe, and deeply rewarding Himalayan adventure.</p>\n    ",
       "highlights": [
@@ -19656,24 +19691,17 @@
       "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Homestays",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (September - November)",
-      "image": "/zenex images/kathmandu/photo-1605640840605-14ac1855827b.avif",
+      "image": "/images/langtang1.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/kathmandu/photo-1605640840605-14ac1855827b.avif",
-          "alt": "Tamang Heritage Trek - 10 Days"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1617469165786-8007eda3caa7.avif",
-          "alt": "Tamang Heritage Trek - 10 Days - View 2"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1623492701902-47dc207df5dc.avif",
-          "alt": "Tamang Heritage Trek - 10 Days - View 3"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1665435246333-48b2bc7a0018.avif",
-          "alt": "Tamang Heritage Trek - 10 Days - View 4"
-        }
+        "/images/langtang1.jpg",
+        "/images/langtang2.jpg",
+        "/images/langtang3.jpg",
+        "/zenex images/Poon Hill/istockphoto-468178599-612x612.webp",
+        "/zenex images/Poon Hill/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/Poon Hill/photo-1561142204-bb6112567a16.avif",
+        "/zenex images/Poon Hill/photo-1561891099-b8c46d2d8ee1.avif",
+        "/zenex images/Poon Hill/photo-1589800463007-3be49fe18b92.avif",
+        "/zenex images/Poon Hill/photo-1589801561572-d71f31807775.avif"
       ],
       "overview": "\n      <h3>Tamang Heritage Trek | Authentic Village Homestays, Hot Springs & Himalayan Roots</h3>\n      <p>The 10-Day Tamang Heritage Trek in Nepal's Langtang region is a peaceful, culturally rich short journey through traditional Tamang villages, forested hills, and scenic mountain landscapes. Tucked close to the Tibetan border, this trail immerses trekkers in centuries-old Tamang Buddhist traditions, warm family homestays, ancient monasteries, traditional weaving crafts, and vibrant local festivals.</p>\n      <p>Starting with a scenic drive from Kathmandu to Syabrubesi, the trail loops through traditional villages including Gatlang (renowned for stone-built houses), Tatopani (famous for natural healing thermal hot springs), Nagthali viewpoint (3,165 m)—a historic meditation ridge offering 360-degree views of Ganesh Himal and Langtang Lirung—Thuman, and Briddhim homestay village. Graded as an <strong>Easy</strong> trek with a manageable maximum altitude of 3,165 meters, it is ideal for beginners, families, and culture seekers.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Langtang National Park entry permits, TIMS registration, private vehicle transfers, certified English-speaking guides and porters, homestay bookings, and gear support—ensuring a smooth, safe, and soulful Himalayan experience.</p>\n    ",
       "highlights": [
@@ -20040,24 +20068,17 @@
       "accommodation": "3-Star Hotel in Kathmandu / Mountain Teahouses & Tented Camps",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (September - November)",
-      "image": "/zenex images/kathmandu/photo-1617469165786-8007eda3caa7.avif",
+      "image": "/images/langtang1.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/kathmandu/photo-1617469165786-8007eda3caa7.avif",
-          "alt": "Langtang Ganja La Pass Trek - 15 Days"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1623492701902-47dc207df5dc.avif",
-          "alt": "Langtang Ganja La Pass Trek - 15 Days - View 2"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1665435246333-48b2bc7a0018.avif",
-          "alt": "Langtang Ganja La Pass Trek - 15 Days - View 3"
-        },
-        {
-          "url": "/zenex images/kathmandu/photo-1706188370039-e0cf9bd6ea16.avif",
-          "alt": "Langtang Ganja La Pass Trek - 15 Days - View 4"
-        }
+        "/images/langtang1.jpg",
+        "/images/langtang2.jpg",
+        "/images/langtang3.jpg",
+        "/zenex images/Poon Hill/istockphoto-468178599-612x612.webp",
+        "/zenex images/Poon Hill/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/Poon Hill/photo-1561142204-bb6112567a16.avif",
+        "/zenex images/Poon Hill/photo-1561891099-b8c46d2d8ee1.avif",
+        "/zenex images/Poon Hill/photo-1589800463007-3be49fe18b92.avif",
+        "/zenex images/Poon Hill/photo-1589801561572-d71f31807775.avif"
       ],
       "overview": "\n      <h3>Langtang Ganja La Pass Trek | High Altitude Technical Pass & Himalayan Camping Expedition</h3>\n      <p>The 15-Day Langtang Ganja La Pass Trek is a thrilling high-altitude adventure combining the cultural richness of Langtang Valley with the rugged wilderness of the Helambu region. Starting from Syabrubesi, the trail winds through Tamang villages, pine forests, and alpine pastures to Kyanjin Gompa (3,870 m) before ascending into remote, unpopulated terrain to cross the formidable <strong>Ganja La Pass (5,130 m)</strong>.</p>\n      <p>Ganja La Pass offers spectacular 360-degree views of <strong>Langtang Lirung (7,227 m), Dorje Lakpa, Shishapangma (Tibet), and Ganesh Himal</strong>. Descending from the pass into the less-traveled Helambu valley involves camping at high altitude pastures (Ngegang Kharka, Keldang, Dhukpa) managed by a full camping support crew. The trail continues through traditional Sherpa villages including Tarkeghyang and Shermathang before concluding at Melamchi Bazaar.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we provide comprehensive logistics—including full camping gear, licensed high-altitude guides, camping cooks, porters, Langtang National Park permits, private vehicle transfers, and hotel arrangements—to ensure a safe and unforgettable Himalayan expedition for experienced trekkers.</p>\n    ",
       "highlights": [
@@ -20499,24 +20520,52 @@
       "accommodation": "Hotels in Kathmandu & Pokhara / Mountain Lodges & Teahouses",
       "meals": "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Mustang Tour",
       "bestSeason": "All Seasons (Spring, Summer/Monsoon, Autumn & Winter)",
-      "image": "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
+      "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
       "gallery": [
-        {
-          "url": "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
-          "alt": "Upper Mustang Tour - 13 Days"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
-          "alt": "Upper Mustang Tour - 13 Days - View 2"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
-          "alt": "Upper Mustang Tour - 13 Days - View 3"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
-          "alt": "Upper Mustang Tour - 13 Days - View 4"
-        }
+        "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+        "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
+        "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
+        "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
+        "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
+        "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif",
+        "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
+        "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
+        "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
+        "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661963069552-d80c962b6893.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661963691068-e8fffe491afa.avif",
+        "/zenex images/Upper Mustang/premium_photo-1697729841310-078c6fc2deaa.avif",
+        "/zenex images/Jomsom/photo-1510072382196-cbaa254b5a6e.avif",
+        "/zenex images/Jomsom/photo-1585811647262-5cd9cb68f1df.avif",
+        "/zenex images/Jomsom/photo-1606361790928-85aada0052ba.avif",
+        "/zenex images/Jomsom/photo-1647175826608-dbcac41f71d7.avif",
+        "/zenex images/Jomsom/photo-1662563057755-4a52aa369ac5.avif",
+        "/zenex images/Jomsom/photo-1662563059200-ece903905d4a.avif",
+        "/zenex images/Jomsom/photo-1678213193578-d667ccc3e7b8.avif",
+        "/zenex images/Jomsom/photo-1678911148335-c8bb1bcc35d1.avif",
+        "/zenex images/Jomsom/photo-1715088990657-1a70ca630365.avif",
+        "/zenex images/Jomsom/photo-1715095072247-1b7fb00d51ca.avif",
+        "/zenex images/Jomsom/photo-1731562562673-8edf8635fe65.avif",
+        "/zenex images/Jomsom/photo-1745165415773-c08fc1c2bbcd.avif",
+        "/zenex images/Jomsom/premium_photo-1697729576538-64712aaa28ec.avif",
+        "/zenex images/muktinath/istockphoto-518701523-612x612.webp",
+        "/zenex images/muktinath/photo-1529018576489-4d1b669bdb15.avif",
+        "/zenex images/muktinath/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/muktinath/photo-1540961286473-8ad1368dc1bd.avif",
+        "/zenex images/muktinath/photo-1586614024747-d5e88bc4b02e.avif",
+        "/zenex images/muktinath/photo-1623356788377-3313cc497e4b.avif",
+        "/zenex images/muktinath/photo-1662563056535-de19ec06db36.avif",
+        "/zenex images/muktinath/photo-1710344473352-01e7934f7b45.avif",
+        "/zenex images/muktinath/photo-1730021619164-4bdc96e734ae.avif",
+        "/zenex images/muktinath/photo-1730021619207-1e7c034c64bb.avif",
+        "/zenex images/muktinath/photo-1731562561415-db8fb459d823.avif",
+        "/zenex images/muktinath/photo-1731562561593-8bebd63672e0.avif",
+        "/zenex images/muktinath/photo-1761900936681-9b68c0b45c57.avif",
+        "/zenex images/muktinath/photo-1772625689525-78d2f25962f7.avif",
+        "/zenex images/muktinath/premium_photo-1675597044994-1b04f8b3fec8.avif",
+        "/zenex images/muktinath/premium_photo-1697729690458-2d64ca777c04.avif"
       ],
       "overview": "\n      <h3>Upper Mustang Drive-In Drive-Out 4WD Jeep Tour | Explore Mustang's Ancient Culture & Himalayan Desert Landscapes</h3>\n      <p>The 13-Day Upper Mustang Tour from Kathmandu is a culturally rich and scenic overland journey to one of Nepal's most remote and fascinating Himalayan regions. Known as the <strong>\"Last Forbidden Kingdom\"</strong>, Upper Mustang offers a unique blend of ancient Tibetan Buddhist heritage, wind-carved desert canyons, 1,000-year-old cliffside cave dwellings, and sacred monasteries.</p>\n      <p>Travelers explore the historic walled capital of <strong>Lo Manthang</strong>, sacred Muktinath Temple, ancient sky caves in Chhoser, and 1,300-year-old Ghar Gompa (Lo-Ghyakar). With 4WD vehicle access throughout the circuit, this tour is suitable for travelers who wish to avoid long trekking walks while fully immersing in Mustang's spiritual and natural beauty. Located in the rain-shadow of the Dhaulagiri and Annapurna ranges, Upper Mustang is also ideal for summer monsoon travel.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we arrange all logistics—including Special Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), private 4WD Mahindra Scorpio / Toyota Land Cruiser vehicles with expert drivers, licensed tour guides, quality lodge bookings, and hotel stays in Kathmandu and Pokhara.</p>\n    ",
       "highlights": [
@@ -20940,24 +20989,52 @@
       "accommodation": "3-Star Hotel in Kathmandu & Pokhara / Mountain Teahouses & Lodges",
       "meals": "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May), Summer/Monsoon & Autumn (Sept - Nov)",
-      "image": "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
+      "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
       "gallery": [
-        {
-          "url": "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
-          "alt": "Upper Mustang Trek - 18 Days"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
-          "alt": "Upper Mustang Trek - 18 Days - View 2"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
-          "alt": "Upper Mustang Trek - 18 Days - View 3"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif",
-          "alt": "Upper Mustang Trek - 18 Days - View 4"
-        }
+        "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+        "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
+        "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
+        "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
+        "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
+        "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif",
+        "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
+        "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
+        "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
+        "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661963069552-d80c962b6893.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661963691068-e8fffe491afa.avif",
+        "/zenex images/Upper Mustang/premium_photo-1697729841310-078c6fc2deaa.avif",
+        "/zenex images/Jomsom/photo-1510072382196-cbaa254b5a6e.avif",
+        "/zenex images/Jomsom/photo-1585811647262-5cd9cb68f1df.avif",
+        "/zenex images/Jomsom/photo-1606361790928-85aada0052ba.avif",
+        "/zenex images/Jomsom/photo-1647175826608-dbcac41f71d7.avif",
+        "/zenex images/Jomsom/photo-1662563057755-4a52aa369ac5.avif",
+        "/zenex images/Jomsom/photo-1662563059200-ece903905d4a.avif",
+        "/zenex images/Jomsom/photo-1678213193578-d667ccc3e7b8.avif",
+        "/zenex images/Jomsom/photo-1678911148335-c8bb1bcc35d1.avif",
+        "/zenex images/Jomsom/photo-1715088990657-1a70ca630365.avif",
+        "/zenex images/Jomsom/photo-1715095072247-1b7fb00d51ca.avif",
+        "/zenex images/Jomsom/photo-1731562562673-8edf8635fe65.avif",
+        "/zenex images/Jomsom/photo-1745165415773-c08fc1c2bbcd.avif",
+        "/zenex images/Jomsom/premium_photo-1697729576538-64712aaa28ec.avif",
+        "/zenex images/muktinath/istockphoto-518701523-612x612.webp",
+        "/zenex images/muktinath/photo-1529018576489-4d1b669bdb15.avif",
+        "/zenex images/muktinath/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/muktinath/photo-1540961286473-8ad1368dc1bd.avif",
+        "/zenex images/muktinath/photo-1586614024747-d5e88bc4b02e.avif",
+        "/zenex images/muktinath/photo-1623356788377-3313cc497e4b.avif",
+        "/zenex images/muktinath/photo-1662563056535-de19ec06db36.avif",
+        "/zenex images/muktinath/photo-1710344473352-01e7934f7b45.avif",
+        "/zenex images/muktinath/photo-1730021619164-4bdc96e734ae.avif",
+        "/zenex images/muktinath/photo-1730021619207-1e7c034c64bb.avif",
+        "/zenex images/muktinath/photo-1731562561415-db8fb459d823.avif",
+        "/zenex images/muktinath/photo-1731562561593-8bebd63672e0.avif",
+        "/zenex images/muktinath/photo-1761900936681-9b68c0b45c57.avif",
+        "/zenex images/muktinath/photo-1772625689525-78d2f25962f7.avif",
+        "/zenex images/muktinath/premium_photo-1675597044994-1b04f8b3fec8.avif",
+        "/zenex images/muktinath/premium_photo-1697729690458-2d64ca777c04.avif"
       ],
       "overview": "\n      <h3>Short Upper Mustang Trek 18 Days | Discover Nepal's Forbidden Kingdom & Tibetan Culture</h3>\n      <p>The 18-Day Upper Mustang Trek in Nepal is a culturally rich and scenic mountain expedition into one of Nepal's most remote and preserved Himalayan destinations. Often referred to as the <strong>\"Last Forbidden Kingdom\"</strong>, Upper Mustang was closed to foreign travelers until 1992, preserving its ancient Tibetan Buddhist traditions, centuries-old monasteries, cliffside cave dwellings, and desert-like landscapes.</p>\n      <p>Starting with a scenic flight or drive from Pokhara to Jomsom, the trail leads past black Shaligram fossils in Kali Gandaki Valley to Kagbeni, the restricted boundary of Upper Mustang. Trekkers walk through colorful traditional villages like Chele, Samar, Syanbochen, Ghami, and Charang before reaching the ancient walled capital of <strong>Lo Manthang (3,810 m)</strong>. The return trail crosses the high <strong>Gyu La Pass (4,077 m)</strong> to holy Muktinath Temple.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Special Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), round-trip domestic flights/transfers, licensed high-altitude guides, porters, teahouse bookings, and hotel stays in Kathmandu and Pokhara.</p>\n    ",
       "highlights": [
@@ -21399,24 +21476,52 @@
       "accommodation": "3-Star Hotel in Kathmandu & Pokhara / Mountain Teahouses & Lodges",
       "meals": "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May), Summer/Monsoon (Rain-Shadow) & Autumn (Sept - Nov)",
-      "image": "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
+      "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
       "gallery": [
-        {
-          "url": "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
-          "alt": "Upper Mustang Trek with Luri Gompa - 22 Days"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
-          "alt": "Upper Mustang Trek with Luri Gompa - 22 Days - View 2"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif",
-          "alt": "Upper Mustang Trek with Luri Gompa - 22 Days - View 3"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661963069552-d80c962b6893.avif",
-          "alt": "Upper Mustang Trek with Luri Gompa - 22 Days - View 4"
-        }
+        "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+        "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
+        "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
+        "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
+        "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
+        "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif",
+        "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
+        "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
+        "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
+        "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661963069552-d80c962b6893.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661963691068-e8fffe491afa.avif",
+        "/zenex images/Upper Mustang/premium_photo-1697729841310-078c6fc2deaa.avif",
+        "/zenex images/Jomsom/photo-1510072382196-cbaa254b5a6e.avif",
+        "/zenex images/Jomsom/photo-1585811647262-5cd9cb68f1df.avif",
+        "/zenex images/Jomsom/photo-1606361790928-85aada0052ba.avif",
+        "/zenex images/Jomsom/photo-1647175826608-dbcac41f71d7.avif",
+        "/zenex images/Jomsom/photo-1662563057755-4a52aa369ac5.avif",
+        "/zenex images/Jomsom/photo-1662563059200-ece903905d4a.avif",
+        "/zenex images/Jomsom/photo-1678213193578-d667ccc3e7b8.avif",
+        "/zenex images/Jomsom/photo-1678911148335-c8bb1bcc35d1.avif",
+        "/zenex images/Jomsom/photo-1715088990657-1a70ca630365.avif",
+        "/zenex images/Jomsom/photo-1715095072247-1b7fb00d51ca.avif",
+        "/zenex images/Jomsom/photo-1731562562673-8edf8635fe65.avif",
+        "/zenex images/Jomsom/photo-1745165415773-c08fc1c2bbcd.avif",
+        "/zenex images/Jomsom/premium_photo-1697729576538-64712aaa28ec.avif",
+        "/zenex images/muktinath/istockphoto-518701523-612x612.webp",
+        "/zenex images/muktinath/photo-1529018576489-4d1b669bdb15.avif",
+        "/zenex images/muktinath/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/muktinath/photo-1540961286473-8ad1368dc1bd.avif",
+        "/zenex images/muktinath/photo-1586614024747-d5e88bc4b02e.avif",
+        "/zenex images/muktinath/photo-1623356788377-3313cc497e4b.avif",
+        "/zenex images/muktinath/photo-1662563056535-de19ec06db36.avif",
+        "/zenex images/muktinath/photo-1710344473352-01e7934f7b45.avif",
+        "/zenex images/muktinath/photo-1730021619164-4bdc96e734ae.avif",
+        "/zenex images/muktinath/photo-1730021619207-1e7c034c64bb.avif",
+        "/zenex images/muktinath/photo-1731562561415-db8fb459d823.avif",
+        "/zenex images/muktinath/photo-1731562561593-8bebd63672e0.avif",
+        "/zenex images/muktinath/photo-1761900936681-9b68c0b45c57.avif",
+        "/zenex images/muktinath/photo-1772625689525-78d2f25962f7.avif",
+        "/zenex images/muktinath/premium_photo-1675597044994-1b04f8b3fec8.avif",
+        "/zenex images/muktinath/premium_photo-1697729690458-2d64ca777c04.avif"
       ],
       "overview": "\n      <h3>Upper Mustang Trek with Luri Gompa 22 Days | Hidden Kingdom & Sacred Cliffside Cave Monastery</h3>\n      <p>The 22-Day Upper Mustang Trek with Luri Gompa is a unique cultural and spiritual expedition into the heart of the ancient Kingdom of Lo in Nepal. Beyond the classic Lo Manthang circuit, this remote loop takes adventurers off the main trail into the untouched villages of Dhi, Yara, Ghara, and Tangge. The pinnacle of the trek is visiting <strong>Luri Gompa</strong>, a mystical 13th–14th-century cave monastery carved high inside a sandstone cliff face.</p>\n      <p>Luri Gompa shelters ancient Buddhist wall frescoes, a sacred domed chorten (stupa), and rare religious texts preserved in high-altitude desert air. Along the circuit, trekkers experience traditional Mustang village life, ochre red canyon walls, sky cave complexes in Chhoser, and breathtaking panoramas of Nilgiri, Dhaulagiri, and Annapurna peaks before returning via high passes to holy Muktinath Temple.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we handle all logistics—including Special Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), round-trip domestic flights (Pokhara – Jomsom – Pokhara), licensed high-altitude guides, porters, lodge bookings, and 3-star hotel stays in Kathmandu and Pokhara.</p>\n    ",
       "highlights": [
@@ -21906,24 +22011,52 @@
       "accommodation": "3-Star Hotel in Kathmandu / Mountain Teahouses & Tented Camping",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (Sept - Nov)",
-      "image": "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
+      "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
       "gallery": [
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
-          "alt": "Nar Phu and Upper Mustang Trek - 27 Days"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif",
-          "alt": "Nar Phu and Upper Mustang Trek - 27 Days - View 2"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661963069552-d80c962b6893.avif",
-          "alt": "Nar Phu and Upper Mustang Trek - 27 Days - View 3"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/premium_photo-1661963691068-e8fffe491afa.avif",
-          "alt": "Nar Phu and Upper Mustang Trek - 27 Days - View 4"
-        }
+        "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+        "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
+        "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
+        "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
+        "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
+        "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif",
+        "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
+        "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
+        "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
+        "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661963069552-d80c962b6893.avif",
+        "/zenex images/Upper Mustang/premium_photo-1661963691068-e8fffe491afa.avif",
+        "/zenex images/Upper Mustang/premium_photo-1697729841310-078c6fc2deaa.avif",
+        "/zenex images/Jomsom/photo-1510072382196-cbaa254b5a6e.avif",
+        "/zenex images/Jomsom/photo-1585811647262-5cd9cb68f1df.avif",
+        "/zenex images/Jomsom/photo-1606361790928-85aada0052ba.avif",
+        "/zenex images/Jomsom/photo-1647175826608-dbcac41f71d7.avif",
+        "/zenex images/Jomsom/photo-1662563057755-4a52aa369ac5.avif",
+        "/zenex images/Jomsom/photo-1662563059200-ece903905d4a.avif",
+        "/zenex images/Jomsom/photo-1678213193578-d667ccc3e7b8.avif",
+        "/zenex images/Jomsom/photo-1678911148335-c8bb1bcc35d1.avif",
+        "/zenex images/Jomsom/photo-1715088990657-1a70ca630365.avif",
+        "/zenex images/Jomsom/photo-1715095072247-1b7fb00d51ca.avif",
+        "/zenex images/Jomsom/photo-1731562562673-8edf8635fe65.avif",
+        "/zenex images/Jomsom/photo-1745165415773-c08fc1c2bbcd.avif",
+        "/zenex images/Jomsom/premium_photo-1697729576538-64712aaa28ec.avif",
+        "/zenex images/muktinath/istockphoto-518701523-612x612.webp",
+        "/zenex images/muktinath/photo-1529018576489-4d1b669bdb15.avif",
+        "/zenex images/muktinath/photo-1538321833141-b175d44fd264.avif",
+        "/zenex images/muktinath/photo-1540961286473-8ad1368dc1bd.avif",
+        "/zenex images/muktinath/photo-1586614024747-d5e88bc4b02e.avif",
+        "/zenex images/muktinath/photo-1623356788377-3313cc497e4b.avif",
+        "/zenex images/muktinath/photo-1662563056535-de19ec06db36.avif",
+        "/zenex images/muktinath/photo-1710344473352-01e7934f7b45.avif",
+        "/zenex images/muktinath/photo-1730021619164-4bdc96e734ae.avif",
+        "/zenex images/muktinath/photo-1730021619207-1e7c034c64bb.avif",
+        "/zenex images/muktinath/photo-1731562561415-db8fb459d823.avif",
+        "/zenex images/muktinath/photo-1731562561593-8bebd63672e0.avif",
+        "/zenex images/muktinath/photo-1761900936681-9b68c0b45c57.avif",
+        "/zenex images/muktinath/photo-1772625689525-78d2f25962f7.avif",
+        "/zenex images/muktinath/premium_photo-1675597044994-1b04f8b3fec8.avif",
+        "/zenex images/muktinath/premium_photo-1697729690458-2d64ca777c04.avif"
       ],
       "overview": "\n      <h3>Nar Phu and Upper Mustang Trek 27 Days | High Altitude Wilderness & Trans-Himalayan Pass Expedition</h3>\n      <p>The 27-Day Nar Phu and Upper Mustang Trek is one of the most adventurous, remote, and culturally rich expeditions in the Nepalese Himalayas. Crossing two restricted regions—the hidden Tibetan-influenced valleys of <strong>Nar and Phu</strong> in Manang and the ancient Kingdom of <strong>Upper Mustang</strong>—this trek links both regions via the formidable, wild <strong>Teri La Pass (5,595 m)</strong>.</p>\n      <p>The expedition begins along the Annapurna Circuit from Besisahar to Koto before turning off into Nar Phu's narrow gorges, ancient stone villages, and Tashi Lhakhang Monastery. Crossing the uninhabited alpine wilderness over Teri La Pass (5,595 m) requires full wilderness tented camping and camping support staff. Descending into Upper Mustang, trekkers explore Tangge, Yara, the walled city of <strong>Lo Manthang (3,810 m)</strong>, Charang, and Kagbeni before flying back from Jomsom.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Nar Phu Restricted Area Permits, Upper Mustang Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), full wilderness camping gear, licensed high-altitude guides, camping cooks, porters, domestic flights (Jomsom – Pokhara – Kathmandu), and hotel stays in Kathmandu.</p>\n    ",
       "highlights": [
@@ -22518,24 +22651,14 @@
       "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (Sept - Nov)",
-      "image": "/zenex images/kathmandu/premium_photo-1691735665916-cf31006dffe3.avif",
+      "image": "/images/kanchenjunga.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/kathmandu/premium_photo-1691735665916-cf31006dffe3.avif",
-          "alt": "Kanchenjunga North Base Camp Trek - 17 Days"
-        },
-        {
-          "url": "/zenex images/kathmandu/premium_photo-1692299547302-d19b4d145007.avif",
-          "alt": "Kanchenjunga North Base Camp Trek - 17 Days - View 2"
-        },
-        {
-          "url": "/zenex images/kathmandu/premium_photo-1697729591214-a4dc41d7d760.avif",
-          "alt": "Kanchenjunga North Base Camp Trek - 17 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/istockphoto-1303899069-612x612.webp",
-          "alt": "Kanchenjunga North Base Camp Trek - 17 Days - View 4"
-        }
+        "/images/kanchenjunga.jpg",
+        "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+        "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
+        "/zenex images/Makalu Region/photo-1642140195055-1b0902750430.avif",
+        "/zenex images/Makalu Region/photo-1657376921110-8fb3ff3c2cbd.avif",
+        "/zenex images/Makalu Region/photo-1672380797966-8b2cbaeaea9d.avif"
       ],
       "overview": "\n      <h3>Kanchenjunga North Base Camp Trek 17 Days | Expedition to Mount Kanchenjunga (8,586 m)</h3>\n      <p>The <strong>Kanchenjunga North Base Camp Trek (17 Days)</strong> is one of Nepal's most spectacular off-the-beaten-path mountain adventures. Located in far eastern Nepal, this trek takes you to the foot of Mount Kanchenjunga (8,586 m)—the world's third-highest peak. The northern route leads directly to the primary north base camp at <strong>Pangpema (5,143 m)</strong>, offering a rare opportunity to sleep under the formidable north face of this Himalayan giant.</p>\n      <p>Passing through the peaceful trails of the Kanchenjunga Conservation Area, trekkers encounter remote settlements such as Sekathum, Amjilasa, Gyabla, Ghunsa, Khambachen, and Lhonak. Enjoy breathtaking panoramas of towering peaks including Kumbhakarna (Mount Jannu – 7,710 m), Wedge Peak, Nepal Peak, Kirat Chuli, and Pathibhara Peak, alongside the massive Kanchenjunga Glacier.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we provide personalized trek arrangements—including domestic flights (Kathmandu – Bhadrapur), private jeep overland transfers to Taplejung and Sekathum, Kanchenjunga Conservation Area Permits (KCAP), Special Restricted Area Permits (RAP), expert local English-speaking guides, experienced mountain porters, teahouse accommodations, all meals, and hotel stay in Kathmandu.</p>\n    ",
       "highlights": [
@@ -22798,24 +22921,14 @@
       "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (Sept - Nov)",
-      "image": "/zenex images/kathmandu/premium_photo-1692299547302-d19b4d145007.avif",
+      "image": "/images/kanchenjunga.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/kathmandu/premium_photo-1692299547302-d19b4d145007.avif",
-          "alt": "Kanchenjunga South Base Camp Trek - 14 Days"
-        },
-        {
-          "url": "/zenex images/kathmandu/premium_photo-1697729591214-a4dc41d7d760.avif",
-          "alt": "Kanchenjunga South Base Camp Trek - 14 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/istockphoto-1303899069-612x612.webp",
-          "alt": "Kanchenjunga South Base Camp Trek - 14 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/istockphoto-490263609-612x612.webp",
-          "alt": "Kanchenjunga South Base Camp Trek - 14 Days - View 4"
-        }
+        "/images/kanchenjunga.jpg",
+        "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+        "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
+        "/zenex images/Makalu Region/photo-1642140195055-1b0902750430.avif",
+        "/zenex images/Makalu Region/photo-1657376921110-8fb3ff3c2cbd.avif",
+        "/zenex images/Makalu Region/photo-1672380797966-8b2cbaeaea9d.avif"
       ],
       "overview": "\n      <h3>Kanchenjunga South Base Camp Trek 14 Days | Untouched Eastern Himalayan Wilderness</h3>\n      <p>The <strong>Kanchenjunga South Base Camp Trek (14 Days)</strong> is one of the shortest yet most rewarding journeys in eastern Nepal, taking trekkers to the foot of Mount Kanchenjunga (8,586 m)—the third-highest mountain on Earth. This off-the-beaten-path route inside the Kanchenjunga Conservation Area offers an ideal blend of raw high-altitude scenery, deep solitude, and authentic cultural immersion.</p>\n      <p>The crowning highlight of the trek is reaching <strong>Oktang View Point (4,730 m)</strong>, offering jaw-dropping views of the south and west faces of Mount Kanchenjunga (8,586 m), Yalung Kang (8,505 m), Khambachen Peak (7,903 m), Kabru Range, and the expansive Yalung Glacier. Along the trail, trekkers pass through terraced farmlands, lush rhododendron forests, and traditional Rai, Limbu, and Sherpa villages like Yasang, Tortang, Tseram, and Ramche.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we handle every detail of your expedition—including domestic flights (Kathmandu – Bhadrapur), private jeep transfers to Taplejung and Hellok, Kanchenjunga Conservation Area Permits (KCAP), Special Restricted Area Permits (RAP), licensed local English-speaking guides, experienced porters, lodge reservations, and hotel stays in Kathmandu.</p>\n    ",
       "highlights": [
@@ -23051,24 +23164,14 @@
       "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
       "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May) & Autumn (Sept - Nov)",
-      "image": "/zenex images/kathmandu/premium_photo-1697729591214-a4dc41d7d760.avif",
+      "image": "/images/kanchenjunga.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/kathmandu/premium_photo-1697729591214-a4dc41d7d760.avif",
-          "alt": "Kanchenjunga Circuit Trek - 22 Days"
-        },
-        {
-          "url": "/zenex images/pokhara/istockphoto-1303899069-612x612.webp",
-          "alt": "Kanchenjunga Circuit Trek - 22 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/istockphoto-490263609-612x612.webp",
-          "alt": "Kanchenjunga Circuit Trek - 22 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1522376382758-57cc8c505cdb.avif",
-          "alt": "Kanchenjunga Circuit Trek - 22 Days - View 4"
-        }
+        "/images/kanchenjunga.jpg",
+        "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+        "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
+        "/zenex images/Makalu Region/photo-1642140195055-1b0902750430.avif",
+        "/zenex images/Makalu Region/photo-1657376921110-8fb3ff3c2cbd.avif",
+        "/zenex images/Makalu Region/photo-1672380797966-8b2cbaeaea9d.avif"
       ],
       "overview": "\n      <h3>Kanchenjunga Circuit Trek 22 Days | Full Expedition to North & South Base Camps</h3>\n      <p>The <strong>Kanchenjunga Circuit Trek (22 Days)</strong> is the ultimate high-altitude adventure in eastern Nepal, taking seasoned trekkers to both the <strong>North Base Camp (Pangpema – 5,143 m)</strong> and <strong>South Base Camp (Yalung – 5,400 m)</strong> of Mount Kanchenjunga (8,586 m)—the world's third-highest peak. As a key section of Nepal's Great Himalayan Trail (GHT), this circuit traverses raw, uncrowded landscapes from subtropical bamboo forests to glacial moraines.</p>\n      <p>The expedition crosses three challenging high-altitude Himalayan passes: <strong>Sele La (4,290 m)</strong>, <strong>Sinion La (4,646 m)</strong>, and <strong>Mirgin Pass (4,480 m)</strong>, offering 360-degree panoramas of Mt. Kanchenjunga, Mt. Jannu (Kumbhakarna – 7,711 m), Yalung Kang (8,505 m), Kabru Peaks, and Rathong. Along the circuit, explore authentic Sherpa and Limbu villages like Ghunsa, Gyabla, Khambachen, Lhonak, Tseram, and Ramche.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we provide complete, professional expedition logistics—including domestic flights (Kathmandu – Bhadrapur), private 4WD jeep transfers to Taplejung and Sekathum, Kanchenjunga Conservation Area Permits (KCAP), Special Restricted Area Permits (RAP), licensed English-speaking mountain guides, experienced porters, lodge bookings, and 3-star hotel stays in Kathmandu.</p>\n    ",
       "highlights": [
@@ -23369,24 +23472,16 @@
       "accommodation": "3-Star Hotel in KTM & Nepalgunj / Mountain Lodges & Tented Camps",
       "meals": "Breakfast in KTM & Nepalgunj, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May), Summer & Autumn (Sept - Nov)",
-      "image": "/zenex images/pokhara/istockphoto-1303899069-612x612.webp",
+      "image": "/images/dorpatan dolpo.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/pokhara/istockphoto-1303899069-612x612.webp",
-          "alt": "Lower Dolpo Trek from Jhuphal - 18 Days"
-        },
-        {
-          "url": "/zenex images/pokhara/istockphoto-490263609-612x612.webp",
-          "alt": "Lower Dolpo Trek from Jhuphal - 18 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1522376382758-57cc8c505cdb.avif",
-          "alt": "Lower Dolpo Trek from Jhuphal - 18 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1540961018629-a53dfce2fb66.avif",
-          "alt": "Lower Dolpo Trek from Jhuphal - 18 Days - View 4"
-        }
+        "/images/dorpatan dolpo.jpg",
+        "/images/Dhorpatan Hunting Reserve.jpg",
+        "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+        "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
+        "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
+        "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
+        "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
+        "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif"
       ],
       "overview": "\n      <h3>Lower Dolpo Trek from Jhuphal 18 Days | High Altitude Wilderness & Phoksundo Lake Expedition</h3>\n      <p>The <strong>Lower Dolpo Trek from Jhuphal (18 Days)</strong> offers an extraordinary expedition through one of Nepal's most remote, pristine, and culturally rich trans-Himalayan regions. Flying into Juphal in western Nepal, trekkers journey through rugged river gorges, windswept high plateaus, and ancient stone villages like Dho-Tarap before arriving at the ethereal turquoise waters of <strong>Shey Phoksundo Lake (3,641 m)</strong>.</p>\n      <p>This challenging expedition crosses two high-altitude mountain passes: <strong>Numa La Pass (5,238 m)</strong> and <strong>Bagala Pass (5,169 m)</strong>, presenting breathtaking panoramas of Mount Kanjiroba and the Dhaulagiri range. The trail traverses Shey Phoksundo National Park, immersing trekkers in pre-Buddhist Bon culture, ancient gompas, and uncrowded alpine wilderness.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all expedition details—including domestic flights (Kathmandu – Nepalgunj – Juphal round trip), Lower Dolpo Restricted Area Permits (RAP), Shey Phoksundo National Park Entry Permits, full tented camping crew (cook, kitchen staff, mules/yaks), licensed mountain guide, lodge arrangements, and hotel stays in Kathmandu and Nepalgunj.</p>\n    ",
       "highlights": [
@@ -23658,24 +23753,16 @@
       "accommodation": "Hotels in KTM, Nepalgunj & Pokhara / Mountain Lodges & Tented Camps",
       "meals": "Breakfast in Cities, All Meals (Breakfast, Lunch & Dinner) on Trek",
       "bestSeason": "Spring (March - May), Summer (Rain Shadow) & Autumn (Sept - Nov)",
-      "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+      "image": "/images/dorpatan dolpo.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
-          "alt": "Upper Dolpo Trek - 25 Days"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
-          "alt": "Upper Dolpo Trek - 25 Days - View 2"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
-          "alt": "Upper Dolpo Trek - 25 Days - View 3"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
-          "alt": "Upper Dolpo Trek - 25 Days - View 4"
-        }
+        "/images/dorpatan dolpo.jpg",
+        "/images/Dhorpatan Hunting Reserve.jpg",
+        "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+        "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
+        "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
+        "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
+        "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
+        "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif"
       ],
       "overview": "\n      <h3>Upper Dolpo Trek 25 Days | Sacred Shey Gompa, Phoksundo Lake & High Pass Trans-Himalayan Expedition</h3>\n      <p>The <strong>Upper Dolpo Trek (25 Days)</strong> is one of the ultimate wilderness expeditions in Nepal, taking experienced adventurers across Nepal's last unexplored frontier. Located in the rain-shadow of the Dhaulagiri and Kanjiroba ranges, Upper Dolpo offers high-altitude desert plateaus, turquoise glacial lakes, ancient salt-trade routes, and centuries-old Bon and Tibetan Buddhist monasteries.</p>\n      <p>This 25-day grand circuit crosses multiple high mountain passes above 5,000 meters—including <strong>Jungben La (5,550 m)</strong>, <strong>Nagdalo Pass (5,350 m)</strong>, <strong>Niwas La (5,120 m)</strong>, <strong>Sele La (5,094 m)</strong>, and <strong>Mo La Pass (5,027 m)</strong>. The journey highlights the sacred 800-year-old <strong>Shey Gompa (4,343 m)</strong> at the foot of Crystal Mountain, magical <strong>Phoksundo Lake (3,641 m)</strong>, and remote trans-Himalayan stone villages like Saldang, Tinjegaon, and Chharka Bhot before exiting via Kagbeni to Jomsom and Pokhara.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we provide full expedition support—including Upper Dolpo Restricted Area Permits (RAP), Shey Phoksundo National Park Entry Permits, domestic flights (Kathmandu – Nepalgunj – Juphal & Jomsom – Pokhara), full camping setup with experienced cooks and kitchen staff, yaks/mules, licensed mountain guides, and hotel stays in Kathmandu, Nepalgunj, and Pokhara.</p>\n    ",
       "highlights": [
@@ -23997,24 +24084,16 @@
       "duration": "23 Days",
       "price": "US$3,250",
       "difficulty": "Hard",
-      "image": "/zenex images/pokhara/photo-1522376382758-57cc8c505cdb.avif",
+      "image": "/images/dorpatan dolpo.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/pokhara/photo-1522376382758-57cc8c505cdb.avif",
-          "alt": "Lower Dolpo Trek via Dhorpatan - 23 Days"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1540961018629-a53dfce2fb66.avif",
-          "alt": "Lower Dolpo Trek via Dhorpatan - 23 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1562462181-b228e3cff9ad.avif",
-          "alt": "Lower Dolpo Trek via Dhorpatan - 23 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1565770772312-2b43cac7d585.avif",
-          "alt": "Lower Dolpo Trek via Dhorpatan - 23 Days - View 4"
-        }
+        "/images/dorpatan dolpo.jpg",
+        "/images/Dhorpatan Hunting Reserve.jpg",
+        "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+        "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
+        "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
+        "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
+        "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
+        "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif"
       ],
       "quickFacts": {
         "duration": "23 Days",
@@ -24444,24 +24523,23 @@
       "accommodation": "Hotels / Lodges / Tented camp",
       "meals": "Breakfast, Lunch & Dinner",
       "bestSeason": "Spring & Autumn",
-      "image": "/zenex images/Dhaulagiri Region/photo-1483728642387-6c3bdd6c93e5.avif",
+      "image": "/zenex images/Dhaulagiri Region/photo-1464822759023-fed622ff2c3b.avif",
       "gallery": [
-        {
-          "url": "/zenex images/Dhaulagiri Region/photo-1483728642387-6c3bdd6c93e5.avif",
-          "alt": "Dhampus (Thapa) Peak Climbing - 19 Days"
-        },
-        {
-          "url": "/zenex images/Dhaulagiri Region/photo-1506905925346-21bda4d32df4.avif",
-          "alt": "Dhampus (Thapa) Peak Climbing - 19 Days - View 2"
-        },
-        {
-          "url": "/zenex images/Dhaulagiri Region/photo-1525784451128-d1488f52f03e.avif",
-          "alt": "Dhampus (Thapa) Peak Climbing - 19 Days - View 3"
-        },
-        {
-          "url": "/zenex images/Dhaulagiri Region/photo-1549880338-65ddcdfd017b.avif",
-          "alt": "Dhampus (Thapa) Peak Climbing - 19 Days - View 4"
-        }
+        "/zenex images/Dhaulagiri Region/photo-1464822759023-fed622ff2c3b.avif",
+        "/zenex images/Dhaulagiri Region/photo-1465056836041-7f43ac27dcb5.avif",
+        "/zenex images/Dhaulagiri Region/photo-1472791108553-c9405341e398.avif",
+        "/zenex images/Dhaulagiri Region/photo-1483728642387-6c3bdd6c93e5.avif",
+        "/zenex images/Dhaulagiri Region/photo-1506905925346-21bda4d32df4.avif",
+        "/zenex images/Dhaulagiri Region/photo-1525784451128-d1488f52f03e.avif",
+        "/zenex images/Dhaulagiri Region/photo-1549880338-65ddcdfd017b.avif",
+        "/zenex images/Dhaulagiri Region/photo-1585409677983-0f6c41ca9c3b.avif",
+        "/zenex images/Dhaulagiri Region/photo-1604428803896-c1e5151d4128.avif",
+        "/zenex images/Dhaulagiri Region/photo-1615028427098-f2185474eeb3.avif",
+        "/zenex images/Dhaulagiri Region/photo-1615729947596-a598e5de0ab3.avif",
+        "/zenex images/Dhaulagiri Region/photo-1647679180836-86ffeaaa5c22.avif",
+        "/zenex images/Dhaulagiri Region/photo-1776529216196-d31e12c07baf.avif",
+        "/zenex images/Dhaulagiri Region/premium_photo-1674917000586-b7564f21540e.avif",
+        "/trek images/Dhaulagiri-Circuit-Trek.jpeg"
       ],
       "overview": "\n      <h3>Dhampus (Thapa) Peak Climbing - 19 Days | Non-Technical 6,000m Trekking Peak Adventure in Dhaulagiri</h3>\n      <p>Dhampus Peak, also known as <strong>Thapa Peak (6,012 meters / 19,724 ft)</strong>, is a stunning non-technical trekking peak located in the high-altitude wilderness of the Dhaulagiri region of Nepal. This 19-day expedition combines the legendary <strong>Dhaulagiri Circuit Trek</strong> with a rewarding 6,000m peak climb, offering dramatic high-pass crossings, glacier trekking, and breathtaking 360-degree vistas of Dhaulagiri (8,167m), Annapurna I, Nilgiri, Tukuche Peak, and Tilicho Peak.</p>\n      <p>The journey begins from Kathmandu to Pokhara and onwards to Muri, traversing pristine forests, dramatic river gorges, and remote Magar settlements. As you ascend through Italian Base Camp and Japanese Base Camp onto the Chhonbardan Glacier, you'll reach Dhaulagiri Base Camp before crossing the spectacular <strong>French Pass (5,360m)</strong> into the isolated <strong>Hidden Valley (5,166m)</strong>. From high camp in Hidden Valley, climbers launch the summit push up the snow slopes of Dhampus Peak (6,012m) before crossing <strong>Thapa Pass (5,244m)</strong> and descending to Marpha and Pokhara.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Dhampus Peak Climbing Permits, Annapurna Conservation Area Permits (ACAP), TIMS cards, full tented camping gear, licensed climbing Sherpa guides, cooks, porters, private transfers, and hotel bookings in Kathmandu and Pokhara.</p>\n    ",
       "highlights": [
@@ -24906,24 +24984,23 @@
       "accommodation": "Hotels / Tea Houses / Camping",
       "meals": "Breakfast, Lunch & Dinner",
       "bestSeason": "Spring & Autumn",
-      "image": "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
+      "image": "/zenex images/Dhaulagiri Region/photo-1464822759023-fed622ff2c3b.avif",
       "gallery": [
-        {
-          "url": "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
-          "alt": "Dhaulagiri Circuit Trek - 17 Days"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif",
-          "alt": "Dhaulagiri Circuit Trek - 17 Days - View 2"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
-          "alt": "Dhaulagiri Circuit Trek - 17 Days - View 3"
-        },
-        {
-          "url": "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
-          "alt": "Dhaulagiri Circuit Trek - 17 Days - View 4"
-        }
+        "/zenex images/Dhaulagiri Region/photo-1464822759023-fed622ff2c3b.avif",
+        "/zenex images/Dhaulagiri Region/photo-1465056836041-7f43ac27dcb5.avif",
+        "/zenex images/Dhaulagiri Region/photo-1472791108553-c9405341e398.avif",
+        "/zenex images/Dhaulagiri Region/photo-1483728642387-6c3bdd6c93e5.avif",
+        "/zenex images/Dhaulagiri Region/photo-1506905925346-21bda4d32df4.avif",
+        "/zenex images/Dhaulagiri Region/photo-1525784451128-d1488f52f03e.avif",
+        "/zenex images/Dhaulagiri Region/photo-1549880338-65ddcdfd017b.avif",
+        "/zenex images/Dhaulagiri Region/photo-1585409677983-0f6c41ca9c3b.avif",
+        "/zenex images/Dhaulagiri Region/photo-1604428803896-c1e5151d4128.avif",
+        "/zenex images/Dhaulagiri Region/photo-1615028427098-f2185474eeb3.avif",
+        "/zenex images/Dhaulagiri Region/photo-1615729947596-a598e5de0ab3.avif",
+        "/zenex images/Dhaulagiri Region/photo-1647679180836-86ffeaaa5c22.avif",
+        "/zenex images/Dhaulagiri Region/photo-1776529216196-d31e12c07baf.avif",
+        "/zenex images/Dhaulagiri Region/premium_photo-1674917000586-b7564f21540e.avif",
+        "/trek images/Dhaulagiri-Circuit-Trek.jpeg"
       ],
       "overview": "\n      <h3>Dhaulagiri Circuit Trek - 17 Days | High Altitude Glacial Expedition & Pass Crossing</h3>\n      <p>The <strong>Dhaulagiri Circuit Trek (17 Days)</strong> is one of Nepal’s most challenging, remote, and exhilarating high-altitude wilderness adventures. Circling Mount Dhaulagiri (8,167m)—the world’s seventh highest peak—this expedition leads deep into the untamed heart of the western Himalayas. Starting from Kathmandu and Pokhara to the Magar trailhead village of Muri, the route follows the Myagdi Khola river valley through dense subtropical forests and alpine pastures before entering the rugged glacial world of the Chhonbardan Glacier.</p>\n      <p>Trekkers camp at iconic sites including Italian Base Camp and Dhaulagiri Base Camp (4,750m), surrounded by towering icefalls and sheer rock faces. The crown jewel of the circuit is crossing <strong>French Pass (5,360m)</strong> into the isolated <strong>Hidden Valley (5,166m)</strong>, followed by crossing <strong>Thapa Pass (5,244m)</strong> before descending to Yak Kharka and Marpha in the Kali Gandaki Valley.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all trek logistics—including Annapurna Conservation Area Permits (ACAP), TIMS cards, flight/vehicle transfers, full wilderness tented camping equipment, licensed guides, mountain cooks, and porters to ensure a safe and memorable Himalayan expedition.</p>\n    ",
       "highlights": [
@@ -25333,24 +25410,16 @@
       "accommodation": "Hotels / Lodges / Tented camp",
       "meals": "Breakfast, Lunch & Dinner",
       "bestSeason": "Spring & Autumn",
-      "image": "/zenex images/pokhara/photo-1565770772312-2b43cac7d585.avif",
+      "image": "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
       "gallery": [
-        {
-          "url": "/zenex images/pokhara/photo-1565770772312-2b43cac7d585.avif",
-          "alt": "Rolwaling Valley Trek - 18 Days"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1576948187290-457c015b3bff.avif",
-          "alt": "Rolwaling Valley Trek - 18 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1610997686651-98492fd08108.avif",
-          "alt": "Rolwaling Valley Trek - 18 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1618083840944-31cc42fcf250.avif",
-          "alt": "Rolwaling Valley Trek - 18 Days - View 4"
-        }
+        "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
+        "/zenex images/Rolwaling Valley Trek/beding-village.webp",
+        "/zenex images/Rolwaling Valley Trek/gffb.jpg",
+        "/zenex images/Rolwaling Valley Trek/jkfdd.jpg",
+        "/zenex images/Rolwaling Valley Trek/na-gau.webp",
+        "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg",
+        "/zenex images/Rolwaling Valley Trek/Rolwaling-Trekking.jpg",
+        "/zenex images/Rolwaling Valley Trek/trekkingweb-1686145254.jpg"
       ],
       "overview": "\n      <h3>Rolwaling Valley Trek - 18 Days | Remote Villages, Glacial Lakes & Sherpa Culture</h3>\n      <p>The <strong>Rolwaling Valley Trek (18 Days)</strong> is a tranquil and off-the-beaten-path Himalayan journey into the hidden Rolwaling Himal region, situated west of Everest near the Tibetan border. Starting from Kathmandu with a scenic overland drive to Charikot, the trail ascends to the sacred Hindu shrine of <strong>Kalinchowk Bhagwati (3,842m)</strong> before descending to the serene Buddhist nunnery at <strong>Bigu Gompa (2,516m)</strong>.</p>\n      <p>Trekkers venture through traditional Tamang and Sherpa settlements including Laduk, Jagat, and Simigaon, following the Tamakoshi and Rolwaling rivers. As you trek through pristine pine and rhododendron forests, you'll reach the iconic Sherpa mountain villages of <strong>Beding (3,740m)</strong> and <strong>Na (4,180m)</strong>, framed by the towering north face of Mount Gaurishankar (7,145m). A major highlight is an acclimatization day hike to the turquoise waters of <strong>Tsho Rolpa Lake (4,580m)</strong>—Nepal's largest glacial lake.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we handle all logistics—including Gaurishankar Conservation Area Permits (GCAP), Special Restricted Area Permits, 3-star hotel bookings in Kathmandu, private vehicle transfers, teahouse and tented camping accommodations, licensed guides, cooks, and porters.</p>\n    ",
       "highlights": [
@@ -25781,24 +25850,16 @@
       "accommodation": "Hotels / Lodges / Tented camp",
       "meals": "Breakfast, Lunch & Dinner",
       "bestSeason": "Spring & Autumn",
-      "image": "/zenex images/pokhara/photo-1576948187290-457c015b3bff.avif",
+      "image": "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
       "gallery": [
-        {
-          "url": "/zenex images/pokhara/photo-1576948187290-457c015b3bff.avif",
-          "alt": "Rolwaling Tashi Lapcha Pass Trek - 19 Days"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1610997686651-98492fd08108.avif",
-          "alt": "Rolwaling Tashi Lapcha Pass Trek - 19 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1618083840944-31cc42fcf250.avif",
-          "alt": "Rolwaling Tashi Lapcha Pass Trek - 19 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1654607351830-c00fda86b329.avif",
-          "alt": "Rolwaling Tashi Lapcha Pass Trek - 19 Days - View 4"
-        }
+        "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
+        "/zenex images/Rolwaling Valley Trek/beding-village.webp",
+        "/zenex images/Rolwaling Valley Trek/gffb.jpg",
+        "/zenex images/Rolwaling Valley Trek/jkfdd.jpg",
+        "/zenex images/Rolwaling Valley Trek/na-gau.webp",
+        "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg",
+        "/zenex images/Rolwaling Valley Trek/Rolwaling-Trekking.jpg",
+        "/zenex images/Rolwaling Valley Trek/trekkingweb-1686145254.jpg"
       ],
       "overview": "\n      <h3>Rolwaling Tashi Lapcha Pass Trek - 19 Days | High Mountain Pass & Glacial Expedition to Everest Region</h3>\n      <p>The <strong>Rolwaling – Tashi Lapcha Pass Trek (19 Days)</strong> is a formidable, remote, and thrilling Himalayan expedition that connects the secluded Rolwaling Valley with the iconic Everest (Khumbu) region across the high-altitude <strong>Tashi Lapcha Pass (5,755m)</strong>. Starting from the low mid-hills of Singati, the route leads through terraced fields, deep river gorges, and ancient Tamang and Sherpa villages including Simigaon, Beding, and Na.</p>\n      <p>Trekkers explore the turquoise glacial waters of <strong>Tsho Rolpa Lake (4,580m)</strong> before venturing onto the icy moraine of the Trakarding Glacier and Pachermo Base Camp. Crossing the technical Tashi Lapcha Pass (5,755m) requires fixed ropes, crampons, ice axes, and expert mountaineering Sherpas. Standing at the pass summit rewards climbers with breathtaking 360-degree views of Everest (8,848m), Cho Oyu, Makalu, Shishapangma, Pumori, Pachermo Peak, and Mount Gaurishankar (7,145m). The descent leads into the Khumbu region, passing Thame, Namche Bazaar, and concluding with a scenic flight from Lukla to Kathmandu.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage complete expedition logistics—including Special Rolwaling Restricted Area Permits, Gaurishankar Conservation Area Permits (GCAP), Sagarmatha National Park Permits, Khumbu Rural Municipality Permits, domestic Lukla flight tickets, full tented camping gear, climbing Sherpa guides, cooks, and porters.</p>\n    ",
       "highlights": [
@@ -26254,24 +26315,16 @@
       "accommodation": "Hotels / Lodges / Monastery & Tented camp",
       "meals": "Breakfast, Lunch & Dinner",
       "bestSeason": "Spring & Autumn",
-      "image": "/zenex images/pokhara/photo-1610997686651-98492fd08108.avif",
+      "image": "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
       "gallery": [
-        {
-          "url": "/zenex images/pokhara/photo-1610997686651-98492fd08108.avif",
-          "alt": "Lapchi Kang Milarepa Cave Trek (Yoga Trek) - 11 Days"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1618083840944-31cc42fcf250.avif",
-          "alt": "Lapchi Kang Milarepa Cave Trek (Yoga Trek) - 11 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1654607351830-c00fda86b329.avif",
-          "alt": "Lapchi Kang Milarepa Cave Trek (Yoga Trek) - 11 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1677683254220-e4160da157af.avif",
-          "alt": "Lapchi Kang Milarepa Cave Trek (Yoga Trek) - 11 Days - View 4"
-        }
+        "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
+        "/zenex images/Rolwaling Valley Trek/beding-village.webp",
+        "/zenex images/Rolwaling Valley Trek/gffb.jpg",
+        "/zenex images/Rolwaling Valley Trek/jkfdd.jpg",
+        "/zenex images/Rolwaling Valley Trek/na-gau.webp",
+        "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg",
+        "/zenex images/Rolwaling Valley Trek/Rolwaling-Trekking.jpg",
+        "/zenex images/Rolwaling Valley Trek/trekkingweb-1686145254.jpg"
       ],
       "overview": "\n      <h3>Lapchi Kang Milarepa Cave Trek (Yoga Trek) - 11 Days | Sacred Buddhist Pilgrimage & Himalayan Retreat</h3>\n      <p>The <strong>Lapchi Kang Milarepa Cave Trek (11 Days)</strong> is one of the most serene, spiritual, and untouched Buddhist pilgrimage journeys in Nepal. Tucked away in the remote Rolwaling region near the Nepal–Tibet border, this trek follows the sacred footsteps of the legendary 11th-century Tibetan yogi and poet <strong>Milarepa</strong>, who spent decades meditating in the cliffside caves of Lapchi Valley.</p>\n      <p>Starting with a private 4WD drive from Kathmandu to Lamabagar, the trail winds along the Tamakoshi River through bamboo forests and mountain gorges to Lumnan and Lapchi Village (4,900m). Trekkers explore 400-year-old Tibetan monasteries, sacred cave hermitages (Youthog, Sephut, Rechen, Dul Dul, and Lungten Caves), and see Milarepa's ancient footprints carved into stone. The peaceful alpine setting, uncrowded trails, and majestic mountain views of Lapchi Kang and Ama Bamare Himal make this trip ideal for daily yoga and meditation practice, spiritual reflection, or a quiet Himalayan escape.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage complete trek arrangements—including Gaurishankar Conservation Area Permits (GCAP), private jeep transfers, hotel bookings in Kathmandu, monastery guesthouse & tented accommodations, experienced guides, cooks, and porters.</p>\n    ",
       "highlights": [
@@ -26599,25 +26652,17 @@
       "originalPrice": 2150,
       "rating": 4.9,
       "reviewsCount": 143,
-      "image": "/zenex images/pokhara/photo-1618083840944-31cc42fcf250.avif",
+      "image": "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
       "heroImage": "https://media.mountgloryadventures.com/uploads/fullbanner/makalu-base-camp-trekking.webp",
       "gallery": [
-        {
-          "url": "/zenex images/pokhara/photo-1618083840944-31cc42fcf250.avif",
-          "alt": "Makalu Base Camp Trek - 18 Days"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1654607351830-c00fda86b329.avif",
-          "alt": "Makalu Base Camp Trek - 18 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1677683254220-e4160da157af.avif",
-          "alt": "Makalu Base Camp Trek - 18 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1686634664616-be12017d2b4c.avif",
-          "alt": "Makalu Base Camp Trek - 18 Days - View 4"
-        }
+        "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+        "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
+        "/zenex images/Makalu Region/photo-1642140195055-1b0902750430.avif",
+        "/zenex images/Makalu Region/photo-1657376921110-8fb3ff3c2cbd.avif",
+        "/zenex images/Makalu Region/photo-1672380797966-8b2cbaeaea9d.avif",
+        "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif",
+        "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif",
+        "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif"
       ],
       "overview": "Makalu Base Camp Trek in Nepal of 18 days is one of the challenging as well as beautiful off-the-beaten-path journey in the Eastern part of Nepal. This trek is one the less explored destination with the less flow of tourist en route, making it perfect for the travellers who want to escape huge crowd while trekking in Himalayas and enjoy serene mother nature. Makalu Base Camp is one of the high altitude trek in Nepal with the chance to explore the diverse culture and serene nature of the eastern side of Nepal along with the Himalayan wilderness.\n\nTrekking in the Makalu Region of Nepal offers an unforgettable journey through beautiful, evergreen rhododendron forests and provides panoramic views of several eight-thousanders, including Mount Everest (8848 m), Mount Lhotse (8516 m), Mount Makalu (8463 m), and Mount Kanchenjunga (8568 m) and other Himalayas. Makalu Base Camp Trek offers a rare and rewarding adventure through remote landscapes, deep river valleys, alpine meadows, and glacial lakes.\n\nOrganized by Zenex Travels & Tours with full safety equipment, experienced mountain guides, private transfers, and permit arrangements, this 18-day Makalu expedition guarantees an exceptional Himalayan trek.",
       "highlights": [
@@ -26911,25 +26956,17 @@
       "originalPrice": 3600,
       "rating": 4.9,
       "reviewsCount": 143,
-      "image": "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
+      "image": "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
       "heroImage": "https://admin.buddhaair.com/upload/blog/thumbnail/1574327215_jYmkI_1567571648-ebeyj-makalu.webp",
       "gallery": [
-        {
-          "url": "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
-          "alt": "Makalu Baruntse Col - Sherpani Col & Amphu Laptse Trek - 25 Days"
-        },
-        {
-          "url": "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
-          "alt": "Makalu Baruntse Col - Sherpani Col & Amphu Laptse Trek - 25 Days - View 2"
-        },
-        {
-          "url": "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif",
-          "alt": "Makalu Baruntse Col - Sherpani Col & Amphu Laptse Trek - 25 Days - View 3"
-        },
-        {
-          "url": "/zenex images/everest/premium_photo-1697729961187-c70c5f520227.avif",
-          "alt": "Makalu Baruntse Col - Sherpani Col & Amphu Laptse Trek - 25 Days - View 4"
-        }
+        "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+        "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
+        "/zenex images/Makalu Region/photo-1642140195055-1b0902750430.avif",
+        "/zenex images/Makalu Region/photo-1657376921110-8fb3ff3c2cbd.avif",
+        "/zenex images/Makalu Region/photo-1672380797966-8b2cbaeaea9d.avif",
+        "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif",
+        "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif",
+        "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif"
       ],
       "overview": "Makalu Three Pass Trek (via Sherpani Col, Baruntse Col & Amphu Laptse) is one of Nepal’s most demanding, technical, and adventurous high-altitude expedition treks. Starting from Tumlingtar in the Makalu region and concluding at Lukla in the Khumbu Everest region, this 25-day grand Himalayan traverse connects two iconic mountain wildernesses across three formidable high passes above 5,800 meters.\n\nThe route ventures deep into the Makalu-Barun National Park before climbing into extreme glacial wilderness to cross Sherpani Col (6,180 m), Baruntse East/West Col (6,143 m), and Amphu Laptse Pass (5,845 m). Trekkers negotiate crevassed glaciers, fixed ropes, ice wall descents, and pristine high alpine moraines while taking in breathtaking panoramic vistas of Everest (8,848 m), Lhotse (8,516 m), Makalu (8,485 m), Baruntse (7,129 m), and Chamlang.\n\nOrganized with full expedition support by Zenex Travels & Tours, including certified climbing Sherpas, tented camping infrastructure, satellite communications, and specialized safety gear, this trek offers an unforgettable journey far from commercial trails.",
       "highlights": [
@@ -27270,25 +27307,17 @@
       "originalPrice": 1980,
       "rating": 4.9,
       "reviewsCount": 143,
-      "image": "/zenex images/pokhara/photo-1677683254220-e4160da157af.avif",
+      "image": "/zenex images/Api Base Camp/11.jpg",
       "heroImage": "https://www.bestheritagetour.com/public/images/upload/package/slider/api-himal-trek-5-1.jpg",
       "gallery": [
-        {
-          "url": "/zenex images/pokhara/photo-1677683254220-e4160da157af.avif",
-          "alt": "Api Base Camp Trek - 14 Days"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1686634664616-be12017d2b4c.avif",
-          "alt": "Api Base Camp Trek - 14 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1716503191918-b811f0f9cdb1.avif",
-          "alt": "Api Base Camp Trek - 14 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1718180555560-0c5f890f8098.avif",
-          "alt": "Api Base Camp Trek - 14 Days - View 4"
-        }
+        "/zenex images/Api Base Camp/11.jpg",
+        "/zenex images/Api Base Camp/12.jpg",
+        "/zenex images/Api Base Camp/Api-Base-camp-Trek.gif",
+        "/zenex images/Api Base Camp/Api-himal-base-camp-trek-1.webp",
+        "/zenex images/Api Base Camp/api-himal-base-camp-trek.webp",
+        "/zenex images/Api Base Camp/api-himal-trek-5-1.jpg",
+        "/zenex images/Api Base Camp/images.jpg",
+        "/images/Api Base Camp.jpg"
       ],
       "overview": "Api Himal Base Camp Trekking (Api Base Camp Trek), located in the remote Far Western Region of Nepal, is one of the most pristine, uncrowded, and untouched trekking destinations in the Himalayas. Named after Mount Api (7,132m)—the highest peak in far-western Nepal—this off-the-beaten-path camping adventure is ideal for travelers seeking solitude, authentic mountain heritage, and raw Himalayan wilderness.\n\nManaged within the Api Nampa Conservation Area, this region preserves rich biodiversity, ancient Byansi and Doteli traditions, and sacred alpine lakes like Kali Dhunga Tal (4,200m). The journey takes trekkers through isolated mountain settlements, dense bamboo and rhododendron forests, rushing river gorges along the Chamelia River, and expansive high-altitude alpine pastures.\n\nOrganized by Zenex Travels & Tours with full logistics, private 4WD transfers, experienced mountain guides, and complete camping infrastructure, this 14-day expedition delivers an extraordinary journey into Nepal's uncharted western frontier.",
       "highlights": [
@@ -27541,25 +27570,17 @@
       "originalPrice": 1680,
       "rating": 4.9,
       "reviewsCount": 143,
-      "image": "/zenex images/pokhara/photo-1686634664616-be12017d2b4c.avif",
+      "image": "/zenex images/Jumla/1718793514.sidetrackimageUntitled design (3).png",
       "heroImage": "https://media.nepaltrekadventures.com/uploads/package/gallery/thumb/rara-lake-trek.webp",
       "gallery": [
-        {
-          "url": "/zenex images/pokhara/photo-1686634664616-be12017d2b4c.avif",
-          "alt": "Jumla - Rara Trek - 13 Days"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1716503191918-b811f0f9cdb1.avif",
-          "alt": "Jumla - Rara Trek - 13 Days - View 2"
-        },
-        {
-          "url": "/zenex images/pokhara/photo-1718180555560-0c5f890f8098.avif",
-          "alt": "Jumla - Rara Trek - 13 Days - View 3"
-        },
-        {
-          "url": "/zenex images/pokhara/premium_photo-1661880922509-7db62ae56442.avif",
-          "alt": "Jumla - Rara Trek - 13 Days - View 4"
-        }
+        "/zenex images/Jumla/1718793514.sidetrackimageUntitled design (3).png",
+        "/zenex images/Jumla/images.jpg",
+        "/zenex images/Jumla/rara-lake-banner.webp",
+        "/zenex images/Jumla/rara-lake.webp",
+        "/zenex images/Jumla/RaraJumla-section-1-618-x-365.jpg",
+        "/zenex images/Jumla/s170718019.jpg",
+        "/images/Rara Lake Trek 7 Days.webp",
+        "/images/Khaptad Trek 11 Days.jpg"
       ],
       "overview": "The Jumla – Rara Lake Trek takes you through some of Nepal’s most stunning, quiet, and untouched landscapes in the far-western Karnali region. Starting with a mountain flight to Jumla, you traverse the Jaljala Pass (3,580m) offering breathtaking views of snowy Himalayan ranges before entering the historic Sinja Valley—the ancient capital of the Khasa Malla Kingdom and the birthplace of the written Khas (Nepali) language.\n\nThe ultimate highlight of this 13-day journey is reaching Rara Lake (2,990m)—Nepal’s largest and deepest natural body of water, often crowned the 'Pearl of Nepal'. Surrounded by dense pine, spruce, and rhododendron forests within Rara National Park, the lake reflects shimmering turquoise alpine waters and snowy mountain horizons.\n\nOrganized by Zenex Travels & Tours with full logistics, mountain flights, experienced local guides, and authentic lodge and homestay arrangements, this trek offers a serene escape far from commercial crowded trails.",
       "highlights": [

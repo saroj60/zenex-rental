@@ -192,7 +192,7 @@ const Footer = () => {
                   href="https://wa.me/9779767476521?text=Hi!%20I%20need%20assistance." 
                   target="_blank" 
                   rel="noreferrer" 
-                  className="group relative inline-flex items-center gap-2.5 bg-gradient-to-r from-[#25D366] via-[#20bd5a] to-[#12B04B] text-white py-2.5 px-3 rounded-2xl shadow-lg shadow-[#25D366]/20 hover:shadow-xl hover:shadow-[#25D366]/35 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 w-full border border-white/20"
+                  className="group relative inline-flex items-center gap-2.5 bg-gradient-to-r from-[#25D366] via-[#20bd5a] to-[#12B04B] text-white py-2.5 px-3 rounded-2xl shadow-lg shadow-[#25D366]/20 hover:shadow-xl hover:shadow-[#25D366]/35 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 w-full max-w-[260px] sm:max-w-full border border-white/20"
                 >
                   <div className="relative flex items-center justify-center w-8 h-8 rounded-xl bg-white/20 shrink-0 group-hover:scale-105 transition-transform">
                     <svg 
@@ -204,9 +204,9 @@ const Footer = () => {
                     </svg>
                     <span className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-emerald-300 rounded-full border-2 border-[#25D366] animate-pulse"></span>
                   </div>
-                  <div className="flex flex-col text-left min-w-0">
-                    <span className="text-[9px] uppercase tracking-wider font-extrabold text-white/85 leading-none mb-1 whitespace-nowrap">24/7 Chat Support</span>
-                    <span className="text-[12px] xl:text-xs font-extrabold text-white tracking-tight whitespace-nowrap leading-none">+977 9767476521</span>
+                  <div className="flex flex-col text-left min-w-0 overflow-hidden">
+                    <span className="text-[9px] sm:text-[10px] uppercase tracking-wider font-extrabold text-white/90 leading-tight mb-0.5 truncate">24/7 Chat Support</span>
+                    <span className="text-[11px] sm:text-xs font-black text-white tracking-tight leading-none truncate">+977 9767476521</span>
                   </div>
                 </a>
               </div>

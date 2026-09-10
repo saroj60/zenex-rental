@@ -266,10 +266,14 @@ const TrekDetail = () => {
       <div className="relative h-[42vh] sm:h-[55vh] md:h-[70vh] min-h-[300px] md:min-h-[550px] w-full overflow-hidden bg-gray-900 p-2 md:p-3">
         {(() => {
           const images = [];
-          if (trek.image) images.push(trek.image);
+          if (trek.image) {
+            const mainImg = typeof trek.image === 'string' ? trek.image : (trek.image?.url || trek.image?.src || '');
+            if (mainImg) images.push(mainImg);
+          }
           if (trek.gallery && trek.gallery.length > 0) {
             trek.gallery.forEach(img => {
-              if (!images.includes(img)) images.push(img);
+              const src = typeof img === 'string' ? img : (img?.url || img?.src || '');
+              if (src && !images.includes(src)) images.push(src);
             });
           }
           const displayImages = images.length > 0 ? images : ['/images/trek.png'];
@@ -545,15 +549,19 @@ const TrekDetail = () => {
               <div id="gallery" className="scroll-mt-40 pb-6 border-b border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Trip Gallery</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {trek.gallery.map((img, idx) => (
-                    <div key={idx} className="aspect-square rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
-                      <img 
-                        src={img} 
-                        alt={`Gallery ${idx + 1}`} 
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                      />
-                    </div>
-                  ))}
+                  {trek.gallery.map((img, idx) => {
+                    const imgSrc = typeof img === 'string' ? img : (img?.url || img?.src || '');
+                    if (!imgSrc) return null;
+                    return (
+                      <div key={idx} className="aspect-square rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group bg-slate-100">
+                        <img 
+                          src={imgSrc} 
+                          alt={`Gallery ${idx + 1}`} 
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             )}

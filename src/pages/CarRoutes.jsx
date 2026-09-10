@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SEO from '../components/SEO';
 import { MapPin, Calendar, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Users } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
@@ -34,6 +34,23 @@ const galleryImages = [
 const CarRoutes = () => {
   const { formatPrice } = useCurrency();
 
+  const heroImages = [
+    '/vehicles/luxury_green_sedan.png',
+    '/vehicles/byd_seal_u.png',
+    '/vehicles/byd_atto_1.png',
+    '/vehicles/byd_sealion_7.png',
+    'https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg',
+    'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80'
+  ];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [heroImages.length]);
+
   const handleBook = (route) => {
     const message = `Hi Zenex Travel, I'm interested in booking a Standard Car for the route: ${route.dest} (${route.duration}) priced at ${formatPrice(route.price)}. Is it available?`;
     window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
@@ -47,14 +64,29 @@ const CarRoutes = () => {
       />
       
       {/* Hero Section */}
-      <section className="relative h-[450px] md:h-[520px] w-full flex items-end pb-16 justify-center">
-        <div className="absolute inset-0 z-0">
-          <img
-            alt="Standard Car"
-            className="w-full h-full object-cover object-center"
-            src="https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
+      <section className="relative h-[450px] md:h-[520px] w-full flex items-end pb-16 justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0 bg-black">
+          {heroImages.map((img, idx) => (
+            <img
+              key={idx}
+              alt={`Standard Car Slide ${idx + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out ${idx === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+              src={img}
+            />
+          ))}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-black/30"></div>
+        </div>
+
+        {/* Slide Indicators */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+          {heroImages.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentImageIndex(idx)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === currentImageIndex ? 'bg-[#e53a24] w-6' : 'bg-white/50 hover:bg-white/80'}`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
         </div>
         
         <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8">

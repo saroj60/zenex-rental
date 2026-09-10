@@ -60,7 +60,7 @@ const BusRoutes = () => {
           <img
             alt="Tourist Bus"
             className="w-full h-full object-cover object-center"
-            src="https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg"
+            src="/vehicles/tourist_bus_nepal.png"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
         </div>

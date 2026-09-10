@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils, HelpCircle, ChevronDown, Star, BookOpen, Check, X, Plus, Activity } from 'lucide-react';
-import { generatePackagePDF } from '../utils/pdfGenerator';
+import { Map, Clock, CalendarCheck, ShieldCheck, CheckCircle2, Car, MapPin, Info, DollarSign, ThumbsUp, Calendar, Flag, Mountain, Sun, Users, BarChart, Heart, ArrowLeft, Compass, FileText, Image as ImageIcon, List, Bed, Utensils, HelpCircle, ChevronDown, Star, BookOpen, Check, X, Plus, Activity, Briefcase } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
+import { defaultTourEquipment } from './TourTripDetail';
 
 import SEO from '../components/SEO';
 import TrustReviewBadges from '../components/TrustReviewBadges';
 import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML } from '../utils/detailFormatters';
+import { generatePackagePDF } from '../utils/pdfGenerator';
 
 export const packageExtraData = {
   '8-days-kathmandu-pokhara-chitwan-nagarkot-tour': {
@@ -13929,11 +13930,15 @@ const PackageDetail = () => {
                   <ImageIcon className="text-[#e53a24]" size={28} /> Photo Gallery
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {pkg.gallery.map((imgUrl, idx) => (
-                    <div key={idx} className="relative h-48 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                      <img src={imgUrl} alt={`${pkg.title} Gallery ${idx + 1}`} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
-                    </div>
-                  ))}
+                  {pkg.gallery.map((imgUrl, idx) => {
+                    const src = typeof imgUrl === 'string' ? imgUrl : (imgUrl?.url || imgUrl?.src || '');
+                    if (!src) return null;
+                    return (
+                      <div key={idx} className="relative h-48 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-slate-100">
+                        <img src={src} alt={`${pkg.title} Gallery ${idx + 1}`} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -14209,16 +14214,77 @@ const PackageDetail = () => {
               </div>
             )}
 
+            {/* Essential Info */}
+            {pkg.essentialInfo && pkg.essentialInfo.length > 0 && (
+              <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 mb-10">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e3a8a] mb-6 flex items-center gap-3">
+                  <BookOpen className="text-amber-500" size={28} /> Essential Information
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {pkg.essentialInfo.map((info, idx) => (
+                    <div key={idx} className="bg-amber-50/30 p-6 rounded-2xl border border-amber-100">
+                      <h4 className="text-lg font-bold text-gray-900 mb-3">{info.title}</h4>
+                      <div 
+                        className="prose prose-amber max-w-none text-xs md:text-sm text-gray-700 leading-relaxed"
+                        dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(typeof info === 'string' ? info : (info.content || '')) }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Information */}
             {pkg.information && (
-              <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
-                <h2 className="text-2xl font-extrabold text-[#1e3a8a] mb-6 flex items-center"><Info className="mr-2" /> Essential Information</h2>
+              <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 mb-10">
+                <h2 className="text-2xl font-extrabold text-[#1e3a8a] mb-6 flex items-center"><Info className="mr-2" /> General Information</h2>
                 <div 
                   className="prose prose-blue max-w-none text-sm text-gray-700 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(pkg.information) }}
                 />
               </div>
             )}
+
+
+
+            {/* Packing & Equipment List */}
+            <section id="equipment" className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 mb-10">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e3a8a] mb-6 flex items-center gap-3">
+                <Briefcase className="text-[#0F766E]" size={28} /> Packing & Equipment List
+              </h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {((pkg.equipment && pkg.equipment.length > 0) ? pkg.equipment : ((pkg.equipmentList && pkg.equipmentList.length > 0) ? pkg.equipmentList : defaultTourEquipment)).map((cat, catIdx) => (
+                  <div key={catIdx} className="bg-teal-50/30 rounded-2xl border border-teal-100 overflow-hidden">
+                    <div className="bg-teal-100/50 p-4 border-b border-teal-100">
+                      <h4 className="font-bold text-[#0F766E] text-base md:text-lg">{cat.category || cat.name || cat}</h4>
+                    </div>
+                    <ul className="p-4 space-y-3">
+                      {cat.items?.map((item, itemIdx) => {
+                        const isObj = typeof item === 'object' && item !== null;
+                        const itemName = isObj ? item.name : item;
+                        const itemDesc = isObj ? item.description : null;
+                        const isReq = isObj ? (item.required !== false) : true;
+                        const itemQty = isObj ? (item.quantity || 1) : 1;
+
+                        return (
+                          <li key={itemIdx} className="flex gap-3">
+                            <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${isReq ? 'bg-[#0F766E] text-white' : 'bg-gray-200 text-gray-500'}`}>
+                              {isReq ? <Check size={12}/> : <span className="text-[10px] font-bold">OPT</span>}
+                            </div>
+                            <div>
+                              <p className={`font-semibold text-sm ${isReq ? 'text-gray-900' : 'text-gray-600'}`}>
+                                {itemName} {itemQty > 1 && <span className="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded-full ml-1">x{itemQty}</span>}
+                              </p>
+                              {itemDesc && <p className="text-xs text-gray-500 mt-0.5">{itemDesc}</p>}
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </section>
 
             {/* Frequently Asked Questions */}
             <div id="faqs" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24">

@@ -9,6 +9,36 @@ import TrustReviewBadges from '../components/TrustReviewBadges';
 import { formatDuration } from '../utils/duration';
 import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt } from '../utils/detailFormatters';
 
+export const defaultTourEquipment = [
+  {
+    category: "Clothing & Footwear",
+    items: [
+      { name: "Comfortable Walking Shoes / Sneakers", description: "Break-in light trail shoes or comfortable sneakers for sightseeing and daily walking.", required: true, quantity: 1 },
+      { name: "Layered T-Shirts & Tops", description: "Breathable cotton or moisture-wicking shirts for daytime activities.", required: true, quantity: 4 },
+      { name: "Warm Fleece or Light Jacket", description: "Essential for cool mornings, evening breezes, and hill station viewpoints.", required: true, quantity: 1 },
+      { name: "Comfortable Travel Trousers / Jeans", description: "Lightweight, quick-dry travel pants or casual trousers.", required: true, quantity: 2 },
+      { name: "Rain Jacket / Compact Umbrella", description: "Lightweight waterproof shell for unexpected weather.", required: false, quantity: 1 }
+    ]
+  },
+  {
+    category: "Personal Items & Accessories",
+    items: [
+      { name: "Sun Protection (Hat & Sunglasses)", description: "Wide-brim sun hat and UV-blocking sunglasses.", required: true, quantity: 1 },
+      { name: "Sunscreen & Lip Balm", description: "High SPF sunscreen (SPF 30+) and moisturizing lip protection.", required: true, quantity: 1 },
+      { name: "Personal Toiletries & Sanitizer", description: "Toothbrush, toothpaste, travel soap, hand sanitizer, and wet wipes.", required: true, quantity: 1 },
+      { name: "Daypack (20L - 30L)", description: "Small backpack to carry daily essentials, camera, and water bottle.", required: true, quantity: 1 }
+    ]
+  },
+  {
+    category: "Travel Essentials & Electronics",
+    items: [
+      { name: "Reusable Water Bottle", description: "Eco-friendly insulated or BPA-free hydration bottle.", required: true, quantity: 1 },
+      { name: "Power Bank & Universal Adapter", description: "Portable power bank to keep phone and camera charged during tours.", required: true, quantity: 1 },
+      { name: "Personal First Aid Kit", description: "Basic personal medications, band-aids, antiseptics, and motion sickness tablets.", required: true, quantity: 1 }
+    ]
+  }
+];
+
 const TourTripDetail = () => {
   const { slug, id } = useParams();
   const tripIdOrSlug = slug || id;
@@ -65,7 +95,7 @@ const TourTripDetail = () => {
         setIsScrolledDown(false);
       }
 
-      const sections = ['overview', 'gallery', 'outline-itinerary', 'itinerary', 'route-map', 'cost', 'info', 'equipment'];
+      const sections = ['overview', 'gallery', 'outline-itinerary', 'itinerary', 'route-map', 'cost', 'info', 'equipment', 'faqs'];
       const scrollPosition = currentY + 140;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -171,6 +201,7 @@ const TourTripDetail = () => {
         title: baseTrip.title,
         image: baseTrip.image || baseTrip.img || baseTrip.bannerImage,
         bannerImage: baseTrip.bannerImage || baseTrip.image || baseTrip.img,
+        gallery: baseTrip.gallery || extra.gallery || [],
         category: baseTrip.category || 'Tours',
         destination: baseTrip.destination || baseTrip.location || 'Nepal',
         price: cleanPrice,
@@ -199,8 +230,9 @@ const TourTripDetail = () => {
         estimatedPersonalExpenses: extra.estimatedPersonalExpenses || baseTrip.estimatedPersonalExpenses || [],
         generalInformation: extra.generalInformation || baseTrip.generalInformation || [],
         whyBookWithUs: extra.whyBookWithUs || baseTrip.whyBookWithUs || [],
-        equipment: baseTrip.equipment || [],
-        faqs: baseTrip.faqs || []
+        essentialInfo: (baseTrip.essentialInfo && baseTrip.essentialInfo.length > 0) ? baseTrip.essentialInfo : (extra.essentialInfo || []),
+        equipment: (baseTrip.equipment && baseTrip.equipment.length > 0) ? baseTrip.equipment : ((extra.equipment && extra.equipment.length > 0) ? extra.equipment : defaultTourEquipment),
+        faqs: (baseTrip.faqs && baseTrip.faqs.length > 0) ? baseTrip.faqs : (extra.faqs || [])
       };
       setTrip(mappedTrip);
     }
@@ -544,18 +576,20 @@ const TourTripDetail = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3"><ImageIcon className="text-[#e53a24]" size={32} /> Photo Gallery</h2>
               {trip.gallery && trip.gallery.length > 0 ? (
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {trip.gallery.map((img, i) => (
-                    <div key={i} className="rounded-2xl overflow-hidden shadow-sm group relative aspect-square bg-gray-100 cursor-pointer">
-                      {img.url && (
+                  {trip.gallery.map((img, i) => {
+                    const imgSrc = typeof img === 'string' ? img : (img?.url || img?.src || '');
+                    if (!imgSrc) return null;
+                    return (
+                      <div key={i} className="rounded-2xl overflow-hidden shadow-sm group relative aspect-square bg-gray-100 cursor-pointer">
                         <img 
-                          src={img.url} 
-                          alt={img.alt || 'Gallery image'} 
+                          src={imgSrc} 
+                          alt={typeof img === 'object' ? (img.alt || 'Gallery image') : `Gallery image ${i + 1}`} 
                           onError={(e) => { e.target.onerror = null; e.target.src = '/images/nepal luxuary.jpg'; }}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                         />
-                      )}
-                    </div>
-                  ))}
+                      </div>
+                    );
+                  })}
                 </div>
               ) : <p className="text-gray-500 italic">No gallery images available.</p>}
             </section>
@@ -776,103 +810,108 @@ const TourTripDetail = () => {
               </section>
             )}
 
-            {/* Essential Info & FAQs Section */}
-            <section id="info" className="space-y-12 scroll-mt-24">
-              {/* Essential Info */}
-              {trip.essentialInfo && trip.essentialInfo.length > 0 && (
-                <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3"><BookOpen className="text-orange-500" size={32}/> Essential Information</h2>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {trip.essentialInfo.map((info, idx) => (
-                      <div key={idx} className="bg-orange-50/30 p-6 rounded-2xl border border-orange-100">
-                        <h4 className="text-xl font-bold text-gray-900 mb-3">{info.title}</h4>
-                        <div 
-                          className="prose text-gray-700 leading-relaxed text-sm max-w-none"
-                          dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(typeof info === 'string' ? info : (info.content || '')) }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Frequently Asked Questions */}
-              <div id="faqs" className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 scroll-mt-28">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-4 border-b border-gray-100">
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 flex items-center gap-3">
-                    <HelpCircle className="text-[#e53a24]" size={28} /> Frequently Asked Questions
-                  </h2>
-                  <span className="bg-red-50 text-[#e53a24] font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider w-fit">
-                    Step-by-Step FAQ Guide
-                  </span>
-                </div>
-
-                <div className="space-y-4">
-                  {displayFaqs.map((faq, idx) => {
-                    const isOpen = expandedFaq === idx;
-                    return (
+            {/* Essential Info Section */}
+            {trip.essentialInfo && trip.essentialInfo.length > 0 && (
+              <section id="info" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
+                <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3"><BookOpen className="text-orange-500" size={32}/> Essential Information</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {trip.essentialInfo.map((info, idx) => (
+                    <div key={idx} className="bg-orange-50/30 p-6 rounded-2xl border border-orange-100">
+                      <h4 className="text-xl font-bold text-gray-900 mb-3">{info.title}</h4>
                       <div 
-                        key={idx} 
-                        className={`border rounded-2xl transition-all duration-200 overflow-hidden ${
-                          isOpen ? 'border-[#e53a24] bg-red-50/20 shadow-sm' : 'border-gray-100 bg-gray-50/50 hover:bg-gray-50'
-                        }`}
-                      >
-                        <button
-                          onClick={() => toggleFaq(idx)}
-                          className="w-full p-5 text-left flex justify-between items-center gap-4 focus:outline-none"
-                        >
-                          <span className="font-bold text-gray-900 text-base md:text-lg flex items-center gap-3">
-                            <span className="w-7 h-7 rounded-full bg-[#e53a24]/10 text-[#e53a24] text-xs flex items-center justify-center font-black shrink-0">
-                              Q{idx + 1}
-                            </span>
-                            {faq.question}
-                          </span>
-                          <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${isOpen ? 'bg-[#e53a24] text-white rotate-180' : 'bg-gray-200 text-gray-600'}`}>
-                            <ChevronDown size={18} />
-                          </div>
-                        </button>
-
-                        {isOpen && (
-                          <div className="px-5 pb-5 pt-1 text-gray-600 text-sm md:text-base leading-relaxed border-t border-red-100/50">
-                            {faq.answer}
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
+                        className="prose text-gray-700 leading-relaxed text-sm max-w-none"
+                        dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(typeof info === 'string' ? info : (info.content || '')) }}
+                      />
+                    </div>
+                  ))}
                 </div>
-              </div>
-            </section>
+              </section>
+            )}
 
             {/* Equipment Section */}
             <section id="equipment" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
               <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3"><Briefcase className="text-indigo-600" size={32}/> Packing & Equipment List</h2>
-              {trip.equipment && trip.equipment.length > 0 ? (
+              {(trip.equipment && trip.equipment.length > 0 ? trip.equipment : defaultTourEquipment) && (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  {trip.equipment.map((cat, catIdx) => (
+                  {(trip.equipment && trip.equipment.length > 0 ? trip.equipment : defaultTourEquipment).map((cat, catIdx) => (
                     <div key={catIdx} className="bg-indigo-50/30 rounded-2xl border border-indigo-100 overflow-hidden">
                       <div className="bg-indigo-100/50 p-4 border-b border-indigo-100">
-                        <h4 className="font-bold text-indigo-900 text-lg">{cat.category}</h4>
+                        <h4 className="font-bold text-indigo-900 text-lg">{cat.category || cat.name || cat}</h4>
                       </div>
                       <ul className="p-4 space-y-3">
-                        {cat.items?.map((item, itemIdx) => (
-                          <li key={itemIdx} className="flex gap-3">
-                            <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${item.required ? 'bg-indigo-500 text-white' : 'bg-gray-200 text-gray-500'}`}>
-                              {item.required ? <Check size={12}/> : <span className="text-[10px] font-bold">OPT</span>}
-                            </div>
-                            <div>
-                              <p className={`font-bold ${item.required ? 'text-gray-900' : 'text-gray-600'}`}>
-                                {item.name} {item.quantity > 1 && <span className="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded-full ml-1">x{item.quantity}</span>}
-                              </p>
-                              {item.description && <p className="text-sm text-gray-500 mt-0.5">{item.description}</p>}
-                            </div>
-                          </li>
-                        ))}
+                        {cat.items?.map((item, itemIdx) => {
+                          const isObj = typeof item === 'object' && item !== null;
+                          const itemName = isObj ? item.name : item;
+                          const itemDesc = isObj ? item.description : null;
+                          const isReq = isObj ? (item.required !== false) : true;
+                          const itemQty = isObj ? (item.quantity || 1) : 1;
+
+                          return (
+                            <li key={itemIdx} className="flex gap-3">
+                              <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${isReq ? 'bg-indigo-500 text-white' : 'bg-gray-200 text-gray-500'}`}>
+                                {isReq ? <Check size={12}/> : <span className="text-[10px] font-bold">OPT</span>}
+                              </div>
+                              <div>
+                                <p className={`font-bold ${isReq ? 'text-gray-900' : 'text-gray-600'}`}>
+                                  {itemName} {itemQty > 1 && <span className="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded-full ml-1">x{itemQty}</span>}
+                                </p>
+                                {itemDesc && <p className="text-sm text-gray-500 mt-0.5">{itemDesc}</p>}
+                              </div>
+                            </li>
+                          );
+                        })}
                       </ul>
                     </div>
                   ))}
                 </div>
-              ) : <p className="text-gray-500 italic">No equipment list provided for this trip.</p>}
+              )}
+            </section>
+
+            {/* Frequently Asked Questions (At the last) */}
+            <section id="faqs" className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 scroll-mt-28">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-4 border-b border-gray-100">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 flex items-center gap-3">
+                  <HelpCircle className="text-[#e53a24]" size={28} /> Frequently Asked Questions
+                </h2>
+                <span className="bg-red-50 text-[#e53a24] font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider w-fit">
+                  Step-by-Step FAQ Guide
+                </span>
+              </div>
+
+              <div className="space-y-4">
+                {displayFaqs.map((faq, idx) => {
+                  const isOpen = expandedFaq === idx;
+                  return (
+                    <div 
+                      key={idx} 
+                      className={`border rounded-2xl transition-all duration-200 overflow-hidden ${
+                        isOpen ? 'border-[#e53a24] bg-red-50/20 shadow-sm' : 'border-gray-100 bg-gray-50/50 hover:bg-gray-50'
+                      }`}
+                    >
+                      <button
+                        onClick={() => toggleFaq(idx)}
+                        className="w-full p-5 text-left flex justify-between items-center gap-4 focus:outline-none cursor-pointer"
+                      >
+                        <span className="font-bold text-gray-900 text-base md:text-lg flex items-center gap-3">
+                          <span className="w-7 h-7 rounded-full bg-[#e53a24]/10 text-[#e53a24] text-xs flex items-center justify-center font-black shrink-0">
+                            Q{idx + 1}
+                          </span>
+                          {faq.question}
+                        </span>
+                        <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${isOpen ? 'bg-[#e53a24] text-white rotate-180' : 'bg-gray-200 text-gray-600'}`}>
+                          <ChevronDown size={18} />
+                        </div>
+                      </button>
+
+                      {isOpen && (
+                        <div className="px-5 pb-5 pt-1 text-gray-600 text-sm md:text-base leading-relaxed border-t border-red-100/50">
+                          {faq.answer}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
             </section>
           </div>
 
