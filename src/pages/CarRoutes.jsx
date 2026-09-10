@@ -35,7 +35,7 @@ const CarRoutes = () => {
   const { formatPrice } = useCurrency();
 
   const heroImages = [
-    '/vehicles/luxury_green_sedan.png',
+    '/vehicles/offroad_4x4_suv.jpg',
     '/vehicles/byd_seal_u.png',
     '/vehicles/byd_atto_1.png',
     '/vehicles/byd_sealion_7.png',

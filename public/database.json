@@ -194,19 +194,19 @@
     },
     {
       "id": 14,
-      "name": "Luxury Mountain EV Sedan",
-      "type": "Luxury",
+      "name": "Luxury 4x4 Off-Road SUV",
+      "type": "SUV / 4x4",
       "price": 25000,
       "priceWithDriver": 28000,
-      "img": "/vehicles/luxury_green_sedan.png",
-      "seats": 4,
-      "trans": "Automatic",
-      "fuel": "Electric",
-      "luggage": 3,
+      "img": "/vehicles/offroad_4x4_suv.jpg",
+      "seats": 7,
+      "trans": "Automatic (4WD)",
+      "fuel": "Diesel (4WD)",
+      "luggage": 5,
       "rating": 5,
       "reviews": 64,
-      "seoTitle": "Luxury Mountain EV Sedan Rental in Nepal - Zenex Travels",
-      "seoDescription": "Exclusive ultra-luxury electric sedan designed for scenic mountain highway tours."
+      "seoTitle": "Hire Luxury 4x4 Off-Road SUV in Nepal - Zenex Travels",
+      "seoDescription": "Hire heavy-duty 4x4 off-road SUV (Land Cruiser / Prado / Scorpio) for high-altitude mountain expeditions and off-road trips in Nepal."
     }
   ],
   "packages": [
