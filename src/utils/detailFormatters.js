@@ -77,11 +77,6 @@ export const getAddonsList = (data, isTrek = false) => {
       details: "Upgrade to premium 5-Star luxury hotels (The Soaltee Kathmandu / Sarangkot Mountain Lodge / Mystic Mountain) with full spa & luxury perks."
     },
     {
-      title: "Everest Base Camp Scenic Helicopter Tour",
-      price: "+ US$450 / person",
-      details: "Panoramic morning helicopter flyover to Everest Base Camp & Kala Patthar with landing and gourmet mountain breakfast."
-    },
-    {
       title: "Kathmandu Everest Scenic Mountain Flight",
       price: "+ US$250 / person",
       details: "1-Hour guaranteed window-seat flight over Mt. Everest, Lhotse, Makalu & Shishapangma with airport transfers."
@@ -110,11 +105,6 @@ export const getAddonsList = (data, isTrek = false) => {
       details: "Scenic high-altitude helicopter fly-back transfer directly back to Lukla / Pokhara / Kathmandu avoiding retracing steps."
     },
     {
-      title: "Everest / Annapurna Scenic Helicopter Tour Upgrade",
-      price: "+ US$380 / person",
-      details: "Breathtaking high-altitude helicopter excursion over Kala Patthar / Annapurna Base Camp with mountain landing."
-    },
-    {
       title: "Dedicated Personal Porter Service",
       price: "+ US$22 / day",
       details: "Dedicated personal porter to carry up to 15kg of your main duffel bag throughout the trekking itinerary."
@@ -122,7 +112,8 @@ export const getAddonsList = (data, isTrek = false) => {
   ];
 
   const defaultUpgrades = isTrekPackage ? defaultTrekUpgrades : defaultTourUpgrades;
-  const result = [...custom];
+  // Filter out any explicit helicopter tour items from custom add-ons if present
+  const result = custom.filter(a => !a.title.toLowerCase().includes('helicopter tour'));
 
   // Ensure 4-Star upgrade is present
   const has4Star = result.some(a => a.title.toLowerCase().includes('4-star') || a.title.toLowerCase().includes('4 star'));
@@ -148,7 +139,6 @@ export const getAddonsList = (data, isTrek = false) => {
       const aTitleLower = a.title.toLowerCase();
       return aTitleLower === defTitleLower || 
              (defTitleLower.includes('helicopter return') && aTitleLower.includes('helicopter return')) ||
-             (defTitleLower.includes('scenic helicopter tour') && aTitleLower.includes('scenic helicopter tour')) ||
              (defTitleLower.includes('porter') && aTitleLower.includes('porter')) ||
              (defTitleLower.includes('mountain flight') && aTitleLower.includes('mountain flight')) ||
              (defTitleLower.includes('airport') && aTitleLower.includes('airport'));
