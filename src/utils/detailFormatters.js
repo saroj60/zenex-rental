@@ -35,22 +35,110 @@ export const getExclusionsList = (data) => {
   }).filter(item => item.title && item.title.trim() !== '');
 };
 
-export const getAddonsList = (data) => {
-  if (!data) return [];
-  const raw = data.addons || data.addOns || data.add_ons || data.extraOptions || [];
-  if (!Array.isArray(raw)) return [];
-  return raw.map(item => {
-    if (typeof item === 'string') return { title: item, price: '', details: '' };
-    if (typeof item === 'object' && item !== null) {
-      const priceStr = item.price ? (String(item.price).startsWith('$') || String(item.price).startsWith('US$') ? item.price : `US$${item.price}`) : '';
-      return {
-        title: item.title || item.name || item.text || item.label || String(item),
-        price: priceStr,
-        details: item.details || item.description || item.desc || ''
-      };
+export const getAddonsList = (data, isTrek = false) => {
+  const custom = [];
+  if (data) {
+    const raw = data.addons || data.addOns || data.add_ons || data.extraOptions || data.optionalActivities || [];
+    if (Array.isArray(raw)) {
+      raw.forEach(item => {
+        if (typeof item === 'string') {
+          const priceMatch = item.match(/\(([^)]+)\)$/);
+          const title = item.replace(/\s*\([^)]+\)$/, '').trim();
+          const price = priceMatch ? priceMatch[1] : '';
+          custom.push({ title, price, details: '' });
+        } else if (typeof item === 'object' && item !== null) {
+          const priceStr = item.price ? (String(item.price).startsWith('$') || String(item.price).startsWith('US$') || String(item.price).startsWith('+') ? item.price : `+ US$${item.price}`) : '';
+          custom.push({
+            title: item.title || item.name || item.text || item.label || String(item),
+            price: priceStr,
+            details: item.details || item.description || item.desc || ''
+          });
+        }
+      });
     }
-    return { title: String(item), price: '', details: '' };
-  }).filter(item => item.title && item.title.trim() !== '');
+  }
+
+  const titleText = data?.title || '';
+  const isTrekPackage = isTrek || 
+    data?.category === 'Treks' || 
+    data?.category === 'Trek' || 
+    data?.type === 'Trek' || 
+    titleText.toLowerCase().includes('trek');
+
+  const defaultTourUpgrades = [
+    {
+      title: "Upgrade to 4-Star Hotel Accommodation",
+      price: "+ US$150 / person",
+      details: "Upgrade all city hotel stays to verified 4-Star boutique & heritage hotels with upgraded breakfast buffet & amenities."
+    },
+    {
+      title: "Upgrade to 5-Star Luxury Hotel Accommodation",
+      price: "+ US$350 / person",
+      details: "Upgrade to premium 5-Star luxury hotels (The Soaltee Kathmandu / Sarangkot Mountain Lodge / Mystic Mountain) with full spa & luxury perks."
+    },
+    {
+      title: "Kathmandu Everest Scenic Mountain Flight",
+      price: "+ US$250 / person",
+      details: "1-Hour guaranteed window-seat flight over Mt. Everest, Lhotse, Makalu & Shishapangma with airport transfers."
+    },
+    {
+      title: "Private Airport Luxury Vehicle Transfer",
+      price: "+ US$35 / transfer",
+      details: "Chauffeur-driven executive private air-conditioned vehicle pick-up & drop-off at Tribhuvan International Airport."
+    }
+  ];
+
+  const defaultTrekUpgrades = [
+    {
+      title: "Upgrade to 4-Star Hotel Accommodation (Pre/Post Trek)",
+      price: "+ US$120 / person",
+      details: "Upgrade pre/post-trek Kathmandu & Pokhara hotel stays to 4-Star boutique hotels with buffet breakfast."
+    },
+    {
+      title: "Upgrade to 5-Star Luxury Hotel Accommodation (Pre/Post Trek)",
+      price: "+ US$280 / person",
+      details: "Upgrade pre/post-trek Kathmandu & Pokhara hotel stays to 5-Star luxury hotels (The Soaltee / Mystic Mountain)."
+    },
+    {
+      title: "Helicopter Return Transfer Upgrade",
+      price: "+ US$450 / person",
+      details: "Scenic high-altitude helicopter fly-back transfer directly to Lukla / Pokhara / Kathmandu."
+    },
+    {
+      title: "Dedicated Personal Porter Service",
+      price: "+ US$22 / day",
+      details: "Dedicated personal porter to carry up to 15kg of your main duffel bag throughout the trekking itinerary."
+    }
+  ];
+
+  const defaultUpgrades = isTrekPackage ? defaultTrekUpgrades : defaultTourUpgrades;
+  const result = [...custom];
+
+  // Ensure 4-Star upgrade is present
+  const has4Star = result.some(a => a.title.toLowerCase().includes('4-star') || a.title.toLowerCase().includes('4 star'));
+  if (!has4Star) {
+    result.unshift(defaultUpgrades[0]);
+  }
+
+  // Ensure 5-Star upgrade is present
+  const has5Star = result.some(a => a.title.toLowerCase().includes('5-star') || a.title.toLowerCase().includes('5 star'));
+  if (!has5Star) {
+    const index4 = result.findIndex(a => a.title.toLowerCase().includes('4-star') || a.title.toLowerCase().includes('4 star'));
+    if (index4 !== -1) {
+      result.splice(index4 + 1, 0, defaultUpgrades[1]);
+    } else {
+      result.unshift(defaultUpgrades[1]);
+    }
+  }
+
+  // If total add-ons list is less than 4, append remaining defaults
+  defaultUpgrades.slice(2).forEach(defAdd => {
+    if (!result.some(a => a.title.toLowerCase().includes(defAdd.title.toLowerCase().split(' ')[0]))) {
+      result.push(defAdd);
+    }
+  });
+
+  return result.filter(item => item.title && item.title.trim() !== '');
 };
 
 export const getHighlightsList = (data) => {

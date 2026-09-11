@@ -297,7 +297,7 @@ const TourTripDetail = () => {
 
   const inclusions = getInclusionsList(trip);
   const exclusions = getExclusionsList(trip);
-  const addons = getAddonsList(trip);
+  const addons = getAddonsList(trip, false);
   const highlights = getHighlightsList(trip);
 
   const defaultTourFaqs = [

@@ -232,7 +232,7 @@ const TrekDetail = () => {
 
   const inclusions = getInclusionsList(trek);
   const exclusions = getExclusionsList(trek);
-  const addons = getAddonsList(trek);
+  const addons = getAddonsList(trek, true);
   const highlights = getHighlightsList(trek);
   const trekDesc = trek.description || trek.overview || trek.shortDescription || '';
   const defaultTrekFaqs = [
