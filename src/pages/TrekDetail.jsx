@@ -589,21 +589,21 @@ const TrekDetail = () => {
 
             {/* Outline Itinerary Section */}
             {trek.itinerary && trek.itinerary.length > 0 && (
-              <section id="outline-itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <section id="outline-itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3 font-sans">
                   <List className="text-[#10b981]" size={28} />
                   Outline Itinerary
                 </h2>
-                <div className="overflow-hidden rounded-2xl border border-blue-100">
-                  <table className="w-full text-left text-sm border-collapse">
+                <div className="overflow-hidden rounded-2xl border border-blue-100 font-sans">
+                  <table className="w-full text-left text-sm border-collapse font-sans">
                     <thead>
                       <tr className="bg-[#5cc0e6] text-white font-bold">
-                        <th className="px-6 py-4">Itinerary</th>
-                        <th className="px-6 py-4">Max Altitude</th>
-                        <th className="px-6 py-4">Walking/Hiking</th>
+                        <th className="px-6 py-4 text-left font-bold text-white text-sm font-sans">Itinerary</th>
+                        <th className="px-6 py-4 text-left font-bold text-white text-sm font-sans">Max Altitude</th>
+                        <th className="px-6 py-4 text-left font-bold text-white text-sm font-sans">Walking/Hiking</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-blue-50">
+                    <tbody className="divide-y divide-blue-50 font-sans">
                       {trek.itinerary.map((day, idx) => {
                         let dayLabel = day.day ? String(day.day).trim() : `DAY ${String(idx + 1).padStart(2, '0')}`;
                         if (/^D\s+Day/i.test(dayLabel)) dayLabel = dayLabel.replace(/^D\s+/i, '');
@@ -611,13 +611,13 @@ const TrekDetail = () => {
                         const isEven = idx % 2 === 1;
                         return (
                           <tr key={idx} className={isEven ? 'bg-[#eef8fc]' : 'bg-white'}>
-                            <td className="px-6 py-4 font-medium text-gray-900">
+                            <td className="px-6 py-4 font-medium text-gray-900 text-sm text-left font-sans">
                               {dayLabel}: {day.title}
                             </td>
-                            <td className="px-6 py-4 text-gray-600 whitespace-nowrap">
+                            <td className="px-6 py-4 text-gray-600 text-sm text-left whitespace-nowrap font-sans">
                               {formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}
                             </td>
-                            <td className="px-6 py-4 text-gray-600 whitespace-nowrap">
+                            <td className="px-6 py-4 text-gray-600 text-sm text-left whitespace-nowrap font-sans">
                               {day.travelMode || day.modeOfTravel || (day.activities ? day.activities : 'Walking')}
                             </td>
                           </tr>
