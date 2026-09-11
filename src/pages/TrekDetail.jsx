@@ -4,7 +4,7 @@ import {
   Clock, DollarSign, MapPin, CheckCircle2, ArrowLeft, Calendar, List,
   Mountain, Bed, Utensils, Users, Sun, Check, X, Map as MapIcon, Car, Star,
   ShieldCheck, CalendarCheck, FileText, Info, HelpCircle, Heart, Phone, Plus, Minus, Image as ImageIcon,
-  AlertTriangle, Backpack, PlaneTakeoff, Activity, ChevronDown, BookOpen
+  AlertTriangle, Backpack, PlaneTakeoff, Activity, ChevronDown, BookOpen, Globe, CalendarDays, Compass, CloudSun
 } from 'lucide-react';
 import { useAppData } from '../context/AppDataContext';
 import EssentialInfoSection from '../components/EssentialInfoSection';
@@ -531,21 +531,23 @@ const TrekDetail = () => {
 
             {/* Highlights */}
             {highlights.length > 0 && (
-              <div className="pb-6 border-b border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Highlights of {trek.title}</h2>
-                <ul className="space-y-4">
-                  {highlights.map((hlt, index) => (
-                    <li key={index} className="flex items-start gap-4">
-                      <div className="mt-0.5">
-                        <CheckCircle2 className="w-6 h-6 text-green-500" strokeWidth={2} />
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                  <Compass className="text-[#e53a24]"/> Trip Highlights
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {highlights.map((hlt, i) => (
+                    <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 hover:bg-red-50 transition-colors group">
+                      <div className="bg-white text-green-500 rounded-full p-2 shadow-sm group-hover:text-[#e53a24]">
+                        <Check size={20} />
                       </div>
                       <div>
-                        <span className="text-gray-800 font-bold leading-relaxed text-[15px]">{hlt.title}</span>
-                        {hlt.description && <p className="text-gray-600 text-sm mt-0.5">{hlt.description}</p>}
+                        <h4 className="font-bold text-gray-900">{hlt.title}</h4>
+                        {hlt.description && <p className="text-sm text-gray-600 mt-1">{hlt.description}</p>}
                       </div>
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             )}
 
