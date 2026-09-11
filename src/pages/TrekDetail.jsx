@@ -167,7 +167,7 @@ const TrekDetail = () => {
         setIsScrolledDown(false);
       }
 
-      const sections = ['overview', 'gallery', 'itinerary', 'cost', 'info', 'faqs'];
+      const sections = ['overview', 'gallery', 'outline-itinerary', 'itinerary', 'cost', 'info', 'faqs'];
       const scrollPosition = currentY + 150;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -403,6 +403,7 @@ const TrekDetail = () => {
             {[
               { id: 'overview', label: 'Overview', icon: FileText },
               { id: 'gallery', label: 'Gallery', icon: ImageIcon },
+              { id: 'outline-itinerary', label: 'Outline Itinerary', icon: List },
               { id: 'itinerary', label: 'Itinerary', icon: MapIcon },
               { id: 'cost', label: 'Cost Details', icon: DollarSign },
               { id: 'info', label: 'Essential Info', icon: Info },
@@ -586,9 +587,9 @@ const TrekDetail = () => {
               </div>
             )}
 
-            {/* Outline Itinerary */}
+            {/* Outline Itinerary Section */}
             {trek.itinerary && trek.itinerary.length > 0 && (
-              <div id="outline-itinerary" className="scroll-mt-40 pb-8 border-b border-gray-100">
+              <section id="outline-itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                   <List className="text-[#10b981]" size={28} />
                   Outline Itinerary
@@ -604,7 +605,7 @@ const TrekDetail = () => {
                     </thead>
                     <tbody className="divide-y divide-blue-50">
                       {trek.itinerary.map((day, idx) => {
-                        let dayLabel = day.day ? day.day.trim() : `DAY ${String(idx + 1).padStart(2, '0')}`;
+                        let dayLabel = day.day ? String(day.day).trim() : `DAY ${String(idx + 1).padStart(2, '0')}`;
                         if (/^D\s+Day/i.test(dayLabel)) dayLabel = dayLabel.replace(/^D\s+/i, '');
                         if (!dayLabel.toUpperCase().startsWith('DAY')) dayLabel = `DAY ${dayLabel}`;
                         const isEven = idx % 2 === 1;
@@ -614,7 +615,7 @@ const TrekDetail = () => {
                               {dayLabel}: {day.title}
                             </td>
                             <td className="px-6 py-4 text-gray-600 whitespace-nowrap">
-                              {day.maxAltitude || '-'}
+                              {formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}
                             </td>
                             <td className="px-6 py-4 text-gray-600 whitespace-nowrap">
                               {day.travelMode || day.modeOfTravel || (day.activities ? day.activities : 'Walking')}
@@ -625,7 +626,7 @@ const TrekDetail = () => {
                     </tbody>
                   </table>
                 </div>
-              </div>
+              </section>
             )}
 
             {/* Detailed Itinerary */}
