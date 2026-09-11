@@ -789,11 +789,85 @@ const TrekDetail = () => {
             )}
 
             {/* Essential Info (Rich Design) */}
-            {(trek.additionalInfo || trek.difficultyInfo || trek.altitudeSickness || trek.equipmentList || trek.equipment || trek.flightInfo || trek.extendedInfo || trek.luklaFlightInfo) && (
-              <div id="info" className="scroll-mt-40 pb-6 border-b border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Essential Info</h2>
-                
-                {/* Lukla Flight Info */}
+            <div id="info" className="scroll-mt-40 pb-6 border-b border-gray-100">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 font-serif flex items-center gap-3">
+                <BookOpen className="text-orange-500" size={28} /> Essential Information
+              </h2>
+
+              {/* Custom essentialInfo array if defined */}
+              {trek.essentialInfo && Array.isArray(trek.essentialInfo) && trek.essentialInfo.length > 0 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  {trek.essentialInfo.map((info, idx) => (
+                    <div key={idx} className="bg-orange-50/40 p-6 rounded-2xl border border-orange-100/80">
+                      <h3 className="text-lg font-bold text-gray-900 mb-2.5">{typeof info === 'object' ? info.title : `Essential Info ${idx + 1}`}</h3>
+                      <div 
+                        className="prose text-gray-700 leading-relaxed text-sm max-w-none"
+                        dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(typeof info === 'string' ? info : (info.content || info.description || info.details || '')) }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* General Information if defined */}
+              {trek.generalInformation && Array.isArray(trek.generalInformation) && trek.generalInformation.length > 0 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  {trek.generalInformation.map((info, idx) => (
+                    <div key={idx} className="bg-blue-50/40 p-6 rounded-2xl border border-blue-100/80">
+                      <h3 className="text-lg font-bold text-gray-900 mb-2.5">{typeof info === 'object' ? info.title : `General Info ${idx + 1}`}</h3>
+                      <div 
+                        className="prose text-gray-700 leading-relaxed text-sm max-w-none"
+                        dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(typeof info === 'string' ? info : (info.content || info.description || info.details || '')) }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Standard Essential Trek Information Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-amber-50/60 border border-amber-100 rounded-2xl p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-lg font-bold text-amber-900 mb-3 flex items-center gap-2">
+                    <ShieldCheck className="text-amber-600" size={22} />
+                    Trekking Permits & Entry Fees
+                  </h3>
+                  <p className="text-amber-900/80 leading-relaxed text-sm">
+                    All trekkers in Nepal require TIMS (Trekkers' Information Management System) cards along with localized region entry permits (such as Sagarmatha National Park Permit, Khumbu Pasang Lhamu Rural Permit, or Annapurna Conservation Area Permit). All permits are fully arranged by Zenex Travels & Tours prior to your trek.
+                  </p>
+                </div>
+
+                <div className="bg-emerald-50/60 border border-emerald-100 rounded-2xl p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-lg font-bold text-emerald-900 mb-3 flex items-center gap-2">
+                    <Sun className="text-emerald-600" size={22} />
+                    Best Seasons & Weather Guide
+                  </h3>
+                  <p className="text-emerald-900/80 leading-relaxed text-sm">
+                    <strong>Spring (March – May)</strong> and <strong>Autumn (September – November)</strong> offer optimal trekking conditions with crystal-clear mountain sunrises, mild daytime temperatures, blooming wild rhododendrons, and dry stable trails.
+                  </p>
+                </div>
+
+                <div className="bg-red-50/60 border border-red-100 rounded-2xl p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-lg font-bold text-red-900 mb-3 flex items-center gap-2">
+                    <AlertTriangle className="text-red-600" size={22} />
+                    Altitude Sickness & Health Safety
+                  </h3>
+                  <p className="text-red-900/80 leading-relaxed text-sm">
+                    Acclimatization days are built into high-altitude itineraries. Drink 3–4 liters of safe water daily, walk at a steady rhythm, and avoid alcohol above 3,000m. Emergency helicopter rescue travel insurance covering up to 5,500m is mandatory for all high-altitude Himalayan treks.
+                  </p>
+                </div>
+
+                <div className="bg-indigo-50/60 border border-indigo-100 rounded-2xl p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-lg font-bold text-indigo-900 mb-3 flex items-center gap-2">
+                    <Bed className="text-indigo-600" size={22} />
+                    Accommodation & Teahouse Meals
+                  </h3>
+                  <p className="text-indigo-900/80 leading-relaxed text-sm">
+                    Teahouses provide comfortable twin-share rooms with foam mattresses and blankets. Communal dining halls are wood/stove-heated. Meals include freshly cooked Dal Bhat (lentils, rice & curry), noodle soups, momos, porridge, eggs, and hot tea/coffee.
+                  </p>
+                </div>
+              </div>
+
+              {/* Lukla Flight Info */}
                 {trek.luklaFlightInfo && (
                   <div className="bg-sky-50/70 border border-sky-100 rounded-2xl p-6 mb-6 hover:shadow-md transition-shadow">
                     <h3 className="text-lg font-bold text-sky-900 mb-4 flex items-center gap-2">
@@ -1010,7 +1084,6 @@ const TrekDetail = () => {
                   </div>
                 ))}
               </div>
-            )}
 
             {/* Dates & Availability */}
             {trek.datesAvailability && (
