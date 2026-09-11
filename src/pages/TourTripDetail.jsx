@@ -147,6 +147,35 @@ const TourTripDetail = () => {
       }
     }
 
+    if (!baseTrip && tripIdOrSlug) {
+      let extraCandidate = packageExtraData[tripIdOrSlug];
+      if (!extraCandidate) {
+        const numMatch = String(tripIdOrSlug).match(/^(\d+)-days/i);
+        if (numMatch) {
+          const num = numMatch[1];
+          const shortCandidate = String(tripIdOrSlug)
+            .toLowerCase()
+            .replace(/^\d+-days-/, '')
+            .replace(/-tour$/, '')
+            .replace(/kathmandu/g, 'ktm')
+            + '-' + num + 'd';
+          if (packageExtraData[shortCandidate]) {
+            extraCandidate = packageExtraData[shortCandidate];
+          }
+        }
+      }
+
+      if (extraCandidate) {
+        baseTrip = {
+          id: tripIdOrSlug,
+          slug: tripIdOrSlug,
+          title: extraCandidate.title || tripIdOrSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+          category: 'Tours',
+          ...extraCandidate
+        };
+      }
+    }
+
     if (baseTrip) {
       const key = baseTrip.slug || baseTrip.id;
       let extra = packageExtraData[key] || packageExtraData[baseTrip.id] || packageExtraData[baseTrip.slug];

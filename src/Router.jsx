@@ -108,7 +108,7 @@ const router = createBrowserRouter([
       { path: 'travel-info', element: <TravelInfo /> },
       { path: 'travel-guide', element: <TravelGuidePage /> },
       { path: 'packages', element: <Packages /> },
-      { path: 'packages/:id', element: <PackageDetail /> },
+      { path: 'packages/:id', element: <TourTripDetail /> },
       { path: 'tours', element: <Tours /> },
       { path: 'tours/category/:categoryName', element: <TourCategoryDetail /> },
       { path: 'blogs', element: <Blogs /> },
