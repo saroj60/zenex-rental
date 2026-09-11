@@ -167,7 +167,7 @@ const TrekDetail = () => {
         setIsScrolledDown(false);
       }
 
-      const sections = ['overview', 'gallery', 'outline-itinerary', 'itinerary', 'cost', 'info', 'faqs'];
+      const sections = ['overview', 'gallery', 'outline-itinerary', 'itinerary', 'route-map', 'cost', 'info', 'faqs'];
       const scrollPosition = currentY + 150;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -405,6 +405,7 @@ const TrekDetail = () => {
               { id: 'gallery', label: 'Gallery', icon: ImageIcon },
               { id: 'outline-itinerary', label: 'Outline Itinerary', icon: List },
               { id: 'itinerary', label: 'Itinerary', icon: MapIcon },
+              ...(trek.routeMap ? [{ id: 'route-map', label: 'Route Map', icon: Globe }] : []),
               { id: 'cost', label: 'Cost Details', icon: DollarSign },
               { id: 'info', label: 'Essential Info', icon: Info },
               { id: 'faqs', label: 'FAQs', icon: HelpCircle }
@@ -437,8 +438,8 @@ const TrekDetail = () => {
             <div id="trek-details-content" className="lg:col-span-2 space-y-10">
               
               {/* Quick Facts Grid (Redesigned) */}
-              <div id="overview" className="bg-[#eff6f1] rounded-2xl p-6 md:p-8 border border-green-100 shadow-sm scroll-mt-40">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Trip Facts</h2>
+              <div id="overview" className="bg-[#eff6f1] rounded-2xl p-6 md:p-8 border border-green-100 shadow-sm scroll-mt-24 font-sans">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 font-sans">Trip Facts</h2>
               
               <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
                 {trek.facts ? (
@@ -520,8 +521,8 @@ const TrekDetail = () => {
             </div>
 
             {/* Package Introduction & Overview */}
-            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
-              <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3 font-serif">
+            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 font-sans">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3 font-sans">
                 <BookOpen className="text-green-600" size={28} /> Package Introduction & Overview
               </h2>
               <div 
@@ -532,8 +533,8 @@ const TrekDetail = () => {
 
             {/* Highlights */}
             {highlights.length > 0 && (
-              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2 font-sans">
                   <Compass className="text-[#e53a24]"/> Trip Highlights
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -554,8 +555,8 @@ const TrekDetail = () => {
 
             {/* Gallery Section */}
             {trek.gallery && trek.gallery.length > 0 && (
-              <div id="gallery" className="scroll-mt-40 pb-6 border-b border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Trip Gallery</h2>
+              <section id="gallery" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-sans">Trip Gallery</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {trek.gallery.map((img, idx) => {
                     const imgSrc = typeof img === 'string' ? img : (img?.url || img?.src || '');
@@ -571,12 +572,14 @@ const TrekDetail = () => {
                     );
                   })}
                 </div>
-              </div>
+              </section>
             )}
             {/* Route Map Section */}
             {trek.routeMap && (
-              <div className="scroll-mt-40 pb-6 border-b border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Route Map</h2>
+              <section id="route-map" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3 font-sans">
+                  <Globe className="text-[#10b981]" size={28} /> Route Map
+                </h2>
                 <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
                   <img 
                     src={trek.routeMap} 
@@ -584,7 +587,7 @@ const TrekDetail = () => {
                     className="w-full h-auto object-contain" 
                   />
                 </div>
-              </div>
+              </section>
             )}
 
             {/* Outline Itinerary Section */}
@@ -631,9 +634,9 @@ const TrekDetail = () => {
 
             {/* Detailed Itinerary */}
             {trek.itinerary && trek.itinerary.length > 0 && (
-              <div id="itinerary" className="scroll-mt-40 pb-6 border-b border-gray-100">
+              <section id="itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 font-sans">
                 <div className="flex justify-between items-end mb-8 border-b border-gray-100 pb-4">
-                  <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+                  <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3 font-sans">
                     <List className="text-[#10b981]" size={28} />
                     Day-by-Day Itinerary
                   </h2>
@@ -662,10 +665,10 @@ const TrekDetail = () => {
 
                         {/* Day Content */}
                         <div className="pt-8">
-                          <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{day.title}</h3>
+                          <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1 font-sans">{day.title}</h3>
                           {descriptionText && (
                             <div 
-                              className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none text-justify" 
+                              className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none text-justify font-sans" 
                               dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(descriptionText) }} 
                             />
                           )}
@@ -676,9 +679,9 @@ const TrekDetail = () => {
 
                           {/* Day Highlights Metadata */}
                           {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
-                            <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
-                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">DAY HIGHLIGHTS</h4>
-                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
+                            <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl font-sans">
+                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 font-sans">DAY HIGHLIGHTS</h4>
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600 font-sans">
                                 {day.maxAltitude && (
                                   <div className="flex items-center gap-2">
                                     <Mountain size={16} className="text-gray-400 shrink-0" />
@@ -717,19 +720,19 @@ const TrekDetail = () => {
                     );
                   })}
                 </div>
-              </div>
+              </section>
             )}
 
             {/* Includes / Excludes & Add-ons */}
             {(inclusions.length > 0 || exclusions.length > 0 || addons.length > 0) && (
-              <div id="cost" className="scroll-mt-40 pb-6 border-b border-gray-100">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-8 flex items-center gap-3 font-serif">
-                  <DollarSign className="text-emerald-600" size={28} /> Cost Details (Inclusions & Exclusions)
+              <section id="cost" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3 font-sans">
+                  <DollarSign className="text-[#10b981]" size={28} /> Cost Details
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {inclusions.length > 0 && (
                     <div className="bg-green-50/80 border border-green-100 p-6 rounded-2xl">
-                      <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2">
+                      <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2 font-sans">
                         <Check className="text-green-600" /> What's Included
                       </h4>
                       <ul className="space-y-3">
@@ -737,8 +740,8 @@ const TrekDetail = () => {
                           <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                             <Check size={16} className="text-green-500 shrink-0 mt-0.5" />
                             <div>
-                              <span className="font-medium text-gray-800">{item.title}</span>
-                              {item.description && <p className="text-xs text-gray-500 mt-0.5">{item.description}</p>}
+                              <span className="font-medium text-gray-800 font-sans">{item.title}</span>
+                              {item.description && <p className="text-xs text-gray-500 mt-0.5 font-sans">{item.description}</p>}
                             </div>
                           </li>
                         ))}
@@ -747,7 +750,7 @@ const TrekDetail = () => {
                   )}
                   {exclusions.length > 0 && (
                     <div className="bg-red-50/80 border border-red-100 p-6 rounded-2xl">
-                      <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2">
+                      <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2 font-sans">
                         <X className="text-red-600" /> What's Excluded
                       </h4>
                       <ul className="space-y-3">
@@ -755,8 +758,8 @@ const TrekDetail = () => {
                           <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700">
                             <X size={16} className="text-red-500 shrink-0 mt-0.5" />
                             <div>
-                              <span className="font-medium text-gray-800">{item.title}</span>
-                              {item.description && <p className="text-xs text-gray-500 mt-0.5">{item.description}</p>}
+                              <span className="font-medium text-gray-800 font-sans">{item.title}</span>
+                              {item.description && <p className="text-xs text-gray-500 mt-0.5 font-sans">{item.description}</p>}
                             </div>
                           </li>
                         ))}
@@ -767,20 +770,20 @@ const TrekDetail = () => {
 
                 {/* Add-ons & Exclusive Options */}
                 {addons.length > 0 && (
-                  <div className="mt-8 bg-purple-50/70 border border-purple-100 rounded-2xl p-6">
-                    <h3 className="text-lg font-bold text-purple-900 mb-4 flex items-center gap-2">
+                  <div className="mt-8 bg-purple-50/70 border border-purple-100 rounded-2xl p-6 font-sans">
+                    <h3 className="text-lg font-bold text-purple-900 mb-4 flex items-center gap-2 font-sans">
                       <Plus className="text-purple-600" size={20} />
                       Add-ons & Exclusive Upgrade Options
                     </h3>
-                    <div className="grid grid-cols-1 gap-3">
+                    <div className="grid grid-cols-1 gap-3 font-sans">
                       {addons.map((addon, idx) => (
-                        <div key={idx} className="bg-white/80 rounded-xl p-4 border border-purple-100/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div key={idx} className="bg-white/80 rounded-xl p-4 border border-purple-100/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 font-sans">
                           <div>
-                            <h4 className="font-bold text-purple-950 text-sm">{addon.title}</h4>
-                            {addon.details && <p className="text-xs text-purple-800/80 mt-1">{addon.details}</p>}
+                            <h4 className="font-bold text-purple-950 text-sm font-sans">{addon.title}</h4>
+                            {addon.details && <p className="text-xs text-purple-800/80 mt-1 font-sans">{addon.details}</p>}
                           </div>
                           {addon.price && (
-                            <span className="bg-purple-100 text-purple-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0 w-fit">
+                            <span className="bg-purple-100 text-purple-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0 w-fit font-sans">
                               {addon.price}
                             </span>
                           )}
@@ -789,40 +792,40 @@ const TrekDetail = () => {
                     </div>
                   </div>
                 )}
-              </div>
+              </section>
             )}
 
             {/* Essential Information & Equipment List Section */}
-            <section className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+            <section className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 font-sans">
               <EssentialInfoSection item={trek} isTrek={true} />
             </section>
 
             {/* Dates & Availability */}
             {trek.datesAvailability && (
-              <div className="scroll-mt-40 pb-6 border-b border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 font-serif">Dates & Availability</h2>
+              <section className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 font-sans">Dates & Availability</h2>
                 <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
-                  <p className="text-gray-700 leading-relaxed text-[15px]">{trek.datesAvailability}</p>
+                  <p className="text-gray-700 leading-relaxed text-[15px] font-sans">{trek.datesAvailability}</p>
                 </div>
-              </div>
+              </section>
             )}
 
             {/* Add-ons & Options */}
             {trek.addOns && (
-              <div className="scroll-mt-40 pb-6 border-b border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 font-serif">Add-ons & Options</h2>
+              <section className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 font-sans">Add-ons & Options</h2>
                 <div className="space-y-4">
-                  {trek.addOns.intro && <p className="text-gray-600 mb-4">{trek.addOns.intro}</p>}
+                  {trek.addOns.intro && <p className="text-gray-600 mb-4 font-sans">{trek.addOns.intro}</p>}
                   {Array.isArray(trek.addOns) ? (
                     trek.addOns.map((opt, idx) => (
-                      <div key={idx} className="bg-orange-50/50 p-5 rounded-xl border border-orange-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                      <div key={idx} className="bg-orange-50/50 p-5 rounded-xl border border-orange-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3 font-sans">
                         <div>
-                          <span className="font-bold text-orange-900 text-sm block">{opt.title}</span>
-                          {opt.details && <span className="text-gray-700 text-xs mt-1 block">{opt.details}</span>}
-                          {opt.description && <span className="text-gray-700 text-xs mt-1 block">{opt.description}</span>}
+                          <span className="font-bold text-orange-900 text-sm block font-sans">{opt.title}</span>
+                          {opt.details && <span className="text-gray-700 text-xs mt-1 block font-sans">{opt.details}</span>}
+                          {opt.description && <span className="text-gray-700 text-xs mt-1 block font-sans">{opt.description}</span>}
                         </div>
                         {opt.price && (
-                          <span className="bg-orange-100 text-orange-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0 w-fit">
+                          <span className="bg-orange-100 text-orange-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0 w-fit font-sans">
                             {opt.price}
                           </span>
                         )}
@@ -830,62 +833,62 @@ const TrekDetail = () => {
                     ))
                   ) : trek.addOns.options && Array.isArray(trek.addOns.options) ? (
                     trek.addOns.options.map((opt, idx) => (
-                      <div key={idx} className="bg-orange-50/50 p-5 rounded-xl border border-orange-100">
-                        <p className="text-gray-800 text-[15px]">
-                          <span className="font-bold text-orange-800">{opt.title}:</span> {opt.description}
+                      <div key={idx} className="bg-orange-50/50 p-5 rounded-xl border border-orange-100 font-sans">
+                        <p className="text-gray-800 text-[15px] font-sans">
+                          <span className="font-bold text-orange-800 font-sans">{opt.title}:</span> {opt.description}
                         </p>
                       </div>
                     ))
                   ) : null}
                 </div>
-              </div>
+              </section>
             )}
 
             {/* Booking Steps */}
             {trek.bookingSteps && trek.bookingSteps.steps && Array.isArray(trek.bookingSteps.steps) && (
-              <div className="scroll-mt-40 pb-6 border-b border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 font-serif">Booking Process</h2>
-                {trek.bookingSteps.intro && <p className="text-gray-600 mb-6">{trek.bookingSteps.intro}</p>}
-                <div className="space-y-3">
+              <section className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 font-sans">Booking Process</h2>
+                {trek.bookingSteps.intro && <p className="text-gray-600 mb-6 font-sans">{trek.bookingSteps.intro}</p>}
+                <div className="space-y-3 font-sans">
                   {trek.bookingSteps.steps.map((step, idx) => (
-                    <div key={idx} className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg border border-gray-100">
-                      <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold shrink-0">
+                    <div key={idx} className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg border border-gray-100 font-sans">
+                      <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold shrink-0 font-sans">
                         {idx + 1}
                       </div>
-                      <span className="text-gray-700 font-medium">{step}</span>
+                      <span className="text-gray-700 font-medium font-sans">{step}</span>
                     </div>
                   ))}
                 </div>
-              </div>
+              </section>
             )}
 
             {/* Frequently Asked Questions */}
-            <div id="faqs" className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 scroll-mt-40">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-4 border-b border-gray-100">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 flex items-center gap-3 font-serif">
-                  <HelpCircle className="text-green-600" size={28} /> Frequently Asked Questions
+            <section id="faqs" className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 font-sans">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-4 border-b border-gray-100 font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3 font-sans">
+                  <HelpCircle className="text-[#10b981]" size={28} /> Frequently Asked Questions
                 </h2>
-                <span className="bg-green-50 text-green-700 font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider w-fit">
+                <span className="bg-green-50 text-green-700 font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider w-fit font-sans">
                   Step-by-Step FAQ Guide
                 </span>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 font-sans">
                 {displayFaqs.map((faq, index) => {
                   const isOpen = expandedFaq === index;
                   return (
                     <div 
                       key={index} 
-                      className={`border rounded-2xl transition-all duration-200 overflow-hidden ${
+                      className={`border rounded-2xl transition-all duration-200 overflow-hidden font-sans ${
                         isOpen ? 'border-green-600 bg-green-50/20 shadow-sm' : 'border-gray-100 bg-gray-50/50 hover:bg-gray-50'
                       }`}
                     >
                       <button
                         onClick={() => setExpandedFaq(isOpen ? null : index)}
-                        className="w-full p-5 text-left flex justify-between items-center gap-4 focus:outline-none"
+                        className="w-full p-5 text-left flex justify-between items-center gap-4 focus:outline-none font-sans"
                       >
-                        <span className="font-bold text-gray-900 text-base md:text-lg flex items-center gap-3">
-                          <span className="w-7 h-7 rounded-full bg-green-600/10 text-green-700 text-xs flex items-center justify-center font-black shrink-0">
+                        <span className="font-bold text-gray-900 text-base md:text-lg flex items-center gap-3 font-sans">
+                          <span className="w-7 h-7 rounded-full bg-green-600/10 text-green-700 text-xs flex items-center justify-center font-black shrink-0 font-sans">
                             Q{index + 1}
                           </span>
                           {faq.question}
@@ -896,7 +899,7 @@ const TrekDetail = () => {
                       </button>
 
                       {isOpen && (
-                        <div className="px-5 pb-5 pt-1 text-gray-600 text-sm md:text-base leading-relaxed border-t border-green-100/50">
+                        <div className="px-5 pb-5 pt-1 text-gray-600 text-sm md:text-base leading-relaxed border-t border-green-100/50 font-sans">
                           {faq.answer}
                         </div>
                       )}
@@ -904,7 +907,7 @@ const TrekDetail = () => {
                   );
                 })}
               </div>
-            </div>
+            </section>
           </div>
 
           {/* Sidebar */}
