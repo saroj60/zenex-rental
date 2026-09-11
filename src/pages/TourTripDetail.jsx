@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { useAppData } from '../context/AppDataContext';
+import EssentialInfoSection from '../components/EssentialInfoSection';
 import { packageExtraData } from './PackageDetail';
 import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, X, Play, ImageIcon, Calendar, List, DollarSign, ChevronDown, ChevronUp, CheckCircle2, XCircle, BookOpen, Puzzle, Briefcase, HelpCircle, ChevronRight, Globe, CalendarDays, Activity, Mountain, Bed, Utensils, CloudSun, Car, Heart, FileText, Info, Plus } from 'lucide-react';
 import { generatePackagePDF } from '../utils/pdfGenerator';
@@ -853,61 +854,9 @@ const TourTripDetail = () => {
               </section>
             )}
 
-            {/* Essential Info Section */}
-            {trip.essentialInfo && trip.essentialInfo.length > 0 && (
-              <section id="info" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
-                <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3"><BookOpen className="text-orange-500" size={32}/> Essential Information</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {trip.essentialInfo.map((info, idx) => (
-                    <div key={idx} className="bg-orange-50/30 p-6 rounded-2xl border border-orange-100">
-                      <h4 className="text-xl font-bold text-gray-900 mb-3">{info.title}</h4>
-                      <div 
-                        className="prose text-gray-700 leading-relaxed text-sm max-w-none"
-                        dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(typeof info === 'string' ? info : (info.content || '')) }}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* Equipment Section */}
-            <section id="equipment" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3"><Briefcase className="text-indigo-600" size={32}/> Packing & Equipment List</h2>
-              {(trip.equipment && trip.equipment.length > 0 ? trip.equipment : defaultTourEquipment) && (
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  {(trip.equipment && trip.equipment.length > 0 ? trip.equipment : defaultTourEquipment).map((cat, catIdx) => (
-                    <div key={catIdx} className="bg-indigo-50/30 rounded-2xl border border-indigo-100 overflow-hidden">
-                      <div className="bg-indigo-100/50 p-4 border-b border-indigo-100">
-                        <h4 className="font-bold text-indigo-900 text-lg">{cat.category || cat.name || cat}</h4>
-                      </div>
-                      <ul className="p-4 space-y-3">
-                        {cat.items?.map((item, itemIdx) => {
-                          const isObj = typeof item === 'object' && item !== null;
-                          const itemName = isObj ? item.name : item;
-                          const itemDesc = isObj ? item.description : null;
-                          const isReq = isObj ? (item.required !== false) : true;
-                          const itemQty = isObj ? (item.quantity || 1) : 1;
-
-                          return (
-                            <li key={itemIdx} className="flex gap-3">
-                              <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center shrink-0 ${isReq ? 'bg-indigo-500 text-white' : 'bg-gray-200 text-gray-500'}`}>
-                                {isReq ? <Check size={12}/> : <span className="text-[10px] font-bold">OPT</span>}
-                              </div>
-                              <div>
-                                <p className={`font-bold ${isReq ? 'text-gray-900' : 'text-gray-600'}`}>
-                                  {itemName} {itemQty > 1 && <span className="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded-full ml-1">x{itemQty}</span>}
-                                </p>
-                                {itemDesc && <p className="text-sm text-gray-500 mt-0.5">{itemDesc}</p>}
-                              </div>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              )}
+            {/* Essential Information & Equipment List Section */}
+            <section className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+              <EssentialInfoSection item={trip} isTrek={false} />
             </section>
 
             {/* Frequently Asked Questions (At the last) */}
