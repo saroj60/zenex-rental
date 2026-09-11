@@ -6,6 +6,7 @@ import { seoLandingData } from '../data/seoLandingData';
 import { useAppData } from '../context/AppDataContext';
 import { useCurrency } from '../context/CurrencyContext';
 import InlineEnquiryForm from '../components/InlineEnquiryForm';
+import { getCleanExcerpt } from '../utils/detailFormatters';
 
 const SEOLanding = ({ staticSlug }) => {
   const params = useParams();
@@ -89,7 +90,7 @@ const SEOLanding = ({ staticSlug }) => {
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-8">
               <h2 className="text-3xl font-extrabold text-[#1e3a8a] mb-6">Overview</h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-8">
-                {routeData.overview}
+                {getCleanExcerpt(routeData.overview, 10)}
               </p>
               
               <h3 className="text-2xl font-bold text-[#1e3a8a] mb-6 mt-10">Why Choose Us?</h3>

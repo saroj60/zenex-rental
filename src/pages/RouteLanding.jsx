@@ -6,6 +6,7 @@ import { seoRoutes } from '../data/seoRoutes';
 import { useAppData } from '../context/AppDataContext';
 import { useCurrency } from '../context/CurrencyContext';
 import InlineEnquiryForm from '../components/InlineEnquiryForm';
+import { getCleanExcerpt } from '../utils/detailFormatters';
 
 const RouteLanding = () => {
   const { slug } = useParams();
@@ -83,7 +84,7 @@ const RouteLanding = () => {
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-8">
               <h2 className="text-3xl font-extrabold text-[#1e3a8a] mb-6">Route Overview</h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-8">
-                {routeData.overview}
+                {getCleanExcerpt(routeData.overview, 10)}
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
