@@ -71,17 +71,19 @@ export const getHighlightsList = (data) => {
 
 export const getCleanExcerpt = (text, maxSentences = 2) => {
   if (!text || typeof text !== 'string') return '';
-  // 1. Remove markdown headers e.g. ### Header
-  let clean = text.replace(/###\s+[^\n.]+/g, '');
-  // 2. Remove markdown list bullets and bold asterisks
+  // 1. Strip all HTML tags e.g. <h3>, <p>, <strong>, <span>, <a>
+  let clean = text.replace(/<[^>]*>/g, ' ');
+  // 2. Remove markdown headers e.g. ### Header
+  clean = clean.replace(/###\s+[^\n.]+/g, '');
+  // 3. Remove markdown list bullets and bold asterisks
   clean = clean.replace(/^[*\-]\s+/gm, '');
   clean = clean.replace(/\*\*(.*?)\*\*/g, '$1');
   clean = clean.replace(/\*(.*?)\*/g, '$1');
   clean = clean.replace(/###/g, '');
   clean = clean.replace(/-\s*Key Highlight:\s*/gi, '');
-  // 3. Normalize whitespace
+  // 4. Normalize whitespace
   clean = clean.replace(/\s+/g, ' ').trim();
-  // 4. Extract first maxSentences sentences
+  // 5. Extract first maxSentences sentences
   const sentences = clean.match(/[^.!?]+[.!?]+/g);
   if (sentences && sentences.length > 0) {
     return sentences.slice(0, maxSentences).join(' ').trim();
@@ -93,7 +95,7 @@ export const formatMarkdownToHTML = (text) => {
   if (!text) return '';
   if (typeof text !== 'string') return String(text);
 
-  let html = text;
+  let html = text.trim();
 
   // 1. Normalize line endings
   html = html.replace(/\r\n/g, '\n');
@@ -132,7 +134,8 @@ export const formatMarkdownToHTML = (text) => {
   html = html.replace(/\*\*/g, '');
   html = html.replace(/###/g, '');
 
-  if (!html.startsWith('<') && !html.startsWith('<ul') && !html.startsWith('<h')) {
+  html = html.trim();
+  if (!html.startsWith('<')) {
     html = `<p class="text-gray-700 leading-relaxed text-justify">${html}</p>`;
   }
 
