@@ -77,6 +77,11 @@ export const getAddonsList = (data, isTrek = false) => {
       details: "Upgrade to premium 5-Star luxury hotels (The Soaltee Kathmandu / Sarangkot Mountain Lodge / Mystic Mountain) with full spa & luxury perks."
     },
     {
+      title: "Everest Base Camp Scenic Helicopter Tour",
+      price: "+ US$450 / person",
+      details: "Panoramic morning helicopter flyover to Everest Base Camp & Kala Patthar with landing and gourmet mountain breakfast."
+    },
+    {
       title: "Kathmandu Everest Scenic Mountain Flight",
       price: "+ US$250 / person",
       details: "1-Hour guaranteed window-seat flight over Mt. Everest, Lhotse, Makalu & Shishapangma with airport transfers."
@@ -102,7 +107,12 @@ export const getAddonsList = (data, isTrek = false) => {
     {
       title: "Helicopter Return Transfer Upgrade",
       price: "+ US$450 / person",
-      details: "Scenic high-altitude helicopter fly-back transfer directly to Lukla / Pokhara / Kathmandu."
+      details: "Scenic high-altitude helicopter fly-back transfer directly back to Lukla / Pokhara / Kathmandu avoiding retracing steps."
+    },
+    {
+      title: "Everest / Annapurna Scenic Helicopter Tour Upgrade",
+      price: "+ US$380 / person",
+      details: "Breathtaking high-altitude helicopter excursion over Kala Patthar / Annapurna Base Camp with mountain landing."
     },
     {
       title: "Dedicated Personal Porter Service",
@@ -131,9 +141,19 @@ export const getAddonsList = (data, isTrek = false) => {
     }
   }
 
-  // If total add-ons list is less than 4, append remaining defaults
+  // Append remaining default upgrades if not already present
   defaultUpgrades.slice(2).forEach(defAdd => {
-    if (!result.some(a => a.title.toLowerCase().includes(defAdd.title.toLowerCase().split(' ')[0]))) {
+    const defTitleLower = defAdd.title.toLowerCase();
+    const isAlreadyPresent = result.some(a => {
+      const aTitleLower = a.title.toLowerCase();
+      return aTitleLower === defTitleLower || 
+             (defTitleLower.includes('helicopter return') && aTitleLower.includes('helicopter return')) ||
+             (defTitleLower.includes('scenic helicopter tour') && aTitleLower.includes('scenic helicopter tour')) ||
+             (defTitleLower.includes('porter') && aTitleLower.includes('porter')) ||
+             (defTitleLower.includes('mountain flight') && aTitleLower.includes('mountain flight')) ||
+             (defTitleLower.includes('airport') && aTitleLower.includes('airport'));
+    });
+    if (!isAlreadyPresent) {
       result.push(defAdd);
     }
   });
