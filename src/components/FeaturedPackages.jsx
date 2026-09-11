@@ -255,7 +255,7 @@ const FeaturedPackages = () => {
           >
             {featuredTreksList.map((pkg) => (
               <Link 
-                to={pkg.isTourTrip ? `/tour/${pkg.id}` : `/treks/${pkg.id}`} 
+                to={(pkg.category === 'Treks' || pkg.category === 'Trek' || pkg.title?.toLowerCase().includes('trek')) ? `/treks/${pkg.slug || pkg.id}` : `/treks/${pkg.id}`} 
                 key={pkg.id} 
                 className="min-w-[280px] w-[280px] md:min-w-[310px] md:w-[310px] bg-white rounded-3xl shadow-sm border border-slate-100 flex flex-col snap-start shrink-0 group hover:shadow-2xl hover:shadow-[#1e3a8a]/5 hover:-translate-y-2 transition-all duration-300 overflow-hidden relative"
               >

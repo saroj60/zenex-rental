@@ -15,7 +15,7 @@ import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList,
 const TrekDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { treks } = useAppData();
+  const { treks, tourTrips, packages } = useAppData();
   
   const [trek, setTrek] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -28,6 +28,14 @@ const TrekDetail = () => {
   
   const [activeTab, setActiveTab] = useState('overview');
   const [expandedFaq, setExpandedFaq] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const foundTrek = (treks || []).find(t => t.id === id || t.slug === id || t.id === `TRIP-${id}` || t.slug === `TRIP-${id}`) ||
+                      (tourTrips || []).find(t => (t.id === id || t.slug === id || t.id === `TRIP-${id}` || t.slug === `TRIP-${id}`) && (t.category === 'Treks' || t.category === 'Trek' || t.title?.toLowerCase().includes('trek'))) ||
+                      (packages || []).find(t => (t.id === id || t.slug === id) && (t.category === 'Treks' || t.category === 'Trek' || t.title?.toLowerCase().includes('trek')));
+    setTrek(foundTrek);
+  }, [id, treks, tourTrips, packages]);
 
   const formatAltitude = (alt, unit) => {
     if (!alt) return '-';
@@ -195,11 +203,7 @@ const TrekDetail = () => {
     }
   }, [activeTab]);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const foundTrek = treks.find(t => t.id === id || t.slug === id || t.id === `TRIP-${id}` || t.slug === `TRIP-${id}`);
-    setTrek(foundTrek);
-  }, [id, treks]);
+
 
   useEffect(() => {
     if (!trek) return;

@@ -74,7 +74,7 @@ const CountryPackages = () => {
       duration: t.duration || t.durationValue,
       durationUnit: t.durationUnit || 'Days',
       rating: t.rating || 5,
-      link: `/tour/${t.slug || t.id}`
+      link: (t.category === 'Treks' || t.category === 'Trek' || t.type === 'Trek' || (t.title && t.title.toLowerCase().includes('trek'))) ? `/treks/${t.slug || t.id}` : `/tour/${t.slug || t.id}`
     }));
 
   const mappedTreks = (treks || []).map(t => ({

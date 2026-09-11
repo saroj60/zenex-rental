@@ -563,8 +563,8 @@ export const AppDataProvider = ({ children }) => {
         // 1. Add static treksData from local data file first
         (treksData || []).forEach(t => {
           if (t && (t.id || t.slug)) {
-            const key = t.id || t.slug;
-            allTreksMap.set(key, t);
+            if (t.id) allTreksMap.set(t.id, t);
+            if (t.slug) allTreksMap.set(t.slug, t);
           }
         });
 
@@ -572,47 +572,54 @@ export const AppDataProvider = ({ children }) => {
         ensureArray(finalTreks).forEach(t => {
           if (t && (t.id || t.slug)) {
             const key = t.id || t.slug;
-            const existing = allTreksMap.get(key) || {};
+            const existing = allTreksMap.get(key) || allTreksMap.get(t.slug) || {};
             const merged = { ...existing, ...t };
             merged.description = t.description || t.overview || existing.description || existing.overview || '';
             merged.overview = t.overview || t.description || existing.overview || existing.description || '';
-            allTreksMap.set(key, merged);
+            if (t.id) allTreksMap.set(t.id, merged);
+            if (t.slug) allTreksMap.set(t.slug, merged);
           }
         });
 
         // 3. Add any tourTrips categorized as Treks if not already in treks
         ensureArray(finalTourTrips).forEach(t => {
-          if (t && (t.id || t.slug) && (t.id.startsWith('TRIP-') || t.activities?.includes('Trekking') || t.type === 'Trek' || t.category === 'Trek')) {
-            const trekKey = t.slug || t.id.replace(/^TRIP-/, '');
-            if (!allTreksMap.has(trekKey) && !allTreksMap.has(t.id)) {
-              allTreksMap.set(t.id, {
-                id: t.id,
-                slug: t.slug || t.id,
-                title: t.title,
-                region: t.region || 'nepal',
-                duration: t.duration || '14',
-                durationUnit: t.durationUnit || 'Days',
-                price: t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : (t.price ? `US$${String(t.price).replace(/^(US\$|\$|\s)+/gi, '').trim()}` : ''),
-                originalPrice: t.pricingInfo?.originalPrice ? `US$${t.pricingInfo.originalPrice}` : (t.originalPrice ? `US$${String(t.originalPrice).replace(/^(US\$|\$|\s)+/gi, '').trim()}` : ''),
-                rating: t.rating || 4.9,
-                reviewsCount: t.reviewsCount || 12,
-                difficulty: t.grade || t.difficulty || 'Moderate',
-                maxAltitude: t.maxAltitude || '',
-                starts: 'Kathmandu',
-                ends: 'Kathmandu',
-                activities: 'Trekking & Exploration',
-                image: t.image || t.featuredImage,
-                gallery: t.gallery || [t.image],
-                description: t.overview || t.description,
-                overview: t.overview || t.description,
-                highlights: t.highlights || [],
-                quickFacts: t.quickFacts || {},
-                itinerary: t.itinerary || [],
-                costIncludes: t.costIncludes || t.includes || [],
-                costExcludes: t.costExcludes || t.excludes || [],
-                faqs: t.faqs || []
-              });
-            }
+          const isTrekItem = t && (t.id || t.slug) && (
+            t.category === 'Treks' || t.category === 'Trek' || t.type === 'Trek' ||
+            t.id.startsWith('TRIP-') ||
+            (t.title && t.title.toLowerCase().includes('trek')) ||
+            (t.activities && (Array.isArray(t.activities) ? t.activities.join(' ').toLowerCase().includes('trek') : String(t.activities).toLowerCase().includes('trek')))
+          );
+          if (isTrekItem) {
+            const trekObj = {
+              id: t.id,
+              slug: t.slug || t.id,
+              title: t.title,
+              category: 'Treks',
+              region: t.region || 'nepal',
+              duration: t.duration || '14',
+              durationUnit: t.durationUnit || 'Days',
+              price: t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : (t.price ? `US$${String(t.price).replace(/^(US\$|\$|\s)+/gi, '').trim()}` : ''),
+              originalPrice: t.pricingInfo?.originalPrice ? `US$${t.pricingInfo.originalPrice}` : (t.originalPrice ? `US$${String(t.originalPrice).replace(/^(US\$|\$|\s)+/gi, '').trim()}` : ''),
+              rating: t.rating || 4.9,
+              reviewsCount: t.reviewsCount || 12,
+              difficulty: t.grade || t.difficulty || 'Moderate',
+              maxAltitude: t.maxAltitude || '',
+              starts: 'Kathmandu',
+              ends: 'Kathmandu',
+              activities: 'Trekking & Exploration',
+              image: t.image || t.featuredImage,
+              gallery: t.gallery || [t.image],
+              description: t.overview || t.description,
+              overview: t.overview || t.description,
+              highlights: t.highlights || [],
+              quickFacts: t.quickFacts || {},
+              itinerary: t.itinerary || [],
+              costIncludes: t.costIncludes || t.includes || [],
+              costExcludes: t.costExcludes || t.excludes || [],
+              faqs: t.faqs || []
+            };
+            if (t.id) allTreksMap.set(t.id, trekObj);
+            if (t.slug) allTreksMap.set(t.slug, trekObj);
           }
         });
 

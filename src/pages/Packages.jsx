@@ -326,7 +326,7 @@ const Packages = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {sortedPackages.map((pkg) => (
               <Link 
-                to={pkg.isTourTrip ? `/tour/${pkg.id}` : `/packages/${pkg.id}`} 
+                to={(pkg.category === 'Treks' || pkg.category === 'Trek' || pkg.title?.toLowerCase().includes('trek')) ? `/treks/${pkg.slug || pkg.id}` : (pkg.isTourTrip ? `/tour/${pkg.id}` : `/packages/${pkg.id}`)} 
                 key={pkg.id} 
                 className="bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col group hover:shadow-2xl hover:shadow-gray-200/50 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden relative"
               >

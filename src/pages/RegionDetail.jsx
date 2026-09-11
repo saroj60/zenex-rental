@@ -82,7 +82,7 @@ const RegionDetail = () => {
         activity: t.activities?.join(', ') || 'Tour',
         region: t.region || '',
         location: t.destination || '',
-        link: `/tour/${t.slug || t.id}`
+        link: (t.category === 'Treks' || t.category === 'Trek' || t.type === 'Trek' || (t.title && t.title.toLowerCase().includes('trek'))) ? `/treks/${t.slug || t.id}` : `/tour/${t.slug || t.id}`
       });
     }
   });

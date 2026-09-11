@@ -234,9 +234,23 @@ const TourTripDetail = () => {
         equipment: (baseTrip.equipment && baseTrip.equipment.length > 0) ? baseTrip.equipment : ((extra.equipment && extra.equipment.length > 0) ? extra.equipment : defaultTourEquipment),
         faqs: (baseTrip.faqs && baseTrip.faqs.length > 0) ? baseTrip.faqs : (extra.faqs || [])
       };
+
+      const isTrekPackage = mappedTrip && (
+        mappedTrip.category === 'Treks' || 
+        mappedTrip.category === 'Trek' || 
+        mappedTrip.type === 'Trek' ||
+        (mappedTrip.title && mappedTrip.title.toLowerCase().includes('trek'))
+      );
+
+      if (isTrekPackage) {
+        const targetSlug = mappedTrip.slug || mappedTrip.id;
+        navigate(`/treks/${targetSlug}`, { replace: true });
+        return;
+      }
+
       setTrip(mappedTrip);
     }
-  }, [tripIdOrSlug, tourTrips, packages]);
+  }, [tripIdOrSlug, tourTrips, packages, navigate]);
 
   if (!trip) {
     return (
