@@ -155,12 +155,6 @@ const WhatOurGuestsSay = () => {
     setVideoIndex((prev) => (prev - 1 + travelVideos.length) % travelVideos.length);
   };
 
-  const handleMouseEnterVideo = () => {
-    if (!isTouchDevice && playingVideoId === null) {
-      handleNextVideo();
-    }
-  };
-
   // Testimonial Swipe Handlers
   const handleTouchStartTesti = (e) => {
     setTouchStartTesti(e.targetTouches[0].clientX);
@@ -212,12 +206,12 @@ const WhatOurGuestsSay = () => {
     return () => clearInterval(timer);
   }, [playingVideoId]);
 
-  // Auto-slide Videos independently
+  // Auto-slide Videos independently every 2 seconds
   useEffect(() => {
     if (playingVideoId !== null) return;
     const timer = setInterval(() => {
       setVideoIndex((prevIndex) => (prevIndex + 1) % travelVideos.length);
-    }, 7500); // 7.5s interval
+    }, 2000); // 2s interval
     return () => clearInterval(timer);
   }, [playingVideoId]);
 
@@ -370,7 +364,6 @@ const WhatOurGuestsSay = () => {
 
               {/* Cinematic Video Card */}
               <div 
-                onMouseEnter={handleMouseEnterVideo}
                 className="relative rounded-[20px] overflow-hidden aspect-video bg-[#1e3a8a] group shadow-[0_8px_30px_rgba(20,43,95,0.06)] hover:shadow-[0_20px_40px_rgba(20,43,95,0.2)] border border-slate-100/50 my-auto w-full transition-shadow duration-500 cursor-pointer"
               >
                 <div 
