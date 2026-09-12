@@ -128,9 +128,9 @@ export const generatePackagePDF = async (item) => {
     // 2. Prepare HTML Container and attach to DOM (required for html2canvas in production)
     const element = document.createElement('div');
     element.id = 'pdf-itinerary-export-container';
-    element.style.position = 'absolute';
+    element.style.position = 'fixed';
     element.style.top = '0';
-    element.style.left = '0';
+    element.style.left = '-9999px';
     element.style.width = '794px';
     element.style.zIndex = '-99999';
     element.style.padding = '30px 25px';
@@ -494,24 +494,31 @@ export const generatePackagePDF = async (item) => {
         logging: false,
         scrollX: 0,
         scrollY: 0,
-        windowWidth: 794,
+        windowWidth: 800,
         onclone: (clonedDoc) => {
-          // Remove document stylesheets in clonedDoc to prevent html2canvas from crashing on unsupported modern CSS features like Tailwind v4 oklch(...) colors.
-          // The PDF container element uses 100% self-contained inline CSS styles.
+          // 1. Hide the main app root in clonedDoc so it never overlays or blocks the PDF export element
+          const rootEl = clonedDoc.getElementById('root');
+          if (rootEl) {
+            rootEl.style.display = 'none';
+          }
+
+          // 2. Remove document stylesheets in clonedDoc to prevent html2canvas from crashing on unsupported modern CSS features like Tailwind v4 oklch(...) colors.
           const stylesheets = clonedDoc.querySelectorAll('style, link[rel="stylesheet"]');
           stylesheets.forEach(s => {
             try { s.remove(); } catch (e) {}
           });
 
-          // Reset cloned element positioning from offscreen (-9999px) to (0, 0) inside cloned document
+          // 3. Reset cloned export container positioning from offscreen (-9999px) to static (0, 0) inside cloned document
           const clonedEl = clonedDoc.getElementById('pdf-itinerary-export-container');
           if (clonedEl) {
             clonedEl.style.position = 'static';
+            clonedEl.style.display = 'block';
+            clonedEl.style.visibility = 'visible';
+            clonedEl.style.opacity = '1';
+            clonedEl.style.zIndex = '999999';
             clonedEl.style.left = '0';
             clonedEl.style.top = '0';
-            clonedEl.style.zIndex = '1';
-            clonedEl.style.opacity = '1';
-            clonedEl.style.visibility = 'visible';
+            clonedEl.style.margin = '0 auto';
           }
         }
       },
