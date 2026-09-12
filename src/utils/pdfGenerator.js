@@ -128,11 +128,11 @@ export const generatePackagePDF = async (item) => {
     // 2. Prepare HTML Container and attach to DOM (required for html2canvas in production)
     const element = document.createElement('div');
     element.id = 'pdf-itinerary-export-container';
-    element.style.position = 'fixed';
+    element.style.position = 'absolute';
     element.style.top = '0';
-    element.style.left = '-9999px';
+    element.style.left = '0';
     element.style.width = '794px';
-    element.style.zIndex = '-9999';
+    element.style.zIndex = '-99999';
     element.style.padding = '30px 25px';
     element.style.fontFamily = "'Inter', 'Helvetica Neue', Arial, sans-serif";
     element.style.color = '#1e293b';
