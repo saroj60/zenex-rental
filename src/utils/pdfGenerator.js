@@ -6,8 +6,11 @@ import { defaultTourEquipment } from '../pages/TourTripDetail';
  * into a Base64 Data URL so html2canvas renders it cleanly without blank spaces or canvas errors.
  * Includes a strict 2-second timeout per image so external network issues never freeze PDF downloads.
  */
-export const urlToBase64 = (url) => {
-  if (!url) return Promise.resolve(null);
+export const urlToBase64 = (rawUrl) => {
+  if (!rawUrl) return Promise.resolve(null);
+
+  const url = typeof rawUrl === 'string' ? rawUrl : (rawUrl?.url || rawUrl?.src || rawUrl?.path || '');
+  if (!url || typeof url !== 'string') return Promise.resolve(null);
   if (url.startsWith('data:')) return Promise.resolve(url);
 
   return new Promise((resolve) => {
@@ -85,23 +88,35 @@ export const generatePackagePDF = async (item) => {
   if (!item) return;
 
   try {
+    const getImgString = (img) => {
+      if (!img) return null;
+      if (typeof img === 'string') return img;
+      if (typeof img === 'object') return img.url || img.src || img.path || null;
+      return null;
+    };
+
     // 1. Fetch & convert logo and key images to Base64 Data URLs (with timeouts)
     const logoBase64 = await urlToBase64('/logo.jpg');
     
-    const mainImgUrl = item.image || item.banner || (Array.isArray(item.gallery) && item.gallery[0]);
+    const rawMainImg = item.image || item.banner || (Array.isArray(item.gallery) && item.gallery[0]);
+    const mainImgUrl = getImgString(rawMainImg);
     const coverImageBase64 = mainImgUrl ? await urlToBase64(mainImgUrl) : null;
     
-    const galleryUrls = (item.gallery || []).filter(g => g && g !== mainImgUrl).slice(0, 6);
+    const galleryUrls = (item.gallery || [])
+      .map(getImgString)
+      .filter(g => g && g !== mainImgUrl)
+      .slice(0, 6);
     const galleryBase64ListRaw = await Promise.all(galleryUrls.map(url => urlToBase64(url)));
     const galleryBase64List = galleryBase64ListRaw.filter(img => img && typeof img === 'string' && img.startsWith('data:image'));
 
-    const routeMapBase64 = item.routeMap ? await urlToBase64(item.routeMap) : null;
+    const routeMapUrl = getImgString(item.routeMap);
+    const routeMapBase64 = routeMapUrl ? await urlToBase64(routeMapUrl) : null;
 
     // Process day images if present
     const itinerary = item.itinerary || [];
     const processedItinerary = await Promise.all(
       itinerary.map(async (day) => {
-        const dayImg = day.image || day.img;
+        const dayImg = getImgString(day.image || day.img);
         const dayImgBase64 = dayImg ? await urlToBase64(dayImg) : null;
         return { 
           ...day, 
@@ -477,13 +492,11 @@ export const generatePackagePDF = async (item) => {
         allowTaint: true,
         logging: false,
         onclone: (clonedDoc) => {
-          const styles = clonedDoc.querySelectorAll('style, link[rel="stylesheet"]');
-          styles.forEach(s => {
-            try {
-              if (s.textContent && s.textContent.includes('oklch')) {
-                s.textContent = s.textContent.replace(/oklch\([^)]+\)/g, '#333333');
-              }
-            } catch (e) {}
+          // Remove document stylesheets in clonedDoc to prevent html2canvas from crashing on unsupported modern CSS features like Tailwind v4 oklch(...) colors.
+          // The PDF container element uses 100% self-contained inline CSS styles.
+          const stylesheets = clonedDoc.querySelectorAll('style, link[rel="stylesheet"]');
+          stylesheets.forEach(s => {
+            try { s.remove(); } catch (e) {}
           });
         }
       },
@@ -499,6 +512,9 @@ export const generatePackagePDF = async (item) => {
 
     try {
       const html2pdfLib = getHtml2Pdf();
+      if (!html2pdfLib) {
+        throw new Error('html2pdf library is unavailable');
+      }
       await html2pdfLib().from(element).set(opt).save();
     } finally {
       if (element && element.parentNode) {
