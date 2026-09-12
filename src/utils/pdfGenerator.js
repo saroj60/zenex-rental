@@ -125,20 +125,16 @@ export const generatePackagePDF = async (item) => {
       })
     );
 
-    // 2. Prepare HTML Container and attach to DOM (required for html2canvas in production)
-    const element = document.createElement('div');
-    element.id = 'pdf-itinerary-export-container';
-    element.style.position = 'fixed';
-    element.style.top = '0';
-    element.style.left = '-9999px';
-    element.style.width = '794px';
-    element.style.zIndex = '-99999';
-    element.style.padding = '30px 25px';
-    element.style.fontFamily = "'Inter', 'Helvetica Neue', Arial, sans-serif";
-    element.style.color = '#1e293b';
-    element.style.backgroundColor = '#ffffff';
-    element.style.boxSizing = 'border-box';
-    document.body.appendChild(element);
+    // 2. Prepare hidden iframe for 100% isolated, clean PDF rendering
+    const iframe = document.createElement('iframe');
+    iframe.style.position = 'fixed';
+    iframe.style.right = '100%';
+    iframe.style.bottom = '100%';
+    iframe.style.width = '794px';
+    iframe.style.height = '1000px';
+    iframe.style.border = 'none';
+    iframe.style.visibility = 'hidden';
+    document.body.appendChild(iframe);
 
     // --- HEADER BRANDING WITH LOGO ---
     const validLogo = logoBase64 && typeof logoBase64 === 'string' && logoBase64.startsWith('data:image') ? logoBase64 : null;
@@ -464,22 +460,47 @@ export const generatePackagePDF = async (item) => {
       </div>
     `;
 
-    // Assemble full HTML document inside invisible wrapper
-    element.innerHTML = `
-      ${headerHtml}
-      ${tripTitleHtml}
-      ${coverHtml}
-      ${factsHtml}
-      ${overviewHtml}
-      ${highlightsHtml}
-      ${galleryHtml}
-      ${routeMapHtml}
-      ${outlineItineraryHtml}
-      ${detailedItineraryHtml}
-      ${costDetailsHtml}
-      ${extraInfoHtml}
-      ${footerHtml}
-    `;
+    // Assemble full HTML document inside iframe
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iframeDoc.open();
+    iframeDoc.write(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8" />
+          <style>
+            * { box-sizing: border-box; }
+            body {
+              margin: 0;
+              padding: 25px 20px;
+              font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+              color: #1e293b;
+              background-color: #ffffff;
+              width: 794px;
+            }
+          </style>
+        </head>
+        <body>
+          ${headerHtml}
+          ${tripTitleHtml}
+          ${coverHtml}
+          ${factsHtml}
+          ${overviewHtml}
+          ${highlightsHtml}
+          ${galleryHtml}
+          ${routeMapHtml}
+          ${outlineItineraryHtml}
+          ${detailedItineraryHtml}
+          ${costDetailsHtml}
+          ${extraInfoHtml}
+          ${footerHtml}
+        </body>
+      </html>
+    `);
+    iframeDoc.close();
+
+    // Allow iframe DOM and images to settle
+    await new Promise(resolve => setTimeout(resolve, 300));
 
     // Configure html2pdf options
     const fileName = `${title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_itinerary.pdf`;
@@ -491,36 +512,7 @@ export const generatePackagePDF = async (item) => {
         scale: 2, 
         useCORS: true,
         allowTaint: true,
-        logging: false,
-        scrollX: 0,
-        scrollY: 0,
-        windowWidth: 800,
-        onclone: (clonedDoc) => {
-          // 1. Hide the main app root in clonedDoc so it never overlays or blocks the PDF export element
-          const rootEl = clonedDoc.getElementById('root');
-          if (rootEl) {
-            rootEl.style.display = 'none';
-          }
-
-          // 2. Remove document stylesheets in clonedDoc to prevent html2canvas from crashing on unsupported modern CSS features like Tailwind v4 oklch(...) colors.
-          const stylesheets = clonedDoc.querySelectorAll('style, link[rel="stylesheet"]');
-          stylesheets.forEach(s => {
-            try { s.remove(); } catch (e) {}
-          });
-
-          // 3. Reset cloned export container positioning from offscreen (-9999px) to static (0, 0) inside cloned document
-          const clonedEl = clonedDoc.getElementById('pdf-itinerary-export-container');
-          if (clonedEl) {
-            clonedEl.style.position = 'static';
-            clonedEl.style.display = 'block';
-            clonedEl.style.visibility = 'visible';
-            clonedEl.style.opacity = '1';
-            clonedEl.style.zIndex = '999999';
-            clonedEl.style.left = '0';
-            clonedEl.style.top = '0';
-            clonedEl.style.margin = '0 auto';
-          }
-        }
+        logging: false
       },
       jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
       pagebreak:    { mode: ['css', 'legacy'] }
@@ -538,10 +530,10 @@ export const generatePackagePDF = async (item) => {
       if (!html2pdfLib) {
         throw new Error('html2pdf library is unavailable');
       }
-      await html2pdfLib().from(element).set(opt).save();
+      await html2pdfLib().from(iframeDoc.body).set(opt).save();
     } finally {
-      if (element && element.parentNode) {
-        element.parentNode.removeChild(element);
+      if (iframe && iframe.parentNode) {
+        iframe.parentNode.removeChild(iframe);
       }
     }
   } catch (err) {
