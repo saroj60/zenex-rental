@@ -127,6 +127,7 @@ export const generatePackagePDF = async (item) => {
 
     // 2. Prepare HTML Container and attach to DOM (required for html2canvas in production)
     const element = document.createElement('div');
+    element.id = 'pdf-itinerary-export-container';
     element.style.position = 'fixed';
     element.style.top = '0';
     element.style.left = '-9999px';
@@ -491,6 +492,9 @@ export const generatePackagePDF = async (item) => {
         useCORS: true,
         allowTaint: true,
         logging: false,
+        scrollX: 0,
+        scrollY: 0,
+        windowWidth: 794,
         onclone: (clonedDoc) => {
           // Remove document stylesheets in clonedDoc to prevent html2canvas from crashing on unsupported modern CSS features like Tailwind v4 oklch(...) colors.
           // The PDF container element uses 100% self-contained inline CSS styles.
@@ -498,9 +502,21 @@ export const generatePackagePDF = async (item) => {
           stylesheets.forEach(s => {
             try { s.remove(); } catch (e) {}
           });
+
+          // Reset cloned element positioning from offscreen (-9999px) to (0, 0) inside cloned document
+          const clonedEl = clonedDoc.getElementById('pdf-itinerary-export-container');
+          if (clonedEl) {
+            clonedEl.style.position = 'static';
+            clonedEl.style.left = '0';
+            clonedEl.style.top = '0';
+            clonedEl.style.zIndex = '1';
+            clonedEl.style.opacity = '1';
+            clonedEl.style.visibility = 'visible';
+          }
         }
       },
-      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      pagebreak:    { mode: ['css', 'legacy'] }
     };
 
     const getHtml2Pdf = () => {
