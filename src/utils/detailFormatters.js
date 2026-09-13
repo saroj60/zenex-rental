@@ -154,12 +154,12 @@ export const getAddonsList = (data, isTrek = false) => {
   const defaultTrekUpgrades = [
     {
       title: "Upgrade to 4-Star Hotel Accommodation (Pre/Post Trek)",
-      price: "+ US$120 / person",
+      price: "+ US$150 / person",
       details: "Upgrade pre/post-trek Kathmandu & Pokhara hotel stays to 4-Star boutique hotels with buffet breakfast."
     },
     {
       title: "Upgrade to 5-Star Luxury Hotel Accommodation (Pre/Post Trek)",
-      price: "+ US$280 / person",
+      price: "+ US$350 / person",
       details: "Upgrade pre/post-trek Kathmandu & Pokhara hotel stays to 5-Star luxury hotels (The Soaltee / Mystic Mountain)."
     },
     {
