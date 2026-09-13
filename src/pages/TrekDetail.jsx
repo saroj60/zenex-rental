@@ -770,20 +770,20 @@ const TrekDetail = () => {
 
                 {/* Add-ons & Exclusive Options */}
                 {addons.length > 0 && (
-                  <div className="mt-8 bg-purple-50/70 border border-purple-100 rounded-2xl p-6 font-sans">
+                  <div className="mt-8 bg-purple-50/70 border border-purple-100 rounded-2xl p-6 md:p-8 font-sans">
                     <h3 className="text-lg font-bold text-purple-900 mb-4 flex items-center gap-2 font-sans">
                       <Plus className="text-purple-600" size={20} />
                       Add-ons & Exclusive Upgrade Options
                     </h3>
-                    <div className="grid grid-cols-1 gap-3 font-sans">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans">
                       {addons.map((addon, idx) => (
-                        <div key={idx} className="bg-white/80 rounded-xl p-4 border border-purple-100/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 font-sans">
+                        <div key={idx} className="bg-white/80 rounded-xl p-4 border border-purple-100/80 flex justify-between items-center gap-3 hover:bg-white transition-colors font-sans">
                           <div>
                             <h4 className="font-bold text-purple-950 text-sm font-sans">{addon.title}</h4>
-                            {addon.details && <p className="text-xs text-purple-800/80 mt-1 font-sans">{addon.details}</p>}
+                            {addon.details && <p className="text-xs text-purple-800/80 mt-0.5 font-sans">{addon.details}</p>}
                           </div>
                           {addon.price && (
-                            <span className="bg-purple-100 text-purple-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0 w-fit font-sans">
+                            <span className="bg-purple-100 text-purple-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0 font-sans">
                               {addon.price}
                             </span>
                           )}
@@ -810,39 +810,7 @@ const TrekDetail = () => {
               </section>
             )}
 
-            {/* Add-ons & Options */}
-            {trek.addOns && (
-              <section className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 font-sans">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 font-sans">Add-ons & Options</h2>
-                <div className="space-y-4">
-                  {trek.addOns.intro && <p className="text-gray-600 mb-4 font-sans">{trek.addOns.intro}</p>}
-                  {Array.isArray(trek.addOns) ? (
-                    trek.addOns.map((opt, idx) => (
-                      <div key={idx} className="bg-orange-50/50 p-5 rounded-xl border border-orange-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3 font-sans">
-                        <div>
-                          <span className="font-bold text-orange-900 text-sm block font-sans">{opt.title}</span>
-                          {opt.details && <span className="text-gray-700 text-xs mt-1 block font-sans">{opt.details}</span>}
-                          {opt.description && <span className="text-gray-700 text-xs mt-1 block font-sans">{opt.description}</span>}
-                        </div>
-                        {opt.price && (
-                          <span className="bg-orange-100 text-orange-900 font-bold text-xs px-3 py-1.5 rounded-lg shrink-0 w-fit font-sans">
-                            {opt.price}
-                          </span>
-                        )}
-                      </div>
-                    ))
-                  ) : trek.addOns.options && Array.isArray(trek.addOns.options) ? (
-                    trek.addOns.options.map((opt, idx) => (
-                      <div key={idx} className="bg-orange-50/50 p-5 rounded-xl border border-orange-100 font-sans">
-                        <p className="text-gray-800 text-[15px] font-sans">
-                          <span className="font-bold text-orange-800 font-sans">{opt.title}:</span> {opt.description}
-                        </p>
-                      </div>
-                    ))
-                  ) : null}
-                </div>
-              </section>
-            )}
+
 
             {/* Booking Steps */}
             {trek.bookingSteps && trek.bookingSteps.steps && Array.isArray(trek.bookingSteps.steps) && (

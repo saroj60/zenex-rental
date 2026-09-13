@@ -110,7 +110,19 @@ export const getAddonsList = (data, isTrek = false) => {
           const price = priceMatch ? priceMatch[1] : '';
           custom.push({ title, price, details: '' });
         } else if (typeof item === 'object' && item !== null) {
-          const priceStr = item.price ? (String(item.price).startsWith('$') || String(item.price).startsWith('US$') || String(item.price).startsWith('+') ? item.price : `+ US$${item.price}`) : '';
+          let priceStr = '';
+          if (item.price) {
+            const p = String(item.price).trim();
+            if (p.startsWith('$') || p.startsWith('US$') || p.startsWith('+')) {
+              priceStr = p;
+            } else if (/request|free|included/i.test(p)) {
+              priceStr = p;
+            } else if (/^\d/.test(p)) {
+              priceStr = `+ US$${p}`;
+            } else {
+              priceStr = p;
+            }
+          }
           custom.push({
             title: item.title || item.name || item.text || item.label || String(item),
             price: priceStr,
