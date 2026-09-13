@@ -11,7 +11,6 @@ import EssentialInfoSection from '../components/EssentialInfoSection';
 import SEO from '../components/SEO';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
-import TripCostMatrixTable from '../components/TripCostMatrixTable';
 import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt } from '../utils/detailFormatters';
 
 const TrekDetail = () => {
@@ -723,9 +722,6 @@ const TrekDetail = () => {
                 </div>
               </section>
             )}
-
-            {/* Trip Cost for 2026/27 Pricing Matrix Table */}
-            <TripCostMatrixTable item={trek} />
 
             {/* Includes / Excludes & Add-ons */}
             {(inclusions.length > 0 || exclusions.length > 0 || addons.length > 0) && (

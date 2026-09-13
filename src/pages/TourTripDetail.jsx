@@ -7,7 +7,6 @@ import { packageExtraData } from './PackageDetail';
 import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, X, Play, ImageIcon, Calendar, List, DollarSign, ChevronDown, ChevronUp, CheckCircle2, XCircle, BookOpen, Puzzle, Briefcase, HelpCircle, ChevronRight, Globe, CalendarDays, Activity, Mountain, Bed, Utensils, CloudSun, Car, Heart, FileText, Info, Plus } from 'lucide-react';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
-import TripCostMatrixTable from '../components/TripCostMatrixTable';
 import { formatDuration } from '../utils/duration';
 import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt } from '../utils/detailFormatters';
 
@@ -779,9 +778,6 @@ const TourTripDetail = () => {
                 </div>
               </section>
             )}
-
-            {/* Trip Cost for 2026/27 Pricing Matrix Table */}
-            <TripCostMatrixTable item={trip} />
 
             {/* Cost Details Section */}
             {(inclusions.length > 0 || exclusions.length > 0 || addons.length > 0) && (
