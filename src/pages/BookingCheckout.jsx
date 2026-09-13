@@ -318,16 +318,17 @@ const BookingCheckout = () => {
   let defaultPrice = 1200;
   let durationText = 'N/A';
 
-  const matchedTrek = Array.isArray(treks) ? treks.find(t => t.id === pkgId) : null;
-  const matchedTourTrip = Array.isArray(tourTrips) ? tourTrips.find(t => t.id === pkgId || t.slug === pkgId) : null;
-  const matchedTour = Array.isArray(packages) ? packages.find(p => p.id === pkgId) : null;
-  const matchedVehicle = (carId && Array.isArray(vehicles)) ? vehicles.find(v => v.id.toString() === carId) : null;
+  const normPkgId = (pkgId || '').trim().toLowerCase();
+  const matchedTrek = Array.isArray(treks) ? treks.find(t => t && (t.id === pkgId || t.slug === pkgId || (t.id && String(t.id).toLowerCase() === normPkgId) || (t.slug && String(t.slug).toLowerCase() === normPkgId))) : null;
+  const matchedTourTrip = Array.isArray(tourTrips) ? tourTrips.find(t => t && (t.id === pkgId || t.slug === pkgId || (t.id && String(t.id).toLowerCase() === normPkgId) || (t.slug && String(t.slug).toLowerCase() === normPkgId))) : null;
+  const matchedTour = Array.isArray(packages) ? packages.find(p => p && (p.id === pkgId || p.slug === pkgId || (p.id && String(p.id).toLowerCase() === normPkgId) || (p.slug && String(p.slug).toLowerCase() === normPkgId))) : null;
+  const matchedVehicle = (carId && Array.isArray(vehicles)) ? vehicles.find(v => v && v.id.toString() === carId) : null;
 
   if (matchedTrek) {
     selectedItem = {
-      title: matchedTrek.title,
-      img: matchedTrek.image,
-      duration: matchedTrek.quickFacts?.duration || '15 Days',
+      title: matchedTrek.title || 'Trek Package',
+      img: matchedTrek.image || (matchedTrek.gallery && matchedTrek.gallery[0]) || '/images/trek.png',
+      duration: matchedTrek.duration || matchedTrek.quickFacts?.duration || '15 Days',
       price: matchedTrek.price ? parseInt(String(matchedTrek.price).replace(/\D/g, ''), 10) : 1500,
       addOns: matchedTrek.addOns || null
     };
@@ -335,19 +336,21 @@ const BookingCheckout = () => {
     defaultPrice = selectedItem.price;
   } else if (matchedTourTrip) {
     selectedItem = {
-      title: matchedTourTrip.title,
-      img: matchedTourTrip.image,
-      duration: matchedTourTrip.quickFacts?.duration || '7 Days',
-      price: matchedTourTrip.price ? parseInt(String(matchedTourTrip.price).replace(/\D/g, ''), 10) : 1200,
+      title: matchedTourTrip.title || 'Tour Package',
+      img: matchedTourTrip.image || matchedTourTrip.img || matchedTourTrip.featuredImage || (matchedTourTrip.gallery && matchedTourTrip.gallery[0]) || '/images/ktm-home.jpg',
+      duration: matchedTourTrip.duration || matchedTourTrip.quickFacts?.duration || '7 Days',
+      price: matchedTourTrip.price ? parseInt(String(matchedTourTrip.price).replace(/\D/g, ''), 10) : (matchedTourTrip.pricingInfo?.sellingPrice || 1200),
       addOns: matchedTourTrip.addOns || null
     };
     durationText = selectedItem.duration;
     defaultPrice = selectedItem.price;
   } else if (matchedTour) {
+    const title = matchedTour.title || 'Tour Package';
+    const durationMatch = title.match(/\d+/);
     selectedItem = {
-      title: matchedTour.title,
-      img: matchedTour.img,
-      duration: matchedTour.title.match(/\d+/) ? `${matchedTour.title.match(/\d+/)[0]} Days` : '7 Days',
+      title: title,
+      img: matchedTour.img || matchedTour.image || (matchedTour.gallery && matchedTour.gallery[0]) || '/images/ktm-home.jpg',
+      duration: matchedTour.duration || (durationMatch ? `${durationMatch[0]} Days` : '7 Days'),
       price: matchedTour.price ? parseInt(String(matchedTour.price).replace(/\D/g, ''), 10) : 1000,
       addOns: matchedTour.addOns || null
     };
@@ -1073,12 +1076,7 @@ ${firstName} ${lastName}`);
                         <span>US${packagePrice}</span>
                       </div>
 
-                      {discountAmount > 0 && (
-                        <div className="flex justify-between font-medium text-[#1b8c00]">
-                          <span>Group Discount ({groupDiscountPercent}%)</span>
-                          <span>-US${discountAmount}</span>
-                        </div>
-                      )}
+
 
                       {addonsPrice > 0 && (
                         <div className="flex justify-between font-medium text-slate-600 border-t border-slate-100/50 pt-3">
