@@ -175,11 +175,6 @@ export const getAddonsList = (data, isTrek = false) => {
       details: "Upgrade pre/post-trek Kathmandu & Pokhara hotel stays to 5-Star luxury hotels (The Soaltee / Mystic Mountain)."
     },
     {
-      title: "Helicopter Return Transfer Upgrade",
-      price: "+ US$450 / person",
-      details: "Scenic high-altitude helicopter fly-back transfer directly back to Lukla / Pokhara / Kathmandu avoiding retracing steps."
-    },
-    {
       title: "Dedicated Personal Porter Service",
       price: "+ US$22 / day",
       details: "Dedicated personal porter to carry up to 15kg of your main duffel bag throughout the trekking itinerary."
@@ -187,8 +182,8 @@ export const getAddonsList = (data, isTrek = false) => {
   ];
 
   const defaultUpgrades = isTrekPackage ? defaultTrekUpgrades : defaultTourUpgrades;
-  // Filter out any explicit helicopter tour items from custom add-ons if present
-  const result = custom.filter(a => !a.title.toLowerCase().includes('helicopter tour'));
+  // Filter out any explicit helicopter items from custom add-ons if present
+  const result = custom.filter(a => !a.title.toLowerCase().includes('helicopter'));
 
   // Ensure 4-Star upgrade is present
   const has4Star = result.some(a => a.title.toLowerCase().includes('4-star') || a.title.toLowerCase().includes('4 star'));
