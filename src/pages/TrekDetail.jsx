@@ -458,121 +458,125 @@ const TrekDetail = () => {
             {/* Main Content */}
             <div id="trek-details-content" className="lg:col-span-2 space-y-10">
               
-              {/* Quick Facts Grid (Redesigned) */}
-              <div id="overview" className="bg-[#eff6f1] rounded-2xl p-6 md:p-8 border border-green-100 shadow-sm scroll-mt-24 font-sans">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 font-sans">Trip Facts</h2>
+            {/* Overview Section */}
+            <section id="overview" className="space-y-8 md:space-y-12 scroll-mt-28 font-sans">
               
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
-                {trek.facts ? (
-                  Object.entries(trek.facts).map(([key, value], idx) => {
-                    const icons = {
-                      "Country": MapPin,
-                      "Duration": Calendar,
-                      "Trip Grade": Mountain,
-                      "Max. Altitude": Mountain,
-                      "Starts": MapIcon,
-                      "Ends": CheckCircle2,
-                      "Activities": Users,
-                      "Accomodation": Bed,
-                      "Meals": Utensils,
-                      "Best Time": Sun
-                    };
-                    const IconComponent = icons[key] || CheckCircle2;
-                    return (
-                      <div key={idx} className="flex gap-3 min-w-0">
-                        <IconComponent className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                        <div className="min-w-0 flex-1">
-                          <p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">{key}</p>
-                          <p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words [word-break:break-word]">{value}</p>
+              {/* TRIP FACTS GRID */}
+              <div className="bg-[#eff6f1] rounded-2xl p-6 md:p-8 border border-green-100 shadow-sm font-sans">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Trip Facts</h2>
+                
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
+                  {trek.facts ? (
+                    Object.entries(trek.facts).map(([key, value], idx) => {
+                      const icons = {
+                        "Country": MapPin,
+                        "Duration": Calendar,
+                        "Trip Grade": Mountain,
+                        "Max. Altitude": Mountain,
+                        "Starts": MapIcon,
+                        "Ends": CheckCircle2,
+                        "Activities": Users,
+                        "Accomodation": Bed,
+                        "Meals": Utensils,
+                        "Best Time": Sun
+                      };
+                      const IconComponent = icons[key] || CheckCircle2;
+                      return (
+                        <div key={idx} className="flex gap-3 min-w-0">
+                          <IconComponent className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                          <div className="min-w-0 flex-1">
+                            <p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">{key}</p>
+                            <p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words [word-break:break-word]">{value}</p>
+                          </div>
                         </div>
+                      );
+                    })
+                  ) : (
+                    <>
+                      <div className="flex gap-3 min-w-0">
+                        <MapPin className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Country</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Nepal</p></div>
                       </div>
-                    );
-                  })
-                ) : (
-                  <>
-                    <div className="flex gap-3 min-w-0">
-                      <MapPin className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Country</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Nepal</p></div>
-                    </div>
-                    <div className="flex gap-3 min-w-0">
-                      <Calendar className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Duration</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.duration}</p></div>
-                    </div>
-                    <div className="flex gap-3 min-w-0">
-                      <Mountain className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Trip Grade</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.difficulty}</p></div>
-                    </div>
-                    {trek.quickFacts?.maxAltitude && (
+                      <div className="flex gap-3 min-w-0">
+                        <Calendar className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Duration</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.duration}</p></div>
+                      </div>
                       <div className="flex gap-3 min-w-0">
                         <Mountain className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Max. Altitude</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts.maxAltitude}</p></div>
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Trip Grade</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.difficulty}</p></div>
                       </div>
-                    )}
-                    {trek.quickFacts?.region && (
+                      {trek.quickFacts?.maxAltitude && (
+                        <div className="flex gap-3 min-w-0">
+                          <Mountain className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                          <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Max. Altitude</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts.maxAltitude}</p></div>
+                        </div>
+                      )}
+                      {trek.quickFacts?.region && (
+                        <div className="flex gap-3 min-w-0">
+                          <MapIcon className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                          <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Starts</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Kathmandu</p></div>
+                        </div>
+                      )}
+                      {trek.quickFacts?.region && (
+                        <div className="flex gap-3 min-w-0">
+                          <CheckCircle2 className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                          <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Ends</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Kathmandu</p></div>
+                        </div>
+                      )}
                       <div className="flex gap-3 min-w-0">
-                        <MapIcon className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Starts</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Kathmandu</p></div>
+                        <Users className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Activities</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.activity || 'Trekking'}</p></div>
                       </div>
-                    )}
-                    {trek.quickFacts?.region && (
                       <div className="flex gap-3 min-w-0">
-                        <CheckCircle2 className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Ends</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Kathmandu</p></div>
+                        <Bed className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Accommodation</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.accommodation || 'Hotel / Lodges'}</p></div>
                       </div>
-                    )}
-                    <div className="flex gap-3 min-w-0">
-                      <Users className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Activities</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.activity || 'Trekking'}</p></div>
-                    </div>
-                    <div className="flex gap-3 min-w-0">
-                      <Bed className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Accommodation</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.accommodation || 'Hotel / Lodges'}</p></div>
-                    </div>
-                    <div className="flex gap-3 min-w-0">
-                      <Utensils className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Meals</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.meals || 'Breakfast, Lunch & Dinner'}</p></div>
-                    </div>
-                    <div className="flex gap-3 min-w-0">
-                      <Sun className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Best Time</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.bestSeason || 'Spring & Autumn'}</p></div>
-                    </div>
-                  </>
-                )}
-              </div>
-            </div>
-
-            {/* Package Introduction & Overview */}
-            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 font-sans">
-              <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3 font-sans">
-                <BookOpen className="text-green-600" size={28} /> Package Introduction & Overview
-              </h2>
-              <div 
-                className="prose prose-emerald max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
-                dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trekDesc) }}
-              />
-            </div>
-
-            {/* Highlights */}
-            {highlights.length > 0 && (
-              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 font-sans">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2 font-sans">
-                  <Compass className="text-[#e53a24]"/> Trip Highlights
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {highlights.map((hlt, i) => (
-                    <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 hover:bg-red-50 transition-colors group">
-                      <div className="bg-white text-green-500 rounded-full p-2 shadow-sm group-hover:text-[#e53a24]">
-                        <Check size={20} />
+                      <div className="flex gap-3 min-w-0">
+                        <Utensils className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Meals</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.meals || 'Breakfast, Lunch & Dinner'}</p></div>
                       </div>
-                      <div>
-                        <h4 className="font-bold text-gray-900">{hlt.title}</h4>
-                        {hlt.description && <p className="text-sm text-gray-600 mt-1">{hlt.description}</p>}
+                      <div className="flex gap-3 min-w-0">
+                        <Sun className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Best Time</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.bestSeason || 'Spring & Autumn'}</p></div>
                       </div>
-                    </div>
-                  ))}
+                    </>
+                  )}
                 </div>
               </div>
-            )}
+
+              {/* Package Introduction & Overview */}
+              <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 font-sans">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3 font-serif">
+                  <BookOpen className="text-green-600" size={28} /> Package Introduction & Overview
+                </h2>
+                <div 
+                  className="prose prose-emerald max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
+                  dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trekDesc) }}
+                />
+              </div>
+
+              {/* Highlights */}
+              {highlights.length > 0 && (
+                <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 font-sans">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2 font-sans">
+                    <Compass className="text-[#e53a24]"/> Trip Highlights
+                  </h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {highlights.map((hlt, i) => (
+                      <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 hover:bg-red-50 transition-colors group">
+                        <div className="bg-white text-green-500 rounded-full p-2 shadow-sm group-hover:text-[#e53a24]">
+                          <Check size={20} />
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-gray-900">{hlt.title}</h4>
+                          {hlt.description && <p className="text-sm text-gray-600 mt-1">{hlt.description}</p>}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </section>
 
             {/* Gallery Section */}
             {trek.gallery && trek.gallery.length > 0 && (
