@@ -3,36 +3,99 @@
  * (inclusions, exclusions, add-ons, highlights) regardless of database key casing or object vs string formatting.
  */
 
+export const defaultTourInclusions = [
+  { title: "Airport Pickup & Drop-Off", description: "Private air-conditioned vehicle transfers upon arrival and departure at Tribhuvan International Airport." },
+  { title: "Hotel Accommodations", description: "Verified 3-Star / Deluxe hotel stays with daily breakfast buffet included." },
+  { title: "Private Ground Transportation", description: "Private air-conditioned vehicle for all sightseeing tours, intercity transfers, and excursions per itinerary." },
+  { title: "Monument & Heritage Entry Permits", description: "All entry fees for UNESCO World Heritage Sites, temples, national parks, and cultural monuments." },
+  { title: "Licensed English-Speaking Tour Guide", description: "Professional, knowledgeable local guide for all guided sightseeing tours." },
+  { title: "Welcome / Farewell Dinner", description: "Traditional Nepalese dinner with cultural dance performance." },
+  { title: "Government Taxes & Fees", description: "All applicable government taxes, VAT, and agency service charges." }
+];
+
+export const defaultTourExclusions = [
+  { title: "International Airfare & Visa", description: "International flights to/from Kathmandu and Nepal tourist visa fees upon arrival." },
+  { title: "Lunches & Dinners", description: "Lunches and dinners not explicitly specified in the itinerary." },
+  { title: "Personal Expenses", description: "Personal laundry, phone calls, room service, bar bills, Wi-Fi, and bottled drinks." },
+  { title: "Travel Insurance", description: "Comprehensive travel, medical, and flight cancellation insurance." },
+  { title: "Tips & Gratuities", description: "Gratuities for tour guide, driver, and hotel bell staff." },
+  { title: "Emergency Expenses", description: "Extra costs due to flight delays, weather conditions, or unforeseen emergencies." }
+];
+
+export const defaultTrekInclusions = [
+  { title: "Airport Pickups & Transfers", description: "Private airport arrival and departure transfers in Kathmandu and Pokhara." },
+  { title: "Hotel Accommodations", description: "Standard / 3-Star hotel stays in Kathmandu and Pokhara with breakfast." },
+  { title: "Teahouse / Lodge Stays", description: "Best available mountain lodge / teahouse accommodation during the trek." },
+  { title: "Full-Board Mountain Meals", description: "Breakfast, lunch, and dinner daily during the trekking days." },
+  { title: "Licensed Trekking Guide & Porters", description: "Experienced, licensed English-speaking guide and porters (1 porter for 2 trekkers)." },
+  { title: "Trekking Permits & TIMS", description: "All TIMS cards, National Park, and Conservation Area entry permits." },
+  { title: "Medical Kit & Safety Support", description: "Comprehensive medical first aid kit and pulse oximeter monitoring." },
+  { title: "Government Taxes", description: "All government taxes, VAT, and official agency service fees." }
+];
+
+export const defaultTrekExclusions = [
+  { title: "International Flights & Visa", description: "International flights to Nepal and Nepal tourist visa fees." },
+  { title: "Travel & Rescue Insurance", description: "Mandatory travel insurance covering high-altitude trekking and emergency helicopter evacuation." },
+  { title: "Personal Trekking Gear", description: "Sleeping bags, down jackets, trekking boots, and personal gear." },
+  { title: "Personal Expenses on Trek", description: "Hot showers, Wi-Fi, battery charging, laundry, bottled water, soft drinks, and alcohol." },
+  { title: "City Meals", description: "Lunches and dinners in Kathmandu and Pokhara." },
+  { title: "Tips & Gratuities", description: "Tips for trekking guide, porters, and drivers." }
+];
+
 export const getInclusionsList = (data) => {
   if (!data) return [];
-  const raw = data.inclusions || data.costIncludes || data.includes || data.cost_includes || data.included || [];
-  if (!Array.isArray(raw)) return [];
-  return raw.map(item => {
-    if (typeof item === 'string') return { title: item, description: '' };
-    if (typeof item === 'object' && item !== null) {
-      return {
-        title: item.title || item.name || item.text || item.label || String(item),
-        description: item.description || item.desc || item.details || ''
-      };
-    }
-    return { title: String(item), description: '' };
-  }).filter(item => item.title && item.title.trim() !== '');
+  const raw = data.inclusions || data.costIncludes || data.includes || data.cost_includes || data.included;
+  
+  if (Array.isArray(raw) && raw.length > 0) {
+    const list = raw.map(item => {
+      if (typeof item === 'string') return { title: item, description: '' };
+      if (typeof item === 'object' && item !== null) {
+        return {
+          title: item.title || item.name || item.text || item.label || String(item),
+          description: item.description || item.desc || item.details || ''
+        };
+      }
+      return { title: String(item), description: '' };
+    }).filter(item => item.title && item.title.trim() !== '');
+
+    if (list.length > 0) return list;
+  }
+
+  const titleText = data?.title || '';
+  const isTrekPackage = data?.category === 'Treks' || 
+    data?.category === 'Trek' || 
+    data?.type === 'Trek' || 
+    titleText.toLowerCase().includes('trek');
+
+  return isTrekPackage ? defaultTrekInclusions : defaultTourInclusions;
 };
 
 export const getExclusionsList = (data) => {
   if (!data) return [];
-  const raw = data.exclusions || data.costExcludes || data.excludes || data.cost_excludes || data.excluded || [];
-  if (!Array.isArray(raw)) return [];
-  return raw.map(item => {
-    if (typeof item === 'string') return { title: item, description: '' };
-    if (typeof item === 'object' && item !== null) {
-      return {
-        title: item.title || item.name || item.text || item.label || String(item),
-        description: item.description || item.desc || item.details || ''
-      };
-    }
-    return { title: String(item), description: '' };
-  }).filter(item => item.title && item.title.trim() !== '');
+  const raw = data.exclusions || data.costExcludes || data.excludes || data.cost_excludes || data.excluded;
+  
+  if (Array.isArray(raw) && raw.length > 0) {
+    const list = raw.map(item => {
+      if (typeof item === 'string') return { title: item, description: '' };
+      if (typeof item === 'object' && item !== null) {
+        return {
+          title: item.title || item.name || item.text || item.label || String(item),
+          description: item.description || item.desc || item.details || ''
+        };
+      }
+      return { title: String(item), description: '' };
+    }).filter(item => item.title && item.title.trim() !== '');
+
+    if (list.length > 0) return list;
+  }
+
+  const titleText = data?.title || '';
+  const isTrekPackage = data?.category === 'Treks' || 
+    data?.category === 'Trek' || 
+    data?.type === 'Trek' || 
+    titleText.toLowerCase().includes('trek');
+
+  return isTrekPackage ? defaultTrekExclusions : defaultTourExclusions;
 };
 
 export const getAddonsList = (data, isTrek = false) => {
