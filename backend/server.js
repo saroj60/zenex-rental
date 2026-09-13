@@ -604,6 +604,69 @@ app.delete('/api/testimonials/:id', (req, res) => {
     res.json({ success: true });
 });
 
+// ==============================================
+// BLOGS
+// ==============================================
+app.get('/api/blogs', (req, res) => {
+    const data = readDB();
+    res.json(data.blogs || []);
+});
+
+app.post('/api/blogs', upload.single('coverImage'), (req, res) => {
+    const data = readDB();
+    if (!data.blogs) {
+        data.blogs = [];
+    }
+    const newBlog = {
+        id: req.body.id || req.body.title?.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || `blog-${Date.now()}`,
+        title: req.body.title || 'Untitled Blog',
+        coverImage: req.file ? `/api/uploads/${req.file.filename}` : (req.body.coverImage || 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2071'),
+        category: req.body.category || 'Travel Guide',
+        content: req.body.content || '',
+        author: req.body.author || 'Zenex Travel Team',
+        date: req.body.date || new Date().toISOString(),
+        readTime: req.body.readTime || '5 min read',
+        seoTitle: req.body.seoTitle || req.body.title,
+        seoDescription: req.body.seoDescription || req.body.excerpt,
+        keywords: req.body.keywords || 'Nepal Travel, Zenex Travels'
+    };
+    data.blogs.unshift(newBlog);
+    writeDB(data);
+    res.status(201).json(newBlog);
+});
+
+app.put('/api/blogs/:id', upload.single('coverImage'), (req, res) => {
+    const data = readDB();
+    if (data.blogs) {
+        const idx = data.blogs.findIndex(b => b.id === req.params.id);
+        if (idx !== -1) {
+            const updated = {
+                ...data.blogs[idx],
+                ...req.body
+            };
+            if (req.file) {
+                updated.coverImage = `/api/uploads/${req.file.filename}`;
+            }
+            data.blogs[idx] = updated;
+            writeDB(data);
+            res.json(updated);
+        } else {
+            res.status(404).json({ error: 'Blog not found' });
+        }
+    } else {
+        res.status(404).json({ error: 'Blog not found' });
+    }
+});
+
+app.delete('/api/blogs/:id', (req, res) => {
+    const data = readDB();
+    if (data.blogs) {
+        data.blogs = data.blogs.filter(b => b.id !== req.params.id);
+        writeDB(data);
+    }
+    res.json({ success: true });
+});
+
 // Serve static frontend files for Production
 const frontendDist = path.join(__dirname, '../dist');
 app.use(express.static(frontendDist));
