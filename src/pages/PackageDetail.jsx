@@ -13908,41 +13908,44 @@ const PackageDetail = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           
           <div className="lg:col-span-2 space-y-10">
-            {/* Quick Info / Trip Facts Grid */}
-            {pkg.quickInfo && (
-              <div className="bg-[#eff6f1] rounded-2xl p-6 md:p-8 border border-green-100 shadow-sm scroll-mt-24">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Trip Facts</h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
-                  {pkg.quickInfo.map((info, idx) => {
-                    const IconComponent = {
-                      Calendar, Flag, Mountain, Sun, Users, BarChart, Car, MapPin
-                    }[info.icon] || Info;
-                    return (
-                      <div key={idx} className="flex gap-3 min-w-0">
-                        <IconComponent className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                        <div className="min-w-0 flex-1">
-                          <p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">{info.label}</p>
-                          <p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words [word-break:break-word]">{info.value}</p>
+            {/* Overview Section */}
+            <section id="overview" className="space-y-8 md:space-y-12 scroll-mt-28">
+              {/* Quick Info / Trip Facts Grid */}
+              {pkg.quickInfo && (
+                <div className="bg-[#eff6f1] rounded-2xl p-6 md:p-8 border border-green-100 shadow-sm font-sans">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6 font-serif">Trip Facts</h2>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
+                    {pkg.quickInfo.map((info, idx) => {
+                      const IconComponent = {
+                        Calendar, Flag, Mountain, Sun, Users, BarChart, Car, MapPin
+                      }[info.icon] || Info;
+                      return (
+                        <div key={idx} className="flex gap-3 min-w-0">
+                          <IconComponent className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                          <div className="min-w-0 flex-1">
+                            <p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">{info.label}</p>
+                            <p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words [word-break:break-word]">{info.value}</p>
+                          </div>
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            {/* Package Introduction & Overview */}
-            {(pkg.overview || pkg.description) && (
-              <div id="overview" className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 scroll-mt-24">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3 font-serif">
-                  <BookOpen className="text-green-600" size={28} /> Package Introduction & Overview
-                </h2>
-                <div 
-                  className="prose prose-emerald max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
-                  dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(pkg.overview || pkg.description) }}
-                />
-              </div>
-            )}
+              {/* Package Introduction & Overview */}
+              {(pkg.overview || pkg.description) && (
+                <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 font-sans">
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3 font-serif">
+                    <BookOpen className="text-green-600" size={28} /> Package Introduction & Overview
+                  </h2>
+                  <div 
+                    className="prose prose-emerald max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
+                    dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(pkg.overview || pkg.description) }}
+                  />
+                </div>
+              )}
+            </section>
 
             {/* Photo Gallery */}
             {pkg.gallery && pkg.gallery.length > 0 && (
