@@ -457,7 +457,7 @@ const TourTripDetail = () => {
 
       {/* Trip Header details below Hero */}
       <div className="bg-white border-b border-gray-150 pt-8 pb-6">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="w-full max-w-[1700px] mx-auto px-4 md:px-8 lg:px-10">
           <div className="flex flex-wrap items-center gap-2 mb-3.5">
             <span className="bg-[#e53a24] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">{trip.category}</span>
             {trip.featured && <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Featured</span>}
@@ -466,14 +466,14 @@ const TourTripDetail = () => {
           <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-1 leading-tight tracking-tight">{trip.title}</h1>
           <TrustReviewBadges title={trip.title} />
           {trip.shortDescription && (
-            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-3 text-justify">{getCleanExcerpt(trip.shortDescription)}</p>
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed font-medium mt-3 text-justify">{getCleanExcerpt(trip.shortDescription)}</p>
           )}
         </div>
       </div>
 
       {/* Navigation Tabs (Sticky) */}
       <div className={`bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky ${isScrolledDown ? 'top-0' : 'top-[56px] md:top-[68px]'} z-40 shadow-sm w-full transition-all duration-300`}>
-        <div className="max-w-7xl mx-auto px-2 md:px-8">
+        <div className="w-full max-w-[1700px] mx-auto px-2 md:px-8 lg:px-10">
           <div id="subnav-scroll-container" className="flex items-center gap-1 md:gap-2 overflow-x-auto whitespace-nowrap scroll-smooth touch-pan-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden py-1">
             {[
               { id: 'overview', label: 'Overview', icon: FileText },
@@ -507,7 +507,7 @@ const TourTripDetail = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 pb-28 lg:pb-12">
+      <div className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-10 py-8 pb-28 lg:pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
           {/* Main Content Area */}

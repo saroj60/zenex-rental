@@ -360,7 +360,7 @@ const TrekDetail = () => {
 
       {/* Trek Header details below Hero */}
       <div className="bg-white border-b border-gray-150 pt-8 pb-6">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="w-full max-w-[1700px] mx-auto px-4 md:px-8 lg:px-10">
           <Link to="/treks" className="inline-flex items-center gap-1.5 text-slate-500 hover:text-[#e53a24] mb-4 text-xs font-bold uppercase tracking-wider transition-colors">
             <ArrowLeft size={14} /> Back to Treks
           </Link>
@@ -368,7 +368,7 @@ const TrekDetail = () => {
           <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 leading-tight tracking-tight">{trek.title}</h1>
           <TrustReviewBadges title={trek.title} />
           {trekDesc && (
-            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-3 mb-4 text-justify">{getCleanExcerpt(trekDesc)}</p>
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed font-medium mt-3 mb-4 text-justify">{getCleanExcerpt(trekDesc)}</p>
           )}
           
           <div className="flex flex-wrap items-center gap-6 text-slate-600">
@@ -398,7 +398,7 @@ const TrekDetail = () => {
 
       {/* Sticky Navigation Bar */}
       <div className={`bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky ${isScrolledDown ? 'top-0' : 'top-[56px] md:top-[68px]'} z-40 shadow-sm w-full transition-all duration-300`}>
-        <div className="max-w-7xl mx-auto px-2 md:px-8">
+        <div className="w-full max-w-[1700px] mx-auto px-2 md:px-8 lg:px-10">
           <div id="trek-subnav-scroll-container" className="flex items-center gap-1 md:gap-2 overflow-x-auto whitespace-nowrap scroll-smooth touch-pan-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden py-1">
             {[
               { id: 'overview', label: 'Overview', icon: FileText },
@@ -431,7 +431,7 @@ const TrekDetail = () => {
         </div>
       </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative">
+        <div className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-10 py-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             
             {/* Main Content */}

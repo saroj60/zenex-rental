@@ -13853,7 +13853,7 @@ const PackageDetail = () => {
 
       {/* Package Header details below Hero */}
       <div className="bg-white border-b border-gray-150 pt-8 pb-6">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="w-full max-w-[1700px] mx-auto px-4 md:px-8 lg:px-10">
           <Link to="/packages" className="inline-flex items-center gap-1.5 text-slate-500 hover:text-[#e53a24] mb-4 text-xs font-bold uppercase tracking-wider transition-colors">
             <ArrowLeft size={14} /> Back to Packages
           </Link>
@@ -13877,13 +13877,13 @@ const PackageDetail = () => {
           </div>
           
           {pkg.desc && (
-            <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-4xl font-medium mt-4 text-justify">{pkg.desc}</p>
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed font-medium mt-4 text-justify">{pkg.desc}</p>
           )}
         </div>
       </div>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 -mt-8 relative z-20">
+      <div className="w-full max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-10 py-16 -mt-8 relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           
           <div className="lg:col-span-2 space-y-10">
