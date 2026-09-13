@@ -4,6 +4,7 @@ import { CheckCircle2, ChevronRight, Lock, Calendar, Plus, Minus, CreditCard, Ma
 import TrustSafety from '../components/TrustSafety';
 import { useAppData } from '../context/AppDataContext';
 import { useBooking } from '../context/BookingContext';
+import { getAddonsList } from '../utils/detailFormatters';
 import SEO from '../components/SEO';
 
 const countries = [
@@ -451,48 +452,25 @@ const BookingCheckout = () => {
 
   const parsePriceFromTitle = (title) => {
     if (!title) return 0;
-    const match = title.match(/USD\s*(\d+)/i) || title.match(/US\$\s*(\d+)/i) || title.match(/\$\s*(\d+)/i);
+    const match = title.match(/(\d+)/);
     return match ? parseInt(match[1], 10) : 0;
   };
 
+  const rawMatchedItem = matchedTrek || matchedTourTrip || matchedTour || null;
+
   const getUnifiedAddons = () => {
-    let list = [];
-    if (selectedItem?.addOns) {
-      if (typeof selectedItem.addOns === 'object' && !Array.isArray(selectedItem.addOns) && selectedItem.addOns.options) {
-        list = selectedItem.addOns.options.map((option) => {
-          const price = parsePriceFromTitle(option.title);
-          return {
-            name: option.title,
-            description: option.description || '',
-            price: price,
-            pricingType: 'Fixed',
-            active: true
-          };
-        });
-      } else if (Array.isArray(selectedItem.addOns)) {
-        list = [...selectedItem.addOns];
-      }
-    }
-
-    // Add default hotel upgrades if not booking a vehicle
-    if (!carId && selectedItem) {
-      list.push({
-        name: "Upgrade to 4-star accommodation in Kathmandu USD 45 per 2 person for 3 nights twin sharing basis",
-        description: "Upgrade your standard accommodation to a premium 4-star hotel in Kathmandu (twin sharing, 3 nights).",
-        price: 45,
-        pricingType: "Per 2 Persons",
+    if (carId) return [];
+    const addonsList = getAddonsList(rawMatchedItem, !!matchedTrek);
+    return addonsList.map(addon => {
+      const priceNum = parsePriceFromTitle(addon.price || '');
+      return {
+        name: addon.title,
+        description: addon.details || addon.description || '',
+        price: priceNum,
+        priceDisplay: addon.price || `+ US$${priceNum}`,
         active: true
-      });
-      list.push({
-        name: "Upgrade to 5-star standard accommodation in Kathmandu USD 210 per 2 person for 3 nights twin sharing basis",
-        description: "Upgrade your standard accommodation to a luxury 5-star hotel in Kathmandu (twin sharing, 3 nights).",
-        price: 210,
-        pricingType: "Per 2 Persons",
-        active: true
-      });
-    }
-
-    return list;
+      };
+    });
   };
 
   const activeAddons = getUnifiedAddons().filter(addon => addon.active !== false);
@@ -517,17 +495,57 @@ const BookingCheckout = () => {
     });
   };
 
-  // Pricing calculations
-  const perPersonPrice = defaultPrice;
-  const packagePrice = perPersonPrice * travelersCount;
-  
-  // Dynamic Group Discount
-  let groupDiscountPercent = 0;
-  if (travelersCount >= 3 && travelersCount < 5) groupDiscountPercent = 5;
-  else if (travelersCount >= 5 && travelersCount < 10) groupDiscountPercent = 10;
-  else if (travelersCount >= 10) groupDiscountPercent = 15;
+  // Pricing calculations matching detail pages
+  const pkgType = searchParams.get('type') || 'Budget';
+  let tierMultiplier = 1.0;
+  if (pkgType === 'Comfort') tierMultiplier = 1.3;
+  else if (pkgType === 'Standard') tierMultiplier = 1.5;
+  else if (pkgType === 'Luxury') tierMultiplier = 1.8;
 
-  const discountAmount = Math.round(packagePrice * (groupDiscountPercent / 100));
+  const getDiscountedPerPersonPrice = (pax) => {
+    let rawVal = null;
+    if (Array.isArray(rawMatchedItem?.groupDiscounts)) {
+      const tier = rawMatchedItem.groupDiscounts.find(item => {
+        const paxStr = String(item.pax || item.paxRange || '');
+        const matches = paxStr.match(/\d+/g);
+        if (matches && matches.length >= 2) {
+          const min = parseInt(matches[0], 10);
+          const max = parseInt(matches[1], 10);
+          return pax >= min && pax <= max;
+        } else if (matches && matches.length === 1) {
+          const min = parseInt(matches[0], 10);
+          return pax >= min;
+        }
+        return false;
+      });
+      if (tier && tier.price) rawVal = tier.price;
+    } else if (rawMatchedItem?.groupDiscounts && typeof rawMatchedItem.groupDiscounts === 'object') {
+      if (pax >= 16 && rawMatchedItem.groupDiscounts["16"]) rawVal = rawMatchedItem.groupDiscounts["16"];
+      else if (pax >= 12 && rawMatchedItem.groupDiscounts["12"]) rawVal = rawMatchedItem.groupDiscounts["12"];
+      else if (pax >= 8 && rawMatchedItem.groupDiscounts["8"]) rawVal = rawMatchedItem.groupDiscounts["8"];
+      else if (pax >= 4 && rawMatchedItem.groupDiscounts["4"]) rawVal = rawMatchedItem.groupDiscounts["4"];
+      else if (pax >= 2 && rawMatchedItem.groupDiscounts["2"]) rawVal = rawMatchedItem.groupDiscounts["2"];
+    }
+
+    if (rawVal) {
+      if (typeof rawVal === 'number') return rawVal;
+      if (typeof rawVal === 'string') {
+        const num = parseFloat(rawVal.replace(/[^0-9.]/g, ''));
+        if (!isNaN(num) && num > 0) return num;
+      }
+    }
+
+    const base = defaultPrice;
+    if (!base) return 0;
+    if (pax >= 16) return Math.max(0, base - 145);
+    if (pax >= 12) return Math.max(0, base - 140);
+    if (pax >= 8) return Math.max(0, base - 115);
+    if (pax >= 4) return Math.max(0, base - 95);
+    return base;
+  };
+
+  const perPersonPrice = Math.round(getDiscountedPerPersonPrice(travelersCount) * tierMultiplier);
+  const packagePrice = perPersonPrice * travelersCount;
 
   const addonsPrice = activeAddons.reduce((sum, addon, idx) => {
     const qty = addonQuantities[idx] || 0;
@@ -535,7 +553,7 @@ const BookingCheckout = () => {
     return sum + (price * qty);
   }, 0);
 
-  const totalPrice = (packagePrice - discountAmount) + addonsPrice;
+  const totalPrice = packagePrice + addonsPrice;
 
   // Pay Deposit / Pay Later rates
   const depositPercent = 20;
@@ -743,7 +761,7 @@ ${firstName} ${lastName}`);
 
                             <div className="flex items-center justify-between md:justify-end gap-6 shrink-0">
                               <span className="text-sm font-bold text-slate-600">
-                                + US${addonPrice} <span className="text-xs font-normal text-slate-400">per {addon.pricingType === 'Per Person' ? 'person' : '2'}</span>
+                                {addon.priceDisplay || `+ US$${addonPrice}`}
                               </span>
 
                               <div className="flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-lg p-1">

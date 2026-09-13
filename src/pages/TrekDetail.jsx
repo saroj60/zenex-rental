@@ -125,7 +125,7 @@ const TrekDetail = () => {
   const perPersonPrice = getDiscountedPerPersonPrice(persons);
 
   const handleBookPackage = () => {
-    navigate(`/checkout?pkg=${id}&travelers=${persons}&date=${date}`);
+    navigate(`/checkout?pkg=${id}&travelers=${persons}&date=${date}&type=${packageType}`);
   };
 
   const handleQuickInquiry = () => {
