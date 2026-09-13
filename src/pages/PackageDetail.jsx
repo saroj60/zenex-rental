@@ -6,6 +6,7 @@ import { defaultTourEquipment } from './TourTripDetail';
 
 import SEO from '../components/SEO';
 import TrustReviewBadges from '../components/TrustReviewBadges';
+import TripCostMatrixTable from '../components/TripCostMatrixTable';
 import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML } from '../utils/detailFormatters';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 
@@ -13962,6 +13963,9 @@ const PackageDetail = () => {
                 </div>
               </div>
             )}
+
+            {/* Trip Cost for 2026/27 Pricing Matrix Table */}
+            <TripCostMatrixTable item={pkg} />
 
             {/* Cost Details (Inclusions, Exclusions & Add-ons) */}
             {(inclusions.length > 0 || exclusions.length > 0 || addons.length > 0) && (
