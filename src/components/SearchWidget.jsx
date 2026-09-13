@@ -200,7 +200,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
         </div>
       )}
 
-      {/* â•â• Tours Tab â€” Live Search â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* Tours Tab — Live Search */}
       {activeTab === 'tours' && (
         <div ref={searchRef} className="relative">
 
@@ -215,7 +215,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
               value={tourQuery}
               onChange={(e) => { setTourQuery(e.target.value); setShowDropdown(true); }}
               onFocus={() => setShowDropdown(true)}
-              placeholder="Search destinations, tours, packagesâ€¦"
+              placeholder="Search destinations, tours, packages..."
               className={`flex-1 bg-transparent border-none outline-none font-semibold text-sm md:text-base placeholder:font-medium transition-colors ${
                 showDropdown && tourQuery ? 'text-gray-900 placeholder:text-gray-400' : 'text-white placeholder:text-white/80'
               }`}
