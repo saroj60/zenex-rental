@@ -319,11 +319,32 @@ const TourTripDetail = () => {
     },
     {
       question: "What is the booking deposit and cancellation policy?",
-      answer: "We require a flexible deposit to confirm your reservation. Free date changes are supported up to 30 days before arrival, and full refunds are guaranteed if trips are canceled due to official travel restrictions."
+      answer: "We offer Book Now, Pay Later options with zero advance payment today. Flexible dates and free date changes are supported up to 30 days before arrival."
+    },
+    {
+      question: "Do I need a visa for Nepal and how do I get it?",
+      answer: "Most nationalities can obtain an On-Arrival Tourist Visa at Tribhuvan International Airport in Kathmandu. You can also apply online via the official Nepal Department of Immigration portal prior to arrival."
+    },
+    {
+      question: "Is this tour suitable for solo travelers and families?",
+      answer: "Yes! Our private tours cater perfectly to solo travelers, couples, families with children, and private groups with customized pacing and dedicated private transport."
+    },
+    {
+      question: "What health and safety measures are provided during the tour?",
+      answer: "We provide 24/7 local support, verified sanitized private vehicles, licensed professional guides, and emergency medical assistance throughout your stay in Nepal."
     }
   ];
 
-  const displayFaqs = (trip.faqs && trip.faqs.length > 0) ? trip.faqs : defaultTourFaqs;
+  const rawFaqs = (trip.faqs && Array.isArray(trip.faqs)) ? [...trip.faqs] : [];
+  if (rawFaqs.length < 7) {
+    defaultTourFaqs.forEach(def => {
+      if (rawFaqs.length < 8) {
+        const exists = rawFaqs.some(f => f.question && f.question.toLowerCase() === def.question.toLowerCase());
+        if (!exists) rawFaqs.push(def);
+      }
+    });
+  }
+  const displayFaqs = rawFaqs.length > 0 ? rawFaqs : defaultTourFaqs;
 
   const handleDownloadPDF = async () => {
     if (!trip || isGeneratingPDF) return;

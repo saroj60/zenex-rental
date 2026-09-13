@@ -255,10 +255,31 @@ const TrekDetail = () => {
     {
       question: "Can I charge phone batteries and use Wi-Fi during the trek?",
       answer: "Yes, teahouses offer device charging stations and Wi-Fi access for a small daily fee ($2-$5). Bringing a high-capacity power bank (20,000mAh+) is recommended for higher mountain elevations."
+    },
+    {
+      question: "How much luggage can I bring and how does porter service work?",
+      answer: "Each trekker can hand over up to 15kg of main duffel bag luggage to dedicated personal porters. Excess luggage can be stored securely for free at your hotel in Kathmandu or Pokhara."
+    },
+    {
+      question: "Is clean drinking water available along the trekking trail?",
+      answer: "Yes, safe boiled drinking water, purified water refill stations, and bottled mineral water are available at all teahouses and lodges along the route. Using water purification tablets or UV purifiers is also recommended."
+    },
+    {
+      question: "How is altitude sickness (AMS) managed during the trek?",
+      answer: "Our itineraries include built-in acclimatization days, gradual altitude gain limits, daily pulse-oxymeter monitoring by certified guides, and immediate descent or helicopter evacuation protocols if severe AMS symptoms occur."
     }
   ];
 
-  const displayFaqs = (trek.faqs && trek.faqs.length > 0) ? trek.faqs : defaultTrekFaqs;
+  const rawFaqs = (trek.faqs && Array.isArray(trek.faqs)) ? [...trek.faqs] : [];
+  if (rawFaqs.length < 7) {
+    defaultTrekFaqs.forEach(def => {
+      if (rawFaqs.length < 8) {
+        const exists = rawFaqs.some(f => f.question && f.question.toLowerCase() === def.question.toLowerCase());
+        if (!exists) rawFaqs.push(def);
+      }
+    });
+  }
+  const displayFaqs = rawFaqs.length > 0 ? rawFaqs : defaultTrekFaqs;
 
   return (
     <div className="pt-24 pb-16 min-h-screen bg-white">
