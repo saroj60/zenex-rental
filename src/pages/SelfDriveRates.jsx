@@ -21,10 +21,12 @@ const models = [
 ];
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-  "https://autoncell.com/storage/x75I8HLAiD7oGljmNeNIBluVZz0fx3e8ip9g2mn4.webp"
+  "https://autoncell.com/storage/x75I8HLAiD7oGljmNeNIBluVZz0fx3e8ip9g2mn4.webp",
+  "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+  "https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg",
+  "https://cgdigital.com.np/api/plugins/kcfinder/upload/images/AVATR01.jpg"
 ];
 
 const SelfDriveRates = () => {

@@ -24,11 +24,10 @@ const routes = [
 ];
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80",
   "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80"
+  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80",
+  "https://www.vivaanadventure.com/wp-content/uploads/2021/03/received_1697574793740466.jpeg",
+  "https://www.toyota.com.sg/-/media/ae9ceaa9654747a8a51de8e84c0d98e2.png"
 ];
 
 const HiaceRoutes = () => {

@@ -9,9 +9,10 @@ const routes = [
 ];
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80",
   "https://www.toyota.com.sg/-/media/ae9ceaa9654747a8a51de8e84c0d98e2.png",
-  "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=80"
+  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80",
+  "https://img.12go.asia/0/plain/s3://12go-web-static/static/images/operator/28480/class/4807-outside.jpeg",
+  "https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg"
 ];
 
 const CoasterRoutes = () => {
