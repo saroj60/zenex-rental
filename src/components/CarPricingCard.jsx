@@ -21,7 +21,7 @@ const CarPricingCard = ({ isSmall = false }) => {
           className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
           src="/vehicles/byd car.jpg" 
-          onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80'; }} 
+          onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
         />
         <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
           Sedan
