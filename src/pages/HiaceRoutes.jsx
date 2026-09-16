@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { MapPin, Calendar, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Users } from 'lucide-react';
+import { MapPin, Calendar, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Users, Snowflake } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { Link } from 'react-router-dom';
 
@@ -116,7 +116,7 @@ const HiaceRoutes = () => {
             </div>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-sky-tint flex items-center gap-3">
-            <div className="bg-orange-50 text-[#e53a24] p-2 rounded-lg"><span className="material-symbols-outlined text-[20px]">ac_unit</span></div>
+            <div className="bg-orange-50 text-[#e53a24] p-2 rounded-lg"><Snowflake size={20} /></div>
             <div>
               <p className="text-xs text-gray-500 font-bold uppercase">Comfort</p>
               <p className="font-bold text-gray-900">Dual A/C</p>

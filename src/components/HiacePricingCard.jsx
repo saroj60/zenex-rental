@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Gauge, Fuel, MessageCircle, Star } from 'lucide-react';
+import { Users, Gauge, Fuel, MessageCircle, Star, Briefcase } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useCurrency } from '../context/CurrencyContext';
 
@@ -20,21 +20,21 @@ const HiacePricingCard = ({ isSmall = false }) => {
           alt="Toyota Hiace" 
           className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
-          src="https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg" 
-          onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
+          src="/vehicles/hiace.jpg" 
+          onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80'; }} 
         />
         <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
-          Minibus
+          Van
         </span>
         <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1 text-[#1e3a8a]">
-          <Star size={12} className="text-[#e53a24] fill-current" /> 4.8
+          <Star size={12} className="text-[#e53a24] fill-current" /> 4.9
         </div>
       </Link>
       
       <h3 className={`font-headline-md font-bold text-gray-900 mb-1 ${isSmall ? 'text-lg' : 'text-2xl'}`}>Toyota Hiace</h3>
       <div className={`flex items-center gap-1.5 ${isSmall ? 'mb-3' : 'mb-4'}`}>
         <span className="text-gray-500 text-xs md:text-sm font-medium">Starting from</span>
-        <span className={`font-bold text-[#e53a24] ${isSmall ? 'text-lg' : 'text-xl'}`}>{formatPrice(8000)}</span>
+        <span className={`font-bold text-[#e53a24] ${isSmall ? 'text-lg' : 'text-xl'}`}>{formatPrice(9000)}</span>
         <span className="text-gray-500 text-xs md:text-sm font-medium">/ Day</span>
       </div>
       
@@ -52,7 +52,7 @@ const HiacePricingCard = ({ isSmall = false }) => {
           <span className="text-xs font-semibold text-[#1e3a8a]">Diesel</span>
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden ${isSmall ? 'p-2' : 'p-3'}`}>
-          <span className="material-symbols-outlined text-[#1e3a8a] mb-1.5 text-[18px]">luggage</span>
+          <Briefcase size={18} className="text-[#1e3a8a] mb-1.5" />
           <span className="text-xs font-semibold text-[#1e3a8a]">4 Bags</span>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Gauge, Fuel, MessageCircle, Star } from 'lucide-react';
+import { Users, Gauge, Fuel, MessageCircle, Star, Briefcase } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useCurrency } from '../context/CurrencyContext';
 
@@ -20,11 +20,11 @@ const CoasterPricingCard = ({ isSmall = false }) => {
           alt="Toyota Coaster" 
           className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
-          src="/vehicles/Coaster.png" 
-          onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
+          src="/vehicles/coaster.jpg" 
+          onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80'; }} 
         />
         <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
-          Minibus
+          Coaster
         </span>
         <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1 text-[#1e3a8a]">
           <Star size={12} className="text-[#e53a24] fill-current" /> 4.8
@@ -41,7 +41,7 @@ const CoasterPricingCard = ({ isSmall = false }) => {
       <div className={`grid grid-cols-2 gap-2 mt-auto ${isSmall ? 'mb-4' : 'mb-6'}`}>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
           <Users size={18} className="text-[#1e3a8a] mb-1.5" />
-          <span className="text-xs font-semibold text-[#1e3a8a]">20-22 Seats</span>
+          <span className="text-xs font-semibold text-[#1e3a8a]">22 Seats</span>
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
           <Gauge size={18} className="text-[#1e3a8a] mb-1.5" />
@@ -52,7 +52,7 @@ const CoasterPricingCard = ({ isSmall = false }) => {
           <span className="text-xs font-semibold text-[#1e3a8a]">Diesel</span>
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden ${isSmall ? 'p-2' : 'p-3'}`}>
-          <span className="material-symbols-outlined text-[#1e3a8a] mb-1.5 text-[18px]">luggage</span>
+          <Briefcase size={18} className="text-[#1e3a8a] mb-1.5" />
           <span className="text-xs font-semibold text-[#1e3a8a]">15+ Bags</span>
         </div>
       </div>

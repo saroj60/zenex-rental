@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Gauge, Fuel, MessageCircle, Star } from 'lucide-react';
+import { Users, Gauge, Fuel, MessageCircle, Star, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useCurrency } from '../context/CurrencyContext';
 
@@ -52,7 +52,7 @@ const CarModelsCard = ({ isSmall = false }) => {
           <span className="text-xs font-semibold text-[#1e3a8a]">EV/Petrol</span>
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden ${isSmall ? 'p-2' : 'p-3'}`}>
-          <span className="material-symbols-outlined text-[#1e3a8a] mb-1.5 text-[18px]">workspace_premium</span>
+          <Award size={18} className="text-[#1e3a8a] mb-1.5" />
           <span className="text-xs font-semibold text-[#1e3a8a]">Luxury</span>
         </div>
       </div>

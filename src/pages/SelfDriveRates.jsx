@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { MessageCircle, ArrowLeft, Car, ShieldCheck, CheckCircle2, Route } from 'lucide-react';
+import { MessageCircle, ArrowLeft, Car, ShieldCheck, CheckCircle2, Route, Calendar } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { Link } from 'react-router-dom';
 
@@ -116,7 +116,7 @@ const SelfDriveRates = () => {
             </div>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-sky-tint flex items-center gap-3">
-            <div className="bg-orange-50 text-[#e53a24] p-2 rounded-lg"><span className="material-symbols-outlined text-[20px]">calendar_month</span></div>
+            <div className="bg-orange-50 text-[#e53a24] p-2 rounded-lg"><Calendar size={20} /></div>
             <div>
               <p className="text-xs text-gray-500 font-bold uppercase">Options</p>
               <p className="font-bold text-gray-900">Daily & Monthly</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Gauge, Fuel, MessageCircle, Star } from 'lucide-react';
+import { Users, Gauge, Fuel, MessageCircle, Star, Briefcase } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useCurrency } from '../context/CurrencyContext';
 
@@ -7,7 +7,7 @@ const ScorpioPricingCard = ({ isSmall = false }) => {
   const { formatPrice } = useCurrency();
 
   const handleBook = () => {
-    const message = `Hi Zenex Travel, I'm interested in booking a Mahindra Scorpio. Could you please provide more details on availability?`;
+    const message = `Hi Zenex Travel, I'm interested in booking a Scorpio / 4x4 SUV. Could you please provide more details on availability?`;
     window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -17,11 +17,11 @@ const ScorpioPricingCard = ({ isSmall = false }) => {
     }`}>
       <Link to="/vehicles/scorpio-routes" className={`relative overflow-hidden rounded-lg block cursor-pointer ${isSmall ? 'mb-2.5' : 'mb-4'}`}>
         <img 
-          alt="Mahindra Scorpio" 
+          alt="Scorpio / 4x4 SUV" 
           className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
-          src="/vehicles/Mahindra Scorpio.jpg" 
-          onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
+          src="/vehicles/scorpio car.png" 
+          onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80'; }} 
         />
         <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
           SUV / 4x4
@@ -31,7 +31,7 @@ const ScorpioPricingCard = ({ isSmall = false }) => {
         </div>
       </Link>
       
-      <h3 className={`font-headline-md font-bold text-gray-900 mb-1 ${isSmall ? 'text-lg' : 'text-2xl'}`}>Mahindra Scorpio</h3>
+      <h3 className={`font-headline-md font-bold text-gray-900 mb-1 ${isSmall ? 'text-lg' : 'text-2xl'}`}>Scorpio 4x4 SUV</h3>
       <div className={`flex items-center gap-1.5 ${isSmall ? 'mb-3' : 'mb-4'}`}>
         <span className="text-gray-500 text-xs md:text-sm font-medium">Starting from</span>
         <span className={`font-bold text-[#e53a24] ${isSmall ? 'text-lg' : 'text-xl'}`}>{formatPrice(8000)}</span>
@@ -52,7 +52,7 @@ const ScorpioPricingCard = ({ isSmall = false }) => {
           <span className="text-xs font-semibold text-[#1e3a8a]">Diesel</span>
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden ${isSmall ? 'p-2' : 'p-3'}`}>
-          <span className="material-symbols-outlined text-[#1e3a8a] mb-1.5 text-[18px]">luggage</span>
+          <Briefcase size={18} className="text-[#1e3a8a] mb-1.5" />
           <span className="text-xs font-semibold text-[#1e3a8a]">2 Bags</span>
         </div>
       </div>

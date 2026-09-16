@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Users, Gauge, Fuel, CheckCircle2, Navigation, Shield, Wind, Calendar, Star, Languages, MessageCircle } from 'lucide-react';
+import { Users, Gauge, Fuel, CheckCircle2, Navigation, Shield, Wind, Calendar, Star, Languages, MessageCircle, Briefcase } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { useAppData } from '../context/AppDataContext';
 import { useBooking } from '../context/BookingContext';
@@ -162,7 +162,7 @@ const VehicleDetail = () => {
                 
                 <div className="mt-6 pt-6 border-t border-outline-variant/30 flex gap-4 items-center bg-surface-container-low p-4 rounded-xl">
                   <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-himalayan-blue shadow-sm">
-                    <span className="material-symbols-outlined">luggage</span>
+                    <Briefcase size={22} />
                   </div>
                   <div>
                     <h4 className="font-bold text-sm">Luggage Capacity Visualizer</h4>

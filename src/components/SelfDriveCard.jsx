@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Gauge, Fuel, MessageCircle, Star } from 'lucide-react';
+import { Users, Gauge, Fuel, MessageCircle, Star, Key, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useCurrency } from '../context/CurrencyContext';
 
@@ -40,7 +40,7 @@ const SelfDriveCard = ({ isSmall = false }) => {
 
       <div className={`grid grid-cols-2 gap-2 mt-auto ${isSmall ? 'mb-4' : 'mb-6'}`}>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
-          <span className="material-symbols-outlined text-[#1e3a8a] mb-1.5 text-[18px]">key</span>
+          <Key size={18} className="text-[#1e3a8a] mb-1.5" />
           <span className="text-xs font-semibold text-[#1e3a8a]">Your Choice</span>
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
@@ -48,7 +48,7 @@ const SelfDriveCard = ({ isSmall = false }) => {
           <span className="text-xs font-semibold text-[#1e3a8a]">Auto/Manual</span>
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
-          <span className="material-symbols-outlined text-[#1e3a8a] mb-1.5 text-[18px]">calendar_month</span>
+          <Calendar size={18} className="text-[#1e3a8a] mb-1.5" />
           <span className="text-xs font-semibold text-[#1e3a8a]">Daily/Monthly</span>
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden ${isSmall ? 'p-2' : 'p-3'}`}>
