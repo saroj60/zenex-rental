@@ -21,12 +21,12 @@ const models = [
 ];
 
 const galleryImages = [
+  "/images/economy_car.png",
+  "/images/suv_car.png",
+  "https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg",
   "https://autoncell.com/storage/x75I8HLAiD7oGljmNeNIBluVZz0fx3e8ip9g2mn4.webp",
-  "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
-  "https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg",
-  "https://cgdigital.com.np/api/plugins/kcfinder/upload/images/AVATR01.jpg"
+  "https://news24online.com/wp-content/uploads/2023/12/image-339.png",
+  "https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg"
 ];
 
 const SelfDriveRates = () => {
