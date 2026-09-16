@@ -20,11 +20,11 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Teahouses on Trail",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (September - November)",
-    "image": "/zenex images/Manaslu Region/photo-1515939169255-3e31ee7efbdf.avif",
+    "image": "/zenex images/Manaslu Region/photo-1610911677104-e3e58171ae0a.avif",
     "gallery": [
+      "/zenex images/Manaslu Region/photo-1610911677104-e3e58171ae0a.avif",
       "/zenex images/Manaslu Region/photo-1515939169255-3e31ee7efbdf.avif",
       "/zenex images/Manaslu Region/photo-1602589162641-449e416b88b1.avif",
-      "/zenex images/Manaslu Region/photo-1610911677104-e3e58171ae0a.avif",
       "/zenex images/Manaslu Region/photo-1610912094854-a0301607b7de.avif",
       "/zenex images/Manaslu Region/photo-1610912335893-b996d1743610.avif",
       "/zenex images/Manaslu Region/photo-1611872110600-b619b39fa69d.avif",
@@ -417,7 +417,9 @@ export const treksData = [
         "question": "Can I combine Tsum Valley with other treks?",
         "answer": "Yes! Tsum Valley can be seamlessly combined with the full Manaslu Circuit Trek or Annapurna Circuit."
       }
-    ]
+    ],
+    "img": "/zenex images/Manaslu Region/photo-1610911677104-e3e58171ae0a.avif",
+    "bannerImage": "/zenex images/Manaslu Region/photo-1610911677104-e3e58171ae0a.avif"
   },
   {
     "id": "langtang-valley-trek-10d",
@@ -440,11 +442,11 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges on Trail",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (September - December)",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
     "gallery": [
+      "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
-      "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
       "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
       "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
       "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
@@ -775,7 +777,9 @@ export const treksData = [
         "question": "Can Langtang trekking be done in 5 days?",
         "answer": "Yes, a shortened 5-day or 7-day version focusing purely on the core Syabrubesi to Kyanjin Gompa trail can be customized upon request."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
+    "bannerImage": "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif"
   },
   {
     "id": "helambu-langtang-trek-17d",
@@ -798,12 +802,12 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges on Trail",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (September - November)",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
     "gallery": [
+      "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
       "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
-      "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
       "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
       "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
       "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
@@ -1230,7 +1234,9 @@ export const treksData = [
         "question": "What makes combining Helambu and Langtang special?",
         "answer": "It blends two distinct regions into one journey: the peaceful Hyolmo-Sherpa cultural villages of Helambu, the sacred lakes of Gosaikunda, and the dramatic glacier valley of Langtang."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
+    "bannerImage": "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif"
   },
   {
     "id": "ruby-valley-trek-12d",
@@ -1253,13 +1259,13 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Local Lodges & Homestays",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (September - November)",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
     "gallery": [
+      "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
       "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
       "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
-      "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
       "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
       "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
       "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
@@ -1623,7 +1629,9 @@ export const treksData = [
         "question": "How long is the drive from Kathmandu to Syabrubesi?",
         "answer": "The drive takes approximately 5 to 6 hours (90 km) by private vehicle."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
+    "bannerImage": "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif"
   },
   {
     "id": "tamang-heritage-langtang-valley-trek-15d",
@@ -1646,14 +1654,14 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Homestays",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (September - November)",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
     "gallery": [
+      "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
       "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
       "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
       "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
-      "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
       "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
       "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
       "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
@@ -2048,7 +2056,9 @@ export const treksData = [
         "question": "What food is served during the trek?",
         "answer": "Freshly cooked local Dal Bhat, momos, noodles, soups, pancakes, chapati, pasta, and hot tea/coffee."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
+    "bannerImage": "/zenex images/everest/photo-1603787663416-88d33de66699.avif"
   },
   {
     "id": "tamang-heritage-trek-10d",
@@ -2071,15 +2081,15 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Homestays",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (September - November)",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
     "gallery": [
+      "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
       "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
       "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
       "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
       "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
-      "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
       "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
       "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
       "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
@@ -2415,7 +2425,9 @@ export const treksData = [
         "question": "What food options are available?",
         "answer": "Local Dal Bhat, momos, noodles, fried rice, soups, Tibetan bread, pancakes, pasta, and hot beverages."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
+    "bannerImage": "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif"
   },
   {
     "id": "langtang-ganja-la-pass-trek-15d",
@@ -2438,8 +2450,9 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Mountain Teahouses & Tented Camps",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (September - November)",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
     "gallery": [
+      "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
       "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
@@ -2447,7 +2460,6 @@ export const treksData = [
       "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
       "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
       "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
-      "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
       "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
       "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
       "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
@@ -2855,7 +2867,9 @@ export const treksData = [
         "question": "Can the 15-day Ganja La Pass itinerary be customized?",
         "answer": "Yes! Zenex Travels & Tours can adjust acclimatization days, camping arrangements, and private vehicle transport."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
+    "bannerImage": "/zenex images/everest/photo-1629185171801-ac685973a72a.avif"
   },
   {
     "id": "upper-mustang-tour-13d",
@@ -2878,8 +2892,9 @@ export const treksData = [
     "accommodation": "Hotels in Kathmandu & Pokhara / Mountain Lodges & Teahouses",
     "meals": "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Mustang Tour",
     "bestSeason": "All Seasons (Spring, Summer/Monsoon, Autumn & Winter)",
-    "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+    "image": "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
     "gallery": [
+      "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
       "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
       "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
       "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
@@ -2887,7 +2902,6 @@ export const treksData = [
       "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
       "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif",
       "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
-      "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
       "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
       "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
       "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
@@ -3272,7 +3286,9 @@ export const treksData = [
         "question": "Is tipping expected for tour guide and driver?",
         "answer": "Tipping is customary in Nepal for good service and is greatly appreciated by guides and drivers."
       }
-    ]
+    ],
+    "img": "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
+    "bannerImage": "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif"
   },
   {
     "id": "upper-mustang-trek-18d",
@@ -3295,8 +3311,9 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu & Pokhara / Mountain Teahouses & Lodges",
     "meals": "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May), Summer/Monsoon & Autumn (Sept - Nov)",
-    "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+    "image": "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
     "gallery": [
+      "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
       "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
       "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
       "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
@@ -3305,7 +3322,6 @@ export const treksData = [
       "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif",
       "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
       "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
-      "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
       "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
       "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
       "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif"
@@ -3712,7 +3728,9 @@ export const treksData = [
         "question": "Is internet and electricity available in Upper Mustang?",
         "answer": "Yes, major villages (Jomsom, Kagbeni, Lo Manthang) have mobile network coverage (NTC/Ncell) and teahouses offer Wi-Fi and solar battery charging for a small fee."
       }
-    ]
+    ],
+    "img": "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
+    "bannerImage": "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif"
   },
   {
     "id": "upper-mustang-trek-with-luri-gompa-22d",
@@ -3735,8 +3753,9 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu & Pokhara / Mountain Teahouses & Lodges",
     "meals": "Breakfast in Kathmandu & Pokhara, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May), Summer/Monsoon (Rain-Shadow) & Autumn (Sept - Nov)",
-    "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+    "image": "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
     "gallery": [
+      "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
       "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
       "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
       "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
@@ -3746,7 +3765,6 @@ export const treksData = [
       "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
       "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
       "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
-      "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
       "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
       "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif"
     ],
@@ -4200,7 +4218,9 @@ export const treksData = [
         "question": "Is internet and electricity available in Upper Mustang?",
         "answer": "Yes, major villages (Jomsom, Kagbeni, Lo Manthang) have mobile network coverage (NTC/Ncell) and teahouses offer Wi-Fi and solar battery charging for a small fee."
       }
-    ]
+    ],
+    "img": "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
+    "bannerImage": "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif"
   },
   {
     "id": "nar-phu-and-upper-mustang-trek-27d",
@@ -4223,8 +4243,9 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Mountain Teahouses & Tented Camping",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (Sept - Nov)",
-    "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+    "image": "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
     "gallery": [
+      "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
       "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
       "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
       "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
@@ -4235,7 +4256,6 @@ export const treksData = [
       "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
       "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
       "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
-      "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
       "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif"
     ],
     "overview": "\n      <h3>Nar Phu and Upper Mustang Trek 27 Days | High Altitude Wilderness & Trans-Himalayan Pass Expedition</h3>\n      <p>The 27-Day Nar Phu and Upper Mustang Trek is one of the most adventurous, remote, and culturally rich expeditions in the Nepalese Himalayas. Crossing two restricted regions—the hidden Tibetan-influenced valleys of <strong>Nar and Phu</strong> in Manang and the ancient Kingdom of <strong>Upper Mustang</strong>—this trek links both regions via the formidable, wild <strong>Teri La Pass (5,595 m)</strong>.</p>\n      <p>The expedition begins along the Annapurna Circuit from Besisahar to Koto before turning off into Nar Phu's narrow gorges, ancient stone villages, and Tashi Lhakhang Monastery. Crossing the uninhabited alpine wilderness over Teri La Pass (5,595 m) requires full wilderness tented camping and camping support staff. Descending into Upper Mustang, trekkers explore Tangge, Yara, the walled city of <strong>Lo Manthang (3,810 m)</strong>, Charang, and Kagbeni before flying back from Jomsom.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Nar Phu Restricted Area Permits, Upper Mustang Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), full wilderness camping gear, licensed high-altitude guides, camping cooks, porters, domestic flights (Jomsom – Pokhara – Kathmandu), and hotel stays in Kathmandu.</p>\n    ",
@@ -4788,7 +4808,9 @@ export const treksData = [
         "question": "How do I book this trek?",
         "answer": "Contact Zenex Travels & Tours to customize your departure dates, confirm permit requirements, and reserve your expedition slot."
       }
-    ]
+    ],
+    "img": "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
+    "bannerImage": "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif"
   },
   {
     "id": "kanchenjunga-north-base-camp-trek-17d",
@@ -4811,14 +4833,14 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (Sept - Nov)",
-    "image": "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+    "image": "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif",
     "gallery": [
+      "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif",
       "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
       "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
       "/zenex images/Makalu Region/photo-1642140195055-1b0902750430.avif",
       "/zenex images/Makalu Region/photo-1657376921110-8fb3ff3c2cbd.avif",
       "/zenex images/Makalu Region/photo-1672380797966-8b2cbaeaea9d.avif",
-      "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif",
       "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif",
       "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif"
     ],
@@ -5050,7 +5072,9 @@ export const treksData = [
         "question": "Is travel insurance mandatory for Kanchenjunga trekking?",
         "answer": "Yes, travel insurance covering emergency high-altitude medical evacuation up to 6,000 meters is mandatory."
       }
-    ]
+    ],
+    "img": "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif",
+    "bannerImage": "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif"
   },
   {
     "id": "kanchenjunga-south-base-camp-trek-14d",
@@ -5073,15 +5097,15 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (Sept - Nov)",
-    "image": "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+    "image": "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif",
     "gallery": [
+      "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif",
       "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
       "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
       "/zenex images/Makalu Region/photo-1642140195055-1b0902750430.avif",
       "/zenex images/Makalu Region/photo-1657376921110-8fb3ff3c2cbd.avif",
       "/zenex images/Makalu Region/photo-1672380797966-8b2cbaeaea9d.avif",
       "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif",
-      "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif",
       "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif"
     ],
     "overview": "\n      <h3>Kanchenjunga South Base Camp Trek 14 Days | Untouched Eastern Himalayan Wilderness</h3>\n      <p>The <strong>Kanchenjunga South Base Camp Trek (14 Days)</strong> is one of the shortest yet most rewarding journeys in eastern Nepal, taking trekkers to the foot of Mount Kanchenjunga (8,586 m)—the third-highest mountain on Earth. This off-the-beaten-path route inside the Kanchenjunga Conservation Area offers an ideal blend of raw high-altitude scenery, deep solitude, and authentic cultural immersion.</p>\n      <p>The crowning highlight of the trek is reaching <strong>Oktang View Point (4,730 m)</strong>, offering jaw-dropping views of the south and west faces of Mount Kanchenjunga (8,586 m), Yalung Kang (8,505 m), Khambachen Peak (7,903 m), Kabru Range, and the expansive Yalung Glacier. Along the trail, trekkers pass through terraced farmlands, lush rhododendron forests, and traditional Rai, Limbu, and Sherpa villages like Yasang, Tortang, Tseram, and Ramche.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we handle every detail of your expedition—including domestic flights (Kathmandu – Bhadrapur), private jeep transfers to Taplejung and Hellok, Kanchenjunga Conservation Area Permits (KCAP), Special Restricted Area Permits (RAP), licensed local English-speaking guides, experienced porters, lodge reservations, and hotel stays in Kathmandu.</p>\n    ",
@@ -5288,7 +5312,9 @@ export const treksData = [
         "question": "How do I book this trek?",
         "answer": "Contact Zenex Travels & Tours to customize your departure dates, process restricted permits, and reserve your expedition."
       }
-    ]
+    ],
+    "img": "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif",
+    "bannerImage": "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif"
   },
   {
     "id": "kanchenjunga-circuit-trek-22d",
@@ -5311,16 +5337,16 @@ export const treksData = [
     "accommodation": "3-Star Hotel in Kathmandu / Mountain Lodges & Teahouses",
     "meals": "Breakfast in Kathmandu, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May) & Autumn (Sept - Nov)",
-    "image": "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+    "image": "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif",
     "gallery": [
+      "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif",
       "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
       "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
       "/zenex images/Makalu Region/photo-1642140195055-1b0902750430.avif",
       "/zenex images/Makalu Region/photo-1657376921110-8fb3ff3c2cbd.avif",
       "/zenex images/Makalu Region/photo-1672380797966-8b2cbaeaea9d.avif",
       "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif",
-      "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif",
-      "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif"
+      "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif"
     ],
     "overview": "\n      <h3>Kanchenjunga Circuit Trek 22 Days | Full Expedition to North & South Base Camps</h3>\n      <p>The <strong>Kanchenjunga Circuit Trek (22 Days)</strong> is the ultimate high-altitude adventure in eastern Nepal, taking seasoned trekkers to both the <strong>North Base Camp (Pangpema – 5,143 m)</strong> and <strong>South Base Camp (Yalung – 5,400 m)</strong> of Mount Kanchenjunga (8,586 m)—the world's third-highest peak. As a key section of Nepal's Great Himalayan Trail (GHT), this circuit traverses raw, uncrowded landscapes from subtropical bamboo forests to glacial moraines.</p>\n      <p>The expedition crosses three challenging high-altitude Himalayan passes: <strong>Sele La (4,290 m)</strong>, <strong>Sinion La (4,646 m)</strong>, and <strong>Mirgin Pass (4,480 m)</strong>, offering 360-degree panoramas of Mt. Kanchenjunga, Mt. Jannu (Kumbhakarna – 7,711 m), Yalung Kang (8,505 m), Kabru Peaks, and Rathong. Along the circuit, explore authentic Sherpa and Limbu villages like Ghunsa, Gyabla, Khambachen, Lhonak, Tseram, and Ramche.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we provide complete, professional expedition logistics—including domestic flights (Kathmandu – Bhadrapur), private 4WD jeep transfers to Taplejung and Sekathum, Kanchenjunga Conservation Area Permits (KCAP), Special Restricted Area Permits (RAP), licensed English-speaking mountain guides, experienced porters, lodge bookings, and 3-star hotel stays in Kathmandu.</p>\n    ",
     "highlights": [
@@ -5591,7 +5617,9 @@ export const treksData = [
         "question": "How do I book this trek?",
         "answer": "Contact Zenex Travels & Tours to organize permits, guides, porters, domestic flights, and private transfers."
       }
-    ]
+    ],
+    "img": "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif",
+    "bannerImage": "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif"
   },
   {
     "id": "lower-dolpo-trek-from-jhuphal-18d",
@@ -5614,8 +5642,9 @@ export const treksData = [
     "accommodation": "3-Star Hotel in KTM & Nepalgunj / Mountain Lodges & Tented Camps",
     "meals": "Breakfast in KTM & Nepalgunj, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May), Summer & Autumn (Sept - Nov)",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
     "gallery": [
+      "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
       "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
@@ -5624,7 +5653,6 @@ export const treksData = [
       "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
       "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
       "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
-      "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
       "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
       "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
       "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif"
@@ -5863,7 +5891,9 @@ export const treksData = [
         "question": "How do I book this trek?",
         "answer": "Contact Zenex Travels & Tours to process restricted permits, arrange domestic flights, and organize full camping expedition logistics."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
+    "bannerImage": "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif"
   },
   {
     "id": "upper-dolpo-trek-25d",
@@ -5886,20 +5916,20 @@ export const treksData = [
     "accommodation": "Hotels in KTM, Nepalgunj & Pokhara / Mountain Lodges & Tented Camps",
     "meals": "Breakfast in Cities, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May), Summer (Rain Shadow) & Autumn (Sept - Nov)",
-    "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+    "image": "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
     "gallery": [
-      "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
-      "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
-      "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
-      "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
-      "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
-      "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif",
-      "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
-      "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
-      "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
-      "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
-      "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
-      "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif"
+      "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
+      "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+      "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
+      "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
+      "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
+      "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
+      "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
+      "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
+      "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
+      "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
+      "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
+      "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif"
     ],
     "overview": "\n      <h3>Upper Dolpo Trek 25 Days | Sacred Shey Gompa, Phoksundo Lake & High Pass Trans-Himalayan Expedition</h3>\n      <p>The <strong>Upper Dolpo Trek (25 Days)</strong> is one of the ultimate wilderness expeditions in Nepal, taking experienced adventurers across Nepal's last unexplored frontier. Located in the rain-shadow of the Dhaulagiri and Kanjiroba ranges, Upper Dolpo offers high-altitude desert plateaus, turquoise glacial lakes, ancient salt-trade routes, and centuries-old Bon and Tibetan Buddhist monasteries.</p>\n      <p>This 25-day grand circuit crosses multiple high mountain passes above 5,000 meters—including <strong>Jungben La (5,550 m)</strong>, <strong>Nagdalo Pass (5,350 m)</strong>, <strong>Niwas La (5,120 m)</strong>, <strong>Sele La (5,094 m)</strong>, and <strong>Mo La Pass (5,027 m)</strong>. The journey highlights the sacred 800-year-old <strong>Shey Gompa (4,343 m)</strong> at the foot of Crystal Mountain, magical <strong>Phoksundo Lake (3,641 m)</strong>, and remote trans-Himalayan stone villages like Saldang, Tinjegaon, and Chharka Bhot before exiting via Kagbeni to Jomsom and Pokhara.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we provide full expedition support—including Upper Dolpo Restricted Area Permits (RAP), Shey Phoksundo National Park Entry Permits, domestic flights (Kathmandu – Nepalgunj – Juphal & Jomsom – Pokhara), full camping setup with experienced cooks and kitchen staff, yaks/mules, licensed mountain guides, and hotel stays in Kathmandu, Nepalgunj, and Pokhara.</p>\n    ",
     "highlights": [
@@ -6201,7 +6231,9 @@ export const treksData = [
         "question": "How do I book this trek?",
         "answer": "Contact Zenex Travels & Tours to arrange restricted area permits, charter/domestic flights, guides, porters, and full camping logistics."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
+    "bannerImage": "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif"
   },
   {
     "id": "lower-dolpo-trek-17d",
@@ -6210,8 +6242,9 @@ export const treksData = [
     "duration": "17 Days",
     "price": "US$2,450",
     "difficulty": "Hard",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
     "gallery": [
+      "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
       "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
@@ -6222,7 +6255,6 @@ export const treksData = [
       "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
       "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
       "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
-      "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
       "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif"
     ],
     "quickFacts": {
@@ -6541,7 +6573,9 @@ export const treksData = [
         "question": "Can beginners undertake the Lower Dolpo Trek?",
         "answer": "Prior high-altitude trekking experience and good physical stamina are strongly recommended due to high passes and remote camping conditions."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
+    "bannerImage": "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif"
   },
   {
     "id": "lower-dolpo-trek-via-dhorpatan-23d",
@@ -6550,8 +6584,9 @@ export const treksData = [
     "duration": "23 Days",
     "price": "US$3,250",
     "difficulty": "Hard",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif",
     "gallery": [
+      "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
       "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
@@ -6562,8 +6597,7 @@ export const treksData = [
       "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
       "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
       "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
-      "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
-      "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif"
+      "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif"
     ],
     "quickFacts": {
       "duration": "23 Days",
@@ -6959,7 +6993,9 @@ export const treksData = [
         "question": "Can beginners do the Lower Dolpo via Dhorpatan Trek?",
         "answer": "No, prior high-altitude trekking experience and strong physical endurance are mandatory due to high passes and 23 days of remote wilderness."
       }
-    ]
+    ],
+    "img": "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif",
+    "bannerImage": "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif"
   },
   {
     "id": "dhampus-thapa-peak-climbing-19d",
@@ -6982,11 +7018,11 @@ export const treksData = [
     "accommodation": "Hotels / Lodges / Tented camp",
     "meals": "Breakfast, Lunch & Dinner",
     "bestSeason": "Spring & Autumn",
-    "image": "/zenex images/Dhaulagiri Region/photo-1464822759023-fed622ff2c3b.avif",
+    "image": "/zenex images/Dhaulagiri Region/photo-1472791108553-c9405341e398.avif",
     "gallery": [
+      "/zenex images/Dhaulagiri Region/photo-1472791108553-c9405341e398.avif",
       "/zenex images/Dhaulagiri Region/photo-1464822759023-fed622ff2c3b.avif",
       "/zenex images/Dhaulagiri Region/photo-1465056836041-7f43ac27dcb5.avif",
-      "/zenex images/Dhaulagiri Region/photo-1472791108553-c9405341e398.avif",
       "/zenex images/Dhaulagiri Region/photo-1483728642387-6c3bdd6c93e5.avif",
       "/zenex images/Dhaulagiri Region/photo-1506905925346-21bda4d32df4.avif",
       "/zenex images/Dhaulagiri Region/photo-1525784451128-d1488f52f03e.avif",
@@ -7407,7 +7443,9 @@ export const treksData = [
         "question": "Is prior climbing experience mandatory?",
         "answer": "Prior climbing experience is not strictly required, but strong physical fitness and prior high-altitude trekking experience are essential."
       }
-    ]
+    ],
+    "img": "/zenex images/Dhaulagiri Region/photo-1472791108553-c9405341e398.avif",
+    "bannerImage": "/zenex images/Dhaulagiri Region/photo-1472791108553-c9405341e398.avif"
   },
   {
     "id": "dhaulagiri-circuit-trek-17d",
@@ -7430,20 +7468,20 @@ export const treksData = [
     "accommodation": "Hotels / Tea Houses / Camping",
     "meals": "Breakfast, Lunch & Dinner",
     "bestSeason": "Spring & Autumn",
-    "image": "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
+    "image": "/zenex images/Dhaulagiri Region/photo-1483728642387-6c3bdd6c93e5.avif",
     "gallery": [
-      "/zenex images/Upper Mustang/photo-1516009183258-eaca18512e83.avif",
-      "/zenex images/Upper Mustang/photo-1540876391606-b23004064563.avif",
-      "/zenex images/Upper Mustang/photo-1560428798-735f16905de6.avif",
-      "/zenex images/Upper Mustang/photo-1608275565739-c0be72b1da5e.avif",
-      "/zenex images/Upper Mustang/photo-1619463206719-f87a692cdd7a.avif",
-      "/zenex images/Upper Mustang/photo-1633999672298-ec0096ed5e16.avif",
-      "/zenex images/Upper Mustang/photo-1642402734506-d764bed0a902.avif",
-      "/zenex images/Upper Mustang/photo-1708180482123-bfdac149226d.avif",
-      "/zenex images/Upper Mustang/photo-1721165578334-e1da5ebd0fc3.avif",
-      "/zenex images/Upper Mustang/photo-1760087628780-38799024e9f6.avif",
-      "/zenex images/Upper Mustang/premium_photo-1661878621391-a53da02f1098.avif",
-      "/zenex images/Upper Mustang/premium_photo-1661930516466-04ffc555c510.avif"
+      "/zenex images/Dhaulagiri Region/photo-1483728642387-6c3bdd6c93e5.avif",
+      "/zenex images/Dhaulagiri Region/photo-1464822759023-fed622ff2c3b.avif",
+      "/zenex images/Dhaulagiri Region/photo-1465056836041-7f43ac27dcb5.avif",
+      "/zenex images/Dhaulagiri Region/photo-1472791108553-c9405341e398.avif",
+      "/zenex images/Dhaulagiri Region/photo-1506905925346-21bda4d32df4.avif",
+      "/zenex images/Dhaulagiri Region/photo-1525784451128-d1488f52f03e.avif",
+      "/zenex images/Dhaulagiri Region/photo-1549880338-65ddcdfd017b.avif",
+      "/zenex images/Dhaulagiri Region/photo-1585409677983-0f6c41ca9c3b.avif",
+      "/zenex images/Dhaulagiri Region/photo-1604428803896-c1e5151d4128.avif",
+      "/zenex images/Dhaulagiri Region/photo-1615028427098-f2185474eeb3.avif",
+      "/zenex images/Dhaulagiri Region/photo-1615729947596-a598e5de0ab3.avif",
+      "/zenex images/Dhaulagiri Region/photo-1647679180836-86ffeaaa5c22.avif"
     ],
     "overview": "\n      <h3>Dhaulagiri Circuit Trek - 17 Days | High Altitude Glacial Expedition & Pass Crossing</h3>\n      <p>The <strong>Dhaulagiri Circuit Trek (17 Days)</strong> is one of Nepal’s most challenging, remote, and exhilarating high-altitude wilderness adventures. Circling Mount Dhaulagiri (8,167m)—the world’s seventh highest peak—this expedition leads deep into the untamed heart of the western Himalayas. Starting from Kathmandu and Pokhara to the Magar trailhead village of Muri, the route follows the Myagdi Khola river valley through dense subtropical forests and alpine pastures before entering the rugged glacial world of the Chhonbardan Glacier.</p>\n      <p>Trekkers camp at iconic sites including Italian Base Camp and Dhaulagiri Base Camp (4,750m), surrounded by towering icefalls and sheer rock faces. The crown jewel of the circuit is crossing <strong>French Pass (5,360m)</strong> into the isolated <strong>Hidden Valley (5,166m)</strong>, followed by crossing <strong>Thapa Pass (5,244m)</strong> before descending to Yak Kharka and Marpha in the Kali Gandaki Valley.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all trek logistics—including Annapurna Conservation Area Permits (ACAP), TIMS cards, flight/vehicle transfers, full wilderness tented camping equipment, licensed guides, mountain cooks, and porters to ensure a safe and memorable Himalayan expedition.</p>\n    ",
     "highlights": [
@@ -7821,7 +7859,9 @@ export const treksData = [
         "question": "When is the best time for the Dhaulagiri Circuit Trek?",
         "answer": "Spring (March to May) and Autumn (September to November) offer stable weather, clear mountain views, and dry pass conditions."
       }
-    ]
+    ],
+    "img": "/zenex images/Dhaulagiri Region/photo-1483728642387-6c3bdd6c93e5.avif",
+    "bannerImage": "/zenex images/Dhaulagiri Region/photo-1483728642387-6c3bdd6c93e5.avif"
   },
   {
     "id": "rolwaling-valley-trek-18d",
@@ -7844,12 +7884,12 @@ export const treksData = [
     "accommodation": "Hotels / Lodges / Tented camp",
     "meals": "Breakfast, Lunch & Dinner",
     "bestSeason": "Spring & Autumn",
-    "image": "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
+    "image": "/zenex images/Rolwaling Valley Trek/jkfdd.jpg",
     "gallery": [
+      "/zenex images/Rolwaling Valley Trek/jkfdd.jpg",
       "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
       "/zenex images/Rolwaling Valley Trek/beding-village.webp",
       "/zenex images/Rolwaling Valley Trek/gffb.jpg",
-      "/zenex images/Rolwaling Valley Trek/jkfdd.jpg",
       "/zenex images/Rolwaling Valley Trek/na-gau.webp",
       "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg",
       "/zenex images/Rolwaling Valley Trek/Rolwaling-Trekking.jpg",
@@ -8244,7 +8284,9 @@ export const treksData = [
         "question": "When is the best time for the Rolwaling Trek?",
         "answer": "Spring (March to May) and Autumn (September to November) offer clear skies, stable weather, and optimal mountain visibility."
       }
-    ]
+    ],
+    "img": "/zenex images/Rolwaling Valley Trek/jkfdd.jpg",
+    "bannerImage": "/zenex images/Rolwaling Valley Trek/jkfdd.jpg"
   },
   {
     "id": "rolwaling-tashi-lapcha-pass-trek-19d",
@@ -8267,20 +8309,16 @@ export const treksData = [
     "accommodation": "Hotels / Lodges / Tented camp",
     "meals": "Breakfast, Lunch & Dinner",
     "bestSeason": "Spring & Autumn",
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/Rolwaling Valley Trek/na-gau.webp",
     "gallery": [
-      "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
-      "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
-      "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
-      "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
-      "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
-      "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
-      "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
-      "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
-      "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
-      "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
-      "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
-      "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif"
+      "/zenex images/Rolwaling Valley Trek/na-gau.webp",
+      "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
+      "/zenex images/Rolwaling Valley Trek/beding-village.webp",
+      "/zenex images/Rolwaling Valley Trek/gffb.jpg",
+      "/zenex images/Rolwaling Valley Trek/jkfdd.jpg",
+      "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg",
+      "/zenex images/Rolwaling Valley Trek/Rolwaling-Trekking.jpg",
+      "/zenex images/Rolwaling Valley Trek/trekkingweb-1686145254.jpg"
     ],
     "overview": "\n      <h3>Rolwaling Tashi Lapcha Pass Trek - 19 Days | High Mountain Pass & Glacial Expedition to Everest Region</h3>\n      <p>The <strong>Rolwaling – Tashi Lapcha Pass Trek (19 Days)</strong> is a formidable, remote, and thrilling Himalayan expedition that connects the secluded Rolwaling Valley with the iconic Everest (Khumbu) region across the high-altitude <strong>Tashi Lapcha Pass (5,755m)</strong>. Starting from the low mid-hills of Singati, the route leads through terraced fields, deep river gorges, and ancient Tamang and Sherpa villages including Simigaon, Beding, and Na.</p>\n      <p>Trekkers explore the turquoise glacial waters of <strong>Tsho Rolpa Lake (4,580m)</strong> before venturing onto the icy moraine of the Trakarding Glacier and Pachermo Base Camp. Crossing the technical Tashi Lapcha Pass (5,755m) requires fixed ropes, crampons, ice axes, and expert mountaineering Sherpas. Standing at the pass summit rewards climbers with breathtaking 360-degree views of Everest (8,848m), Cho Oyu, Makalu, Shishapangma, Pumori, Pachermo Peak, and Mount Gaurishankar (7,145m). The descent leads into the Khumbu region, passing Thame, Namche Bazaar, and concluding with a scenic flight from Lukla to Kathmandu.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage complete expedition logistics—including Special Rolwaling Restricted Area Permits, Gaurishankar Conservation Area Permits (GCAP), Sagarmatha National Park Permits, Khumbu Rural Municipality Permits, domestic Lukla flight tickets, full tented camping gear, climbing Sherpa guides, cooks, and porters.</p>\n    ",
     "highlights": [
@@ -8700,7 +8738,9 @@ export const treksData = [
         "question": "When is the best time for the Tashi Lapcha Pass Trek?",
         "answer": "Spring (March to May) and Autumn (September to November) offer optimal weather, stable snow conditions on the pass, and clear mountain views."
       }
-    ]
+    ],
+    "img": "/zenex images/Rolwaling Valley Trek/na-gau.webp",
+    "bannerImage": "/zenex images/Rolwaling Valley Trek/na-gau.webp"
   },
   {
     "id": "lapchi-kang-milarepa-cave-trek-11d",
@@ -8723,14 +8763,14 @@ export const treksData = [
     "accommodation": "Hotels / Lodges / Monastery & Tented camp",
     "meals": "Breakfast, Lunch & Dinner",
     "bestSeason": "Spring & Autumn",
-    "image": "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
+    "image": "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg",
     "gallery": [
+      "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg",
       "/zenex images/Rolwaling Valley Trek/beding-village-in-rolwaling-valley.webp",
       "/zenex images/Rolwaling Valley Trek/beding-village.webp",
       "/zenex images/Rolwaling Valley Trek/gffb.jpg",
       "/zenex images/Rolwaling Valley Trek/jkfdd.jpg",
       "/zenex images/Rolwaling Valley Trek/na-gau.webp",
-      "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg",
       "/zenex images/Rolwaling Valley Trek/Rolwaling-Trekking.jpg",
       "/zenex images/Rolwaling Valley Trek/trekkingweb-1686145254.jpg"
     ],
@@ -9032,7 +9072,9 @@ export const treksData = [
         "question": "When is the best time to do the Lapchi Trek?",
         "answer": "Spring (March to May) and Autumn (September to November) offer clear skies, mild weather, and optimal mountain visibility."
       }
-    ]
+    ],
+    "img": "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg",
+    "bannerImage": "/zenex images/Rolwaling Valley Trek/Rolwaling-1.jpg"
   },
   {
     "id": "makalu-base-camp-trek-18d",
@@ -9326,7 +9368,9 @@ export const treksData = [
         "question": "When is the best season to trek to Makalu Base Camp?",
         "answer": "Spring (March to May) offers blooming rhododendron forests and clear skies, while Autumn (September to November) offers crisp mountain visibility and stable weather."
       }
-    ]
+    ],
+    "img": "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+    "bannerImage": "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif"
   },
   {
     "id": "makalu-three-pass-sherpani-amphu-laptsa",
@@ -9344,21 +9388,17 @@ export const treksData = [
     "originalPrice": 3600,
     "rating": 4.9,
     "reviewsCount": 143,
-    "image": "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
+    "image": "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
     "heroImage": "https://admin.buddhaair.com/upload/blog/thumbnail/1574327215_jYmkI_1567571648-ebeyj-makalu.webp",
     "gallery": [
-      "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
-      "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
-      "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
-      "/zenex images/everest/photo-1575819719798-83d97dd6949c.avif",
-      "/zenex images/everest/photo-1589182373726-e4f658ab50f0.avif",
-      "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
-      "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
-      "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
-      "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
-      "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
-      "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
-      "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif"
+      "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
+      "/zenex images/Makalu Region/photo-1584395631446-e41b0fc3f68d.avif",
+      "/zenex images/Makalu Region/photo-1642140195055-1b0902750430.avif",
+      "/zenex images/Makalu Region/photo-1657376921110-8fb3ff3c2cbd.avif",
+      "/zenex images/Makalu Region/photo-1672380797966-8b2cbaeaea9d.avif",
+      "/zenex images/Makalu Region/photo-1672380797993-6cab11c471cc.avif",
+      "/zenex images/Makalu Region/photo-1745677617575-62b14956f2d1.avif",
+      "/zenex images/Makalu Region/photo-1776180040162-e2f8597419d6.avif"
     ],
     "overview": "Makalu Three Pass Trek (via Sherpani Col, Baruntse Col & Amphu Laptse) is one of Nepal’s most demanding, technical, and adventurous high-altitude expedition treks. Starting from Tumlingtar in the Makalu region and concluding at Lukla in the Khumbu Everest region, this 25-day grand Himalayan traverse connects two iconic mountain wildernesses across three formidable high passes above 5,800 meters.\n\nThe route ventures deep into the Makalu-Barun National Park before climbing into extreme glacial wilderness to cross Sherpani Col (6,180 m), Baruntse East/West Col (6,143 m), and Amphu Laptse Pass (5,845 m). Trekkers negotiate crevassed glaciers, fixed ropes, ice wall descents, and pristine high alpine moraines while taking in breathtaking panoramic vistas of Everest (8,848 m), Lhotse (8,516 m), Makalu (8,485 m), Baruntse (7,129 m), and Chamlang.\n\nOrganized with full expedition support by Zenex Travels & Tours, including certified climbing Sherpas, tented camping infrastructure, satellite communications, and specialized safety gear, this trek offers an unforgettable journey far from commercial trails.",
     "highlights": [
@@ -9671,7 +9711,9 @@ export const treksData = [
         "question": "When is the best season for the Makalu Three Pass Trek?",
         "answer": "Spring (March to May) and Autumn (September to November) offer stable weather, low avalanche risk, and optimum mountain visibility."
       }
-    ]
+    ],
+    "img": "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif",
+    "bannerImage": "/zenex images/Makalu Region/photo-1642140195053-4b9e26572132.avif"
   },
   {
     "id": "api-base-camp-trek-14d",
@@ -9689,11 +9731,11 @@ export const treksData = [
     "originalPrice": 1980,
     "rating": 4.9,
     "reviewsCount": 143,
-    "image": "/zenex images/Api Base Camp/11.jpg",
+    "image": "/zenex images/Api Base Camp/12.jpg",
     "heroImage": "https://www.bestheritagetour.com/public/images/upload/package/slider/api-himal-trek-5-1.jpg",
     "gallery": [
-      "/zenex images/Api Base Camp/11.jpg",
       "/zenex images/Api Base Camp/12.jpg",
+      "/zenex images/Api Base Camp/11.jpg",
       "/zenex images/Api Base Camp/Api-himal-base-camp-trek-1.webp",
       "/zenex images/Api Base Camp/api-himal-base-camp-trek.webp",
       "/zenex images/Api Base Camp/api-himal-trek-5-1.jpg",
@@ -9925,7 +9967,9 @@ export const treksData = [
         "question": "When is the best season to trek to Api Base Camp?",
         "answer": "Spring (March to May) offers blooming rhododendrons and mild temperatures, while Autumn (September to November) offers crisp blue skies and stable mountain weather."
       }
-    ]
+    ],
+    "img": "/zenex images/Api Base Camp/12.jpg",
+    "bannerImage": "/zenex images/Api Base Camp/12.jpg"
   },
   {
     "id": "jumla-rara-trek-13d",
@@ -9943,11 +9987,11 @@ export const treksData = [
     "originalPrice": 1680,
     "rating": 4.9,
     "reviewsCount": 143,
-    "image": "/zenex images/Jumla/1718793514.sidetrackimageUntitled design (3).png",
+    "image": "/zenex images/Jumla/images.jpg",
     "heroImage": "https://media.nepaltrekadventures.com/uploads/package/gallery/thumb/rara-lake-trek.webp",
     "gallery": [
-      "/zenex images/Jumla/1718793514.sidetrackimageUntitled design (3).png",
       "/zenex images/Jumla/images.jpg",
+      "/zenex images/Jumla/1718793514.sidetrackimageUntitled design (3).png",
       "/zenex images/Jumla/rara-lake-banner.webp",
       "/zenex images/Jumla/rara-lake.webp",
       "/zenex images/Jumla/RaraJumla-section-1-618-x-365.jpg",
@@ -10171,6 +10215,8 @@ export const treksData = [
         "question": "When is the best season for the Jumla - Rara Trek?",
         "answer": "Spring (March to May) features blooming rhododendrons and green forests, while Autumn (September to November) offers crisp mountain visibility and stable clear skies."
       }
-    ]
+    ],
+    "img": "/zenex images/Jumla/images.jpg",
+    "bannerImage": "/zenex images/Jumla/images.jpg"
   }
 ];
