@@ -505,10 +505,10 @@ const TrekDetail = () => {
                         <Mountain className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
                         <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Trip Grade</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.difficulty}</p></div>
                       </div>
-                      {trek.quickFacts?.maxAltitude && (
+                      {(trek.quickFacts?.maxAltitude || trek.maxAltitude) && (
                         <div className="flex gap-3 min-w-0">
                           <Mountain className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                          <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Max. Altitude</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts.maxAltitude}</p></div>
+                          <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Max. Altitude</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.maxAltitude || trek.maxAltitude}</p></div>
                         </div>
                       )}
                       {trek.quickFacts?.region && (
