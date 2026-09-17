@@ -161,38 +161,6 @@
       "seoDescription": "Compact, modern BYD Atto 1 EV rental for easy city driving and eco-friendly travel."
     },
     {
-      "id": 12,
-      "name": "BYD Seal U SUV",
-      "type": "Electric EV",
-      "price": 14000,
-      "priceWithDriver": 16000,
-      "img": "/vehicles/byd_seal_u.png",
-      "seats": 5,
-      "trans": "Automatic",
-      "fuel": "Electric",
-      "luggage": 4,
-      "rating": 4.9,
-      "reviews": 58,
-      "seoTitle": "Rent BYD Seal U Electric SUV in Kathmandu",
-      "seoDescription": "Spacious and high-range BYD Seal U electric SUV rental in Nepal."
-    },
-    {
-      "id": 13,
-      "name": "BYD Sealion 7",
-      "type": "Electric EV",
-      "price": 16000,
-      "priceWithDriver": 18500,
-      "img": "/vehicles/byd_sealion_7.png",
-      "seats": 5,
-      "trans": "Automatic",
-      "fuel": "Electric",
-      "luggage": 4,
-      "rating": 5,
-      "reviews": 36,
-      "seoTitle": "Rent BYD Sealion 7 EV in Nepal - Zenex Travels",
-      "seoDescription": "Premium performance BYD Sealion 7 electric SUV rental for long distance trips."
-    },
-    {
       "id": 14,
       "name": "Luxury 4x4 Off-Road SUV",
       "type": "SUV / 4x4",
