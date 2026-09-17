@@ -158,12 +158,14 @@ export const generatePackagePDF = async (item) => {
     // 2. Prepare hidden iframe for 100% isolated, clean PDF rendering
     const iframe = document.createElement('iframe');
     iframe.style.position = 'fixed';
-    iframe.style.right = '100%';
-    iframe.style.bottom = '100%';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
     iframe.style.width = '794px';
     iframe.style.height = '1000px';
     iframe.style.border = 'none';
-    iframe.style.visibility = 'hidden';
+    iframe.style.zIndex = '-99999';
+    iframe.style.opacity = '0.01';
+    iframe.style.pointerEvents = 'none';
     document.body.appendChild(iframe);
 
     // --- HEADER BRANDING WITH LOGO ---
@@ -650,7 +652,46 @@ export const generatePackagePDF = async (item) => {
       if (!html2pdfLib) {
         throw new Error('html2pdf library is unavailable');
       }
-      await html2pdfLib().from(iframeDoc.body).set(opt).save();
+
+      await html2pdfLib()
+        .from(iframeDoc.body)
+        .set(opt)
+        .toPdf()
+        .get('pdf')
+        .then((pdf) => {
+          const totalPages = pdf.internal.getNumberOfPages();
+          const pageWidth = pdf.internal.pageSize.getWidth();
+          const pageHeight = pdf.internal.pageSize.getHeight();
+
+          for (let i = 1; i <= totalPages; i++) {
+            pdf.setPage(i);
+
+            // Draw subtle bottom border line for footer on every page
+            pdf.setDrawColor(226, 232, 240);
+            pdf.setLineWidth(0.3);
+            pdf.line(10, pageHeight - 9, pageWidth - 10, pageHeight - 9);
+
+            // Left side: Company contact details
+            pdf.setFontSize(7.5);
+            pdf.setTextColor(71, 85, 105);
+            pdf.text(
+              "Zenex Travels & Tours Pvt. Ltd. | Samakhushi, Kathmandu | Phone/WhatsApp: +977 9767476521 | info@zenextravels.com",
+              10,
+              pageHeight - 4.5
+            );
+
+            // Right side: Page number
+            pdf.setFontSize(7.5);
+            pdf.setTextColor(148, 163, 184);
+            pdf.text(
+              `Page ${i} of ${totalPages}`,
+              pageWidth - 10,
+              pageHeight - 4.5,
+              { align: 'right' }
+            );
+          }
+        })
+        .save();
     } finally {
       if (iframe && iframe.parentNode) {
         iframe.parentNode.removeChild(iframe);
