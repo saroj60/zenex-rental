@@ -2,19 +2,19 @@
   "vehicles": [
     {
       "id": 1,
-      "name": "Suzuki Swift",
+      "name": "Sedan & Hatchback",
       "type": "Hatchback / Sedan",
       "price": 3500,
       "priceWithDriver": 5000,
       "img": "/images/economy_car.png",
       "seats": 4,
-      "trans": "Automatic",
+      "trans": "Automatic/Manual",
       "fuel": "Petrol",
       "luggage": 2,
       "rating": 4.8,
       "reviews": 120,
-      "seoTitle": "Rent Suzuki Swift in Kathmandu - Zenex Travel",
-      "seoDescription": "Premium Suzuki Swift hatchback rental in Kathmandu. Perfect for city tours, airport transfers, and family trips."
+      "seoTitle": "Rent Sedan & Hatchback Cars in Kathmandu - Zenex Travel",
+      "seoDescription": "Premium Sedan & Hatchback car rental in Kathmandu. Perfect for city tours, airport transfers, and family trips."
     },
     {
       "id": 2,
