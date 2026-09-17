@@ -523,12 +523,28 @@ export const generatePackagePDF = async (item) => {
       `;
     }
 
-    // --- FOOTER BRANDING ---
+    // --- FOOTER BRANDING & COMPANY DETAILS ---
     const footerHtml = `
-      <div style="margin-top: 28px; border-top: 1px dashed #cbd5e1; padding-top: 14px; text-align: center; font-size: 10px; color: #64748b; page-break-inside: avoid; font-family: 'Inter', sans-serif;">
-        <p style="margin: 0; font-weight: 600; color: #1e3a8a;">Thank you for choosing Zenex Travels and Tours. Himalayan Tours & Trekking Experts.</p>
-        <p style="margin: 4px 0 0 0;">For bookings, customizations & inquiries: <strong>+977 9767476521</strong> | <strong>info@zenextravels.com</strong> | <strong>zenextravels.com</strong></p>
-        <p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 9px;">© ${new Date().getFullYear()} Zenex Travels and Tours. All Rights Reserved.</p>
+      <div style="margin-top: 30px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-top: 3px solid #e53a24; border-radius: 10px; padding: 16px 20px; page-break-inside: avoid; font-family: 'Inter', sans-serif;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">
+          <div style="flex: 1.2;">
+            <h4 style="margin: 0 0 4px 0; color: #1e3a8a; font-size: 13px; font-weight: 800; font-family: 'Manrope', 'Inter', sans-serif;">Zenex Travels & Tours Pvt. Ltd.</h4>
+            <p style="margin: 0 0 4px 0; font-size: 10px; color: #64748b; font-weight: 600; line-height: 1.4;">Govt. Registered Himalayan Tours, Trekking & Vehicle Rental Experts</p>
+            <p style="margin: 0; font-size: 10px; color: #334155; line-height: 1.4;">
+              <strong>Address:</strong> Samakhushi, Kathmandu 44600, Bagmati Province, Nepal
+            </p>
+          </div>
+          <div style="flex: 1; text-align: right; font-size: 10px; color: #334155; line-height: 1.5;">
+            <p style="margin: 0;"><strong>Sales & WhatsApp:</strong> <span style="color: #0f172a; font-weight: 700;">+977 9767476521</span></p>
+            <p style="margin: 2px 0 0 0;"><strong>Landline:</strong> 015928752</p>
+            <p style="margin: 2px 0 0 0;"><strong>Email:</strong> <span style="color: #1e3a8a; font-weight: 600;">info@zenextravels.com</span></p>
+            <p style="margin: 2px 0 0 0;"><strong>Website:</strong> <span style="color: #e53a24; font-weight: 700;">www.zenextravels.com</span></p>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 9px; color: #64748b;">
+          <span>Thank you for choosing Zenex Travels and Tours for your Himalayan adventure.</span>
+          <span>© ${new Date().getFullYear()} Zenex Travels and Tours. All Rights Reserved.</span>
+        </div>
       </div>
     `;
 
