@@ -82,7 +82,7 @@
     },
     {
       "id": 7,
-      "name": "Tourist Bus",
+      "name": "Luxury Buses",
       "type": "Minibus",
       "price": 15000,
       "priceWithDriver": 18000,
@@ -93,8 +93,8 @@
       "luggage": 15,
       "rating": 4.9,
       "reviews": 62,
-      "seoTitle": "Rent Tourist Bus in Nepal - Zenex Travels",
-      "seoDescription": "Rent comfortable 30-35 seater tourist bus for group sightseeing tours across Pokhara, Chitwan, and Lumbini."
+      "seoTitle": "Rent Luxury Buses in Nepal - Zenex Travels",
+      "seoDescription": "Rent comfortable 30-35 seater luxury bus for group sightseeing tours across Pokhara, Chitwan, and Lumbini."
     },
     {
       "id": 8,

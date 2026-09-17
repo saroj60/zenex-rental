@@ -63,7 +63,7 @@ const VehicleListing = () => {
   const heroSlides = [
     { title: 'EV cars', price: 6000, img: '/vehicles/byd_atto_1.png' },
     { title: 'Toyota Land Cruiser', price: 25000, img: '/vehicles/offroad_4x4_suv.jpg' },
-    { title: 'Tourist Bus Nepal', price: 15000, img: '/vehicles/tourist_bus_nepal.png' },
+    { title: 'Luxury Buses', price: 15000, img: '/vehicles/tourist_bus_nepal.png' },
     { title: 'Toyota Hiace', price: 8000, img: 'https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg' },
     { title: 'Mahindra Scorpio / Jeep', price: 8000, img: 'https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg' },
     { title: 'Wedding Cars', price: 8000, img: '/vehicles/wedding car.avif' },
