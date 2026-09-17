@@ -175,6 +175,22 @@
       "reviews": 64,
       "seoTitle": "Hire Toyota Land Cruiser 4x4 in Nepal - Zenex Travels",
       "seoDescription": "Hire heavy-duty Toyota Land Cruiser 4x4 SUV for high-altitude mountain expeditions and off-road trips in Nepal."
+    },
+    {
+      "id": 15,
+      "name": "EV Van (10-14 Seater)",
+      "type": "Van / EV",
+      "price": 7000,
+      "priceWithDriver": 9000,
+      "img": "/vehicles/hiace.jpg",
+      "seats": 14,
+      "trans": "Automatic",
+      "fuel": "Electric",
+      "luggage": 6,
+      "rating": 4.9,
+      "reviews": 38,
+      "seoTitle": "Rent 10-14 Seater EV Van in Nepal - Zenex Travels",
+      "seoDescription": "Eco-friendly 10-14 seater EV Van rental in Kathmandu. Perfect for group tours, airport transfers, and family trips."
     }
   ],
   "packages": [
