@@ -169,19 +169,27 @@ export const generatePackagePDF = async (item) => {
     // --- HEADER BRANDING WITH LOGO ---
     const validLogo = logoBase64 && typeof logoBase64 === 'string' && logoBase64.startsWith('data:image') ? logoBase64 : null;
     const headerHtml = `
-      <div style="border-bottom: 2.5px solid #e53a24; padding-bottom: 14px; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: center;">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          ${validLogo ? `<img src="${validLogo}" alt="Zenex Logo" style="height: 48px; width: auto; object-fit: contain; border-radius: 6px;" />` : ''}
-          <div>
-            <h1 style="color: #1e3a8a; margin: 0; font-size: 20px; font-weight: 800; font-family: 'Manrope', 'Inter', sans-serif;">Zenex Travels and Tours</h1>
-            <p style="color: #e53a24; margin: 2px 0 0 0; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Inter', sans-serif;">Himalayan Tours & Trekking Experts</p>
-          </div>
-        </div>
-        <div style="text-align: right; font-size: 10.5px; color: #475569; line-height: 1.4; font-family: 'Inter', sans-serif;">
-          <p style="margin: 0; font-weight: 700; color: #0f172a;">zenextravels.com</p>
-          <p style="margin: 1px 0 0 0;">Phone: +977 9767476521</p>
-          <p style="margin: 1px 0 0 0;">Email: info@zenextravels.com</p>
-        </div>
+      <div style="border-bottom: 2.5px solid #e53a24; padding-bottom: 14px; margin-bottom: 18px;">
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr>
+            <td style="vertical-align: middle; text-align: left;">
+              <table style="border-collapse: collapse;">
+                <tr>
+                  ${validLogo ? `<td style="padding-right: 12px; vertical-align: middle;"><img src="${validLogo}" alt="Zenex Logo" style="height: 48px; width: auto; object-fit: contain; border-radius: 6px;" /></td>` : ''}
+                  <td style="vertical-align: middle;">
+                    <h1 style="color: #1e3a8a; margin: 0; font-size: 20px; font-weight: 800; font-family: 'Manrope', 'Inter', sans-serif;">Zenex Travels and Tours</h1>
+                    <p style="color: #e53a24; margin: 2px 0 0 0; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Inter', sans-serif;">Himalayan Tours & Trekking Experts</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td style="vertical-align: middle; text-align: right; font-size: 10.5px; color: #475569; line-height: 1.4; font-family: 'Inter', sans-serif;">
+              <p style="margin: 0; font-weight: 700; color: #0f172a;">zenextravels.com</p>
+              <p style="margin: 1px 0 0 0;">Phone: +977 9767476521</p>
+              <p style="margin: 1px 0 0 0;">Email: info@zenextravels.com</p>
+            </td>
+          </tr>
+        </table>
       </div>
     `;
 
@@ -525,26 +533,30 @@ export const generatePackagePDF = async (item) => {
 
     // --- FOOTER BRANDING & COMPANY DETAILS ---
     const footerHtml = `
-      <div style="margin-top: 30px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-top: 3px solid #e53a24; border-radius: 10px; padding: 16px 20px; page-break-inside: avoid; font-family: 'Inter', sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">
-          <div style="flex: 1.2;">
-            <h4 style="margin: 0 0 4px 0; color: #1e3a8a; font-size: 13px; font-weight: 800; font-family: 'Manrope', 'Inter', sans-serif;">Zenex Travels & Tours Pvt. Ltd.</h4>
-            <p style="margin: 0 0 4px 0; font-size: 10px; color: #64748b; font-weight: 600; line-height: 1.4;">Govt. Registered Himalayan Tours, Trekking & Vehicle Rental Experts</p>
-            <p style="margin: 0; font-size: 10px; color: #334155; line-height: 1.4;">
-              <strong>Address:</strong> Samakhushi, Kathmandu 44600, Bagmati Province, Nepal
-            </p>
-          </div>
-          <div style="flex: 1; text-align: right; font-size: 10px; color: #334155; line-height: 1.5;">
-            <p style="margin: 0;"><strong>Sales & WhatsApp:</strong> <span style="color: #0f172a; font-weight: 700;">+977 9767476521</span></p>
-            <p style="margin: 2px 0 0 0;"><strong>Landline:</strong> 015928752</p>
-            <p style="margin: 2px 0 0 0;"><strong>Email:</strong> <span style="color: #1e3a8a; font-weight: 600;">info@zenextravels.com</span></p>
-            <p style="margin: 2px 0 0 0;"><strong>Website:</strong> <span style="color: #e53a24; font-weight: 700;">www.zenextravels.com</span></p>
-          </div>
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 9px; color: #64748b;">
-          <span>Thank you for choosing Zenex Travels and Tours for your Himalayan adventure.</span>
-          <span>© ${new Date().getFullYear()} Zenex Travels and Tours. All Rights Reserved.</span>
-        </div>
+      <div style="margin-top: 30px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-top: 3px solid #e53a24; border-radius: 10px; padding: 14px 18px; page-break-inside: avoid; font-family: 'Inter', sans-serif;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px; border-bottom: 1px solid #cbd5e1; padding-bottom: 10px;">
+          <tr>
+            <td style="vertical-align: top; width: 58%; text-align: left; padding-right: 10px;">
+              <h4 style="margin: 0 0 3px 0; color: #1e3a8a; font-size: 13px; font-weight: 800; font-family: 'Manrope', 'Inter', sans-serif;">Zenex Travels & Tours Pvt. Ltd.</h4>
+              <p style="margin: 0 0 4px 0; font-size: 10px; color: #64748b; font-weight: 600; line-height: 1.35;">Govt. Registered Himalayan Tours, Trekking & Vehicle Rental Experts</p>
+              <p style="margin: 0; font-size: 10px; color: #334155; line-height: 1.35;">
+                <strong>Address:</strong> Samakhushi, Kathmandu 44600, Bagmati Province, Nepal
+              </p>
+            </td>
+            <td style="vertical-align: top; width: 42%; text-align: right; font-size: 10px; color: #334155; line-height: 1.45;">
+              <p style="margin: 0;"><strong>Sales & WhatsApp:</strong> <span style="color: #0f172a; font-weight: 700;">+977 9767476521</span></p>
+              <p style="margin: 2px 0 0 0;"><strong>Landline:</strong> 015928752</p>
+              <p style="margin: 2px 0 0 0;"><strong>Email:</strong> <span style="color: #1e3a8a; font-weight: 600;">info@zenextravels.com</span></p>
+              <p style="margin: 2px 0 0 0;"><strong>Website:</strong> <span style="color: #e53a24; font-weight: 700;">www.zenextravels.com</span></p>
+            </td>
+          </tr>
+        </table>
+        <table style="width: 100%; border-collapse: collapse; font-size: 9px; color: #64748b;">
+          <tr>
+            <td style="text-align: left; width: 60%;">Thank you for choosing Zenex Travels and Tours for your Himalayan adventure.</td>
+            <td style="text-align: right; width: 40%;">© ${new Date().getFullYear()} Zenex Travels and Tours. All Rights Reserved.</td>
+          </tr>
+        </table>
       </div>
     `;
 
@@ -595,7 +607,16 @@ export const generatePackagePDF = async (item) => {
     iframeDoc.close();
 
     // Allow iframe DOM, Google Fonts, and images to settle
-    await new Promise(resolve => setTimeout(resolve, 400));
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    // Dynamically calculate full document height to ensure iframe doesn't clip content or bottom footer
+    const fullHeight = Math.max(
+      iframeDoc.body ? iframeDoc.body.scrollHeight : 0,
+      iframeDoc.body ? iframeDoc.body.offsetHeight : 0,
+      iframeDoc.documentElement ? iframeDoc.documentElement.scrollHeight : 0,
+      1500
+    );
+    iframe.style.height = `${fullHeight + 400}px`;
 
     // Configure html2pdf options
     const fileName = `${title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_itinerary.pdf`;
@@ -607,7 +628,11 @@ export const generatePackagePDF = async (item) => {
         scale: 2, 
         useCORS: true,
         allowTaint: true,
-        logging: false
+        logging: false,
+        windowWidth: 794,
+        windowHeight: fullHeight + 400,
+        scrollX: 0,
+        scrollY: 0
       },
       jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
       pagebreak:    { mode: ['css', 'legacy'] }
