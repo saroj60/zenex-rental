@@ -30,26 +30,82 @@ const DurationWiseTourCategories = () => {
     return clean ? `US$${clean}` : null;
   };
 
+  // Unique fallbacks per destination keyword so fallback images are distinct & relevant
+  const getSpecificFallback = (title = '', index = 0) => {
+    const t = (title || '').toLowerCase();
+    if (t.includes('chitwan') || t.includes('safari') || t.includes('bardia')) {
+      return 'https://images.unsplash.com/photo-1687725008439-d37fbe641329?q=80&w=800'; // Chitwan wildlife / rhinos
+    }
+    if (t.includes('pokhara') || t.includes('lake') || t.includes('phewa')) {
+      return 'https://images.unsplash.com/photo-1565770772312-2b43cac7d585?q=80&w=800'; // Pokhara lake & Annapurna
+    }
+    if (t.includes('nagarkot') || t.includes('sunrise')) {
+      return 'https://images.unsplash.com/photo-1633337496516-b60edb15b930?q=80&w=800'; // Nagarkot Himalayan sunrise
+    }
+    if (t.includes('muktinath') || t.includes('jomsom') || t.includes('mustang')) {
+      return 'https://images.unsplash.com/photo-1529018576489-4d1b669bdb15?q=80&w=800'; // Muktinath temple & desert
+    }
+    if (t.includes('lumbini') || t.includes('buddha')) {
+      return 'https://images.unsplash.com/photo-1660914168231-9adcb1b8587e?q=80&w=800'; // Lumbini sacred stupa
+    }
+    if (t.includes('bandipur')) {
+      return 'https://images.unsplash.com/photo-1540883214770-08e60a9bfd97?q=80&w=800'; // Bandipur heritage hill station
+    }
+    if (t.includes('tibet') || t.includes('lhasa') || t.includes('kailash')) {
+      return 'https://images.unsplash.com/photo-1607857582600-aa104a253d7f?q=80&w=800'; // Lhasa Potala Palace
+    }
+    if (t.includes('bhutan') || t.includes('paro') || t.includes('thimphu')) {
+      return 'https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=800'; // Tiger's Nest Bhutan
+    }
+    if (t.includes('manaslu')) {
+      return 'https://images.unsplash.com/photo-1602589162641-449e416b88b1?q=80&w=800'; // Manaslu peak
+    }
+    if (t.includes('everest') || t.includes('gokyo')) {
+      return 'https://images.unsplash.com/photo-1486911278844-a81c5267e227?q=80&w=800'; // Everest peak
+    }
+    if (t.includes('chandragiri') || t.includes('cable car')) {
+      return 'https://images.unsplash.com/photo-1568641276587-4b5a0ac73cf6?q=80&w=800'; // Chandragiri hills
+    }
+    
+    const defaultPool = [
+      'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800',
+      'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?q=80&w=800',
+      'https://images.unsplash.com/photo-1575819719798-83d97dd6949c?q=80&w=800',
+      'https://images.unsplash.com/photo-1509883488717-779cd2d85976?q=80&w=800'
+    ];
+    return defaultPool[index % defaultPool.length];
+  };
+
+  const formatTourImgSrc = (rawSrc, title = '', index = 0) => {
+    if (!rawSrc || typeof rawSrc !== 'string') return getSpecificFallback(title, index);
+    const clean = rawSrc.trim();
+    if (!clean) return getSpecificFallback(title, index);
+    if (clean.startsWith('/')) {
+      return encodeURI(clean);
+    }
+    return clean;
+  };
+
   // Get all tours from packages and tourTrips
   const allTours = useMemo(() => {
     const mappedTourTrips = (tourTrips || [])
       .filter(t => (!t.status || t.status === 'Published') && (!t.category || t.category === 'Tours' || t.category === 'Tours Packages' || t.category === 'Packages'))
-      .map(t => ({
+      .map((t, idx) => ({
         id: t.slug || t.id,
         title: t.title,
         duration: t.duration,
-        img: t.heroImage || t.image || t.img || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=600',
+        img: formatTourImgSrc(t.heroImage || t.image || t.img, t.title, idx),
         price: formatPriceStr(t.pricingInfo?.sellingPrice || t.price),
         location: t.destination || t.country || 'Nepal',
         isTourTrip: true
       }));
     const standardPackages = (packages || [])
       .filter(p => (!p.status || p.status === 'Published') && (!p.category || p.category === 'Tours' || p.category === 'Packages') && !mappedTourTrips.some(m => m.id === p.id || m.title === p.title))
-      .map(p => ({
+      .map((p, idx) => ({
         id: p.slug || p.id,
         title: p.title,
         duration: p.duration,
-        img: p.heroImage || p.image || p.img || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=600',
+        img: formatTourImgSrc(p.heroImage || p.image || p.img, p.title, idx),
         price: formatPriceStr(p.pricingInfo?.sellingPrice || p.price),
         location: p.destination || p.country || 'Nepal'
       }));
@@ -271,11 +327,11 @@ const DurationWiseTourCategories = () => {
                     {/* Image Area */}
                     <div className="relative h-[200px] sm:h-[230px] overflow-hidden bg-slate-50">
                       <img 
-                        src={tour.img || tour.image || 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800'} 
+                        src={formatTourImgSrc(tour.img || tour.image, tour.title, idx)} 
                         alt={tour.title} 
                         onError={(e) => {
                           e.target.onerror = null;
-                          e.target.src = 'https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=800';
+                          e.target.src = getSpecificFallback(tour.title, idx);
                         }}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
                       />
