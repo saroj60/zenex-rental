@@ -687,8 +687,15 @@ const TrekDetail = () => {
                             />
                           )}
 
-                          {day.image && (
-                            <img src={day.image} alt={day.title} className="w-full max-w-xl h-48 md:h-64 object-cover rounded-xl mb-4 shadow-sm" />
+                          {(day.image || day.img) && (
+                            <div className="w-full max-w-xl h-48 sm:h-64 md:h-72 overflow-hidden rounded-2xl mb-4 shadow-sm border border-slate-100 group/img font-sans">
+                              <img 
+                                src={day.image || day.img} 
+                                alt={day.title} 
+                                className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500" 
+                                loading="lazy"
+                              />
+                            </div>
                           )}
 
                           {/* Day Highlights Metadata */}
