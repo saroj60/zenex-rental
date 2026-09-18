@@ -100,15 +100,40 @@ const EssentialInfoSection = ({ item, isTrek = false }) => {
   // Determine Equipment Categories
   let equipmentCategories = defaultTrekEquipment;
   if (item.equipment && Array.isArray(item.equipment) && item.equipment.length > 0) {
-    equipmentCategories = item.equipment.map(cat => ({
-      category: cat.category || cat.name || (typeof cat === 'string' ? cat : 'Equipment'),
-      items: (cat.items || []).map(it => (typeof it === 'object' ? (it.name || it.title || String(it)) : String(it)))
-    }));
+    if (typeof item.equipment[0] === 'string') {
+      const clothing = item.equipment.filter(i => /clothing|jacket|t-shirt|pants|leggings|beanie|hat|gloves|sweater|poncho|base layer/i.test(i));
+      const footwear = item.equipment.filter(i => /boots|shoes|socks|footwear/i.test(i));
+      const gear = item.equipment.filter(i => /pack|sleeping bag|poles|lamp|water|lifestraw|duffel|tents|gear/i.test(i));
+      const medical = item.equipment.filter(i => /sunscreen|balm|kit|first-aid|towel|wipes|toiletries/i.test(i));
+      
+      const categorized = new Set([...clothing, ...footwear, ...gear, ...medical]);
+      const uncategorized = item.equipment.filter(i => !categorized.has(i));
+
+      equipmentCategories = [];
+      if (clothing.length > 0) equipmentCategories.push({ category: "Clothing & Layers", items: clothing });
+      if (footwear.length > 0) equipmentCategories.push({ category: "Footwear", items: footwear });
+      if (gear.length > 0) equipmentCategories.push({ category: "Gear & Accessories", items: gear });
+      if (medical.length > 0) equipmentCategories.push({ category: "Personal & Medical", items: medical });
+      if (uncategorized.length > 0) equipmentCategories.push({ category: "General Essentials", items: uncategorized });
+
+      if (equipmentCategories.length === 0) {
+        equipmentCategories = defaultTrekEquipment;
+      }
+    } else {
+      equipmentCategories = item.equipment.map(cat => ({
+        category: cat.category || cat.name || (typeof cat === 'string' ? cat : 'Equipment'),
+        items: (cat.items || []).map(it => (typeof it === 'object' ? (it.name || it.title || String(it)) : String(it)))
+      }));
+    }
   } else if (item.equipmentList && Array.isArray(item.equipmentList) && item.equipmentList.length > 0) {
-    equipmentCategories = item.equipmentList.map(cat => ({
-      category: typeof cat === 'string' ? cat : (cat.category || cat.name || 'Equipment'),
-      items: (cat.items || []).map(it => (typeof it === 'object' ? (it.name || it.title || String(it)) : String(it)))
-    }));
+    if (typeof item.equipmentList[0] === 'string') {
+      equipmentCategories = [{ category: "Recommended Equipment", items: item.equipmentList }];
+    } else {
+      equipmentCategories = item.equipmentList.map(cat => ({
+        category: typeof cat === 'string' ? cat : (cat.category || cat.name || 'Equipment'),
+        items: (cat.items || []).map(it => (typeof it === 'object' ? (it.name || it.title || String(it)) : String(it)))
+      }));
+    }
   } else if (!isTrekPackage) {
     equipmentCategories = defaultTourEquipment;
   }

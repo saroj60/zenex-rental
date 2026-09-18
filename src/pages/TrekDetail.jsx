@@ -511,18 +511,14 @@ const TrekDetail = () => {
                           <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Max. Altitude</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.quickFacts?.maxAltitude || trek.maxAltitude}</p></div>
                         </div>
                       )}
-                      {trek.quickFacts?.region && (
-                        <div className="flex gap-3 min-w-0">
-                          <MapIcon className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                          <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Starts</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Kathmandu</p></div>
-                        </div>
-                      )}
-                      {trek.quickFacts?.region && (
-                        <div className="flex gap-3 min-w-0">
-                          <CheckCircle2 className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                          <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Ends</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">Kathmandu</p></div>
-                        </div>
-                      )}
+                      <div className="flex gap-3 min-w-0">
+                        <MapIcon className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Starts</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.starts || trek.quickFacts?.starts || 'Kathmandu'}</p></div>
+                      </div>
+                      <div className="flex gap-3 min-w-0">
+                        <CheckCircle2 className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Ends</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.ends || trek.quickFacts?.ends || 'Kathmandu'}</p></div>
+                      </div>
                       <div className="flex gap-3 min-w-0">
                         <Users className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
                         <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Activities</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words">{trek.activity || 'Trekking'}</p></div>
