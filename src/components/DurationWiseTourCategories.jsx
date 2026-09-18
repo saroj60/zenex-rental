@@ -100,8 +100,17 @@ const DurationWiseTourCategories = () => {
     return filtered;
   }, [filteredByCountry, activeDuration]);
 
+  const scrollToToursSection = () => {
+    const el = document.getElementById('tours-header-area') || document.getElementById('duration-tours-section');
+    if (el) {
+      const yOffset = -100;
+      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="w-full bg-[#F8FAFC] py-16 font-sans">
+    <div id="duration-tours-section" className="w-full bg-[#F8FAFC] py-16 font-sans">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8">
           
@@ -124,7 +133,10 @@ const DurationWiseTourCategories = () => {
                  {countries.map(c => (
                    <button 
                      key={c}
-                     onClick={() => setActiveCountry(c)}
+                     onClick={() => {
+                       setActiveCountry(c);
+                       scrollToToursSection();
+                     }}
                      className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
                        activeCountry === c 
                          ? 'bg-gradient-to-r from-orange-500 to-[#E59A2F] text-white shadow-sm border-transparent' 
@@ -144,6 +156,7 @@ const DurationWiseTourCategories = () => {
                       onClick={() => {
                         setActiveDuration(days);
                         setMobileFilterOpen(false);
+                        scrollToToursSection();
                       }}
                       className={`text-left px-4 py-3 text-[14px] font-medium rounded-xl transition-all ${
                         activeDuration === days
@@ -170,7 +183,10 @@ const DurationWiseTourCategories = () => {
                  {countries.map(c => (
                    <button 
                      key={c}
-                     onClick={() => setActiveCountry(c)}
+                     onClick={() => {
+                       setActiveCountry(c);
+                       scrollToToursSection();
+                     }}
                      className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 border ${
                        activeCountry === c 
                          ? 'bg-gradient-to-r from-orange-500 to-[#E59A2F] text-white border-transparent shadow-md transform scale-105' 
@@ -189,7 +205,10 @@ const DurationWiseTourCategories = () => {
                 {availableDurations.map((days) => (
                   <li key={days}>
                     <button
-                      onClick={() => setActiveDuration(days)}
+                      onClick={() => {
+                        setActiveDuration(days);
+                        scrollToToursSection();
+                      }}
                       className={`relative w-full flex items-center justify-between px-4 py-3 text-[15px] font-medium rounded-xl transition-all duration-300 overflow-hidden group ${
                         activeDuration === days
                           ? 'bg-gradient-to-r from-blue-700 to-indigo-850 text-white shadow-md'
@@ -221,7 +240,7 @@ const DurationWiseTourCategories = () => {
           <div className="w-full lg:flex-1">
             
             {/* Header Area */}
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end mb-8 gap-4">
+            <div id="tours-header-area" className="flex flex-col sm:flex-row sm:justify-between sm:items-end mb-8 gap-4 scroll-mt-28">
               <div>
                 <h2 className="text-[28px] sm:text-[32px] text-[#172033] font-bold tracking-tight mb-2">
                   {activeDuration} Days Tours in <span className="text-orange-600 font-extrabold">{activeCountry === 'All' ? 'Nepal & Beyond' : activeCountry}</span>
