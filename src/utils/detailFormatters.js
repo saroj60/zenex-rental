@@ -221,20 +221,46 @@ export const getAddonsList = (data, isTrek = false) => {
   return result.filter(item => item.title && item.title.trim() !== '');
 };
 
+export const defaultTrekHighlights = [
+  { title: "Breathtaking Himalayan Vistas", description: "Spectacular close-up views of towering snow-capped mountain peaks, high-altitude passes, and glacial valleys." },
+  { title: "Authentic Cultural Heritage", description: "Immerse in ancient traditional mountain hamlets, historic monasteries, chortens, and prayer wheel trails." },
+  { title: "Pristine Wilderness & Alpine Trails", description: "Traverse lush rhododendron and pine forests, mountain streams, and untouched high-altitude landscapes." },
+  { title: "Licensed Guide & Dedicated Porter Support", description: "Fully supported journey with licensed English-speaking mountain guides and dedicated local trekking crew." }
+];
+
+export const defaultTourHighlights = [
+  { title: "UNESCO World Heritage Sightseeing", description: "Guided visits to historic palaces, sacred Hindu temples, and ancient Buddhist stupas." },
+  { title: "Scenic Mountain & Cultural Drives", description: "Comfortable transfers through scenic river valleys, terraced hillsides, and panoramic mountain viewpoints." },
+  { title: "Authentic Local Traditions & Hospitality", description: "Experience rich Nepalese cultural heritage, traditional warm hospitality, and regional dining." },
+  { title: "Private Air-Conditioned Vehicle Support", description: "Seamless door-to-door transportation in clean, insured private vehicles with professional driver." }
+];
+
 export const getHighlightsList = (data) => {
   if (!data) return [];
-  const raw = data.highlights || data.keyHighlights || data.tripHighlights || [];
-  if (!Array.isArray(raw)) return [];
-  return raw.map(item => {
-    if (typeof item === 'string') return { title: item, description: '' };
-    if (typeof item === 'object' && item !== null) {
-      return {
-        title: item.title || item.name || item.text || item.label || String(item),
-        description: item.description || item.desc || item.details || ''
-      };
-    }
-    return { title: String(item), description: '' };
-  }).filter(item => item.title && item.title.trim() !== '');
+  const raw = data.highlights || data.keyHighlights || data.tripHighlights || data.highlightsList || [];
+  
+  if (Array.isArray(raw) && raw.length > 0) {
+    const list = raw.map(item => {
+      if (typeof item === 'string') return { title: item, description: '' };
+      if (typeof item === 'object' && item !== null) {
+        return {
+          title: item.title || item.name || item.text || item.label || String(item),
+          description: item.description || item.desc || item.details || ''
+        };
+      }
+      return { title: String(item), description: '' };
+    }).filter(item => item.title && item.title.trim() !== '');
+
+    if (list.length > 0) return list;
+  }
+
+  const titleText = data?.title || '';
+  const isTrekPackage = data?.category === 'Treks' || 
+    data?.category === 'Trek' || 
+    data?.type === 'Trek' || 
+    titleText.toLowerCase().includes('trek');
+
+  return isTrekPackage ? defaultTrekHighlights : defaultTourHighlights;
 };
 
 export const getCleanExcerpt = (text, maxSentences = 2) => {
