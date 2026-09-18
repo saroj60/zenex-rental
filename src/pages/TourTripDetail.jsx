@@ -565,18 +565,7 @@ const TourTripDetail = () => {
                       <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Max. Altitude</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words [word-break:break-word]">{trip.maxAltitude} {trip.altitudeUnit}</p></div>
                     </div>
                   )}
-                  {trip.startLocation && (
-                    <div className="flex gap-3 min-w-0">
-                      <MapPin className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Starts</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words [word-break:break-word]">{trip.startLocation}</p></div>
-                    </div>
-                  )}
-                  {trip.endLocation && (
-                    <div className="flex gap-3 min-w-0">
-                      <MapPin className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
-                      <div className="min-w-0 flex-1"><p className="text-[11px] text-gray-500 uppercase font-semibold leading-tight">Ends</p><p className="text-sm font-bold text-gray-900 leading-snug mt-0.5 break-words [word-break:break-word]">{trip.endLocation}</p></div>
-                    </div>
-                  )}
+
                   {trip.activities && (
                     <div className="flex gap-3 min-w-0">
                       <Compass className="w-6 h-6 text-gray-500 shrink-0 mt-0.5" />
