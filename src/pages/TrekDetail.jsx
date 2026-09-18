@@ -904,7 +904,7 @@ const TrekDetail = () => {
                   <div>
                     <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Price Per Person</span>
                     <div className="flex items-baseline gap-2.5">
-                      <span className="text-3xl font-black text-[#1e3a8a] tracking-tight">
+                      <span className="text-3xl font-extrabold text-[#1e3a8a] tracking-tight font-sans">
                         {perPersonPrice ? `US$${typeof perPersonPrice === 'number' ? perPersonPrice.toLocaleString() : perPersonPrice}` : (trek?.price || 'TBA')}
                       </span>
                       {trek.originalPrice && (

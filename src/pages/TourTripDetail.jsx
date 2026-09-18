@@ -925,17 +925,17 @@ const TourTripDetail = () => {
               const currencySign = trip.pricingInfo?.currency === 'USD' ? 'US$' : (trip.pricingInfo?.currency || 'US$');
               const validGroupPricing = (trip.groupPricing || []).filter(tier => tier.pricePerPerson && (tier.minTravelers || tier.maxTravelers));
               return (
-                <div className="bg-white border border-gray-100 p-7 rounded-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] space-y-6">
+                <div className="bg-white border border-gray-100 p-7 rounded-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] space-y-6 font-sans">
                   {/* Header Area */}
-                  <div className="flex justify-between items-start border-b border-gray-100 pb-5">
+                  <div className="flex justify-between items-start border-b border-gray-100 pb-5 font-sans">
                     <div>
-                      <span className="text-[10px] font-extrabold text-[#0F766E] uppercase tracking-widest mb-1 block">Price Per Person</span>
-                      <div className="flex items-baseline gap-2.5">
-                        <span className="text-3xl font-black text-[#1e3a8a] tracking-tight">
+                      <span className="text-[10px] font-bold text-[#0F766E] uppercase tracking-wider mb-1 block font-sans">Price Per Person</span>
+                      <div className="flex items-baseline gap-2.5 font-sans">
+                        <span className="text-3xl font-extrabold text-[#1e3a8a] tracking-tight font-sans">
                           {currencySign}{trip.pricingInfo?.sellingPrice || trip.price}
                         </span>
                         {trip.pricingInfo?.originalPrice && (
-                          <span className="text-sm text-gray-400 line-through font-semibold">
+                          <span className="text-sm text-gray-400 line-through font-semibold font-sans">
                             {currencySign}{trip.pricingInfo.originalPrice}
                           </span>
                         )}
@@ -1002,30 +1002,30 @@ const TourTripDetail = () => {
                   )}
 
                   {/* Inputs */}
-                  <div className="space-y-4">
-                    <div className="bg-white border border-gray-200 rounded-xl p-3.5 focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all">
-                      <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1 block">Travel Date</label>
+                  <div className="space-y-4 font-sans">
+                    <div className="bg-white border border-gray-200 rounded-xl p-3.5 focus-within:border-[#0F766E] focus-within:ring-1 focus-within:ring-[#0F766E] transition-all font-sans">
+                      <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-1 block font-sans">Travel Date</label>
                       <input 
                         type="date" 
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
-                        className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer" 
+                        className="w-full text-sm font-semibold text-[#1e3a8a] bg-transparent outline-none cursor-pointer font-sans" 
                       />
                     </div>
 
-                    <div className="bg-white border border-gray-200 rounded-xl p-3.5">
-                      <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-2 block">Number of Travelers</label>
-                      <div className="flex items-center justify-between">
+                    <div className="bg-white border border-gray-200 rounded-xl p-3.5 font-sans">
+                      <label className="text-[10px] font-bold text-[#64748B] uppercase tracking-wider mb-2 block font-sans">Number of Travelers</label>
+                      <div className="flex items-center justify-between font-sans">
                         <button 
                           onClick={() => setTravelers(String(Math.max(1, (parseInt(travelers, 10) || 1) - 1)))}
-                          className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer"
+                          className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer font-sans"
                         >
                           -
                         </button>
-                        <span className="font-extrabold text-[#1e3a8a] text-base">{travelers} {parseInt(travelers, 10) === 1 ? 'Person' : 'Persons'}</span>
+                        <span className="font-bold text-[#1e3a8a] text-base font-sans">{travelers} {parseInt(travelers, 10) === 1 ? 'Person' : 'Persons'}</span>
                         <button 
                           onClick={() => setTravelers(String((parseInt(travelers, 10) || 1) + 1))}
-                          className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer"
+                          className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center font-bold text-lg transition-colors cursor-pointer font-sans"
                         >
                           +
                         </button>
@@ -1034,8 +1034,8 @@ const TourTripDetail = () => {
                   </div>
 
                   {/* Buttons */}
-                  <div className="space-y-3 pt-2">
-                    <Link to={`/checkout?pkg=${trip.id}&travelers=${travelers}&date=${date}`} className="w-full flex justify-center bg-[#1e3a8a] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm">
+                  <div className="space-y-3 pt-2 font-sans">
+                    <Link to={`/checkout?pkg=${trip.id}&travelers=${travelers}&date=${date}`} className="w-full flex justify-center bg-[#1e3a8a] text-white font-bold py-3.5 rounded-xl hover:bg-[#10224b] transition-all shadow-md hover:shadow-lg uppercase tracking-wider text-sm font-sans">
                       BOOK THIS TRIP
                     </Link>
                     <button 
@@ -1043,14 +1043,14 @@ const TourTripDetail = () => {
                         const message = `Hi! I have some questions about the ${trip.title} package. Can you please help me?`;
                         window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
                       }}
-                      className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm"
+                      className="w-full flex justify-center bg-white text-[#1e3a8a] border-2 border-[#1e3a8a] font-bold py-3.5 rounded-xl hover:bg-[#F8FAFC] transition-colors uppercase tracking-wider text-sm font-sans"
                     >
                       MAKE AN INQUIRY
                     </button>
                     <button 
                       onClick={handleDownloadPDF}
                       disabled={isGeneratingPDF}
-                      className="w-full bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center flex justify-center items-center gap-2 disabled:opacity-50 cursor-pointer"
+                      className="w-full bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 py-3.5 rounded-xl font-bold hover:shadow-sm transition-all text-sm uppercase tracking-wider text-center flex justify-center items-center gap-2 disabled:opacity-50 cursor-pointer font-sans"
                     >
                       <FileText size={16} className="text-[#e53a24]" /> 
                       {isGeneratingPDF ? 'GENERATING PDF...' : 'DOWNLOAD AS PDF'}
