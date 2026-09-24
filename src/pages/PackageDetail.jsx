@@ -4470,6 +4470,23 @@ A 40% deposit is required to confirm your booking, with the remaining 60% payabl
     ]
   }
 ,
+  '5-days-tibet-tour-with-yamdroke-lake': {
+    image: '/images/Tours/5-days-tibet-tour-with-yamdroke-lake/5-days-tibet-tour-with-yamdroke-lake.jpg',
+    img: '/images/Tours/5-days-tibet-tour-with-yamdroke-lake/5-days-tibet-tour-with-yamdroke-lake.jpg',
+    bannerImage: '/images/Tours/5-days-tibet-tour-with-yamdroke-lake/5-days-tibet-tour-with-yamdroke-lake.jpg',
+    gallery: [
+      '/images/Tours/5-days-tibet-tour-with-yamdroke-lake/5-days-tibet-tour-with-yamdroke-lake.jpg',
+    ],
+    quickInfo: [
+      { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
+      { label: 'Country', value: 'Tibet', icon: 'Flag' },
+      { label: 'Best Season', value: 'April to June & Sep to Nov', icon: 'Sun' },
+      { label: 'Group/Private', value: 'Private', icon: 'Users' },
+      { label: 'Grade', value: 'Easy', icon: 'BarChart' },
+      { label: 'Start', value: 'Lhasa', icon: 'MapPin' },
+      { label: 'End', value: 'Lhasa', icon: 'MapPin' }
+    ],
+  },
   'tibet-tour-6d': {
         quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
