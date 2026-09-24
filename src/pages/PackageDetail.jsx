@@ -2419,6 +2419,10 @@ Your 6 Days Kathmandu Chitwan Nagarkot Tour concludes with wonderful memories of
     ]
   },
   '6-days-kathmandu-nagarkot-tour': {
+    image: '/images/Tours/6-days-kathmandu-nagarkot-tour/6-days-kathmandu-nagarkot-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-nagarkot-tour/6-days-kathmandu-nagarkot-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-nagarkot-tour/6-days-kathmandu-nagarkot-tour.jpg',
+    gallery: ['/images/Tours/6-days-kathmandu-nagarkot-tour/6-days-kathmandu-nagarkot-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3589,6 +3593,10 @@ Tips are recommended: US$ 5-10 per day per tourist for wildlife naturalist guide
     ]
   },
   '4-days-kathmandu-nagarkot-tour': {
+    image: '/images/Tours/4-days-kathmandu-nagarkot-tour/4-days-kathmandu-nagarkot-tour.jpg',
+    img: '/images/Tours/4-days-kathmandu-nagarkot-tour/4-days-kathmandu-nagarkot-tour.jpg',
+    bannerImage: '/images/Tours/4-days-kathmandu-nagarkot-tour/4-days-kathmandu-nagarkot-tour.jpg',
+    gallery: ['/images/Tours/4-days-kathmandu-nagarkot-tour/4-days-kathmandu-nagarkot-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7106,6 +7114,10 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-nagarkot-dhulikhel-7d': {
+    image: '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg',
+    gallery: ['/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
