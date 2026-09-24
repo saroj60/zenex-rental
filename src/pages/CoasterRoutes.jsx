@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SEO from '../components/SEO';
-import { MapPin, Calendar, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Users, Snowflake } from 'lucide-react';
+import { MapPin, Calendar, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Users, Snowflake, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { Link } from 'react-router-dom';
 
@@ -8,15 +8,27 @@ const routes = [
   { dest: 'Kathmandu Sightseeing', duration: '1 Day', price: 12000, seats: 'Coaster' }
 ];
 
-const galleryImages = [
-  "https://www.toyota.com.sg/-/media/ae9ceaa9654747a8a51de8e84c0d98e2.png",
-  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80",
-  "https://img.12go.asia/0/plain/s3://12go-web-static/static/images/operator/28480/class/4807-outside.jpeg",
-  "https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg"
+const coasterImages = [
+  "/images/Toyota Coaster/toyota-coaster-25.DPc5IpWM_ZMWAxw.webp",
+  "/images/Toyota Coaster/1.jpg",
+  "/images/Toyota Coaster/2.jpg",
+  "/images/Toyota Coaster/3.jpg",
+  "/images/Toyota Coaster/images.jpg"
 ];
 
 const CoasterRoutes = () => {
   const { formatPrice } = useCurrency();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % coasterImages.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % coasterImages.length);
+  const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + coasterImages.length) % coasterImages.length);
 
   const handleBook = (route) => {
     const message = `Hi Zenex Travel, I'm interested in booking a Toyota Coaster for the route: ${route.dest} (${route.duration}) priced at ${formatPrice(route.price)}. Is it available?`;
@@ -30,18 +42,64 @@ const CoasterRoutes = () => {
         description="View pricing details for all Toyota Coaster routes across Nepal."
       />
       
-      {/* Hero Section */}
-      <section className="relative h-[450px] md:h-[520px] w-full flex items-end pb-16 justify-center">
+      {/* Dynamic Hero Slider */}
+      <section className="relative h-[480px] md:h-[550px] w-full flex items-end pb-16 justify-center overflow-hidden bg-slate-950">
         <div className="absolute inset-0 z-0">
-          <img
-            alt="Toyota Coaster"
-            className="w-full h-full object-cover object-center"
-            src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
+          {coasterImages.map((img, idx) => (
+            <div
+              key={idx}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                idx === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+              }`}
+            >
+              {/* Blurred background backdrop */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center filter blur-2xl opacity-40 scale-110"
+                style={{ backgroundImage: `url("${img}")` }}
+              />
+              <img
+                alt={`Toyota Coaster Slide ${idx + 1}`}
+                className="relative w-full h-full object-contain md:object-cover object-center transition-transform duration-700"
+                src={img}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
+            </div>
+          ))}
+        </div>
+
+        {/* Previous Button */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/40 hover:bg-[#e53a24] text-white backdrop-blur-md transition-all border border-white/20 shadow-lg hover:scale-110"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft size={22} />
+        </button>
+
+        {/* Next Button */}
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/40 hover:bg-[#e53a24] text-white backdrop-blur-md transition-all border border-white/20 shadow-lg hover:scale-110"
+          aria-label="Next slide"
+        >
+          <ChevronRight size={22} />
+        </button>
+
+        {/* Slide Indicators */}
+        <div className="absolute top-6 right-6 z-30 flex items-center gap-2 bg-black/40 backdrop-blur-md px-3.5 py-2 rounded-full border border-white/20 shadow-md">
+          {coasterImages.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentImageIndex(idx)}
+              className={`h-2.5 rounded-full transition-all duration-300 ${
+                idx === currentImageIndex ? 'w-7 bg-[#e53a24]' : 'w-2.5 bg-white/50 hover:bg-white'
+              }`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
         </div>
         
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8">
+        <div className="relative z-20 w-full max-w-6xl mx-auto px-4 md:px-8">
           <Link to="/vehicles" className="inline-flex items-center gap-2 text-white/80 font-bold mb-6 hover:text-white transition-colors">
             <ArrowLeft size={16} /> Back to Vehicles
           </Link>
@@ -76,9 +134,15 @@ const CoasterRoutes = () => {
             Vehicle Gallery
           </h2>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            {galleryImages.map((img, idx) => (
-              <div key={idx} className="relative w-32 h-24 sm:w-40 sm:h-28 rounded-xl overflow-hidden shadow-md group cursor-pointer border-2 border-transparent hover:border-[#1e3a8a] transition-all bg-gray-50 flex items-center justify-center">
-                <img src={img} alt={`Coaster Gallery ${idx + 1}`} className="max-w-full max-h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            {coasterImages.map((img, idx) => (
+              <div 
+                key={idx} 
+                onClick={() => setCurrentImageIndex(idx)}
+                className={`relative w-32 h-24 sm:w-40 sm:h-28 rounded-xl overflow-hidden shadow-md group cursor-pointer border-2 transition-all ${
+                  idx === currentImageIndex ? 'border-[#e53a24] scale-105' : 'border-transparent hover:border-[#1e3a8a]'
+                }`}
+              >
+                <img src={img} alt={`Coaster Gallery ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
             ))}
           </div>

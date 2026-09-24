@@ -7,6 +7,9 @@ import VehicleDetail from './pages/VehicleDetail';
 import HiaceRoutes from './pages/HiaceRoutes';
 import ScorpioRoutes from './pages/ScorpioRoutes';
 import CarRoutes from './pages/CarRoutes';
+import EvCarRoutes from './pages/EvCarRoutes';
+import EvVanRoutes from './pages/EvVanRoutes';
+import FortunerRoutes from './pages/FortunerRoutes';
 import BusRoutes from './pages/BusRoutes';
 import CoasterRoutes from './pages/CoasterRoutes';
 import CarModels from './pages/CarModels';
@@ -85,9 +88,13 @@ const router = createBrowserRouter([
       { path: 'vehicles/hiace-routes', element: <HiaceRoutes /> },
       { path: 'vehicles/scorpio-routes', element: <ScorpioRoutes /> },
       { path: 'vehicles/car-routes', element: <CarRoutes /> },
+      { path: 'vehicles/ev-routes', element: <EvCarRoutes /> },
+      { path: 'vehicles/ev-van-routes', element: <EvVanRoutes /> },
+      { path: 'vehicles/fortuner-routes', element: <FortunerRoutes /> },
       { path: 'vehicles/bus-routes', element: <BusRoutes /> },
       { path: 'vehicles/coaster-routes', element: <CoasterRoutes /> },
       { path: 'vehicles/car-models', element: <CarModels /> },
+      { path: 'vehicles/wedding-cars', element: <CarModels /> },
       { path: 'vehicles/self-drive', element: <SelfDriveRates /> },
       { path: 'checkout', element: <BookingCheckout /> },
       { path: 'planner', element: <TripPlanner /> },

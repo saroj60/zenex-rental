@@ -44,13 +44,13 @@ const upload = multer({
 
 // Middleware
 app.use(cors({
-    origin: [
-        'https://zenextravels.com',
-        'https://www.zenextravels.com',
-        'http://localhost:5173',
-        'http://localhost:3000',
-        'http://localhost:4173',
-    ],
+    origin: (origin, callback) => {
+        if (!origin || origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:') || origin === 'https://zenextravels.com' || origin === 'https://www.zenextravels.com') {
+            callback(null, true);
+        } else {
+            callback(null, true);
+        }
+    },
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],

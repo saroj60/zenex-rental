@@ -542,6 +542,31 @@ const TrekDetail = () => {
                   className="prose prose-emerald max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
                   dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trekDesc) }}
                 />
+
+                {/* Best Time to Visit (Simple Pointwise) */}
+                <div className="mt-8 pt-6 border-t border-gray-100">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <Sun className="text-amber-500" size={22} /> Best Time to Visit
+                  </h3>
+                  <ul className="space-y-3 text-base text-gray-700">
+                    <li className="flex items-start gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-2"></span>
+                      <span><strong>Spring (March to May):</strong> Mild temperatures, blooming rhododendrons, and crystal-clear morning mountain views.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-amber-500 shrink-0 mt-2"></span>
+                      <span><strong>Autumn (September to November):</strong> Crisp post-monsoon air, optimal mountain clarity, and vibrant festive atmosphere.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0 mt-2"></span>
+                      <span><strong>Winter (December to February):</strong> Cool, dry sunny days with clear morning vistas; excellent for lower altitude sightseeing.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-teal-500 shrink-0 mt-2"></span>
+                      <span><strong>Summer / Monsoon (June to August):</strong> Lush green landscapes and quiet trails; ideal for rain-shadow regions (Mustang & Dolpo).</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               {/* Highlights */}

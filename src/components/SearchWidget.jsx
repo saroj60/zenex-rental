@@ -62,7 +62,7 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
       title:    t.title,
       location: t.destinations?.join(', ') || t.location || '',
       category: t.type || 'Tour',
-      img:      t.heroImage || t.images?.[0] || t.img || '',
+      img:      t.image || t.img || t.heroImage || t.images?.[0] || '',
       price:    t.pricingInfo?.sellingPrice ? `US$${t.pricingInfo.sellingPrice}` : (t.price || ''),
     }));
     const ids = new Set(base.map(p => p.id));
@@ -178,11 +178,11 @@ const SearchWidget = ({ activeTab = 'cars' }) => {
               className="w-full bg-transparent border-none text-gray-900 font-bold focus:ring-0 appearance-none outline-none cursor-pointer text-sm">
               <option value="SUV / 4x4">SUV / 4x4</option>
               <option value="Economy">Economy</option>
-              <option value="Sedan">Sedan</option>
+              <option value="Sedan/Hatchback">Sedan/Hatchback</option>
               <option value="Luxury">Luxury</option>
               <option value="EV">EV</option>
               <option value="Van / Micro">Van / Micro</option>
-              <option value="Minibus">Minibus</option>
+              <option value="Bus">Bus</option>
               <option value="Pickup Truck">Pickup Truck</option>
             </select>
           </div>

@@ -238,9 +238,10 @@ export const defaultTourHighlights = [
 export const getHighlightsList = (data) => {
   if (!data) return [];
   const raw = data.highlights || data.keyHighlights || data.tripHighlights || data.highlightsList || [];
+  let list = [];
   
   if (Array.isArray(raw) && raw.length > 0) {
-    const list = raw.map(item => {
+    list = raw.map(item => {
       if (typeof item === 'string') return { title: item, description: '' };
       if (typeof item === 'object' && item !== null) {
         return {
@@ -250,17 +251,85 @@ export const getHighlightsList = (data) => {
       }
       return { title: String(item), description: '' };
     }).filter(item => item.title && item.title.trim() !== '');
-
-    if (list.length > 0) return list;
   }
 
-  const titleText = data?.title || '';
-  const isTrekPackage = data?.category === 'Treks' || 
-    data?.category === 'Trek' || 
-    data?.type === 'Trek' || 
-    titleText.toLowerCase().includes('trek');
+  const titleText = (data?.title || data?.name || '').toLowerCase();
+  const overviewText = (data?.overview || data?.description || '').toLowerCase();
+  const fullText = titleText + ' ' + overviewText;
 
-  return isTrekPackage ? defaultTrekHighlights : defaultTourHighlights;
+  const candidatePool = [];
+
+  // Destination specific candidate highlights
+  if (fullText.includes('kathmandu')) {
+    candidatePool.push({ title: "Guided UNESCO World Heritage Sightseeing", description: "Explore historic monuments across Kathmandu & Bhaktapur Durbar Squares." });
+    candidatePool.push({ title: "Pashupatinath Sacred Hindu Shrine Visit", description: "Experience ancient spiritual rituals along the holy Bagmati River." });
+    candidatePool.push({ title: "Swayambhunath Stupa (Monkey Temple) Vistas", description: "Panoramic 360-degree views overlooking the entire Kathmandu valley." });
+    candidatePool.push({ title: "Boudhanath Stupa Circumambulation", description: "Walk around one of the world's largest spherical Buddhist stupas." });
+  }
+
+  if (fullText.includes('pokhara')) {
+    candidatePool.push({ title: "Pokhara Lakeside & Phewa Lake Boating", description: "Tranquil boating on Phewa Lake with reflections of the Annapurna massifs." });
+    candidatePool.push({ title: "Sarangkot Sunrise Mountain Views", description: "Golden sunrise over Annapurna South, Machhapuchhre (Fishtail) & Dhaulagiri." });
+    candidatePool.push({ title: "Pokhara Natural Wonders Tour", description: "Visit Davis Falls, Gupteshwor Sacred Cave & Seti River Gorge." });
+    candidatePool.push({ title: "Bindabasini Temple & World Peace Stupa", description: "Explore iconic spiritual hill stations and Tibetan artisan centers." });
+  }
+
+  if (fullText.includes('chitwan') || fullText.includes('safari')) {
+    candidatePool.push({ title: "Full-Board Chitwan Jungle Safari", description: "Thrilling jeep/elephant safaris to spot one-horned rhinos, tigers & deer." });
+    candidatePool.push({ title: "Rapti River Dugout Canoe Trip", description: "Peaceful river float to view marsh mugger crocodiles & exotic birds." });
+    candidatePool.push({ title: "Tharu Village & Cultural Folk Dance", description: "Authentic indigenous village walk and live evening cultural dance performance." });
+  }
+
+  if (fullText.includes('nagarkot')) {
+    candidatePool.push({ title: "Nagarkot Mount Everest Sunrise Vista", description: "Panoramic early morning sunrise over Mount Everest and central Himalayas." });
+  }
+
+  if (fullText.includes('dhulikhel')) {
+    candidatePool.push({ title: "Dhulikhel Himalayan Ridge Sunrise", description: "Sweeping sunrise vistas over the eastern Himalayan range." });
+  }
+
+  if (fullText.includes('chandragiri')) {
+    candidatePool.push({ title: "Chandragiri Cable Car Mountain Experience", description: "Scenic cable car ride to Chandragiri summit for 360-degree lookouts." });
+  }
+
+  if (fullText.includes('muktinath') || fullText.includes('jomsom') || fullText.includes('mustang')) {
+    candidatePool.push({ title: "Sacred Muktinath Temple Pilgrimage (3,800m)", description: "Pay homage at 108 holy water spouts & eternal natural gas flame." });
+    candidatePool.push({ title: "Mustang Trans-Himalayan Desert Landscapes", description: "Traverse dramatic rain-shadow valleys & apple orchards." });
+  }
+
+  if (fullText.includes('lumbini')) {
+    candidatePool.push({ title: "Maya Devi Temple & Buddha Birthplace", description: "Visit the sacred birthplace of Lord Buddha and ancient Nativity Pond." });
+    candidatePool.push({ title: "Lumbini International Monastic Zone", description: "Tour peaceful monasteries built by nations around the world." });
+  }
+
+  if (fullText.includes('bandipur')) {
+    candidatePool.push({ title: "Bandipur Preserved Newari Hill Station", description: "Explore 18th-century Newari architecture & cobblestone pedestrian streets." });
+  }
+
+  // General service fallbacks
+  const generalPool = [
+    { title: "Private Air-Conditioned Vehicle Support", description: "Door-to-door transfers in clean, insured private vehicles with professional driver." },
+    { title: "Licensed English-Speaking Local Tour Guide", description: "Expert guided tours offering deep cultural insights and historical context." },
+    { title: "Complimentary Cultural Farewell Dinner", description: "Traditional Nepalese dinner featuring live authentic cultural dance show." },
+    { title: "24/7 Concierge & WhatsApp Travel Desk", description: "Dedicated customer support and trip assistance throughout your journey." }
+  ];
+
+  const combinedCandidates = [...candidatePool, ...generalPool];
+
+  // Ensure list has at least 8 items
+  for (const item of combinedCandidates) {
+    if (list.length >= 8) break;
+    const itemTitleLower = item.title.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const alreadyExists = list.some(existing => {
+      const existLower = existing.title.toLowerCase().replace(/[^a-z0-9]/g, '');
+      return existLower.includes(itemTitleLower.substring(0, 15)) || itemTitleLower.includes(existLower.substring(0, 15));
+    });
+    if (!alreadyExists) {
+      list.push(item);
+    }
+  }
+
+  return list;
 };
 
 export const getCleanExcerpt = (text, maxSentences = 2) => {
@@ -290,6 +359,12 @@ export const formatMarkdownToHTML = (text) => {
   if (typeof text !== 'string') return String(text);
 
   let html = text.trim();
+
+  // 0. Remove any markdown images, <img> tags, or embedded HTML <div> card grids from overview
+  html = html.replace(/!\[.*?\]\(.*?\)/gi, '');
+  html = html.replace(/<img[^>]*>/gi, '');
+  html = html.replace(/<div[^>]*>[\s\S]*?<\/div>/gi, '');
+  html = html.replace(/<\/?div[^>]*>/gi, '');
 
   // 1. Normalize line endings
   html = html.replace(/\r\n/g, '\n');

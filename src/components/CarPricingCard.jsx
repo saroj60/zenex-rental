@@ -7,7 +7,7 @@ const CarPricingCard = ({ isSmall = false }) => {
   const { formatPrice } = useCurrency();
 
   const handleBook = () => {
-    const message = `Hi Zenex Travel, I'm interested in booking an Economy/Sedan Car. Could you please provide more details on availability?`;
+    const message = `Hi Zenex Travel, I'm interested in booking a Standard Car / Sedan. Could you please provide more details on availability?`;
     window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -17,17 +17,17 @@ const CarPricingCard = ({ isSmall = false }) => {
     }`}>
       <Link to="/vehicles/car-routes" className={`relative overflow-hidden rounded-lg block cursor-pointer ${isSmall ? 'mb-2.5' : 'mb-4'}`}>
         <img 
-          alt="Economy/Sedan Car" 
+          alt="Standard Car / Sedan" 
           className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
-          src="/vehicles/byd car.jpg" 
-          onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
+          src="/images/standard cars/2025-Geely-Emgrand-5-Seater-Sedan-1-5L-Munal-Longteng-Petrol-Gasoline-New-Car-Hot-Sale-New-Electric-Petrol-Car-Automatic.avif" 
+          onError={(e) => { e.target.onerror = null; e.target.src = '/images/standard cars/19884011-maruti_suzuki_alto_k10.webp'; }} 
         />
-        <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
-          Sedan
+        <span className="absolute top-3 left-3 bg-[#e53a24] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-sm">
+          Sedan/Hatchback
         </span>
         <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1 text-[#1e3a8a]">
-          <Star size={12} className="text-[#e53a24] fill-current" /> 4.7
+          <Star size={12} className="text-[#e53a24] fill-current" /> 4.8
         </div>
       </Link>
       
@@ -49,7 +49,7 @@ const CarPricingCard = ({ isSmall = false }) => {
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
           <Fuel size={18} className="text-[#1e3a8a] mb-1.5" />
-          <span className="text-xs font-semibold text-[#1e3a8a]">EV/Petrol</span>
+          <span className="text-xs font-semibold text-[#1e3a8a]">Petrol</span>
         </div>
         <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden ${isSmall ? 'p-2' : 'p-3'}`}>
           <Briefcase size={18} className="text-[#1e3a8a] mb-1.5" />

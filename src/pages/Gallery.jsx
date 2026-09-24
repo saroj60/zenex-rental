@@ -130,7 +130,7 @@ const CURATED_GALLERY_ITEMS = [
   },
   {
     id: 'c-15',
-    url: 'https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg',
+    url: '/images/Hiace/toyota-hiace-masthead-m.jpg',
     title: 'Toyota Hiace Tourist Minibus',
     category: 'Vehicles & Fleet',
     location: 'Kathmandu to Pokhara Highway',

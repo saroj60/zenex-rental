@@ -15,15 +15,15 @@ const CarModelsCard = ({ isSmall = false }) => {
     <div className={`bg-white shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col w-full ${
       isSmall ? 'max-w-[275px] md:max-w-[285px] p-3 rounded-xl mb-4' : 'max-w-sm p-4 rounded-2xl mb-12'
     }`}>
-      <Link to="/vehicles/car-models" className={`relative overflow-hidden rounded-lg block cursor-pointer ${isSmall ? 'mb-2.5' : 'mb-4'}`}>
+      <Link to="/vehicles/wedding-cars" className={`relative overflow-hidden rounded-lg block cursor-pointer ${isSmall ? 'mb-2.5' : 'mb-4'}`}>
         <img 
           alt="Wedding Cars" 
           className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
-          src="/vehicles/wedding car.avif" 
-          onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
+          src="/images/wedding cars/Weddings-Car-Decoration-Service-Kaleepk-Cars-Decoration-In-Karachi-27.webp" 
+          onError={(e) => { e.target.onerror = null; e.target.src = '/images/wedding cars/wedding-car-rental.png'; }} 
         />
-        <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
+        <span className="absolute top-3 left-3 bg-[#e53a24] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-sm">
           Special Event
         </span>
         <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1 text-[#1e3a8a]">
@@ -59,7 +59,7 @@ const CarModelsCard = ({ isSmall = false }) => {
 
       <div className="flex flex-col gap-2.5 mt-auto">
         <Link 
-          to={`/vehicles/car-models`} 
+          to={`/vehicles/wedding-cars`} 
           className={`w-full font-bold text-xs hover:bg-[#1e3a8a] hover:text-white transition-colors text-center ${
             isSmall ? 'py-2 rounded-lg border' : 'py-3 rounded-xl border-2 border-[#1e3a8a]'
           } text-[#1e3a8a]`}

@@ -1,95 +1,121 @@
 import React, { useState, useEffect } from 'react';
 import SEO from '../components/SEO';
-import { MapPin, Calendar, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Users, Snowflake } from 'lucide-react';
+import { MapPin, Calendar, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Users, Snowflake, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { Link } from 'react-router-dom';
 
 const routes = [
-  { dest: 'Kathmandu Sightseeing', duration: '1 Day', price: 5500 },
-  { dest: 'KTM to Dupcheshwor Mahadev Darshan', duration: '1 Day', price: 8000 },
-  { dest: 'KTM to Halesi Mahadev Darshan', duration: '2 Days', price: 20000 },
-  { dest: 'KTM to Pokhara', duration: '2N/3D', price: 25000 },
-  { dest: 'KTM to Pokhara', duration: '4 Days', price: 32000 },
-  { dest: 'KTM to Pokhara & Chitwan', duration: '4 Days', price: 36000 },
-  { dest: 'KTM to Kalinchowk', duration: '1N/2D', price: 20000 },
-  { dest: 'KTM to Dhulikhel', duration: '1 Day', price: 6000 },
-  { dest: 'KTM to Namobuddha', duration: '1 Day', price: 7000 },
-  { dest: 'KTM to Manakamana Darshan', duration: '1 Day', price: 8000 },
-  { dest: 'KTM to Pokhara Drop', duration: 'Drop Off', price: 14000 },
-  { dest: 'KTM to Besishar Drop', duration: 'Drop Off', price: 13000 },
-  { dest: 'KTM to Chitwan Drop', duration: 'Drop Off', price: 12000 },
-  { dest: 'KTM to Hetauda Drop', duration: 'Drop Off', price: 10000 },
-  { dest: 'KTM to Birjung Drop', duration: 'Drop Off', price: 13000 },
-  { dest: 'KTM to Janakpur Drop', duration: 'Drop Off', price: 16000 }
+  { dest: 'Kathmandu Sightseeing', duration: '1 Day', price: 6000 },
+  { dest: 'KTM to Dupcheshwor Mahadev Darshan', duration: '1 Day', price: 9000 },
+  { dest: 'KTM to Halesi Mahadev Darshan', duration: '2 Days', price: 22000 },
+  { dest: 'KTM to Pokhara', duration: '2N/3D', price: 28000 },
+  { dest: 'KTM to Pokhara', duration: '4 Days', price: 35000 },
+  { dest: 'KTM to Pokhara & Chitwan', duration: '4 Days', price: 38000 },
+  { dest: 'KTM to Kalinchowk', duration: '1N/2D', price: 22000 },
+  { dest: 'KTM to Dhulikhel', duration: '1 Day', price: 6500 },
+  { dest: 'KTM to Namobuddha', duration: '1 Day', price: 7500 },
+  { dest: 'KTM to Manakamana Darshan', duration: '1 Day', price: 9000 },
+  { dest: 'KTM to Pokhara Drop', duration: 'Drop Off', price: 15000 },
+  { dest: 'KTM to Besishar Drop', duration: 'Drop Off', price: 14000 },
+  { dest: 'KTM to Chitwan Drop', duration: 'Drop Off', price: 13000 },
+  { dest: 'KTM to Hetauda Drop', duration: 'Drop Off', price: 11000 },
+  { dest: 'KTM to Birjung Drop', duration: 'Drop Off', price: 14000 },
+  { dest: 'KTM to Janakpur Drop', duration: 'Drop Off', price: 17000 }
 ];
 
-const galleryImages = [
-  "https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg",
-  "https://www.baghbhairabauto.com.np/media/1062/Top-Reasons-Pajero-Cars-Are-Popular-in-Nepal.jpg",
-  "https://cgdigital.com.np/api/plugins/kcfinder/upload/images/AVATR01.jpg",
-  "https://honda.com.np/wp-content/uploads/product-catalog/automobiles/3.png",
-  "https://news24online.com/wp-content/uploads/2023/12/image-339.png"
+const standardCarImages = [
+  "/images/standard cars/2025-Geely-Emgrand-5-Seater-Sedan-1-5L-Munal-Longteng-Petrol-Gasoline-New-Car-Hot-Sale-New-Electric-Petrol-Car-Automatic.avif",
+  "/images/standard cars/19884011-maruti_suzuki_alto_k10.webp",
+  "/images/standard cars/636b92619c7e80680e06f145jpeg.jpg",
+  "/images/standard cars/Tata_Punch_EV_Photo_2.webp",
+  "/images/standard cars/front-left-side-47.avif",
+  "/images/standard cars/images.jpg"
 ];
 
 const CarRoutes = () => {
   const { formatPrice } = useCurrency();
-
-  const heroImages = [
-    '/vehicles/offroad_4x4_suv.jpg',
-    '/vehicles/byd_seal_u.png',
-    '/vehicles/byd_atto_1.png',
-    '/vehicles/byd_sealion_7.png',
-    'https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg',
-    'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80'
-  ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-    }, 4000);
+      setCurrentImageIndex((prev) => (prev + 1) % standardCarImages.length);
+    }, 4500);
     return () => clearInterval(timer);
-  }, [heroImages.length]);
+  }, []);
+
+  const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % standardCarImages.length);
+  const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + standardCarImages.length) % standardCarImages.length);
 
   const handleBook = (route) => {
-    const message = `Hi Zenex Travel, I'm interested in booking a Standard Car for the route: ${route.dest} (${route.duration}) priced at ${formatPrice(route.price)}. Is it available?`;
+    const message = `Hi Zenex Travel, I'm interested in booking a Standard Car / Sedan for the route: ${route.dest} (${route.duration}) priced at ${formatPrice(route.price)}. Is it available?`;
     window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Standard Car Route Pricing | Zenex Travels"
-        description="View pricing details for all Standard Car routes across Nepal including Pokhara, Chitwan, Janakpur and more."
+        title="Standard Car & Sedan Route Pricing | Zenex Travels"
+        description="View pricing details for all Standard Car & Sedan routes across Nepal including Pokhara, Chitwan, Nagarkot, Janakpur and more."
       />
       
-      {/* Hero Section */}
-      <section className="relative h-[450px] md:h-[520px] w-full flex items-end pb-16 justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-black">
-          {heroImages.map((img, idx) => (
-            <img
+      {/* Dynamic Hero Slider */}
+      <section className="relative h-[480px] md:h-[550px] w-full flex items-end pb-16 justify-center overflow-hidden bg-slate-950">
+        <div className="absolute inset-0 z-0">
+          {standardCarImages.map((img, idx) => (
+            <div
               key={idx}
-              alt={`Standard Car Slide ${idx + 1}`}
-              className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out ${idx === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
-              src={img}
-            />
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                idx === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+              }`}
+            >
+              {/* Blurred background backdrop */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center filter blur-2xl opacity-40 scale-110"
+                style={{ backgroundImage: `url("${img}")` }}
+              />
+              <img
+                alt={`Standard Car Slide ${idx + 1}`}
+                className="relative w-full h-full object-contain md:object-cover object-center transition-transform duration-700"
+                src={img}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
+            </div>
           ))}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-black/30"></div>
         </div>
 
+        {/* Previous Button */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/40 hover:bg-[#e53a24] text-white backdrop-blur-md transition-all border border-white/20 shadow-lg hover:scale-110"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft size={22} />
+        </button>
+
+        {/* Next Button */}
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/40 hover:bg-[#e53a24] text-white backdrop-blur-md transition-all border border-white/20 shadow-lg hover:scale-110"
+          aria-label="Next slide"
+        >
+          <ChevronRight size={22} />
+        </button>
+
         {/* Slide Indicators */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-          {heroImages.map((_, idx) => (
+        <div className="absolute top-6 right-6 z-30 flex items-center gap-2 bg-black/40 backdrop-blur-md px-3.5 py-2 rounded-full border border-white/20 shadow-md">
+          {standardCarImages.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrentImageIndex(idx)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === currentImageIndex ? 'bg-[#e53a24] w-6' : 'bg-white/50 hover:bg-white/80'}`}
+              className={`h-2.5 rounded-full transition-all duration-300 ${
+                idx === currentImageIndex ? 'w-7 bg-[#e53a24]' : 'w-2.5 bg-white/50 hover:bg-white'
+              }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
           ))}
         </div>
         
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8">
+        <div className="relative z-20 w-full max-w-6xl mx-auto px-4 md:px-8">
           <Link to="/vehicles" className="inline-flex items-center gap-2 text-white/80 font-bold mb-6 hover:text-white transition-colors">
             <ArrowLeft size={16} /> Back to Vehicles
           </Link>
@@ -99,17 +125,17 @@ const CarRoutes = () => {
                 Economy & Sedan
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-2 drop-shadow-lg">
-                Standard Car Routes
+                Standard Car & Sedan Routes
               </h1>
               <p className="text-lg text-white/90 max-w-2xl font-medium drop-shadow-md">
-                Perfect for couples, small families, or business travel. Enjoy fuel-efficient, comfortable, and affordable rides to all major destinations.
+                Experience economical, comfortable, and reliable sedan travel for city tours and intercity journeys across Nepal. Transparent flat rates and flexible booking options.
               </p>
             </div>
             
             <div className="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl">
               <div className="text-white">
-                <p className="text-sm text-white/70 font-semibold uppercase">Starting From</p>
-                <p className="text-2xl font-black">{formatPrice(5500)} <span className="text-sm font-medium">/ Day</span></p>
+                <p className="text-sm text-white/70 font-semibold uppercase">Starting Rate</p>
+                <p className="text-2xl font-black">{formatPrice(6000)} <span className="text-sm font-medium">/ Day</span></p>
               </div>
             </div>
           </div>
@@ -124,9 +150,15 @@ const CarRoutes = () => {
             Vehicle Gallery
           </h2>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            {galleryImages.map((img, idx) => (
-              <div key={idx} className="relative w-32 h-24 sm:w-40 sm:h-28 rounded-xl overflow-hidden shadow-md group cursor-pointer border-2 border-transparent hover:border-[#1e3a8a] transition-all">
-                <img src={img} alt={`Car Gallery ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            {standardCarImages.map((img, idx) => (
+              <div 
+                key={idx} 
+                onClick={() => setCurrentImageIndex(idx)}
+                className={`relative w-32 h-24 sm:w-40 sm:h-28 rounded-xl overflow-hidden shadow-md group cursor-pointer border-2 transition-all ${
+                  idx === currentImageIndex ? 'border-[#e53a24] scale-105' : 'border-transparent hover:border-[#1e3a8a]'
+                }`}
+              >
+                <img src={img} alt={`Standard Car Gallery ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
             ))}
           </div>
@@ -165,7 +197,7 @@ const CarRoutes = () => {
         </div>
 
         {/* Routes Grid */}
-        <div>
+        <div className="mb-12">
           <h2 className="text-3xl font-extrabold text-[#1e3a8a] mb-6 flex items-center gap-3">
             Pricing & Routes
           </h2>
@@ -205,23 +237,62 @@ const CarRoutes = () => {
               </div>
             ))}
           </div>
-          
-          <div className="mt-10 bg-blue-50 rounded-2xl p-6 border border-blue-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <div className="bg-[#1e3a8a] text-white p-3 rounded-full hidden sm:block">
-                <MessageCircle size={24} />
+        </div>
+
+        {/* Custom Routes & Pricing Section */}
+        <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-12 mb-10 text-center relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-red-50 rounded-full blur-3xl opacity-60 -z-0"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl opacity-60 -z-0"></div>
+
+          <div className="relative z-10 max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-red-50 text-[#e53a24] text-xs font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 border border-red-100 shadow-sm">
+              Custom Booking Available
+            </div>
+            
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#1e3a8a] mb-4">
+              Custom Routes & Tailored Pricing
+            </h2>
+            
+            <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed font-medium">
+              We offer bespoke routing and flexible pricing tailored specifically to your travel plans. Whether you need city sightseeing in Kathmandu, airport transfers, or outstation road trips in our Standard Cars & Sedans, contact us for an instant personalized quote.
+            </p>
+
+            {/* Custom Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-left">
+              <div className="bg-[#f8fafc] p-5 rounded-2xl border border-gray-100">
+                <div className="w-10 h-10 bg-red-100 text-[#e53a24] rounded-xl flex items-center justify-center font-bold mb-3">
+                  <MapPin size={20} />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-1 text-base">Any Destination in Nepal</h3>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">From Kathmandu Valley sightseeing to highway travel across Pokhara, Chitwan, and Lumbini.</p>
               </div>
-              <div>
-                <h4 className="font-bold text-[#1e3a8a] text-lg">Don't see your route?</h4>
-                <p className="text-sm text-blue-900/80 font-medium">We offer custom routes and multi-day packages. Contact us for a personalized quote.</p>
+
+              <div className="bg-[#f8fafc] p-5 rounded-2xl border border-gray-100">
+                <div className="w-10 h-10 bg-blue-100 text-[#1e3a8a] rounded-xl flex items-center justify-center font-bold mb-3">
+                  <Calendar size={20} />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-1 text-base">Flexible Duration</h3>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">Single day rentals, airport drop-offs, or multi-day guided trips.</p>
+              </div>
+
+              <div className="bg-[#f8fafc] p-5 rounded-2xl border border-gray-100">
+                <div className="w-10 h-10 bg-green-100 text-green-600 rounded-xl flex items-center justify-center font-bold mb-3">
+                  <ShieldCheck size={20} />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-1 text-base">Best Rate Guarantee</h3>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">Transparent pricing starting at Rs. 6,000/day with no hidden fuel or driver costs.</p>
               </div>
             </div>
-            <button 
-              onClick={() => window.open(`https://wa.me/9779767476521?text=${encodeURIComponent("Hi Zenex Travel, I would like to request a custom quote for a Standard Car.")}`, '_blank')}
-              className="w-full sm:w-auto bg-[#1e3a8a] text-white px-6 py-3 rounded-xl hover:bg-[#152c6e] transition-colors font-bold whitespace-nowrap"
-            >
-              Request Custom Quote
-            </button>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button 
+                onClick={() => window.open(`https://wa.me/9779767476521?text=${encodeURIComponent("Hi Zenex Travel, I would like to request a custom route & price quote for Standard Car / Sedan.")}`, '_blank')}
+                className="w-full sm:w-auto bg-[#25D366] text-white px-8 py-4 rounded-2xl hover:bg-[#1ebd5a] transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-3 font-extrabold text-base active:scale-95"
+              >
+                <MessageCircle size={20} /> Request Custom Quote on WhatsApp
+              </button>
+            </div>
           </div>
         </div>
         

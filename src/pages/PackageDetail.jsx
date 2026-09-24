@@ -990,6 +990,21 @@ The 8 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour is a year-round adventure,
   },
 
   '7-days-kathmandu-bandipur-pokhara-tour': {
+    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+    gallery: [
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/360_F_84173867_4MrZbc3zKlIdiCv1zIhYkglL23L2qJqk.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/istockphoto-1374221694-612x612.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/istockphoto-499654668-612x612.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/iuhjuhj.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/jhbhjb.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/jhhhj.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/kh.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/kjjhnhj.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/paragliding-in-pokhara.webp'
+    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -1153,6 +1168,21 @@ Return to Kathmandu on day five and explore UNESCO Heritage sites including Boud
     ]
   },
   '7-days-kathmandu-chitwan-pokhara-lumbini-tour': {
+    image: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
+    img: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
+    bannerImage: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
+    gallery: [
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1549888668-19281758dfbe.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1562462181-b228e3cff9ad.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1579863834020-2a9366e128ce.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1647172122108-202c8497fdbd.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1653104626949-bc7f6413a5b7.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1665435246333-48b2bc7a0018.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1677683254220-e4160da157af.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1718180555560-0c5f890f8098.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/premium_photo-1697729729075-3e56242aef49.avif'
+    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -5502,18 +5532,6 @@ The next morning, fly to Chitwan to enjoy thrilling activities like an Elephant 
 
 Conclude your journey with a flight to Lumbini, the birthplace of Lord Buddha, to visit the Sacred Garden and surrounding monasteries. The same day, fly back to Kathmandu, wrapping up an unforgettable Kathmandu Chitwan Pokhara Lumbini Tour.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.himalayajourneys.com/assets/images/tour/kathmandu-pokhara-lumbini-tour.jpg" alt="Tour Highlights" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1280,h_870/w_79,x_14,y_14,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/vfyskzz71a7auu2kquco/5-DayChitwanWildlifeLumbiniPilgrimageTourFromPokhara.jpg" alt="Chitwan Wildlife & Lumbini" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.satoriadventuresnepal.com/public/uploads/kathmandu-lumbini-chitwan-and-pokhara-tour90.jpg" alt="Kathmandu to Lumbini" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why You Will Love 5 Days Kathmandu Chitwan Pokhara Lumbini Tour ?
 - **A Perfect Blend of Culture, Nature, and History:** Explore UNESCO World Heritage Sites in Kathmandu and dive deep into Nepal’s rich cultural and historical heritage.
 - **Thrilling Wildlife Adventures in Chitwan:** Immerse yourself in the wilderness of Chitwan National Park with exciting activities like an Elephant Safari and Jeep Safari.
@@ -5643,18 +5661,6 @@ The third day features an early morning flight to Jomsom, followed by a spiritua
 On the fourth day, return to Pokhara by flight and continue directly to Kathmandu. In Kathmandu, visit iconic landmarks such as Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple. End your day with an authentic Nepali dinner accompanied by a live cultural performance, offering a glimpse into Nepal’s rich traditions.
 
 The tour concludes on the fifth day with your departure, leaving you with unforgettable memories of the Kathmandu Pokhara Muktinath Tour. This short yet enriching itinerary is ideal for travelers seeking a seamless blend of Nepal’s cultural, spiritual, and natural wonders.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://cimages1.touristlink.com/data/cache/J/O/M/S/O/M/M/U/jomsom-muktinath_2_640_480.jpg" alt="Muktinath Temple" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.coretreks.com/wp-content/uploads/2024/07/11-days-nepal-highlight-tour-1683449541-1.jpg" alt="Scenic views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.overlandescape.com/storage/packages/180723122145-kathmandu-pokhara-muktinathjomsom.jpg" alt="Himalayan vistas" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why You Will Love 5 Days Kathmandu Pokhara Muktinath Tour ?
 - **Scenic Flights:** Enjoy breathtaking aerial views of Nepal’s landscapes with flights between Kathmandu, Pokhara, and Jomsom.
@@ -5976,18 +5982,6 @@ Day five takes you to UNESCO World Heritage Sites like Boudhanath Stupa, Pashupa
 
 The tour ends with your departure on day six, leaving you with cherished memories of Nepal's wonders.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.himalayantrekkingpath.com/_next/image?url=https%3A%2F%2Fmedia.app.himalayantrekkingpath.com%2Fuploads%2Ffullbanner%2Fparagliding-pokhara-1.webp&w=3840&q=75&dpl=dpl_3KNdaNwCDiUgUVh4mjVZ9wigSein" alt="Pokhara Adventure" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://fis-api.nepalkameleonholidays.com/media/attachments/pokhara-bandipur-wheelchair-tour%20(6).jpg" alt="Bandipur Village" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://cdn.kimkim.com/files/a/images/f53f3b62e6d69d63810af64bd341b7694d94530e/big-a2bffd34ebc1934337f3173b31765d55.jpg" alt="Scenic Views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why You Will Love 6 Days Kathmandu Bandipur Pokhara Tour ?
 - **Diverse Destinations:** Experience the perfect mix of cultural landmarks, serene hilltop villages, and natural beauty.
 - **Adventure Opportunities:** Enjoy optional activities like thrilling Trishuli River rafting and boating on Phewa Lake.
@@ -6158,18 +6152,6 @@ The following day, fly back to Pokhara and explore its highlights, including Bin
 On day five, return to Kathmandu via a morning flight for a full-day sightseeing tour of Budhanilkantha Temple, Boudhanath Stupa, and Pashupatinath Temple. In the evening, enjoy a delightful Nepali dinner accompanied by a cultural show.
 
 Your 6-day adventure concludes with a departure, leaving you with unforgettable memories of the Kathmandu Pokhara Muktinath Tour. This tour promises spiritual tranquility, stunning landscapes, and cultural richness, making it a must-visit experience in Nepal.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media.hikingadventuretreks.com/uploads/socialmedia/kathmandu-pokhara-bandipur-.jpg" alt="Tour Highlights" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.gracefuladventure.com/wp-content/uploads/2025/04/cover-625x449.jpg" alt="Scenic Views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.pelago.com/img/products/NP-Nepal/multi-day-tour-to-bandipur-and-pokhara-visitnepal2020/d65814e1-dbad-4e67-ac81-97ed8fe69eb7_multi-day-tour-to-bandipur-and-pokhara-visitnepal2020.jpg" alt="Beautiful Landscapes" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why You Will Love 6 Days Kathmandu Pokhara Muktinath Tour ?
 - **Spiritual Experience at Muktinath Temple:** Visit the sacred Muktinath Temple, a revered site for both Hindus and Buddhists.
@@ -6350,18 +6332,6 @@ On the final day, wake early to enjoy the sunrise over the Himalayas, including 
 
 This tour is the perfect balance of cultural discovery and natural beauty, offering you the best of Nepal in just seven days.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/99/55/a1.jpg" alt="Kathmandu Heritage" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.nestadventure.com/wp-content/uploads/2019/06/Nagarkot-Tour-Mountain-View.jpg" alt="Nagarkot Sunrise" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.teamramadventure.com/public/uploads/720_0836.jpg" alt="Pokhara Phewa Lake" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 7 Days Kathmandu Pokhara Nagarkot Tour ?
 - **Natural beauty:** Stunning natural landscapes, including the Himalayan mountain range, lakes, forests, and rivers.
 - **Cultural experiences:** Numerous temples, monasteries, and historic sites in Kathmandu.
@@ -6538,18 +6508,6 @@ After a night in Chitwan, the next morning will start with breakfast, and then y
 
 In the evening, you’ll enjoy a traditional Nepali dinner with a cultural show, providing a fitting conclusion to your trip. The tour ends with your departure as you are dropped off at the International Airport, leaving you with good memories of your Nepal tour.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/09/f8/0f/2b.jpg" alt="Kathmandu Heritage" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media.himalayanrecreation.com/uploads/fullbanner/kathmandu-chitwan-pokhara-tour.webp" alt="Wildlife Adventure" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.nepalhikingteam.com/_next/image?url=https%3A%2F%2Fnht-api.nepalhikingteam.com%2Fmedia%2Ftrip-gallery%2Fmedia-0cfab254-1721902878.jpg&w=3840&q=75" alt="Himalayan Views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 7 Days Kathmandu Pokhara Chitwan Tour?
 - **Diverse Experiences in a Short Time:** Combines cultural, natural, and wildlife experiences in just seven days.
 - **Breathtaking Natural Beauty:** From stunning Himalayan sunrise views to serene lakes and waterfalls.
@@ -6722,18 +6680,6 @@ Following your time in Pokhara, return to Kathmandu. The next day is dedicated t
 
 This 7-Day Kathmandu, Chitwan & Pokhara Tour offers a perfect blend of wildlife experiences, cultural immersion, and natural beauty. From the rich traditions of Tharu Village and the excitement of a jungle safari to the serene views of the Himalayas and the vibrant culture of Kathmandu, this tour ensures a comprehensive and unforgettable experience of Nepal.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/9c/eb/cf.jpg" alt="Kathmandu Culture" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://nepaltoursandtravels.com/wp-content/uploads/2025/11/Chitwan.jpg" alt="Chitwan Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.himalayajourneys.com/assets/images/tour/kathmandu-pokhara-lumbini-tour.jpg" alt="Pokhara Scenery" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 7 Days Kathmandu Chitwan Pokhara Tour?
 - **Diverse Experiences:** A rich mix of wildlife adventures, scenic beauty, and cultural and historical exploration.
 - **Stunning Scenery:** Highlights like the sunrise view from Sarangkot and the serene beauty of Pokhara’s lakes.
@@ -6902,18 +6848,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
 The next morning, a flight back to Pokhara awaits, and once you arrive, your Pokhara sightseeing begins. The day is filled with visits to iconic sites such as the Bindabasini Temple, Seti Gorge, Davis Fall, and Gupteswor Mahadev Cave, as well as a stop at the Tibetan Refugee Camp. End the day with a peaceful boating experience on the tranquil waters of Phewa Lake. The following day, you will drive back to Kathmandu, where you will visit some of the city’s most famous cultural and religious landmarks. These include Patan Durbar Square, a UNESCO World Heritage Site known for its stunning Newari architecture, and the revered Budhanilkantha Temple. You will also visit the majestic Boudhanath Stupa and the sacred Pashupatinath Temple, one of the most important Hindu temples in Nepal. In the evening, enjoy a traditional Nepali dinner accompanied by a cultural program in a typical Nepali restaurant, offering an authentic experience of Nepali hospitality and cuisine.
 
 On the final day, you depart from Nepal with unforgettable memories of your Kathmandu Pokhara Jomsom Muktinath Tour. This tour package offers a mix of adventure, spirituality, and cultural immersion, making it an ideal option for travelers seeking a comprehensive Nepal experience.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://marditreknepal.com/wp-content/uploads/2025/05/muktinath-temple-drshn.webp" alt="Muktinath Temple" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=375,height=340,dpr=2/tour_img/e1247b80d13efd54fe2f3ed4af9e4a01ff9df15f20987e215d929c9b76974c88.jpg" alt="Pokhara Lake" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://muktinathtempletour.com/wp-content/uploads/2019/08/Jomsome-Airport-.jpg" alt="Jomsom Airport" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 7 Days Kathmandu Pokhara Jomsom Muktinath Tour?
 - **Spiritual and Religious Significance:** Visit Muktinath Temple, one of the most important pilgrimage sites for Hindus and Buddhists.
@@ -7088,18 +7022,6 @@ Day five includes exploring Patan Durbar Square, Swoyambhunath Stupa, and Kathma
 
 This comprehensive tour ensures a perfect blend of cultural exploration, natural beauty, and relaxation. Book your Kathmandu, Nagarkot & Dhulikhel tour for an unforgettable journey in Nepal!
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/99/55/a1.jpg" alt="Kathmandu Heritage" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.nestadventure.com/wp-content/uploads/2019/06/Nagarkot-Tour-Mountain-View.jpg" alt="Nagarkot Sunrise" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://thehimalayantreks.com/wp-content/uploads/2019/04/boudhanath-stupa.jpg" alt="Boudhanath Stupa" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why You Will Love 7 Days Kathmandu Nagarkot Dhulikhel Tour?
 - **Breathtaking Himalayan Sunrise Views:** Witness stunning sunrise views over the Himalayas from Nagarkot and Dhulikhel.
 - **Rich Cultural Exploration:** Visit iconic UNESCO World Heritage Sites like Bhaktapur Durbar Square, Pashupatinath, and Boudhanath Stupa.
@@ -7266,18 +7188,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
 On the third day, you’ll drive from Bandipur to Pokhara, the city of lakes. Once you arrive, you’ll have the opportunity to relax and explore the famous Lakeside area, situated on the bank of Phewa Lake. You can enjoy a leisurely evening walk or unwind in one of the cozy cafes by the water. The next morning, a visit to Sarangkot awaits, where you can witness a breathtaking sunrise and panoramic views of the Himalayas, including the majestic Annapurna and Dhaulagiri ranges. After breakfast, your Pokhara tour continues with visits to Bindabasini Temple, Davis Fall, Gupteswori Mahadev Cave, and Seti Gorge, all of which showcase the natural and cultural beauty of this region. You’ll also enjoy a peaceful boat ride on Phewa Lake, stopping at the Tal Barahi Temple, which is situated on a small island in the middle of the lake. Later in the evening, you’ll visit the World Peace Pagoda, a tranquil site that offers stunning views of the city and the lake.
 
 The following day, you’ll drive back to Kathmandu, where more cultural wonders await. You will visit Boudhanath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square. In the evening, enjoy a delightful Nepali dinner with a cultural show at a traditional restaurant. Your tour ends with a heartfelt farewell, taking with you beautiful memories of your time spent exploring Nepal’s rich heritage and natural beauty.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.enepaltour.com/public/images/upload/package/slider/1457243443_pokhara.jpg" alt="Pokhara Lake" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://joshitours.org/wp-content/uploads/2024/02/nepal-1.jpg" alt="Kathmandu Culture" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.gracefuladventure.com/wp-content/uploads/2024/12/pokhara-oy-lt-1-1630391646.jpg" alt="Bandipur Village" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 7 Days Kathmandu Bandipur Pokhara Tour?
 - **Rich cultural experiences:** Explore the rich cultural heritage of Nepal, including UNESCO World Heritage Sites, ancient temples, and traditional markets.
@@ -7448,18 +7358,6 @@ After your exciting time in Chitwan, you will fly to Pokhara. Known for its stun
 The next morning, you will visit Sarangkot for a stunning sunrise view over the Himalayas. This moment is one of the top attractions on the Nepal tour package, as the sight of the sun rising behind the mountains is unforgettable. After breakfast in Pokhara, you’ll fly to Lumbini, the birthplace of Lord Buddha. In Lumbini, you’ll visit the Maya Devi Temple, where Buddha was born, and explore the surrounding monasteries, learning about the rich history and spirituality of this UNESCO World Heritage site.
 
 After your Lumbini tour, you’ll take a morning flight back to Kathmandu. In the capital, you’ll visit some of Nepal’s most sacred and historical landmarks, including the Pashupatinath Temple, the Boudhanath Stupa, and Patan Durbar Square. In the evening, enjoy a traditional Nepali cultural dinner, complete with music and performances, to cap off your incredible journey. The Nepal tour package combines natural beauty, cultural heritage, and spiritual significance, allowing you to explore Nepal’s top four cities—Kathmandu, Chitwan, Pokhara, and Lumbini—in just seven days. Because the tour uses domestic flights, you can cover these destinations quickly and comfortably.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.nepalhimalayastrekking.com/public/uploads/caption-5.jpg" alt="Kathmandu Sightseeing" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://corporatetreks.com/wp-content/uploads/2020/01/lumbini.jpg" alt="Lumbini Maya Devi Temple" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.satoriadventuresnepal.com/public/uploads/kathmandu-lumbini-chitwan-and-pokhara-tour70.jpg" alt="Chitwan Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 7 Days Kathmandu Chitwan Pokhara Lumbini Tour?
 - **Convenience and Comfort:** Includes flights between destinations, covering vast distances quickly.
@@ -7639,18 +7537,6 @@ Early the next morning, you’ll head to Sarangkot for a breathtaking sunrise ov
 
 The adventure continues as you drive to Nagarkot, one of the best spots in Nepal to witness stunning Himalayan sunrises. The next morning, you will enjoy a magical sunrise over the snow-capped peaks from your hotel in Nagarkot before driving back to Kathmandu. On the way, you’ll visit Bhaktapur Durbar Square, known for its well-preserved medieval architecture, followed by visits to the iconic Boudhanath Stupa and the sacred Pashupatinath Temple. The day ends with a traditional Nepali dinner and cultural show at a typical Nepali restaurant, offering an authentic taste of Nepal's rich heritage.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://thehimalayantimes.com/uploads/imported_images/wp-content/uploads/2018/04/Bhaktapur-Durbar-Square.jpg" alt="Bhaktapur Durbar Square" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://everestchronicle.com/image/tourist.jpg" alt="Tourists in Nepal" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://english.headlinenepal.com/images/uploads/-media1672576612.jpg" alt="Nepalese Landscape" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 8 Days Kathmandu Bandipur Pokhara Tour with Trek?
 - **Scenic beauty:** From the stunning views of the Himalayas in Dhampus and the Australian Base Camp to the tranquil lakes and waterfalls in Pokhara, there is no shortage of breathtaking sights to see.
 - **Cultural immersion:** From exploring the ancient temples and palaces of Kathmandu to interacting with locals in the charming village of Bandipur, visitors can experience Nepal's unique culture firsthand.
@@ -7827,18 +7713,6 @@ The Kathmandu Pokhara Chitwan & Nagarkot Tour concludes with a drive to Nagarkot
 
 With the Kathmandu, Pokhara, Chitwan & Nagarkot Tour, you’ll experience the best of Nepal, from vibrant cities and peaceful lakes to wildlife adventures and mountain views.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://newbusinessage.prixacdn.net/img/news/20211020114526_20191017121120_1571271950.jpg" alt="Chitwan Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.b360nepal.com/uploads/posts/Gorepani-Poon-Hill-(1)-1767252612.jpg" alt="Poon Hill View" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media.app.shikharadventure.com/uploads/fullbanner/view-from-nagarkot.webp" alt="Nagarkot Sunrise" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 8 Days Kathmandu Pokhara Chitwan Nagarkot Tour?
 - **Diverse Experiences:** Offers a rich variety of experiences, from exploring Kathmandu's ancient temples to enjoying the serene beauty of Pokhara's lakes.
 - **Scenic Beauty:** Covers some of Nepal's most stunning landscapes, from Phewa Lake in Pokhara to spectacular sunrise views from Nagarkot.
@@ -8014,18 +7888,6 @@ In Chitwan, you’ll immerse yourself in a wildlife safari, choosing either an e
 
 After a night in Chitwan, the tour heads to Nagarkot, where you’ll witness an unforgettable sunrise view of the Himalayas. On the way back to Kathmandu, you’ll visit iconic world heritage sites like Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple, all renowned for their historical and spiritual significance. The tour ends with a special Nepali cultural dinner, a perfect way to conclude your Nepal adventure.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://theindianface.com/cdn/shop/articles/parapente-pokhara2.jpg?v=1591376806" alt="Pokhara Adventure" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/85/3b/15/caption.jpg?w=500&h=400&s=1" alt="Phewa Lake Boating" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://nht-api.nepalhikingteam.com/media/trip-gallery/media-e3c4b4ef-1740459767.jpg" alt="Chitwan Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 8 Days Kathmandu Pokhara Chitwan Tour with Rafting?
 - **Diverse Experiences:** Blends city tours, cultural exploration, wildlife adventures, and outdoor activities like rafting on the Seti River.
 - **Cultural Immersion:** Discover Nepal’s rich cultural heritage visiting Pashupatinath, Boudhanath Stupa, and Bhaktapur Durbar Square.
@@ -8200,18 +8062,6 @@ After a day of immersion in Kathmandu’s religious and historical sites, you'll
 From Jomsom, you’ll return to Pokhara and then drive directly to Chitwan for an exciting wildlife experience. In Chitwan National Park, you’ll enjoy thrilling jungle safaris – either an elephant safari or a jeep safari depending on your location. Chitwan offers more than just adventure; it includes cultural activities such as a Tharu village tour and Tharu cultural program, providing insight into the local indigenous community. You can also visit the Elephant Breeding Centre or the Crocodile Breeding Centre, rounding out the tour with a mix of nature and culture.
 
 The tour concludes with a return to Kathmandu, where you’ll explore the ancient Bhaktapur Durbar Square and enjoy a Nepali cultural program with a farewell dinner. This Nepal pilgrimage and cultural tour offers a well-rounded experience that combines spiritual visits with rich cultural and natural highlights, leaving you with lasting memories of Nepal’s diverse beauty.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.bestheritagetour.com/public/images/upload/package/slider/chitwan-national-park-3.jpg" alt="Chitwan Elephant Safari" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://econepaltrekkers.com/wp-content/uploads/2024/07/pexels-photo-6872553.webp" alt="Himalayan Views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?auto=format&fit=crop&w=1200&q=80" alt="Cultural Sites" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 8 Days Kathmandu Pokhara Muktinath Chitwan Tour?
 - **Spiritual Fulfillment:** Visit important Hindu and Buddhist pilgrimage sites like Pashupatinath temple, Muktinath temple, and Boudhanath stupa.
@@ -8392,18 +8242,6 @@ On the fifth day, we drive to Chitwan National Park, Nepal’s famous wildlife s
 After an exciting stay in Chitwan, we will drive to Nagarkot, a hill station near Kathmandu, known for its panoramic views of the Himalayas. On the way, we will stop at Bhaktapur Durbar Square, a historic city filled with ancient temples, palaces, and courtyards. Once in Nagarkot, you will relax and enjoy the peaceful surroundings.
 
 On the seventh day, we will drive back to Kathmandu. Along the way, you will visit two of Kathmandu’s most famous religious sites: Boudhanath Stupa, one of the largest stupas in Nepal, and Pashupatinath Temple, a sacred Hindu temple. In the evening, you will enjoy a traditional Nepali dinner along with a cultural program featuring music and dance.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/f2/5c/d4.jpg" alt="Lumbini Peace Stupa" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.thirdrockadventures.com/assets-back/images/trip/fewa-lake-pokhara.jpgSGF.jpg" alt="Phewa Lake Pokhara" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://luxuryholidaynepal.com/_next/image?url=https%3A%2F%2Fapi.luxuryholidaynepal.com%2Fmedia%2Fitinerary-gallery%2Fmedia-c9652f6c-1734850740.jpg&w=1920&q=75" alt="Nepal Highlights" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 8 Days Kathmandu Pokhara Lumbini Chitwan Tour?
 - **Cultural and Historical Richness:** Witness ancient temples, monasteries, and UNESCO World Heritage Sites including Pashupatinath and Boudhanath.
@@ -8586,18 +8424,6 @@ After two nights in Chitwan, the tour continues with a scenic drive to Nagarkot,
 
 In Kathmandu, you'll explore iconic landmarks like the Boudhanath Stupa, one of the largest stupas in the world, the sacred Pashupatinath Temple, and the Swayambhunath Stupa (Monkey Temple), offering a panoramic view of the Kathmandu valley. The Kathmandu Durbar Square, with its ancient palaces, courtyards, and temples, will take you back in time to the era of kings. Your last evening in Nepal will be celebrated with a traditional Nepali dinner accompanied by a lively cultural program at a local restaurant.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://peacefulnepal.com/wp-content/uploads/2023/08/1-1080x720.jpg" alt="Kathmandu Highlights" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media.thameltravel.com/uploads/fullbanner/kathmandu-pokhara-chitwan-1.webp" alt="Scenic Pokhara" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://actionnepaltreks.com/wp-content/uploads/2025/01/at-chitwan.webp" alt="Chitwan Adventures" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 9 day Kathmandu Pokhara Chitwan Nagarkot Tour?
 - **Diverse Experiences in One Tour:** Combines the best of nature, culture, and adventure offering a well-rounded experience.
 - **Stunning Mountain Views:** Incredible sunrise views from Sarangkot and Nagarkot with panoramic vistas of the Himalayan range.
@@ -8773,18 +8599,6 @@ Your adventure continues with a drive to Chitwan, famous for its rich wildlife. 
 
 Before heading back to Kathmandu, you’ll visit Bhaktapur Durbar Square, a UNESCO World Heritage site, as well as the famous Pashupatinath Temple and Boudhanath Stupa. Your trip concludes with a delightful Nepali dinner and cultural program at a traditional restaurant in Kathmandu. The next day, you depart with cherished memories of your Nepal adventure trip, filled with breathtaking landscapes, cultural experiences, and exciting wildlife encounters.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.bestheritagetour.com/public/images/upload/package/slider/photo-2025-09-05-06-21-44-1.jpg" alt="Trekking Village" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.himalayanexcursionnepal.com/storage/trips/June2025/UEn0fWQJ5tWyoISwt5ez.jpg" alt="Mountain Views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.asiaodysseytravel.com/images/asia-tours/nepal-tours/swayambhunath-temple-nepal-700-11.jpg" alt="Kathmandu Heritage" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 9 day Kathmandu Pokhara Chitwan Tour with Trek?
 - **Unforgettable cultural experiences:** Explore the vibrant cities of Kathmandu and Pokhara, rich in cultural history and stunning architecture.
 - **Stunning natural beauty:** Trek to Ghandruk Village offering breathtaking views of Annapurna and Machhapuchhre, alongside wildlife adventures in Chitwan and panoramic Himalayan views from Nagarkot.
@@ -8959,18 +8773,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
 The next part of your adventure takes you to Damauli for a two-day Seti River rafting experience. Enjoy thrilling rapids on the Seti River as you raft from Damauli to Saranghat, where you’ll stay overnight by the riverside. The following day, you’ll continue rafting to Gai Ghat before driving to Chitwan for a unique jungle experience. During your two-night stay in Chitwan, you’ll be immersed in the local culture with a Tharu village tour, and enjoy a traditional Tharu cultural program in the evening. Your jungle activities will include an elephant safari or jeep safari, depending on your resort’s location, a visit to the Crocodile Breeding Center or the Elephant Breeding Center, and a canoe ride along the peaceful Rapti River.
 
 After your exciting wildlife adventure, the tour continues with a scenic drive to Nagarkot, where you’ll enjoy a sunrise view over the Himalayas the next morning. From Nagarkot, you’ll return to Kathmandu to visit historic sites such as Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple. To end your trip on a memorable note, enjoy an authentic Nepali dinner with a cultural program at a typical Nepali restaurant. Finally, you’ll depart with unforgettable memories of your Nepal adventure. This Kathmandu, Pokhara, Chitwan Tour with Rafting is the ultimate way to experience Nepal's diverse offerings, from adventure sports to cultural exploration and wildlife encounters.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://himalayanadventuretreks.com/wp-content/uploads/2025/02/White-Water-Rafting.webp" alt="White Water Rafting" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://galaxyworldtravels.com/storage/uploads/adventure/images/116794039998083.jpg" alt="Rafting Adventure" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://nepalnirvanatrails.com/uploads/img/chitwan-national-park.jpg" alt="Chitwan Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 9 Days Kathmandu Pokhara Chitwan Tour with Rafting?
 - **Diverse Experiences in One Trip:** Combines cultural exploration, natural beauty, adventure sports, and wildlife encounters.
@@ -9149,18 +8951,6 @@ After a memorable time in Jomsom and Muktinath, you will fly back to Pokhara and
 
 Your cultural journey continues with a full day of sightseeing in Bhaktapur Durbar Square, home to ancient palaces and temples. The itinerary also includes visits to Boudhanath Stupa and Pashupatinath Temple, two of Nepal’s most significant religious landmarks. The next day, explore Patan Durbar Square, Swoyambhunath Stupa, and Kathmandu Durbar Square, followed by an evening of authentic Nepali dinner with a cultural program at a traditional restaurant.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://yatrinepal.com/sites/default/files/styles/cover/public/deers-at-chitwan.jpg?itok=dfFRop6o" alt="Chitwan Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/aa/0c/99.jpg" alt="Muktinath Temple" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media.bookmundi.com/tour/tour-of-kathmandu-pokhara-and-chitwan-23768-1510029029.jpg?format=auto&quality=10&width=1920" alt="Kathmandu Heritage" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 9 Days Kathmandu Pokhara Muktinath Chitwan Tour?
 - **Spiritual Journey to Muktinath:** Visit the sacred Muktinath temple high in the Himalayas, a revered pilgrimage site for both Hindus and Buddhists.
 - **Pokhara’s Natural Beauty:** Enjoy serene boating on Phewa Lake, explore Davis Fall, Gupteswori Cave, and gaze at majestic mountain views.
@@ -9335,18 +9125,6 @@ The next day, the tour continues to Lumbini, the birthplace of Lord Buddha. Expl
 From Chitwan, you'll drive to Nagarkot for a night stay and witness a stunning sunrise with panoramic Himalayan views. After breakfast, visit Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple in Kathmandu. The day ends with a traditional Nepali dinner and live cultural show at a local restaurant. The tour concludes the following day with departure, leaving you with lasting memories of Nepal's beauty and culture.
 
 This 9 Days Kathmandu Pokhara Lumbini Chitwan Tour package offers a diverse experience, blending cultural, natural, and wildlife attractions, making it an ideal itinerary for those seeking a comprehensive Nepal tour.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.nepalpackagetour.com/public/uploads/tour/Kathmandu-Pokhara-Chitwan-Travel-Package.jpg" alt="Lumbini Maya Devi" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://rptreks.com/wp-content/uploads/2024/02/Pashupatinath-temple-1024x768.jpg" alt="Pashupatinath Temple" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://image.kkday.com/v2/image/get/c_fill%2Cq_55%2Ct_webp%2Cw_960/s1.kkday.com/product_scm_10114/20260122072158_QO88c/jpg" alt="Kathmandu Tour" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 9 Days Kathmandu Pokhara Lumbini Chitwan Tour?
 - **Diverse Experiences:** The tour offers a perfect mix of cultural heritage, natural beauty, and wildlife adventures.
@@ -9528,18 +9306,6 @@ The highlight of the tour is the 3-day Ghandruk Trek. From Pokhara, you will dri
 After returning to Pokhara, you will drive back to Kathmandu. The scenic drive offers beautiful views of rivers, hills, and small villages along the way. In Kathmandu, you will visit famous sites like Boudhanath Stupa, Pashupatinath Temple, Swoyambhunath Stupa, and Kathmandu Durbar Square. In the evening, enjoy a traditional Nepali dinner with a cultural program at a typical Nepali restaurant.
 
 Your 10 Days Nepal Tour with Ghandruk Trek ends with departure from Kathmandu, taking with you unforgettable memories of Nepal's wildlife, culture, and mountains. This tour is designed by Zenex Travels & Tours to give you the best of Nepal in a short time.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://galaxyworldtravels.com/storage/uploads/adventure/images/316794042251447.jpeg" alt="Ghandruk Village" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/09/66/48/e9.jpg" alt="Chitwan Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.himalayantrekkingpath.com/_next/image?url=https%3A%2F%2Fmedia.app.himalayantrekkingpath.com%2Fuploads%2Ffullbanner%2Fbandipur-touring.webp&w=3840&q=75&dpl=dpl_3KNdaNwCDiUgUVh4mjVZ9wigSein" alt="Scenic Views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 10 Days Nepal Tour with Ghandruk Trek?
 - **Perfect Mix of Adventure and Culture:** Experience wildlife adventures, scenic landscapes, and the traditional village life of Ghandruk.
@@ -9728,18 +9494,6 @@ Your journey concludes in Kathmandu, where you'll explore Patan Durbar Square, S
 
 This 10 Days Nepal Tour with Rafting offers the perfect mix of adventure, culture, and relaxation, making it one of the most unique and exciting Nepal holiday packages.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://wildernesstours.com/wp-content/uploads/2025/11/High-Adventure-Rafting-Feature-Image.webp" alt="River Rafting Adventure" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.yosemite.com/wp-content/uploads/2024/04/JC_3065-scaled-topaz-enhance-1.7x-faceai-scaled.jpeg" alt="Nature Exploration" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://themountaingaze.com/wp-content/uploads/2025/08/clearcreekcounty_Rafters.jpg" alt="Rafting Thrill" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 10 Days Nepal Tour with Rafting?
 - **Cultural and Historical Sites:** Explore UNESCO World Heritage Sites across the Kathmandu Valley and the incredible sunrises at Nagarkot.
 - **Natural Beauty:** Be captivated by the beauty of Pokhara, the serenity of Phewa Lake, and the majestic Annapurna mountains.
@@ -9914,18 +9668,6 @@ After your stay in Chitwan, you will drive to Pokhara, one of Nepal’s most bea
 After your time in Pokhara, you will drive back to Kathmandu. In the capital city, you’ll visit important UNESCO World Heritage Sites, including Bhaktapur Durbar Square, the magnificent Boudhanath Stupa, and the sacred Pashupatinath Temple. On the following day, you will explore Patan Durbar Square, Swayambhunath Stupa (also known as the Monkey Temple), and Kathmandu Durbar Square, which houses the Kumari (the living goddess). Your trip will conclude with a Nepali cultural dinner featuring traditional music and dance, leaving you with unforgettable memories of your 10 Days Nepal Tour with Muktinath.
 
 This tour offers a comprehensive experience of Nepal, combining adventure, culture, spirituality, and natural beauty. From the jungle safari in Chitwan to the serene temples in Kathmandu, this trip will immerse you in the best that Nepal has to offer.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.visithimalayastrek.com/uploads/photos/1/Mustang-Muktinath-Temple.jpg" alt="Muktinath Temple" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media.nepaltrekadventures.com/uploads/img/muktinath-temple.webp" alt="Sacred 108 Waterspouts" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://skylinetreks.com/wp-content/uploads/2023/10/muktinath-cable-car.jpg" alt="Muktinath Scenery" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 10 Days Nepal Tour with Muktinath?
 - **Spiritual Journey to Muktinath:** Visit the sacred Muktinath Temple, nestled at 3,710m, with its 108 water spouts and eternal flame.
@@ -10106,18 +9848,6 @@ The next stop is Chitwan National Park, where you will spend two nights. Chitwan
 After your time in Chitwan, the tour takes you to Nagarkot, a hill station famous for its panoramic sunrise views over the Himalayas. You will enjoy a peaceful morning here, taking in the stunning scenery before heading back to Kathmandu. On the way, you’ll stop at Bhaktapur Durbar Square, a historic site known for its beautiful architecture and ancient temples. Once back in Kathmandu, the tour includes visits to some of the city’s most famous landmarks, including Boudhanath Stupa, Pashupatinath Temple, and Patan Durbar Square.
 
 The final day of your 10 Days Nepal Tour with Lumbini includes visits to Swayambhunath Stupa, also known as the Monkey Temple, and Kathmandu Durbar Square. In the evening, you’ll enjoy a special Nepali dinner with a cultural program, where you can experience traditional music and dance. The next day, you’ll depart with unforgettable memories of your Nepal adventure.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://lumbinidevtrust.gov.np/upload_file/images/slider/1721894939_276597348_lumbini.jpg" alt="Lumbini Sacred Garden" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80" alt="Buddhist Monasteries" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0d/0c/bd/25.jpg" alt="Chitwan Safari Experience" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 10 Days Nepal Tour with Lumbini?
 - **Diverse Experiences:** A perfect mix of nature, culture, and spirituality blending Pokhara's lakes, Lumbini's temples, and Chitwan's wildlife.
@@ -10303,18 +10033,6 @@ Your time in Kathmandu includes two days of cultural tours. On Day 9, visit UNES
 
 Your 11 Days Nepal Tour concludes on Day 11 with unforgettable memories of Nepal’s landscapes, culture, and warm hospitality, leaving you with the essence of a Beautiful Nepal trip.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://tibetanencounter.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-14-at-6.48.44-pm-800x436.jpeg" alt="Ghandruk Village Encounter" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.nepalmountaintrekkers.com/wp-content/uploads/2021/02/ghandruk-trek.jpg" alt="Trekking to Ghandruk" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.ruggedtrailsnepal.com/uploads/img/luxury-ghorepani-poon-hill-ghandruk-village-trek.jpg" alt="Himalayan Mountain View" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 11 Days Nepal Tour with Ghandruk Village Trek?
 - **Cultural Experience:** Explore the unique cultures of Kathmandu, Chitwan, Pokhara, and the Gurung traditions of Ghandruk village.
 - **Scenic Beauty:** Trek through dense forests, valleys, and hills with panoramic views of the Himalayas including Annapurna South.
@@ -10449,18 +10167,6 @@ On Day 8, drive back to Kathmandu (6-7 hours). For an extra fee, you can opt for
 
 On the final day, depart with cherished memories of your Nepal Tour.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.nepaltrekkinginhimalaya.com/images/articles/ophNq-muktinath.jpg" alt="Muktinath Temple Area" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.nepalhiking.com/wp-content/uploads/2026/01/Muktinath-Darshan-Tour-and-Yatra.jpg" alt="Muktinath Yatra" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://www.nepaltrekhub.com/wp-content/uploads/2020/05/muktinath-temple-tour.jpg" alt="Sacred Muktinath Tour" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love this trip?
 - **Cultural immersion:** Explore ancient temples in Kathmandu, learn about the Tharu community in Chitwan, discover Bandipur's well-preserved Newari architecture, and see the unique blend of Hindu and Buddhist cultures in Pokhara.
 - **Natural beauty:** Enjoy the serene beauty of Phewa Lake in Pokhara, explore lush jungles tracking wildlife in Chitwan, and experience breathtaking Himalayan views during the flight to Jomsom.
@@ -10592,18 +10298,6 @@ Continue your journey to Nagarkot, renowned for its mesmerizing sunrise views ov
 
 Conclude your trip with a special Nepali dinner accompanied by a cultural program to immerse in local traditions. Depart the next day with unforgettable memories of your Nepal tour.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1611892370612-0ac8e4a4507a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bHVtYmluaXxlbnwwfHwwfHx8MA%3D%3D" alt="Sacred Lumbini Exploration" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1578235107258-f6e405a4ffc0?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himalayan Heritage Sites" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://plus.unsplash.com/premium_photo-1697730321309-0389da6f762b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chitwan Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love 11 Days Nepal Tour with Lumbini ?
 - **Cultural Exploration:** Experience authentic Nepalese culture through traditional villages, ancient temples, local customs, and Tharu cultural programs.
 - **Wildlife Encounters:** Discover Nepal's wildlife in Chitwan National Park spotting endangered species like one-horned rhinoceros and Bengal tigers.
@@ -10730,18 +10424,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
 After Chitwan, the journey continues to Pokhara city tour—a beautiful city with attractions like Phewa Lake boating, Davis Fall, Gupteshwor Mahadev Cave, Seti Gorge, and the Tibetan Refugee Camp. The highlight of this Nepal tour package is the trek to the Ghorepani Poon Hill trek, starting from Nayapul. Trek through lush forests, villages, and hills to Tikhedhunga, Ghorepani, Tadapani, and Ghandruk village trek. Witness the majestic Poon Hill sunrise trek for breathtaking Himalayan views.
 
 The tour concludes with visit Boudhanath Stupa, Pashupatinath Temple, Swoyambhunath stupa & Kathmandu durbar square and where you can enjoy a complimentary Nepali cultural dinner. This Nepal trekking and tour package combines adventure, nature, and cultural experiences, making it the best Nepal tour and trek for those seeking a memorable holiday in Nepal.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1589800463007-3be49fe18b92?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Poon Hill Sunrise View" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1595873371912-27a70363bcf2?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Trekking in the Himalayas" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?q=80&w=1217&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scenic Himalayan Villages" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love 12 Days Nepal Tour with Poon Hill Trek?
 - **Perfect Combination:** Experience the rich culture of Tharu villages, the thrill of Chitwan jungle safaris, and stunning Himalayan views on the Ghorepani Poon Hill trek.
@@ -10874,18 +10556,6 @@ The tour continues with a scenic drive back to Kathmandu, where you will explore
 
 This 12 Days Nepal Tour with Ghandruk Trek is a perfect choice for those looking for an easy trekking experience combined with wildlife, nature, and cultural exploration. Complete your trip with a complimentary Nepali cultural dinner and create unforgettable memories. Whether you’re a beginner or a culture enthusiast, this easy Nepal trekking tour will leave you amazed by Nepal’s beauty and diversity.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1704180724080-c923aa1ee129?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chitwan National Park Safari" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1545309451-2369945f85a1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ghandruk Village Trekking" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1746733938602-4b1feb7d0bd1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himalayan Sightseeing" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why You Will Love This 12 Days Nepal Tour with Ghandruk Trek?
 - **Perfect for Beginners:** The Ghandruk trek offers an easy and scenic hiking experience, ideal for beginners and families.
 - **Blend of Nature, Wildlife, and Culture:** Explore diverse experiences including the Chitwan jungle safari, Pokhara city tour, and Kathmandu's heritage.
@@ -11016,18 +10686,6 @@ Next, you’ll visit the charming hilltop village of Bandipur, where you can imm
 The highlight of the tour is a scenic flight to Jomsom, followed by a visit to Muktinath, Kagbeni, and the serene Dhumba Lake. Muktinath is a revered pilgrimage site for both Hindus and Buddhists, offering spiritual serenity amidst the majestic Himalayas.
 
 The tour concludes with sightseeing in Kathmandu, covering iconic sites like Boudhanath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square. A memorable Nepali cultural dinner and cable car ride to Chandragiri Hills add the perfect finishing touch to this incredible journey.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1540961286473-8ad1368dc1bd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sacred Muktinath Temple" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1586614024747-d5e88bc4b02e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himalayan Flight to Jomsom" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1623356788377-3313cc497e4b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bandipur Village Culture" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why You Will Love the 12 Days Nepal Tour with Muktinath ?
 - **Explore Nepal’s Natural Beauty:** From the lush jungles of Chitwan to the serene Phewa Lake in Pokhara and the breathtaking landscapes of the Annapurna region.
@@ -11165,18 +10823,6 @@ On the final leg, visit cultural highlights in Kathmandu, including Bhaktapur Du
 
 The 12 Days Nepal Tour with Lumbini offers an immersive experience, covering Nepal’s diverse heritage, natural beauty, and spiritual sites, leaving you with unforgettable memories.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1616166831783-f239fea49bdc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sacred Maya Devi Temple" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1703605196342-f7d695e43abe?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scenic Phewa Lake in Pokhara" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1611325695972-d22894e3f8d9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Heritage Sites in Kathmandu" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why You Will Love the 12 Days Nepal Tour with Lumbini ?
 - **A Perfect Blend:** Combines Nepal’s rich cultural heritage, breathtaking natural landscapes, and spiritual significance.
 - **Wildlife Adventure:** Explore the wilderness of Chitwan National Park with elephant/jeep safaris and canoe rides.
@@ -11311,18 +10957,6 @@ Returning to Pokhara, explore attractions like Bindabasini Temple, Davis Falls, 
 The tour concludes in Kathmandu with visits to iconic sites, including Bhaktapur Durbar Square, Boudhanath Stupa, Pashupatinath Temple, Patan Durbar Square, and Swayambhunath Stupa. Explore the cultural gems of Dakshinkali, Chobhar, Pharping, and Kirtipur. Celebrate your journey with a traditional Nepali dinner and cultural show before departing with cherished memories.
 
 The 13 Days Explore Nepal Tour is the ultimate way to experience Nepal’s diverse culture, heritage, and natural beauty.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1513614835783-51537729c8ba?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sacred Heritage Sites in Kathmandu" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1580424917967-a8867a6e676e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Muktinath Temple Landscape" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Experiences in Nepal" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why You Will Love the 13 Days Explore Nepal Tour ?
 - **Diverse Cultural Experiences:** Explore the vibrant traditions of Nepal through visits to historical and spiritual sites like Bhaktapur Durbar Square, Boudhanath Stupa, Pashupatinath Temple, and the ancient town of Bandipur.
@@ -11459,18 +11093,6 @@ Begin the trekking adventure with a drive to Nayapul, followed by a trek to Tikh
 Conclude your journey with a scenic drive or optional flight to Kathmandu. Visit UNESCO World Heritage Sites such as Boudhanath Stupa, Pashupatinath Temple, Swayambhunath Stupa, and Kathmandu Durbar Square. End the tour with a traditional Nepali dinner and cultural show, creating lasting memories.
 
 The 13 Days Explore Nepal Tour with Poon Hill Trek is ideal for those seeking a mix of cultural, spiritual, and trekking experiences. It offers an unforgettable journey through Nepal’s breathtaking landscapes and rich heritage.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1725009562005-adba89f6951f?q=80&w=1102&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Trekking in the Annapurna Region" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1622723371392-baef50ba829c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himalayan Sunrises from Poon Hill" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1653038035856-abaf464bae6b?q=80&w=2125&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scenic Views of Phewa Lake" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why People Love the 13 Days Explore Nepal Tour with Poon Hill Trek ?
 - **Stunning Sunrise at Poon Hill:** Witness the golden rays of the sun illuminate the Annapurna and Dhaulagiri ranges.
@@ -11610,18 +11232,6 @@ Next, head to Pokhara, known as the "City of Lakes." Witness the spectacular sun
 
 The final days of your tour include exploring Bhaktapur Durbar Square, Patan Durbar Square, Boudhanath Stupa, Pashupatinath Temple, and Kathmandu Durbar Square. Conclude the trip with a delightful Nepali dinner and cultural program, leaving you with cherished memories of your Discover Nepal Tour.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1611516491426-03025e6043c8?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chitwan National Park Safari" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://plus.unsplash.com/premium_photo-1691735666207-be6e91326e3a?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Maya Devi Temple, Lumbini" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1580424917967-a8867a6e676e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scenic Views from Pokhara" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why You Will Love the 13 Days Discover Nepal Tour ?
 - **A Journey Through Nepal’s Diverse Wonders:** A perfect blend of culture, history, nature, and adventure covering Nepal's most iconic destinations.
 - **Wildlife Adventure in Chitwan National Park:** Get up close with Nepal’s incredible wildlife through safaris and canoe rides.
@@ -11758,18 +11368,6 @@ Drive or optionally fly back to Kathmandu, followed by sightseeing at Boudhanath
 
 This tour combines Nepal’s cultural treasures with the beauty of the Ghandruk Trek, creating memories to cherish for a lifetime.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://plus.unsplash.com/premium_photo-1692102550644-b3969be679ad?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chitwan National Park Safari" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1545309451-2369945f85a1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ghandruk Village Trekking" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1592623171049-4be9e0f5a501?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Landmarks in Kathmandu" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why You Will Love the 13 Days Discover Nepal Tour with Ghandruk Trek ?
 - **Diverse Experiences in One Journey:** Blends Nepal's cultural richness with the stunning beauty of the Himalayas. From the serene birthplace of Lord Buddha to the breathtaking Annapurna region.
 - **Picturesque Ghandruk Trek:** Perfect for beginners and seasoned trekkers alike. Walk through lush forests, traditional villages, and terraced fields.
@@ -11904,18 +11502,6 @@ Proceed to Lumbini, the birthplace of Lord Buddha, with a guided tour to sacred 
 Conclude the trek at Nayapul and drive back to Pokhara, where you'll enjoy a relaxing evening. Drive back to Kathmandu, with an option for a flight to avoid the road journey. In Kathmandu, explore landmarks like Boudhanath Stupa, Pashupatinath Temple, Swayambhunath Stupa, and Kathmandu Durbar Square. Your journey ends with a traditional Nepali dinner accompanied by a cultural show. Depart with unforgettable memories of Nepal’s beauty and culture.
 
 This package offers a blend of adventure, culture, and spirituality, making it perfect for an enriching Nepal experience.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1665394182741-78f266b0c944?q=80&w=1077&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Trekking in the Annapurna Region" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1665394182736-a5fc0aabbcea?q=80&w=1077&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himalayan Landscapes" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1626163446890-cb31e7d711aa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Sites in Nepal" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why You Will Love 14 Days Explore Nepal Tour with Poon Hill Trek ?
 - **Cultural Immersion:** Immerse yourself in Nepal's rich heritage with visits to iconic sites like Boudhanath Stupa, Pashupatinath Temple, Kathmandu Durbar Square, and the spiritual aura of Lumbini.
@@ -12056,18 +11642,6 @@ Drive to Bandipur, a tranquil hilltop town, before returning to Kathmandu. The t
 
 This tour offers the perfect combination of nature, culture, and spirituality, creating a once-in-a-lifetime experience.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1562462181-b228e3cff9ad?q=80&w=1310&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chitwan Jungle Safari" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1526712318848-5f38e2740d44?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Muktinath Temple Exploration" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Serene Landscapes of Nepal" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why You Will Love 14 Days Explore Nepal Tour ?
 - **Diverse Experiences:** Covers every aspect of Nepal’s rich heritage and natural beauty, from cultural shows in Kathmandu to serene moments at Muktinath.
 - **Cultural Immersion:** Walk through Bhaktapur Durbar Square, marvel at Pashupatinath Temple, and experience Bandipur village.
@@ -12205,18 +11779,6 @@ Head to Lumbini, the birthplace of Lord Buddha, for a spiritual journey, then co
 Next, visit the charming Bandipur Village, followed by breathtaking mountain views from Nagarkot. Dive into Nepal’s rich heritage by exploring Bhaktapur Durbar Square, Patan Durbar Square, Boudhanath Stupa, and Pashupatinath Temple. On the final day, visit Dakshinkali, Chobhar, Pharping, and Kirtipur, ending your journey with a traditional Nepali dinner and cultural program.
 
 This 14 Days Nepal Tour offers a perfect balance of adventure, culture, and spiritual exploration, leaving you with cherished memories of Nepal.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1553886334-43d24f24d3bd?q=80&w=1177&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scenic Himalayan Views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1511215579272-6192432f83bc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Exploration" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1610997686651-98492fd08108?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tranquil Lakes" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why You Will Love the 14 Days Discover Nepal Tour ?
 - **A Perfect Blend of Culture, Nature, and Spirituality:** A harmonious mix of Nepal’s cultural heritage, natural beauty, and spiritual essence.
@@ -12358,18 +11920,6 @@ Back in Kathmandu, explore iconic sites such as Boudhanath Stupa, Pashupatinath 
 
 This tour offers a perfect balance of heritage, nature, and cultural immersion, leaving you with unforgettable memories of Nepal.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1696576834819-37a40bfd21c6?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scenic Annapurna Views" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1678628103733-e1a76d096a1a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Trekking Adventures" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://plus.unsplash.com/premium_photo-1697729690458-2d64ca777c04?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nepal Cultural Heritage" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why People Love the 14 Days Discover Nepal Tour with Ghandruk Trek ?
 - **Diverse Experiences:** A perfect mix of culture, history, adventure, and nature. From the tranquil jungles of Chitwan to the sacred birthplace of Lord Buddha.
 - **Rich Cultural Heritage:** Explore Nepal’s UNESCO World Heritage Sites, including Boudhanath Stupa, Pashupatinath Temple, and ancient Durbar Squares.
@@ -12505,18 +12055,6 @@ Prepare for an exciting phase as you head to Bardia, where tiger tracking in the
 
 Overall, the 15-day tour caters to a wide range of interests, offering a balanced blend of adventure, culture, wildlife, spirituality, and security, making it an attractive option for travelers looking for a comprehensive and enriching exploration of Nepal.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://tigerencounter.com/wp-content/uploads/2019/03/Tiger-Encounter-in-Bardia-National-Park-2.jpg" alt="Tiger Tracking in Bardia" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1738902917784-9c4d8e373d25?q=80&w=670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Heritage" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1738902918354-da032dd5c9be?q=80&w=668&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scenic Exploration" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love this trip?
 - **Diverse Experiences:** Explore bustling urban centers like Kathmandu, tranquil lakes in Pokhara, cultural immersion in Bandipur and Tansen, thrilling wildlife encounters in Bardia, and spiritual reflection in Lumbini.
 - **Cultural Richness:** Immerse yourself in the rich cultural heritage of Nepal, visiting ancient temples, historical landmarks, and UNESCO World Heritage Sites.
@@ -12643,18 +12181,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     overview: `Discover the wonders of Nepal on our 15-day Explore Nepal Tour. Begin in Kathmandu and travel to the charming town of Bandipur. Continue to Pokhara, famous for its beautiful lakes and mountain views. From Pokhara, journey to Jomsom and visit the sacred Muktinath Temple. Return to Pokhara before exploring the historic town of Tansen. Visit Lumbini, the peaceful birthplace of Lord Buddha, and then head to Chitwan for an exciting wildlife adventure. Finish your trip back in Kathmandu with three full days of sightseeing, exploring its rich culture and history. This tour is perfect for those who want to experience Nepal's diverse landscapes, spiritual sites, and vibrant traditions.
 
 From Kathmandu, you can experience Himalaya [Mount Everest and so many other ranges] view from early morning 1 hrs flight. Most of the visitor likes to join this tour to see highest peak of the world.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1611516491426-03025e6043c8?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Wonders" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1554710869-95f3df6a3197?q=80&w=677&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spiritual Sites" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://plus.unsplash.com/premium_photo-1697729591214-a4dc41d7d760?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scenic Splendor" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love this trip?
 - **Variety of Experiences:** A mix of cultural exploration, spiritual visits, and natural beauty, providing a diverse and enriching experience.
@@ -12790,18 +12316,6 @@ Drive to Dhulikhel, known for its panoramic Himalayan views, and visit iconic la
 
 Conclude your journey with a traditional Nepali dinner and cultural program, leaving you with cherished memories of this diverse and enriching Nepal Tour.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1504448252408-b32799ff32f3?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Charming Hilltop Villages" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1512036594830-51cea3a8df78?q=80&w=718&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Historical Journeys" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1636513988093-126e51dee32d?q=80&w=2156&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himalayan Sunrises" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why You Will Love the 15 Days Discover Nepal Tour ?
 - **A Complete Nepal Experience:** An all-encompassing journey showcasing vibrant culture, breathtaking landscapes, and spiritual heritage.
 - **Charming Hilltop Villages:** Explore the tranquil beauty of Bandipur Village, known for its traditional charm and stunning views.
@@ -12935,18 +12449,6 @@ Next, visit Lumbini, the birthplace of Lord Buddha, followed by a drive to Tanse
 From Tansen, travel to Pokhara, where you’ll explore Bindabasini Temple, Davis Fall, Gupteswori Mahadev Cave, and more. Begin the trekking segment with a drive to Nayapul, followed by treks to Thikedhunga, Ghorepani, and Poon Hill for a spectacular Himalayan sunrise. Continue through Tadapani and Ghandruk, experiencing charming villages and local culture.
 
 After descending to Nayapul and returning to Pokhara, drive or fly back to Kathmandu. Explore iconic sites such as Boudhanath Stupa, Pashupatinath Temple, Swoyambhunath Stupa, and Kathmandu durbar square concluding with a Nepali cultural dinner. End your trip with cherished memories of Nepal’s natural beauty and rich heritage.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1574410206732-0000dbcb116d?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Trekking Trails" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1660629400873-4c4ec47f3726?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Sites" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1705911566030-5f21a162b505?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himalayan Panoramas" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why You Will Love the 15 Days Explore Nepal Tour with Poon Hill Trek ?
 - **Diverse Cultural Experiences:** Immerse yourself in Nepal’s rich heritage with visits to UNESCO World Heritage Sites, Lumbini, and historic towns like Tansen and Kathmandu.
@@ -13082,18 +12584,6 @@ From Chitwan, head to Lumbini, the birthplace of Lord Buddha, with a guided tour
 Begin your trek from Phedi to Tolka, followed by Tolka to Ghandruk—a picturesque village offering stunning Himalayan views. After descending to Nayapul, drive back to Pokhara and optionally fly to Kathmandu.
 
 Conclude the journey with visits to Boudhanath Stupa, Pashupatinath Temple, Bhaktapur Durbar Square, Patan Durbar Square, Swayambhunath Stupa, and Kathmandu Durbar Square. On the final day, tour Dakshinkali, Chobhar, Pharping, and Kirtipur before enjoying a traditional Nepali dinner with a cultural show.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1545309451-2369945f85a1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Trekking to Ghandruk" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1738054410156-2fa3631c9436?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spiritual Lumbini" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1536199307404-10f48e79b590?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chitwan Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why You Will Love 15-day Discover Nepal Tour with Ghandruk Trek ?
 - **Diverse Experiences:** A perfect blend of nature, culture, and history from Kathmandu's ancient temples to the serene beauty of Pokhara and wildlife adventures in Chitwan.
@@ -13231,18 +12721,6 @@ Return to Kathmandu to conclude your tour with two full days of sightseeing in t
 
 This 16-day tour provides a perfect blend of cultural exploration, natural beauty, and thrilling adventures, making it an ideal choice for travelers seeking an enriching and unforgettable journey through Nepal. Discover the wonders of Nepal and create memories that will last a lifetime.
 
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1544735716-87fa59a45b4e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Exploration" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1545917633-ea973917d3f6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himalayan Sunrises" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://plus.unsplash.com/premium_photo-1661963741928-673ed7f7c00b?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Serene Temples" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
-
 ### Why you'll love this trip?
 - **Diverse Experiences:** A perfect blend of cultural exploration, natural beauty, and adventure.
 - **Stunning Scenery:** Breathtaking mountain views in Pokhara and panoramic landscapes of Dhulikhel.
@@ -13369,18 +12847,6 @@ From Tansen, head to Bardiya National Park, one of Nepal's best wildlife reserve
 Return to Kathmandu to conclude your tour with two full days of sightseeing. Explore the rich cultural heritage, ancient temples, and vibrant markets of the city. Visit iconic sites such as Swayambhunath (Monkey Temple), Boudhanath Stupa, and Durbar Square. This tour provides a perfect blend of cultural exploration, natural beauty, and thrilling wildlife experiences, making it an ideal choice for travelers seeking adventure and immersion in Nepal's unique traditions.
 
 Whether you're tracking tigers in Bardiya or exploring the historical sites of Kathmandu, this 16-day tour promises an enriching and unforgettable journey through Nepal.
-
-<div class="my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://republicaimg.nagariknewscdn.com/shared/web/uploads/media/TigerBardia-1200x560_20201027200017.jpg" alt="Tiger Tracking" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80" alt="Bardia Wildlife" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-  <div class="w-full h-48 md:h-64 overflow-hidden rounded-2xl shadow-md">
-    <img src="https://tigerencounter.com/wp-content/uploads/2026/01/Tiger-Cubs-in-Bardia-A-Rare-Sighting-That-Shows-Conservation-Is-Working.jpg" alt="Tiger Cubs" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-  </div>
-</div>
 
 ### Why you'll love this trip?
 - **Varied Experiences:** A mix of cultural exploration, wildlife adventure, and natural beauty.

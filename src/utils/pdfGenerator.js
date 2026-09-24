@@ -25,8 +25,18 @@ const formatAltitude = (alt, unit) => {
  * Extracts travel mode / walking / hiking activity for Outline Itinerary rows.
  */
 const getWalkingOrHiking = (day) => {
-  if (!day) return 'Walking / Hiking';
-  return day.travelMode || day.modeOfTravel || (day.activities ? day.activities : (day.walkingOrHiking || day.overnight || day.accommodation || 'Walking / Hiking'));
+  if (!day) return 'Private Vehicle';
+  if (day.modeOfTravel && day.modeOfTravel !== 'Walking') return day.modeOfTravel;
+  if (day.travelMode && day.travelMode !== 'Walking') return day.travelMode;
+  const titleLower = (day.title || '').toLowerCase();
+  const descLower = (day.desc || day.description || '').toLowerCase();
+  if (titleLower.includes('trek to') || titleLower.includes('trekking') || descLower.includes('trek from')) {
+    return 'Walking / Hiking';
+  }
+  if (titleLower.includes('flight') || titleLower.includes('fly')) {
+    return 'Flight / Private Vehicle';
+  }
+  return 'Private Vehicle';
 };
 
 /**

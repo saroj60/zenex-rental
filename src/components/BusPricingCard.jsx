@@ -20,8 +20,8 @@ const BusPricingCard = ({ isSmall = false }) => {
           alt="Tourist Bus" 
           className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
-          src="/vehicles/tourist_bus_nepal.png" 
-          onError={(e) => { e.target.onerror = null; e.target.src = 'https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg'; }} 
+          src="/images/Buses/329123096.jpg" 
+          onError={(e) => { e.target.onerror = null; e.target.src = '/images/Buses/20240605031923448.jpg'; }} 
         />
         <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
           Bus

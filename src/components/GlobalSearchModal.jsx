@@ -6,14 +6,12 @@ import { featuredPackages } from '../data/packagesData';
 import { treksData } from '../data/treksData';
 
 const STATIC_VEHICLES = [
-  { id: 1, name: 'Sedan & Hatchback', type: 'Hatchback / Sedan', img: '/images/economy_car.png' },
-  { id: 2, name: 'Toyota Fortuner', type: 'SUV / 4x4', img: '/images/suv_car.png' },
   { id: 3, name: 'Kia EV6', type: 'EV', img: '/images/luxury_car.png' },
   { id: 4, name: 'Toyota Hiace', type: 'Van / Micro', img: 'https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg' },
   { id: 5, name: 'Mahindra Scorpio', type: 'SUV / 4x4', img: 'https://cdn.zeebiz.com/sites/default/files/2022/06/28/187652-mahindra-scorpio-n-6.jpg' },
-  { id: 6, name: 'Standard Car', type: 'Sedan', img: 'https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg' },
-  { id: 7, name: 'Tourist Bus', type: 'Minibus', img: 'https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg' },
-  { id: 8, name: 'Toyota Coaster', type: 'Minibus', img: '/vehicles/Coaster.png' },
+  { id: 6, name: 'Standard Car', type: 'Sedan/Hatchback', img: 'https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg' },
+  { id: 7, name: 'Tourist Bus', type: 'Bus', img: 'https://tourpokhara.com/wp-content/uploads/2023/09/Tourist-bus.jpg' },
+  { id: 8, name: 'Toyota Coaster', type: 'Bus', img: '/vehicles/Coaster.png' },
   { id: 9, name: 'Wedding Cars', type: 'Luxury', img: '/vehicles/wedding car.avif' },
   { id: 10, name: 'Self Drive Cars', type: 'Economy', img: '/vehicles/self drive.jpg' },
 ];

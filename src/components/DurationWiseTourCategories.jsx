@@ -1,14 +1,62 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useAppData } from '../context/AppDataContext';
 import { Heart, MapPin, Clock, ArrowRight, ChevronDown, Star } from 'lucide-react';
 
 const DurationWiseTourCategories = () => {
   const { packages, tourTrips } = useAppData();
-  const [activeDuration, setActiveDuration] = useState(4);
-  const [activeCountry, setActiveCountry] = useState('All');
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const getInitialDuration = () => {
+    const param = searchParams.get('duration') || searchParams.get('days');
+    if (param && !isNaN(parseInt(param, 10))) {
+      return parseInt(param, 10);
+    }
+    const stored = sessionStorage.getItem('activeTourDuration');
+    if (stored && !isNaN(parseInt(stored, 10))) {
+      return parseInt(stored, 10);
+    }
+    return 4;
+  };
+
+  const getInitialCountry = () => {
+    const param = searchParams.get('country');
+    if (param) return param;
+    const stored = sessionStorage.getItem('activeTourCountry');
+    if (stored) return stored;
+    return 'All';
+  };
+
+  const [activeDuration, setActiveDuration] = useState(getInitialDuration);
+  const [activeCountry, setActiveCountry] = useState(getInitialCountry);
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   
+  const handleDurationChange = (days) => {
+    setActiveDuration(days);
+    sessionStorage.setItem('activeTourDuration', String(days));
+    setSearchParams((prev) => {
+      const nextParams = new URLSearchParams(prev);
+      nextParams.set('duration', String(days));
+      if (activeCountry && activeCountry !== 'All') {
+        nextParams.set('country', activeCountry);
+      }
+      return nextParams;
+    }, { replace: true });
+  };
+
+  const handleCountryChange = (c) => {
+    setActiveCountry(c);
+    sessionStorage.setItem('activeTourCountry', c);
+    setSearchParams((prev) => {
+      const nextParams = new URLSearchParams(prev);
+      nextParams.set('country', c);
+      if (activeDuration) {
+        nextParams.set('duration', String(activeDuration));
+      }
+      return nextParams;
+    }, { replace: true });
+  };
+
   const countries = ['All', 'Nepal', 'Bhutan', 'India', 'Tibet'];
 
   // Helper to extract days from tour object
@@ -94,7 +142,7 @@ const DurationWiseTourCategories = () => {
         id: t.slug || t.id,
         title: t.title,
         duration: t.duration,
-        img: formatTourImgSrc(t.heroImage || t.image || t.img, t.title, idx),
+        img: formatTourImgSrc(t.image || t.img || t.heroImage, t.title, idx),
         price: formatPriceStr(t.pricingInfo?.sellingPrice || t.price),
         location: t.destination || t.country || 'Nepal',
         isTourTrip: true
@@ -105,7 +153,7 @@ const DurationWiseTourCategories = () => {
         id: p.slug || p.id,
         title: p.title,
         duration: p.duration,
-        img: formatTourImgSrc(p.heroImage || p.image || p.img, p.title, idx),
+        img: formatTourImgSrc(p.image || p.img || p.heroImage, p.title, idx),
         price: formatPriceStr(p.pricingInfo?.sellingPrice || p.price),
         location: p.destination || p.country || 'Nepal'
       }));
@@ -190,7 +238,7 @@ const DurationWiseTourCategories = () => {
                    <button 
                      key={c}
                      onClick={() => {
-                       setActiveCountry(c);
+                       handleCountryChange(c);
                        scrollToToursSection();
                      }}
                      className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
@@ -210,7 +258,7 @@ const DurationWiseTourCategories = () => {
                     <button
                       key={days}
                       onClick={() => {
-                        setActiveDuration(days);
+                        handleDurationChange(days);
                         setMobileFilterOpen(false);
                         scrollToToursSection();
                       }}
@@ -240,7 +288,7 @@ const DurationWiseTourCategories = () => {
                    <button 
                      key={c}
                      onClick={() => {
-                       setActiveCountry(c);
+                       handleCountryChange(c);
                        scrollToToursSection();
                      }}
                      className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 border ${
@@ -262,7 +310,7 @@ const DurationWiseTourCategories = () => {
                   <li key={days}>
                     <button
                       onClick={() => {
-                        setActiveDuration(days);
+                        handleDurationChange(days);
                         scrollToToursSection();
                       }}
                       className={`relative w-full flex items-center justify-between px-4 py-3 text-[15px] font-medium rounded-xl transition-all duration-300 overflow-hidden group ${
@@ -322,6 +370,10 @@ const DurationWiseTourCategories = () => {
                   <Link
                     key={idx}
                     to={`/tour/${tour.id || tour.title.toLowerCase().replace(/\s+/g, '-')}`}
+                    onClick={() => {
+                      sessionStorage.setItem('activeTourDuration', String(activeDuration));
+                      sessionStorage.setItem('activeTourCountry', activeCountry);
+                    }}
                     className="group flex flex-col bg-white rounded-[16px] sm:rounded-[20px] shadow-[0_4px_24px_-8px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_32px_-8px_rgba(229,154,47,0.14)] border border-slate-100 hover:border-orange-500/20 overflow-hidden transition-all duration-300 sm:hover:-translate-y-1.5"
                   >
                     {/* Image Area */}

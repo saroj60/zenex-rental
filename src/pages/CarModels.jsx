@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SEO from '../components/SEO';
-import { Car, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Star, Sparkles } from 'lucide-react';
+import { Car, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Star, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { Link } from 'react-router-dom';
 
@@ -29,15 +29,28 @@ const models = [
   { name: '35 Seater Tourist Bus', price: 17000 }
 ];
 
-const galleryImages = [
-  "/images/economy_car.png",
-  "/images/suv_car.png",
-  "https://news24online.com/wp-content/uploads/2023/12/image-339.png",
-  "https://nissan-nepal.com/assets/images/product/nissan-new-car.jpg"
+const weddingCarImages = [
+  "/images/wedding cars/92cf7cc6-92b6-4adb-9154-f3977c8687d6.webp",
+  "/images/wedding cars/Weddings-Car-Decoration-Service-Kaleepk-Cars-Decoration-In-Karachi-27.webp",
+  "/images/wedding cars/images.jpg",
+  "/images/wedding cars/wedding-car-flower-decoration-services-in-bhubaneswar-and-cuttack.jpg",
+  "/images/wedding cars/wedding-car-rental-500x500.webp",
+  "/images/wedding cars/wedding-car-rental.png"
 ];
 
 const CarModels = () => {
   const { formatPrice } = useCurrency();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % weddingCarImages.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % weddingCarImages.length);
+  const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + weddingCarImages.length) % weddingCarImages.length);
 
   const handleBook = (model) => {
     const message = `Hi Zenex Travel, I'm interested in renting the ${model.name} for a wedding priced at ${formatPrice(model.price)} / Day. Is it available?`;
@@ -47,23 +60,68 @@ const CarModels = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Wedding Car Models | Zenex Travels"
-        description="View pricing details for our specific wedding car models including BYD, Mercedes, Landcruiser, and more."
+        title="Wedding Car Fleet & Rentals | Zenex Travels"
+        description="View pricing details for our exclusive wedding car fleet including BYD, Mercedes, Landcruiser, floral decorated cars, and luxury buses in Nepal."
       />
       
-      {/* Hero Section */}
-      <section className="relative h-[450px] md:h-[520px] w-full flex items-end pb-16 justify-center">
+      {/* Dynamic Hero Slider */}
+      <section className="relative h-[480px] md:h-[550px] w-full flex items-end pb-16 justify-center overflow-hidden bg-slate-950">
         <div className="absolute inset-0 z-0">
-          <img
-            alt="Wedding Cars"
-            className="w-full h-full object-cover object-center"
-            src="/vehicles/wedding car.avif"
-            onError={(e) => { e.target.onerror = null; e.target.src = 'https://www.vivaanadventure.com/wp-content/uploads/2021/03/received_1697574793740466.jpeg'; }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
+          {weddingCarImages.map((img, idx) => (
+            <div
+              key={idx}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                idx === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+              }`}
+            >
+              {/* Blurred background backdrop */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center filter blur-2xl opacity-40 scale-110"
+                style={{ backgroundImage: `url("${img}")` }}
+              />
+              <img
+                alt={`Wedding Car Slide ${idx + 1}`}
+                className="relative w-full h-full object-contain md:object-cover object-center transition-transform duration-700"
+                src={img}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
+            </div>
+          ))}
+        </div>
+
+        {/* Previous Button */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/40 hover:bg-[#e53a24] text-white backdrop-blur-md transition-all border border-white/20 shadow-lg hover:scale-110"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft size={22} />
+        </button>
+
+        {/* Next Button */}
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/40 hover:bg-[#e53a24] text-white backdrop-blur-md transition-all border border-white/20 shadow-lg hover:scale-110"
+          aria-label="Next slide"
+        >
+          <ChevronRight size={22} />
+        </button>
+
+        {/* Slide Indicators */}
+        <div className="absolute top-6 right-6 z-30 flex items-center gap-2 bg-black/40 backdrop-blur-md px-3.5 py-2 rounded-full border border-white/20 shadow-md">
+          {weddingCarImages.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentImageIndex(idx)}
+              className={`h-2.5 rounded-full transition-all duration-300 ${
+                idx === currentImageIndex ? 'w-7 bg-[#e53a24]' : 'w-2.5 bg-white/50 hover:bg-white'
+              }`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
         </div>
         
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8">
+        <div className="relative z-20 w-full max-w-6xl mx-auto px-4 md:px-8">
           <Link to="/vehicles" className="inline-flex items-center gap-2 text-white/80 font-bold mb-6 hover:text-white transition-colors">
             <ArrowLeft size={16} /> Back to Vehicles
           </Link>
@@ -98,9 +156,9 @@ const CarModels = () => {
             Vehicle Gallery
           </h2>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            {galleryImages.map((img, idx) => (
+            {weddingCarImages.map((img, idx) => (
               <div key={idx} className="relative w-32 h-24 sm:w-40 sm:h-28 rounded-xl overflow-hidden shadow-md group cursor-pointer border-2 border-transparent hover:border-[#1e3a8a] transition-all bg-gray-50 flex items-center justify-center">
-                <img src={img} alt={`Wedding Car Gallery ${idx + 1}`} className="max-w-full max-h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src={img} alt={`Wedding Car Gallery ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
             ))}
           </div>

@@ -4,7 +4,7 @@ import SEO from '../components/SEO';
 import { useAppData } from '../context/AppDataContext';
 import EssentialInfoSection from '../components/EssentialInfoSection';
 import { packageExtraData } from './PackageDetail';
-import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, X, Play, ImageIcon, Calendar, List, DollarSign, ChevronDown, ChevronUp, CheckCircle2, XCircle, BookOpen, Puzzle, Briefcase, HelpCircle, ChevronRight, Globe, CalendarDays, Activity, Mountain, Bed, Utensils, CloudSun, Car, Heart, FileText, Info, Plus } from 'lucide-react';
+import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, X, Play, ImageIcon, Calendar, List, DollarSign, ChevronDown, ChevronUp, CheckCircle2, XCircle, BookOpen, Puzzle, Briefcase, HelpCircle, ChevronRight, Globe, CalendarDays, Activity, Mountain, Bed, Utensils, CloudSun, Car, Heart, FileText, Info, Plus, Sun } from 'lucide-react';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
 import { formatDuration } from '../utils/duration';
@@ -71,9 +71,18 @@ const TourTripDetail = () => {
   };
 
   const getWalkingOrHiking = (day) => {
-    if (day.modeOfTravel) return day.modeOfTravel;
-    if (day.dayNumber === 1 || day.title.toLowerCase().includes('arrival')) return '-';
-    return 'Walking';
+    if (day.modeOfTravel && day.modeOfTravel !== 'Walking') return day.modeOfTravel;
+    if (day.travelMode && day.travelMode !== 'Walking') return day.travelMode;
+    const titleLower = (day.title || '').toLowerCase();
+    const descLower = (day.desc || day.description || '').toLowerCase();
+    
+    if (titleLower.includes('trek to') || titleLower.includes('trekking') || descLower.includes('trek from')) {
+      return 'Walking / Hiking';
+    }
+    if (titleLower.includes('flight') || titleLower.includes('fly')) {
+      return 'Flight / Private Vehicle';
+    }
+    return 'Private Vehicle';
   };
 
   const scrollToSection = (sectionId) => {
@@ -602,6 +611,31 @@ const TourTripDetail = () => {
                   className="prose prose-emerald max-w-none text-gray-700 text-base md:text-lg leading-relaxed space-y-4 font-normal"
                   dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(trip.description || trip.overview) }}
                 />
+
+                {/* Best Time to Visit (Simple Pointwise) */}
+                <div className="mt-8 pt-6 border-t border-gray-100">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <Sun className="text-amber-500" size={22} /> Best Time to Visit
+                  </h3>
+                  <ul className="space-y-3 text-base text-gray-700">
+                    <li className="flex items-start gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-2"></span>
+                      <span><strong>Spring (March to May):</strong> Mild temperatures, blooming rhododendrons, and crystal-clear morning mountain views.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-amber-500 shrink-0 mt-2"></span>
+                      <span><strong>Autumn (September to November):</strong> Crisp post-monsoon air, optimal mountain clarity, and vibrant festive atmosphere.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0 mt-2"></span>
+                      <span><strong>Winter (December to February):</strong> Cool, dry sunny days with clear morning vistas; excellent for lower altitude sightseeing.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="w-2 h-2 rounded-full bg-teal-500 shrink-0 mt-2"></span>
+                      <span><strong>Summer / Monsoon (June to August):</strong> Lush green landscapes and quiet trails; ideal for rain-shadow regions (Mustang & Dolpo).</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               {/* Highlights */}

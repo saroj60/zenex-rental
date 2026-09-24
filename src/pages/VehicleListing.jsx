@@ -23,8 +23,12 @@ const VehicleListing = () => {
     if (name.includes('scorpio')) return '/vehicles/scorpio-routes';
     if (name.includes('bus')) return '/vehicles/bus-routes';
     if (name.includes('coaster')) return '/vehicles/coaster-routes';
-    if (name.includes('wedding') || name.includes('model') || vehicle.type === 'Luxury') return '/vehicles/car-models';
+    if (name.includes('ev van') || name.includes('ev-van') || (name.includes('ev') && name.includes('van'))) return '/vehicles/ev-van-routes';
+    if (name.includes('ev') || name.includes('electric') || vehicle.type === 'EV') return '/vehicles/ev-routes';
+    if (name.includes('fortuner') || name.includes('land cruiser') || name.includes('cruiser')) return '/vehicles/fortuner-routes';
+    if (name.includes('wedding') || name.includes('model') || vehicle.type === 'Luxury') return '/vehicles/wedding-cars';
     if (name.includes('self drive') || name.includes('self-drive')) return '/vehicles/self-drive';
+    if (name.includes('standard') || name.includes('sedan')) return '/vehicles/car-routes';
     return '/vehicles/car-routes';
   };
   const [searchParams] = useSearchParams();

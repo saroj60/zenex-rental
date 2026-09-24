@@ -147,12 +147,12 @@ const FleetManagement = () => {
                   <label className="text-xs font-bold text-on-surface-variant">Type</label>
                   <select value={newVehicle.type} onChange={e => setNewVehicle({...newVehicle, type: e.target.value})} className="w-full border rounded-lg p-2.5 text-sm outline-none focus:border-himalayan-blue">
                     <option value="Economy">Economy</option>
-                    <option value="Sedan">Sedan</option>
+                    <option value="Sedan/Hatchback">Sedan/Hatchback</option>
                     <option value="SUV / 4x4">SUV / 4x4</option>
                     <option value="Luxury">Luxury</option>
                     <option value="EV">EV</option>
                     <option value="Van / Micro">Van / Micro</option>
-                    <option value="Minibus">Minibus</option>
+                    <option value="Bus">Bus</option>
                     <option value="Pickup Truck">Pickup Truck</option>
                   </select>
                 </div>

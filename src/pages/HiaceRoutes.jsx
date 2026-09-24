@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SEO from '../components/SEO';
-import { MapPin, Calendar, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Users, Snowflake } from 'lucide-react';
+import { MapPin, Calendar, MessageCircle, ArrowLeft, ShieldCheck, CheckCircle2, Users, Snowflake, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { Link } from 'react-router-dom';
 
@@ -24,14 +24,28 @@ const routes = [
 ];
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80",
-  "https://www.vivaanadventure.com/wp-content/uploads/2021/03/received_1697574793740466.jpeg",
-  "https://www.toyota.com.sg/-/media/ae9ceaa9654747a8a51de8e84c0d98e2.png"
+  "/images/Hiace/toyota-hiace-masthead-m.jpg",
+  "/images/Hiace/260220102551DSC_1528.webp",
+  "/images/Hiace/what-is-a-toyota-hiace-4x4-6778415c.png",
+  "/images/Hiace/toyota-hiace.jpg",
+  "/images/Hiace/front-left-side-47.avif",
+  "/images/Hiace/c87077683f35026a1dba1323c8cdccad.avif",
+  "/images/Hiace/images.jpg"
 ];
 
 const HiaceRoutes = () => {
   const { formatPrice } = useCurrency();
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % galleryImages.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % galleryImages.length);
+  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
 
   const handleBook = (route) => {
     const message = `Hi Zenex Travel, I'm interested in booking a Toyota Hiace for the route: ${route.dest} (${route.duration}) priced at ${formatPrice(route.price)}. Is it available?`;
@@ -45,18 +59,65 @@ const HiaceRoutes = () => {
         description="View pricing details for all Toyota Hiace routes across Nepal including Pokhara, Chitwan, Muktinath and more."
       />
       
-      {/* Hero Section */}
-      <section className="relative h-[450px] md:h-[520px] w-full flex items-end pb-16 justify-center">
+      {/* Dynamic Hero Slider */}
+      <section className="relative h-[480px] md:h-[550px] w-full flex items-end pb-16 justify-center overflow-hidden bg-slate-950">
         <div className="absolute inset-0 z-0">
-          <img
-            alt="Toyota Hiace"
-            className="w-full h-full object-cover object-center"
-            src="https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
+          {galleryImages.map((img, idx) => (
+            <div
+              key={idx}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                idx === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+              }`}
+            >
+              {/* Soft background fill */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center filter blur-2xl opacity-40 scale-110"
+                style={{ backgroundImage: `url(${img})` }}
+              />
+              <img
+                alt={`Toyota Hiace slide ${idx + 1}`}
+                className="relative w-full h-full object-contain md:object-cover object-center transition-transform duration-700"
+                src={img}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-transparent"></div>
+            </div>
+          ))}
         </div>
-        
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8">
+
+        {/* Previous Button */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/40 hover:bg-[#e53a24] text-white backdrop-blur-md transition-all border border-white/20 shadow-lg hover:scale-110"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft size={22} />
+        </button>
+
+        {/* Next Button */}
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/40 hover:bg-[#e53a24] text-white backdrop-blur-md transition-all border border-white/20 shadow-lg hover:scale-110"
+          aria-label="Next slide"
+        >
+          <ChevronRight size={22} />
+        </button>
+
+        {/* Indicator Dots */}
+        <div className="absolute top-6 right-6 z-30 flex items-center gap-2 bg-black/40 backdrop-blur-md px-3.5 py-2 rounded-full border border-white/20 shadow-md">
+          {galleryImages.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentSlide(idx)}
+              className={`h-2.5 rounded-full transition-all duration-300 ${
+                idx === currentSlide ? 'w-7 bg-[#e53a24]' : 'w-2.5 bg-white/50 hover:bg-white'
+              }`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* Hero Banner Content */}
+        <div className="relative z-20 w-full max-w-6xl mx-auto px-4 md:px-8">
           <Link to="/vehicles" className="inline-flex items-center gap-2 text-white/80 font-bold mb-6 hover:text-white transition-colors">
             <ArrowLeft size={16} /> Back to Vehicles
           </Link>
