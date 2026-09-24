@@ -4,7 +4,7 @@ export const seoLandingData = [
     title: 'Car Rental Kathmandu - Best Deals on Vehicles',
     h1: 'Best Car Rental Service in Kathmandu',
     metaDescription: 'Looking for the best car rental in Kathmandu? We offer cheap, reliable, and luxury vehicle hire including SUVs, Jeeps, and cars with experienced drivers.',
-    heroImage: '/images/kathmandu valley.jpg',
+    heroImage: '/images/kathmandu.jpg',
     overview: 'Kathmandu is the gateway to Nepal and navigating its bustling streets or heading out to remote trails requires reliable transportation. Zenex Travel offers premium car rental services in Kathmandu ranging from economical hatchbacks for city tours to powerful 4x4 SUVs for mountain trips. Whether you need an airport transfer, a wedding car, or a vehicle for a week-long tour, we guarantee the best prices and top-condition vehicles.',
     highlights: [
       'Experienced and licensed drivers familiar with all routes.',

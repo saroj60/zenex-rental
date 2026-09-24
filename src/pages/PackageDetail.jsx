@@ -4443,7 +4443,7 @@ Over the next two days, explore Lhasa’s top attractions. Visit the Potala Pala
 Your journey concludes with a scenic drive to Gonggar Airport and a flight back to Kathmandu, leaving you with unforgettable memories of Tibet’s rich heritage and stunning landscapes.
 
 <div class="my-8 w-full h-64 md:h-80 overflow-hidden rounded-2xl shadow-md">
-  <img src="https://www.tibettravel.org/assets/images/shigatse/6-days-lhasa-to-shigatse-tour-8.jpg" alt="Potala Palace Tibet" class="w-full h-full object-cover" />
+  <img src="/zenex images/Lhasa/photo-1607857581971-775fece813c4.avif" alt="Potala Palace Tibet" class="w-full h-full object-cover" />
 </div>
 
 ### Best Time to Visit
@@ -5402,7 +5402,7 @@ The next morning, fly to Pokhara, a city famous for its stunning views of the An
 On your last day, witness a breathtaking sunrise at Sarangkot before flying back to Kathmandu for a city tour featuring Boudhanath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square. This Nepal highlights tour combines natural beauty, culture, and wildlife for an unforgettable experience.
 
 <div class="my-8 w-full h-64 md:h-80 overflow-hidden rounded-2xl shadow-md">
-  <img src="https://www.easytournepal.com/admin/public/images/trip/kathmandu-pokhara-lumbini-chitwan-tour.jpg" alt="Kathmandu Chitwan Pokhara Tour" class="w-full h-full object-cover" />
+  <img src="/zenex images/chitwan/photo-1700366776973-20bda63d5b1a.avif" alt="Kathmandu Chitwan Pokhara Tour" class="w-full h-full object-cover" />
 </div>
 
 ### Why you'll love 5 Days Kathmandu Chitwan Pokhara Tour ?
