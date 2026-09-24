@@ -3418,6 +3418,14 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-bardia-national-park-tour': {
+    image: '/images/Tours/5-days-bardia-national-park-tour/bardia-national-park-gate.jpg',
+    img: '/images/Tours/5-days-bardia-national-park-tour/bardia-national-park-gate.jpg',
+    bannerImage: '/images/Tours/5-days-bardia-national-park-tour/bardia-national-park-gate.jpg',
+    gallery: [
+      '/images/Tours/5-days-bardia-national-park-tour/bardia-national-park-gate.jpg',
+      '/zenex images/Bardia National Park/photo-1581008247561-000e38be1be2.avif',
+      '/zenex images/Bardia National Park/photo-1738902918354-da032dd5c9be.avif'
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
