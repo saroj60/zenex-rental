@@ -580,6 +580,12 @@ Experience river rafting and jungle safari across Nepal's best seasons:
   },
 
     '8-days-kathmandu-pokhara-muktinath-chitwan-tour': {
+    image: '/images/Tours/8-days-kathmandu-pokhara-muktinath-chitwan-tour/8-days-kathmandu-pokhara-muktinath-chitwan-tour.jpg',
+    img: '/images/Tours/8-days-kathmandu-pokhara-muktinath-chitwan-tour/8-days-kathmandu-pokhara-muktinath-chitwan-tour.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-muktinath-chitwan-tour/8-days-kathmandu-pokhara-muktinath-chitwan-tour.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-pokhara-muktinath-chitwan-tour/8-days-kathmandu-pokhara-muktinath-chitwan-tour.jpg',
+    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -1701,6 +1707,12 @@ The tour ends with your departure on day six, leaving you with cherished memorie
     ]
   },
   '6-days-kathmandu-pokhara-muktinath-tour': {
+    image: '/images/Tours/6-days-kathmandu-pokhara-muktinath-tour/6-days-kathmandu-pokhara-muktinath-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-pokhara-muktinath-tour/6-days-kathmandu-pokhara-muktinath-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-pokhara-muktinath-tour/6-days-kathmandu-pokhara-muktinath-tour.jpg',
+    gallery: [
+      '/images/Tours/6-days-kathmandu-pokhara-muktinath-tour/6-days-kathmandu-pokhara-muktinath-tour.jpg',
+    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3238,6 +3250,12 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-pokhara-muktinath-tour': {
+    image: '/images/Tours/5-days-kathmandu-pokhara-muktinath-tour/5-days-kathmandu-pokhara-muktinath-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-pokhara-muktinath-tour/5-days-kathmandu-pokhara-muktinath-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-pokhara-muktinath-tour/5-days-kathmandu-pokhara-muktinath-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-pokhara-muktinath-tour/5-days-kathmandu-pokhara-muktinath-tour.jpg',
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
