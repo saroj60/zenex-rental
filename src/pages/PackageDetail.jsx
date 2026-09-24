@@ -2936,6 +2936,12 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-nagarkot-tour': {
+    image: '/images/Tours/5-days-kathmandu-nagarkot-tour/5-days-kathmandu-nagarkot-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-nagarkot-tour/5-days-kathmandu-nagarkot-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-nagarkot-tour/5-days-kathmandu-nagarkot-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-nagarkot-tour/5-days-kathmandu-nagarkot-tour.jpg',
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
