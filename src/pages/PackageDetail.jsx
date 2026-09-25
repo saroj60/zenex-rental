@@ -8802,6 +8802,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-chitwan-trek-9d': {
+    image: '/images/Tours/9-days-kathmandu-pokhara-chitwan-tour-with-trek/9-days-kathmandu-pokhara-chitwan-tour-with-trek.jpg',
+    img: '/images/Tours/9-days-kathmandu-pokhara-chitwan-tour-with-trek/9-days-kathmandu-pokhara-chitwan-tour-with-trek.jpg',
+    bannerImage: '/images/Tours/9-days-kathmandu-pokhara-chitwan-tour-with-trek/9-days-kathmandu-pokhara-chitwan-tour-with-trek.jpg',
+    gallery: [
+      '/images/Tours/9-days-kathmandu-pokhara-chitwan-tour-with-trek/9-days-kathmandu-pokhara-chitwan-tour-with-trek.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '9 Days 8 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14305,5 +14311,6 @@ packageExtraData['12-days-nepal-tour-with-ghandruk-trek'] = packageExtraData['ne
 packageExtraData['9-days-kathmandu-pokhara-chitwan-tour-with-rafting'] = packageExtraData['ktm-pokhara-chitwan-rafting-9d'];
 packageExtraData['8-days-kathmandu-pokhara-chitwan-nagarkot-tour'] = packageExtraData['ktm-pokhara-chitwan-nagarkot-8d'];
 packageExtraData['9-days-kathmandu-pokhara-chitwan-nagarkot-tour'] = packageExtraData['ktm-pokhara-chitwan-nagarkot-9d'];
+packageExtraData['9-days-kathmandu-pokhara-chitwan-tour-with-trek'] = packageExtraData['ktm-pokhara-chitwan-trek-9d'];
 
 export default PackageDetail;
