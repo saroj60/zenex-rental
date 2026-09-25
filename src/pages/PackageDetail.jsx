@@ -8961,6 +8961,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-chitwan-rafting-9d': {
+    image: '/images/Tours/9-days-kathmandu-pokhara-chitwan-tour-with-rafting/9-days-kathmandu-pokhara-chitwan-tour-with-rafting.jpg',
+    img: '/images/Tours/9-days-kathmandu-pokhara-chitwan-tour-with-rafting/9-days-kathmandu-pokhara-chitwan-tour-with-rafting.jpg',
+    bannerImage: '/images/Tours/9-days-kathmandu-pokhara-chitwan-tour-with-rafting/9-days-kathmandu-pokhara-chitwan-tour-with-rafting.jpg',
+    gallery: [
+      '/images/Tours/9-days-kathmandu-pokhara-chitwan-tour-with-rafting/9-days-kathmandu-pokhara-chitwan-tour-with-rafting.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '9 Days 8 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14278,5 +14284,6 @@ Object.keys(packageExtraData).forEach(key => {
 
 packageExtraData['10-days-nepal-tour-with-lumbini'] = packageExtraData['nepal-tour-lumbini-10d'];
 packageExtraData['12-days-nepal-tour-with-ghandruk-trek'] = packageExtraData['nepal-tour-ghandruk-trek-12d'];
+packageExtraData['9-days-kathmandu-pokhara-chitwan-tour-with-rafting'] = packageExtraData['ktm-pokhara-chitwan-rafting-9d'];
 
 export default PackageDetail;
