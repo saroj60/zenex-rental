@@ -2763,6 +2763,12 @@ On the final day, you will depart with unforgettable memories of your Kathmandu 
     ]
   },
   '5-days-kathmandu-chitwan-tour': {
+    image: '/images/Tours/5-days-kathmandu-chitwan-tour/5-days-kathmandu-chitwan-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-chitwan-tour/5-days-kathmandu-chitwan-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-chitwan-tour/5-days-kathmandu-chitwan-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-chitwan-tour/5-days-kathmandu-chitwan-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
