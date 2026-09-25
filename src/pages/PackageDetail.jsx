@@ -10533,6 +10533,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'nepal-tour-lumbini-11d': {
+    image: '/images/Tours/11-days-nepal-tour-with-lumbini/11-days-nepal-tour-with-lumbini.png',
+    img: '/images/Tours/11-days-nepal-tour-with-lumbini/11-days-nepal-tour-with-lumbini.png',
+    bannerImage: '/images/Tours/11-days-nepal-tour-with-lumbini/11-days-nepal-tour-with-lumbini.png',
+    gallery: [
+      '/images/Tours/11-days-nepal-tour-with-lumbini/11-days-nepal-tour-with-lumbini.png'
+    ],
     quickInfo: [
       { label: 'Duration', value: '11 Days 10 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14312,5 +14318,6 @@ packageExtraData['9-days-kathmandu-pokhara-chitwan-tour-with-rafting'] = package
 packageExtraData['8-days-kathmandu-pokhara-chitwan-nagarkot-tour'] = packageExtraData['ktm-pokhara-chitwan-nagarkot-8d'];
 packageExtraData['9-days-kathmandu-pokhara-chitwan-nagarkot-tour'] = packageExtraData['ktm-pokhara-chitwan-nagarkot-9d'];
 packageExtraData['9-days-kathmandu-pokhara-chitwan-tour-with-trek'] = packageExtraData['ktm-pokhara-chitwan-trek-9d'];
+packageExtraData['11-days-nepal-tour-with-lumbini'] = packageExtraData['nepal-tour-lumbini-11d'];
 
 export default PackageDetail;
