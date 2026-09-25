@@ -3704,6 +3704,12 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '4-days-kathmandu-dhulikhel-tour': {
+    image: '/images/Tours/4-days-kathmandu-dhulikhel-tour/4-days-kathmandu-dhulikhel-tour.jpg',
+    img: '/images/Tours/4-days-kathmandu-dhulikhel-tour/4-days-kathmandu-dhulikhel-tour.jpg',
+    bannerImage: '/images/Tours/4-days-kathmandu-dhulikhel-tour/4-days-kathmandu-dhulikhel-tour.jpg',
+    gallery: [
+      '/images/Tours/4-days-kathmandu-dhulikhel-tour/4-days-kathmandu-dhulikhel-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
