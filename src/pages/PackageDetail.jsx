@@ -13316,6 +13316,14 @@ With personalized care, natural therapies, and the soothing rhythm of nature, th
     gallery: [
       '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.jpg'
     ]
+  },
+  '8-days-tibet-tour-with-shigatse-gyantse-samye': {
+    image: '/images/Tours/8-days-tibet-tour-with-shigatse-gyantse-samye/8-days-tibet-tour-with-shigatse-gyantse-samye.jpg',
+    img: '/images/Tours/8-days-tibet-tour-with-shigatse-gyantse-samye/8-days-tibet-tour-with-shigatse-gyantse-samye.jpg',
+    bannerImage: '/images/Tours/8-days-tibet-tour-with-shigatse-gyantse-samye/8-days-tibet-tour-with-shigatse-gyantse-samye.jpg',
+    gallery: [
+      '/images/Tours/8-days-tibet-tour-with-shigatse-gyantse-samye/8-days-tibet-tour-with-shigatse-gyantse-samye.jpg'
+    ]
   }
 };
 
