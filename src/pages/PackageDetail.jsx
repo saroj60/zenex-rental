@@ -10765,6 +10765,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'nepal-tour-ghandruk-trek-12d': {
+    image: '/images/Tours/12-days-nepal-tour-with-ghandruk-trek/12-days-nepal-tour-with-ghandruk-trek.jpg',
+    img: '/images/Tours/12-days-nepal-tour-with-ghandruk-trek/12-days-nepal-tour-with-ghandruk-trek.jpg',
+    bannerImage: '/images/Tours/12-days-nepal-tour-with-ghandruk-trek/12-days-nepal-tour-with-ghandruk-trek.jpg',
+    gallery: [
+      '/images/Tours/12-days-nepal-tour-with-ghandruk-trek/12-days-nepal-tour-with-ghandruk-trek.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '12 Days 11 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14271,5 +14277,6 @@ Object.keys(packageExtraData).forEach(key => {
 });
 
 packageExtraData['10-days-nepal-tour-with-lumbini'] = packageExtraData['nepal-tour-lumbini-10d'];
+packageExtraData['12-days-nepal-tour-with-ghandruk-trek'] = packageExtraData['nepal-tour-ghandruk-trek-12d'];
 
 export default PackageDetail;
