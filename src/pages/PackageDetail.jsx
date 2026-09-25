@@ -11,10 +11,6 @@ import { generatePackagePDF } from '../utils/pdfGenerator';
 
 export const packageExtraData = {
   '8-days-kathmandu-pokhara-chitwan-nagarkot-tour': {
-    image: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
-    img: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
-    gallery: ['/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -205,12 +201,6 @@ Experience Nepal's classic golden circuit across the best travel seasons:
   },
 
   '8-days-kathmandu-bandipur-pokhara-tour-with-trek': {
-    image: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
-    img: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
-    bannerImage: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
-    gallery: [
-      '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -590,12 +580,6 @@ Experience river rafting and jungle safari across Nepal's best seasons:
   },
 
     '8-days-kathmandu-pokhara-muktinath-chitwan-tour': {
-    image: '/images/Tours/8-days-kathmandu-pokhara-muktinath-chitwan-tour/8-days-kathmandu-pokhara-muktinath-chitwan-tour.jpg',
-    img: '/images/Tours/8-days-kathmandu-pokhara-muktinath-chitwan-tour/8-days-kathmandu-pokhara-muktinath-chitwan-tour.jpg',
-    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-muktinath-chitwan-tour/8-days-kathmandu-pokhara-muktinath-chitwan-tour.jpg',
-    gallery: [
-      '/images/Tours/8-days-kathmandu-pokhara-muktinath-chitwan-tour/8-days-kathmandu-pokhara-muktinath-chitwan-tour.jpg',
-    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -811,12 +795,6 @@ We hope you had a magical experience in the Himalayas and we hope to see you aga
     ]
   },
 '8-days-kathmandu-pokhara-lumbini-chitwan-tour': {
-    image: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
-    img: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
-    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
-    gallery: [
-      '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -1012,11 +990,11 @@ The 8 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour is a year-round adventure,
   },
 
   '7-days-kathmandu-bandipur-pokhara-tour': {
-    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
-    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
-    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
     gallery: [
-      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/360_F_84173867_4MrZbc3zKlIdiCv1zIhYkglL23L2qJqk.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/istockphoto-1374221694-612x612.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/istockphoto-499654668-612x612.jpg',
@@ -1190,11 +1168,11 @@ Return to Kathmandu on day five and explore UNESCO Heritage sites including Boud
     ]
   },
   '7-days-kathmandu-chitwan-pokhara-lumbini-tour': {
-    image: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    img: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    bannerImage: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    image: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
+    img: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
+    bannerImage: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
     gallery: [
-      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
       '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1549888668-19281758dfbe.avif',
       '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1562462181-b228e3cff9ad.avif',
       '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1579863834020-2a9366e128ce.avif',
@@ -1370,12 +1348,6 @@ Early morning on day 5, enjoy a Sarangkot sunrise over Annapurna & Fishtail moun
     ]
   },
   '6-days-kathmandu-chitwan-pokhara-lumbini-tour': {
-    image: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    img: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    bannerImage: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    gallery: [
-      '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -1557,12 +1529,6 @@ The final full day includes guided visits to Kathmandu UNESCO Heritage Sites: Bo
     ]
   },
   '6-days-kathmandu-bandipur-pokhara-tour': {
-    image: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
-    img: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
-    bannerImage: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
-    gallery: [
-      '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -1735,12 +1701,6 @@ The tour ends with your departure on day six, leaving you with cherished memorie
     ]
   },
   '6-days-kathmandu-pokhara-muktinath-tour': {
-    image: '/images/Tours/6-days-kathmandu-pokhara-muktinath-tour/6-days-kathmandu-pokhara-muktinath-tour.jpg',
-    img: '/images/Tours/6-days-kathmandu-pokhara-muktinath-tour/6-days-kathmandu-pokhara-muktinath-tour.jpg',
-    bannerImage: '/images/Tours/6-days-kathmandu-pokhara-muktinath-tour/6-days-kathmandu-pokhara-muktinath-tour.jpg',
-    gallery: [
-      '/images/Tours/6-days-kathmandu-pokhara-muktinath-tour/6-days-kathmandu-pokhara-muktinath-tour.jpg',
-    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -1919,10 +1879,6 @@ Your 6-day adventure concludes with a departure, leaving you with unforgettable 
     ]
   },
   '6-days-kathmandu-pokhara-tour': {
-    image: '/images/Tours/6-days-kathmandu-pokhara-tour/6-days-kathmandu-pokhara-tour.jpg',
-    img: '/images/Tours/6-days-kathmandu-pokhara-tour/6-days-kathmandu-pokhara-tour.jpg',
-    bannerImage: '/images/Tours/6-days-kathmandu-pokhara-tour/6-days-kathmandu-pokhara-tour.jpg',
-    gallery: ['/images/Tours/6-days-kathmandu-pokhara-tour/6-days-kathmandu-pokhara-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -2094,12 +2050,6 @@ This 6 Days Kathmandu Pokhara Tour is ideal for nature lovers, cultural enthusia
     ]
   },
   '6-days-kathmandu-lumbini-nagarkot-tour': {
-    image: '/images/Tours/6-days-kathmandu-lumbini-nagarkot-tour/6-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    img: '/images/Tours/6-days-kathmandu-lumbini-nagarkot-tour/6-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/6-days-kathmandu-lumbini-nagarkot-tour/6-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    gallery: [
-      '/images/Tours/6-days-kathmandu-lumbini-nagarkot-tour/6-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -2271,10 +2221,6 @@ Your 6 Days Kathmandu Lumbini Nagarkot Tour ends with a memorable departure, tak
     ]
   },
   '6-days-kathmandu-chitwan-nagarkot-tour': {
-    image: '/images/Tours/6-days-kathmandu-chitwan-nagarkot-tour/6-days-kathmandu-chitwan-nagarkot-tour.jpg',
-    img: '/images/Tours/6-days-kathmandu-chitwan-nagarkot-tour/6-days-kathmandu-chitwan-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/6-days-kathmandu-chitwan-nagarkot-tour/6-days-kathmandu-chitwan-nagarkot-tour.jpg',
-    gallery: ['/images/Tours/6-days-kathmandu-chitwan-nagarkot-tour/6-days-kathmandu-chitwan-nagarkot-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -2447,10 +2393,6 @@ Your 6 Days Kathmandu Chitwan Nagarkot Tour concludes with wonderful memories of
     ]
   },
   '6-days-kathmandu-nagarkot-tour': {
-    image: '/images/Tours/6-days-kathmandu-nagarkot-tour/6-days-kathmandu-nagarkot-tour.jpg',
-    img: '/images/Tours/6-days-kathmandu-nagarkot-tour/6-days-kathmandu-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/6-days-kathmandu-nagarkot-tour/6-days-kathmandu-nagarkot-tour.jpg',
-    gallery: ['/images/Tours/6-days-kathmandu-nagarkot-tour/6-days-kathmandu-nagarkot-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -2628,12 +2570,6 @@ Your tour concludes with memories of Nepal’s rich heritage and stunning landsc
     ]
   },
   '5-days-kathmandu-lumbini-nagarkot-tour': {
-    image: '/images/Tours/5-days-kathmandu-lumbini-nagarkot-tour/5-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    img: '/images/Tours/5-days-kathmandu-lumbini-nagarkot-tour/5-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/5-days-kathmandu-lumbini-nagarkot-tour/5-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    gallery: [
-      '/images/Tours/5-days-kathmandu-lumbini-nagarkot-tour/5-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -2905,10 +2841,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-pokhara-tour': {
-    image: '/images/Tours/5-days-kathmandu-pokhara-tour/5-days-kathmandu-pokhara-tour.jpg',
-    img: '/images/Tours/5-days-kathmandu-pokhara-tour/5-days-kathmandu-pokhara-tour.jpg',
-    bannerImage: '/images/Tours/5-days-kathmandu-pokhara-tour/5-days-kathmandu-pokhara-tour.jpg',
-    gallery: ['/images/Tours/5-days-kathmandu-pokhara-tour/5-days-kathmandu-pokhara-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3004,12 +2936,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-nagarkot-tour': {
-    image: '/images/Tours/5-days-kathmandu-nagarkot-tour/5-days-kathmandu-nagarkot-tour.jpg',
-    img: '/images/Tours/5-days-kathmandu-nagarkot-tour/5-days-kathmandu-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/5-days-kathmandu-nagarkot-tour/5-days-kathmandu-nagarkot-tour.jpg',
-    gallery: [
-      '/images/Tours/5-days-kathmandu-nagarkot-tour/5-days-kathmandu-nagarkot-tour.jpg',
-    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3101,15 +3027,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-chitwan-pokhara-lumbini-tour': {
-    image: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    img: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    bannerImage: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    gallery: [
-      '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-      '/zenex images/lumbini/photo-1611892370612-0ac8e4a4507a.avif',
-      '/zenex images/chitwan/photo-1700366776973-20bda63d5b1a.avif',
-      '/zenex images/pokhara/photo-1562462181-b228e3cff9ad.avif'
-    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3211,12 +3128,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '4-days-kathmandu-lumbini-nagarkot-tour': {
-    image: '/images/Tours/4-days-kathmandu-lumbini-nagarkot-tour/4-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    img: '/images/Tours/4-days-kathmandu-lumbini-nagarkot-tour/4-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/4-days-kathmandu-lumbini-nagarkot-tour/4-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    gallery: [
-      '/images/Tours/4-days-kathmandu-lumbini-nagarkot-tour/4-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    ],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3312,12 +3223,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-pokhara-muktinath-tour': {
-    image: '/images/Tours/5-days-kathmandu-pokhara-muktinath-tour/5-days-kathmandu-pokhara-muktinath-tour.jpg',
-    img: '/images/Tours/5-days-kathmandu-pokhara-muktinath-tour/5-days-kathmandu-pokhara-muktinath-tour.jpg',
-    bannerImage: '/images/Tours/5-days-kathmandu-pokhara-muktinath-tour/5-days-kathmandu-pokhara-muktinath-tour.jpg',
-    gallery: [
-      '/images/Tours/5-days-kathmandu-pokhara-muktinath-tour/5-days-kathmandu-pokhara-muktinath-tour.jpg',
-    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3417,15 +3322,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-chitwan-pokhara-tour': {
-    image: '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
-    img: '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
-    bannerImage: '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
-    gallery: [
-      '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
-      '/zenex images/chitwan/photo-1700366776973-20bda63d5b1a.avif',
-      '/zenex images/pokhara/photo-1562462181-b228e3cff9ad.avif',
-      '/zenex images/kathmandu/photo-1589791933711-d68aae51e609.avif'
-    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3522,14 +3418,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-bardia-national-park-tour': {
-    image: '/images/Tours/5-days-bardia-national-park-tour/bardia-national-park-gate.jpg',
-    img: '/images/Tours/5-days-bardia-national-park-tour/bardia-national-park-gate.jpg',
-    bannerImage: '/images/Tours/5-days-bardia-national-park-tour/bardia-national-park-gate.jpg',
-    gallery: [
-      '/images/Tours/5-days-bardia-national-park-tour/bardia-national-park-gate.jpg',
-      '/zenex images/Bardia National Park/photo-1581008247561-000e38be1be2.avif',
-      '/zenex images/Bardia National Park/photo-1738902918354-da032dd5c9be.avif'
-    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3625,10 +3513,6 @@ Tips are recommended: US$ 5-10 per day per tourist for wildlife naturalist guide
     ]
   },
   '4-days-kathmandu-nagarkot-tour': {
-    image: '/images/Tours/4-days-kathmandu-nagarkot-tour/4-days-kathmandu-nagarkot-tour.jpg',
-    img: '/images/Tours/4-days-kathmandu-nagarkot-tour/4-days-kathmandu-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/4-days-kathmandu-nagarkot-tour/4-days-kathmandu-nagarkot-tour.jpg',
-    gallery: ['/images/Tours/4-days-kathmandu-nagarkot-tour/4-days-kathmandu-nagarkot-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3720,10 +3604,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '4-days-kathmandu-chitwan-nagarkot-tour': {
-    image: '/images/Tours/4-days-kathmandu-chitwan-nagarkot-tour/4-days-kathmandu-chitwan-nagarkot-tour.jpg',
-    img: '/images/Tours/4-days-kathmandu-chitwan-nagarkot-tour/4-days-kathmandu-chitwan-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/4-days-kathmandu-chitwan-nagarkot-tour/4-days-kathmandu-chitwan-nagarkot-tour.jpg',
-    gallery: ['/images/Tours/4-days-kathmandu-chitwan-nagarkot-tour/4-days-kathmandu-chitwan-nagarkot-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3910,12 +3790,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '4-days-kathmandu-lumbini-nagarkot-tour': {
-    image: '/images/Tours/4-days-kathmandu-lumbini-nagarkot-tour/4-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    img: '/images/Tours/4-days-kathmandu-lumbini-nagarkot-tour/4-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/4-days-kathmandu-lumbini-nagarkot-tour/4-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    gallery: [
-      '/images/Tours/4-days-kathmandu-lumbini-nagarkot-tour/4-days-kathmandu-lumbini-nagarkot-tour.jpg',
-    ],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -4008,10 +3882,6 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '4-days-kathmandu-pokhara-tour': {
-    image: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
-    img: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
-    bannerImage: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
-    gallery: ['/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -4550,23 +4420,6 @@ A 40% deposit is required to confirm your booking, with the remaining 60% payabl
     ]
   }
 ,
-  '5-days-tibet-tour-with-yamdroke-lake': {
-    image: '/images/Tours/5-days-tibet-tour-with-yamdroke-lake/5-days-tibet-tour-with-yamdroke-lake.jpg',
-    img: '/images/Tours/5-days-tibet-tour-with-yamdroke-lake/5-days-tibet-tour-with-yamdroke-lake.jpg',
-    bannerImage: '/images/Tours/5-days-tibet-tour-with-yamdroke-lake/5-days-tibet-tour-with-yamdroke-lake.jpg',
-    gallery: [
-      '/images/Tours/5-days-tibet-tour-with-yamdroke-lake/5-days-tibet-tour-with-yamdroke-lake.jpg',
-    ],
-    quickInfo: [
-      { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
-      { label: 'Country', value: 'Tibet', icon: 'Flag' },
-      { label: 'Best Season', value: 'April to June & Sep to Nov', icon: 'Sun' },
-      { label: 'Group/Private', value: 'Private', icon: 'Users' },
-      { label: 'Grade', value: 'Easy', icon: 'BarChart' },
-      { label: 'Start', value: 'Lhasa', icon: 'MapPin' },
-      { label: 'End', value: 'Lhasa', icon: 'MapPin' }
-    ],
-  },
   'tibet-tour-6d': {
         quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
@@ -5401,10 +5254,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'kathmandu-pokhara-4d': {
-    image: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
-    img: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
-    bannerImage: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
-    gallery: ['/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -5664,12 +5513,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-chitwan-pokhara-lumbini-5d': {
-    image: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    img: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    bannerImage: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    gallery: [
-      '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -5926,12 +5769,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-chitwan-pokhara-lumbini-6d': {
-    image: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    img: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    bannerImage: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    gallery: [
-      '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -6124,12 +5961,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-bandipur-pokhara-6d': {
-    image: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
-    img: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
-    bannerImage: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
-    gallery: [
-      '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7172,10 +7003,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-nagarkot-dhulikhel-7d': {
-    image: '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg',
-    img: '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg',
-    bannerImage: '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg',
-    gallery: ['/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7345,12 +7172,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-bandipur-pokhara-7d': {
-    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
-    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
-    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
-    gallery: [
-      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7519,12 +7340,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-chitwan-pokhara-lumbini-7d': {
-    image: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    img: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    bannerImage: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
-    gallery: [
-      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7703,12 +7518,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-bandipur-pokhara-trek-8d': {
-    image: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
-    img: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
-    bannerImage: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
-    gallery: [
-      '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7881,10 +7690,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-chitwan-nagarkot-8d': {
-    image: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
-    img: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
-    gallery: ['/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -8415,12 +8220,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-lumbini-chitwan-8d': {
-    image: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
-    img: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
-    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
-    gallery: [
-      '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -8606,10 +8405,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-chitwan-nagarkot-9d': {
-    image: '/images/Tours/9-days-kathmandu-pokhara-chitwan-nagarkot-tour/9-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
-    img: '/images/Tours/9-days-kathmandu-pokhara-chitwan-nagarkot-tour/9-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
-    bannerImage: '/images/Tours/9-days-kathmandu-pokhara-chitwan-nagarkot-tour/9-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
-    gallery: ['/images/Tours/9-days-kathmandu-pokhara-chitwan-nagarkot-tour/9-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg'],
     quickInfo: [
       { label: 'Duration', value: '9 Days 8 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -9312,12 +9107,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-lumbini-chitwan-9d': {
-    image: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
-    img: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
-    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
-    gallery: [
-      '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg'
-    ],
     quickInfo: [
       { label: 'Duration', value: '9 Days 8 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
