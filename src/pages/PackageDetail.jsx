@@ -12197,6 +12197,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'discover-nepal-tour-ghandruk-trek-14d': {
+    image: '/images/Tours/14-days-discover-nepal-tour-with-ghandruk-trek/14-days-discover-nepal-tour-with-ghandruk-trek.jpg',
+    img: '/images/Tours/14-days-discover-nepal-tour-with-ghandruk-trek/14-days-discover-nepal-tour-with-ghandruk-trek.jpg',
+    bannerImage: '/images/Tours/14-days-discover-nepal-tour-with-ghandruk-trek/14-days-discover-nepal-tour-with-ghandruk-trek.jpg',
+    gallery: [
+      '/images/Tours/14-days-discover-nepal-tour-with-ghandruk-trek/14-days-discover-nepal-tour-with-ghandruk-trek.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '14 Days 13 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14363,5 +14369,6 @@ packageExtraData['13-days-discover-nepal-tour'] = packageExtraData['discover-nep
 packageExtraData['13-days-explore-nepal-tour-with-poon-hill-trek'] = packageExtraData['explore-nepal-tour-poon-hill-trek-13d'];
 packageExtraData['14-days-explore-nepal-tour-with-poon-hill-trek'] = packageExtraData['explore-nepal-tour-poon-hill-trek-14d'];
 packageExtraData['14-days-explore-nepal-tour'] = packageExtraData['explore-nepal-tour-14d'];
+packageExtraData['14-days-discover-nepal-tour-with-ghandruk-trek'] = packageExtraData['discover-nepal-tour-ghandruk-trek-14d'];
 
 export default PackageDetail;
