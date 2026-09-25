@@ -11485,6 +11485,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'discover-nepal-tour-13d': {
+    image: '/images/Tours/13-days-discover-nepal-tour/13-days-discover-nepal-tour.jpg',
+    img: '/images/Tours/13-days-discover-nepal-tour/13-days-discover-nepal-tour.jpg',
+    bannerImage: '/images/Tours/13-days-discover-nepal-tour/13-days-discover-nepal-tour.jpg',
+    gallery: [
+      '/images/Tours/13-days-discover-nepal-tour/13-days-discover-nepal-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '13 Days 12 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14335,5 +14341,6 @@ packageExtraData['8-days-kathmandu-pokhara-chitwan-nagarkot-tour'] = packageExtr
 packageExtraData['9-days-kathmandu-pokhara-chitwan-nagarkot-tour'] = packageExtraData['ktm-pokhara-chitwan-nagarkot-9d'];
 packageExtraData['9-days-kathmandu-pokhara-chitwan-tour-with-trek'] = packageExtraData['ktm-pokhara-chitwan-trek-9d'];
 packageExtraData['11-days-nepal-tour-with-lumbini'] = packageExtraData['nepal-tour-lumbini-11d'];
+packageExtraData['13-days-discover-nepal-tour'] = packageExtraData['discover-nepal-tour-13d'];
 
 export default PackageDetail;
