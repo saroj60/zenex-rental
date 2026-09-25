@@ -10044,6 +10044,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'nepal-tour-lumbini-10d': {
+    image: '/images/Tours/10-days-nepal-tour-with-lumbini/10-days-nepal-tour-with-lumbini.png',
+    img: '/images/Tours/10-days-nepal-tour-with-lumbini/10-days-nepal-tour-with-lumbini.png',
+    bannerImage: '/images/Tours/10-days-nepal-tour-with-lumbini/10-days-nepal-tour-with-lumbini.png',
+    gallery: [
+      '/images/Tours/10-days-nepal-tour-with-lumbini/10-days-nepal-tour-with-lumbini.png'
+    ],
     quickInfo: [
       { label: 'Duration', value: '10 Days 9 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14263,5 +14269,7 @@ Object.keys(packageExtraData).forEach(key => {
     }
   }
 });
+
+packageExtraData['10-days-nepal-tour-with-lumbini'] = packageExtraData['nepal-tour-lumbini-10d'];
 
 export default PackageDetail;
