@@ -7171,6 +7171,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-nagarkot-dhulikhel-7d': {
+    image: '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg',
+    gallery: [
+      '/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
