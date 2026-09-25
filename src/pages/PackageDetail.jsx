@@ -3346,6 +3346,12 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-chitwan-pokhara-tour': {
+    image: '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -5436,6 +5442,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-chitwan-pokhara-5d': {
+    image: '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-chitwan-pokhara-tour/5-days-kathmandu-chitwan-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -6539,6 +6551,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-chitwan-7d': {
+    image: '/images/Tours/7-days-kathmandu-pokhara-chitwan-tour/7-days-kathmandu-pokhara-chitwan-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-pokhara-chitwan-tour/7-days-kathmandu-pokhara-chitwan-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-pokhara-chitwan-tour/7-days-kathmandu-pokhara-chitwan-tour.jpg',
+    gallery: [
+      '/images/Tours/7-days-kathmandu-pokhara-chitwan-tour/7-days-kathmandu-pokhara-chitwan-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -6715,6 +6733,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-chitwan-pokhara-7d': {
+    image: '/images/Tours/7-days-kathmandu-chitwan-pokhara-tour/7-days-kathmandu-chitwan-pokhara-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-chitwan-pokhara-tour/7-days-kathmandu-chitwan-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-chitwan-pokhara-tour/7-days-kathmandu-chitwan-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-tour/7-days-kathmandu-chitwan-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
