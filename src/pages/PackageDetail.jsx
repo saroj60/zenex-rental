@@ -2080,6 +2080,12 @@ This 6 Days Kathmandu Pokhara Tour is ideal for nature lovers, cultural enthusia
     ]
   },
   '6-days-kathmandu-lumbini-nagarkot-tour': {
+    image: '/images/Tours/6-days-kathmandu-lumbini-nagarkot-tour/6-days-kathmandu-lumbini-nagarkot-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-lumbini-nagarkot-tour/6-days-kathmandu-lumbini-nagarkot-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-lumbini-nagarkot-tour/6-days-kathmandu-lumbini-nagarkot-tour.jpg',
+    gallery: [
+      '/images/Tours/6-days-kathmandu-lumbini-nagarkot-tour/6-days-kathmandu-lumbini-nagarkot-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -2612,6 +2618,12 @@ Your tour concludes with memories of Nepal’s rich heritage and stunning landsc
     ]
   },
   '5-days-kathmandu-lumbini-nagarkot-tour': {
+    image: '/images/Tours/5-days-kathmandu-lumbini-nagarkot-tour/5-days-kathmandu-lumbini-nagarkot-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-lumbini-nagarkot-tour/5-days-kathmandu-lumbini-nagarkot-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-lumbini-nagarkot-tour/5-days-kathmandu-lumbini-nagarkot-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-lumbini-nagarkot-tour/5-days-kathmandu-lumbini-nagarkot-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
