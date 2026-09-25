@@ -13308,6 +13308,14 @@ With personalized care, natural therapies, and the soothing rhythm of nature, th
   },
   'nepal-poon-hill-12d': {
     gallery: ['/images/poon2.jpg', '/images/poon1.jpeg']
+  },
+  '8-days-tibet-tour-with-everest-base-camp': {
+    image: '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.jpg',
+    img: '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.jpg',
+    bannerImage: '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.jpg',
+    gallery: [
+      '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.jpg'
+    ]
   }
 };
 
