@@ -205,6 +205,12 @@ Experience Nepal's classic golden circuit across the best travel seasons:
   },
 
   '8-days-kathmandu-bandipur-pokhara-tour-with-trek': {
+    image: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    img: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -805,6 +811,12 @@ We hope you had a magical experience in the Himalayas and we hope to see you aga
     ]
   },
 '8-days-kathmandu-pokhara-lumbini-chitwan-tour': {
+    image: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
+    img: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -1000,11 +1012,11 @@ The 8 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour is a year-round adventure,
   },
 
   '7-days-kathmandu-bandipur-pokhara-tour': {
-    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
-    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
-    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
     gallery: [
-      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/360_F_84173867_4MrZbc3zKlIdiCv1zIhYkglL23L2qJqk.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/istockphoto-1374221694-612x612.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/istockphoto-499654668-612x612.jpg',
@@ -1178,11 +1190,11 @@ Return to Kathmandu on day five and explore UNESCO Heritage sites including Boud
     ]
   },
   '7-days-kathmandu-chitwan-pokhara-lumbini-tour': {
-    image: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
-    img: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
-    bannerImage: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
+    image: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
     gallery: [
-      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif',
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
       '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1549888668-19281758dfbe.avif',
       '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1562462181-b228e3cff9ad.avif',
       '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1579863834020-2a9366e128ce.avif',
@@ -1358,6 +1370,12 @@ Early morning on day 5, enjoy a Sarangkot sunrise over Annapurna & Fishtail moun
     ]
   },
   '6-days-kathmandu-chitwan-pokhara-lumbini-tour': {
+    image: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    gallery: [
+      '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -1539,6 +1557,12 @@ The final full day includes guided visits to Kathmandu UNESCO Heritage Sites: Bo
     ]
   },
   '6-days-kathmandu-bandipur-pokhara-tour': {
+    image: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -5640,6 +5664,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-chitwan-pokhara-lumbini-5d': {
+    image: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -5896,6 +5926,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-chitwan-pokhara-lumbini-6d': {
+    image: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    gallery: [
+      '/images/Tours/6-days-kathmandu-chitwan-pokhara-lumbini-tour/6-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -6088,6 +6124,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-bandipur-pokhara-6d': {
+    image: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7303,6 +7345,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-bandipur-pokhara-7d': {
+    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7471,6 +7519,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-chitwan-pokhara-lumbini-7d': {
+    image: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    gallery: [
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/7-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7649,6 +7703,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-bandipur-pokhara-trek-8d': {
+    image: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    img: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -8355,6 +8415,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-lumbini-chitwan-8d': {
+    image: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
+    img: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -9246,6 +9312,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-lumbini-chitwan-9d': {
+    image: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
+    img: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-pokhara-lumbini-chitwan-tour/8-days-kathmandu-pokhara-lumbini-chitwan-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '9 Days 8 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
