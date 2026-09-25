@@ -11772,6 +11772,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'explore-nepal-tour-poon-hill-trek-14d': {
+    image: '/images/Tours/14-days-explore-nepal-tour-with-poon-hill-trek/14-days-explore-nepal-tour-with-poon-hill-trek.png',
+    img: '/images/Tours/14-days-explore-nepal-tour-with-poon-hill-trek/14-days-explore-nepal-tour-with-poon-hill-trek.png',
+    bannerImage: '/images/Tours/14-days-explore-nepal-tour-with-poon-hill-trek/14-days-explore-nepal-tour-with-poon-hill-trek.png',
+    gallery: [
+      '/images/Tours/14-days-explore-nepal-tour-with-poon-hill-trek/14-days-explore-nepal-tour-with-poon-hill-trek.png'
+    ],
     quickInfo: [
       { label: 'Duration', value: '14 Days 13 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14355,6 +14361,7 @@ packageExtraData['9-days-kathmandu-pokhara-chitwan-tour-with-trek'] = packageExt
 packageExtraData['11-days-nepal-tour-with-lumbini'] = packageExtraData['nepal-tour-lumbini-11d'];
 packageExtraData['13-days-discover-nepal-tour'] = packageExtraData['discover-nepal-tour-13d'];
 packageExtraData['13-days-explore-nepal-tour-with-poon-hill-trek'] = packageExtraData['explore-nepal-tour-poon-hill-trek-13d'];
+packageExtraData['14-days-explore-nepal-tour-with-poon-hill-trek'] = packageExtraData['explore-nepal-tour-poon-hill-trek-14d'];
 packageExtraData['14-days-explore-nepal-tour'] = packageExtraData['explore-nepal-tour-14d'];
 
 export default PackageDetail;
