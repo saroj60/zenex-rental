@@ -201,6 +201,12 @@ Experience Nepal's classic golden circuit across the best travel seasons:
   },
 
   '8-days-kathmandu-bandipur-pokhara-tour-with-trek': {
+    image: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    img: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -996,11 +1002,11 @@ The 8 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour is a year-round adventure,
   },
 
   '7-days-kathmandu-bandipur-pokhara-tour': {
-    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
-    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
-    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
     gallery: [
-      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/Adventurous activities.jpg',
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/360_F_84173867_4MrZbc3zKlIdiCv1zIhYkglL23L2qJqk.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/istockphoto-1374221694-612x612.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/istockphoto-499654668-612x612.jpg',
@@ -1535,6 +1541,12 @@ The final full day includes guided visits to Kathmandu UNESCO Heritage Sites: Bo
     ]
   },
   '6-days-kathmandu-bandipur-pokhara-tour': {
+    image: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -6081,6 +6093,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-bandipur-pokhara-6d': {
+    image: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/6-days-kathmandu-bandipur-pokhara-tour/6-days-kathmandu-bandipur-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7316,6 +7334,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-bandipur-pokhara-7d': {
+    image: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    img: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7662,6 +7686,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-bandipur-pokhara-trek-8d': {
+    image: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    img: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
