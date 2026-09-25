@@ -13310,11 +13310,11 @@ With personalized care, natural therapies, and the soothing rhythm of nature, th
     gallery: ['/images/poon2.jpg', '/images/poon1.jpeg']
   },
   '8-days-tibet-tour-with-everest-base-camp': {
-    image: '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.jpg',
-    img: '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.jpg',
-    bannerImage: '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.jpg',
+    image: '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.png',
+    img: '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.png',
+    bannerImage: '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.png',
     gallery: [
-      '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.jpg'
+      '/images/Tours/8-days-tibet-tour-with-everest-base-camp/8-days-tibet-tour-with-everest-base-camp.png'
     ]
   },
   '8-days-tibet-tour-with-shigatse-gyantse-samye': {
