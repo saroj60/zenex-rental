@@ -1879,6 +1879,12 @@ Your 6-day adventure concludes with a departure, leaving you with unforgettable 
     ]
   },
   '6-days-kathmandu-pokhara-tour': {
+    image: '/images/Tours/6-days-kathmandu-pokhara-tour/6-days-kathmandu-pokhara-tour.jpg',
+    img: '/images/Tours/6-days-kathmandu-pokhara-tour/6-days-kathmandu-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/6-days-kathmandu-pokhara-tour/6-days-kathmandu-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/6-days-kathmandu-pokhara-tour/6-days-kathmandu-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '6 Days 5 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -2853,6 +2859,12 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-pokhara-tour': {
+    image: '/images/Tours/5-days-kathmandu-pokhara-tour/5-days-kathmandu-pokhara-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-pokhara-tour/5-days-kathmandu-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-pokhara-tour/5-days-kathmandu-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-pokhara-tour/5-days-kathmandu-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -3942,6 +3954,12 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '4-days-kathmandu-pokhara-tour': {
+    image: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
+    img: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -5314,6 +5332,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'kathmandu-pokhara-4d': {
+    image: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
+    img: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
+    bannerImage: '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg',
+    gallery: [
+      '/images/Tours/4-days-kathmandu-pokhara-tour/4-days-kathmandu-pokhara-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
