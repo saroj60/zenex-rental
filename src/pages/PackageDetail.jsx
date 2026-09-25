@@ -11,6 +11,12 @@ import { generatePackagePDF } from '../utils/pdfGenerator';
 
 export const packageExtraData = {
   '8-days-kathmandu-pokhara-chitwan-nagarkot-tour': {
+    image: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
+    img: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -7888,6 +7894,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-chitwan-nagarkot-8d': {
+    image: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
+    img: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
+    bannerImage: '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
+    gallery: [
+      '/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '8 Days 7 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -8609,6 +8621,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-pokhara-chitwan-nagarkot-9d': {
+    image: '/images/Tours/9-days-kathmandu-pokhara-chitwan-nagarkot-tour/9-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
+    img: '/images/Tours/9-days-kathmandu-pokhara-chitwan-nagarkot-tour/9-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
+    bannerImage: '/images/Tours/9-days-kathmandu-pokhara-chitwan-nagarkot-tour/9-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg',
+    gallery: [
+      '/images/Tours/9-days-kathmandu-pokhara-chitwan-nagarkot-tour/9-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '9 Days 8 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14285,5 +14303,7 @@ Object.keys(packageExtraData).forEach(key => {
 packageExtraData['10-days-nepal-tour-with-lumbini'] = packageExtraData['nepal-tour-lumbini-10d'];
 packageExtraData['12-days-nepal-tour-with-ghandruk-trek'] = packageExtraData['nepal-tour-ghandruk-trek-12d'];
 packageExtraData['9-days-kathmandu-pokhara-chitwan-tour-with-rafting'] = packageExtraData['ktm-pokhara-chitwan-rafting-9d'];
+packageExtraData['8-days-kathmandu-pokhara-chitwan-nagarkot-tour'] = packageExtraData['ktm-pokhara-chitwan-nagarkot-8d'];
+packageExtraData['9-days-kathmandu-pokhara-chitwan-nagarkot-tour'] = packageExtraData['ktm-pokhara-chitwan-nagarkot-9d'];
 
 export default PackageDetail;
