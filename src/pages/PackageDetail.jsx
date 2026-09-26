@@ -3105,6 +3105,12 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '5-days-kathmandu-chitwan-pokhara-lumbini-tour': {
+    image: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -5669,6 +5675,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'ktm-chitwan-pokhara-lumbini-5d': {
+    image: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    img: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    bannerImage: '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg',
+    gallery: [
+      '/images/Tours/5-days-kathmandu-chitwan-pokhara-lumbini-tour/5-days-kathmandu-chitwan-pokhara-lumbini-tour.jpg'
+    ],
     quickInfo: [
       { label: 'Duration', value: '5 Days 4 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
