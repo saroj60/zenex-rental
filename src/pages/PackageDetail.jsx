@@ -13165,7 +13165,11 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'discover-nepal-tour-tiger-tracking-bardia-16d': {
+    image: '/images/Tours/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia.png',
+    img: '/images/Tours/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia.png',
+    bannerImage: '/images/Tours/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia.png',
     gallery: [
+      '/images/Tours/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia/16-day-discover-nepal-tour-with-tiger-tracking-in-bardia.png',
       '/zenex images/Bardia National Park/premium_photo-1687773505806-468b916d0962.avif',
       '/zenex images/Bardia National Park/photo-1669097385145-947d8a144a0d.avif',
       '/zenex images/Bardia National Park/photo-1738902917784-9c4d8e373d25.avif',
