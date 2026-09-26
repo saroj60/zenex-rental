@@ -4102,6 +4102,12 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
     ]
   },
   '4-days-kathmandu-tour': {
+    image: '/images/Tours/4-days-kathmandu-tour/4-days-kathmandu-tour.png',
+    img: '/images/Tours/4-days-kathmandu-tour/4-days-kathmandu-tour.png',
+    bannerImage: '/images/Tours/4-days-kathmandu-tour/4-days-kathmandu-tour.png',
+    gallery: [
+      '/images/Tours/4-days-kathmandu-tour/4-days-kathmandu-tour.png'
+    ],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -5264,6 +5270,12 @@ Tips are appreciated by your support team. Our suggestion is US$ 5 per day per t
     ]
   },
   'kathmandu-tour-4d': {
+    image: '/images/Tours/4-days-kathmandu-tour/4-days-kathmandu-tour.png',
+    img: '/images/Tours/4-days-kathmandu-tour/4-days-kathmandu-tour.png',
+    bannerImage: '/images/Tours/4-days-kathmandu-tour/4-days-kathmandu-tour.png',
+    gallery: [
+      '/images/Tours/4-days-kathmandu-tour/4-days-kathmandu-tour.png'
+    ],
     quickInfo: [
       { label: 'Duration', value: '4 Days 3 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
