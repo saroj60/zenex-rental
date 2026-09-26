@@ -13165,6 +13165,15 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'discover-nepal-tour-tiger-tracking-bardia-16d': {
+    gallery: [
+      '/zenex images/Bardia National Park/premium_photo-1687773505806-468b916d0962.avif',
+      '/zenex images/Bardia National Park/photo-1669097385145-947d8a144a0d.avif',
+      '/zenex images/Bardia National Park/photo-1738902917784-9c4d8e373d25.avif',
+      '/zenex images/Bardia National Park/photo-1738902918354-da032dd5c9be.avif',
+      '/zenex images/Bardia National Park/premium_photo-1661832611972-b6ee1aba3581.avif',
+      '/zenex images/Bardia National Park/premium_photo-1721587040154-4b56d8111c6b.avif',
+      '/zenex images/Bardia National Park/premium_photo-1726837268811-4bf23787b15d.avif'
+    ],
     quickInfo: [
       { label: 'Duration', value: '16 Days 15 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14402,5 +14411,7 @@ packageExtraData['14-days-explore-nepal-tour'] = packageExtraData['explore-nepal
 packageExtraData['14-days-discover-nepal-tour-with-ghandruk-trek'] = packageExtraData['discover-nepal-tour-ghandruk-trek-14d'];
 packageExtraData['15-day-discover-nepal-tour-with-tiger-tracking-in-bardia'] = packageExtraData['discover-nepal-tour-tiger-tracking-bardia-15d'];
 packageExtraData['15-days-discover-nepal-tour-with-tiger-tracking-in-bardia'] = packageExtraData['discover-nepal-tour-tiger-tracking-bardia-15d'];
+packageExtraData['16-day-discover-nepal-tour-with-tiger-tracking-in-bardia'] = packageExtraData['discover-nepal-tour-tiger-tracking-bardia-16d'];
+packageExtraData['16-days-discover-nepal-tour-with-tiger-tracking-in-bardia'] = packageExtraData['discover-nepal-tour-tiger-tracking-bardia-16d'];
 
 export default PackageDetail;
