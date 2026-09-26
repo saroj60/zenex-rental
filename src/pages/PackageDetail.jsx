@@ -12368,6 +12368,12 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
     ]
   },
   'discover-nepal-tour-tiger-tracking-bardia-15d': {
+    image: '/images/Tours/15-day-discover-nepal-tour-with-tiger-tracking-in-bardia/15-day-discover-nepal-tour-with-tiger-tracking-in-bardia.png',
+    img: '/images/Tours/15-day-discover-nepal-tour-with-tiger-tracking-in-bardia/15-day-discover-nepal-tour-with-tiger-tracking-in-bardia.png',
+    bannerImage: '/images/Tours/15-day-discover-nepal-tour-with-tiger-tracking-in-bardia/15-day-discover-nepal-tour-with-tiger-tracking-in-bardia.png',
+    gallery: [
+      '/images/Tours/15-day-discover-nepal-tour-with-tiger-tracking-in-bardia/15-day-discover-nepal-tour-with-tiger-tracking-in-bardia.png'
+    ],
     quickInfo: [
       { label: 'Duration', value: '15 Days 14 Nights', icon: 'Calendar' },
       { label: 'Country', value: 'Nepal', icon: 'Flag' },
@@ -14394,5 +14400,7 @@ packageExtraData['13-days-explore-nepal-tour-with-poon-hill-trek'] = packageExtr
 packageExtraData['14-days-explore-nepal-tour-with-poon-hill-trek'] = packageExtraData['explore-nepal-tour-poon-hill-trek-14d'];
 packageExtraData['14-days-explore-nepal-tour'] = packageExtraData['explore-nepal-tour-14d'];
 packageExtraData['14-days-discover-nepal-tour-with-ghandruk-trek'] = packageExtraData['discover-nepal-tour-ghandruk-trek-14d'];
+packageExtraData['15-day-discover-nepal-tour-with-tiger-tracking-in-bardia'] = packageExtraData['discover-nepal-tour-tiger-tracking-bardia-15d'];
+packageExtraData['15-days-discover-nepal-tour-with-tiger-tracking-in-bardia'] = packageExtraData['discover-nepal-tour-tiger-tracking-bardia-15d'];
 
 export default PackageDetail;
