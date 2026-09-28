@@ -4236,14 +4236,6 @@ End your tour with a mesmerizing sunrise over the Himalayas before returning to 
 - Capture stunning views of Mount Everest and Annapurna.
 - Experience the sunrise over the Himalayan range.
 
-### Best Time for Kathmandu & Chandragiri Hills Tour
-Nepal’s diverse climate makes Kathmandu & Chandragiri Hills Tour enjoyable year-round, but each season offers a unique experience:
-
-1. **Spring (March – May)**: Clear skies with excellent Himalayan views & blooming rhododendrons (15°C – 25°C).
-2. **Summer/Monsoon (June – August)**: Lush greenery and fewer crowds (18°C – 28°C).
-3. **Autumn (September – November)**: Peak season for crystal-clear mountain views (10°C – 22°C) and festive atmosphere.
-4. **Winter (December – February)**: Crisp air and clear skies with possible snowfall at Chandragiri peak (2°C – 15°C).
-
 ### Value Added Services
 - Welcome Arrival Garlands / Khada (traditional scarf)
 - 02 Units of 500ml water bottles per day per person
@@ -5258,7 +5250,7 @@ End your tour with a mesmerizing sunrise over the Himalayas before returning to 
       'Local SIM Card with unlimited data for 7 days',
       '24 hrs WhatsApp help desk for any problem'
     ],
-    information: `**Best Time for Kathmandu & Chandragiri Hills Tour**
+    information: `**Best Time for Muktinath Yatra**
 Spring (March – May) and Autumn (September – November) are the best times for clear skies, pleasant weather, and stunning views.
 
 **Visa Information**
