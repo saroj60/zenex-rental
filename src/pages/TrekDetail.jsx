@@ -597,7 +597,7 @@ const TrekDetail = () => {
               <section id="gallery" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 font-sans">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 font-sans">Trip Gallery</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {trek.gallery.map((img, idx) => {
+                  {trek.gallery.slice(0, 9).map((img, idx) => {
                     const imgSrc = typeof img === 'string' ? img : (img?.url || img?.src || '');
                     if (!imgSrc) return null;
                     return (

@@ -664,7 +664,7 @@ const TourTripDetail = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3"><ImageIcon className="text-[#e53a24]" size={32} /> Photo Gallery</h2>
               {trip.gallery && trip.gallery.length > 0 ? (
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {trip.gallery.map((img, i) => {
+                  {trip.gallery.slice(0, 9).map((img, i) => {
                     const imgSrc = typeof img === 'string' ? img : (img?.url || img?.src || '');
                     if (!imgSrc) return null;
                     return (

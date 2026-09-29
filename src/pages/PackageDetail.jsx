@@ -1020,8 +1020,7 @@ The 8 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour is a year-round adventure,
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/jhbhjb.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/jhhhj.jpg',
       '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/kh.jpg',
-      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/kjjhnhj.jpg',
-      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/paragliding-in-pokhara.webp'
+      '/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/kjjhnhj.jpg'
     ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
@@ -1198,8 +1197,7 @@ Return to Kathmandu on day five and explore UNESCO Heritage sites including Boud
       '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1653104626949-bc7f6413a5b7.avif',
       '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1665435246333-48b2bc7a0018.avif',
       '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1677683254220-e4160da157af.avif',
-      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1718180555560-0c5f890f8098.avif',
-      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/premium_photo-1697729729075-3e56242aef49.avif'
+      '/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1718180555560-0c5f890f8098.avif'
     ],
     quickInfo: [
       { label: 'Duration', value: '7 Days 6 Nights', icon: 'Calendar' },
@@ -13404,6 +13402,9 @@ const PackageDetail = () => {
   const lookupId = id === 'nepal-poon-hill-12d' ? 'nepal-tour-poon-hill-trek-12d' : id;
   const extraData = packageExtraData[lookupId] || {};
   const pkg = { ...basePkg, ...extraData };
+  if (Array.isArray(pkg.gallery) && pkg.gallery.length > 9) {
+    pkg.gallery = pkg.gallery.slice(0, 9);
+  }
 
   const [persons, setPersons] = useState(2);
   const [packageType, setPackageType] = useState('Budget');
@@ -13777,7 +13778,7 @@ const PackageDetail = () => {
                   <ImageIcon className="text-[#e53a24]" size={28} /> Photo Gallery
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {pkg.gallery.map((imgUrl, idx) => {
+                  {pkg.gallery.slice(0, 9).map((imgUrl, idx) => {
                     const src = typeof imgUrl === 'string' ? imgUrl : (imgUrl?.url || imgUrl?.src || '');
                     if (!src) return null;
                     return (
