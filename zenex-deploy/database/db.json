@@ -13623,10 +13623,10 @@
       "location": "Kathmandu, Chitwan, Pokhara, Ghorepani, Poon Hill & Ghandruk Village",
       "country": "Nepal",
       "duration": "12 Days / 11 Nights",
-      "price": "US$1165",
+      "price": "US$1260",
       "pricingInfo": {
-        "regularPrice": 1480,
-        "sellingPrice": 1165,
+        "regularPrice": 1575,
+        "sellingPrice": 1260,
         "currency": "USD",
         "luxury": {
           "p1": 3500,
@@ -13655,7 +13655,8 @@
           "p3_5": 1290,
           "p6_8": 1210,
           "p9plus": 1165
-        }
+        },
+        "originalPrice": 1575
       },
       "maxAltitude": "3,210m / 10,531ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -13924,10 +13925,10 @@
       "location": "Kathmandu, Chitwan, Pokhara, Ghandruk Village Trekking & Chandragiri Hills",
       "country": "Nepal",
       "duration": "12 Days / 11 Nights",
-      "price": "US$1165",
+      "price": "US$1240",
       "pricingInfo": {
-        "regularPrice": 1480,
-        "sellingPrice": 1165,
+        "regularPrice": 1550,
+        "sellingPrice": 1240,
         "currency": "USD",
         "luxury": {
           "p1": 3500,
@@ -13956,7 +13957,8 @@
           "p3_5": 1290,
           "p6_8": 1210,
           "p9plus": 1165
-        }
+        },
+        "originalPrice": 1550
       },
       "maxAltitude": "1,940m / 6,365ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -14226,10 +14228,10 @@
       "location": "Kathmandu, Chitwan, Bandipur, Pokhara, Jomsom & Muktinath Temple",
       "country": "Nepal",
       "duration": "12 Days / 11 Nights",
-      "price": "US$1465",
+      "price": "US$1500",
       "pricingInfo": {
-        "regularPrice": 1780,
-        "sellingPrice": 1465,
+        "regularPrice": 1875,
+        "sellingPrice": 1500,
         "currency": "USD",
         "luxury": {
           "p1": 3950,
@@ -14258,7 +14260,8 @@
           "p3_5": 1550,
           "p6_8": 1465,
           "p9plus": 1400
-        }
+        },
+        "originalPrice": 1875
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -14530,10 +14533,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Jomsom, Muktinath temple & Bandipur Village",
       "country": "Nepal",
       "duration": "13 Days / 12 Nights",
-      "price": "1675",
+      "price": "US$1740",
       "pricingInfo": {
-        "regularPrice": 1980,
-        "sellingPrice": 1675,
+        "regularPrice": 2175,
+        "sellingPrice": 1740,
         "currency": "USD",
         "luxury": {
           "p1": 4400,
@@ -14562,7 +14565,8 @@
           "p3_5": 1720,
           "p6_8": 1620,
           "p9plus": 1550
-        }
+        },
+        "originalPrice": 2175
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -14840,10 +14844,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Ghorepani, Poon Hill & Ghandruk Village",
       "country": "Nepal",
       "duration": "13 Days / 12 Nights",
-      "price": "1340",
+      "price": "US$1400",
       "pricingInfo": {
-        "regularPrice": 1650,
-        "sellingPrice": 1340,
+        "regularPrice": 1750,
+        "sellingPrice": 1400,
         "currency": "USD",
         "luxury": {
           "p1": 3800,
@@ -14872,7 +14876,8 @@
           "p3_5": 1420,
           "p6_8": 1340,
           "p9plus": 1280
-        }
+        },
+        "originalPrice": 1750
       },
       "maxAltitude": "3,210m / 10,531ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -15154,10 +15159,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Tansen, Pokhara, Bandipur & Nagarkot",
       "country": "Nepal",
       "duration": "13 Days / 12 Nights",
-      "price": "1305",
+      "price": "US$1350",
       "pricingInfo": {
-        "regularPrice": 1600,
-        "sellingPrice": 1305,
+        "regularPrice": 1690,
+        "sellingPrice": 1350,
         "currency": "USD",
         "luxury": {
           "p1": 3750,
@@ -15186,7 +15191,8 @@
           "p3_5": 1380,
           "p6_8": 1305,
           "p9plus": 1240
-        }
+        },
+        "originalPrice": 1690
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -15462,10 +15468,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Ghandruk & Pokhara",
       "country": "Nepal",
       "duration": "13 Days / 12 Nights",
-      "price": "1350",
+      "price": "US$1430",
       "pricingInfo": {
-        "regularPrice": 1700,
-        "sellingPrice": 1350,
+        "regularPrice": 1790,
+        "sellingPrice": 1430,
         "currency": "USD",
         "luxury": {
           "p1": 3850,
@@ -15494,7 +15500,8 @@
           "p3_5": 1450,
           "p6_8": 1350,
           "p9plus": 1290
-        }
+        },
+        "originalPrice": 1790
       },
       "maxAltitude": "1,940m / 6,365ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -15772,10 +15779,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Poon Hill & Ghandruk",
       "country": "Nepal",
       "duration": "14 Days / 13 Nights",
-      "price": "1395",
+      "price": "US$1480",
       "pricingInfo": {
-        "regularPrice": 1720,
-        "sellingPrice": 1395,
+        "regularPrice": 1850,
+        "sellingPrice": 1480,
         "currency": "USD",
         "luxury": {
           "p1": 3950,
@@ -15804,7 +15811,8 @@
           "p3_5": 1470,
           "p6_8": 1395,
           "p9plus": 1320
-        }
+        },
+        "originalPrice": 1850
       },
       "maxAltitude": "3,210m / 10,531ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -16093,10 +16101,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Jomsom, Muktinath, Tansen, Lumbini & Chitwan",
       "country": "Nepal",
       "duration": "14 Days / 13 Nights",
-      "price": "1760",
+      "price": "US$1800",
       "pricingInfo": {
-        "regularPrice": 2080,
-        "sellingPrice": 1760,
+        "regularPrice": 2250,
+        "sellingPrice": 1800,
         "currency": "USD",
         "luxury": {
           "p1": 4600,
@@ -16125,7 +16133,8 @@
           "p3_5": 1810,
           "p6_8": 1710,
           "p9plus": 1640
-        }
+        },
+        "originalPrice": 2250
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -16412,10 +16421,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Tansen, Pokhara, Bandipur & Nagarkot",
       "country": "Nepal",
       "duration": "14 Days / 13 Nights",
-      "price": "1395",
+      "price": "US$1440",
       "pricingInfo": {
-        "regularPrice": 1720,
-        "sellingPrice": 1395,
+        "regularPrice": 1800,
+        "sellingPrice": 1440,
         "currency": "USD",
         "luxury": {
           "p1": 3950,
@@ -16444,7 +16453,8 @@
           "p3_5": 1470,
           "p6_8": 1395,
           "p9plus": 1320
-        }
+        },
+        "originalPrice": 1800
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -16728,10 +16738,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Tansen, Pokhara & Ghandruk Village",
       "country": "Nepal",
       "duration": "14 Days / 13 Nights",
-      "price": "1410",
+      "price": "US$1480",
       "pricingInfo": {
-        "regularPrice": 1750,
-        "sellingPrice": 1410,
+        "regularPrice": 1850,
+        "sellingPrice": 1480,
         "currency": "USD",
         "luxury": {
           "p1": 4000,
@@ -16760,7 +16770,8 @@
           "p3_5": 1500,
           "p6_8": 1410,
           "p9plus": 1340
-        }
+        },
+        "originalPrice": 1850
       },
       "maxAltitude": "1,940m / 6,365ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -17047,10 +17058,10 @@
       "location": "Kathmandu, Bandipur, Tansen, Bardia, & Lumbini",
       "country": "Nepal",
       "duration": "15 Days / 14 Nights",
-      "price": "2075",
+      "price": "US$2150",
       "pricingInfo": {
-        "regularPrice": 2450,
-        "sellingPrice": 2075,
+        "regularPrice": 2690,
+        "sellingPrice": 2150,
         "currency": "USD",
         "luxury": {
           "p1": 5400,
@@ -17079,7 +17090,8 @@
           "p3_5": 2120,
           "p6_8": 2010,
           "p9plus": 1950
-        }
+        },
+        "originalPrice": 2690
       },
       "maxAltitude": "1,700m / 5,577ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -17370,10 +17382,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Jomsom, Muktinath, Tansen, Lumbini, & Chitwan",
       "country": "Nepal",
       "duration": "15 Days / 14 Nights",
-      "price": "1845",
+      "price": "US$1910",
       "pricingInfo": {
-        "regularPrice": 2180,
-        "sellingPrice": 1845,
+        "regularPrice": 2390,
+        "sellingPrice": 1910,
         "currency": "USD",
         "luxury": {
           "p1": 4800,
@@ -17402,7 +17414,8 @@
           "p3_5": 1900,
           "p6_8": 1800,
           "p9plus": 1720
-        }
+        },
+        "originalPrice": 2390
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -17698,10 +17711,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Tansen, Lumbini, Chitwan & Dhulikhel",
       "country": "Nepal",
       "duration": "15 Days / 14 Nights",
-      "price": "1500",
+      "price": "US$1600",
       "pricingInfo": {
-        "regularPrice": 1800,
-        "sellingPrice": 1500,
+        "regularPrice": 2000,
+        "sellingPrice": 1600,
         "currency": "USD",
         "luxury": {
           "p1": 4200,
@@ -17730,7 +17743,8 @@
           "p3_5": 1550,
           "p6_8": 1450,
           "p9plus": 1380
-        }
+        },
+        "originalPrice": 2000
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -18680,10 +18694,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Tansen, Lumbini, Chitwan & Dhulikhel",
       "country": "Nepal",
       "duration": "16 Days / 15 Nights",
-      "price": "1600",
+      "price": "US$1750",
       "pricingInfo": {
-        "regularPrice": 1920,
-        "sellingPrice": 1600,
+        "regularPrice": 2190,
+        "sellingPrice": 1750,
         "currency": "USD",
         "luxury": {
           "p1": 4400,
@@ -18712,7 +18726,8 @@
           "p3_5": 1650,
           "p6_8": 1550,
           "p9plus": 1480
-        }
+        },
+        "originalPrice": 2190
       },
       "maxAltitude": "1,700m / 5,577ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -19013,10 +19028,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Tansen, Bardia National Park & Lumbini",
       "country": "Nepal",
       "duration": "16 Days / 15 Nights",
-      "price": "2215",
+      "price": "US$2300",
       "pricingInfo": {
-        "regularPrice": 2600,
-        "sellingPrice": 2215,
+        "regularPrice": 2875,
+        "sellingPrice": 2300,
         "currency": "USD",
         "luxury": {
           "p1": 5400,
@@ -19045,7 +19060,8 @@
           "p3_5": 2250,
           "p6_8": 2120,
           "p9plus": 2020
-        }
+        },
+        "originalPrice": 2875
       },
       "maxAltitude": "1,700m / 5,577ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -20877,7 +20893,7 @@
       "location": "Upper Mustang & Lo Manthang, Mustang District, Nepal",
       "duration": "13",
       "durationUnit": "Days",
-      "price": "US$1,450",
+      "price": "US$1450",
       "originalPrice": "US$1,550",
       "rating": 4.9,
       "reviewsCount": 143,
@@ -21306,7 +21322,13 @@
       "type": "Tours",
       "status": "Published",
       "destination": "Nepal",
-      "country": "Nepal"
+      "country": "Nepal",
+      "pricingInfo": {
+        "regularPrice": 1810,
+        "originalPrice": 1810,
+        "sellingPrice": 1450,
+        "currency": "USD"
+      }
     }
   ],
   "treks": [
@@ -56566,10 +56588,10 @@
       "location": "Kathmandu, Chitwan, Pokhara, Ghorepani, Poon Hill & Ghandruk Village",
       "country": "Nepal",
       "duration": "12 Days / 11 Nights",
-      "price": "US$1165",
+      "price": "US$1260",
       "pricingInfo": {
-        "regularPrice": 1480,
-        "sellingPrice": 1165,
+        "regularPrice": 1575,
+        "sellingPrice": 1260,
         "currency": "USD",
         "luxury": {
           "p1": 3500,
@@ -56598,7 +56620,8 @@
           "p3_5": 1290,
           "p6_8": 1210,
           "p9plus": 1165
-        }
+        },
+        "originalPrice": 1575
       },
       "maxAltitude": "3,210m / 10,531ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -56867,10 +56890,10 @@
       "location": "Kathmandu, Chitwan, Pokhara, Ghandruk Village Trekking & Chandragiri Hills",
       "country": "Nepal",
       "duration": "12 Days / 11 Nights",
-      "price": "US$1165",
+      "price": "US$1240",
       "pricingInfo": {
-        "regularPrice": 1480,
-        "sellingPrice": 1165,
+        "regularPrice": 1550,
+        "sellingPrice": 1240,
         "currency": "USD",
         "luxury": {
           "p1": 3500,
@@ -56899,7 +56922,8 @@
           "p3_5": 1290,
           "p6_8": 1210,
           "p9plus": 1165
-        }
+        },
+        "originalPrice": 1550
       },
       "maxAltitude": "1,940m / 6,365ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -57169,10 +57193,10 @@
       "location": "Kathmandu, Chitwan, Bandipur, Pokhara, Jomsom & Muktinath Temple",
       "country": "Nepal",
       "duration": "12 Days / 11 Nights",
-      "price": "US$1465",
+      "price": "US$1500",
       "pricingInfo": {
-        "regularPrice": 1780,
-        "sellingPrice": 1465,
+        "regularPrice": 1875,
+        "sellingPrice": 1500,
         "currency": "USD",
         "luxury": {
           "p1": 3950,
@@ -57201,7 +57225,8 @@
           "p3_5": 1550,
           "p6_8": 1465,
           "p9plus": 1400
-        }
+        },
+        "originalPrice": 1875
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -57473,10 +57498,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Jomsom, Muktinath temple & Bandipur Village",
       "country": "Nepal",
       "duration": "13 Days / 12 Nights",
-      "price": "1675",
+      "price": "US$1740",
       "pricingInfo": {
-        "regularPrice": 1980,
-        "sellingPrice": 1675,
+        "regularPrice": 2175,
+        "sellingPrice": 1740,
         "currency": "USD",
         "luxury": {
           "p1": 4400,
@@ -57505,7 +57530,8 @@
           "p3_5": 1720,
           "p6_8": 1620,
           "p9plus": 1550
-        }
+        },
+        "originalPrice": 2175
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -57783,10 +57809,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Ghorepani, Poon Hill & Ghandruk Village",
       "country": "Nepal",
       "duration": "13 Days / 12 Nights",
-      "price": "1340",
+      "price": "US$1400",
       "pricingInfo": {
-        "regularPrice": 1650,
-        "sellingPrice": 1340,
+        "regularPrice": 1750,
+        "sellingPrice": 1400,
         "currency": "USD",
         "luxury": {
           "p1": 3800,
@@ -57815,7 +57841,8 @@
           "p3_5": 1420,
           "p6_8": 1340,
           "p9plus": 1280
-        }
+        },
+        "originalPrice": 1750
       },
       "maxAltitude": "3,210m / 10,531ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -58097,10 +58124,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Tansen, Pokhara, Bandipur & Nagarkot",
       "country": "Nepal",
       "duration": "13 Days / 12 Nights",
-      "price": "1305",
+      "price": "US$1350",
       "pricingInfo": {
-        "regularPrice": 1600,
-        "sellingPrice": 1305,
+        "regularPrice": 1690,
+        "sellingPrice": 1350,
         "currency": "USD",
         "luxury": {
           "p1": 3750,
@@ -58129,7 +58156,8 @@
           "p3_5": 1380,
           "p6_8": 1305,
           "p9plus": 1240
-        }
+        },
+        "originalPrice": 1690
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -58405,10 +58433,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Ghandruk & Pokhara",
       "country": "Nepal",
       "duration": "13 Days / 12 Nights",
-      "price": "1350",
+      "price": "US$1430",
       "pricingInfo": {
-        "regularPrice": 1700,
-        "sellingPrice": 1350,
+        "regularPrice": 1790,
+        "sellingPrice": 1430,
         "currency": "USD",
         "luxury": {
           "p1": 3850,
@@ -58437,7 +58465,8 @@
           "p3_5": 1450,
           "p6_8": 1350,
           "p9plus": 1290
-        }
+        },
+        "originalPrice": 1790
       },
       "maxAltitude": "1,940m / 6,365ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -58715,10 +58744,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Poon Hill & Ghandruk",
       "country": "Nepal",
       "duration": "14 Days / 13 Nights",
-      "price": "1395",
+      "price": "US$1480",
       "pricingInfo": {
-        "regularPrice": 1720,
-        "sellingPrice": 1395,
+        "regularPrice": 1850,
+        "sellingPrice": 1480,
         "currency": "USD",
         "luxury": {
           "p1": 3950,
@@ -58747,7 +58776,8 @@
           "p3_5": 1470,
           "p6_8": 1395,
           "p9plus": 1320
-        }
+        },
+        "originalPrice": 1850
       },
       "maxAltitude": "3,210m / 10,531ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -59036,10 +59066,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Jomsom, Muktinath, Tansen, Lumbini & Chitwan",
       "country": "Nepal",
       "duration": "14 Days / 13 Nights",
-      "price": "1760",
+      "price": "US$1800",
       "pricingInfo": {
-        "regularPrice": 2080,
-        "sellingPrice": 1760,
+        "regularPrice": 2250,
+        "sellingPrice": 1800,
         "currency": "USD",
         "luxury": {
           "p1": 4600,
@@ -59068,7 +59098,8 @@
           "p3_5": 1810,
           "p6_8": 1710,
           "p9plus": 1640
-        }
+        },
+        "originalPrice": 2250
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -59355,10 +59386,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Tansen, Pokhara, Bandipur & Nagarkot",
       "country": "Nepal",
       "duration": "14 Days / 13 Nights",
-      "price": "1395",
+      "price": "US$1440",
       "pricingInfo": {
-        "regularPrice": 1720,
-        "sellingPrice": 1395,
+        "regularPrice": 1800,
+        "sellingPrice": 1440,
         "currency": "USD",
         "luxury": {
           "p1": 3950,
@@ -59387,7 +59418,8 @@
           "p3_5": 1470,
           "p6_8": 1395,
           "p9plus": 1320
-        }
+        },
+        "originalPrice": 1800
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -59671,10 +59703,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Tansen, Pokhara & Ghandruk Village",
       "country": "Nepal",
       "duration": "14 Days / 13 Nights",
-      "price": "1410",
+      "price": "US$1480",
       "pricingInfo": {
-        "regularPrice": 1750,
-        "sellingPrice": 1410,
+        "regularPrice": 1850,
+        "sellingPrice": 1480,
         "currency": "USD",
         "luxury": {
           "p1": 4000,
@@ -59703,7 +59735,8 @@
           "p3_5": 1500,
           "p6_8": 1410,
           "p9plus": 1340
-        }
+        },
+        "originalPrice": 1850
       },
       "maxAltitude": "1,940m / 6,365ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -59990,10 +60023,10 @@
       "location": "Kathmandu, Bandipur, Tansen, Bardia, & Lumbini",
       "country": "Nepal",
       "duration": "15 Days / 14 Nights",
-      "price": "2075",
+      "price": "US$2150",
       "pricingInfo": {
-        "regularPrice": 2450,
-        "sellingPrice": 2075,
+        "regularPrice": 2690,
+        "sellingPrice": 2150,
         "currency": "USD",
         "luxury": {
           "p1": 5400,
@@ -60022,7 +60055,8 @@
           "p3_5": 2120,
           "p6_8": 2010,
           "p9plus": 1950
-        }
+        },
+        "originalPrice": 2690
       },
       "maxAltitude": "1,700m / 5,577ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -60313,10 +60347,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Jomsom, Muktinath, Tansen, Lumbini, & Chitwan",
       "country": "Nepal",
       "duration": "15 Days / 14 Nights",
-      "price": "1845",
+      "price": "US$1910",
       "pricingInfo": {
-        "regularPrice": 2180,
-        "sellingPrice": 1845,
+        "regularPrice": 2390,
+        "sellingPrice": 1910,
         "currency": "USD",
         "luxury": {
           "p1": 4800,
@@ -60345,7 +60379,8 @@
           "p3_5": 1900,
           "p6_8": 1800,
           "p9plus": 1720
-        }
+        },
+        "originalPrice": 2390
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -60641,10 +60676,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Tansen, Lumbini, Chitwan & Dhulikhel",
       "country": "Nepal",
       "duration": "15 Days / 14 Nights",
-      "price": "1500",
+      "price": "US$1600",
       "pricingInfo": {
-        "regularPrice": 1800,
-        "sellingPrice": 1500,
+        "regularPrice": 2000,
+        "sellingPrice": 1600,
         "currency": "USD",
         "luxury": {
           "p1": 4200,
@@ -60673,7 +60708,8 @@
           "p3_5": 1550,
           "p6_8": 1450,
           "p9plus": 1380
-        }
+        },
+        "originalPrice": 2000
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -61623,10 +61659,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Tansen, Lumbini, Chitwan & Dhulikhel",
       "country": "Nepal",
       "duration": "16 Days / 15 Nights",
-      "price": "1600",
+      "price": "US$1750",
       "pricingInfo": {
-        "regularPrice": 1920,
-        "sellingPrice": 1600,
+        "regularPrice": 2190,
+        "sellingPrice": 1750,
         "currency": "USD",
         "luxury": {
           "p1": 4400,
@@ -61655,7 +61691,8 @@
           "p3_5": 1650,
           "p6_8": 1550,
           "p9plus": 1480
-        }
+        },
+        "originalPrice": 2190
       },
       "maxAltitude": "1,700m / 5,577ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -61956,10 +61993,10 @@
       "location": "Kathmandu, Bandipur, Pokhara, Tansen, Bardia National Park & Lumbini",
       "country": "Nepal",
       "duration": "16 Days / 15 Nights",
-      "price": "2215",
+      "price": "US$2300",
       "pricingInfo": {
-        "regularPrice": 2600,
-        "sellingPrice": 2215,
+        "regularPrice": 2875,
+        "sellingPrice": 2300,
         "currency": "USD",
         "luxury": {
           "p1": 5400,
@@ -61988,7 +62025,8 @@
           "p3_5": 2250,
           "p6_8": 2120,
           "p9plus": 2020
-        }
+        },
+        "originalPrice": 2875
       },
       "maxAltitude": "1,700m / 5,577ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -63820,7 +63858,7 @@
       "location": "Upper Mustang & Lo Manthang, Mustang District, Nepal",
       "duration": "13",
       "durationUnit": "Days",
-      "price": "US$1,450",
+      "price": "US$1450",
       "originalPrice": "US$1,550",
       "rating": 4.9,
       "reviewsCount": 143,
@@ -64249,7 +64287,13 @@
       "type": "Tours",
       "status": "Published",
       "destination": "Nepal",
-      "country": "Nepal"
+      "country": "Nepal",
+      "pricingInfo": {
+        "regularPrice": 1810,
+        "originalPrice": 1810,
+        "sellingPrice": 1450,
+        "currency": "USD"
+      }
     }
   ],
   "blogs": [
