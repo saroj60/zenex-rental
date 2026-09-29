@@ -8414,7 +8414,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$850",
+      "price": "US$1150",
       "rating": 4.9,
       "reviewsCount": 28,
       "image": "/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif",
@@ -8527,7 +8527,12 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1440,
+        "sellingPrice": 1150,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-bandipur-pokhara-tour",
@@ -8546,7 +8551,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$395",
+      "price": "US$1070",
       "rating": 4.9,
       "reviewsCount": 32,
       "image": "/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg",
@@ -8658,7 +8663,12 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1340,
+        "sellingPrice": 1070,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-nagarkot-tour",
@@ -8678,7 +8688,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$595",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 34,
       "image": "/images/Tours/7-days-kathmandu-pokhara-nagarkot-tour/7-days-kathmandu-pokhara-nagarkot-tour.jpg",
@@ -8791,7 +8801,12 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-chitwan-tour",
@@ -8811,7 +8826,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$650",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 29,
       "image": "/images/Tours/7-days-kathmandu-pokhara-chitwan-tour/7-days-kathmandu-pokhara-chitwan-tour.jpg",
@@ -8922,7 +8937,12 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-chitwan-pokhara-tour",
@@ -8942,7 +8962,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$650",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 31,
       "image": "/images/Tours/7-days-kathmandu-chitwan-pokhara-tour/7-days-kathmandu-chitwan-pokhara-tour.jpg",
@@ -9053,7 +9073,12 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-jomsom-muktinath-tour",
@@ -9073,7 +9098,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$890",
+      "price": "US$1100",
       "rating": 5,
       "reviewsCount": 42,
       "image": "/images/Tours/7-days-kathmandu-pokhara-jomsom-muktinath-tour/7-days-kathmandu-pokhara-jomsom-muktinath-tour.jpg",
@@ -9186,7 +9211,12 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1375,
+        "sellingPrice": 1100,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-nagarkot-dhulikhel-tour",
@@ -9206,7 +9236,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$495",
+      "price": "US$830",
       "rating": 4.8,
       "reviewsCount": 22,
       "image": "/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg",
@@ -9317,7 +9347,12 @@
         "Thrilling jeep or elephant safari to spot wild one-horned rhinos, tigers & deer.",
         "Peaceful dugout canoe trip on Rapti River to view mugger crocodiles & exotic birds.",
         "Traditional Tharu indigenous village walk & live evening cultural dance performance."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1040,
+        "sellingPrice": 830,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-lumbini-chitwan-tour",
@@ -51001,7 +51036,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$850",
+      "price": "US$1150",
       "rating": 4.9,
       "reviewsCount": 28,
       "image": "/images/Tours/7-days-kathmandu-chitwan-pokhara-lumbini-tour/photo-1534215782964-d58601aa091c.avif",
@@ -51110,7 +51145,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1440,
+        "sellingPrice": 1150,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-bandipur-pokhara-tour",
@@ -51129,7 +51169,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$395",
+      "price": "US$1070",
       "rating": 4.9,
       "reviewsCount": 32,
       "image": "/images/Tours/7-days-kathmandu-bandipur-pokhara-tour/7-days-kathmandu-bandipur-pokhara-tour.jpg",
@@ -51237,7 +51277,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1340,
+        "sellingPrice": 1070,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-nagarkot-tour",
@@ -51257,7 +51302,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$595",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 34,
       "image": "/images/Tours/7-days-kathmandu-pokhara-nagarkot-tour/7-days-kathmandu-pokhara-nagarkot-tour.jpg",
@@ -51364,7 +51409,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-chitwan-tour",
@@ -51384,7 +51434,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$650",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 29,
       "image": "/images/Tours/7-days-kathmandu-pokhara-chitwan-tour/7-days-kathmandu-pokhara-chitwan-tour.jpg",
@@ -51491,7 +51541,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-chitwan-pokhara-tour",
@@ -51511,7 +51566,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$650",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 31,
       "image": "/images/Tours/7-days-kathmandu-chitwan-pokhara-tour/7-days-kathmandu-chitwan-pokhara-tour.jpg",
@@ -51618,7 +51673,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-jomsom-muktinath-tour",
@@ -51638,7 +51698,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$890",
+      "price": "US$1100",
       "rating": 5,
       "reviewsCount": 42,
       "image": "/images/Tours/7-days-kathmandu-pokhara-jomsom-muktinath-tour/7-days-kathmandu-pokhara-jomsom-muktinath-tour.jpg",
@@ -51746,7 +51806,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1375,
+        "sellingPrice": 1100,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-nagarkot-dhulikhel-tour",
@@ -51766,7 +51831,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$495",
+      "price": "US$830",
       "rating": 4.8,
       "reviewsCount": 22,
       "image": "/images/Tours/7-days-kathmandu-nagarkot-dhulikhel-tour/7-days-kathmandu-nagarkot-dhulikhel-tour.jpg",
@@ -51871,7 +51936,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1040,
+        "sellingPrice": 830,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-lumbini-chitwan-tour",

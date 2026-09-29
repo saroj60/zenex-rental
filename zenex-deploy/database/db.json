@@ -8387,7 +8387,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$850",
+      "price": "US$1150",
       "rating": 4.9,
       "reviewsCount": 28,
       "image": "/zenex images/chitwan/photo-1700366776973-20bda63d5b1a.avif",
@@ -8496,7 +8496,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1440,
+        "sellingPrice": 1150,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-bandipur-pokhara-tour",
@@ -8515,7 +8520,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$395",
+      "price": "US$1070",
       "rating": 4.9,
       "reviewsCount": 32,
       "image": "/zenex images/Bandipur/photo-1600078254717-31759fe698de.avif",
@@ -8623,7 +8628,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1340,
+        "sellingPrice": 1070,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-nagarkot-tour",
@@ -8643,7 +8653,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$595",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 34,
       "image": "/zenex images/nagarkot/photo-1674575055196-62a37159f466.avif",
@@ -8752,7 +8762,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-chitwan-tour",
@@ -8772,7 +8787,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$650",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 29,
       "image": "/zenex images/chitwan/photo-1731340471796-bf113b75415b.avif",
@@ -8879,7 +8894,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-chitwan-pokhara-tour",
@@ -8899,7 +8919,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$650",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 31,
       "image": "/zenex images/chitwan/photo-1751931817996-368c9ee352ee.avif",
@@ -9006,7 +9026,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-jomsom-muktinath-tour",
@@ -9026,7 +9051,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$890",
+      "price": "US$1100",
       "rating": 5,
       "reviewsCount": 42,
       "image": "/zenex images/muktinath/photo-1538321833141-b175d44fd264.avif",
@@ -9135,7 +9160,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1375,
+        "sellingPrice": 1100,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-nagarkot-dhulikhel-tour",
@@ -9155,7 +9185,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$495",
+      "price": "US$830",
       "rating": 4.8,
       "reviewsCount": 22,
       "image": "/zenex images/nagarkot/photo-1674575761968-507180651e41.avif",
@@ -9262,7 +9292,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1040,
+        "sellingPrice": 830,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-lumbini-chitwan-tour",
@@ -50837,7 +50872,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$850",
+      "price": "US$1150",
       "rating": 4.9,
       "reviewsCount": 28,
       "image": "/zenex images/chitwan/photo-1751931817996-368c9ee352ee.avif",
@@ -50946,7 +50981,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1440,
+        "sellingPrice": 1150,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-bandipur-pokhara-tour",
@@ -50965,7 +51005,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$395",
+      "price": "US$1070",
       "rating": 4.9,
       "reviewsCount": 32,
       "image": "/zenex images/Bandipur/photo-1647679180836-ac0e79f89e22.avif",
@@ -51073,7 +51113,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1340,
+        "sellingPrice": 1070,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-nagarkot-tour",
@@ -51093,7 +51138,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$595",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 34,
       "image": "/zenex images/nagarkot/photo-1610428418346-535c21b8a678.avif",
@@ -51200,7 +51245,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-chitwan-tour",
@@ -51220,7 +51270,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$650",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 29,
       "image": "/zenex images/chitwan/photo-1766040929567-bf412a2de9c8.avif",
@@ -51327,7 +51377,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-chitwan-pokhara-tour",
@@ -51347,7 +51402,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$650",
+      "price": "US$850",
       "rating": 4.9,
       "reviewsCount": 31,
       "image": "/zenex images/chitwan/premium_photo-1661832611972-b6ee1aba3581.avif",
@@ -51454,7 +51509,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-pokhara-jomsom-muktinath-tour",
@@ -51474,7 +51534,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$890",
+      "price": "US$1100",
       "rating": 5,
       "reviewsCount": 42,
       "image": "/zenex images/muktinath/photo-1731562561593-8bebd63672e0.avif",
@@ -51582,7 +51642,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1375,
+        "sellingPrice": 1100,
+        "currency": "USD"
+      }
     },
     {
       "id": "7-days-kathmandu-nagarkot-dhulikhel-tour",
@@ -51602,7 +51667,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$495",
+      "price": "US$830",
       "rating": 4.8,
       "reviewsCount": 22,
       "image": "/zenex images/nagarkot/photo-1633337496516-b60edb15b930.avif",
@@ -51707,7 +51772,12 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1040,
+        "sellingPrice": 830,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-lumbini-chitwan-tour",
