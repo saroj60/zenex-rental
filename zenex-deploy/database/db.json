@@ -20894,7 +20894,7 @@
       "location": "Upper Mustang & Lo Manthang, Mustang District, Nepal",
       "duration": "13",
       "durationUnit": "Days",
-      "price": "US$1450",
+      "price": "US$1525",
       "originalPrice": "US$1,550",
       "rating": 4.9,
       "reviewsCount": 143,
@@ -21325,9 +21325,9 @@
       "destination": "Nepal",
       "country": "Nepal",
       "pricingInfo": {
-        "regularPrice": 1810,
-        "originalPrice": 1810,
-        "sellingPrice": 1450,
+        "regularPrice": 1910,
+        "originalPrice": 1910,
+        "sellingPrice": 1525,
         "currency": "USD"
       }
     }
@@ -24338,8 +24338,8 @@
       "location": "Upper Mustang & Lo Manthang, Mustang District, Nepal",
       "duration": "13",
       "durationUnit": "Days",
-      "price": "US$1,450",
-      "originalPrice": "US$1,550",
+      "price": "US$1525",
+      "originalPrice": "US$1910",
       "rating": 4.9,
       "reviewsCount": 143,
       "difficulty": "Easy",
@@ -24770,7 +24770,13 @@
       "type": "Tours",
       "status": "Published",
       "destination": "Nepal",
-      "country": "Nepal"
+      "country": "Nepal",
+      "pricingInfo": {
+        "regularPrice": 1910,
+        "originalPrice": 1910,
+        "sellingPrice": 1525,
+        "currency": "USD"
+      }
     },
     {
       "id": "upper-mustang-trek-18d",
@@ -24781,8 +24787,8 @@
       "location": "Upper Mustang & Lo Manthang, Mustang District, Nepal",
       "duration": "18",
       "durationUnit": "Days",
-      "price": "US$1,955",
-      "originalPrice": "US$2,150",
+      "price": "US$1935",
+      "originalPrice": "US$2420",
       "rating": 4.9,
       "reviewsCount": 143,
       "difficulty": "Hard",
@@ -25234,7 +25240,13 @@
         "Potala Palace Lhasa",
         "Tibet Travel Permit"
       ],
-      "description": "<h3>Short Upper Mustang Trek 18 Days | Discover Nepal's Forbidden Kingdom & Tibetan Culture</h3>\n      <p>The 18-Day Upper Mustang Trek in Nepal is a culturally rich and scenic mountain expedition into one of Nepal's most remote and preserved Himalayan destinations. Often referred to as the <strong>\"Last Forbidden Kingdom\"</strong>, Upper Mustang was closed to foreign travelers until 1992, preserving its ancient Tibetan Buddhist traditions, centuries-old monasteries, cliffside cave dwellings, and desert-like landscapes.</p>\n      <p>Starting with a scenic flight or drive from Pokhara to Jomsom, the trail leads past black Shaligram fossils in Kali Gandaki Valley to Kagbeni, the restricted boundary of Upper Mustang. Trekkers walk through colorful traditional villages like Chele, Samar, Syanbochen, Ghami, and Charang before reaching the ancient walled capital of <strong>Lo Manthang (3,810 m)</strong>. The return trail crosses the high <strong>Gyu La Pass (4,077 m)</strong> to holy Muktinath Temple.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Special Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), round-trip domestic flights/transfers, licensed high-altitude guides, porters, teahouse bookings, and hotel stays in Kathmandu and Pokhara.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences."
+      "description": "<h3>Short Upper Mustang Trek 18 Days | Discover Nepal's Forbidden Kingdom & Tibetan Culture</h3>\n      <p>The 18-Day Upper Mustang Trek in Nepal is a culturally rich and scenic mountain expedition into one of Nepal's most remote and preserved Himalayan destinations. Often referred to as the <strong>\"Last Forbidden Kingdom\"</strong>, Upper Mustang was closed to foreign travelers until 1992, preserving its ancient Tibetan Buddhist traditions, centuries-old monasteries, cliffside cave dwellings, and desert-like landscapes.</p>\n      <p>Starting with a scenic flight or drive from Pokhara to Jomsom, the trail leads past black Shaligram fossils in Kali Gandaki Valley to Kagbeni, the restricted boundary of Upper Mustang. Trekkers walk through colorful traditional villages like Chele, Samar, Syanbochen, Ghami, and Charang before reaching the ancient walled capital of <strong>Lo Manthang (3,810 m)</strong>. The return trail crosses the high <strong>Gyu La Pass (4,077 m)</strong> to holy Muktinath Temple.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Special Restricted Area Permits (RAP USD 500), Annapurna Conservation Area Permits (ACAP), round-trip domestic flights/transfers, licensed high-altitude guides, porters, teahouse bookings, and hotel stays in Kathmandu and Pokhara.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences.",
+      "pricingInfo": {
+        "regularPrice": 2420,
+        "originalPrice": 2420,
+        "sellingPrice": 1935,
+        "currency": "USD"
+      }
     },
     {
       "id": "upper-mustang-trek-with-luri-gompa-22d",
@@ -63925,7 +63937,7 @@
       "location": "Upper Mustang & Lo Manthang, Mustang District, Nepal",
       "duration": "13",
       "durationUnit": "Days",
-      "price": "US$1450",
+      "price": "US$1525",
       "originalPrice": "US$1,550",
       "rating": 4.9,
       "reviewsCount": 143,
@@ -64356,9 +64368,9 @@
       "destination": "Nepal",
       "country": "Nepal",
       "pricingInfo": {
-        "regularPrice": 1810,
-        "originalPrice": 1810,
-        "sellingPrice": 1450,
+        "regularPrice": 1910,
+        "originalPrice": 1910,
+        "sellingPrice": 1525,
         "currency": "USD"
       }
     }
