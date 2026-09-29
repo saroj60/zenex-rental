@@ -27551,8 +27551,8 @@
       "location": "Shey Phoksundo National Park, Upper Dolpo & Mustang, Mid-Western Nepal",
       "duration": "25",
       "durationUnit": "Days",
-      "price": "US$3,630",
-      "originalPrice": "US$3,950",
+      "price": "US$3610",
+      "originalPrice": "US$4510",
       "rating": 4.9,
       "reviewsCount": 143,
       "difficulty": "Challenging",
@@ -27929,14 +27929,20 @@
             "Quick-dry microfiber towel & biodegradable wet wipes"
           ]
         }
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 4510,
+        "originalPrice": 4510,
+        "sellingPrice": 3610,
+        "currency": "USD"
+      }
     },
     {
       "id": "lower-dolpo-trek-via-dhorpatan-23d",
       "title": "Lower Dolpo Trek via Dhorpatan - 23 Days",
       "region": "dolpo",
       "duration": "23 Days",
-      "price": "US$3,250",
+      "price": "US$2080",
       "difficulty": "Hard",
       "image": "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
       "gallery": [
@@ -28398,7 +28404,14 @@
         "Tibet Travel Permit"
       ],
       "starts": "Kathmandu",
-      "ends": "Kathmandu"
+      "ends": "Kathmandu",
+      "originalPrice": "US$2600",
+      "pricingInfo": {
+        "regularPrice": 2600,
+        "originalPrice": 2600,
+        "sellingPrice": 2080,
+        "currency": "USD"
+      }
     },
     {
       "id": "dhampus-thapa-peak-climbing-19d",
@@ -28409,8 +28422,8 @@
       "location": "Dhaulagiri Circuit & Hidden Valley, Dhaulagiri Region, Nepal",
       "duration": "19",
       "durationUnit": "Days",
-      "price": "US$2,450",
-      "originalPrice": "US$2,750",
+      "price": "US$4450",
+      "originalPrice": "US$5560",
       "rating": 4.9,
       "reviewsCount": 143,
       "difficulty": "Hard",
@@ -28869,7 +28882,13 @@
         "Annapurna Base Camp",
         "Annapurna Range"
       ],
-      "description": "<h3>Dhampus (Thapa) Peak Climbing - 19 Days | Non-Technical 6,000m Trekking Peak Adventure in Dhaulagiri</h3>\n      <p>Dhampus Peak, also known as <strong>Thapa Peak (6,012 meters / 19,724 ft)</strong>, is a stunning non-technical trekking peak located in the high-altitude wilderness of the Dhaulagiri region of Nepal. This 19-day expedition combines the legendary <strong>Dhaulagiri Circuit Trek</strong> with a rewarding 6,000m peak climb, offering dramatic high-pass crossings, glacier trekking, and breathtaking 360-degree vistas of Dhaulagiri (8,167m), Annapurna I, Nilgiri, Tukuche Peak, and Tilicho Peak.</p>\n      <p>The journey begins from Kathmandu to Pokhara and onwards to Muri, traversing pristine forests, dramatic river gorges, and remote Magar settlements. As you ascend through Italian Base Camp and Japanese Base Camp onto the Chhonbardan Glacier, you'll reach Dhaulagiri Base Camp before crossing the spectacular <strong>French Pass (5,360m)</strong> into the isolated <strong>Hidden Valley (5,166m)</strong>. From high camp in Hidden Valley, climbers launch the summit push up the snow slopes of Dhampus Peak (6,012m) before crossing <strong>Thapa Pass (5,244m)</strong> and descending to Marpha and Pokhara.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Dhampus Peak Climbing Permits, Annapurna Conservation Area Permits (ACAP), TIMS cards, full tented camping gear, licensed climbing Sherpa guides, cooks, porters, private transfers, and hotel bookings in Kathmandu and Pokhara.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences."
+      "description": "<h3>Dhampus (Thapa) Peak Climbing - 19 Days | Non-Technical 6,000m Trekking Peak Adventure in Dhaulagiri</h3>\n      <p>Dhampus Peak, also known as <strong>Thapa Peak (6,012 meters / 19,724 ft)</strong>, is a stunning non-technical trekking peak located in the high-altitude wilderness of the Dhaulagiri region of Nepal. This 19-day expedition combines the legendary <strong>Dhaulagiri Circuit Trek</strong> with a rewarding 6,000m peak climb, offering dramatic high-pass crossings, glacier trekking, and breathtaking 360-degree vistas of Dhaulagiri (8,167m), Annapurna I, Nilgiri, Tukuche Peak, and Tilicho Peak.</p>\n      <p>The journey begins from Kathmandu to Pokhara and onwards to Muri, traversing pristine forests, dramatic river gorges, and remote Magar settlements. As you ascend through Italian Base Camp and Japanese Base Camp onto the Chhonbardan Glacier, you'll reach Dhaulagiri Base Camp before crossing the spectacular <strong>French Pass (5,360m)</strong> into the isolated <strong>Hidden Valley (5,166m)</strong>. From high camp in Hidden Valley, climbers launch the summit push up the snow slopes of Dhampus Peak (6,012m) before crossing <strong>Thapa Pass (5,244m)</strong> and descending to Marpha and Pokhara.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all logistics—including Dhampus Peak Climbing Permits, Annapurna Conservation Area Permits (ACAP), TIMS cards, full tented camping gear, licensed climbing Sherpa guides, cooks, porters, private transfers, and hotel bookings in Kathmandu and Pokhara.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences.",
+      "pricingInfo": {
+        "regularPrice": 5560,
+        "originalPrice": 5560,
+        "sellingPrice": 4450,
+        "currency": "USD"
+      }
     },
     {
       "id": "dhaulagiri-circuit-trek-17d",
@@ -28880,8 +28899,8 @@
       "location": "Dhaulagiri Massif & Hidden Valley, Myagdi & Mustang Districts, Nepal",
       "duration": "17",
       "durationUnit": "Days",
-      "price": "US$2,150",
-      "originalPrice": "US$2,450",
+      "price": "US$1790",
+      "originalPrice": "US$2240",
       "rating": 4.9,
       "reviewsCount": 143,
       "difficulty": "Hard",
@@ -29305,7 +29324,13 @@
       "seoLandmarks": [
         "Upper Mustang Desert"
       ],
-      "description": "<h3>Dhaulagiri Circuit Trek - 17 Days | High Altitude Glacial Expedition & Pass Crossing</h3>\n      <p>The <strong>Dhaulagiri Circuit Trek (17 Days)</strong> is one of Nepal’s most challenging, remote, and exhilarating high-altitude wilderness adventures. Circling Mount Dhaulagiri (8,167m)—the world’s seventh highest peak—this expedition leads deep into the untamed heart of the western Himalayas. Starting from Kathmandu and Pokhara to the Magar trailhead village of Muri, the route follows the Myagdi Khola river valley through dense subtropical forests and alpine pastures before entering the rugged glacial world of the Chhonbardan Glacier.</p>\n      <p>Trekkers camp at iconic sites including Italian Base Camp and Dhaulagiri Base Camp (4,750m), surrounded by towering icefalls and sheer rock faces. The crown jewel of the circuit is crossing <strong>French Pass (5,360m)</strong> into the isolated <strong>Hidden Valley (5,166m)</strong>, followed by crossing <strong>Thapa Pass (5,244m)</strong> before descending to Yak Kharka and Marpha in the Kali Gandaki Valley.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all trek logistics—including Annapurna Conservation Area Permits (ACAP), TIMS cards, flight/vehicle transfers, full wilderness tented camping equipment, licensed guides, mountain cooks, and porters to ensure a safe and memorable Himalayan expedition.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences."
+      "description": "<h3>Dhaulagiri Circuit Trek - 17 Days | High Altitude Glacial Expedition & Pass Crossing</h3>\n      <p>The <strong>Dhaulagiri Circuit Trek (17 Days)</strong> is one of Nepal’s most challenging, remote, and exhilarating high-altitude wilderness adventures. Circling Mount Dhaulagiri (8,167m)—the world’s seventh highest peak—this expedition leads deep into the untamed heart of the western Himalayas. Starting from Kathmandu and Pokhara to the Magar trailhead village of Muri, the route follows the Myagdi Khola river valley through dense subtropical forests and alpine pastures before entering the rugged glacial world of the Chhonbardan Glacier.</p>\n      <p>Trekkers camp at iconic sites including Italian Base Camp and Dhaulagiri Base Camp (4,750m), surrounded by towering icefalls and sheer rock faces. The crown jewel of the circuit is crossing <strong>French Pass (5,360m)</strong> into the isolated <strong>Hidden Valley (5,166m)</strong>, followed by crossing <strong>Thapa Pass (5,244m)</strong> before descending to Yak Kharka and Marpha in the Kali Gandaki Valley.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage all trek logistics—including Annapurna Conservation Area Permits (ACAP), TIMS cards, flight/vehicle transfers, full wilderness tented camping equipment, licensed guides, mountain cooks, and porters to ensure a safe and memorable Himalayan expedition.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences.",
+      "pricingInfo": {
+        "regularPrice": 2240,
+        "originalPrice": 2240,
+        "sellingPrice": 1790,
+        "currency": "USD"
+      }
     },
     {
       "id": "rolwaling-valley-trek-18d",
@@ -29316,8 +29341,8 @@
       "location": "Rolwaling Valley & Tsho Rolpa Lake, Dolakha District, Nepal",
       "duration": "18",
       "durationUnit": "Days",
-      "price": "US$2,500",
-      "originalPrice": "US$2,800",
+      "price": "US$2230",
+      "originalPrice": "US$2790",
       "rating": 4.9,
       "reviewsCount": 143,
       "difficulty": "Hard",
@@ -29758,7 +29783,13 @@
         "Potala Palace Lhasa",
         "Tibet Travel Permit"
       ],
-      "description": "<h3>Rolwaling Valley Trek - 18 Days | Remote Villages, Glacial Lakes & Sherpa Culture</h3>\n      <p>The <strong>Rolwaling Valley Trek (18 Days)</strong> is a tranquil and off-the-beaten-path Himalayan journey into the hidden Rolwaling Himal region, situated west of Everest near the Tibetan border. Starting from Kathmandu with a scenic overland drive to Charikot, the trail ascends to the sacred Hindu shrine of <strong>Kalinchowk Bhagwati (3,842m)</strong> before descending to the serene Buddhist nunnery at <strong>Bigu Gompa (2,516m)</strong>.</p>\n      <p>Trekkers venture through traditional Tamang and Sherpa settlements including Laduk, Jagat, and Simigaon, following the Tamakoshi and Rolwaling rivers. As you trek through pristine pine and rhododendron forests, you'll reach the iconic Sherpa mountain villages of <strong>Beding (3,740m)</strong> and <strong>Na (4,180m)</strong>, framed by the towering north face of Mount Gaurishankar (7,145m). A major highlight is an acclimatization day hike to the turquoise waters of <strong>Tsho Rolpa Lake (4,580m)</strong>—Nepal's largest glacial lake.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we handle all logistics—including Gaurishankar Conservation Area Permits (GCAP), Special Restricted Area Permits, 3-star hotel bookings in Kathmandu, private vehicle transfers, teahouse and tented camping accommodations, licensed guides, cooks, and porters.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences."
+      "description": "<h3>Rolwaling Valley Trek - 18 Days | Remote Villages, Glacial Lakes & Sherpa Culture</h3>\n      <p>The <strong>Rolwaling Valley Trek (18 Days)</strong> is a tranquil and off-the-beaten-path Himalayan journey into the hidden Rolwaling Himal region, situated west of Everest near the Tibetan border. Starting from Kathmandu with a scenic overland drive to Charikot, the trail ascends to the sacred Hindu shrine of <strong>Kalinchowk Bhagwati (3,842m)</strong> before descending to the serene Buddhist nunnery at <strong>Bigu Gompa (2,516m)</strong>.</p>\n      <p>Trekkers venture through traditional Tamang and Sherpa settlements including Laduk, Jagat, and Simigaon, following the Tamakoshi and Rolwaling rivers. As you trek through pristine pine and rhododendron forests, you'll reach the iconic Sherpa mountain villages of <strong>Beding (3,740m)</strong> and <strong>Na (4,180m)</strong>, framed by the towering north face of Mount Gaurishankar (7,145m). A major highlight is an acclimatization day hike to the turquoise waters of <strong>Tsho Rolpa Lake (4,580m)</strong>—Nepal's largest glacial lake.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we handle all logistics—including Gaurishankar Conservation Area Permits (GCAP), Special Restricted Area Permits, 3-star hotel bookings in Kathmandu, private vehicle transfers, teahouse and tented camping accommodations, licensed guides, cooks, and porters.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences.",
+      "pricingInfo": {
+        "regularPrice": 2790,
+        "originalPrice": 2790,
+        "sellingPrice": 2230,
+        "currency": "USD"
+      }
     },
     {
       "id": "rolwaling-tashi-lapcha-pass-trek-19d",
@@ -29769,8 +29800,8 @@
       "location": "Rolwaling Valley & Khumbu Region, Dolakha & Solukhumbu Districts, Nepal",
       "duration": "19",
       "durationUnit": "Days",
-      "price": "US$2,850",
-      "originalPrice": "US$3,150",
+      "price": "US$2970",
+      "originalPrice": "US$3710",
       "rating": 4.9,
       "reviewsCount": 143,
       "difficulty": "Hard",
@@ -30236,7 +30267,13 @@
         "Everest Base Camp",
         "Himalayas"
       ],
-      "description": "<h3>Rolwaling Tashi Lapcha Pass Trek - 19 Days | High Mountain Pass & Glacial Expedition to Everest Region</h3>\n      <p>The <strong>Rolwaling – Tashi Lapcha Pass Trek (19 Days)</strong> is a formidable, remote, and thrilling Himalayan expedition that connects the secluded Rolwaling Valley with the iconic Everest (Khumbu) region across the high-altitude <strong>Tashi Lapcha Pass (5,755m)</strong>. Starting from the low mid-hills of Singati, the route leads through terraced fields, deep river gorges, and ancient Tamang and Sherpa villages including Simigaon, Beding, and Na.</p>\n      <p>Trekkers explore the turquoise glacial waters of <strong>Tsho Rolpa Lake (4,580m)</strong> before venturing onto the icy moraine of the Trakarding Glacier and Pachermo Base Camp. Crossing the technical Tashi Lapcha Pass (5,755m) requires fixed ropes, crampons, ice axes, and expert mountaineering Sherpas. Standing at the pass summit rewards climbers with breathtaking 360-degree views of Everest (8,848m), Cho Oyu, Makalu, Shishapangma, Pumori, Pachermo Peak, and Mount Gaurishankar (7,145m). The descent leads into the Khumbu region, passing Thame, Namche Bazaar, and concluding with a scenic flight from Lukla to Kathmandu.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage complete expedition logistics—including Special Rolwaling Restricted Area Permits, Gaurishankar Conservation Area Permits (GCAP), Sagarmatha National Park Permits, Khumbu Rural Municipality Permits, domestic Lukla flight tickets, full tented camping gear, climbing Sherpa guides, cooks, and porters.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences."
+      "description": "<h3>Rolwaling Tashi Lapcha Pass Trek - 19 Days | High Mountain Pass & Glacial Expedition to Everest Region</h3>\n      <p>The <strong>Rolwaling – Tashi Lapcha Pass Trek (19 Days)</strong> is a formidable, remote, and thrilling Himalayan expedition that connects the secluded Rolwaling Valley with the iconic Everest (Khumbu) region across the high-altitude <strong>Tashi Lapcha Pass (5,755m)</strong>. Starting from the low mid-hills of Singati, the route leads through terraced fields, deep river gorges, and ancient Tamang and Sherpa villages including Simigaon, Beding, and Na.</p>\n      <p>Trekkers explore the turquoise glacial waters of <strong>Tsho Rolpa Lake (4,580m)</strong> before venturing onto the icy moraine of the Trakarding Glacier and Pachermo Base Camp. Crossing the technical Tashi Lapcha Pass (5,755m) requires fixed ropes, crampons, ice axes, and expert mountaineering Sherpas. Standing at the pass summit rewards climbers with breathtaking 360-degree views of Everest (8,848m), Cho Oyu, Makalu, Shishapangma, Pumori, Pachermo Peak, and Mount Gaurishankar (7,145m). The descent leads into the Khumbu region, passing Thame, Namche Bazaar, and concluding with a scenic flight from Lukla to Kathmandu.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage complete expedition logistics—including Special Rolwaling Restricted Area Permits, Gaurishankar Conservation Area Permits (GCAP), Sagarmatha National Park Permits, Khumbu Rural Municipality Permits, domestic Lukla flight tickets, full tented camping gear, climbing Sherpa guides, cooks, and porters.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences.",
+      "pricingInfo": {
+        "regularPrice": 3710,
+        "originalPrice": 3710,
+        "sellingPrice": 2970,
+        "currency": "USD"
+      }
     },
     {
       "id": "lapchi-kang-milarepa-cave-trek-11d",
@@ -30247,8 +30284,8 @@
       "location": "Lapchi Valley & Milarepa Caves, Dolakha District, Nepal",
       "duration": "11",
       "durationUnit": "Days",
-      "price": "US$1,650",
-      "originalPrice": "US$1,850",
+      "price": "US$1000",
+      "originalPrice": "US$1250",
       "rating": 4.9,
       "reviewsCount": 143,
       "difficulty": "Easy",
@@ -30591,7 +30628,13 @@
         "Potala Palace Lhasa",
         "Tibet Travel Permit"
       ],
-      "description": "<h3>Lapchi Kang Milarepa Cave Trek (Yoga Trek) - 11 Days | Sacred Buddhist Pilgrimage & Himalayan Retreat</h3>\n      <p>The <strong>Lapchi Kang Milarepa Cave Trek (11 Days)</strong> is one of the most serene, spiritual, and untouched Buddhist pilgrimage journeys in Nepal. Tucked away in the remote Rolwaling region near the Nepal–Tibet border, this trek follows the sacred footsteps of the legendary 11th-century Tibetan yogi and poet <strong>Milarepa</strong>, who spent decades meditating in the cliffside caves of Lapchi Valley.</p>\n      <p>Starting with a private 4WD drive from Kathmandu to Lamabagar, the trail winds along the Tamakoshi River through bamboo forests and mountain gorges to Lumnan and Lapchi Village (4,900m). Trekkers explore 400-year-old Tibetan monasteries, sacred cave hermitages (Youthog, Sephut, Rechen, Dul Dul, and Lungten Caves), and see Milarepa's ancient footprints carved into stone. The peaceful alpine setting, uncrowded trails, and majestic mountain views of Lapchi Kang and Ama Bamare Himal make this trip ideal for daily yoga and meditation practice, spiritual reflection, or a quiet Himalayan escape.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage complete trek arrangements—including Gaurishankar Conservation Area Permits (GCAP), private jeep transfers, hotel bookings in Kathmandu, monastery guesthouse & tented accommodations, experienced guides, cooks, and porters.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences."
+      "description": "<h3>Lapchi Kang Milarepa Cave Trek (Yoga Trek) - 11 Days | Sacred Buddhist Pilgrimage & Himalayan Retreat</h3>\n      <p>The <strong>Lapchi Kang Milarepa Cave Trek (11 Days)</strong> is one of the most serene, spiritual, and untouched Buddhist pilgrimage journeys in Nepal. Tucked away in the remote Rolwaling region near the Nepal–Tibet border, this trek follows the sacred footsteps of the legendary 11th-century Tibetan yogi and poet <strong>Milarepa</strong>, who spent decades meditating in the cliffside caves of Lapchi Valley.</p>\n      <p>Starting with a private 4WD drive from Kathmandu to Lamabagar, the trail winds along the Tamakoshi River through bamboo forests and mountain gorges to Lumnan and Lapchi Village (4,900m). Trekkers explore 400-year-old Tibetan monasteries, sacred cave hermitages (Youthog, Sephut, Rechen, Dul Dul, and Lungten Caves), and see Milarepa's ancient footprints carved into stone. The peaceful alpine setting, uncrowded trails, and majestic mountain views of Lapchi Kang and Ama Bamare Himal make this trip ideal for daily yoga and meditation practice, spiritual reflection, or a quiet Himalayan escape.</p>\n      <p>At <strong>Zenex Travels & Tours</strong>, we manage complete trek arrangements—including Gaurishankar Conservation Area Permits (GCAP), private jeep transfers, hotel bookings in Kathmandu, monastery guesthouse & tented accommodations, experienced guides, cooks, and porters.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences.",
+      "pricingInfo": {
+        "regularPrice": 1250,
+        "originalPrice": 1250,
+        "sellingPrice": 1000,
+        "currency": "USD"
+      }
     },
     {
       "id": "makalu-base-camp-trek-18d",
@@ -31823,7 +31866,7 @@
       "title": "Lower Dolpo Trek - 17 Days",
       "region": "dolpo",
       "duration": "17 Days",
-      "price": "US$2,450",
+      "price": "US$2780",
       "difficulty": "Hard",
       "image": "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
       "gallery": [
@@ -32187,7 +32230,14 @@
       "img": "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
       "bannerImage": "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
       "starts": "Kathmandu",
-      "ends": "Kathmandu"
+      "ends": "Kathmandu",
+      "originalPrice": "US$3475",
+      "pricingInfo": {
+        "regularPrice": 3475,
+        "originalPrice": 3475,
+        "sellingPrice": 2780,
+        "currency": "USD"
+      }
     }
   ],
   "destinations": [],
