@@ -2860,10 +2860,10 @@
       "location": "Nepal - Kathmandu & Bardia National Park",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$600",
+      "price": "US$1450",
       "pricingInfo": {
-        "regularPrice": 750,
-        "sellingPrice": 600,
+        "regularPrice": 1810,
+        "sellingPrice": 1450,
         "currency": "USD"
       },
       "maxAltitude": "1,400m / 4,595ft",
@@ -3264,10 +3264,10 @@
       "location": "Nepal - Kathmandu, Chitwan & Pokhara",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$735",
+      "price": "US$1000",
       "pricingInfo": {
-        "regularPrice": 920,
-        "sellingPrice": 735,
+        "regularPrice": 1250,
+        "sellingPrice": 1000,
         "currency": "USD"
       },
       "maxAltitude": "1,700m / 5,577ft",
@@ -3679,10 +3679,10 @@
       "location": "Nepal - Kathmandu, Pokhara & Muktinath",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$855",
+      "price": "US$990",
       "pricingInfo": {
-        "regularPrice": 1070,
-        "sellingPrice": 855,
+        "regularPrice": 1240,
+        "sellingPrice": 990,
         "currency": "USD"
       },
       "maxAltitude": "3,710m / 12,172ft",
@@ -4100,10 +4100,10 @@
       "location": "Nepal - Kathmandu, Chitwan, Pokhara & Lumbini",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$875",
+      "price": "US$1215",
       "pricingInfo": {
-        "regularPrice": 1090,
-        "sellingPrice": 875,
+        "regularPrice": 1520,
+        "sellingPrice": 1215,
         "currency": "USD"
       },
       "maxAltitude": "1,700m / 5,577ft",
@@ -4519,10 +4519,10 @@
       "location": "Nepal - Kathmandu & Nagarkot",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$305",
+      "price": "US$460",
       "pricingInfo": {
-        "regularPrice": 395,
-        "sellingPrice": 305,
+        "regularPrice": 575,
+        "sellingPrice": 460,
         "currency": "USD"
       },
       "maxAltitude": "2,175m / 4,136ft",
@@ -4927,10 +4927,10 @@
       "location": "Nepal - Kathmandu & Pokhara",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$390",
+      "price": "US$565",
       "pricingInfo": {
-        "regularPrice": 495,
-        "sellingPrice": 390,
+        "regularPrice": 710,
+        "sellingPrice": 565,
         "currency": "USD"
       },
       "maxAltitude": "1,700m / 5,577ft",
@@ -5340,10 +5340,10 @@
       "location": "Nepal - Kathmandu & Chitwan",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$505",
+      "price": "US$650",
       "pricingInfo": {
-        "regularPrice": 635,
-        "sellingPrice": 505,
+        "regularPrice": 810,
+        "sellingPrice": 650,
         "currency": "USD"
       },
       "maxAltitude": "1,400m / 4,595ft",
@@ -6080,9 +6080,11 @@
       "quickFacts": {
         "maxAltitude": "2175m/4136ft"
       },
-      "price": "US",
+      "price": "US$845",
       "pricingInfo": {
-        "sellingPrice": "US"
+        "regularPrice": 1055,
+        "sellingPrice": 845,
+        "currency": "USD"
       }
     },
     {
@@ -45498,10 +45500,10 @@
       "location": "Nepal - Kathmandu & Bardia National Park",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$600",
+      "price": "US$1450",
       "pricingInfo": {
-        "regularPrice": 750,
-        "sellingPrice": 600,
+        "regularPrice": 1810,
+        "sellingPrice": 1450,
         "currency": "USD"
       },
       "maxAltitude": "1,400m / 4,595ft",
@@ -45897,10 +45899,10 @@
       "location": "Nepal - Kathmandu, Chitwan & Pokhara",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$735",
+      "price": "US$1000",
       "pricingInfo": {
-        "regularPrice": 920,
-        "sellingPrice": 735,
+        "regularPrice": 1250,
+        "sellingPrice": 1000,
         "currency": "USD"
       },
       "maxAltitude": "1,700m / 5,577ft",
@@ -46308,10 +46310,10 @@
       "location": "Nepal - Kathmandu, Pokhara & Muktinath",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$855",
+      "price": "US$990",
       "pricingInfo": {
-        "regularPrice": 1070,
-        "sellingPrice": 855,
+        "regularPrice": 1240,
+        "sellingPrice": 990,
         "currency": "USD"
       },
       "maxAltitude": "3,710m / 12,172ft",
@@ -46725,10 +46727,10 @@
       "location": "Nepal - Kathmandu, Chitwan, Pokhara & Lumbini",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$875",
+      "price": "US$1215",
       "pricingInfo": {
-        "regularPrice": 1090,
-        "sellingPrice": 875,
+        "regularPrice": 1520,
+        "sellingPrice": 1215,
         "currency": "USD"
       },
       "maxAltitude": "1,700m / 5,577ft",
@@ -47140,10 +47142,10 @@
       "location": "Nepal - Kathmandu & Nagarkot",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$305",
+      "price": "US$460",
       "pricingInfo": {
-        "regularPrice": 395,
-        "sellingPrice": 305,
+        "regularPrice": 575,
+        "sellingPrice": 460,
         "currency": "USD"
       },
       "maxAltitude": "2,175m / 4,136ft",
@@ -47544,10 +47546,10 @@
       "location": "Nepal - Kathmandu & Pokhara",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$390",
+      "price": "US$565",
       "pricingInfo": {
-        "regularPrice": 495,
-        "sellingPrice": 390,
+        "regularPrice": 710,
+        "sellingPrice": 565,
         "currency": "USD"
       },
       "maxAltitude": "1,700m / 5,577ft",
@@ -47953,10 +47955,10 @@
       "location": "Nepal - Kathmandu & Chitwan",
       "country": "Nepal",
       "duration": "5 Days / 4 Nights",
-      "price": "US$505",
+      "price": "US$650",
       "pricingInfo": {
-        "regularPrice": 635,
-        "sellingPrice": 505,
+        "regularPrice": 810,
+        "sellingPrice": 650,
         "currency": "USD"
       },
       "maxAltitude": "1,400m / 4,595ft",
@@ -48684,9 +48686,11 @@
       "quickFacts": {
         "maxAltitude": "2175m/4136ft"
       },
-      "price": "US",
+      "price": "US$845",
       "pricingInfo": {
-        "sellingPrice": "US"
+        "regularPrice": 1055,
+        "sellingPrice": 845,
+        "currency": "USD"
       }
     },
     {
