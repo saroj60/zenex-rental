@@ -9317,7 +9317,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$590",
+      "price": "US$1145",
       "rating": 4.9,
       "reviewsCount": 34,
       "image": "/zenex images/chitwan/photo-1766040929567-bf412a2de9c8.avif",
@@ -9425,7 +9425,13 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1430,
+        "originalPrice": 1430,
+        "sellingPrice": 1145,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-muktinath-chitwan-tour",
@@ -9445,7 +9451,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$825",
+      "price": "US$1280",
       "rating": 4.9,
       "reviewsCount": 42,
       "image": "/zenex images/muktinath/photo-1540961286473-8ad1368dc1bd.avif",
@@ -9560,7 +9566,13 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1600,
+        "originalPrice": 1600,
+        "sellingPrice": 1280,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-chitwan-tour-with-rafting",
@@ -9580,7 +9592,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$685",
+      "price": "US$1130",
       "rating": 4.9,
       "reviewsCount": 38,
       "image": "/zenex images/chitwan/premium_photo-1661832611972-b6ee1aba3581.avif",
@@ -9687,7 +9699,13 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1410,
+        "originalPrice": 1410,
+        "sellingPrice": 1130,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-bandipur-pokhara-tour-with-trek",
@@ -9707,7 +9725,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$465",
+      "price": "US$950",
       "rating": 4.9,
       "reviewsCount": 32,
       "image": "/zenex images/Bandipur/photo-1631607464513-46a874fa16e7.avif",
@@ -9814,7 +9832,13 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1190,
+        "originalPrice": 1190,
+        "sellingPrice": 950,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-chitwan-nagarkot-tour",
@@ -9834,7 +9858,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$535",
+      "price": "US$1000",
       "rating": 4.9,
       "reviewsCount": 36,
       "image": "/zenex images/chitwan/premium_photo-1664302740919-e6645ba8c053.avif",
@@ -9944,7 +9968,13 @@
         "Guided visits to UNESCO World Heritage monuments, ancient temples, and local markets",
         "Experience authentic Nepalese culture, traditional hospitality, and mountain dining",
         "Private air-conditioned vehicle transfers and licensed experienced guide support"
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1250,
+        "originalPrice": 1250,
+        "sellingPrice": 1000,
+        "currency": "USD"
+      }
     },
     {
       "id": "9-days-kathmandu-pokhara-muktinath-chitwan-tour",
@@ -51799,7 +51829,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$590",
+      "price": "US$1145",
       "originalPrice": "$750",
       "rating": 4.9,
       "reviewsCount": 34,
@@ -51819,8 +51849,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 590,
-        "originalPrice": 750,
+        "sellingPrice": 1145,
+        "originalPrice": 1430,
         "unit": "per person",
         "groupTiers": [
           {
@@ -51848,7 +51878,8 @@
             "price2026": 590,
             "price2027": 630
           }
-        ]
+        ],
+        "regularPrice": 1430
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -52031,7 +52062,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$825",
+      "price": "US$1280",
       "originalPrice": "$1050",
       "rating": 4.9,
       "reviewsCount": 42,
@@ -52050,8 +52081,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 825,
-        "originalPrice": 1050,
+        "sellingPrice": 1280,
+        "originalPrice": 1600,
         "unit": "per person",
         "groupTiers": [
           {
@@ -52079,7 +52110,8 @@
             "price2026": 825,
             "price2027": 865
           }
-        ]
+        ],
+        "regularPrice": 1600
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditional vehicle",
@@ -52262,7 +52294,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$685",
+      "price": "US$1130",
       "originalPrice": "$890",
       "rating": 4.9,
       "reviewsCount": 38,
@@ -52293,8 +52325,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 685,
-        "originalPrice": 890,
+        "sellingPrice": 1130,
+        "originalPrice": 1410,
         "unit": "per person",
         "groupTiers": [
           {
@@ -52322,7 +52354,8 @@
             "price2026": 685,
             "price2027": 745
           }
-        ]
+        ],
+        "regularPrice": 1410
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -52496,7 +52529,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$465",
+      "price": "US$950",
       "originalPrice": "$685",
       "rating": 4.9,
       "reviewsCount": 32,
@@ -52526,8 +52559,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 465,
-        "originalPrice": 685,
+        "sellingPrice": 950,
+        "originalPrice": 1190,
         "unit": "per person",
         "groupTiers": [
           {
@@ -52555,7 +52588,8 @@
             "price2026": 465,
             "price2027": 520
           }
-        ]
+        ],
+        "regularPrice": 1190
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -52725,7 +52759,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$535",
+      "price": "US$1000",
       "originalPrice": "$760",
       "rating": 4.9,
       "reviewsCount": 36,
@@ -52756,8 +52790,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 535,
-        "originalPrice": 760,
+        "sellingPrice": 1000,
+        "originalPrice": 1250,
         "unit": "per person",
         "groupTiers": [
           {
@@ -52785,7 +52819,8 @@
             "price2026": 535,
             "price2027": 580
           }
-        ]
+        ],
+        "regularPrice": 1250
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",

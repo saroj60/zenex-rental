@@ -9372,7 +9372,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$590",
+      "price": "US$1145",
       "rating": 4.9,
       "reviewsCount": 34,
       "image": "/zenex images/lumbini/photo-1611892370612-0ac8e4a4507a.avif",
@@ -9484,7 +9484,13 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1430,
+        "originalPrice": 1430,
+        "sellingPrice": 1145,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-muktinath-chitwan-tour",
@@ -9504,7 +9510,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$825",
+      "price": "US$1280",
       "rating": 4.9,
       "reviewsCount": 42,
       "image": "/images/Tours/8-days-kathmandu-pokhara-muktinath-chitwan-tour/8-days-kathmandu-pokhara-muktinath-chitwan-tour.jpg",
@@ -9623,7 +9629,13 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1600,
+        "originalPrice": 1600,
+        "sellingPrice": 1280,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-chitwan-tour-with-rafting",
@@ -9643,7 +9655,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$685",
+      "price": "US$1130",
       "rating": 4.9,
       "reviewsCount": 38,
       "image": "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?q=80&w=800",
@@ -9754,7 +9766,13 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1410,
+        "originalPrice": 1410,
+        "sellingPrice": 1130,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-bandipur-pokhara-tour-with-trek",
@@ -9774,7 +9792,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$465",
+      "price": "US$950",
       "rating": 4.9,
       "reviewsCount": 32,
       "image": "/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg",
@@ -9885,7 +9903,13 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1190,
+        "originalPrice": 1190,
+        "sellingPrice": 950,
+        "currency": "USD"
+      }
     },
     {
       "id": "8-days-kathmandu-pokhara-chitwan-nagarkot-tour",
@@ -9905,7 +9929,7 @@
       "end": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$535",
+      "price": "US$1000",
       "rating": 4.9,
       "reviewsCount": 36,
       "image": "/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg",
@@ -10019,7 +10043,13 @@
         "Early morning Sarangkot sunrise view over Annapurna, Dhaulagiri & Fishtail mountain ranges.",
         "Discover Pokhara natural attractions: Davis Falls, Gupteshwor Cave & Seti River Gorge.",
         "Visit Bindabasini Temple, World Peace Stupa & local Tibetan cultural artisan centers."
-      ]
+      ],
+      "pricingInfo": {
+        "regularPrice": 1250,
+        "originalPrice": 1250,
+        "sellingPrice": 1000,
+        "currency": "USD"
+      }
     },
     {
       "id": "9-days-kathmandu-pokhara-muktinath-chitwan-tour",
@@ -51963,7 +51993,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$590",
+      "price": "US$1145",
       "originalPrice": "$750",
       "rating": 4.9,
       "reviewsCount": 34,
@@ -51983,8 +52013,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 590,
-        "originalPrice": 750,
+        "sellingPrice": 1145,
+        "originalPrice": 1430,
         "unit": "per person",
         "groupTiers": [
           {
@@ -52012,7 +52042,8 @@
             "price2026": 590,
             "price2027": 630
           }
-        ]
+        ],
+        "regularPrice": 1430
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -52195,7 +52226,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$825",
+      "price": "US$1280",
       "originalPrice": "$1050",
       "rating": 4.9,
       "reviewsCount": 42,
@@ -52214,8 +52245,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 825,
-        "originalPrice": 1050,
+        "sellingPrice": 1280,
+        "originalPrice": 1600,
         "unit": "per person",
         "groupTiers": [
           {
@@ -52243,7 +52274,8 @@
             "price2026": 825,
             "price2027": 865
           }
-        ]
+        ],
+        "regularPrice": 1600
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditional vehicle",
@@ -52426,7 +52458,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$685",
+      "price": "US$1130",
       "originalPrice": "$890",
       "rating": 4.9,
       "reviewsCount": 38,
@@ -52457,8 +52489,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 685,
-        "originalPrice": 890,
+        "sellingPrice": 1130,
+        "originalPrice": 1410,
         "unit": "per person",
         "groupTiers": [
           {
@@ -52486,7 +52518,8 @@
             "price2026": 685,
             "price2027": 745
           }
-        ]
+        ],
+        "regularPrice": 1410
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -52660,7 +52693,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$465",
+      "price": "US$950",
       "originalPrice": "$685",
       "rating": 4.9,
       "reviewsCount": 32,
@@ -52690,8 +52723,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 465,
-        "originalPrice": 685,
+        "sellingPrice": 950,
+        "originalPrice": 1190,
         "unit": "per person",
         "groupTiers": [
           {
@@ -52719,7 +52752,8 @@
             "price2026": 465,
             "price2027": 520
           }
-        ]
+        ],
+        "regularPrice": 1190
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -52889,7 +52923,7 @@
       "startsAt": "Kathmandu",
       "category": "Tours",
       "status": "Published",
-      "price": "$535",
+      "price": "US$1000",
       "originalPrice": "$760",
       "rating": 4.9,
       "reviewsCount": 36,
@@ -52920,8 +52954,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 535,
-        "originalPrice": 760,
+        "sellingPrice": 1000,
+        "originalPrice": 1250,
         "unit": "per person",
         "groupTiers": [
           {
@@ -52949,7 +52983,8 @@
             "price2026": 535,
             "price2027": 580
           }
-        ]
+        ],
+        "regularPrice": 1250
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
