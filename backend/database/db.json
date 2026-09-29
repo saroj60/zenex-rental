@@ -21515,8 +21515,8 @@
       "location": "Manaslu Conservation Area, Gorkha, Nepal",
       "duration": "17",
       "durationUnit": "Days",
-      "price": "US$865",
-      "originalPrice": "US$950",
+      "price": "US$850",
+      "originalPrice": "US$1065",
       "rating": 4.9,
       "reviewsCount": 143,
       "difficulty": "Moderate",
@@ -21935,7 +21935,13 @@
         "Potala Palace Lhasa",
         "Tibet Travel Permit"
       ],
-      "description": "<h3>Tsum Valley Trek | A Journey into Tibetan-Buddhist Culture & Himalayan Beauty</h3>\n      <p>Tsum Valley, located in the northern Gorkha district of western Nepal, is a remote and culturally rich trekking destination within the Manaslu Conservation Area near the Tibetan border. Closed to foreigners until 2008 A.D., Tsum Valley offers a rare, untouched glimpse into ancient Tibetan Buddhist traditions, ancient monasteries like <strong>Mu Gompa</strong> and <strong>Rachen Gompa</strong>, and sacred caves where the 11th-century Buddhist yogi <strong>Milarepa</strong> once meditated.</p>\n      <p>This 17-day Tsum Valley Trek is the ultimate Buddhist cultural journey for travelers seeking peace, spiritual depth, and pristine mountain wilderness. Beyond the deep cultural immersion, you will enjoy spectacular mountain views of <strong>Ganesh Himal, Mount Manaslu, Himalchuli, Shringi Himal, and Boudha Himal</strong> during an excursion hike to <strong>Ganesh Himal Base Camp (4,200 m)</strong>—the highest point of the trip.</p>\n      <p>Trekking in Tsum Valley requires a <strong>Special Restricted Area Permit (RAP)</strong> and a <strong>Manaslu Conservation Area Permit (MCAP)</strong>. A minimum of 2 trekkers accompanied by a licensed Nepali guide is required by government regulation. <strong>Zenex Travels & Tours</strong> handles all permit logistics, private transportation, teahouse arrangements, and guide services to ensure a seamless, unforgettable Himalayan adventure.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences."
+      "description": "<h3>Tsum Valley Trek | A Journey into Tibetan-Buddhist Culture & Himalayan Beauty</h3>\n      <p>Tsum Valley, located in the northern Gorkha district of western Nepal, is a remote and culturally rich trekking destination within the Manaslu Conservation Area near the Tibetan border. Closed to foreigners until 2008 A.D., Tsum Valley offers a rare, untouched glimpse into ancient Tibetan Buddhist traditions, ancient monasteries like <strong>Mu Gompa</strong> and <strong>Rachen Gompa</strong>, and sacred caves where the 11th-century Buddhist yogi <strong>Milarepa</strong> once meditated.</p>\n      <p>This 17-day Tsum Valley Trek is the ultimate Buddhist cultural journey for travelers seeking peace, spiritual depth, and pristine mountain wilderness. Beyond the deep cultural immersion, you will enjoy spectacular mountain views of <strong>Ganesh Himal, Mount Manaslu, Himalchuli, Shringi Himal, and Boudha Himal</strong> during an excursion hike to <strong>Ganesh Himal Base Camp (4,200 m)</strong>—the highest point of the trip.</p>\n      <p>Trekking in Tsum Valley requires a <strong>Special Restricted Area Permit (RAP)</strong> and a <strong>Manaslu Conservation Area Permit (MCAP)</strong>. A minimum of 2 trekkers accompanied by a licensed Nepali guide is required by government regulation. <strong>Zenex Travels & Tours</strong> handles all permit logistics, private transportation, teahouse arrangements, and guide services to ensure a seamless, unforgettable Himalayan adventure.</p>\n\n### Journey Highlights & Experience\n- **Panoramic Mountain Views**: Experience breathtaking vistas over Himalayan giants, terraced hillsides, and emerald river valleys.\n- **Cultural & Heritage Exploration**: Wander through UNESCO World Heritage sites, spin ancient prayer wheels at historic stupas, and experience authentic Nepali hospitality.\n- **Scenic Trails & Nature**: Walk through lush rhododendron forests, serene alpine landscapes, and traditional mountain villages.\n\n### Accommodations & Local Hospitality\nEnjoy handpicked hotel accommodations in city centers paired with cozy mountain lodges along the trail. Savor freshly cooked local delicacies like traditional Dal Bhat alongside extensive international dietary options.\n\n### Why Book With Zenex Travels?\nEvery package includes 24/7 dedicated local assistance, licensed professional guides, private air-conditioned vehicle transfers, flexible deposit options, and 100% customizable itineraries to match your travel preferences.",
+      "pricingInfo": {
+        "regularPrice": 1065,
+        "originalPrice": 1065,
+        "sellingPrice": 850,
+        "currency": "USD"
+      }
     },
     {
       "id": "langtang-valley-trek-10d",
@@ -33009,7 +33015,7 @@
       "regionName": "Manaslu Circuit Adventures",
       "status": "Published",
       "badge": "Restricted Area Classic",
-      "price": 1675,
+      "price": "US$1770",
       "originalPrice": 1950,
       "duration": 16,
       "durationUnit": "Days",
@@ -33057,8 +33063,8 @@
       ],
       "pricingInfo": {
         "currency": "USD",
-        "sellingPrice": 1675,
-        "originalPrice": 1950,
+        "sellingPrice": 1770,
+        "originalPrice": 2210,
         "unit": "per person",
         "groupTiers": [
           {
@@ -33081,7 +33087,8 @@
             "price2026": 1675,
             "price2027": 1775
           }
-        ]
+        ],
+        "regularPrice": 2210
       },
       "inclusions": [
         {
