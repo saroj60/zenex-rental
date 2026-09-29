@@ -6414,6 +6414,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "2175m/4136ft"
+      },
+      "price": "US$500",
+      "pricingInfo": {
+        "regularPrice": 625,
+        "sellingPrice": 500,
+        "currency": "USD"
       }
     },
     {
@@ -6730,6 +6736,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "2175m/4136ft"
+      },
+      "price": "US$530",
+      "pricingInfo": {
+        "regularPrice": 665,
+        "sellingPrice": 530,
+        "currency": "USD"
       }
     },
     {
@@ -7045,6 +7057,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "2175m/4136ft"
+      },
+      "price": "US$835",
+      "pricingInfo": {
+        "regularPrice": 1045,
+        "sellingPrice": 835,
+        "currency": "USD"
       }
     },
     {
@@ -7361,6 +7379,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "1700m/5577ft"
+      },
+      "price": "US$900",
+      "pricingInfo": {
+        "regularPrice": 1125,
+        "sellingPrice": 900,
+        "currency": "USD"
       }
     },
     {
@@ -7684,6 +7708,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "3710m/12172 ft"
+      },
+      "price": "US$950",
+      "pricingInfo": {
+        "regularPrice": 1190,
+        "sellingPrice": 950,
+        "currency": "USD"
       }
     },
     {
@@ -48834,6 +48864,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "2175m/4136ft"
+      },
+      "price": "US$500",
+      "pricingInfo": {
+        "regularPrice": 625,
+        "sellingPrice": 500,
+        "currency": "USD"
       }
     },
     {
@@ -49148,6 +49184,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "2175m/4136ft"
+      },
+      "price": "US$530",
+      "pricingInfo": {
+        "regularPrice": 665,
+        "sellingPrice": 530,
+        "currency": "USD"
       }
     },
     {
@@ -49461,6 +49503,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "2175m/4136ft"
+      },
+      "price": "US$835",
+      "pricingInfo": {
+        "regularPrice": 1045,
+        "sellingPrice": 835,
+        "currency": "USD"
       }
     },
     {
@@ -49775,6 +49823,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "1700m/5577ft"
+      },
+      "price": "US$900",
+      "pricingInfo": {
+        "regularPrice": 1125,
+        "sellingPrice": 900,
+        "currency": "USD"
       }
     },
     {
@@ -50096,6 +50150,12 @@
       ],
       "quickFacts": {
         "maxAltitude": "3710m/12172 ft"
+      },
+      "price": "US$950",
+      "pricingInfo": {
+        "regularPrice": 1190,
+        "sellingPrice": 950,
+        "currency": "USD"
       }
     },
     {
