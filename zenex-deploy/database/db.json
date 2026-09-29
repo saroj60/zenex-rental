@@ -9987,10 +9987,10 @@
       "location": "Kathmandu, Pokhara, Jomsom, Muktinath & Chitwan",
       "country": "Nepal",
       "duration": "9 Days / 8 Nights",
-      "price": "US$915",
+      "price": "US$1430",
       "pricingInfo": {
-        "regularPrice": 1160,
-        "sellingPrice": 915,
+        "regularPrice": 1790,
+        "sellingPrice": 1430,
         "currency": "USD",
         "luxury": {
           "p1": 2850,
@@ -10019,7 +10019,8 @@
           "p3_5": 1110,
           "p6_8": 965,
           "p9plus": 915
-        }
+        },
+        "originalPrice": 1790
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -10347,10 +10348,10 @@
       "location": "Kathmandu, Pokhara, Rafting in Seti River, Chitwan & Nagarkot",
       "country": "Nepal",
       "duration": "9 Days / 8 Nights",
-      "price": "US$735",
+      "price": "US$1200",
       "pricingInfo": {
-        "regularPrice": 995,
-        "sellingPrice": 735,
+        "regularPrice": 1500,
+        "sellingPrice": 1200,
         "currency": "USD",
         "luxury": {
           "p1": 2665,
@@ -10379,7 +10380,8 @@
           "p3_5": 930,
           "p6_8": 785,
           "p9plus": 735
-        }
+        },
+        "originalPrice": 1500
       },
       "maxAltitude": "2,175m / 7,136ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -10713,10 +10715,10 @@
       "location": "Kathmandu, Pokhara, Ghandruk Village, Chitwan & Nagarkot",
       "country": "Nepal",
       "duration": "9 Days / 8 Nights",
-      "price": "US$670",
+      "price": "US$1220",
       "pricingInfo": {
-        "regularPrice": 915,
-        "sellingPrice": 670,
+        "regularPrice": 1525,
+        "sellingPrice": 1220,
         "currency": "USD",
         "luxury": {
           "p1": 2600,
@@ -10745,7 +10747,8 @@
           "p3_5": 915,
           "p6_8": 730,
           "p9plus": 670
-        }
+        },
+        "originalPrice": 1525
       },
       "maxAltitude": "3,210m / 10,531ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -11081,10 +11084,10 @@
       "location": "Kathmandu, Pokhara, Chitwan & Nagarkot",
       "country": "Nepal",
       "duration": "9 Days / 8 Nights",
-      "price": "US$610",
+      "price": "US$1130",
       "pricingInfo": {
-        "regularPrice": 870,
-        "sellingPrice": 610,
+        "regularPrice": 1410,
+        "sellingPrice": 1130,
         "currency": "USD",
         "luxury": {
           "p1": 2635,
@@ -11113,7 +11116,8 @@
           "p3_5": 820,
           "p6_8": 660,
           "p9plus": 610
-        }
+        },
+        "originalPrice": 1410
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -11442,10 +11446,10 @@
       "location": "Kathmandu, Pokhara, Lumbini, Chitwan & Nagarkot",
       "country": "Nepal",
       "duration": "10 Days / 9 Nights",
-      "price": "US$690",
+      "price": "US$1320",
       "pricingInfo": {
-        "regularPrice": 900,
-        "sellingPrice": 690,
+        "regularPrice": 1650,
+        "sellingPrice": 1320,
         "currency": "USD",
         "luxury": {
           "p1": 3090,
@@ -11474,7 +11478,8 @@
           "p3_5": 840,
           "p6_8": 760,
           "p9plus": 690
-        }
+        },
+        "originalPrice": 1650
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -11818,10 +11823,10 @@
       "location": "Kathmandu, Pokhara, Jomsom, Muktinath & Chitwan",
       "country": "Nepal",
       "duration": "10 Days / 9 Nights",
-      "price": "US$1015",
+      "price": "US$1350",
       "pricingInfo": {
-        "regularPrice": 1270,
-        "sellingPrice": 1015,
+        "regularPrice": 1690,
+        "sellingPrice": 1350,
         "currency": "USD",
         "luxury": {
           "p1": 3180,
@@ -11850,7 +11855,8 @@
           "p3_5": 1140,
           "p6_8": 1075,
           "p9plus": 1015
-        }
+        },
+        "originalPrice": 1690
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -12188,10 +12194,10 @@
       "location": "Kathmandu, Chitwan, Pokhara, Ghandruk Village trekking",
       "country": "Nepal",
       "duration": "10 Days / 9 Nights",
-      "price": "US$715",
+      "price": "US$1280",
       "pricingInfo": {
-        "regularPrice": 920,
-        "sellingPrice": 715,
+        "regularPrice": 1600,
+        "sellingPrice": 1280,
         "currency": "USD",
         "luxury": {
           "p1": 2790,
@@ -12220,7 +12226,8 @@
           "p3_5": 850,
           "p6_8": 775,
           "p9plus": 715
-        }
+        },
+        "originalPrice": 1600
       },
       "maxAltitude": "2,175m / 4,136ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -12560,10 +12567,10 @@
       "location": "Kathmandu, Chitwan, Pokhara & Ghandruk Village",
       "country": "Nepal",
       "duration": "11 Days / 10 Nights",
-      "price": "US$760",
+      "price": "US$1200",
       "pricingInfo": {
-        "regularPrice": 980,
-        "sellingPrice": 760,
+        "regularPrice": 1500,
+        "sellingPrice": 1200,
         "currency": "USD",
         "luxury": {
           "p1": 2890,
@@ -12592,7 +12599,8 @@
           "p3_5": 910,
           "p6_8": 820,
           "p9plus": 760
-        }
+        },
+        "originalPrice": 1500
       },
       "maxAltitude": "2,175m / 4,136ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -12939,10 +12947,10 @@
       "location": "Kathmandu, Chitwan, Bandipur, Pokhara, Jomsom & Muktinath Temple",
       "country": "Nepal",
       "duration": "11 Days / 10 Nights",
-      "price": "US$1080",
+      "price": "US$1440",
       "pricingInfo": {
-        "regularPrice": 1385,
-        "sellingPrice": 1080,
+        "regularPrice": 1800,
+        "sellingPrice": 1440,
         "currency": "USD",
         "luxury": {
           "p1": 3350,
@@ -12971,7 +12979,8 @@
           "p3_5": 1210,
           "p6_8": 1135,
           "p9plus": 1080
-        }
+        },
+        "originalPrice": 1800
       },
       "maxAltitude": "3,710m / 12,172ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -13324,10 +13333,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Bandipur, & Nagarkot",
       "country": "Nepal",
       "duration": "11 Days / 10 Nights",
-      "price": "US$1105",
+      "price": "US$1160",
       "pricingInfo": {
-        "regularPrice": 1420,
-        "sellingPrice": 1105,
+        "regularPrice": 1450,
+        "sellingPrice": 1160,
         "currency": "USD",
         "luxury": {
           "p1": 3400,
@@ -13356,7 +13365,8 @@
           "p3_5": 1240,
           "p6_8": 1160,
           "p9plus": 1105
-        }
+        },
+        "originalPrice": 1450
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
@@ -52980,7 +52990,7 @@
       "regionName": "Mustang & Heritage Pilgrimage Tours",
       "status": "Published",
       "badge": "Pilgrimage & Safari Special",
-      "price": 915,
+      "price": "US$1430",
       "originalPrice": 1160,
       "duration": 9,
       "durationUnit": "Days",
@@ -53026,8 +53036,8 @@
         "Tharu Cultural Program: Enjoy traditional Tharu cultural dance performances and local village immersion in Chitwan"
       ],
       "pricingInfo": {
-        "regularPrice": 1160,
-        "sellingPrice": 915,
+        "regularPrice": 1790,
+        "sellingPrice": 1430,
         "currency": "USD",
         "luxury": {
           "p1": 2850,
@@ -53056,7 +53066,8 @@
           "p3_5": 1110,
           "p6_8": 965,
           "p9plus": 915
-        }
+        },
+        "originalPrice": 1790
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -53335,7 +53346,7 @@
       "regionName": "Nepal Rafting & Wildlife Adventures",
       "status": "Published",
       "badge": "White-Water Rafting Special",
-      "price": 735,
+      "price": "US$1200",
       "originalPrice": 995,
       "duration": 9,
       "durationUnit": "Days",
@@ -53381,8 +53392,8 @@
         "Stunning Himalayan Sunrises: Sarangkot sunrise over Annapurna/Dhaulagiri ranges and Nagarkot sunrise over Mount Everest"
       ],
       "pricingInfo": {
-        "regularPrice": 995,
-        "sellingPrice": 735,
+        "regularPrice": 1500,
+        "sellingPrice": 1200,
         "currency": "USD",
         "luxury": {
           "p1": 2665,
@@ -53411,7 +53422,8 @@
           "p3_5": 930,
           "p6_8": 785,
           "p9plus": 735
-        }
+        },
+        "originalPrice": 1500
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -53693,7 +53705,7 @@
       "regionName": "Annapurna Trek & Heritage Tours",
       "status": "Published",
       "badge": "Trekking & Safari Special",
-      "price": 670,
+      "price": "US$1220",
       "originalPrice": 915,
       "duration": 9,
       "durationUnit": "Days",
@@ -53739,8 +53751,8 @@
         "Authentic Nepalese Hospitality: Teahouse hospitality in mountain villages and full UNESCO heritage tours in Kathmandu Valley"
       ],
       "pricingInfo": {
-        "regularPrice": 915,
-        "sellingPrice": 670,
+        "regularPrice": 1525,
+        "sellingPrice": 1220,
         "currency": "USD",
         "luxury": {
           "p1": 2600,
@@ -53769,7 +53781,8 @@
           "p3_5": 915,
           "p6_8": 730,
           "p9plus": 670
-        }
+        },
+        "originalPrice": 1525
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -54053,7 +54066,7 @@
       "regionName": "Nepal Golden Circuit Heritage Tours",
       "status": "Published",
       "badge": "Golden Circuit Special",
-      "price": 610,
+      "price": "US$1130",
       "originalPrice": 870,
       "duration": 9,
       "durationUnit": "Days",
@@ -54099,8 +54112,8 @@
         "Relaxation & Adventure Balance: Serene boat ride on Phewa Lake, World Peace Stupa visit, and traditional Nepali farewell cultural dinner"
       ],
       "pricingInfo": {
-        "regularPrice": 870,
-        "sellingPrice": 610,
+        "regularPrice": 1410,
+        "sellingPrice": 1130,
         "currency": "USD",
         "luxury": {
           "p1": 2635,
@@ -54129,7 +54142,8 @@
           "p3_5": 820,
           "p6_8": 660,
           "p9plus": 610
-        }
+        },
+        "originalPrice": 1410
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -54406,7 +54420,7 @@
       "regionName": "Nepal Grand Heritage & Pilgrimage Tours",
       "status": "Published",
       "badge": "Grand Heritage Special",
-      "price": 690,
+      "price": "US$1320",
       "originalPrice": 900,
       "duration": 10,
       "durationUnit": "Days",
@@ -54452,8 +54466,8 @@
         "Rich Cultural Heritage: Guided tours of UNESCO World Heritage sites including Bhaktapur Durbar Square, Patan Durbar Square, Kathmandu Durbar Square, Boudhanath Stupa, and Pashupatinath Temple"
       ],
       "pricingInfo": {
-        "regularPrice": 900,
-        "sellingPrice": 690,
+        "regularPrice": 1650,
+        "sellingPrice": 1320,
         "currency": "USD",
         "luxury": {
           "p1": 3090,
@@ -54482,7 +54496,8 @@
           "p3_5": 840,
           "p6_8": 760,
           "p9plus": 690
-        }
+        },
+        "originalPrice": 1650
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -54774,7 +54789,7 @@
       "regionName": "Mustang & Heritage Pilgrimage Tours",
       "status": "Published",
       "badge": "Mustang Pilgrimage Special",
-      "price": 1015,
+      "price": "US$1350",
       "originalPrice": 1270,
       "duration": 10,
       "durationUnit": "Days",
@@ -54820,8 +54835,8 @@
         "Nepali Cultural Dinner: Farewell authentic dinner with traditional music and dance performance"
       ],
       "pricingInfo": {
-        "regularPrice": 1270,
-        "sellingPrice": 1015,
+        "regularPrice": 1690,
+        "sellingPrice": 1350,
         "currency": "USD",
         "luxury": {
           "p1": 3180,
@@ -54850,7 +54865,8 @@
           "p3_5": 1140,
           "p6_8": 1075,
           "p9plus": 1015
-        }
+        },
+        "originalPrice": 1690
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -55139,7 +55155,7 @@
       "regionName": "Annapurna Trek & Heritage Tours",
       "status": "Published",
       "badge": "Trekking & Safari Special",
-      "price": 715,
+      "price": "US$1280",
       "originalPrice": 920,
       "duration": 10,
       "durationUnit": "Days",
@@ -55185,8 +55201,8 @@
         "Immerse in Nepal's Mountain Culture: Stay in mountain teahouses and experience the authentic Gurung culture in historic Ghandruk village"
       ],
       "pricingInfo": {
-        "regularPrice": 920,
-        "sellingPrice": 715,
+        "regularPrice": 1600,
+        "sellingPrice": 1280,
         "currency": "USD",
         "luxury": {
           "p1": 2790,
@@ -55215,7 +55231,8 @@
           "p3_5": 850,
           "p6_8": 775,
           "p9plus": 715
-        }
+        },
+        "originalPrice": 1600
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -55503,7 +55520,7 @@
       "regionName": "Annapurna Trek & Heritage Tours",
       "status": "Published",
       "badge": "Grand Trek & Safari Special",
-      "price": 760,
+      "price": "US$1200",
       "originalPrice": 980,
       "duration": 11,
       "durationUnit": "Days",
@@ -55549,8 +55566,8 @@
         "UNESCO Heritage & Cultural Dinner: Complete Kathmandu World Heritage sightseeing with a complimentary traditional Nepali dinner."
       ],
       "pricingInfo": {
-        "regularPrice": 980,
-        "sellingPrice": 760,
+        "regularPrice": 1500,
+        "sellingPrice": 1200,
         "currency": "USD",
         "luxury": {
           "p1": 2890,
@@ -55579,7 +55596,8 @@
           "p3_5": 910,
           "p6_8": 820,
           "p9plus": 760
-        }
+        },
+        "originalPrice": 1500
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -55874,7 +55892,7 @@
       "regionName": "Mustang & Heritage Pilgrimage Tours",
       "status": "Published",
       "badge": "Grand Mustang & Heritage Special",
-      "price": 1080,
+      "price": "US$1440",
       "originalPrice": 1385,
       "duration": 11,
       "durationUnit": "Days",
@@ -55920,8 +55938,8 @@
         "Chitwan National Park Safari: 2-night wildlife package featuring jeep safaris, canoe rides, and Tharu cultural dance show."
       ],
       "pricingInfo": {
-        "regularPrice": 1385,
-        "sellingPrice": 1080,
+        "regularPrice": 1800,
+        "sellingPrice": 1440,
         "currency": "USD",
         "luxury": {
           "p1": 3350,
@@ -55950,7 +55968,8 @@
           "p3_5": 1210,
           "p6_8": 1135,
           "p9plus": 1080
-        }
+        },
+        "originalPrice": 1800
       },
       "inclusions": [
         "Airport pick up & drop by comfortable private air-conditioned vehicle",
@@ -56257,10 +56276,10 @@
       "location": "Kathmandu, Chitwan, Lumbini, Pokhara, Bandipur, & Nagarkot",
       "country": "Nepal",
       "duration": "11 Days / 10 Nights",
-      "price": "US$1105",
+      "price": "US$1160",
       "pricingInfo": {
-        "regularPrice": 1420,
-        "sellingPrice": 1105,
+        "regularPrice": 1450,
+        "sellingPrice": 1160,
         "currency": "USD",
         "luxury": {
           "p1": 3400,
@@ -56289,7 +56308,8 @@
           "p3_5": 1240,
           "p6_8": 1160,
           "p9plus": 1105
-        }
+        },
+        "originalPrice": 1450
       },
       "maxAltitude": "2,175m / 7,135ft",
       "groupSize": "1 - 12 Persons (Private)",
