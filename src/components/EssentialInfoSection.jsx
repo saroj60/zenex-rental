@@ -34,11 +34,22 @@ export const defaultTrekEquipment = [
     ]
   },
   {
-    category: "Personal & Medical",
+    category: "Personal Care",
     items: [
-      "Personal first aid kit with altitude medication (Diamox)",
       "Sunscreen SPF 50+ & lip balm",
-      "Quick-dry microfiber towel & biodegradable wet wipes"
+      "Quick-dry microfiber towel & biodegradable wet wipes",
+      "Hand sanitizer & biodegradable soap"
+    ]
+  },
+  {
+    category: "Medical Essentials",
+    items: [
+      "Personal prescription medications",
+      "Pain relievers (Ibuprofen / Paracetamol)",
+      "Oral rehydration salts (ORS) ×5 sachets",
+      "Anti-diarrheal tablets",
+      "Antiseptic cream & band-aids",
+      "Altitude sickness tablets – Diamox (optional, consult doctor)"
     ]
   }
 ];
