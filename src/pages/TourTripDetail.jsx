@@ -37,6 +37,17 @@ export const defaultTourEquipment = [
       { name: "Power Bank & Universal Adapter", description: "Portable power bank to keep phone and camera charged during tours.", required: true, quantity: 1 },
       { name: "Personal First Aid Kit", description: "Basic personal medications, band-aids, antiseptics, and motion sickness tablets.", required: true, quantity: 1 }
     ]
+  },
+  {
+    category: "Medical Essentials",
+    items: [
+      { name: "Personal Prescription Medications", description: "Carry a sufficient supply of any daily medications for the full duration of the trip.", required: true, quantity: 1 },
+      { name: "Pain Relievers", description: "Paracetamol or Ibuprofen for headaches, fever, and body aches during travel.", required: true, quantity: 1 },
+      { name: "Oral Rehydration Salts (ORS)", description: "Electrolyte packets to combat dehydration from heat or stomach upsets.", required: true, quantity: 5 },
+      { name: "Anti-Diarrheal Tablets", description: "For managing traveler's diarrhea common in new food environments.", required: true, quantity: 1 },
+      { name: "Antiseptic Cream & Band-Aids", description: "For treating minor cuts, blisters, and insect bites on the go.", required: true, quantity: 1 },
+      { name: "Altitude Sickness Tablets (Diamox)", description: "Recommended for tours that include high-altitude areas above 2,500m elevation.", required: false, quantity: 1 }
+    ]
   }
 ];
 
