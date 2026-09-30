@@ -4283,7 +4283,8 @@ The adventure peaks with a scenic drive to Chandragiri Hills. Here, a thrilling 
   <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/1d/8c/de.jpg" alt="Chandragiri Hills Cable Car" class="w-full h-full object-cover" />
 </div>
 
-`,
+### Best Time to Visit
+Nepal is beautiful year-round, but **Spring (March–May)** and **Autumn (Sept–Nov)** offer the clearest skies and most spectacular mountain views. Spring brings blooming rhododendrons and comfortable temperatures, while Autumn offers crystal-clear panoramas following the monsoon. Winter is cooler but rewards travelers with peaceful snow-dusted landscapes, while the Summer monsoon brings lush greenery to the valleys.`,
     highlights: [
       'Explore Kathmandu’s iconic UNESCO World Heritage Sites',
       'Witness the intricate architecture of Bhaktapur Durbar Square',
@@ -4376,7 +4377,8 @@ Your journey concludes with a scenic drive to Gonggar Airport and a flight back 
   <img src="/zenex images/Lhasa/photo-1607857581971-775fece813c4.avif" alt="Potala Palace Tibet" class="w-full h-full object-cover" />
 </div>
 
-`,
+### Best Time to Visit
+The best time to visit Tibet is from **April to June** and **September to November**. During these months, the weather is relatively mild and the skies are clear, offering the best views of the stunning Himalayan landscapes and comfortable conditions for exploring monasteries.`,
     highlights: [
       'Samye Monastery – Explore Tibet’s first monastery with its unique mandala layout.',
       'Yumbu Lhakang – Discover Tibet’s oldest palace and enjoy panoramic views of the Yarlung Valley',
@@ -4473,7 +4475,10 @@ With time for acclimatization and detailed preparation, this itinerary ensures s
   <img src="https://media.app.dreamtibet.com/uploads/fullbanner/mt-kailash-manasarover-tour.webp" alt="Mount Kailash" class="w-full h-full object-cover" />
 </div>
 
-`,
+### Best Time for the Tour
+The Kailash Mansarovar Yatra operates between May and September, offering the most favorable weather and accessibility for this spiritual journey. These months provide pilgrims with comfortable trekking conditions, breathtaking landscapes, and the opportunity to connect deeply with the sacred surroundings. 
+
+Many pilgrims prefer to schedule their journey during the full moon days for an enhanced spiritual experience. The light of the full moon reflecting on Mount Kailash and Lake Manasarovar adds a profound and ethereal dimension to the pilgrimage.`,
     highlights: [
       'Sacred Sites: The pilgrimage to Mount Kailash and Lake Manasarovar holds deep religious and spiritual importance.',
       'A Divine Experience: The opportunity to bathe in the holy waters of Lake Manasarovar and trek around Mount Kailash.',
@@ -5202,6 +5207,9 @@ In the evening, enjoy a delightful Nepali dinner accompanied by a cultural progr
 - **Authentic Nepali Cultural Experience:** From a vibrant Nepali cultural program with dinner to visits to the Tibetan Refugee Camp.
 - **Value for Money:** The package includes accommodation, transportation, some meals, and entrance fees.
 
+### Best Time to Enjoy the Tour
+The best time to enjoy the 4 Days Kathmandu & Pokhara Tour is during the **spring (March to May)** and **autumn (September to November)** seasons. These periods offer the most favorable weather conditions, making it ideal for sightseeing and outdoor activities with clear skies providing stunning views of the snow-capped Himalayan peaks.
+
 ### Trip Cost for 2026 and 2027 (Price is Per Person)
 - **Luxury Package:** US$ 1290 (1 pax) | US$ 875 (2 pax) | US$ 800 (3-5 pax)
 - **Comfort Package:** US$ 970 (1 pax) | US$ 675 (2 pax) | US$ 610 (3-5 pax)
@@ -5451,6 +5459,9 @@ Conclude your journey with a flight to Lumbini, the birthplace of Lord Buddha, t
 - **Convenient and Comfortable Travel:** Maximizes your time with domestic flights between cities, perfect for travelers with a tight schedule.
 - **Unforgettable Spiritual Connection in Lumbini:** The spiritual significance of Lumbini, the birthplace of Lord Buddha, is unmatched.
 
+### Best Time for the Tour
+**Spring (March-May)** and **Autumn (September-November)** are the best times to explore Nepal, offering crystal-clear skies, pleasant weather, and optimal conditions for wildlife spotting and mountain views.
+
 ### Trip Cost for 2026 and 2027 (Price is Per Person)
 - **Luxury Package:** US$ 2435 (1 pax) | US$ 1635 (2 pax) | US$ 1460 (3-5 pax)
 - **Comfort Package:** US$ 2060 (1 pax) | US$ 1385 (2 pax) | US$ 1220 (3-5 pax)
@@ -5577,6 +5588,9 @@ The tour concludes on the fifth day with your departure, leaving you with unforg
 - **Natural Beauty:** Witness the serene Phewa Lake, the charm of Jomsom Village, and the stunning Himalayan vistas.
 - **Seamless Itinerary:** A well-planned tour that blends culture, nature, and spirituality with minimal travel time.
 - **Authentic Experience:** Relish a traditional Nepali dinner with a live cultural show.
+
+### Best Time for the Tour
+**Spring (March to May)** and **Autumn (September to November)** are the ideal seasons. Clear skies and reliable flights to Jomsom make it perfect for visiting Muktinath Temple and exploring scenic landscapes. Winter and Monsoon are not recommended due to unpredictable weather, flight delays, and heavy snowfall.
 
 ### Trip Cost for 2026 and 2027 (Price is Per Person)
 - **Luxury Package:** US$ 1805 (1 pax) | US$ 1350 (2 pax) | US$ 1265 (3-5 pax)
@@ -5709,6 +5723,9 @@ In the evening, enjoy a special farewell with a Nepali dinner and cultural progr
 - **Cultural and Spiritual Exploration:** Ancient temples, palaces, UNESCO sites, and the birthplace of Buddha.
 - **Nature and Adventure:** Boating, adventure sports, jungle safaris, and elephant rides.
 - **Compact Itinerary:** Immersive experience covering multiple significant locations without feeling rushed.
+
+### Best Time to Travel
+**Spring (March to May)** and **Autumn (September to November)** are the best times for this tour due to clear skies and minimal disruptions. Summer/Monsoon and Winter are also enjoyable with proper planning to account for occasional flight delays.
 
 ### Trip Cost for 2026 and 2027 (Price is Per Person /US$)
 <div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200 mt-4 mb-8">
@@ -5883,7 +5900,58 @@ The tour ends with your departure on day six, leaving you with cherished memorie
 - **Rich Cultural Immersion:** Visit iconic UNESCO World Heritage Sites and enjoy a Nepali dinner with a cultural show.
 - **Comfort and Convenience:** The itinerary offers both scenic drives and optional flights, making the tour enjoyable and hassle-free.
 
-`,
+### Best Time for the Tour
+**Spring (March to May)** and **Autumn (September to November)** are the best times with clear skies, pleasant weather, and stunning mountain views. Summer/Monsoon may face occasional road blockages, and Winter mornings can be foggy.
+
+<h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">Trip Cost for 2026 and 2027 (Price is Per Person /US$)</h3>
+<div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200 mt-4 mb-8">
+  <table class="min-w-full text-left text-sm whitespace-nowrap">
+    <thead class="bg-gray-50 text-gray-700">
+      <tr>
+        <th scope="col" class="px-6 py-3 font-semibold">Package Category</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">1 Person</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">2 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">3-5 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">6-8 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">9+ Persons</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-purple-700">Luxury</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,585</td>
+        <td class="px-6 py-4 text-center text-gray-800">$935</td>
+        <td class="px-6 py-4 text-center text-gray-800">$825</td>
+        <td class="px-6 py-4 text-center text-gray-800">$780</td>
+        <td class="px-6 py-4 text-center text-gray-800">$740</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-blue-700">Comfort</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,125</td>
+        <td class="px-6 py-4 text-center text-gray-800">$660</td>
+        <td class="px-6 py-4 text-center text-gray-800">$560</td>
+        <td class="px-6 py-4 text-center text-gray-800">$510</td>
+        <td class="px-6 py-4 text-center text-gray-800">$475</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-green-700">Standard</td>
+        <td class="px-6 py-4 text-center text-gray-800">$930</td>
+        <td class="px-6 py-4 text-center text-gray-800">$540</td>
+        <td class="px-6 py-4 text-center text-gray-800">$445</td>
+        <td class="px-6 py-4 text-center text-gray-800">$400</td>
+        <td class="px-6 py-4 text-center text-gray-800">$360</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-orange-700">Budget</td>
+        <td class="px-6 py-4 text-center text-gray-800">$895</td>
+        <td class="px-6 py-4 text-center text-gray-800">$510</td>
+        <td class="px-6 py-4 text-center text-gray-800">$415</td>
+        <td class="px-6 py-4 text-center text-gray-800">$370</td>
+        <td class="px-6 py-4 text-center text-gray-800">$335</td>
+      </tr>
+    </tbody>
+  </table>
+</div>`,
     highlights: [
       'Scenic drive to Bandipur, a charming hilltop village',
       'Spectacular Sarangkot Sunrise with panoramic Himalayan views',
@@ -6002,7 +6070,58 @@ Your 6-day adventure concludes with a departure, leaving you with unforgettable 
 - **Highlights of Pokhara:** Visit Bindabasini Temple, Gupteswori Mahadev Cave, Tibetan Refugee Camp, and enjoy boating on Phewa Lake.
 - **Authentic Nepali Farewell:** Conclude your journey with a memorable Nepali dinner accompanied by a vibrant cultural show.
 
-`,
+### Best Time for Tour
+**Spring (March to May)** and **Autumn (September to November)** are the best times for travel with clear skies, comfortable temperatures, and stunning views of the mountains. Summer/Monsoon may face road disruptions, and Winter flights to Jomsom are usually not operational due to heavy snowfall.
+
+<h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">Trip Cost for 2026 and 2027 (Price is Per Person /US$)</h3>
+<div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200 mt-4 mb-8">
+  <table class="min-w-full text-left text-sm whitespace-nowrap">
+    <thead class="bg-gray-50 text-gray-700">
+      <tr>
+        <th scope="col" class="px-6 py-3 font-semibold">Package Category</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">1 Person</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">2 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">3-5 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">6-8 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">9+ Persons</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-purple-700">Luxury</td>
+        <td class="px-6 py-4 text-center text-gray-800">$2,015</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,400</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,290</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,250</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,215</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-blue-700">Comfort</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,570</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,130</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,030</td>
+        <td class="px-6 py-4 text-center text-gray-800">$990</td>
+        <td class="px-6 py-4 text-center text-gray-800">$955</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-green-700">Standard</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,350</td>
+        <td class="px-6 py-4 text-center text-gray-800">$995</td>
+        <td class="px-6 py-4 text-center text-gray-800">$905</td>
+        <td class="px-6 py-4 text-center text-gray-800">$860</td>
+        <td class="px-6 py-4 text-center text-gray-800">$830</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-orange-700">Budget</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,315</td>
+        <td class="px-6 py-4 text-center text-gray-800">$960</td>
+        <td class="px-6 py-4 text-center text-gray-800">$870</td>
+        <td class="px-6 py-4 text-center text-gray-800">$830</td>
+        <td class="px-6 py-4 text-center text-gray-800">$795</td>
+      </tr>
+    </tbody>
+  </table>
+</div>`,
     highlights: [
       'Visit the revered Pashupatinath Temple, a UNESCO World Heritage Site',
       'Enjoy stunning Himalayan views and serene Phewa Lake in Pokhara',
@@ -6474,7 +6593,61 @@ This 7-Day Kathmandu, Chitwan & Pokhara Tour offers a perfect blend of wildlife 
 - **Immersive Cultural Encounters:** Engage with local traditions through Tharu Village tours and Nepali dinners.
 - **Exciting Wildlife Adventures:** Thrilling wildlife safaris, canoe rides, and visits to breeding centers in Chitwan National Park.
 
-`,
+### Best Time to Enjoy the Tour
+- **Spring (March to May):** One of the best times with pleasant weather and blooming rhododendrons.
+- **Summer (June to August):** Lush greenery and fewer crowds, though occasional showers occur.
+- **Autumn (September to November):** The most popular time, offering clear skies and mild temperatures.
+- **Winter (December to February):** Cooler temperatures with clear skies offering excellent mountain views.
+
+<h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">Trip Cost for 2026/2027 (Price is Per Person /US$)</h3>
+<div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200 mt-4 mb-8">
+  <table class="min-w-full text-left text-sm whitespace-nowrap">
+    <thead class="bg-gray-50 text-gray-700">
+      <tr>
+        <th scope="col" class="px-6 py-3 font-semibold">Package Category</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">1 Person</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">2 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">3-5 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">6-8 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">9+ Persons</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-purple-700">Luxury</td>
+        <td class="px-6 py-4 text-center text-gray-800">$2,025</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,265</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,135</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,085</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,045</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-blue-700">Comfort</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,445</td>
+        <td class="px-6 py-4 text-center text-gray-800">$880</td>
+        <td class="px-6 py-4 text-center text-gray-800">$765</td>
+        <td class="px-6 py-4 text-center text-gray-800">$715</td>
+        <td class="px-6 py-4 text-center text-gray-800">$670</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-green-700">Standard</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,150</td>
+        <td class="px-6 py-4 text-center text-gray-800">$705</td>
+        <td class="px-6 py-4 text-center text-gray-800">$600</td>
+        <td class="px-6 py-4 text-center text-gray-800">$550</td>
+        <td class="px-6 py-4 text-center text-gray-800">$510</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-orange-700">Budget</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,105</td>
+        <td class="px-6 py-4 text-center text-gray-800">$660</td>
+        <td class="px-6 py-4 text-center text-gray-800">$550</td>
+        <td class="px-6 py-4 text-center text-gray-800">$510</td>
+        <td class="px-6 py-4 text-center text-gray-800">$470</td>
+      </tr>
+    </tbody>
+  </table>
+</div>`,
     highlights: [
       'Exciting elephant or jeep safari in Chitwan National Park',
       'Tranquil canoe ride along the Rapti River',
@@ -6761,7 +6934,61 @@ This comprehensive tour ensures a perfect blend of cultural exploration, natural
 - **Peaceful Retreats:** Enjoy the tranquility of Namo Buddha and the serene environment of Dhulikhel.
 - **Authentic Nepali Dinner:** Savor a delicious Nepali dinner while enjoying a lively cultural performance.
 
-`,
+### Best Time to Visit
+- **Spring (March to May):** The best season with clear skies, blooming rhododendrons, and warm temperatures.
+- **Summer/Monsoon (June to August):** Lush greenery, but heavy rainfall can obscure views.
+- **Autumn (September to November):** Ideal offering crisp weather, clear mountain vistas, and lively festivals.
+- **Winter (December to February):** Unique experience with snow-capped peaks, though mornings can be foggy.
+
+<h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">Trip Cost for 2026/27 (Price is Per Person /US$)</h3>
+<div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200 mt-4 mb-8">
+  <table class="min-w-full text-left text-sm whitespace-nowrap">
+    <thead class="bg-gray-50 text-gray-700">
+      <tr>
+        <th scope="col" class="px-6 py-3 font-semibold">Package Category</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">1 Person</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">2 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">3-5 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">6-8 Persons</th>
+        <th scope="col" class="px-6 py-3 font-semibold text-center">9+ Persons</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-purple-700">Luxury</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,975</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,175</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,030</td>
+        <td class="px-6 py-4 text-center text-gray-800">$970</td>
+        <td class="px-6 py-4 text-center text-gray-800">$925</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-blue-700">Comfort</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,440</td>
+        <td class="px-6 py-4 text-center text-gray-800">$845</td>
+        <td class="px-6 py-4 text-center text-gray-800">$710</td>
+        <td class="px-6 py-4 text-center text-gray-800">$655</td>
+        <td class="px-6 py-4 text-center text-gray-800">$605</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-green-700">Standard</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,175</td>
+        <td class="px-6 py-4 text-center text-gray-800">$695</td>
+        <td class="px-6 py-4 text-center text-gray-800">$570</td>
+        <td class="px-6 py-4 text-center text-gray-800">$510</td>
+        <td class="px-6 py-4 text-center text-gray-800">$470</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 font-bold text-orange-700">Budget</td>
+        <td class="px-6 py-4 text-center text-gray-800">$1,140</td>
+        <td class="px-6 py-4 text-center text-gray-800">$665</td>
+        <td class="px-6 py-4 text-center text-gray-800">$540</td>
+        <td class="px-6 py-4 text-center text-gray-800">$485</td>
+        <td class="px-6 py-4 text-center text-gray-800">$440</td>
+      </tr>
+    </tbody>
+  </table>
+</div>`,
     highlights: [
       'Breathtaking Himalayan sunrise views from Nagarkot and Dhulikhel',
       'Rich cultural exploration in Bhaktapur Durbar Square, Pashupatinath, and Boudhanath',
