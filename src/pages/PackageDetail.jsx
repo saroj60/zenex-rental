@@ -58,14 +58,7 @@ Experience Nepal's classic golden circuit across the best travel seasons:
 **Winter (December to February)**
 - **Seasonal Overview:** Crisp winter skies, tranquil atmosphere, and outstanding wildlife visibility in Chitwan.
 - **Best Activities:** Sunrise photography from Nagarkot, quiet temple tours, and sunny afternoon safaris.
-- **Weather Details:** Cool mornings and warm sunlit afternoons across all regions.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 8 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Weather Details:** Cool mornings and warm sunlit afternoons across all regions.`,
     highlights: [
       'Explore 7 UNESCO World Heritage Sites in Kathmandu & Bhaktapur.',
       'Scenic drive & lakeside exploration in Pokhara + Phewa Lake boating.',
@@ -254,14 +247,7 @@ Experience the Annapurna foothills across Nepal's best seasons:
 **Winter (December to February)**
 - **Seasonal Overview:** Peaceful off-season travel with clear winter skies, quiet trails, and crisp mountain photography.
 - **Best Activities:** Heritage sightseeing in Kathmandu and Bandipur, clear sunrises from Sarangkot & Nagarkot.
-- **Weather Details:** Cool mornings and warm sunlit afternoons in Pokhara & Bandipur.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 8 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Weather Details:** Cool mornings and warm sunlit afternoons in Pokhara & Bandipur.`,
     highlights: [
       'Explore preserved 18th-century Newari living museum village of Bandipur.',
       'Early morning Sarangkot sunrise over Annapurna & Dhaulagiri mountain range.',
@@ -441,14 +427,7 @@ Experience river rafting and jungle safari across Nepal's best seasons:
 **Winter (December to February)**
 - **Seasonal Overview:** Crisp winter mornings, sunlit afternoons, peaceful temple visits, and great wildlife visibility in Chitwan.
 - **Best Months:** December for clear mountain sunrises; January for quiet heritage tours.
-- **Weather Details:** Cool mornings in Kathmandu & Nagarkot; pleasant mild days in Pokhara & Chitwan.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 8 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Weather Details:** Cool mornings in Kathmandu & Nagarkot; pleasant mild days in Pokhara & Chitwan.`,
     highlights: [
       'White-water river rafting expedition on the Seti River starting from Damauli.',
       'Overnight riverbank tented beach camp at Saranghat with traditional Nepali camp dinner.',
@@ -639,14 +618,7 @@ Experience Muktinath and Chitwan in every season:
 **Winter (December to February)**
 - **Seasonal Overview:** Peaceful winter pilgrimage with crisp mountain panoramas and quiet temple visits.
 - **Best Month for Activities:** January offers exceptional wildlife visibility in Chitwan and crowd-free Muktinath visits.
-- **Weather Details:** Crisp cold mornings in Mustang; pleasant sun-drenched afternoons in Chitwan.
-
-### Value Added Services
-- Welcome Arrival Garlands/Khada(traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 8 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Weather Details:** Crisp cold mornings in Mustang; pleasant sun-drenched afternoons in Chitwan.`,
     highlights: [
       'Pilgrimage visit to sacred Muktinath Temple (3,710m) in Mustang via scenic Jomsom mountain flight.',
       'Explore UNESCO Heritage sites in Kathmandu & Bhaktapur (Pashupatinath, Boudhanath, Bhaktapur Durbar Square).',
@@ -858,14 +830,7 @@ The 8 Days Kathmandu, Pokhara, Lumbini & Chitwan Tour is a year-round adventure,
 - **Seasonal Overview:** Crisp winter skies, tranquil atmosphere, and outstanding wildlife visibility in Chitwan.
 - **Best Month for Activities:** January is ideal for serene temple exploration and wildlife spotting.
 - **Weather Details:** Cool mornings and warm sunlit afternoons in Kathmandu, Pokhara, and Chitwan.
-- **Festivals & Events:** Celebrate Maghe Sankranti with special local delicacies.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 8 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Festivals & Events:** Celebrate Maghe Sankranti with special local delicacies.`,
     highlights: [
       'Explore 7 UNESCO World Heritage Sites in Kathmandu & Bhaktapur.',
       'Scenic drive & lakeside exploration in Pokhara + Phewa Lake boating.',
@@ -1390,14 +1355,7 @@ The final full day includes guided visits to Kathmandu UNESCO Heritage Sites: Bo
 - **Convenience**: 4 domestic flight hops (Kathmandu-Chitwan-Pokhara-Lumbini-Kathmandu) to cover top highlights seamlessly in 6 days.
 - **Cultural & Spiritual Exploration**: Ancient temples, UNESCO heritage sites, and Buddha's birthplace.
 - **Nature & Adventure**: Sarangkot sunrise, Chitwan jungle safari, and Phewa Lake boating.
-- **Authentic Nepali Hospitality**: Complimentary farewell dinner with typical Nepali cultural performance.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 6 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Authentic Nepali Hospitality**: Complimentary farewell dinner with typical Nepali cultural performance.`,
     highlights: [
       'Ultra-convenient 4 domestic flight hops (Kathmandu-Chitwan, Chitwan-Pokhara, Pokhara-Lumbini, Lumbini-Kathmandu) maximizing holiday time.',
       'Full board safari experience in Chitwan National Park (Jeep/Elephant safari, Tharu village tour & cultural dance performance).',
@@ -1577,14 +1535,7 @@ The tour ends with your departure on day six, leaving you with cherished memorie
 - **Adventure Opportunities**: Optional Trishuli River rafting and boating on the stunning Phewa Lake.
 - **Breathtaking Himalayan Views**: Witness a magical sunrise over the Himalayas from Sarangkot, offering spectacular vistas of Annapurna and Machhapuchhre.
 - **Rich Cultural Immersion**: UNESCO World Heritage Sites, a traditional Nepali dinner with cultural show, and exploration of traditional Newari villages.
-- **Comfort & Convenience**: Enjoyable and hassle-free scenic drives with optional return domestic flight.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 6 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Comfort & Convenience**: Enjoyable and hassle-free scenic drives with optional return domestic flight.`,
     highlights: [
       'Scenic 143 km drive from Kathmandu to Bandipur, a preserved hilltop Newari living museum town.',
       'Exploration of traditional Newari architecture, stone-paved streets, and valley views in Bandipur.',
@@ -1757,14 +1708,7 @@ Your 6-day adventure concludes with a departure, leaving you with unforgettable 
 - **Scenic Drives & Domestic Flights**: Picturesque riverbank drives and breathtaking flights to Jomsom & Kathmandu over the Annapurna range.
 - **Cultural & Religious Exploration**: Iconic landmarks in Kathmandu: Pashupatinath Temple, Boudhanath Stupa, and Budhanilkantha Temple.
 - **Highlights of Pokhara**: Bindabasini Temple, Gupteswori Mahadev Cave, Tibetan Refugee Camp, Seti River Gorge & boating on Phewa Lake.
-- **Authentic Nepali Farewell**: Traditional Nepali dinner with a vibrant cultural dance performance.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 6 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Authentic Nepali Farewell**: Traditional Nepali dinner with a vibrant cultural dance performance.`,
     highlights: [
       'Scenic domestic flights (Pokhara-Jomsom-Pokhara and Pokhara-Kathmandu) over Mustang & Annapurna valley.',
       'Visit sacred Muktinath Temple (3710m) & 108 holy water spouts in Mustang region.',
@@ -1938,14 +1882,7 @@ This 6 Days Kathmandu Pokhara Tour is ideal for nature lovers, cultural enthusia
 - **Stunning Sunrise at Sarangkot**: Witness the mesmerizing sunrise over the Annapurna and Fishtail mountains, creating a magical start to your day.
 - **Adventure & Spirituality**: Combine adrenaline-pumping activities with serene visits to spiritual sites like Manakamana Temple and World Peace Stupa.
 - **Relaxing Boating Experience**: Glide over the calm waters of Phewa Lake surrounded by majestic mountain views.
-- **Authentic Nepali Culture**: Traditional Nepali dinner and cultural dance show to experience Nepal’s vibrant traditions.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 6 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Authentic Nepali Culture**: Traditional Nepali dinner and cultural dance show to experience Nepal’s vibrant traditions.`,
     highlights: [
       'Picturesque overland drive between Kathmandu and Pokhara (210 km) along Trishuli, Marshyangdi, and Seti river valleys.',
       'Early morning drive to Sarangkot hilltop (1700m) for sunrise and panoramic views over Annapurna & Machhapuchhre (Fishtail).',
@@ -2114,14 +2051,7 @@ Your 6 Days Kathmandu Lumbini Nagarkot Tour ends with a memorable departure, tak
 - **Visit the Birthplace of Lord Buddha**: Immerse yourself in the spiritual tranquility of Lumbini, the birthplace of Lord Buddha, and explore surrounding monasteries.
 - **Witness Stunning Sunrise & Mountain Views**: Wake up to a mesmerizing sunrise over the Himalayas from Nagarkot, offering breathtaking panoramic mountain vistas.
 - **Enjoy Authentic Nepali Cuisine & Culture**: Savor a traditional Nepali dinner accompanied by a vibrant cultural program showcasing local dance and music.
-- **Seamless Travel Experience with Expert Guides**: Enjoy hassle-free travel with professional guides, scenic domestic flights, and carefully planned itineraries.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 6 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Seamless Travel Experience with Expert Guides**: Enjoy hassle-free travel with professional guides, scenic domestic flights, and carefully planned itineraries.`,
     highlights: [
       'Round-trip domestic flights (Kathmandu-Bhairahawa-Kathmandu) to visit Lumbini, the birthplace of Lord Buddha & Maya Devi Temple.',
       'Guided sightseeing of UNESCO Heritage Sites: Changunarayan Temple, Bhaktapur Durbar Square, Boudhanath Stupa, & Pashupatinath Temple.',
@@ -2291,14 +2221,7 @@ Your 6 Days Kathmandu Chitwan Nagarkot Tour concludes with wonderful memories of
 - **Exciting Wildlife Encounters in Chitwan**: Bird watching, elephant or jeep safaris, and visits to the elephant and crocodile breeding centers.
 - **Optional Adventure Activities**: Optional Trishuli River rafting or cable car ride to sacred Manakamana Temple.
 - **Breathtaking Sunrise & Mountain Views**: Witness magical sunrise over the Himalayas from Nagarkot.
-- **Cultural Immersion & Traditional Experiences**: Authentic Nepali cuisine with a cultural program, Pashupatinath Temple & Bhaktapur Durbar Square.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 6 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Cultural Immersion & Traditional Experiences**: Authentic Nepali cuisine with a cultural program, Pashupatinath Temple & Bhaktapur Durbar Square.`,
     highlights: [
       'Scenic 175 km drive along Trishuli and Narayani River banks with optional river rafting or Manakamana cable car.',
       '2 Nights stay in Chitwan National Park with full-board meals (Breakfast, Lunch & Dinner included).',
@@ -2469,14 +2392,7 @@ Your tour concludes with memories of Nepal’s rich heritage and stunning landsc
 - **Immersive Cultural Experiences**: Explore UNESCO World Heritage Sites like Bhaktapur Durbar Square, Pashupatinath Temple, and Boudhanath Stupa.
 - **Delicious Nepali Dinner with Cultural Show**: Enjoy authentic Nepali cuisine accompanied by a vibrant cultural performance.
 - **Scenic Drives & Picturesque Landscapes**: Experience scenic journeys through the serene countryside, passing lush green valleys and ancient temples.
-- **Perfect Balance of Relaxation & Adventure**: Blends cultural exploration, natural beauty, and relaxing stays, making it ideal for all travelers.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 6 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Perfect Balance of Relaxation & Adventure**: Blends cultural exploration, natural beauty, and relaxing stays, making it ideal for all travelers.`,
     highlights: [
       'Witness spectacular sunrise and sunset views over Mount Everest and the eastern Himalayas from Nagarkot.',
       'Guided tour of UNESCO World Heritage Sites: Bhaktapur Durbar Square, Changunarayan Temple, Boudhanath Stupa, & Pashupatinath Temple.',
@@ -2654,14 +2570,7 @@ On the final day, you will depart with unforgettable memories of your Kathmandu 
 - **Spiritual Serenity**: Visit the sacred birthplace of Lord Buddha in Lumbini, a serene and enlightening destination surrounded by monasteries from various countries.
 - **Breathtaking Himalayan Views**: Witness an unforgettable sunrise over the Himalayas from Nagarkot, a tranquil hill station known for its panoramic mountain vistas.
 - **Authentic Nepali Experience**: Enjoy a traditional Nepali dinner with a cultural performance, providing a taste of Nepal’s vibrant heritage and hospitality.
-- **Convenience & Comfort**: A well-planned itinerary with flights, expert-guided tours, and seamless transitions ensures you enjoy the best of Nepal stress-free in just five days.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 5 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Convenience & Comfort**: A well-planned itinerary with flights, expert-guided tours, and seamless transitions ensures you enjoy the best of Nepal stress-free in just five days.`,
     highlights: [
       'Morning flight to Bhairahawa/Lumbini & exploration of Lord Buddha birthplace (Maya Devi Temple & Monasteries).',
       'Guided sightseeing of UNESCO World Heritage Sites: Boudhanath Stupa, Pashupatinath Temple, & Bhaktapur Durbar Square.',
@@ -2833,14 +2742,7 @@ On day four, take a quick 20-minute flight from Chitwan (Bharatpur) back to Kath
 - **Scenic Drive & Quick Flight**: Trishuli river valley drive to Chitwan & 20-min return domestic flight.
 - **Thrilling Safaris & Canoeing**: Jeep / Elephant safaris, Rapti River dugout canoeing & Crocodile breeding center.
 - **Cultural Immersion**: Tharu indigenous village walk, cultural dance show & Nepali dinner performance.
-- **Hassle-Free Comfort**: Full-board meals in Chitwan, private air-conditioned transport, and licensed guides.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 5 days
-- 24 hrs WhatsApp help desk support`,
+- **Hassle-Free Comfort**: Full-board meals in Chitwan, private air-conditioned transport, and licensed guides.`,
     highlights: [
       'Scenic overland drive to Chitwan (175 km) along Trishuli & Narayani river valleys with optional whitewater rafting.',
       '2 Nights stay in Chitwan National Park with full-board meals (Breakfast, Lunch & Dinner included).',
@@ -2935,14 +2837,7 @@ On the fourth day, take a scenic 35-minute flight from Pokhara back to Kathmandu
 - **Stunning Scenic Drive & Flight**: Scenic drive along Trishuli river & 35-min return flight Pokhara to Kathmandu.
 - **Sarangkot Sunrise**: Breathtaking golden sunrise over Annapurna, Dhaulagiri & Machhapuchhre peaks.
 - **Pokhara Boating & Attractions**: Phewa Lake boating, Davis Fall, Gupteswori Cave & Tibetan Refugee Camp.
-- **UNESCO Heritage Tour**: Guided visits to Boudhanath, Pashupatinath & medieval Bhaktapur Durbar Square.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 5 days
-- 24 hrs WhatsApp help desk support`,
+- **UNESCO Heritage Tour**: Guided visits to Boudhanath, Pashupatinath & medieval Bhaktapur Durbar Square.`,
     highlights: [
       'Scenic overland drive to Pokhara passing rivers, Trishuli valley, terrace fields & mountain views.',
       'Breathtaking golden sunrise over Annapurna, Dhaulagiri & Fishtail mountain ranges from Sarangkot (1,700m).',
@@ -3034,14 +2929,7 @@ On the fourth day, visit the serene and spiritual sites of Dakshinkali Temple, C
 - **Cultural Exploration**: All 3 UNESCO Durbar Squares (Kathmandu, Patan, Bhaktapur), Swayambhunath & Pashupatinath.
 - **Off-the-beaten Excursions**: Dakshinkali Temple, Chobar Gorge, Pharping monasteries, and historic Kirtipur.
 - **Vibrant Nepali Culture**: Complimentary traditional Nepali dinner with a live cultural dance performance.
-- **Relaxed Pace**: Comfortable non-rushed private vehicle itinerary with expert guides.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 5 days
-- 24 hrs WhatsApp help desk support`,
+- **Relaxed Pace**: Comfortable non-rushed private vehicle itinerary with expert guides.`,
     highlights: [
       'Breathtaking Himalayan sunrise & sunset views from Nagarkot hill station (2,175m) over Mount Everest & snow peaks.',
       'Explore all 3 royal UNESCO Durbar Squares in Kathmandu Valley: Kathmandu, Patan & Bhaktapur.',
@@ -3135,14 +3023,7 @@ Conclude your journey with an 11:55 flight to Lumbini (Bhairahawa), the birthpla
 - **Flight Connected Comfort**: 4 scenic domestic flights ensure maximum sightseeing time & zero long road travel.
 - **Thrilling Chitwan Safaris**: Spot rare one-horned rhinos, Royal Bengal tigers, and Asian elephants in the wild.
 - **Serene Pokhara & Sarangkot**: Sarangkot golden Himalayan sunrise over Annapurna & Phewa Lake boating.
-- **Spiritual Peace in Lumbini**: Visit UNESCO Maya Devi Temple & quiet international monasteries in Buddha's birthplace.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 5 days
-- 24 hrs WhatsApp help desk support`,
+- **Spiritual Peace in Lumbini**: Visit UNESCO Maya Devi Temple & quiet international monasteries in Buddha's birthplace.`,
     highlights: [
       'Ultimate 4-City Nepal Highlights circuit: Kathmandu, Chitwan, Pokhara, and Lumbini in 5 compact days.',
       '4 Scenic domestic flights (KTM - CTW, CTW - PKH, PKH - LBR, LBR - KTM) for maximum comfort & zero long drives.',
@@ -3242,14 +3123,7 @@ The journey concludes with a drive to Nagarkot for breathtaking Himalayan views 
 - **World Heritage Sites**: Explore UNESCO sites in Kathmandu Valley, Bhaktapur, and Lumbini Sacred Garden.
 - **Scenic Nagarkot Views**: Overnight in Nagarkot hill station with golden sunrise over Mount Everest and Himalayas.
 - **Time Efficient**: Convenient roundtrip domestic flight (Kathmandu - Bhairahawa) minimizes travel time.
-- **Cultural Immersion**: Experience local markets, ancient architecture, and complimentary Nepali cultural dinner show.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 7 days
-- 24 hrs WhatsApp help desk support`,
+- **Cultural Immersion**: Experience local markets, ancient architecture, and complimentary Nepali cultural dinner show.`,
     highlights: [
       'Pilgrimage to Lumbini, the sacred UNESCO World Heritage birthplace of Lord Buddha & Maya Devi Temple.',
       'Roundtrip scenic domestic flights (Kathmandu - Bhairahawa - Kathmandu) for maximum comfort & time efficiency.',
@@ -3341,14 +3215,7 @@ On the fourth day, return to Pokhara by flight and continue directly to Kathmand
 - **Spiritual Experience**: Sacred Muktinath Temple (3,710m) pilgrimage & Pashupatinath & Budhanilkantha Temple.
 - **Cultural Immersion**: Explore UNESCO landmarks, Tibetan monasteries, and enjoy a traditional Nepali cultural dinner.
 - **Natural Beauty**: Serene Phewa Lake boating, Jomsom Mustang scenery, Davis Fall, and Gupteswori Cave.
-- **Seamless Itinerary**: Minimal travel time with scenic flights for maximum spiritual & sightseeing enjoyment.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 5 days
-- 24 hrs WhatsApp help desk support`,
+- **Seamless Itinerary**: Minimal travel time with scenic flights for maximum spiritual & sightseeing enjoyment.`,
     highlights: [
       'Pilgrimage to sacred Muktinath Temple (3,710m / 12,172 ft), highly revered by Hindu & Buddhist pilgrims worldwide.',
       '4 Scenic domestic flights (Kathmandu - Pokhara - Jomsom - Pokhara - Kathmandu) to maximize comfort & view Annapurna peaks.',
@@ -3446,14 +3313,7 @@ On your last day, witness a breathtaking sunrise at Sarangkot before flying back
 - **Diverse Experiences in Short Time**: Culture, wildlife, and mountain vistas all in 5 compact days.
 - **Chitwan Wildlife Safari**: Spot exotic rhinos, tigers, and Asian elephants in their natural habitat.
 - **Scenic Beauty of Pokhara**: Sarangkot sunrise over Annapurnas, Phewa boating & World Peace Stupa.
-- **Cultural Immersion**: Guided visits to UNESCO World Heritage Sites & Nepali cultural dinner show.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 5 days
-- 24 hrs WhatsApp help desk support`,
+- **Cultural Immersion**: Guided visits to UNESCO World Heritage Sites & Nepali cultural dinner show.`,
     highlights: [
       'Save time and travel in comfort with 3 scenic domestic flights connecting Kathmandu, Chitwan, and Pokhara.',
       'Thrilling Chitwan wildlife safari (Jeep or Elephant safari) to spot one-horned rhinos, Royal Bengal tigers, and Asian elephants.',
@@ -3546,15 +3406,7 @@ Conclude your jungle expedition with early morning bird watching before flying b
 - **Untouched Wilderness**: Authentic, pristine, and uncrowded safari experience in western Terai.
 - **Karnali River Rafting**: Rare opportunity to spot freshwater Gangetic river dolphins and gharial crocodiles.
 - **Tharu Cultural Immersion**: Authentic Tharu village walk, local cuisine, and evening cultural dance.
-- **All-Inclusive Safari Package**: Roundtrip flights, jungle permits, naturalist guides, and full-board resort stay included.
-
-### Value Added Services
-- Roundtrip domestic flights (Kathmandu - Nepalgunj - Kathmandu) included
-- All meals (Breakfast, Lunch & Dinner) included during Bardia jungle stay
-- Expert licensed naturalist wildlife guide for all safaris
-- Welcome Arrival Garlands / Khada & mineral water bottles
-- Local SIM Card with data package for 7 days
-- 24 hrs WhatsApp help desk support`,
+- **All-Inclusive Safari Package**: Roundtrip flights, jungle permits, naturalist guides, and full-board resort stay included.`,
     highlights: [
       'Explore Bardia National Park, the largest untouched wildlife sanctuary in Nepal’s Terai region.',
       'High probability of spotting Royal Bengal Tigers on dedicated full-day walking and jeep safaris.',
@@ -3647,14 +3499,7 @@ The next day, explore the ancient wonders of Bhaktapur Durbar Square and the UNE
 - **Stunning Himalayan Views**: Serene atmosphere of Nagarkot with a mesmerizing sunrise over Mount Everest and snow-capped crests.
 - **Authentic Nepali Experience**: Traditional Nepali dinner accompanied by a vibrant cultural show.
 - **Charming Bhaktapur**: Beautifully preserved Bhaktapur Durbar Square and ancient Changunarayan Temple.
-- **Perfect Short Getaway**: Compact 4-day balance of cultural exploration, natural beauty, and relaxation.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 7 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Perfect Short Getaway**: Compact 4-day balance of cultural exploration, natural beauty, and relaxation.`,
     highlights: [
       'Explore UNESCO World Heritage Sites: Pashupatinath, Boudhanath, Swayambhunath & Kathmandu Durbar Square.',
       'Discover ancient Changunarayan Temple, Nepal’s oldest standing temple.',
@@ -3745,14 +3590,7 @@ The tour concludes on the fourth day with a drive to Tribhuvan International Air
 - **Unique Wildlife Experience in Chitwan**: Jeep or Elephant safaris in Chitwan National Park to spot rhinos, tigers & birds, Tharu village tour & cultural dance.
 - **Immersive Cultural Exploration**: Visit UNESCO World Heritage Sites including Boudhanath Stupa, Pashupatinath Temple & Bhaktapur Durbar Square.
 - **Stunning Himalayan Views from Nagarkot**: Famous panoramic sunrise views of the Himalayan range including Mount Everest.
-- **Convenient and Well-Rounded Itinerary**: Ideal balance of adventure, culture, and nature in just 4 days with scenic domestic flights.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 7 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Convenient and Well-Rounded Itinerary**: Ideal balance of adventure, culture, and nature in just 4 days with scenic domestic flights.`,
     highlights: [
       'Subtropical jungle safaris in Chitwan National Park to spot one-horned rhinos & wildlife.',
       'Tharu cultural village tour & authentic evening Tharu dance performance with dinner.',
@@ -3845,14 +3683,7 @@ The tour concludes on the fourth day with a direct transfer from Dhulikhel to Tr
 - **Cultural and Spiritual Highlights**: Explore UNESCO World Heritage Sites including Pashupatinath Temple, Boudhanath Stupa, Swoyambhunath Stupa, and Kathmandu Durbar Square.
 - **Stunning Himalayan Views**: Overnight stay in Dhulikhel offering serene atmosphere and spectacular sunset & sunrise views over the Himalayan range.
 - **Balance of Exploration and Relaxation**: Relaxed pace allowing deep immersion from Changunarayan Temple to Bhaktapur Durbar Square.
-- **Convenient and Compact Itinerary**: Combines the best of Nepal’s culture and nature in just four days.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 7 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Convenient and Compact Itinerary**: Combines the best of Nepal’s culture and nature in just four days.`,
     highlights: [
       'Explore 4 UNESCO World Heritage Sites in Kathmandu: Pashupatinath, Boudhanath, Swoyambhunath & Kathmandu Durbar Square.',
       'Discover ancient Changunarayan Temple, Nepal’s oldest standing temple.',
@@ -3942,14 +3773,7 @@ Returning to Kathmandu, explore the majestic Boudhanath Stupa, sacred Pashupatin
 - **World Heritage Sites**: Explore UNESCO sites in Kathmandu and Bhaktapur.
 - **Scenic Beauty of Nagarkot**: Panoramic sunrise view over the snow-capped Himalayan peaks.
 - **Convenient and Time-efficient**: Scenic round-trip flight to Lumbini maximizing your experience in just 4 days.
-- **Cultural Immersion**: Bustling local markets, ancient temples, serene monasteries, and local village walks.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 7 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Cultural Immersion**: Bustling local markets, ancient temples, serene monasteries, and local village walks.`,
     highlights: [
       'Pilgrimage to Lumbini - the UNESCO-listed birthplace of Lord Buddha.',
       'Visit Maya Devi Temple, Ashoka Pillar, and international monasteries.',
@@ -4036,14 +3860,7 @@ Tips are recommended: US$ 5 per day per tourist for driver and US$ 10 per day fo
 - **Cultural Immersion in Two Iconic Cities**: Explore UNESCO temples in Kathmandu alongside Pokhara’s lakes and shrines.
 - **Mesmerizing Sunrise at Sarangkot**: 360-degree sunrise view over Annapurna, Dhaulagiri, and Fishtail Peak (1,700m).
 - **Nature and Adventure in Pokhara**: Boating on Phewa Lake, visiting Davis Fall, Gupteshwor Cave & Peace Stupa.
-- **Authentic Nepali Cultural Experience**: Complimentary dinner with live cultural show and Tibetan Refugee Camp visit.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 4 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Authentic Nepali Cultural Experience**: Complimentary dinner with live cultural show and Tibetan Refugee Camp visit.`,
     highlights: [
       'Round-trip scenic Himalayan flights between Kathmandu and Pokhara.',
       'Mesmerizing sunrise view over Annapurna & Dhaulagiri ranges from Sarangkot (1,700m).',
@@ -4137,14 +3954,7 @@ The final day offers an optional Nepal mountain flight experience, allowing you 
 - **Adventure and Thrill**: Experience the excitement of a cable car ride and optional Bicycle Zipline.
 - **Spiritual Immersion**: Visit sacred Pashupatinath Temple and peaceful Boudhanath Stupa.
 - **Nepali Culture and Cuisine**: Complimentary traditional cultural dinner with a live dance performance.
-- **Optional Mountain Flight**: Witness Mount Everest and the world's highest peaks from above.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 7 days
-- 24 hrs WhatsApp help desk for any problem`,
+- **Optional Mountain Flight**: Witness Mount Everest and the world's highest peaks from above.`,
     highlights: [
       'A Deep Dive into UNESCO Heritage Sites: Kathmandu Durbar Square, Swoyambhunath, Boudhanath & Bhaktapur.',
       'Breathtaking Himalayan views from Chandragiri Hills & Bhaleshwore Temple.',
@@ -4232,14 +4042,7 @@ End your tour with a mesmerizing sunrise over the Himalayas before returning to 
 - Witness the cultural richness of Bhaktapur Durbar Square.
 - Enjoy a cable car ride to Chandragiri Hills.
 - Capture stunning views of Mount Everest and Annapurna.
-- Experience the sunrise over the Himalayan range.
-
-### Value Added Services
-- Welcome Arrival Garlands / Khada (traditional scarf)
-- 02 Units of 500ml water bottles per day per person
-- 01 Complimentary Nepali dinner with typical Nepal cultural dance
-- Local SIM Card with unlimited data for 7 days
-- 24 hrs WhatsApp help desk for any problem`,
+- Experience the sunrise over the Himalayan range.`,
     highlights: [
       'Explore Kathmandu’s UNESCO World Heritage Sites.',
       'Witness the cultural richness of Bhaktapur Durbar Square.',
@@ -4545,12 +4348,6 @@ A 40% deposit is required to confirm your booking, with the remaining 60% payabl
       '24/7 WhatsApp & email support desk',
       'All insured vehicles, guides, and porters',
       'Tailor-made, flexible itineraries to suit your interests'
-    ],
-    valueAdded: [
-      'Welcome Garland/Khada on arrival',
-      'Two 500ml water bottles per day per person',
-      'One complimentary authentic Nepali dinner with cultural dance',
-      'Local SIM card with unlimited data for 7 days'
     ]
   }
 ,
@@ -5140,13 +4937,6 @@ The tour concludes with visit Boudhanath Stupa, Pashupatinath Temple, Swoyambhun
       { category: 'Standard', pax1: 'US$ 1545', pax2: 'US$ 1070', pax3_5: 'US$ 940' },
       { category: 'Budget', pax1: 'US$ 1490', pax2: 'US$ 1020', pax3_5: 'US$ 890' }
     ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 12 days',
-      '24 hrs WhatsApp help desk for any problem'
-    ],
     information: `**Best Time for 12 Days Nepal Tour with Poon Hill Trek**
 Spring (March to May) and Autumn (September to November) are the best times due to clear weather, stunning scenery, and comfortable trekking conditions. 
 
@@ -5240,13 +5030,6 @@ End your tour with a mesmerizing sunrise over the Himalayas before returning to 
       { category: 'Comfort', pax1: 'US$ 1775', pax2: 'US$ 1190', pax3_5: 'US$ 1050' },
       { category: 'Standard', pax1: 'US$ 1545', pax2: 'US$ 1070', pax3_5: 'US$ 940' },
       { category: 'Budget', pax1: 'US$ 1490', pax2: 'US$ 1020', pax3_5: 'US$ 890' }
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 7 days',
-      '24 hrs WhatsApp help desk for any problem'
     ],
     information: `**Best Time for Muktinath Yatra**
 Spring (March – May) and Autumn (September – November) are the best times for clear skies, pleasant weather, and stunning views.
@@ -5384,13 +5167,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 7 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'kathmandu-pokhara-4d': {
@@ -5518,13 +5294,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 4 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-chitwan-pokhara-5d': {
@@ -5655,13 +5424,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 5 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-chitwan-pokhara-lumbini-5d': {
@@ -5789,13 +5551,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 5 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-muktinath-5d': {
@@ -5923,13 +5678,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 5 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-chitwan-pokhara-lumbini-6d': {
@@ -6115,13 +5863,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 6 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-bandipur-pokhara-6d': {
@@ -6290,13 +6031,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 6 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-muktinath-6d': {
@@ -6471,13 +6205,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 6 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-nagarkot-7d': {
@@ -6657,13 +6384,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 7 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-chitwan-7d': {
@@ -6839,13 +6559,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 7 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-chitwan-pokhara-7d': {
@@ -7016,13 +6729,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 7 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-jomsom-muktinath-7d': {
@@ -7193,13 +6899,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 7 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-nagarkot-dhulikhel-7d': {
@@ -7368,13 +7067,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 7 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-bandipur-pokhara-7d': {
@@ -7542,13 +7234,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 7 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-chitwan-pokhara-lumbini-7d': {
@@ -7720,13 +7405,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 7 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-bandipur-pokhara-trek-8d': {
@@ -7898,13 +7576,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 8 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-chitwan-nagarkot-8d': {
@@ -8081,13 +7752,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 8 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-chitwan-rafting-8d': {
@@ -8258,13 +7922,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 8 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-muktinath-chitwan-8d': {
@@ -8440,13 +8097,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 8 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-lumbini-chitwan-8d': {
@@ -8625,13 +8275,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 8 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-chitwan-nagarkot-9d': {
@@ -8806,13 +8449,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 9 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-chitwan-trek-9d': {
@@ -8989,13 +8625,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 9 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-chitwan-rafting-9d': {
@@ -9168,13 +8797,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 9 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-muktinath-chitwan-9d': {
@@ -9351,13 +8973,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 9 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'ktm-pokhara-lumbini-chitwan-9d': {
@@ -9528,13 +9143,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 9 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-ghandruk-trek-10d': {
@@ -9715,13 +9323,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 10 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-rafting-10d': {
@@ -9894,13 +9495,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 10 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-muktinath-10d': {
@@ -10078,13 +9672,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 10 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-lumbini-10d': {
@@ -10264,13 +9851,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 10 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-ghandruk-trek-11d': {
@@ -10400,13 +9980,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 11 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-muktinath-11d': {
@@ -10537,13 +10110,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 11 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-lumbini-11d': {
@@ -10676,13 +10242,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 11 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-poon-hill-trek-12d': {
@@ -10805,13 +10364,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 12 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-ghandruk-trek-12d': {
@@ -10940,13 +10492,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 12 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-muktinath-12d': {
@@ -11080,13 +10625,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 12 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nepal-tour-lumbini-12d': {
@@ -11215,13 +10753,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 12 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'explore-nepal-tour-13d': {
@@ -11351,13 +10882,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 13 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'explore-nepal-tour-poon-hill-trek-13d': {
@@ -11495,13 +11019,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 13 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'discover-nepal-tour-13d': {
@@ -11639,13 +11156,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 13 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'discover-nepal-tour-ghandruk-trek-13d': {
@@ -11776,13 +11286,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 13 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'explore-nepal-tour-poon-hill-trek-14d': {
@@ -11917,13 +11420,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 14 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'explore-nepal-tour-14d': {
@@ -12063,13 +11559,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 14 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'discover-nepal-tour-14d': {
@@ -12201,13 +11690,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 14 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'discover-nepal-tour-ghandruk-trek-14d': {
@@ -12348,13 +11830,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 14 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'discover-nepal-tour-tiger-tracking-bardia-15d': {
@@ -12483,13 +11958,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 15 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'explore-nepal-tour-15d': {
@@ -12611,13 +12079,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 15 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'discover-nepal-tour-15d': {
@@ -12745,13 +12206,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 15 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'explore-nepal-tour-poon-hill-trek-15d': {
@@ -12880,13 +12334,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 15 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'discover-nepal-tour-ghandruk-trek-15d': {
@@ -13016,13 +12463,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 15 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'discover-nepal-tour-16d': {
@@ -13145,13 +12585,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 16 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'discover-nepal-tour-tiger-tracking-bardia-16d': {
@@ -13284,13 +12717,6 @@ Your booking will be confirmed via email after a 40% deposit of the total trip c
       'Trustworthy travel agency',
       'Unbeatable value for money',
       'Tailor made itinerary as per clients interest'
-    ],
-    valueAdded: [
-      'Welcome Arrival Garlands/Khada(traditional scarf)',
-      '02 Units of 500ml water bottles per day per person',
-      '01 Complimentary Nepali dinner with typical Nepal cultural dance',
-      'Local SIM Card with unlimited data for 16 days',
-      '24 hrs WhatsApp help desk for any problem'
     ]
   },
   'nature-heals-package-3d': {
@@ -13362,11 +12788,6 @@ With personalized care, natural therapies, and the soothing rhythm of nature, th
       'Peaceful natural location ideal for forest bathing',
       'Sattvic meals prepared with organic ingredients',
       'Tailored programs for physical, emotional, and spiritual well-being'
-    ],
-    valueAdded: [
-      'Personalized wellness consultation',
-      'Sound healing therapy sessions',
-      'Forest bathing experiences'
     ]
   },
   'nepal-poon-hill-12d': {
@@ -14193,19 +13614,6 @@ const PackageDetail = () => {
                     </div>
                   ))}
                 </div>
-
-                {pkg.valueAdded && (
-                  <div className="mt-8 pt-8 border-t border-blue-800">
-                    <h3 className="text-lg font-bold mb-4 text-white">Value Added Services</h3>
-                    <ul className="space-y-3">
-                      {pkg.valueAdded.map((item, idx) => (
-                        <li key={idx} className="flex items-start text-sm text-blue-200">
-                          <span className="text-orange-400 mr-2 mt-0.5">★</span> {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
               </div>
             )}
           </div>

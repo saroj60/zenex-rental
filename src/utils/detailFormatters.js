@@ -408,6 +408,15 @@ export const formatMarkdownToHTML = (text) => {
     html = `<p class="text-gray-700 leading-relaxed text-justify">${html}</p>`;
   }
 
+  // 9. Clean up block elements so <h1-6> and <ul> are never trapped inside <p>
+  html = html.replace(/<\/li>\s*<\/p>\s*<p[^>]*>/gi, '</li>');
+  html = html.replace(/<\/p>\s*<p[^>]*>\s*<\/ul>/gi, '</ul>');
+  html = html.replace(/<p[^>]*>\s*(<h[1-6][^>]*>)/gi, '$1');
+  html = html.replace(/(<\/h[1-6]>)\s*<\/p>/gi, '$1');
+  html = html.replace(/<p[^>]*>\s*(<ul[^>]*>)/gi, '$1');
+  html = html.replace(/(<\/ul>)\s*<\/p>/gi, '$1');
+  html = html.replace(/<p[^>]*>\s*<\/p>/gi, '');
+
   return html;
 };
 

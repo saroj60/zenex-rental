@@ -244,9 +244,9 @@ const TourTripDetail = () => {
         category: baseTrip.category || 'Tours',
         destination: baseTrip.destination || baseTrip.location || 'Nepal',
         price: cleanPrice,
-        shortDescription: getCleanExcerpt(extra.overview || baseTrip.shortDescription || baseTrip.overview || baseTrip.description || baseTrip.title),
-        description: extra.overview || baseTrip.overview || baseTrip.description || baseTrip.title,
-        overview: extra.overview || baseTrip.overview,
+        shortDescription: getCleanExcerpt(baseTrip.overview || baseTrip.description || extra.overview || baseTrip.shortDescription || baseTrip.title),
+        description: baseTrip.overview || baseTrip.description || extra.overview || baseTrip.title,
+        overview: baseTrip.overview || baseTrip.description || extra.overview,
         status: 'Published',
         featured: baseTrip.featured || false,
         quickFacts: baseTrip.quickFacts || {
