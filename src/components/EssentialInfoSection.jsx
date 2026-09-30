@@ -149,6 +149,25 @@ const EssentialInfoSection = ({ item, isTrek = false }) => {
     equipmentCategories = defaultTourEquipment;
   }
 
+  // Always ensure Medical Essentials is present for all trek packages
+  const medicalEssentials = {
+    category: "Medical Essentials",
+    items: [
+      "Personal prescription medications",
+      "Pain relievers (Ibuprofen / Paracetamol)",
+      "Oral rehydration salts (ORS) ×5 sachets",
+      "Anti-diarrheal tablets",
+      "Antiseptic cream & band-aids",
+      "Altitude sickness tablets – Diamox (optional, consult doctor)"
+    ]
+  };
+  const hasMedical = equipmentCategories.some(cat =>
+    /medical|first.?aid/i.test(cat.category)
+  );
+  if (isTrekPackage && !hasMedical) {
+    equipmentCategories = [...equipmentCategories, medicalEssentials];
+  }
+
   return (
     <div className="space-y-10 md:space-y-12">
       {/* 1. ESSENTIAL INFORMATION SECTION */}
