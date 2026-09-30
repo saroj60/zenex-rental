@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  BookOpen, ShieldCheck, Sun, AlertTriangle, Bed, Briefcase, Check, Info, Backpack, Mountain, Car, Utensils
+  BookOpen, ShieldCheck, Sun, AlertTriangle, Bed, Briefcase, Check, Info, Backpack, Mountain, Car, Utensils, FileText
 } from 'lucide-react';
 import { formatMarkdownToHTML } from '../utils/detailFormatters';
 
@@ -228,7 +228,21 @@ const EssentialInfoSection = ({ item, isTrek = false }) => {
             </p>
           </div>
 
+          {/* Card 5: Visa & Passport Requirements */}
+          <div className="bg-[#faf5ff] border border-purple-200/80 rounded-2xl p-6 shadow-xs hover:shadow-sm transition-shadow">
+            <div className="flex items-center gap-2.5 mb-3">
+              <FileText className="text-purple-700 shrink-0" size={22} />
+              <h3 className="font-bold text-purple-950 text-base md:text-lg">
+                Visa &amp; Passport Requirements
+              </h3>
+            </div>
+            <p className="text-purple-900/90 text-sm leading-relaxed text-justify">
+              All visitors (except Indian nationals) require a valid Tourist Visa to enter Nepal — available on arrival at Tribhuvan International Airport or via the <strong>Nepal eVisa portal</strong>. Fees: <strong>15 Days – US$ 30</strong> | <strong>30 Days – US$ 50</strong> | <strong>90 Days – US$ 125</strong>. Your passport must be valid for at least <strong>6 months</strong> beyond your travel dates.
+            </p>
+          </div>
+
         </div>
+
 
         {/* Render Custom Essential Info array if present on package */}
         {customInfo && (

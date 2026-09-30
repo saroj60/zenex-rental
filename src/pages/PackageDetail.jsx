@@ -1137,8 +1137,6 @@ Return to Kathmandu on day five and explore UNESCO Heritage sites including Boud
     ],
     seasonDetails: 'Best Season: Sep-Nov & Mar-May. Spring (March-May) offers clear skies & blooming rhododendrons; Autumn (Sept-Nov) offers crisp morning mountain views.',
     generalInformation: [
-      { title: 'Visa Requirements', details: 'All foreign nationals (except Indians) require a visa. On-arrival visas available at Kathmandu airport. 15 Days: $30, 30 Days: $50, 90 Days: $125.' },
-      { title: 'Passport Validity', details: 'Passport must be valid for at least 6 months beyond intended departure date.' },
       { title: 'Tipping', details: 'Recommended $5/day for driver and $10/day for guide per group.' },
       { title: 'Booking & Cancellation', details: '40% deposit to confirm. Cancellation fees: 20% (>30 days), 30% (15-29 days), 60% (7-14 days), 90% (<=6 days).' }
     ],
@@ -1316,8 +1314,6 @@ Early morning on day 5, enjoy a Sarangkot sunrise over Annapurna & Fishtail moun
     ],
     seasonDetails: 'Best Season: Sep-Nov & Mar-May. Weather is pleasant with clear blue skies offering crystal clear views of the Himalayas.',
     generalInformation: [
-      { title: 'Visa Requirements', details: 'All foreign nationals (except Indians) require a visa. On-arrival visas available at Kathmandu airport. 15 Days: $30, 30 Days: $50, 90 Days: $125.' },
-      { title: 'Passport Validity', details: 'Passport must be valid for at least 6 months beyond intended departure date.' },
       { title: 'Tipping', details: 'Recommended $5/day for driver and $10/day for guide per group.' },
       { title: 'Booking & Cancellation', details: '40% deposit to confirm. Cancellation fees: 20% (>30 days), 30% (15-29 days), 60% (7-14 days), 90% (<=6 days).' }
     ],
@@ -1486,9 +1482,6 @@ The final full day includes guided visits to Kathmandu UNESCO Heritage Sites: Bo
       { season: 'Winter (December to February)', details: 'Cooler, comfortable weather. Winter fog in Terai regions (Chitwan/Lumbini) may occasionally delay flights.' }
     ],
     generalInformation: [
-      { title: 'Visa', content: 'All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa available on arrival or online.' },
-      { title: 'Visa Fees', content: '15 Days: US$ 30 | 30 Days: US$ 50 | 90 Days: US$ 125' },
-      { title: 'Passport & Visas', content: 'Must have a valid passport (valid for at least 6 months beyond trip).' },
       { title: 'Tipping', content: 'Tipping is not mandatory but recommended ($5/day driver, $10/day guide).' },
       { title: 'Booking Conditions', content: '40% deposit required for confirmation, remaining 60% payable upon arrival in Kathmandu.' },
       { title: 'Cancellation Policy', content: '20% fee if canceled up to 30 days before trip, 30% for 15-29 days, 60% for 7-14 days, 90% for 6 or fewer days.' }
@@ -1657,9 +1650,6 @@ The tour ends with your departure on day six, leaving you with cherished memorie
       { season: 'Winter (December to February)', details: 'Cool and dry, though morning fog may temporarily challenge mountain visibility.' }
     ],
     generalInformation: [
-      { title: 'Visa', content: 'All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa available on arrival or online.' },
-      { title: 'Visa Fees', content: '15 Days: US$ 30 | 30 Days: US$ 50 | 90 Days: US$ 125' },
-      { title: 'Passport & Visas', content: 'Must have a valid passport (valid for at least 6 months beyond trip).' },
       { title: 'Tipping', content: 'Tipping is not mandatory but recommended ($5/day driver, $10/day guide).' },
       { title: 'Booking Conditions', content: '40% deposit required for confirmation, remaining 60% payable upon arrival in Kathmandu.' },
       { title: 'Cancellation Policy', content: '20% fee if canceled up to 30 days before trip, 30% for 15-29 days, 60% for 7-14 days, 90% for 6 or fewer days.' }
@@ -1834,9 +1824,6 @@ Your 6-day adventure concludes with a departure, leaving you with unforgettable 
       { season: 'Winter (December to February)', details: 'Flights to Jomsom are usually not operational due to heavy snowfall. Flight cancellations may occur due to weather.' }
     ],
     generalInformation: [
-      { title: 'Visa', content: 'All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa available on arrival or online.' },
-      { title: 'Visa Fees', content: '15 Days: US$ 30 | 30 Days: US$ 50 | 90 Days: US$ 125' },
-      { title: 'Passport & Visas', content: 'Must have a valid passport (valid for at least 6 months beyond trip).' },
       { title: 'Tipping', content: 'Tipping is not mandatory but recommended ($5/day driver, $10/day guide).' },
       { title: 'Booking Conditions', content: '40% deposit required for confirmation, remaining 60% payable upon arrival in Kathmandu.' },
       { title: 'Cancellation Policy', content: '20% fee if canceled up to 30 days before trip, 30% for 15-29 days, 60% for 7-14 days, 90% for 6 or fewer days.' }
@@ -2004,9 +1991,6 @@ This 6 Days Kathmandu Pokhara Tour is ideal for nature lovers, cultural enthusia
       { season: 'Winter (December to February)', details: 'Crisp, clear days with stunning snow peaks. Mornings can be foggy in Jan/Feb.' }
     ],
     generalInformation: [
-      { title: 'Visa', content: 'All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa available on arrival or online.' },
-      { title: 'Visa Fees', content: '15 Days: US$ 30 | 30 Days: US$ 50 | 90 Days: US$ 125' },
-      { title: 'Passport & Visas', content: 'Must have a valid passport (valid for at least 6 months beyond trip).' },
       { title: 'Tipping', content: 'Tipping is not mandatory but recommended ($5/day driver, $10/day guide).' },
       { title: 'Booking Conditions', content: '40% deposit required for confirmation, remaining 60% payable upon arrival in Kathmandu.' },
       { title: 'Cancellation Policy', content: '20% fee if canceled up to 30 days before trip, 30% for 15-29 days, 60% for 7-14 days, 90% for 6 or fewer days.' }
@@ -2174,9 +2158,6 @@ Your 6 Days Kathmandu Lumbini Nagarkot Tour ends with a memorable departure, tak
       { season: 'Winter (December to February)', details: 'Crisp mountain views and fewer crowds. Morning fog in Jan/Feb may temporarily affect flights between Kathmandu and Lumbini.' }
     ],
     generalInformation: [
-      { title: 'Visa', content: 'All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa available on arrival or online.' },
-      { title: 'Visa Fees', content: '15 Days: US$ 30 | 30 Days: US$ 50 | 90 Days: US$ 125' },
-      { title: 'Passport & Visas', content: 'Must have a valid passport (valid for at least 6 months beyond trip).' },
       { title: 'Tipping', content: 'Tipping is not mandatory but recommended ($5/day driver, $10/day guide).' },
       { title: 'Booking Conditions', content: '40% deposit required for confirmation, remaining 60% payable upon arrival in Kathmandu.' },
       { title: 'Cancellation Policy', content: '20% fee if canceled up to 30 days before trip, 30% for 15-29 days, 60% for 7-14 days, 90% for 6 or fewer days.' }
@@ -2345,9 +2326,6 @@ Your 6 Days Kathmandu Chitwan Nagarkot Tour concludes with wonderful memories of
       { season: 'Winter (December to February)', details: 'Crisp mornings, excellent mountain views, and fewer crowds. Warm clothing required for chilly mornings.' }
     ],
     generalInformation: [
-      { title: 'Visa', content: 'All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa available on arrival or online.' },
-      { title: 'Visa Fees', content: '15 Days: US$ 30 | 30 Days: US$ 50 | 90 Days: US$ 125' },
-      { title: 'Passport & Visas', content: 'Must have a valid passport (valid for at least 6 months beyond trip).' },
       { title: 'Tipping', content: 'Tipping is not mandatory but recommended ($5/day driver, $10/day guide).' },
       { title: 'Booking Conditions', content: '40% deposit required for confirmation, remaining 60% payable upon arrival in Kathmandu.' },
       { title: 'Cancellation Policy', content: '20% fee if canceled up to 30 days before trip, 30% for 15-29 days, 60% for 7-14 days, 90% for 6 or fewer days.' }
@@ -2521,9 +2499,6 @@ Your tour concludes with memories of Nepal’s rich heritage and stunning landsc
       { season: 'Winter (December to February)', details: 'Chilly mornings and stunning snow-capped peaks. Morning fog in Jan/Feb may temporarily reduce visibility from Nagarkot.' }
     ],
     generalInformation: [
-      { title: 'Visa', content: 'All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa available on arrival or online.' },
-      { title: 'Visa Fees', content: '15 Days: US$ 30 | 30 Days: US$ 50 | 90 Days: US$ 125' },
-      { title: 'Passport & Visas', content: 'Must have a valid passport (valid for at least 6 months beyond trip).' },
       { title: 'Tipping', content: 'Tipping is not mandatory but recommended ($5/day driver, $10/day guide).' },
       { title: 'Booking Conditions', content: '40% deposit required for confirmation, remaining 60% payable upon arrival in Kathmandu.' },
       { title: 'Cancellation Policy', content: '20% fee if canceled up to 30 days before trip, 30% for 15-29 days, 60% for 7-14 days, 90% for 6 or fewer days.' }
@@ -2695,9 +2670,6 @@ On the final day, you will depart with unforgettable memories of your Kathmandu 
       { season: 'Winter (December to February)', details: 'Crisp air, stunning mountain views, and fewer crowds. Foggy weather in Lumbini area might occasionally affect flights.' }
     ],
     generalInformation: [
-      { title: 'Visa', content: 'All visitors (except Indian nationals) must have a valid passport and visa to enter Nepal. Tourist visa available on arrival or online.' },
-      { title: 'Visa Fees', content: '15 Days: US$ 30 | 30 Days: US$ 50 | 90 Days: US$ 125' },
-      { title: 'Passport & Visas', content: 'Must have a valid passport (valid for at least 6 months beyond trip).' },
       { title: 'Tipping', content: 'Tipping is not mandatory but recommended ($5/day driver, $10/day guide).' },
       { title: 'Booking Conditions', content: '40% deposit required for confirmation, remaining 60% payable upon arrival in Kathmandu.' },
       { title: 'Cancellation Policy', content: '20% fee if canceled up to 30 days before trip, 30% for 15-29 days, 60% for 7-14 days, 90% for 6 or fewer days.' }
