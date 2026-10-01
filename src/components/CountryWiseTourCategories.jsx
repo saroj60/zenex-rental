@@ -37,33 +37,33 @@ const CountryWiseTourCategories = () => {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16 mt-6">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-8 md:p-10 shadow-2xl text-white relative overflow-hidden mb-8">
+      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-5 sm:p-8 md:p-10 shadow-2xl text-white relative overflow-hidden mb-8">
         <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
         
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 relative z-10">
+        <div className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center md:gap-6 relative z-10">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-bold uppercase tracking-wider mb-3">
-              <Compass size={14} className="animate-spin-slow" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-[11px] font-bold uppercase tracking-wider mb-2">
+              <Compass size={13} className="animate-spin-slow" />
               Explore By Region
             </div>
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight font-headline" style={{ fontFamily: "'Playfair Display', serif" }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
               Sightseeing & Tour Regions
             </h2>
           </div>
 
-          {/* Country Switcher Tabs */}
-          <div className="flex items-center gap-2 bg-slate-800/80 p-1.5 rounded-2xl border border-slate-700/60 backdrop-blur-md">
+          {/* Country Switcher Tabs — scrollable on mobile */}
+          <div className="flex items-center gap-1.5 bg-slate-800/80 p-1 sm:p-1.5 rounded-2xl border border-slate-700/60 backdrop-blur-md overflow-x-auto scrollbar-none flex-shrink-0 max-w-full">
             {tourData.map((destination) => (
               <button
                 key={destination.country}
                 onClick={() => setActiveCountry(destination.country)}
-                className={`px-5 py-2.5 text-sm font-bold rounded-xl transition-all duration-300 flex items-center gap-2 ${
+                className={`px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-bold rounded-xl transition-all duration-300 flex items-center gap-1.5 whitespace-nowrap flex-shrink-0 ${
                   activeCountry === destination.country
                     ? 'bg-gradient-to-r from-orange-500 to-[#e53a24] text-white shadow-lg'
                     : 'text-slate-300 hover:text-white hover:bg-slate-700/50'
                 }`}
               >
-                <Globe size={15} />
+                <Globe size={13} />
                 {destination.country}
               </button>
             ))}
