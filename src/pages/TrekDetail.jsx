@@ -13,6 +13,20 @@ import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
 import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt } from '../utils/detailFormatters';
 
+
+const extractDayHighlights = (description, maxCount = 5) => {
+  if (!description) return [];
+  const sentences = description
+    .replace(/\n+/g, ' ')
+    .split(/(?<=[.!?])\s+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 25 && s.length < 220);
+  const actionRe = /\b(visit|explore|drive|trek|arrive|depart|enjoy|experience|cross|reach|ascend|descend|hike|walk|fly|travel|discover|witness|observe|transfer|check.in|board|return|head|proceed|continue|start|begin|complete|camp|rest|acclimatize|sightseeing|tour|navigate|pass|climb|descend)\b/i;
+  const action = sentences.filter(s => actionRe.test(s));
+  const rest   = sentences.filter(s => !actionRe.test(s));
+  return [...action, ...rest].slice(0, maxCount);
+};
+
 const TrekDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -727,6 +741,20 @@ const TrekDetail = () => {
                           {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
                             <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl font-sans">
                               <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 font-sans">DAY HIGHLIGHTS</h4>
+                              {/* Activity bullets extracted from description */}
+                              {(() => {
+                                const pts = extractDayHighlights(day.desc || day.description);
+                                return pts.length > 0 ? (
+                                  <ul className="mb-3 space-y-1.5">
+                                    {pts.map((pt, pi) => (
+                                      <li key={pi} className="flex items-start gap-2 text-sm text-gray-700 font-sans">
+                                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                                        <span>{pt}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                ) : null;
+                              })()}
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600 font-sans">
                                 {day.maxAltitude && (
                                   <div className="flex items-center gap-2">

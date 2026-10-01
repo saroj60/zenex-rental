@@ -51,6 +51,19 @@ export const defaultTourEquipment = [
   }
 ];
 
+const extractDayHighlights = (description, maxCount = 5) => {
+  if (!description) return [];
+  const sentences = description
+    .replace(/\n+/g, ' ')
+    .split(/(?<=[.!?])\s+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 25 && s.length < 220);
+  const actionRe = /\b(visit|explore|drive|trek|arrive|depart|enjoy|experience|cross|reach|ascend|descend|hike|walk|fly|travel|discover|witness|observe|transfer|check.in|board|return|head|proceed|continue|start|begin|complete|camp|rest|acclimatize|sightseeing|tour|navigate|pass|climb|descend)\b/i;
+  const action = sentences.filter(s => actionRe.test(s));
+  const rest   = sentences.filter(s => !actionRe.test(s));
+  return [...action, ...rest].slice(0, maxCount);
+};
+
 const TourTripDetail = () => {
   const { slug, id } = useParams();
   const tripIdOrSlug = slug || id;
@@ -783,6 +796,20 @@ const TourTripDetail = () => {
                           {(day.maxAltitude || day.distance || day.walkingDuration || day.accommodation || day.modeOfTravel) && (
                             <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
                               <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Day Highlights</h4>
+                              {/* Activity bullets extracted from description */}
+                              {(() => {
+                                const pts = extractDayHighlights(day.description || day.desc);
+                                return pts.length > 0 ? (
+                                  <ul className="mb-3 space-y-1.5">
+                                    {pts.map((pt, pi) => (
+                                      <li key={pi} className="flex items-start gap-2 text-sm text-gray-700">
+                                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                                        <span>{pt}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                ) : null;
+                              })()}
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
                                 {day.maxAltitude && (
                                   <div className="flex items-center gap-2">
