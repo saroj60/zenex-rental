@@ -68,6 +68,15 @@ const TrekDetail = () => {
       return `${Math.round(num / 3.28084).toLocaleString()}m / ${num.toLocaleString()}ft`;
     }
   };
+  // Strip altitude annotations from day titles (e.g. "[altitude 1400m/4595ft]", "(820 m)")
+  const stripAltitudeFromTitle = (title) => {
+    if (!title) return title;
+    return title
+      .replace(/\s*\[(?:altitude|alt\.?)[^\]]*\]/gi, '')
+      .replace(/\s*\[\d[\d,]*\s*m(?:\/[\d,\s]+ft)?\]/gi, '')
+      .replace(/\s*\([\d,]+\s*m\)/gi, '')
+      .trim();
+  };
 
   const getBasePriceNum = () => {
     if (!trek || !trek.price) return 0;
@@ -708,7 +717,7 @@ const TrekDetail = () => {
                         return (
                           <tr key={idx} className={isEven ? 'bg-[#eef8fc]' : 'bg-white'}>
                             <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-xs sm:text-sm text-left font-sans">
-                              {dayLabel}: {day.title}
+                              {dayLabel}: {stripAltitudeFromTitle(day.title)}
                             </td>
                             <td className="px-3 sm:px-6 py-3 sm:py-4 text-gray-600 text-xs sm:text-sm text-left whitespace-nowrap font-sans">
                               {formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}
@@ -758,7 +767,7 @@ const TrekDetail = () => {
 
                         {/* Day Content */}
                         <div className="pt-8">
-                          <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1 font-sans">{day.title}</h3>
+                          <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1 font-sans">{stripAltitudeFromTitle(day.title)}</h3>
                           {descriptionText && (
                             <div 
                               className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none text-justify font-sans" 

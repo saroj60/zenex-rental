@@ -95,6 +95,15 @@ const TourTripDetail = () => {
       return `${Math.round(num / 3.28084).toLocaleString()}m / ${num.toLocaleString()}ft`;
     }
   };
+  // Strip altitude annotations from day titles (e.g. "[altitude 1400m/4595ft]", "(820 m)")
+  const stripAltitudeFromTitle = (title) => {
+    if (!title) return title;
+    return title
+      .replace(/\s*\[(?:altitude|alt\.?)[^\]]*\]/gi, '')
+      .replace(/\s*\[\d[\d,]*\s*m(?:\/[\d,\s]+ft)?\]/gi, '')
+      .replace(/\s*\([\d,]+\s*m\)/gi, '')
+      .trim();
+  };
 
   const getWalkingOrHiking = (day) => {
     if (day.modeOfTravel && day.modeOfTravel !== 'Walking') return day.modeOfTravel;
@@ -765,7 +774,7 @@ const TourTripDetail = () => {
                         const isEven = idx % 2 === 1;
                         return (
                           <tr key={idx} className={isEven ? 'bg-[#eef8fc]' : 'bg-white'}>
-                            <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-xs sm:text-sm text-left font-sans">DAY {dayNum}: {day.title}</td>
+                            <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-xs sm:text-sm text-left font-sans">DAY {dayNum}: {stripAltitudeFromTitle(day.title)}</td>
                             <td className="px-3 sm:px-6 py-3 sm:py-4 text-gray-600 text-xs sm:text-sm text-left whitespace-nowrap font-sans">{formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}</td>
                             <td className="px-3 sm:px-6 py-3 sm:py-4 text-gray-600 text-xs sm:text-sm text-left whitespace-nowrap font-sans">{getWalkingOrHiking(day)}</td>
                           </tr>
@@ -807,7 +816,7 @@ const TourTripDetail = () => {
                         
                         {/* Day Content */}
                         <div className="pt-8">
-                          <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{day.title}</h3>
+                          <h3 className="text-xl font-bold text-gray-900 mb-2 mt-1">{stripAltitudeFromTitle(day.title)}</h3>
                           {(day.details || day.description) && (
                             <div 
                               className="text-gray-600 leading-relaxed mb-4 font-normal text-base space-y-2 prose max-w-none text-justify" 
