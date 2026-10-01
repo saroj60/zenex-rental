@@ -766,7 +766,7 @@ const TourTripDetail = () => {
                         return (
                           <tr key={idx} className={isEven ? 'bg-[#eef8fc]' : 'bg-white'}>
                             <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-xs sm:text-sm text-left font-sans">DAY {dayNum}: {day.title}</td>
-                            <td className="px-3 sm:px-6 py-3 sm:py-4 text-gray-600 text-xs sm:text-sm text-left whitespace-nowrap font-sans">{formatAltitude(day.maxAltitude, day.altitudeUnit)}</td>
+                            <td className="px-3 sm:px-6 py-3 sm:py-4 text-gray-600 text-xs sm:text-sm text-left whitespace-nowrap font-sans">{formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}</td>
                             <td className="px-3 sm:px-6 py-3 sm:py-4 text-gray-600 text-xs sm:text-sm text-left whitespace-nowrap font-sans">{getWalkingOrHiking(day)}</td>
                           </tr>
                         );
@@ -851,10 +851,10 @@ const TourTripDetail = () => {
                                 ) : null;
                               })()}
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
-                                {day.maxAltitude && (
+                                {(day.maxAltitude || day.altitude) && (
                                   <div className="flex items-center gap-2">
                                     <Mountain size={16} className="text-gray-400 shrink-0" />
-                                    <span>Max Altitude: {formatAltitude(day.maxAltitude, day.altitudeUnit)}</span>
+                                    <span>Max Altitude: {formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}</span>
                                   </div>
                                 )}
                                 {day.distance && (
