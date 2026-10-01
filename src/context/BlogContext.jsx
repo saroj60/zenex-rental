@@ -50,7 +50,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "annapurna-circuit-vs-abc",
     "title": "Annapurna Circuit vs. Annapurna Base Camp (ABC): Which Trek is Right for You?",
-    "coverImage": "https://images.unsplash.com/photo-1585409677983-0f6c41ca913b?q=80&w=2069",
+    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070",
     "category": "Trekking Guides",
     "author": "Zenex Trek Specialist",
     "date": "2026-09-03T10:00:00.000Z",
@@ -70,7 +70,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "top-10-nepal-tours-2026",
     "title": "Top 10 Best Cultural & Nature Tours in Nepal for Families & Couples (2026)",
-    "coverImage": "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?q=80&w=2070",
+    "coverImage": "/hero-kathmandu-durbar.jpg",
     "category": "Tour Guides",
     "author": "Zenex Tour Operations",
     "date": "2026-09-07T10:00:00.000Z",
