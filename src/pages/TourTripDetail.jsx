@@ -707,15 +707,15 @@ const TourTripDetail = () => {
             </section>
 
             {/* Outline Itinerary Section */}
-            <section id="outline-itinerary" className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 font-sans">
+            <section id="outline-itinerary" className="bg-white p-4 sm:p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24 font-sans">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3 font-sans"><List className="text-[#10b981]" size={28} /> Outline Itinerary</h2>
-              <div className="overflow-hidden rounded-2xl border border-blue-100 font-sans">
+              <div className="overflow-x-auto rounded-2xl border border-blue-100 font-sans">
                 <table className="w-full text-left text-sm border-collapse font-sans">
                   <thead>
                     <tr className="bg-[#5cc0e6] text-white font-bold">
-                      <th className="px-6 py-4 text-left font-bold text-white text-sm font-sans">Itinerary</th>
-                      <th className="px-6 py-4 text-left font-bold text-white text-sm font-sans">Max Altitude</th>
-                      <th className="px-6 py-4 text-left font-bold text-white text-sm font-sans">Walking/Hiking</th>
+                      <th className="px-3 sm:px-6 py-3 sm:py-4 text-left font-bold text-white text-xs sm:text-sm font-sans">Itinerary</th>
+                      <th className="px-3 sm:px-6 py-3 sm:py-4 text-left font-bold text-white text-xs sm:text-sm font-sans">Max Altitude</th>
+                      <th className="px-3 sm:px-6 py-3 sm:py-4 text-left font-bold text-white text-xs sm:text-sm font-sans">Walking/Hiking</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-blue-50 font-sans">
@@ -725,15 +725,15 @@ const TourTripDetail = () => {
                         const isEven = idx % 2 === 1;
                         return (
                           <tr key={idx} className={isEven ? 'bg-[#eef8fc]' : 'bg-white'}>
-                            <td className="px-6 py-4 font-medium text-gray-900 text-sm text-left font-sans">DAY {dayNum}: {day.title}</td>
-                            <td className="px-6 py-4 text-gray-600 text-sm text-left whitespace-nowrap font-sans">{formatAltitude(day.maxAltitude, day.altitudeUnit)}</td>
-                            <td className="px-6 py-4 text-gray-600 text-sm text-left whitespace-nowrap font-sans">{getWalkingOrHiking(day)}</td>
+                            <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-xs sm:text-sm text-left font-sans">DAY {dayNum}: {day.title}</td>
+                            <td className="px-3 sm:px-6 py-3 sm:py-4 text-gray-600 text-xs sm:text-sm text-left whitespace-nowrap font-sans">{formatAltitude(day.maxAltitude, day.altitudeUnit)}</td>
+                            <td className="px-3 sm:px-6 py-3 sm:py-4 text-gray-600 text-xs sm:text-sm text-left whitespace-nowrap font-sans">{getWalkingOrHiking(day)}</td>
                           </tr>
                         );
                       })
                     ) : (
                       <tr>
-                        <td colSpan="3" className="px-6 py-4 text-center text-gray-500 italic font-sans">Itinerary outline not available.</td>
+                        <td colSpan="3" className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-500 italic font-sans">Itinerary outline not available.</td>
                       </tr>
                     )}
                   </tbody>
