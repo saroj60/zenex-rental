@@ -5,6 +5,9 @@ import { motion } from 'framer-motion';
 import SearchWidget from './SearchWidget';
 
 const heroImages = [
+  '/hero-kathmandu-durbar.jpg',       // Kathmandu Durbar Square
+  '/hero-paragliding-mountain.jpg',   // Paragliding near Machhapuchhre, Pokhara
+  '/hero-chitwan-elephant.jpg',       // Chitwan elephant safari
   'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=100&w=2000&auto=format&fit=crop', // High res mountain peak
   'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?q=100&w=2000&auto=format&fit=crop', // High res mountain road with vehicle
   'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=100&w=2000&auto=format&fit=crop'  // High res Everest base camp / Nepal landscape
