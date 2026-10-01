@@ -10,7 +10,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "mustang-jeep-rental-guide",
     "title": "Ultimate Guide to Renting a 4x4 Jeep in Nepal for Mustang & Manang",
-    "coverImage": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2070",
+    "coverImage": "/vehicles/Mahindra Scorpio.jpg",
     "category": "Car Rental Tips",
     "author": "Zenex Travel Experts",
     "date": "2026-08-10T12:00:00.000Z",
@@ -20,7 +20,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "ebc-packing-list",
     "title": "Everest Base Camp Trek Packing List: Essential Gear Checklist",
-    "coverImage": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2076",
+    "coverImage": "/images/Everest Base Camp & Gokyo.jpg",
     "category": "Trekking Guides",
     "author": "Guide Pasang Sherpa",
     "date": "2026-08-12T12:00:00.000Z",
@@ -30,7 +30,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "pokhara-adventure-guide",
     "title": "Top 7 Adventure Activities to Experience in Pokhara",
-    "coverImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=2074",
+    "coverImage": "/hero-paragliding-mountain.jpg",
     "category": "Activity Highlights",
     "author": "Tourism Editor Milan",
     "date": "2026-08-14T12:00:00.000Z",
@@ -40,7 +40,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "ebc-trek-guide-2026",
     "title": "Everest Base Camp Trek Guide 2026: Route, Cost, Altitude & Gear Checklist",
-    "coverImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2071",
+    "coverImage": "/images/everest base.jpg",
     "category": "Trekking Guides",
     "author": "Senior Guide Pemba Sherpa",
     "date": "2026-09-01T10:00:00.000Z",
@@ -50,7 +50,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "annapurna-circuit-vs-abc",
     "title": "Annapurna Circuit vs. Annapurna Base Camp (ABC): Which Trek is Right for You?",
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070",
+    "coverImage": "/images/manang2.jpg",
     "category": "Trekking Guides",
     "author": "Zenex Trek Specialist",
     "date": "2026-09-03T10:00:00.000Z",
@@ -60,7 +60,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "langtang-valley-trek-guide",
     "title": "Langtang Valley Trek: Nepal's Most Scenic, Accessible & Culturally Rich Himalayan Hike",
-    "coverImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=2070",
+    "coverImage": "/images/langtang1.jpg",
     "category": "Trekking Guides",
     "author": "Trekking Lead Dorje Tamang",
     "date": "2026-09-05T10:00:00.000Z",
@@ -80,7 +80,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "upper-mustang-4x4-overland",
     "title": "Upper Mustang Overland 4x4 Tour: Exploring the Walled Kingdom of Lo Manthang",
-    "coverImage": "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?q=80&w=2070",
+    "coverImage": "/images/upper mustang.jpg",
     "category": "Tour Guides",
     "author": "Mustang Specialist Karma Gurung",
     "date": "2026-09-09T10:00:00.000Z",
@@ -90,7 +90,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "nepal-travel-guide-2026",
     "title": "Nepal Travel Guide 2026: Visas, Best Seasons, Local Etiquette & Car Rental",
-    "coverImage": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070",
+    "coverImage": "/images/kathmandu.jpg",
     "category": "Travel Tips",
     "author": "Zenex Editorial Team",
     "date": "2026-09-10T10:00:00.000Z",
@@ -100,7 +100,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "ghorepani-poonhill-ghandruk-guide",
     "title": "Ghorepani Poon Hill & Ghandruk Trek: Complete Short Annapurna Guide for Beginners",
-    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070",
+    "coverImage": "/images/Ghorepani Poon Hill.jpg",
     "category": "Trekking Guides",
     "author": "Guide Sunita Gurung",
     "date": "2026-09-11T10:00:00.000Z",
@@ -110,7 +110,7 @@ const STATIC_FALLBACK_BLOGS = [
   {
     "id": "chitwan-pokhara-7-day-tour",
     "title": "Chitwan Wildlife Safari & Pokhara Lake Tour: The Ultimate 7-Day Road Trip",
-    "coverImage": "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070",
+    "coverImage": "/hero-chitwan-elephant.jpg",
     "category": "Tour Guides",
     "author": "Zenex Safari & Tour Team",
     "date": "2026-09-12T10:00:00.000Z",
