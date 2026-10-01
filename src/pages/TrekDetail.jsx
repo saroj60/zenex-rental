@@ -34,6 +34,7 @@ const TrekDetail = () => {
   
   const [trek, setTrek] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [heroTouchStartX, setHeroTouchStartX] = useState(null);
 
   const [packageType, setPackageType] = useState('Budget');
   const [date, setDate] = useState('');
@@ -320,15 +321,53 @@ const TrekDetail = () => {
 
           return (
             <div className="relative h-full w-full">
-              {/* Mobile View: Single clean full-width hero image with photo count badge */}
-              <div className="md:hidden relative h-full w-full rounded-xl overflow-hidden">
-                <div 
-                  className="absolute inset-0 w-full h-full bg-cover bg-center"
-                  style={{ backgroundImage: `url("${displayImages[0]}")` }}
-                />
+              {/* Mobile View: Swipe slider hero */}
+              <div
+                className="md:hidden relative h-full w-full rounded-xl overflow-hidden"
+                onTouchStart={(e) => setHeroTouchStartX(e.touches[0].clientX)}
+                onTouchEnd={(e) => {
+                  if (heroTouchStartX === null) return;
+                  const diff = heroTouchStartX - e.changedTouches[0].clientX;
+                  if (Math.abs(diff) > 40) {
+                    const next = diff > 0
+                      ? (currentImageIndex + 1) % displayImages.length
+                      : (currentImageIndex - 1 + displayImages.length) % displayImages.length;
+                    setCurrentImageIndex(next);
+                  }
+                  setHeroTouchStartX(null);
+                }}
+              >
+                {/* Sliding strip */}
+                <div
+                  className="flex h-full transition-transform duration-500 ease-in-out"
+                  style={{ width: `${displayImages.length * 100}%`, transform: `translateX(-${(currentImageIndex * 100) / displayImages.length}%)` }}
+                >
+                  {displayImages.map((img, idx) => (
+                    <div
+                      key={idx}
+                      className="h-full flex-shrink-0 bg-cover bg-center"
+                      style={{ width: `${100 / displayImages.length}%`, backgroundImage: `url("${img}")` }}
+                    />
+                  ))}
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
+
+                {/* Dot indicators */}
                 {displayImages.length > 1 && (
-                  <button 
+                  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-20">
+                    {displayImages.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setCurrentImageIndex(idx)}
+                        className={`rounded-full transition-all duration-300 ${idx === currentImageIndex ? 'w-4 h-1.5 bg-white' : 'w-1.5 h-1.5 bg-white/50'}`}
+                      />
+                    ))}
+                  </div>
+                )}
+
+                {/* Photo count badge */}
+                {displayImages.length > 1 && (
+                  <button
                     onClick={() => {
                       const el = document.getElementById('gallery');
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -336,10 +375,11 @@ const TrekDetail = () => {
                     className="absolute bottom-3 right-3 z-20 bg-black/70 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg border border-white/20 active:scale-95 transition-transform"
                   >
                     <ImageIcon size={14} />
-                    <span>1 / {displayImages.length} Photos</span>
+                    <span>{currentImageIndex + 1} / {displayImages.length} Photos</span>
                   </button>
                 )}
               </div>
+
 
               {/* Desktop View: Multi-column interactive accordion gallery */}
               <div className="hidden md:flex h-full w-full gap-2 md:gap-3 relative z-0">
