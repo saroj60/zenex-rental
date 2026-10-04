@@ -15,7 +15,14 @@ import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList,
 
 
 const BOILERPLATE_RE = /^(depending on your arrival|on arrival at|you will then be transferred|receive your complimentary|dedicated dedicated representative|welcome to your hotel|today is your last day|wake up early|after breakfast.*we will drive|our representative will meet|our representative will greet)/i;
-const FORBIDDEN_HIGHLIGHT_RE = /(cultural sightseeing|explore bhaktapur durbar square \(unesco\)|^\s*kathmandu\s*$|^\s*pokhara\s*$|^\s*bhaktapur\s*$|^\s*patan\s*$|^\s*rest & exploration day\s*$|^\s*full day trekking\s*$|\s{2,})/i;
+const FORBIDDEN_HIGHLIGHT_RE = /(cultural sightseeing|explore bhaktapur durbar square \(unesco\)|^\s*kathmandu\s*$|^\s*pokhara\s*$|^\s*bhaktapur\s*$|^\s*patan\s*$|^\s*rest & exploration day\s*$|^\s*full day trekking\s*$|\s{2,}|\d+\s*m\s+elevation|elevation\s+terrain|elevation\s+with\s+mountain|reach\s+altitude\s+of|\d+\s*m\s+–\s+high\s+camp|altitude\s+of\s+\d+|elevation\s+panoramas|\b\d{3,4}\s*m\b.*elevation|elevation.*\b\d{3,4}\s*m\b|acclimatiz.*higher\s+elevation|reach\s+extreme\s+altitude|^\s*trek\s+(to|through)\s+\d+\s*m\b|^\s*reach\s+altitude|^\s*summit\s+attempt\s+at\s+\d+\s*m|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight|fly|journey)\s+from\s+|^\s*scenic drive to lakeside pokhara valley\s*$|^\s*scenic flight from flight\b|^\s*scenic trek from (full|tiger)\b|^\s*(trek|drive|flight|scenic flight|scenic drive|scenic trek)\s+to\s+(lakeside\s+pokhara\s+valley|\d+\s*m\b)|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight)\s+from\s+.+\s+to\s+.+)/i;
+
+const stripAltitudeAnnotation = (str) => (str || '')
+  .replace(/\s*\(?\s*[\d,.]+\s*(?:m|ft)\s*(?:\/\s*[\d,.]+\s*(?:m|ft))?\s*\)?/gi, '')
+  .replace(/\[\s*altitude.*?\]/gi, '')
+  .replace(/\s*\(approx.*?\)/gi, '')
+  .replace(/\s{2,}/g, ' ')
+  .trim();
 
 const extractDayHighlights = (description, title = '', maxCount = 4) => {
   if (title) {
@@ -38,7 +45,7 @@ const extractDayHighlights = (description, title = '', maxCount = 4) => {
   const sentences = description
     .replace(/\n+/g, ' ')
     .split(/(?<=[.!?])\s+/)
-    .map(s => s.trim())
+    .map(s => stripAltitudeAnnotation(s.trim()))
     .filter(s => s.length > 20 && s.length < 180 && !BOILERPLATE_RE.test(s) && !FORBIDDEN_HIGHLIGHT_RE.test(s));
   const actionRe = /\b(visit|explore|drive|trek|arrive|depart|enjoy|experience|cross|reach|ascend|descend|hike|walk|fly|travel|discover|witness|observe|sightseeing|tour|climb|safari|boating|cable car)\b/i;
   const action = sentences.filter(s => actionRe.test(s));
@@ -51,17 +58,17 @@ const getDayHighlights = (day) => {
   const raw = day.highlights || day.dayHighlights;
   if (Array.isArray(raw) && raw.length > 0) {
     const cleaned = raw
-      .map(h => (typeof h === 'string' ? h.trim() : (h?.text || '')))
+      .map(h => stripAltitudeAnnotation(typeof h === 'string' ? h.trim() : (h?.text || '')))
       .filter(h => h && h.length > 3 && !BOILERPLATE_RE.test(h) && !FORBIDDEN_HIGHLIGHT_RE.test(h));
     if (cleaned.length > 0) return cleaned;
   } else if (typeof raw === 'string' && raw.trim().length > 3) {
     const split = raw
       .split(/\r?\n|;/)
-      .map(s => s.trim().replace(/^[-•*]\s*/, ''))
+      .map(s => stripAltitudeAnnotation(s.trim().replace(/^[-•*]\s*/, '')))
       .filter(s => s.length > 3 && !BOILERPLATE_RE.test(s) && !FORBIDDEN_HIGHLIGHT_RE.test(s));
     if (split.length > 0) return split;
   }
-  return extractDayHighlights(day.desc || day.description, day.title);
+  return extractDayHighlights(day.details || day.desc || day.description, day.title);
 };
 
 const TrekDetail = () => {
