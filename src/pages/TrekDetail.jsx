@@ -779,6 +779,7 @@ const TrekDetail = () => {
                           {/* Day Highlights Metadata */}
                           {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
                             <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl font-sans">
+                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5 font-sans">DAY HIGHLIGHTS</h4>
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600 font-sans">
                                 {day.maxAltitude && (
                                   <div className="flex items-center gap-2">

@@ -833,6 +833,7 @@ const TourTripDetail = () => {
                           {/* Day Facts */}
                           {(day.maxAltitude || day.altitude || day.distance || day.walkingDuration || day.accommodation || day.modeOfTravel || day.transport || day.travelMode || day.meals) && (
                             <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
+                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5">DAY HIGHLIGHTS</h4>
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
                                 {(day.maxAltitude || day.altitude) && (
                                   <div className="flex items-center gap-2">
