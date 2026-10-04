@@ -15,12 +15,13 @@ import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList,
 
 
 const BOILERPLATE_RE = /^(depending on your arrival|on arrival at|you will then be transferred|receive your complimentary|dedicated dedicated representative|welcome to your hotel|today is your last day|wake up early|after breakfast.*we will drive|our representative will meet|our representative will greet)/i;
-const FORBIDDEN_HIGHLIGHT_RE = /(cultural sightseeing|explore bhaktapur durbar square \(unesco\)|^\s*kathmandu\s*$|^\s*pokhara\s*$|^\s*bhaktapur\s*$|^\s*patan\s*$|^\s*rest & exploration day\s*$|^\s*full day trekking\s*$|\s{2,}|\d+\s*m\s+elevation|elevation\s+terrain|elevation\s+with\s+mountain|reach\s+altitude\s+of|\d+\s*m\s+–\s+high\s+camp|altitude\s+of\s+\d+|elevation\s+panoramas|\b\d{3,4}\s*m\b.*elevation|elevation.*\b\d{3,4}\s*m\b|acclimatiz.*higher\s+elevation|reach\s+extreme\s+altitude|^\s*trek\s+(to|through)\s+\d+\s*m\b|^\s*reach\s+altitude|^\s*summit\s+attempt\s+at\s+\d+\s*m|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight|fly|journey)\s+from\s+|^\s*scenic drive to lakeside pokhara valley\s*$|^\s*scenic flight from flight\b|^\s*scenic trek from (full|tiger)\b|^\s*(trek|drive|flight|scenic flight|scenic drive|scenic trek)\s+to\s+(lakeside\s+pokhara\s+valley|\d+\s*m\b)|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight)\s+from\s+.+\s+to\s+.+)/i;
+const FORBIDDEN_HIGHLIGHT_RE = /(cultural sightseeing|explore bhaktapur durbar square|^\s*kathmandu\s*$|^\s*pokhara\s*$|^\s*bhaktapur\s*$|^\s*patan\s*$|^\s*rest & exploration day\s*$|^\s*full day trekking\s*$|\s{2,}|\d+\s*m\s+elevation|elevation\s+terrain|elevation\s+with\s+mountain|reach\s+altitude\s+of|\d+\s*m\s+–\s+high\s+camp|altitude\s+of\s+\d+|elevation\s+panoramas|\b\d{3,4}\s*m\b.*elevation|elevation.*\b\d{3,4}\s*m\b|acclimatiz.*higher\s+elevation|reach\s+extreme\s+altitude|^\s*trek\s+(to|through)\s+\d+\s*m\b|^\s*reach\s+altitude|^\s*summit\s+attempt\s+at\s+\d+\s*m|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight|fly|journey)\s+from\s+|^\s*scenic drive to lakeside pokhara valley\s*$|^\s*scenic flight from flight\b|^\s*scenic trek from (full|tiger)\b|^\s*(trek|drive|flight|scenic flight|scenic drive|scenic trek)\s+to\s+(lakeside\s+pokhara\s+valley|\d+\s*m\b)|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight)\s+from\s+.+\s+to\s+.+|^\s*visit\s+(?:sacred\s+)?pashupatinath\b|^\s*visit\s+boudhanath\b|^\s*explore\s+boudhanath\b|^\s*visit\s+kathmandu\s+durbar\s+square|spiritual\s+practice|meditation\s+session|\(unesco|explore\s+pokhara\s+lakeside\s+city)/i;
 
 const stripAltitudeAnnotation = (str) => (str || '')
   .replace(/\s*\(?\s*[\d,.]+\s*(?:m|ft)\s*(?:\/\s*[\d,.]+\s*(?:m|ft))?\s*\)?/gi, '')
   .replace(/\[\s*altitude.*?\]/gi, '')
   .replace(/\s*\(approx.*?\)/gi, '')
+  .replace(/\s*\((?:unesco|world heritage).*?\)/gi, '')
   .replace(/\s{2,}/g, ' ')
   .trim();
 
