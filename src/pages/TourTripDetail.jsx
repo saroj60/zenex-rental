@@ -51,17 +51,53 @@ export const defaultTourEquipment = [
   }
 ];
 
-const extractDayHighlights = (description, maxCount = 5) => {
+const BOILERPLATE_RE = /^(depending on your arrival|on arrival at|you will then be transferred|receive your complimentary|dedicated dedicated representative|welcome to your hotel|today is your last day|wake up early|after breakfast.*we will drive|our representative will meet|our representative will greet)/i;
+
+const extractDayHighlights = (description, title = '', maxCount = 4) => {
+  if (title) {
+    if (/\barriv/i.test(title)) {
+      return [
+        'Airport pickup & private hotel transfer',
+        'Trip briefing, welcome Khada & orientation',
+        'Leisure time for evening city exploration'
+      ];
+    }
+    if (/depart|departure|final\s*day|last\s*day/i.test(title)) {
+      return [
+        'Breakfast & hotel check-out',
+        'Free time for souvenir shopping in Thamel',
+        'Private transfer to airport for departure'
+      ];
+    }
+  }
   if (!description) return [];
   const sentences = description
     .replace(/\n+/g, ' ')
     .split(/(?<=[.!?])\s+/)
     .map(s => s.trim())
-    .filter(s => s.length > 25 && s.length < 220);
-  const actionRe = /\b(visit|explore|drive|trek|arrive|depart|enjoy|experience|cross|reach|ascend|descend|hike|walk|fly|travel|discover|witness|observe|transfer|check.in|board|return|head|proceed|continue|start|begin|complete|camp|rest|acclimatize|sightseeing|tour|navigate|pass|climb|descend)\b/i;
+    .filter(s => s.length > 20 && s.length < 180 && !BOILERPLATE_RE.test(s));
+  const actionRe = /\b(visit|explore|drive|trek|arrive|depart|enjoy|experience|cross|reach|ascend|descend|hike|walk|fly|travel|discover|witness|observe|sightseeing|tour|climb|safari|boating|cable car)\b/i;
   const action = sentences.filter(s => actionRe.test(s));
   const rest   = sentences.filter(s => !actionRe.test(s));
   return [...action, ...rest].slice(0, maxCount);
+};
+
+const getDayHighlights = (day) => {
+  if (!day) return [];
+  const raw = day.highlights || day.dayHighlights;
+  if (Array.isArray(raw) && raw.length > 0) {
+    const cleaned = raw
+      .map(h => (typeof h === 'string' ? h.trim() : (h?.text || '')))
+      .filter(h => h && h.length > 3 && !BOILERPLATE_RE.test(h));
+    if (cleaned.length > 0) return cleaned;
+  } else if (typeof raw === 'string' && raw.trim().length > 3) {
+    const split = raw
+      .split(/\r?\n|;/)
+      .map(s => s.trim().replace(/^[-•*]\s*/, ''))
+      .filter(s => s.length > 3 && !BOILERPLATE_RE.test(s));
+    if (split.length > 0) return split;
+  }
+  return extractDayHighlights(day.description || day.desc, day.title);
 };
 
 const TourTripDetail = () => {
@@ -847,7 +883,7 @@ const TourTripDetail = () => {
                               <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Day Highlights</h4>
                               {/* Activity bullets extracted from description */}
                               {(() => {
-                                const pts = extractDayHighlights(day.description || day.desc);
+                                const pts = getDayHighlights(day);
                                 return pts.length > 0 ? (
                                   <ul className="mb-3 space-y-1.5">
                                     {pts.map((pt, pi) => (
