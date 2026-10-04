@@ -52,6 +52,7 @@ export const defaultTourEquipment = [
 ];
 
 const BOILERPLATE_RE = /^(depending on your arrival|on arrival at|you will then be transferred|receive your complimentary|dedicated dedicated representative|welcome to your hotel|today is your last day|wake up early|after breakfast.*we will drive|our representative will meet|our representative will greet)/i;
+const FORBIDDEN_HIGHLIGHT_RE = /(cultural sightseeing|explore bhaktapur durbar square \(unesco\)|^\s*kathmandu\s*$|^\s*pokhara\s*$|^\s*bhaktapur\s*$|^\s*patan\s*$|^\s*rest & exploration day\s*$|^\s*full day trekking\s*$|\s{2,})/i;
 
 const extractDayHighlights = (description, title = '', maxCount = 4) => {
   if (title) {
@@ -75,7 +76,7 @@ const extractDayHighlights = (description, title = '', maxCount = 4) => {
     .replace(/\n+/g, ' ')
     .split(/(?<=[.!?])\s+/)
     .map(s => s.trim())
-    .filter(s => s.length > 20 && s.length < 180 && !BOILERPLATE_RE.test(s));
+    .filter(s => s.length > 20 && s.length < 180 && !BOILERPLATE_RE.test(s) && !FORBIDDEN_HIGHLIGHT_RE.test(s));
   const actionRe = /\b(visit|explore|drive|trek|arrive|depart|enjoy|experience|cross|reach|ascend|descend|hike|walk|fly|travel|discover|witness|observe|sightseeing|tour|climb|safari|boating|cable car)\b/i;
   const action = sentences.filter(s => actionRe.test(s));
   const rest   = sentences.filter(s => !actionRe.test(s));
@@ -88,13 +89,13 @@ const getDayHighlights = (day) => {
   if (Array.isArray(raw) && raw.length > 0) {
     const cleaned = raw
       .map(h => (typeof h === 'string' ? h.trim() : (h?.text || '')))
-      .filter(h => h && h.length > 3 && !BOILERPLATE_RE.test(h));
+      .filter(h => h && h.length > 3 && !BOILERPLATE_RE.test(h) && !FORBIDDEN_HIGHLIGHT_RE.test(h));
     if (cleaned.length > 0) return cleaned;
   } else if (typeof raw === 'string' && raw.trim().length > 3) {
     const split = raw
       .split(/\r?\n|;/)
       .map(s => s.trim().replace(/^[-•*]\s*/, ''))
-      .filter(s => s.length > 3 && !BOILERPLATE_RE.test(s));
+      .filter(s => s.length > 3 && !BOILERPLATE_RE.test(s) && !FORBIDDEN_HIGHLIGHT_RE.test(s));
     if (split.length > 0) return split;
   }
   return extractDayHighlights(day.description || day.desc, day.title);
