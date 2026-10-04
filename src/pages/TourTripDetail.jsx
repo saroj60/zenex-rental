@@ -830,29 +830,32 @@ const TourTripDetail = () => {
                             </div>
                           )}
 
-                          {/* Day Highlights */}
-                          {Array.isArray(day.highlights) && day.highlights.length > 0 && (
-                            <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
-                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5">DAY HIGHLIGHTS</h4>
-                              <ul className="space-y-1.5 mb-4">
-                                {day.highlights.map((pt, pi) => (
-                                  <li key={pi} className="flex items-start gap-2 text-sm text-gray-700">
-                                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
-                                    <span>{typeof pt === 'string' ? pt : (pt?.text || pt?.title || '')}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
-
                           {/* Day Facts */}
-                          {(day.maxAltitude || day.distance || day.walkingDuration || day.accommodation || day.modeOfTravel) && (
+                          {(day.maxAltitude || day.altitude || day.distance || day.walkingDuration || day.accommodation || day.modeOfTravel || day.transport || day.travelMode || day.meals) && (
                             <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
                                 {(day.maxAltitude || day.altitude) && (
                                   <div className="flex items-center gap-2">
                                     <Mountain size={16} className="text-gray-400 shrink-0" />
                                     <span>Max Altitude: {formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}</span>
+                                  </div>
+                                )}
+                                {(day.modeOfTravel || day.transport || day.travelMode) && (
+                                  <div className="flex items-center gap-2">
+                                    <Car size={16} className="text-gray-400 shrink-0" />
+                                    <span>Mode of Travel: {day.modeOfTravel || day.transport || day.travelMode}</span>
+                                  </div>
+                                )}
+                                {day.accommodation && (
+                                  <div className="flex items-center gap-2">
+                                    <Bed size={16} className="text-gray-400 shrink-0" />
+                                    <span>Accommodation: {day.accommodation}</span>
+                                  </div>
+                                )}
+                                {day.meals && (
+                                  <div className="flex items-center gap-2">
+                                    <Utensils size={16} className="text-gray-400 shrink-0" />
+                                    <span>Meals: {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
                                   </div>
                                 )}
                                 {day.distance && (
@@ -867,25 +870,7 @@ const TourTripDetail = () => {
                                     <span>Duration: {day.walkingDuration}</span>
                                   </div>
                                 )}
-                                {day.accommodation && (
-                                  <div className="flex items-center gap-2">
-                                    <Bed size={16} className="text-gray-400 shrink-0" />
-                                    <span>Accommodation: {day.accommodation}</span>
-                                  </div>
-                                )}
-                                {day.modeOfTravel && (
-                                  <div className="flex items-center gap-2">
-                                    <Car size={16} className="text-gray-400 shrink-0" />
-                                    <span>Mode of Travel: {day.modeOfTravel}</span>
-                                  </div>
-                                )}
                               </div>
-                              {day.meals && (
-                                <div className="mt-3 flex items-center gap-1.5 text-xs text-gray-500 font-bold">
-                                  <Coffee size={14} className="text-orange-400" />
-                                  <span>Meals: {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
-                                </div>
-                              )}
                             </div>
                           )}
                         </div>

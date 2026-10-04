@@ -775,20 +775,6 @@ const TrekDetail = () => {
                             </div>
                           )}
 
-                          {/* Day Highlights */}
-                          {Array.isArray(day.highlights) && day.highlights.length > 0 && (
-                            <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl font-sans">
-                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5 font-sans">DAY HIGHLIGHTS</h4>
-                              <ul className="space-y-1.5 mb-4">
-                                {day.highlights.map((pt, pi) => (
-                                  <li key={pi} className="flex items-start gap-2 text-sm text-gray-700 font-sans">
-                                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
-                                    <span>{typeof pt === 'string' ? pt : (pt?.text || pt?.title || '')}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
 
                           {/* Day Highlights Metadata */}
                           {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
