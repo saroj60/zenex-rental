@@ -52,7 +52,7 @@ export const defaultTourEquipment = [
 ];
 
 const BOILERPLATE_RE = /^(depending on your arrival|on arrival at|you will then be transferred|receive your complimentary|dedicated dedicated representative|welcome to your hotel|today is your last day|wake up early|after breakfast.*we will drive|our representative will meet|our representative will greet)/i;
-const FORBIDDEN_HIGHLIGHT_RE = /(cultural sightseeing|explore bhaktapur durbar square|^\s*kathmandu\s*$|^\s*pokhara\s*$|^\s*bhaktapur\s*$|^\s*patan\s*$|^\s*rest & exploration day\s*$|^\s*full day trekking\s*$|\s{2,}|\d+\s*m\s+elevation|elevation\s+terrain|elevation\s+with\s+mountain|reach\s+altitude\s+of|\d+\s*m\s+–\s+high\s+camp|altitude\s+of\s+\d+|elevation\s+panoramas|\b\d{3,4}\s*m\b.*elevation|elevation.*\b\d{3,4}\s*m\b|acclimatiz.*higher\s+elevation|reach\s+extreme\s+altitude|^\s*trek\s+(to|through)\s+\d+\s*m\b|^\s*reach\s+altitude|^\s*summit\s+attempt\s+at\s+\d+\s*m|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight|fly|journey)\s+from\s+|^\s*scenic drive to lakeside pokhara valley\s*$|^\s*scenic flight from flight\b|^\s*scenic trek from (full|tiger)\b|^\s*(trek|drive|flight|scenic flight|scenic drive|scenic trek)\s+to\s+(lakeside\s+pokhara\s+valley|\d+\s*m\b)|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight)\s+from\s+.+\s+to\s+.+|^\s*visit\s+(?:sacred\s+)?pashupatinath\b|^\s*visit\s+boudhanath\b|^\s*explore\s+boudhanath\b|^\s*visit\s+kathmandu\s+durbar\s+square|spiritual\s+practice|meditation\s+session|\(unesco|explore\s+pokhara\s+lakeside\s+city)/i;
+const FORBIDDEN_HIGHLIGHT_RE = /(cultural sightseeing|explore bhaktapur durbar square|^\s*kathmandu\s*$|^\s*pokhara\s*$|^\s*bhaktapur\s*$|^\s*patan\s*$|^\s*rest & exploration day\s*$|^\s*full day trekking\s*$|\s{2,}|\d+\s*m\s+elevation|elevation\s+terrain|elevation\s+with\s+mountain|reach\s+altitude\s+of|\d+\s*m\s+–\s+high\s+camp|altitude\s+of\s+\d+|elevation\s+panoramas|\b\d{3,4}\s*m\b.*elevation|elevation.*\b\d{3,4}\s*m\b|acclimatiz.*higher\s+elevation|reach\s+extreme\s+altitude|^\s*trek\s+(to|through)\s+\d+\s*m\b|^\s*reach\s+altitude|^\s*summit\s+attempt\s+at\s+\d+\s*m|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight|fly|journey)\s+from\s+|^\s*scenic drive to lakeside pokhara valley\s*$|^\s*scenic flight from flight\b|^\s*scenic trek from (full|tiger)\b|^\s*(trek|drive|flight|scenic flight|scenic drive|scenic trek)\s+to\s+(lakeside\s+pokhara\s+valley|\d+\s*m\b)|^\s*(trek|scenic trek|drive|scenic drive|flight|scenic flight)\s+from\s+.+\s+to\s+.+|^\s*visit\s+(?:sacred\s+)?pashupatinath\b|^\s*visit\s+boudhanath\b|^\s*explore\s+boudhanath\b|^\s*visit\s+kathmandu\s+durbar\s+square|spiritual\s+practice|meditation\s+session|\(unesco|explore\s+pokhara\s+lakeside\s+city|airport\s+(welcome|pickup|transfer|drop)|hotel\s+(check-in|check\s*in|check-out|check\s*out|checkout)|welcome\s+briefing|welcome\s+khada|evening\s+stroll|souvenir\s+shopping|farewell\s+to\s+nepal|leisure\s+time\s+for\s+evening)/i;
 
 const stripAltitudeAnnotation = (str) => (str || '')
   .replace(/\s*\(?\s*[\d,.]+\s*(?:m|ft)\s*(?:\/\s*[\d,.]+\s*(?:m|ft))?\s*\)?/gi, '')
@@ -64,19 +64,8 @@ const stripAltitudeAnnotation = (str) => (str || '')
 
 const extractDayHighlights = (description, title = '', maxCount = 4) => {
   if (title) {
-    if (/\barriv/i.test(title)) {
-      return [
-        'Airport pickup & private hotel transfer',
-        'Trip briefing, welcome Khada & orientation',
-        'Leisure time for evening city exploration'
-      ];
-    }
-    if (/depart|departure|final\s*day|last\s*day/i.test(title)) {
-      return [
-        'Breakfast & hotel check-out',
-        'Free time for souvenir shopping in Thamel',
-        'Private transfer to airport for departure'
-      ];
+    if (/\barriv/i.test(title) || /depart|departure|final\s*day|last\s*day/i.test(title)) {
+      return [];
     }
   }
   if (!description) return [];
@@ -889,19 +878,21 @@ const TourTripDetail = () => {
                           {/* Day Facts */}
                           {(day.maxAltitude || day.distance || day.walkingDuration || day.accommodation || day.modeOfTravel) && (
                             <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
-                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Day Highlights</h4>
                               {/* Activity bullets extracted from description */}
                               {(() => {
                                 const pts = getDayHighlights(day);
                                 return pts.length > 0 ? (
-                                  <ul className="mb-3 space-y-1.5">
-                                    {pts.map((pt, pi) => (
-                                      <li key={pi} className="flex items-start gap-2 text-sm text-gray-700">
-                                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
-                                        <span>{pt}</span>
-                                      </li>
-                                    ))}
-                                  </ul>
+                                  <div className="mb-4">
+                                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5">Day Highlights</h4>
+                                    <ul className="space-y-1.5">
+                                      {pts.map((pt, pi) => (
+                                        <li key={pi} className="flex items-start gap-2 text-sm text-gray-700">
+                                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                                          <span>{pt}</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
                                 ) : null;
                               })()}
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
