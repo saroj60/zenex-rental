@@ -387,13 +387,13 @@ export const formatMarkdownToHTML = (text) => {
   html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
 
   // 5. Bullet list items
-  html = html.replace(/^[*\-]\s+(.*?)$/gm, '<li class="ml-5 list-disc my-1.5 text-gray-700 font-semibold">$1</li>');
+  html = html.replace(/^[*\-]\s+(.*?)$/gm, '<li class="ml-5 list-disc my-1 text-gray-800 font-medium">$1</li>');
 
   // Catch any remaining inline "- " bullet items
-  html = html.replace(/\s*-\s+(<strong>.*?<\/strong>.*?)(?=(?:\s*-\s+|<h[1-6]|<p|$))/g, '<li class="ml-5 list-disc my-1.5 text-gray-700 font-semibold">$1</li>');
+  html = html.replace(/\s*-\s+(<strong>.*?<\/strong>.*?)(?=(?:\s*-\s+|<h[1-6]|<p|$))/g, '<li class="ml-5 list-disc my-1 text-gray-800 font-medium">$1</li>');
 
   // 6. Wrap consecutive <li> items in <ul>
-  html = html.replace(/((?:<li class="ml-5 list-disc my-1.5 text-gray-700 font-semibold">[\s\S]*?<\/li>\s*)+)/g, '<ul class="my-4 space-y-1.5 list-disc pl-5">\n$1</ul>\n');
+  html = html.replace(/((?:<li class="ml-5 list-disc my-1 text-gray-800 font-medium">[\s\S]*?<\/li>\s*)+)/g, '<ul class="my-3 space-y-1.5 list-disc pl-5">\n$1</ul>\n');
 
   // 7. Paragraph breaks
   html = html.replace(/\n\n+/g, '</p><p class="mt-4 text-gray-700 leading-relaxed text-justify">');
