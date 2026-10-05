@@ -36,11 +36,39 @@ const TrekDetail = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const foundTrek = (treks || []).find(t => t.id === id || t.slug === id || t.id === `TRIP-${id}` || t.slug === `TRIP-${id}`) ||
-                      (tourTrips || []).find(t => (t.id === id || t.slug === id || t.id === `TRIP-${id}` || t.slug === `TRIP-${id}`) && (t.category === 'Treks' || t.category === 'Trek' || t.title?.toLowerCase().includes('trek'))) ||
-                      (packages || []).find(t => (t.id === id || t.slug === id) && (t.category === 'Treks' || t.category === 'Trek' || t.title?.toLowerCase().includes('trek')));
+    const rawId = (id || '').trim();
+    const slugified = rawId.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+    const matchesTrek = (t) => {
+      if (!t) return false;
+      const tId = String(t.id || '').trim();
+      const tSlug = String(t.slug || '').trim();
+      const tTitleSlug = (t.title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+      return (
+        tId === rawId ||
+        tSlug === rawId ||
+        tId.toLowerCase() === rawId.toLowerCase() ||
+        tSlug.toLowerCase() === rawId.toLowerCase() ||
+        (slugified && (tSlug.toLowerCase() === slugified || tId.toLowerCase() === slugified || tTitleSlug === slugified)) ||
+        tId === `TRIP-${rawId}` ||
+        tSlug === `TRIP-${rawId}` ||
+        (slugified && (tId.toLowerCase() === `trip-${slugified}` || tSlug.toLowerCase() === `trip-${slugified}`))
+      );
+    };
+
+    const foundTrek = (treks || []).find(matchesTrek) ||
+                      (tourTrips || []).find(t => matchesTrek(t) && (t.category === 'Treks' || t.category === 'Trek' || t.title?.toLowerCase().includes('trek'))) ||
+                      (packages || []).find(t => matchesTrek(t) && (t.category === 'Treks' || t.category === 'Trek' || t.title?.toLowerCase().includes('trek')));
+    
+    if (foundTrek) {
+      const canonicalSlug = foundTrek.slug || foundTrek.id;
+      if (canonicalSlug && rawId !== canonicalSlug && (rawId.includes(' ') || rawId !== rawId.toLowerCase())) {
+        navigate(`/treks/${canonicalSlug}`, { replace: true });
+      }
+    }
     setTrek(foundTrek);
-  }, [id, treks, tourTrips, packages]);
+  }, [id, treks, tourTrips, packages, navigate]);
 
   const formatAltitude = (alt, unit) => {
     if (!alt) return '-';
@@ -735,7 +763,7 @@ const TrekDetail = () => {
                 </div>
                 <div className="space-y-2">
                   {trek.itinerary.map((day, idx) => {
-                    let dayLabel = day.day ? day.day.trim() : `DAY ${String(idx + 1).padStart(2, '0')}`;
+                    let dayLabel = day.day ? String(day.day).trim() : `DAY ${String(idx + 1).padStart(2, '0')}`;
                     if (/^D\s+Day/i.test(dayLabel)) dayLabel = dayLabel.replace(/^D\s+/i, '');
                     if (!dayLabel.toUpperCase().startsWith('DAY')) dayLabel = `DAY ${dayLabel}`;
                     const descriptionText = day.details || day.description || day.desc || '';

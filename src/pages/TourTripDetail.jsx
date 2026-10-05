@@ -168,14 +168,34 @@ const TourTripDetail = () => {
 
   useEffect(() => {
     let baseTrip = null;
+    const rawSlug = (tripIdOrSlug || '').trim();
+    const slugified = rawSlug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+    const matchesTrip = (t) => {
+      if (!t) return false;
+      const tSlug = String(t.slug || '').trim().toLowerCase();
+      const tId = String(t.id || '').trim().toLowerCase();
+      const tTitleSlug = (t.title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+      const rawLower = rawSlug.toLowerCase();
+      return (
+        t.slug === rawSlug ||
+        t.id === rawSlug ||
+        tSlug === rawLower ||
+        tId === rawLower ||
+        (slugified && (tSlug === slugified || tId === slugified || tTitleSlug === slugified)) ||
+        String(t.dnttId) === rawSlug ||
+        String(t.numericId) === rawSlug
+      );
+    };
+
     if (tourTrips && tourTrips.length > 0) {
-      const foundTrip = tourTrips.find(t => t.slug === tripIdOrSlug || t.id === tripIdOrSlug || String(t.dnttId) === String(tripIdOrSlug) || String(t.numericId) === String(tripIdOrSlug));
+      const foundTrip = tourTrips.find(matchesTrip);
       if (foundTrip && (foundTrip.status === 'Published' || !foundTrip.status)) {
         baseTrip = foundTrip;
       }
     }
     if (!baseTrip && packages && packages.length > 0) {
-      const foundPkg = packages.find(p => p.id === tripIdOrSlug || p.slug === tripIdOrSlug || String(p.dnttId) === String(tripIdOrSlug) || String(p.numericId) === String(tripIdOrSlug));
+      const foundPkg = packages.find(matchesTrip);
       if (foundPkg) {
         baseTrip = foundPkg;
       }
