@@ -41074,41 +41074,129 @@
       ],
       "equipment": [
         {
-          "category": "1. Clothing & Base Layers",
+          "category": "Clothing & Footwear",
           "items": [
             {
-              "name": "Moisture-wicking Shirts & Comfortable Shorts/Pants",
-              "required": true,
-              "quantity": 3
-            },
-            {
-              "name": "Fleece Jacket & Lightweight Down Jacket",
+              "name": "Comfortable Walking Shoes / Sneakers",
+              "description": "Break-in light trail shoes or comfortable sneakers for sightseeing and daily walking.",
               "required": true,
               "quantity": 1
             },
             {
-              "name": "Sun Hat & Light Gloves",
+              "name": "Layered T-Shirts & Tops",
+              "description": "Breathable cotton or moisture-wicking shirts for daytime activities.",
+              "required": true,
+              "quantity": 4
+            },
+            {
+              "name": "Warm Fleece or Light Jacket",
+              "description": "Essential for cool mornings, evening breezes, and hill station viewpoints.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Comfortable Travel Trousers / Jeans",
+              "description": "Lightweight, quick-dry travel pants or casual trousers.",
+              "required": true,
+              "quantity": 2
+            },
+            {
+              "name": "Rain Jacket / Compact Umbrella",
+              "description": "Lightweight waterproof shell for unexpected weather.",
+              "required": false,
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "category": "Personal Items & Accessories",
+          "items": [
+            {
+              "name": "Sun Protection (Hat & Sunglasses)",
+              "description": "Wide-brim sun hat and UV-blocking sunglasses.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Sunscreen & Lip Balm",
+              "description": "High SPF sunscreen (SPF 30+) and moisturizing lip protection.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Personal Toiletries & Sanitizer",
+              "description": "Toothbrush, toothpaste, travel soap, hand sanitizer, and wet wipes.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Daypack (20L - 30L)",
+              "description": "Small backpack to carry daily essentials, camera, and water bottle.",
               "required": true,
               "quantity": 1
             }
           ]
         },
         {
-          "category": "2. Footwear & Safari Gear",
+          "category": "Travel Essentials & Electronics",
           "items": [
             {
-              "name": "Comfortable Walking Shoes / Light Hiking Boots",
+              "name": "Reusable Water Bottle",
+              "description": "Eco-friendly insulated or BPA-free hydration bottle.",
               "required": true,
               "quantity": 1
             },
             {
-              "name": "Sandals / Camp Shoes",
+              "name": "Power Bank & Universal Adapter",
+              "description": "Portable power bank to keep phone and camera charged during tours.",
               "required": true,
               "quantity": 1
             },
             {
-              "name": "Daypack (20-30L) & Binoculars (for birding/safari)",
+              "name": "Personal First Aid Kit",
+              "description": "Basic personal medications, band-aids, antiseptics, and motion sickness tablets.",
               "required": true,
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "category": "Medical Essentials",
+          "items": [
+            {
+              "name": "Personal Prescription Medications",
+              "description": "Carry a sufficient supply of any daily medications for the full duration of the trip.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Pain Relievers",
+              "description": "Paracetamol or Ibuprofen for headaches, fever, and body aches during travel.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Oral Rehydration Salts (ORS)",
+              "description": "Electrolyte packets to combat dehydration from heat or stomach upsets.",
+              "required": true,
+              "quantity": 5
+            },
+            {
+              "name": "Anti-Diarrheal Tablets",
+              "description": "For managing traveler's diarrhea common in new food environments.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Antiseptic Cream & Band-Aids",
+              "description": "For treating minor cuts, blisters, and insect bites on the go.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Altitude Sickness Tablets (Diamox)",
+              "description": "Recommended for tours that include high-altitude areas above 2,500m elevation.",
+              "required": false,
               "quantity": 1
             }
           ]
@@ -41471,41 +41559,129 @@
       ],
       "equipment": [
         {
-          "category": "1. Clothing & Base Layers",
+          "category": "Clothing & Footwear",
           "items": [
             {
-              "name": "Moisture-wicking Shirts & Thermal Leggings",
-              "required": true,
-              "quantity": 3
-            },
-            {
-              "name": "Fleece Jacket, Light Down Jacket & Waterproof Shell",
+              "name": "Comfortable Walking Shoes / Sneakers",
+              "description": "Break-in light trail shoes or comfortable sneakers for sightseeing and daily walking.",
               "required": true,
               "quantity": 1
             },
             {
-              "name": "Sun Hat, Warm Beanie & Fleece Gloves",
+              "name": "Layered T-Shirts & Tops",
+              "description": "Breathable cotton or moisture-wicking shirts for daytime activities.",
+              "required": true,
+              "quantity": 4
+            },
+            {
+              "name": "Warm Fleece or Light Jacket",
+              "description": "Essential for cool mornings, evening breezes, and hill station viewpoints.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Comfortable Travel Trousers / Jeans",
+              "description": "Lightweight, quick-dry travel pants or casual trousers.",
+              "required": true,
+              "quantity": 2
+            },
+            {
+              "name": "Rain Jacket / Compact Umbrella",
+              "description": "Lightweight waterproof shell for unexpected weather.",
+              "required": false,
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "category": "Personal Items & Accessories",
+          "items": [
+            {
+              "name": "Sun Protection (Hat & Sunglasses)",
+              "description": "Wide-brim sun hat and UV-blocking sunglasses.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Sunscreen & Lip Balm",
+              "description": "High SPF sunscreen (SPF 30+) and moisturizing lip protection.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Personal Toiletries & Sanitizer",
+              "description": "Toothbrush, toothpaste, travel soap, hand sanitizer, and wet wipes.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Daypack (20L - 30L)",
+              "description": "Small backpack to carry daily essentials, camera, and water bottle.",
               "required": true,
               "quantity": 1
             }
           ]
         },
         {
-          "category": "2. Footwear & Gear",
+          "category": "Travel Essentials & Electronics",
           "items": [
             {
-              "name": "Trekking Boots with Ankle Support & Camp Sandals",
+              "name": "Reusable Water Bottle",
+              "description": "Eco-friendly insulated or BPA-free hydration bottle.",
               "required": true,
               "quantity": 1
             },
             {
-              "name": "Daypack (20-30L) & Sleeping Bag (-10°C rated)",
+              "name": "Power Bank & Universal Adapter",
+              "description": "Portable power bank to keep phone and camera charged during tours.",
               "required": true,
               "quantity": 1
             },
             {
-              "name": "Water Bottle / Purification Tablets & Headlamp",
+              "name": "Personal First Aid Kit",
+              "description": "Basic personal medications, band-aids, antiseptics, and motion sickness tablets.",
               "required": true,
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "category": "Medical Essentials",
+          "items": [
+            {
+              "name": "Personal Prescription Medications",
+              "description": "Carry a sufficient supply of any daily medications for the full duration of the trip.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Pain Relievers",
+              "description": "Paracetamol or Ibuprofen for headaches, fever, and body aches during travel.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Oral Rehydration Salts (ORS)",
+              "description": "Electrolyte packets to combat dehydration from heat or stomach upsets.",
+              "required": true,
+              "quantity": 5
+            },
+            {
+              "name": "Anti-Diarrheal Tablets",
+              "description": "For managing traveler's diarrhea common in new food environments.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Antiseptic Cream & Band-Aids",
+              "description": "For treating minor cuts, blisters, and insect bites on the go.",
+              "required": true,
+              "quantity": 1
+            },
+            {
+              "name": "Altitude Sickness Tablets (Diamox)",
+              "description": "Recommended for tours that include high-altitude areas above 2,500m elevation.",
+              "required": false,
               "quantity": 1
             }
           ]
