@@ -8594,7 +8594,79 @@
         "regularPrice": 1440,
         "sellingPrice": 1150,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Chitwan Tour by Flight: Wildlife Safari and Cultural Adventure",
+          "description": "Flight to Chitwan. Tharu village visit, cultural dance performances.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Chitwan Tour: Jungle Safari and Wildlife Experience",
+          "description": "Elephant or Jeep safari, canoe ride in the Rapti River, and a visit to the breeding centers.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Chitwan-Pokhara by flight",
+          "description": "Fly to Pokhara. Visit Bindabasini Temple, Davis Falls, Gupteshwor Mahadev Cave, Seti Gorge, World Peace Stupa, and boating on Phewa Lake.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Pokhara-Lumbini by Flight",
+          "description": "Sarangkot sunrise view. Fly to Lumbini. Visit Maya Devi Temple and surrounding monasteries.",
+          "maxAltitude": "150m/492ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Lumbini",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Lumbini-Kathmandu by flight",
+          "description": "Fly back to Kathmandu. Visit Pashupatinath Temple, Boudhanath Stupa, and Patan Durbar Square. Traditional Nepali cultural dinner.",
+          "maxAltitude": "150m / 492ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-bandipur-pokhara-tour",
@@ -8728,7 +8800,79 @@
         "regularPrice": 1340,
         "sellingPrice": 1070,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Bandipur : Scenic Journey and Cultural Exploration in Nepal",
+          "description": "Drive to Bandipur village. Enjoy the peaceful ambiance and traditional Newari architecture. Experience a scenic cable car ride.",
+          "maxAltitude": "1030m/3380ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Heritage Resort in Bandipur",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Bandipur-Pokhara: Discover Nepal's Hidden Gems and Lakeside Beauty",
+          "description": "Drive from Bandipur to Pokhara. Relax and explore the famous Lakeside area on the bank of Phewa Lake.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara Tour: Explore the Beauty of Nepal’s Lakeside City and Himalayan Views",
+          "description": "Visit Sarangkot for sunrise. Explore Bindabasini Temple, Davis Fall, Gupteswori Mahadev Cave, Seti Gorge, and enjoy boating on Phewa Lake. Visit World Peace Pagoda.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Pokhara-Kathmandu: Scenic Drive and Cultural Highlights of Nepal",
+          "description": "Drive back to Kathmandu.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Kathmandu Tour: Explore Nepal’s Cultural and Historical attractions",
+          "description": "Visit Boudhanath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square. Delightful Nepali dinner with a cultural show.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-pokhara-nagarkot-tour",
@@ -8864,7 +9008,79 @@
         "regularPrice": 1065,
         "sellingPrice": 850,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "On arrival at the Tribhuvan International Airport, you will be greeted by a representative. You will then be transferred to your hotel in Kathmandu.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu Sightseeing",
+          "description": "Visit Pashupatinath Temple, Boudhanath Stupa, Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Kathmandu to Pokhara",
+          "description": "Scenic drive to Pokhara, the serene city of lakes. En route, opt for thrilling activities like Trishuli River rafting or a cable car ride.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara Sightseeing",
+          "description": "Visit Tal Barahi Temple by boat on Phewa Lake. See Bindabasini Temple, Seti River Gorge, Davis Fall, Gupteshwor Mahadev Cave, and Tibetan Refugee Camp.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Pokhara Sightseeing",
+          "description": "Sunrise from Sarangkot. After breakfast, visit the Pumdikot Shiva Temple and the iconic World Peace Stupa. Optional adventure activities.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Pokhara to Nagarkot[2175m/7136ft]",
+          "description": "Picturesque drive to Nagarkot, a serene hill station famous for its Himalayan vistas.",
+          "maxAltitude": "2175m/7136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Nagarkot",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Enjoy sunrise views. Return to Kathmandu for your departure, taking home unforgettable memories.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-pokhara-chitwan-tour",
@@ -8998,7 +9214,79 @@
         "regularPrice": 1065,
         "sellingPrice": 850,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "On arrival at the Tribhuvan International Airport, you will be greeted by a representative. Transfer to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara: The Ultimate Himalayan Experience",
+          "description": "Scenic drive to Pokhara, passing beautiful landscapes. Enjoy breathtaking views of the Annapurna range.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "A Day in Pokhara: Exploring Nepal’s Scenic Gem",
+          "description": "Sunrise view, visit Bindabasi Temple, Seti Gorge, Davis Fall, Gupteshwore Mahadev Cave, and boat ride on Phewa Lake to Tal Barahi Temple.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara-Chitwan: The Best of Nepal's Beauty and Wildlife",
+          "description": "Drive to Chitwan National Park. Elephant or Jeep Safari to see Bengal tigers and rhinos. Tharu Village tour and Cultural Dance.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Chitwan-Kathmandu: Wildlife, Culture, and Sacred Sites",
+          "description": "After breakfast, drive back to Kathmandu.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Sacred Sites and Ancient Wonders: Kathmandu City Tour",
+          "description": "Visit Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple. Traditional Nepali dinner and cultural show.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-chitwan-pokhara-tour",
@@ -9132,7 +9420,79 @@
         "regularPrice": 1065,
         "sellingPrice": 850,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Chitwan",
+          "description": "Scenic drive to Chitwan to immerse yourself in the unique culture and wildlife of the region.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Chitwan",
+          "description": "Tharu Village tour, cultural program, elephant or jeep safari, canoe ride along the Rapti River, and a visit to the breeding centers.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Chitwan-Pokhara",
+          "description": "Travel to Pokhara for an overnight stay. Explore its lakeside charm.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Pokhara-Kathmandu",
+          "description": "Sarangkot sunrise view. Return drive to Kathmandu.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Kathmandu",
+          "description": "Explore Pashupatinath Temple, Boudhanath Stupa, and Bhaktapur Durbar Square. Traditional Nepali dinner with a cultural program.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-pokhara-jomsom-muktinath-tour",
@@ -9268,7 +9628,79 @@
         "regularPrice": 1375,
         "sellingPrice": 1100,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara: A Journey Through Nepal's Countryside",
+          "description": "Scenic drive to Pokhara passing riversides and lush landscapes.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Breathtaking Flight from Pokhara to Jomsom[Altitude 2745m/9005ft): Gateway to Muktinath",
+          "description": "Early morning flight to Jomsom. Transfer to hotel, then proceed to Muktinath Temple Darshan. Explore Dhumba Lake.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel / Lodge in Muktinath",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Scenic Return Flight from Jomsom to Pokhara: Aerial Views of the Himalayas",
+          "description": "Flight back to Pokhara. Sightseeing including Bindabasini Temple, Seti Gorge, Davis Fall, and Gupteswor Mahadev Cave. Boating on Phewa Lake.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Picturesque Drive from Pokhara to Kathmandu: A Journey Through Nepal's Heartland",
+          "description": "Drive back to Kathmandu.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Cultural Exploration of Kathmandu",
+          "description": "Visit Patan Durbar Square, Budhanilkantha Temple, Boudhanath Stupa, and Pashupatinath Temple. Traditional Nepali dinner with a cultural program.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-nagarkot-dhulikhel-tour",
@@ -9402,7 +9834,79 @@
         "regularPrice": 1040,
         "sellingPrice": 830,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Nagarkot [2175m/4136ft]",
+          "description": "Full-day sightseeing tour of Changunarayan Temple and Bhaktapur Durbar Square, followed by a scenic drive to Nagarkot.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Nagarkot",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Nagarkot-Dhulikhel",
+          "description": "Wake up to a stunning Himalayan sunrise. Drive to Dhulikhel, stopping en route at the charming Panauti Village.",
+          "maxAltitude": "1550m/5085ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Dhulikhel",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Dhulikhel-Kathmandu",
+          "description": "Enjoy Himalayan views in Dhulikhel before returning to Kathmandu to visit Namo Buddha, Boudhanath Stupa, and Pashupatinath Temple.",
+          "maxAltitude": "1,550m / 5,085ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Kathmandu",
+          "description": "Explore Patan Durbar Square, Swoyambhunath Stupa, and Kathmandu Durbar Square.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Kathmandu",
+          "description": "Visit serene spots like Dakshinkali Temple, Chobhar, Pharping, and Kirtipur. Enjoy a delightful Nepali dinner and cultural performance.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "8-days-kathmandu-pokhara-lumbini-chitwan-tour",
@@ -9538,7 +10042,89 @@
         "originalPrice": 1430,
         "sellingPrice": 1145,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel. Relax and prepare for your adventure.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara",
+          "description": "Scenic drive to Pokhara. Visit Bindabasini Temple, Davis Fall, Gupteshwor Cave, and enjoy boating on Phewa Lake.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Pokhara-Lumbini",
+          "description": "Sunrise view from Sarangkot. Drive to Lumbini, the birthplace of Buddha, and explore Maya Devi Temple and surroundings.",
+          "maxAltitude": "150m/492ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Lumbini",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Lumbini-Chitwan",
+          "description": "Drive to Chitwan National Park. Relax in the evening with a sunset view over the Rapti River and a Tharu cultural program.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Chitwan",
+          "description": "Full day of jungle adventures including an elephant or jeep safari, canoeing, and visiting breeding centers.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Chitwan-Kathmandu-Nagarkot",
+          "description": "Drive back to Kathmandu, stop at Bhaktapur Durbar Square, and proceed to the hill station of Nagarkot for peaceful surroundings.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Nagarkot",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Nagarkot-Kathmandu",
+          "description": "Wake up to panoramic Himalayan views. Drive to Kathmandu to visit Boudhanath and Pashupatinath. Farewell cultural dinner.",
+          "maxAltitude": "2,175m / 7,136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 8,
+          "dayNumber": 8,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "8-days-kathmandu-pokhara-muktinath-chitwan-tour",
@@ -9681,7 +10267,89 @@
         "originalPrice": 1600,
         "sellingPrice": 1280,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel. Depending on your arrival time, explore the city or relax.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara: Scenic Journey Through Culture and Nature",
+          "description": "Scenic journey from Kathmandu to Pokhara. Experience beautiful landscapes.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Pokhara-Jomsom[Altitude 2745m/9005ft): Breathtaking Flight to the Heart of Mustang",
+          "description": "Breathtaking flight to Jomsom. Visit the sacred Muktinath Temple and explore the stunning Mustang region.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Jomsom-Pokhara-Chitwan: A Journey from Mountains to Jungle Adventures",
+          "description": "Fly back to Pokhara, then drive to Chitwan National Park for your jungle adventures.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Chitwan: Explore Wildlife and Cultural Wonders in Nepal's Jungle Paradise",
+          "description": "Full day of jungle activities including safaris, visit to breeding centers, and Tharu cultural program.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Chitwan-Kathmandu: Return Journey through Nepal’s Cultural Heart",
+          "description": "Drive back to Kathmandu enjoying the scenic highways of Nepal.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Kathmandu City Tour",
+          "description": "Explore ancient Bhaktapur Durbar Square, Pashupatinath, Boudhanath. Enjoy a Nepali cultural program with a farewell dinner.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 8,
+          "dayNumber": 8,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "8-days-kathmandu-pokhara-chitwan-tour-with-rafting",
@@ -9816,7 +10484,89 @@
         "originalPrice": 1410,
         "sellingPrice": 1130,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel. Relax or explore.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara",
+          "description": "Scenic drive to Pokhara. Enjoy the evening relaxing by the lake or exploring the city.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Pokhara",
+          "description": "Breathtaking sunrise from Sarangkot. Enjoy boating on Phewa Lake, explore Bindabasini Temple, Davis Fall, and Gupteswori Cave.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara- Damauli",
+          "description": "Drive to Damauli for an exhilarating rafting adventure on the Seti River. Overnight camping stop at Saranghat on the beach.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Saranghat- Chitwan",
+          "description": "Rafting continues from Saranghat to Gai Ghat. After that, drive to Chitwan National Park.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Chitwan-Nagarkot[2175m/4136ft]",
+          "description": "Immerse yourself in a wildlife safari in Chitwan. Visit a Tharu Village. Later, drive to Nagarkot.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Nagarkot",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Nagarkot –Kathmandu",
+          "description": "Witness an unforgettable sunrise. Visit Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple on the way back to Kathmandu. Special Nepali cultural dinner.",
+          "maxAltitude": "2,175m / 7,136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 8,
+          "dayNumber": 8,
+          "title": "Depart from Kathmandu",
+          "description": "Free time for last-minute shopping before your departure transfer to the airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "8-days-kathmandu-bandipur-pokhara-tour-with-trek",
@@ -9951,7 +10701,89 @@
         "originalPrice": 1190,
         "sellingPrice": 950,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel. Time to relax or explore.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Bandipur",
+          "description": "Scenic drive to Bandipur village. Explore Bandipur’s traditional Newari architecture and vibrant community.",
+          "maxAltitude": "1030m/3380ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Heritage Resort in Bandipur",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Bandipur-Pokhara",
+          "description": "Drive to Pokhara. Visit Bindabasini Temple, Davis Fall, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, and Seti Gorge. Enjoy boating on Phewa Lake.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara-Australian camp",
+          "description": "Early morning head to Sarangkot for sunrise over the Himalayas. After breakfast, trek to Australian Camp for a peaceful hilltop experience and stunning views.",
+          "maxAltitude": "2060m/6752ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Australian camp-Dhampus-Phedi-Pokhara",
+          "description": "Trek through scenic trails to Dhampus, a village amidst terraced fields. Descend to Phedi, and drive back to Pokhara.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Pokhara-Nagarkot[2175m/4136ft]",
+          "description": "Drive to Nagarkot, one of the best spots for witnessing Himalayan sunrises.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Nagarkot",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Nagarkot –Kathmandu",
+          "description": "Enjoy a magical sunrise. Drive back to Kathmandu. Visit Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple. Traditional Nepali dinner and cultural show.",
+          "maxAltitude": "2,175m / 7,136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 8,
+          "dayNumber": 8,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "8-days-kathmandu-pokhara-chitwan-nagarkot-tour",
@@ -10089,7 +10921,89 @@
         "originalPrice": 1250,
         "sellingPrice": 1000,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by our representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Scenic Drive from Kathmandu to Pokhara – Arrival and Relaxation",
+          "description": "Scenic drive to Pokhara. Enjoy the evening relaxing by the lake or exploring the city.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Discover Pokhara – Sunrise, Lakes, Caves, and Waterfalls",
+          "description": "Breathtaking sunrise from Sarangkot. Visit Bindabasini Temple, Davis Fall, and Gupteshwor Cave. Enjoy boating on Phewa Lake.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Travel from Pokhara to Chitwan – Scenic Drive and Safari Introduction",
+          "description": "Drive to Chitwan National Park. Check into your resort and get an introduction to the safari activities.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Exploring Chitwan National Park – Safari Adventures and Local Culture",
+          "description": "Full day of jungle activities: Elephant or Jeep Safari, canoe ride, and a visit to the breeding centers. Enjoy a Tharu cultural program.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Chitwan to Nagarkot[2175m/4136ft] – Scenic Drive and Sunset Over the Himalayas",
+          "description": "Drive from the plains of Chitwan to the hill station of Nagarkot to witness a beautiful sunset.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Nagarkot to Kathmandu – Explore Bhaktapur, Pashupatinath, and Boudhanath",
+          "description": "Sunrise views of the Himalayas. Drive back to Kathmandu to explore historic sites. Farewell Nepali cultural dinner.",
+          "maxAltitude": "2,175m / 7,136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 8,
+          "dayNumber": 8,
+          "title": "Final Day in Kathmandu – Departure and Last-Minute Shopping",
+          "description": "Free time for last-minute shopping before your departure transfer to the airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "9-days-kathmandu-pokhara-muktinath-chitwan-tour",
@@ -52094,7 +53008,79 @@
         "regularPrice": 1440,
         "sellingPrice": 1150,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Chitwan Tour by Flight: Wildlife Safari and Cultural Adventure",
+          "description": "Flight to Chitwan. Tharu village visit, cultural dance performances.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Chitwan Tour: Jungle Safari and Wildlife Experience",
+          "description": "Elephant or Jeep safari, canoe ride in the Rapti River, and a visit to the breeding centers.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Chitwan-Pokhara by flight",
+          "description": "Fly to Pokhara. Visit Bindabasini Temple, Davis Falls, Gupteshwor Mahadev Cave, Seti Gorge, World Peace Stupa, and boating on Phewa Lake.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Pokhara-Lumbini by Flight",
+          "description": "Sarangkot sunrise view. Fly to Lumbini. Visit Maya Devi Temple and surrounding monasteries.",
+          "maxAltitude": "150m/492ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Lumbini",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Lumbini-Kathmandu by flight",
+          "description": "Fly back to Kathmandu. Visit Pashupatinath Temple, Boudhanath Stupa, and Patan Durbar Square. Traditional Nepali cultural dinner.",
+          "maxAltitude": "150m / 492ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-bandipur-pokhara-tour",
@@ -52226,7 +53212,79 @@
         "regularPrice": 1340,
         "sellingPrice": 1070,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Bandipur : Scenic Journey and Cultural Exploration in Nepal",
+          "description": "Drive to Bandipur village. Enjoy the peaceful ambiance and traditional Newari architecture. Experience a scenic cable car ride.",
+          "maxAltitude": "1030m/3380ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Heritage Resort in Bandipur",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Bandipur-Pokhara: Discover Nepal's Hidden Gems and Lakeside Beauty",
+          "description": "Drive from Bandipur to Pokhara. Relax and explore the famous Lakeside area on the bank of Phewa Lake.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara Tour: Explore the Beauty of Nepal’s Lakeside City and Himalayan Views",
+          "description": "Visit Sarangkot for sunrise. Explore Bindabasini Temple, Davis Fall, Gupteswori Mahadev Cave, Seti Gorge, and enjoy boating on Phewa Lake. Visit World Peace Pagoda.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Pokhara-Kathmandu: Scenic Drive and Cultural Highlights of Nepal",
+          "description": "Drive back to Kathmandu.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Kathmandu Tour: Explore Nepal’s Cultural and Historical attractions",
+          "description": "Visit Boudhanath Stupa, Pashupatinath Temple, and Bhaktapur Durbar Square. Delightful Nepali dinner with a cultural show.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-pokhara-nagarkot-tour",
@@ -52358,7 +53416,79 @@
         "regularPrice": 1065,
         "sellingPrice": 850,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "On arrival at the Tribhuvan International Airport, you will be greeted by a representative. You will then be transferred to your hotel in Kathmandu.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu Sightseeing",
+          "description": "Visit Pashupatinath Temple, Boudhanath Stupa, Swayambhunath Stupa (Monkey Temple), and Kathmandu Durbar Square.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Kathmandu to Pokhara",
+          "description": "Scenic drive to Pokhara, the serene city of lakes. En route, opt for thrilling activities like Trishuli River rafting or a cable car ride.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara Sightseeing",
+          "description": "Visit Tal Barahi Temple by boat on Phewa Lake. See Bindabasini Temple, Seti River Gorge, Davis Fall, Gupteshwor Mahadev Cave, and Tibetan Refugee Camp.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Pokhara Sightseeing",
+          "description": "Sunrise from Sarangkot. After breakfast, visit the Pumdikot Shiva Temple and the iconic World Peace Stupa. Optional adventure activities.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Pokhara to Nagarkot[2175m/7136ft]",
+          "description": "Picturesque drive to Nagarkot, a serene hill station famous for its Himalayan vistas.",
+          "maxAltitude": "2175m/7136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Nagarkot",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Enjoy sunrise views. Return to Kathmandu for your departure, taking home unforgettable memories.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-pokhara-chitwan-tour",
@@ -52490,7 +53620,79 @@
         "regularPrice": 1065,
         "sellingPrice": 850,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "On arrival at the Tribhuvan International Airport, you will be greeted by a representative. Transfer to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara: The Ultimate Himalayan Experience",
+          "description": "Scenic drive to Pokhara, passing beautiful landscapes. Enjoy breathtaking views of the Annapurna range.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "A Day in Pokhara: Exploring Nepal’s Scenic Gem",
+          "description": "Sunrise view, visit Bindabasi Temple, Seti Gorge, Davis Fall, Gupteshwore Mahadev Cave, and boat ride on Phewa Lake to Tal Barahi Temple.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara-Chitwan: The Best of Nepal's Beauty and Wildlife",
+          "description": "Drive to Chitwan National Park. Elephant or Jeep Safari to see Bengal tigers and rhinos. Tharu Village tour and Cultural Dance.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Chitwan-Kathmandu: Wildlife, Culture, and Sacred Sites",
+          "description": "After breakfast, drive back to Kathmandu.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Sacred Sites and Ancient Wonders: Kathmandu City Tour",
+          "description": "Visit Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple. Traditional Nepali dinner and cultural show.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-chitwan-pokhara-tour",
@@ -52622,7 +53824,79 @@
         "regularPrice": 1065,
         "sellingPrice": 850,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Chitwan",
+          "description": "Scenic drive to Chitwan to immerse yourself in the unique culture and wildlife of the region.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Chitwan",
+          "description": "Tharu Village tour, cultural program, elephant or jeep safari, canoe ride along the Rapti River, and a visit to the breeding centers.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Chitwan-Pokhara",
+          "description": "Travel to Pokhara for an overnight stay. Explore its lakeside charm.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Pokhara-Kathmandu",
+          "description": "Sarangkot sunrise view. Return drive to Kathmandu.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Kathmandu",
+          "description": "Explore Pashupatinath Temple, Boudhanath Stupa, and Bhaktapur Durbar Square. Traditional Nepali dinner with a cultural program.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-pokhara-jomsom-muktinath-tour",
@@ -52755,7 +54029,79 @@
         "regularPrice": 1375,
         "sellingPrice": 1100,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara: A Journey Through Nepal's Countryside",
+          "description": "Scenic drive to Pokhara passing riversides and lush landscapes.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Breathtaking Flight from Pokhara to Jomsom[Altitude 2745m/9005ft): Gateway to Muktinath",
+          "description": "Early morning flight to Jomsom. Transfer to hotel, then proceed to Muktinath Temple Darshan. Explore Dhumba Lake.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel / Lodge in Muktinath",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Scenic Return Flight from Jomsom to Pokhara: Aerial Views of the Himalayas",
+          "description": "Flight back to Pokhara. Sightseeing including Bindabasini Temple, Seti Gorge, Davis Fall, and Gupteswor Mahadev Cave. Boating on Phewa Lake.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Picturesque Drive from Pokhara to Kathmandu: A Journey Through Nepal's Heartland",
+          "description": "Drive back to Kathmandu.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Cultural Exploration of Kathmandu",
+          "description": "Visit Patan Durbar Square, Budhanilkantha Temple, Boudhanath Stupa, and Pashupatinath Temple. Traditional Nepali dinner with a cultural program.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "7-days-kathmandu-nagarkot-dhulikhel-tour",
@@ -52885,7 +54231,79 @@
         "regularPrice": 1040,
         "sellingPrice": 830,
         "currency": "USD"
-      }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Welcome Drink"
+        },
+        {
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Nagarkot [2175m/4136ft]",
+          "description": "Full-day sightseeing tour of Changunarayan Temple and Bhaktapur Durbar Square, followed by a scenic drive to Nagarkot.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Nagarkot",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Nagarkot-Dhulikhel",
+          "description": "Wake up to a stunning Himalayan sunrise. Drive to Dhulikhel, stopping en route at the charming Panauti Village.",
+          "maxAltitude": "1550m/5085ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Dhulikhel",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Dhulikhel-Kathmandu",
+          "description": "Enjoy Himalayan views in Dhulikhel before returning to Kathmandu to visit Namo Buddha, Boudhanath Stupa, and Pashupatinath Temple.",
+          "maxAltitude": "1,550m / 5,085ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Kathmandu",
+          "description": "Explore Patan Durbar Square, Swoyambhunath Stupa, and Kathmandu Durbar Square.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Kathmandu",
+          "description": "Visit serene spots like Dakshinkali Temple, Chobhar, Pharping, and Kirtipur. Enjoy a delightful Nepali dinner and cultural performance.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
+        }
+      ]
     },
     {
       "id": "8-days-kathmandu-pokhara-lumbini-chitwan-tour",
@@ -52980,76 +54398,84 @@
       ],
       "itinerary": [
         {
-          "day": "Day 01",
-          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel. Relax and prepare for your adventure.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Kathmandu",
-          "meals": "No Meals included on this day",
-          "description": "On arrival at the Tribhuvan International Airport, you will be greeted by a dedicated dedicated representative from Zenex Travels & Tours Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.",
-          "maxAltitude": "1400m / 4595ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Welcome Drink"
         },
         {
-          "day": "Day 02",
-          "title": "Kathmandu-Pokhara [altitude 830m/2723ft]",
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara",
+          "description": "Scenic drive to Pokhara. Visit Bindabasini Temple, Davis Fall, Gupteshwor Cave, and enjoy boating on Phewa Lake.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Pokhara",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive around [210 km-5-6 hrs] to Pokhara, passing through valleys, rivers, terrace fields and some spectacular views of the Himalayan ranges. Half day city tour of Bindabasini temple, Davis fall, Gupteswori Mahadev cave, Tibetan refugee camp & Seti gorge. Free time for adventure activities or self visit around Lake Side [Around Phewa Lake].",
-          "maxAltitude": "830m / 2723ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 03",
-          "title": "Pokhara-Lumbini [altitude 150m/492ft]",
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Pokhara-Lumbini",
+          "description": "Sunrise view from Sarangkot. Drive to Lumbini, the birthplace of Buddha, and explore Maya Devi Temple and surroundings.",
+          "maxAltitude": "150m/492ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Lumbini",
-          "meals": "Breakfast",
-          "description": "Early morning drive to Sarangkot [1700m/5577ft] for sunrise and close-up view of Annapurna & Fishtail Mountain range. After breakfast, drive to Lumbini [250km-5-6 hrs]. After check in, our local guide will come at hotel to guide you to visit around Birth place of Lord Buddha [Maya Devi Temple and surrounding monasteries].",
-          "maxAltitude": "150m / 492ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 04",
-          "title": "Lumbini-Chitwan [altitude 415m/1361ft]",
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Lumbini-Chitwan",
+          "description": "Drive to Chitwan National Park. Relax in the evening with a sunset view over the Rapti River and a Tharu cultural program.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Jungle Resort in Chitwan",
-          "meals": "Breakfast, lunch & dinner",
-          "description": "Today after breakfast, drive around [150 km-3-4 hrs] to Chitwan, after arriving and settling in, you will be introduced to the camp staff and resident naturalists who will discuss the program. Late-afternoon safari and evening Tharu village tour + cultural program.",
-          "maxAltitude": "415m / 1361ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast, Lunch & Dinner"
         },
         {
-          "day": "Day 05",
-          "title": "Chitwan Wildlife & Jungle Exploration",
-          "accommodation": "Jungle Resort in Chitwan",
-          "meals": "Breakfast, lunch & dinner",
-          "description": "Early-morning jungle safari, dugout canoe adventure on Rapti River (view marsh mugger crocodiles & birds), and visit Elephant/Crocodile Breeding Centre.",
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Chitwan",
+          "description": "Full day of jungle adventures including an elephant or jeep safari, canoeing, and visiting breeding centers.",
           "maxAltitude": "415m / 1,361ft",
-          "modeOfTravel": "Private Vehicle"
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
         },
         {
-          "day": "Day 06",
-          "title": "Chitwan-Kathmandu-Nagarkot [Altitude 2175m/4136ft]",
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Chitwan-Kathmandu-Nagarkot",
+          "description": "Drive back to Kathmandu, stop at Bhaktapur Durbar Square, and proceed to the hill station of Nagarkot for peaceful surroundings.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel / Resort in Nagarkot",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive to Nagarkot via Kathmandu [210 km] 5-6 hrs.",
-          "maxAltitude": "2175m / 4136ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 07",
-          "title": "Nagarkot-Kathmandu Heritage Sightseeing",
-          "accommodation": "Hotel in Kathmandu",
-          "meals": "Breakfast & Cultural Farewell Dinner",
-          "description": "Sunrise view of Mount Everest & Himalayas from Nagarkot. Full day sightseeing tour of Bhaktapur Durbar Square, Pashupatinath Temple & Boudhanath Stupa + complimentary Nepali cultural dinner show.",
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Nagarkot-Kathmandu",
+          "description": "Wake up to panoramic Himalayan views. Drive to Kathmandu to visit Boudhanath and Pashupatinath. Farewell cultural dinner.",
           "maxAltitude": "2,175m / 7,136ft",
-          "modeOfTravel": "Private Vehicle"
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
         },
         {
-          "day": "Day 08",
+          "day": 8,
+          "dayNumber": 8,
           "title": "Depart from Kathmandu",
-          "accommodation": "Departure",
-          "meals": "Breakfast",
-          "description": "Breakfast at the hotel. Free time until departure. Transfer to international airport for final departure.",
+          "description": "Departure transfer to the airport.",
           "maxAltitude": "1,400m / 4,595ft",
-          "modeOfTravel": "Private Vehicle"
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
         }
       ],
       "gallery": [
@@ -53229,76 +54655,84 @@
       ],
       "itinerary": [
         {
-          "day": "Day 01",
-          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel. Depending on your arrival time, explore the city or relax.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Kathmandu",
-          "meals": "There are no Meals included on this day",
-          "description": "On arrival at the Tribhuvan International Airport, you will be greeted by a dedicated dedicated representative from Zenex Travels & Tours Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.",
-          "maxAltitude": "1400m / 4595ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Welcome Drink"
         },
         {
-          "day": "Day 02",
-          "title": "Kathmandu-Pokhara [altitude 830m/2723ft]: Scenic Journey Through Culture and Nature",
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara: Scenic Journey Through Culture and Nature",
+          "description": "Scenic journey from Kathmandu to Pokhara. Experience beautiful landscapes.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Pokhara",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive around [210 km-5-6 hrs] to Pokhara, passing through valleys, rivers, terrace fields and some spectacular views of the Himalayan ranges. \nHalf day city tour of Bindabasini temple, Davis fall, Gupteswori Mahadev cave, Tibetan refugee camp & Seti gorge\n\nYour city guide will come to receive you after check in at hotel and drive towards the Davis fall, named after a Swiss coupled washed away by the waterfall in 1961. Then cross the road and go to the Gupteshwor cave with a self created statue of Lord shiva and the view of Davis fall coming down from the other side. A 5 minutes walk from the Gupteshwor cave is the Tibetan refugee camp where you can see Tibetan refugees doing different kinds of work for livelihood such as making carpets, making jewelries with semi precious stones and selling things to tourist. After spending some time to understand Tibet and its political conditions in the area we head towards the Bindabasini temple and the Seti river gorge.\nToday evening free time to explore around Lake side [around Phewa Lake]",
-          "maxAltitude": "830m / 2723ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 03",
-          "title": "Pokhara-Jomsom [Altitude 2745m/9005ft]: Breathtaking Flight to the Heart of Mustang",
-          "accommodation": "Hotel / Lodge in Jomsom",
-          "meals": "Breakfast",
-          "description": "After breakfast, flight to Jomsom [20 min]\nAfter check in, drive to Muktinath temple [3710m/12172 ft], visit around Muktinath temple \nEvening drive back to Jomsom for Overnight \n\nMuktinath is a sacred place for both Hindus and Buddhists located in Muktinath Valley at an altitude of 3,710 meters at the foot of the Thorong La mountain pass (part of the Himalayas) in Mustang, Nepal.",
-          "maxAltitude": "2745m / 9005ft",
-          "modeOfTravel": "Flight"
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Pokhara-Jomsom[Altitude 2745m/9005ft): Breathtaking Flight to the Heart of Mustang",
+          "description": "Breathtaking flight to Jomsom. Visit the sacred Muktinath Temple and explore the stunning Mustang region.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Flight",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 04",
-          "title": "Jomsom-Pokhara-Chitwan [altitude 415m/1361ft]: A Journey from Mountains to Jungle Adventures",
-          "accommodation": "Hotel / Lodge in Jomsom",
-          "meals": "Breakfast, lunch & dinner",
-          "description": "Today after breakfast, flight to Pokhara, once arrived; drive around [160 km-4-5 hrs] to Chitwan, passing through valleys, the banks of the Seti & Narayani River, terrace fields we can see. After arriving and settling in, you will be introduced to the camp staff and resident naturalists who will discuss the program. There is some flexibility, and activities may vary depending on the time of the year, and on wildlife movements. A late-afternoon safari will take you through forests and across grasslands to observe the varied and exciting wildlife in the park. In the early evening the local Tharu dance troupe may perform a cultural program. You will then enjoy dinner and afterwards you will be free to relax in the bar and discuss the day’s sightings or listen to the exotic sounds of the jungle at night.\n\nActivities Includes:\n- Tharu Village tour\n- Tharu cultural dance presentation or a slide show presentation",
-          "maxAltitude": "415m / 1361ft",
-          "modeOfTravel": "Private Vehicle"
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Jomsom-Pokhara-Chitwan: A Journey from Mountains to Jungle Adventures",
+          "description": "Fly back to Pokhara, then drive to Chitwan National Park for your jungle adventures.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 05",
+          "day": 5,
+          "dayNumber": 5,
           "title": "Chitwan: Explore Wildlife and Cultural Wonders in Nepal's Jungle Paradise",
+          "description": "Full day of jungle activities including safaris, visit to breeding centers, and Tharu cultural program.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Jungle Resort in Chitwan",
-          "meals": "Breakfast, lunch & dinner",
-          "description": "Embark on an early-morning excursion. This could include either another safari to different parts of the park (in search of the great rhino, deer, and exotic bird life) or joining one of the other activities available in the park. Tiger sightings are rare these days, but these magnificent animals do inhabit the park. After breakfast you will leave the lodge and go on a dugout canoe adventure on the Rapti River. This is an exciting trip with chances to view marsh mugger crocodiles and various birds that inhabit the riverbanks. A program will be organized for the rest of the day, and may include further excursions by jeep or a visit to one of the nearby villages.\n\nActivities Includes:\n- Bird watching \n- Elephant Safari or Jeep Safari (Depend on Resort location)\n- Elephant Breeding Centre or Crocodile Breeding centre (Depend on Resort location)\n- Tharu cultural dance presentation or a slide show presentation.",
-          "maxAltitude": "415m / 1,361ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast, Lunch & Dinner"
         },
         {
-          "day": "Day 06",
+          "day": 6,
+          "dayNumber": 6,
           "title": "Chitwan-Kathmandu: Return Journey through Nepal’s Cultural Heart",
-          "accommodation": "Hotel in Kathmandu",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive to Kathmandu [175km-4-5hrs];",
+          "description": "Drive back to Kathmandu enjoying the scenic highways of Nepal.",
           "maxAltitude": "415m / 1,361ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 07",
-          "title": "Kathmandu City Tour",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Kathmandu",
-          "meals": "Breakfast & Cultural Farewell Dinner",
-          "description": "After breakfast, full day sightseeing tour of Bhaktapur durbar square, Boudhanath stupa & Pashupatinath temple \n\nBhaktapur Durbar Square, a well preserved fine UNESCO world heritage site where you will witness the 55-window palace, the Golden Gate, Nyatapole temple, stone temple and many more. Bouddhanath is one of the largest stupas in the world, and one of the holiest Buddhist pilgrimage and tourist destinations in Kathmandu. The area of Boudhnath is also famous for over 50 Tibetan Gompas or monasteries. Pashupatinath Temple is one of the most sacred pilgrimage sites for Hindus all over the world.\n\nOptional Activities:\n- Nepali dinner with a live cultural show at the Nepali restaurant [complimentary]",
-          "maxAltitude": "1,400m / 4,595ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 08",
-          "title": "Depart from Kathmandu",
-          "accommodation": "Departure",
-          "meals": "Breakfast",
-          "description": "Today is your last day in the highest country on earth. \nBreakfast at the hotel\nFree time until departure\nTransfer to the international airport for final departure (Or stay longer for short tours - ask us)\nWe hope you had a magical experience in the Himalayas and we hope to see you again soon.",
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Kathmandu City Tour",
+          "description": "Explore ancient Bhaktapur Durbar Square, Pashupatinath, Boudhanath. Enjoy a Nepali cultural program with a farewell dinner.",
           "maxAltitude": "1,400m / 4,595ft",
-          "modeOfTravel": "Private Vehicle"
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 8,
+          "dayNumber": 8,
+          "title": "Depart from Kathmandu",
+          "description": "Departure transfer to the International Airport.",
+          "maxAltitude": "1,400m / 4,595ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
         }
       ],
       "gallery": [
@@ -53488,76 +54922,84 @@
       ],
       "itinerary": [
         {
-          "day": "Day 01",
-          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel. Relax or explore.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Kathmandu",
-          "meals": "There are no Meals included on this day",
-          "description": "On arrival at the Tribhuvan International Airport, you will be greeted by a dedicated dedicated representative from Zenex Travels & Tours Pvt. Ltd. You will then be transferred to your hotel in Kathmandu. Depending on your arrival time, you can explore the city on your own or relax at your hotel.",
-          "maxAltitude": "1400m / 4595ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Welcome Drink"
         },
         {
-          "day": "Day 02",
-          "title": "Kathmandu-Pokhara [altitude 830m/2723ft]",
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Pokhara",
+          "description": "Scenic drive to Pokhara. Enjoy the evening relaxing by the lake or exploring the city.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Pokhara",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive to Pokhara (210 km, 6-7 hours) passing through countryside, river valleys, and terrace fields. Evening stroll around Lakeside Phewa Lake.",
-          "maxAltitude": "830m / 2723ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 03",
-          "title": "Pokhara Sightseeing & Sarangkot Sunrise",
-          "accommodation": "Hotel in Pokhara",
-          "meals": "Breakfast",
-          "description": "Early morning drive to Sarangkot (1700m) for sunrise over Annapurna & Fishtail mountains. Half day city tour of Bindabasini Temple, Davis Falls, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, and Seti Gorge. Free afternoon around Lakeside.",
-          "maxAltitude": "1,700m / 5,577ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 04",
-          "title": "Pokhara - Damauli to Saranghat Rafting Expedition",
-          "accommodation": "Hotel in Pokhara",
-          "meals": "Breakfast, lunch & dinner",
-          "description": "After breakfast, drive to Damauli (approx. 2 hours) to launch your white-water rafting adventure on the Seti River. Enjoy rapids and pristine river valley scenery. Overnight tented beach camp at Saranghat with riverbank dinner.",
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Pokhara",
+          "description": "Breathtaking sunrise from Sarangkot. Enjoy boating on Phewa Lake, explore Bindabasini Temple, Davis Fall, and Gupteswori Cave.",
           "maxAltitude": "822m / 2,696ft",
-          "modeOfTravel": "Private Vehicle"
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 05",
-          "title": "Saranghat - Gai Ghat Rafting to Chitwan [altitude 415m/1361ft]",
-          "accommodation": "Jungle Resort in Chitwan",
-          "meals": "Breakfast, lunch & dinner",
-          "description": "Breakfast at beach camp, raft from Saranghat to Gai Ghat. After lunch, drive to Chitwan National Park (1-2 hours). Orientation by naturalists, late-afternoon safari, and evening Tharu cultural dance show.",
-          "maxAltitude": "415m / 1361ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 06",
-          "title": "Chitwan - Nagarkot [2175m/4136ft]",
-          "accommodation": "Hotel / Resort in Nagarkot",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive to Nagarkot via Kathmandu (210 km, 5-6 hours). Check into hotel and enjoy sunset views over the Himalayan range.",
-          "maxAltitude": "2,175m / 4136ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 07",
-          "title": "Nagarkot - Kathmandu Heritage Tour",
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara- Damauli",
+          "description": "Drive to Damauli for an exhilarating rafting adventure on the Seti River. Overnight camping stop at Saranghat on the beach.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Kathmandu",
-          "meals": "Breakfast & Farewell Dinner",
-          "description": "Early morning Himalayan sunrise view over Mt. Everest. Full day tour of Bhaktapur Durbar Square, Boudhanath Stupa & Pashupatinath Temple + complimentary traditional Nepali cultural dinner show.",
-          "maxAltitude": "2,175m / 7,136ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 08",
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Saranghat- Chitwan",
+          "description": "Rafting continues from Saranghat to Gai Ghat. After that, drive to Chitwan National Park.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Jungle Resort in Chitwan",
+          "meals": "Breakfast, Lunch & Dinner"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Chitwan-Nagarkot[2175m/4136ft]",
+          "description": "Immerse yourself in a wildlife safari in Chitwan. Visit a Tharu Village. Later, drive to Nagarkot.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Nagarkot",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Nagarkot –Kathmandu",
+          "description": "Witness an unforgettable sunrise. Visit Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple on the way back to Kathmandu. Special Nepali cultural dinner.",
+          "maxAltitude": "2,175m / 7,136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 8,
+          "dayNumber": 8,
           "title": "Depart from Kathmandu",
-          "accommodation": "Departure",
-          "meals": "Breakfast",
-          "description": "Breakfast at the hotel. Free time until departure. Transfer to international airport for final departure.",
+          "description": "Free time for last-minute shopping before your departure transfer to the airport.",
           "maxAltitude": "1,400m / 4,595ft",
-          "modeOfTravel": "Private Vehicle"
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
         }
       ],
       "img": "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?q=80&w=800",
@@ -53734,76 +55176,84 @@
       ],
       "itinerary": [
         {
-          "day": "Day 01",
-          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by a representative and transferred to your hotel. Time to relax or explore.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Kathmandu",
-          "meals": "There are no Meals included on this day",
-          "description": "On arrival at Tribhuvan International Airport, transfer to hotel. Relax or explore Thamel on your own.",
-          "maxAltitude": "1400m / 4595ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Welcome Drink"
         },
         {
-          "day": "Day 02",
-          "title": "Kathmandu-Bandipur [Altitude 1030m/3380ft]",
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Kathmandu-Bandipur",
+          "description": "Scenic drive to Bandipur village. Explore Bandipur’s traditional Newari architecture and vibrant community.",
+          "maxAltitude": "1030m/3380ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel / Heritage Resort in Bandipur",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive to Bandipur (143 km, 4-5 hours). Bandipur is a living museum of Newari culture crowning a lofty ridge. Enjoy self-guided village walk amidst traditional row houses.",
-          "maxAltitude": "1030m / 3380ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 03",
-          "title": "Bandipur-Pokhara [altitude 830m/2723ft]",
+          "day": 3,
+          "dayNumber": 3,
+          "title": "Bandipur-Pokhara",
+          "description": "Drive to Pokhara. Visit Bindabasini Temple, Davis Fall, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, and Seti Gorge. Enjoy boating on Phewa Lake.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Pokhara",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive to Pokhara (70 km, 2 hours). Half day city tour of Bindabasini Temple, Davis Falls, Gupteshwor Mahadev Cave, Tal Barahi Temple & Seti Gorge. Free evening around Lakeside Phewa Lake.",
-          "maxAltitude": "830m / 2723ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 04",
-          "title": "Pokhara-Australian Camp [Altitude 2060m/6752ft]",
-          "accommodation": "Lodge in Australian Camp",
-          "meals": "Breakfast",
-          "description": "Early morning drive to Sarangkot (1700m) for sunrise over Annapurna & Dhaulagiri range. Packed breakfast at Sarangkot. Trek from Sarangkot to Australian Camp (5-6 hours walk). Evening Himalayan sunset view.",
-          "maxAltitude": "2060m / 6752ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 05",
-          "title": "Australian Camp - Dhampus - Phedi - Pokhara",
-          "accommodation": "Hotel in Pokhara",
-          "meals": "Breakfast",
-          "description": "Sunrise view over Annapurna range. Breakfast at lodge, hike down to Phedi via Dhampus village through terraced fields. Drive back to Pokhara.",
-          "maxAltitude": "822m / 2,696ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 06",
-          "title": "Pokhara-Nagarkot [2175m/4136ft]",
-          "accommodation": "Hotel / Resort in Nagarkot",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive to Nagarkot via Kathmandu (250 km, 6-7 hours). Check into hotel and enjoy sunset over the Himalayas.",
-          "maxAltitude": "2,175m / 4136ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 07",
-          "title": "Nagarkot - Kathmandu Heritage Sightseeing",
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Pokhara-Australian camp",
+          "description": "Early morning head to Sarangkot for sunrise over the Himalayas. After breakfast, trek to Australian Camp for a peaceful hilltop experience and stunning views.",
+          "maxAltitude": "2060m/6752ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Kathmandu",
-          "meals": "Breakfast & Farewell Dinner",
-          "description": "Early morning Himalayan sunrise view over Mt. Everest. Full day tour of Bhaktapur Durbar Square, Boudhanath Stupa & Pashupatinath Temple + complimentary traditional Nepali cultural dinner show.",
-          "maxAltitude": "2,175m / 7,136ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 08",
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Australian camp-Dhampus-Phedi-Pokhara",
+          "description": "Trek through scenic trails to Dhampus, a village amidst terraced fields. Descend to Phedi, and drive back to Pokhara.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Pokhara",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Pokhara-Nagarkot[2175m/4136ft]",
+          "description": "Drive to Nagarkot, one of the best spots for witnessing Himalayan sunrises.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel / Resort in Nagarkot",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Nagarkot –Kathmandu",
+          "description": "Enjoy a magical sunrise. Drive back to Kathmandu. Visit Bhaktapur Durbar Square, Boudhanath Stupa, and Pashupatinath Temple. Traditional Nepali dinner and cultural show.",
+          "maxAltitude": "2,175m / 7,136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 8,
+          "dayNumber": 8,
           "title": "Depart from Kathmandu",
-          "accommodation": "Departure",
-          "meals": "Breakfast",
-          "description": "Breakfast at hotel. Free time until transfer to international airport for final departure.",
+          "description": "Departure transfer to the International Airport.",
           "maxAltitude": "1,400m / 4,595ft",
-          "modeOfTravel": "Private Vehicle"
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
         }
       ],
       "img": "/images/Tours/8-days-kathmandu-bandipur-pokhara-tour-with-trek/8-days-kathmandu-bandipur-pokhara-tour-with-trek.jpg",
@@ -53982,76 +55432,84 @@
       ],
       "itinerary": [
         {
-          "day": "Day 01",
-          "title": "Arrival in Kathmandu [altitude 1400m/4595ft]",
+          "day": 1,
+          "dayNumber": 1,
+          "title": "Arrival in Kathmandu",
+          "description": "Arrival at Tribhuvan International Airport. Greeted by our representative and transferred to your hotel.",
+          "maxAltitude": "1400m/4595ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Kathmandu",
-          "meals": "There are no Meals included on this day",
-          "description": "On arrival at Tribhuvan International Airport, transfer to hotel. Relax or explore Thamel on your own.",
-          "maxAltitude": "1400m / 4595ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Welcome Drink"
         },
         {
-          "day": "Day 02",
-          "title": "Scenic Drive from Kathmandu to Pokhara [altitude 830m/2723ft]",
-          "accommodation": "Hotel in Pokhara",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive to Pokhara (210 km, 5-6 hours) passing through countryside, river valleys, and terrace fields. Evening walk around Lakeside Phewa Lake.",
-          "maxAltitude": "830m / 2723ft",
-          "modeOfTravel": "Private Vehicle"
+          "day": 2,
+          "dayNumber": 2,
+          "title": "Scenic Drive from Kathmandu to Pokhara – Arrival and Relaxation",
+          "description": "Scenic drive to Pokhara. Enjoy the evening relaxing by the lake or exploring the city.",
+          "maxAltitude": "830m/2723ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 03",
+          "day": 3,
+          "dayNumber": 3,
           "title": "Discover Pokhara – Sunrise, Lakes, Caves, and Waterfalls",
-          "accommodation": "Hotel in Pokhara",
-          "meals": "Breakfast",
-          "description": "Early morning drive to Sarangkot (1700m) for sunrise over Annapurna & Fishtail. Half day city tour of Bindabasini Temple, Davis Falls, Gupteshwor Mahadev Cave, Tibetan Refugee Camp, and Seti Gorge. Free afternoon by Phewa Lake.",
-          "maxAltitude": "1,700m / 5,577ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 04",
-          "title": "Travel from Pokhara to Chitwan [altitude 415m/1361ft]",
-          "accommodation": "Jungle Resort in Chitwan",
-          "meals": "Breakfast, lunch & dinner",
-          "description": "After breakfast, drive to Chitwan National Park (160 km, 4-5 hours). Orientation by naturalists, late-afternoon safari, and evening Tharu cultural dance show.",
-          "maxAltitude": "415m / 1361ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 05",
-          "title": "Exploring Chitwan National Park – Safari Adventures and Local Culture",
-          "accommodation": "Jungle Resort in Chitwan",
-          "meals": "Breakfast, lunch & dinner",
-          "description": "Early-morning jungle safari (elephant or jeep safari), dugout canoe adventure on Rapti River (view crocodiles & exotic birds), and visit Elephant or Crocodile Breeding Centre.",
-          "maxAltitude": "415m / 1,361ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 06",
-          "title": "Chitwan to Nagarkot [2175m/4136ft]",
-          "accommodation": "Hotel / Resort in Nagarkot",
-          "meals": "Breakfast",
-          "description": "After breakfast, drive to Nagarkot via Kathmandu (210 km, 5-6 hours). Sunset view over the Himalayas.",
-          "maxAltitude": "2,175m / 4136ft",
-          "modeOfTravel": "Private Vehicle"
-        },
-        {
-          "day": "Day 07",
-          "title": "Nagarkot to Kathmandu – Explore Bhaktapur, Pashupatinath, and Boudhanath",
+          "description": "Breathtaking sunrise from Sarangkot. Visit Bindabasini Temple, Davis Fall, and Gupteshwor Cave. Enjoy boating on Phewa Lake.",
+          "maxAltitude": "822m / 2,696ft",
+          "modeOfTravel": "Private Vehicle",
           "accommodation": "Hotel in Kathmandu",
-          "meals": "Breakfast & Farewell Dinner",
-          "description": "Early morning Himalayan sunrise view over Mt. Everest. Full day tour of Bhaktapur Durbar Square, Boudhanath Stupa & Pashupatinath Temple + complimentary traditional Nepali cultural dinner show.",
-          "maxAltitude": "2,175m / 7,136ft",
-          "modeOfTravel": "Private Vehicle"
+          "meals": "Breakfast"
         },
         {
-          "day": "Day 08",
+          "day": 4,
+          "dayNumber": 4,
+          "title": "Travel from Pokhara to Chitwan – Scenic Drive and Safari Introduction",
+          "description": "Drive to Chitwan National Park. Check into your resort and get an introduction to the safari activities.",
+          "maxAltitude": "415m/1361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 5,
+          "dayNumber": 5,
+          "title": "Exploring Chitwan National Park – Safari Adventures and Local Culture",
+          "description": "Full day of jungle activities: Elephant or Jeep Safari, canoe ride, and a visit to the breeding centers. Enjoy a Tharu cultural program.",
+          "maxAltitude": "415m / 1,361ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 6,
+          "dayNumber": 6,
+          "title": "Chitwan to Nagarkot[2175m/4136ft] – Scenic Drive and Sunset Over the Himalayas",
+          "description": "Drive from the plains of Chitwan to the hill station of Nagarkot to witness a beautiful sunset.",
+          "maxAltitude": "2175m/4136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast"
+        },
+        {
+          "day": 7,
+          "dayNumber": 7,
+          "title": "Nagarkot to Kathmandu – Explore Bhaktapur, Pashupatinath, and Boudhanath",
+          "description": "Sunrise views of the Himalayas. Drive back to Kathmandu to explore historic sites. Farewell Nepali cultural dinner.",
+          "maxAltitude": "2,175m / 7,136ft",
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Hotel in Kathmandu",
+          "meals": "Breakfast & Cultural Farewell Dinner"
+        },
+        {
+          "day": 8,
+          "dayNumber": 8,
           "title": "Final Day in Kathmandu – Departure and Last-Minute Shopping",
-          "accommodation": "Departure",
-          "meals": "Breakfast",
-          "description": "Breakfast at hotel. Free time until transfer to international airport for final departure.",
+          "description": "Free time for last-minute shopping before your departure transfer to the airport.",
           "maxAltitude": "1,400m / 4,595ft",
-          "modeOfTravel": "Private Vehicle"
+          "modeOfTravel": "Private Vehicle",
+          "accommodation": "Departure",
+          "meals": "Breakfast"
         }
       ],
       "img": "/images/Tours/8-days-kathmandu-pokhara-chitwan-nagarkot-tour/8-days-kathmandu-pokhara-chitwan-nagarkot-tour.jpg",

@@ -240,9 +240,13 @@ const TourTripDetail = () => {
         : (extra.itinerary?.map((it, idx) => ({
             dayNumber: parseInt(it.day || idx + 1) || (idx + 1),
             title: it.title || `Day ${idx + 1}`,
-            description: it.desc || '',
+            description: it.desc || it.description || '',
+            maxAltitude: it.maxAltitude || it.altitude || '',
+            modeOfTravel: it.modeOfTravel || it.transport || it.travelMode || '',
             accommodation: it.accommodation || '',
-            meals: it.meals || ''
+            meals: it.meals || '',
+            duration: it.duration || '',
+            distance: it.distance || ''
           })) || []);
 
       const inclusionsData = (baseTrip.inclusions && baseTrip.inclusions.length > 0)
