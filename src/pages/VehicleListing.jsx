@@ -1,14 +1,63 @@
 import React, { useState, useEffect } from 'react';
 import SEO from '../components/SEO';
 import { Link, useSearchParams } from 'react-router-dom';
-import { Users, Gauge, Fuel, Filter, X, MapPin, Calendar, MessageCircle, Star, Search } from 'lucide-react';
+import { 
+  Users, 
+  Gauge, 
+  Fuel, 
+  Filter, 
+  X, 
+  MapPin, 
+  Calendar, 
+  MessageCircle, 
+  Star, 
+  Search, 
+  Clock, 
+  RotateCcw, 
+  Car, 
+  Briefcase,
+  CheckCircle2,
+  ArrowRight
+} from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import { useAppData } from '../context/AppDataContext';
 import { useBooking } from '../context/BookingContext';
 
+const getLocalDateString = (offsetDays = 0) => {
+  const d = new Date();
+  d.setDate(d.getDate() + offsetDays);
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+const POPULAR_LOCATIONS = [
+  'Kathmandu Airport (TIA)',
+  'Thamel, Kathmandu',
+  'Patan / Lalitpur',
+  'Bhaktapur Durbar Square',
+  'Pokhara Airport',
+  'Lakeside, Pokhara',
+  'Chitwan (Sauraha)',
+  'Nagarkot Hill Station',
+  'Other'
+];
+
+const VEHICLE_CATEGORIES = [
+  'All',
+  'SUV / 4x4',
+  'Sedan/Hatchback',
+  'Electric EV',
+  'Van / Micro',
+  'Bus',
+  'Luxury'
+];
+
 const VehicleListing = () => {
   const { vehicles } = useAppData();
   const { isVehicleAvailable } = useBooking();
+  const { formatPrice } = useCurrency();
 
   const getVehicleDetailsPath = (vehicle) => {
     const name = vehicle.name.toLowerCase();
@@ -17,13 +66,14 @@ const VehicleListing = () => {
     if (name.includes('bus')) return '/vehicles/bus-routes';
     if (name.includes('coaster')) return '/vehicles/coaster-routes';
     if (name.includes('ev van') || name.includes('ev-van') || (name.includes('ev') && name.includes('van'))) return '/vehicles/ev-van-routes';
-    if (name.includes('ev') || name.includes('electric') || vehicle.type === 'EV') return '/vehicles/ev-routes';
+    if (name.includes('ev') || name.includes('electric') || vehicle.type === 'Electric EV') return '/vehicles/ev-routes';
     if (name.includes('fortuner') || name.includes('land cruiser') || name.includes('cruiser')) return '/vehicles/fortuner-routes';
     if (name.includes('wedding') || name.includes('model') || vehicle.type === 'Luxury') return '/vehicles/wedding-cars';
     if (name.includes('self drive') || name.includes('self-drive')) return '/vehicles/self-drive';
     if (name.includes('standard') || name.includes('sedan')) return '/vehicles/car-routes';
     return '/vehicles/car-routes';
   };
+
   const [searchParams] = useSearchParams();
   const searchType = searchParams.get('type') || 'All';
   const urlPickup = searchParams.get('pickup');
@@ -32,29 +82,23 @@ const VehicleListing = () => {
   const urlEnd = searchParams.get('end');
 
   // Booking Widget State
-  const [driverMode, setDriverMode] = useState('self');
+  const [driverMode, setDriverMode] = useState('self'); // 'self', 'driver', 'all'
   const [pickupLoc, setPickupLoc] = useState(urlPickup || 'Kathmandu Airport (TIA)');
   const [customPickup, setCustomPickup] = useState('');
   const [dropoffLoc, setDropoffLoc] = useState(urlDropoff || 'Kathmandu Airport (TIA)');
   const [customDropoff, setCustomDropoff] = useState('');
   
-  // Date State
-  const today = new Date().toISOString().split('T')[0];
-  const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0];
+  // Date State with accurate local timezone dates
+  const today = getLocalDateString(0);
+  const tomorrow = getLocalDateString(1);
   const [startDate, setStartDate] = useState(urlStart || today);
   const [endDate, setEndDate] = useState(urlEnd || tomorrow);
   const [days, setDays] = useState(1);
 
-  // Filter State
+  // Filter & Search State
   const [filterType, setFilterType] = useState(searchType);
   const [sortBy, setSortBy] = useState('recommended');
-  const [fuelFilter, setFuelFilter] = useState('All');
-  const [transFilter, setTransFilter] = useState('All');
-  const [seatFilter, setSeatFilter] = useState('All');
-  const [showMobileFilters, setShowMobileFilters] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
-  const { formatPrice } = useCurrency();
 
   // Hero Slider State
   const heroSlides = [
@@ -76,51 +120,98 @@ const VehicleListing = () => {
   }, []);
 
   useEffect(() => {
-    // Simulate network fetch for professional feel
-    setIsLoading(true);
-    const timer = setTimeout(() => setIsLoading(false), 800);
-    return () => clearTimeout(timer);
-  }, [filterType]);
-
-  useEffect(() => {
     if (searchType && searchType !== 'All') {
       setFilterType(searchType);
     }
   }, [searchType]);
 
-  // Calculate days
+  // Calculate days accurately whenever startDate or endDate changes
   useEffect(() => {
     if (startDate && endDate) {
       const s = new Date(startDate);
       const e = new Date(endDate);
-      const diffTime = e - s;
+      const diffTime = e.getTime() - s.getTime();
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
       setDays(diffDays > 0 ? diffDays : 1);
     }
   }, [startDate, endDate]);
 
-  let filteredList = vehicles;
+  const handleStartDateChange = (val) => {
+    setStartDate(val);
+    if (val && (!endDate || new Date(endDate) <= new Date(val))) {
+      const nextDay = new Date(val);
+      nextDay.setDate(nextDay.getDate() + 1);
+      const y = nextDay.getFullYear();
+      const m = String(nextDay.getMonth() + 1).padStart(2, '0');
+      const d = String(nextDay.getDate()).padStart(2, '0');
+      setEndDate(`${y}-${m}-${d}`);
+    }
+  };
 
+  const handleEndDateChange = (val) => {
+    if (startDate && new Date(val) <= new Date(startDate)) {
+      const nextDay = new Date(startDate);
+      nextDay.setDate(nextDay.getDate() + 1);
+      const y = nextDay.getFullYear();
+      const m = String(nextDay.getMonth() + 1).padStart(2, '0');
+      const d = String(nextDay.getDate()).padStart(2, '0');
+      setEndDate(`${y}-${m}-${d}`);
+    } else {
+      setEndDate(val);
+    }
+  };
+
+  const handleResetTrip = () => {
+    setDriverMode('self');
+    setPickupLoc('Kathmandu Airport (TIA)');
+    setCustomPickup('');
+    setDropoffLoc('Kathmandu Airport (TIA)');
+    setCustomDropoff('');
+    setStartDate(today);
+    setEndDate(tomorrow);
+    setFilterType('All');
+    setSearchQuery('');
+    setSortBy('recommended');
+  };
+
+  const scrollToFleet = () => {
+    const el = document.getElementById('fleet-results');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  // Filter vehicles
+  let filteredList = vehicles || [];
+
+  // 1. Filter by Experience Mode
+  if (driverMode === 'self') {
+    // Large commercial tourist buses & coasters cannot be rented for self-drive in Nepal
+    filteredList = filteredList.filter(v => v.type !== 'Bus' && !v.name?.toLowerCase().includes('bus') && !v.name?.toLowerCase().includes('coaster'));
+  }
+
+  // 2. Filter by Vehicle Category
   if (filterType !== 'All') {
-    filteredList = filteredList.filter(v => v.type === filterType);
-  }
-  if (fuelFilter !== 'All') {
-    filteredList = filteredList.filter(v => v.fuel === fuelFilter);
-  }
-  if (transFilter !== 'All') {
-    filteredList = filteredList.filter(v => v.trans === transFilter);
-  }
-  if (seatFilter !== 'All') {
-    if (seatFilter === '4') filteredList = filteredList.filter(v => parseInt(v.pax) <= 4);
-    if (seatFilter === '5-7') filteredList = filteredList.filter(v => parseInt(v.pax) >= 5 && parseInt(v.pax) <= 7);
-    if (seatFilter === '8+') filteredList = filteredList.filter(v => parseInt(v.pax) >= 8);
+    if (filterType === 'Electric EV') {
+      filteredList = filteredList.filter(v => v.type === 'Electric EV' || v.type === 'EV' || v.fuel === 'Electric');
+    } else {
+      filteredList = filteredList.filter(v => v.type === filterType);
+    }
   }
 
+  // 3. Filter by Booking Availability
   filteredList = filteredList.filter(v => isVehicleAvailable(v.id, startDate, endDate));
+
+  // 4. Search Query Filter
   if (searchQuery.trim() !== '') {
-    filteredList = filteredList.filter(v => v.name.toLowerCase().includes(searchQuery.toLowerCase()));
+    const q = searchQuery.toLowerCase();
+    filteredList = filteredList.filter(v => 
+      v.name.toLowerCase().includes(q) || 
+      (v.type && v.type.toLowerCase().includes(q))
+    );
   }
 
+  // 5. Sort Vehicles
   const filteredVehicles = [...filteredList].sort((a, b) => {
     const priceA = driverMode === 'self' ? a.price : (a.priceWithDriver || a.price + 1500);
     const priceB = driverMode === 'self' ? b.price : (b.priceWithDriver || b.price + 1500);
@@ -130,24 +221,27 @@ const VehicleListing = () => {
     return 0; 
   });
 
+  const finalPickup = pickupLoc === 'Other' ? (customPickup.trim() || 'Custom Location') : pickupLoc;
+  const finalDropoff = dropoffLoc === 'Other' ? (customDropoff.trim() || 'Custom Location') : dropoffLoc;
+
   const handleWhatsAppBooking = (vehicle) => {
-    const finalPickup = pickupLoc === 'Other' ? customPickup : pickupLoc;
-    const finalDropoff = dropoffLoc === 'Other' ? customDropoff : dropoffLoc;
-    const pricePerDay = driverMode === 'self' ? vehicle.price : (vehicle.priceWithDriver || vehicle.price + 1500);
+    const isSelf = driverMode === 'self';
+    const pricePerDay = isSelf ? vehicle.price : (vehicle.priceWithDriver || vehicle.price + 1500);
     const totalPrice = pricePerDay * days;
     
     const message = `Hi Zenex Travel, I'd like to book a vehicle!
 
 *Vehicle:* ${vehicle.name}
-*Type:* ${driverMode === 'self' ? 'Self Drive' : 'With Driver'}
+*Experience:* ${isSelf ? 'Self Drive (Drive Yourself)' : driverMode === 'driver' ? 'With Professional Driver' : 'Standard'}
 *Pickup Date:* ${startDate}
-*Dropoff Date:* ${endDate} (${days} Days)
+*Dropoff Date:* ${endDate} (${days} ${days === 1 ? 'Day' : 'Days'})
 *Pickup Location:* ${finalPickup}
 *Dropoff Location:* ${finalDropoff}
 
+*Daily Rate:* ${formatPrice(pricePerDay)} / Day
 *Estimated Total:* ${formatPrice(totalPrice)}
 
-Is this available?`;
+Is this vehicle available?`;
 
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/9779767476521?text=${encodedMessage}`, '_blank');
@@ -163,7 +257,7 @@ Is this available?`;
         "@type": "Product",
         "name": v.name,
         "image": v.img,
-        "description": `${v.type} for rent. Features: ${v.pax} seats, ${v.trans}.`,
+        "description": `${v.type} for rent. Features: ${v.seats || v.pax} seats, ${v.trans}.`,
         "offers": {
           "@type": "Offer",
           "price": v.price,
@@ -174,7 +268,7 @@ Is this available?`;
   };
 
   return (
-    <div className="bg-background min-h-screen">
+    <div className="bg-[#f8f9ff] min-h-screen">
       <SEO 
         keywords="Car Rental Nepal, Rent SUV Nepal, Scorpio Hire Kathmandu, Hiace Rental Nepal, Zenex Travels, Zenex Travel, Self Drive Nepal" 
         title="Car Rental Nepal Fleet | Rent SUV, Scorpio, Hiace & Sedan | Zenex Travels"
@@ -184,7 +278,7 @@ Is this available?`;
       />
       
       {/* Vehicle Hero Section */}
-      <section className="relative h-[400px] md:h-[500px] w-full flex items-end pb-12 justify-center pt-16">
+      <section className="relative h-[380px] md:h-[480px] w-full flex items-end pb-12 justify-center pt-16">
         <div className="absolute inset-0 z-0 bg-black overflow-hidden">
           {heroSlides.map((slide, idx) => (
             <img
@@ -203,18 +297,18 @@ Is this available?`;
               Featured Fleet
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-2 drop-shadow-lg leading-tight transition-all duration-300">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2 drop-shadow-lg leading-tight transition-all duration-300">
               {heroSlides[currentImageIndex]?.title || 'Our Premium Fleet'}
             </h1>
-            <p className="text-lg md:text-xl text-white/90 drop-shadow-md font-medium max-w-2xl">
+            <p className="text-base md:text-lg text-white/90 drop-shadow-md font-medium max-w-2xl">
               Choose from our wide range of well-maintained vehicles for self-drive or with a professional driver.
             </p>
           </div>
           
-          <div className="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl w-full md:w-auto">
+          <div className="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-4 md:p-5 rounded-2xl w-full md:w-auto">
             <div className="text-white">
-              <p className="text-sm text-white/70 font-semibold uppercase">Starting From</p>
-              <p className="text-3xl font-black">{formatPrice(heroSlides[currentImageIndex]?.price || 0)} <span className="text-base font-medium">/ Day</span></p>
+              <p className="text-xs text-white/70 font-semibold uppercase tracking-wider">Starting From</p>
+              <p className="text-2xl md:text-3xl font-black">{formatPrice(heroSlides[currentImageIndex]?.price || 0)} <span className="text-sm font-medium">/ Day</span></p>
             </div>
           </div>
         </div>
@@ -232,159 +326,316 @@ Is this available?`;
         </div>
       </section>
       
-      <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop pt-12 pb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pt-8 pb-16">
         
-        {/* Interactive Booking Widget */}
-        <div className="bg-white rounded-2xl shadow-xl border border-sky-tint p-6 mb-12">
-          <h2 className="text-2xl font-bold text-himalayan-blue mb-6">Plan Your Trip</h2>
+        {/* Interactive Booking & Trip Planning Widget */}
+        <div className="bg-white rounded-2xl shadow-lg border border-slate-200/80 p-5 md:p-7 mb-10 transition-all">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-5 border-b border-gray-100 gap-3">
+            <div>
+              <h2 className="text-2xl font-bold text-[#1e3a8a] tracking-tight">Plan Your Trip</h2>
+              <p className="text-xs md:text-sm text-gray-500 font-medium mt-0.5">
+                Set your dates, experience, and pickup location to see tailored rates and availability
+              </p>
+            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="inline-flex items-center gap-1.5 bg-[#eff4ff] text-[#1e3a8a] text-xs font-bold px-3 py-1.5 rounded-full border border-[#d2e4ff]">
+                <Clock size={14} className="text-[#e53a24]" />
+                {days} {days === 1 ? 'Day Rental' : 'Days Rental'}
+              </span>
+              {driverMode === 'self' && (
+                <span className="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 text-xs font-bold px-2.5 py-1.5 rounded-full border border-emerald-200">
+                  <CheckCircle2 size={13} /> Self Drive
+                </span>
+              )}
+              {driverMode === 'driver' && (
+                <span className="inline-flex items-center gap-1 bg-blue-50 text-blue-700 text-xs font-bold px-2.5 py-1.5 rounded-full border border-blue-200">
+                  <CheckCircle2 size={13} /> Driver Included
+                </span>
+              )}
+            </div>
+          </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             
-            <div className="space-y-1">
-              <label className="text-xs font-bold text-on-surface-variant uppercase">Experience</label>
+            {/* 1. Experience */}
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-gray-600 uppercase tracking-wider flex items-center gap-1.5">
+                <Car size={14} className="text-[#1e3a8a]" /> Experience
+              </label>
               <select 
                 value={driverMode} 
                 onChange={e => setDriverMode(e.target.value)}
-                className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue"
+                className="w-full bg-[#f8faff] border border-gray-200 hover:border-gray-300 focus:border-[#1e3a8a] rounded-xl p-3 text-sm font-semibold text-gray-800 outline-none focus:ring-2 focus:ring-[#1e3a8a]/20 transition-all cursor-pointer"
               >
                 <option value="self">Self Drive</option>
                 <option value="driver">With Driver</option>
+                <option value="all">All Experiences</option>
               </select>
             </div>
 
-            <div className="space-y-1">
-              <label className="text-xs font-bold text-on-surface-variant uppercase">Pickup Location</label>
+            {/* 2. Pickup Location */}
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-gray-600 uppercase tracking-wider flex items-center gap-1.5">
+                <MapPin size={14} className="text-[#1e3a8a]" /> Pickup Location
+              </label>
               <select 
                 value={pickupLoc} 
                 onChange={e => setPickupLoc(e.target.value)}
-                className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue mb-2"
+                className="w-full bg-[#f8faff] border border-gray-200 hover:border-gray-300 focus:border-[#1e3a8a] rounded-xl p-3 text-sm font-semibold text-gray-800 outline-none focus:ring-2 focus:ring-[#1e3a8a]/20 transition-all cursor-pointer"
               >
-                <option value="Kathmandu Airport (TIA)">Kathmandu Airport (TIA)</option>
-                <option value="Thamel City Center">Thamel City Center</option>
-                <option value="Pokhara Airport">Pokhara Airport</option>
-                <option value="Other">Other (Enter Below)</option>
+                {POPULAR_LOCATIONS.map((loc) => (
+                  <option key={loc} value={loc}>{loc === 'Other' ? 'Other (Enter Custom Location)' : loc}</option>
+                ))}
               </select>
-              {pickupLoc === 'Other' && (
-                <input 
-                  type="text" 
-                  placeholder="Enter custom pickup"
-                  value={customPickup}
-                  onChange={e => setCustomPickup(e.target.value)}
-                  className="w-full bg-white border border-outline-variant rounded-lg p-2 text-sm outline-none"
-                />
-              )}
             </div>
 
-            <div className="space-y-1">
-              <label className="text-xs font-bold text-on-surface-variant uppercase">Dropoff Location</label>
+            {/* 3. Dropoff Location */}
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-gray-600 uppercase tracking-wider flex items-center gap-1.5">
+                <MapPin size={14} className="text-[#e53a24]" /> Dropoff Location
+              </label>
               <select 
                 value={dropoffLoc} 
                 onChange={e => setDropoffLoc(e.target.value)}
-                className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue mb-2"
+                className="w-full bg-[#f8faff] border border-gray-200 hover:border-gray-300 focus:border-[#1e3a8a] rounded-xl p-3 text-sm font-semibold text-gray-800 outline-none focus:ring-2 focus:ring-[#1e3a8a]/20 transition-all cursor-pointer"
               >
-                <option value="Kathmandu Airport (TIA)">Kathmandu Airport (TIA)</option>
-                <option value="Thamel City Center">Thamel City Center</option>
-                <option value="Pokhara Airport">Pokhara Airport</option>
-                <option value="Other">Other (Enter Below)</option>
+                {POPULAR_LOCATIONS.map((loc) => (
+                  <option key={loc} value={loc}>{loc === 'Other' ? 'Other (Enter Custom Location)' : loc}</option>
+                ))}
               </select>
-              {dropoffLoc === 'Other' && (
-                <input 
-                  type="text" 
-                  placeholder="Enter custom dropoff"
-                  value={customDropoff}
-                  onChange={e => setCustomDropoff(e.target.value)}
-                  className="w-full bg-white border border-outline-variant rounded-lg p-2 text-sm outline-none"
-                />
-              )}
             </div>
 
-            <div className="space-y-1">
-              <label className="text-xs font-bold text-on-surface-variant uppercase">Pickup Date</label>
+            {/* 4. Pickup Date */}
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-gray-600 uppercase tracking-wider flex items-center gap-1.5">
+                <Calendar size={14} className="text-[#1e3a8a]" /> Pickup Date
+              </label>
               <input 
                 type="date" 
                 value={startDate} 
-                onChange={e => setStartDate(e.target.value)}
-                className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue"
+                min={today}
+                onChange={e => handleStartDateChange(e.target.value)}
+                className="w-full bg-[#f8faff] border border-gray-200 hover:border-gray-300 focus:border-[#1e3a8a] rounded-xl p-3 text-sm font-semibold text-gray-800 outline-none focus:ring-2 focus:ring-[#1e3a8a]/20 transition-all cursor-pointer"
               />
             </div>
 
-            <div className="space-y-1">
-              <label className="text-xs font-bold text-on-surface-variant uppercase">Dropoff Date</label>
+            {/* 5. Dropoff Date */}
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-gray-600 uppercase tracking-wider flex items-center gap-1.5">
+                <Calendar size={14} className="text-[#1e3a8a]" /> Dropoff Date
+              </label>
               <input 
                 type="date" 
                 value={endDate} 
-                onChange={e => setEndDate(e.target.value)}
-                className="w-full bg-surface-container-low border-none rounded-lg p-3 text-on-surface outline-none focus:ring-2 focus:ring-himalayan-blue"
+                min={startDate || today}
+                onChange={e => handleEndDateChange(e.target.value)}
+                className="w-full bg-[#f8faff] border border-gray-200 hover:border-gray-300 focus:border-[#1e3a8a] rounded-xl p-3 text-sm font-semibold text-gray-800 outline-none focus:ring-2 focus:ring-[#1e3a8a]/20 transition-all cursor-pointer"
               />
             </div>
 
           </div>
+
+          {/* Conditional Custom Location Inputs */}
+          {(pickupLoc === 'Other' || dropoffLoc === 'Other') && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 pt-4 border-t border-gray-100">
+              {pickupLoc === 'Other' && (
+                <div>
+                  <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">Custom Pickup Location</label>
+                  <input 
+                    type="text" 
+                    placeholder="e.g. Hotel Yak & Yeti, Durbarmarg"
+                    value={customPickup}
+                    onChange={e => setCustomPickup(e.target.value)}
+                    className="w-full bg-white border border-gray-300 focus:border-[#1e3a8a] rounded-xl p-2.5 text-sm outline-none focus:ring-2 focus:ring-[#1e3a8a]/20"
+                  />
+                </div>
+              )}
+              {dropoffLoc === 'Other' && (
+                <div>
+                  <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">Custom Dropoff Location</label>
+                  <input 
+                    type="text" 
+                    placeholder="e.g. Pokhara Lakeside Hotel"
+                    value={customDropoff}
+                    onChange={e => setCustomDropoff(e.target.value)}
+                    className="w-full bg-white border border-gray-300 focus:border-[#1e3a8a] rounded-xl p-2.5 text-sm outline-none focus:ring-2 focus:ring-[#1e3a8a]/20"
+                  />
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Action & Feedback Footer */}
+          <div className="mt-5 pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div className="text-xs text-gray-600 font-medium flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>
+                Trip Summary: <strong className="text-gray-800">{finalPickup}</strong> → <strong className="text-gray-800">{finalDropoff}</strong> ({days} {days === 1 ? 'day' : 'days'})
+              </span>
+            </div>
+
+            <div className="flex items-center gap-3 w-full sm:w-auto">
+              <button 
+                onClick={handleResetTrip}
+                className="inline-flex items-center gap-1.5 text-gray-500 hover:text-gray-800 text-xs font-bold px-3 py-2.5 rounded-xl hover:bg-gray-100 transition-colors cursor-pointer"
+                title="Reset all filters to defaults"
+              >
+                <RotateCcw size={14} /> Reset
+              </button>
+              <button 
+                onClick={scrollToFleet}
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-[#1e3a8a] hover:bg-[#162a63] text-white font-bold text-xs md:text-sm px-6 py-2.5 rounded-xl shadow-sm hover:shadow transition-all cursor-pointer"
+              >
+                <Search size={15} /> Find Vehicles ({filteredVehicles.length})
+              </button>
+            </div>
+          </div>
         </div>
 
-        {/* Special Vehicle Pricing Cards */}
+        {/* Fleet Section Header with Filters & Search */}
+        <div id="fleet-results" className="pt-2 mb-8">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e3a8a] tracking-tight">
+                Available Fleet
+              </h2>
+              <p className="text-gray-500 text-sm font-medium mt-0.5">
+                Showing {filteredVehicles.length} vehicles ready for your {days}-day rental ({startDate} to {endDate})
+              </p>
+            </div>
+
+            {/* Search Input & Sort */}
+            <div className="flex items-center gap-3 flex-wrap">
+              <div className="relative min-w-[220px]">
+                <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                <input 
+                  type="text" 
+                  placeholder="Search vehicle model..." 
+                  value={searchQuery}
+                  onChange={e => setSearchQuery(e.target.value)}
+                  className="w-full pl-9 pr-3 py-2 bg-white border border-gray-200 rounded-xl text-xs md:text-sm font-medium focus:ring-2 focus:ring-[#1e3a8a]/20 focus:border-[#1e3a8a] outline-none"
+                />
+                {searchQuery && (
+                  <button onClick={() => setSearchQuery('')} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+                    <X size={14} />
+                  </button>
+                )}
+              </div>
+
+              <select 
+                value={sortBy} 
+                onChange={e => setSortBy(e.target.value)}
+                className="bg-white border border-gray-200 rounded-xl px-3 py-2 text-xs md:text-sm font-semibold text-gray-700 outline-none cursor-pointer"
+              >
+                <option value="recommended">Sort: Recommended</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating-desc">Rating: Highest</option>
+              </select>
+            </div>
+          </div>
+
+          {/* Category Filter Pills */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+            {VEHICLE_CATEGORIES.map(category => (
+              <button
+                key={category}
+                onClick={() => setFilterType(category)}
+                className={`px-4 py-2 rounded-xl text-xs md:text-sm font-bold whitespace-nowrap transition-all cursor-pointer ${
+                  filterType === category 
+                    ? 'bg-[#1e3a8a] text-white shadow-sm' 
+                    : 'bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                }`}
+              >
+                {category === 'All' ? 'All Fleet' : category}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Vehicle Cards Grid */}
         <div className="flex flex-wrap justify-center gap-6 mb-12 w-full">
           {filteredVehicles.length > 0 ? (
             filteredVehicles.map((vehicle) => {
               const detailsPath = getVehicleDetailsPath(vehicle);
-              const pricePerDay = driverMode === 'self' ? vehicle.price : (vehicle.priceWithDriver || vehicle.price + 1500);
-              
+              const isSelf = driverMode === 'self';
+              const pricePerDay = isSelf ? vehicle.price : (vehicle.priceWithDriver || vehicle.price + 1500);
+              const totalPrice = pricePerDay * days;
+              const detailsQuery = `?start=${startDate}&end=${endDate}&pickup=${encodeURIComponent(finalPickup)}&dropoff=${encodeURIComponent(finalDropoff)}&driver=${driverMode}`;
+
               return (
                 <div 
                   key={vehicle.id}
-                  className="bg-white shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col w-full max-w-sm p-4 rounded-2xl mb-6 text-left"
+                  className="bg-white shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col justify-between w-full max-w-[285px] p-3.5 rounded-xl text-left"
                 >
-                  <Link to={detailsPath} className="relative overflow-hidden rounded-lg block cursor-pointer mb-4">
-                    <img 
-                      alt={vehicle.name} 
-                      className="w-full object-cover group-hover:scale-105 transition-transform duration-500 h-48"
-                      loading="lazy" 
-                      src={vehicle.img} 
-                      onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
-                    />
-                    <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
-                      {vehicle.type}
-                    </span>
-                    <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1 text-[#1e3a8a]">
-                      <Star size={12} className="text-[#e53a24] fill-current" /> {vehicle.rating || '4.8'}
+                  <div>
+                    {/* Framed Image Container */}
+                    <Link to={`${detailsPath}${detailsQuery}`} className="relative overflow-hidden rounded-lg block cursor-pointer mb-2.5 bg-slate-100 border border-slate-200/60 h-36">
+                      <img 
+                        alt={vehicle.name} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy" 
+                        src={vehicle.img} 
+                        data-pin-nopin="true"
+                        onError={(e) => { e.target.onerror = null; e.target.src = '/images/economy_car.png'; }} 
+                      />
+                      <span className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#1e3a8a] shadow-sm">
+                        {vehicle.type}
+                      </span>
+                      <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1 text-[#1e3a8a]">
+                        <Star size={12} className="text-[#e53a24] fill-current" /> {vehicle.rating || '4.8'}
+                      </div>
+                    </Link>
+                    
+                    <h3 className="font-headline-md font-bold text-gray-900 mb-1 text-lg leading-snug line-clamp-1">{vehicle.name}</h3>
+                    
+                    {/* Pricing with Live Trip Duration Total */}
+                    <div className="flex items-baseline gap-1.5 mb-1">
+                      <span className="text-gray-500 text-xs font-medium">Starting from</span>
+                      <span className="font-bold text-[#e53a24] text-lg">{formatPrice(pricePerDay)}</span>
+                      <span className="text-gray-500 text-xs font-medium">/ Day</span>
                     </div>
-                  </Link>
-                  
-                  <h3 className="font-headline-md font-bold text-gray-900 mb-1 text-2xl">{vehicle.name}</h3>
-                  <div className="flex items-center gap-1.5 mb-4">
-                    <span className="text-gray-500 text-sm font-medium">Starting from</span>
-                    <span className="font-bold text-[#e53a24] text-xl">{formatPrice(pricePerDay)}</span>
-                    <span className="text-gray-500 text-sm font-medium">/ Day</span>
+
+                    {days > 1 && (
+                      <div className="mb-2.5">
+                        <span className="text-[11px] font-semibold text-gray-600 bg-[#eff4ff] px-2 py-0.5 rounded border border-[#d2e4ff]">
+                          Total: <strong>{formatPrice(totalPrice)}</strong> ({days} Days)
+                        </span>
+                      </div>
+                    )}
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-2 mt-auto mb-6">
-                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-3">
+                  {/* 4 Feature Pills with Identical Height */}
+                  <div className="grid grid-cols-2 gap-2 mt-auto mb-3.5">
+                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-2 h-[58px]">
                       <Users size={18} className="text-[#1e3a8a] mb-1.5" />
-                      <span className="text-xs font-semibold text-[#1e3a8a]">{vehicle.seats} Seats</span>
+                      <span className="text-xs font-semibold text-[#1e3a8a] truncate w-full px-1">{vehicle.seats || vehicle.pax || 4} Seats</span>
                     </div>
-                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-3">
+                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-2 h-[58px]">
                       <Gauge size={18} className="text-[#1e3a8a] mb-1.5" />
-                      <span className="text-xs font-semibold text-[#1e3a8a]">{vehicle.trans}</span>
+                      <span className="text-xs font-semibold text-[#1e3a8a] truncate w-full px-1">{vehicle.trans || 'Manual'}</span>
                     </div>
-                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-3">
+                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-2 h-[58px]">
                       <Fuel size={18} className="text-[#1e3a8a] mb-1.5" />
-                      <span className="text-xs font-semibold text-[#1e3a8a]">{vehicle.fuel}</span>
+                      <span className="text-xs font-semibold text-[#1e3a8a] truncate w-full px-1">{vehicle.fuel || 'Petrol'}</span>
                     </div>
-                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center p-3">
-                      <span className="w-5 h-5 inline-flex items-center justify-center text-[#1e3a8a] mb-1.5 font-bold text-xs">💼</span>
-                      <span className="text-xs font-semibold text-[#1e3a8a]">{vehicle.luggage} Bags</span>
+                    <div className="bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden p-2 h-[58px]">
+                      <Briefcase size={18} className="text-[#1e3a8a] mb-1.5" />
+                      <span className="text-xs font-semibold text-[#1e3a8a] truncate w-full px-1">{vehicle.luggage || 2} Bags</span>
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-2.5 mt-auto">
+                  {/* Buttons pinned to bottom */}
+                  <div className="flex flex-col gap-2 mt-auto">
                     <Link 
-                      to={detailsPath} 
-                      className="w-full font-bold text-xs hover:bg-[#1e3a8a] hover:text-white transition-colors text-center py-3 rounded-xl border-2 border-[#1e3a8a] text-[#1e3a8a]"
+                      to={`${detailsPath}${detailsQuery}`} 
+                      className="w-full font-bold text-xs hover:bg-[#1e3a8a] hover:text-white transition-colors text-center py-2.5 rounded-lg border border-[#1e3a8a] text-[#1e3a8a]"
                     >
                       View Details
                     </Link>
                     <button 
                       onClick={() => handleWhatsAppBooking(vehicle)}
-                      className="w-full text-white font-bold text-xs hover:bg-[#1ebd5a] transition-colors shadow-sm flex justify-center items-center gap-2 py-3 rounded-xl bg-[#25D366]"
+                      className="w-full text-white font-bold text-xs hover:bg-[#1ebd5a] transition-colors shadow-sm flex justify-center items-center gap-2 py-2.5 rounded-lg bg-[#25D366] cursor-pointer"
                     >
                       <MessageCircle size={16} /> Book via WhatsApp
                     </button>
@@ -393,19 +644,17 @@ Is this available?`;
               );
             })
           ) : (
-            <div className="text-center py-12 w-full">
-              <p className="text-gray-500 font-medium text-lg">No vehicles found matching your filters.</p>
+            <div className="text-center py-16 w-full bg-white rounded-2xl border border-gray-200 p-8 shadow-sm max-w-xl mx-auto">
+              <Car size={48} className="mx-auto text-gray-300 mb-3" />
+              <h3 className="text-xl font-bold text-gray-800 mb-1">No vehicles found</h3>
+              <p className="text-gray-500 font-medium text-sm mb-6">
+                No vehicles match your current search criteria ({filterType !== 'All' ? `Type: ${filterType}, ` : ''}{driverMode === 'self' ? 'Self Drive, ' : ''}{days} Days).
+              </p>
               <button 
-                onClick={() => {
-                  setFilterType('All');
-                  setFuelFilter('All');
-                  setTransFilter('All');
-                  setSeatFilter('All');
-                  setSearchQuery('');
-                }}
-                className="mt-4 text-[#e53a24] font-bold hover:underline"
+                onClick={handleResetTrip}
+                className="inline-flex items-center gap-2 bg-[#e53a24] hover:bg-[#d04b08] text-white font-bold text-sm px-6 py-2.5 rounded-xl transition-colors cursor-pointer"
               >
-                Clear Filters
+                <RotateCcw size={16} /> Reset All Filters
               </button>
             </div>
           )}
