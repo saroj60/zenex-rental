@@ -76,13 +76,15 @@ const VehicleListing = () => {
 
   const [searchParams] = useSearchParams();
   const searchType = searchParams.get('type') || 'All';
+  const urlDriver = searchParams.get('driver');
   const urlPickup = searchParams.get('pickup');
   const urlDropoff = searchParams.get('dropoff');
   const urlStart = searchParams.get('start');
   const urlEnd = searchParams.get('end');
 
-  // Booking Widget State
-  const [driverMode, setDriverMode] = useState('self'); // 'self', 'driver', 'all'
+  // Booking Widget State - default to 'all' (All Experiences) unless specified in URL
+  const initialDriverMode = urlDriver || (searchType.toLowerCase().includes('self') ? 'self' : 'all');
+  const [driverMode, setDriverMode] = useState(initialDriverMode); // 'all', 'self', 'driver'
   const [pickupLoc, setPickupLoc] = useState(urlPickup || 'Kathmandu Airport (TIA)');
   const [customPickup, setCustomPickup] = useState('');
   const [dropoffLoc, setDropoffLoc] = useState(urlDropoff || 'Kathmandu Airport (TIA)');
@@ -161,8 +163,24 @@ const VehicleListing = () => {
     }
   };
 
+  const handleDriverModeChange = (mode) => {
+    setDriverMode(mode);
+    // If switching to self-drive while Bus or Van/Micro is selected, reset category to All so 0-results is avoided
+    if (mode === 'self' && (filterType === 'Bus' || filterType === 'Van / Micro')) {
+      setFilterType('All');
+    }
+  };
+
+  const handleCategoryChange = (cat) => {
+    setFilterType(cat);
+    // If selecting Bus or Van/Micro while in self-drive mode, smoothly adjust to all experiences
+    if (driverMode === 'self' && (cat === 'Bus' || cat === 'Van / Micro')) {
+      setDriverMode('all');
+    }
+  };
+
   const handleResetTrip = () => {
-    setDriverMode('self');
+    setDriverMode('all');
     setPickupLoc('Kathmandu Airport (TIA)');
     setCustomPickup('');
     setDropoffLoc('Kathmandu Airport (TIA)');
@@ -186,8 +204,22 @@ const VehicleListing = () => {
 
   // 1. Filter by Experience Mode
   if (driverMode === 'self') {
-    // Large commercial tourist buses & coasters cannot be rented for self-drive in Nepal
-    filteredList = filteredList.filter(v => v.type !== 'Bus' && !v.name?.toLowerCase().includes('bus') && !v.name?.toLowerCase().includes('coaster'));
+    // Only genuine self-drive passenger cars/SUVs/EVs:
+    // Exclude large tourist buses, coasters, 14-seater commercial vans (Hiace & EV Van), and wedding chauffeur cars
+    filteredList = filteredList.filter(v => {
+      const name = (v.name || '').toLowerCase();
+      const type = (v.type || '').toLowerCase();
+      if (type === 'bus' || name.includes('bus') || name.includes('coaster')) return false;
+      if (name.includes('hiace') || name.includes('van') || type.includes('van')) return false;
+      if (name.includes('wedding')) return false;
+      return true;
+    });
+  } else if (driverMode === 'driver') {
+    // Exclude the dedicated self-drive placeholder card
+    filteredList = filteredList.filter(v => {
+      const name = (v.name || '').toLowerCase();
+      return !name.includes('self drive');
+    });
   }
 
   // 2. Filter by Vehicle Category
@@ -213,8 +245,8 @@ const VehicleListing = () => {
 
   // 5. Sort Vehicles
   const filteredVehicles = [...filteredList].sort((a, b) => {
-    const priceA = driverMode === 'self' ? a.price : (a.priceWithDriver || a.price + 1500);
-    const priceB = driverMode === 'self' ? b.price : (b.priceWithDriver || b.price + 1500);
+    const priceA = driverMode === 'driver' ? (a.priceWithDriver || a.price + 1500) : a.price;
+    const priceB = driverMode === 'driver' ? (b.priceWithDriver || b.price + 1500) : b.price;
     if (sortBy === 'price-asc') return priceA - priceB;
     if (sortBy === 'price-desc') return priceB - priceA;
     if (sortBy === 'rating-desc') return (parseFloat(b.rating) || 0) - (parseFloat(a.rating) || 0);
@@ -226,13 +258,19 @@ const VehicleListing = () => {
 
   const handleWhatsAppBooking = (vehicle) => {
     const isSelf = driverMode === 'self';
-    const pricePerDay = isSelf ? vehicle.price : (vehicle.priceWithDriver || vehicle.price + 1500);
+    const isDriver = driverMode === 'driver';
+    const pricePerDay = isDriver ? (vehicle.priceWithDriver || vehicle.price + 1500) : vehicle.price;
     const totalPrice = pricePerDay * days;
+    const experienceText = isSelf 
+      ? 'Self Drive (Drive Yourself)' 
+      : isDriver 
+        ? 'With Professional Driver' 
+        : 'Flexible (Self Drive or Driver)';
     
     const message = `Hi Zenex Travel, I'd like to book a vehicle!
 
 *Vehicle:* ${vehicle.name}
-*Experience:* ${isSelf ? 'Self Drive (Drive Yourself)' : driverMode === 'driver' ? 'With Professional Driver' : 'Standard'}
+*Experience:* ${experienceText}
 *Pickup Date:* ${startDate}
 *Dropoff Date:* ${endDate} (${days} ${days === 1 ? 'Day' : 'Days'})
 *Pickup Location:* ${finalPickup}
@@ -352,6 +390,11 @@ Is this vehicle available?`;
                   <CheckCircle2 size={13} /> Driver Included
                 </span>
               )}
+              {driverMode === 'all' && (
+                <span className="inline-flex items-center gap-1 bg-gray-100 text-gray-700 text-xs font-bold px-2.5 py-1.5 rounded-full border border-gray-200">
+                  <Car size={13} /> All Experiences
+                </span>
+              )}
             </div>
           </div>
           
@@ -364,12 +407,12 @@ Is this vehicle available?`;
               </label>
               <select 
                 value={driverMode} 
-                onChange={e => setDriverMode(e.target.value)}
-                className="w-full bg-[#f8faff] border border-gray-200 hover:border-gray-300 focus:border-[#1e3a8a] rounded-xl p-3 text-sm font-semibold text-gray-800 outline-none focus:ring-2 focus:ring-[#1e3a8a]/20 transition-all cursor-pointer"
+                onChange={e => handleDriverModeChange(e.target.value)}
+                className="w-full bg-[#f8faff] border border-gray-200 hover:border-gray-300 focus:border-[#1e3a8a] rounded-xl p-3 text-sm font-semibold text-gray-800 outline-none focus:ring-2 focus:ring-[#1e3a8a]/20 transition-all cursor-pointer shadow-xs"
               >
-                <option value="self">Self Drive</option>
-                <option value="driver">With Driver</option>
                 <option value="all">All Experiences</option>
+                <option value="self">Self Drive (Drive Yourself)</option>
+                <option value="driver">With Driver (Chauffeur)</option>
               </select>
             </div>
 
@@ -535,12 +578,60 @@ Is this vehicle available?`;
             </div>
           </div>
 
+          {/* Quick Experience Filter Pills */}
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-gray-200/60">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-wider hidden sm:inline">Experience:</span>
+              <div className="inline-flex bg-gray-100 p-1 rounded-xl gap-1">
+                <button
+                  onClick={() => handleDriverModeChange('all')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    driverMode === 'all'
+                      ? 'bg-white text-[#1e3a8a] shadow-xs'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  All Experiences
+                </button>
+                <button
+                  onClick={() => handleDriverModeChange('self')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    driverMode === 'self'
+                      ? 'bg-emerald-600 text-white shadow-xs'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  🚗 Self Drive
+                </button>
+                <button
+                  onClick={() => handleDriverModeChange('driver')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    driverMode === 'driver'
+                      ? 'bg-[#1e3a8a] text-white shadow-xs'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  👤 With Driver
+                </button>
+              </div>
+            </div>
+
+            {driverMode !== 'all' && (
+              <button
+                onClick={() => handleDriverModeChange('all')}
+                className="text-xs font-semibold text-gray-500 hover:text-[#1e3a8a] underline cursor-pointer"
+              >
+                Clear experience filter
+              </button>
+            )}
+          </div>
+
           {/* Category Filter Pills */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
             {VEHICLE_CATEGORIES.map(category => (
               <button
                 key={category}
-                onClick={() => setFilterType(category)}
+                onClick={() => handleCategoryChange(category)}
                 className={`px-4 py-2 rounded-xl text-xs md:text-sm font-bold whitespace-nowrap transition-all cursor-pointer ${
                   filterType === category 
                     ? 'bg-[#1e3a8a] text-white shadow-sm' 
@@ -553,13 +644,35 @@ Is this vehicle available?`;
           </div>
         </div>
 
+        {/* Informational Banner when Self-Drive is active */}
+        {driverMode === 'self' && (
+          <div className="mb-6 bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50 border border-emerald-200 rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-emerald-600/10 flex items-center justify-center text-emerald-700 font-bold shrink-0 text-xl">
+                🚗
+              </div>
+              <div>
+                <p className="text-sm font-bold text-emerald-950">Self-Drive Fleet Active</p>
+                <p className="text-xs text-emerald-800">
+                  Showing vehicles available to drive yourself. Looking for specific hatchback & compact SUV daily rates?
+                </p>
+              </div>
+            </div>
+            <Link 
+              to="/vehicles/self-drive" 
+              className="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-4 py-2 rounded-xl transition-colors whitespace-nowrap shadow-xs"
+            >
+              View 13+ Self-Drive Models <ArrowRight size={14} />
+            </Link>
+          </div>
+        )}
+
         {/* Vehicle Cards Grid */}
         <div className="flex flex-wrap justify-center gap-6 mb-12 w-full">
           {filteredVehicles.length > 0 ? (
             filteredVehicles.map((vehicle) => {
               const detailsPath = getVehicleDetailsPath(vehicle);
-              const isSelf = driverMode === 'self';
-              const pricePerDay = isSelf ? vehicle.price : (vehicle.priceWithDriver || vehicle.price + 1500);
+              const pricePerDay = driverMode === 'driver' ? (vehicle.priceWithDriver || vehicle.price + 1500) : vehicle.price;
               const totalPrice = pricePerDay * days;
               const detailsQuery = `?start=${startDate}&end=${endDate}&pickup=${encodeURIComponent(finalPickup)}&dropoff=${encodeURIComponent(finalDropoff)}&driver=${driverMode}`;
 
@@ -594,6 +707,23 @@ Is this vehicle available?`;
                       <span className="text-gray-500 text-xs font-medium">Starting from</span>
                       <span className="font-bold text-[#e53a24] text-lg">{formatPrice(pricePerDay)}</span>
                       <span className="text-gray-500 text-xs font-medium">/ Day</span>
+                    </div>
+
+                    {/* Experience Badge */}
+                    <div className="mb-1.5">
+                      {driverMode === 'self' ? (
+                        <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200 inline-flex items-center gap-1">
+                          <CheckCircle2 size={11} /> Self-Drive
+                        </span>
+                      ) : driverMode === 'driver' ? (
+                        <span className="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-200 inline-flex items-center gap-1">
+                          <CheckCircle2 size={11} /> Driver Included
+                        </span>
+                      ) : (
+                        <span className="text-[11px] font-semibold text-gray-600 bg-gray-100 px-2 py-0.5 rounded-md inline-flex items-center gap-1">
+                          Self Drive & Driver Options
+                        </span>
+                      )}
                     </div>
 
                     {days > 1 && (
