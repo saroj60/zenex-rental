@@ -5,13 +5,6 @@ import { Users, Gauge, Fuel, Filter, X, MapPin, Calendar, MessageCircle, Star, S
 import { useCurrency } from '../context/CurrencyContext';
 import { useAppData } from '../context/AppDataContext';
 import { useBooking } from '../context/BookingContext';
-import HiacePricingCard from '../components/HiacePricingCard';
-import ScorpioPricingCard from '../components/ScorpioPricingCard';
-import CarPricingCard from '../components/CarPricingCard';
-import BusPricingCard from '../components/BusPricingCard';
-import CoasterPricingCard from '../components/CoasterPricingCard';
-import CarModelsCard from '../components/CarModelsCard';
-import SelfDriveCard from '../components/SelfDriveCard';
 
 const VehicleListing = () => {
   const { vehicles } = useAppData();

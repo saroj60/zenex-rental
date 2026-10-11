@@ -41,14 +41,14 @@ const Fleet = () => {
         </Link>
       </motion.div>
       
-      <motion.div variants={containerVariants} className="flex flex-wrap justify-center gap-x-6 gap-y-6 pb-8">
-        <motion.div variants={itemVariants}><HiacePricingCard isSmall={true} /></motion.div>
-        <motion.div variants={itemVariants}><ScorpioPricingCard isSmall={true} /></motion.div>
-        <motion.div variants={itemVariants}><CarPricingCard isSmall={true} /></motion.div>
-        <motion.div variants={itemVariants}><BusPricingCard isSmall={true} /></motion.div>
-        <motion.div variants={itemVariants}><CoasterPricingCard isSmall={true} /></motion.div>
-        <motion.div variants={itemVariants}><CarModelsCard isSmall={true} /></motion.div>
-        <motion.div variants={itemVariants}><SelfDriveCard isSmall={true} /></motion.div>
+      <motion.div variants={containerVariants} className="flex flex-wrap justify-center gap-6 pb-8 items-stretch">
+        <motion.div variants={itemVariants} className="w-full sm:w-[280px] flex flex-col items-stretch"><HiacePricingCard isSmall={true} /></motion.div>
+        <motion.div variants={itemVariants} className="w-full sm:w-[280px] flex flex-col items-stretch"><ScorpioPricingCard isSmall={true} /></motion.div>
+        <motion.div variants={itemVariants} className="w-full sm:w-[280px] flex flex-col items-stretch"><CarPricingCard isSmall={true} /></motion.div>
+        <motion.div variants={itemVariants} className="w-full sm:w-[280px] flex flex-col items-stretch"><BusPricingCard isSmall={true} /></motion.div>
+        <motion.div variants={itemVariants} className="w-full sm:w-[280px] flex flex-col items-stretch"><CoasterPricingCard isSmall={true} /></motion.div>
+        <motion.div variants={itemVariants} className="w-full sm:w-[280px] flex flex-col items-stretch"><CarModelsCard isSmall={true} /></motion.div>
+        <motion.div variants={itemVariants} className="w-full sm:w-[280px] flex flex-col items-stretch"><SelfDriveCard isSmall={true} /></motion.div>
       </motion.div>
     </motion.section>
   );

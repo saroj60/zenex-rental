@@ -12,15 +12,16 @@ const CarModelsCard = ({ isSmall = false }) => {
   };
 
   return (
-    <div className={`bg-white shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col w-full ${
-      isSmall ? 'max-w-[275px] md:max-w-[285px] p-3 rounded-xl mb-4' : 'max-w-sm p-4 rounded-2xl mb-12'
+    <div className={`bg-white shadow-sm border border-sky-tint hover:shadow-md transition-shadow group flex flex-col justify-between w-full h-full ${
+      isSmall ? 'p-3.5 rounded-xl' : 'max-w-sm p-4 rounded-2xl mb-12'
     }`}>
-      <Link to="/vehicles/wedding-cars" className={`relative overflow-hidden rounded-lg block cursor-pointer ${isSmall ? 'mb-2.5' : 'mb-4'}`}>
+      <Link to="/vehicles/wedding-cars" className={`relative overflow-hidden rounded-lg block cursor-pointer bg-slate-100 border border-slate-200/60 ${isSmall ? 'mb-2.5' : 'mb-4'}`}>
         <img 
           alt="Wedding Cars" 
           className={`w-full object-cover group-hover:scale-105 transition-transform duration-500 ${isSmall ? 'h-36' : 'h-48'}`} 
           loading="lazy" 
           src="/images/wedding cars/Weddings-Car-Decoration-Service-Kaleepk-Cars-Decoration-In-Karachi-27.webp" 
+          data-pin-nopin="true"
           onError={(e) => { e.target.onerror = null; e.target.src = '/images/wedding cars/wedding-car-rental.png'; }} 
         />
         <span className="absolute top-3 left-3 bg-[#e53a24] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-sm">
@@ -31,33 +32,33 @@ const CarModelsCard = ({ isSmall = false }) => {
         </div>
       </Link>
       
-      <h3 className={`font-headline-md font-bold text-gray-900 mb-1 ${isSmall ? 'text-lg' : 'text-2xl'}`}>Wedding Cars</h3>
-      <div className={`flex items-center gap-1.5 ${isSmall ? 'mb-3' : 'mb-4'}`}>
+      <h3 className={`font-headline-md font-bold text-gray-900 mb-1 ${isSmall ? 'text-lg leading-snug line-clamp-1' : 'text-2xl'}`}>Wedding Cars</h3>
+      <div className={`flex items-baseline gap-1.5 ${isSmall ? 'mb-3' : 'mb-4'}`}>
         <span className="text-gray-500 text-xs md:text-sm font-medium">Starting from</span>
         <span className={`font-bold text-[#e53a24] ${isSmall ? 'text-lg' : 'text-xl'}`}>{formatPrice(8000)}</span>
         <span className="text-gray-500 text-xs md:text-sm font-medium">/ Day</span>
       </div>
       
-      <div className={`grid grid-cols-2 gap-2 mt-auto ${isSmall ? 'mb-4' : 'mb-6'}`}>
-        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
+      <div className={`grid grid-cols-2 gap-2 mt-auto ${isSmall ? 'mb-3.5' : 'mb-6'}`}>
+        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2 h-[58px]' : 'p-3'}`}>
           <Users size={18} className="text-[#1e3a8a] mb-1.5" />
-          <span className="text-xs font-semibold text-[#1e3a8a]">4-5 Seats</span>
+          <span className="text-xs font-semibold text-[#1e3a8a] truncate w-full px-1">4-5 Seats</span>
         </div>
-        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
+        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2 h-[58px]' : 'p-3'}`}>
           <Gauge size={18} className="text-[#1e3a8a] mb-1.5" />
-          <span className="text-xs font-semibold text-[#1e3a8a]">Auto/Manual</span>
+          <span className="text-xs font-semibold text-[#1e3a8a] truncate w-full px-1">Auto/Manual</span>
         </div>
-        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2' : 'p-3'}`}>
+        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center ${isSmall ? 'p-2 h-[58px]' : 'p-3'}`}>
           <Fuel size={18} className="text-[#1e3a8a] mb-1.5" />
-          <span className="text-xs font-semibold text-[#1e3a8a]">EV/Petrol</span>
+          <span className="text-xs font-semibold text-[#1e3a8a] truncate w-full px-1">EV/Petrol</span>
         </div>
-        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden ${isSmall ? 'p-2' : 'p-3'}`}>
+        <div className={`bg-[#f0f4f8] rounded-xl text-center flex flex-col items-center justify-center relative overflow-hidden ${isSmall ? 'p-2 h-[58px]' : 'p-3'}`}>
           <Award size={18} className="text-[#1e3a8a] mb-1.5" />
-          <span className="text-xs font-semibold text-[#1e3a8a]">Luxury</span>
+          <span className="text-xs font-semibold text-[#1e3a8a] truncate w-full px-1">Luxury</span>
         </div>
       </div>
 
-      <div className="flex flex-col gap-2.5 mt-auto">
+      <div className="flex flex-col gap-2 mt-auto">
         <Link 
           to={`/vehicles/wedding-cars`} 
           className={`w-full font-bold text-xs hover:bg-[#1e3a8a] hover:text-white transition-colors text-center ${
