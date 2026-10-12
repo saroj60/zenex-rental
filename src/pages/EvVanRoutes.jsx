@@ -43,6 +43,13 @@ const EvVanRoutes = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % evVanImages.length);
   const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + evVanImages.length) % evVanImages.length);
 
@@ -54,8 +61,10 @@ const EvVanRoutes = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="EV Van (10-14 Seater) Route Pricing | Zenex Travels"
-        description="View pricing details for 10-14 Seater EV Minibus Van routes across Nepal including Pokhara, Chitwan, Muktinath and more."
+        title="Rent EV Van (10-14 Seater) in Nepal | Route Rates | Zenex Travels"
+        description="Hire eco-friendly 10-14 seater electric EV passenger van in Kathmandu. Silent, spacious, modern group transport for Pokhara, Chitwan, and airport transfers."
+        keywords="EV Van Rental Nepal, Electric Van Hire Kathmandu, 14 Seater EV Van, Eco Friendly Minibus Nepal, Zenex Travels EV Van"
+        canonicalUrl="https://www.zenextravels.com/vehicles/ev-van-routes"
       />
       
       {/* Dynamic Hero Slider */}

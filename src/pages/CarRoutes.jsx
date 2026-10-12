@@ -43,6 +43,13 @@ const CarRoutes = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % standardCarImages.length);
   const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + standardCarImages.length) % standardCarImages.length);
 
@@ -54,8 +61,10 @@ const CarRoutes = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Standard Car & Sedan Route Pricing | Zenex Travels"
-        description="View pricing details for all Standard Car & Sedan routes across Nepal including Pokhara, Chitwan, Nagarkot, Janakpur and more."
+        title="Standard Car & Sedan Rental in Nepal | Route Rates | Zenex Travels"
+        description="Hire affordable standard cars, sedans, and hatchbacks in Kathmandu with driver or self-drive. Transparent rates for city tours, Nagarkot, Pokhara, and Chitwan."
+        keywords="Car Rental Nepal, Rent Sedan Kathmandu, Affordable Car Hire Nepal, Private Car Rental Kathmandu, Zenex Travels Sedan"
+        canonicalUrl="https://www.zenextravels.com/vehicles/car-routes"
       />
       
       {/* Dynamic Hero Slider */}

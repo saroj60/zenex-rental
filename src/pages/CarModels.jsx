@@ -49,6 +49,13 @@ const CarModels = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % weddingCarImages.length);
   const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + weddingCarImages.length) % weddingCarImages.length);
 
@@ -60,8 +67,10 @@ const CarModels = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Wedding Car Fleet & Rentals | Zenex Travels"
-        description="View pricing details for our exclusive wedding car fleet including BYD, Mercedes, Landcruiser, floral decorated cars, and luxury buses in Nepal."
+        title="Luxury Wedding Car Rental in Kathmandu, Nepal | Zenex Travels"
+        description="Premium decorated wedding cars for hire in Kathmandu. Luxury sedans, vintage cars, BYD, Mercedes, and decorated SUVs with professional chauffeur service."
+        keywords="Wedding Car Rental Kathmandu, Luxury Wedding Cars Nepal, Rent Decorated Car Nepal, Marriage Car Hire Kathmandu, Zenex Travels Wedding Cars"
+        canonicalUrl="https://www.zenextravels.com/vehicles/wedding-cars"
       />
       
       {/* Dynamic Hero Slider */}

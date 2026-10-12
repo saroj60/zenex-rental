@@ -38,6 +38,13 @@ const galleryImages = [
 const ScorpioRoutes = () => {
   const { formatPrice } = useCurrency();
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const handleBook = (route) => {
     const message = `Hi Zenex Travel, I'm interested in booking a Mahindra Scorpio for the route: ${route.dest} (${route.duration}) priced at ${formatPrice(route.price)}. Is it available?`;
     window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
@@ -46,8 +53,10 @@ const ScorpioRoutes = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Mahindra Scorpio Route Pricing | Zenex Travels"
-        description="View pricing details for all Mahindra Scorpio routes across Nepal including Pokhara, Mustang, Rara Lake and more."
+        title="Hire Mahindra Scorpio 4x4 Jeep in Nepal | Route Rates | Zenex Travels"
+        description="Hire rugged Mahindra Scorpio 4WD SUV with driver or self-drive. Explore Mustang, Muktinath, Pokhara, Chitwan, and Rara Lake with guaranteed best rates."
+        keywords="Mahindra Scorpio Rental Nepal, Rent Scorpio Kathmandu, Scorpio Jeep Hire Nepal, 4x4 Offroad SUV Nepal, Zenex Travels Scorpio"
+        canonicalUrl="https://www.zenextravels.com/vehicles/scorpio-routes"
       />
       
       {/* Hero Section */}

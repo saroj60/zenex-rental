@@ -48,6 +48,13 @@ const BusRoutes = () => {
   const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % busImages.length);
   const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + busImages.length) % busImages.length);
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const displayPrice = (price) => {
     if (typeof price === 'number') {
       return formatPrice(price);
@@ -63,8 +70,10 @@ const BusRoutes = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Tourist Bus Route Pricing | Zenex Travels"
-        description="View pricing details for all Tourist Bus (30-35 Seater) routes across Nepal."
+        title="Rent Tourist Bus in Nepal (30-35 Seater) | Zenex Travels"
+        description="Hire deluxe 30-35 seater tourist bus in Kathmandu for group sightseeing tours across Pokhara, Chitwan, Lumbini, and corporate events with experienced drivers."
+        keywords="Tourist Bus Rental Nepal, Rent Bus Kathmandu, 35 Seater Bus Hire Nepal, Group Tour Bus Nepal, Zenex Travels Bus"
+        canonicalUrl="https://www.zenextravels.com/vehicles/bus-routes"
       />
       
       {/* Dynamic Hero Slider */}

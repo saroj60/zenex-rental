@@ -674,7 +674,14 @@ Is this vehicle available?`;
               const detailsPath = getVehicleDetailsPath(vehicle);
               const pricePerDay = driverMode === 'driver' ? (vehicle.priceWithDriver || vehicle.price + 1500) : vehicle.price;
               const totalPrice = pricePerDay * days;
-              const detailsQuery = `?start=${startDate}&end=${endDate}&pickup=${encodeURIComponent(finalPickup)}&dropoff=${encodeURIComponent(finalDropoff)}&driver=${driverMode}`;
+              const tripState = {
+                start: startDate,
+                end: endDate,
+                pickup: finalPickup,
+                dropoff: finalDropoff,
+                driver: driverMode,
+                days: days
+              };
 
               return (
                 <div 
@@ -683,7 +690,11 @@ Is this vehicle available?`;
                 >
                   <div>
                     {/* Framed Image Container */}
-                    <Link to={`${detailsPath}${detailsQuery}`} className="relative overflow-hidden rounded-lg block cursor-pointer mb-2.5 bg-slate-100 border border-slate-200/60 h-36">
+                    <Link 
+                      to={detailsPath} 
+                      state={tripState}
+                      className="relative overflow-hidden rounded-lg block cursor-pointer mb-2.5 bg-slate-100 border border-slate-200/60 h-36"
+                    >
                       <img 
                         alt={vehicle.name} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -758,7 +769,8 @@ Is this vehicle available?`;
                   {/* Buttons pinned to bottom */}
                   <div className="flex flex-col gap-2 mt-auto">
                     <Link 
-                      to={`${detailsPath}${detailsQuery}`} 
+                      to={detailsPath} 
+                      state={tripState}
                       className="w-full font-bold text-xs hover:bg-[#1e3a8a] hover:text-white transition-colors text-center py-2.5 rounded-lg border border-[#1e3a8a] text-[#1e3a8a]"
                     >
                       View Details

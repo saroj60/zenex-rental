@@ -129,7 +129,7 @@ const WeddingCar = () => {
                       <p className="text-gray-600 mb-2">{v.seats} Seater • AC • Excellent Condition</p>
                       <div className="flex justify-between items-center mt-4">
                         <p className="text-[#e53a24] font-bold">NPR {v.price} / day (base price)</p>
-                        <Link to={`/vehicles/${v.id}?driver=included`} className="text-sm font-bold text-[#e53a24] hover:underline flex items-center gap-1">
+                        <Link to={`/vehicle/${v.id}`} state={{ driver: 'driver' }} className="text-sm font-bold text-[#e53a24] hover:underline flex items-center gap-1">
                           Book Now <span className="text-[10px]">→</span>
                         </Link>
                       </div>

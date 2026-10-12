@@ -44,6 +44,13 @@ const HiaceRoutes = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % galleryImages.length);
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
 
@@ -55,8 +62,10 @@ const HiaceRoutes = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Toyota Hiace Route Pricing | Zenex Travels"
-        description="View pricing details for all Toyota Hiace routes across Nepal including Pokhara, Chitwan, Muktinath and more."
+        title="Rent Toyota Hiace Minibus in Nepal | Route Rates | Zenex Travels"
+        description="Hire 14-seater Toyota Hiace minibus in Kathmandu with professional driver. Transparent route rates for Pokhara, Chitwan, Lumbini, and airport transfers."
+        keywords="Toyota Hiace Rental Nepal, Hiace Van Kathmandu, Rent Minibus Nepal, 14 Seater Hiace Hire, Zenex Travels Hiace"
+        canonicalUrl="https://www.zenextravels.com/vehicles/hiace-routes"
       />
       
       {/* Dynamic Hero Slider */}

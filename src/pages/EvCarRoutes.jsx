@@ -44,6 +44,13 @@ const EvCarRoutes = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % evCarImages.length);
   const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + evCarImages.length) % evCarImages.length);
 
@@ -55,8 +62,10 @@ const EvCarRoutes = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="EV Cars & Electric Vehicle Rentals | Zenex Travels"
-        description="View pricing details for all EV Cars and Electric Vehicles across Nepal including Pokhara, Chitwan, Janakpur and more."
+        title="EV Cars & Electric Vehicle Rentals in Nepal | Zenex Travels"
+        description="Rent electric vehicles (EV cars) in Nepal with transparent rates. Book BYD, Kaiyi and modern EVs for Kathmandu sightseeing, Pokhara, Chitwan, and airport transfers."
+        keywords="EV Car Rental Nepal, Rent Electric Vehicle Kathmandu, BYD Car Hire Nepal, Eco Car Rental Kathmandu, Zenex Travels EV"
+        canonicalUrl="https://www.zenextravels.com/vehicles/ev-routes"
       />
       
       {/* Dynamic Hero Slider */}

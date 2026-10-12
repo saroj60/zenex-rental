@@ -26,14 +26,23 @@ const FortunerRoutes = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % fortunerImages.length);
   const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + fortunerImages.length) % fortunerImages.length);
 
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Toyota Land Cruiser & Fortuner Rentals | Zenex Travels"
-        description="View custom pricing details for Toyota Land Cruiser & Fortuner 4x4 SUV rentals across Nepal including Pokhara, Chitwan, Muktinath, Janakpur and more."
+        title="Rent Toyota Land Cruiser & Fortuner 4x4 in Nepal | Zenex Travels"
+        description="Premium Toyota Land Cruiser and Fortuner 4x4 SUV rental in Kathmandu. Best off-road capability, luxury interiors, and competitive rates across Nepal."
+        keywords="Toyota Fortuner Rental Nepal, Land Cruiser Hire Kathmandu, Luxury 4x4 Rental Nepal, SUV Hire Nepal, Zenex Travels Fortuner"
+        canonicalUrl="https://www.zenextravels.com/vehicles/fortuner-routes"
       />
       
       {/* Dynamic Hero Slider */}

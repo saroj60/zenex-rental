@@ -26,6 +26,13 @@ const VehicleDetail = () => {
   const [customLocation, setCustomLocation] = useState('');
   const [includeVat, setIncludeVat] = useState(false);
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   useEffect(() => {
     if (startDate && endDate) {
       const s = new Date(startDate);

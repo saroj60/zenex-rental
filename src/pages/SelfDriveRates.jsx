@@ -32,6 +32,13 @@ const galleryImages = [
 const SelfDriveRates = () => {
   const { formatPrice } = useCurrency();
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const handleBook = (model, duration, price) => {
     const message = `Hi Zenex Travel, I'm interested in renting the ${model.name} for self-drive (${duration}) priced at ${formatPrice(price)}. Is it available?`;
     window.open(`https://wa.me/9779767476521?text=${encodeURIComponent(message)}`, '_blank');
@@ -40,8 +47,10 @@ const SelfDriveRates = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Self Drive Car Rates | Zenex Travels"
-        description="View our self-drive car rental rates for daily, 15-day, and monthly rentals in Nepal."
+        title="Self Drive Car Rental Rates in Nepal | Zenex Travels"
+        description="Transparent daily, weekly, and monthly self-drive car rental rates in Kathmandu. Drive Suzuki Swift, Hyundai Creta, Mahindra Scorpio, and electric cars on your own terms."
+        keywords="Self Drive Car Rental Nepal, Self Drive Kathmandu, Rent Car Drive Yourself Nepal, Cheap Self Drive Nepal, Zenex Travels Self Drive"
+        canonicalUrl="https://www.zenextravels.com/vehicles/self-drive"
       />
       
       {/* Hero Section */}

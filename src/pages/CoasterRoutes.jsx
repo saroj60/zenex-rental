@@ -27,6 +27,13 @@ const CoasterRoutes = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Automatically clean search parameters from URL bar for clean URLs and SEO
+  useEffect(() => {
+    if (window.location.search) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
   const nextSlide = () => setCurrentImageIndex((prev) => (prev + 1) % coasterImages.length);
   const prevSlide = () => setCurrentImageIndex((prev) => (prev - 1 + coasterImages.length) % coasterImages.length);
 
@@ -38,8 +45,10 @@ const CoasterRoutes = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen pt-20">
       <SEO 
-        title="Toyota Coaster Route Pricing | Zenex Travels"
-        description="View pricing details for all Toyota Coaster routes across Nepal."
+        title="Rent Toyota Coaster Minibus in Nepal (22-Seater) | Zenex Travels"
+        description="Hire comfortable 22-seater Toyota Coaster bus in Kathmandu with professional driver. Ideal for medium-sized delegations, family tours, and airport transfers."
+        keywords="Toyota Coaster Rental Nepal, Rent Coaster Kathmandu, 22 Seater Bus Hire Nepal, Coaster Minibus Rental, Zenex Travels Coaster"
+        canonicalUrl="https://www.zenextravels.com/vehicles/coaster-routes"
       />
       
       {/* Dynamic Hero Slider */}
