@@ -104,7 +104,7 @@ const VehicleListing = () => {
 
   // Hero Slider State
   const heroSlides = [
-    { title: 'EV cars', price: 6000, img: '/vehicles/byd_atto_1.png' },
+    { title: 'EV cars', price: 6000, img: '/vehicles/byd_atto_3.png' },
     { title: 'Toyota Land Cruiser', price: 25000, img: '/vehicles/offroad_4x4_suv.jpg' },
     { title: 'Luxury Buses', price: 15000, img: '/vehicles/tourist_bus_nepal.png' },
     { title: 'Toyota Hiace', price: 8000, img: 'https://www.toyota.com.sg/showroom/new-models/-/media/27acd1d10dfc4ad29f13efd4415627c0.jpg' },
