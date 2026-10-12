@@ -9,6 +9,7 @@ import {
 import { useAppData } from '../context/AppDataContext';
 import EssentialInfoSection from '../components/EssentialInfoSection';
 import SEO from '../components/SEO';
+import TrustReviewBadges from '../components/TrustReviewBadges';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt, getTrekDayMeals } from '../utils/detailFormatters';
 
