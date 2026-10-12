@@ -807,7 +807,7 @@ const TrekDetail = () => {
                           {/* Day Highlights Metadata */}
                           {(() => {
                             const totalDays = trek.itinerary ? trek.itinerary.length : 1;
-                            const dayMeals = getTrekDayMeals(day, index, totalDays, true);
+                            const dayMeals = getTrekDayMeals(day, idx, totalDays, true);
 
                             if (!day.maxAltitude && !day.accommodation && !dayMeals && !travelModeText && !day.duration) {
                               return null;
