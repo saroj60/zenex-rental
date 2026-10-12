@@ -8,7 +8,7 @@ import { Map as MapIcon, Clock, MapPin, Compass, Coffee, Check, X, Play, ImageIc
 import { generatePackagePDF } from '../utils/pdfGenerator';
 import TrustReviewBadges from '../components/TrustReviewBadges';
 import { formatDuration } from '../utils/duration';
-import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt } from '../utils/detailFormatters';
+import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt, getTrekDayMeals } from '../utils/detailFormatters';
 
 export const defaultTourEquipment = [
   {
@@ -855,49 +855,66 @@ const TourTripDetail = () => {
                           )}
 
                           {/* Day Facts */}
-                          {(day.maxAltitude || day.altitude || day.distance || day.walkingDuration || day.accommodation || day.modeOfTravel || day.transport || day.travelMode || day.meals) && (
-                            <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
-                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5">DAY HIGHLIGHTS</h4>
-                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
-                                {(day.maxAltitude || day.altitude) && (
-                                  <div className="flex items-center gap-2">
-                                    <Mountain size={16} className="text-gray-400 shrink-0" />
-                                    <span>Max Altitude: {formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}</span>
-                                  </div>
-                                )}
-                                {(day.modeOfTravel || day.transport || day.travelMode) && (
-                                  <div className="flex items-center gap-2">
-                                    <Car size={16} className="text-gray-400 shrink-0" />
-                                    <span>Mode of Travel: {day.modeOfTravel || day.transport || day.travelMode}</span>
-                                  </div>
-                                )}
-                                {day.accommodation && (
-                                  <div className="flex items-center gap-2">
-                                    <Bed size={16} className="text-gray-400 shrink-0" />
-                                    <span>Accommodation: {day.accommodation}</span>
-                                  </div>
-                                )}
-                                {day.meals && (
-                                  <div className="flex items-center gap-2">
-                                    <Utensils size={16} className="text-gray-400 shrink-0" />
-                                    <span>Meals: {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
-                                  </div>
-                                )}
-                                {day.distance && (
-                                  <div className="flex items-center gap-2">
-                                    <MapPin size={16} className="text-gray-400 shrink-0" />
-                                    <span>Distance: {day.distance} {day.distanceUnit || 'km'}</span>
-                                  </div>
-                                )}
-                                {day.walkingDuration && (
-                                  <div className="flex items-center gap-2">
-                                    <Clock size={16} className="text-gray-400 shrink-0" />
-                                    <span>Duration: {day.walkingDuration}</span>
-                                  </div>
-                                )}
+                          {(() => {
+                            const isTrekPackage = trip && (
+                              trip.category === 'Treks' || trip.category === 'Trek' || trip.type === 'Trek' ||
+                              String(trip.id || '').startsWith('TRIP-') ||
+                              (trip.title && trip.title.toLowerCase().includes('trek')) ||
+                              (trip.slug && trip.slug.toLowerCase().includes('trek'))
+                            );
+                            const totalDays = trip.itinerary ? trip.itinerary.length : 1;
+                            const dayMeals = isTrekPackage
+                              ? getTrekDayMeals(day, idx, totalDays, true)
+                              : (Array.isArray(day.meals) ? day.meals.join(', ') : (day.meals || ''));
+
+                            if (!day.maxAltitude && !day.altitude && !day.distance && !day.walkingDuration && !day.accommodation && !day.modeOfTravel && !day.transport && !day.travelMode && !dayMeals) {
+                              return null;
+                            }
+
+                            return (
+                              <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
+                                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5">DAY HIGHLIGHTS</h4>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
+                                  {(day.maxAltitude || day.altitude) && (
+                                    <div className="flex items-center gap-2">
+                                      <Mountain size={16} className="text-gray-400 shrink-0" />
+                                      <span>Max Altitude: {formatAltitude(day.maxAltitude || day.altitude, day.altitudeUnit)}</span>
+                                    </div>
+                                  )}
+                                  {(day.modeOfTravel || day.transport || day.travelMode) && (
+                                    <div className="flex items-center gap-2">
+                                      <Car size={16} className="text-gray-400 shrink-0" />
+                                      <span>Mode of Travel: {day.modeOfTravel || day.transport || day.travelMode}</span>
+                                    </div>
+                                  )}
+                                  {day.accommodation && (
+                                    <div className="flex items-center gap-2">
+                                      <Bed size={16} className="text-gray-400 shrink-0" />
+                                      <span>Accommodation: {day.accommodation}</span>
+                                    </div>
+                                  )}
+                                  {dayMeals && (
+                                    <div className="flex items-center gap-2">
+                                      <Utensils size={16} className="text-gray-400 shrink-0" />
+                                      <span>Meals: {dayMeals}</span>
+                                    </div>
+                                  )}
+                                  {day.distance && (
+                                    <div className="flex items-center gap-2">
+                                      <MapPin size={16} className="text-gray-400 shrink-0" />
+                                      <span>Distance: {day.distance} {day.distanceUnit || 'km'}</span>
+                                    </div>
+                                  )}
+                                  {day.walkingDuration && (
+                                    <div className="flex items-center gap-2">
+                                      <Clock size={16} className="text-gray-400 shrink-0" />
+                                      <span>Duration: {day.walkingDuration}</span>
+                                    </div>
+                                  )}
+                                </div>
                               </div>
-                            </div>
-                          )}
+                            );
+                          })()}
                         </div>
                       </div>
                     );

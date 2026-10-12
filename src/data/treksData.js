@@ -63,14 +63,15 @@ export const treksData = [
         "maxAltitude": "1,350m / 4,429ft",
         "accommodation": "3-Star Hotel in Kathmandu",
         "travelMode": "Private Vehicle",
-        "desc": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be met by a Zenex Travels representative and transferred to your hotel. We will hold a pre-trip briefing to review the itinerary, answer questions, and introduce your trekking guide. Overnight in Kathmandu."
+        "desc": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be met by a Zenex Travels representative and transferred to your hotel. We will hold a pre-trip briefing to review the itinerary, answer questions, and introduce your trekking guide. Overnight in Kathmandu.",
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
         "title": "Trekking Preparation + Free Day / Kathmandu Sightseeing",
         "maxAltitude": "1,350m / 4,429ft",
         "accommodation": "3-Star Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Today our team processes your Special Restricted Area Permit with the Nepal Department of Immigration. You have a free day to explore UNESCO World Heritage sites in Kathmandu including Kathmandu Durbar Square, Swayambhunath (Monkey Temple), Boudhanath Stupa, and Pashupatinath Temple. Overnight in Kathmandu."
       },
       {
@@ -79,7 +80,7 @@ export const treksData = [
         "maxAltitude": "870m / 2,854ft",
         "duration": "9 hours (146 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "travelMode": "Private 4x4 Jeep / Vehicle",
         "desc": "After early breakfast, depart Kathmandu for a scenic 9-hour drive along the Prithvi Highway, passing Dhading, Arughat, and Soti Khola before arriving at Machha Khola. Overnight at lodge."
       },
@@ -89,7 +90,7 @@ export const treksData = [
         "maxAltitude": "1,340m / 4,396ft",
         "duration": "7 hours (17 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "The trail follows the Budhi Gandaki River through Gurung and Tamang villages, passing Khorlabesi, Tatopani natural hot springs, and suspension bridges up stone staircases to Jagat—the entry checkpoint for MCAP. Overnight at lodge."
       },
       {
@@ -98,7 +99,7 @@ export const treksData = [
         "maxAltitude": "2,240m / 7,349ft",
         "duration": "5-6 hours (13 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "After permit registration at Jagat, trek along the river gorge via Salleri and Philim. Branch off the main Manaslu Circuit trail at Nyak Phedi and climb steep trails to Lokpa—the official entry point of Tsum Valley. Overnight at lodge."
       },
       {
@@ -107,7 +108,7 @@ export const treksData = [
         "maxAltitude": "2,386m / 7,828ft",
         "duration": "5-6 hours (7 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Descend into the Lungwa River valley through pine and rhododendron forests. Cross suspension bridges and climb steep rocky trails up to Chumling village, home to three ancient monasteries: Gurwa Gompa, Mani Dhumgyur, and Panago Gompa. Overnight at lodge."
       },
       {
@@ -116,7 +117,7 @@ export const treksData = [
         "maxAltitude": "3,031m / 9,944ft",
         "duration": "5-6 hours (10 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Enter Upper Tsum Valley, trekking past Tibetan-influenced villages to Rainjam and Gho. Ascend past yak pastures and stone chortens to Chokangparo (Chekampar), where flat terrace farms and traditional stone houses reflect authentic Tibetan heritage. Overnight at lodge."
       },
       {
@@ -125,7 +126,7 @@ export const treksData = [
         "maxAltitude": "3,361m / 11,026ft",
         "duration": "4 hours (9 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Trek up the valley to Lamagaun and visit the sacred Milarepa Cave where the 11th-century yogi meditated, leaving footprints in the rock. Continue past ancient stone murals to Chule and cross the Shiar Khola to Nile—the northernmost village in Upper Tsum. Overnight at lodge."
       },
       {
@@ -134,7 +135,7 @@ export const treksData = [
         "maxAltitude": "3,700m / 12,139ft",
         "duration": "2 hours (5 km)",
         "accommodation": "Tea House / Monastery Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "A gradual 2-hour uphill trek leads to historic Mu Gompa (est. 1895), the highest and largest monastery in Tsum Valley, located near the Tibet border. Explore ancient Buddhist thangkas, life-size Avalokiteshwara statues, and sacred texts while interacting with local lamas. Overnight at monastery teahouse."
       },
       {
@@ -143,7 +144,7 @@ export const treksData = [
         "maxAltitude": "3,302m / 10,833ft",
         "duration": "3-4 hours",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Descend past Phurbe village along the eastern bank of the Shiar Khola to Rechen Gompa (est. 1905), a nunnery showcasing vibrant Buddhist murals. Continue walking 30 minutes to Lama Gaun. Overnight at lodge."
       },
       {
@@ -152,7 +153,7 @@ export const treksData = [
         "maxAltitude": "3,200m / 10,498ft",
         "duration": "8 hours (10 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Descend to Gho for lunch, then cross the Shiar Khola bridge at Domje. Ascend through thick rhododendron and pine forests adorned with prayer flags up to Gumba Langdang, boasting incredible views of the Ganesh Himal range. Overnight at lodge."
       },
       {
@@ -161,7 +162,7 @@ export const treksData = [
         "maxAltitude": "4,200m / 13,779ft",
         "duration": "6-7 hours (14 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "An exciting high-altitude day hike climbing through forests and alpine glacial moraines up to Ganesh Himal Base Camp (4,200m). Enjoy towering close-up vistas of Ganesh Himal peaks before descending back to Gumba Langdang. Overnight at lodge."
       },
       {
@@ -170,7 +171,7 @@ export const treksData = [
         "maxAltitude": "2,240m / 7,349ft",
         "duration": "8-9 hours (17.5 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Descend back through Domje, cross Ludang Khola, pass Ripche and Bhatti Ghumlong, and ascend back to Lokpa village. Overnight at lodge."
       },
       {
@@ -179,7 +180,7 @@ export const treksData = [
         "maxAltitude": "1,340m / 4,396ft",
         "duration": "4-5 hours (13 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Retrace your steps downhill past Philim and Sirdibas along the Budhi Gandaki River back to Jagat. Overnight at lodge."
       },
       {
@@ -188,7 +189,7 @@ export const treksData = [
         "maxAltitude": "870m / 2,854ft",
         "duration": "6-7 hours (17 km)",
         "accommodation": "Mountain Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Final day on the trekking trail walking past Tatopani hot springs and Khorlabesi to reach Machha Khola. Celebrate the trek completion with your guide and porter crew. Overnight at lodge."
       },
       {
@@ -197,7 +198,7 @@ export const treksData = [
         "maxAltitude": "1,350m / 4,429ft",
         "duration": "9 hours (146 km)",
         "accommodation": "3-Star Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "travelMode": "Private Vehicle",
         "desc": "Board your private vehicle for the drive back to Kathmandu. In the evening, join the Zenex Travels team for a traditional Nepali farewell dinner with cultural performances. Overnight at hotel."
       },
@@ -497,7 +498,7 @@ export const treksData = [
         "maxAltitude": "1,503m / 4,931ft",
         "duration": "5-6 hours (90 km)",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "travelMode": "Private Jeep",
         "desc": "After breakfast, depart Kathmandu around 7-8 AM for a scenic 5-6 hour drive heading north through rolling green hills, passing Dunche to reach Syabrubesi (1,503 m)—the gateway town for the Langtang Valley Trek. Overnight at lodge."
       },
@@ -507,7 +508,7 @@ export const treksData = [
         "maxAltitude": "2,480m / 8,136ft",
         "duration": "6-7 hours (11 km)",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Begin trekking by crossing the Bhote Koshi River and following the Langtang Khola. Hike gently uphill through dense oak, rhododendron, and bamboo forests inside Langtang National Park. Stop for lunch at Bamboo (1,960 m), climb up to Rimche (2,485 m), and continue 20 minutes to Lama Hotel. Overnight at lodge."
       },
       {
@@ -516,7 +517,7 @@ export const treksData = [
         "maxAltitude": "3,430m / 11,253ft",
         "duration": "7-8 hours (12 km)",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Trek through lush rhododendron and oak forests up to Ghoratabela (3,030 m) for lunch while enjoying views of Langtang Lirung. Continue past Thyangsyap and Langtang Gompa to reach the beautifully rebuilt Langtang Village (3,430 m). Overnight at lodge."
       },
       {
@@ -525,7 +526,7 @@ export const treksData = [
         "maxAltitude": "3,870m / 12,696ft",
         "duration": "3 hours (6.5 km)",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "A shorter, gradual 3-hour trek walking past stone chortens, carved Mani walls, prayer flags, and yak pastures leading to Kyanjin Gompa (3,870 m). Explore the historic monastery and visit the famous Yala Cheese Factory established in 1952. Overnight at lodge."
       },
       {
@@ -534,7 +535,7 @@ export const treksData = [
         "maxAltitude": "4,773m / 15,659ft",
         "duration": "3-4 hours (2 km)",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Early morning sunrise hike up Kyanjin Ri (4,773 m) or Tserko Ri (4,985 m) for jaw-dropping 360-degree views of Langtang Lirung (7,227 m), Langtang Ri, Yala Peak, Dorje Lakpa, and surrounding glaciers. Return to Kyanjin Gompa for breakfast and rest. Overnight at lodge."
       },
       {
@@ -543,7 +544,7 @@ export const treksData = [
         "maxAltitude": "2,480m / 8,136ft",
         "duration": "7-8 hours (18.5 km)",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Bid farewell to Kyanjin Gompa and retrace your steps downhill along the Langtang River past Langtang Village and Ghoratabela for lunch, descending back to Lama Hotel. Overnight at lodge."
       },
       {
@@ -552,7 +553,7 @@ export const treksData = [
         "maxAltitude": "2,210m / 7,250ft",
         "duration": "6-7 hours (10 km)",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "desc": "Trek downhill past Rimche and Bamboo, then cross the river and ascend through green hills and terraced fields to Bhanjyang village. Enjoy stunning views of Ganesh Himal and Kerung Peak in Tibet before steeply descending to Thulo Syabru village. Overnight at lodge."
       },
       {
@@ -561,7 +562,7 @@ export const treksData = [
         "maxAltitude": "1,350m / 4,429ft",
         "duration": "9 hours (100 km)",
         "accommodation": "3-Star Hotel in Kathmandu",
-        "meals": "Breakfast, Lunch & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "travelMode": "Private Jeep",
         "desc": "Trek to Dunche town, board your private vehicle, and drive 5 hours back to Kathmandu. In the evening, join the Zenex Travels team for a traditional Nepali farewell dinner with cultural performances. Overnight at hotel."
       },
@@ -849,7 +850,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport transfer, pre-trip briefing, guide meeting, equipment check.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be greeted by our correspondent from Zenex Travels & Tours who will assist with your hotel transfer. Checked in, we arrange a pre-trip meeting to brief you on the trek, answer questions, and introduce your trekking guide. Rest and relax at leisure. Overnight at hotel."
@@ -861,7 +862,7 @@ export const treksData = [
         "walkingTime": "4 hrs drive + 2 hrs trek",
         "distance": "75 km drive",
         "accommodation": "Lodge at Kakani",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle & Trekking",
         "highlights": "Drive to Melamchi Bazar, uphill hike through Tamang & Sherpa villages, views of Gaurishankar.",
         "description": "After breakfast in Kathmandu, your guide meets you to begin driving toward Melamchi Bazar (870 m), taking about 4 hours. After lunch at Melamchi Bazar, prepare to trek uphill toward Kakani for about 2 hours. Pass several ethnic villages of Tamang, Sherpa, Chhetri, and Brahmin communities with stunning vistas of Langtang and Gaurishankar ranges. Overnight at lodge."
@@ -873,7 +874,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs",
         "distance": "10-11 km",
         "accommodation": "Lodge at Tarke Ghyang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Gentle uphill through forests, lunch at Sermathang Sherpa village, ancient monasteries.",
         "description": "Begin trekking toward Tarke Ghyang with a gentle uphill walk through lush forests, terraced fields, and charming Sherpa settlements. Stop at Sermathang, a traditional Sherpa village famous for its ancient monastery and community life, for lunch. Continue hiking toward Tarke Ghyang—one of the oldest Sherpa villages in Helambu offering serene Buddhist heritage. Overnight at lodge."
@@ -885,7 +886,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Melamchi Gaun",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Undulating forest trail, prayer flags, Buddhist monasteries, authentic rural life.",
         "description": "Trek through a scenic trial filled with up-and-down sections across dense forests, terraced farmlands, and hillside settlements. Enjoy views of traditional homes, prayer flags, and verdant hills. Arrive in Melamchi Gaun, a vibrant Tamang and Sherpa village renowned for its monastery and warm mountain hospitality. Overnight at lodge."
@@ -897,7 +898,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs",
         "distance": "5-6 km",
         "accommodation": "Lodge at Tharepati",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Steady ascent through rhododendron & oak forests, ridge viewpoint of Manaslu & Ganesh Himal.",
         "description": "Ascend steadily through dense rhododendron and oak forests, gaining altitude as lower hills fall behind. As trees thin out, panoramic views of Langtang, Ganesh Himal, Manaslu, and Gaurishankar open up. Reach Tharepati on an open ridge by lunchtime—a major junction offering one of the finest viewpoints on the trail. Overnight at lodge."
@@ -909,7 +910,7 @@ export const treksData = [
         "walkingTime": "7 hrs",
         "distance": "11-12 km",
         "accommodation": "Lodge at Phedi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Alpine terrain walk, rugged mountain ridges, preparation for Lauribina Pass.",
         "description": "Embark on a long, gradual trek through alpine terrain as you approach Lauribina Pass. Climb through rhododendron and juniper bushes before entering the treeless high-altitude zone. Expect rocky ridges and thinning air with dramatic views of Langtang and Manaslu ranges. Arrive in Phedi ('foot of the pass') to rest and acclimatize before tomorrow's pass crossing. Overnight at lodge."
@@ -921,7 +922,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "9-10 km",
         "accommodation": "Lodge at Gosaikunda",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Lauribina Pass (4610m), stunning high altitude views, arrival at sacred Gosaikunda Lake.",
         "description": "Start early with a steep 2-hour ascent to Lauribina Pass (4,610 m), the highest pass of the trek. Enjoy breathtaking panoramas of Langtang Lirung, Ganesh Himal, Manaslu, Dorje Lakpa, and Tibetan peaks. Descend gradually through rocky terrain for 2.5 hours to reach sacred Gosaikunda Lake (4,380 m)—a pristine alpine pilgrimage site for Hindus and Buddhists. Overnight at lodge."
@@ -933,7 +934,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "13-14 km",
         "accommodation": "Lodge at Thulo Syabru",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descent through Shin Gompa yak cheese center, pine & rhododendron forests to Thulo Syabru.",
         "description": "Complete the Helambu circuit leg by descending from Gosaikunda to Shin Gompa (3,330 m) in about 3 hours, taking in continuous views of Langtang and Ganesh Himal. After resting at Shin Gompa (famous for its local monastery and yak cheese factory), continue descending 3 hours through pine forests into Thulo Syabru (2,210 m), a scenic Tamang village. Overnight at lodge."
@@ -945,7 +946,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Lama Hotel",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Ghopche Khola suspension bridge, spot wildlife (monkeys, red pandas), reach Lama Hotel.",
         "description": "Transition into the core Langtang Valley trail. Descend steeply to cross Ghopche Khola through subtropical forests rich with wildlife including langurs, red pandas, and rare birds. Ascend past Bamboo and Rimche to reach the serene forest village of Lama Hotel along the Langtang Khola. Overnight at lodge."
@@ -957,7 +958,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Langtang Village",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trail through Ghodatabela, waterfalls, Tamang settlements, view of Langtang Lirung.",
         "description": "Trek through oak and rhododendron forests toward Ghodatabela (3,030 m) for lunch or rest. Continue past Thyangsyap, Chayamki, and Langtang Gompa to reach Langtang Village (3,430 m). Witness the inspiring rebuilding of the village after the 2015 earthquake, set beneath towering peaks of Langtang Lirung and Ganesh Himal. Overnight at lodge."
@@ -969,7 +970,7 @@ export const treksData = [
         "walkingTime": "3 hrs",
         "distance": "6.5 km",
         "accommodation": "Lodge at Kyanjin Gompa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Shorter trek past Mani walls & chortens, visit Kyanjin Gompa monastery & Swiss cheese factory.",
         "description": "Enjoy a shorter 3-hour trek winding past chortens, prayer flags, Mani walls, and grazing yaks. Arrive in Kyanjin Gompa (3,870 m), the spiritual heart of Langtang Valley. Visit the historic Kyanjin Monastery and the famous Yala Cheese Factory established in 1952 with Swiss support. Overnight at lodge."
@@ -981,7 +982,7 @@ export const treksData = [
         "walkingTime": "3-7 hrs hike",
         "distance": "2-8 km",
         "accommodation": "Lodge at Kyanjin Gompa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Hiking",
         "highlights": "Sunrise peak climb to Kyanjin Ri or Tserko Ri, 360-degree glacier panoramas of Langtang range.",
         "description": "Hike early morning to Kyanjin Ri (4,773 m) in 2.5 hours for an unforgettable sunrise over Langtang Lirung (7,245 m), Langtang Ri (6,370 m), Yala Peak (5,520 m), and Dorje Lakpa (6,966 m). Return for breakfast and optional further excursion up Tserko Ri (4,985 m) for ultimate Himalayan panoramas. Overnight at lodge."
@@ -993,7 +994,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs",
         "distance": "18.5 km",
         "accommodation": "Lodge at Lama Hotel",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend back through Ghodatabela, enjoy lush forest scenery and rivers.",
         "description": "Bid farewell to Kyanjin Gompa and retrace your steps downhill through Langtang Village and Ghodatabela for lunch. Continue descending back to Lama Hotel alongside the roaring Langtang Khola. Overnight at lodge."
@@ -1005,7 +1006,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "10 km",
         "accommodation": "Lodge at Syabrubesi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Final trek day along Langtang Khola through bamboo & pine forests to Syabrubesi.",
         "description": "Trek the final leg of the trail down to Syabrubesi (1,503 m), descending through pine and bamboo groves with chances to see langurs and colorful mountain birds. Celebrate the successful trek completion with your guide and porters. Overnight at lodge."
@@ -1017,7 +1018,7 @@ export const treksData = [
         "walkingTime": "6 hrs drive",
         "distance": "90 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Lunch",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Scenic drive through Trishuli valley back to Kathmandu city hotel.",
         "description": "After breakfast in Syabrubesi, drive back to Kathmandu in a private vehicle (approx. 6 hours). Check into your hotel and spend the evening unwinding or celebrating your mountain achievement. Overnight at hotel."
@@ -1029,7 +1030,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "-",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "Optional UNESCO heritage tour (Swoyambhunath, Boudhanath, Pashupatinath), shopping, farewell dinner.",
         "description": "Free day in Kathmandu for relaxing, spa/massage, souvenir shopping in Thamel, or visiting UNESCO World Heritage sites such as Swoyambhunath (Monkey Temple), Boudhanath Stupa, and Pashupatinath. In the evening, enjoy an official farewell dinner hosted by Zenex Travels & Tours. Overnight at hotel."
@@ -1304,7 +1305,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport arrival transfer, pre-trip briefing, equipment check.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels representative will pick you up in a private vehicle and transfer you to your hotel. After check-in, we host a pre-trip briefing, meet your trekking guide, and prepare gear for the upcoming journey. Overnight at hotel."
@@ -1316,7 +1317,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs drive",
         "distance": "90 km",
         "accommodation": "Lodge at Syabrubesi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Scenic drive through hills and along the Trishuli River to the gateway of Langtang.",
         "description": "Depart Kathmandu early morning around 7-8 AM, driving north through scenic hills, terraced farmlands, and mountain towns like Dhunche. Arrive in Syabrubesi (1,503 m), a bustling town nestled along the Trishuli River inside Langtang National Park. Overnight at lodge."
@@ -1328,7 +1329,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Gatlang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Steady ascent through Tamang settlements with views of Ganesh Himal & stone houses of Gatlang.",
         "description": "Begin trekking with a steady 2.5-hour uphill climb through forested hills and traditional Tamang villages. Enjoy sweeping views of Ganesh Himal and the Langtang range. Arrive in Gatlang (2,238 m), a charming cultural village renowned for its distinctive stone houses and Tamang heritage. Overnight at lodge."
@@ -1340,7 +1341,7 @@ export const treksData = [
         "walkingTime": "6 hrs",
         "distance": "14 km",
         "accommodation": "Lodge at Somdang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Visit sacred Parvati Kunda lake, walk through bamboo/rhododendron forests & old copper mines.",
         "description": "Trek through terraced fields and pine forests, passing the sacred Parvati Kunda lake where locals perform rituals. The trail grows steeper and more secluded through dense rhododendron and bamboo woods, passing abandoned copper mines before reaching the quiet valley of Somdang (3,270 m). Overnight at lodge."
@@ -1352,7 +1353,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "15 km",
         "accommodation": "Teahouse / Homestay at Tipling",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Climb to Pangsang Pass (3850m) for 360-degree views of Ganesh Himal, Manaslu & Annapurna.",
         "description": "A highlight day! Ascend gradually from Somdang to Pangsang Pass (3,850 m), the highest point of the trek. Be rewarded with breathtaking panoramas of Ganesh Himal, Langtang Lirung, Manaslu, and Annapurna. After enjoying the pass, descend through forests and streams into Tipling (1,890 m), a vibrant Tamang village. Overnight at teahouse/homestay."
@@ -1364,7 +1365,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs",
         "distance": "7 km",
         "accommodation": "Lodge / Homestay at Shertung",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Short scenic walk through farmlands & terraced hills to Shertung ('Place of Gold').",
         "description": "Enjoy a lighter 3 to 4 hour trek descending through terraced fields, pine groves, and traditional settlements. Arrive in Shertung (1,920 m), meaning 'Place of Gold', inhabited by Tamang and Gurung communities. Spend the afternoon exploring local monasteries or relaxing. Overnight at homestay/lodge."
@@ -1376,7 +1377,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs exploration",
         "distance": "5 km",
         "accommodation": "Lodge / Homestay at Shertung",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Hiking & Hot Springs",
         "highlights": "Explore Chalish Gaun village, soak in natural hot springs, experience local culture.",
         "description": "A rest and acclimatization day. In the afternoon, take a relaxed 3-hour walk to Chalish Gaun, a picturesque Tamang village with stone houses and friendly locals. Soak in the nearby natural hot springs to soothe muscles before returning to Shertung for the night. Overnight at homestay/lodge."
@@ -1388,7 +1389,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs",
         "distance": "10 km",
         "accommodation": "Lodge at Lapa Gaun",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Comfortable walk through rhododendron forests, valley vistas, peaceful rural life.",
         "description": "Trek along a gentle downhill and flat path through lush rhododendron and pine forests. Enjoy serene views of valley hillsides and farmlands while observing local wildlife and bird species. Arrive in the peaceful village of Lapa Gaun (1,850 m). Overnight at lodge."
@@ -1400,7 +1401,7 @@ export const treksData = [
         "walkingTime": "5 hrs",
         "distance": "11 km",
         "accommodation": "Lodge at Jharlang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Scenic trail across terraced farmlands, traditional Tamang & Gurung hamlets.",
         "description": "Walk across terraced fields, forest trails, and small traditional hamlets toward Jharlang (3,000 m). The gentle, well-marked path offers authentic interactions with local villagers and peaceful nature views. Overnight at lodge."
@@ -1412,7 +1413,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs trek + 2 hrs drive",
         "distance": "12 km trek",
         "accommodation": "Hotel in Dhading Besi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking & Vehicle",
         "highlights": "Final trek down to Darkha Gaun, scenic drive to lowland town of Dhading Besi.",
         "description": "Hike downhill from Jharlang to Darkha Gaun (850 m) in about 4-5 hours, passing through lush green hills and farmland. Meet your private vehicle at Darkha Gaun for a scenic drive to Dhading Besi (580 m). Overnight at hotel."
@@ -1424,7 +1425,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs drive",
         "distance": "90 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Lunch",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Return drive along Trishuli river valley to Kathmandu, leisure evening in Thamel.",
         "description": "Drive back to Kathmandu (approx. 5-6 hours) through river valleys and rural villages. Check into your city hotel, relax, explore Thamel markets, or enjoy a celebratory dinner. Overnight at hotel."
@@ -1699,7 +1700,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport transfer, pre-trip briefing, guide meeting, gear preparation.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be greeted by our Zenex Travels representative who will assist with your hotel transfer. After check-in, we host a pre-trip briefing, answer questions, and introduce your trekking guide. Overnight at hotel."
@@ -1711,7 +1712,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs drive",
         "distance": "90 km",
         "accommodation": "Lodge at Syabrubesi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Drive along Trishuli River valley to the gateway town of Langtang National Park.",
         "description": "Depart Kathmandu around 7-8 AM, driving north through winding mountain roads, terraced farmlands, and mountain towns like Dhunche. Arrive in Syabrubesi (1,503 m), located along the banks of the Trishuli River inside Langtang National Park. Overnight at lodge."
@@ -1723,7 +1724,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Gatlang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Uphill trek through Tamang hamlets, view of Ganesh Himal, stone-built houses of Gatlang.",
         "description": "Trek uphill for 2.5 hours through forested hills and Tamang settlements. Enjoy views of Ganesh Himal and Langtang ranges. Reach Gatlang (2,238 m), a traditional Tamang village famous for stone houses, chortens, and warm mountain hospitality. Overnight at lodge."
@@ -1735,7 +1736,7 @@ export const treksData = [
         "walkingTime": "6 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Tatopani",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend to Thangbuche river bridge, steady climb to Tatopani natural hot springs.",
         "description": "Descend to Thangbuche, cross a suspension bridge, and climb steadily through terraced fields and forested ridges. Enjoy views of Ganesh Himal. Arrive in Tatopani (2,607 m), famous for its natural hot springs believed to have healing properties. Relax in the hot springs. Overnight at lodge."
@@ -1747,7 +1748,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "11 km",
         "accommodation": "Lodge at Thuman",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Climb to Nagthali viewpoint for panoramas of Ganesh Himal & Tibetan peaks, descend to Thuman.",
         "description": "Ascend 2.5 hours to Nagthali (3,165 m), a high ridge viewpoint once used as a meditation retreat for Tibetan monks. Enjoy 360-degree views of Paldor Peak, Ganesh Himal, and Langtang Lirung. Descend through rhododendron forests to Thuman (2,338 m), a village rich in Tibetan-influenced Tamang culture. Overnight at lodge."
@@ -1759,7 +1760,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "10.5 km",
         "accommodation": "Lodge / Homestay at Briddhim",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Bhote Koshi River, walk through corn fields, stay in Briddhim community homestay.",
         "description": "Trek along a narrow trail through forests and corn fields, crossing the Bhote Koshi River via suspension bridge. Climb to Briddhim (2,229 m), a peaceful village on the lap of Langtang Himal known for community-based homestays, old monasteries, and Tamang hospitality. Overnight at lodge/homestay."
@@ -1771,7 +1772,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Lama Hotel",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Connect with the main Langtang Valley trail, walk along Langtang Khola river to Lama Hotel.",
         "description": "Descend gently through pine and rhododendron woods before ascending along the roaring Langtang Khola. Pass small settlements and spot langur monkeys and birdlife before reaching Lama Hotel (2,480 m), nestled in the forest. Overnight at lodge."
@@ -1783,7 +1784,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Langtang Village",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek through Ghodatabela & Thyangsyap, view waterfalls and towering Langtang Lirung.",
         "description": "Walk through oak and rhododendron forests to Ghodatabela (3,030 m) for rest or lunch. Continue past Thyangsyap and Chayamki to reach Langtang Village (3,430 m). Marvel at the inspiring village resilience following the 2015 earthquake under the shadow of Langtang Lirung. Overnight at lodge."
@@ -1795,7 +1796,7 @@ export const treksData = [
         "walkingTime": "3 hrs",
         "distance": "6.5 km",
         "accommodation": "Lodge at Kyanjin Gompa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Short scenic hike past Mani walls & chortens, visit Kyanjin Gompa & Yala Cheese Factory.",
         "description": "Enjoy a short 3-hour trek past chortens, prayer flags, and yak pastures to Kyanjin Gompa (3,870 m). Visit the ancient monastery and the historic Yala Cheese Factory established in 1952 with Swiss assistance. Overnight at lodge."
@@ -1807,7 +1808,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs hike",
         "distance": "2 km",
         "accommodation": "Lodge at Kyanjin Gompa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Hiking",
         "highlights": "Early sunrise climb to Kyanjin Ri or Tserko Ri, 360-degree glacier panoramas.",
         "description": "Hike early morning to Kyanjin Ri (4,773 m) for sunrise over Langtang Lirung (7,245 m), Langtang Ri (6,370 m), Yala Peak (5,520 m), and Dorje Lakpa (6,966 m). Return for breakfast and optional hike up Tserko Ri (4,985 m) for ultimate glacier views. Overnight at lodge."
@@ -1819,7 +1820,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs",
         "distance": "18.5 km",
         "accommodation": "Lodge at Lama Hotel",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend back through Ghodatabela along the Langtang Khola.",
         "description": "Bid farewell to Kyanjin Gompa and trek downhill through Langtang Village and Ghodatabela for lunch. Continue descending back to Lama Hotel. Overnight at lodge."
@@ -1831,7 +1832,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "10 km",
         "accommodation": "Lodge at Thulo Syabru",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek via Sherpagaon & Bhanjyang, view Kerung Peak (Tibet) & Ganesh Himal.",
         "description": "Trek along easy trails through terraced fields to Sherpagaon (2,500 m). Continue up and down to Bhanjyang village for panoramic views of Ganesh Himal and Kerung Peak in Tibet, then descend steeply into Thulo Syabru (2,210 m). Overnight at lodge."
@@ -1843,7 +1844,7 @@ export const treksData = [
         "walkingTime": "9 hrs total",
         "distance": "10 km trek + drive",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Lunch",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking & Vehicle",
         "highlights": "Walk to Dhunche, scenic drive back to Kathmandu city hotel.",
         "description": "Trek to Dhunche (1,960 m) to complete your trail journey. Meet your private vehicle for a 5-hour drive back to Kathmandu. Check into your hotel and relax. Overnight at hotel."
@@ -1855,7 +1856,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "-",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "Relaxation, souvenir shopping in Thamel, official farewell dinner.",
         "description": "Enjoy a free day in Kathmandu for shopping, visiting UNESCO sites like Swoyambhunath and Boudhanath, or relaxing. In the evening, join your guide for a traditional farewell dinner hosted by Zenex Travels & Tours. Overnight at hotel."
@@ -2128,7 +2129,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport transfer, pre-trip briefing, guide meeting, gear preparation.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels representative will pick you up in a private vehicle and transfer you to your hotel. After check-in, we arrange a pre-trip meeting to brief you on the trek and introduce your guide. Overnight at hotel."
@@ -2140,7 +2141,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs drive",
         "distance": "90 km",
         "accommodation": "Lodge at Syabrubesi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Scenic drive along Trishuli river valley to the trailhead at Syabrubesi.",
         "description": "Depart Kathmandu in the morning around 7-8 AM, driving north along scenic mountain roads and river valleys through Dhunche to Syabrubesi (1,503 m), the gateway to Langtang National Park. Overnight at lodge."
@@ -2152,7 +2153,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Gatlang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Uphill trek past Tamang hamlets, view of Ganesh Himal, traditional stone houses of Gatlang.",
         "description": "Begin trekking uphill for 2.5 hours through forested slopes and Tamang settlements. Enjoy sweeping views of Ganesh Himal and Langtang ranges before arriving in Gatlang (2,238 m), a historic Tamang village famous for stone houses and rich cultural traditions. Overnight at lodge."
@@ -2164,7 +2165,7 @@ export const treksData = [
         "walkingTime": "6 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Tatopani",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend to Thangbuche suspension bridge, steady climb to Tatopani natural hot springs.",
         "description": "Descend to Thangbuche, cross the suspension bridge over the river, and climb steadily through terraced farmlands and forest ridges. Reach Tatopani (2,607 m), famous for its natural thermal hot springs believed to have healing properties. Enjoy a relaxing dip. Overnight at lodge."
@@ -2176,7 +2177,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "11 km",
         "accommodation": "Lodge at Thuman",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Climb to Nagthali viewpoint for 360-degree views of Ganesh Himal & Paldor Peak, descend to Thuman.",
         "description": "Ascend 2.5 hours to Nagthali ridge (3,165 m), the highest point of the trek, which was once a meditation retreat for Tibetan monks. Enjoy breathtaking views of Ganesh Himal, Paldor Peak, and Langtang Lirung. Descend through rhododendron woods to Thuman (2,338 m), a village rich in Tibetan-influenced Tamang heritage. Overnight at lodge."
@@ -2188,7 +2189,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "10.5 km",
         "accommodation": "Lodge / Homestay at Briddhim",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Bhote Koshi River, walk through corn fields, stay in Briddhim community homestays.",
         "description": "Walk along narrow trails through forests and terraced fields, crossing the Bhote Koshi River via suspension bridge. Climb up to Briddhim (2,229 m), a serene village famous for community homestays, ancient monasteries, and warm hospitality. Overnight at homestay/lodge."
@@ -2200,7 +2201,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs",
         "distance": "8.5 km",
         "accommodation": "Lodge at Syabrubesi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Gentle downhill walk through pine & rhododendron forests back to Syabrubesi.",
         "description": "Descend gently through dense forests, farmlands, and small hamlets along the trail back to Syabrubesi (1,503 m). Celebrate the completion of your circuit trek with your guide and porters. Overnight at lodge."
@@ -2212,7 +2213,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs drive",
         "distance": "90 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Lunch",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Return drive along Trishuli river valley to Kathmandu city hotel.",
         "description": "After breakfast in Syabrubesi, drive back to Kathmandu in a private vehicle (approx. 5-6 hours). Check into your hotel and spend the afternoon at leisure. Overnight at hotel."
@@ -2224,7 +2225,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "-",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "UNESCO World Heritage sightseeing (Swoyambhunath, Boudhanath, Pashupatinath), farewell dinner.",
         "description": "Free day in Kathmandu for sightseeing, massage, or shopping in Thamel. Optional half-day tour of UNESCO Heritage sites like Swoyambhunath (Monkey Temple), Boudhanath Stupa, and Pashupatinath. In the evening, enjoy a traditional farewell dinner hosted by Zenex Travels & Tours. Overnight at hotel."
@@ -2498,7 +2499,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport transfer, trip briefing, equipment & climbing gear check.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels representative will pick you up in a private vehicle and transfer you to your hotel. After check-in, we hold a pre-trip briefing to verify climbing gear, review the high-pass itinerary, and introduce your guide. Overnight at hotel."
@@ -2510,7 +2511,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs drive",
         "distance": "90 km",
         "accommodation": "Lodge at Syabrubesi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Scenic drive through mountain roads and river valleys to Syabrubesi.",
         "description": "Drive north from Kathmandu early morning through scenic mountain roads and the town of Dhunche. Arrive in Syabrubesi (1,503 m), nestled along the Trishuli River inside Langtang National Park. Overnight at lodge."
@@ -2522,7 +2523,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Lama Hotel",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Bhote Koshi River, walk along Langtang Khola through bamboo forests.",
         "description": "Begin trekking across the Bhote Koshi River, following the Langtang Khola uphill through oak, rhododendron, and bamboo forests. Lunch at Bamboo (1,960 m) before ascending past Rimche to Lama Hotel (2,480 m). Overnight at lodge."
@@ -2534,7 +2535,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Langtang Village",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trail through Ghodatabela, waterfalls, Tamang settlements, view of Langtang Lirung.",
         "description": "Trek through oak and rhododendron forests to Ghodatabela (3,030 m) for lunch. Continue past Thyangsyap and Chayamki to Langtang Village (3,430 m). Witness the inspiring village rebuilding under the shadow of Langtang Lirung. Overnight at lodge."
@@ -2546,7 +2547,7 @@ export const treksData = [
         "walkingTime": "3 hrs",
         "distance": "6.5 km",
         "accommodation": "Lodge at Kyanjin Gompa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Walk past Mani walls & chortens, visit Kyanjin Gompa & Yala Cheese Factory.",
         "description": "Enjoy a short 3-hour trek winding past Mani walls, prayer flags, and yak pastures to Kyanjin Gompa (3,870 m). Visit the historic Kyanjin Monastery and the famous Yala Cheese Factory established in 1952. Overnight at lodge."
@@ -2558,7 +2559,7 @@ export const treksData = [
         "walkingTime": "5 hrs hike",
         "distance": "4 km",
         "accommodation": "Lodge at Kyanjin Gompa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Hiking",
         "highlights": "Sunrise peak climb to Kyanjin Ri or Tserko Ri, 360-degree glacier panoramas.",
         "description": "Hike early morning to Kyanjin Ri (4,773 m) for an unforgettable sunrise over Langtang Lirung (7,245 m), Yala Peak, and Dorje Lakpa. Return for breakfast and optional excursion up Tserko Ri (4,985 m) for acclimatization before tomorrow's climb. Overnight at lodge."
@@ -2570,7 +2571,7 @@ export const treksData = [
         "walkingTime": "4 hrs",
         "distance": "6 km",
         "accommodation": "Tented Camp at High Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Climb past yak pastures & glacial streams into remote alpine terrain at High Camp.",
         "description": "Ascend eastward from Kyanjin Gompa into remote alpine terrain above Langtang Valley. Cross rocky ridges, glacial streams, and loose scree to reach Ganja La High Camp (4,960 m). Set up camp under mountain slopes in preparation for crossing Ganja La Pass. Overnight at tented camp."
@@ -2582,7 +2583,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "10 km",
         "accommodation": "Tented Camp at Keldang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Technical Pass Crossing & Trekking",
         "highlights": "Cross Ganja La Pass (5130m), technical descent over snowfields to Keldang pastures.",
         "description": "Start before sunrise for the steep push to Ganja La Pass (5,130 m). Cross snowfields and rocky ridges (using ropes/crampons if required) to reach the prayer-flag-strewn pass. Marvel at 360-degree views of Langtang Lirung, Dorje Lakpa, and Shishapangma. Descend steep, technical moraine slopes down to Keldang (4,270 m) yak pastures. Overnight at tented camp."
@@ -2594,7 +2595,7 @@ export const treksData = [
         "walkingTime": "4.5 hrs",
         "distance": "9 km",
         "accommodation": "Tented Camp at Dhukpa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend wide alpine valley, cross glacial streams to Dhukpa yak pastures.",
         "description": "Trek gently downhill across wide alpine valleys, crossing glacial streams and grassy pastures surrounded by dramatic mountain walls. Arrive at Dhukpa (4,040 m), a tranquil yak-grazing sanctuary. Overnight at tented camp."
@@ -2606,7 +2607,7 @@ export const treksData = [
         "walkingTime": "6 hrs",
         "distance": "12 km",
         "accommodation": "Lodge at Tarkeghyang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend into rhododendron forests, arrive in historic Hyolmo village of Tarkeghyang.",
         "description": "Descend from alpine pastures into lush rhododendron, pine, and oak forests. Enter the Helambu region and reach Tarkeghyang (2,600 m), an ancient Hyolmo village famous for stone houses, Buddhist monasteries, and local culture. Overnight at lodge."
@@ -2618,7 +2619,7 @@ export const treksData = [
         "walkingTime": "4 hrs",
         "distance": "9 km",
         "accommodation": "Lodge at Shermathang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Easy walk past Mani walls, chortens & apple orchards of Shermathang.",
         "description": "Enjoy a comfortable flat walk through pine forests, passing Mani walls, chortens, and traditional Sherpa settlements. Arrive in Shermathang (2,590 m), offering views of Jugal and Ganesh Himal ranges and local apple orchards. Overnight at lodge."
@@ -2630,7 +2631,7 @@ export const treksData = [
         "walkingTime": "5 hrs",
         "distance": "11 km",
         "accommodation": "Lodge at Melamchi Bazaar",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Final downhill walk through terraced farmlands to Melamchi Bazaar.",
         "description": "Trek downhill through terraced farmlands, Sherpa hamlets, and river valleys, descending to Melamchi Bazaar (870 m). Celebrate the completion of the high pass circuit. Overnight at lodge."
@@ -2642,7 +2643,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs drive",
         "distance": "45-50 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Lunch",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Return drive to Kathmandu, check in hotel and relax.",
         "description": "After breakfast in Melamchi Bazaar, drive back to Kathmandu in a private vehicle (approx. 3-4 hours). Check into your hotel and spend the rest of the day relaxing or taking a spa treatment. Overnight at hotel."
@@ -2654,7 +2655,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "-",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "UNESCO Heritage sightseeing, Thamel shopping, official farewell dinner.",
         "description": "Free day in Kathmandu for shopping, resting, or visiting UNESCO World Heritage sites (Swoyambhunath, Boudhanath, Pashupatinath). In the evening, join your guide for a traditional farewell dinner hosted by Zenex Travels & Tours. Overnight at hotel."
@@ -2940,7 +2941,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport pickup, hotel transfer, pre-trip briefing & tour guide introduction.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will pick you up in a private vehicle and transfer you to your hotel. After check-in, we hold a brief pre-trip meeting to review tour permits, answer questions, and introduce your guide. Overnight at hotel."
@@ -2952,7 +2953,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs sightseeing",
         "distance": "25 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Guided UNESCO tour: Kathmandu Durbar Square, Swayambhunath (Monkey Temple), Boudhanath Stupa & Pashupatinath.",
         "description": "Spend the day exploring Kathmandu's famous UNESCO World Heritage Sites. Visit ancient palaces at Kathmandu Durbar Square, panoramic views at Swayambhunath Stupa, sacred Hindu rituals along Bagmati River at Pashupatinath, and the giant Buddhist stupa at Boudhanath. Finalize restricted area permits for Upper Mustang. Overnight at hotel."
@@ -2964,7 +2965,7 @@ export const treksData = [
         "walkingTime": "7 hrs drive",
         "distance": "200 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Drive along Trishuli and Marshyangdi rivers to lakeside city of Pokhara.",
         "description": "Depart Kathmandu after breakfast in a private vehicle for Pokhara (approx. 7 hours drive). Enjoy scenic countryside views along river valleys and terraced farmlands. Check into your hotel in Pokhara and enjoy an evening stroll along Phewa Lake. Overnight at hotel."
@@ -2976,7 +2977,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs drive",
         "distance": "110 km",
         "accommodation": "Lodge at Tatopani",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD vehicle",
         "highlights": "Drive through Beni along Kali Gandaki Valley, relax in natural hot springs at Tatopani.",
         "description": "Drive from Pokhara past Nayapul, Kushma, and Beni into the Kali Gandaki River Valley. Beyond Beni, the road turns off-road into mountain terrain. Arrive in Tatopani (1,190 m) and spend the afternoon soaking in warm, mineral-rich natural thermal hot springs. Overnight at lodge."
@@ -2988,7 +2989,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs drive",
         "distance": "100 km",
         "accommodation": "Lodge at Kagbeni",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD vehicle",
         "highlights": "World's deepest Kali Gandaki Gorge, apple orchards of Marpha, Muktinath Temple & Kagbeni.",
         "description": "Drive north through the spectacular Kali Gandaki Gorge between Dhaulagiri and Annapurna ranges. Pass permit checkpoint at Ghasa and explore Marpha village, famous for apple orchards and whitewashed Thakali stone houses. Continue to Jomsom and ascend to holy Muktinath Temple (3,800 m) to view 108 sacred water spouts and eternal flame. Descend to Kagbeni (2,800 m), the historic gateway to Upper Mustang. Overnight at lodge."
@@ -3000,7 +3001,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs drive",
         "distance": "40 km",
         "accommodation": "Lodge at Geling",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD vehicle",
         "highlights": "Enter restricted Upper Mustang, pass Tangbe stone houses, Chhusang cliffs & Chele village.",
         "description": "Submit restricted area permits at Kagbeni checkpoint and enter Upper Mustang. Drive past traditional stone hamlets of Tangbe and towering red cliffs of Chhusang. Cross the Kali Gandaki River bridge to Chele for lunch. Continue past Samar and Syangbochen pass to Geling (3,570 m) and visit historic Geling Monastery. Overnight at lodge."
@@ -3012,7 +3013,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs drive",
         "distance": "40-45 km",
         "accommodation": "Lodge at Lo Manthang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD vehicle",
         "highlights": "Longest Mani wall at Ghemi, red cliffs of Dhakmar, 1300-yr Ghar Gompa, Charang Palace & Lo Manthang.",
         "description": "Drive from Geling past Ghemi village and its famous long Mani wall. Continue to Dhakmar red cliff canyons and visit 1,300-year-old Lo-Ghyakar Gompa (Ghar Gompa, 3,950 m) established by Guru Rinpoche. Stop in historic Charang village to explore Charang Monastery. Arrive in the walled capital of Lo Manthang (3,810 m). Stroll around old courtyards and the Royal Palace. Overnight at lodge."
@@ -3024,7 +3025,7 @@ export const treksData = [
         "walkingTime": "Full day excursion",
         "distance": "15 km jeep/horse excursion",
         "accommodation": "Lodge at Lo Manthang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD vehicle / Walking",
         "highlights": "Jampa Gompa, Thubchen Gompa, Chhoede Gompa, Royal Palace & Jhong Sky Cave complex at Chhoser.",
         "description": "Spend a full day exploring ancient Lo Manthang. Visit 15th-century Jampa Gompa (God House), Thubchen Gompa assembly hall, and active Chhoede Gompa. Take a short 4WD excursion north to Chhoser to explore Jhong Cave—a multi-story cliff dwelling carved thousands of years ago for meditation and refuge. Return to Lo Manthang for evening local interactions. Overnight at lodge."
@@ -3036,7 +3037,7 @@ export const treksData = [
         "walkingTime": "8 hrs drive",
         "distance": "110 km",
         "accommodation": "Lodge at Marpha",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD vehicle",
         "highlights": "Scenic return drive across desert plateaus, Ghami, Kagbeni & Jomsom to Marpha.",
         "description": "Begin the return drive from Lo Manthang following the Kali Gandaki Valley back down through Upper Mustang. Enjoy changing light over red rock canyons and snow peaks. Pass Kagbeni and Jomsom to reach the tranquil apple village of Marpha (2,650 m). Sample fresh apple cider and bakery items. Overnight at lodge."
@@ -3048,7 +3049,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs drive",
         "distance": "148 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD vehicle",
         "highlights": "Drive along Kali Gandaki river gorge, Tatopani & Beni back to Pokhara.",
         "description": "Drive back from Marpha down through Ghasa, Tatopani, and Beni to Pokhara. Upon arrival in Pokhara, check into your hotel. Spend a relaxed evening by Phewa Lake or enjoy dining at Lakeside restaurants. Overnight at hotel."
@@ -3060,7 +3061,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "15 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle / Boating",
         "highlights": "Boating on Phewa Lake, Tal Barahi Temple, World Peace Stupa, Davis Fall & Gupteshwor Cave.",
         "description": "Enjoy a free relaxation day in Pokhara. Options include morning boating on Phewa Lake, visiting Tal Barahi Island Temple, taking a cable car or drive to World Peace Stupa / Pumdikot Shiva Temple for mountain panoramas, or exploring Davis Fall and Gupteshwor Cave. Overnight at hotel."
@@ -3072,7 +3073,7 @@ export const treksData = [
         "walkingTime": "7 hrs drive",
         "distance": "200 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Return drive to Kathmandu, evening official farewell dinner with traditional cultural performance.",
         "description": "Drive back from Pokhara to Kathmandu in a private vehicle (approx. 7 hours). Check into your hotel and enjoy free time for souvenir shopping in Thamel. In the evening, join your Zenex Travels team for a traditional Nepali farewell dinner. Overnight at hotel."
@@ -3357,7 +3358,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport pickup, hotel transfer, pre-trip briefing & guide meeting.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. After check-in, we hold a pre-trip briefing to review the restricted permit requirements and introduce your trekking guide. Overnight at hotel."
@@ -3369,7 +3370,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs sightseeing",
         "distance": "25 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Passport check for Special Permit, UNESCO tour of Kathmandu Durbar Square, Swayambhunath, Boudhanath & Pashupatinath.",
         "description": "Submit original passports to the Nepal Immigration Department for the Special Restricted Area Permit. Spend the rest of the day on a guided UNESCO World Heritage tour of Kathmandu, visiting ancient palaces at Kathmandu Durbar Square, Swayambhunath Stupa, Boudhanath Stupa, and Pashupatinath Temple. Overnight at hotel."
@@ -3381,7 +3382,7 @@ export const treksData = [
         "walkingTime": "8-9 hrs drive",
         "distance": "200 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Tourist Bus / Private Vehicle",
         "highlights": "Drive through Trishuli and Marshyangdi river valleys to lakeside Pokhara.",
         "description": "Travel from Kathmandu to Pokhara by comfortable vehicle (approx. 7-8 hrs drive, or optional 25-minute domestic flight). Arrive in Pokhara, check into your hotel, and spend a relaxing evening by Phewa Lake. Overnight at hotel."
@@ -3393,7 +3394,7 @@ export const treksData = [
         "walkingTime": "3 hrs trek",
         "distance": "11 km",
         "accommodation": "Lodge at Kagbeni",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight / Trekking",
         "highlights": "25-min flight to Jomsom over Annapurna & Dhaulagiri, trek along Kali Gandaki riverbed past Shaligram fossils.",
         "description": "Take an early morning 25-minute flight from Pokhara to Jomsom (or 6-hr drive). Assemble with your trekking crew in Jomsom and trek for 3 hours along the Kali Gandaki riverbed to Kagbeni (2,800 m), searching for ancient black Shaligram fossils along the way. Visit 15th-century Kagchode Thubten Sampheling Gompa. Overnight at lodge."
@@ -3405,7 +3406,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "12 km",
         "accommodation": "Lodge at Chele",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Check restricted permit at Kagbeni, trek past Tangbe stone houses, Chhusang red cliffs & Chele village.",
         "description": "Verify your restricted area permit at the Kagbeni checkpoint and officially enter Upper Mustang. Trek through Tangbe village with its narrow whitewashed alleys, apple orchards, and barley fields. Pass Chhusang red cliffs and cross the river bridge to reach Chele village (3,050 m). Overnight at lodge."
@@ -3417,7 +3418,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs trek",
         "distance": "10 km",
         "accommodation": "Lodge at Samar",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Taklam La (3,624 m) & Dajori La (3,735 m), views of Tilicho Peak & Damodar Danda, poplar trees of Samar.",
         "description": "Climb steeply out of Chele up a rocky gully to Ghyakar village. Cross Taklam La (3,624 m) and Dajori La (3,735 m) passes, enjoying dramatic views of Tilicho Peak and Damodar Danda. Descend into Samar (3,660 m), a pleasant village shaded by poplar trees. Overnight at lodge."
@@ -3429,7 +3430,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "11 km",
         "accommodation": "Lodge at Syanbochen",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend into deep canyon to visit sacred Chungsi Meditation Cave, cross Yamda La (3,850 m) to Syanbochen.",
         "description": "Descend into a deep gorge and trek up to Chungsi Cave—a sacred meditation cave tucked into a cliff face used by Guru Rinpoche in the 8th century. Continue ascending past Bhena and cross Yamda La pass (3,850 m) before descending gently into Syanbochen village (3,800 m). Overnight at lodge."
@@ -3441,7 +3442,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "12 km",
         "accommodation": "Lodge at Ghami",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Syangboche La (3,850 m) & Nyi La (4,010 m), views of Geling valley, arrive in Ghami village.",
         "description": "Ascend gradually to Syangboche La pass (3,850 m) with views over Geling valley. Continue climbing to Nyi La pass (4,010 m)—the highest point on today's route. Descend steeply into Ghami (3,520 m), one of the largest villages in Upper Mustang, surrounded by green fields and ancient monasteries. Overnight at lodge."
@@ -3453,7 +3454,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "11 km",
         "accommodation": "Lodge at Charang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Walk past the longest Mani wall in Mustang, visit 1300-yr Gekar Gompa, explore 5-story Tsarang Palace & library.",
         "description": "Trek past the longest Mani prayer wall in Mustang, intricately decorated with carved stone mantras. Visit ancient Gekar Gompa before crossing a pass into Charang (Tsarang, 3,560 m). Explore the 5-story Tsarang Palace and the ancient monastery holding rare Buddhist scriptures. Overnight at lodge."
@@ -3465,7 +3466,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs trek",
         "distance": "13 km",
         "accommodation": "Lodge at Lo Manthang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Lo La pass (3,950 m) for first panorama of walled city of Lo Manthang, enter city gates.",
         "description": "Descend into Charang canyon, cross the river, and climb steadily up to Lo La pass (3,950 m). Catch your first breathtaking view of the ancient walled city of Lo Manthang against the Tibetan plateau. Descend gently into the city gates of Lo Manthang (3,810 m). Overnight at lodge."
@@ -3477,7 +3478,7 @@ export const treksData = [
         "walkingTime": "Full day exploration",
         "distance": "15 km excursion",
         "accommodation": "Lodge at Lo Manthang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking / Horse / Jeep Excursion",
         "highlights": "Jampa Gompa, Thubchen Gompa, Chhoede Gompa, Royal Palace & multi-story Jhong Sky Cave at Chhoser.",
         "description": "Spend a full day exploring ancient Lo Manthang. Visit 15th-century Jampa Gompa, Thubchen Gompa, and active Chhoede Gompa. Take a short excursion to Chhoser to explore Jhong Cave—a multi-story cliff dwelling used for centuries as meditation cells and storage. Walk along the historic city walls. Overnight at lodge."
@@ -3489,7 +3490,7 @@ export const treksData = [
         "walkingTime": "6 hrs trek",
         "distance": "16 km",
         "accommodation": "Lodge at Ghami",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek high alpine meadows, descend past dramatic red rock cliffs of Dhakmar back to Ghami.",
         "description": "Begin the return trek on the highland trail, crossing high alpine pastures before dropping down a steep, eroded canyon into Dhakmar, famous for towering blood-red rock cliffs. Enjoy lunch in Dhakmar and continue down the valley to Ghami (3,520 m). Overnight at lodge."
@@ -3501,7 +3502,7 @@ export const treksData = [
         "walkingTime": "6 hrs trek",
         "distance": "14 km",
         "accommodation": "Lodge at Samar",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek past Geling Tibetan village, cross Yamda La back to Samar village.",
         "description": "Trek from Ghami following a winding trail past Geling village. Re-cross Yamda La pass and descend into the quiet poplar-shaded village of Samar (3,660 m). Overnight at lodge."
@@ -3513,7 +3514,7 @@ export const treksData = [
         "walkingTime": "7.5 hrs trek",
         "distance": "16 km",
         "accommodation": "Lodge at Muktinath",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Climb Gyu La Pass (4,077 m) for mountain views, cross Chhusang river bridge, arrive at holy Muktinath Temple.",
         "description": "Climb steadily up to Gyu La Pass (4,077 m), enjoying panoramic views across Upper Mustang and snow-capped peaks. Descend through rugged canyons towards Chhusang apple orchards, then follow the trail up to holy Muktinath Temple (3,800 m). Visit the 108 stone water spouts and eternal natural flame. Overnight at lodge."
@@ -3525,7 +3526,7 @@ export const treksData = [
         "walkingTime": "5.5 hrs trek",
         "distance": "22 km",
         "accommodation": "Lodge at Jomsom",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend from Muktinath to Kagbeni, trek down Kali Gandaki riverbed back to Jomsom.",
         "description": "Trek downhill from Muktinath to Kagbeni (approx. 2.5 hrs), taking in morning views of Dhaulagiri. Continue walking along the wide Kali Gandaki riverbed past Ekle Bhatti back to Jomsom (2,700 m). Celebrate the completion of the trek with your guide and porters. Overnight at lodge."
@@ -3537,7 +3538,7 @@ export const treksData = [
         "walkingTime": "25 min flight / 6 hrs drive",
         "distance": "148 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight / Private Vehicle",
         "highlights": "Morning scenic flight from Jomsom to Pokhara, free afternoon by Phewa Lake.",
         "description": "Take an early morning 25-minute flight from Jomsom to Pokhara (or overland drive if flight delayed by wind). Check into your hotel in Pokhara and spend the rest of the day relaxing, enjoying spa massages, or visiting Lakeside cafes. Overnight at hotel."
@@ -3549,7 +3550,7 @@ export const treksData = [
         "walkingTime": "8-9 hrs drive",
         "distance": "200 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Tourist Bus / Private Vehicle",
         "highlights": "Return drive to Kathmandu, evening official farewell dinner with cultural show.",
         "description": "Travel back to Kathmandu from Pokhara in a tourist vehicle (approx. 7-8 hrs drive). Check into your hotel and enjoy free time for souvenir shopping in Thamel. In the evening, join Zenex Travels for a traditional farewell dinner with cultural performances. Overnight at hotel."
@@ -3799,7 +3800,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport pickup, hotel transfer, pre-trip briefing & guide meeting.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. After check-in, we arrange a pre-trip briefing to review your trek permits, answer questions, and introduce your trekking guide. Overnight at hotel."
@@ -3811,7 +3812,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs sightseeing",
         "distance": "25 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Permit verification, UNESCO tour: Kathmandu Durbar Square, Swayambhunath, Boudhanath & Pashupatinath.",
         "description": "Verify your passport documents for the Special Restricted Area Permit. Spend the day on a guided UNESCO World Heritage tour of Kathmandu, exploring Kathmandu Durbar Square, Swayambhunath Stupa, Boudhanath Stupa, and Pashupatinath Temple. Overnight at hotel."
@@ -3823,7 +3824,7 @@ export const treksData = [
         "walkingTime": "8-9 hrs drive",
         "distance": "200 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Tourist Bus / Private Vehicle",
         "highlights": "Scenic drive past Trishuli and Marshyangdi rivers to Pokhara lakeside.",
         "description": "Drive from Kathmandu to Pokhara by tourist vehicle (approx. 8-9 hours drive, or optional 25-minute domestic flight). Check into your hotel in Pokhara and spend the evening relaxing by Phewa Lake. Overnight at hotel."
@@ -3835,7 +3836,7 @@ export const treksData = [
         "walkingTime": "3 hrs trek",
         "distance": "11 km",
         "accommodation": "Lodge at Kagbeni",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight / Trekking",
         "highlights": "25-min flight to Jomsom over Kali Gandaki Gorge, trek past black Shaligram fossils to Kagbeni.",
         "description": "Transfer to Pokhara Airport for a 25-minute flight to Jomsom (2,700 m) with views of Dhaulagiri and Annapurna. Assemble with your guide and porters and trek 3 hours along the Kali Gandaki riverbed past Shaligram fossils to Kagbeni (2,800 m). Visit 15th-century Kagchode Thubten Sampheling Gompa. Overnight at lodge."
@@ -3847,7 +3848,7 @@ export const treksData = [
         "walkingTime": "5 hrs trek",
         "distance": "11 km",
         "accommodation": "Lodge at Chuksang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Check restricted permit, trek past whitewashed stone houses of Tangbe to Chuksang cliffs.",
         "description": "Submit your Restricted Area Permit at the Kagbeni checkpoint. Trek along the flat riverbed past Tangbe village, famous for whitewashed houses, narrow alleys, and apple orchards. Continue past red cliff formations to Chuksang (2,980 m) at the river confluence. Overnight at lodge."
@@ -3859,7 +3860,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs trek",
         "distance": "8.5 km",
         "accommodation": "Lodge at Samar",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Kali Gandaki steel bridge, ascend past Chele village & Takalese Plateau to Samar.",
         "description": "Cross the Kali Gandaki River via a steel bridge and ascend through narrow gorges to Chele village. Continue climbing over Takalese Plateau and Taklam La pass, taking in views of eroded hills and deep canyons. Descend into poplar-shaded Samar village (3,660 m). Overnight at lodge."
@@ -3871,7 +3872,7 @@ export const treksData = [
         "walkingTime": "5 hrs trek",
         "distance": "7.5 km",
         "accommodation": "Lodge at Geling",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek juniper valley, cross Yamda La to Shyangbochen, descend into barley fields of Geling.",
         "description": "Climb from Samar to a mountain ridge and descend into a valley past a Buddhist Chorten. Trek through juniper woods and cross a stream before climbing over Yamda La to Shyangbochen. Descend gently into Geling (3,570 m), surrounded by wide green barley fields and traditional stone homes. Overnight at lodge."
@@ -3883,7 +3884,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs trek",
         "distance": "6.5 km",
         "accommodation": "Lodge at Ghemi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Nyi La pass (4,010 m), arrive in Ghemi, explore old monasteries & longest Mani wall.",
         "description": "Climb steadily up from Geling to cross Nyi La pass (4,010 m), taking in sweeping views of Upper Mustang's desert landscape. Descend to Ghemi (3,520 m), one of Mustang's largest settlements, famous for its ancient monasteries, traditional royal court, and the longest Mani prayer wall in the region. Overnight at lodge."
@@ -3895,7 +3896,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "11 km",
         "accommodation": "Lodge at Tsarang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek past Gekar Gompa, visit 5-story Tsarang Palace & ancient monastery library.",
         "description": "Trek alongside Ghemi's carved Mani wall, cross a small stream, and climb up to visit ancient Gekar Gompa. Traverse barren plateaus into Tsarang (Charang, 3,560 m), a historic village perched above a deep canyon. Visit the 5-story Tsarang Palace and the ancient monastery housing sacred Buddhist texts. Overnight at lodge."
@@ -3907,7 +3908,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs trek",
         "distance": "13 km",
         "accommodation": "Lodge at Lo Manthang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Climb Lo La pass (3,950 m) for first sight of walled Lo Manthang, enter medieval city gates.",
         "description": "Descend into Tsarang canyon, cross the river, and ascend steadily to Lo La pass (3,950 m). Catch your first panoramic view of the walled city of Lo Manthang surrounded by barren desert hills. Descend into the city gates of Lo Manthang (3,810 m). Overnight at lodge."
@@ -3919,7 +3920,7 @@ export const treksData = [
         "walkingTime": "Full day exploration",
         "distance": "15 km excursion",
         "accommodation": "Lodge at Lo Manthang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking / Horse / Jeep Excursion",
         "highlights": "Jampa Gompa, Thubchen Gompa, Chhoede Gompa, Royal Palace & Jhong Sky Cave complex at Chhoser.",
         "description": "Spend a full day exploring ancient Lo Manthang. Visit 15th-century Jampa Gompa (God House), Thubchen Gompa assembly hall, and active Chhoede Gompa. Take an excursion to Chhoser to explore Jhong Cave—a multi-story cliff dwelling used for centuries as meditation cells and storage. Overnight at lodge."
@@ -3931,7 +3932,7 @@ export const treksData = [
         "walkingTime": "6 hrs trek",
         "distance": "14 km",
         "accommodation": "Lodge at Dhi Gaon",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek off the beaten track across highland pastures to peaceful Dhi Gaon river village.",
         "description": "Leave Lo Manthang and head southeast into remote, uncrowded territory. Cross highland meadows and open desert plateaus with panoramic views of snow peaks. Descend steadily to Dhi Gaon (3,400 m), a peaceful stone village built along the riverbank. Overnight at lodge/homestay."
@@ -3943,7 +3944,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs trek",
         "distance": "8 km",
         "accommodation": "Lodge at Yara Gaon",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Short scenic trek through wind-sculpted river canyons to traditional Yara Gaon.",
         "description": "Trek a short and scenic route along the riverbed through sandstone cliffs carved by wind into natural pillar sculptures. Arrive early at Yara Gaon (3,650 m), a peaceful Tibetan Buddhist village nestled among barley fields and clay cliffs. Overnight at lodge."
@@ -3955,7 +3956,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs excursion",
         "distance": "10 km",
         "accommodation": "Lodge at Yara / Sukhang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Visit Tashi Gompa & mystical 13th-century Luri Gompa cave monastery carved into sandstone cliffs.",
         "description": "Spend a dedicated cultural day visiting sacred monastic sites. Hike to nearby Tashi Gompa before continuing up to Sukhang to visit **Luri Gompa**—a 13th-century cliffside cave monastery featuring ancient Buddhist wall murals, a sacred domed chorten, and rare spiritual energy. Return to Yara Gaon for overnight lodge stay."
@@ -3967,7 +3968,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "15 km",
         "accommodation": "Lodge at Tangge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Dhechang and Tangge streams, arrive in remote, isolated village of Tangge.",
         "description": "Trek downhill through open wilderness, crossing Dhechang and Tangge streams. Pass traditional farmland and sculpted sandstone cliffs to reach Tangge (3,240 m)—a remote, tranquil village known for unique rows of ancient Buddhist chortens and traditional Mustangi architecture. Overnight at lodge."
@@ -3979,7 +3980,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs trek",
         "distance": "11 km",
         "accommodation": "Lodge / Tented Camp at Paha",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Ascend high summer yak pastures, reach highest elevation of trek at Paha (4,210 m).",
         "description": "Ascend steeply out of Tangge onto high mountain ridge pastures used by locals for summer grazing. Enjoy wide open vistas of surrounding Himalayan peaks. Arrive at Paha (4,210 m), the highest point of the 22-day circuit. Overnight at lodge/camp."
@@ -3991,7 +3992,7 @@ export const treksData = [
         "walkingTime": "6 hrs trek",
         "distance": "14 km",
         "accommodation": "Lodge at Tetang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Baha Bhanjyang (Cha Cho La Pass), descend to ancient stone village of Tetang.",
         "description": "Cross Baha Bhanjyang (Cha Cho La Pass) with views over Kali Gandaki Valley and Nilgiri Peak. Descend steadily down a wide valley into Tetang (3,040 m), a fortified stone village preserving traditional Tibetan architecture and lifestyle. Overnight at lodge."
@@ -4003,7 +4004,7 @@ export const treksData = [
         "walkingTime": "6.5 hrs trek",
         "distance": "14 km",
         "accommodation": "Lodge at Muktinath",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Ascend past apple orchards and Tibetan hamlets to holy Muktinath Temple.",
         "description": "Trek uphill from Tetang through mountain trails, passing apple orchards, grazing yaks, and ancient meditation caves. Arrive at sacred Muktinath Temple (3,800 m), an important pilgrimage site for Hindus and Buddhists featuring 108 stone spouts and an eternal gas flame. Overnight at lodge."
@@ -4015,7 +4016,7 @@ export const treksData = [
         "walkingTime": "5 hrs trek",
         "distance": "20 km",
         "accommodation": "Lodge at Jomsom",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Gentle downhill walk from Muktinath via Kagbeni back to Jomsom hub.",
         "description": "Descend gently from Muktinath to Kagbeni (approx. 2.5 hrs) along the Kali Gandaki riverbed. Continue walking to Jomsom (2,700 m). Celebrate the completion of the 22-day high Mustang circuit with your guide and porters. Overnight at lodge."
@@ -4027,7 +4028,7 @@ export const treksData = [
         "walkingTime": "25 min flight",
         "distance": "148 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight / Private Vehicle",
         "highlights": "Scenic morning flight from Jomsom to Pokhara, lakeside relaxation.",
         "description": "Take an early morning 25-minute flight from Jomsom to Pokhara. Transfer to your hotel and spend a relaxed day enjoying Pokhara's cafes, Lake Phewa boating, and mountain scenery. Overnight at hotel."
@@ -4039,7 +4040,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs drive",
         "distance": "200 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Tourist Bus / Private Vehicle",
         "highlights": "Return drive to Kathmandu, official farewell dinner with cultural dance performance.",
         "description": "Travel back to Kathmandu from Pokhara in a tourist vehicle (approx. 7-8 hrs drive). Check into your hotel and enjoy free time for souvenir shopping in Thamel. In the evening, join your Zenex Travels team for an official farewell dinner. Overnight at hotel."
@@ -4291,7 +4292,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport pickup, hotel transfer, pre-trip expedition briefing & guide meeting.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. After check-in, we hold a comprehensive pre-trip briefing to verify high-altitude climbing/trekking gear, review restricted permits, and introduce your guide. Overnight at hotel."
@@ -4303,7 +4304,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs sightseeing",
         "distance": "25 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Permit processing (Nar Phu & Upper Mustang RAPs), guided UNESCO tour of Patan Durbar Square, Boudhanath & Pashupatinath.",
         "description": "Submit original passports to the Department of Immigration for Nar Phu and Upper Mustang Restricted Area Permits. Enjoy a guided UNESCO World Heritage tour of Patan Durbar Square, sacred Pashupatinath Temple, and the giant stupa at Boudhanath. Finalize gear checks. Overnight at hotel."
@@ -4315,7 +4316,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs drive",
         "distance": "175 km",
         "accommodation": "Lodge at Besisahar",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Drive along Trishuli and Marshyangdi rivers to gateway town of Besisahar.",
         "description": "Drive east and north from Kathmandu along scenic river valleys and terraced hillsides to Besisahar (760 m), the starting town for the Annapurna Circuit. Check into your lodge and rest. Overnight at lodge."
@@ -4327,7 +4328,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs drive",
         "distance": "45 km",
         "accommodation": "Lodge at Koto",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD vehicle",
         "highlights": "Off-road drive through Marshyangdi gorge, views of Annapurna II & Manaslu, arrival at Koto checkpoint.",
         "description": "Drive by 4WD jeep along the rugged Marshyangdi River valley, passing villages like Bagarchhap, Timang, and Dharapani. Enjoy views of Annapurna II (7,937 m) and Mount Manaslu. Arrive in Koto (2,600 m), the official entrance gate to Nar Phu Valley. Overnight at lodge."
@@ -4339,7 +4340,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs trek",
         "distance": "17 km",
         "accommodation": "Lodge at Meta",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Check restricted permit at Koto, walk narrow Soti Khola gorge, suspension bridges & pine forests to Meta plateau.",
         "description": "Register restricted permits at Koto post and turn off the main Annapurna trail into the narrow Soti Khola gorge. Cross suspension bridges, pass Chhongche caves, and ascend through pine forests and waterfalls past Dharmasala. Climb up to Meta (3,560 m), an open Tibetan plateau with views of Annapurna II and Himlung Himal. Overnight at lodge."
@@ -4351,7 +4352,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "10 km",
         "accommodation": "Lodge at Kyang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek high desert valley along Phu Khola, pass Khampa winter settlements, views of Pisang Peak & Kangaru Himal.",
         "description": "Trek along the Phu Khola through a high-altitude mountain desert featuring eroded clay cliffs, narrow gorges, and ancient seasonal Khampa settlements. Enjoy vistas of Pisang Peak and Kangaru Himal before arriving in Kyang (3,887 m). Overnight at lodge."
@@ -4363,7 +4364,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs trek",
         "distance": "9 km",
         "accommodation": "Lodge at Phu Gaun",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek past ancient wooden gate of Phu, explore 800-year-old Tashi Lhakhang Monastery in historic Phu village.",
         "description": "Ascend through dry, rugged canyon landscapes along glacial streams. Pass ancient chortens and stone Mani walls while looking for rare blue sheep on cliff slopes. Pass through the carved wooden entrance gate into ancient Phu Gaun (4,080 m). Visit Tashi Lhakhang Monastery blessed by the Dalai Lama. Overnight at lodge."
@@ -4375,7 +4376,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs trek",
         "distance": "14 km",
         "accommodation": "Lodge at Nar Phedi Monastery",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend Phu valley, cross suspension bridge at Phu Khola, stay at Nar Phedi Monastery.",
         "description": "Trek back down the Phu valley past Kyang and Upper Chyako. Cross the suspension bridge over Phu Khola and ascend gently to Nar Phedi (3,490 m). Stay in the peaceful monastery lodge and observe evening butter lamp prayer rituals with resident monks. Overnight at lodge."
@@ -4387,7 +4388,7 @@ export const treksData = [
         "walkingTime": "3 hrs trek",
         "distance": "6 km",
         "accommodation": "Lodge at Nar Village",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Ascend winding trail past chortens & yak pastures to ancient Nar village, visit 4 historic gompas.",
         "description": "Climb steeply out of Nar Phedi past long lines of Mani walls and chortens into Nar Village (4,200 m). Nar is a traditional stone-built Gurung-Tibetan village larger than Phu. Explore its four main historic monasteries: Guru Choling, Samten Pelgye Ling, Kunsei Dechen, and Samdru Choling. Overnight at lodge."
@@ -4399,7 +4400,7 @@ export const treksData = [
         "walkingTime": "Rest / Short hike",
         "distance": "4 km",
         "accommodation": "Lodge at Nar Village",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking / Rest",
         "highlights": "Rest and high-altitude acclimatization day, village walks, interaction with Tibetan weaving communities.",
         "description": "Rest day in Nar village (4,200 m) to allow your body to properly adjust before heading into high wilderness camping over Teri La Pass. Take short walks up nearby ridges, observe local women weaving wool rugs, and rest. Overnight at lodge."
@@ -4411,7 +4412,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "8-9 km",
         "accommodation": "Tented Camp at Dharamshala",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking & Wilderness Camping",
         "highlights": "Leave lodge settlements behind, enter pristine alpine pastures at Dharamshala, set up tented camp.",
         "description": "Leave Nar village and step onto the unpopulated wilderness trail leading towards Teri La Pass. Trek through high alpine meadows filled with wildflowers and grazing yaks. Reach Dharamshala (Lapse Kharka, 4,500 m) where your camping crew sets up sleeping, dining, and kitchen tents. Overnight at tented camp."
@@ -4423,7 +4424,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "8 km",
         "accommodation": "Tented Camp at Pokhari",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking & Wilderness Camping",
         "highlights": "Ascend past high glacial moraines & mountain tarns to Pokhari camp at 5,150 m.",
         "description": "Trek uphill through rugged mountain terrain and lateral moraines. Gain altitude steadily as views of surrounding snow peaks expand. Arrive at Pokhari (5,150 m), a high alpine tarn meadow serving as a key acclimatization camp. Overnight at tented camp."
@@ -4435,7 +4436,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs trek",
         "distance": "7 km",
         "accommodation": "Tented Camp at Teri Bhanjyang Phedi",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking & Wilderness Camping",
         "highlights": "Trek through high rocky scree slopes to High Base Camp of Teri La Pass.",
         "description": "Trek across rocky scree and barren high-altitude plateaus towards the base of Teri La Pass. Reach Teri Bhanjyang Phedi (5,500 m), tucked beneath snow ridges. Prepare climbing gear and early morning pass crossing strategy with your guide. Overnight at tented camp."
@@ -4447,7 +4448,7 @@ export const treksData = [
         "walkingTime": "10-11 hrs trek",
         "distance": "14 km",
         "accommodation": "Tented Camp at Yak Kharka",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "High Pass Crossing & Wilderness Camping",
         "highlights": "Pre-dawn start, climb steep snow/scree to Teri La Pass (5,595 m), 360° panoramas of Himlung Himal & Tibetan plateau, descent to Yak Kharka (4,600 m).",
         "description": "Start before dawn for the steep and challenging climb to **Teri La Pass (5,595 m)**—the pinnacle of the expedition. Reach the flag-strewn summit pass for breathtaking panoramas of Himlung Himal, Annapurna II, Tilicho Peak, and the vast Tibetan plateau. Descend long scree and moraine slopes down into Upper Mustang territory at Yak Kharka (4,600 m). Overnight at tented camp."
@@ -4459,7 +4460,7 @@ export const treksData = [
         "walkingTime": "6 hrs trek",
         "distance": "12 km",
         "accommodation": "Tented Camp at Bhedi Kharka",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking & Wilderness Camping",
         "highlights": "Descend alpine pastures into Upper Mustang river valleys, final night of tented camping.",
         "description": "Trek down from high alpine pastures through rolling grassy valleys and rocky ravines. Pass seasonal herder pastures where yaks and sheep graze. Reach Bhedi Kharka (3,450 m) for your final wilderness camp night. Overnight at tented camp."
@@ -4471,7 +4472,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs trek",
         "distance": "10 km",
         "accommodation": "Lodge at Tangge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend into ancient Mustang village of Tangge, rejoin teahouse accommodation.",
         "description": "Trek downhill into the isolated Upper Mustang village of Tangge (3,240 m). Tangge is famous for its long rows of colorful chortens, clay-walled houses, and peaceful remote atmosphere. Rejoin teahouse accommodation. Overnight at lodge."
@@ -4483,7 +4484,7 @@ export const treksData = [
         "walkingTime": "5 hrs trek",
         "distance": "15 km",
         "accommodation": "Lodge at Yara",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Dhechang River, walk beneath wind-sculpted sandstone cliff pillars to Yara village.",
         "description": "Trek out of Tangge across the Dhechang River and ascend gently past sculpted clay cliff formations. Reach Yara village (3,650 m), a peaceful hamlet nestled under vertical canyon walls with optional excursion towards Luri Gompa cave monastery. Overnight at lodge."
@@ -4495,7 +4496,7 @@ export const treksData = [
         "walkingTime": "5 hrs trek",
         "distance": "16 km",
         "accommodation": "Lodge at Lo Manthang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek across plateau, enter ancient walled city of Lo Manthang.",
         "description": "Trek across dry desert plateaus, crossing small streams and passing ancient chortens. Reach the famous walled capital city of **Lo Manthang (3,810 m)**. Check into your lodge and stroll through historic narrow alleys. Overnight at lodge."
@@ -4507,7 +4508,7 @@ export const treksData = [
         "walkingTime": "Full day exploration",
         "distance": "15 km excursion",
         "accommodation": "Lodge at Lo Manthang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking / Horse / Jeep Excursion",
         "highlights": "Jampa Gompa, Thubchen Gompa, Chhoede Gompa, 5-story Royal Palace & Jhong Sky Caves at Chhoser.",
         "description": "Spend a full day exploring ancient Lo Manthang. Visit 15th-century Jampa Gompa, Thubchen Gompa, and active Chhoede Gompa. Take an excursion to Chhoser to explore Jhong Cave—a multi-story cliff dwelling used for centuries as meditation cells and refuge. Overnight at lodge."
@@ -4519,7 +4520,7 @@ export const treksData = [
         "walkingTime": "5 hrs trek",
         "distance": "13 km",
         "accommodation": "Lodge at Charang",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Lo La pass, descend to Charang village, visit 5-story Tsarang Palace & monastery library.",
         "description": "Trek out of Lo Manthang across Lo La pass (3,950 m) and descend into Charang (3,560 m). Visit the historic 5-story Tsarang Palace and the ancient monastery holding rare Buddhist scriptures. Overnight at lodge."
@@ -4531,7 +4532,7 @@ export const treksData = [
         "walkingTime": "5 hrs trek",
         "distance": "11 km",
         "accommodation": "Lodge at Geling",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek past Ghemi's long Mani wall, cross Nyi La pass (4,010 m) to Geling.",
         "description": "Trek past Ghemi village and its famous carved Mani wall. Cross Nyi La pass (4,010 m) and descend into Geling village (3,570 m), surrounded by wide barley fields. Overnight at lodge."
@@ -4543,7 +4544,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs trek",
         "distance": "12 km",
         "accommodation": "Lodge at Chele",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek through Syangbochen & Samar past red canyon walls down to Chele.",
         "description": "Trek back through Syangbochen and poplar-shaded Samar village, descending through narrow red rock gorges down to Chele (3,050 m). Overnight at lodge."
@@ -4555,7 +4556,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs trek",
         "distance": "12 km",
         "accommodation": "Lodge at Kagbeni",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek past Chhusang & Tangbe stone houses to Kagbeni gateway town.",
         "description": "Trek past Chhusang red cliffs and Tangbe apple orchards back to Kagbeni (2,810 m), completing the restricted Upper Mustang loop. Overnight at lodge."
@@ -4567,7 +4568,7 @@ export const treksData = [
         "walkingTime": "3-4 hrs trek / drive",
         "distance": "11 km",
         "accommodation": "Lodge at Jomsom",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking / 4WD Vehicle",
         "highlights": "Gentle trek along Kali Gandaki riverbed back to Jomsom, celebration with crew.",
         "description": "Trek or drive gently along the Kali Gandaki riverbed past Ekle Bhatti back to Jomsom (2,700 m). Celebrate the completion of the 27-day expedition with your guide and camping crew. Overnight at lodge."
@@ -4579,7 +4580,7 @@ export const treksData = [
         "walkingTime": "50 mins total flights",
         "distance": "200 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight / Private Vehicle",
         "highlights": "Morning flight Jomsom – Pokhara – Kathmandu with views of Annapurna & Dhaulagiri.",
         "description": "Take an early morning flight from Jomsom to Pokhara (25 mins), connecting directly to your flight back to Kathmandu (25 mins). Transfer to your hotel and rest after the expedition. Overnight at hotel."
@@ -4591,7 +4592,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "Relaxation, spa treatments, Thamel shopping, official farewell dinner.",
         "description": "Reserve day in Kathmandu for rest, shopping, or optional sightseeing. In the evening, join your Zenex Travels team for an official farewell dinner with traditional cultural performances. Overnight at hotel."
@@ -4874,7 +4875,7 @@ export const treksData = [
         "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be met by our representative from Zenex Travels & Tours and transferred to your hotel. We will host a pre-trip briefing meeting to introduce your guide and answer any questions. Rest of the day is at your leisure.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Not Included"
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
@@ -4882,7 +4883,7 @@ export const treksData = [
         "description": "While our team submits your passport details to immigration to acquire the Kanchenjunga Special Restricted Area Permit, you enjoy a free day exploring UNESCO World Heritage Sites in Kathmandu, such as Pashupatinath, Boudhanath Stupa, and Bhaktapur Durbar Square.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 03",
@@ -4890,7 +4891,7 @@ export const treksData = [
         "description": "After breakfast, transfer to Kathmandu airport for a scenic 45-minute flight to Bhadrapur in eastern Nepal. Meet your local transportation team and embark on a scenic 7 to 8 hour overland drive (214 km) through the rolling tea gardens of Ilam to Taplejung.",
         "maxAltitude": "1,820 m / 5,971 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 04",
@@ -4898,7 +4899,7 @@ export const treksData = [
         "description": "Board a private 4WD local jeep for a 4 to 5 hour drive (31 km) to Sekathum. The rugged dirt road winds alongside terraced farmlands, traditional Limbu and Sherpa settlements, and dense forested hills above the Tamor River.",
         "maxAltitude": "1,585 m / 5,200 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 05",
@@ -4906,7 +4907,7 @@ export const treksData = [
         "description": "Begin your on-foot trekking adventure along the Ghunsa Khola valley. The 6-hour trail ascends through dense bamboo and rhododendron forests, crossing suspension bridges and cascading waterfalls over stone staircases to reach the quiet cliffside village of Amjilasa.",
         "maxAltitude": "2,395 m / 7,857 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 06",
@@ -4914,7 +4915,7 @@ export const treksData = [
         "description": "Trek for about 6 hours through mature oak and dense rhododendron forests. Watch for soaring eagles overhead and yaks grazing in lush glades as you pass Thyangyan before ascending gently to Gyabla, a serene Tibetan-Sherpa village settlement.",
         "maxAltitude": "2,730 m / 8,956 ft",
         "accommodation": "Basic Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 07",
@@ -4922,7 +4923,7 @@ export const treksData = [
         "description": "Follow the trail for 7 hours into higher mountain terrain, walking past Phale village where Tibetan refugees reside and produce traditional handicrafts. Cross iron bridges over Ghunsa Khola to reach Ghunsa—the largest village in the valley with teahouses, health post, and Kanchenjunga Conservation Area office.",
         "maxAltitude": "3,427 m / 11,243 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 08",
@@ -4930,7 +4931,7 @@ export const treksData = [
         "description": "Trek for 5 hours through pine and larch forests alongside glacial melt rivers. Pass mani walls and prayer flags as mountain vistas open up to display Mount Kumbhakarna (Jannu), Nupchu Himal, and Chang Himal. Overnight at teahouse in Khambachen.",
         "maxAltitude": "4,050 m / 13,287 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 09",
@@ -4938,7 +4939,7 @@ export const treksData = [
         "description": "Essential acclimatization day. Take a side hike uphill (approx. 3 hours) towards Kumbhakarna (Jannu) Base Camp (4,100 m) for stunning close-up views of the sheer rock face of Jannu. Return to Khambachen for rest and overnight.",
         "maxAltitude": "4,100 m / 13,451 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 10",
@@ -4946,7 +4947,7 @@ export const treksData = [
         "description": "Ascend gradually over rocky moraines and boulder fields alongside the massive Kanchenjunga Glacier. Pass Ramtang viewpoint with views of Mera Peak, Kirat Chuli, and Nepal Peak. Reach the high windswept plateau of Lhonak after 5 hours.",
         "maxAltitude": "4,780 m / 15,682 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 11",
@@ -4954,7 +4955,7 @@ export const treksData = [
         "description": "Highlight of the expedition! Depart early morning on a 3.5-hour trek along the lateral moraine of Kanchenjunga Glacier to reach Pangpema (5,143 m). Marvel at the gigantic north wall of Mt. Kanchenjunga (8,586 m), Wedge Peak, Tent Peak, and Nepal Peak. After soaking in the views, descend back to Lhonak (2 hours).",
         "maxAltitude": "5,143 m / 16,873 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 12",
@@ -4962,7 +4963,7 @@ export const treksData = [
         "description": "Retrace your steps down the valley past Khambachen, descending through high-alpine landscapes along the Tamur River to Ghunsa (6 to 7 hours walking). Enjoy a warm meal and comfortable teahouse stay.",
         "maxAltitude": "3,427 m / 11,243 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 13",
@@ -4970,7 +4971,7 @@ export const treksData = [
         "description": "Begin a long descent down the Ghunsa Khola gorge past Gyabla and Amjilasa, returning to subtropical lower elevations at Sekathum (approx. 7 to 8 hours).",
         "maxAltitude": "1,585 m / 5,200 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 14",
@@ -4978,7 +4979,7 @@ export const treksData = [
         "description": "Board a private jeep from Sekathum to Taplejung and continue overland to Ilam (7 to 8 hours total drive). Enjoy the lush tea gardens and cooler climate of Nepal's famed tea country.",
         "maxAltitude": "1,200 m / 3,937 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 15",
@@ -4986,7 +4987,7 @@ export const treksData = [
         "description": "Drive from Ilam to Bhadrapur Airport (2.5 hours) and catch your domestic flight back to Kathmandu. Upon arrival in Kathmandu, transfer to your hotel for rest and relaxation.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast & Lunch"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 16",
@@ -4994,7 +4995,7 @@ export const treksData = [
         "description": "A reserve day in Kathmandu in case of flight or road delays in eastern Nepal. Use the day for relaxing, shopping in Thamel, or visiting city attractions. Farewell dinner hosted by Zenex Travels & Tours in the evening.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast & Farewell Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 17",
@@ -5138,7 +5139,7 @@ export const treksData = [
         "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be met by our representative from Zenex Travels & Tours and transferred to your hotel. We will host a pre-trip briefing meeting to introduce your guide and go over trek details. Rest of the day is at leisure.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Not Included"
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
@@ -5146,7 +5147,7 @@ export const treksData = [
         "description": "While our team prepares your Kanchenjunga Special Restricted Area Permit at the Nepal Immigration Office, enjoy a free day exploring UNESCO World Heritage Sites in Kathmandu, including Kathmandu Durbar Square, Swoyambhunath (Monkey Temple), and Patan Durbar Square.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 03",
@@ -5154,7 +5155,7 @@ export const treksData = [
         "description": "Fly early morning (45 mins) from Kathmandu to Bhadrapur in eastern Nepal. Meet your local drive crew and embark on a scenic 7 to 8 hour overland drive (214 km) through the lush tea hills of Ilam to Taplejung.",
         "maxAltitude": "1,820 m / 5,971 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 04",
@@ -5162,7 +5163,7 @@ export const treksData = [
         "description": "Drive off-road by private 4WD jeep from Taplejung to Hellok (approx. 6 hours) along the Tamor River. After lunch in Hellok, begin trekking uphill through bamboo forests for 2.5 hours to reach Yasang (1,700 m). Overnight at lodge.",
         "maxAltitude": "1,700 m / 5,577 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 05",
@@ -5170,7 +5171,7 @@ export const treksData = [
         "description": "Trek for 6 hours alongside the Amji Khola river, walking through pristine pine and rhododendron forests and high pasture lands. Reach Tortang (2,995 m) by afternoon and stay at a local lodge.",
         "maxAltitude": "2,995 m / 9,826 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 06",
@@ -5178,7 +5179,7 @@ export const treksData = [
         "description": "Trek uphill for 4 to 5 hours through dense high-altitude forest following the Simbuwa Khola. As you reach Tseram (3,870 m), enjoy stunning views of Rathong Peak (6,678 m). Tseram is a traditional Limbu settlement. Overnight at lodge.",
         "maxAltitude": "3,870 m / 12,696 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 07",
@@ -5186,7 +5187,7 @@ export const treksData = [
         "description": "Ascend gradually through alpine meadows for 3 to 4 hours, passing grazing yaks and glacial streams. Visuals of Mt. Kokthang (6,148 m), Rathong (6,678 m), and Boktoh (6,020 m) greet you on arrival at Ramche.",
         "maxAltitude": "4,580 m / 15,026 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 08",
@@ -5194,7 +5195,7 @@ export const treksData = [
         "description": "Highlight day! Early morning hike (2 hours) along the lateral moraine of Yalung Glacier to Oktang View Point (4,730 m). Marvel at the dramatic 360-degree views of Kanchenjunga South (8,586 m), Yalung Kang (8,505 m), and Khambachen Peak (7,903 m). Visit local Limbu shrine before descending back to Ramche.",
         "maxAltitude": "4,730 m / 15,518 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 09",
@@ -5202,7 +5203,7 @@ export const treksData = [
         "description": "Descend from Ramche past Tseram following the Simbuwa Khola down to Tortang (approx. 7 hours walking). Enjoy the warmer air as you re-enter forested terrain.",
         "maxAltitude": "2,995 m / 9,826 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 10",
@@ -5210,7 +5211,7 @@ export const treksData = [
         "description": "Retrace your trail down through bamboo and pine forests to Yasang / Kyansar (5 to 6 hours walking). Stay overnight at a local mountain lodge.",
         "maxAltitude": "1,700 m / 5,577 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 11",
@@ -5218,7 +5219,7 @@ export const treksData = [
         "description": "Trek 2 hours down to Hellok, then board your private jeep to drive via Taplejung to Ilam (8 hours total drive). Relax in the peaceful surroundings of Ilam's renowned tea plantations.",
         "maxAltitude": "1,200 m / 3,937 ft",
         "accommodation": "Hotel / Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 12",
@@ -5226,7 +5227,7 @@ export const treksData = [
         "description": "Drive 2.5 hours from Ilam to Bhadrapur Airport and fly back to Kathmandu. Transfer to your hotel and enjoy free time in the evening.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 13",
@@ -5234,7 +5235,7 @@ export const treksData = [
         "description": "A free leisure day in Kathmandu for optional mountain flights over Mt. Everest, exploring souvenir markets in Thamel, or visiting World Heritage Sites like Boudhanath Stupa and Bhaktapur.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast & Farewell Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 14",
@@ -5379,7 +5380,7 @@ export const treksData = [
         "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be met by our representative from Zenex Travels & Tours and transferred to your hotel. Pre-trip briefing meeting held in the evening.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Not Included"
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
@@ -5387,7 +5388,7 @@ export const treksData = [
         "description": "Free day in Kathmandu while our team submits passport details to immigration to issue the Kanchenjunga Special Restricted Area Permit. Option to explore UNESCO World Heritage Sites like Boudhanath, Pashupatinath, or Bhaktapur.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 03",
@@ -5395,7 +5396,7 @@ export const treksData = [
         "description": "Morning 45-minute domestic flight from Kathmandu to Bhadrapur. Meet your driver and proceed on a 7 to 8 hour overland jeep drive (214 km) through the rolling tea gardens of Ilam to Taplejung.",
         "maxAltitude": "1,820 m / 5,971 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 04",
@@ -5403,7 +5404,7 @@ export const treksData = [
         "description": "Drive off-road by private jeep (4 to 5 hours) to Sekathum along the Tamor River valley, passing terraced farms and rural Limbu/Sherpa villages.",
         "maxAltitude": "1,585 m / 5,200 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 05",
@@ -5411,7 +5412,7 @@ export const treksData = [
         "description": "Begin trekking along Ghunsa Khola valley. Ascend stone staircases through bamboo and rhododendron forests, crossing suspension bridges to reach the cliffside village of Amjilasa (6 hours).",
         "maxAltitude": "2,395 m / 7,857 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 06",
@@ -5419,7 +5420,7 @@ export const treksData = [
         "description": "Trek for 6 hours past Thyangyan through oak and rhododendron forests. Spot yaks grazing in meadows as you reach the Tibetan-Sherpa village of Gyabla.",
         "maxAltitude": "2,730 m / 8,956 ft",
         "accommodation": "Basic Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 07",
@@ -5427,7 +5428,7 @@ export const treksData = [
         "description": "Trek 7 hours past Phale village—a Tibetan refugee settlement—crossing iron bridges over Ghunsa Khola to Ghunsa (3,427 m), the largest Sherpa settlement in the region.",
         "maxAltitude": "3,427 m / 11,243 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 08",
@@ -5435,7 +5436,7 @@ export const treksData = [
         "description": "Ascend through pine and larch forests alongside Ghunsa Khola. Pass mani walls as mountain views of Mt. Jannu (Kumbhakarna) open up. Reach Khambachen in 5 hours.",
         "maxAltitude": "4,050 m / 13,287 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 09",
@@ -5443,7 +5444,7 @@ export const treksData = [
         "description": "Rest and acclimatize in Khambachen. Take a 3-hour side hike uphill to Kumbhakarna Base Camp (4,100 m) for dramatic views of Mount Jannu's sheer north face.",
         "maxAltitude": "4,100 m / 13,451 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 10",
@@ -5451,7 +5452,7 @@ export const treksData = [
         "description": "Ascend over rocky glacial moraines past Ramtang viewpoint with views of Kirat Chuli and Mera Peak. Reach the windswept plateau of Lhonak after 5 hours.",
         "maxAltitude": "4,780 m / 15,682 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 11",
@@ -5459,7 +5460,7 @@ export const treksData = [
         "description": "Early departure on a 3.5-hour trek along Kanchenjunga Glacier to North Base Camp (Pangpema – 5,143 m). Enjoy spectacular close-up views of Mt. Kanchenjunga (8,586 m). Return to Lhonak (2 hours).",
         "maxAltitude": "5,143 m / 16,873 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 12",
@@ -5467,7 +5468,7 @@ export const treksData = [
         "description": "Descend back down the valley past Khambachen to Ghunsa (6 to 7 hours walking). Enjoy a warm meal and rest in preparation for the high passes.",
         "maxAltitude": "3,427 m / 11,243 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 13",
@@ -5475,7 +5476,7 @@ export const treksData = [
         "description": "Leave Ghunsa and climb steeply through rhododendron and juniper forests into high alpine pastures. Reach the staging point of Selele Phedi (4,000 m) after 5 to 6 hours.",
         "maxAltitude": "4,000 m / 13,123 ft",
         "accommodation": "Tea House",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 14",
@@ -5483,7 +5484,7 @@ export const treksData = [
         "description": "High pass crossing day! Early morning start (5 AM) traversing three passes: Sele La (4,480 m), Sinion La (4,646 m), and Mirgin Pass (4,480 m). Enjoy views of Kabru, Talung, and Kanchenjunga South before descending to Tseram (7 hours).",
         "maxAltitude": "4,646 m / 15,242 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 15",
@@ -5491,7 +5492,7 @@ export const treksData = [
         "description": "Ascend wide Yalung Valley along glacial streams for 5 hours, passing Lapsang to reach Ramche (4,580 m) with views of Rathong and Kokthang.",
         "maxAltitude": "4,580 m / 15,026 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 16",
@@ -5499,7 +5500,7 @@ export const treksData = [
         "description": "Hike along Yalung Glacier to Oktang View Point (4,730 m) for panoramas of Kanchenjunga South Face and Yalung Kang (8,505 m). Continue to Yalung Base Camp (5,400 m) before descending to Ramche (7 to 8 hours round trip).",
         "maxAltitude": "5,400 m / 17,716 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 17",
@@ -5507,7 +5508,7 @@ export const treksData = [
         "description": "Descend along Simbuwa Khola through high alpine and rhododendron forests to Tortang (7 hours walking).",
         "maxAltitude": "2,995 m / 9,826 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 18",
@@ -5515,7 +5516,7 @@ export const treksData = [
         "description": "Continue descending through bamboo and pine forests to Yasang / Kyansar (5 to 6 hours).",
         "maxAltitude": "1,700 m / 5,577 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 19",
@@ -5523,7 +5524,7 @@ export const treksData = [
         "description": "Trek 2 hours down to Hellok, then board a private jeep for a 7 to 8 hour drive via Taplejung to Ilam / Kanyam tea gardens.",
         "maxAltitude": "1,820 m / 5,971 ft",
         "accommodation": "Lodge / Hotel",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 20",
@@ -5531,7 +5532,7 @@ export const treksData = [
         "description": "Drive from Ilam to Bhadrapur Airport (7 to 8 hours drive from Taplejung or 2.5 hours from Ilam) and catch your domestic flight back to Kathmandu. Overnight at hotel.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 21",
@@ -5539,7 +5540,7 @@ export const treksData = [
         "description": "Reserve day in Kathmandu for rest, optional UNESCO World Heritage sightseeing, or souvenir shopping in Thamel. Farewell dinner hosted by Zenex Travels & Tours.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast & Farewell Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 22",
@@ -5687,7 +5688,7 @@ export const treksData = [
         "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels & Tours representative greets you and transfers you to your hotel. Pre-trip briefing meeting in the evening.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Not Included"
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
@@ -5695,7 +5696,7 @@ export const treksData = [
         "description": "Free day in Kathmandu while our team submits your passport and visa copies to Nepal Immigration to issue the Special Restricted Area Permit for Lower Dolpo. Sightseeing options include Kathmandu Durbar Square, Swoyambhunath, and Boudhanath Stupa.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 03",
@@ -5703,7 +5704,7 @@ export const treksData = [
         "description": "Afternoon 1-hour flight from Kathmandu to Nepalgunj in southwestern Terai near the Indian border. Check into your hotel and rest. Overnight in Nepalgunj.",
         "maxAltitude": "173 m / 567 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 04",
@@ -5711,7 +5712,7 @@ export const treksData = [
         "description": "Early morning 45-minute flight from Nepalgunj to Juphal airstrip in Dolpa. Meet your trekking team, pack mules/yaks, and trek 3 to 4 hours downhill alongside Thuli Bheri River to Dunai (2,140 m), the administrative headquarters of Dolpa.",
         "maxAltitude": "2,475 m / 8,120 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 05",
@@ -5719,7 +5720,7 @@ export const treksData = [
         "description": "Trek for 6 to 7 hours (15 km) following Thuli Bheri River upstream. Pass through pine forests and small settlements to reach Beluwa (2,545 m), a quiet village surrounded by terraced fields.",
         "maxAltitude": "2,545 m / 8,349 ft",
         "accommodation": "Tented Camp / Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 06",
@@ -5727,7 +5728,7 @@ export const treksData = [
         "description": "Ascend along Suli Gad River through narrow gorges, waterfalls, and pine/juniper forests (7 to 8 hours, 15 km). Reach Laina Odar (3,370 m), a cliffside camp used by mule caravans.",
         "maxAltitude": "3,370 m / 11,056 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 07",
@@ -5735,7 +5736,7 @@ export const treksData = [
         "description": "Follow Tarap Khola through deep canyons and rocky paths cut into cliff faces (7 to 8 hours, 14 km). Cross wooden bridges to reach Langa Camp (3,870 m) in a quiet riverside valley.",
         "maxAltitude": "3,870 m / 12,696 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 08",
@@ -5743,7 +5744,7 @@ export const treksData = [
         "description": "Ascend through Tarap Khola gorge as the valley widens into broad alpine meadows. Arrive at Dho-Tarap (3,944 m), one of the world's highest permanent villages rich in Tibetan Buddhist and Bon heritage (7 to 8 hours).",
         "maxAltitude": "3,944 m / 12,939 ft",
         "accommodation": "Tented Camp / Basic Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 09",
@@ -5751,7 +5752,7 @@ export const treksData = [
         "description": "Essential acclimatization rest day in Dho-Tarap. Explore ancient monasteries such as Ribo Bhumpa Gompa and Drakmar Dewa, meet local Dolpo-pa villagers, and soak in the trans-Himalayan scenery.",
         "maxAltitude": "3,944 m / 12,939 ft",
         "accommodation": "Tented Camp / Basic Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 10",
@@ -5759,7 +5760,7 @@ export const treksData = [
         "description": "Trek for 6 to 7 hours (11 km) ascending gradually along Tarap Khola past yak pastures and chortens to reach Numa La Base Camp (4,440 m), a high windswept valley below the pass.",
         "maxAltitude": "4,440 m / 14,566 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 11",
@@ -5767,7 +5768,7 @@ export const treksData = [
         "description": "Challenging pass crossing day! Steep early morning climb to Numa La Pass (5,238 m) for panoramic vistas of Mt. Dhaulagiri and Kanjiroba range. Descend to Danigar campsite (4,512 m) after 8 to 9 hours (13 km).",
         "maxAltitude": "5,238 m / 17,185 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 12",
@@ -5775,7 +5776,7 @@ export const treksData = [
         "description": "Climb steeply over scree and rocky ridges to cross Bagala Pass (5,169 m) with views of Mt. Kanjiroba. Descend steeply through alpine meadows into pine forests to Ringmo village on the shore of turquoise Phoksundo Lake (9 to 10 hours, 19 km).",
         "maxAltitude": "5,169 m / 16,958 ft",
         "accommodation": "Lodge / Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 13",
@@ -5783,7 +5784,7 @@ export const treksData = [
         "description": "Rest and explore the magical turquoise Phoksundo Lake (3,641 m), Nepal's deepest lake. Visit ancient Bonpo Gompa in Ringmo, walk along cliffside trails, and admire the majestic waterfall outlet.",
         "maxAltitude": "3,641 m / 11,945 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 14",
@@ -5791,7 +5792,7 @@ export const treksData = [
         "description": "Descend steadily from Phoksundo Lake along Phoksundo Khola through pine and cedar forests to Chekpa (2,678 m) after 6 to 7 hours (15 km).",
         "maxAltitude": "2,678 m / 8,786 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 15",
@@ -5799,7 +5800,7 @@ export const treksData = [
         "description": "Trek for 5 to 6 hours (13 km) down river valleys and terraced farmlands back to Juphal (2,475 m). Celebrate the completion of the trek with your guiding team.",
         "maxAltitude": "2,475 m / 8,120 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 16",
@@ -5807,7 +5808,7 @@ export const treksData = [
         "description": "Morning flight from Juphal to Nepalgunj (30 mins) and connecting flight to Kathmandu (1 hour). Transfer to your hotel and enjoy a warm shower and evening rest.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast & Lunch"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 17",
@@ -5815,7 +5816,7 @@ export const treksData = [
         "description": "A buffer day in Kathmandu in case of weather delays in Juphal. Spend the day resting, shopping in Thamel, or enjoying a traditional Nepali Farewell Dinner hosted by Zenex Travels & Tours.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast & Farewell Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 18",
@@ -5961,7 +5962,7 @@ export const treksData = [
         "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels & Tours correspondent meets you and transfers you to your hotel. Pre-trip briefing held in the evening.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Not Included"
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
@@ -5969,7 +5970,7 @@ export const treksData = [
         "description": "Free day in Kathmandu while our team submits passport details to Nepal Immigration to issue the Upper Dolpo Special Restricted Area Permit. Option to explore UNESCO World Heritage Sites such as Pashupatinath, Boudhanath, and Kathmandu Durbar Square.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 03",
@@ -5977,7 +5978,7 @@ export const treksData = [
         "description": "Afternoon 1-hour flight from Kathmandu to Nepalgunj in Terai region near the Indian border. Check into hotel and rest overnight.",
         "maxAltitude": "173 m / 567 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 04",
@@ -5985,7 +5986,7 @@ export const treksData = [
         "description": "Early morning 45-minute flight to Juphal airstrip in Dolpa. Meet your porters and yak team, then trek 3 to 4 hours downhill along Thuli Bheri River to Dunai (2,140 m).",
         "maxAltitude": "2,475 m / 8,120 ft",
         "accommodation": "Tented Camp / Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 05",
@@ -5993,7 +5994,7 @@ export const treksData = [
         "description": "Trek for 6 to 7 hours (17-18 km) following Phoksundo Khola River upstream through forested hills and terraced fields to Chhekpa (2,678 m).",
         "maxAltitude": "2,678 m / 8,786 ft",
         "accommodation": "Tented Camp / Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 06",
@@ -6001,7 +6002,7 @@ export const treksData = [
         "description": "Trek for 7 hours ascending through pine and rhododendron forests, crossing wooden bridges. Reach Ringmo village on the shore of turquoise Phoksundo Lake (3,641 m).",
         "maxAltitude": "3,641 m / 11,945 ft",
         "accommodation": "Lodge / Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 07",
@@ -6009,7 +6010,7 @@ export const treksData = [
         "description": "Rest and explore Phoksundo Lake, Nepal's deepest lake. Visit ancient Bonpo Monastery in Ringmo, learn local Bon Buddhist customs, and admire lake reflections.",
         "maxAltitude": "3,600 m / 11,811 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 08",
@@ -6017,7 +6018,7 @@ export const treksData = [
         "description": "Trek along the famous cliffside trail above Phoksundo Lake, entering the remote inner Dolpo region. Camp at Sallaghari (3,750 m) after 7 hours of walking.",
         "maxAltitude": "3,750 m / 12,303 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 09",
@@ -6025,7 +6026,7 @@ export const treksData = [
         "description": "Ascend through wide alpine grasslands past grazing yak herds to Nagdalo Phedi / High Camp (4,500 m) in 7 hours.",
         "maxAltitude": "4,500 m / 14,763 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 10",
@@ -6033,7 +6034,7 @@ export const treksData = [
         "description": "Cross Nagdalo Pass (5,350 m) with views of Mt. Kanjiroba and Tangtung Lake. Descend to the sacred Shey Gompa (4,343 m) at the base of Crystal Mountain (7 hours).",
         "maxAltitude": "5,350 m / 17,552 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 11",
@@ -6041,7 +6042,7 @@ export const treksData = [
         "description": "Rest day at Shey Gompa. Visit the 800-year-old monastery, Shey Gompa Cave, interact with local monks, and explore the sacred pilgrimage trails of Crystal Mountain.",
         "maxAltitude": "4,343 m / 14,248 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 12",
@@ -6049,7 +6050,7 @@ export const treksData = [
         "description": "Climb through barren rocky landscapes over Sele La Pass (5,094 m) for panoramic mountain vistas, then descend to the quiet village of Namagung (4,360 m) after 7 hours.",
         "maxAltitude": "5,094 m / 16,712 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 13",
@@ -6057,7 +6058,7 @@ export const treksData = [
         "description": "Trek for 7 hours into arid trans-Himalayan desert terrain to Saldang (3,770 m), one of the largest ancient stone-built villages in Upper Dolpo.",
         "maxAltitude": "3,770 m / 12,368 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 14",
@@ -6065,7 +6066,7 @@ export const treksData = [
         "description": "Follow gentle trails through the highlands of Dolpo past river streams and prayer flag chortens to Shimengaon (3,885 m) after 7 hours.",
         "maxAltitude": "3,885 m / 12,746 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 15",
@@ -6073,7 +6074,7 @@ export const treksData = [
         "description": "Trek 7 hours through diverse meadows and desert canyons, crossing small streams to reach Tinjegaon (4,110 m).",
         "maxAltitude": "4,110 m / 13,484 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 16",
@@ -6081,7 +6082,7 @@ export const treksData = [
         "description": "Trek for 7 hours across open high-altitude plains and yak pastures to Keheing Khola campsite (4,500 m).",
         "maxAltitude": "4,500 m / 14,763 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 17",
@@ -6089,7 +6090,7 @@ export const treksData = [
         "description": "Climb over Mo La Pass (5,027 m) with views of Dhaulagiri range before descending to the ancient walled salt-trade village of Chharka Bhot (4,302 m) (7 hours).",
         "maxAltitude": "5,027 m / 16,492 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 18",
@@ -6097,7 +6098,7 @@ export const treksData = [
         "description": "Trek 7 hours through remote barren valleys with views of Nilgiri and Dhaulagiri peaks to Nulungsumde Kharka (4,987 m).",
         "maxAltitude": "4,987 m / 16,361 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 19",
@@ -6105,7 +6106,7 @@ export const treksData = [
         "description": "High pass expedition day! Cross Niwas La (5,120 m) and Jungben La (5,550 m)—the highest elevation of the trek. Descend to Ghaldan Ghuldun Khola Camp (4,247 m).",
         "maxAltitude": "5,550 m / 18,208 ft",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 20",
@@ -6113,7 +6114,7 @@ export const treksData = [
         "description": "Trek 6 to 7 hours descending into warmer valleys towards the traditional village of Santa (3,777 m).",
         "maxAltitude": "3,777 m / 12,391 ft",
         "accommodation": "Lodge / Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 21",
@@ -6121,7 +6122,7 @@ export const treksData = [
         "description": "Cross Bhima Lojun La (4,460 m) and descend towards Yak Kharka (3,478 m) above Kali Gandaki Valley.",
         "maxAltitude": "4,460 m / 14,632 ft",
         "accommodation": "Lodge",
-        "meals": "Breakfast, Lunch & Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 22",
@@ -6129,7 +6130,7 @@ export const treksData = [
         "description": "Descend to Kagbeni, gateway to Upper Mustang. Board private vehicle for a drive down Kali Gandaki Valley past Marpha to Pokhara (820 m). Overnight at hotel.",
         "maxAltitude": "820 m / 2,690 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 23",
@@ -6137,7 +6138,7 @@ export const treksData = [
         "description": "Return from Pokhara to Kathmandu by tourist bus or short domestic flight. Check into hotel and rest in Kathmandu.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 24",
@@ -6145,7 +6146,7 @@ export const treksData = [
         "description": "A reserve day in Kathmandu for shopping in Thamel or city sightseeing. Traditional Nepali Farewell Dinner hosted by Zenex Travels & Tours in the evening.",
         "maxAltitude": "1,350 m / 4,429 ft",
         "accommodation": "Hotel",
-        "meals": "Breakfast & Farewell Dinner"
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 25",
@@ -6300,7 +6301,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6-7 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "None",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be greeted by our Zenex Travels & Tours representative who will assist with your transfer to the hotel. Once checked in, we arrange a pre-trip briefing to go over the trek, gear check, meet your guide, and answer any questions. Spend the rest of the day at leisure. Overnight at hotel."
       },
@@ -6313,7 +6314,7 @@ export const treksData = [
         "walkingTime": "1 hr flight",
         "distance": "523 km",
         "accommodation": "Hotel in Nepalgunj",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Airplane",
         "description": "Breakfast at hotel. Afternoon transfer to Kathmandu TIA airport for a 1-hour flight to Nepalgunj in southwestern Nepal. On clear days, enjoy views of the Langtang, Dhaulagiri, Annapurna, and Manaslu ranges. Nepalgunj lies in the Terai region near the Indian border with a warm climate. Overnight at hotel in Nepalgunj."
       },
@@ -6326,7 +6327,7 @@ export const treksData = [
         "walkingTime": "4-5 hrs walk",
         "distance": "12 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight & Walking",
         "description": "Early morning 30-minute flight in a light aircraft to Jumla (2,370 m) in Karnali province. Jumla is renowned for organic apples, high-altitude red rice (Jumli Marsi), and Yarsagumba. Meet porters and mule team at Jumla airport and trek along country roads through Depalgaun, apple orchards, and the Tila River bank to Gothichaur (2,995 m). Overnight at tented camp."
       },
@@ -6339,7 +6340,7 @@ export const treksData = [
         "walkingTime": "5 hrs",
         "distance": "14 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Trek through mountain roads, pine forests, grasslands, and apple farms. Spot grazing sheep and cattle against mountain backdrops. Reach Kunri Santha (Kurigaun), a picturesque village where Chhetri, Thakali, and Tibetan communities coexist peacefully. Explore the village in the afternoon. Overnight at tented camp."
       },
@@ -6352,7 +6353,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "15 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Trek along Mani Sangu village and follow the bank of Chorta Khola through lush forests to Chorta (3,010 m). Continue through dense pine and rhododendron woods past shepherd huts, ancient chortens, and fluttering prayer flags to Naphukana (2,990 m). Overnight at tented camp."
       },
@@ -6365,7 +6366,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "16 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "A challenging and rewarding pass crossing. Ascend steeply from Naphukana through alpine meadows to Muria La Pass (3,840 m). Enjoy 360-degree panoramas of snow-capped Himalayan ranges. Descend through forested slopes to Chaurikot (3,060 m), a traditional settlement surrounded by grazing pastures. Overnight at tented camp."
       },
@@ -6378,7 +6379,7 @@ export const treksData = [
         "walkingTime": "6 hrs",
         "distance": "14 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Descend towards Kaigaon and follow river valleys through traditional settlements. Ascend steadily along scenic ridges with views of surrounding alpine hills to Hurikot (3,760 m), a high Tibetan village. Overnight at tented camp."
       },
@@ -6391,7 +6392,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "13 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Trek along lush forest trails and mountain streams towards Toijum (3,160 m), an entry checkpoint for the Shey Phoksundo National Park and Lower Dolpo Restricted Area. Overnight at tented camp."
       },
@@ -6404,7 +6405,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "12 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Ascend gradually along the Kagmara Khola valley through alpine terrain, dwarf juniper bushes, and rocky trails to Kagmara Phedhi (4,000 m), the high base camp before crossing Kagmara La Pass. Overnight at tented camp."
       },
@@ -6417,7 +6418,7 @@ export const treksData = [
         "walkingTime": "9-10 hrs",
         "distance": "16 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "The highest and most dramatic day of the trek! Climb early morning over moraine and snow slopes to Kagmara La Pass (5,115 m). Marvel at sweeping vistas of Kagmara peak, Dhaulagiri range, and deep Dolpo wilderness. Descend steeply to Lasa (4,060 m). Overnight at tented camp."
       },
@@ -6430,7 +6431,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "14 km",
         "accommodation": "Lodge / Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Descend along Pungmo Khola through birch and pine forests passing ancient chortens to Pungmo village. Continue ascending towards Ringmo (3,641 m), a famous Tibetan Bonpo settlement situated right beside Phoksundo Lake. Overnight at lodge/camp."
       },
@@ -6443,7 +6444,7 @@ export const treksData = [
         "walkingTime": "Rest & Exploration",
         "distance": "5-6 km",
         "accommodation": "Lodge / Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Rest and exploration day at Ringmo and sacred Phoksundo Lake (3,600 m), Nepal's deepest turquoise blue lake. Hike along lake cliffs, visit ancient Bonpo Monasteries (Pal Sentan Thasho Chholing), interact with local Tibetan villagers, and absorb the peaceful spiritual atmosphere. Overnight at lodge/camp."
       },
@@ -6456,7 +6457,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "18 km",
         "accommodation": "Lodge at Chekpa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Descend steadily from Phoksundo Lake through forested valleys, river streams, and terraced fields. Pass through traditional hamlets to Chekpa (2,678 m), enjoying warmer air and temperate lush surroundings. Overnight at lodge/camp."
       },
@@ -6469,7 +6470,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "15 km",
         "accommodation": "Lodge at Juphal",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Trek along gentle downhill trails following the Bheri River valley past Dunai (2,140 m), district headquarters of Dolpa. Continue ascending to Juphal (2,475 m), gateway village with airstrip for flights to Nepalgunj. Overnight at lodge/camp."
       },
@@ -6482,7 +6483,7 @@ export const treksData = [
         "walkingTime": "1.5 hrs total flight",
         "distance": "-",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight",
         "description": "Morning flight from Juphal to Nepalgunj (30 min) followed by connecting flight from Nepalgunj to Kathmandu (1 hr). Transfer to hotel in Kathmandu. Celebrate successful completion of Lower Dolpo Trek with Zenex team. Overnight at hotel."
       },
@@ -6495,7 +6496,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "-",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "description": "A free buffer day in Kathmandu for rest, souvenir shopping in Thamel, or optional UNESCO World Heritage sightseeing (Pashupatinath, Boudhanath, Swayambhunath, Kathmandu Durbar Square). Overnight at hotel."
       },
@@ -6642,7 +6643,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6-7 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "None",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "description": "Arrival at Kathmandu airport, pick up by our Zenex Travels & Tours representative and transfer to the hotel. After check-in, meet your guide for a pre-trip briefing and gear inspection. Relax and spend the rest of the day at your leisure. Overnight at hotel."
       },
@@ -6655,7 +6656,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "-",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "description": "A preparation day in Kathmandu while our team processes Special Restricted Area Permits for Lower Dolpo. Enjoy optional sightseeing to UNESCO World Heritage Sites (Kathmandu Durbar Square, Swoyambhunath, Boudhanath, Pashupatinath) or prepare trekking gear in Thamel. Overnight at hotel."
       },
@@ -6668,7 +6669,7 @@ export const treksData = [
         "walkingTime": "25 min flight + 7-8 hrs drive",
         "distance": "180 km drive",
         "accommodation": "Tented Camp / Basic Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight & Private vehicle",
         "description": "Morning scenic 25-minute flight to Pokhara. Meet our driving team and drive via Burtibang into the western highlands to Dhorpatan (2,870 m), a serene alpine valley inside the Dhorpatan Hunting Reserve. Overnight at tented camp or basic lodge."
       },
@@ -6681,7 +6682,7 @@ export const treksData = [
         "walkingTime": "8-9 hrs",
         "distance": "17 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Begin trekking with a steady climb through alpine forests and yak pastures to Phalgune Pass / Pagune Lekh (3,915 m). Enjoy sweeping mountain panoramas before descending through highland meadows to Thankur (3,175 m). Overnight at tented camp."
       },
@@ -6694,7 +6695,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs",
         "distance": "15 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Descend from Thankur through mixed forests and river valleys. Follow rugged trails with gentle river crossings and valley contours to Pelma (2,425 m), a small hamlet in lower Dolpo border. Overnight at tented camp."
       },
@@ -6707,7 +6708,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs",
         "distance": "15 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Ascend steadily from Pelma into higher alpine terrain. Cross ridges, pine forests, and summer yak pastures to reach Dhule (3,410 m), a remote settlement surrounded by Himalayan peaks. Overnight at tented camp."
       },
@@ -6720,7 +6721,7 @@ export const treksData = [
         "walkingTime": "7-8 hrs",
         "distance": "13 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Trek gradually uphill through alpine meadows and rocky paths, passing scattered yak shelters. Gain elevation steadily en route to Phuphal Phedi (3,940 m), a high base camp beneath mountain ridges. Overnight at tented camp."
       },
@@ -6733,7 +6734,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "11 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Ascend across rocky ridges, scree slopes, and wide alpine pastures to Purbang (4,065 m). The landscape becomes increasingly dramatic and arid, serving as a staging camp before crossing Jangla La Pass. Overnight at tented camp."
       },
@@ -6746,7 +6747,7 @@ export const treksData = [
         "walkingTime": "9 hrs",
         "distance": "19 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "A strenuous and scenic pass crossing! Climb steeply to Jangla La Pass (4,535 m) for panoramic vistas of the Dolpo mountain ranges. Descend through rocky gorges and pine woods to Beluwa (2,545 m). Overnight at tented camp."
       },
@@ -6759,7 +6760,7 @@ export const treksData = [
         "walkingTime": "Rest & Short Walks",
         "distance": "4 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "A well-deserved rest day in Beluwa. Relax, wash clothes, and explore local terraced farmlands and forested valleys of Lower Dolpo. Overnight at tented camp."
       },
@@ -6772,7 +6773,7 @@ export const treksData = [
         "walkingTime": "8-9 hrs",
         "distance": "17 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Ascend along narrow river valleys, dense forests, and stream crossings heading deeper into trans-Himalayan Dolpo. Reach Nawarpani (3,780 m), a scenic campsite beside a glacial stream. Overnight at tented camp."
       },
@@ -6785,7 +6786,7 @@ export const treksData = [
         "walkingTime": "8-9 hrs",
         "distance": "15 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Follow the river valley upwards along rugged trails and cliffside paths. Transition into high alpine terrain with dramatic barren hillsides to reach Langa Camp (3,870 m). Overnight at tented camp."
       },
@@ -6798,7 +6799,7 @@ export const treksData = [
         "walkingTime": "8 hrs",
         "distance": "14 km",
         "accommodation": "Tented Camp / Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Trek through the wide Dolpo valley past ancient chortens and mani walls into Dho-Tarap (3,944 m), one of the world's highest human settlements, rich in Tibetan Buddhist & Bon heritage. Overnight at tented camp or local lodge."
       },
@@ -6811,7 +6812,7 @@ export const treksData = [
         "walkingTime": "Rest & Exploration",
         "distance": "5 km",
         "accommodation": "Tented Camp / Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Rest and acclimatization day in Dho-Tarap. Visit ancient monasteries (Ribo Bhumpa Gompa & Bon Gompas), interact with local Tibetan villagers, and observe centuries-old customs before crossing the 5,000m passes. Overnight at camp or lodge."
       },
@@ -6824,7 +6825,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "11 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Ascend along the Tarap Khola valley through yak pastures and barren mountain slopes to Numa La Base Camp (4,440 m), a broad high-altitude valley below Numa La Pass. Overnight at tented camp."
       },
@@ -6837,7 +6838,7 @@ export const treksData = [
         "walkingTime": "8-9 hrs",
         "distance": "13 km",
         "accommodation": "Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Climb early morning over steep scree trails to Numa La Pass (5,238 m), the highest point of the trek. Enjoy breathtaking panoramas of Mount Dhaulagiri and Kanjiroba ranges before descending to Danigar (4,512 m). Overnight at tented camp."
       },
@@ -6850,7 +6851,7 @@ export const treksData = [
         "walkingTime": "9-10 hrs",
         "distance": "19 km",
         "accommodation": "Lodge at Ringmo",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Cross another giant pass — Bagala Pass (5,169 m) — with views of Mount Kanjiroba and deep Dolpo gorges. Descend sharply into pine forests to Ringmo village beside turquoise Phoksundo Lake (3,641 m). Overnight at lodge."
       },
@@ -6863,7 +6864,7 @@ export const treksData = [
         "walkingTime": "Rest & Exploration",
         "distance": "5-6 km",
         "accommodation": "Lodge at Ringmo",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Rest and exploration day around sacred Phoksundo Lake (3,611 m), Nepal's deepest turquoise blue lake. Visit ancient Bonpo monasteries, walk along lake cliffs, and enjoy the pristine mountain atmosphere. Overnight at lodge."
       },
@@ -6876,7 +6877,7 @@ export const treksData = [
         "walkingTime": "6-7 hrs",
         "distance": "15 km",
         "accommodation": "Lodge at Chekpa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Descend steadily along the river valley through terraced fields and temperate pine woods to Chekpa (2,678 m). Overnight at lodge/camp."
       },
@@ -6889,7 +6890,7 @@ export const treksData = [
         "walkingTime": "5-6 hrs",
         "distance": "13 km",
         "accommodation": "Lodge at Juphal",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Walking",
         "description": "Final day of trekking following the Bheri River valley past Dunai up to Juphal (2,475 m), gateway airstrip town. Celebrate the successful trek with your guide and crew. Overnight at lodge."
       },
@@ -6902,7 +6903,7 @@ export const treksData = [
         "walkingTime": "1.5 hrs total flight",
         "distance": "-",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Lunch",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight",
         "description": "Morning flight from Juphal to Nepalgunj (30 min) followed by connecting flight to Kathmandu (1 hr). Transfer to hotel in Kathmandu. Overnight at hotel."
       },
@@ -6915,7 +6916,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "-",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "description": "A free buffer day in Kathmandu for rest, shopping in Thamel, or optional city sightseeing (Patan Durbar Square, Bhaktapur). Overnight at hotel."
       },
@@ -7065,7 +7066,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6-7 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport arrival transfer, pre-trip briefing & guide introduction.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, you will be greeted by our Zenex Travels representative who will transfer you to the hotel. Once checked in, we hold a pre-trip briefing to review climbing gear, permits, and introduce your trekking/climbing guide. Overnight at hotel."
@@ -7077,7 +7078,7 @@ export const treksData = [
         "walkingTime": "8-9 hours drive",
         "distance": "200 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Tourist Bus / Private Vehicle",
         "highlights": "Drive along Trishuli and Marshyangdi rivers to lakeside Pokhara.",
         "description": "In the morning after breakfast, travel to Pokhara via scenic tourist vehicle along winding river valleys (approx 8-9 hours). Enjoy leisure time along the serene shores of Phewa Lake in Pokhara in the evening. Overnight at hotel. (Optional 25-minute flight available upon request)."
@@ -7089,7 +7090,7 @@ export const treksData = [
         "walkingTime": "7-8 hours drive",
         "distance": "110 km",
         "accommodation": "Lodge at Muri",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD vehicle",
         "highlights": "Drive through Myagdi river valley, terraced farmlands & gateway village of Muri.",
         "description": "Drive from Pokhara towards Muri, taking rugged mountain roads along the Myagdi Khola valley. The journey passes deep river canyons, terraced farms, and remote Magar hamlets. Muri marks the official trailhead for the Dhaulagiri Circuit and Dhampus Peak expedition. Overnight at lodge."
@@ -7101,7 +7102,7 @@ export const treksData = [
         "walkingTime": "7-8 hours",
         "distance": "14 km",
         "accommodation": "Lodge at Bagar",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek along Myagdi Khola bank, bamboo & rhododendron forests, Magar hospitality.",
         "description": "Leave Muri following the left bank of the deep Myagdi Khola. The path features ascents and descents through lush tropical vegetation, bamboo groves, and terraced slopes. Witness authentic traditional rural lifestyles of Magar communities before reaching Bagar. Overnight at lodge."
@@ -7113,7 +7114,7 @@ export const treksData = [
         "walkingTime": "6-7 hours",
         "distance": "12 km",
         "accommodation": "Lodge at Doban",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Ascend dense pine & bamboo forests, tranquil wilderness trail to Doban.",
         "description": "Trek gently upwards alongside the roaring Myagdi Khola through thick forests of pine, rhododendron, and bamboo. The trail winds deeper into remote mountain valleys, offering solitude and dramatic canyon views. Reach the seasonal settlement of Doban. Overnight at lodge."
@@ -7125,7 +7126,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "10 km",
         "accommodation": "Lodge at Sallaghari",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Ascend pine forests ('Sallaghari'), spectacular waterfalls & opening alpine views.",
         "description": "Ascend steadily through pine and rhododendron forests as the jungle thins out into sub-alpine terrain. Pass dramatic cascading waterfalls plummeting into the valley floor. Arrive at Sallaghari, surrounded by towering pine trees. Overnight at lodge."
@@ -7137,7 +7138,7 @@ export const treksData = [
         "walkingTime": "4 hours",
         "distance": "7 km",
         "accommodation": "Tea House / Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Short ascent into high alpine zone, panoramic views of Dhaulagiri massif & Manapathi.",
         "description": "A short but significant 4-hour climb transition from pine forests to open high-alpine meadows. As vegetation thins, air grows crisp and cool. Reach Italian Base Camp (3,660m) offering towering views of Dhaulagiri II, III, V, and Manapathi peak. Overnight at lodge / teahouse."
@@ -7149,7 +7150,7 @@ export const treksData = [
         "walkingTime": "Acclimatization Walk",
         "distance": "3-4 km",
         "accommodation": "Tea House / Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Rest & Acclimatization",
         "highlights": "Acclimatization day hike towards Dhaulagiri icefall, rest & altitude preparation.",
         "description": "Spend a dedicated acclimatization day at Italian Base Camp. Take short day hikes up surrounding ridges to gain altitude and allow your body to adapt before heading onto the glacier. Overnight at teahouse / lodge."
@@ -7161,7 +7162,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "8 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Glacier Trekking & Camping",
         "highlights": "Traverse Chhonbardan Glacier, icefalls, seracs & moraine camping.",
         "description": "Cross the lower Chhonbardan Glacier onto moraine trails. Navigating rocky moraine debris and ice slopes requires steady footing. Surrounded by soaring icefalls and granite cliffs, set up tented camp at Japanese Base Camp (3,890m). Overnight at tented camp."
@@ -7173,7 +7174,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "9 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Glacier Trekking & Camping",
         "highlights": "Trek over Chhonbardan Glacier directly beneath massive Dhaulagiri I (8,167m).",
         "description": "Continue ascending along the lateral moraine of Chhonbardan Glacier. Towering directly above is the formidable north face of Dhaulagiri I (8,167m). Arrive at Dhaulagiri Base Camp (4,750m) surrounded by dramatic glaciers and high Himalayan ice walls. Overnight at tented camp."
@@ -7185,7 +7186,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "10 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "High Pass Crossing & Camping",
         "highlights": "Cross highest pass of trek French Pass (5,360m), 360° views of Dhaulagiri & enter mystical Hidden Valley.",
         "description": "Ascend steeply for 5-6 hours to **French Pass (5,360m)**, the highest pass on the circuit. Enjoy jaw-dropping panoramas of Dhaulagiri I, Tukuche Peak, and vast mountain ridges. Descend gently 200m into the high desert expanse of Hidden Valley (5,166m). Overnight at tented camp."
@@ -7197,7 +7198,7 @@ export const treksData = [
         "walkingTime": "Rest & Summit Prep",
         "distance": "2-3 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Rest / Summit Prep",
         "highlights": "Climbing equipment check, crampon fitting, briefing & rest for summit push.",
         "description": "Rest and preparation day in Hidden Valley high camp. Climbing Sherpas inspect personal harnesses, crampons, ice axes, and fixed ropes, conducting a summit briefing. Rest early to save energy. Overnight at tented camp."
@@ -7209,7 +7210,7 @@ export const treksData = [
         "walkingTime": "8-9 hours",
         "distance": "10 km round trip",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Peak Climbing & Camping",
         "highlights": "Summit push to Dhampus Peak (6,012m), 360° vistas of Annapurna, Dhaulagiri, Nilgiri & return to Hidden Valley.",
         "description": "Alpine start around 3:00 AM. Climb steady snow slopes along the northwest ridge towards the summit of **Dhampus (Thapa) Peak (6,012m)**. Use crampons, ropes, and ice axes as required by snow conditions. Stand atop the peak for unforgettable 360-degree views of Dhaulagiri, Annapurna I, Nilgiri, Tukuche, and Tilicho Peak. Descend back to Hidden Valley to recover. Overnight at tented camp."
@@ -7221,7 +7222,7 @@ export const treksData = [
         "walkingTime": "6-7 hours",
         "distance": "12 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "High Pass Crossing & Camping",
         "highlights": "Cross Thapa Pass (5,244m), views of Tilicho & Annapurna range, descent to Yak Kharka.",
         "description": "Ascend out of Hidden Valley to cross **Thapa Pass (5,244m)**. Enjoy sweeping vistas across the Kali Gandaki valley towards the Annapurna range and Tilicho Peak. Descend steeply along high ridge trails down to Yak Kharka pasture settlement (4,190m). Overnight at tented camp."
@@ -7233,7 +7234,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "11 km",
         "accommodation": "Lodge at Marpha",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend into Kali Gandaki Valley, visit historic Thakali stone village & monastery in Marpha.",
         "description": "Descend steeply from alpine pastures down to the Kali Gandaki River valley. Arrive in the beautiful apple-capital village of Marpha (2,650m). Explore whitewashed stone alleys, traditional Thakali culture, and local Buddhist monasteries. Overnight at lodge."
@@ -7245,7 +7246,7 @@ export const treksData = [
         "walkingTime": "8-10 hours drive",
         "distance": "140 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast & Lunch",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private local 4WD vehicle",
         "highlights": "Drive along Kali Gandaki gorge via Jomsom, Tatopani & Beni to Pokhara.",
         "description": "Board a private 4WD vehicle from Marpha through the Kali Gandaki gorge, passing Jomsom, Kalopani, Ghasa, and Tatopani before joining the highway to Pokhara (approx 8-10 hours). Check into hotel and relax along Phewa Lakeside. Overnight at hotel."
@@ -7257,7 +7258,7 @@ export const treksData = [
         "walkingTime": "7-8 hours drive",
         "distance": "200 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Tourist Bus / Private Vehicle",
         "highlights": "Scenic drive back to Kathmandu along Prithvi Highway.",
         "description": "After breakfast, drive back to Kathmandu along the scenic Prithvi Highway (approx 7-8 hours). Transfer to your hotel upon arrival. Free time for evening rest and shopping in Thamel. Overnight at hotel."
@@ -7269,7 +7270,7 @@ export const treksData = [
         "walkingTime": "Free / Sightseeing",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "Optional UNESCO heritage tour (Patan, Boudhanath, Pashupatinath) & Zenex Travels farewell dinner.",
         "description": "Leisure day in Kathmandu for optional UNESCO World Heritage sightseeing (Patan Durbar Square, Boudhanath Stupa, Pashupatinath) or shopping. In the evening, join your Zenex Travels team for a celebration farewell dinner with summit certificates. Overnight at hotel."
@@ -7515,7 +7516,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6-7 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport pickup, hotel check-in, pre-trip briefing & guide meeting.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, our Zenex Travels representative will transfer you by private vehicle to your hotel. After check-in, we hold a short pre-trip briefing to inspect high-altitude gear, review trek logistics, and introduce your guide. Overnight at hotel."
@@ -7527,7 +7528,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "Exploration of UNESCO heritage sites (Patan, Boudhanath, Pashupatinath) & final gear check.",
         "description": "Enjoy a free preparation day in Kathmandu. Take optional guided sightseeing to Patan Durbar Square, Boudhanath Stupa, or Pashupatinath Temple, or perform last-minute gear purchases in Thamel. Overnight at hotel."
@@ -7539,7 +7540,7 @@ export const treksData = [
         "walkingTime": "7-8 hours drive",
         "distance": "180 km",
         "accommodation": "Lodge at Muri",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight & Private vehicle",
         "highlights": "Morning flight Kathmandu to Pokhara & 4WD jeep drive to gateway village of Muri.",
         "description": "Transfer to domestic airport for a scenic 25-minute flight from Kathmandu to Pokhara with Himalayan mountain views. Meet your private 4WD vehicle and drive through rugged mountain roads along the Myagdi river valley to Muri (1,720m), the starting trailhead of the Dhaulagiri Circuit. Overnight at lodge."
@@ -7551,7 +7552,7 @@ export const treksData = [
         "walkingTime": "7-8 hours",
         "distance": "14 km",
         "accommodation": "Lodge at Bagar",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek left bank of Myagdi Khola, lush bamboo & rhododendron forests, traditional Magar villages.",
         "description": "Leave Muri following the left bank of the deep Myagdi Khola. The path climbs and descends through terraced fields, dense bamboo, and rhododendron forests, offering glimpses of traditional Magar culture and warm hospitality. Arrive in Bagar (2,080m). Overnight at lodge."
@@ -7563,7 +7564,7 @@ export const treksData = [
         "walkingTime": "6-7 hours",
         "distance": "12 km",
         "accommodation": "Lodge at Dobhan",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Ascend alongside Myagdi Khola through secluded forests & dramatic cliff paths.",
         "description": "Trek gently upwards alongside the roaring Myagdi Khola through dense rhododendron, pine, and bamboo forests. The valley grows narrower and more secluded as permanent human settlements fade away. Reach the seasonal clearing of Dobhan Kharka (2,520m). Overnight at lodge."
@@ -7575,7 +7576,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "10 km",
         "accommodation": "Lodge at Sallaghari",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Ascend pine forest ('Sallaghari'), spectacular waterfalls & sub-alpine gorges.",
         "description": "Trek steadily upwards through dense bamboo and pine forests. As altitude increases, vegetation thins to reveal dramatic mountain walls and cascading waterfalls plunging hundreds of meters into the river. Reach Sallaghari ('pine forest'). Overnight at lodge."
@@ -7587,7 +7588,7 @@ export const treksData = [
         "walkingTime": "4 hours",
         "distance": "7 km",
         "accommodation": "Tea House / Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Ascend out of tree line into open alpine zone, soaring views of Dhaulagiri II & Manapathi.",
         "description": "A short 4-hour climb marks the transition from forest to open high-alpine meadows. Air turns cool and crisp as you arrive at Italian Base Camp (3,660m), positioned directly under the staggering rock walls of Dhaulagiri II, III, V, and Manapathi. Overnight at lodge / teahouse."
@@ -7599,7 +7600,7 @@ export const treksData = [
         "walkingTime": "Acclimatization Walk",
         "distance": "3-4 km",
         "accommodation": "Tea House / Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Rest & Acclimatization",
         "highlights": "Acclimatization day hike towards Dhaulagiri glacier icefall, rest & altitude adaptation.",
         "description": "Dedicated rest and acclimatization day at Italian Base Camp. Take short day hikes up neighboring ridges to gain altitude and adapt before heading onto the glacier. Overnight at teahouse / lodge."
@@ -7611,7 +7612,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "8 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Glacier Trekking & Camping",
         "highlights": "Cross Chhonbardan Glacier, glacier moraine walking, camp surrounded by seracs.",
         "description": "Cross onto the Chhonbardan Glacier. Trek along icy moraine debris requiring steady footing and trekking poles. Set up tented camp at Japanese Base Camp (3,890m) surrounded by mountain rock walls and frozen icefalls. Overnight at tented camp."
@@ -7623,7 +7624,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "9 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Glacier Trekking & Camping",
         "highlights": "Ascend Chhonbardan Glacier directly beneath massive Dhaulagiri I (8,167m).",
         "description": "Ascend steadily over glacial moraine debris along Chhonbardan Glacier. The north face of Dhaulagiri I (8,167m) dominates the sky ahead. Reach Dhaulagiri Base Camp (4,750m) nestled among glaciers and seracs. Overnight at tented camp."
@@ -7635,7 +7636,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "10 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "High Pass Crossing & Camping",
         "highlights": "Cross highest point French Pass (5,360m), 360° panoramas of Dhaulagiri & enter Hidden Valley.",
         "description": "Climb steeply for 5-6 hours over snow and moraine to reach **French Pass (5,360m)**—the apex of the trek. Enjoy breathtaking 360-degree views of Dhaulagiri I, Tukuche Peak, and vast mountain chains. Descend 200m into the high-altitude desert basin of Hidden Valley (5,166m). Overnight at tented camp."
@@ -7647,7 +7648,7 @@ export const treksData = [
         "walkingTime": "6-7 hours",
         "distance": "12 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "High Pass Crossing & Camping",
         "highlights": "Cross Thapa Pass (5,244m), sweeping views of Annapurna & Tilicho, steep descent to Yak Kharka.",
         "description": "Ascend out of Hidden Valley to cross **Thapa Pass (5,244m)**. Take in wide panoramas across the Kali Gandaki valley towards the Annapurna massif and Tilicho Peak. Descend steeply down mountain ridges to Yak Kharka (4,190m). Overnight at tented camp."
@@ -7659,7 +7660,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "11 km",
         "accommodation": "Lodge at Marpha",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend to Kali Gandaki river floor, historic Thakali apple village of Marpha.",
         "description": "Descend out of alpine pastures into the Kali Gandaki River valley. Reach Marpha (2,670m), famous for its whitewashed stone houses, cobblestone alleys, apple orchards, and historic Buddhist monastery. Overnight at lodge."
@@ -7671,7 +7672,7 @@ export const treksData = [
         "walkingTime": "8-10 hours drive",
         "distance": "140 km",
         "accommodation": "Hotel in Pokhara",
-        "meals": "Breakfast & Lunch",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private local 4WD vehicle",
         "highlights": "Drive through Kali Gandaki gorge via Jomsom, Tatopani & Beni to Pokhara.",
         "description": "Drive by private 4WD jeep from Marpha down through the deepest gorge in the world along the Kali Gandaki River, passing Tatopani and Beni before joining the highway to Pokhara. Check into hotel and rest by Phewa Lake. Overnight at hotel."
@@ -7683,7 +7684,7 @@ export const treksData = [
         "walkingTime": "7-8 hours drive",
         "distance": "200 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Tourist Bus / Flight Option",
         "highlights": "Scenic drive back to Kathmandu along Prithvi Highway.",
         "description": "After breakfast at hotel, return to Kathmandu via scenic tourist bus or private vehicle (approx 7-8 hours). Transfer to hotel upon arrival and relax. Overnight at hotel."
@@ -7695,7 +7696,7 @@ export const treksData = [
         "walkingTime": "Free day",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "Leisure day in Kathmandu, shopping in Thamel & Zenex Travels farewell dinner.",
         "description": "A free day in Kathmandu for optional sightseeing, spa treatments, or souvenir shopping in Thamel. In the evening, celebrate with your Zenex Travels team at a traditional farewell dinner. Overnight at hotel."
@@ -7928,7 +7929,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport transfer, hotel check-in, pre-trip briefing & guide meeting.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. We hold a short pre-trip briefing to review gear, restricted permits, and introduce your trekking guide. Overnight at hotel."
@@ -7940,7 +7941,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "Restricted permit processing & optional UNESCO heritage sightseeing (Patan, Boudhanath, Pashupatinath).",
         "description": "Reserved day for acquiring the Special Restricted Area Permit for Rolwaling Valley. Enjoy optional guided sightseeing across UNESCO World Heritage sites in Kathmandu or relax in Thamel. Overnight at hotel."
@@ -7952,7 +7953,7 @@ export const treksData = [
         "walkingTime": "7 hours drive",
         "distance": "135 km",
         "accommodation": "Lodge at Charikot",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Scenic drive through Bhaktapur & Dolalghat to hill town of Charikot with views of Mt. Gaurishankar.",
         "description": "Drive east from Kathmandu along winding hill highways through Bhaktapur, Dolalghat, and Mude to Charikot (1,980m). Enjoy crisp hill air and sunset views over Mount Gaurishankar (7,145m). Overnight at lodge."
@@ -7964,7 +7965,7 @@ export const treksData = [
         "walkingTime": "5 hours",
         "distance": "12 km",
         "accommodation": "Lodge at Kuri Village",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Ascend through tranquil pine forests to highland hamlet of Kuri Village below Kalinchowk.",
         "description": "Begin trekking from Charikot, ascending through quiet forests and scattered hillside hamlets. As altitude increases, the air turns cool and crisp. Reach Kuri Village (3,200m), nestled directly beneath Kalinchowk ridge. Overnight at lodge."
@@ -7976,7 +7977,7 @@ export const treksData = [
         "walkingTime": "9 hours",
         "distance": "16 km",
         "accommodation": "Lodge at Bigu Gompa",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Hike to Kalinchowk Bhagwati shrine (3,842m), 360° views of Gaurishankar & descent to Bigu Gompa nuns' monastery.",
         "description": "Early morning 1-hour steep hike to sacred Kalinchowk Bhagwati Temple (3,842m). Enjoy breathtaking panoramas of Mount Gaurishankar, Jugal Himal, and Numbur. Descend through alpine meadows and remote forested trails down to peaceful Bigu Gompa (2,516m). Overnight at lodge near monastery."
@@ -7988,7 +7989,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "11 km",
         "accommodation": "Lodge at Laduk",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Explore Bigu Gompa nuns' monastery, gentle trek through Tamang terraced farmlands to Laduk.",
         "description": "Morning visit to explore Bigu Gompa and observe monastic rituals of resident Buddhist nuns. Set off on a 6-hour gentle trek through terraced farmlands and Tamang settlements to quiet Laduk village (2,050m). Overnight at lodge."
@@ -8000,7 +8001,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "13 km",
         "accommodation": "Lodge at Jagat",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend into Tamakoshi river valley, green sub-tropical landscapes down to Jagat.",
         "description": "Descend along gentle valley trails towards lower elevations along the Tamakoshi River. Surroundings become lush, green, and warmer as you reach the riverside village of Jagat (1,150m). Overnight at lodge."
@@ -8012,7 +8013,7 @@ export const treksData = [
         "walkingTime": "5 hours",
         "distance": "10 km",
         "accommodation": "Lodge at Simigaon",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Tamakoshi suspension bridge, climb ridge to Sherpa-Tamang village of Simigaon.",
         "description": "Follow the river trail, cross the Tamakoshi suspension bridge, and begin a steady climb up terraced hillsides and forests. Reach Simigaon (2,036m), a peaceful Sherpa and Tamang village perched on a high ridge with a Buddhist monastery. Overnight at lodge."
@@ -8024,7 +8025,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "11 km",
         "accommodation": "Lodge / Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Monastery visit in Simigaon, trek through dense rhododendron forests to alpine pasture Kelthang Kharka.",
         "description": "Visit Simigaon Monastery before setting off through thick rhododendron and bamboo forests. Ascend into alpine zones with views of surrounding river gorges. Arrive at Kelthang Kharka pasture (3,700m). Overnight at lodge or tented camp."
@@ -8036,7 +8037,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "10 km",
         "accommodation": "Lodge at Beding",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek high Rolwaling river gorge, suspension bridges, enter main Sherpa village of Beding.",
         "description": "Trek along the upper Rolwaling river gorge, crossing wooden and suspension bridges over glacial torrents. Arrive in Beding (3,740m), the largest traditional Sherpa settlement in the Rolwaling Valley. Overnight at lodge."
@@ -8048,7 +8049,7 @@ export const treksData = [
         "walkingTime": "4 hours",
         "distance": "7 km",
         "accommodation": "Lodge at Na",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Gentle trek past pine forests, up-close views of Mount Gaurishankar to high settlement of Na.",
         "description": "A gentle 4-hour walk along the U-shaped glacial valley floor. Pass ancient Buddhist Mani walls and enjoy dramatic close-up views of Mount Gaurishankar. Reach Na (4,180m), a high alpine summer settlement. Overnight at lodge."
@@ -8060,7 +8061,7 @@ export const treksData = [
         "walkingTime": "4-5 hours",
         "distance": "8 km round trip",
         "accommodation": "Lodge at Na",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking / Excursion",
         "highlights": "Acclimatization hike to turquoise Tsho Rolpa Glacial Lake (4,580m), glacier views & return to Na.",
         "description": "Dedicated acclimatization day. Take a rewarding day hike up to **Tsho Rolpa Lake (4,580m)**—Nepal's largest glacial lake. Admire turquoise waters surrounded by icefalls and glacier walls. Return to Na for rest. Overnight at lodge."
@@ -8072,7 +8073,7 @@ export const treksData = [
         "walkingTime": "7 hours",
         "distance": "14 km",
         "accommodation": "Lodge at Thangthing Kharka",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend lower Rolwaling Valley past alpine pastures & river clearings.",
         "description": "Begin your return journey down the valley, passing Beding and descending through alpine pastures and forests to Thangthing Kharka (3,200m). Overnight at lodge."
@@ -8084,7 +8085,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "12 km",
         "accommodation": "Tented camp / Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek back through rhododendron forests down to ridge village of Simigaon.",
         "description": "Continue descending through quiet forest trails and river valleys back to Simigaon (2,036m). Enjoy peaceful mountain atmosphere. Overnight at tented camp / lodge."
@@ -8096,7 +8097,7 @@ export const treksData = [
         "walkingTime": "7 hours",
         "distance": "13 km",
         "accommodation": "Lodge at Jagat",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend terraced fields & small hamlets back to riverside Jagat.",
         "description": "Trek downhill through terraced fields, crossing the Tamakoshi river bridge back to Jagat (1,150m). Overnight at lodge."
@@ -8108,7 +8109,7 @@ export const treksData = [
         "walkingTime": "8 hours drive",
         "distance": "180 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Lunch",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Scenic drive from Jagat back to Kathmandu along hill highways.",
         "description": "Board your private vehicle from Jagat for a scenic 8-hour drive back to Kathmandu. Check into your hotel and enjoy leisure time. Overnight at hotel."
@@ -8120,7 +8121,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day",
         "highlights": "Shopping in Thamel, relaxation & Zenex Travels farewell dinner.",
         "description": "A free day in Kathmandu for shopping, relaxation, or optional spa treatments. Celebrate your journey at a traditional farewell dinner hosted by Zenex Travels & Tours. Overnight at hotel."
@@ -8353,7 +8354,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport pickup, hotel check-in, pre-trip briefing & guide meeting.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. We hold a short pre-trip briefing to inspect mountaineering/climbing gear, review permits, and introduce your guide. Overnight at hotel."
@@ -8365,7 +8366,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "Restricted permit processing (Rolwaling & Sagarmatha) & optional UNESCO sightseeing (Swoyambhunath, Boudhanath, Pashupatinath).",
         "description": "Reserved day for acquiring the Special Restricted Area Permit for Rolwaling Valley. Enjoy optional guided sightseeing across UNESCO World Heritage sites in Kathmandu or relax in Thamel. Overnight at hotel."
@@ -8377,7 +8378,7 @@ export const treksData = [
         "walkingTime": "7 hours drive",
         "distance": "145 km",
         "accommodation": "Lodge at Singati",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private vehicle",
         "highlights": "Scenic drive through Bhaktapur & Dolalghat along Tamakoshi river valley to Singati.",
         "description": "Drive early morning from Kathmandu along winding hill roads past Bhaktapur, Dolalghat, and Charikot down to Singati (950m) along the Tamakoshi River. Overnight at lodge."
@@ -8389,7 +8390,7 @@ export const treksData = [
         "walkingTime": "5 hours",
         "distance": "12 km",
         "accommodation": "Lodge at Jagat",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek along Tamakoshi River, cross suspension bridges & green terraced rice fields.",
         "description": "Begin trekking from Singati alongside the Tamakoshi River. The trail is gentle, passing small agricultural hamlets, terraced rice fields, and suspension bridges. Reach the riverside village of Jagat (1,150m). Overnight at lodge."
@@ -8401,7 +8402,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "11 km",
         "accommodation": "Lodge at Simigaon",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Cross Tamakoshi bridge, climb steep forest trail to Sherpa-Tamang ridge village of Simigaon.",
         "description": "Trek along the river road to Chhetchhet, cross the suspension bridge over the Tamakoshi River, and begin a steady uphill climb through forests and terraced slopes. Arrive at Simigaon (2,036m), a peaceful Sherpa and Tamang village with a prominent monastery. Overnight at lodge."
@@ -8413,7 +8414,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "11 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Visit Simigaon Monastery, trek dense rhododendron & bamboo forests to alpine pasture Kelthang Kharka.",
         "description": "Visit Simigaon Monastery before ascending through thick rhododendron, pine, and bamboo forests. As altitude increases, vegetation opens up to reveal sub-alpine pasture clearings. Reach Kelthang Kharka (3,700m). Overnight at tented camp."
@@ -8425,7 +8426,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "10 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek high Rolwaling river gorge, suspension bridges, enter main Sherpa settlement of Beding.",
         "description": "Trek along the upper Rolwaling river gorge, crossing suspension bridges over glacial streams. Arrive in Beding (3,740m), the largest traditional Sherpa settlement in the Rolwaling Valley. Overnight at tented camp."
@@ -8437,7 +8438,7 @@ export const treksData = [
         "walkingTime": "4 hours",
         "distance": "7 km",
         "accommodation": "Lodge at Na",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Gentle trek along U-shaped valley floor, close-up vistas of Mount Gaurishankar to Na.",
         "description": "A gentle 4-hour walk along the glacial valley floor past Buddhist Mani walls and stupas. Enjoy breathtaking close-up views of Mount Gaurishankar (7,145m). Reach Na (4,180m), a high alpine summer settlement. Overnight at lodge."
@@ -8449,7 +8450,7 @@ export const treksData = [
         "walkingTime": "4-5 hours",
         "distance": "8 km round trip",
         "accommodation": "Lodge at Na",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking / Excursion",
         "highlights": "Acclimatization day hike to turquoise Tsho Rolpa Glacial Lake (4,540m) & return to Na.",
         "description": "Essential acclimatization day. Take a day hike up to **Tsho Rolpa Lake (4,540m)**—Nepal's largest glacial lake. Marvel at turquoise waters framed by icefalls and snow peaks. Return to Na for rest. Overnight at lodge."
@@ -8461,7 +8462,7 @@ export const treksData = [
         "walkingTime": "7 hours",
         "distance": "10 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Glacier Trekking & Camping",
         "highlights": "Trek over Tsho Rolpa Glacier moraine, vistas of Yalung, Ramdung & Pachermo Peaks.",
         "description": "Climb past Tsho Rolpa Lake and enter the glacial moraine trail of Trakarding Glacier. Navigate ice and scree terrain with views of Yalung Peak, Ramdung Peak, and Pachermo. Set up tented camp at Thakkarding (4,610m). Overnight at tented camp."
@@ -8473,7 +8474,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "9 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Glacier Trekking & Camping",
         "highlights": "Trek along Trakarding Glacier lateral moraine beneath towering rock walls & icefalls.",
         "description": "Ascend along the rocky lateral moraine of Trakarding Glacier. Surrounded by sheer icefalls and granite faces, reach Pachermo Base Camp (4,735m). Inspect climbing gear and fixed ropes with guides. Overnight at tented camp."
@@ -8485,7 +8486,7 @@ export const treksData = [
         "walkingTime": "5-6 hours",
         "distance": "7 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "High Pass Ascent & Camping",
         "highlights": "Steep climb over snow & ice slopes to Tashi Lapcha High Camp (5,700m) below Pachermo peak.",
         "description": "Ascend steeply over snowfields and ice slopes towards **Tashi Lapcha High Camp (5,700m)**, situated on the southwest face of Pachermo Peak. Air is thin and cold. Rest early for tomorrow's pass crossing. Overnight at tented camp."
@@ -8497,7 +8498,7 @@ export const treksData = [
         "walkingTime": "7-8 hours",
         "distance": "11 km",
         "accommodation": "Tented camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Technical Pass Crossing & Camping",
         "highlights": "Cross technical Tashi Lapcha Pass (5,755m) using fixed ropes, 360° views of Everest, Makalu & Cho Oyu, descent to Phedi.",
         "description": "Alpine pre-dawn start. Climb steep snow/ice slopes to **Tashi Lapcha Pass (5,755m)**, using fixed ropes and crampons guided by Sherpas. Stand at the pass summit for breathtaking 360° panoramas of Everest (8,848m), Makalu, Cho Oyu, Shishapangma, Pumori, and Kanchenjunga. Descend ice slopes down to Phedi (5,110m). Overnight at tented camp."
@@ -8509,7 +8510,7 @@ export const treksData = [
         "walkingTime": "6 hours",
         "distance": "12 km",
         "accommodation": "Lodge at Thame",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend into Khumbu region, juniper & rhododendron forests, historic Sherpa village of Thame.",
         "description": "Descend out of glacial pass terrain into the upper Khumbu Valley. Walk past juniper and rhododendron woods into Thame (3,820m), home to legendary Everest Sherpas and historic Thame Monastery. Overnight at lodge."
@@ -8521,7 +8522,7 @@ export const treksData = [
         "walkingTime": "4-5 hours",
         "distance": "10 km",
         "accommodation": "Lodge at Namche Bazaar",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek high trail along Bhote Koshi river to famous Sherpa capital of Namche Bazaar.",
         "description": "Trek along a gentle undulating trail high above the Bhote Koshi River. Reach **Namche Bazaar (3,440m)**, the vibrant mountain amphitheater capital of the Khumbu region. Explore cafes, bakeries, and markets. Overnight at lodge."
@@ -8533,7 +8534,7 @@ export const treksData = [
         "walkingTime": "7-8 hours",
         "distance": "21 km",
         "accommodation": "Lodge at Lukla",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend Namche hill, cross Dudh Koshi suspension bridges via Phakding back to Lukla.",
         "description": "Descend steeply down Namche hill, cross the Hillary Suspension Bridge over the Dudh Koshi River, and trek past Phakding back up to Lukla (2,840m). Celebrate the expedition completion with your trekking crew. Overnight at lodge."
@@ -8545,7 +8546,7 @@ export const treksData = [
         "walkingTime": "35 min flight",
         "distance": "135 km flight",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Flight / Private Vehicle",
         "highlights": "Scenic morning flight Lukla to Kathmandu with panoramic mountain views.",
         "description": "Board an early morning flight from Lukla back to Kathmandu (or Ramechhap flight connection). Transfer by private vehicle to your hotel and rest. Overnight at hotel."
@@ -8557,7 +8558,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day",
         "highlights": "Reserve day for flight contingencies, Thamel shopping & official Zenex Travels farewell dinner.",
         "description": "Buffer reserve day in Kathmandu in case of flight delays from Lukla. Enjoy free time for souvenir shopping in Thamel and join your Zenex Travels team for an official farewell dinner. Overnight at hotel."
@@ -8806,7 +8807,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "6 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Welcome Briefing",
+        "meals": "Breakfast",
         "modeOfTravel": "Private vehicle",
         "highlights": "Airport pickup, hotel check-in, pre-trip briefing & guide meeting.",
         "description": "Upon arrival at Tribhuvan International Airport (TIA) in Kathmandu, your Zenex Travels representative will transfer you by private vehicle to your hotel. We hold a short pre-trip briefing to review gear, permits, and introduce your trekking guide. Overnight at hotel."
@@ -8818,7 +8819,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day / Sightseeing",
         "highlights": "Exploration of UNESCO heritage sites (Swoyambhunath, Boudhanath, Pashupatinath) & yoga prep.",
         "description": "Enjoy a free day in Kathmandu for optional UNESCO World Heritage sightseeing (Boudhanath Stupa, Pashupatinath Temple, Swayambhunath) or yoga preparation before departing for the mountains. Overnight at hotel."
@@ -8830,7 +8831,7 @@ export const treksData = [
         "walkingTime": "8 hours drive",
         "distance": "183 km",
         "accommodation": "Tea House / Homestay",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Private 4WD Jeep",
         "highlights": "Drive through mid-hills & Tamakoshi river valley to border village of Lamabagar.",
         "description": "After breakfast, depart Kathmandu by private 4WD jeep for a 8-hour scenic drive through Charikot and along the Tamakoshi River valley to Lamabagar (1,950m). Overnight at homestay or local lodge."
@@ -8842,7 +8843,7 @@ export const treksData = [
         "walkingTime": "7-8 hours",
         "distance": "12 km",
         "accommodation": "Lodge / Tented Camp",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek bamboo jungles along Tamakoshi River bank, wooden ladders & remote Lumnan village.",
         "description": "Begin trekking from Lamabagar through dense bamboo jungles, stream gullies, and wooden ladders along the Tamakoshi River. Arrive at Lumnan (2,700m), a temporary winter settlement for Lapchi villagers. Overnight at lodge or tented camp."
@@ -8854,7 +8855,7 @@ export const treksData = [
         "walkingTime": "8 hours",
         "distance": "14 km",
         "accommodation": "Monastery / Guesthouse",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Trek bamboo & pine forests beneath Mount Gaurishankar to sacred Lapchi Village.",
         "description": "Trek uphill through bamboo and pine forests alongside swift mountain streams under the shadow of Mount Gaurishankar. Reach Lapchi Village (4,900m), surrounded by tin-roofed stone houses, yak pastures, and ancient prayer flags. Overnight at monastery guesthouse or tented camp."
@@ -8866,7 +8867,7 @@ export const treksData = [
         "walkingTime": "5-6 hours hiking",
         "distance": "8 km",
         "accommodation": "Monastery / Guesthouse",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Hiking & Meditation",
         "highlights": "Visit Youthog Cave (4,300m), Sephut Cave (4,600m), Rechen Cave (4,000m), Dul Dul Cave & Milarepa footprints.",
         "description": "Full day visiting sacred caves around Lapchi. Explore Youthog Cave, Sephut Cave, Rechen Cave, and Dul Dul Cave—the first cave Milarepa stayed in. See Milarepa's footprints carved in stone and spot blue sheep on high slopes. Evening yoga and meditation session. Overnight at monastery."
@@ -8878,7 +8879,7 @@ export const treksData = [
         "walkingTime": "5-6 hours hiking",
         "distance": "8 km",
         "accommodation": "Monastery / Guesthouse",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Hiking & Meditation",
         "highlights": "Lungten Cave (13th century), Taksong Cave (3,800m), Dongtsang Cave & Tibet border views.",
         "description": "Explore 13th-century Lungten Cave, Taksong Cave, and Dongtsang Cave near the Tibet border. Experience deep silence, ancient Tibetan Buddhist architecture, and guided meditation amidst Himalayan peaks. Overnight at monastery."
@@ -8890,7 +8891,7 @@ export const treksData = [
         "walkingTime": "7 hours",
         "distance": "14 km",
         "accommodation": "Tea House / Lodge",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking",
         "highlights": "Descend pine & bamboo trails back to Lumnan village with valley vistas.",
         "description": "Farewell to Lapchi Village. Descend along the same forest trails through pine and bamboo woods back to Lumnan (2,700m). Overnight at teahouse or lodge."
@@ -8902,7 +8903,7 @@ export const treksData = [
         "walkingTime": "5 hours trek + 8 hours drive",
         "distance": "12 km trek + 183 km drive",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast, Lunch & Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Trekking & Private 4WD Jeep",
         "highlights": "Trek back to Lamabagar & private jeep drive back to Kathmandu.",
         "description": "Trek downhill back to Lamabagar (1,950m). Meet your private 4WD jeep and drive back along the Tamakoshi river valley to Kathmandu (approx 8 hours drive). Transfer to hotel. Overnight at hotel."
@@ -8914,7 +8915,7 @@ export const treksData = [
         "walkingTime": "-",
         "distance": "10 km",
         "accommodation": "Hotel in Kathmandu",
-        "meals": "Breakfast & Farewell Dinner",
+        "meals": "Breakfast, Lunch, Dinner",
         "modeOfTravel": "Free day",
         "highlights": "Relaxation, spa, Thamel souvenir shopping & Zenex Travels farewell dinner.",
         "description": "Leisure day in Kathmandu for shopping or massage relaxation after the trek. In the evening, join your Zenex Travels team for an official farewell dinner. Overnight at hotel."
@@ -9134,126 +9135,144 @@ export const treksData = [
         "title": "Arrival in Kathmandu & Transfer to Hotel",
         "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport in Kathmandu, our Zenex Travels & Tours representative will meet you and transfer you to your hotel. Rest and prepare for the upcoming Makalu Base Camp Trek. In the evening, attend a detailed trip briefing with your guide.",
         "overnight": "Hotel in Kathmandu",
-        "elevation": "1,400 m"
+        "elevation": "1,400 m",
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
         "title": "Fly from Kathmandu to Tumlingtar and Drive to Num",
         "description": "Take an early morning scenic domestic flight from Kathmandu to Tumlingtar (approx. 50 mins), enjoying aerial views of the Eastern Himalayas. Meet our local trek crew in Tumlingtar and board a 4WD jeep for a scenic drive past terraced fields and sub-tropical villages to Num.",
         "overnight": "Lodge in Num",
-        "elevation": "1,560 m"
+        "elevation": "1,560 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 03",
         "title": "Trek from Num to Seduwa",
         "description": "Descend steeply from Num through bamboo groves and terraced fields down to the Arun River crossing via a long suspension bridge. After crossing the river, begin a steep climb up the opposite side of the valley to Seduwa, the gateway village to Makalu Barun National Park where permit checkpoint registration is completed.",
         "overnight": "Lodge in Seduwa",
-        "elevation": "1,500 m"
+        "elevation": "1,500 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 04",
         "title": "Trek from Seduwa to Tashigaon",
         "description": "A pleasant and steady climb today through terraced farmland, traditional Sherpa hamlets, and dense rhododendron forests. Arrive at Tashigaon, the last permanent Sherpa village on the trek route before entering upper wilderness.",
         "overnight": "Lodge in Tashigaon",
-        "elevation": "2,100 m"
+        "elevation": "2,100 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 05",
         "title": "Trek from Tashigaon to Khongma Danda",
         "description": "Ascend steeply through magical cloud forests of oak, bamboo, and ancient rhododendrons. As the trail climbs higher onto a steep ridge, timberline thins into alpine shrubs, offering spectacular vistas of surrounding peak ranges. Reach Khongma Danda for overnight stay.",
         "overnight": "Lodge in Khongma Danda",
-        "elevation": "3,500 m"
+        "elevation": "3,500 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 06",
         "title": "Acclimatization Day at Khongma Danda",
         "description": "Rest and acclimatization day at Khongma Danda before crossing high mountain passes. Take short acclimatization hikes up to surrounding ridge viewpoints to adapt to altitude while enjoying mountain panoramas.",
         "overnight": "Lodge in Khongma Danda",
-        "elevation": "3,500 m"
+        "elevation": "3,500 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 07",
         "title": "Trek from Khongma Danda to Dobate via Shipton La Pass & Keke La Pass",
         "description": "A dramatic day crossing four mountain passes: Ghungru La (4,050m), Shipton La (4,220m), Keke La (4,150m), and Tutu La (4,050m). Pass high sacred alpine lakes like Kalo Pokhari before descending sharply through alpine terrain to Dobate.",
         "overnight": "Lodge in Dobate",
-        "elevation": "3,500 m"
+        "elevation": "3,500 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 08",
         "title": "Trek from Dobate to Yangri Kharka",
         "description": "Descend through rhododendron forests down into the deep, sheer-sided Barun River Valley. Cross wooden bridges over rushing alpine streams and follow the river upstream through lush alpine pastures to Yangri Kharka.",
         "overnight": "Lodge in Yangri Kharka",
-        "elevation": "3,550 m"
+        "elevation": "3,550 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 09",
         "title": "Trek from Yangri Kharka to Langmale Kharka",
         "description": "Ascend gradually along the Barun Valley past summer yak grazing pastures (Kharkas) and waterfalls cascading down vertical cliff faces. As vegetation thins, snow-capped peaks like Peak 6, Peak 7, and Chamlang dominate the horizon. Arrive at Langmale Kharka.",
         "overnight": "Lodge / Camp in Langmale Kharka",
-        "elevation": "4,410 m"
+        "elevation": "4,410 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 10",
         "title": "Trek from Langmale Kharka to Makalu Base Camp",
         "description": "The highlight day of the trek! Ascend along glacial moraines beside the Barun Glacier. Mount Makalu’s colossal south face rises dramatically directly ahead. Reach Makalu Base Camp (4,870m) surrounded by an amphitheater of ice and granite peaks.",
         "overnight": "Lodge / Camp in Makalu Base Camp",
-        "elevation": "4,870 m"
+        "elevation": "4,870 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 11",
         "title": "Exploration & Viewpoint Hike at Makalu Base Camp",
         "description": "Spend a full day exploring Makalu Base Camp. Hike up to surrounding ridge viewpoints for unobstructed panoramas of Everest, Lhotse, Baruntse, Chamlang, and the towering peak of Makalu (8,485m). Inspect the vast Barun Glacier before returning to camp.",
         "overnight": "Lodge / Camp in Makalu Base Camp",
-        "elevation": "4,870 m"
+        "elevation": "4,870 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 12",
         "title": "Trek from Makalu Base Camp to Yangri Kharka",
         "description": "Begin retracing your route down the Barun River Valley. Descend past Langmale Kharka, enjoying descending views of the Barun gorge to Yangri Kharka.",
         "overnight": "Lodge in Yangri Kharka",
-        "elevation": "3,550 m"
+        "elevation": "3,550 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 13",
         "title": "Trek from Yangri Kharka to Dobate",
         "description": "Continue descending along the Barun River trail through alpine rhododendron and juniper woodlands to Dobate.",
         "overnight": "Lodge in Dobate",
-        "elevation": "3,500 m"
+        "elevation": "3,500 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 14",
         "title": "Trek from Dobate to Khongma Danda via Passes",
         "description": "Ascend back up out of the Barun gorge to cross Keke La Pass (4,150m) and Shipton La Pass (4,220m) in reverse, descending back down to Khongma Danda.",
         "overnight": "Lodge in Khongma Danda",
-        "elevation": "3,500 m"
+        "elevation": "3,500 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 15",
         "title": "Trek from Khongma Danda to Tashigaon",
         "description": "Descend steeply down from the ridge through cloud forests back to the Sherpa settlement of Tashigaon.",
         "overnight": "Lodge in Tashigaon",
-        "elevation": "2,100 m"
+        "elevation": "2,100 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 16",
         "title": "Trek from Tashigaon to Num via Seduwa",
         "description": "Trek through Seduwa, cross the Arun River suspension bridge, and make the final climb back up to Num village.",
         "overnight": "Lodge in Num",
-        "elevation": "1,560 m"
+        "elevation": "1,560 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 17",
         "title": "Drive from Num to Tumlingtar",
         "description": "Board a private 4WD jeep from Num for a scenic drive back to Tumlingtar. Celebrate the successful trek completion with your guide and crew.",
         "overnight": "Lodge / Hotel in Tumlingtar",
-        "elevation": "510 m"
+        "elevation": "510 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 18",
         "title": "Fly from Tumlingtar to Kathmandu & Final Departure",
         "description": "Take the morning scenic flight from Tumlingtar back to Kathmandu. Transfer to hotel for souvenir shopping or airport transfer for final international departure flight.",
         "overnight": "Homebound / Departure",
-        "elevation": "1,400 m"
+        "elevation": "1,400 m",
+        "meals": "Breakfast"
       }
     ],
     "inclusions": [
@@ -9430,175 +9449,200 @@ export const treksData = [
         "title": "Arrival in Kathmandu & Transfer to Hotel",
         "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport in Kathmandu (1,350m), meet our Zenex Travels & Tours representative for a private transfer to your hotel. Rest, prepare gear, and meet your expedition guide in the evening for a comprehensive trip briefing.",
         "overnight": "Hotel in Kathmandu",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
         "title": "Fly to Tumlingtar (410m) & Drive to Num (1,560m)",
         "description": "Board an early morning 45-minute scenic domestic flight from Kathmandu to Tumlingtar airport. Meet your trekking support team and take a 3 to 4 hour 4WD jeep drive past terraced sub-tropical farms and rural hamlets to Num village.",
         "overnight": "Lodge in Num",
-        "elevation": "1,560 m"
+        "elevation": "1,560 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 03",
         "title": "Trek from Num to Seduwa (1,500m)",
         "description": "Descend steeply for 2.5 hours through bamboo forests to the suspension bridge over the rushing Arun River. Cross the river and ascend through lush forests and terraced fields for another 2.5 hours to Seduwa, home to the Makalu Barun National Park permit checkpoint.",
         "overnight": "Lodge / Tea House in Seduwa",
-        "elevation": "1,500 m"
+        "elevation": "1,500 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 04",
         "title": "Trek from Seduwa to Tashigaon (2,100m)",
         "description": "Trek through pleasant terraced fields and small paddy farms to Tashigaon, a vibrant Sherpa village surrounded by dense forest. Tashigaon is the last permanent village on the route before ascending into high alpine territory.",
         "overnight": "Lodge / Tea House in Tashigaon",
-        "elevation": "2,100 m"
+        "elevation": "2,100 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 05",
         "title": "Rest & Acclimatization Day at Tashigaon",
         "description": "Rest and acclimatization day in Tashigaon. Take short walks around the village, inspect climbing equipment, and prepare body and mind for the high-altitude wilderness ahead.",
         "overnight": "Lodge / Tea House in Tashigaon",
-        "elevation": "2,100 m"
+        "elevation": "2,100 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 06",
         "title": "Trek from Tashigaon to Khongma Danda (3,500m)",
         "description": "A steep and challenging ascend through enchanted rhododendron and oak cloud forests onto a high ridge. Enter the core wilderness of Makalu Barun National Park as timberline thins, arriving at Khongma Danda after approx. 6 hours.",
         "overnight": "Lodge / Tea House in Khongma Danda",
-        "elevation": "3,500 m"
+        "elevation": "3,500 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 07",
         "title": "Trek to Mumbuk (3,540m) via Shipton La (4,125m) & Keke La (4,170m)",
         "description": "A dramatic ridge trek crossing Tutu La / Shipton's Pass (4,125m) and Keke La (4,170m). Pass the serene sacred lake of Kalo Pokhari (3,930m) before descending through hemlock and pine forests to Mumbuk (Dobato).",
         "overnight": "Lodge / Tea House in Mumbuk",
-        "elevation": "3,540 m"
+        "elevation": "3,540 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 08",
         "title": "Trek from Mumbuk to Yangri Kharka (3,557m)",
         "description": "Descend into the deep Barun River gorge, crossing wooden bridges and tracking alongside the river. Take in spectacular views of Mt. Tutse (6,739m) and Peak 7 (6,185m) before reaching the alpine meadow of Yangri Kharka.",
         "overnight": "Lodge / Tea House in Yangri Kharka",
-        "elevation": "3,557 m"
+        "elevation": "3,557 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 09",
         "title": "Trek from Yangri Kharka to Langma Le Kharka (4,410m)",
         "description": "Trek upstream beside Barun Khola through high pastures (Kharkas) past Merek (4,100m). Vegetation transitions to sparse alpine shrubs with soaring views of Chamlang and surrounding peaks. Arrive at Langma Le Kharka.",
         "overnight": "Lodge / Tea House in Langma Le Kharka",
-        "elevation": "4,410 m"
+        "elevation": "4,410 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 10",
         "title": "Trek from Langma Le Kharka to Makalu Base Camp (4,870m)",
         "description": "Trek along barren moraine trails beside the Barun Glacier. Mount Makalu’s colossal south wall dominates the skyline. Arrive at Makalu Base Camp (4,870m) surrounded by towering granite and ice peaks.",
         "overnight": "Lodge / Tea House in Makalu Base Camp",
-        "elevation": "4,870 m"
+        "elevation": "4,870 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 11",
         "title": "Rest & Exploration Day at Makalu Base Camp",
         "description": "A crucial acclimatization day. Explore Barun Pokhari, inspect the Barun Glacier, or hike towards Swiss Base Camp (5,150m) for panoramic views of Makalu, Everest, and Lhotse.",
         "overnight": "Lodge / Tea House in Makalu Base Camp",
-        "elevation": "4,870 m"
+        "elevation": "4,870 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 12",
         "title": "Trek from Makalu Base Camp to Baruntse East Col / Glacier Camp (5,400m)",
         "description": "Leave basic teahouses behind and enter full expedition camping mode. Trek across zigzagging glacial moraines and boulder fields up to Baruntse East Col / Glacier Camp.",
         "overnight": "Tented Camp",
-        "elevation": "5,400 m"
+        "elevation": "5,400 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 13",
         "title": "Trek to Sherpani Col Base Camp (5,688m)",
         "description": "A steep, rigorous 6 to 7 hour ascent over icy moraine ridges and rocky glaciers to reach Sherpani Col Base Camp in a remote alpine basin.",
         "overnight": "Tented Camp",
-        "elevation": "5,688 m"
+        "elevation": "5,688 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 14",
         "title": "Trek from Sherpani Col Base Camp to High Camp (5,900m)",
         "description": "Climb steeply up loose rock and ice slopes to High Camp (5,900m). Specialized climbing gear including crampons, ice axes, and fixed ropes are utilized by our Sherpa guides for safety.",
         "overnight": "Tented Camp",
-        "elevation": "5,900 m"
+        "elevation": "5,900 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 15",
         "title": "Cross Sherpani Col (6,180m) & West Col (6,143m)",
         "description": "The crux day of the expedition! Begin before dawn to climb the steep ice wall of Sherpani Col (6,180m) using fixed ropes and ascenders. Enjoy breathtaking 360-degree Himalayan vistas before crossing the snow plateau to West Col (6,143m). Abseil down onto the glacial floor.",
         "overnight": "Tented Camp",
-        "elevation": "6,180 m"
+        "elevation": "6,180 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 16",
         "title": "Trek from West Col to Baruntse South Base Camp (5,565m)",
         "description": "Descend safely across glacial moraines using fixed lines where necessary to reach Baruntse South Base Camp beneath the looming ridges of Mount Baruntse (7,129m).",
         "overnight": "Tented Camp",
-        "elevation": "5,565 m"
+        "elevation": "5,565 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 17",
         "title": "Trek to Amphu Laptse Base Camp (5,527m)",
         "description": "Traverse high alpine glacial terrain with steep ascents and descents across icy ridges to reach the foot of Amphu Laptse Pass.",
         "overnight": "Tented Camp",
-        "elevation": "5,527 m"
+        "elevation": "5,527 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 18",
         "title": "Cross Amphu Laptse Pass (5,845m) to Baruntse North Base Camp (5,100m)",
         "description": "Cross the formidable Amphu Laptse Pass (5,845m), negotiating steep ice gullies and rock steps using fixed ropes. Descend into the upper Imja Khola Valley to Baruntse North Base Camp.",
         "overnight": "Tented Camp",
-        "elevation": "5,845 m"
+        "elevation": "5,845 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 19",
         "title": "Trek from Base Camp to Chhukung (4,730m)",
         "description": "Descend from upper moraines into the alpine pastures of the Khumbu Valley, reaching the Sherpa hamlet of Chhukung beneath Lhotse and Island Peak.",
         "overnight": "Lodge in Chhukung",
-        "elevation": "4,730 m"
+        "elevation": "4,730 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 20",
         "title": "Trek from Chhukung to Tengboche (3,860m)",
         "description": "Descend through Dingboche, Pangboche, and Debuche, crossing the Imja River to reach Tengboche, home to the famous Tengboche Monastery.",
         "overnight": "Lodge in Tengboche",
-        "elevation": "3,860 m"
+        "elevation": "3,860 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 21",
         "title": "Trek from Tengboche to Namche Bazaar (3,440m)",
         "description": "Descend to Phunki Tenga and ascend through pine forests past Sanasa to the bustling Sherpa capital of Namche Bazaar. Enjoy bakery cafes, shops, and hot showers.",
         "overnight": "Lodge in Namche Bazaar",
-        "elevation": "3,440 m"
+        "elevation": "3,440 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 22",
         "title": "Trek from Namche Bazaar to Lukla (2,840m)",
         "description": "Final trekking day! Descend steeply down the Dudh Koshi Valley, crossing suspension bridges past Phakding to complete your epic traverse in Lukla.",
         "overnight": "Lodge in Lukla",
-        "elevation": "2,840 m"
+        "elevation": "2,840 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 23",
         "title": "Fly from Lukla to Kathmandu",
         "description": "Take an early morning scenic 35-minute flight from Lukla back to Kathmandu (or Ramechhap). Transfer to hotel and rest after the demanding expedition.",
         "overnight": "Hotel in Kathmandu",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 24",
         "title": "Free Day / Buffer Day in Kathmandu",
         "description": "A leisure and contingency buffer day in Kathmandu for rest, sightseeing at UNESCO World Heritage sites (Swayambhunath, Boudhanath, Pashupatinath), or shopping in Thamel.",
         "overnight": "Hotel in Kathmandu",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 25",
         "title": "Final Departure from Kathmandu",
         "description": "Enjoy breakfast at hotel before our Zenex Travels representative transfers you to Tribhuvan International Airport for your international departure flight.",
         "overnight": "Homebound / Departure",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast"
       }
     ],
     "inclusions": [
@@ -9772,98 +9816,112 @@ export const treksData = [
         "title": "Arrival in Kathmandu & Transfer to Hotel",
         "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport in Kathmandu, our Zenex Travels & Tours representative will meet you and transfer you to your hotel. Prepare for the journey and attend an evening trip briefing with your guide.",
         "overnight": "Hotel in Kathmandu",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
         "title": "Fly from Kathmandu to Dhangadhi & Drive to Dadeldhura (2,650m)",
         "description": "Take a scenic 1-hour domestic flight from Kathmandu to Dhangadhi in the Terai region of Far-Western Nepal. Meet your driving crew and take a 4-hour scenic drive (66 km) up into the forested hills of Dadeldhura.",
         "overnight": "Lodge in Dadeldhura",
-        "elevation": "2,650 m"
+        "elevation": "2,650 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 03",
         "title": "Drive from Dadeldhura to Makarigadh (1,460m)",
         "description": "Board a private 4WD jeep for an 8 to 9 hour drive (205 km) through Gokuleshwor and mountain country roads to Makarigadh, the starting point of the trek.",
         "overnight": "Tented Camp / Lodge in Makarigadh",
-        "elevation": "1,460 m"
+        "elevation": "1,460 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 04",
         "title": "Trek from Makarigadh to Khandeswori (2,280m)",
         "description": "Begin trekking with a pleasant 2 to 3 hour ascend through dense bamboo and rhododendron forests to Khandeswori village.",
         "overnight": "Homestay / Tented Camp in Khandeswori",
-        "elevation": "2,280 m"
+        "elevation": "2,280 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 05",
         "title": "Trek from Khandeswori to Lumcha (2,350m) via Thumti",
         "description": "Trek uphill for 2 hours to Thumti village to explore traditional western Nepalese architecture. Continue ascending past Kothadhar (2,720m) through rhododendron forests to reach the Sherpa-Tibetan hamlet of Lumcha.",
         "overnight": "Homestay / Tented Camp in Lumcha",
-        "elevation": "2,350 m"
+        "elevation": "2,350 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 06",
         "title": "Trek from Lumcha to Simar (2,852m) via Chhirchhire",
         "description": "Follow the Chamelia River Valley past Khaykot and Bedali hamlets up to Chhirchhire for lunch. Continue along the river trail for another 1.5 hours to Simar, featuring mountain views of Jethi Bahurani Chuli (6,850m) and Bobaye Chuli (6,808m).",
         "overnight": "Tented Camp in Simar",
-        "elevation": "2,852 m"
+        "elevation": "2,852 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 07",
         "title": "Trek from Simar to Dhauli Odar (3,450m) & Bhabaya Valley Exploration",
         "description": "Trek 3 to 4 hours through a wide, open valley to Dhauli Odar. After lunch, take an acclimatization exploration hike into Bhabaya Valley (6 km round trip) for panoramas of Lhayul Peak (6,395m).",
         "overnight": "Tented Camp in Dhauli Odar",
-        "elevation": "3,450 m"
+        "elevation": "3,450 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 08",
         "title": "Trek to Api Himal Base Camp (3,900m), Explore Sacred Lake & Return to Dhauli Odar",
         "description": "The highlight day! Trek 3 km (2 hours) to Api Himal Base Camp (3,900m) for 360-degree views of Api Himal (7,132m) and Nampa Chuli (6,929m). Explore Chameliya River source and hike up to sacred Kali Dhunga Tal (4,200m). Return to Dhauli Odar for a safe overnight sleep.",
         "overnight": "Tented Camp in Dhauli Odar",
-        "elevation": "3,900 m"
+        "elevation": "3,900 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 09",
         "title": "Trek from Dhauli Odar to Khaykot (2,050m) via Chhirchhire",
         "description": "Descend 18 km back through the scenic Chamelia River Valley past Chhirchhire to the riverside settlement of Khaykot.",
         "overnight": "Tented Camp in Khaykot",
-        "elevation": "2,050 m"
+        "elevation": "2,050 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 10",
         "title": "Trek from Khaykot to Ghusa (2,284m) via Siti Village",
         "description": "Trek through traditional terraced farms and forests past Siti Village for lunch, arriving at Ghusa village to experience authentic Doteli mountain life.",
         "overnight": "Homestay / Tented Camp in Ghusa",
-        "elevation": "2,284 m"
+        "elevation": "2,284 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 11",
         "title": "Trek from Ghusa to Makarigad (1,460m) & Drive to Dadeldhura (2,650m)",
         "description": "Trek 1.5 hours back to Makarigad and board a private 4WD jeep for the 8-hour drive back to Dadeldhura.",
         "overnight": "Lodge in Dadeldhura",
-        "elevation": "2,650 m"
+        "elevation": "2,650 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 12",
         "title": "Drive from Dadeldhura to Dhangadhi & Fly to Kathmandu",
         "description": "Drive 4 hours down to Dhangadhi airport and take the afternoon flight back to Kathmandu. Transfer to hotel.",
         "overnight": "Hotel in Kathmandu",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 13",
         "title": "Free Day in Kathmandu for Sightseeing & Relaxation",
         "description": "Leisure day in Kathmandu to explore UNESCO World Heritage sites (Boudhanath Stupa, Pashupatinath, Bhaktapur Durbar Square) or enjoy shopping in Thamel.",
         "overnight": "Hotel in Kathmandu",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 14",
         "title": "Final Departure from Kathmandu",
         "description": "Enjoy breakfast at hotel before our Zenex Travels representative transfers you to Tribhuvan International Airport for your return flight home.",
         "overnight": "Homebound / Departure",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast"
       }
     ],
     "inclusions": [
@@ -10028,91 +10086,104 @@ export const treksData = [
         "title": "Arrival in Kathmandu & Transfer to Hotel",
         "description": "Welcome to Nepal! Upon arrival at Tribhuvan International Airport in Kathmandu, our Zenex Travels & Tours representative will meet you and transfer you to your hotel. Attend an evening trip briefing with your guide.",
         "overnight": "Hotel in Kathmandu",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast"
       },
       {
         "day": "Day 02",
         "title": "Fly from Kathmandu to Nepalgunj (150m)",
         "description": "Take a 1-hour domestic flight from Kathmandu down to Nepalgunj in the Terai plains of western Nepal. Transfer to your hotel and explore local bazaars and temples in the evening.",
         "overnight": "Hotel in Nepalgunj",
-        "elevation": "150 m"
+        "elevation": "150 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 03",
         "title": "Fly to Jumla (2,500m) & Trek to Chere Chaur (3,050m)",
         "description": "Take a early morning 45-minute mountain flight from Nepalgunj to Jumla airport (2,500m). Meet your trek crew and begin a gentle 2 to 3 hour warm-up trek through pine forests to Chere Chaur.",
         "overnight": "Lodge in Chere Chaur",
-        "elevation": "3,050 m"
+        "elevation": "3,050 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 04",
         "title": "Trek to Chala Chaur (2,980m) via Jaljala Pass (3,580m)",
         "description": "Ascend up to cross the Jaljala Pass (3,580m) for panoramic views of mountain ranges and deep river valleys. Descend gently through peaceful pine and rhododendron forests to Chala Chaur.",
         "overnight": "Lodge in Chala Chaur",
-        "elevation": "2,980 m"
+        "elevation": "2,980 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 05",
         "title": "Trek from Chala Chaur to Sinja Valley (2,440m)",
         "description": "Descend for 5 to 6 hours through terraced farmland and ancient hamlets to Sinja Valley, the ancient capital of the Khasa Malla kingdom and historical origin of the Khas language.",
         "overnight": "Lodge in Sinja Valley",
-        "elevation": "2,440 m"
+        "elevation": "2,440 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 06",
         "title": "Trek from Sinja Valley to Ghorosingha (3,050m)",
         "description": "Hike uphill through dense pine, oak, and rhododendron forests past small mountain farms to the alpine village of Ghorosingha.",
         "overnight": "Lodge / Homestay in Ghorosingha",
-        "elevation": "3,050 m"
+        "elevation": "3,050 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 07",
         "title": "Trek from Ghorosingha to Rara Lake (2,990m)",
         "description": "Trek through Rara National Park forests as the trail opens up to reveal the stunning turquoise waters of Rara Lake (2,990m), Nepal's largest natural lake.",
         "overnight": "Lodge near Rara Lake",
-        "elevation": "2,990 m"
+        "elevation": "2,990 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 08",
         "title": "Full Day Exploration at Rara Lake & Hike to Murma Top (3,630m)",
         "description": "Spend a full day exploring Rara Lake. Take a morning walk along the lake shore and hike up to Murma Top viewpoint for 360-degree views of the lake and surrounding snow peaks.",
         "overnight": "Lodge near Rara Lake",
-        "elevation": "2,990 m"
+        "elevation": "2,990 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 09",
         "title": "Trek from Rara Lake to Pina Village (2,440m)",
         "description": "Begin retracing your trek down through dense spruce and pine woodlands past rural Karnali hamlets to Pina Village.",
         "overnight": "Lodge in Pina Village",
-        "elevation": "2,440 m"
+        "elevation": "2,440 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 10",
         "title": "Trek from Pina Village to Bumra / Nauri Ghat (2,850m)",
         "description": "Trek 5 to 6 hours uphill through terraced fields and forests to the traditional mountain village of Bumra.",
         "overnight": "Lodge in Bumra",
-        "elevation": "2,850 m"
+        "elevation": "2,850 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 11",
         "title": "Trek to Jumla (2,514m) via Dhanphe Lagna Pass (3,690m)",
         "description": "The longest trek day! Ascend steadily to cross Dhanphe Lagna Pass (3,690m) for final mountain panoramas before descending back to Jumla town.",
         "overnight": "Lodge in Jumla",
-        "elevation": "2,514 m"
+        "elevation": "2,514 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 12",
         "title": "Fly from Jumla to Nepalgunj & Flight to Kathmandu",
         "description": "Take the morning scenic flight from Jumla to Nepalgunj and connect to your domestic flight back to Kathmandu. Transfer to hotel.",
         "overnight": "Hotel in Kathmandu",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast, Lunch, Dinner"
       },
       {
         "day": "Day 13",
         "title": "Final Departure from Kathmandu",
         "description": "Enjoy breakfast at hotel before our Zenex Travels representative transfers you to Tribhuvan International Airport for your international departure flight.",
         "overnight": "Homebound / Departure",
-        "elevation": "1,350 m"
+        "elevation": "1,350 m",
+        "meals": "Breakfast"
       }
     ],
     "inclusions": [

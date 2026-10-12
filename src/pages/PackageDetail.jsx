@@ -6,7 +6,7 @@ import { defaultTourEquipment } from './TourTripDetail';
 
 import SEO from '../components/SEO';
 import TrustReviewBadges from '../components/TrustReviewBadges';
-import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML } from '../utils/detailFormatters';
+import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getTrekDayMeals } from '../utils/detailFormatters';
 import { generatePackagePDF } from '../utils/pdfGenerator';
 
 export const packageExtraData = {
@@ -13327,6 +13327,8 @@ const PackageDetail = () => {
                     if (!dayLabel.toUpperCase().startsWith('DAY')) dayLabel = `DAY ${dayLabel}`;
                     const descriptionText = day.desc || day.details || day.description || '';
                     const travelModeText = day.travelMode || day.modeOfTravel;
+                    const isTrekPackage = pkg?.category === 'Treks' || (pkg?.category && /trek/i.test(pkg.category)) || (pkg?.title && /trek/i.test(pkg.title)) || (pkg?.slug && /trek/i.test(pkg.slug)) || (id && /trek/i.test(id));
+                    const dayMeals = getTrekDayMeals(day, idx, pkg.itinerary.length, isTrekPackage);
 
                     return (
                       <div key={idx} className="relative pl-10 pb-8 last:pb-0">
@@ -13356,7 +13358,7 @@ const PackageDetail = () => {
                           )}
 
                           {/* Day Highlights Metadata */}
-                          {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
+                          {(day.maxAltitude || day.accommodation || dayMeals || travelModeText || day.duration) && (
                             <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl">
                               <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">DAY HIGHLIGHTS</h4>
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
@@ -13378,10 +13380,10 @@ const PackageDetail = () => {
                                     <span>Accommodation: {day.accommodation}</span>
                                   </div>
                                 )}
-                                {day.meals && (
+                                {dayMeals && (
                                   <div className="flex items-center gap-2">
                                     <Utensils size={16} className="text-gray-400 shrink-0" />
-                                    <span>Meals: {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
+                                    <span>Meals: {dayMeals}</span>
                                   </div>
                                 )}
                               </div>

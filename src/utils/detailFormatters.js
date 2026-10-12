@@ -420,3 +420,19 @@ export const formatMarkdownToHTML = (text) => {
   return html;
 };
 
+/**
+ * Returns standard meal string for an itinerary day in a trek package:
+ * - Day 1: "Breakfast"
+ * - Between Days (Day 2 to N-1): "Breakfast, Lunch, Dinner"
+ * - Last Day (Day N): "Breakfast"
+ */
+export const getTrekDayMeals = (day, dayIndex, totalDays, isTrek = true) => {
+  if (!isTrek) {
+    if (!day || !day.meals) return '';
+    return Array.isArray(day.meals) ? day.meals.join(', ') : String(day.meals);
+  }
+  if (dayIndex === 0) return 'Breakfast';
+  if (totalDays > 1 && dayIndex === totalDays - 1) return 'Breakfast';
+  return 'Breakfast, Lunch, Dinner';
+};
+

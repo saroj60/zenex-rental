@@ -10,8 +10,7 @@ import { useAppData } from '../context/AppDataContext';
 import EssentialInfoSection from '../components/EssentialInfoSection';
 import SEO from '../components/SEO';
 import { generatePackagePDF } from '../utils/pdfGenerator';
-import TrustReviewBadges from '../components/TrustReviewBadges';
-import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt } from '../utils/detailFormatters';
+import { getInclusionsList, getExclusionsList, getAddonsList, getHighlightsList, formatMarkdownToHTML, getCleanExcerpt, getTrekDayMeals } from '../utils/detailFormatters';
 
 
 
@@ -805,43 +804,52 @@ const TrekDetail = () => {
 
 
                           {/* Day Highlights Metadata */}
-                          {(day.maxAltitude || day.accommodation || day.meals || travelModeText || day.duration) && (
-                            <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl font-sans">
-                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5 font-sans">DAY HIGHLIGHTS</h4>
-                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600 font-sans">
-                                {day.maxAltitude && (
-                                  <div className="flex items-center gap-2">
-                                    <Mountain size={16} className="text-gray-400 shrink-0" />
-                                    <span>Max Altitude: {formatAltitude(day.maxAltitude, day.altitudeUnit)}</span>
-                                  </div>
-                                )}
-                                {travelModeText && (
-                                  <div className="flex items-center gap-2">
-                                    <Car size={16} className="text-gray-400 shrink-0" />
-                                    <span>Mode of Travel: {travelModeText}</span>
-                                  </div>
-                                )}
-                                {day.accommodation && (
-                                  <div className="flex items-center gap-2">
-                                    <Bed size={16} className="text-gray-400 shrink-0" />
-                                    <span>Accommodation: {day.accommodation}</span>
-                                  </div>
-                                )}
-                                {day.meals && (
-                                  <div className="flex items-center gap-2">
-                                    <Utensils size={16} className="text-gray-400 shrink-0" />
-                                    <span>Meals: {Array.isArray(day.meals) ? day.meals.join(', ') : day.meals}</span>
-                                  </div>
-                                )}
-                                {day.duration && (
-                                  <div className="flex items-center gap-2">
-                                    <Clock size={16} className="text-gray-400 shrink-0" />
-                                    <span>Duration: {day.duration}</span>
-                                  </div>
-                                )}
+                          {(() => {
+                            const totalDays = trek.itinerary ? trek.itinerary.length : 1;
+                            const dayMeals = getTrekDayMeals(day, index, totalDays, true);
+
+                            if (!day.maxAltitude && !day.accommodation && !dayMeals && !travelModeText && !day.duration) {
+                              return null;
+                            }
+
+                            return (
+                              <div className="mt-4 pt-4 border-t border-gray-100 max-w-2xl font-sans">
+                                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2.5 font-sans">DAY HIGHLIGHTS</h4>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600 font-sans">
+                                  {day.maxAltitude && (
+                                    <div className="flex items-center gap-2">
+                                      <Mountain size={16} className="text-gray-400 shrink-0" />
+                                      <span>Max Altitude: {formatAltitude(day.maxAltitude, day.altitudeUnit)}</span>
+                                    </div>
+                                  )}
+                                  {travelModeText && (
+                                    <div className="flex items-center gap-2">
+                                      <Car size={16} className="text-gray-400 shrink-0" />
+                                      <span>Mode of Travel: {travelModeText}</span>
+                                    </div>
+                                  )}
+                                  {day.accommodation && (
+                                    <div className="flex items-center gap-2">
+                                      <Bed size={16} className="text-gray-400 shrink-0" />
+                                      <span>Accommodation: {day.accommodation}</span>
+                                    </div>
+                                  )}
+                                  {dayMeals && (
+                                    <div className="flex items-center gap-2">
+                                      <Utensils size={16} className="text-gray-400 shrink-0" />
+                                      <span>Meals: {dayMeals}</span>
+                                    </div>
+                                  )}
+                                  {day.duration && (
+                                    <div className="flex items-center gap-2">
+                                      <Clock size={16} className="text-gray-400 shrink-0" />
+                                      <span>Duration: {day.duration}</span>
+                                    </div>
+                                  )}
+                                </div>
                               </div>
-                            </div>
-                          )}
+                            );
+                          })()}
                         </div>
                       </div>
                     );
