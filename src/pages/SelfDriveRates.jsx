@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SEO from '../components/SEO';
 import { MessageCircle, ArrowLeft, Car, ShieldCheck, CheckCircle2, Route, Calendar } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
