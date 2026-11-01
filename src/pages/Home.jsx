@@ -2,6 +2,7 @@ import React from 'react';
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import Fleet from '../components/Fleet';
+import FlightTicketsSection from '../components/FlightTicketsSection';
 import PopularEscapes from '../components/PopularEscapes';
 
 import InteractiveRouteMap from '../components/InteractiveRouteMap';
@@ -51,6 +52,7 @@ const Home = () => {
       <FeaturedPackages />
       <AdventurePackages />
       <Fleet />
+      <FlightTicketsSection />
       <PopularEscapes />
       <WhatOurGuestsSay />
       <FAQSection />
