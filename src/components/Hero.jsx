@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight, Phone } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { ArrowRight, Phone, ChevronDown, Compass, Mountain } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import SearchWidget from './SearchWidget';
 
 const heroImages = [
@@ -16,6 +16,27 @@ const heroImages = [
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -120,12 +141,77 @@ const Hero = () => {
           </motion.h1>
           
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-start gap-2.5 mb-5 md:mb-6 w-full">
-            <Link to="/packages" className="w-full sm:w-auto text-white px-4 py-2 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 bg-[#1e3a8a] hover:bg-[#152c6e] text-[11px] md:text-xs">
-              Explore Packages
-              <div className="bg-white rounded-full p-0.5 text-[#1e3a8a]">
-                <ArrowRight size={10} strokeWidth={3} />
-              </div>
-            </Link>
+            {/* Explore Packages Dropdown */}
+            <div className="relative w-full sm:w-auto" ref={dropdownRef}>
+              <button
+                type="button"
+                onClick={() => setIsDropdownOpen(prev => !prev)}
+                className="w-full sm:w-auto text-white px-4 py-2 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 bg-[#1e3a8a] hover:bg-[#152c6e] text-[11px] md:text-xs cursor-pointer select-none"
+                aria-expanded={isDropdownOpen}
+                aria-haspopup="true"
+              >
+                <span>Explore Packages</span>
+                <div className={`bg-white rounded-full p-0.5 text-[#1e3a8a] transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`}>
+                  <ChevronDown size={11} strokeWidth={3} />
+                </div>
+              </button>
+
+              <AnimatePresence>
+                {isDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -6, scale: 0.96 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -6, scale: 0.96 }}
+                    transition={{ duration: 0.15, ease: "easeOut" }}
+                    className="absolute top-full left-0 mt-2 w-full sm:w-72 bg-white rounded-2xl shadow-2xl border border-slate-100 p-2 z-50 overflow-hidden"
+                  >
+                    <Link
+                      to="/tours"
+                      onClick={() => setIsDropdownOpen(false)}
+                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-blue-50/70 transition-colors group text-left"
+                    >
+                      <div className="w-9 h-9 rounded-xl bg-blue-50 text-[#1e3a8a] flex items-center justify-center shrink-0 group-hover:bg-[#1e3a8a] group-hover:text-white transition-colors shadow-xs">
+                        <Compass size={18} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center justify-between">
+                          <h4 className="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-[#1e3a8a] transition-colors">
+                            Tour Packages
+                          </h4>
+                          <ArrowRight size={13} className="text-slate-400 group-hover:text-[#1e3a8a] group-hover:translate-x-0.5 transition-all" />
+                        </div>
+                        <p className="text-[11px] text-slate-500 line-clamp-1 mt-0.5 font-normal">
+                          Sightseeing, Cultural & Wildlife Tours
+                        </p>
+                      </div>
+                    </Link>
+
+                    <div className="h-px bg-slate-100 my-1 mx-2" />
+
+                    <Link
+                      to="/treks"
+                      onClick={() => setIsDropdownOpen(false)}
+                      className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-emerald-50/70 transition-colors group text-left"
+                    >
+                      <div className="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition-colors shadow-xs">
+                        <Mountain size={18} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center justify-between">
+                          <h4 className="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                            Trek Packages
+                          </h4>
+                          <ArrowRight size={13} className="text-slate-400 group-hover:text-emerald-700 group-hover:translate-x-0.5 transition-all" />
+                        </div>
+                        <p className="text-[11px] text-slate-500 line-clamp-1 mt-0.5 font-normal">
+                          Himalayan Base Camps & Circuit Trails
+                        </p>
+                      </div>
+                    </Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
             <Link to="/vehicles" className="w-full sm:w-auto text-white border border-white/60 px-4 py-1.5 rounded-lg font-bold flex items-center justify-center gap-1.5 hover:bg-white/10 transition-colors text-[11px] md:text-xs backdrop-blur-sm">
               Rent a Car
             </Link>
