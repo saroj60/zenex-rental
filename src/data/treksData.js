@@ -5643,9 +5643,9 @@ export const treksData = [
     "accommodation": "3-Star Hotel in KTM & Nepalgunj / Mountain Lodges & Tented Camps",
     "meals": "Breakfast in KTM & Nepalgunj, All Meals (Breakfast, Lunch & Dinner) on Trek",
     "bestSeason": "Spring (March - May), Summer & Autumn (Sept - Nov)",
-    "image": "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
+    "image": "/zenex images/Dolpo/phoksundo-lake-lower-dolpo.jpg",
     "gallery": [
-      "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
+      "/zenex images/Dolpo/phoksundo-lake-lower-dolpo.jpg",
       "/zenex images/everest/photo-1486911278844-a81c5267e227.avif",
       "/zenex images/everest/photo-1509883488717-779cd2d85976.avif",
       "/zenex images/everest/photo-1561355167-4eac6650cbeb.avif",
@@ -5893,8 +5893,8 @@ export const treksData = [
         "answer": "Contact Zenex Travels & Tours to process restricted permits, arrange domestic flights, and organize full camping expedition logistics."
       }
     ],
-    "img": "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
-    "bannerImage": "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif"
+    "img": "/zenex images/Dolpo/phoksundo-lake-lower-dolpo.jpg",
+    "bannerImage": "/zenex images/Dolpo/phoksundo-lake-lower-dolpo.jpg"
   },
   {
     "id": "upper-dolpo-trek-25d",
@@ -5928,7 +5928,7 @@ export const treksData = [
       "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
       "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
       "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
-      "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
+      "/zenex images/Dolpo/phoksundo-lake-lower-dolpo.jpg",
       "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif",
       "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif"
     ],
@@ -6254,7 +6254,7 @@ export const treksData = [
       "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
       "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
       "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
-      "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
+      "/zenex images/Dolpo/phoksundo-lake-lower-dolpo.jpg",
       "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
       "/zenex images/everest/premium_photo-1688645554172-d3aef5f837ce.avif"
     ],
@@ -6596,7 +6596,7 @@ export const treksData = [
       "/zenex images/everest/photo-1603787663416-88d33de66699.avif",
       "/zenex images/everest/photo-1609660062508-1ac4a930232d.avif",
       "/zenex images/everest/photo-1629185171801-ac685973a72a.avif",
-      "/zenex images/everest/photo-1693717671076-374d59bc2ff2.avif",
+      "/zenex images/Dolpo/phoksundo-lake-lower-dolpo.jpg",
       "/zenex images/everest/photo-1724341754508-f19ee59541bd.avif",
       "/zenex images/everest/photo-1741747929569-c21e8110b9ef.avif"
     ],
