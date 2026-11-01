@@ -404,6 +404,35 @@ const TripPlanner = () => {
     }
   };
 
+  const handleEmailSend = () => {
+    const bookingId = confirmedOrder?.id || 'ZNX-Custom';
+    const subject = encodeURIComponent(`[Custom Trip Request #${bookingId}] ${selectedTrip} - ${fullName}`);
+    const body = encodeURIComponent(`Dear Zenex Travels,
+
+Please find my custom tour / trek trip request details submitted to info@zenextravels.com:
+
+Reference ID: ${bookingId}
+Trip Selected: ${selectedTrip}
+Approx. Date of Travel: ${travelDate || 'Flexible'}
+Travelers: Adults: ${adults} | Children: ${children} | Group Size: ${groupSize || 'Flexible'}
+
+Contact Information:
+- Full Name: ${fullName}
+- Email: ${email}
+- Phone: ${phone}
+- Country: ${country}
+
+Additional Requirements / Notes:
+${moreInfo || 'N/A'}
+
+Please send me a customized itinerary and quote. Thank you!
+
+Warm regards,
+${fullName}`);
+
+    window.location.href = `mailto:info@zenextravels.com?subject=${subject}&body=${body}`;
+  };
+
   const handleWhatsAppSend = () => {
     if (!selectedTrip || !fullName || !phone) {
       alert("Please fill in your Trip, Full Name, and Phone Number before sending via WhatsApp.");
@@ -479,10 +508,17 @@ ${moreInfo || 'N/A'}`;
             </h2>
             <p className="text-[#e53a24] font-extrabold text-lg mb-4">Reference Booking ID: {confirmedOrder.id}</p>
             <p className="text-slate-600 font-medium max-w-lg mx-auto mb-8 leading-relaxed text-sm md:text-base">
-              Thank you, <strong>{fullName}</strong>. Your custom trip request for <strong>{selectedTrip}</strong> has been received. Our travel specialist will prepare your custom itinerary and send it to <strong>{email}</strong>.
+              Thank you, <strong>{fullName}</strong>. Your custom trip request for <strong>{selectedTrip}</strong> has been received and routed to <strong>info@zenextravels.com</strong>. Our travel specialist will prepare your custom itinerary and send it to <strong>{email}</strong>.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+              <button 
+                onClick={handleEmailSend}
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-[#1e3a8a] text-white font-extrabold text-sm hover:bg-[#152a65] transition-colors shadow-md w-full sm:w-auto justify-center"
+              >
+                <Mail size={16} /> Open in Email App
+              </button>
+
               <button 
                 onClick={handleWhatsAppSend}
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-[#25D366] text-white font-extrabold text-sm hover:bg-emerald-600 transition-colors shadow-md w-full sm:w-auto justify-center"

@@ -480,24 +480,23 @@ app.post('/api/bookings', (req, res) => {
     writeDB(data);
 
     console.log(`
-======================= CONFIRMATION EMAIL =====================
-To: \${booking.customerDetails?.email}
-Subject: Booking Confirmation - Reference ID: \${booking.id}
-
-Dear \${booking.customerDetails?.firstName} \${booking.customerDetails?.lastName},
-
-Thank you for choosing Zenex Travel! Your booking has been received.
+======================= CONFIRMATION & ADMIN EMAIL =====================
+To: info@zenextravels.com, \${booking.customerDetails?.email}
+Subject: New Booking Order - \${booking.id} - \${booking.itemName}
 
 Booking Reference ID: \${booking.id}
 Status: Pending Confirmation
 Item: \${booking.itemName}
 Trip Date: \${booking.dates?.start}
 Number of Travelers: \${booking.travelersCount || 1}
+Customer: \${booking.customerDetails?.firstName} \${booking.customerDetails?.lastName}
+Customer Email: \${booking.customerDetails?.email}
+Phone: \${booking.customerDetails?.phone} | WhatsApp: \${booking.customerDetails?.whatsapp}
 Payment Method: \${booking.paymentOption === 'deposit' ? '20% Deposit Online' : 'Book Now Pay Later'}
 Total Price: \${booking.amount}
 
-We look forward to welcoming you to Kathmandu!
-============================================================
+Submitted to Admin: info@zenextravels.com
+========================================================================
     `);
 
     res.json({ success: true, booking });

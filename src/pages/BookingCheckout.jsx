@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate, Link } from 'react-router-dom';
-import { CheckCircle2, ChevronRight, Lock, Calendar, Plus, Minus, CreditCard, Mail, Info } from 'lucide-react';
+import { CheckCircle2, ChevronRight, Lock, Calendar, Plus, Minus, CreditCard, Mail, Info, Copy, Check, MessageSquare } from 'lucide-react';
 import TrustSafety from '../components/TrustSafety';
 import { useAppData } from '../context/AppDataContext';
 import { useBooking } from '../context/BookingContext';
@@ -402,6 +402,7 @@ const BookingCheckout = () => {
   const [whatsapp, setWhatsapp] = useState('');
   const [extraRequirements, setExtraRequirements] = useState('');
   const [additionalTravelers, setAdditionalTravelers] = useState([]);
+  const [copied, setCopied] = useState(false);
 
   const handleCountryChange = (typedCountry) => {
     setCountry(typedCountry);
@@ -605,8 +606,19 @@ const BookingCheckout = () => {
 
     try {
       const result = await addBooking(bookingDetails);
-      setConfirmedBooking(result);
+      const bookingData = result || { ...bookingDetails, id: 'ZNX-Pending' };
+      setConfirmedBooking(bookingData);
       setStep(2);
+
+      // Automatically launch email client pre-addressed to info@zenextravels.com
+      const mailtoUrl = getMailtoLink(bookingData);
+      setTimeout(() => {
+        try {
+          window.location.href = mailtoUrl;
+        } catch (err) {
+          console.log('Mail client invocation:', err);
+        }
+      }, 300);
     } catch (err) {
       console.error(err);
       alert('Something went wrong during submission. Please try again.');
@@ -615,48 +627,98 @@ const BookingCheckout = () => {
     }
   };
 
-  // Generate Email Prefill Mailto Link
-  const getMailtoLink = () => {
-    if (!confirmedBooking) return '#';
-    const subject = encodeURIComponent(`Booking Order - ${confirmedBooking.id} (${selectedItem.title})`);
-    
+  // Generate plain email text content
+  const getBookingEmailContent = (bookingObj = confirmedBooking) => {
+    const bookingId = bookingObj?.id || 'ZNX-Pending';
+    const itemTitle = selectedItem?.title || 'Tour / Trek Package';
+
     let travelersBody = '';
     if (additionalTravelers.length > 0) {
       travelersBody = '\nAdditional Travelers:\n' + additionalTravelers.map((t, idx) => {
-        let details = `- Traveler ${idx + 2}: ${t.firstName} ${t.lastName}`;
+        let details = `- Traveler ${idx + 2}: ${t.firstName || ''} ${t.lastName || ''}`;
         if (t.email) details += ` (Email: ${t.email})`;
         if (t.passportNumber) details += ` (Passport: ${t.passportNumber})`;
         return details;
       }).join('\n') + '\n';
     }
 
-    const body = encodeURIComponent(`Dear Zenex Travel,
+    let addonsBody = '';
+    if (activeAddons && activeAddons.length > 0) {
+      const selectedList = activeAddons
+        .map((addon, idx) => {
+          const qty = addonQuantities[idx] || 0;
+          if (qty === 0) return null;
+          return `- ${addon.name || addon.title} (x${qty}) - US$${addon.price * qty}`;
+        })
+        .filter(Boolean);
+      if (selectedList.length > 0) {
+        addonsBody = '\nSelected Add-ons:\n' + selectedList.join('\n') + '\n';
+      }
+    }
 
-Please find my booking order details below:
+    return `Dear Zenex Travels & Tours,
 
-Booking ID: ${confirmedBooking.id}
-Trip / Package: ${selectedItem.title}
-Trip Date: ${tripDate}
-Number of Travelers: ${travelersCount}
+Please find my booking order details submitted to info@zenextravels.com:
+
+==============================================
+BOOKING ORDER DETAILS
+==============================================
+Booking Reference ID: ${bookingId}
+Trip / Package: ${itemTitle}
+Start Date: ${tripDate || 'Flexible / To be confirmed'}
 Duration: ${durationText}
-
-Lead Traveler Details:
-- Name: ${firstName} ${lastName}
+Total Travelers: ${travelersCount} Person(s)
+${addonsBody}
+Lead Traveler Contact:
+- Full Name: ${firstName} ${lastName}
 - Email: ${email}
 ${passportNumber ? `- Passport Number: ${passportNumber}\n` : ''}- Country: ${country}
-- Phone: ${phone}
-- WhatsApp: ${whatsapp}
-${extraRequirements ? `- Special Requirements: ${extraRequirements}\n` : ''}${travelersBody}
-Payment Preference: ${paymentOption === 'deposit' ? 'Pay 20% Deposit Now' : 'Book Now, Pay Later (100% on Arrival)'}
-Total Price: US$${totalPrice}
-Initial Payment Due Now: US$${initialPaymentNow}
-Remaining Due Later: US$${duePayLater}
+- Phone Number: ${phone}
+- WhatsApp Number: ${whatsapp || phone}
+${extraRequirements ? `- Special Requests / Requirements: ${extraRequirements}\n` : ''}${travelersBody}
+Payment Breakdown:
+- Payment Preference: ${paymentOption === 'deposit' ? 'Pay 20% Deposit Online' : 'Book Now, Pay Later (100% on Arrival in Kathmandu)'}
+- Total Price: US$${totalPrice}
+- Payable on Arrival: US$${duePayLater}
 
-Please confirm my reservation as soon as possible.
+Please confirm my booking order as soon as possible.
 
 Warm regards,
-${firstName} ${lastName}`);
+${firstName} ${lastName}`;
+  };
+
+  // Generate Email Prefill Mailto Link for info@zenextravels.com
+  const getMailtoLink = (bookingObj = confirmedBooking) => {
+    const bookingId = bookingObj?.id || 'ZNX-Pending';
+    const itemTitle = selectedItem?.title || 'Tour / Trek Package';
+    const subject = encodeURIComponent(`[Booking Order #${bookingId}] ${itemTitle} - ${firstName} ${lastName}`);
+    const body = encodeURIComponent(getBookingEmailContent(bookingObj));
     return `mailto:info@zenextravels.com?subject=${subject}&body=${body}`;
+  };
+
+  // Generate WhatsApp Direct Pre-filled Link
+  const getWhatsAppLink = (bookingObj = confirmedBooking) => {
+    const bookingId = bookingObj?.id || 'ZNX-Pending';
+    const itemTitle = selectedItem?.title || 'Tour / Trek Package';
+    const msg = `Hi Zenex Travels! I have submitted a booking for *${itemTitle}* (Booking ID: *${bookingId}*).
+Traveler: ${firstName} ${lastName}
+Date: ${tripDate || 'Flexible'}
+Travelers: ${travelersCount} Person(s)
+Total: US$${totalPrice}
+Email: ${email}
+
+Please confirm my reservation. Thank you!`;
+    return `https://wa.me/9779767476521?text=${encodeURIComponent(msg)}`;
+  };
+
+  const handleCopyDetails = () => {
+    const text = getBookingEmailContent();
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 3000);
+    }).catch(err => {
+      console.log('Clipboard error:', err);
+    });
   };
 
   return (
@@ -1136,46 +1198,84 @@ ${firstName} ${lastName}`);
         ) : (
           /* Confirmation Success Page */
           <div className="max-w-3xl mx-auto bg-white rounded-[2rem] border border-slate-100 shadow-2xl p-8 md:p-12 text-center mt-8">
-            <div className="w-20 h-20 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-8 shadow-sm">
+            <div className="w-20 h-20 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
               <CheckCircle2 size={44} />
             </div>
 
-            <h2 className="text-3xl font-extrabold text-slate-800 mb-3 tracking-tight font-headline" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Booking Confirmed!
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4">
+              <Check size={14} className="stroke-[3]" /> Booking Submitted to info@zenextravels.com
+            </div>
+
+            <h2 className="text-3xl font-extrabold text-slate-800 mb-2 tracking-tight font-headline" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Booking Confirmed & Submitted!
             </h2>
-            <p className="text-slate-500 font-bold text-lg mb-2">Order ID: {confirmedBooking?.id}</p>
-            <p className="text-slate-500 font-medium max-w-lg mx-auto mb-8 leading-relaxed">
-              Thank you, {firstName}. Your reservation is complete. A booking confirmation mail has been simulated and saved to the backend database.
+            <p className="text-slate-500 font-bold text-lg mb-2">Order Reference ID: <span className="text-[#e53a24]">{confirmedBooking?.id}</span></p>
+            <p className="text-slate-600 font-medium max-w-lg mx-auto mb-6 leading-relaxed">
+              Thank you, <strong>{firstName}</strong>. Your booking for <strong>{selectedItem.title}</strong> has been received and routed to <strong>info@zenextravels.com</strong>.
             </p>
 
-            <div className="bg-[#f0f9ff] border border-blue-100 rounded-2xl p-6 mb-8 text-left space-y-4 max-w-xl mx-auto">
-              <h4 className="font-bold text-blue-900 text-base">Booking Summary</h4>
+            <div className="bg-[#f0f9ff] border border-blue-100 rounded-2xl p-6 mb-8 text-left space-y-3 max-w-xl mx-auto">
+              <div className="flex items-center justify-between border-b border-blue-200/60 pb-3">
+                <h4 className="font-bold text-blue-900 text-base">Booking Summary</h4>
+                <span className="text-xs font-bold px-2.5 py-1 bg-blue-100 text-blue-800 rounded-lg">Target: info@zenextravels.com</span>
+              </div>
               <ul className="text-sm font-semibold text-blue-800 space-y-2">
                 <li>• Package: {selectedItem.title}</li>
-                <li>• Date: {tripDate}</li>
-                <li>• Travelers: {travelersCount} persons</li>
-                <li>• Price Total: US${totalPrice}</li>
-                <li>• Paid Now: US${initialPaymentNow}</li>
-                <li>• Remaining balance: US${duePayLater} (payable on arrival)</li>
+                <li>• Start Date: {tripDate || 'Flexible / To be confirmed'}</li>
+                <li>• Travelers: {travelersCount} Person(s)</li>
+                <li>• Total Price: US${totalPrice}</li>
+                <li>• Payable on Arrival: US${duePayLater}</li>
+                <li>• Contact Email: {email}</li>
+                <li>• Contact Phone: {phone}</li>
               </ul>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-              {/* Mail Prefill Button */}
-              <a 
-                href={getMailtoLink()}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-blue-600 text-white font-extrabold text-sm hover:bg-blue-700 transition-colors shadow-md w-full sm:w-auto justify-center"
-              >
-                <Mail size={16} /> Send Order on Mail
-              </a>
+            {/* Email & Support Actions */}
+            <div className="max-w-xl mx-auto space-y-3 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* Mail Prefill Button */}
+                <a 
+                  href={getMailtoLink()}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-[#1e3a8a] text-white font-extrabold text-sm hover:bg-[#152a65] transition-all shadow-md hover:shadow-lg"
+                >
+                  <Mail size={18} /> Open in Email App
+                </a>
 
-              <Link 
-                to="/"
-                className="px-6 py-3.5 rounded-2xl bg-slate-100 text-slate-700 font-extrabold text-sm hover:bg-slate-200 transition-colors w-full sm:w-auto inline-block text-center"
+                {/* Copy Booking Details */}
+                <button 
+                  type="button"
+                  onClick={handleCopyDetails}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-slate-100 text-slate-800 font-extrabold text-sm hover:bg-slate-200 transition-all border border-slate-200"
+                >
+                  {copied ? <Check size={18} className="text-emerald-600" /> : <Copy size={18} />}
+                  {copied ? 'Copied Details! ✓' : 'Copy Email Text'}
+                </button>
+              </div>
+
+              {/* Instant WhatsApp Support */}
+              <a 
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-[#25D366] text-white font-extrabold text-sm hover:bg-[#20bd5a] transition-all shadow-md"
               >
-                Return to Homepage
-              </Link>
+                <MessageSquare size={18} /> Send via WhatsApp (+977 9767476521)
+              </a>
             </div>
+
+            <div className="text-xs text-slate-500 max-w-lg mx-auto mb-6 bg-slate-50 p-4 rounded-xl border border-slate-100">
+              Need immediate assistance? Our reservations desk is available 24/7 at{' '}
+              <a href="mailto:info@zenextravels.com" className="font-bold text-[#1e3a8a] underline">info@zenextravels.com</a>
+              {' '}or call us directly at{' '}
+              <a href="tel:+9779767476521" className="font-bold text-[#1e3a8a] underline">+977 9767476521</a>.
+            </div>
+
+            <Link 
+              to="/"
+              className="px-8 py-3 rounded-2xl bg-slate-200 text-slate-800 font-extrabold text-sm hover:bg-slate-300 transition-colors inline-block"
+            >
+              Return to Homepage
+            </Link>
           </div>
         )}
 

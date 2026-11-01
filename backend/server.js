@@ -6,6 +6,13 @@ const path = require('path');
 const multer = require('multer');
 require('dotenv').config();
 
+let nodemailer;
+try {
+    nodemailer = require('nodemailer');
+} catch (e) {
+    nodemailer = null;
+}
+
 const db = require('./db');
 
 const app = express();
@@ -472,6 +479,141 @@ app.get('/api/bookings', async (req, res) => {
     }
 });
 
+const sendBookingNotificationEmail = async (booking) => {
+    const adminEmail = process.env.MAIL_TO || 'info@zenextravels.com';
+    const customer = booking.customerDetails || {};
+    const customerName = `${customer.firstName || ''} ${customer.lastName || ''}`.trim() || 'Valued Traveler';
+    const customerEmail = customer.email;
+
+    console.log(`
+======================= NEW BOOKING TO: info@zenextravels.com =====================
+Booking ID: ${booking.id}
+Package / Trek: ${booking.itemName}
+Category: ${booking.itemCategory || 'Trek / Tour'}
+Start Date: ${booking.dates?.start || 'N/A'}
+Duration: ${booking.dates?.duration || 'N/A'}
+Travelers Count: ${booking.travelersCount || 1}
+Customer: ${customerName}
+Email: ${customerEmail}
+Phone: ${customer.phone || 'N/A'} | WhatsApp: ${customer.whatsapp || 'N/A'}
+Country: ${customer.country || 'N/A'}
+Passport: ${customer.passportNumber || 'N/A'}
+Payment Preference: ${booking.paymentOption === 'deposit' ? '20% Deposit Online' : 'Book Now, Pay Later (100% on Arrival)'}
+Total Price: ${booking.amount || 'N/A'}
+Submitted To Mail: ${adminEmail}
+===================================================================================
+    `);
+
+    if (!nodemailer) {
+        console.log('[EMAIL] Nodemailer not loaded. Logged booking details to server console.');
+        return { success: false, reason: 'nodemailer_missing' };
+    }
+
+    const host = process.env.SMTP_HOST;
+    const user = process.env.SMTP_USER;
+    const pass = process.env.SMTP_PASS;
+    const port = parseInt(process.env.SMTP_PORT || '465', 10);
+    const secure = process.env.SMTP_SECURE === 'true' || port === 465;
+
+    if (!host || !user || !pass) {
+        console.log(`[EMAIL NOTICE] Booking received and routed to ${adminEmail}. To enable direct SMTP email delivery from the server, configure SMTP_HOST, SMTP_USER, and SMTP_PASS in backend/.env`);
+        return { success: false, reason: 'smtp_not_configured' };
+    }
+
+    try {
+        const transporter = nodemailer.createTransport({
+            host,
+            port,
+            secure,
+            auth: { user, pass },
+            tls: { rejectUnauthorized: false }
+        });
+
+        const addonsHtml = Array.isArray(booking.addons) && booking.addons.length > 0
+            ? booking.addons.map(a => `<li>${a.name} (x${a.quantity}) - US$${a.price}</li>`).join('')
+            : '<li>None</li>';
+
+        const extraTravelersHtml = Array.isArray(booking.additionalTravelers) && booking.additionalTravelers.length > 0
+            ? booking.additionalTravelers.map((t, idx) => `<li>Traveler ${idx + 2}: <strong>${t.firstName || ''} ${t.lastName || ''}</strong> ${t.email ? `(${t.email})` : ''} ${t.passportNumber ? `[Passport: ${t.passportNumber}]` : ''}</li>`).join('')
+            : '<li>None</li>';
+
+        const emailHtml = `
+            <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 650px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #ffffff;">
+                <div style="background: #1e3a8a; color: #ffffff; padding: 24px; text-align: center;">
+                    <h1 style="margin: 0; font-size: 22px; font-weight: 800; letter-spacing: 0.5px;">ZENEX TRAVELS & TOURS</h1>
+                    <p style="margin: 6px 0 0 0; opacity: 0.9; font-size: 14px;">New Tour / Trek Package Booking Received</p>
+                </div>
+
+                <div style="padding: 24px; color: #334155; line-height: 1.6;">
+                    <div style="background: #f1f5f9; padding: 14px 18px; border-radius: 8px; margin-bottom: 20px;">
+                        <p style="margin: 0; font-size: 15px;"><strong>Booking Reference ID:</strong> <span style="color: #e53a24; font-weight: 800;">${booking.id}</span></p>
+                        <p style="margin: 4px 0 0 0; font-size: 13px; color: #64748b;">Submitted to: <strong>${adminEmail}</strong> on ${new Date().toLocaleString()}</p>
+                    </div>
+
+                    <h3 style="color: #0f172a; margin-top: 20px; margin-bottom: 10px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px;">Trip & Package Details</h3>
+                    <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 16px;">
+                        <tr><td style="padding: 6px 0; color: #64748b; width: 140px;"><strong>Package Name:</strong></td><td style="padding: 6px 0; font-weight: bold; color: #1e3a8a;">${booking.itemName}</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Category:</strong></td><td style="padding: 6px 0;">${booking.itemCategory || 'Trek / Tour'}</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Start Date:</strong></td><td style="padding: 6px 0;">${booking.dates?.start || 'Not specified'}</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Duration:</strong></td><td style="padding: 6px 0;">${booking.dates?.duration || 'N/A'}</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Travelers:</strong></td><td style="padding: 6px 0; font-weight: bold;">${booking.travelersCount || 1} Person(s)</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Total Price:</strong></td><td style="padding: 6px 0; font-weight: bold; color: #059669; font-size: 16px;">${booking.amount || 'N/A'}</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Payment Preference:</strong></td><td style="padding: 6px 0;">${booking.paymentOption === 'deposit' ? '20% Deposit Online' : 'Book Now, Pay Later (100% on Arrival in Kathmandu)'}</td></tr>
+                    </table>
+
+                    <h3 style="color: #0f172a; margin-top: 24px; margin-bottom: 10px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px;">Lead Traveler Information</h3>
+                    <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 16px;">
+                        <tr><td style="padding: 6px 0; color: #64748b; width: 140px;"><strong>Full Name:</strong></td><td style="padding: 6px 0; font-weight: bold;">${customerName}</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Email:</strong></td><td style="padding: 6px 0;"><a href="mailto:${customerEmail}" style="color: #2563eb;">${customerEmail || 'N/A'}</a></td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Phone:</strong></td><td style="padding: 6px 0;">${customer.phone || 'N/A'}</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>WhatsApp:</strong></td><td style="padding: 6px 0;">${customer.whatsapp || 'N/A'}</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Country:</strong></td><td style="padding: 6px 0;">${customer.country || 'N/A'}</td></tr>
+                        <tr><td style="padding: 6px 0; color: #64748b;"><strong>Passport No:</strong></td><td style="padding: 6px 0;">${customer.passportNumber || 'N/A'}</td></tr>
+                        ${customer.extraRequirements ? `<tr><td style="padding: 6px 0; color: #64748b;"><strong>Requirements:</strong></td><td style="padding: 6px 0;">${customer.extraRequirements}</td></tr>` : ''}
+                    </table>
+
+                    <h3 style="color: #0f172a; margin-top: 24px; margin-bottom: 10px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px;">Add-ons</h3>
+                    <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
+                        ${addonsHtml}
+                    </ul>
+
+                    <h3 style="color: #0f172a; margin-top: 24px; margin-bottom: 10px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px;">Additional Travelers</h3>
+                    <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
+                        ${extraTravelersHtml}
+                    </ul>
+                </div>
+
+                <div style="background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 16px 24px; text-align: center; font-size: 12px; color: #64748b;">
+                    Zenex Travels & Tours | Gairidhara-02, Kathmandu, Nepal | <a href="mailto:info@zenextravels.com" style="color: #2563eb;">info@zenextravels.com</a>
+                </div>
+            </div>
+        `;
+
+        await transporter.sendMail({
+            from: process.env.SMTP_FROM || `"Zenex Travels Booking" <${user}>`,
+            to: adminEmail,
+            replyTo: customerEmail || adminEmail,
+            subject: `[New Booking] #${booking.id} - ${booking.itemName} (${customerName})`,
+            html: emailHtml
+        });
+        console.log(`[EMAIL] Successfully sent booking notification email to ${adminEmail}`);
+
+        if (customerEmail) {
+            await transporter.sendMail({
+                from: process.env.SMTP_FROM || `"Zenex Travels & Tours" <${user}>`,
+                to: customerEmail,
+                subject: `Booking Order Received #${booking.id} - ${booking.itemName} | Zenex Travels`,
+                html: emailHtml
+            }).catch(e => console.log('[EMAIL] Customer copy notice:', e.message));
+        }
+
+        return { success: true };
+    } catch (err) {
+        console.error('[EMAIL ERROR]', err.message);
+        return { success: false, error: err.message };
+    }
+};
+
 app.post('/api/bookings', async (req, res) => {
     try {
         const bookings = await db.getAll('bookings');
@@ -498,28 +640,12 @@ app.post('/api/bookings', async (req, res) => {
 
         await db.save('bookings', booking);
 
-        console.log(`
-======================= CONFIRMATION EMAIL =====================
-To: ${booking.customerDetails?.email}
-Subject: Booking Confirmation - Reference ID: ${booking.id}
+        // Send booking email notification to info@zenextravels.com
+        sendBookingNotificationEmail(booking).catch(err => {
+            console.error('[BOOKING EMAIL ASYNC ERROR]', err);
+        });
 
-Dear ${booking.customerDetails?.firstName} ${booking.customerDetails?.lastName},
-
-Thank you for choosing Zenex Travel! Your booking has been received.
-
-Booking Reference ID: ${booking.id}
-Status: Pending Confirmation
-Item: ${booking.itemName}
-Trip Date: ${booking.dates?.start}
-Number of Travelers: ${booking.travelersCount || 1}
-Payment Method: ${booking.paymentOption === 'deposit' ? '20% Deposit Online' : 'Book Now Pay Later'}
-Total Price: ${booking.amount}
-
-We look forward to welcoming you to Kathmandu!
-============================================================
-        `);
-
-        res.json({ success: true, booking });
+        res.json({ success: true, booking, submittedTo: 'info@zenextravels.com' });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
