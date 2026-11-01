@@ -33592,7 +33592,60 @@
     }
   ],
   "destinations": [],
-  "bookings": [],
+  "bookings": [
+    {
+      "itemName": "4 Days Kathmandu & Chandragiri Hills Tour",
+      "dates": {
+        "start": "2026-11-15",
+        "end": "2026-11-15"
+      },
+      "travelersCount": 1,
+      "paymentOption": "pay-later",
+      "amount": "US$350",
+      "customer": "Saroj Bhagat",
+      "selectedAddons": [],
+      "customerDetails": {
+        "firstName": "Saroj",
+        "lastName": "Bhagat",
+        "email": "sarojbhagat666@gmail.com",
+        "passportNumber": "",
+        "country": "Nepal",
+        "phone": "+9779815769007",
+        "whatsapp": "1234567890",
+        "extraRequirements": "kjklmkm"
+      },
+      "additionalTravelers": [],
+      "id": "ZNX - 001",
+      "status": "pending",
+      "createdAt": "2026-11-01T20:25:20.386Z"
+    },
+    {
+      "itemName": "4 Days Kathmandu & Chandragiri Hills Tour",
+      "dates": {
+        "start": "2026-11-15",
+        "end": "2026-11-15"
+      },
+      "travelersCount": 1,
+      "paymentOption": "pay-later",
+      "amount": "US$350",
+      "customer": "Saroj Bhagat",
+      "selectedAddons": [],
+      "customerDetails": {
+        "firstName": "Saroj",
+        "lastName": "Bhagat",
+        "email": "sarojbhagat666@gmail.com",
+        "passportNumber": "",
+        "country": "Nepal",
+        "phone": "+9779815769007",
+        "whatsapp": "1234567890",
+        "extraRequirements": "0ipokoko"
+      },
+      "additionalTravelers": [],
+      "id": "ZNX - 002",
+      "status": "pending",
+      "createdAt": "2026-11-01T20:27:30.058Z"
+    }
+  ],
   "drivers": [],
   "gallery": [],
   "regions": [
