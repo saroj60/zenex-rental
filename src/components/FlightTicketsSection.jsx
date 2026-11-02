@@ -121,7 +121,7 @@ const FlightTicketsSection = () => {
   };
 
   return (
-    <section className="w-full py-16 md:py-20 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-y border-slate-100 overflow-hidden">
+    <section id="flight-tickets" className="w-full py-16 md:py-20 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-y border-slate-100 overflow-hidden scroll-mt-16 md:scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
         {/* Section Header */}

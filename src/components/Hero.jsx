@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Phone, ChevronDown, Compass, Mountain } from 'lucide-react';
+import { ArrowRight, Phone, ChevronDown, Compass, Mountain, Plane } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import SearchWidget from './SearchWidget';
@@ -140,7 +140,7 @@ const Hero = () => {
             Premium Travels, Tours &<br className="hidden sm:block"/> Car Rental in Nepal
           </motion.h1>
           
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-start gap-2.5 mb-5 md:mb-6 w-full">
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-start gap-2.5 mb-5 md:mb-6 w-full flex-wrap">
             {/* Explore Packages Dropdown */}
             <div className="relative w-full sm:w-auto" ref={dropdownRef}>
               <button
@@ -212,7 +212,20 @@ const Hero = () => {
                 )}
               </AnimatePresence>
             </div>
-            <Link to="/vehicles" className="w-full sm:w-auto text-white border border-white/60 px-4 py-1.5 rounded-lg font-bold flex items-center justify-center gap-1.5 hover:bg-white/10 transition-colors text-[11px] md:text-xs backdrop-blur-sm">
+            <a 
+              href="#flight-tickets"
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.getElementById('flight-tickets');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
+              className="w-full sm:w-auto text-white border border-white/60 px-4 py-1.5 rounded-lg font-bold flex items-center justify-center gap-1.5 hover:bg-white/10 hover:border-white transition-all text-[11px] md:text-xs backdrop-blur-sm cursor-pointer shadow-xs"
+            >
+              <Plane size={13} className="text-sky-300" /> Book Flight
+            </a>
+            <Link to="/vehicles" className="w-full sm:w-auto text-white border border-white/60 px-4 py-1.5 rounded-lg font-bold flex items-center justify-center gap-1.5 hover:bg-white/10 hover:border-white transition-colors text-[11px] md:text-xs backdrop-blur-sm">
               Rent a Car
             </Link>
             <a href="tel:+9779767476521" className="w-full sm:w-auto text-white px-4 py-2 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-colors shadow-md bg-[#e53a24] hover:bg-[#d04b08] text-[11px] md:text-xs">
