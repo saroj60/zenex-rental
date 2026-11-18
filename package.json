@@ -1,0 +1,11 @@
+{
+  "name": "nepal-car-rental-monorepo",
+  "version": "1.0.0",
+  "description": "Nepal Car Rental - Full Stack Web & Mobile Application",
+  "scripts": {
+    "seed": "cd server && npm run seed",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build"
+  }
+}
