@@ -22,3 +22,8 @@ yarn-error.log*
 .idea/
 .DS_Store
 Thumbs.db
+
+# Uploads
+server/uploads/
+uploads/
+client/uploads/
