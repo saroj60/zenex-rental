@@ -94,6 +94,11 @@ function readLocalDB() {
 function writeLocalDB(data) {
     try {
         fs.writeFileSync(dbJsonPath, JSON.stringify(data, null, 2), 'utf8');
+        // Synchronize with public/database.json for static frontend fallback
+        const publicDbPath = path.join(__dirname, '..', '..', 'public', 'database.json');
+        if (fs.existsSync(path.dirname(publicDbPath))) {
+            fs.writeFileSync(publicDbPath, JSON.stringify(data, null, 2), 'utf8');
+        }
     } catch (e) {
         console.error('[DB] Local JSON write error:', e);
     }

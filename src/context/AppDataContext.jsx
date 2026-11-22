@@ -729,22 +729,34 @@ export const AppDataProvider = ({ children }) => {
 
   // CRUD for Bookings
   const addBooking = async (booking) => {
-    const res = await fetch(`${API_BASE}/api/bookings`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        customer: booking.customer,
-        type: booking.type,
-        vehicle: booking.vehicle,
-        dates: booking.dates,
-        amount: booking.amount,
-        status: booking.status,
-        date: booking.date || new Date().toISOString().split('T')[0]
-      })
-    });
-    const data = await res.json();
-    if (data.success) {
-      setBookings(prev => [...prev, data.booking]);
+    try {
+      const res = await fetch(`${API_BASE}/api/bookings`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(booking)
+      });
+      const data = await res.json();
+      if (data.success && data.booking) {
+        setBookings(prev => [data.booking, ...prev.filter(b => b.id !== data.booking.id)]);
+        return data.booking;
+      }
+    } catch (err) {
+      console.error('Error adding booking in AppDataContext:', err);
+    }
+  };
+
+  const refreshBookings = async () => {
+    try {
+      const res = await fetch(`${API_BASE}/api/bookings`);
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data)) {
+          setBookings(data);
+          return data;
+        }
+      }
+    } catch (err) {
+      console.error('Error refreshing bookings:', err);
     }
   };
   const updateBooking = async (id, updated) => {
@@ -863,7 +875,7 @@ export const AppDataProvider = ({ children }) => {
       destinations, addDestination, updateDestination, deleteDestination,
       packages, addPackage, updatePackage, deletePackage,
       treks, addTrek, updateTrek, deleteTrek,
-      bookings, addBooking, updateBooking, deleteBooking,
+      bookings, addBooking, updateBooking, deleteBooking, refreshBookings,
       drivers, addDriver, updateDriver, deleteDriver,
       galleryImages, addGalleryImage, updateGalleryImage, deleteGalleryImage,
       tourTrips, addTourTrip, updateTourTrip, deleteTourTrip,

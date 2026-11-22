@@ -309,7 +309,7 @@ const BookingCheckout = () => {
   const pkgId = searchParams.get('pkg') || '';
   const carId = searchParams.get('car') || '';
   
-  const { vehicles, packages, treks, tourTrips } = useAppData();
+  const { vehicles, packages, treks, tourTrips, addBooking: appAddBooking, refreshBookings } = useAppData();
   const { addBooking } = useBooking();
   const navigate = useNavigate();
 
@@ -585,11 +585,15 @@ const BookingCheckout = () => {
 
     const bookingDetails = {
       itemName: selectedItem.title,
+      vehicle: selectedItem.title,
+      type: (matchedTrek ? 'Trek' : (pkgId ? 'Tour' : 'Vehicle')),
+      itemCategory: (pkgId ? (matchedTrek ? 'Trek' : 'Tour Package') : 'Vehicle Rental'),
       dates: { start: tripDate, end: tripDate },
       travelersCount,
       paymentOption,
       amount: `US$${totalPrice}`,
-      customer: `${firstName} ${lastName}`,
+      customer: `${firstName} ${lastName}`.trim(),
+      status: 'Pending',
       selectedAddons: selectedAddonsList,
       customerDetails: {
         firstName,
@@ -605,7 +609,13 @@ const BookingCheckout = () => {
     };
 
     try {
-      const result = await addBooking(bookingDetails);
+      let result = null;
+      if (appAddBooking) {
+        result = await appAddBooking(bookingDetails);
+      }
+      if (!result && addBooking) {
+        result = await addBooking(bookingDetails);
+      }
       const bookingData = result || { ...bookingDetails, id: 'ZNX-Pending' };
       setConfirmedBooking(bookingData);
       setStep(2);

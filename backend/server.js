@@ -631,10 +631,21 @@ app.post('/api/bookings', async (req, res) => {
         const nextNum = maxNum + 1;
         const bookingId = `ZNX - ${String(nextNum).padStart(3, '0')}`;
 
+        const customerName = req.body.customer || (req.body.customerDetails 
+            ? `${req.body.customerDetails.firstName || ''} ${req.body.customerDetails.lastName || ''}`.trim() 
+            : '') || 'Guest';
+
+        const itemName = req.body.itemName || req.body.vehicle || 'Tour / Trek Package';
+        const itemType = req.body.type || req.body.itemCategory || (req.body.itemId?.includes('trek') ? 'Trek' : 'Tour');
+
         const booking = {
             ...req.body,
             id: bookingId,
-            status: req.body.status || 'pending',
+            customer: customerName,
+            itemName: itemName,
+            vehicle: itemName,
+            type: itemType,
+            status: req.body.status || 'Pending',
             createdAt: req.body.createdAt || new Date().toISOString()
         };
 

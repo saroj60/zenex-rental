@@ -1,6 +1,6 @@
 -- ============================================================
 -- Zenex Travel - Full MySQL Database Export
--- Generated: 2026-11-01T20:49:14.003Z
+-- Generated: 2026-11-22T22:16:45.081Z
 -- Database: u786674613_zenex_user
 -- ============================================================
 
@@ -359,9 +359,10 @@ CREATE TABLE IF NOT EXISTS `bookings` (
   INDEX `idx_category` (`category`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping 2 records for `bookings`
+-- Dumping 3 records for `bookings`
 INSERT INTO `bookings` (`id`, `title`, `slug`, `category`, `data`) VALUES ('ZNX - 001', NULL, NULL, NULL, '{\"itemName\":\"4 Days Kathmandu & Chandragiri Hills Tour\",\"dates\":{\"start\":\"2026-11-15\",\"end\":\"2026-11-15\"},\"travelersCount\":1,\"paymentOption\":\"pay-later\",\"amount\":\"US$350\",\"customer\":\"Saroj Bhagat\",\"selectedAddons\":[],\"customerDetails\":{\"firstName\":\"Saroj\",\"lastName\":\"Bhagat\",\"email\":\"sarojbhagat666@gmail.com\",\"passportNumber\":\"\",\"country\":\"Nepal\",\"phone\":\"+9779815769007\",\"whatsapp\":\"1234567890\",\"extraRequirements\":\"kjklmkm\"},\"additionalTravelers\":[],\"id\":\"ZNX - 001\",\"status\":\"pending\",\"createdAt\":\"2026-11-01T20:25:20.386Z\"}') ON DUPLICATE KEY UPDATE `title` = VALUES(`title`), `slug` = VALUES(`slug`), `category` = VALUES(`category`), `data` = VALUES(`data`), `updated_at` = CURRENT_TIMESTAMP;
 INSERT INTO `bookings` (`id`, `title`, `slug`, `category`, `data`) VALUES ('ZNX - 002', NULL, NULL, NULL, '{\"itemName\":\"4 Days Kathmandu & Chandragiri Hills Tour\",\"dates\":{\"start\":\"2026-11-15\",\"end\":\"2026-11-15\"},\"travelersCount\":1,\"paymentOption\":\"pay-later\",\"amount\":\"US$350\",\"customer\":\"Saroj Bhagat\",\"selectedAddons\":[],\"customerDetails\":{\"firstName\":\"Saroj\",\"lastName\":\"Bhagat\",\"email\":\"sarojbhagat666@gmail.com\",\"passportNumber\":\"\",\"country\":\"Nepal\",\"phone\":\"+9779815769007\",\"whatsapp\":\"1234567890\",\"extraRequirements\":\"0ipokoko\"},\"additionalTravelers\":[],\"id\":\"ZNX - 002\",\"status\":\"pending\",\"createdAt\":\"2026-11-01T20:27:30.058Z\"}') ON DUPLICATE KEY UPDATE `title` = VALUES(`title`), `slug` = VALUES(`slug`), `category` = VALUES(`category`), `data` = VALUES(`data`), `updated_at` = CURRENT_TIMESTAMP;
+INSERT INTO `bookings` (`id`, `title`, `slug`, `category`, `data`) VALUES ('ZNX - 003', NULL, NULL, 'Tour', '{\"itemName\":\"Annapurna Base Camp Trek - 10 Days\",\"dates\":{\"start\":\"2026-12-01\",\"end\":\"2026-12-10\"},\"travelersCount\":2,\"paymentOption\":\"pay-later\",\"amount\":\"US$1,700\",\"customer\":\"Alex Morgan\",\"customerDetails\":{\"firstName\":\"Alex\",\"lastName\":\"Morgan\",\"email\":\"alex.morgan@example.com\",\"phone\":\"+1 555-432-1098\",\"country\":\"USA\",\"extraRequirements\":\"Vegetarian meals on trek\"},\"id\":\"ZNX - 003\",\"vehicle\":\"Annapurna Base Camp Trek - 10 Days\",\"type\":\"Tour\",\"status\":\"Pending\",\"createdAt\":\"2026-11-22T22:16:13.556Z\"}') ON DUPLICATE KEY UPDATE `title` = VALUES(`title`), `slug` = VALUES(`slug`), `category` = VALUES(`category`), `data` = VALUES(`data`), `updated_at` = CURRENT_TIMESTAMP;
 
 -- ------------------------------------------------------------
 -- Table structure for `testimonials`

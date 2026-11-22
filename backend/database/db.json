@@ -33644,6 +33644,30 @@
       "id": "ZNX - 002",
       "status": "pending",
       "createdAt": "2026-11-01T20:27:30.058Z"
+    },
+    {
+      "itemName": "Annapurna Base Camp Trek - 10 Days",
+      "dates": {
+        "start": "2026-12-01",
+        "end": "2026-12-10"
+      },
+      "travelersCount": 2,
+      "paymentOption": "pay-later",
+      "amount": "US$1,700",
+      "customer": "Alex Morgan",
+      "customerDetails": {
+        "firstName": "Alex",
+        "lastName": "Morgan",
+        "email": "alex.morgan@example.com",
+        "phone": "+1 555-432-1098",
+        "country": "USA",
+        "extraRequirements": "Vegetarian meals on trek"
+      },
+      "id": "ZNX - 003",
+      "vehicle": "Annapurna Base Camp Trek - 10 Days",
+      "type": "Tour",
+      "status": "Pending",
+      "createdAt": "2026-11-22T22:16:13.556Z"
     }
   ],
   "drivers": [],
