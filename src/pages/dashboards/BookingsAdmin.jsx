@@ -297,14 +297,26 @@ const BookingsAdmin = () => {
 
                       {/* Status */}
                       <td className="px-5 py-4 whitespace-nowrap">
-                        <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                          statusNormalized === 'confirmed' ? 'bg-green-100 text-green-700' : 
-                          statusNormalized === 'pending' ? 'bg-amber-100 text-amber-800' :
-                          statusNormalized === 'completed' ? 'bg-blue-100 text-blue-700' :
-                          statusNormalized === 'cancelled' ? 'bg-red-100 text-red-700' : 'bg-slate-100 text-slate-700'
-                        }`}>
-                          {b.status || 'Pending'}
-                        </span>
+                        <div className="flex items-center gap-2">
+                          <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${
+                            statusNormalized === 'confirmed' ? 'bg-green-100 text-green-700' : 
+                            statusNormalized === 'pending' ? 'bg-amber-100 text-amber-800' :
+                            statusNormalized === 'completed' ? 'bg-blue-100 text-blue-700' :
+                            statusNormalized === 'cancelled' ? 'bg-red-100 text-red-700' : 'bg-slate-100 text-slate-700'
+                          }`}>
+                            {b.status || 'Pending'}
+                          </span>
+
+                          {statusNormalized === 'pending' && (
+                            <button
+                              onClick={() => updateBooking(b.id, { ...b, status: 'Confirmed' })}
+                              className="px-2 py-0.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded text-[10px] font-bold transition flex items-center gap-1 shadow-xs cursor-pointer"
+                              title="Click to confirm booking"
+                            >
+                              <CheckCircle2 size={11} /> Confirm
+                            </button>
+                          )}
+                        </div>
                       </td>
 
                       {/* Actions */}
@@ -446,11 +458,28 @@ const BookingsAdmin = () => {
               )}
             </div>
 
-            <div className="p-4 border-t border-gray-100 shrink-0 flex justify-end gap-2 bg-slate-50">
+            <div className="p-4 border-t border-gray-100 shrink-0 flex justify-between items-center gap-2 bg-slate-50">
+              {String(viewDetailsBooking.status || 'pending').toLowerCase() === 'pending' ? (
+                <button 
+                  type="button" 
+                  onClick={() => {
+                    updateBooking(viewDetailsBooking.id, { ...viewDetailsBooking, status: 'Confirmed' });
+                    setViewDetailsBooking({ ...viewDetailsBooking, status: 'Confirmed' });
+                  }} 
+                  className="px-4 py-2 bg-emerald-600 text-white rounded-xl text-xs font-bold hover:bg-emerald-700 transition flex items-center gap-1.5 shadow-xs cursor-pointer"
+                >
+                  <CheckCircle2 size={15} /> Confirm This Booking
+                </button>
+              ) : (
+                <span className="text-xs font-bold text-emerald-700 flex items-center gap-1.5">
+                  <CheckCircle2 size={15} /> Booking Confirmed
+                </span>
+              )}
+
               <button 
                 type="button" 
                 onClick={() => setViewDetailsBooking(null)} 
-                className="px-5 py-2.5 bg-slate-200 text-slate-700 rounded-xl text-xs font-bold hover:bg-slate-300 transition"
+                className="px-5 py-2.5 bg-slate-200 text-slate-700 rounded-xl text-xs font-bold hover:bg-slate-300 transition cursor-pointer"
               >
                 Close
               </button>
