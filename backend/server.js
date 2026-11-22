@@ -614,6 +614,99 @@ Submitted To Mail: ${adminEmail}
     }
 };
 
+const sendBookingStatusUpdateEmail = async (booking, newStatus) => {
+    const adminEmail = process.env.MAIL_TO || 'info@zenextravels.com';
+    const customer = booking.customerDetails || {};
+    const customerName = `${customer.firstName || ''} ${customer.lastName || ''}`.trim() || booking.customer || 'Valued Traveler';
+    const customerEmail = customer.email;
+
+    console.log(`[BOOKING STATUS UPDATE] Booking #${booking.id} status changed to "${newStatus}" for ${customerName} (${customerEmail || 'no email'})`);
+
+    if (!nodemailer || !customerEmail) return { success: false, reason: 'no_customer_email_or_mailer' };
+
+    const host = process.env.SMTP_HOST;
+    const user = process.env.SMTP_USER;
+    const pass = process.env.SMTP_PASS;
+    const port = parseInt(process.env.SMTP_PORT || '465', 10);
+    const secure = process.env.SMTP_SECURE === 'true' || port === 465;
+
+    if (!host || !user || !pass) {
+        console.log(`[EMAIL NOTICE] Cannot send status update email without SMTP configuration in backend/.env`);
+        return { success: false, reason: 'smtp_not_configured' };
+    }
+
+    try {
+        const transporter = nodemailer.createTransport({
+            host,
+            port,
+            secure,
+            auth: { user, pass },
+            tls: { rejectUnauthorized: false }
+        });
+
+        const isConfirmed = String(newStatus).toLowerCase() === 'confirmed';
+
+        const emailHtml = `
+            <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 650px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #ffffff;">
+                <div style="background: ${isConfirmed ? '#059669' : '#1e3a8a'}; color: #ffffff; padding: 24px; text-align: center;">
+                    <h1 style="margin: 0; font-size: 22px; font-weight: 800; letter-spacing: 0.5px;">ZENEX TRAVELS & TOURS</h1>
+                    <p style="margin: 6px 0 0 0; opacity: 0.95; font-size: 15px; font-weight: 600;">
+                        ${isConfirmed ? '✓ Your Booking Has Been Confirmed!' : `Booking Status Update: ${newStatus}`}
+                    </p>
+                </div>
+
+                <div style="padding: 24px; color: #334155; line-height: 1.6;">
+                    <p style="font-size: 16px; margin-top: 0;">Dear <strong>${customerName}</strong>,</p>
+                    <p>
+                        ${isConfirmed 
+                            ? `Great news! Your booking for <strong>${booking.itemName || booking.vehicle || 'Tour / Trek'}</strong> has been <strong>officially confirmed</strong> by our reservations team.`
+                            : `The status of your booking has been updated to: <strong>${newStatus}</strong>.`}
+                    </p>
+
+                    <div style="background: #f8fafc; border-left: 4px solid ${isConfirmed ? '#059669' : '#2563eb'}; padding: 16px; border-radius: 6px; margin: 20px 0;">
+                        <p style="margin: 0 0 8px 0; font-size: 15px;"><strong>Booking Reference:</strong> <span style="color: #e53a24; font-weight: 800;">${booking.id}</span></p>
+                        <p style="margin: 0 0 8px 0; font-size: 14px;"><strong>Package / Trip:</strong> ${booking.itemName || booking.vehicle || 'N/A'}</p>
+                        <p style="margin: 0 0 8px 0; font-size: 14px;"><strong>Start Date:</strong> ${booking.dates?.start || 'To be coordinated'}</p>
+                        <p style="margin: 0 0 8px 0; font-size: 14px;"><strong>Travelers:</strong> ${booking.travelersCount || 1} Person(s)</p>
+                        <p style="margin: 0; font-size: 14px;"><strong>Total Price:</strong> <span style="color: #059669; font-weight: bold;">${booking.amount || 'N/A'}</span></p>
+                    </div>
+
+                    ${isConfirmed ? `
+                        <h4 style="color: #0f172a; margin-top: 20px; margin-bottom: 8px;">What Happens Next?</h4>
+                        <ol style="padding-left: 20px; font-size: 14px; color: #475569; line-height: 1.7;">
+                            <li>Our tour manager will coordinate with you via WhatsApp or phone (${customer.phone || customer.whatsapp || 'your registered number'}) to arrange airport pickup and briefing.</li>
+                            <li>For treks requiring national park and TIMS permits, please keep your passport handy upon arrival in Kathmandu.</li>
+                            <li>If you selected <em>Pay Later</em>, the balance can be settled at our Kathmandu office via cash (USD/EUR/NPR) or card.</li>
+                        </ol>
+                    ` : ''}
+
+                    <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 14px; margin-top: 20px; font-size: 13px; color: #1e40af;">
+                        Need assistance or wish to customize your itinerary? Contact us anytime at <a href="mailto:info@zenextravels.com" style="font-weight: bold; color: #1e3a8a;">info@zenextravels.com</a> or WhatsApp <a href="https://wa.me/9779767476521" style="font-weight: bold; color: #1e3a8a;">+977 9767476521</a>.
+                    </div>
+                </div>
+
+                <div style="background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 16px 24px; text-align: center; font-size: 12px; color: #64748b;">
+                    Zenex Travels & Tours | Gairidhara-02, Kathmandu, Nepal | <a href="mailto:info@zenextravels.com" style="color: #2563eb;">info@zenextravels.com</a>
+                </div>
+            </div>
+        `;
+
+        await transporter.sendMail({
+            from: process.env.SMTP_FROM || `"Zenex Travels & Tours" <${user}>`,
+            to: customerEmail,
+            cc: adminEmail,
+            subject: `[Booking Confirmed] #${booking.id} - ${booking.itemName || 'Your Trip'} | Zenex Travels`,
+            html: emailHtml
+        });
+
+        console.log(`[EMAIL] Confirmation email successfully sent to ${customerEmail}`);
+        return { success: true };
+    } catch (err) {
+        console.error('[EMAIL ERROR sendBookingStatusUpdateEmail]', err.message);
+        return { success: false, error: err.message };
+    }
+};
+
 app.post('/api/bookings', async (req, res) => {
     try {
         const bookings = await db.getAll('bookings');
@@ -666,8 +759,16 @@ app.put('/api/bookings/:id', async (req, res) => {
     try {
         const existing = await db.getById('bookings', req.params.id);
         if (existing) {
+            const statusChanged = req.body.status && String(req.body.status).toLowerCase() !== String(existing.status || '').toLowerCase();
             const updated = { ...existing, ...req.body, id: req.params.id };
             await db.save('bookings', updated);
+
+            if (statusChanged && String(req.body.status).toLowerCase() === 'confirmed') {
+                sendBookingStatusUpdateEmail(updated, req.body.status).catch(err => {
+                    console.error('[STATUS EMAIL ERROR]', err);
+                });
+            }
+
             res.json({ success: true, booking: updated });
         } else {
             res.status(404).json({ success: false, message: 'Booking not found' });

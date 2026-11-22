@@ -458,23 +458,35 @@ const BookingsAdmin = () => {
               )}
             </div>
 
-            <div className="p-4 border-t border-gray-100 shrink-0 flex justify-between items-center gap-2 bg-slate-50">
-              {String(viewDetailsBooking.status || 'pending').toLowerCase() === 'pending' ? (
-                <button 
-                  type="button" 
-                  onClick={() => {
-                    updateBooking(viewDetailsBooking.id, { ...viewDetailsBooking, status: 'Confirmed' });
-                    setViewDetailsBooking({ ...viewDetailsBooking, status: 'Confirmed' });
-                  }} 
-                  className="px-4 py-2 bg-emerald-600 text-white rounded-xl text-xs font-bold hover:bg-emerald-700 transition flex items-center gap-1.5 shadow-xs cursor-pointer"
-                >
-                  <CheckCircle2 size={15} /> Confirm This Booking
-                </button>
-              ) : (
-                <span className="text-xs font-bold text-emerald-700 flex items-center gap-1.5">
-                  <CheckCircle2 size={15} /> Booking Confirmed
-                </span>
-              )}
+            <div className="p-4 border-t border-gray-100 shrink-0 flex flex-wrap justify-between items-center gap-2 bg-slate-50">
+              <div className="flex items-center gap-2">
+                {String(viewDetailsBooking.status || 'pending').toLowerCase() === 'pending' ? (
+                  <button 
+                    type="button" 
+                    onClick={() => {
+                      updateBooking(viewDetailsBooking.id, { ...viewDetailsBooking, status: 'Confirmed' });
+                      setViewDetailsBooking({ ...viewDetailsBooking, status: 'Confirmed' });
+                    }} 
+                    className="px-4 py-2 bg-emerald-600 text-white rounded-xl text-xs font-bold hover:bg-emerald-700 transition flex items-center gap-1.5 shadow-xs cursor-pointer"
+                  >
+                    <CheckCircle2 size={15} /> Confirm This Booking
+                  </button>
+                ) : (
+                  <span className="text-xs font-bold text-emerald-700 flex items-center gap-1.5">
+                    <CheckCircle2 size={15} /> Booking Confirmed
+                  </span>
+                )}
+
+                {getCustomerEmail(viewDetailsBooking) && (
+                  <a
+                    href={`mailto:${getCustomerEmail(viewDetailsBooking)}?subject=${encodeURIComponent(`[Confirmed] Booking Order #${viewDetailsBooking.id} - ${getItemName(viewDetailsBooking)} | Zenex Travels`)}&body=${encodeURIComponent(`Dear ${getCustomerName(viewDetailsBooking)},\n\nWe are pleased to confirm your booking #${viewDetailsBooking.id} for "${getItemName(viewDetailsBooking)}".\n\nTrip Dates: ${formatBookingDates(viewDetailsBooking.dates)}\nTravelers: ${viewDetailsBooking.travelersCount || 1} person(s)\nTotal Price: ${viewDetailsBooking.amount || 'N/A'}\nPayment Preference: ${viewDetailsBooking.paymentOption || 'Pay on Arrival'}\n\nOur operations desk will contact you regarding airport pickup and tour schedule.\n\nWarm regards,\nZenex Travels & Tours\ninfo@zenextravels.com | +977 9767476521`)}`}
+                    className="px-3.5 py-2 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl text-xs font-bold hover:bg-blue-100 transition flex items-center gap-1.5 cursor-pointer"
+                    title="Send official confirmation email voucher to customer"
+                  >
+                    <Mail size={14} /> Send Email Voucher
+                  </a>
+                )}
+              </div>
 
               <button 
                 type="button" 
