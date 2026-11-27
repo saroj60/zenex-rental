@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
-import { Search, Filter, CalendarCheck, Trash2, Plus, Edit2, X, RefreshCw, Eye, User, Mail, Phone, Globe, Shield, CheckCircle2, Clock, AlertCircle } from 'lucide-react';
+import { Search, Filter, CalendarCheck, Trash2, Plus, Edit2, X, RefreshCw, Eye, User, Mail, Phone, Globe, Shield, CheckCircle2, Clock, AlertCircle, Send, MessageCircle } from 'lucide-react';
 import { useCurrency } from '../../context/CurrencyContext';
 import { useAppData } from '../../context/AppDataContext';
+import {
+  buildConfirmationMailto,
+  buildConfirmationWhatsAppUrl,
+  getBookingCustomerEmail
+} from '../../utils/bookingConfirmation';
 
 const BookingsAdmin = () => {
   const { formatPrice } = useCurrency();
-  const { bookings = [], deleteBooking, addBooking, updateBooking, refreshBookings, vehicles = [], packages = [], treks = [] } = useAppData();
+  const { bookings = [], deleteBooking, addBooking, updateBooking, refreshBookings, sendBookingConfirmation, vehicles = [], packages = [], treks = [] } = useAppData();
   const [searchTerm, setSearchTerm] = useState('');
   const [filterType, setFilterType] = useState('All');
   const [filterStatus, setFilterStatus] = useState('All');
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [sendingId, setSendingId] = useState(null);
+  const [confirmationNotice, setConfirmationNotice] = useState(null);
 
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -64,6 +71,44 @@ const BookingsAdmin = () => {
       setIsRefreshing(true);
       await refreshBookings();
       setTimeout(() => setIsRefreshing(false), 500);
+    }
+  };
+
+  const handleSendConfirmation = async (booking) => {
+    if (!booking) return;
+    setSendingId(booking.id);
+    setConfirmationNotice(null);
+
+    try {
+      const confirmedBooking = String(booking.status || '').toLowerCase() === 'confirmed'
+        ? booking
+        : { ...booking, status: 'Confirmed' };
+
+      if (String(booking.status || '').toLowerCase() !== 'confirmed' && updateBooking) {
+        await updateBooking(booking.id, confirmedBooking);
+        if (viewDetailsBooking?.id === booking.id) {
+          setViewDetailsBooking(confirmedBooking);
+        }
+      }
+
+      const result = sendBookingConfirmation ? await sendBookingConfirmation(confirmedBooking) : { emailSent: false };
+      const customerEmail = getBookingCustomerEmail(confirmedBooking);
+      const mailtoUrl = buildConfirmationMailto(confirmedBooking);
+      const whatsappUrl = buildConfirmationWhatsAppUrl(confirmedBooking);
+
+      if (result?.emailSent) {
+        setConfirmationNotice({ type: 'success', text: `Confirmation email sent to ${customerEmail || 'customer'}.` });
+      } else if (mailtoUrl) {
+        window.location.href = mailtoUrl;
+        setConfirmationNotice({ type: 'info', text: `Opened email draft to send confirmation to ${customerEmail}.` });
+      } else if (whatsappUrl) {
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        setConfirmationNotice({ type: 'info', text: 'Opened WhatsApp to send booking confirmation.' });
+      } else {
+        setConfirmationNotice({ type: 'error', text: 'No customer email or phone number found for this booking.' });
+      }
+    } finally {
+      setSendingId(null);
     }
   };
 
@@ -167,6 +212,25 @@ const BookingsAdmin = () => {
           </button>
         </div>
       </div>
+
+      {confirmationNotice && (
+        <div className={`px-4 py-3 rounded-xl text-xs font-semibold flex items-center justify-between border ${
+          confirmationNotice.type === 'success'
+            ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
+            : confirmationNotice.type === 'error'
+              ? 'bg-red-50 text-red-800 border-red-200'
+              : 'bg-blue-50 text-blue-800 border-blue-200'
+        }`}>
+          <span>{confirmationNotice.text}</span>
+          <button
+            type="button"
+            onClick={() => setConfirmationNotice(null)}
+            className="ml-3 opacity-70 hover:opacity-100 cursor-pointer"
+          >
+            <X size={14} />
+          </button>
+        </div>
+      )}
 
       {/* Filter and Search Bar */}
       <div className="bg-white rounded-xl shadow-sm border border-sky-tint overflow-hidden">
@@ -328,6 +392,15 @@ const BookingsAdmin = () => {
 
                       {/* Actions */}
                       <td className="px-5 py-4 text-right whitespace-nowrap">
+                        <button
+                          type="button"
+                          onClick={() => handleSendConfirmation(b)}
+                          disabled={sendingId === b.id}
+                          title="Send booking confirmation to customer"
+                          className="text-emerald-600 hover:text-emerald-800 transition-colors p-1.5 mr-1 disabled:opacity-50 cursor-pointer"
+                        >
+                          <Send size={16} />
+                        </button>
                         <button 
                           onClick={() => setViewDetailsBooking(b)} 
                           title="View complete booking details"
@@ -484,13 +557,25 @@ const BookingsAdmin = () => {
                   </span>
                 )}
 
-                {getCustomerEmail(viewDetailsBooking) && (
+                <button
+                  type="button"
+                  onClick={() => handleSendConfirmation(viewDetailsBooking)}
+                  disabled={sendingId === viewDetailsBooking.id}
+                  className="px-3.5 py-2 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl text-xs font-bold hover:bg-blue-100 transition flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
+                  title="Send booking confirmation to customer"
+                >
+                  <Mail size={14} /> {sendingId === viewDetailsBooking.id ? 'Sending...' : 'Send Confirmation'}
+                </button>
+
+                {buildConfirmationWhatsAppUrl(viewDetailsBooking) && (
                   <a
-                    href={`mailto:${getCustomerEmail(viewDetailsBooking)}?subject=${encodeURIComponent(`[Confirmed] Booking Order #${viewDetailsBooking.id} - ${getItemName(viewDetailsBooking)} | Zenex Travels`)}&body=${encodeURIComponent(`Dear ${getCustomerName(viewDetailsBooking)},\n\nWe are pleased to confirm your booking #${viewDetailsBooking.id} for "${getItemName(viewDetailsBooking)}".\n\nTrip Dates: ${formatBookingDates(viewDetailsBooking.dates)}\nTravelers: ${viewDetailsBooking.travelersCount || 1} person(s)\nTotal Price: ${viewDetailsBooking.amount || 'N/A'}\nPayment Preference: ${viewDetailsBooking.paymentOption || 'Pay on Arrival'}\n\nOur operations desk will contact you regarding airport pickup and tour schedule.\n\nWarm regards,\nZenex Travels & Tours\ninfo@zenextravels.com | +977 9767476521`)}`}
-                    className="px-3.5 py-2 bg-blue-50 text-blue-700 border border-blue-200 rounded-xl text-xs font-bold hover:bg-blue-100 transition flex items-center gap-1.5 cursor-pointer"
-                    title="Send official confirmation email voucher to customer"
+                    href={buildConfirmationWhatsAppUrl(viewDetailsBooking)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3.5 py-2 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-xl text-xs font-bold hover:bg-emerald-100 transition flex items-center gap-1.5 cursor-pointer"
+                    title="Send booking confirmation via WhatsApp"
                   >
-                    <Mail size={14} /> Send Email Voucher
+                    <MessageCircle size={14} /> WhatsApp
                   </a>
                 )}
               </div>

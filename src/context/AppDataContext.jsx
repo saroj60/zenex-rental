@@ -855,6 +855,28 @@ export const AppDataProvider = ({ children }) => {
     return { success: true, booking: updatedRecord };
   };
 
+  const sendBookingConfirmation = async (booking) => {
+    if (!booking?.id) return { success: false, emailSent: false };
+    try {
+      const encodedId = encodeURIComponent(booking.id);
+      const res = await fetch(`${API_BASE}/api/bookings/${encodedId}/send-confirmation`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ booking })
+      });
+      if (res.ok) {
+        const contentType = res.headers.get('content-type') || '';
+        if (contentType.includes('application/json')) {
+          const data = await res.json();
+          return { success: Boolean(data.success), emailSent: Boolean(data.emailSent), reason: data.reason };
+        }
+      }
+    } catch (err) {
+      console.warn('Backend confirmation email failed, using client fallback:', err);
+    }
+    return { success: false, emailSent: false, reason: 'api_unavailable' };
+  };
+
   const deleteBooking = async (id) => {
     // 1. Optimistic remove
     setBookings(prev => prev.filter(b => b.id !== id));
@@ -975,7 +997,7 @@ export const AppDataProvider = ({ children }) => {
       destinations, addDestination, updateDestination, deleteDestination,
       packages, addPackage, updatePackage, deletePackage,
       treks, addTrek, updateTrek, deleteTrek,
-      bookings, addBooking, updateBooking, deleteBooking, refreshBookings,
+      bookings, addBooking, updateBooking, deleteBooking, refreshBookings, sendBookingConfirmation,
       drivers, addDriver, updateDriver, deleteDriver,
       galleryImages, addGalleryImage, updateGalleryImage, deleteGalleryImage,
       tourTrips, addTourTrip, updateTourTrip, deleteTourTrip,

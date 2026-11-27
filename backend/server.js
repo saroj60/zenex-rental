@@ -778,6 +778,24 @@ app.put('/api/bookings/:id', async (req, res) => {
     }
 });
 
+app.post('/api/bookings/:id/send-confirmation', async (req, res) => {
+    try {
+        const existing = await db.getById('bookings', req.params.id);
+        const booking = existing || req.body?.booking;
+        if (!booking) {
+            return res.status(404).json({ success: false, message: 'Booking not found' });
+        }
+        const result = await sendBookingStatusUpdateEmail(booking, 'Confirmed');
+        res.json({
+            success: true,
+            emailSent: Boolean(result?.success),
+            reason: result?.reason || null
+        });
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+});
+
 app.delete('/api/bookings/:id', async (req, res) => {
     try {
         await db.remove('bookings', req.params.id);

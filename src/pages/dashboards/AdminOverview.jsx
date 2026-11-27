@@ -1,13 +1,20 @@
-import React from 'react';
-import { Users, Car, MapPin, Package, DollarSign, TrendingUp, Calendar as CalendarIcon, CalendarCheck, CheckCircle2, ArrowRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { Users, Car, MapPin, Package, DollarSign, TrendingUp, Calendar as CalendarIcon, CalendarCheck, CheckCircle2, ArrowRight, Send } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useAppData } from '../../context/AppDataContext';
 import { useCurrency } from '../../context/CurrencyContext';
+import {
+  buildConfirmationMailto,
+  buildConfirmationWhatsAppUrl,
+  getBookingCustomerEmail
+} from '../../utils/bookingConfirmation';
 
 const AdminOverview = () => {
   const navigate = useNavigate();
-  const { vehicles, bookings, updateBooking } = useAppData();
+  const { vehicles, bookings, updateBooking, sendBookingConfirmation } = useAppData();
   const { formatPrice } = useCurrency();
+  const [sendingId, setSendingId] = useState(null);
+  const [notice, setNotice] = useState(null);
 
   const totalRevenue = bookings.reduce((acc, curr) => {
     // Basic extraction of numeric value from formatted amount string (e.g. '$325')
@@ -90,6 +97,13 @@ const AdminOverview = () => {
             </button>
           </div>
 
+          {notice && (
+            <div className="mb-4 px-4 py-2.5 rounded-xl bg-blue-50 text-blue-800 border border-blue-200 text-xs font-semibold flex items-center justify-between">
+              <span>{notice}</span>
+              <button type="button" onClick={() => setNotice(null)} className="ml-3 text-blue-600 hover:text-blue-900 cursor-pointer">×</button>
+            </div>
+          )}
+
           <div className="space-y-4">
             {bookings.length === 0 ? (
               <div className="text-center py-8 text-slate-400 text-sm">
@@ -144,6 +158,43 @@ const AdminOverview = () => {
                           <CheckCircle2 size={13} /> Confirmed
                         </span>
                       )}
+
+                      <button
+                        type="button"
+                        onClick={async (e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setSendingId(b.id);
+                          setNotice(null);
+                          try {
+                            const confirmed = isConfirmed ? b : { ...b, status: 'Confirmed' };
+                            if (!isConfirmed && updateBooking) {
+                              await updateBooking(b.id, confirmed);
+                            }
+                            const res = sendBookingConfirmation ? await sendBookingConfirmation(confirmed) : { emailSent: false };
+                            const mailtoUrl = buildConfirmationMailto(confirmed);
+                            const whatsappUrl = buildConfirmationWhatsAppUrl(confirmed);
+                            if (res?.emailSent) {
+                              setNotice(`Confirmation email sent to ${getBookingCustomerEmail(confirmed) || 'customer'}.`);
+                            } else if (mailtoUrl) {
+                              window.location.href = mailtoUrl;
+                              setNotice(`Opened email draft for ${getBookingCustomerEmail(confirmed)}.`);
+                            } else if (whatsappUrl) {
+                              window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+                              setNotice('Opened WhatsApp to send confirmation.');
+                            } else {
+                              setNotice('No customer email or phone number found on this booking.');
+                            }
+                          } finally {
+                            setSendingId(null);
+                          }
+                        }}
+                        disabled={sendingId === b.id}
+                        className="px-2.5 py-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 rounded-lg text-xs font-bold transition flex items-center gap-1 cursor-pointer disabled:opacity-50"
+                        title="Send booking confirmation to customer"
+                      >
+                        <Send size={12} /> {sendingId === b.id ? 'Sending...' : 'Send'}
+                      </button>
 
                       <button
                         onClick={() => navigate('/dashboard/bookings')}
