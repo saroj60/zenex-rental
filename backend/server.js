@@ -865,7 +865,7 @@ app.get('*', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, '0.0.0.0', async () => {
+app.listen(PORT, async () => {
     console.log(`ZENEX TRAVEL API server running on port ${PORT}`);
     if (db.isUsingMySQL()) {
         await db.initTables();

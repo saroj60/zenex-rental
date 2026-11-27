@@ -126,19 +126,22 @@ const AdminOverview = () => {
                       
                       {isPending ? (
                         <button
-                          onClick={() => {
+                          type="button"
+                          onClick={async (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
                             if (updateBooking) {
-                              updateBooking(b.id, { ...b, status: 'Confirmed' });
+                              await updateBooking(b.id, { ...b, status: 'Confirmed' });
                             }
                           }}
-                          className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold transition flex items-center gap-1 shadow-xs cursor-pointer"
+                          className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5 shadow-xs cursor-pointer select-none"
                           title="Click to Confirm this Booking"
                         >
                           <CheckCircle2 size={13} /> Confirm
                         </button>
                       ) : (
-                        <span className="text-xs font-bold text-emerald-600 flex items-center gap-1">
-                          <CheckCircle2 size={14} /> Confirmed
+                        <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200/80 flex items-center gap-1">
+                          <CheckCircle2 size={13} /> Confirmed
                         </span>
                       )}
 

@@ -624,6 +624,31 @@ export const AppDataProvider = ({ children }) => {
 
         const mergedTreks = Array.from(allTreksMap.values());
 
+        // Merge any locally confirmed or updated bookings from localStorage
+        try {
+          const localOverrides = JSON.parse(localStorage.getItem('zenex_bookings_override') || '{}');
+          const mergedBookings = [...ensureArray(finalBookings)];
+          
+          Object.keys(localOverrides).forEach(key => {
+            if (key.startsWith('__deleted_')) {
+              const deletedId = key.replace('__deleted_', '');
+              const idx = mergedBookings.findIndex(b => b.id === deletedId);
+              if (idx !== -1) mergedBookings.splice(idx, 1);
+            } else {
+              const updatedItem = localOverrides[key];
+              const idx = mergedBookings.findIndex(b => b.id === key);
+              if (idx !== -1) {
+                mergedBookings[idx] = { ...mergedBookings[idx], ...updatedItem };
+              } else {
+                mergedBookings.unshift(updatedItem);
+              }
+            }
+          });
+          finalBookings = mergedBookings;
+        } catch (e) {
+          console.warn('Could not read bookings from localStorage override', e);
+        }
+
         setVehicles(ensureArray(finalVehicles));
         setPackages(ensureArray(finalPackages));
         setTreks(mergedTreks);
@@ -729,54 +754,129 @@ export const AppDataProvider = ({ children }) => {
 
   // CRUD for Bookings
   const addBooking = async (booking) => {
+    let newBooking = { ...booking };
+    if (!newBooking.id) {
+      newBooking.id = `ZNX - ${String(Date.now()).slice(-3)}`;
+    }
+    newBooking.status = newBooking.status || 'Pending';
+    newBooking.createdAt = newBooking.createdAt || new Date().toISOString();
+
+    // 1. Optimistic update
+    setBookings(prev => [newBooking, ...prev.filter(b => b.id !== newBooking.id)]);
+
+    // 2. Persist to localStorage
+    try {
+      const overrides = JSON.parse(localStorage.getItem('zenex_bookings_override') || '{}');
+      overrides[newBooking.id] = newBooking;
+      localStorage.setItem('zenex_bookings_override', JSON.stringify(overrides));
+    } catch (e) {
+      console.warn('LocalStorage save failed:', e);
+    }
+
+    // 3. Backend API sync
     try {
       const res = await fetch(`${API_BASE}/api/bookings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(booking)
+        body: JSON.stringify(newBooking)
       });
-      const data = await res.json();
-      if (data.success && data.booking) {
-        setBookings(prev => [data.booking, ...prev.filter(b => b.id !== data.booking.id)]);
-        return data.booking;
+      if (res.ok) {
+        const contentType = res.headers.get('content-type') || '';
+        if (contentType.includes('application/json')) {
+          const data = await res.json();
+          if (data.success && data.booking) {
+            setBookings(prev => [data.booking, ...prev.filter(b => b.id !== data.booking.id)]);
+            return data.booking;
+          }
+        }
       }
     } catch (err) {
-      console.error('Error adding booking in AppDataContext:', err);
+      console.warn('Backend API add failed, saved locally:', err);
     }
+
+    return newBooking;
   };
 
   const refreshBookings = async () => {
     try {
       const res = await fetch(`${API_BASE}/api/bookings`);
       if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data)) {
-          setBookings(data);
-          return data;
+        const contentType = res.headers.get('content-type') || '';
+        if (contentType.includes('application/json')) {
+          const data = await res.json();
+          if (Array.isArray(data)) {
+            setBookings(data);
+            return data;
+          }
         }
       }
     } catch (err) {
       console.error('Error refreshing bookings:', err);
     }
   };
+
   const updateBooking = async (id, updated) => {
-    const res = await fetch(`${API_BASE}/api/bookings/${id}`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(updated)
-    });
-    const data = await res.json();
-    if (data.success) {
-      setBookings(prev => prev.map(b => b.id === id ? data.booking : b));
+    const updatedRecord = { ...updated, id };
+
+    // 1. Instantly update React state (Optimistic)
+    setBookings(prev => prev.map(b => b.id === id ? { ...b, ...updatedRecord } : b));
+
+    // 2. Persist to localStorage so live static host retains confirmed state
+    try {
+      const overrides = JSON.parse(localStorage.getItem('zenex_bookings_override') || '{}');
+      overrides[id] = { ...(overrides[id] || {}), ...updatedRecord };
+      localStorage.setItem('zenex_bookings_override', JSON.stringify(overrides));
+    } catch (e) {
+      console.warn('LocalStorage save failed:', e);
     }
+
+    // 3. Attempt sync with backend API if running
+    try {
+      const encodedId = encodeURIComponent(id);
+      const res = await fetch(`${API_BASE}/api/bookings/${encodedId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updatedRecord)
+      });
+      if (res.ok) {
+        const contentType = res.headers.get('content-type') || '';
+        if (contentType.includes('application/json')) {
+          const data = await res.json();
+          if (data.success && data.booking) {
+            setBookings(prev => prev.map(b => b.id === id ? data.booking : b));
+            return { success: true, booking: data.booking };
+          }
+        }
+      }
+    } catch (err) {
+      console.warn('Backend API update failed, updated in local state:', err);
+    }
+
+    return { success: true, booking: updatedRecord };
   };
+
   const deleteBooking = async (id) => {
-    const res = await fetch(`${API_BASE}/api/bookings/${id}`, {
-      method: 'DELETE'
-    });
-    const data = await res.json();
-    if (data.success) {
-      setBookings(prev => prev.filter(b => b.id !== id));
+    // 1. Optimistic remove
+    setBookings(prev => prev.filter(b => b.id !== id));
+
+    // 2. Persist deletion in localStorage
+    try {
+      const overrides = JSON.parse(localStorage.getItem('zenex_bookings_override') || '{}');
+      delete overrides[id];
+      overrides[`__deleted_${id}`] = true;
+      localStorage.setItem('zenex_bookings_override', JSON.stringify(overrides));
+    } catch (e) {
+      console.warn('LocalStorage delete failed:', e);
+    }
+
+    // 3. Backend API sync
+    try {
+      const encodedId = encodeURIComponent(id);
+      await fetch(`${API_BASE}/api/bookings/${encodedId}`, {
+        method: 'DELETE'
+      });
+    } catch (err) {
+      console.warn('Backend delete failed, updated locally:', err);
     }
   };
 

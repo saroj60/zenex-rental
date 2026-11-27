@@ -309,8 +309,15 @@ const BookingsAdmin = () => {
 
                           {statusNormalized === 'pending' && (
                             <button
-                              onClick={() => updateBooking(b.id, { ...b, status: 'Confirmed' })}
-                              className="px-2 py-0.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded text-[10px] font-bold transition flex items-center gap-1 shadow-xs cursor-pointer"
+                              type="button"
+                              onClick={async (e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                if (updateBooking) {
+                                  await updateBooking(b.id, { ...b, status: 'Confirmed' });
+                                }
+                              }}
+                              className="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white rounded text-[10px] font-bold transition flex items-center gap-1 shadow-xs cursor-pointer select-none"
                               title="Click to confirm booking"
                             >
                               <CheckCircle2 size={11} /> Confirm

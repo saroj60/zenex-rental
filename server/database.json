@@ -33616,7 +33616,7 @@
       },
       "additionalTravelers": [],
       "id": "ZNX - 001",
-      "status": "pending",
+      "status": "Confirmed",
       "createdAt": "2026-11-01T20:25:20.386Z"
     },
     {
@@ -33642,7 +33642,7 @@
       },
       "additionalTravelers": [],
       "id": "ZNX - 002",
-      "status": "pending",
+      "status": "Confirmed",
       "createdAt": "2026-11-01T20:27:30.058Z"
     },
     {
@@ -33666,7 +33666,7 @@
       "id": "ZNX - 003",
       "vehicle": "Annapurna Base Camp Trek - 10 Days",
       "type": "Tour",
-      "status": "Pending",
+      "status": "Confirmed",
       "createdAt": "2026-11-22T22:16:13.556Z"
     }
   ],
